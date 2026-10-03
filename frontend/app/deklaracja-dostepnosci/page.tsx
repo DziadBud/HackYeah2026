@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = { title: "Deklaracja dostępności" };
 
 const FEATURES = [
-  "Pasek dostępności na każdej stronie: powiększanie tekstu (A, A+, A++), tryb wysokiego kontrastu (czarny, żółty, biały) i czytanie treści na głos.",
+  "Pasek dostępności na każdej stronie: powiększanie tekstu (przycisk A+, trzy stopnie), tryb wysokiego kontrastu (czarny, żółty, biały) i czytanie treści na głos.",
   "Link „Przejdź do treści głównej” jako pierwszy element strony.",
-  "Pełna obsługa z klawiatury z wyraźnym, dwukolorowym wskaźnikiem fokusu.",
+  "Pełna obsługa z klawiatury z wyraźnym wskaźnikiem fokusu (niebieska ramka z białym odstępem).",
   "Kontrast tekstu co najmniej 4,5:1, kontrast pól formularzy i kontrolek co najmniej 3:1.",
-  "Krój Atkinson Hyperlegible Next, minimalny rozmiar tekstu 14 px, tekst podstawowy 18 px.",
+  "Krój Public Sans o dużej wysokości małych liter, tekst podstawowy 16 px, treść skalowana razem z całym interfejsem.",
   "Pola formularzy z widocznymi etykietami; komunikaty o stanie ogłaszane czytnikom ekranu.",
-  "Duże obszary klikalne (co najmniej 48 × 48 px) i ograniczenie animacji przy ustawieniu „ogranicz ruch”.",
+  "Duże obszary klikalne przycisków i pól formularzy i ograniczenie animacji przy ustawieniu „ogranicz ruch”.",
   "Dyktowanie wiadomości w czacie dla osób, którym trudno pisać.",
 ];
 

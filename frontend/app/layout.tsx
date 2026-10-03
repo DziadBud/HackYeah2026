@@ -1,15 +1,15 @@
 import type { Metadata, Viewport } from "next";
-import { Atkinson_Hyperlegible_Next } from "next/font/google";
+import { Public_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import { A11yToolbar, PREFS_BOOTSTRAP } from "@/components/A11yToolbar";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
 
-// typeface from the design system: disambiguates I / l / 1, full polish diacritics
-const atkinson = Atkinson_Hyperlegible_Next({
+// typeface from the design system: civic, large x-height, full polish diacritics
+const publicSans = Public_Sans({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-atkinson",
+  variable: "--font-public-sans",
   display: "swap",
 });
 
@@ -32,19 +32,19 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0f2d59",
+  themeColor: "#0a254a",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pl" className={`${atkinson.variable} ${icons.variable}`} suppressHydrationWarning>
+    <html lang="pl" className={`${publicSans.variable} ${icons.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: PREFS_BOOTSTRAP }} />
       </head>
       <body className="flex min-h-screen flex-col antialiased">
         <A11yToolbar />
         <SiteHeader />
-        <main id="main-content" tabIndex={-1} className="mx-auto w-full max-w-7xl flex-1 px-gutter-sm sm:px-gutter">
+        <main id="main-content" tabIndex={-1} className="mx-auto w-full max-w-7xl flex-1 px-gutter-sm py-space-lg sm:px-gutter">
           {children}
         </main>
         <SiteFooter />

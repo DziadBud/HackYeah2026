@@ -1,124 +1,129 @@
-<!-- Source: Stitch project "Małopolski Hub Innowacji Społecznych" (projects/10050838774213471276). Screens: "Czat - Wersja Mobilna", "Czat - Wersja Desktopowa", logo. -->
-
 ---
-name: Małopolski Ośrodek Dostępny
+name: Małopolska Public Trust
 colors:
-  surface: '#f9f9ff'
-  surface-dim: '#cfdaf2'
-  surface-bright: '#f9f9ff'
+  surface: '#f8f9ff'
+  surface-dim: '#d0dbed'
+  surface-bright: '#f8f9ff'
   surface-container-lowest: '#ffffff'
-  surface-container-low: '#f0f3ff'
-  surface-container: '#e7eeff'
-  surface-container-high: '#dee8ff'
-  surface-container-highest: '#d8e3fb'
-  on-surface: '#111c2d'
-  on-surface-variant: '#44474f'
-  inverse-surface: '#263143'
-  inverse-on-surface: '#ecf1ff'
-  outline: '#747780'
-  outline-variant: '#c4c6d0'
-  surface-tint: '#455e8d'
-  primary: '#00183b'
+  surface-container-low: '#eff4ff'
+  surface-container: '#e6eeff'
+  surface-container-high: '#dee9fc'
+  surface-container-highest: '#d9e3f6'
+  on-surface: '#121c2a'
+  on-surface-variant: '#434750'
+  inverse-surface: '#27313f'
+  inverse-on-surface: '#eaf1ff'
+  outline: '#737781'
+  outline-variant: '#c3c6d1'
+  surface-tint: '#375f99'
+  primary: '#002752'
   on-primary: '#ffffff'
-  primary-container: '#0f2d59'
-  on-primary-container: '#7c95c8'
-  inverse-primary: '#adc7fc'
-  secondary: '#b52426'
+  primary-container: '#0b3d75'
+  on-primary-container: '#84a9e8'
+  inverse-primary: '#a8c8ff'
+  secondary: '#bb0021'
   on-secondary: '#ffffff'
-  secondary-container: '#ff5a55'
-  on-secondary-container: '#600008'
-  tertiary: '#001d1a'
+  secondary-container: '#e22334'
+  on-secondary-container: '#fffbff'
+  tertiary: '#00294a'
   on-tertiary: '#ffffff'
-  tertiary-container: '#003430'
-  on-tertiary-container: '#4ba39a'
+  tertiary-container: '#003f6e'
+  on-tertiary-container: '#6cacf3'
   error: '#ba1a1a'
   on-error: '#ffffff'
   error-container: '#ffdad6'
   on-error-container: '#93000a'
-  primary-fixed: '#d7e2ff'
-  primary-fixed-dim: '#adc7fc'
-  on-primary-fixed: '#001b3f'
-  on-primary-fixed-variant: '#2c4674'
-  secondary-fixed: '#ffdad6'
-  secondary-fixed-dim: '#ffb3ad'
-  on-secondary-fixed: '#410003'
-  on-secondary-fixed-variant: '#920212'
-  tertiary-fixed: '#9bf2e8'
-  tertiary-fixed-dim: '#7fd5cc'
-  on-tertiary-fixed: '#00201d'
-  on-tertiary-fixed-variant: '#00504a'
-  background: '#f9f9ff'
-  on-background: '#111c2d'
-  surface-variant: '#d8e3fb'
+  primary-fixed: '#d6e3ff'
+  primary-fixed-dim: '#a8c8ff'
+  on-primary-fixed: '#001b3c'
+  on-primary-fixed-variant: '#1b477f'
+  secondary-fixed: '#ffdad7'
+  secondary-fixed-dim: '#ffb3af'
+  on-secondary-fixed: '#410005'
+  on-secondary-fixed-variant: '#930017'
+  tertiary-fixed: '#d1e4ff'
+  tertiary-fixed-dim: '#9fcaff'
+  on-tertiary-fixed: '#001d36'
+  on-tertiary-fixed-variant: '#00497d'
+  background: '#f8f9ff'
+  on-background: '#121c2a'
+  surface-variant: '#d9e3f6'
+  surface-page: '#f8f9fa'
+  surface-card: '#ffffff'
+  border-subtle: '#e2e8f0'
+  border-strong: '#cbd5e1'
+  text-muted: '#4b5563'
+  high-contrast-bg: '#000000'
+  high-contrast-text: '#ffff00'
+  tag-blue-bg: '#ebf3fa'
+  tag-blue-text: '#0b3d75'
+  tag-red-bg: '#fdf2f2'
+  tag-red-text: '#c91e2b'
 typography:
-  display:
-    fontFamily: Atkinson Hyperlegible Next
-    fontSize: 40px
-    fontWeight: '700'
-    lineHeight: 52px
-    letterSpacing: -0.01em
-  display-mobile:
-    fontFamily: Atkinson Hyperlegible Next
-    fontSize: 30px
-    fontWeight: '700'
-    lineHeight: 40px
-  headline-lg:
-    fontFamily: Atkinson Hyperlegible Next
-    fontSize: 32px
+  headline-xl:
+    fontFamily: Public Sans
+    fontSize: 36px
     fontWeight: '700'
     lineHeight: 44px
-  headline-lg-mobile:
-    fontFamily: Atkinson Hyperlegible Next
-    fontSize: 26px
+    letterSpacing: -0.02em
+  headline-xl-mobile:
+    fontFamily: Public Sans
+    fontSize: 28px
     fontWeight: '700'
     lineHeight: 36px
+  headline-lg:
+    fontFamily: Public Sans
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.01em
+  headline-lg-mobile:
+    fontFamily: Public Sans
+    fontSize: 22px
+    fontWeight: '700'
+    lineHeight: 30px
   headline-md:
-    fontFamily: Atkinson Hyperlegible Next
-    fontSize: 24px
-    fontWeight: '600'
-    lineHeight: 34px
-  headline-sm:
-    fontFamily: Atkinson Hyperlegible Next
-    fontSize: 20px
+    fontFamily: Public Sans
+    fontSize: 22px
     fontWeight: '600'
     lineHeight: 30px
+  headline-sm:
+    fontFamily: Public Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 26px
   body-lg:
-    fontFamily: Atkinson Hyperlegible Next
+    fontFamily: Public Sans
     fontSize: 18px
     fontWeight: '400'
-    lineHeight: 28px
-  body-lg-bold:
-    fontFamily: Atkinson Hyperlegible Next
-    fontSize: 18px
-    fontWeight: '700'
     lineHeight: 28px
   body-md:
-    fontFamily: Atkinson Hyperlegible Next
+    fontFamily: Public Sans
     fontSize: 16px
     fontWeight: '400'
     lineHeight: 24px
-  body-md-bold:
-    fontFamily: Atkinson Hyperlegible Next
-    fontSize: 16px
-    fontWeight: '700'
-    lineHeight: 24px
-  label-lg:
-    fontFamily: Atkinson Hyperlegible Next
-    fontSize: 16px
-    fontWeight: '600'
-    lineHeight: 22px
-    letterSpacing: 0.02em
+  body-sm:
+    fontFamily: Public Sans
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
   label-md:
-    fontFamily: Atkinson Hyperlegible Next
+    fontFamily: Public Sans
     fontSize: 14px
     fontWeight: '600'
     lineHeight: 20px
+    letterSpacing: 0.01em
+  label-sm:
+    fontFamily: Public Sans
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
     letterSpacing: 0.02em
   caption:
-    fontFamily: Atkinson Hyperlegible Next
-    fontSize: 14px
+    fontFamily: Public Sans
+    fontSize: 12px
     fontWeight: '400'
-    lineHeight: 20px
+    lineHeight: 16px
 rounded:
   sm: 0.25rem
   DEFAULT: 0.5rem
@@ -128,116 +133,98 @@ rounded:
   full: 9999px
 spacing:
   gutter: 1.5rem
-  gutter-sm: 1rem
-  gutter-lg: 2rem
-  margin: 1.5rem
-  margin-sm: 1rem
-  margin-lg: 3rem
-  space-xs: 0.375rem
-  space-sm: 0.75rem
-  space-md: 1.25rem
-  space-lg: 2rem
-  space-xl: 3rem
+  gutter-mobile: 1rem
+  margin: 2rem
+  margin-mobile: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
 ---
 
 ## Brand & Style
 
-This design system establishes a dignified, welcoming, and deeply accessible digital presence for a regional social policy institution. The interface balances public-sector authority with human warmth, communicating stability, civic transparency, and social care.
+The design system establishes an authoritative, highly accessible, and citizen-centered visual language for regional social policy administration. The visual tone balances administrative legitimacy with public warmth, dignity, and transparency. Designed to serve diverse civic demographics—including persons with disabilities, social welfare professionals, senior citizens, and civic leaders—it prioritizes clarity, intuitive navigation, and effortless readability.
 
-The visual style is **Corporate Modern with High-Legibility Functionalism**:
-- Pure, purposeful surfaces avoid superficial visual noise, complex skeuomorphic effects, and low-contrast translucent overlays.
-- High visual legibility takes precedence over ornamental trends: generous touch targets, clear spatial groupings, and prominent structural anchors reassure citizens, NGO leaders, social workers, and civil servants alike.
-- The visual tone balances administrative gravitas with human-centered empathy, delivering clarity across various age brackets and digital literacy levels.
+The visual style is **Corporate / Modern** inflected with accessible civic UI conventions:
+- High contrast, crisp typographic structures with strict adherence to WCAG 2.1 AA/AAA criteria.
+- Dedicated accessibility header bar for text size scaling and contrast toggling.
+- Crisp white structural surfaces framed by subtle neutral outlines, supported by Małopolska regional accents (carmine red) and foundational royal/navy blue tones.
+- Balanced container cards with soft radii, avoiding overly sterile bureaucratic stiffness while maintaining formal institutional rigor.
 
 ## Colors
 
-The palette is engineered to meet strict WCAG 2.1 AA and AAA standards across all primary, secondary, and informative states:
+The color palette anchors on official institutional trust, public clarity, and regional identity:
 
-- **Primary (`#0F2D59`)**: Institutional deep navy commanding authority and calm security. Applied to navigation headers, dominant buttons, and primary structural dividing lines. Contrast ratio against light canvas exceeds 11:1.
-- **Secondary (`#C53030`)**: Małopolska crimson red, honoring regional heritage. Reserved for high-priority calls to action, deadline indicators, badge highlights, and essential interactive tags. Contrast ratio against light canvas exceeds 5.2:1.
-- **Tertiary (`#0D766E`)**: Deep spruce teal, used for social impact markers, completed milestones, support initiative flags, and environmental tags.
-- **Neutral (`#1E293B` on `#F8FAFC`)**: Slate black on an off-white warm neutral backdrop, providing crisp, glare-free readability without harsh starkness.
-- **Border Neutral (`#CBD5E1`)**: Clear structural separation for cards and inputs to define boundaries without visual clutter.
-- **Focus Indicator (`#F59E0B` / `#0F2D59`)**: Dual-ring focus token (3px outer amber `#F59E0B` against 2px inner navy `#0F2D59`) ensures absolute visual clarity on both light and dark backgrounds.
-- **Accessibility High-Contrast Mode**: Built-in support transforms backgrounds to `#000000` with high-luminance yellow `#FFEB3B` and white `#FFFFFF` for users requiring maximum optical distinction.
+- **Primary (`#0b3d75`):** Deep Royal/Navy Blue. Anchors the institutional presence across main navigation, headers, critical action buttons, and dominant iconography.
+- **Secondary (`#d1122a`):** Małopolska Regional Red. Reserved for regional signifiers, date stamps, urgency markers, active status pills, and high-visibility editorial accents.
+- **Tertiary (`#0b62a4`):** Vibrant Civic Blue. Serves as active link states, focused list selections, and subtle hover interactions.
+- **Neutral (`#1f2937` & `#4b5563`):** Slate dark grays ensuring high contrast for continuous body text and supplementary captions, preventing the visual fatigue of absolute black against stark white.
+- **Surface & Backgrounds:** The base canvas uses `#f8f9fa` to provide subtle visual relief against pure `#ffffff` cards and content containers, outlined neatly by `#e2e8f0`.
+
+Specialized high-contrast modes invert to pure black (`#000000`) and cadmium yellow (`#ffff00`) in compliance with standard Polish public sector Biuletyn Informacji Publicznej (BIP) accessibility guidelines.
 
 ## Typography
 
-The design system utilizes **Atkinson Hyperlegible Next** across all text hierarchies. Its purpose-driven letterforms disambiguate traditionally similar characters (such as uppercase `I`, lowercase `l`, and digit `1`), providing clarity for readers with low vision, dyslexia, or cognitive fatigue. Full native coverage for Polish diacritic marks (`ą`, `ć`, `ę`, `ł`, `ń`, `ó`, `ś`, `ź`, `ż`) preserves vertical metrics without clipping.
+The design system employs **Public Sans** across all typographic hierarchies. Modeled after open-source civic standards, its geometric stability, generous x-height, and open counters provide extreme legibility on low-resolution displays and across various assistive technologies.
 
-### Accessibility Sizing & Scaling Tokens
-- **Default Base Font**: 18px body size (`body-lg`) as standard for all primary reading blocks.
-- **Minimum Interactive Size**: 14px is strictly preserved as the absolute floor (`caption`/`label-md`). Sub-14px typography is explicitly disallowed.
-- **Dynamic Text Scaling (A / A+ / A++)**:
-  - `scale-100` (Default): 18px body base
-  - `scale-115` (A+): 20.7px body base
-  - `scale-130` (A++): 23.4px body base
-- **Paragraph Spacing**: Set to `1.5` minimum line-height, with a paragraph separation gap of `1.25em` to prevent dense cognitive wall-of-text fatigue.
+- **Headlines (`headline-xl`, `headline-lg`, `headline-md`):** Solid, bold weights convey official authority without aggressive styling. Line heights are spaced generously to ensure that multiline headlines remain comfortably legible.
+- **Body Text (`body-lg`, `body-md`):** Set at a standard minimum of 16px for desktop content bodies to facilitate fatigue-free reading for public tenders, training notices, and policy documentation.
+- **Labels and Metadata (`label-md`, `label-sm`):** Slightly elevated font weights (`600`) paired with subtle positive letter spacing are used on publication tags, date stamps, and navigation items to distinguish them from editorial prose.
 
 ## Layout & Spacing
 
-A structured 12-column responsive fluid grid aligns institutional content predictably:
+The layout is built upon a standard 12-column responsive fluid grid bounded by a central max-width of `1280px` for desktop viewports, ensuring content does not stretch across ultra-wide monitors.
 
-- **Desktop (>= 1280px)**: 12 columns, max content container width `1280px`, `gutter-lg` (32px), `margin-lg` (48px).
-- **Tablet (768px - 1279px)**: 8 columns, fluid width, `gutter` (24px), `margin` (24px).
-- **Mobile (< 768px)**: 4 columns, fluid width, `gutter-sm` (16px), `margin-sm` (16px).
+- **Desktop (1024px+):** 12 columns with `1.5rem` (24px) gutters and `2rem` (32px) margins. Asymmetrical two-column templates are common: a 4-column side navigation / calendar rail alongside an 8-column main content stream.
+- **Tablet (768px – 1023px):** 8 columns with `1.25rem` (20px) gutters. Side navigation drops to a collapsible drawer or stacks above primary feeds.
+- **Mobile (< 768px):** 4 columns with `1rem` (16px) gutters and `1rem` (16px) outer page margins. News cards and publication covers shift into vertical single-column stacks.
 
-### Spacing Philosophy
-Spacing tokens are strictly applied as empty distances between discrete containers and inside structural cards:
-- Vertical rhythm follows an explicit 8px base grid, stepped through `space-xs` (6px) through `space-xl` (48px).
-- Complex application forms and multi-tier institutional overviews maintain `space-lg` separation to avoid visual collision and cognitive overwhelm.
-- Interactive touch targets adhere to a minimum physical bounding box of `48px x 48px` regardless of the optical icon or text footprint inside.
+Vertical rhythm is governed by multiples of 8px (`0.5rem`, `1rem`, `1.5rem`, `2.5rem`), maintaining clear visual separation between administrative modules and publication listings.
 
 ## Elevation & Depth
 
-Visual hierarchy is communicated via clean tonal layers and crisp low-contrast outlines rather than deep or distracting drop shadows:
+Visual depth is communicated primarily through **clean tonal layering paired with low-contrast structural borders**, avoiding heavy, distracting skeuomorphic shadows to optimize accessibility:
 
-- **Level 0 (Base Canvas)**: Solid `#F8FAFC`. All primary navigation, layout wrappers, and background elements sit here.
-- **Level 1 (Surface Cards & Panels)**: Solid `#FFFFFF` enclosed by a 1px solid border of `#CBD5E1`. A soft ambient underlay (`0 2px 4px rgba(15, 45, 89, 0.04)`) separates interactive modules from the backdrop.
-- **Level 2 (Dropdowns, Floating Toolbars, Modals)**: Solid `#FFFFFF` enclosed by a 1.5px border of `#94A3B8` accompanied by an ambient resting shadow (`0 8px 24px rgba(15, 45, 89, 0.08)`).
-- **Focus State (Interactive Depth)**: Focus does not rely on elevation or z-index changes. Instead, active items produce a 3px outer outline in `#F59E0B` separated by a 2px offset in `#FFFFFF`.
+- **Flat/Resting Surfaces:** Information cards, event items, and navigation sections rest on a `#ffffff` background bounded by a `1px` border in `#e2e8f0`.
+- **Card Hover / Interaction:** Elevation on cards is indicated subtly via a slight shift to `0 4px 12px rgba(11, 61, 117, 0.08)` and border intensification to `#cbd5e1`.
+- **Modals & Drawers:** High-priority overlays (e.g., search modals, mobile navigation menus) use an ambient, soft shadow: `0 12px 32px rgba(15, 23, 42, 0.15)`.
+- **Focus States:** Depth and focus are elevated via a mandatory 3px high-contrast outline (`#0b62a4` or `#ffff00` in contrast mode) with a 2px white offset gap, satisfying WCAG 2.4.7 focus criteria.
 
 ## Shapes
 
-The design system implements a consistent **Level 2 (Rounded)** shape language:
-- Standard UI containers, cards, dialog boxes, and interactive text inputs employ an outer corner radius of `12px` (`0.75rem`).
-- Secondary utility badges, small tags, and status chips apply a soft radius of `6px` (`0.375rem`).
-- Full circle shapes (`border-radius: 9999px`) are restricted solely to user avatars, quick action accessibility buttons, and binary step indicator numbers.
-- Avoid razor-sharp 0px borders to reduce harsh visual tension, while avoiding exaggerated pill containers to maintain civic credibility.
+The system implements a structured **Rounded (`2`)** shape philosophy:
+
+- **Buttons & Form Fields:** Standard base radius of `0.5rem` (8px), offering a welcoming, contemporary feel without appearing whimsical.
+- **Cards & Modules (`rounded-lg` / `rounded-xl`):** Primary news cards, project highlights, and calendar blocks utilize `1rem` (16px) or `1.5rem` (24px) corner radii.
+- **Pills & Status Tags:** Fully rounded pill silhouettes (`9999px`) are designated for date chips, category tags, and accessibility switchers.
+- **Thumbnails & Media Containers:** Media previews feature `0.75rem` (12px) clipping to integrate naturally with surrounding card containers.
 
 ## Components
 
-### Accessibility Toolbar (Sticky Top Bar)
-- Positioned persistently at the topmost viewport edge across all pages.
-- Houses dedicated controls for:
-  - Text Size Adjustment (`A-`, `Standard`, `A+`, `A++`)
-  - Contrast Toggles (Standard Light, High-Contrast Black/Yellow)
-  - Screen Reader Direct Jump links (`Przejdź do treści głównej`, `Deklaracja dostępności`).
-- Renders in high-contrast navy `#0F2D59` with crisp white buttons and unmistakable active underline indicators.
+### Accessibility Bar & Public Header
+- Positioned at the very top of the layout on `#ffffff` with a subtle bottom divider.
+- Houses the Biuletyn Informacji Publicznej (BIP) emblem, language switcher, high-contrast toggle (`A`), and three progressive text-scaling buttons (`A-`, `A`, `A+`).
+- Next to it sits the official regional coat-of-arms (Małopolska) and institutional identity.
 
 ### Buttons
-- **Primary**: Solid `#0F2D59` background, white text (`#FFFFFF`), min-height 48px, minimum horizontal padding `space-md` (20px), rounded-12px. Hover state deepens to `#0A1F3D`; focus triggers the dual amber focus outline.
-- **Secondary (Regional Callout)**: Solid `#C53030` background, white text (`#FFFFFF`), used exclusively for grant applications, submission deadlines, and urgent social announcements. Hover state shifts to `#9B2C2C`.
-- **Tertiary / Outlined**: Transparent background, 2px solid `#0F2D59`, `#0F2D59` text weight 600.
+- **Primary:** Solid `#0b3d75` fill, `#ffffff` text, `0.5rem` border-radius, `0.75rem 1.5rem` padding. On hover: shifts to `#0b62a4`.
+- **Secondary / Action:** Outlined in `#0b3d75` (1.5px solid) with white fill and blue text.
+- **Regional / Urgent:** Solid `#d1122a` fill, white text, reserved for critical calls for applications or deadlines.
+- **Interactive Links ("Więcej >"):** Inline flex row with a chevron icon, typed in `label-md`, hovering with an arrow translation of +4px.
 
-### Input Fields & Selects
-- 48px standard height, white background (`#FFFFFF`), 1.5px border `#CBD5E1`, internal horizontal padding 16px.
-- Labels sit persistently above the input field in `16px` semibold navy `#0F2D59` (never rely solely on disappearing placeholder text).
-- Error states enforce a 2px `#C53030` border alongside an unambiguous exclamation icon and red validation message text below.
+### Badges & Pill Tags
+- **Date Stamps:** `#fdf2f2` background with `#c91e2b` text, bold `label-sm` font, pill-rounded.
+- **Category / Division Tags:** `#ebf3fa` background with `#0b3d75` text, cleanly delineating topics such as "Adopcja", "Ekonomia Społeczna", or "Szkolenia".
 
-### Cards & Content Modules
-- Rendered in solid `#FFFFFF` with 1px border `#CBD5E1` and 12px corner radius.
-- Padding uses `space-md` (20px) on mobile scaling to `space-lg` (32px) on desktop.
-- Interactive cards provide an unmistakable 2px border color shift to `#0F2D59` on hover/focus, avoiding erratic transforms or scale animations.
+### Cards & Content Feeds
+- **News Item Card:** White background, `1px solid #e2e8f0`, `1rem` border radius, containing an optional 16:9 thumbnail, a red or blue date pill, an emphatic `headline-sm` title, and an excerpt capped at 3 lines.
+- **Side Rail Navigation:** Dark royal blue container (`#0b3d75`) with white text links separated by low-opacity dividers (`rgba(255, 255, 255, 0.15)`), active item highlighted with a left white bar.
 
-### Checkboxes & Radio Buttons
-- 24px x 24px minimum hit targets with a 48px touch wrapper.
-- 2px solid `#0F2D59` border in unchecked state, filling with `#0F2D59` and displaying an unmistakable high-contrast white checkmark icon upon selection.
-- Distinct inline descriptive text paired with explicit associated label tags.
+### Form Inputs & Checkboxes
+- **Text Inputs:** White background, `1px solid #cbd5e1`, `0.5rem` radius, padding `0.75rem 1rem`. Focus state triggers a crisp 3px ring in `#0b62a4`.
+- **Checkboxes & Radios:** 20px by 20px boxes, primary blue checked state with high-contrast white tick marks, fully navigable via keyboard Tab/Space controls.
 
-### Status Chips & Badges
-- 32px height, 6px corner radius, horizontal padding 12px.
-- Color combinations strictly verified for minimum 4.5:1 contrast:
-  - *Open Call / Active*: Teal background (`#E6FFFA`), `#0D766E` text.
-  - *Deadline Approaching*: Amber background (`#FEF3C7`), `#92400E` text.
-  - *Closed / Archived*: Slate background (`#F1F5F9`), `#334155` text.
+### Breadcrumbs
+- Placed directly beneath header titles, set in `body-sm` (`#4b5563`), with `/` or `>` dividers, terminating in a bolded current page label in `#1f2937`.

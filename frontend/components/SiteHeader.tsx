@@ -28,45 +28,39 @@ export function SiteHeader() {
   }, [pathname]);
 
   const item =
-    "min-h-12 px-space-md flex items-center rounded-lg text-body-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface aria-[current=page]:bg-primary-container aria-[current=page]:font-bold aria-[current=page]:text-on-primary";
+    "min-h-12 px-3 flex items-center rounded-lg text-body-md font-medium text-on-surface-variant hover:bg-surface-container hover:text-primary aria-[current=page]:bg-primary aria-[current=page]:font-semibold aria-[current=page]:text-on-primary";
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-surface/95 shadow-[0_1px_8px_rgba(0,0,0,0.06)] backdrop-blur-xl hc-edge">
+    <header className="sticky top-0 z-40 w-full border-b border-border-subtle bg-surface-container-lowest/95 shadow-sm backdrop-blur-md hc-edge">
       <div className="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-space-sm px-gutter-sm sm:px-gutter">
-        <Link href="/" className="flex min-w-0 items-center gap-space-sm rounded-lg py-2 sm:gap-space-md">
+        <Link href="/" className="flex min-w-0 items-center gap-3.5 rounded-lg py-2">
           {/* eslint-disable-next-line @next/next/no-img-element -- static svg logo */}
-          <img src="/logo.svg" alt="" width={128} height={32} className="h-10 w-auto shrink-0 md:h-8" />
+          <img src="/logo.svg" alt="" width={144} height={36} className="h-9 w-auto shrink-0" />
+          <span aria-hidden="true" className="hidden h-8 w-px bg-border-strong md:block" />
           {/* on phones the logo carries the name; the text stays for screen readers */}
           <span className="sr-only flex-col md:not-sr-only md:flex md:min-w-0">
-            <span className="text-headline-sm font-semibold leading-tight text-primary">
+            <span className="text-headline-sm font-bold leading-tight tracking-tight text-primary">
               Małopolski Hub Innowacji Społecznych
             </span>
-            <span className="text-label-md font-semibold leading-tight text-on-surface-variant">
+            <span className="text-body-sm font-medium leading-tight text-on-surface-variant">
               Regionalny Ośrodek Polityki Społecznej w Krakowie
             </span>
           </span>
         </Link>
-        <div className="flex shrink-0 items-center gap-space-xs">
+        <div className="flex shrink-0 items-center gap-3">
           <button
             type="button"
             aria-haspopup="dialog"
             aria-controls="site-menu"
             onClick={() => dialogRef.current?.showModal()}
-            className="flex min-h-12 items-center gap-space-xs rounded-lg bg-primary-container px-space-md text-label-lg font-semibold text-on-primary hover:bg-primary"
+            className="flex min-h-12 items-center gap-2 rounded-lg bg-primary px-4 text-label-md font-semibold text-on-primary shadow-sm hover:bg-primary-hover"
           >
-            <Icon name="menu" size={24} />
+            <Icon name="menu" size={22} />
             <span>Menu</span>
           </button>
-          <Link
-            href="/admin"
-            aria-label="Panel administratora"
-            title="Panel administratora"
-            className="flex size-12 items-center justify-center rounded-full"
-          >
-            <span className="flex size-8 items-center justify-center rounded-full bg-primary text-on-primary">
-              <Icon name="person" size={18} />
-            </span>
-          </Link>
+          <span aria-hidden="true" className="flex size-10 items-center justify-center rounded-full bg-primary text-on-primary shadow-sm">
+            <Icon name="person" />
+          </span>
         </div>
       </div>
 
@@ -80,14 +74,14 @@ export function SiteHeader() {
           if (e.target === e.currentTarget) e.currentTarget.close();
         }}
       >
-        <div className="flex h-full flex-col justify-between">
+        <div className="flex h-full flex-col">
           <div className="flex flex-col">
             <div className="mb-space-sm flex items-center justify-between border-b border-surface-container-highest pb-space-sm">
               <div className="flex flex-col">
-                <h2 id="site-menu-title" className="text-headline-sm font-semibold text-primary">
+                <h2 id="site-menu-title" className="text-headline-sm font-bold text-primary">
                   Nawigacja
                 </h2>
-                <span className="text-caption text-on-surface-variant">Małopolski Hub Innowacji</span>
+                <span className="text-body-sm text-on-surface-variant">Regionalny Ośrodek Polityki Społecznej</span>
               </div>
               <button
                 type="button"
@@ -111,7 +105,7 @@ export function SiteHeader() {
                         {n.label}
                       </Link>
                     ) : (
-                      <span className="flex min-h-12 items-center justify-between gap-2 px-space-md text-body-lg text-on-surface-variant">
+                      <span className="flex min-h-12 items-center justify-between gap-2 px-space-md text-body-md text-on-surface-variant">
                         {n.label}
                         <span className="rounded bg-surface-container px-2 py-0.5 text-caption">wkrótce</span>
                       </span>
@@ -119,25 +113,6 @@ export function SiteHeader() {
                   </li>
                 ))}
               </ul>
-            </nav>
-          </div>
-          <div className="mt-space-md flex flex-col gap-space-xs border-t border-surface-container-highest pt-space-md">
-            <div className="flex items-center justify-between px-space-xs">
-              <span className="text-label-md font-semibold uppercase tracking-wider text-on-surface-variant">
-                Strefa Urzędu
-              </span>
-              <span className="rounded bg-secondary-fixed px-2 py-0.5 text-caption font-bold text-on-secondary-fixed">
-                tylko dla ROPS
-              </span>
-            </div>
-            <nav aria-label="Strefa Urzędu">
-              <Link
-                href="/admin"
-                className={item}
-                aria-current={isActive(pathname, "/admin") ? "page" : undefined}
-              >
-                Panel administratora
-              </Link>
             </nav>
           </div>
         </div>

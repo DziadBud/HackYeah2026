@@ -47,7 +47,8 @@ New features go in new route folders so devs rarely edit the same file.
 
 ## Accessibility (WCAG 2.1 AA is 20% of the score)
 
-- Use the tokens (`text-body-lg`, `bg-primary`, ...), never raw colours or px font sizes: high contrast and A+/A++ depend on them.
+- Use the tokens (`text-body-md`, `bg-primary`, `border-border-subtle`, ...), never raw colours or px font sizes: high contrast and the A+ text size depend on them.
 - Every boxed surface gets `hc-edge` so it keeps an outline in high contrast.
 - Icons via `<Icon name=...>` (always aria-hidden); new glyph -> add to `scripts/fetch-icons.sh` and run it.
-- Visible label for every field, min 48 px targets, no text under 14 px, feedback via `role="status"`.
+- Visible label for every field, form borders in `border-outline` (subtle borders fail 1.4.11), targets min 44 px, 12 px only for tags and meta, feedback via `role="status"`.
+- The admin panel is reachable only by url (`/admin`); do not link it from public pages.

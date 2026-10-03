@@ -24,7 +24,7 @@ frontend/
     page.tsx                    # public UI: chat (problem -> matched innovations)
     innowacje/page.tsx          # innovation library
     innowacje/[id]/page.tsx     # innovation detail: description, community threads, test sign-up
-    admin/page.tsx              # admin panel (login off for the demo, see §6)
+    admin/page.tsx              # admin panel, only by url (login off for the demo, see §6)
     deklaracja-dostepnosci/     # accessibility statement
     globals.css                 # tailwind entry + design tokens, high-contrast and text-scale modes
     fonts/                      # self-hosted icon font subset (scripts/fetch-icons.sh)
@@ -36,7 +36,7 @@ frontend/
   Makefile                      # install / dev / build / lint / up / down
 ```
 
-UI follows the Stitch mockups in [stitch/](stitch/) and the tokens in [DESIGN.md](DESIGN.md).
+UI follows the Stitch mockups in [stitch/v2/](stitch/v2/) (chat, innovation detail) and the "Małopolska Public Trust" tokens in [DESIGN.md](DESIGN.md). The home page opens with the mockup's example exchange (marked as an example); the first real question replaces it.
 
 As features land, each gets its own route folder (`app/issues/`, `app/ideas/`, `app/admin/reports/`, …) so devs rarely edit the same file — same rule as the backend.
 
@@ -74,11 +74,12 @@ See the repo [README](../../README.md) for the full run guide.
 
 ## 6. Accessibility (WCAG 2.1 AA, 20% of the score)
 
-- Toolbar on every page: skip link, accessibility statement, text size A / A+ / A++ (scales the root font, all sizes are rem), high contrast (black / yellow / white, remaps the colour tokens), read aloud (Web Speech API, reads the selection or `main`). Preferences persist in `localStorage` and apply before hydration.
-- Atkinson Hyperlegible Next, body 18 px, nothing under 14 px; targets at least 48 px.
-- Dual focus ring (amber outline + navy halo) on `:focus-visible`; form fields have a 4.6:1 border (DESIGN.md's `#CBD5E1` fails 1.4.11, so we use `outline`).
+- Toolbar on every page: skip link, link to the accessibility statement, text size (one A+ button cycling 100 / 115 / 130 %, all sizes are rem), high contrast (black / yellow / white, remaps the colour tokens), read aloud (Web Speech API, reads the selection or `main`), search (library). Preferences persist in `localStorage` and apply before hydration.
+- Public Sans, body 16 px; 12 px only for tags and metadata. Targets at least 44 px.
+- Focus ring from DESIGN.md: 3 px `#0b62a4` with a white 2 px gap, on `:focus-visible`. Form fields use `#64748b` borders (4.8:1); DESIGN.md's `#e2e8f0` fails 1.4.11, so it stays on decorative card edges only.
 - Landmarks and headings on every page, labelled forms, `role="status"` for feedback, `role="log"` for the chat, native `<dialog>` for the menu (focus trap, Esc).
-- `prefers-reduced-motion` respected. Icons are always `aria-hidden`.
+- `prefers-reduced-motion` respected. Icons are always `aria-hidden`; the icon font and Public Sans are self-hosted (no Google request at runtime).
+- The admin panel is not linked from public pages; it is reachable at `/admin` only.
 - Checked with axe-core (tags wcag2a/aa, wcag21a/aa) on every page, desktop and 390 px, normal and high contrast: 0 violations. Manual screen reader pass still to do.
 
 ### Demo integration
