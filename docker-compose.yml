@@ -31,7 +31,7 @@ services:
       ADMIN_ACCOUNTS: ${ADMIN_ACCOUNTS:-{}}
       DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
-      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-2.0-flash}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
     ports:
       - "${API_PORT:-8000}:8000"
     depends_on:
