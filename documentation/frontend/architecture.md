@@ -20,7 +20,7 @@ Principle (same as backend): build the smallest thing that covers the requiremen
 ```
 frontend/
   app/
-    layout.tsx                  # shell: a11y toolbar, header + menu, footer, fonts
+    layout.tsx                  # shell: TopBar (a11y + header) + compact SiteFooter, fonts
     page.tsx                    # public UI: chat (problem -> matched innovations, similar problems, idea form)
     innowacje/page.tsx          # innovation library
     innowacje/[id]/page.tsx     # innovation detail: description, community threads, pointer to test sign-up
@@ -31,7 +31,7 @@ frontend/
     deklaracja-dostepnosci/     # accessibility statement
     globals.css                 # tailwind entry + design tokens, high-contrast and text-scale modes
     fonts/                      # self-hosted icon font subset (scripts/fetch-icons.sh)
-  components/                   # A11yToolbar, SiteHeader, SiteFooter, InnovationCard, chat/, innovation/, admin/
+  components/                   # TopBar, A11yToolbar, SiteHeader, SiteFooter, InnovationCard, chat/, innovation/, admin/
   lib/api.ts                    # typed match-api client (the only place that knows the API)
   lib/labels.ts                 # polish labels for backend enums (challenge areas, readiness, cost)
   lib/demo-data.ts              # public fallback, shown only when match-api is unreachable
@@ -42,9 +42,9 @@ frontend/
 
 UI follows the Stitch mockups in [stitch/](stitch/) and the tokens in [DESIGN.md](DESIGN.md).
 
-The header has the logo, the site name and the menu button. The drawer links to `/` and `/innowacje` and lists the planned sections ("Mapa wyzwań Małopolski", "Moje zgłoszenia") under "Wkrótce". The public site has no link to `/admin`; ROPS staff open it by URL.
+Shared chrome lives in `TopBar` (A11yToolbar + SiteHeader) and a compact `SiteFooter` (only the "Deklaracja dostępności" link), so chat stays the focus of the first viewport. The header has the logo, the site name and a circular menu button (person icon). The drawer links to `/` and `/innowacje` and lists the planned sections ("Mapa wyzwań Małopolski", "Moje zgłoszenia") under "Wkrótce". The public site has no link to `/admin`; ROPS staff open it by URL. The a11y strip links to the accessibility statement as "Dla osób z niepełnosprawnościami"; the footer repeats "Deklaracja dostępności".
 
-The home page is a regular page, not a full-height chat: intro, then the conversation, then the input box (not sticky, so it never covers answers). The "Nie wiesz, od czego zacząć?" quick actions show only before the first message. Sending scrolls the question to the top so the answer appears under it. The chat takes text only, with no file attachments.
+The home page is a regular page, not a full-height chat: hero (greeting, "O nas / Czym jest Hub", three quick-action cards), then the conversation, then the input box (not sticky, so it never covers answers). Quick actions show only before the first message and insert a prompt template into the field. Sending scrolls the question to the top so the answer appears under it. The chat takes text only, with no file attachments.
 
 ## Public UI
 
@@ -110,7 +110,7 @@ See the repo [README](../../README.md) for the full run guide.
 
 ## 6. Accessibility (WCAG 2.1 AA, 20% of the score)
 
-- Toolbar on every page: skip link, accessibility statement, text size A / A+ / A++ (scales the root font, all sizes are rem), high contrast (black / yellow / white, remaps the colour tokens), read aloud (Web Speech API, reads the selection or `main`). Preferences persist in `localStorage` and apply before hydration.
+- Toolbar on every page: skip link, "Dla osób z niepełnosprawnościami" (accessibility statement), text size A / A+ / A++ (scales the root font, all sizes are rem), high contrast (black / yellow / white, remaps the colour tokens), read aloud (Web Speech API, reads the selection or `main`). Preferences persist in `localStorage` and apply before hydration. Compact site footer also links to the statement.
 - Atkinson Hyperlegible Next, body 18 px, nothing under 14 px; targets at least 48 px.
 - Dual focus ring (amber outline + navy halo) on `:focus-visible`; form fields have a 4.6:1 border (DESIGN.md's `#CBD5E1` fails 1.4.11, so we use `outline`).
 - Landmarks and headings on every page, labelled forms, `role="status"` for feedback, `role="log"` for the chat, native `<dialog>` for the menu (focus trap, Esc).

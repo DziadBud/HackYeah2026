@@ -120,7 +120,7 @@ export function A11yToolbar() {
             |
           </span>
           <Link className="flex min-h-12 items-center rounded px-space-xs hover:underline" href="/deklaracja-dostepnosci">
-            Deklaracja dostępności
+            Dla osób z niepełnosprawnościami
           </Link>
         </div>
         <div className="flex flex-wrap items-center gap-space-xs" role="group" aria-label="Ustawienia dostępności">

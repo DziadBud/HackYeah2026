@@ -49,11 +49,11 @@ export function SiteHeader() {
             type="button"
             aria-haspopup="dialog"
             aria-controls="site-menu"
+            aria-label="Otwórz menu"
             onClick={() => dialogRef.current?.showModal()}
-            className="flex min-h-12 items-center gap-space-xs rounded-lg bg-primary-container px-space-md text-label-lg font-semibold text-on-primary hover:bg-primary"
+            className="flex size-12 items-center justify-center rounded-full bg-primary-container text-on-primary hover:bg-primary"
           >
-            <Icon name="menu" size={24} />
-            <span>Menu</span>
+            <Icon name="person" size={24} />
           </button>
         </div>
       </div>

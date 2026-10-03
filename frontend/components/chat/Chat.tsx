@@ -51,6 +51,7 @@ const QUICK_ACTIONS = [
 const IDEA_ACTION = "Mam pomysł";
 const TESTER_ACTION = "Chcę testować";
 const TESTER_PROMPT = QUICK_ACTIONS.find((a) => a.title === TESTER_ACTION)!.prompt;
+const HERO_ACTIONS = QUICK_ACTIONS.filter((a) => a.title !== "Jestem z instytucji");
 
 const FOLLOW_UP = "\n\nGmina lub miejscowość: \nKogo dotyczy problem: \nCo już próbowaliście: ";
 
@@ -216,25 +217,66 @@ export function Chat() {
   }
 
   const secondaryBtn =
-    "flex min-h-12 grow items-center justify-center gap-space-xs rounded-lg px-space-md py-2 text-center text-body-md font-bold text-primary sm:grow-0";
+    "flex min-h-12 grow items-center justify-center gap-space-xs rounded-full border border-outline bg-surface-container-low px-space-md py-2 text-center text-body-md font-bold text-primary hover:bg-surface-container-high sm:grow-0 hc-edge";
+
+  const activePrompt = QUICK_ACTIONS.find((a) => input.startsWith(a.prompt.trim()))?.title;
 
   return (
-    <div className="mx-auto flex w-full max-w-[820px] flex-col gap-space-lg py-space-md">
+    <div className="mx-auto flex w-full max-w-[820px] flex-col gap-space-md py-space-md">
       <section
         aria-labelledby="chat-welcome-heading"
-        className="flex flex-col gap-space-sm rounded-xl bg-surface-container-low p-space-md shadow-sm hc-edge md:p-space-lg"
+        className="flex flex-col gap-space-md rounded-xl bg-surface-container-low p-space-md shadow-sm hc-edge md:p-space-lg"
       >
-        <p className="flex items-center gap-space-xs text-label-lg font-semibold text-primary">
-          <Icon name="smart_toy" fill />
-          <span>Inteligentny Asystent Społeczny • ROPS Kraków</span>
-        </p>
-        <h1 id="chat-welcome-heading" className="text-headline-lg-mobile font-bold tracking-tight text-primary sm:text-headline-lg">
-          Dzień dobry! W czym mogę pomóc?
-        </h1>
-        <p className="max-w-2xl text-body-lg text-on-surface-variant">
-          Opisz problem w swojej okolicy, zapytaj o innowacje albo podziel się pomysłem. System pomoże Ci dobrać
-          przetestowane modele wsparcia z Małopolski.
-        </p>
+        <div className="flex flex-col gap-space-sm">
+          <p className="flex items-center gap-space-xs text-label-lg font-semibold uppercase tracking-wide text-primary">
+            <Icon name="smart_toy" fill />
+            <span>Inteligentny Asystent Społeczny • ROPS Kraków</span>
+          </p>
+          <h1 id="chat-welcome-heading" className="text-headline-lg-mobile font-bold tracking-tight text-primary sm:text-headline-lg">
+            Dzień dobry! W czym mogę pomóc?
+          </h1>
+          <p className="max-w-2xl text-body-lg text-on-surface-variant">
+            Opisz problem w swojej okolicy, zapytaj o innowacje albo podziel się pomysłem. System pomoże Ci dobrać
+            przetestowane modele wsparcia z Małopolski.
+          </p>
+          <a
+            href="#o-hubie"
+            className="inline-flex min-h-12 w-fit items-center gap-space-xs rounded-lg border border-outline bg-surface-container-lowest px-space-md text-body-md font-bold text-primary hover:bg-surface-container-high hc-edge"
+          >
+            O nas / Czym jest Hub
+            <Icon name="arrow_forward" size={20} />
+          </a>
+        </div>
+
+        {messages.length === 0 && (
+          <ul className="grid grid-cols-1 gap-space-sm sm:grid-cols-3">
+            {HERO_ACTIONS.map((a) => {
+              const selected = activePrompt === a.title || (a.title === TESTER_ACTION && tester && !activePrompt);
+              return (
+                <li key={a.title}>
+                  <button
+                    type="button"
+                    aria-pressed={selected}
+                    onClick={() => {
+                      if (a.title === IDEA_ACTION) return openIdeaForm();
+                      if (a.title === TESTER_ACTION) setTester(true);
+                      fillPrompt(a.prompt, "Wstawiono szablon zapytania do pola tekstowego");
+                    }}
+                    className={`group flex h-full w-full flex-col items-start gap-space-xs rounded-xl bg-surface-container-lowest p-space-md text-left shadow-sm hover:bg-surface-container-high hc-edge ${
+                      selected ? "border-2 border-primary" : "border border-transparent"
+                    }`}
+                  >
+                    <span className="flex size-12 items-center justify-center rounded-lg bg-surface-container text-primary group-hover:bg-primary group-hover:text-on-primary">
+                      <Icon name={a.icon} size={28} />
+                    </span>
+                    <span className="text-body-lg font-bold text-primary">{a.title}</span>
+                    <span className="text-caption text-on-surface-variant">{a.desc}</span>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </section>
 
       <section aria-labelledby="chat-log-heading" className="flex flex-col gap-space-lg" hidden={messages.length === 0 && !pending}>
@@ -315,13 +357,13 @@ export function Chat() {
 
       <section
         aria-labelledby="chat-input-heading"
-        className="flex flex-col gap-space-sm rounded-xl bg-surface-container-lowest p-space-md shadow-xl hc-edge"
+        className="flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-xl hc-edge"
       >
         <h2 id="chat-input-heading" className="sr-only">
           Napisz wiadomość
         </h2>
         <form
-          className="flex flex-col gap-space-sm"
+          className="flex flex-col gap-space-sm p-space-md"
           onSubmit={(e) => {
             e.preventDefault();
             void send();
@@ -329,7 +371,7 @@ export function Chat() {
         >
           <div className="flex flex-col gap-1">
             <label htmlFor="chat-message-input" className="text-body-md font-bold text-primary">
-              Opisz swój problem lub zadaj pytanie:
+              Twoje pytanie lub opis wyzwania społecznego:
             </label>
             <textarea
               ref={textareaRef}
@@ -392,45 +434,45 @@ export function Chat() {
             )}
           </div>
           <div className="flex flex-wrap items-center gap-space-xs pt-space-xs">
-            <button
-              type="button"
-              onClick={completeWithAi}
-              className={`${secondaryBtn} bg-surface-container-high hover:bg-surface-variant hc-edge`}
-            >
+            <button type="button" onClick={completeWithAi} className={secondaryBtn}>
               <Icon name="auto_awesome" size={22} fill className="text-secondary" />
-              <span>Podpowiedz, co dopisać</span>
+              <span>Dopełnij tekst z AI</span>
             </button>
             <button
               type="button"
               onClick={toggleRecording}
               aria-pressed={recording}
-              className={`${secondaryBtn} bg-surface-container-high hover:bg-surface-variant aria-pressed:bg-secondary-fixed aria-pressed:text-on-secondary-fixed hc-edge`}
+              className={`${secondaryBtn} aria-pressed:bg-secondary-fixed aria-pressed:text-on-secondary-fixed`}
             >
               <Icon name={recording ? "stop_circle" : "mic"} size={22} className="text-secondary" />
               <span>{recording ? "Zatrzymaj nagrywanie" : "Nagraj"}</span>
-            </button>
-            <button
-              type="button"
-              aria-expanded={ideaOpen}
-              aria-controls="idea-form"
-              onClick={openIdeaForm}
-              className={`${secondaryBtn} bg-surface-container-high hover:bg-surface-variant hc-edge`}
-            >
-              <Icon name="lightbulb" size={22} className="text-secondary" />
-              <span>Zgłoś pomysł</span>
             </button>
             <button
               type="submit"
               aria-disabled={pending}
               className="flex min-h-12 w-full items-center justify-center gap-space-xs rounded-lg bg-primary px-space-md py-2 text-center text-body-lg font-bold text-on-primary shadow-md hover:bg-primary-container aria-disabled:cursor-wait aria-disabled:opacity-80 sm:ml-auto sm:w-auto sm:px-space-lg"
             >
-              <span>{pending ? "Szukam…" : "Wyszukaj innowację"}</span>
               <Icon name="search" size={22} />
+              <span>{pending ? "Szukam…" : "Wyszukaj innowację"}</span>
             </button>
           </div>
         </form>
-        <p role="status" className="text-body-md font-semibold text-primary empty:sr-only">
-          {status}
+        <p
+          role="status"
+          className={
+            status
+              ? "flex min-h-12 items-center gap-space-xs border-t border-surface-container bg-surface-container-low px-space-md text-body-md font-semibold text-primary"
+              : "sr-only"
+          }
+        >
+          {status ? (
+            <>
+              <Icon name="place" size={18} className="shrink-0 text-secondary" />
+              <span>{status}</span>
+            </>
+          ) : (
+            "\u00a0"
+          )}
         </p>
       </section>
 
@@ -451,38 +493,7 @@ export function Chat() {
         </div>
       )}
 
-      {messages.length === 0 && (
-        <section aria-labelledby="quick-actions-heading" className="flex flex-col gap-space-sm">
-          <h2 id="quick-actions-heading" className="text-headline-sm font-semibold text-primary">
-            Nie wiesz, od czego zacząć?
-          </h2>
-          <ul className="grid grid-cols-1 gap-space-sm sm:grid-cols-2">
-            {QUICK_ACTIONS.map((a) => (
-              <li key={a.title}>
-                <button
-                  type="button"
-                  onClick={() => {
-                    if (a.title === IDEA_ACTION) return openIdeaForm();
-                    if (a.title === TESTER_ACTION) setTester(true);
-                    fillPrompt(a.prompt, `Wstawiono szablon: ${a.title}. Dokończ opis i wyślij.`);
-                  }}
-                  className="group flex h-full w-full items-start gap-space-sm rounded-xl bg-surface-container-lowest p-space-md text-left shadow-sm hover:bg-surface-container-high hc-edge"
-                >
-                  <span className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-surface-container text-primary group-hover:bg-primary group-hover:text-on-primary">
-                    <Icon name={a.icon} size={28} />
-                  </span>
-                  <span className="flex min-w-0 flex-col">
-                    <span className="text-body-lg font-bold text-primary">{a.title}</span>
-                    <span className="mt-0.5 text-caption text-on-surface-variant">{a.desc}</span>
-                  </span>
-                </button>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      <section id="o-hubie" aria-labelledby="o-hubie-heading" className="flex flex-col gap-space-xs rounded-xl bg-surface-container-low p-space-md hc-edge md:p-space-lg">
+      <section id="o-hubie" aria-labelledby="o-hubie-heading" className="scroll-mt-28 flex flex-col gap-space-xs py-space-sm">
         <h2 id="o-hubie-heading" className="text-headline-sm font-semibold text-primary">
           Czym jest Małopolski Hub Innowacji Społecznych?
         </h2>

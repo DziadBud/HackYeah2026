@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Atkinson_Hyperlegible_Next } from "next/font/google";
 import localFont from "next/font/local";
-import { A11yToolbar, PREFS_BOOTSTRAP } from "@/components/A11yToolbar";
+import { PREFS_BOOTSTRAP } from "@/components/A11yToolbar";
 import { SiteFooter } from "@/components/SiteFooter";
-import { SiteHeader } from "@/components/SiteHeader";
+import { TopBar } from "@/components/TopBar";
 import "./globals.css";
 
 // typeface from the design system: disambiguates I / l / 1, full polish diacritics
@@ -42,8 +42,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script dangerouslySetInnerHTML={{ __html: PREFS_BOOTSTRAP }} />
       </head>
       <body className="flex min-h-screen flex-col antialiased">
-        <A11yToolbar />
-        <SiteHeader />
+        <TopBar />
         <main id="main-content" tabIndex={-1} className="mx-auto w-full max-w-7xl flex-1 px-gutter-sm sm:px-gutter">
           {children}
         </main>

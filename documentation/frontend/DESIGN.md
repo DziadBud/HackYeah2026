@@ -212,7 +212,7 @@ The design system implements a consistent **Level 2 (Rounded)** shape language:
 - Houses dedicated controls for:
   - Text Size Adjustment (`A-`, `Standard`, `A+`, `A++`)
   - Contrast Toggles (Standard Light, High-Contrast Black/Yellow)
-  - Screen Reader Direct Jump links (`Przejdź do treści głównej`, `Deklaracja dostępności`).
+  - Screen Reader Direct Jump links (`Przejdź do treści głównej`, `Dla osób z niepełnosprawnościami` → accessibility statement). Compact site footer repeats `Deklaracja dostępności`.
 - Renders in high-contrast navy `#0F2D59` with crisp white buttons and unmistakable active underline indicators.
 
 ### Buttons
