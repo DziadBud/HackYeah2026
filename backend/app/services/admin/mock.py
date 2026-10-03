@@ -26,6 +26,8 @@ from app.schemas.admin.innovations import (
 )
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
+from app.schemas.admin.threads import AdminReply, AdminThread
+from app.schemas.public.threads import ModerationStatus, ReplyKind
 from app.services.admin.errors import NotFoundError
 from app.services.admin.innovation_upload import NewInnovation
 from app.services.admin.interfaces import IdeaAdminService, ProblemReportAdminService
@@ -492,3 +494,63 @@ class MockReportAdminService:
                 best_match_similarity=0.31,
             )
         ]
+
+
+class MockThreadAdminService:
+    def __init__(self) -> None:
+        self._threads: dict[str, AdminThread] = {
+            "thread-1": AdminThread(
+                id="thread-1",
+                innovation_id="wibraap",
+                title="Czy kamizelka dziala z aparatem sluchowym?",
+                body="Pytam dla podopiecznych OPS.",
+                author_label="Anna (OPS Zakliczyn)",
+                email=None,
+                status=ModerationStatus.PENDING,
+                created_at=NOW - timedelta(hours=2),
+                replies=[],
+            ),
+            "thread-2": AdminThread(
+                id="thread-2",
+                innovation_id="straznik",
+                title="Wdrozenie w DPS",
+                body="Jak wyglada montaz czujnikow?",
+                author_label="DPS Skawina",
+                email="dps@example.com",
+                status=ModerationStatus.PUBLISHED,
+                created_at=NOW - timedelta(days=1),
+                replies=[
+                    AdminReply(
+                        id="reply-1",
+                        body="U nas trwal jeden dzien.",
+                        author_label="Fundacja Testowa",
+                        email=None,
+                        kind=ReplyKind.PRACTITIONER,
+                        status=ModerationStatus.PENDING,
+                        created_at=NOW - timedelta(hours=20),
+                    )
+                ],
+            ),
+        }
+
+    def list(self, status: ModerationStatus | None, innovation_id: str | None) -> list[AdminThread]:
+        return [
+            t
+            for t in self._threads.values()
+            if (status is None or t.status == status or any(r.status == status for r in t.replies))
+            and (innovation_id is None or t.innovation_id == innovation_id)
+        ]
+
+    def set_status(self, thread_id: str, status: ModerationStatus) -> AdminThread:
+        if thread_id not in self._threads:
+            raise NotFoundError(thread_id)
+        self._threads[thread_id] = self._threads[thread_id].model_copy(update={"status": status})
+        return self._threads[thread_id]
+
+    def set_reply_status(self, reply_id: str, status: ModerationStatus) -> AdminReply:
+        for thread in self._threads.values():
+            for i, reply in enumerate(thread.replies):
+                if reply.id == reply_id:
+                    thread.replies[i] = reply.model_copy(update={"status": status})
+                    return thread.replies[i]
+        raise NotFoundError(reply_id)

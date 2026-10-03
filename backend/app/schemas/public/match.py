@@ -12,8 +12,6 @@ class MatchedInnovation(BaseModel):
     id: str
     title: str
     summary: str
-    # llm explanation of the fit; null when the llm is down
-    why: str | None
     tags: list[str]
     city: str
 
@@ -28,6 +26,8 @@ class SimilarProblemReport(BaseModel):
 
 class MatchResponse(BaseModel):
     problem_report_id: str
+    # rag's llm summary of the problem; one for the whole result, not per innovation
+    answer: str
     innovations: list[MatchedInnovation]
     similar_reports: list[SimilarProblemReport]
     # one per matched innovation when ?test_signup=true

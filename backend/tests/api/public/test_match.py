@@ -1,5 +1,9 @@
 import pytest
 
+from app.main import app
+from app.services.admin.errors import UpstreamUnavailableError
+from app.services.public import deps
+
 QUERY = {"text": "Osoby niesłyszące nie słyszą alarmów pożarowych", "city": "Krakow"}
 
 
@@ -9,7 +13,7 @@ def test_match_returns_innovations_and_stores_report(client) -> None:
     assert res.status_code == 200
     body = res.json()
     assert body["innovations"][0]["id"] == "straznik"
-    assert body["innovations"][0]["why"]
+    assert body["answer"]
     assert body["test_signup_ids"] == []
     report = client.get(f"/problem-reports/{body['problem_report_id']}").json()
     assert report["text"] == QUERY["text"]
@@ -34,3 +38,12 @@ def test_match_with_test_signup(client, extra, want) -> None:
 
 def test_match_rejects_short_text(client) -> None:
     assert client.post("/match", json={"text": "a"}).status_code == 422
+
+
+def test_match_rag_down_503(client) -> None:
+    class RagDown:
+        def match(self, data, test_signup):
+            raise UpstreamUnavailableError("rag query failed: timeout")
+
+    app.dependency_overrides[deps.get_match_service] = lambda: RagDown()
+    assert client.post("/match", json=QUERY).status_code == 503

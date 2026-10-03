@@ -5,8 +5,7 @@ from app.schemas.admin.grant_calls import GrantCall
 from app.schemas.admin.innovations import Innovation
 from app.schemas.public.documents import MiddlemanRequest
 
-# stand-ins for rag retrieval and the llm, shared by the mock and db services until the
-# rag client and llm prompts land
+# stand-ins for the llm (middleman, grant drafts) and for rag retrieval in the mock services
 
 
 def words(text: str) -> set[str]:

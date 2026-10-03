@@ -1,5 +1,7 @@
 from typing import Protocol
 
+from app.clients.rag import RagAnswer
+
 from app.schemas.admin.common import ChallengeArea, Page
 from app.schemas.admin.grant_calls import GrantCall
 from app.schemas.public.documents import GeneratedDocument, MiddlemanRequest
@@ -15,7 +17,11 @@ from app.schemas.public.threads import (
 )
 
 
-# R1: rag retrieval + llm explanation; stores a problem report, optional test signups
+class Retriever(Protocol):
+    def query(self, text: str, top_k: int) -> RagAnswer: ...
+
+
+# R1: rag retrieval + llm answer; stores a problem report, optional test signups
 class MatchService(Protocol):
     def match(self, data: MatchRequest, test_signup: bool) -> MatchResponse: ...
 

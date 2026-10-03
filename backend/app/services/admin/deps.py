@@ -20,6 +20,7 @@ from app.services.admin.db import (
     DbInnovationStore,
     DbProblemReportAdminService,
     DbReportAdminService,
+    DbThreadAdminService,
 )
 from app.services.admin.innovation_upload import InnovationUploadService
 from app.services.admin.interfaces import (
@@ -29,6 +30,7 @@ from app.services.admin.interfaces import (
     InnovationAdminService,
     ProblemReportAdminService,
     ReportAdminService,
+    ThreadAdminService,
 )
 from app.storage import LocalFileStorage
 
@@ -80,12 +82,16 @@ def get_report_service(db: Session = Depends(get_db)) -> ReportAdminService:
     return DbReportAdminService(db)
 
 
+def get_thread_service(db: Session = Depends(get_db)) -> ThreadAdminService:
+    return DbThreadAdminService(db)
+
+
 # own short sessions inside the store: the row must be committed before rag embeds it
 @cache
 def get_innovation_upload_service() -> InnovationUploadService:
     return InnovationUploadService(
         store=DbInnovationStore(SessionLocal),
         files=LocalFileStorage(Path(settings.upload_dir)),
-        rag=RagClient(settings.rag_url, settings.rag_timeout_seconds),
+        rag=RagClient(settings.rag_url, settings.rag_timeout_seconds, settings.rag_query_timeout_seconds),
         max_bytes=settings.max_upload_bytes,
     )

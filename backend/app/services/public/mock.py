@@ -26,7 +26,7 @@ from app.schemas.public.threads import (
     ThreadCreate,
 )
 from app.services.admin.errors import InvalidRequestError, NotFoundError
-from app.services.public.drafts import explain_fit, grant_draft, middleman_card, overlap, words
+from app.services.public.drafts import grant_draft, middleman_card, overlap, words
 from app.services.admin.mock import (
     MockGrantCallAdminService,
     MockIdeaAdminService,
@@ -105,12 +105,12 @@ class MockMatchService:
 
         return MatchResponse(
             problem_report_id=report.id,
+            answer="Zgłoszenie dotyczy problemu opisanego przez mieszkańca.",
             innovations=[
                 MatchedInnovation(
                     id=i.id,
                     title=i.title,
                     summary=i.summary,
-                    why=explain_fit(i),
                     tags=[f"area:{a.value}" for a in i.challenge_areas],
                     city=i.city,
                 )

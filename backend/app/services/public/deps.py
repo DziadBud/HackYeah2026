@@ -2,6 +2,8 @@
 from fastapi import Depends
 from sqlalchemy.orm import Session
 
+from app.clients.rag import RagClient
+from app.config import settings
 from app.db.session import get_db
 from app.services.public.db import (
     DbDocumentService,
@@ -23,8 +25,11 @@ from app.services.public.interfaces import (
 )
 
 
+_rag = RagClient(settings.rag_url, settings.rag_timeout_seconds, settings.rag_query_timeout_seconds)
+
+
 def get_match_service(db: Session = Depends(get_db)) -> MatchService:
-    return DbMatchService(db)
+    return DbMatchService(db, _rag)
 
 
 def get_problem_report_service(db: Session = Depends(get_db)) -> ProblemReportService:
