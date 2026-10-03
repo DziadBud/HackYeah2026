@@ -174,8 +174,8 @@ class Notifier:
 def build_mailer(
     host: str, port: int, sender: str, username: str = "", password: str = ""
 ) -> Mailer | None:
-    # no smtp host = notifications off (tests, local runs without mailpit)
-    return SmtpMailer(host, port, sender, username, password) if host else None
+    # no smtp host or sender = notifications off (tests, local runs without mail config)
+    return SmtpMailer(host, port, sender, username, password) if host and sender else None
 
 
 _mailer = build_mailer(

@@ -170,4 +170,5 @@ def test_redirect_sends_everything_to_one_inbox() -> None:
 
 def test_build_mailer_off_without_host() -> None:
     assert build_mailer("", 1025, "hub@example.org") is None
+    assert build_mailer("mailpit", 1025, "") is None
     assert isinstance(build_mailer("mailpit", 1025, "hub@example.org"), SmtpMailer)

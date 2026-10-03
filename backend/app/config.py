@@ -28,13 +28,14 @@ class Settings(BaseSettings):
     upload_dir: str = "/data/uploads"
     max_upload_bytes: int = 10 * 1024 * 1024
 
-    # notifications (R10/R12); empty smtp_host turns them off
+    # notifications (R10/R12); empty smtp_host or mail_from turns them off.
+    # no default addresses on purpose: a fallback could mail a real inbox by accident
     smtp_host: str = ""
     smtp_port: int = 1025
     # set for a real relay (gmail: 587, app password); empty for mailpit
     smtp_username: str = ""
     smtp_password: str = ""
-    mail_from: str = "hub-innowacji@example.org"
+    mail_from: str = ""
     admin_notify_email: str = ""
     # testing: send every notification here instead of the real recipient
     mail_redirect_to: str = ""
