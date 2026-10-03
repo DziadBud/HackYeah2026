@@ -30,8 +30,8 @@ export function IdeaForm({ initialSummary, onDone, onCancel }: { initialSummary:
   return (
     <section aria-labelledby="idea-form-heading" className="flex flex-col gap-space-sm rounded-xl bg-surface-container-lowest p-space-md shadow-xl hc-edge">
       <h2 id="idea-form-heading" className="flex items-center gap-2 text-headline-sm font-semibold text-primary">
-        <Icon name="lightbulb" />
-        Zgłoś własny pomysł lub innowację
+        <Icon name="send" />
+        Złóż wniosek: pomysł lub innowacja
       </h2>
       <p className="text-body-md text-on-surface-variant">
         Pomysł trafi do zespołu ROPS. Pola bez dopisku „opcjonalnie” są wymagane.
