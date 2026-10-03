@@ -23,6 +23,11 @@ class FakeAnswerService:
         return "Znaleziono innowację o identyfikatorze: wibraap."
 
 
+class FakeOllamaClient:
+    def generate(self, prompt: str) -> dict[str, str]:
+        return {"result": "tekst przetworzony"}
+
+
 class FakeVectorStore:
     def __init__(self) -> None:
         self.insert_kwargs: dict[str, object] = {}
@@ -118,6 +123,18 @@ def test_query_test_returns_innovation_by_id(monkeypatch):
     assert response.status_code == 200
     assert response.json()["innovation_id"] == "test-wibraap"
     assert response.json()["chunk_count"] == 1
+
+
+def test_llm_test_accepts_prompt_and_text(monkeypatch):
+    monkeypatch.setattr("app.main.ollama_client", FakeOllamaClient())
+
+    response = client.post(
+        "/llm/test",
+        json={"prompt": "Wyciągnij najważniejszą informację.", "text": "Tekst testowy."},
+    )
+
+    assert response.status_code == 200
+    assert response.json() == {"output": {"result": "tekst przetworzony"}}
 
 
 def test_query_rejects_empty_query():

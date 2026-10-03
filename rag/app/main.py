@@ -1,5 +1,6 @@
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from pydantic import BaseModel, Field
+from typing import Any
 from uuid import uuid4
 
 from app.services.chunking import split_text
@@ -7,6 +8,7 @@ from app.services.embedding import EmbeddingService
 from app.services.pdf import extract_pdf_text
 from app.services.tagging import TaggingService
 from app.services.answer import AnswerService
+from app.services.ollama import OllamaClient
 from app.services.vector_store import get_vector_store
 
 MAX_DOCUMENT_BYTES = 10 * 1024 * 1024
@@ -53,9 +55,19 @@ class TestEmbedRequest(BaseModel):
     text: str = Field(min_length=1, max_length=10_000)
 
 
+class LlmTestRequest(BaseModel):
+    prompt: str = Field(min_length=1, max_length=10_000)
+    text: str = Field(min_length=1, max_length=20_000)
+
+
+class LlmTestResponse(BaseModel):
+    output: Any
+
+
 app = FastAPI(title="HackYeah RAG API", version="0.1.0")
 embedding_service = EmbeddingService()
 answer_service = AnswerService()
+ollama_client = OllamaClient()
 
 
 @app.get("/health", tags=["health"])
@@ -114,6 +126,17 @@ def embed_test(request: TestEmbedRequest) -> EmbedResponse:
         )
     except RuntimeError as error:
         raise HTTPException(status_code=503, detail=str(error)) from error
+
+
+@app.post("/llm/test", response_model=LlmTestResponse, tags=["rag"])
+def llm_test(request: LlmTestRequest) -> LlmTestResponse:
+    try:
+        output = ollama_client.generate(
+            f"{request.prompt}\n\nTekst wejściowy:\n{request.text}"
+        )
+    except RuntimeError as error:
+        raise HTTPException(status_code=503, detail=str(error)) from error
+    return LlmTestResponse(output=output)
 
 
 def _embed_document(
