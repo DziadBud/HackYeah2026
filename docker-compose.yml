@@ -135,8 +135,8 @@ services:
         condition: service_completed_successfully
       embeddings:
         condition: service_started
-      ollama-init:
-        condition: service_completed_successfully
+      # ollama is optional (tagging / grounded answers). embeddings do not need it.
+      # start ollama separately if you want those features: docker compose up ollama ollama-init
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
       interval: 10s
