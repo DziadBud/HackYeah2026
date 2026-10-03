@@ -29,7 +29,7 @@ from app.schemas.admin.innovations import (
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import CriticalRow, GapRow, LocationRow, TrendRow
 from app.services.admin.errors import NotFoundError
-from app.services.admin.innovation_upload import NewInnovation, with_area_tags
+from app.services.admin.innovation_upload import NewInnovation, areas_from_tags, with_area_tags
 
 MIN_LOCATION_PROBLEM_REPORTS = 5
 # score = reports x distinct cities x 7d growth; over this a problem area is critical
@@ -47,11 +47,6 @@ def parse_uuid(value: str) -> uuid.UUID:
         raise NotFoundError(value) from None
 
 
-def _areas(values: list[str] | None) -> list[ChallengeArea]:
-    known = {a.value for a in ChallengeArea}
-    return [ChallengeArea(v) for v in values or [] if v in known]
-
-
 def _area(value: str | None) -> ChallengeArea | None:
     return ChallengeArea(value) if value in {a.value for a in ChallengeArea} else None
 
@@ -61,14 +56,9 @@ def innovation_to_schema(row: InnovationRow) -> Innovation:
         id=row.id,
         title=row.title,
         summary=row.summary,
-        problem=row.problem,
-        innovator=row.innovator,
-        challenge_areas=_areas(row.challenge_areas),
-        target_group=row.target_group,
-        readiness=row.readiness,
-        cost_level=row.cost_level,
+        challenge_areas=areas_from_tags(row.tags),
         city=row.city or "",
-        video_url=row.video_url,
+        page_url=row.page_url,
         status=PublicationStatus(row.status),
     )
 
@@ -130,10 +120,12 @@ class DbInnovationAdminService:
     def update(self, innovation_id: str, data: InnovationUpdate) -> Innovation:
         row = _get(self._db, InnovationRow, innovation_id, innovation_id)
         changes = data.model_dump(exclude_unset=True, mode="json")
-        for field, value in changes.items():
-            setattr(row, field, value)
+        # areas live in rag's tags, not in a column
         if "challenge_areas" in changes:
             row.tags = with_area_tags(row.tags, data.challenge_areas or [])
+            del changes["challenge_areas"]
+        for field, value in changes.items():
+            setattr(row, field, value)
         self._db.commit()
         return innovation_to_schema(row)
 
@@ -360,18 +352,10 @@ class DbInnovationStore:
                     id=innovation_id,
                     title=data.title,
                     summary=data.summary,
-                    problem=data.problem,
-                    innovator=data.innovator,
-                    challenge_areas=[a.value for a in data.challenge_areas],
-                    target_group=data.target_group,
-                    readiness=data.readiness.value,
-                    cost_level=data.cost_level.value,
                     tags=tags,
                     # rag's /query returns city as str, a null breaks it
                     city=data.city or "",
-                    image_url=data.image_url,
                     page_url=data.page_url,
-                    video_url=data.video_url,
                     status=PublicationStatus.DRAFT.value,
                 )
             )

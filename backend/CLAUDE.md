@@ -8,6 +8,8 @@ FastAPI service, worked on by 3 backend devs in parallel. Deps via `venv` + `pip
 - `make run`: uvicorn with reload on :8000
 - `make test`: pytest
 - `make up` / `make down`: docker compose
+- `make migrate`: re-apply the schema to the running db. The compose `migrate` service is the only schema runner: `rag/sql/*` then `backend/sql/*`, on every `up`, so each file must be idempotent (`IF NOT EXISTS`).
+- Schema ownership: each table/column is defined once. rag owns `innovations`, `innovation_chunks`, `feedback` (`rag/sql`, never edit); backend ORM models mirror their columns exactly. `backend/sql` holds only match-api tables, numbered `NNN_<table>.sql` without gaps.
 - `make openapi`: regenerate `documentation/api/openapi.json` (the API contract the frontend builds against) and `documentation/api/index.html` (Swagger page, open it in a browser)
 
 ## Layout

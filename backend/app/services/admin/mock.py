@@ -44,10 +44,6 @@ class MockInnovationAdminService:
                     title="Wibraap",
                     summary="Kamizelka wibracyjna i aplikacja zamieniajaca dzwiek na wibracje.",
                     challenge_areas=[ChallengeArea.DISABILITY],
-                    target_group=["osoby niesluchace", "osoby niedoslyszace"],
-                    readiness="prototype",
-                    cost_level="medium",
-                    video_url="https://example.com/wibraap.mp4",
                     status=PublicationStatus.PUBLISHED,
                 ),
                 Innovation(
@@ -55,9 +51,6 @@ class MockInnovationAdminService:
                     title="Straznik",
                     summary="Aplikacja wykrywajaca alarmy dzwiekowe i ostrzegajaca wibracjami.",
                     challenge_areas=[ChallengeArea.DISABILITY, ChallengeArea.SENIORS],
-                    target_group=["osoby niesluchace", "seniorzy"],
-                    readiness="pilot",
-                    cost_level="low",
                     status=PublicationStatus.PUBLISHED,
                 ),
                 Innovation(
@@ -65,9 +58,6 @@ class MockInnovationAdminService:
                     title="Paszport pacjenta z choroba rzadka",
                     summary="System IT z danymi pacjenta dostepnymi dla personelu medycznego.",
                     challenge_areas=[ChallengeArea.HEALTH],
-                    target_group=["pacjenci z chorobami rzadkimi"],
-                    readiness="concept",
-                    cost_level="high",
                     status=PublicationStatus.DRAFT,
                 ),
             ]
@@ -96,14 +86,9 @@ class MockInnovationAdminService:
             id=innovation_id,
             title=data.title,
             summary=data.summary,
-            problem=data.problem,
-            innovator=data.innovator,
             challenge_areas=data.challenge_areas,
-            target_group=data.target_group,
-            readiness=data.readiness,
-            cost_level=data.cost_level,
             city=data.city,
-            video_url=data.video_url,
+            page_url=data.page_url,
             status=PublicationStatus.DRAFT,
         )
 

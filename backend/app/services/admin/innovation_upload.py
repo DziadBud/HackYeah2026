@@ -7,7 +7,6 @@ from pathlib import Path
 from typing import Protocol
 
 from app.schemas.admin.common import ChallengeArea
-from app.schemas.admin.innovations import CostLevel, Readiness
 from app.services.admin.errors import InvalidUploadError, UploadTooLargeError
 
 logger = logging.getLogger(__name__)
@@ -19,17 +18,10 @@ PDF_MAGIC = b"%PDF-"
 class NewInnovation:
     title: str
     summary: str
-    problem: str
-    innovator: str
     challenge_areas: list[ChallengeArea]
-    readiness: Readiness
-    cost_level: CostLevel
-    target_group: list[str] = field(default_factory=list)
     tags: list[str] = field(default_factory=list)
     city: str = ""
     page_url: str | None = None
-    image_url: str | None = None
-    video_url: str | None = None
 
 
 @dataclass(frozen=True)
@@ -104,6 +96,15 @@ def with_area_tags(tags: list[str], areas: list[ChallengeArea]) -> list[str]:
     # rag only filters on tags, so the challenge areas are mirrored there as area:<slug>
     kept = [t for t in tags if not t.startswith("area:")]
     return list(dict.fromkeys([*kept, *(f"area:{_slug(a.value)}" for a in areas)]))
+
+
+def area_tag(area: ChallengeArea) -> str:
+    return f"area:{_slug(area.value)}"
+
+
+def areas_from_tags(tags: list[str] | None) -> list[ChallengeArea]:
+    by_tag = {area_tag(a): a for a in ChallengeArea}
+    return [by_tag[t] for t in tags or [] if t in by_tag]
 
 
 def _new_id(title: str) -> str:
