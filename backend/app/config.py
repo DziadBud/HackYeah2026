@@ -8,5 +8,13 @@ class Settings(BaseSettings):
     debug: bool = False
     cors_origins: list[str] = ["http://localhost:3000"]
 
+    # email -> argon2id hash, generate with `make hash-password`
+    admin_accounts: dict[str, str] = {}
+    admin_session_ttl_hours: int = 8
+    admin_session_idle_minutes: int = 30
+    admin_login_max_failures: int = 5
+    admin_login_window_minutes: int = 15
+    ip_hash_salt: str = ""
+
 
 settings = Settings()
