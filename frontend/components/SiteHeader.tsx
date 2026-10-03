@@ -5,14 +5,13 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { Icon } from "@/components/Icon";
 
-const NAV: { label: string; href?: string }[] = [
-  { label: "Czat (Strona główna)", href: "/" },
+const NAV: { label: string; href: string }[] = [
+  { label: "Strona główna – zapytaj asystenta", href: "/" },
   { label: "Biblioteka innowacji", href: "/innowacje" },
-  { label: "Mapa wyzwań Małopolski" },
-  { label: "Kreator pomysłów" },
-  { label: "Testuj innowacje" },
-  { label: "Moje zgłoszenia" },
 ];
+
+// planned sections, listed so the drawer shows where the hub is going
+const SOON = ["Mapa wyzwań Małopolski", "Moje zgłoszenia"];
 
 function isActive(pathname: string, href: string) {
   return href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -28,20 +27,19 @@ export function SiteHeader() {
   }, [pathname]);
 
   const item =
-    "min-h-12 px-space-md flex items-center rounded-lg text-body-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface aria-[current=page]:bg-primary-container aria-[current=page]:font-bold aria-[current=page]:text-on-primary";
+    "min-h-12 px-space-md flex items-center rounded-lg text-body-lg font-semibold text-on-surface hover:bg-surface-container-high aria-[current=page]:bg-primary-container aria-[current=page]:font-bold aria-[current=page]:text-on-primary";
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-surface/95 shadow-[0_1px_8px_rgba(0,0,0,0.06)] backdrop-blur-xl hc-edge">
+    <header className="sticky top-0 z-40 w-full bg-surface/95 shadow-sm backdrop-blur-xl hc-edge">
       <div className="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-space-sm px-gutter-sm sm:px-gutter">
         <Link href="/" className="flex min-w-0 items-center gap-space-sm rounded-lg py-2 sm:gap-space-md">
-          {/* eslint-disable-next-line @next/next/no-img-element -- static svg logo */}
-          <img src="/logo.svg" alt="" width={128} height={32} className="h-10 w-auto shrink-0 md:h-8" />
-          {/* on phones the logo carries the name; the text stays for screen readers */}
-          <span className="sr-only flex-col md:not-sr-only md:flex md:min-w-0">
-            <span className="text-headline-sm font-semibold leading-tight text-primary">
+          {/* eslint-disable-next-line @next/next/no-img-element -- static svg logo; only the mark is shown, the name is real text */}
+          <img src="/logo.svg" alt="" width={40} height={40} className="size-10 shrink-0 object-cover object-left" />
+          <span className="flex min-w-0 flex-col">
+            <span className="text-label-lg font-bold leading-tight text-primary md:text-headline-sm md:font-semibold">
               Małopolski Hub Innowacji Społecznych
             </span>
-            <span className="text-label-md font-semibold leading-tight text-on-surface-variant">
+            <span className="hidden text-label-md font-semibold leading-tight text-on-surface-variant md:block">
               Regionalny Ośrodek Polityki Społecznej w Krakowie
             </span>
           </span>
@@ -91,25 +89,22 @@ export function SiteHeader() {
             <nav aria-label="Główna">
               <ul className="flex flex-col gap-1">
                 {NAV.map((n) => (
-                  <li key={n.label}>
-                    {n.href ? (
-                      <Link
-                        href={n.href}
-                        className={item}
-                        aria-current={isActive(pathname, n.href) ? "page" : undefined}
-                      >
-                        {n.label}
-                      </Link>
-                    ) : (
-                      <span className="flex min-h-12 items-center justify-between gap-2 px-space-md text-body-lg text-on-surface-variant">
-                        {n.label}
-                        <span className="rounded bg-surface-container px-2 py-0.5 text-caption">wkrótce</span>
-                      </span>
-                    )}
+                  <li key={n.href}>
+                    <Link href={n.href} className={item} aria-current={isActive(pathname, n.href) ? "page" : undefined}>
+                      {n.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
             </nav>
+            <h3 className="mt-space-lg px-space-md text-label-md font-semibold text-on-surface-variant">Wkrótce</h3>
+            <ul className="flex flex-col gap-1">
+              {SOON.map((label) => (
+                <li key={label} className="flex min-h-12 items-center px-space-md text-body-md text-on-surface-variant">
+                  {label}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </dialog>

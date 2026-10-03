@@ -103,7 +103,7 @@ html[data-contrast="high"] {
   --color-surface-variant: #1a1a1a;
   --color-outline: #ffffff;
   --color-error: #ffeb3b;
-  --color-focus: #ffffff;
+  --color-focus: #ffeb3b;
 }
 
 /* without the soft tonal layers, boxes need a visible edge in high contrast */
@@ -137,6 +137,7 @@ html[data-contrast="high"] a {
     box-shadow: 0 0 0 2px var(--color-primary-container);
   }
   html[data-contrast="high"] :focus-visible {
+    outline-width: 4px;
     box-shadow: 0 0 0 2px #000000;
   }
 
@@ -171,6 +172,9 @@ html[data-contrast="high"] a {
   user-select: none;
   flex-shrink: 0;
   overflow: hidden;
+}
+.icon::before {
+  content: attr(data-icon);
 }
 .icon-fill {
   font-variation-settings: "FILL" 1;

@@ -17,9 +17,9 @@ Talks only to `match-api` over HTTP; it never touches the DB.
 - `app/layout.tsx`: shell, nav, global styles — no feature logic
 - `app/page.tsx`: public UI, chat (problem -> matched innovations)
 - `app/innowacje/`: innovation library and detail pages
-- `app/admin/`: admin UI (login off for the demo), one route per area
+- `app/admin/`: admin UI behind `components/admin/AdminGate.tsx` (login form on 401), one route per area
 - `components/`: shared UI (toolbar, header, footer, cards) and feature folders
-- `lib/demo-data.ts`, `lib/admin-mock.ts`: fallbacks while the api is missing
+- `lib/demo-data.ts`, `lib/admin-mock.ts`: fallbacks when the api is unreachable
 - `lib/api.ts`: the only place that knows the API shape; typed client
 - `app/globals.css`: Tailwind entry + design tokens (documentation/frontend/DESIGN.md)
 

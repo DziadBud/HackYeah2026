@@ -42,6 +42,10 @@ frontend/
 
 UI follows the Stitch mockups in [stitch/](stitch/) and the tokens in [DESIGN.md](DESIGN.md).
 
+The header has the logo, the site name and the menu button. The drawer links to `/` and `/innowacje` and lists the planned sections ("Mapa wyzwań Małopolski", "Moje zgłoszenia") under "Wkrótce". The public site has no link to `/admin`; ROPS staff open it by URL.
+
+The home page is a regular page, not a full-height chat: intro, then the conversation, then the input box (not sticky, so it never covers answers). The "Nie wiesz, od czego zacząć?" quick actions show only before the first message. Sending scrolls the question to the top so the answer appears under it. The chat takes text only, with no file attachments.
+
 ## Public UI
 
 | Screen | Does | API |
@@ -49,12 +53,12 @@ UI follows the Stitch mockups in [stitch/](stitch/) and the tokens in [DESIGN.md
 | `/` chat (`components/chat/Chat.tsx`) | problem text -> top innovations (cards with "Dlaczego pasuje" when `why` is set; `area:*` tags shown as Polish labels) | `POST /match` |
 | `/` chat, "Chcę testować" checkbox (also set by the quick action and by `/?testuj=1`) | email + consent, then the same match also signs the person up to test the matched innovations | `POST /match?test_signup=true` |
 | `/` chat, similar problems (`SimilarReports.tsx`) | the `similar_reports` of the match, each with "Mnie też" | `POST /problem-reports/{id}/support` |
-| `/` chat, "Zgłoś własną innowację" / "Mam pomysł" (`IdeaForm.tsx`) | summary, essence, target group, stage, optional email + consent | `POST /ideas` |
+| `/` chat, "Zgłoś pomysł" / "Mam pomysł" (`IdeaForm.tsx`) | summary, essence, target group, stage, optional email + consent | `POST /ideas` |
 | `/innowacje` (`LibraryList.tsx`) | published innovations, 24 per page with "Pokaż więcej" | `GET /innovations?limit=&offset=` |
 | `/innowacje/{id}` (`InnovationDetail.tsx`) | description, target group, stage, cost, rating, film; 404 (unknown or draft) shows "Nie znaleziono innowacji" | `GET /innovations/{id}` |
 | `/innowacje/{id}` community (`Community.tsx`) | published threads with published replies; new threads and replies go to ROPS moderation (202, not shown until published) | `GET /innovations/{id}/threads`, `POST /innovations/{id}/threads`, `POST /threads/{id}/replies` |
 
-Testing has no per-innovation sign-up in the backend ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)), so the detail page's "Zgłoś się do testowania" box links to `/?testuj=1`. The "Polub" and "Włącz powiadomienia" buttons and the thread "pomocne" counter have no endpoint: the first two only toggle locally, "pomocne" is not shown. Optional emails are sent with `consent: true` only after the person ticks the consent checkbox shown next to the email field.
+Testing has no per-innovation sign-up in the backend ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)), so the detail page's "Zgłoś się do testowania" box links to `/?testuj=1`. Likes, notifications and the thread "pomocne" counter have no endpoint, so the detail page does not show them; its action bar has only "Zgłoś się do testowania" and "Skopiuj link do tej strony". Optional emails are sent with `consent: true` only after the person ticks the consent checkbox shown next to the email field.
 
 ## Admin panel (`/admin`)
 

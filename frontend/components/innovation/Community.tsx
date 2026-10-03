@@ -7,7 +7,7 @@ import { Icon } from "@/components/Icon";
 const field =
   "min-h-12 rounded-lg border-[1.5px] border-outline bg-surface-container-lowest px-4 text-body-md text-on-surface";
 const primaryBtn =
-  "flex min-h-12 items-center gap-2 rounded-xl bg-primary px-space-md text-label-lg font-semibold text-on-primary hover:bg-primary-container disabled:cursor-wait disabled:opacity-80";
+  "flex min-h-12 items-center gap-2 rounded-lg bg-primary px-space-md text-label-lg font-semibold text-on-primary hover:bg-primary-container disabled:cursor-wait disabled:opacity-80";
 const quietBtn =
   "flex min-h-12 items-center gap-1.5 rounded-lg bg-surface-container-lowest px-3 text-caption text-primary hover:bg-surface-container hc-edge";
 
@@ -196,7 +196,7 @@ export function Community({ innovationId, demoThreads }: { innovationId: string;
             .
           </p>
         </div>
-        <button type="button" aria-expanded={open} aria-controls={formId} onClick={() => setOpen((v) => !v)} className={primaryBtn}>
+        <button type="button" aria-expanded={open} aria-controls={formId} onClick={() => setOpen((v) => !v)} className={`${primaryBtn} shrink-0 justify-center whitespace-nowrap`}>
           <Icon name="add_comment" size={22} />
           Utwórz nowy wątek
         </button>

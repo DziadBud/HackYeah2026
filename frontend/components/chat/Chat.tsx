@@ -32,7 +32,7 @@ const QUICK_ACTIONS = [
   {
     icon: "lightbulb",
     title: "Mam pomysł",
-    desc: "Zgłoś autorski pomysł i uzyskaj dofinansowanie",
+    desc: "Opisz swój pomysł i przekaż go do ROPS",
     prompt: "Chcę zgłosić pomysł na nową innowację społeczną: ",
   },
   {
@@ -118,14 +118,17 @@ export function Chat() {
   }
 
   async function send() {
+    if (pending) return;
     const text = input.trim();
     if (text.length < 3) {
-      setStatus("Opisz problem kilkoma słowami albo skorzystaj z przycisku Dopełnij tekst z AI.");
+      setStatus("Opisz problem kilkoma słowami albo skorzystaj z przycisku Podpowiedz, co dopisać.");
       textareaRef.current?.focus();
       return;
     }
     const userId = nextId.current++;
     setMessages((m) => [...m, { id: userId, role: "user", text }]);
+    // bring the question to the top; the answer appears right under it
+    requestAnimationFrame(() => document.getElementById(`msg-${userId}`)?.scrollIntoView({ block: "start" }));
     setInput("");
     setStatus("");
     setPending(true);
@@ -213,16 +216,15 @@ export function Chat() {
   }
 
   const secondaryBtn =
-    "flex min-h-12 items-center gap-space-xs rounded-lg px-space-md text-body-md font-bold text-primary";
+    "flex min-h-12 grow items-center justify-center gap-space-xs rounded-lg px-space-md py-2 text-center text-body-md font-bold text-primary sm:grow-0";
 
   return (
     <div className="mx-auto flex w-full max-w-[820px] flex-col gap-space-lg py-space-md">
       <section
         aria-labelledby="chat-welcome-heading"
-        className="relative flex flex-col gap-space-sm overflow-hidden rounded-xl bg-surface-container-low p-space-md shadow-sm hc-edge md:p-space-lg"
+        className="flex flex-col gap-space-sm rounded-xl bg-surface-container-low p-space-md shadow-sm hc-edge md:p-space-lg"
       >
-        <div aria-hidden="true" className="pointer-events-none absolute -right-12 -top-12 size-48 rounded-full bg-primary/5" />
-        <p className="flex items-center gap-space-xs text-label-md font-semibold uppercase tracking-wider text-primary">
+        <p className="flex items-center gap-space-xs text-label-lg font-semibold text-primary">
           <Icon name="smart_toy" fill />
           <span>Inteligentny Asystent Społeczny • ROPS Kraków</span>
         </p>
@@ -233,40 +235,6 @@ export function Chat() {
           Opisz problem w swojej okolicy, zapytaj o innowacje albo podziel się pomysłem. System pomoże Ci dobrać
           przetestowane modele wsparcia z Małopolski.
         </p>
-        <div className="flex items-center gap-space-sm pt-space-xs">
-          <a
-            href="#o-hubie"
-            className="inline-flex min-h-11 items-center gap-space-xs rounded-lg bg-surface-container px-space-md text-label-md font-semibold text-primary hover:bg-surface-container-high"
-          >
-            <Icon name="info" />
-            <span>O nas / Czym jest Hub</span>
-            <Icon name="arrow_forward" size={18} />
-          </a>
-        </div>
-        <h2 className="sr-only">Szybkie akcje</h2>
-        <ul className="mt-space-xs grid grid-cols-1 gap-space-sm sm:grid-cols-2">
-          {QUICK_ACTIONS.map((a) => (
-            <li key={a.title}>
-              <button
-                type="button"
-                onClick={() => {
-                  if (a.title === IDEA_ACTION) return openIdeaForm();
-                  if (a.title === TESTER_ACTION) setTester(true);
-                  fillPrompt(a.prompt, `Wstawiono szablon: ${a.title}. Dokończ opis i wyślij.`);
-                }}
-                className="group flex h-full w-full items-start gap-space-sm rounded-xl bg-surface-container-lowest p-space-md text-left shadow-sm hover:bg-surface-container-high hc-edge"
-              >
-                <span className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-surface-container text-primary group-hover:bg-primary group-hover:text-on-primary">
-                  <Icon name={a.icon} size={28} />
-                </span>
-                <span className="flex min-w-0 flex-col">
-                  <span className="text-body-lg font-bold text-primary">{a.title}</span>
-                  <span className="mt-0.5 text-caption text-on-surface-variant">{a.desc}</span>
-                </span>
-              </button>
-            </li>
-          ))}
-        </ul>
       </section>
 
       <section aria-labelledby="chat-log-heading" className="flex flex-col gap-space-lg" hidden={messages.length === 0 && !pending}>
@@ -276,8 +244,8 @@ export function Chat() {
         <div role="log" aria-busy={pending} className="flex flex-col gap-space-lg">
           {messages.map((m) =>
             m.role === "user" ? (
-              <div key={m.id} className="flex max-w-[92%] flex-col items-end self-end sm:max-w-[85%]">
-                <p className="sr-only">Ty napisałeś(-aś):</p>
+              <div key={m.id} id={`msg-${m.id}`} className="flex max-w-[92%] scroll-mt-28 flex-col items-end self-end sm:max-w-[85%]">
+                <p className="sr-only">Twoja wiadomość:</p>
                 <div className="whitespace-pre-line rounded-xl rounded-tr-none bg-primary p-space-md text-body-lg text-on-primary shadow-md">
                   {m.text}
                 </div>
@@ -327,7 +295,7 @@ export function Chat() {
                     <p className="flex items-start gap-2 rounded-lg bg-surface-container p-space-sm text-caption text-on-surface-variant">
                       <Icon name="info" size={18} className="mt-0.5 text-primary" />
                       <span>
-                        Tryb demonstracyjny: serwer dopasowań jest niedostępny, wyniki pochodzą z przykładowej bazy innowacji.
+                        Tryb demonstracyjny: wyszukiwarka jest chwilowo niedostępna, to przykładowe wyniki z bazy innowacji.
                         {m.testSignups !== null && " Zgłoszenie do testów nie zostało zapisane."}
                       </span>
                     </p>
@@ -347,7 +315,7 @@ export function Chat() {
 
       <section
         aria-labelledby="chat-input-heading"
-        className="z-30 mt-space-md flex flex-col gap-space-sm rounded-xl bg-surface-container-lowest p-space-md shadow-xl hc-edge"
+        className="flex flex-col gap-space-sm rounded-xl bg-surface-container-lowest p-space-md shadow-xl hc-edge"
       >
         <h2 id="chat-input-heading" className="sr-only">
           Napisz wiadomość
@@ -361,7 +329,7 @@ export function Chat() {
         >
           <div className="flex flex-col gap-1">
             <label htmlFor="chat-message-input" className="text-body-md font-bold text-primary">
-              Twoje pytanie lub opis wyzwania społecznego:
+              Opisz swój problem lub zadaj pytanie:
             </label>
             <textarea
               ref={textareaRef}
@@ -381,7 +349,7 @@ export function Chat() {
               placeholder="Opisz problem, aby wyszukać innowację lub zgłosić własny pomysł..."
               className="w-full resize-y rounded-lg border-[1.5px] border-outline bg-surface p-space-sm text-body-lg text-on-surface md:p-space-md"
             />
-            <p id="chat-input-hint" className="text-caption text-on-surface-variant">
+            <p id="chat-input-hint" className="hidden text-caption text-on-surface-variant sm:block">
               Enter dodaje nową linię, Ctrl + Enter wysyła wiadomość.
             </p>
           </div>
@@ -423,49 +391,45 @@ export function Chat() {
               </div>
             )}
           </div>
-          <div className="flex flex-col items-stretch justify-between gap-space-sm pt-space-xs sm:flex-row sm:items-center">
-            <div className="flex flex-wrap items-center gap-space-xs">
-              <button
-                type="button"
-                onClick={completeWithAi}
-                className={`${secondaryBtn} bg-surface-container-high shadow-sm hover:bg-surface-variant hc-edge`}
-              >
-                <Icon name="auto_awesome" size={22} fill className="text-secondary" />
-                <span>Dopełnij tekst z AI</span>
-              </button>
-              <button
-                type="button"
-                onClick={toggleRecording}
-                aria-pressed={recording}
-                className="flex min-h-12 items-center gap-space-xs rounded-lg bg-surface-container-low px-space-sm text-body-md text-on-surface hover:bg-surface-container-high aria-pressed:bg-secondary-fixed aria-pressed:text-on-secondary-fixed hc-edge"
-              >
-                <Icon name={recording ? "stop_circle" : "mic"} size={22} className="text-primary" />
-                <span>{recording ? "Zatrzymaj nagrywanie" : "Nagraj"}</span>
-              </button>
-            </div>
-            <div className="flex shrink-0 flex-wrap items-center gap-space-xs">
-              <button
-                type="button"
-                aria-expanded={ideaOpen}
-                aria-controls="idea-form"
-                onClick={openIdeaForm}
-                className={`${secondaryBtn} justify-center bg-surface-container-high hover:bg-surface-container-highest hc-edge`}
-              >
-                <Icon name="add_circle" className="text-secondary" />
-                <span>Zgłoś własną innowację</span>
-              </button>
-              <button
-                type="submit"
-                disabled={pending}
-                className="flex min-h-12 items-center justify-center gap-space-xs rounded-lg bg-primary px-space-lg text-body-lg font-bold text-on-primary shadow-md hover:bg-primary-container disabled:cursor-wait disabled:opacity-80"
-              >
-                <span>{pending ? "Szukam…" : "Wyszukaj innowację"}</span>
-                <Icon name="search" size={22} />
-              </button>
-            </div>
+          <div className="flex flex-wrap items-center gap-space-xs pt-space-xs">
+            <button
+              type="button"
+              onClick={completeWithAi}
+              className={`${secondaryBtn} bg-surface-container-high hover:bg-surface-variant hc-edge`}
+            >
+              <Icon name="auto_awesome" size={22} fill className="text-secondary" />
+              <span>Podpowiedz, co dopisać</span>
+            </button>
+            <button
+              type="button"
+              onClick={toggleRecording}
+              aria-pressed={recording}
+              className={`${secondaryBtn} bg-surface-container-high hover:bg-surface-variant aria-pressed:bg-secondary-fixed aria-pressed:text-on-secondary-fixed hc-edge`}
+            >
+              <Icon name={recording ? "stop_circle" : "mic"} size={22} className="text-secondary" />
+              <span>{recording ? "Zatrzymaj nagrywanie" : "Nagraj"}</span>
+            </button>
+            <button
+              type="button"
+              aria-expanded={ideaOpen}
+              aria-controls="idea-form"
+              onClick={openIdeaForm}
+              className={`${secondaryBtn} bg-surface-container-high hover:bg-surface-variant hc-edge`}
+            >
+              <Icon name="lightbulb" size={22} className="text-secondary" />
+              <span>Zgłoś pomysł</span>
+            </button>
+            <button
+              type="submit"
+              aria-disabled={pending}
+              className="flex min-h-12 w-full items-center justify-center gap-space-xs rounded-lg bg-primary px-space-md py-2 text-center text-body-lg font-bold text-on-primary shadow-md hover:bg-primary-container aria-disabled:cursor-wait aria-disabled:opacity-80 sm:ml-auto sm:w-auto sm:px-space-lg"
+            >
+              <span>{pending ? "Szukam…" : "Wyszukaj innowację"}</span>
+              <Icon name="search" size={22} />
+            </button>
           </div>
         </form>
-        <p role="status" className="min-h-6 text-caption font-semibold text-primary">
+        <p role="status" className="text-body-md font-semibold text-primary empty:sr-only">
           {status}
         </p>
       </section>
@@ -485,6 +449,37 @@ export function Chat() {
             }}
           />
         </div>
+      )}
+
+      {messages.length === 0 && (
+        <section aria-labelledby="quick-actions-heading" className="flex flex-col gap-space-sm">
+          <h2 id="quick-actions-heading" className="text-headline-sm font-semibold text-primary">
+            Nie wiesz, od czego zacząć?
+          </h2>
+          <ul className="grid grid-cols-1 gap-space-sm sm:grid-cols-2">
+            {QUICK_ACTIONS.map((a) => (
+              <li key={a.title}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (a.title === IDEA_ACTION) return openIdeaForm();
+                    if (a.title === TESTER_ACTION) setTester(true);
+                    fillPrompt(a.prompt, `Wstawiono szablon: ${a.title}. Dokończ opis i wyślij.`);
+                  }}
+                  className="group flex h-full w-full items-start gap-space-sm rounded-xl bg-surface-container-lowest p-space-md text-left shadow-sm hover:bg-surface-container-high hc-edge"
+                >
+                  <span className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-surface-container text-primary group-hover:bg-primary group-hover:text-on-primary">
+                    <Icon name={a.icon} size={28} />
+                  </span>
+                  <span className="flex min-w-0 flex-col">
+                    <span className="text-body-lg font-bold text-primary">{a.title}</span>
+                    <span className="mt-0.5 text-caption text-on-surface-variant">{a.desc}</span>
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       <section id="o-hubie" aria-labelledby="o-hubie-heading" className="flex flex-col gap-space-xs rounded-xl bg-surface-container-low p-space-md hc-edge md:p-space-lg">

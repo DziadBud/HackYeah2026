@@ -147,16 +147,11 @@ export function AdminPanel() {
           </Link>{" "}
           są na osobnej stronie.
         </p>
-        {source === "mock" && (
-          <span className="self-start rounded bg-tertiary-fixed px-2 py-0.5 text-caption font-semibold text-on-tertiary-fixed">
-            Tryb offline: lokalne dane testowe
-          </span>
-        )}
         <nav aria-label="Sekcje strony">
           <ul className="flex flex-wrap gap-space-xs">
             {SECTIONS.map((s) => (
               <li key={s.id}>
-                <a href={`#${s.id}`} className="flex min-h-11 items-center rounded-lg bg-surface-container px-space-sm text-label-md font-semibold text-primary underline-offset-4 hover:underline">
+                <a href={`#${s.id}`} className="flex min-h-12 items-center rounded-lg bg-surface-container px-space-sm text-label-md font-semibold text-primary underline-offset-4 hover:underline">
                   {s.label}
                 </a>
               </li>

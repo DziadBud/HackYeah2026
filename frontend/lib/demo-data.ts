@@ -21,7 +21,6 @@ export interface DemoInnovation {
   solution: string;
   results?: string;
   keywords: string[];
-  photoCaption?: string;
   threads: Thread[];
 }
 
@@ -55,8 +54,6 @@ export const INNOVATIONS: DemoInnovation[] = [
     results:
       "Wzrost samodzielności cyfrowej o 68% u uczestników, odnowienie więzi sąsiedzkich oraz uruchomienie lokalnych samopomocowych sieci dowozu leków.",
     keywords: ["senior", "seniorzy", "świetlica", "wieś", "wiejsk", "międzypokolen", "samotn", "izolacj", "aktywizacj", "integracj"],
-    photoCaption:
-      "Warsztaty cyfrowe w świetlicy wiejskiej w powiecie tarnowskim – testy praktyczne innowacji, edycja 2023/2024.",
     threads: [
       {
         id: "thread-1",

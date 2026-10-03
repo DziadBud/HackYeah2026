@@ -24,7 +24,6 @@ interface View {
   problem?: string;
   solution: string;
   results?: string;
-  photoCaption?: string;
   deployedIn?: string;
   details: { label: string; value: string }[];
   videoUrl?: string | null;
@@ -75,7 +74,6 @@ function fromDemo(d: DemoInnovation): View {
     problem: d.problem,
     solution: d.solution,
     results: d.results,
-    photoCaption: d.photoCaption,
     deployedIn: d.deployedIn,
     details: [],
   };
@@ -142,7 +140,6 @@ export function InnovationDetail({ id }: { id: string }) {
       ? [{ icon: "sentiment_very_satisfied", tone: "text-primary", label: "Rezultaty i korzyści", text: i.results }]
       : []),
   ];
-  const cols = facts.length === 3 ? "md:grid-cols-3" : facts.length === 2 ? "md:grid-cols-2" : "";
 
   return (
     <div className="flex flex-col pb-space-md">
@@ -216,13 +213,14 @@ export function InnovationDetail({ id }: { id: string }) {
       </header>
 
       <div className="grid grid-cols-1 items-start gap-space-lg lg:grid-cols-12">
-        <div className="flex flex-col gap-space-lg lg:col-span-8">
+        {/* on phones the wrapper dissolves so the contact box comes before the forum */}
+        <div className="contents lg:col-span-8 lg:flex lg:flex-col lg:gap-space-lg">
           <section aria-labelledby="opis-heading" className={card}>
             <h2 id="opis-heading" className="flex items-center gap-2 text-headline-md font-semibold text-primary">
               <Icon name="info" size={28} />
               Opis innowacji i założenia społeczne
             </h2>
-            <div className={`grid grid-cols-1 gap-space-md ${cols}`}>
+            <div className="grid grid-cols-1 gap-space-md">
               {facts.map((f) => (
                 <div key={f.label} className="flex flex-col gap-2 rounded-xl bg-surface-container-low p-space-md hc-edge">
                   <h3 className="flex items-center gap-1.5 text-label-lg font-semibold text-primary">
@@ -254,15 +252,6 @@ export function InnovationDetail({ id }: { id: string }) {
                 )}
               </dl>
             )}
-            {i.photoCaption && (
-              // photo slot from the mockup; the real photo comes with the innovation record
-              <figure className="relative flex h-64 items-end overflow-hidden rounded-xl bg-gradient-to-br from-primary-container via-[#2c4674] to-[#00504a] md:h-80">
-                <Icon name="photo_camera" size={96} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white/25" />
-                <figcaption className="relative z-10 m-space-sm max-w-lg rounded-lg bg-primary-container/95 p-space-sm text-caption text-on-primary">
-                  {i.photoCaption}
-                </figcaption>
-              </figure>
-            )}
             {i.deployedIn && (
               <p className="flex items-center gap-2 text-body-md text-on-surface-variant">
                 <Icon name="place" className="text-primary" />
@@ -271,7 +260,9 @@ export function InnovationDetail({ id }: { id: string }) {
             )}
           </section>
 
-          <Community innovationId={i.id} demoThreads={state.kind === "demo" ? state.threads : undefined} />
+          <div className="order-last lg:order-none">
+            <Community innovationId={i.id} demoThreads={state.kind === "demo" ? state.threads : undefined} />
+          </div>
         </div>
 
         <aside aria-label="Kontakt i zgłoszenia" className="flex flex-col gap-space-lg lg:col-span-4">
