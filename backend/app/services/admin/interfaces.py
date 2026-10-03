@@ -1,0 +1,86 @@
+from datetime import datetime
+from typing import Protocol
+
+from app.schemas.admin.common import ChallengeArea, Page
+from app.schemas.admin.grant_calls import GrantCall, GrantCallCreate, GrantCallUpdate
+from app.schemas.admin.ideas import Idea, IdeaStatus
+from app.schemas.admin.inbox import Inbox
+from app.schemas.admin.innovations import (
+    Innovation,
+    InnovationCreate,
+    InnovationFeedback,
+    PublicationStatus,
+    InnovationUpdate,
+)
+from app.schemas.admin.problem_reports import ProblemReport
+from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
+
+
+# R6/R11: jedyny sposob wejscia do panelu, brak kont publicznych
+# credentials from env, real impl issues a jwt with role=admin
+class AuthAdminService(Protocol):
+    def login(self, username: str, password: str) -> str: ...
+
+
+# R6 + R2: admin dodaje/edytuje/publikuje innowacje z Biblioteki Innowacji ROPS (~200)
+# brief wymaga szybkiej aktualizacji wiedzy: real impl embeds on edit so changes reach /match at once
+# draft vs published: unpublished items must never be returned by matching
+# feedback() = R4 tester: ratings and "chce testowac" counts per innovation
+class InnovationAdminService(Protocol):
+    def list(
+        self, status: PublicationStatus | None, q: str | None, limit: int, offset: int
+    ) -> Page[Innovation]: ...
+    def create(self, data: InnovationCreate) -> Innovation: ...
+    def get(self, innovation_id: str) -> Innovation: ...
+    def update(self, innovation_id: str, data: InnovationUpdate) -> Innovation: ...
+    def set_status(
+        self, innovation_id: str, status: PublicationStatus
+    ) -> Innovation: ...
+    def feedback(self, innovation_id: str) -> InnovationFeedback: ...
+
+
+# R12 pytanie jury: "jak admin dowiaduje sie o nowym pomysle?"
+# one place listing new ideas, new problem reports and critical ones since last visit
+class InboxAdminService(Protocol):
+    def get(self, since: datetime | None) -> Inbox: ...
+
+
+# R3 + R5: pomysly od mieszkancow/NGO (Kreator pomyslow), odpowiedz wraca do autora
+# reply is shown to the submitter via their private access-token link, no accounts
+class IdeaAdminService(Protocol):
+    def list(self, status: IdeaStatus | None) -> list[Idea]: ...
+    def get(self, idea_id: str) -> Idea: ...
+    def reply(self, idea_id: str, message: str) -> Idea: ...
+    def set_status(self, idea_id: str, status: IdeaStatus) -> Idea: ...
+
+
+# R1 + R14: kazdy opis problemu to licznik zgloszen, nie pojedynczy wpis
+# is_critical comes from score = reports x distinct locations x 7d growth
+# one reply is shown to everyone who created or supported the report (R5)
+class ProblemReportAdminService(Protocol):
+    def list(
+        self,
+        challenge_area: ChallengeArea | None,
+        location: str | None,
+        is_critical: bool | None,
+    ) -> list[ProblemReport]: ...
+    def get(self, problem_report_id: str) -> ProblemReport: ...
+    def reply(self, problem_report_id: str, message: str) -> ProblemReport: ...
+
+
+# R3: generator wniosku dziala tylko w trakcie naboru (nabor = funding round)
+# admin opens/closes the call and defines the form sections the llm fills from an idea card
+class GrantCallAdminService(Protocol):
+    def list(self) -> list[GrantCall]: ...
+    def create(self, data: GrantCallCreate) -> GrantCall: ...
+    def update(self, call_id: str, data: GrantCallUpdate) -> GrantCall: ...
+
+
+# R2 + R14: trendy i agregacja potrzeb tylko dla admina, nigdy publicznie (wymog briefu)
+# all four are sql aggregates computed on request, not stored jobs
+# locations with fewer than 5 reports are suppressed (privacy)
+class ReportAdminService(Protocol):
+    def trends(self) -> list[TrendRow]: ...
+    def critical(self) -> list[CriticalRow]: ...
+    def locations(self) -> list[LocationRow]: ...
+    def gaps(self) -> list[GapRow]: ...
