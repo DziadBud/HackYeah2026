@@ -7,6 +7,7 @@ from app.services.admin.errors import (
     InvalidUploadError,
     NotFoundError,
     UploadTooLargeError,
+    UpstreamUnavailableError,
 )
 
 
@@ -22,3 +23,5 @@ def map_domain_errors() -> Iterator[None]:
         raise HTTPException(status.HTTP_415_UNSUPPORTED_MEDIA_TYPE, str(exc)) from exc
     except UploadTooLargeError as exc:
         raise HTTPException(status.HTTP_413_REQUEST_ENTITY_TOO_LARGE, str(exc)) from exc
+    except UpstreamUnavailableError as exc:
+        raise HTTPException(status.HTTP_503_SERVICE_UNAVAILABLE, str(exc)) from exc

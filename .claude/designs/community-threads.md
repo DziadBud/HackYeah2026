@@ -20,7 +20,7 @@ public:  GET  /innovations/{id}/threads          -> published threads + publishe
          POST /threads/{id}/replies {body, author_label, email?}  (always practitioner)
               -> status pending (admin/mentor replies may be published immediately)
 admin:   inbox shows pending threads / replies
-         GET  /admin/threads?status=&innovation_id=
+         GET  /admin/threads?status=&innovation_id=   (status matches the thread or any reply)
          POST /admin/threads/{id}/status {published|hidden}
          POST /admin/threads/replies/{id}/status {published|hidden}
 ```

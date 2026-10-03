@@ -16,6 +16,8 @@ from app.schemas.admin.innovations import (
 )
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
+from app.schemas.admin.threads import AdminReply, AdminThread
+from app.schemas.public.threads import ModerationStatus
 
 
 # R6/R11: jedyny sposob wejscia do panelu, brak kont publicznych
@@ -96,3 +98,10 @@ class ReportAdminService(Protocol):
     def critical(self) -> list[CriticalRow]: ...
     def locations(self) -> list[LocationRow]: ...
     def gaps(self) -> list[GapRow]: ...
+
+
+# R5: community threads and replies stay pending until ROPS publishes them
+class ThreadAdminService(Protocol):
+    def list(self, status: ModerationStatus | None, innovation_id: str | None) -> list[AdminThread]: ...
+    def set_status(self, thread_id: str, status: ModerationStatus) -> AdminThread: ...
+    def set_reply_status(self, reply_id: str, status: ModerationStatus) -> AdminReply: ...

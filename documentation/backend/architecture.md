@@ -44,10 +44,10 @@ flowchart LR
 
 | | rag service (`rag/`) | match-api (`backend/`) |
 |---|---|---|
-| Purpose | chunk one innovation and request external embeddings (`POST /embed`, `POST /embed/pdf`); retrieval (`POST /query`) | `/match` (calls rag, LLM explanation, optional test signup), problem reports, ideas, threads, Middleman / grant drafts, admin (incl. PDF upload that triggers embedding) |
+| Purpose | chunk one innovation and request external embeddings (`POST /embed`, `POST /embed/pdf`); retrieval (`POST /query`) | `/match` (calls rag `/query`, returns its answer, optional test signup), problem reports, ideas, threads, Middleman / grant drafts, admin (incl. PDF upload that triggers embedding) |
 | Exposure | internal compose network only (no auth) | public + `/admin/*` |
 | Writes | `innovation_chunks` | `innovations` rows (admin CRUD), `problem_reports`, `ideas`, `grant_calls`, `test_signups`, `feedback`, `threads`, `thread_replies`, `generated_documents` |
-| Down means | `/match` returns 503 (problem report still stored); uploaded innovations stay draft until re-uploaded | site down |
+| Down means | `/match` returns 503 and stores nothing; uploaded innovations stay draft until re-uploaded | site down |
 
 How rag behaves, and what match-api does about it:
 - **`POST /query {query, top_k ≤ 3, city?, title?}`:**
@@ -98,14 +98,12 @@ sequenceDiagram
     participant API as match-api
     participant RAG as rag service
     participant DB as Postgres
-    participant LLM
 
     User->>API: POST /match?test_signup=true|false {text, city, email?}
-    API->>RAG: POST /query {query, top_k: 3, tags: [type:innovation]}
-    RAG-->>API: top 3 innovations
-    Note over API,RAG: rag down -> store problem report, 503 with a Polish message
-    API->>LLM: explain "why it fits" from retrieved rows only
-    Note over API,LLM: LLM down -> return results without explanation
+    API->>RAG: POST /query {query, top_k: 3}
+    RAG-->>API: {answer, matches: [{innovation_id}]} (rag's llm writes answer)
+    Note over API,RAG: rag down, slow (60s) or its llm fails -> 503, nothing stored
+    API->>DB: load matched innovations (published only, rag's order)
     API->>DB: store problem report (text, challenge_area, city, matched_innovation_ids)
     API->>DB: 3 similar problem reports (pg_trgm, same city first)
     opt test_signup=true (email required)
@@ -154,7 +152,7 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 | Inbox | `GET /admin/inbox?since=`: new ideas, new problem reports, critical problem reports, new test signups, pending threads / replies |
 | Ideas | `GET /admin/ideas` (filter `status`), `GET /admin/ideas/{id}`, `POST .../{id}/reply`, `POST .../{id}/status` (`accepted` creates a draft innovation, §2) |
 | Problem reports | `GET /admin/problem-reports` (filters `challenge_area`, `city`), `GET /admin/problem-reports/{id}`, `POST .../{id}/reply`, `POST .../{id}/hide` |
-| Threads | `GET /admin/threads` (filter `status`, `innovation_id`), `POST .../{id}/status` (`published`\|`hidden`), `POST .../replies/{id}/status` |
+| Threads | `GET /admin/threads` (filter `innovation_id`, and `status`, which matches the thread or any of its replies, so `?status=pending` is the moderation queue; each thread carries all its replies), `POST .../{id}/status` (`published`\|`hidden`), `POST .../replies/{id}/status` (same body) |
 | Testing | `GET /admin/test-signups` (filter `innovation_id`, `status`), `POST /admin/test-signups/{id}/status` (`accepted`\|`rejected`\|`completed`) |
 | Grant calls | `GET /admin/grant-calls`, `POST /admin/grant-calls`, `PATCH /admin/grant-calls/{id}` (open/close, form sections) |
 | Generated docs | `GET /admin/generated-documents` (filter `kind`, `innovation_id`, `idea_id`) |
@@ -176,7 +174,7 @@ CSV export is a streaming response. Cities with fewer than 5 problem reports are
 
 | Feature | Endpoints |
 |---|---|
-| Matching | `POST /match?test_signup=` `{text, city, email?, consent}` → `{problem_report_id, innovations, similar_reports, test_signup_ids}`; `test_signup=true` needs an email (422 otherwise) |
+| Matching | `POST /match?test_signup=` `{text, city, email?, consent}` → `{problem_report_id, answer, innovations, similar_reports, test_signup_ids}` (`answer` is rag's one summary for the whole result); `test_signup=true` needs an email (422 otherwise) |
 | Problem reports | `GET /problem-reports/{id}` (public page with `admin_reply`), `POST /problem-reports/{id}/support` ("mnie też") |
 | Ideas | `POST /ideas` `{summary, essence, target_group, stage, social_canvas?, email?, consent}`, `POST /ideas/{id}/grant-application {grant_call_id}` (open calls only, stored in `generated_documents`) |
 | Library | `GET /innovations` (published only; filters `challenge_area`, `q`, `limit`, `offset`), `GET /innovations/{id}` (with `rating_avg`, `rating_count`), `POST /innovations/{id}/feedback {stars, comment, test_signup_id?}` |
@@ -185,7 +183,7 @@ CSV export is a streaming response. Cities with fewer than 5 problem reports are
 | Grant calls | `GET /grant-calls` (open only) |
 
 Admin and public services are db-backed (`backend/app/services/{admin,public}/db.py`, one session per request via `get_db`); the mocks in `mock.py` stay for unit tests through dependency overrides.
-- Retrieval and LLM output are still stand-ins (`backend/app/services/public/drafts.py`): word overlap instead of rag `/query`, templates instead of LLM explanations, Middleman cards and grant drafts. The rag client and LLM prompts are the next step.
+- `/match` uses rag `/query` (`backend/app/clients/rag.py`). Middleman cards and grant drafts are still templates (`backend/app/services/public/drafts.py`).
 - The admin problem report response keeps `location`, `is_critical` and `criticality_score` for the admin frontend: `location` is filled from `city`, criticality is computed on read (score ≥ 10 is critical).
 
 ## 6. Data model
@@ -327,10 +325,10 @@ Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `P
 
 | Failure | Handling |
 |---|---|
-| rag service down | `/match` returns 503 with a plain-language Polish message; the problem report is still stored |
+| rag service down | `/match` returns 503 and stores nothing, so the user can retry; a stored report with no matches would show up as a false gap |
 | background `/embed/pdf` fails (rag down, bad PDF) | the row stays an unindexed draft, the error is logged; the admin re-uploads the PDF |
 | process restarts during a background embed | same as a failure: the row stays draft, the admin re-uploads (no job table) |
-| LLM down | results without explanation or challenge area |
+| LLM down | rag `/query` fails as a whole, so `/match` returns 503 (rag has no answer-less mode) |
 | spam on public routes | per-IP rate limit, input length caps |
 | prompt injection | user text treated as data, explanations limited to retrieved rows |
 | SMTP unset or down | email skipped; the admin still sees the inbox, the reply is on the public page |
@@ -362,7 +360,7 @@ docker-compose.yml   # postgres (pgvector image), rag, embeddings, ollama, api, 
 
 1. Backend schema file + compose (one `DATABASE_URL`, `RAG_URL`, mailpit): match-api tables + `innovations` column extensions.
 2. Admin innovations on rag's table: PDF upload + background `/embed/pdf` + auto-publish; idea accept creates a draft innovation
-3. `/match` calling rag, LLM explanation; the 8 sample queries pass.
+3. `/match` calling rag `/query` and returning its answer; the 8 sample queries pass.
 4. Problem reports, support, similar reports; admin problem reports + reply + hide.
 5. Ideas + admin ideas, inbox, notifier.
 6. Threads + replies (public write, admin moderate); wire innovation detail page off the API.
@@ -376,7 +374,7 @@ docker-compose.yml   # postgres (pgvector image), rag, embeddings, ollama, api, 
 - Integration:
   - `docker compose up`, upload innovations through the admin, curl `/match`
   - draft innovations and `type:report` rows are never returned
-  - with rag stopped, `/match` returns 503 and the problem report is stored
+  - with rag stopped, `/match` returns 503 and no problem report is stored
   - every `/admin/*` route returns 401 without a session (parametrised test)
   - pending threads stay invisible on the public innovation page until published
 
@@ -393,7 +391,7 @@ docker-compose.yml   # postgres (pgvector image), rag, embeddings, ollama, api, 
 
 1. Admin auth: server-side session cookie instead of a shared JWT; for the hackathon one shared login from env (`ADMIN_USERNAME` / `ADMIN_PASSWORD`).
 2. IP logic removed; an optional email is stored on the item for notifications.
-3. The rag service owns chunking, embedding and retrieval; `/match` calls it over HTTP, rag down gives 503 with the problem report kept.
+3. The rag service owns chunking, embedding and retrieval; `/match` calls it over HTTP and returns rag's single `answer` at the top level (no per-innovation reason); rag down gives 503 and nothing is stored.
 4. Data model: merged rag tables + match-api tables (`problem_reports`, `ideas`, `grant_calls`, `test_signups`, `feedback`, `threads`, `thread_replies`, `generated_documents`):
    - the email and `admin_reply` live on the item; problem reports also have `hidden`
    - "mnie też" is a counter; thread "pomocne" is deferred
