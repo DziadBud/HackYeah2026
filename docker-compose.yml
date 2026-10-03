@@ -11,6 +11,12 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./docker/postgres/init:/docker-entrypoint-initdb.d:ro
+      - ./rag/sql/001_rag_chunks.sql:/docker-entrypoint-initdb.d/02-rag_chunks.sql:ro
+      - ./rag/sql/002_parent_metadata.sql:/docker-entrypoint-initdb.d/03-parent_metadata.sql:ro
+      - ./rag/sql/003_parent_links.sql:/docker-entrypoint-initdb.d/04-parent_links.sql:ro
+      - ./rag/sql/004_localization.sql:/docker-entrypoint-initdb.d/05-localization.sql:ro
+      - ./rag/sql/005_city.sql:/docker-entrypoint-initdb.d/06-city.sql:ro
+      - ./rag/sql/006_innovations.sql:/docker-entrypoint-initdb.d/07-innovations.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-hackyeah} -d ${POSTGRES_DB:-hackyeah}"]
       interval: 5s
@@ -31,6 +37,22 @@ services:
       db:
         condition: service_healthy
 
+  rag:
+    build: ./rag
+    container_name: hackyeah-rag
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-sentence-transformers/all-MiniLM-L6-v2}
+    ports:
+      - "${RAG_PORT:-8001}:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
   web:
     build:
       context: ./frontend
