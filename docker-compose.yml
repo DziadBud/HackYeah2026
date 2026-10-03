@@ -80,7 +80,7 @@ services:
     container_name: hackyeah-rag
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
-      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-sentence-transformers/all-MiniLM-L6-v2}
+      EMBEDDING_SERVICE_URL: ${EMBEDDING_SERVICE_URL}
     ports:
       - "${RAG_PORT:-8001}:8000"
     depends_on:
