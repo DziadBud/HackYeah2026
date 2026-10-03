@@ -58,14 +58,24 @@ const FOLLOW_UP = "\n\nGmina lub miejscowość: \nKogo dotyczy problem: \nCo ju�
 // minimal shape of the web speech recognition api (not in lib.dom yet)
 interface Recognition {
   lang: string;
+  continuous: boolean;
   interimResults: boolean;
   onresult: ((e: { results: ArrayLike<ArrayLike<{ transcript: string }>> }) => void) | null;
   onend: (() => void) | null;
-  onerror: (() => void) | null;
+  onerror: ((e: { error: string }) => void) | null;
   start(): void;
   stop(): void;
 }
 type RecognitionCtor = new () => Recognition;
+
+// web speech api error codes -> what the user can do about it
+const SPEECH_ERRORS: Record<string, string> = {
+  "not-allowed": "Brak dostępu do mikrofonu. Zezwól na mikrofon w ustawieniach przeglądarki i spróbuj ponownie.",
+  "service-not-allowed": "Brak dostępu do mikrofonu. Zezwól na mikrofon w ustawieniach przeglądarki i spróbuj ponownie.",
+  "audio-capture": "Nie znaleziono mikrofonu. Podłącz mikrofon albo wpisz tekst.",
+  "no-speech": "Nic nie usłyszałem. Kliknij Nagraj i mów bliżej mikrofonu.",
+  network: "Dyktowanie wymaga połączenia z internetem. Sprawdź połączenie albo wpisz tekst.",
+};
 
 function innovationsPhrase(n: number) {
   if (n === 1) return "1 sprawdzoną innowację społeczną";
@@ -197,17 +207,29 @@ export function Chat() {
     }
     const rec = new Ctor();
     rec.lang = "pl-PL";
-    rec.interimResults = false;
+    // keep listening through pauses and show words as they come; stops on the button
+    rec.continuous = true;
+    rec.interimResults = true;
+    // dictation appends to whatever was typed before pressing the button
+    const before = input.trimEnd();
+    let failed = false;
     rec.onresult = (e) => {
+      // results hold the whole session (final + the current guess), so rebuild from scratch
       const said = Array.from(e.results)
-        .map((r) => r[0].transcript)
+        .map((r) => r[0].transcript.trim())
+        .filter(Boolean)
         .join(" ");
-      setInput((prev) => (prev ? `${prev} ${said}` : said));
+      setInput((before ? `${before} ${said}` : said).slice(0, 2000));
     };
-    rec.onerror = () => setStatus("Nie udało się rozpoznać mowy. Sprawdź uprawnienia do mikrofonu.");
+    rec.onerror = (e) => {
+      if (e.error === "aborted") return;
+      failed = true;
+      setStatus(SPEECH_ERRORS[e.error] ?? "Nie udało się rozpoznać mowy. Spróbuj ponownie albo wpisz tekst.");
+    };
     rec.onend = () => {
       setRecording(false);
       recognitionRef.current = null;
+      if (!failed) setStatus("Nagrywanie zakończone. Sprawdź tekst w polu i wyślij.");
       textareaRef.current?.focus();
     };
     recognitionRef.current = rec;

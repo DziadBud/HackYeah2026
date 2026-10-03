@@ -2,36 +2,24 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef } from "react";
 import { Icon } from "@/components/Icon";
 
-const NAV: { label: string; href: string }[] = [
-  { label: "Strona główna – zapytaj asystenta", href: "/" },
-  { label: "Biblioteka innowacji", href: "/innowacje" },
+// only two sections, so a segmented switch instead of a drawer
+const NAV: { label: string; short: string; icon: string; href: string }[] = [
+  { label: "Zapytaj asystenta", short: "Asystent", icon: "smart_toy", href: "/" },
+  { label: "Biblioteka innowacji", short: "Biblioteka", icon: "lightbulb", href: "/innowacje" },
 ];
-
-// planned sections, listed so the drawer shows where the hub is going
-const SOON = ["Mapa wyzwań Małopolski", "Moje zgłoszenia"];
 
 function isActive(pathname: string, href: string) {
   return href === "/" ? pathname === "/" : pathname.startsWith(href);
 }
 
 export function SiteHeader() {
-  const dialogRef = useRef<HTMLDialogElement>(null);
   const pathname = usePathname();
-
-  // close the drawer after navigating
-  useEffect(() => {
-    dialogRef.current?.close();
-  }, [pathname]);
-
-  const item =
-    "min-h-12 px-space-md flex items-center rounded-lg text-body-lg font-semibold text-on-surface hover:bg-surface-container-high aria-[current=page]:bg-primary-container aria-[current=page]:font-bold aria-[current=page]:text-on-primary";
 
   return (
     <header className="sticky top-0 z-40 w-full bg-surface/95 shadow-sm backdrop-blur-xl hc-edge">
-      <div className="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-space-sm px-gutter-sm sm:px-gutter">
+      <div className="mx-auto flex min-h-20 max-w-7xl flex-wrap items-center justify-between gap-x-space-md gap-y-space-xs px-gutter-sm py-2 sm:flex-nowrap sm:px-gutter">
         <Link href="/" className="flex min-w-0 items-center gap-space-sm rounded-lg py-2 sm:gap-space-md">
           {/* eslint-disable-next-line @next/next/no-img-element -- static svg logo; only the mark is shown, the name is real text */}
           <img src="/logo.svg" alt="" width={40} height={40} className="size-10 shrink-0 object-cover object-left" />
@@ -44,70 +32,24 @@ export function SiteHeader() {
             </span>
           </span>
         </Link>
-        <div className="flex shrink-0 items-center gap-space-xs">
-          <button
-            type="button"
-            aria-haspopup="dialog"
-            aria-controls="site-menu"
-            aria-label="Otwórz menu"
-            onClick={() => dialogRef.current?.showModal()}
-            className="flex size-12 items-center justify-center rounded-full bg-primary-container text-on-primary hover:bg-primary"
-          >
-            <Icon name="person" size={24} />
-          </button>
-        </div>
+        <nav aria-label="Główna" className="w-full shrink-0 sm:w-auto">
+          <ul className="flex rounded-full bg-surface-container p-1 hc-edge">
+            {NAV.map((n) => (
+              <li key={n.href} className="flex-1 sm:flex-none">
+                <Link
+                  href={n.href}
+                  aria-current={isActive(pathname, n.href) ? "page" : undefined}
+                  className="flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-full px-space-md text-label-lg font-semibold text-on-surface-variant hover:bg-surface-container-highest hover:text-primary aria-[current=page]:bg-primary-container aria-[current=page]:text-on-primary aria-[current=page]:shadow-sm"
+                >
+                  <Icon name={n.icon} size={22} />
+                  <span className="lg:hidden">{n.short}</span>
+                  <span className="hidden lg:inline">{n.label}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
-
-      <dialog
-        ref={dialogRef}
-        id="site-menu"
-        aria-labelledby="site-menu-title"
-        className="fixed inset-y-0 right-0 left-auto m-0 h-full max-h-none w-80 max-w-full bg-surface-container-lowest p-space-md text-on-surface shadow-[0_8px_24px_rgba(15,45,89,0.16)] backdrop:bg-black/40 hc-edge"
-        onClick={(e) => {
-          // click on the backdrop closes the drawer
-          if (e.target === e.currentTarget) e.currentTarget.close();
-        }}
-      >
-        <div className="flex h-full flex-col">
-          <div className="flex flex-col">
-            <div className="mb-space-sm flex items-center justify-between border-b border-surface-container-highest pb-space-sm">
-              <div className="flex flex-col">
-                <h2 id="site-menu-title" className="text-headline-sm font-semibold text-primary">
-                  Nawigacja
-                </h2>
-                <span className="text-caption text-on-surface-variant">Małopolski Hub Innowacji</span>
-              </div>
-              <button
-                type="button"
-                aria-label="Zamknij menu"
-                onClick={() => dialogRef.current?.close()}
-                className="flex size-12 items-center justify-center rounded-lg text-on-surface hover:bg-surface-container-high"
-              >
-                <Icon name="close" size={28} />
-              </button>
-            </div>
-            <nav aria-label="Główna">
-              <ul className="flex flex-col gap-1">
-                {NAV.map((n) => (
-                  <li key={n.href}>
-                    <Link href={n.href} className={item} aria-current={isActive(pathname, n.href) ? "page" : undefined}>
-                      {n.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <h3 className="mt-space-lg px-space-md text-label-md font-semibold text-on-surface-variant">Wkrótce</h3>
-            <ul className="flex flex-col gap-1">
-              {SOON.map((label) => (
-                <li key={label} className="flex min-h-12 items-center px-space-md text-body-md text-on-surface-variant">
-                  {label}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </dialog>
     </header>
   );
 }

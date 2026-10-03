@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Icon } from "@/components/Icon";
 
-export function ActionBar() {
+export function ActionBar({ pdfUrl }: { pdfUrl: string }) {
   const [copied, setCopied] = useState(false);
 
   async function copyLink() {
@@ -23,6 +23,18 @@ export function ActionBar() {
       >
         <Icon name="how_to_reg" size={22} />
         <span>Zgłoś się do testowania</span>
+      </a>
+      <a
+        href={pdfUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex min-h-12 items-center justify-center gap-2 rounded-lg bg-surface-container-lowest px-space-md py-2 text-center text-label-lg font-semibold text-primary shadow-sm hover:bg-surface-container-high hc-edge"
+      >
+        <Icon name="info" size={22} />
+        <span>
+          Więcej informacji (PDF)
+          <span className="sr-only">, otwiera się w nowej karcie</span>
+        </span>
       </a>
       <button
         type="button"

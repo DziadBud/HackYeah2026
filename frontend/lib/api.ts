@@ -101,6 +101,8 @@ export interface SupportResponse {
 export interface LibraryInnovation extends AdminInnovation {
   rating_avg: number | null;
   rating_count: number;
+  // only the detail endpoint fills it; true when innovationPdfUrl serves the source pdf
+  has_pdf?: boolean;
 }
 
 export type ModerationStatus = "pending" | "published" | "hidden";
@@ -162,6 +164,7 @@ export const api = {
   innovations: (limit: number, offset: number) =>
     request<Page<LibraryInnovation>>(`/innovations?limit=${limit}&offset=${offset}`),
   innovation: (id: string) => request<LibraryInnovation>(`/innovations/${enc(id)}`),
+  innovationPdfUrl: (id: string) => `${API_URL}/innovations/${enc(id)}/pdf`,
   threads: (innovationId: string) => request<Thread[]>(`/innovations/${enc(innovationId)}/threads`),
   createThread: (innovationId: string, body: ThreadCreate) =>
     post<Submitted>(`/innovations/${enc(innovationId)}/threads`, body),

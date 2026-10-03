@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ApiError, api, type LibraryInnovation, type Thread } from "@/lib/api";
-import { CARETAKER, findInnovation, type DemoInnovation } from "@/lib/demo-data";
+import { CARETAKER, SAMPLE_PDF_URL, findInnovation, type DemoInnovation } from "@/lib/demo-data";
 import { AREA_LABEL, COST, READINESS } from "@/lib/labels";
 import { Icon } from "@/components/Icon";
 import { ActionBar } from "@/components/innovation/ActionBar";
@@ -27,6 +27,7 @@ interface View {
   deployedIn?: string;
   details: { label: string; value: string }[];
   videoUrl?: string | null;
+  pdfUrl: string;
 }
 
 type State =
@@ -60,6 +61,7 @@ function fromApi(i: LibraryInnovation): View {
     deployedIn: i.city || undefined,
     details,
     videoUrl: i.video_url,
+    pdfUrl: i.has_pdf ? api.innovationPdfUrl(i.id) : SAMPLE_PDF_URL,
   };
 }
 
@@ -76,6 +78,7 @@ function fromDemo(d: DemoInnovation): View {
     results: d.results,
     deployedIn: d.deployedIn,
     details: [],
+    pdfUrl: SAMPLE_PDF_URL,
   };
 }
 
@@ -209,7 +212,7 @@ export function InnovationDetail({ id }: { id: string }) {
             </p>
           )}
         </div>
-        <ActionBar />
+        <ActionBar pdfUrl={i.pdfUrl} />
       </header>
 
       <div className="grid grid-cols-1 items-start gap-space-lg lg:grid-cols-12">
