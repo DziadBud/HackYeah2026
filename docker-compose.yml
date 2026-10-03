@@ -139,6 +139,7 @@ services:
       EMBEDDING_SERVICE_URL: http://embeddings:80/embed
       OLLAMA_URL: http://ollama:11434
       OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:1.5b}
+      MATCH_MIN_SCORE: ${MATCH_MIN_SCORE:-0.15}
     ports:
       - "${RAG_PORT:-8001}:8000"
     depends_on:
@@ -146,8 +147,8 @@ services:
         condition: service_completed_successfully
       embeddings:
         condition: service_started
-      ollama-init:
-        condition: service_completed_successfully
+      # ollama is optional (tagging / grounded answers). embeddings do not need it.
+      # start ollama separately if you want those features: docker compose up ollama ollama-init
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
       interval: 10s
