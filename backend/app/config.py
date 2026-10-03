@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     app_name: str = "hackyeah-api"
     debug: bool = False
     cors_origins: list[str] = ["http://localhost:3000"]
+    database_url: str = "postgresql+psycopg://hackyeah:hackyeah@localhost:5432/hackyeah"
 
 
 settings = Settings()
