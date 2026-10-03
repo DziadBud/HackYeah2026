@@ -1,4 +1,4 @@
-.PHONY: venv run test up down migrate
+.PHONY: venv run test up down migrate openapi
 
 venv:
 	python3 -m venv .venv && .venv/bin/pip install -r requirements-dev.txt
@@ -21,3 +21,7 @@ migrate:
 		echo "=== $$f ==="; \
 		docker exec -i hackyeah-db psql -U hackyeah -d hackyeah -v ON_ERROR_STOP=1 < "$$f"; \
 	done
+
+# api contract for the frontend; regenerate after any api change and commit it
+openapi:
+	DEBUG=false .venv/bin/python -c "import json; from app.main import app; print(json.dumps(app.openapi(), indent=2, ensure_ascii=False))" > openapi.json

@@ -32,7 +32,7 @@ frontend/
     globals.css                 # tailwind entry + design tokens, high-contrast and text-scale modes
     fonts/                      # self-hosted icon font subset (scripts/fetch-icons.sh)
   components/                   # A11yToolbar, SiteHeader, SiteFooter, InnovationCard, chat/, innovation/, admin/
-  lib/api.ts                    # typed match-api client (the only place that knows the API)
+  lib/api.ts                    # typed match-api client (the only place that knows the API); types follow backend/openapi.json
   lib/demo-data.ts              # demo innovations until /match and public innovation endpoints exist
   lib/admin-mock.ts             # offline copy of the backend admin mocks (incl. innovation stats)
   Dockerfile                    # multi-stage, standalone output
