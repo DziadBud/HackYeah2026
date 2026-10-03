@@ -10,13 +10,9 @@ services:
       - "${POSTGRES_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      # Single directory mount only — file mounts into the same path break on Docker Desktop (RO fs).
+      # Sources live in rag/sql/; copies for init order are under docker/postgres/init/.
       - ./docker/postgres/init:/docker-entrypoint-initdb.d:ro
-      - ./rag/sql/001_rag_chunks.sql:/docker-entrypoint-initdb.d/02-rag_chunks.sql:ro
-      - ./rag/sql/002_parent_metadata.sql:/docker-entrypoint-initdb.d/03-parent_metadata.sql:ro
-      - ./rag/sql/003_parent_links.sql:/docker-entrypoint-initdb.d/04-parent_links.sql:ro
-      - ./rag/sql/004_localization.sql:/docker-entrypoint-initdb.d/05-localization.sql:ro
-      - ./rag/sql/005_city.sql:/docker-entrypoint-initdb.d/06-city.sql:ro
-      - ./rag/sql/006_innovations.sql:/docker-entrypoint-initdb.d/07-innovations.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-hackyeah} -d ${POSTGRES_DB:-hackyeah}"]
       interval: 5s
