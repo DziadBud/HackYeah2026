@@ -1943,18 +1943,6 @@
             "minLength": 1,
             "title": "Summary"
           },
-          "problem": {
-            "type": "string",
-            "maxLength": 5000,
-            "minLength": 1,
-            "title": "Problem"
-          },
-          "innovator": {
-            "type": "string",
-            "maxLength": 200,
-            "minLength": 1,
-            "title": "Innovator"
-          },
           "challenge_areas": {
             "items": {
               "$ref": "#/components/schemas/ChallengeArea"
@@ -1962,20 +1950,6 @@
             "type": "array",
             "minItems": 1,
             "title": "Challenge Areas"
-          },
-          "readiness": {
-            "$ref": "#/components/schemas/Readiness"
-          },
-          "cost_level": {
-            "$ref": "#/components/schemas/CostLevel"
-          },
-          "target_group": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "title": "Target Group",
-            "default": []
           },
           "tags": {
             "items": {
@@ -2002,30 +1976,6 @@
               }
             ],
             "title": "Page Url"
-          },
-          "image_url": {
-            "anyOf": [
-              {
-                "type": "string",
-                "maxLength": 2000
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Image Url"
-          },
-          "video_url": {
-            "anyOf": [
-              {
-                "type": "string",
-                "maxLength": 2000
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Video Url"
           }
         },
         "type": "object",
@@ -2033,11 +1983,7 @@
           "file",
           "title",
           "summary",
-          "problem",
-          "innovator",
-          "challenge_areas",
-          "readiness",
-          "cost_level"
+          "challenge_areas"
         ],
         "title": "Body_create_innovation_admin_innovations_post"
       },
@@ -2054,15 +2000,6 @@
           "Seniorzy"
         ],
         "title": "ChallengeArea"
-      },
-      "CostLevel": {
-        "type": "string",
-        "enum": [
-          "low",
-          "medium",
-          "high"
-        ],
-        "title": "CostLevel"
       },
       "CriticalRow": {
         "properties": {
@@ -2677,16 +2614,6 @@
             "type": "string",
             "title": "Summary"
           },
-          "problem": {
-            "type": "string",
-            "title": "Problem",
-            "default": ""
-          },
-          "innovator": {
-            "type": "string",
-            "title": "Innovator",
-            "default": ""
-          },
           "challenge_areas": {
             "items": {
               "$ref": "#/components/schemas/ChallengeArea"
@@ -2694,39 +2621,12 @@
             "type": "array",
             "title": "Challenge Areas"
           },
-          "target_group": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "title": "Target Group"
-          },
-          "readiness": {
-            "anyOf": [
-              {
-                "$ref": "#/components/schemas/Readiness"
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "cost_level": {
-            "anyOf": [
-              {
-                "$ref": "#/components/schemas/CostLevel"
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
           "city": {
             "type": "string",
             "title": "City",
             "default": ""
           },
-          "video_url": {
+          "page_url": {
             "anyOf": [
               {
                 "type": "string"
@@ -2735,7 +2635,7 @@
                 "type": "null"
               }
             ],
-            "title": "Video Url"
+            "title": "Page Url"
           },
           "id": {
             "type": "string",
@@ -2750,7 +2650,6 @@
           "title",
           "summary",
           "challenge_areas",
-          "target_group",
           "id",
           "status"
         ],
@@ -3047,62 +2946,6 @@
             ],
             "title": "Challenge Areas"
           },
-          "problem": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Problem"
-          },
-          "innovator": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Innovator"
-          },
-          "target_group": {
-            "anyOf": [
-              {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Target Group"
-          },
-          "readiness": {
-            "anyOf": [
-              {
-                "$ref": "#/components/schemas/Readiness"
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "cost_level": {
-            "anyOf": [
-              {
-                "$ref": "#/components/schemas/CostLevel"
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
           "city": {
             "anyOf": [
               {
@@ -3114,7 +2957,7 @@
             ],
             "title": "City"
           },
-          "video_url": {
+          "page_url": {
             "anyOf": [
               {
                 "type": "string"
@@ -3123,7 +2966,7 @@
                 "type": "null"
               }
             ],
-            "title": "Video Url"
+            "title": "Page Url"
           }
         },
         "type": "object",
@@ -3172,16 +3015,6 @@
             "type": "string",
             "title": "Summary"
           },
-          "problem": {
-            "type": "string",
-            "title": "Problem",
-            "default": ""
-          },
-          "innovator": {
-            "type": "string",
-            "title": "Innovator",
-            "default": ""
-          },
           "challenge_areas": {
             "items": {
               "$ref": "#/components/schemas/ChallengeArea"
@@ -3189,39 +3022,12 @@
             "type": "array",
             "title": "Challenge Areas"
           },
-          "target_group": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "title": "Target Group"
-          },
-          "readiness": {
-            "anyOf": [
-              {
-                "$ref": "#/components/schemas/Readiness"
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "cost_level": {
-            "anyOf": [
-              {
-                "$ref": "#/components/schemas/CostLevel"
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
           "city": {
             "type": "string",
             "title": "City",
             "default": ""
           },
-          "video_url": {
+          "page_url": {
             "anyOf": [
               {
                 "type": "string"
@@ -3230,7 +3036,7 @@
                 "type": "null"
               }
             ],
-            "title": "Video Url"
+            "title": "Page Url"
           },
           "id": {
             "type": "string",
@@ -3261,7 +3067,6 @@
           "title",
           "summary",
           "challenge_areas",
-          "target_group",
           "id",
           "status"
         ],
@@ -3769,16 +3574,6 @@
           "published"
         ],
         "title": "PublicationStatus"
-      },
-      "Readiness": {
-        "type": "string",
-        "enum": [
-          "concept",
-          "prototype",
-          "pilot",
-          "running"
-        ],
-        "title": "Readiness"
       },
       "Reply": {
         "properties": {

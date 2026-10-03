@@ -80,7 +80,7 @@ flowchart TD
     E -- error --> G["stays draft, error logged; admin re-uploads"]
 ```
 
-- **Create from a PDF:** `POST /admin/innovations` takes the metadata (`title`, `summary`, `problem`, `innovator`, `challenge_areas`, `readiness`, `cost_level`, `target_group`, `tags`, `city`, `page_url`, `image_url`, `video_url`) plus the PDF.
+- **Create from a PDF:** `POST /admin/innovations` takes the metadata (`title`, `summary`, `challenge_areas`, `tags`, `city`, `page_url`) plus the PDF.
   - match-api validates it (PDF, ≤ 10 MB, the same limits as rag), saves the file under `UPLOAD_DIR`, inserts the row as `draft`, commits, and returns 202 with the id.
   - A FastAPI background task then sends the PDF to rag `POST /embed/pdf`; on success match-api sets `status = 'published'`. The draft is committed first because rag looks the row up and replaces its chunks.
   - Trade-off: a background task instead of a queue. Simple and enough for a handful of uploads, but a process restart mid-embed loses the task (the row stays draft; the admin uploads again), and nothing retries.
@@ -200,7 +200,6 @@ erDiagram
     INNOVATIONS ||--o{ THREADS : "discussed in"
     INNOVATIONS ||--o{ GENERATED_DOCUMENTS : "adapted as"
     PROBLEM_REPORTS ||--o{ TEST_SIGNUPS : "volunteers from"
-    TEST_SIGNUPS |o--o{ FEEDBACK : "may leave"
     IDEAS |o--o| INNOVATIONS : "becomes"
     IDEAS ||--o{ GENERATED_DOCUMENTS : "grant draft from"
     GRANT_CALLS ||--o{ GENERATED_DOCUMENTS : "filled for"
@@ -208,18 +207,11 @@ erDiagram
     INNOVATIONS {
         text id PK "rag table"
         text title
+        text content
         text summary
-        text problem "what need it solves"
-        text innovator
-        text[] challenge_areas "Mapa areas"
-        text[] target_group
-        text readiness "concept|prototype|pilot|running"
-        text cost_level "low|medium|high"
-        text[] tags "type:* + area:* mirrors"
+        text[] tags "type:* + area:<slug> challenge areas"
         text city
-        text image_url
         text page_url
-        text video_url
         text status "draft|published"
         timestamptz created_at
         timestamptz updated_at
@@ -280,8 +272,8 @@ erDiagram
     FEEDBACK {
         uuid id PK
         text innovation_id FK
-        uuid test_signup_id FK "null if open rating"
-        int stars "1..5"
+        text kind "rating|test_signup, read by rag"
+        int rating "1..5, api field stars"
         text comment
         timestamptz created_at
     }
@@ -320,14 +312,14 @@ erDiagram
     }
 ```
 
-- **Innovations** keep the rag columns and add match-api fields used by the library card, Middleman and LLM explanations: `problem`, `innovator`, `challenge_areas`, `target_group`, `readiness`, `cost_level`, `video_url`. Films still link through `page_url` / `video_url`. Dropped: unused `parent_url` (rag aliases `page_url` as `parent_url` in responses only).
-- **Tags:** every row carries `type:innovation` or `type:report` (ROPS reports and Mapa Wyzwań PDFs), so reports never show up in `/match`. Challenge areas are also mirrored as `area:*` tags for rag filters; canonical values live in `challenge_areas`.
+- **Innovations** are rag's table as-is (`rag/sql`); match-api maps exactly its columns and adds none. Films link through `page_url`. rag aliases `page_url` as `parent_url` in responses only.
+- **Tags:** every row carries `type:innovation` or `type:report` (ROPS reports and Mapa Wyzwań PDFs), so reports never show up in `/match`. Challenge areas are stored only as `area:<slug>` tags; the API's `challenge_areas` is read from them.
 - **Taxonomy:** the 8 Mapa challenge areas (Rodzina i piecza zastepcza, Bezdomnosc, Niepelnosprawnosc, Ubostwo, Integracja cudzoziemcow, Zdrowie, Zdrowie psychiczne, Seniorzy).
 - **city** = gmina, picked from a fixed list. Free-text city spellings are rejected on write.
 - **Criticality** is not stored: reports compute it on read (problem reports × distinct cities × 7d growth).
 - **Threads** are per-innovation community discussions (R5). No public accounts: `author_label` + optional `email`. Flat replies only (no nested reply trees). `helpful_count` stays in the table, but the public "pomocne" endpoint is deferred, so nothing increments it yet. Public replies are always `practitioner`; `expert` / `mentor` / `admin` are set by ROPS. Public lists show `published` only; `pending` waits for ROPS moderation.
 - **Generated documents** store Middleman service cards and grant-application drafts so the user and admin can reopen them. They are not re-submitted into an external grant DB (that stays deferred).
-- **Naming:** always `city` (not `location`), always `stars` on feedback.
+- **Naming:** always `city` (not `location`), always `stars` on feedback in the API (rag column `rating`).
 
 Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `POST /threads/{id}/replies`, `POST /middleman`, grant generator on an idea (both persist a `generated_documents` row).
 
@@ -363,7 +355,7 @@ Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `P
 ```
 backend/             # match-api
   app/               # api/*.py, api/admin/*.py, schemas/, services/ (interface + mock first, db next), rag client
-  sql/               # match-api tables + innovations ALTER, mounted into initdb after rag's
+  sql/               # match-api tables only; compose `migrate` applies rag/sql then this
 rag/                 # used as merged
 docker-compose.yml   # postgres (pgvector image), rag, embeddings, ollama, api, mailpit
 ```
@@ -405,10 +397,11 @@ docker-compose.yml   # postgres (pgvector image), rag, embeddings, ollama, api, 
 4. Data model: merged rag tables + match-api tables (`problem_reports`, `ideas`, `grant_calls`, `test_signups`, `feedback`, `threads`, `thread_replies`, `generated_documents`):
    - the email and `admin_reply` live on the item; problem reports also have `hidden`
    - "mnie też" is a counter; thread "pomocne" is deferred
-   - innovations keep rag columns and add `problem`, `innovator`, `challenge_areas`, `target_group`, `readiness`, `cost_level`, `video_url`; challenge areas are mirrored into `area:*` tags for rag
+   - innovations are rag's table as-is; challenge areas live in `area:<slug>` tags
    - `location` is renamed to `city`; cities come from a fixed list
    - criticality is computed on read, not stored
    - Middleman and grant drafts are stored in `generated_documents`
    - community threads are first-class (pending moderation, flat replies, role `kind`)
    - contacts, nested reply trees, test rounds, per-item tokens and index jobs stay deferred
 5. Innovation upload calls rag `POST /embed/pdf` directly from a background task and publishes the innovation on success; no queue between match-api and rag.
+6. One schema definition: each table is defined once by its owner. rag owns `innovations`, `innovation_chunks` and `feedback` (`rag/sql`); match-api owns only its own tables (`backend/sql`) and maps rag's tables exactly, adding no columns. Dropped from innovations: `problem`, `innovator`, `target_group`, `readiness`, `cost_level`, `video_url`, `image_url`; `challenge_areas` is read from `area:<slug>` tags. A one-shot compose `migrate` service applies `rag/sql` then `backend/sql` on every `up`, before `rag` and `api` start; the `docker/postgres/init` copies are gone. match-api writes rag's `feedback`: API `stars` maps to `rating`, tester feedback is `kind='test_signup'`; the signup id is validated but not stored.

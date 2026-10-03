@@ -16,7 +16,7 @@ def words(text: str) -> set[str]:
 
 
 def overlap(query: set[str], innovation: Innovation) -> int:
-    return len(query & words(f"{innovation.title} {innovation.summary} {innovation.problem}"))
+    return len(query & words(f"{innovation.title} {innovation.summary}"))
 
 
 def explain_fit(innovation: Innovation) -> str:
@@ -25,12 +25,11 @@ def explain_fit(innovation: Innovation) -> str:
 
 
 def middleman_card(innovation: Innovation, data: MiddlemanRequest) -> str:
-    cost = innovation.cost_level.value if innovation.cost_level else "nieznany"
     return (
         f"Usługa: {innovation.title} dla instytucji typu {data.institution_type.value}\n"
         f"Potrzeba: {data.needs}\n"
         f"Na czym polega: {innovation.summary}\n"
-        f"Koszt: do oszacowania (poziom {cost})"
+        "Koszt: do oszacowania"
     )
 
 

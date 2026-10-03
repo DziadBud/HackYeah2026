@@ -31,9 +31,10 @@ test_signups(id uuid pk, innovation_id text fk innovations,
              email text,
              status text,  -- applied | accepted | rejected | completed
              created_at, updated_at)
-feedback(id uuid pk, innovation_id text fk innovations,
-         test_signup_id uuid fk test_signups null,  -- set when a tester rates
-         stars int, comment text, created_at)
+feedback(id uuid pk, innovation_id text fk innovations,  -- rag's table (rag/sql/006)
+         kind text,  -- rating | test_signup; test_signup when a valid test_signup_id is sent
+         rating int,  -- api field stars
+         comment text, created_at)
 ```
 
 ## Failure modes
@@ -41,7 +42,7 @@ feedback(id uuid pk, innovation_id text fk innovations,
 |---|---|
 | spam signups or ratings | per-IP rate limit, length caps |
 | email send fails | logged, not retried; the admin still sees the status |
-| anyone can rate without having tested | accepted for the MVP; optional `test_signup_id` marks real-tester feedback; shown as an average with a count |
+| anyone can rate without having tested | accepted for the MVP; optional `test_signup_id` is validated and stored as `kind='test_signup'` (which signup is not kept); shown as an average with a count |
 
 ## Rollout
 1. `test_signups` + admin status change + email.

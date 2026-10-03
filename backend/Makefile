@@ -15,12 +15,9 @@ up:
 down:
 	cd .. && docker compose down
 
-# apply match-api schema to a running local db (idempotent; one file per table)
+# re-apply match-api schema to the running db (idempotent; also runs on every `make up`)
 migrate:
-	@for f in sql/*.sql; do \
-		echo "=== $$f ==="; \
-		docker exec -i hackyeah-db psql -U hackyeah -d hackyeah -v ON_ERROR_STOP=1 < "$$f"; \
-	done
+	cd .. && docker compose run --rm migrate
 
 # api contract + swagger page in documentation/api; regenerate after any api change and commit them
 openapi:

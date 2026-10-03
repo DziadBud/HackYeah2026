@@ -8,30 +8,19 @@ from app.db.base import Base
 
 
 class Innovation(Base):
-    """Shared with rag. match-api owns CRUD; rag owns chunks + retrieval filters."""
+    """rag owns this table (rag/sql); the model mirrors its columns exactly."""
 
     __tablename__ = "innovations"
 
     id: Mapped[str] = mapped_column(Text, primary_key=True)
     title: Mapped[str] = mapped_column(Text, nullable=False)
+    content: Mapped[str] = mapped_column(Text, nullable=False, server_default="")
     summary: Mapped[str] = mapped_column(Text, nullable=False, server_default="")
-    problem: Mapped[str] = mapped_column(Text, nullable=False, server_default="")
-    innovator: Mapped[str] = mapped_column(Text, nullable=False, server_default="")
-    challenge_areas: Mapped[list[str]] = mapped_column(
-        ARRAY(Text), nullable=False, server_default=sa_text("'{}'")
-    )
-    target_group: Mapped[list[str]] = mapped_column(
-        ARRAY(Text), nullable=False, server_default=sa_text("'{}'")
-    )
-    readiness: Mapped[str | None] = mapped_column(Text)
-    cost_level: Mapped[str | None] = mapped_column(Text)
     tags: Mapped[list[str]] = mapped_column(
         ARRAY(Text), nullable=False, server_default=sa_text("'{}'")
     )
     city: Mapped[str | None] = mapped_column(Text)
-    image_url: Mapped[str | None] = mapped_column(Text)
     page_url: Mapped[str | None] = mapped_column(Text)
-    video_url: Mapped[str | None] = mapped_column(Text)
     status: Mapped[str] = mapped_column(Text, nullable=False, server_default="draft")
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), nullable=False, server_default=func.now()

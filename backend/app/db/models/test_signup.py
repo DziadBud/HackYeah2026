@@ -36,4 +36,3 @@ class TestSignup(Base):
 
     innovation = relationship("Innovation", back_populates="test_signups")
     problem_report = relationship("ProblemReport", back_populates="test_signups")
-    feedback_items = relationship("Feedback", back_populates="test_signup")

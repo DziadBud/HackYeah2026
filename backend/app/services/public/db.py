@@ -32,6 +32,7 @@ from app.schemas.public.threads import (
     ThreadCreate,
 )
 from app.services.admin.db import grant_call_to_schema, innovation_to_schema, parse_uuid
+from app.services.admin.innovation_upload import area_tag
 from app.services.admin.errors import InvalidRequestError, NotFoundError
 from app.services.public.drafts import explain_fit, grant_draft, middleman_card, overlap, words
 
@@ -228,7 +229,7 @@ class DbLibraryService:
     ) -> Page[LibraryInnovation]:
         query = select(InnovationRow).where(InnovationRow.status == PublicationStatus.PUBLISHED.value)
         if challenge_area is not None:
-            query = query.where(InnovationRow.challenge_areas.any(challenge_area.value))
+            query = query.where(InnovationRow.tags.any(area_tag(challenge_area)))
         if q:
             query = query.where(InnovationRow.title.ilike(f"%{q}%") | InnovationRow.summary.ilike(f"%{q}%"))
         total = self._db.scalar(select(func.count()).select_from(query.subquery())) or 0
@@ -247,15 +248,16 @@ class DbLibraryService:
 
     def add_feedback(self, innovation_id: str, data: FeedbackCreate) -> FeedbackCreated:
         _published(self._db, innovation_id)
-        signup_id = None
+        kind = "rating"
         if data.test_signup_id:
             signup = self._db.get(TestSignup, parse_uuid(data.test_signup_id))
             if signup is None or signup.innovation_id != innovation_id:
                 raise InvalidRequestError("this test signup is not for this innovation")
-            signup_id = signup.id
+            # rag's feedback has no signup fk; the id is only validated
+            kind = "test_signup"
         row = Feedback(
             innovation_id=innovation_id,
-            test_signup_id=signup_id,
+            kind=kind,
             stars=data.stars,
             comment=data.comment or None,
         )

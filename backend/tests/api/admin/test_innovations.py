@@ -2,7 +2,6 @@ import pytest
 
 from app.main import app
 from app.schemas.admin.common import ChallengeArea
-from app.schemas.admin.innovations import CostLevel, Readiness
 from app.services.admin import deps
 from app.services.admin.errors import InvalidUploadError, UploadTooLargeError
 from app.services.admin.innovation_upload import CreatedInnovation, InnovationUploadService, NewInnovation
@@ -13,20 +12,12 @@ PDF = b"%PDF-1.7 fake"
 UPLOADED = NewInnovation(
     title="Nowa innowacja",
     summary="Opis",
-    problem="Problem",
-    innovator="Fundacja Testowa",
     challenge_areas=[ChallengeArea.SENIORS],
-    readiness=Readiness.CONCEPT,
-    cost_level=CostLevel.LOW,
 )
 FORM = {
     "title": "Opaska",
     "summary": "Opis",
-    "problem": "Seniorzy nie slysza alarmow",
-    "innovator": "Fundacja Testowa",
     "challenge_areas": ["Seniorzy"],
-    "readiness": "pilot",
-    "cost_level": "low",
     "tags": ["opaska", "pilotaz"],
 }
 
@@ -85,17 +76,16 @@ def test_upload(client, auth, error, want) -> None:
         assert res.json() == {"id": "opaska-abc123", "title": "Opaska", "status": "draft"}
         assert svc.embedded == ("opaska-abc123", "/x.pdf")
         data, pdf = svc.calls[0]
-        assert (data.innovator, data.challenge_areas, data.tags, data.city, pdf) == (
-            "Fundacja Testowa", ["Seniorzy"], ["opaska", "pilotaz"], "", PDF
+        assert (data.summary, data.challenge_areas, data.tags, data.city, pdf) == (
+            "Opis", ["Seniorzy"], ["opaska", "pilotaz"], "", PDF
         )
 
 
 @pytest.mark.parametrize(
     "override",
     [
-        pytest.param({"problem": ""}, id="#1 - FAIL - empty problem"),
+        pytest.param({"summary": ""}, id="#1 - FAIL - empty summary"),
         pytest.param({"challenge_areas": ["Kosmos"]}, id="#2 - FAIL - unknown area"),
-        pytest.param({"readiness": "someday"}, id="#3 - FAIL - unknown readiness"),
     ],
 )
 def test_upload_invalid_field_422(client, auth, override) -> None:
@@ -120,9 +110,9 @@ def test_upload_requires_admin(client) -> None:
 
 def test_get_and_patch(client, auth) -> None:
     assert client.get(f"{BASE}/wibraap", headers=auth).json()["id"] == "wibraap"
-    res = client.patch(f"{BASE}/wibraap", json={"cost_level": "high"}, headers=auth)
+    res = client.patch(f"{BASE}/wibraap", json={"city": "Tarnów"}, headers=auth)
     assert res.status_code == 200
-    assert res.json()["cost_level"] == "high"
+    assert res.json()["city"] == "Tarnów"
     assert res.json()["title"] == "Wibraap"
 
 
@@ -149,10 +139,10 @@ def test_patch_null_required_field_422(client, auth) -> None:
     assert res.status_code == 422
 
 
-def test_patch_null_video_url_clears_it(client, auth) -> None:
-    res = client.patch(f"{BASE}/wibraap", json={"video_url": None}, headers=auth)
+def test_patch_null_page_url_clears_it(client, auth) -> None:
+    res = client.patch(f"{BASE}/wibraap", json={"page_url": None}, headers=auth)
     assert res.status_code == 200
-    assert res.json()["video_url"] is None
+    assert res.json()["page_url"] is None
 
 
 def test_stats_totals_add_up(client, auth) -> None:
@@ -215,8 +205,5 @@ def test_upload_embeds_and_publishes(client, auth, tmp_path) -> None:
     # the testclient runs background tasks before returning, so rag has already embedded it
     created = client.get(f"{BASE}/{res.json()['id']}", headers=auth).json()
     assert created["status"] == "published"
-    assert created["challenge_areas"] == ["Seniorzy"]
-    assert (created["problem"], created["innovator"], created["readiness"]) == (
-        "Seniorzy nie slysza alarmow", "Fundacja Testowa", "pilot"
-    )
+    assert (created["title"], created["challenge_areas"]) == ("Opaska", ["Seniorzy"])
     assert embedded == [created["id"]]
