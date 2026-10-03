@@ -219,6 +219,17 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+# Node / Next.js (frontend)
+node_modules/
+.next/
+out/
+next-env.d.ts
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.vercel
+
 # project
 .DS_Store
 .idea/
@@ -226,4 +237,4 @@ __marimo__/
 .env.*
 !.env.example
 
-.claude/*
+.claude/context/*

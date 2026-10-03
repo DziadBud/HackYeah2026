@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     app_name: str = "hackyeah-api"
     debug: bool = False
     cors_origins: list[str] = ["http://localhost:3000"]
+    database_url: str = "postgresql+psycopg://hackyeah:hackyeah@localhost:5432/hackyeah"
 
     # email -> argon2id hash, generate with `make hash-password`
     admin_accounts: dict[str, str] = {}
@@ -14,7 +15,6 @@ class Settings(BaseSettings):
     admin_session_idle_minutes: int = 30
     admin_login_max_failures: int = 5
     admin_login_window_minutes: int = 15
-    ip_hash_salt: str = ""
 
 
 settings = Settings()

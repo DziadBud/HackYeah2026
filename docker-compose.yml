@@ -29,8 +29,8 @@ services:
     environment:
       DEBUG: ${DEBUG:-true}
       ADMIN_ACCOUNTS: ${ADMIN_ACCOUNTS:-{}}
-      IP_HASH_SALT: ${IP_HASH_SALT:-}
       DATABASE_URL: postgresql://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
     ports:
       - "${API_PORT:-8000}:8000"
     depends_on:
@@ -53,6 +53,18 @@ services:
       interval: 10s
       timeout: 5s
       retries: 10
+  web:
+    build:
+      context: ./frontend
+      # NEXT_PUBLIC_* is baked at build time, so the browser must reach the api
+      # directly (published on the host), not the compose-internal hostname.
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:${API_PORT:-8000}}
+    container_name: hackyeah-web
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    depends_on:
+      - api
 
 volumes:
   postgres_data:

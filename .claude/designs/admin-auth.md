@@ -2,8 +2,10 @@
 
 **Status:** accepted, MVP implemented (in-memory store) · **Date:** 2026-10-03
 
+**Changed:** IP logic removed; no IP stored on sessions, login limit keyed by email only (see [notifications-without-accounts.md](notifications-without-accounts.md)).
+
 ## Goal
-Only named ROPS staff can use `/admin/*` (match-api) and `/ingest/*` (ingest-service). Reports, problem reports and replies must never leak to the public (brief requirement, R6, R11). Every admin action is tied to a specific person.
+Only named ROPS staff can use `/admin/*` (match-api) and `POST /documents`, `GET /index-jobs/{id}` (rag service, `rag/`). Reports, problem reports and replies must never leak to the public (brief requirement, R6, R11). Every admin action is tied to a specific person.
 
 Non-goals: public user accounts, self-service sign-up, SSO with the voivodeship IdP (production path, see Rollout).
 
@@ -13,7 +15,7 @@ Non-goals: public user accounts, self-service sign-up, SSO with the voivodeship 
 - Security: passwords never stored in plain text, a stolen browser token is useless after logout or expiry, no token readable by JS (XSS), brute-force protection, no default credentials in the repo.
 - Assumptions (flagged):
   - 2-10 admins.
-  - Admin UI and API are served same-site behind one proxy (`/api`, `/ingest`), so cookies work.
+  - Admin UI and API are served same-site behind one proxy (`/api`, `/documents` + `/index-jobs` -> rag), so cookies work.
   - HTTPS in any non-local deployment.
 
 ## Options
@@ -29,7 +31,7 @@ An `admin_user` table with argon2id hashes. Login creates an opaque random sessi
 - \+ Instant revocation (logout, disable an admin, kill all sessions).
 - \+ The token is invisible to JS.
 - \+ Audit per person.
-- \+ ingest-service shares the DB, so the same dependency works there.
+- \+ the rag service shares the DB, so the same dependency works there (once sessions are in Postgres).
 - \- One DB lookup per request.
 - \- Needs same-site hosting and CSRF care for cookies.
 
@@ -61,11 +63,11 @@ admin_user(
 )
 admin_session(
   token_hash bytea pk,            -- sha256 of the cookie value, the raw token is never stored
-  admin_id uuid fk -> admin_user, created_at, last_seen_at, expires_at, ip_hash text
+  admin_id uuid fk -> admin_user, created_at, last_seen_at, expires_at
 )                                  -- index on admin_id (kill all sessions for one admin)
 admin_login_attempt(
-  key text, attempted_at timestamptz, ok bool
-)                                  -- key = 'email:..' or 'ip:..'; index (key, attempted_at)
+  email citext, attempted_at timestamptz, ok bool
+)                                  -- index (email, attempted_at)
 admin_audit(
   id uuid pk, admin_id fk, action text, target_type text, target_id text, at timestamptz
 )
@@ -86,10 +88,10 @@ Replies get a `replied_by` (admin id) and `replied_at` next to `admin_reply`.
 - **Session lifetime:** 8 h absolute, 30 min idle. `last_seen_at` is updated at most once a minute, to avoid a write on every request.
 - **Cookie flags:** `Secure` is off only when `DEBUG=true` (local http).
 - **CSRF:** `SameSite=Strict`, plus unsafe methods (POST, PATCH, DELETE) must carry an `Origin` header that is in `CORS_ORIGINS`. CORS uses `allow_credentials=True` with explicit origins, never `*`.
-- **Brute force:** 5 failed logins per email or per ip_hash in 15 min gives 429. Stored in Postgres, so the limit holds across instances.
+- **Brute force:** 5 failed logins per email in 15 min gives 429. Stored in Postgres, so the limit holds across instances.
 - **Bootstrap:** `make create-admin`, a CLI that prompts for the password. No seeded or default admin. `SESSION_PEPPER` is not needed because tokens are random 256-bit values.
 - **Hardening:** disable `/docs` and `/openapi.json` when `DEBUG=false`, because they list every admin route.
-- **ingest-service:** imports the same dependency from `common/auth.py`.
+- **rag service:** separate Python project, so it carries its own copy of the dependency (same table, same cookie) until shared code is extracted.
 
 ## Failure modes
 | Failure | Effect | Mitigation |

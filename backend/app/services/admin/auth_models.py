@@ -18,7 +18,6 @@ class AdminSession:
     created_at: datetime
     last_seen_at: datetime
     expires_at: datetime
-    ip_hash: str
 
 
 @dataclass(frozen=True)
