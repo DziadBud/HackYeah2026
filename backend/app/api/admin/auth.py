@@ -3,7 +3,6 @@ from fastapi import APIRouter, Depends, HTTPException, Request, Response, status
 from app.auth import (
     SESSION_COOKIE,
     clear_session_cookie,
-    client_ip_hash,
     require_admin,
     set_session_cookie,
 )
@@ -19,12 +18,11 @@ router = APIRouter(prefix="/auth", tags=["admin:auth"])
 @router.post("/login", status_code=status.HTTP_204_NO_CONTENT)
 def login(
     body: LoginRequest,
-    request: Request,
     response: Response,
     svc: AdminAuthService = Depends(get_auth_service),
 ) -> None:
     try:
-        token = svc.login(body.email, body.password, client_ip_hash(request))
+        token = svc.login(body.email, body.password)
     except InvalidCredentialsError:
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, "invalid credentials") from None
     except TooManyAttemptsError:

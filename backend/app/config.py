@@ -15,7 +15,6 @@ class Settings(BaseSettings):
     admin_session_idle_minutes: int = 30
     admin_login_max_failures: int = 5
     admin_login_window_minutes: int = 15
-    ip_hash_salt: str = ""
 
 
 settings = Settings()

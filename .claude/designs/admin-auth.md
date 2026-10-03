@@ -2,6 +2,8 @@
 
 **Status:** accepted, MVP implemented (in-memory store) · **Date:** 2026-10-03
 
+**Changed:** IP logic removed; no IP stored on sessions, login limit keyed by email only (see [notifications-without-accounts.md](notifications-without-accounts.md)).
+
 ## Goal
 Only named ROPS staff can use `/admin/*` (match-api) and `/ingest/*` (ingest-service). Reports, problem reports and replies must never leak to the public (brief requirement, R6, R11). Every admin action is tied to a specific person.
 
@@ -61,11 +63,11 @@ admin_user(
 )
 admin_session(
   token_hash bytea pk,            -- sha256 of the cookie value, the raw token is never stored
-  admin_id uuid fk -> admin_user, created_at, last_seen_at, expires_at, ip_hash text
+  admin_id uuid fk -> admin_user, created_at, last_seen_at, expires_at
 )                                  -- index on admin_id (kill all sessions for one admin)
 admin_login_attempt(
-  key text, attempted_at timestamptz, ok bool
-)                                  -- key = 'email:..' or 'ip:..'; index (key, attempted_at)
+  email citext, attempted_at timestamptz, ok bool
+)                                  -- index (email, attempted_at)
 admin_audit(
   id uuid pk, admin_id fk, action text, target_type text, target_id text, at timestamptz
 )
@@ -86,7 +88,7 @@ Replies get a `replied_by` (admin id) and `replied_at` next to `admin_reply`.
 - **Session lifetime:** 8 h absolute, 30 min idle. `last_seen_at` is updated at most once a minute, to avoid a write on every request.
 - **Cookie flags:** `Secure` is off only when `DEBUG=true` (local http).
 - **CSRF:** `SameSite=Strict`, plus unsafe methods (POST, PATCH, DELETE) must carry an `Origin` header that is in `CORS_ORIGINS`. CORS uses `allow_credentials=True` with explicit origins, never `*`.
-- **Brute force:** 5 failed logins per email or per ip_hash in 15 min gives 429. Stored in Postgres, so the limit holds across instances.
+- **Brute force:** 5 failed logins per email in 15 min gives 429. Stored in Postgres, so the limit holds across instances.
 - **Bootstrap:** `make create-admin`, a CLI that prompts for the password. No seeded or default admin. `SESSION_PEPPER` is not needed because tokens are random 256-bit values.
 - **Hardening:** disable `/docs` and `/openapi.json` when `DEBUG=false`, because they list every admin route.
 - **ingest-service:** imports the same dependency from `common/auth.py`.

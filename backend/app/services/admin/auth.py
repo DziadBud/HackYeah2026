@@ -50,25 +50,22 @@ class AdminAuthService:
         self._failure_window = failure_window
         self._now = now
 
-    def login(self, email: str, password: str, ip_hash: str) -> str:
+    def login(self, email: str, password: str) -> str:
         """returns the raw session token for the cookie"""
         now = self._now()
         email = email.strip().lower()
-        keys = (f"email:{email}", f"ip:{ip_hash}")
-        since = now - self._failure_window
-        if any(self._store.count_failed_attempts(k, since) >= self._max_failures for k in keys):
+        key = f"email:{email}"
+        if self._store.count_failed_attempts(key, now - self._failure_window) >= self._max_failures:
             raise TooManyAttemptsError
 
         admin = self._store.get_admin_by_email(email)
         if not self._verify(admin.password_hash if admin else _DUMMY_HASH, password) or not (
             admin and admin.is_active
         ):
-            for k in keys:
-                self._store.record_login_attempt(k, now, ok=False)
+            self._store.record_login_attempt(key, now, ok=False)
             raise InvalidCredentialsError
 
-        for k in keys:
-            self._store.record_login_attempt(k, now, ok=True)
+        self._store.record_login_attempt(key, now, ok=True)
         token = secrets.token_urlsafe(32)
         self._store.create_session(
             AdminSession(
@@ -77,7 +74,6 @@ class AdminAuthService:
                 created_at=now,
                 last_seen_at=now,
                 expires_at=now + self._session_ttl,
-                ip_hash=ip_hash,
             )
         )
         return token

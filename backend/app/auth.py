@@ -1,6 +1,3 @@
-import hashlib
-import hmac
-
 from fastapi import Depends, HTTPException, Request, Response, status
 
 from app.config import settings
@@ -11,12 +8,6 @@ from app.services.admin.errors import NotAuthenticatedError
 
 SESSION_COOKIE = "admin_session"
 _UNSAFE_METHODS = {"POST", "PUT", "PATCH", "DELETE"}
-
-
-def client_ip_hash(request: Request) -> str:
-    # raw ips are never stored (R11); behind a proxy run uvicorn with --proxy-headers
-    ip = request.client.host if request.client else "unknown"
-    return hmac.new(settings.ip_hash_salt.encode(), ip.encode(), hashlib.sha256).hexdigest()
 
 
 def set_session_cookie(response: Response, token: str) -> None:

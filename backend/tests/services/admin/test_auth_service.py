@@ -69,39 +69,34 @@ def test_login(pw_hash, clock, email, password, active, err) -> None:
     svc, _ = make(pw_hash, clock, active)
     if err:
         with pytest.raises(err):
-            svc.login(email, password, "ip1")
+            svc.login(email, password)
     else:
-        assert svc.authenticate(svc.login(email, password, "ip1")).id == "a1"
+        assert svc.authenticate(svc.login(email, password)).id == "a1"
 
 
 def test_raw_token_never_stored(pw_hash, clock) -> None:
     svc, store = make(pw_hash, clock)
-    token = svc.login("admin@rops.test", PASSWORD, "ip1")
+    token = svc.login("admin@rops.test", PASSWORD)
     assert store.get_session(token.encode()) is None
     assert store.get_session(hash_token(token)) is not None
 
 
-@pytest.mark.parametrize(
-    "first_ip,second_ip",
-    [("ip1", "ip1"), ("ip1", "ip2")],
-    ids=["#1 - FAIL - same ip", "#2 - FAIL - same email from another ip"],
-)
-def test_rate_limit(pw_hash, clock, first_ip, second_ip) -> None:
+def test_rate_limit(pw_hash, clock) -> None:
     svc, _ = make(pw_hash, clock)
     for _ in range(5):
         with pytest.raises(InvalidCredentialsError):
-            svc.login("admin@rops.test", "wrong", first_ip)
+            svc.login("admin@rops.test", "wrong")
     with pytest.raises(TooManyAttemptsError):
-        svc.login("admin@rops.test", PASSWORD, second_ip)
+        svc.login("admin@rops.test", PASSWORD)
 
 
 def test_rate_limit_window_expires(pw_hash, clock) -> None:
     svc, _ = make(pw_hash, clock)
     for _ in range(5):
         with pytest.raises(InvalidCredentialsError):
-            svc.login("admin@rops.test", "wrong", "ip1")
+            svc.login("admin@rops.test", "wrong")
     clock.now += timedelta(minutes=16)
-    assert svc.login("admin@rops.test", PASSWORD, "ip1")
+    assert svc.login("admin@rops.test", PASSWORD)
 
 
 @pytest.mark.parametrize(
@@ -115,7 +110,7 @@ def test_rate_limit_window_expires(pw_hash, clock) -> None:
 )
 def test_session_expiry(pw_hash, clock, steps, ok) -> None:
     svc, _ = make(pw_hash, clock)
-    token = svc.login("admin@rops.test", PASSWORD, "ip1")
+    token = svc.login("admin@rops.test", PASSWORD)
     for step in steps[:-1]:
         clock.now += step
         svc.authenticate(token)
@@ -129,7 +124,7 @@ def test_session_expiry(pw_hash, clock, steps, ok) -> None:
 
 def test_logout_revokes(pw_hash, clock) -> None:
     svc, _ = make(pw_hash, clock)
-    token = svc.login("admin@rops.test", PASSWORD, "ip1")
+    token = svc.login("admin@rops.test", PASSWORD)
     svc.logout(token)
     with pytest.raises(NotAuthenticatedError):
         svc.authenticate(token)
@@ -138,4 +133,4 @@ def test_logout_revokes(pw_hash, clock) -> None:
 def test_malformed_configured_hash_fails_closed(clock) -> None:
     svc, _ = make("not-a-hash", clock)
     with pytest.raises(InvalidCredentialsError):
-        svc.login("admin@rops.test", PASSWORD, "ip1")
+        svc.login("admin@rops.test", PASSWORD)
