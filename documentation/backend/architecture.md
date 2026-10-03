@@ -28,12 +28,17 @@ flowchart LR
     end
 
     DB[("Postgres + pgvector")]
+    MQ[["RabbitMQ<br/>innovation.embed"]]
+    FS[("uploads volume")]
     LLM[LLM API]
     SMTP["SMTP (Mailpit in demo)"]
 
     PUB & ADM --> DB
     PUB -- "POST /query" --> QRY
-    ADM -- "POST /embed/pdf (background)" --> EMBED
+    ADM -- "save PDF" --> FS
+    ADM -- "innovation.embed_requested" --> MQ
+    MQ -.-> RAG
+    FS -.-> RAG
     PUB --> LLM
     PUB & ADM -. "email, optional" .-> SMTP
     EMBED & QRY --> DB
@@ -41,10 +46,10 @@ flowchart LR
 
 | | rag service (`rag/`) | match-api (`backend/`) |
 |---|---|---|
-| Purpose | embed one innovation's text (`POST /embed`, `POST /embed/pdf`); retrieval (`POST /query`) | `/match` (calls rag, LLM explanation, optional test signup), problem reports, ideas, threads, Middleman / grant drafts, admin (incl. PDF upload that triggers embedding) |
+| Purpose | embed one innovation's text (`POST /embed`, `POST /embed/pdf`); retrieval (`POST /query`) | `/match` (calls rag, LLM explanation, optional test signup), problem reports, ideas, threads, Middleman / grant drafts, admin (incl. PDF upload: saves the file, publishes `innovation.embed_requested`) |
 | Exposure | internal compose network only (no auth) | public + `/admin/*` |
-| Writes | `innovation_chunks` | `innovations` rows (admin CRUD), `problem_reports`, `ideas`, `grant_calls`, `test_signups`, `feedback`, `threads`, `thread_replies`, `generated_documents` |
-| Down means | `/match` returns 503 (problem report still stored); uploaded innovations stay draft until re-uploaded | site down |
+| Writes | `innovation_chunks`, `innovations.status` after embedding | `innovations` rows (admin CRUD), `problem_reports`, `ideas`, `grant_calls`, `test_signups`, `feedback`, `threads`, `thread_replies`, `generated_documents` |
+| Down means | `/match` returns 503 (problem report still stored); uploaded innovations wait in the queue as drafts | site down |
 
 How rag behaves, and what match-api does about it:
 - **`POST /query {query, top_k ≤ 3, city?, title?, tags?}`:**
@@ -55,7 +60,7 @@ How rag behaves, and what match-api does about it:
   - match-api inserts and commits the row first, then calls it
 - **`innovations.city` is nullable but returned as `str`:** match-api always writes `city` (`''` when unknown).
 
-RabbitMQ (`rabbitmq` in compose, management UI on :15672) runs next to Postgres for match-api to publish to. The api container gets `RABBITMQ_URL`; match-api has no publisher code yet.
+RabbitMQ (`rabbitmq` in compose, management UI on :15672) runs next to Postgres for match-api to publish to. The api container gets `RABBITMQ_URL` and publishes `innovation.embed_requested` on innovation upload (§2).
 
 ## 2. Flow: adding innovations
 
@@ -63,20 +68,33 @@ An innovation is visible to users only once rag has chunks for it, and a PDF fro
 
 ```mermaid
 flowchart TD
-    A["POST /admin/innovations (multipart: metadata + PDF)"] --> C
-    B["POST /admin/ideas/{id}/status accepted"] --> B2["innovations row from the idea (draft, no PDF yet)"]
-    B2 --> B3["POST /admin/innovations/{id}/pdf (later)"]
-    B3 --> D
-    C["insert innovations row (status draft), commit"] --> D["202 + background task"]
-    D --> E["rag POST /embed/pdf {innovation_id, file}"]
-    E -- ok --> F["status = published, searchable"]
-    E -- error --> G["stays draft, error logged; admin re-uploads"]
+    A["POST /admin/innovations (multipart: metadata + PDF)"] --> V["validate: %PDF- magic, ≤ 10 MB"]
+    V --> S["save PDF to the uploads volume: /data/uploads/{id}.pdf"]
+    S --> C["insert innovations row (status draft), commit"]
+    C --> P["publish innovation.embed_requested to RabbitMQ (confirmed)"]
+    P -- ok --> R["202 {id, title, status: draft}"]
+    P -- broker down --> U["delete row + file, 503"]
+    P -.-> Q["rag consumer (owned by rag): /data/uploads/{id}.pdf -> chunks, status = published"]
 ```
 
-- **Create from a PDF:** `POST /admin/innovations` takes the metadata (title, summary, tags, city, image_url, page_url) plus the PDF. match-api validates it (PDF, ≤ 10 MB, the same limits as rag), inserts the row as `draft`, commits, returns 202 with the id, and calls rag `/embed/pdf` in a FastAPI background task. On success it sets `status = 'published'`.
-- **Idea → innovation:** accepting an idea creates a `draft` innovations row from the idea card and stores it in `ideas.innovation_id`. It stays invisible until the admin uploads its PDF with `POST /admin/innovations/{id}/pdf`, which runs the same background embed.
-- **Re-upload** replaces all chunks; editing metadata (`PATCH`) does not re-embed.
-- **No job table:** the admin list shows `indexed` (has chunks, `EXISTS` on `innovation_chunks`) next to `status`. A failed embed leaves the row as an unindexed draft.
+- **Create from a PDF:** `POST /admin/innovations`, multipart form with `file` (PDF) + `title`, `summary`, `problem`, `innovator`, `challenge_areas` (repeatable, Mapa areas), `readiness`, `cost_level`, `target_group` and `tags` (repeatable), `city`, `page_url`, `image_url`, `video_url`.
+  - The id is a slug of the title plus a random suffix.
+  - Tags get `type:innovation` and one `area:<slug>` per challenge area added (e.g. `area:zdrowie-psychiczne`), since rag filters only on tags.
+  - Commit happens before publish because the consumer looks the row up as soon as it gets the message.
+  - If the publish fails, the row and the file are deleted and the request returns 503. So there is never a draft nobody will embed, and no outbox is needed.
+- **Message contract** (queue `innovation.embed`, durable, persistent messages, publisher confirms; at-least-once):
+  ```json
+  {"id": "<uuid>", "type": "innovation.embed_requested", "version": 1, "occurred_at": "<iso>",
+   "innovation_id": "<id>", "file_path": "/data/uploads/<id>.pdf"}
+  ```
+  The consumer belongs to the rag service. It must:
+  - mount the `uploads` volume at `/data/uploads`
+  - be idempotent (re-embedding replaces all chunks, so a redelivery is harmless)
+  - set `status = 'published'` after embedding
+  - dead-letter messages whose innovation or file is missing
+- **Idea → innovation:** accepting an idea creates a `draft` innovations row from the idea card, stored in `ideas.innovation_id`. It stays invisible until the admin uploads its PDF.
+- **Editing metadata** (`PATCH`) does not re-embed.
+- **No job table:** the admin list shows `indexed` (has chunks) next to `status`.
 - **Seed:** the 8 sample innovations have no PDFs, so the seed script calls rag `/embed` with their text.
 
 ## 3. Flow: matchmaking and problem reports
@@ -139,7 +157,7 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 | Feature | Endpoints |
 |---|---|
 | Auth | `POST /admin/auth/login` (public), `POST /admin/auth/logout`, `GET /admin/auth/me` |
-| Innovations | `GET /admin/innovations` (filters `status`, `indexed`, `q`, `limit`, `offset`), `POST /admin/innovations` (multipart metadata + PDF, 202, embeds in the background), `GET /admin/innovations/{id}`, `PATCH /admin/innovations/{id}` (metadata only), `POST .../{id}/pdf` (upload or replace the PDF, 202), `POST .../{id}/publish`, `POST .../{id}/unpublish`, `GET .../{id}/feedback` (rating avg/count, signups) |
+| Innovations | `GET /admin/innovations` (filters `status`, `indexed`, `q`, `limit`, `offset`), `POST /admin/innovations` (multipart metadata + PDF, 202, §2), `GET /admin/innovations/{id}`, `PATCH /admin/innovations/{id}` (metadata only), `POST .../{id}/pdf` (upload or replace the PDF, 202), `POST .../{id}/publish`, `POST .../{id}/unpublish`, `GET .../{id}/feedback` (rating avg/count, signups) |
 | Inbox | `GET /admin/inbox?since=`: new ideas, new problem reports, critical problem reports, new test signups, pending threads / replies |
 | Ideas | `GET /admin/ideas` (filter `status`), `GET /admin/ideas/{id}`, `POST .../{id}/reply`, `POST .../{id}/status` (`accepted` creates a draft innovation, §2) |
 | Problem reports | `GET /admin/problem-reports` (filters `challenge_area`, `city`), `GET /admin/problem-reports/{id}`, `POST .../{id}/reply`, `POST .../{id}/hide` |
@@ -308,8 +326,9 @@ Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `P
 | Failure | Handling |
 |---|---|
 | rag service down | `/match` returns 503 with a plain-language Polish message; the problem report is still stored |
-| background `/embed/pdf` fails (rag down, bad PDF) | the row stays an unindexed draft, the error is logged; the admin re-uploads the PDF |
-| process restarts during a background embed | same as a failure: the row stays draft, the admin re-uploads (no job table) |
+| RabbitMQ down on upload | row and file are deleted, 503; the admin retries |
+| rag consumer down | messages wait in the durable queue; innovations stay draft until consumed |
+| embedding fails for one PDF | the consumer dead-letters it, the row stays an unindexed draft; the admin uploads again |
 | LLM down | results without explanation or challenge area |
 | spam on public routes | per-IP rate limit, input length caps |
 | prompt injection | user text treated as data, explanations limited to retrieved rows |
@@ -323,7 +342,7 @@ Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `P
 | Idea | Add when |
 |---|---|
 | contacts table, profile pages, nested reply trees | flat threads + one `admin_reply` column are not enough |
-| outbox, worker, webhooks to the grant DB | real integration is needed |
+| outbox for match-api events, webhooks to the grant DB | real integration is needed |
 | admin accounts and sessions in Postgres | more than one match-api replica |
 | test rounds, verified tester reports | ROPS runs real testing rounds |
 | submitting grant applications into an external system | applications leave the platform |
@@ -337,11 +356,11 @@ backend/             # match-api
   app/               # api/*.py, api/admin/*.py, schemas/, services/ (interface + mock first, db next), rag client
   sql/               # match-api tables + innovations ALTER, mounted into initdb after rag's
 rag/                 # used as merged
-docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit
+docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit; uploads volume
 ```
 
 1. Backend schema file + compose (one `DATABASE_URL`, `RAG_URL`, mailpit): match-api tables + `innovations` column extensions.
-2. Admin innovations on rag's table: PDF upload + background `/embed/pdf` + auto-publish; idea accept creates a draft innovation; seed the 8 samples (incl. `problem`, `target_group`, …).
+2. Admin innovations on rag's table: PDF upload, file on the uploads volume, `innovation.embed_requested` to RabbitMQ (consumer owned by rag); idea accept creates a draft innovation; seed the 8 samples (incl. `problem`, `target_group`, …).
 3. `/match` calling rag, LLM explanation; the 8 sample queries pass.
 4. Problem reports, support, similar reports; admin problem reports + reply + hide.
 5. Ideas + admin ideas, inbox, notifier.
@@ -383,4 +402,4 @@ docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit
    - Middleman and grant drafts are stored in `generated_documents`
    - community threads are first-class (pending moderation, flat replies, role `kind`)
    - contacts, nested reply trees, test rounds, per-item tokens and index jobs stay deferred
-5. RabbitMQ added to docker compose (`rabbitmq`, `RABBITMQ_URL` passed to the api); no publisher in match-api yet.
+5. RabbitMQ in docker compose (`rabbitmq`, `RABBITMQ_URL` for the api). Innovation upload: the admin posts metadata + PDF; match-api saves the file on the uploads volume, inserts a draft and publishes `innovation.embed_requested` (queue `innovation.embed`); the rag-owned consumer embeds it and publishes the row.

@@ -1,3 +1,4 @@
+from collections.abc import Sequence
 from datetime import date, datetime, timedelta, timezone
 
 from app.schemas.admin.common import ChallengeArea, Page
@@ -12,7 +13,6 @@ from app.schemas.admin.inbox import Inbox
 from app.schemas.admin.innovations import (
     FeedbackComment,
     Innovation,
-    InnovationCreate,
     InnovationFeedback,
     PublicationStatus,
     InnovationUpdate,
@@ -20,6 +20,7 @@ from app.schemas.admin.innovations import (
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
 from app.services.admin.errors import NotFoundError
+from app.services.admin.innovation_upload import NewInnovation
 from app.services.admin.interfaces import IdeaAdminService, ProblemReportAdminService
 
 NOW = datetime(2026, 10, 3, 9, 0, tzinfo=timezone.utc)
@@ -81,14 +82,26 @@ class MockInnovationAdminService:
             offset=offset,
         )
 
-    def create(self, data: InnovationCreate) -> Innovation:
-        item = Innovation(
-            id=f"innovation-{len(self._items) + 1}",
+    # InnovationStore for uploads; the real table lands once the data model is settled
+    # Sequence, not list: the class's own list() method shadows the builtin here
+    def insert_draft(self, innovation_id: str, data: NewInnovation, tags: Sequence[str]) -> None:
+        self._items[innovation_id] = Innovation(
+            id=innovation_id,
+            title=data.title,
+            summary=data.summary,
+            problem=data.problem,
+            innovator=data.innovator,
+            challenge_areas=data.challenge_areas,
+            target_group=data.target_group,
+            readiness=data.readiness,
+            cost_level=data.cost_level,
+            city=data.city,
+            video_url=data.video_url,
             status=PublicationStatus.DRAFT,
-            **data.model_dump(),
         )
-        self._items[item.id] = item
-        return item
+
+    def delete(self, innovation_id: str) -> None:
+        self._items.pop(innovation_id, None)
 
     def get(self, innovation_id: str) -> Innovation:
         try:

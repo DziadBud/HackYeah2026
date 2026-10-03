@@ -18,6 +18,12 @@ class Settings(BaseSettings):
     # demo only: skip the admin login. honoured only together with debug=true
     admin_auth_disabled: bool = False
 
+    rabbitmq_url: str = "amqp://guest:guest@localhost:5672/%2F"
+    embed_queue: str = "innovation.embed"
+    # shared with the rag consumer, which reads the pdf from the path in the message
+    upload_dir: str = "/data/uploads"
+    max_upload_bytes: int = 10 * 1024 * 1024
+
     gemini_api_key: str = ""
     gemini_model: str = "gemini-3.8-flash"
 
