@@ -32,6 +32,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 - **Where:** `POST /match?test_signup=true`, `test_signups`, `feedback` ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)).
 - **How:**
   - testing is part of matching: with `?test_signup=true` and an email, the user volunteers to test the innovations matched for their problem (one `test_signups` row each, linked to the problem report); the admin accepts, rejects or marks `completed`, and the applicant is emailed
+  - the public UI does not call it yet: the chat has no email field, and "Zgłoś się do testowania" on an innovation page opens the "Złóż wniosek" form (`POST /ideas`), so tester requests arrive in the ideas inbox; the endpoint and the admin side are unchanged
   - ratings and comments go to `feedback` (per-IP rate limited); improvement proposals are comments; optional `test_signup_id` marks feedback from a real tester
   - the admin sees the rating average, count, star distribution, comments and signups by status per innovation (`GET /admin/innovations/{id}/stats`)
 

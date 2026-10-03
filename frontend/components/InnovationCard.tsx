@@ -1,12 +1,22 @@
 import Link from "next/link";
-import type { Innovation } from "@/lib/api";
 import { Icon } from "@/components/Icon";
+
+// what a card shows; built from /match results, /innovations rows or demo data
+export interface InnovationCardData {
+  id: string;
+  title: string;
+  summary: string;
+  why?: string | null;
+  // display labels, not raw tags
+  tags?: string[];
+  city?: string;
+}
 
 export function InnovationCard({
   innovation,
   headingLevel: H = "h3",
 }: {
-  innovation: Innovation;
+  innovation: InnovationCardData;
   headingLevel?: "h2" | "h3";
 }) {
   const { id, title, summary, why, tags, city } = innovation;

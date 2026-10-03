@@ -17,14 +17,35 @@ class AnswerService:
             "zapytania i nie używaj markdown.\n\n"
             f"Zapytanie użytkownika: {query}"
         )
-        if isinstance(result, dict):
-            result = (
-                result.get("answer")
-                or result.get("summary")
-                or result.get("podsumowanie")
+        answer = self._extract_text(result)
+        return answer or f"Zapytanie dotyczy: {query}."
+
+    @staticmethod
+    def _extract_text(value: object) -> str:
+        if isinstance(value, str):
+            return value.strip()
+        if isinstance(value, list):
+            return " ".join(
+                text for item in value if (text := AnswerService._extract_text(item))
+            ).strip()
+        if isinstance(value, dict):
+            preferred_keys = (
+                "answer",
+                "summary",
+                "podsumowanie",
+                "odpowiedz",
+                "response",
+                "text",
+                "description",
+                "opis",
             )
-        if isinstance(result, list):
-            result = " ".join(str(item) for item in result)
-        if not isinstance(result, str) or not result.strip():
-            raise RuntimeError("LLM returned an invalid answer")
-        return result.strip()
+            for key in preferred_keys:
+                if key in value:
+                    text = AnswerService._extract_text(value[key])
+                    if text:
+                        return text
+            for item in value.values():
+                text = AnswerService._extract_text(item)
+                if text:
+                    return text
+        return ""

@@ -6,6 +6,8 @@ from app.schemas.admin.innovations import Innovation
 class LibraryInnovation(Innovation):
     rating_avg: float | None = None
     rating_count: int = 0
+    # set on the detail endpoint: GET /innovations/{id}/pdf serves the source pdf
+    has_pdf: bool = False
 
 
 class FeedbackCreate(BaseModel):

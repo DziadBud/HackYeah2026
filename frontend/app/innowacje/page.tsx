@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { InnovationCard } from "@/components/InnovationCard";
-import { INNOVATIONS, toInnovation } from "@/lib/demo-data";
+import { LibraryList } from "@/components/innovation/LibraryList";
 
 export const metadata: Metadata = { title: "Biblioteka innowacji" };
 
@@ -34,15 +33,7 @@ export default function LibraryPage() {
           , a asystent dobierze innowacje za Ciebie.
         </p>
       </header>
-      <ul className="grid grid-cols-1 gap-space-md md:grid-cols-2 lg:grid-cols-3">
-        {INNOVATIONS.map((i) => (
-          <li key={i.id} className="flex">
-            <div className="flex w-full">
-              <InnovationCard innovation={toInnovation(i)} headingLevel="h2" />
-            </div>
-          </li>
-        ))}
-      </ul>
+      <LibraryList />
     </div>
   );
 }

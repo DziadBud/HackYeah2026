@@ -14,17 +14,6 @@ import type {
   TrendRow,
 } from "@/lib/api";
 
-export const AREA_LABEL: Record<ChallengeArea, string> = {
-  "Rodzina i piecza zastepcza": "Rodzina i piecza zastępcza",
-  Bezdomnosc: "Bezdomność",
-  Niepelnosprawnosc: "Niepełnosprawność",
-  Ubostwo: "Ubóstwo",
-  "Integracja cudzoziemcow": "Integracja cudzoziemców",
-  Zdrowie: "Zdrowie",
-  "Zdrowie psychiczne": "Zdrowie psychiczne",
-  Seniorzy: "Seniorzy",
-};
-
 export interface AdminData {
   problemReports: ProblemReport[];
   ideas: Idea[];
@@ -76,6 +65,7 @@ export const ADMIN_MOCK: AdminData = {
     {
       id: "idea-1",
       summary: "Mobilny punkt porad dla seniorów na wsiach",
+      essence: "Bus z doradcami raz w tygodniu odwiedza sołectwa bez punktu porad.",
       target_group: "seniorzy",
       stage: "concept",
       social_canvas: {
@@ -89,6 +79,7 @@ export const ADMIN_MOCK: AdminData = {
     {
       id: "idea-2",
       summary: "Mieszkania treningowe dla osób wychodzących z bezdomności",
+      essence: "Roczny pobyt w mieszkaniu z asystentem przed samodzielnym najmem.",
       target_group: "osoby w kryzysie bezdomności",
       stage: "prototype",
       social_canvas: {
@@ -107,6 +98,9 @@ export const ADMIN_MOCK: AdminData = {
       id: "wibraap",
       title: "Wibraap",
       summary: "Kamizelka wibracyjna i aplikacja zamieniająca dźwięk na wibracje.",
+      problem: "Osoby niesłyszące są wykluczone z wydarzeń, w których dominuje dźwięk.",
+      innovator: "Piotr Peszat",
+      city: "Kraków",
       challenge_areas: ["Niepelnosprawnosc"],
       target_group: ["osoby niesłyszące", "osoby niedosłyszące"],
       readiness: "prototype",
@@ -118,6 +112,9 @@ export const ADMIN_MOCK: AdminData = {
       id: "straznik",
       title: "Strażnik",
       summary: "Aplikacja wykrywająca alarmy dźwiękowe i ostrzegająca wibracjami.",
+      problem: "Osoby z dysfunkcją słuchu nie słyszą alarmów, zwłaszcza w nocy.",
+      innovator: "Marcin Kotliński",
+      city: "Tarnów",
       challenge_areas: ["Niepelnosprawnosc", "Seniorzy"],
       target_group: ["osoby niesłyszące", "seniorzy"],
       readiness: "pilot",
@@ -128,6 +125,9 @@ export const ADMIN_MOCK: AdminData = {
       id: "paszport-choroby-rzadkiej",
       title: "Paszport pacjenta z chorobą rzadką",
       summary: "System IT z danymi pacjenta dostępnymi dla personelu medycznego.",
+      problem: "Lekarze w nagłych sytuacjach nie znają choroby rzadkiej pacjenta.",
+      innovator: "Jacek Sztajnke, Katarzyna Witkowska",
+      city: "",
       challenge_areas: ["Zdrowie"],
       target_group: ["pacjenci z chorobami rzadkimi"],
       readiness: "concept",
