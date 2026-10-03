@@ -16,5 +16,8 @@ class Settings(BaseSettings):
     admin_login_max_failures: int = 5
     admin_login_window_minutes: int = 15
 
+    gemini_api_key: str = ""
+    gemini_model: str = "gemini-2.0-flash"
+
 
 settings = Settings()
