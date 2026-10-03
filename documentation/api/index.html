@@ -1271,6 +1271,179 @@
         }
       }
     },
+    "/admin/threads": {
+      "get": {
+        "tags": [
+          "admin:threads"
+        ],
+        "summary": "List Threads",
+        "operationId": "list_threads_admin_threads_get",
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/ModerationStatus"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Status"
+            }
+          },
+          {
+            "name": "innovation_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AdminThread"
+                  },
+                  "title": "Response List Threads Admin Threads Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/threads/{thread_id}/status": {
+      "post": {
+        "tags": [
+          "admin:threads"
+        ],
+        "summary": "Set Thread Status",
+        "operationId": "set_thread_status_admin_threads__thread_id__status_post",
+        "parameters": [
+          {
+            "name": "thread_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Thread Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModerationDecision"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminThread"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/threads/replies/{reply_id}/status": {
+      "post": {
+        "tags": [
+          "admin:threads"
+        ],
+        "summary": "Set Reply Status",
+        "operationId": "set_reply_status_admin_threads_replies__reply_id__status_post",
+        "parameters": [
+          {
+            "name": "reply_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Reply Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModerationDecision"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminReply"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/match": {
       "post": {
         "tags": [
@@ -1917,6 +2090,118 @@
           "username"
         ],
         "title": "AdminMe"
+      },
+      "AdminReply": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "body": {
+            "type": "string",
+            "title": "Body"
+          },
+          "author_label": {
+            "type": "string",
+            "title": "Author Label"
+          },
+          "email": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Email"
+          },
+          "kind": {
+            "$ref": "#/components/schemas/ReplyKind"
+          },
+          "status": {
+            "$ref": "#/components/schemas/ModerationStatus"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "body",
+          "author_label",
+          "email",
+          "kind",
+          "status",
+          "created_at"
+        ],
+        "title": "AdminReply"
+      },
+      "AdminThread": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "innovation_id": {
+            "type": "string",
+            "title": "Innovation Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "body": {
+            "type": "string",
+            "title": "Body"
+          },
+          "author_label": {
+            "type": "string",
+            "title": "Author Label"
+          },
+          "email": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Email"
+          },
+          "status": {
+            "$ref": "#/components/schemas/ModerationStatus"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "replies": {
+            "items": {
+              "$ref": "#/components/schemas/AdminReply"
+            },
+            "type": "array",
+            "title": "Replies"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "innovation_id",
+          "title",
+          "body",
+          "author_label",
+          "email",
+          "status",
+          "created_at",
+          "replies"
+        ],
+        "title": "AdminThread"
       },
       "AreaMatches": {
         "properties": {
@@ -3377,6 +3662,23 @@
           "needs"
         ],
         "title": "MiddlemanRequest"
+      },
+      "ModerationDecision": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "published",
+              "hidden"
+            ],
+            "title": "Status"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "title": "ModerationDecision"
       },
       "ModerationStatus": {
         "type": "string",

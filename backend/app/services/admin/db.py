@@ -3,11 +3,11 @@ from dataclasses import dataclass
 from datetime import UTC, datetime, timedelta
 
 from sqlalchemy import func, literal_column, or_, select
-from sqlalchemy.orm import Session, sessionmaker
+from sqlalchemy.orm import Session, selectinload, sessionmaker
 
 from app.db.models import Feedback, GrantCall as GrantCallRow, Idea as IdeaRow
 from app.db.models import Innovation as InnovationRow, ProblemReport as ProblemReportRow
-from app.db.models import TestSignup
+from app.db.models import TestSignup, Thread as ThreadRow, ThreadReply as ThreadReplyRow
 from app.schemas.admin.common import ChallengeArea, Page
 from app.schemas.admin.grant_calls import GrantCall, GrantCallCreate, GrantCallUpdate
 from app.schemas.admin.ideas import Idea, IdeaStatus, SocialCanvas
@@ -28,6 +28,8 @@ from app.schemas.admin.innovations import (
 )
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import CriticalRow, GapRow, LocationRow, TrendRow
+from app.schemas.admin.threads import AdminReply, AdminThread
+from app.schemas.public.threads import ModerationStatus, ReplyKind
 from app.services.admin.errors import NotFoundError
 from app.services.admin.innovation_upload import NewInnovation, areas_from_tags, with_area_tags
 
@@ -624,3 +626,59 @@ class DbReportAdminService:
             if _area(r.challenge_area)
         ]
 
+
+def _reply(row: ThreadReplyRow) -> AdminReply:
+    return AdminReply(
+        id=str(row.id),
+        body=row.body,
+        author_label=row.author_label,
+        email=row.email,
+        kind=ReplyKind(row.kind),
+        status=ModerationStatus(row.status),
+        created_at=row.created_at,
+    )
+
+
+def _thread(row: ThreadRow) -> AdminThread:
+    return AdminThread(
+        id=str(row.id),
+        innovation_id=row.innovation_id,
+        title=row.title,
+        body=row.body,
+        author_label=row.author_label,
+        email=row.email,
+        status=ModerationStatus(row.status),
+        created_at=row.created_at,
+        replies=[_reply(r) for r in sorted(row.replies, key=lambda r: r.created_at)],
+    )
+
+
+class DbThreadAdminService:
+    def __init__(self, db: Session) -> None:
+        self._db = db
+
+    def list(self, status: ModerationStatus | None, innovation_id: str | None) -> list[AdminThread]:
+        query = select(ThreadRow).options(selectinload(ThreadRow.replies))
+        if status is not None:
+            query = query.where(
+                or_(
+                    ThreadRow.status == status.value,
+                    ThreadRow.replies.any(ThreadReplyRow.status == status.value),
+                )
+            )
+        if innovation_id is not None:
+            query = query.where(ThreadRow.innovation_id == innovation_id)
+        rows = self._db.scalars(query.order_by(ThreadRow.created_at.desc())).all()
+        return [_thread(r) for r in rows]
+
+    def set_status(self, thread_id: str, status: ModerationStatus) -> AdminThread:
+        row = _get(self._db, ThreadRow, parse_uuid(thread_id), thread_id)
+        row.status = status.value
+        self._db.commit()
+        return _thread(row)
+
+    def set_reply_status(self, reply_id: str, status: ModerationStatus) -> AdminReply:
+        row = _get(self._db, ThreadReplyRow, parse_uuid(reply_id), reply_id)
+        row.status = status.value
+        self._db.commit()
+        return _reply(row)
