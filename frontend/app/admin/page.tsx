@@ -3,7 +3,7 @@
 export default function AdminPage() {
   const sections = [
     { title: "Innowacje", desc: "CRUD + publikacja wpisów z bazy" },
-    { title: "Import", desc: "ingest JSON / CSV / PDF, podgląd zadań" },
+    { title: "Import", desc: "import JSON / CSV / PDF do bazy wiedzy (RAG), podgląd zadań" },
     { title: "Skrzynka", desc: "nowe pomysły oraz krytyczne zgłoszenia" },
     { title: "Zgłoszenia i pomysły", desc: "odpowiedzi, zmiana statusu" },
     { title: "Raporty", desc: "trendy, krytyczne, gminy, luki + eksport CSV" },
