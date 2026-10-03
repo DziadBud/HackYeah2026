@@ -24,7 +24,7 @@ Maps each requirement from `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI
 - **How:** admin answers an idea (emailed to its contact, else seen on the fallback link), or answers a problem report once on its public page; the author and supporters who left an email get it by email. Mentors are admins. No accounts, no passwords.
 
 ## R6 Panel administratora (S)
-- **Where:** `/admin/*` and rag `/ingest*` behind the admin session dependency (§4, §5).
+- **Where:** `/admin/*` and rag `POST /documents` / `GET /index-jobs/{id}` behind the admin session dependency (§4, §5).
 - **How:** login, innovation add/edit/publish/unpublish with feedback counts (R4), imports with job status, inbox (new ideas, new and critical problem reports), idea and problem report replies, grant call open/close, reports.
 
 ## R7 Middleman innowacji (S)

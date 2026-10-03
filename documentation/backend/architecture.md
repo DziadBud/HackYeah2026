@@ -23,7 +23,7 @@ flowchart LR
     end
 
     subgraph RAG["rag service (internal + admin)"]
-        IMP["/ingest, /ingest/jobs/{id}<br/>admin session"]
+        IMP["POST /documents, GET /index-jobs/{id}<br/>admin session"]
         QRY["/query<br/>internal only"]
     end
 
@@ -38,24 +38,24 @@ flowchart LR
     PUB -- "HTTP POST /query" --> QRY
     PUB --> LLM
     IMP & QRY --> EMB
-    IMP -- "innovation, chunk, ingest_job" --> DB
+    IMP -- "innovation, chunk, index_job" --> DB
     QRY -- "hybrid search" --> DB
 ```
 
 | | rag service (`rag/`) | match-api (`backend/`) |
 |---|---|---|
 | Purpose | import, parse, chunk, embed, upsert; retrieval (`POST /query`: hybrid search over published innovations + chunks) | `/match` (calls rag, LLM explanation, problem reports, similar reports), ideas, admin |
-| Exposure | `/ingest*` admin only (same session dependency); `/query` internal only (compose network, not proxied) | public + `/admin/*` |
-| Writes | `innovation`, `chunk`, `ingest_job` | `problem_report`, `problem_report_support`, `idea`, `test_signup`, `test_report`, `innovation_rating`, `contact`, `contact_interest`, `innovation` (admin edits) |
+| Exposure | `POST /documents`, `GET /index-jobs/{id}` admin only (same session dependency); `/query` internal only (compose network, not proxied) | public + `/admin/*` |
+| Writes | `innovation`, `chunk`, `index_job` | `problem_report`, `problem_report_support`, `idea`, `test_signup`, `test_report`, `innovation_rating`, `contact`, `contact_interest`, `innovation` (admin edits) |
 | Down means | no imports and `/match` returns 503 (problem report still stored); rest of the site works | users blocked; imports unaffected |
 
 Services share the DB; match-api calls rag `POST /query` over HTTP for retrieval. Trade-off: a runtime dependency (rag down breaks matching) vs one owner for embeddings and retrieval (one model, one ranking, no drift between import and search). Keep it: at our size an extra hop is cheap and two embedding copies would be the bigger risk.
 
-## 2. Flow: ingest
+## 2. Flow: indexing
 
 ```mermaid
 flowchart TD
-    A["POST /ingest (JSON / CSV / PDF)"] --> B[create ingest_job: queued]
+    A["POST /documents (JSON / CSV / PDF)"] --> B[create index_job: queued]
     B --> C[background task]
     C --> D[parse + validate]
     D --> E["chunk (PDF by page/heading)"]
@@ -67,7 +67,7 @@ flowchart TD
     I --> J[job done / failed]
 ```
 
-FastAPI background task plus an `ingest_job` row the admin UI polls. Re-running is safe (upsert by content hash). Sources in order: sample JSON, CSV, PDFs (Mapa Wyzwan, Canvas, reports). Library scrape only if ROPS allows it.
+FastAPI background task plus an `index_job` row the admin UI polls. Re-running is safe (upsert by content hash). Sources in order: sample JSON, CSV, PDFs (Mapa Wyzwan, Canvas, reports). Library scrape only if ROPS allows it.
 
 ## 3. Flow: matchmaking and problem reports
 
@@ -110,7 +110,7 @@ Ranking is deterministic; the LLM only explains and may cite only retrieved rows
 - **Public side has no accounts and no passwords.** An in-process per-IP rate limit guards public writes and `/match` (`X-Forwarded-For` only from our proxy); nothing about the IP is stored. Shared NAT can hit the limit early, VPN can spread load; acceptable at our numbers.
 - **Optional email contact:** follow-up actions (problem report, support "mnie też", idea, test signup) accept an optional `{email, consent}`. With it, we upsert a `contact` by email and set `contact_id` on the item; no email means the action still works and nobody is notified. Every email links to `/profile/{token}` (`GET/PATCH/DELETE`, no login): what they follow, their items and status, interests (`contact_interest` by challenge area, optional location), "usuń moje dane". Contacts are unverified; double opt-in comes after the demo. Details: [.claude/designs/notifications-without-accounts.md](../../.claude/designs/notifications-without-accounts.md).
 - **"Mnie też" dedupe:** browser localStorage for everyone, plus partial unique `(problem_report_id, contact_id)` when an email is given. Multi-browser inflation is accepted; criticality also needs several distinct gminy.
-- **Admin side:** per-admin accounts (argon2id hashes) and server-side sessions in an `HttpOnly; Secure; SameSite=Strict` cookie; see [.claude/designs/admin-auth.md](../../.claude/designs/admin-auth.md). One shared dependency (`require_admin`) is used by `/admin/*` (match-api) and `/ingest*` (rag) and returns 401 without a valid session. `POST /admin/auth/login {email, password}` sets the cookie, `POST /admin/auth/logout` revokes it, `GET /admin/auth/me` returns the admin. Sessions: 8 h absolute, 30 min idle. Login is limited to 5 failures per email per 15 min. Unsafe methods with a foreign `Origin` get 403 (CSRF). `/docs` is served only in debug. MVP keeps accounts in env (`ADMIN_ACCOUNTS`, from `make hash-password`) and sessions in memory; they move to `admin_user` / `admin_session` tables with the DB layer (rag can only check sessions once they are in Postgres).
+- **Admin side:** per-admin accounts (argon2id hashes) and server-side sessions in an `HttpOnly; Secure; SameSite=Strict` cookie; see [.claude/designs/admin-auth.md](../../.claude/designs/admin-auth.md). One shared dependency (`require_admin`) is used by `/admin/*` (match-api) and `POST /documents`, `GET /index-jobs/{id}` (rag) and returns 401 without a valid session. `POST /admin/auth/login {email, password}` sets the cookie, `POST /admin/auth/logout` revokes it, `GET /admin/auth/me` returns the admin. Sessions: 8 h absolute, 30 min idle. Login is limited to 5 failures per email per 15 min. Unsafe methods with a foreign `Origin` get 403 (CSRF). `/docs` is served only in debug. MVP keeps accounts in env (`ADMIN_ACCOUNTS`, from `make hash-password`) and sessions in memory; they move to `admin_user` / `admin_session` tables with the DB layer (rag can only check sessions once they are in Postgres).
 - **Fallback links (no email):** an idea or test signup without an email returns a random `access_token` (stored hashed, shown once): `GET /ideas/status/{token}`, `GET /test-signups/status/{token}`. A problem report reply is stored on the problem report and shown on its public page, so one reply covers the whole cluster.
 - **Email notifier (MVP, optional):** SMTP from env, no-op if unset; Mailpit in compose for the demo (synthetic addresses only). Background task after commit, at-most-once (failure logged, not retried); the item status stays the source of truth. Outbox deferred (§8).
 
@@ -135,7 +135,7 @@ Ranking is deterministic; the LLM only explains and may cite only retrieved rows
 | Grant calls | `GET /admin/grant-calls`, `POST /admin/grant-calls`, `PATCH /admin/grant-calls/{id}` (open/close, form sections) |
 | Reports | `GET /admin/reports/trends`, `/critical`, `/locations`, `/gaps`, each with `?format=json\|csv` |
 
-Import stays in the rag service: `POST /ingest`, `GET /ingest/jobs/{id}`. The grant application generator is available only while a `grant_call` is open.
+Import stays in the rag service: `POST /documents`, `GET /index-jobs/{id}`. The grant application generator is available only while a `grant_call` is open.
 
 ### Reports are queries, not jobs
 
@@ -258,7 +258,7 @@ erDiagram
         bool open
         jsonb sections "application form sections"
     }
-    INGEST_JOB {
+    INDEX_JOB {
         uuid id PK
         text status
         text error
@@ -279,7 +279,7 @@ Taxonomy: the 8 Mapa challenge areas (Rodzina i piecza zastepcza, Bezdomnosc, Ni
 |---|---|
 | rag service down | `/match` returns 503 with a plain-language Polish message; problem report is still stored so nothing the user typed is lost; browsing and admin unaffected; no imports |
 | LLM down | return retrieval results without explanation or challenge area |
-| ingest crashes mid-job | items stay `draft` until embedded; re-run is idempotent |
+| indexing job crashes mid-way | items stay `draft` until embedded; re-run is idempotent |
 | spam on public routes | per-IP rate limit (in-process, nothing stored), input length caps |
 | prompt injection | user text treated as data, structured output validated, explanations limited to retrieved rows |
 | SMTP unset or down | notification skipped (at-most-once); admin still sees the inbox, residents see status on profile / fallback links |
@@ -306,7 +306,7 @@ backend/             # match-api
   app/               # api/{match,problem_reports,ideas,test_rounds,ratings}.py, api/admin/*.py, api/profile.py, services/{contacts,notifications}.py, rate_limit.py
   migrations/
 rag/                 # rag service, own requirements.txt
-  app/               # main.py (/health, /query, /ingest*), services/{parsers,chunker,importer,retrieval}.py
+  app/               # main.py (/health, /query, /documents, /index-jobs), services/{parsers,chunker,importer,retrieval}.py
   tests/
 docker-compose.yml   # + rag, postgres (pgvector image), mailpit
 ```
@@ -338,14 +338,14 @@ New deps (pinned, separate commit): backend: sqlalchemy, psycopg, pgvector, argo
 
 - Unit (rag): chunker, parsers, rank fusion. Unit (backend): rag client errors -> 503, auth dependency (admin / non-admin / none), rate limit (429 over the limit), contact upsert by email, notification recipients per event (table in §4).
 - Regression: the 8 queries in `sample-matchmaking-queries.md` return the expected id in the top 3.
-- Integration: `docker compose up`, import samples, curl `/match`; unpublished items never returned; `/match` with rag stopped returns 503 and the problem report is stored; every `/admin/*` and rag `/ingest*` route returns 401/403 without an admin session (parametrised test).
+- Integration: `docker compose up`, import samples, curl `/match`; unpublished items never returned; `/match` with rag stopped returns 503 and the problem report is stored; every `/admin/*` and rag `/documents` / `/index-jobs` route returns 401/403 without an admin session (parametrised test).
 - Idempotency: same import twice leaves counts unchanged; same contact supporting the same problem report twice counts once; supports without email are not deduped server-side.
 
 ## 11. Open questions
 
 1. Can we scrape the Biblioteka Innowacji, or do we stay on sample data plus hand-curated entries?
 2. The ROPS PDFs (Mapa Wyzwan, Canvas, reports, RULES) are only linked in Notion. They need downloading by hand (the site blocks the default fetcher) into the repo.
-3. Embeddings live only in rag, but match-api needs them for problem reports (similar lookup) and admin edits. Recommended: `/query` also returns the query embedding, and admin edits call a single-item rag ingest synchronously. Neither is in the rag stub yet.
+3. Embeddings live only in rag, but match-api needs them for problem reports (similar lookup) and admin edits. Recommended: `/query` also returns the query embedding, and admin edits call a single-item rag indexing endpoint synchronously. Neither is in the rag stub yet.
 
 ## Changes (after Notion brief comparison)
 
@@ -355,4 +355,4 @@ New deps (pinned, separate commit): backend: sqlalchemy, psycopg, pgvector, argo
 4. Similar problem reports: 3 nearest, same location first, falling back to same challenge area.
 5. Problem report reply clarified as cluster reply (stored on the problem report, seen by all authors/supporters).
 6. IP logic removed (no ip_hash, salt or IP middleware); optional email `contact` + profile link for notifications, per-item tokens only as fallback ([notifications-without-accounts.md](../../.claude/designs/notifications-without-accounts.md)).
-7. ingest-service replaced by the rag service (`rag/`), which also owns retrieval (`POST /query`); `/match` calls it over HTTP, rag down gives 503 with the problem report kept; `common/` dropped.
+7. The rag service (`rag/`) owns indexing (import, parse, chunk, embed, upsert) and retrieval (`POST /query`); `/match` calls it over HTTP, rag down gives 503 with the problem report kept; `common/` dropped.

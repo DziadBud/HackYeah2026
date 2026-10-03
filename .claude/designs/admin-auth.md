@@ -5,7 +5,7 @@
 **Changed:** IP logic removed; no IP stored on sessions, login limit keyed by email only (see [notifications-without-accounts.md](notifications-without-accounts.md)).
 
 ## Goal
-Only named ROPS staff can use `/admin/*` (match-api) and `/ingest*` (rag service, `rag/`). Reports, problem reports and replies must never leak to the public (brief requirement, R6, R11). Every admin action is tied to a specific person.
+Only named ROPS staff can use `/admin/*` (match-api) and `POST /documents`, `GET /index-jobs/{id}` (rag service, `rag/`). Reports, problem reports and replies must never leak to the public (brief requirement, R6, R11). Every admin action is tied to a specific person.
 
 Non-goals: public user accounts, self-service sign-up, SSO with the voivodeship IdP (production path, see Rollout).
 
@@ -15,7 +15,7 @@ Non-goals: public user accounts, self-service sign-up, SSO with the voivodeship 
 - Security: passwords never stored in plain text, a stolen browser token is useless after logout or expiry, no token readable by JS (XSS), brute-force protection, no default credentials in the repo.
 - Assumptions (flagged):
   - 2-10 admins.
-  - Admin UI and API are served same-site behind one proxy (`/api`, `/ingest` -> rag), so cookies work.
+  - Admin UI and API are served same-site behind one proxy (`/api`, `/documents` + `/index-jobs` -> rag), so cookies work.
   - HTTPS in any non-local deployment.
 
 ## Options
