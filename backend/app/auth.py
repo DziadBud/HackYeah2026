@@ -7,6 +7,8 @@ from app.services.admin.deps import get_auth_service
 from app.services.admin.errors import NotAuthenticatedError
 
 SESSION_COOKIE = "admin_session"
+# principal used when the login is switched off for the demo
+DEMO_ADMIN = AdminPrincipal(id="demo-admin", email="demo@rops.test")
 _UNSAFE_METHODS = {"POST", "PUT", "PATCH", "DELETE"}
 
 
@@ -40,6 +42,8 @@ def require_same_origin(request: Request) -> None:
 def require_admin(
     request: Request, svc: AdminAuthService = Depends(get_auth_service)
 ) -> AdminPrincipal:
+    if settings.debug and settings.admin_auth_disabled:
+        return DEMO_ADMIN
     token = request.cookies.get(SESSION_COOKIE)
     if not token:
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, "not logged in")
