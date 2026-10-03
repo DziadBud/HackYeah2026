@@ -10,13 +10,13 @@ class InMemoryAdminAuthStore:
     # between replicas; swap for the postgres store once the db layer lands
     def __init__(self, admins: list[AdminAccount]) -> None:
         self._admins = {a.id: a for a in admins}
-        self._by_email = {a.email: a for a in admins}
+        self._by_username = {a.username: a for a in admins}
         self._sessions: dict[bytes, AdminSession] = {}
         self._attempts: list[tuple[str, datetime, bool]] = []
         self._lock = threading.Lock()
 
-    def get_admin_by_email(self, email: str) -> AdminAccount | None:
-        return self._by_email.get(email)
+    def get_admin_by_username(self, username: str) -> AdminAccount | None:
+        return self._by_username.get(username)
 
     def get_admin(self, admin_id: str) -> AdminAccount | None:
         return self._admins.get(admin_id)
