@@ -138,13 +138,13 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 | Feature | Endpoints |
 |---|---|
 | Auth | `POST /admin/auth/login` (public), `POST /admin/auth/logout`, `GET /admin/auth/me` |
-| Innovations | `GET /admin/innovations` (filters `status`, `indexed`, `q`, `limit`, `offset`), `POST /admin/innovations` (multipart metadata + PDF, 202, embeds in the background), `GET /admin/innovations/{id}`, `PATCH /admin/innovations/{id}` (metadata only), `POST .../{id}/pdf` (upload or replace the PDF, 202), `POST .../{id}/publish`, `POST .../{id}/unpublish`, `GET .../{id}/feedback` (rating avg/count, signups) |
+| Innovations | `GET /admin/innovations` (filters `status`, `indexed`, `q`, `limit`, `offset`), `POST /admin/innovations` (multipart metadata + PDF, 202, embeds in the background), `GET /admin/innovations/{id}`, `PATCH /admin/innovations/{id}` (metadata only), `POST .../{id}/pdf` (upload or replace the PDF, 202), `POST .../{id}/publish`, `POST .../{id}/unpublish`, `GET .../{id}/feedback` (rating avg/count, signups), `GET .../{id}/stats` (per-innovation stats, below) |
 | Inbox | `GET /admin/inbox?since=`: new ideas, new problem reports, critical problem reports, new test signups |
 | Ideas | `GET /admin/ideas` (filter `status`), `GET /admin/ideas/{id}`, `POST .../{id}/reply`, `POST .../{id}/status` (`accepted` creates a draft innovation, §2) |
 | Problem reports | `GET /admin/problem-reports` (filters `challenge_area`, `city`), `GET /admin/problem-reports/{id}`, `POST .../{id}/reply` |
 | Testing | `GET /admin/test-signups` (filter `innovation_id`, `status`), `POST /admin/test-signups/{id}/status` |
 | Grant calls | `GET /admin/grant-calls`, `POST /admin/grant-calls`, `PATCH /admin/grant-calls/{id}` (open/close, form sections) |
-| Reports | `GET /admin/reports/trends`, `/critical`, `/locations`, `/gaps`, each with `?format=json\|csv` |
+| Reports | `GET /admin/reports/trends`, `/critical`, `/locations`, `/gaps`, `/innovations`, each with `?format=json\|csv` |
 
 ### Reports are queries, not jobs
 
@@ -154,8 +154,24 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 | critical | score = problem reports x distinct cities x growth ratio (last 7d vs previous 7d), computed on read |
 | locations | per-city counts by challenge area |
 | gaps | problem reports with no matched innovation (empty `matched_innovation_ids`) |
+| innovations | one row per innovation: matches (total, last 7d, previous 7d), people reached, distinct cities, test signups by status, rating avg/count, last match |
 
 CSV export is a streaming response. Cities with fewer than 5 problem reports are shown as "too few to display".
+
+### Per-innovation stats
+
+What the admin watches under each innovation ([.claude/designs/admin-innovation-stats.md](../../.claude/designs/admin-innovation-stats.md)). All of it is read from existing tables; nothing new is stored.
+
+| Field | Source |
+|---|---|
+| `matches_total`, `matches_7d`, `matches_prev_7d`, `matches_by_week` (6 weeks) | `problem_reports` whose `matched_innovation_ids` contains the id |
+| `people_reached` | those problem reports plus their `support_count` |
+| `matches_by_area`, `matches_by_location`, `distinct_locations` | `challenge_area` and city of those problem reports; a city with fewer than 5 is shown as "too few to display" |
+| `test_signups` (`applied`, `accepted`, `rejected`) | `test_signups` by status |
+| `rating_avg`, `rating_count`, `rating_distribution`, `recent_comments` | `feedback` |
+| `recent_problem_reports`, `last_matched_at` | newest matched problem reports |
+
+`GET /admin/reports/innovations` is the flat list of the same numbers (no breakdowns), so it streams as CSV. `GET /admin/innovations/{id}/feedback` returns a subset of `/stats`.
 
 ## 6. Data model
 
@@ -319,3 +335,4 @@ docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit
    - `location` is renamed to `city`
    - contacts, interests, test rounds, per-item tokens and index jobs are dropped
 5. RabbitMQ added to docker compose (`rabbitmq`, `RABBITMQ_URL` passed to the api); no publisher in match-api yet.
+6. Per-innovation stats for the admin: `GET /admin/innovations/{id}/stats` and the `innovations` report (`GET /admin/reports/innovations`), computed on read from `problem_reports`, `test_signups` and `feedback`; mocked in match-api for now.

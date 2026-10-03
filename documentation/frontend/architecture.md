@@ -2,7 +2,7 @@
 
 ## Context
 
-The backend architecture ([../backend/architecture.md](../backend/architecture.md)) names two consumers of `match-api`: a **Public UI** (problem → matched innovations, issues, ideas) and an **Admin UI** (import, inbox, replies, reports). This is one Next.js app serving both, split by route. It is a thin HTTP client — all logic, ranking and auth live in the backend; the frontend only renders and collects input.
+The backend architecture ([../backend/architecture.md](../backend/architecture.md)) names two consumers of `match-api`: a **Public UI** (problem → matched innovations, issues, ideas) and an **Admin UI** (innovations with their stats, inbox, replies, reports). This is one Next.js app serving both, split by route. It is a thin HTTP client — all logic, ranking and auth live in the backend; the frontend only renders and collects input.
 
 Principle (same as backend): build the smallest thing that covers the requirement. No state management library, no component library until a second use justifies it.
 
@@ -24,19 +24,34 @@ frontend/
     page.tsx                    # public UI: chat (problem -> matched innovations)
     innowacje/page.tsx          # innovation library
     innowacje/[id]/page.tsx     # innovation detail: description, community threads, test sign-up
-    admin/page.tsx              # admin panel (login off for the demo, see §6)
+    admin/layout.tsx            # admin shell: "tylko dla ROPS", h1, tabs (login off for the demo, see §6)
+    admin/page.tsx              # /admin: innovation list with stats, filters, publish, CSV
+    admin/innowacje/[id]/       # /admin/innowacje/{id}: stats of one innovation
+    admin/zgloszenia/           # /admin/zgloszenia: inbox, problem reports, ideas, reports, grant calls
     deklaracja-dostepnosci/     # accessibility statement
     globals.css                 # tailwind entry + design tokens, high-contrast and text-scale modes
     fonts/                      # self-hosted icon font subset (scripts/fetch-icons.sh)
   components/                   # A11yToolbar, SiteHeader, SiteFooter, InnovationCard, chat/, innovation/, admin/
   lib/api.ts                    # typed match-api client (the only place that knows the API)
   lib/demo-data.ts              # demo innovations until /match and public innovation endpoints exist
-  lib/admin-mock.ts             # offline copy of the backend admin mocks
+  lib/admin-mock.ts             # offline copy of the backend admin mocks (incl. innovation stats)
   Dockerfile                    # multi-stage, standalone output
   Makefile                      # install / dev / build / lint / up / down
 ```
 
 UI follows the Stitch mockups in [stitch/](stitch/) and the tokens in [DESIGN.md](DESIGN.md).
+
+## Admin panel (`/admin`)
+
+The admin's main question is "how is each innovation doing", so `/admin` opens on the innovation list, not the inbox.
+
+| Route | Shows | API |
+|---|---|---|
+| `/admin` | summary tiles (published, matches in 7 days with trend, people reached, testers waiting, average rating); one card per innovation with matches, 7-day trend, people reached, cities, testers, rating, "needs attention" hints; filters (search, status, challenge area, sort); publish/unpublish; CSV | `GET /admin/innovations`, `GET /admin/reports/innovations` (+ `?format=csv`), `POST .../{id}/publish\|unpublish` |
+| `/admin/innowacje/{id}` | description (target group, stage, cost, film), key numbers, matches per week (columns + table view), matched challenge areas and cities (cities under 5 hidden), testers by status, star distribution, comments, latest matched problems | `GET /admin/innovations/{id}`, `GET /admin/innovations/{id}/stats` |
+| `/admin/zgloszenia` | inbox tiles, problem reports + reply, ideas + status + reply, reports with CSV, grant calls | `/admin/problem-reports`, `/admin/ideas`, `/admin/reports/*`, `/admin/grant-calls` |
+
+Charts are single-series in the `primary` token (remapped in high contrast), every bar carries its value as text, and the weekly chart has a table view. Metric definitions: [.claude/designs/admin-innovation-stats.md](../../.claude/designs/admin-innovation-stats.md).
 
 As features land, each gets its own route folder (`app/issues/`, `app/ideas/`, `app/admin/reports/`, …) so devs rarely edit the same file — same rule as the backend.
 
@@ -84,4 +99,4 @@ See the repo [README](../../README.md) for the full run guide.
 ### Demo integration
 
 - Chat calls `POST /match`; until it exists the 404 falls back to `demoMatch` over `lib/demo-data.ts` with a visible "Tryb demonstracyjny" note.
-- Admin panel calls the real `/admin/*` endpoints (backed by the backend's mock services) with `credentials: "include"`. The backend skips the login when `DEBUG=true` and `ADMIN_AUTH_DISABLED=true` (compose sets both for the demo). If the API is down or answers 401, the panel switches to `lib/admin-mock.ts` and says so.
+- Admin panel calls the real `/admin/*` endpoints (backed by the backend's mock services) with `credentials: "include"`. The backend skips the login when `DEBUG=true` and `ADMIN_AUTH_DISABLED=true` (compose sets both for the demo). If the API is down or answers 401, each admin screen switches to `lib/admin-mock.ts` and says so (`components/admin/useApiOrMock.ts`); a 404 on `/admin/innowacje/{id}` is shown as "not found", not as an outage.
