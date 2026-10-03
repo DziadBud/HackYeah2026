@@ -5,6 +5,7 @@ from app.schemas.admin.innovations import (
     Innovation,
     InnovationCreate,
     InnovationFeedback,
+    InnovationStats,
     PublicationStatus,
     InnovationUpdate,
 )
@@ -68,3 +69,10 @@ def innovation_feedback(
     innovation_id: str, svc: InnovationAdminService = Depends(get_innovation_service)
 ) -> InnovationFeedback:
     return svc.feedback(innovation_id)
+
+
+@router.get("/{innovation_id}/stats", response_model=InnovationStats)
+def innovation_stats(
+    innovation_id: str, svc: InnovationAdminService = Depends(get_innovation_service)
+) -> InnovationStats:
+    return svc.stats(innovation_id)

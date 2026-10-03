@@ -1,7 +1,7 @@
 import pytest
 
 BASE = "/admin/reports"
-NAMES = ["trends", "critical", "locations", "gaps"]
+NAMES = ["trends", "critical", "locations", "gaps", "innovations"]
 
 
 @pytest.mark.parametrize("name", NAMES)
@@ -28,3 +28,13 @@ def test_locations_suppressed(client, auth) -> None:
 
 def test_bad_format_422(client, auth) -> None:
     assert client.get(f"{BASE}/trends", params={"format": "xml"}, headers=auth).status_code == 422
+
+
+def test_innovations_lists_every_innovation(client, auth) -> None:
+    rows = client.get(f"{BASE}/innovations", headers=auth).json()
+    ids = {r["innovation_id"] for r in rows}
+    total = client.get("/admin/innovations", headers=auth).json()["total"]
+    assert len(ids) == total
+    draft = next(r for r in rows if r["innovation_id"] == "paszport-choroby-rzadkiej")
+    assert draft["matches_total"] == 0
+    assert rows[0]["matches_total"] >= rows[-1]["matches_total"]

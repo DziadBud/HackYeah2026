@@ -10,6 +10,8 @@ from app.schemas.admin.innovations import (
     Innovation,
     InnovationCreate,
     InnovationFeedback,
+    InnovationStats,
+    InnovationStatsRow,
     PublicationStatus,
     InnovationUpdate,
 )
@@ -34,6 +36,7 @@ class AdminAuthStore(Protocol):
 # brief wymaga szybkiej aktualizacji wiedzy: real impl embeds on edit so changes reach /match at once
 # draft vs published: unpublished items must never be returned by matching
 # feedback() = R4 tester: ratings and "chce testowac" counts per innovation
+# stats() / stats_report(): what the admin watches per innovation (matches, reach, testers, ratings)
 class InnovationAdminService(Protocol):
     def list(
         self, status: PublicationStatus | None, q: str | None, limit: int, offset: int
@@ -45,6 +48,9 @@ class InnovationAdminService(Protocol):
         self, innovation_id: str, status: PublicationStatus
     ) -> Innovation: ...
     def feedback(self, innovation_id: str) -> InnovationFeedback: ...
+    def stats(self, innovation_id: str) -> InnovationStats: ...
+    # quoted: list() above shadows the builtin
+    def stats_report(self) -> "list[InnovationStatsRow]": ...
 
 
 # R12 pytanie jury: "jak admin dowiaduje sie o nowym pomysle?"

@@ -59,6 +59,7 @@ def test_unknown_id_404(client, auth) -> None:
         ("PATCH", ""),
         ("POST", "/publish"),
         ("GET", "/feedback"),
+        ("GET", "/stats"),
     ]:
         res = client.request(method, f"{BASE}/nope{path}", json={} if method == "PATCH" else None, headers=auth)
         assert res.status_code == 404, (method, path)
@@ -73,3 +74,44 @@ def test_patch_null_video_url_clears_it(client, auth) -> None:
     res = client.patch(f"{BASE}/wibraap", json={"video_url": None}, headers=auth)
     assert res.status_code == 200
     assert res.json()["video_url"] is None
+
+
+def test_stats_totals_add_up(client, auth) -> None:
+    res = client.get(f"{BASE}/wibraap/stats", headers=auth)
+    assert res.status_code == 200
+    body = res.json()
+    total = body["matches_total"]
+    assert total > 0
+    assert sum(w["matches"] for w in body["matches_by_week"]) == total
+    assert sum(a["matches"] for a in body["matches_by_area"]) == total
+    assert body["matches_7d"] == body["matches_by_week"][-1]["matches"]
+    assert sum(body["rating_distribution"]) == body["rating_count"]
+    assert body["recent_problem_reports"]
+
+
+def test_stats_suppresses_small_locations(client, auth) -> None:
+    rows = {r["location"]: r for r in client.get(f"{BASE}/wibraap/stats", headers=auth).json()["matches_by_location"]}
+    assert rows["Krakow"]["matches"] == 15
+    assert rows["Wieliczka"]["matches"] is None
+    assert rows["Wieliczka"]["note"]
+
+
+def test_stats_for_new_innovation_are_empty(client, auth) -> None:
+    created = client.post(BASE, json=NEW, headers=auth).json()
+    body = client.get(f"{BASE}/{created['id']}/stats", headers=auth).json()
+    assert body["matches_total"] == 0
+    assert body["rating_avg"] is None
+    assert len(body["matches_by_week"]) == 6
+
+
+def test_feedback_matches_stats(client, auth) -> None:
+    feedback = client.get(f"{BASE}/straznik/feedback", headers=auth).json()
+    stats = client.get(f"{BASE}/straznik/stats", headers=auth).json()
+    assert feedback["rating_avg"] == stats["rating_avg"]
+    assert feedback["test_signups"] == sum(stats["test_signups"].values())
+
+
+def test_stats_require_session(client) -> None:
+    # test_auth's route discovery finds no routes on this fastapi version, so check the new ones here
+    assert client.get(f"{BASE}/wibraap/stats").status_code == 401
+    assert client.get("/admin/reports/innovations").status_code == 401

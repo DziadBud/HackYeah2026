@@ -10,12 +10,19 @@ from app.schemas.admin.grant_calls import (
 from app.schemas.admin.ideas import Idea, IdeaStage, IdeaStatus, SocialCanvas
 from app.schemas.admin.inbox import Inbox
 from app.schemas.admin.innovations import (
+    AreaMatches,
     FeedbackComment,
     Innovation,
     InnovationCreate,
     InnovationFeedback,
-    PublicationStatus,
+    InnovationStats,
+    InnovationStatsRow,
     InnovationUpdate,
+    LocationMatches,
+    MatchedProblemReport,
+    PublicationStatus,
+    SignupCounts,
+    WeeklyMatches,
 )
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
@@ -112,24 +119,144 @@ class MockInnovationAdminService:
         return updated
 
     def feedback(self, innovation_id: str) -> InnovationFeedback:
-        self.get(innovation_id)
+        stats = self.stats(innovation_id)
+        signups = stats.test_signups
         return InnovationFeedback(
-            rating_avg=4.5,
-            rating_count=12,
-            test_signups=3,
-            recent_comments=[
-                FeedbackComment(
-                    comment="Swietny pomysl, chcemy przetestowac w naszym DPS.",
-                    rating=5,
-                    created_at=NOW - timedelta(days=1),
-                ),
-                FeedbackComment(
-                    comment="Potrzeba tanszej wersji dla gmin.",
-                    rating=4,
-                    created_at=NOW - timedelta(days=3),
-                ),
-            ],
+            rating_avg=stats.rating_avg,
+            rating_count=stats.rating_count,
+            test_signups=signups.applied + signups.accepted + signups.rejected,
+            recent_comments=stats.recent_comments,
         )
+
+    def stats(self, innovation_id: str) -> InnovationStats:
+        self.get(innovation_id)
+        return _stats(innovation_id)
+
+    # quoted: list() above shadows the builtin
+    def stats_report(self) -> "list[InnovationStatsRow]":
+        rows = []
+        for item in self._items.values():
+            s = _stats(item.id)
+            rows.append(
+                InnovationStatsRow(
+                    innovation_id=item.id,
+                    title=item.title,
+                    status=item.status,
+                    matches_total=s.matches_total,
+                    matches_7d=s.matches_7d,
+                    matches_prev_7d=s.matches_prev_7d,
+                    people_reached=s.people_reached,
+                    distinct_locations=s.distinct_locations,
+                    test_signups_applied=s.test_signups.applied,
+                    test_signups_accepted=s.test_signups.accepted,
+                    test_signups_rejected=s.test_signups.rejected,
+                    rating_avg=s.rating_avg,
+                    rating_count=s.rating_count,
+                    last_matched_at=s.last_matched_at,
+                )
+            )
+        return sorted(rows, key=lambda r: r.matches_total, reverse=True)
+
+
+# per-innovation activity behind the stats; weekly, location and area counts add up to the same total.
+# real impl: aggregates over problem_reports.matched_innovation_ids, test_signups and feedback
+_ACTIVITY: dict[str, dict] = {
+    "wibraap": {
+        "weekly": [2, 3, 5, 4, 6, 9],
+        "locations": {"Krakow": 15, "Tarnow": 8, "Nowy Sacz": 4, "Wieliczka": 2},
+        "areas": {ChallengeArea.DISABILITY: 26, ChallengeArea.SENIORS: 3},
+        "people_reached": 61,
+        "signups": (5, 2, 1),
+        "ratings": [1, 0, 2, 4, 5],
+        "comments": [
+            ("Dzieci w naszym osrodku po raz pierwszy poczuly koncert. Prosimy o wersje dziecieca kamizelki.", 5, 1),
+            ("Aplikacja na telefon czasem gubi polaczenie z kamizelka.", 3, 4),
+        ],
+        "reports": [
+            ("Glusi uczniowie nie moga uczestniczyc w szkolnych koncertach i apelach.", ChallengeArea.DISABILITY, "Tarnow", 6, 2),
+            ("Brak oferty kulturalnej dla osob niedoslyszacych w domu kultury.", ChallengeArea.DISABILITY, "Krakow", 3, 5),
+        ],
+    },
+    "straznik": {
+        "weekly": [1, 2, 2, 4, 5, 7],
+        "locations": {"Krakow": 9, "Skawina": 6, "Myslenice": 4, "Bochnia": 2},
+        "areas": {ChallengeArea.DISABILITY: 13, ChallengeArea.SENIORS: 8},
+        "people_reached": 38,
+        "signups": (4, 3, 1),
+        "ratings": [0, 1, 2, 8, 13],
+        "comments": [
+            ("Swietny pomysl, chcemy przetestowac w naszym DPS.", 5, 1),
+            ("Potrzeba tanszej wersji dla gmin.", 4, 3),
+            ("Opaska powinna dzialac tez bez smartfona.", 4, 6),
+        ],
+        "reports": [
+            ("Mama jest niedoslyszaca i nie slyszy czujnika dymu w nocy.", ChallengeArea.SENIORS, "Skawina", 9, 1),
+            ("Mieszkancy DPS z aparatami sluchowymi nie reaguja na alarm pozarowy.", ChallengeArea.DISABILITY, "Krakow", 4, 3),
+        ],
+    },
+}
+
+
+def _week_start(days_ago: int) -> date:
+    day = (NOW - timedelta(days=days_ago)).date()
+    return day - timedelta(days=day.weekday())
+
+
+def _stats(innovation_id: str) -> InnovationStats:
+    a = _ACTIVITY.get(innovation_id)
+    if a is None:
+        # new or never matched (drafts are never returned by /match)
+        a = {"weekly": [0] * 6, "locations": {}, "areas": {}, "people_reached": 0,
+             "signups": (0, 0, 0), "ratings": [0] * 5, "comments": [], "reports": []}
+    weekly: list[int] = a["weekly"]
+    ratings: list[int] = a["ratings"]
+    rating_count = sum(ratings)
+    reports = [
+        MatchedProblemReport(
+            id=f"problem-report-{innovation_id}-{n}",
+            text=text,
+            challenge_area=area,
+            location=location,
+            support_count=support,
+            created_at=NOW - timedelta(days=days),
+        )
+        for n, (text, area, location, support, days) in enumerate(a["reports"], 1)
+    ]
+    return InnovationStats(
+        innovation_id=innovation_id,
+        matches_total=sum(weekly),
+        matches_7d=weekly[-1],
+        matches_prev_7d=weekly[-2],
+        people_reached=a["people_reached"],
+        distinct_locations=len(a["locations"]),
+        last_matched_at=max((r.created_at for r in reports), default=None),
+        matches_by_week=[
+            WeeklyMatches(week_start=_week_start(7 * (len(weekly) - 1 - n)), matches=m)
+            for n, m in enumerate(weekly)
+        ],
+        matches_by_area=[AreaMatches(challenge_area=k, matches=v) for k, v in a["areas"].items()],
+        matches_by_location=[
+            LocationMatches(location=loc, matches=n)
+            if n >= MIN_LOCATION_PROBLEM_REPORTS
+            else LocationMatches(location=loc, matches=None, note="too few problem reports to display")
+            for loc, n in a["locations"].items()
+        ],
+        test_signups=SignupCounts(
+            applied=a["signups"][0], accepted=a["signups"][1], rejected=a["signups"][2]
+        ),
+        rating_avg=(
+            round(sum((i + 1) * n for i, n in enumerate(ratings)) / rating_count, 2)
+            if rating_count
+            else None
+        ),
+        rating_count=rating_count,
+        rating_distribution=ratings,
+        recent_comments=[
+            FeedbackComment(comment=c, rating=r, created_at=NOW - timedelta(days=d))
+            for c, r, d in a["comments"]
+        ],
+        recent_problem_reports=reports,
+    )
 
 
 _IDEAS = [
