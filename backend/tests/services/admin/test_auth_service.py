@@ -35,7 +35,7 @@ def clock() -> Clock:
 
 def make(pw_hash: str, clock: Clock, active: bool = True):
     store = InMemoryAdminAuthStore(
-        [AdminAccount(id="a1", email="admin@rops.test", password_hash=pw_hash, is_active=active)]
+        [AdminAccount(id="a1", username="admin", password_hash=pw_hash, is_active=active)]
     )
     svc = AdminAuthService(
         store,
@@ -49,34 +49,34 @@ def make(pw_hash: str, clock: Clock, active: bool = True):
 
 
 @pytest.mark.parametrize(
-    "email,password,active,err",
+    "username,password,active,err",
     [
-        ("admin@rops.test", PASSWORD, True, None),
-        (" Admin@ROPS.test ", PASSWORD, True, None),
-        ("admin@rops.test", "wrong", True, InvalidCredentialsError),
-        ("ghost@rops.test", PASSWORD, True, InvalidCredentialsError),
-        ("admin@rops.test", PASSWORD, False, InvalidCredentialsError),
+        ("admin", PASSWORD, True, None),
+        (" Admin ", PASSWORD, True, None),
+        ("admin", "wrong", True, InvalidCredentialsError),
+        ("ghost", PASSWORD, True, InvalidCredentialsError),
+        ("admin", PASSWORD, False, InvalidCredentialsError),
     ],
     ids=[
         "#1 - OK",
-        "#2 - OK - email normalised",
+        "#2 - OK - username normalised",
         "#3 - FAIL - wrong password",
-        "#4 - FAIL - unknown email",
+        "#4 - FAIL - unknown username",
         "#5 - FAIL - inactive admin",
     ],
 )
-def test_login(pw_hash, clock, email, password, active, err) -> None:
+def test_login(pw_hash, clock, username, password, active, err) -> None:
     svc, _ = make(pw_hash, clock, active)
     if err:
         with pytest.raises(err):
-            svc.login(email, password)
+            svc.login(username, password)
     else:
-        assert svc.authenticate(svc.login(email, password)).id == "a1"
+        assert svc.authenticate(svc.login(username, password)).id == "a1"
 
 
 def test_raw_token_never_stored(pw_hash, clock) -> None:
     svc, store = make(pw_hash, clock)
-    token = svc.login("admin@rops.test", PASSWORD)
+    token = svc.login("admin", PASSWORD)
     assert store.get_session(token.encode()) is None
     assert store.get_session(hash_token(token)) is not None
 
@@ -85,18 +85,18 @@ def test_rate_limit(pw_hash, clock) -> None:
     svc, _ = make(pw_hash, clock)
     for _ in range(5):
         with pytest.raises(InvalidCredentialsError):
-            svc.login("admin@rops.test", "wrong")
+            svc.login("admin", "wrong")
     with pytest.raises(TooManyAttemptsError):
-        svc.login("admin@rops.test", PASSWORD)
+        svc.login("admin", PASSWORD)
 
 
 def test_rate_limit_window_expires(pw_hash, clock) -> None:
     svc, _ = make(pw_hash, clock)
     for _ in range(5):
         with pytest.raises(InvalidCredentialsError):
-            svc.login("admin@rops.test", "wrong")
+            svc.login("admin", "wrong")
     clock.now += timedelta(minutes=16)
-    assert svc.login("admin@rops.test", PASSWORD)
+    assert svc.login("admin", PASSWORD)
 
 
 @pytest.mark.parametrize(
@@ -110,7 +110,7 @@ def test_rate_limit_window_expires(pw_hash, clock) -> None:
 )
 def test_session_expiry(pw_hash, clock, steps, ok) -> None:
     svc, _ = make(pw_hash, clock)
-    token = svc.login("admin@rops.test", PASSWORD)
+    token = svc.login("admin", PASSWORD)
     for step in steps[:-1]:
         clock.now += step
         svc.authenticate(token)
@@ -124,7 +124,7 @@ def test_session_expiry(pw_hash, clock, steps, ok) -> None:
 
 def test_logout_revokes(pw_hash, clock) -> None:
     svc, _ = make(pw_hash, clock)
-    token = svc.login("admin@rops.test", PASSWORD)
+    token = svc.login("admin", PASSWORD)
     svc.logout(token)
     with pytest.raises(NotAuthenticatedError):
         svc.authenticate(token)
@@ -133,4 +133,4 @@ def test_logout_revokes(pw_hash, clock) -> None:
 def test_malformed_configured_hash_fails_closed(clock) -> None:
     svc, _ = make("not-a-hash", clock)
     with pytest.raises(InvalidCredentialsError):
-        svc.login("admin@rops.test", PASSWORD)
+        svc.login("admin", PASSWORD)

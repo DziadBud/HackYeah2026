@@ -9,7 +9,7 @@ from app.services.admin.auth import AdminAuthService, hash_password
 from app.services.admin.auth_models import AdminAccount
 from app.services.admin.auth_store import InMemoryAdminAuthStore
 
-ADMIN_EMAIL = "admin@rops.test"
+ADMIN_USERNAME = "admin"
 ADMIN_PASSWORD = "correct horse battery"
 
 
@@ -21,7 +21,7 @@ def admin_password_hash() -> str:
 
 def make_auth_service(password_hash: str, **overrides) -> AdminAuthService:
     store = InMemoryAdminAuthStore(
-        [AdminAccount(id="admin-1", email=ADMIN_EMAIL, password_hash=password_hash)]
+        [AdminAccount(id="admin-1", username=ADMIN_USERNAME, password_hash=password_hash)]
     )
     params = {
         "session_ttl": timedelta(hours=8),
@@ -63,6 +63,6 @@ def client() -> TestClient:
 @pytest.fixture
 def auth(client) -> dict[str, str]:
     # logs `client` in; the session cookie lives in its cookie jar, so no headers are needed
-    res = client.post("/admin/auth/login", json={"email": ADMIN_EMAIL, "password": ADMIN_PASSWORD})
+    res = client.post("/admin/auth/login", json={"username": ADMIN_USERNAME, "password": ADMIN_PASSWORD})
     assert res.status_code == 204
     return {}

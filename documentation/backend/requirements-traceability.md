@@ -77,7 +77,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 - **How:**
   - no public accounts or passwords, no IP stored
   - an email only when given with consent, stored on the item / thread
-  - per-admin accounts with argon2id hashes, revocable HttpOnly session cookies, login rate limit, secrets from env
+  - one shared admin login from env (argon2id-hashed at startup), revocable HttpOnly session cookies, login rate limit, secrets from env
   - city picked from a list, free text length-capped, synthetic demo data only
   - problem reports and threads can be `hidden` by an admin
   - user text is data, never instructions

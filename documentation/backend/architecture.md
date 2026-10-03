@@ -129,10 +129,10 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 | test signup accepted / rejected / completed | the signup's `email` |
 | thread / reply published | the author's `email` (if set) |
 
-- **Admin side:** per-admin accounts (argon2id hashes) in env (`ADMIN_ACCOUNTS`), server-side sessions in memory, `HttpOnly; Secure; SameSite=Strict` cookie; see [.claude/designs/admin-auth.md](../../.claude/designs/admin-auth.md).
+- **Admin side:** one shared admin login from env (`ADMIN_USERNAME`, `ADMIN_PASSWORD`; compose defaults to `admin` / `1234` for the demo), server-side sessions in memory, `HttpOnly; Secure; SameSite=Strict` cookie; see [.claude/designs/admin-auth.md](../../.claude/designs/admin-auth.md).
   - `require_admin` guards `/admin/*`.
-  - `POST /admin/auth/login {email, password}`, `POST /admin/auth/logout`, `GET /admin/auth/me`.
-  - Sessions: 8 h absolute, 30 min idle; login limited to 5 failures per email per 15 min; a foreign `Origin` on unsafe methods gets 403.
+  - `POST /admin/auth/login {username, password}`, `POST /admin/auth/logout`, `GET /admin/auth/me`.
+  - Sessions: 8 h absolute, 30 min idle; login limited to 5 failures per username per 15 min; a foreign `Origin` on unsafe methods gets 403.
 
 ## 5. Admin endpoints (all under `/admin`, behind the admin session except login and logout)
 
@@ -388,7 +388,7 @@ docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit
 
 ## Changes
 
-1. Admin auth: per-admin accounts + server-side session cookie instead of a shared JWT.
+1. Admin auth: server-side session cookie instead of a shared JWT; for the hackathon one shared login from env (`ADMIN_USERNAME` / `ADMIN_PASSWORD`).
 2. IP logic removed; an optional email is stored on the item for notifications.
 3. The rag service owns chunking, embedding and retrieval; `/match` calls it over HTTP, rag down gives 503 with the problem report kept.
 4. Data model: merged rag tables + match-api tables (`problem_reports`, `ideas`, `grant_calls`, `test_signups`, `feedback`, `threads`, `thread_replies`, `generated_documents`):

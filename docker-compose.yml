@@ -42,7 +42,9 @@ services:
     container_name: hackyeah-api
     environment:
       DEBUG: ${DEBUG:-true}
-      ADMIN_ACCOUNTS: ${ADMIN_ACCOUNTS:-{}}
+      # demo login; override in .env for anything shared
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-1234}
       # hackathon demo: admin panel without login (only works with DEBUG=true)
       ADMIN_AUTH_DISABLED: ${ADMIN_AUTH_DISABLED:-true}
       DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}

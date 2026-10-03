@@ -9,7 +9,7 @@ from sqlalchemy.orm import Session
 from app.config import settings
 from app.db.session import SessionLocal, get_db
 from app.messaging import RabbitEmbedPublisher
-from app.services.admin.auth import AdminAuthService
+from app.services.admin.auth import AdminAuthService, hash_password
 from app.services.admin.auth_models import AdminAccount
 from app.services.admin.auth_store import InMemoryAdminAuthStore
 from app.services.admin.db import (
@@ -32,13 +32,20 @@ from app.services.admin.interfaces import (
 )
 from app.storage import LocalFileStorage
 
+_admins = (
+    # hashed once at startup, so login keeps the constant-time argon2 check
+    [
+        AdminAccount(
+            id=settings.admin_username,
+            username=settings.admin_username,
+            password_hash=hash_password(settings.admin_password),
+        )
+    ]
+    if settings.admin_username and settings.admin_password
+    else []
+)
 _auth = AdminAuthService(
-    InMemoryAdminAuthStore(
-        [
-            AdminAccount(id=email.lower(), email=email.lower(), password_hash=pw_hash)
-            for email, pw_hash in settings.admin_accounts.items()
-        ]
-    ),
+    InMemoryAdminAuthStore(_admins),
     session_ttl=timedelta(hours=settings.admin_session_ttl_hours),
     idle_timeout=timedelta(minutes=settings.admin_session_idle_minutes),
     max_failures=settings.admin_login_max_failures,

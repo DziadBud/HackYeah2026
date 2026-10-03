@@ -15,7 +15,7 @@ from app.services.admin.errors import (
 from app.services.admin.interfaces import AdminAuthStore
 
 _hasher = PasswordHasher()
-# verified when the email is unknown, so response time doesn't reveal which emails exist
+# verified when the username is unknown, so response time doesn't reveal which usernames exist
 _DUMMY_HASH = _hasher.hash(secrets.token_urlsafe(16))
 # avoid a store write on every request
 _TOUCH_EVERY = timedelta(minutes=1)
@@ -50,15 +50,15 @@ class AdminAuthService:
         self._failure_window = failure_window
         self._now = now
 
-    def login(self, email: str, password: str) -> str:
+    def login(self, username: str, password: str) -> str:
         """returns the raw session token for the cookie"""
         now = self._now()
-        email = email.strip().lower()
-        key = f"email:{email}"
+        username = username.strip().lower()
+        key = f"username:{username}"
         if self._store.count_failed_attempts(key, now - self._failure_window) >= self._max_failures:
             raise TooManyAttemptsError
 
-        admin = self._store.get_admin_by_email(email)
+        admin = self._store.get_admin_by_username(username)
         if not self._verify(admin.password_hash if admin else _DUMMY_HASH, password) or not (
             admin and admin.is_active
         ):
@@ -95,7 +95,7 @@ class AdminAuthService:
 
         if now - session.last_seen_at >= _TOUCH_EVERY:
             self._store.touch_session(token_hash, now)
-        return AdminPrincipal(id=admin.id, email=admin.email)
+        return AdminPrincipal(id=admin.id, username=admin.username)
 
     def logout(self, token: str) -> None:
         self._store.delete_session(hash_token(token))
