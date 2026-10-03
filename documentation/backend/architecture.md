@@ -53,6 +53,7 @@ How rag behaves, and what match-api does about it:
 - **`POST /query {query, top_k ≤ 3, city?, title?}`:**
   - returns the best chunk per innovation, `status = 'published'` only
     - ranks results with equal weights: 50% vector similarity and 50% basic title match; `city` remains an optional filter
+    - applies the configurable `MATCH_MIN_SCORE` cutoff to the combined score; Compose defaults it to `0.15` for permissive matching
 - **Temporary `GET /query/test/{innovation_id}`:** reads one stored innovation, its tags, status, text, and chunk count for verifying test embeddings.
 - **`POST /embed {innovation_id}`:**
   - needs an existing `innovations` row and replaces all of its chunks

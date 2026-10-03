@@ -14,6 +14,7 @@ def _vector_literal(values: Sequence[float]) -> str:
 class PostgresVectorStore:
     def __init__(self) -> None:
         self.database_url = os.getenv("DATABASE_URL")
+        self.min_match_score = float(os.getenv("MATCH_MIN_SCORE", "0.15"))
 
     def get_content(self, innovation_id: str) -> str:
         if not self.database_url:
@@ -249,6 +250,7 @@ class PostgresVectorStore:
                             FROM ranked
                             ORDER BY parent_id, score DESC
                         ) AS best_matches
+                        WHERE score >= %s
                         ORDER BY score DESC
                         LIMIT %s
                         """,
@@ -261,6 +263,7 @@ class PostgresVectorStore:
                             title,
                             title,
                             search_tests,
+                            self.min_match_score,
                             top_k,
                         ),
                     )

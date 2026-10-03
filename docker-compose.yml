@@ -128,6 +128,7 @@ services:
       EMBEDDING_SERVICE_URL: http://embeddings:80/embed
       OLLAMA_URL: http://ollama:11434
       OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:1.5b}
+      MATCH_MIN_SCORE: ${MATCH_MIN_SCORE:-0.15}
     ports:
       - "${RAG_PORT:-8001}:8000"
     depends_on:
