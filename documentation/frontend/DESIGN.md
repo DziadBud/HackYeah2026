@@ -23,10 +23,10 @@ colors:
   primary-container: '#0f2d59'
   on-primary-container: '#7c95c8'
   inverse-primary: '#adc7fc'
-  secondary: '#b52426'
+  secondary: '#00504a'
   on-secondary: '#ffffff'
-  secondary-container: '#ff5a55'
-  on-secondary-container: '#600008'
+  secondary-container: '#9bf2e8'
+  on-secondary-container: '#00201d'
   tertiary: '#001d1a'
   on-tertiary: '#ffffff'
   tertiary-container: '#003430'
@@ -39,10 +39,10 @@ colors:
   primary-fixed-dim: '#adc7fc'
   on-primary-fixed: '#001b3f'
   on-primary-fixed-variant: '#2c4674'
-  secondary-fixed: '#ffdad6'
-  secondary-fixed-dim: '#ffb3ad'
-  on-secondary-fixed: '#410003'
-  on-secondary-fixed-variant: '#920212'
+  secondary-fixed: '#c8f5ef'
+  secondary-fixed-dim: '#9bf2e8'
+  on-secondary-fixed: '#00201d'
+  on-secondary-fixed-variant: '#003a35'
   tertiary-fixed: '#9bf2e8'
   tertiary-fixed-dim: '#7fd5cc'
   on-tertiary-fixed: '#00201d'
@@ -154,7 +154,7 @@ The visual style is **Corporate Modern with High-Legibility Functionalism**:
 The palette is engineered to meet strict WCAG 2.1 AA and AAA standards across all primary, secondary, and informative states:
 
 - **Primary (`#0F2D59`)**: Institutional deep navy commanding authority and calm security. Applied to navigation headers, dominant buttons, and primary structural dividing lines. Contrast ratio against light canvas exceeds 11:1.
-- **Secondary (`#C53030`)**: Małopolska crimson red, honoring regional heritage. Reserved for high-priority calls to action, deadline indicators, badge highlights, and essential interactive tags. Contrast ratio against light canvas exceeds 5.2:1.
+- **Secondary (`#00504A`)**: Deep teal from the tertiary family (no red in the UI: it read as too loud next to the navy). Reserved for high-priority calls to action, badge highlights, and essential interactive tags. White text on it is 9.3:1; hover `#003A35`.
 - **Tertiary (`#0D766E`)**: Deep spruce teal, used for social impact markers, completed milestones, support initiative flags, and environmental tags.
 - **Neutral (`#1E293B` on `#F8FAFC`)**: Slate black on an off-white warm neutral backdrop, providing crisp, glare-free readability without harsh starkness.
 - **Border Neutral (`#CBD5E1`)**: Clear structural separation for cards and inputs to define boundaries without visual clutter.

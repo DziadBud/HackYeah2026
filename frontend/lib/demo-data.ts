@@ -24,6 +24,9 @@ export interface DemoInnovation {
   threads: Thread[];
 }
 
+// placeholder until the real innovation pdfs are uploaded; the file says it is an example
+export const SAMPLE_PDF_URL = "/pdf/karta-innowacji-przyklad.pdf";
+
 export const CARETAKER = {
   name: "Magdalena Szybist",
   role: "Koordynator Inkubatora Innowacji ROPS",
