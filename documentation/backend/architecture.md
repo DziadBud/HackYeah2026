@@ -53,6 +53,7 @@ How rag behaves, and what match-api does about it:
 - **`POST /query {query, top_k ≤ 3, city?, title?, tags?}`:**
   - returns the best chunk per innovation, `status = 'published'` only
   - the tags filter is an overlap, so `/match` always sends `tags: ["type:innovation"]`
+- **Temporary `GET /query/test/{innovation_id}`:** reads one stored innovation, its tags, status, text, and chunk count for verifying test embeddings.
 - **`POST /embed {innovation_id}`:**
   - needs an existing `innovations` row and replaces all of its chunks
   - match-api inserts and commits the row first, then calls it

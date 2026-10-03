@@ -38,6 +38,16 @@ class FakeVectorStore:
     def create_test_innovation(self, innovation_id: str, text: str) -> None:
         self.test_innovation = (innovation_id, text)
 
+    def get_innovation(self, innovation_id: str) -> dict[str, object]:
+        return {
+            "innovation_id": innovation_id,
+            "title": "Test innovation",
+            "content": "Wsparcie dla osób starszych",
+            "tags": ["senior-support"],
+            "status": "published",
+            "chunk_count": 1,
+        }
+
     def insert_document(self, **kwargs: object) -> tuple[str, list[str]]:
         self.insert_kwargs = kwargs
         chunks = cast(list[str], kwargs["chunks"])
@@ -103,6 +113,16 @@ def test_query_returns_only_innovation_ids(monkeypatch):
         "Znaleziono innowację o identyfikatorze: wibraap."
     )
     assert response.json()["matches"] == [{"innovation_id": "wibraap"}]
+
+
+def test_query_test_returns_innovation_by_id(monkeypatch):
+    monkeypatch.setattr("app.main.get_vector_store", lambda: FakeVectorStore())
+
+    response = client.get("/query/test/test-wibraap")
+
+    assert response.status_code == 200
+    assert response.json()["innovation_id"] == "test-wibraap"
+    assert response.json()["chunk_count"] == 1
 
 
 def test_query_rejects_empty_query():

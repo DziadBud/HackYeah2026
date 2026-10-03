@@ -7,6 +7,10 @@ class VectorStoreError(RuntimeError):
     pass
 
 
+def _vector_literal(values: Sequence[float]) -> str:
+    return "[" + ",".join(str(float(value)) for value in values) + "]"
+
+
 class PostgresVectorStore:
     def __init__(self) -> None:
         self.database_url = os.getenv("DATABASE_URL")
@@ -41,6 +45,47 @@ class PostgresVectorStore:
             raise
         except Exception as error:
             raise VectorStoreError(f"could not read innovation content: {error}") from error
+
+    def get_innovation(self, innovation_id: str) -> dict[str, object]:
+        if not self.database_url:
+            raise VectorStoreError("DATABASE_URL is not configured")
+
+        try:
+            import psycopg
+        except ImportError as error:
+            raise VectorStoreError("psycopg is required to read innovations") from error
+
+        try:
+            with psycopg.connect(self.database_url) as connection:
+                with connection.cursor() as cursor:
+                    cursor.execute(
+                        """
+                        SELECT i.id, i.title, i.content, i.tags, i.status,
+                               COUNT(c.id)::int AS chunk_count
+                        FROM innovations AS i
+                        LEFT JOIN innovation_chunks AS c ON c.innovation_id = i.id
+                        WHERE i.id = %s
+                        GROUP BY i.id
+                        """,
+                        (innovation_id,),
+                    )
+                    row = cursor.fetchone()
+                    if row is None:
+                        raise VectorStoreError(
+                            f"innovation does not exist: {innovation_id}"
+                        )
+                    return {
+                        "innovation_id": row[0],
+                        "title": row[1],
+                        "content": row[2],
+                        "tags": row[3],
+                        "status": row[4],
+                        "chunk_count": row[5],
+                    }
+        except VectorStoreError:
+            raise
+        except Exception as error:
+            raise VectorStoreError(f"could not read innovation: {error}") from error
 
     def create_test_innovation(self, innovation_id: str, text: str) -> None:
         if not self.database_url:
@@ -125,7 +170,7 @@ class PostgresVectorStore:
                                 chunk,
                                 source,
                                 page,
-                                list(embedding),
+                                _vector_literal(embedding),
                             ),
                         )
                         row = cursor.fetchone()
@@ -179,7 +224,7 @@ class PostgresVectorStore:
                                 c.source,
                                 c.page,
                                 c.text,
-                                1 - (c.embedding <=> %s) AS vector_score,
+                                1 - (c.embedding <=> %s::vector) AS vector_score,
                                 CASE
                                     WHEN %s <> '' AND i.title ILIKE ('%%' || %s || '%%')
                                     THEN 1.0 ELSE 0.0
@@ -193,8 +238,8 @@ class PostgresVectorStore:
                                 END AS tag_score
                             FROM innovation_chunks AS c
                             JOIN innovations AS i ON i.id = c.innovation_id
-                            WHERE (%s IS NULL OR i.city = %s)
-                              AND (%s IS NULL OR i.title ILIKE ('%%' || %s || '%%'))
+                                                        WHERE (%s::text IS NULL OR i.city = %s)
+                                                            AND (%s::text IS NULL OR i.title ILIKE ('%%' || %s || '%%'))
                               AND (
                                   cardinality(%s::text[]) = 0
                                   OR i.tags && %s::text[]
@@ -222,7 +267,7 @@ class PostgresVectorStore:
                         LIMIT %s
                         """,
                         (
-                            list(embedding),
+                            _vector_literal(embedding),
                             query,
                             query,
                             query,

@@ -32,6 +32,15 @@ class QueryMatch(BaseModel):
     innovation_id: str
 
 
+class QueryTestResponse(BaseModel):
+    innovation_id: str
+    title: str
+    content: str
+    tags: list[str]
+    status: str
+    chunk_count: int
+
+
 class EmbedRequest(BaseModel):
     innovation_id: str = Field(min_length=1, max_length=100)
 
@@ -82,6 +91,15 @@ def query(request: QueryRequest) -> QueryResponse:
         answer=answer,
         matches=matches,
     )
+
+
+@app.get("/query/test/{innovation_id}", response_model=QueryTestResponse, tags=["rag"])
+def query_test(innovation_id: str) -> QueryTestResponse:
+    try:
+        innovation = get_vector_store().get_innovation(innovation_id)
+    except RuntimeError as error:
+        raise HTTPException(status_code=404, detail=str(error)) from error
+    return QueryTestResponse(**innovation)
 
 
 @app.post("/embed", response_model=EmbedResponse, status_code=201, tags=["rag"])

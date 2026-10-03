@@ -18,7 +18,13 @@ class AnswerService:
             f"Znalezione innowacje: {[match['innovation_id'] for match in matches[:3]]}"
         )
         if isinstance(result, dict):
-            result = result.get("answer")
+            result = (
+                result.get("answer")
+                or result.get("summary")
+                or result.get("podsumowanie")
+            )
+        if isinstance(result, list):
+            result = " ".join(str(item) for item in result)
         if not isinstance(result, str) or not result.strip():
             raise RuntimeError("LLM returned an invalid answer")
         return result.strip()
