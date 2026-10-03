@@ -23,6 +23,24 @@ services:
       timeout: 5s
       retries: 10
 
+  rabbitmq:
+    image: rabbitmq:4-management
+    container_name: hackyeah-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:-hackyeah}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD:-hackyeah}
+    ports:
+      - "${RABBITMQ_PORT:-5672}:5672"
+      # management ui
+      - "${RABBITMQ_UI_PORT:-15672}:15672"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
   api:
     build: ./backend
     container_name: hackyeah-api
@@ -34,10 +52,13 @@ services:
       DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
       GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
+      RABBITMQ_URL: amqp://${RABBITMQ_USER:-hackyeah}:${RABBITMQ_PASSWORD:-hackyeah}@rabbitmq:5672/
     ports:
       - "${API_PORT:-8000}:8000"
     depends_on:
       db:
+        condition: service_healthy
+      rabbitmq:
         condition: service_healthy
 
   rag:
@@ -71,3 +92,4 @@ services:
 
 volumes:
   postgres_data:
+  rabbitmq_data:

@@ -55,6 +55,8 @@ How rag behaves, and what match-api does about it:
   - match-api inserts and commits the row first, then calls it
 - **`innovations.city` is nullable but returned as `str`:** match-api always writes `city` (`''` when unknown).
 
+RabbitMQ (`rabbitmq` in compose, management UI on :15672) runs next to Postgres for match-api to publish to. The api container gets `RABBITMQ_URL`; match-api has no publisher code yet.
+
 ## 2. Flow: adding innovations
 
 An innovation is visible to users only once rag has chunks for it, and a PDF from the admin is always the source.
@@ -275,7 +277,7 @@ backend/             # match-api
   app/               # api/*.py, api/admin/*.py, schemas/, services/ (interface + mock first, db next), rag client
   sql/               # one schema file for the 5 tables, mounted into initdb after rag's
 rag/                 # used as merged
-docker-compose.yml   # postgres (pgvector image), rag, api, mailpit
+docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit
 ```
 
 1. Backend schema file + compose (one `DATABASE_URL`, `RAG_URL`, mailpit).
@@ -316,3 +318,4 @@ docker-compose.yml   # postgres (pgvector image), rag, api, mailpit
    - innovations use only rag's columns; created from an admin PDF (or an accepted idea) and published once embedded
    - `location` is renamed to `city`
    - contacts, interests, test rounds, per-item tokens and index jobs are dropped
+5. RabbitMQ added to docker compose (`rabbitmq`, `RABBITMQ_URL` passed to the api); no publisher in match-api yet.
