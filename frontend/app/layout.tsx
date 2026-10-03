@@ -1,34 +1,53 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+import type { Metadata, Viewport } from "next";
+import { Atkinson_Hyperlegible_Next } from "next/font/google";
+import localFont from "next/font/local";
+import { A11yToolbar, PREFS_BOOTSTRAP } from "@/components/A11yToolbar";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
 
+// typeface from the design system: disambiguates I / l / 1, full polish diacritics
+const atkinson = Atkinson_Hyperlegible_Next({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-atkinson",
+  display: "swap",
+});
+
+// material symbols, self-hosted subset (no request to google on page load).
+// to add a glyph: list it in scripts/fetch-icons.sh and run it
+const icons = localFont({
+  src: "./fonts/material-symbols-outlined.woff2",
+  variable: "--font-icons",
+  display: "block",
+  preload: true,
+});
+
 export const metadata: Metadata = {
-  title: "HackYeah – Innowacje społeczne",
-  description: "Matchmaking problemów społecznych z innowacjami ROPS",
+  title: {
+    default: "Małopolski Hub Innowacji Społecznych",
+    template: "%s – Małopolski Hub Innowacji Społecznych",
+  },
+  description:
+    "Opisz problem w swojej okolicy, a asystent ROPS Kraków dobierze przetestowane innowacje społeczne z Małopolski.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export const viewport: Viewport = {
+  themeColor: "#0f2d59",
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pl">
-      <body className="min-h-screen antialiased">
-        <header className="border-b border-black/10 dark:border-white/10">
-          <nav className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
-            <Link href="/" className="font-semibold">
-              HackYeah
-            </Link>
-            <div className="flex gap-4 text-sm">
-              <Link href="/" className="hover:underline">
-                Szukaj innowacji
-              </Link>
-              <Link href="/admin" className="hover:underline">
-                Panel admina
-              </Link>
-            </div>
-          </nav>
-        </header>
-        <main className="mx-auto max-w-4xl px-6 py-10">{children}</main>
+    <html lang="pl" className={`${atkinson.variable} ${icons.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: PREFS_BOOTSTRAP }} />
+      </head>
+      <body className="flex min-h-screen flex-col antialiased">
+        <A11yToolbar />
+        <SiteHeader />
+        <main id="main-content" tabIndex={-1} className="mx-auto w-full max-w-7xl flex-1 px-gutter-sm sm:px-gutter">
+          {children}
+        </main>
+        <SiteFooter />
       </body>
     </html>
   );
