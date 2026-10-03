@@ -3,7 +3,8 @@ import pytest
 from app.main import app
 from app.services.admin import deps
 from app.services.admin.errors import EmbedPublishError, InvalidUploadError, UploadTooLargeError
-from app.services.admin.innovation_upload import CreatedInnovation, NewInnovation
+from app.services.admin.innovation_upload import CreatedInnovation, InnovationUploadService, NewInnovation
+from app.storage import LocalFileStorage
 
 BASE = "/admin/innovations"
 PDF = b"%PDF-1.7 fake"
@@ -110,3 +111,22 @@ def test_patch_null_video_url_clears_it(client, auth) -> None:
     res = client.patch(f"{BASE}/wibraap", json={"video_url": None}, headers=auth)
     assert res.status_code == 200
     assert res.json()["video_url"] is None
+
+
+def test_upload_lands_in_mock_list(client, auth, tmp_path) -> None:
+    published: list[str] = []
+
+    class FakePublisher:
+        def publish_embed_requested(self, innovation_id: str, file_path: str) -> None:
+            published.append(innovation_id)
+
+    innovations = app.dependency_overrides[deps.get_innovation_service]()
+    svc = InnovationUploadService(innovations, LocalFileStorage(tmp_path), FakePublisher(), max_bytes=1024)
+    app.dependency_overrides[deps.get_innovation_upload_service] = lambda: svc
+
+    res = client.post(BASE, data=FORM, files={"file": ("opaska.pdf", PDF, "application/pdf")}, headers=auth)
+
+    created = client.get(f"{BASE}/{res.json()['id']}", headers=auth).json()
+    assert created["status"] == "draft"
+    assert created["challenge_areas"] == ["Seniorzy"]
+    assert published == [created["id"]]
