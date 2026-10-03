@@ -30,7 +30,7 @@ flowchart LR
     DB[("Postgres + pgvector")]
     VEC[Embedding service<br/>multilingual MiniLM]
     LLM[Ollama<br/>qwen2.5:1.5b]
-    SMTP["SMTP (Mailpit in demo)"]
+    SMTP["SMTP (Gmail in demo)"]
 
     PUB & ADM --> DB
     PUB -- "POST /query" --> QRY
@@ -129,14 +129,17 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 - **Admin replies** are an `admin_reply` column on the problem report or idea.
   - The admin sets it; if the item has an email, a notification email is sent.
   - A problem report reply is also shown on its public page, so it covers everyone who pressed "mnie też".
-- **Notifier:** SMTP from env, a no-op if unset, Mailpit in compose for the demo (synthetic addresses only). It runs as a FastAPI background task after commit, at-most-once: a failure is logged, not retried. The inbox stays the source of truth.
+- **Notifier:** SMTP from env (Gmail `smtp.gmail.com:587` + app password in the demo), only logged if `SMTP_HOST` is unset. `MAIL_REDIRECT_TO` sends every mail to one test inbox instead of the real recipient, which stays in the subject and text. Sent on one in-process worker thread after commit, at-most-once: a failure is logged, not retried (`backend/app/services/notify/`). The inbox stays the source of truth.
 
 | Event | Recipient |
 |---|---|
-| new idea, new problem report, new pending thread | admin (`ADMIN_NOTIFY_EMAIL`) |
+| new idea, new pending thread or reply, new test signups | admin (`ADMIN_NOTIFY_EMAIL`) |
 | `admin_reply` set, idea status changed | the item's `email` |
-| test signup accepted / rejected / completed | the signup's `email` |
+| test signup accepted / rejected / completed | the signup's `email`; accepted carries the feedback link `{WEB_URL}/innovations/{id}?test_signup={signup_id}` |
 | thread / reply published | the author's `email` (if set) |
+| grant call opened | every idea author with an email |
+
+New problem reports are not emailed: every `/match` stores one, so they only show in the inbox.
 
 - **Admin side:** one shared admin login from env (`ADMIN_USERNAME`, `ADMIN_PASSWORD`; compose has no default password, so nobody can log in until `ADMIN_PASSWORD` is set in the root `.env`; `DEBUG` and `ADMIN_AUTH_DISABLED` default to false), server-side sessions in memory, `HttpOnly; Secure; SameSite=Strict` cookie; see [.claude/designs/admin-auth.md](../../.claude/designs/admin-auth.md).
   - `require_admin` guards `/admin/*`.
@@ -355,10 +358,10 @@ backend/             # match-api
   app/               # api/*.py, api/admin/*.py, schemas/, services/ (interface + mock first, db next), rag client
   sql/               # match-api tables only; compose `migrate` applies rag/sql then this
 rag/                 # used as merged
-docker-compose.yml   # postgres (pgvector image), rag, embeddings, ollama, api, mailpit
+docker-compose.yml   # postgres (pgvector image), migrate, rag, embeddings, ollama, api, web
 ```
 
-1. Backend schema file + compose (one `DATABASE_URL`, `RAG_URL`, mailpit): match-api tables + `innovations` column extensions.
+1. Backend schema file + compose (one `DATABASE_URL`, `RAG_URL`, SMTP env): match-api tables + `innovations` column extensions.
 2. Admin innovations on rag's table: PDF upload + background `/embed/pdf` + auto-publish; idea accept creates a draft innovation
 3. `/match` calling rag `/query` and returning its answer; the 8 sample queries pass.
 4. Problem reports, support, similar reports; admin problem reports + reply + hide.

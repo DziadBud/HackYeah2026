@@ -25,14 +25,16 @@ Trade-off: emails are unverified, so someone can type another person's address. 
 ## Who gets informed
 | Event | Recipient |
 |---|---|
-| new idea, new problem report | admin (`ADMIN_NOTIFY_EMAIL`) |
-| `admin_reply` set | the item's `email` |
-| idea status changed | `ideas.email` |
-| test signup accepted / rejected | `test_signups.email` |
+| new idea, new pending thread or reply, new test signups | admin (`ADMIN_NOTIFY_EMAIL`) |
+| `admin_reply` set, idea status changed | the item's `email` |
+| test signup accepted / rejected / completed | the signup's `email`; accepted carries the feedback link `{WEB_URL}/innovations/{id}?test_signup={signup_id}` |
+| thread / reply published | the author's `email` (if set) |
+| grant call opened | every idea author with an email |
+
+New problem reports are not emailed: every `/match` stores one, so they only show in the inbox.
 
 ## Delivery
-- SMTP from env; a no-op if unset; Mailpit in compose for the demo (synthetic addresses only).
-- It runs as a FastAPI background task after commit, at-most-once: a failed send is logged, not retried.
+- SMTP from env (Gmail `smtp.gmail.com:587` + app password in the demo), only logged if `SMTP_HOST` is unset. `MAIL_REDIRECT_TO` sends every mail to one test inbox instead of the real recipient, which stays in the subject and text. Sent on one in-process worker thread after commit, at-most-once: a failure is logged, not retried (`backend/app/services/notify/`). The inbox stays the source of truth.
 - The source of truth stays the item: the admin inbox, and the public problem report page.
 
 ## Failure modes

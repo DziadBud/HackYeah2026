@@ -1433,6 +1433,127 @@
         }
       }
     },
+    "/admin/test-signups": {
+      "get": {
+        "tags": [
+          "admin:test-signups"
+        ],
+        "summary": "List Test Signups",
+        "operationId": "list_test_signups_admin_test_signups_get",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Innovation Id"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/SignupStatus"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Status"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AdminTestSignup"
+                  },
+                  "title": "Response List Test Signups Admin Test Signups Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/test-signups/{signup_id}/status": {
+      "post": {
+        "tags": [
+          "admin:test-signups"
+        ],
+        "summary": "Set Test Signup Status",
+        "operationId": "set_test_signup_status_admin_test_signups__signup_id__status_post",
+        "parameters": [
+          {
+            "name": "signup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Signup Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SignupDecision"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminTestSignup"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/match": {
       "post": {
         "tags": [
@@ -2128,6 +2249,54 @@
           "created_at"
         ],
         "title": "AdminReply"
+      },
+      "AdminTestSignup": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "innovation_id": {
+            "type": "string",
+            "title": "Innovation Id"
+          },
+          "innovation_title": {
+            "type": "string",
+            "title": "Innovation Title"
+          },
+          "problem_report_id": {
+            "type": "string",
+            "title": "Problem Report Id"
+          },
+          "problem_text": {
+            "type": "string",
+            "title": "Problem Text"
+          },
+          "email": {
+            "type": "string",
+            "title": "Email"
+          },
+          "status": {
+            "$ref": "#/components/schemas/SignupStatus"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "innovation_id",
+          "innovation_title",
+          "problem_report_id",
+          "problem_text",
+          "email",
+          "status",
+          "created_at"
+        ],
+        "title": "AdminTestSignup"
       },
       "AdminThread": {
         "properties": {
@@ -2878,6 +3047,22 @@
             },
             "type": "array",
             "title": "Critical Problem Reports"
+          },
+          "new_test_signups": {
+            "items": {
+              "$ref": "#/components/schemas/AdminTestSignup"
+            },
+            "type": "array",
+            "title": "New Test Signups",
+            "default": []
+          },
+          "pending_threads": {
+            "items": {
+              "$ref": "#/components/schemas/AdminThread"
+            },
+            "type": "array",
+            "title": "Pending Threads",
+            "default": []
           }
         },
         "type": "object",
@@ -3998,6 +4183,34 @@
           "rejected"
         ],
         "title": "SignupCounts"
+      },
+      "SignupDecision": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected",
+              "completed"
+            ],
+            "title": "Status"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "title": "SignupDecision"
+      },
+      "SignupStatus": {
+        "type": "string",
+        "enum": [
+          "applied",
+          "accepted",
+          "rejected",
+          "completed"
+        ],
+        "title": "SignupStatus"
       },
       "SimilarProblemReport": {
         "properties": {

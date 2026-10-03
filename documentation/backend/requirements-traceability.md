@@ -31,7 +31,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 ## R4 Tester innowacji (S)
 - **Where:** `POST /match?test_signup=true`, `test_signups`, `feedback` ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)).
 - **How:**
-  - testing is part of matching: with `?test_signup=true` and an email, the user volunteers to test the innovations matched for their problem (one `test_signups` row each, linked to the problem report); the admin accepts, rejects or marks `completed`, and the applicant is emailed
+  - testing is part of matching: with `?test_signup=true` and an email, the user volunteers to test the innovations matched for their problem (one `test_signups` row each, linked to the problem report); the admin accepts, rejects or marks `completed` (`GET /admin/test-signups`, `POST /admin/test-signups/{id}/status`), and the applicant is emailed; the acceptance mail links the feedback form with the signup id
   - ratings and comments go to `feedback` (per-IP rate limited); improvement proposals are comments; optional `test_signup_id` marks feedback from a real tester
   - the admin sees the rating average, count, star distribution, comments and signups by status per innovation (`GET /admin/innovations/{id}/stats`)
 
@@ -70,7 +70,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 
 ## R10 Integration and automation (X)
 - **Where:** admin inbox (§5), email notifier (§4), `grant_calls`.
-- **How:** the inbox surfaces new items (ideas, problem reports, signups, pending threads). The optional email notifier (background task after commit, at-most-once, Mailpit in the demo) emails the admin on new ideas, problem reports and pending threads, and authors on replies, status changes and published threads. Grant calls have an open/close switch. An outbox and webhooks for the grant DB are deferred (§8).
+- **How:** the inbox surfaces new items (ideas, problem reports, signups, pending threads). The email notifier (worker thread after commit, at-most-once, Gmail SMTP in the demo, `MAIL_REDIRECT_TO` for testing) emails the admin on new ideas, pending threads / replies and test signups, authors on replies, status changes and published threads, and idea authors when a grant call opens. Grant calls have an open/close switch. An outbox and webhooks for the grant DB are deferred (§8).
 
 ## R11 Data security, no real personal data (X)
 - **Where:** §4, §6.
@@ -85,7 +85,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 ## R12 Fast admin notification and reply path (jury question)
 - **Where:** inbox + replies (§5), threads moderation, email notifier (§4).
 - **How:**
-  1. Every new idea, problem report or pending thread appears in `GET /admin/inbox?since=`, and the admin gets an email.
+  1. Every new idea, problem report, test signup or pending thread appears in `GET /admin/inbox?since=`; the admin gets an email for ideas, pending threads / replies and signups.
   2. The admin sets `admin_reply`, or publishes / hides a thread.
   3. An author with an email gets it by email; a problem report reply is also on its public page for everyone who pressed "mnie też".
 

@@ -26,6 +26,7 @@ from app.schemas.admin.innovations import (
 )
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
+from app.schemas.admin.test_signups import AdminTestSignup, SignupStatus
 from app.schemas.admin.threads import AdminReply, AdminThread
 from app.schemas.public.threads import ModerationStatus, ReplyKind
 from app.services.admin.errors import NotFoundError
@@ -554,3 +555,46 @@ class MockThreadAdminService:
                     thread.replies[i] = reply.model_copy(update={"status": status})
                     return thread.replies[i]
         raise NotFoundError(reply_id)
+
+
+class MockTestSignupAdminService:
+    def __init__(self) -> None:
+        self._signups: dict[str, AdminTestSignup] = {
+            s.id: s
+            for s in [
+                AdminTestSignup(
+                    id="signup-1",
+                    innovation_id="straznik",
+                    innovation_title="Straznik",
+                    problem_report_id="problem-report-1",
+                    problem_text="Babcia nie slyszy alarmu przeciwpozarowego",
+                    email="tester@example.com",
+                    status=SignupStatus.APPLIED,
+                    created_at=NOW - timedelta(hours=3),
+                ),
+                AdminTestSignup(
+                    id="signup-2",
+                    innovation_id="wibraap",
+                    innovation_title="Wibraap",
+                    problem_report_id="problem-report-2",
+                    problem_text="Niesluchacy syn chce chodzic na koncerty",
+                    email="rodzic@example.com",
+                    status=SignupStatus.ACCEPTED,
+                    created_at=NOW - timedelta(days=2),
+                ),
+            ]
+        }
+
+    def list(self, innovation_id: str | None, status: SignupStatus | None) -> list[AdminTestSignup]:
+        return [
+            s
+            for s in self._signups.values()
+            if (innovation_id is None or s.innovation_id == innovation_id)
+            and (status is None or s.status == status)
+        ]
+
+    def set_status(self, signup_id: str, status: SignupStatus) -> AdminTestSignup:
+        if signup_id not in self._signups:
+            raise NotFoundError(signup_id)
+        self._signups[signup_id] = self._signups[signup_id].model_copy(update={"status": status})
+        return self._signups[signup_id]

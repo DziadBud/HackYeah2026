@@ -28,6 +28,20 @@ class Settings(BaseSettings):
     upload_dir: str = "/data/uploads"
     max_upload_bytes: int = 10 * 1024 * 1024
 
+    # notifications; empty smtp_host only logs the mails. gmail: smtp.gmail.com:587 + an app password
+    smtp_host: str = ""
+    smtp_port: int = 587
+    smtp_username: str = ""
+    smtp_password: str = ""
+    # defaults to smtp_username
+    mail_from: str = ""
+    # where admin notifications go; empty sends none
+    admin_notify_email: str = ""
+    # testing: when set, every mail goes only to this address (the real recipient stays in the text)
+    mail_redirect_to: str = ""
+    # public frontend, for links in mails
+    web_url: str = "http://localhost:3000"
+
     gemini_api_key: str = ""
     gemini_model: str = "gemini-3.8-flash"
 

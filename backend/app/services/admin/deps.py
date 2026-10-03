@@ -20,9 +20,11 @@ from app.services.admin.db import (
     DbInnovationStore,
     DbProblemReportAdminService,
     DbReportAdminService,
+    DbTestSignupAdminService,
     DbThreadAdminService,
 )
 from app.services.admin.innovation_upload import InnovationUploadService
+from app.services.notify import get_notifications
 from app.services.admin.interfaces import (
     GrantCallAdminService,
     IdeaAdminService,
@@ -30,6 +32,7 @@ from app.services.admin.interfaces import (
     InnovationAdminService,
     ProblemReportAdminService,
     ReportAdminService,
+    TestSignupAdminService,
     ThreadAdminService,
 )
 from app.storage import LocalFileStorage
@@ -67,15 +70,15 @@ def get_inbox_service(db: Session = Depends(get_db)) -> InboxAdminService:
 
 
 def get_idea_service(db: Session = Depends(get_db)) -> IdeaAdminService:
-    return DbIdeaAdminService(db)
+    return DbIdeaAdminService(db, get_notifications())
 
 
 def get_problem_report_service(db: Session = Depends(get_db)) -> ProblemReportAdminService:
-    return DbProblemReportAdminService(db)
+    return DbProblemReportAdminService(db, get_notifications())
 
 
 def get_grant_call_service(db: Session = Depends(get_db)) -> GrantCallAdminService:
-    return DbGrantCallAdminService(db)
+    return DbGrantCallAdminService(db, get_notifications())
 
 
 def get_report_service(db: Session = Depends(get_db)) -> ReportAdminService:
@@ -83,7 +86,11 @@ def get_report_service(db: Session = Depends(get_db)) -> ReportAdminService:
 
 
 def get_thread_service(db: Session = Depends(get_db)) -> ThreadAdminService:
-    return DbThreadAdminService(db)
+    return DbThreadAdminService(db, get_notifications())
+
+
+def get_test_signup_service(db: Session = Depends(get_db)) -> TestSignupAdminService:
+    return DbTestSignupAdminService(db, get_notifications())
 
 
 # own short sessions inside the store: the row must be committed before rag embeds it

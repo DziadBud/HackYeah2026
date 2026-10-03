@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 from app.clients.rag import RagClient
 from app.config import settings
 from app.db.session import get_db
+from app.services.notify import get_notifications
 from app.services.public.db import (
     DbDocumentService,
     DbIdeaService,
@@ -29,7 +30,7 @@ _rag = RagClient(settings.rag_url, settings.rag_timeout_seconds, settings.rag_qu
 
 
 def get_match_service(db: Session = Depends(get_db)) -> MatchService:
-    return DbMatchService(db, _rag)
+    return DbMatchService(db, _rag, get_notifications())
 
 
 def get_problem_report_service(db: Session = Depends(get_db)) -> ProblemReportService:
@@ -37,7 +38,7 @@ def get_problem_report_service(db: Session = Depends(get_db)) -> ProblemReportSe
 
 
 def get_idea_service(db: Session = Depends(get_db)) -> IdeaService:
-    return DbIdeaService(db)
+    return DbIdeaService(db, get_notifications())
 
 
 def get_library_service(db: Session = Depends(get_db)) -> LibraryService:
@@ -45,7 +46,7 @@ def get_library_service(db: Session = Depends(get_db)) -> LibraryService:
 
 
 def get_thread_service(db: Session = Depends(get_db)) -> ThreadService:
-    return DbThreadService(db)
+    return DbThreadService(db, get_notifications())
 
 
 def get_document_service(db: Session = Depends(get_db)) -> DocumentService:

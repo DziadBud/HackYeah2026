@@ -28,10 +28,12 @@ from app.schemas.admin.innovations import (
 )
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import CriticalRow, GapRow, LocationRow, TrendRow
+from app.schemas.admin.test_signups import AdminTestSignup, SignupStatus
 from app.schemas.admin.threads import AdminReply, AdminThread
 from app.schemas.public.threads import ModerationStatus, ReplyKind
 from app.services.admin.errors import NotFoundError
 from app.services.admin.innovation_upload import NewInnovation, areas_from_tags, with_area_tags
+from app.services.notify import Notifications
 
 MIN_LOCATION_PROBLEM_REPORTS = 5
 # score = reports x distinct cities x 7d growth; over this a problem area is critical
@@ -369,9 +371,18 @@ class DbInnovationStore:
                 row.status = PublicationStatus.PUBLISHED.value
 
 
+IDEA_STATUS_LABELS = {
+    IdeaStatus.NEW: "nowy",
+    IdeaStatus.IN_REVIEW: "w ocenie",
+    IdeaStatus.ACCEPTED: "przyjęty",
+    IdeaStatus.REJECTED: "odrzucony",
+}
+
+
 class DbIdeaAdminService:
-    def __init__(self, db: Session) -> None:
+    def __init__(self, db: Session, notify: Notifications) -> None:
         self._db = db
+        self._notify = notify
 
     def list(self, status: IdeaStatus | None) -> list[Idea]:
         query = select(IdeaRow).order_by(IdeaRow.created_at.desc())
@@ -386,12 +397,18 @@ class DbIdeaAdminService:
         row = _get(self._db, IdeaRow, parse_uuid(idea_id), idea_id)
         row.admin_reply = message
         self._db.commit()
+        self._notify.send(self._notify.mails.idea_reply(row.email, row.summary, message))
         return idea_to_schema(row)
 
     def set_status(self, idea_id: str, status: IdeaStatus) -> Idea:
         row = _get(self._db, IdeaRow, parse_uuid(idea_id), idea_id)
+        changed = row.status != status.value
         row.status = status.value
         self._db.commit()
+        if changed:
+            self._notify.send(
+                self._notify.mails.idea_status(row.email, row.summary, IDEA_STATUS_LABELS[status])
+            )
         return idea_to_schema(row)
 
 
@@ -446,8 +463,9 @@ def _report_to_schema(row: ProblemReportRow, stats: dict[str, _AreaStats]) -> Pr
 
 
 class DbProblemReportAdminService:
-    def __init__(self, db: Session) -> None:
+    def __init__(self, db: Session, notify: Notifications) -> None:
         self._db = db
+        self._notify = notify
 
     def list(
         self,
@@ -472,6 +490,7 @@ class DbProblemReportAdminService:
         row = _get(self._db, ProblemReportRow, parse_uuid(problem_report_id), problem_report_id)
         row.admin_reply = message
         self._db.commit()
+        self._notify.send(self._notify.mails.problem_report_reply(row.email, row.text, message))
         return _report_to_schema(row, _area_stats(self._db))
 
 
@@ -497,12 +516,19 @@ class DbInboxAdminService:
                 if row.admin_reply is None and (since is None or row.created_at > since)
             ],
             critical_problem_reports=[schema for _, schema in all_reports if schema.is_critical],
+            new_test_signups=[
+                s
+                for s in _list_signups(self._db, None, SignupStatus.APPLIED)
+                if since is None or s.created_at > since
+            ],
+            pending_threads=_list_threads(self._db, ModerationStatus.PENDING, None),
         )
 
 
 class DbGrantCallAdminService:
-    def __init__(self, db: Session) -> None:
+    def __init__(self, db: Session, notify: Notifications) -> None:
         self._db = db
+        self._notify = notify
 
     def list(self) -> list[GrantCall]:
         rows = self._db.scalars(select(GrantCallRow).order_by(GrantCallRow.deadline)).all()
@@ -512,6 +538,8 @@ class DbGrantCallAdminService:
         row = GrantCallRow(**data.model_dump(mode="json") | {"deadline": data.deadline})
         self._db.add(row)
         self._db.commit()
+        if row.open:
+            self._announce(row)
         return grant_call_to_schema(row)
 
     def update(self, call_id: str, data: GrantCallUpdate) -> GrantCall:
@@ -519,10 +547,21 @@ class DbGrantCallAdminService:
         changes = data.model_dump(exclude_unset=True, mode="json")
         if "deadline" in changes:
             changes["deadline"] = data.deadline
+        was_open = row.open
         for field, value in changes.items():
             setattr(row, field, value)
         self._db.commit()
+        if row.open and not was_open:
+            self._announce(row)
         return grant_call_to_schema(row)
+
+    def _announce(self, call: GrantCallRow) -> None:
+        # idea authors left their email with consent to hear back about their idea
+        emails = self._db.scalars(select(IdeaRow.email).where(IdeaRow.email.is_not(None)).distinct()).all()
+        for email in emails:
+            self._notify.send(
+                self._notify.mails.grant_call_opened(email, call.name, call.deadline.isoformat())
+            )
 
 
 class DbReportAdminService:
@@ -653,32 +692,94 @@ def _thread(row: ThreadRow) -> AdminThread:
     )
 
 
+def _list_threads(
+    db: Session, status: ModerationStatus | None, innovation_id: str | None
+) -> list[AdminThread]:
+    query = select(ThreadRow).options(selectinload(ThreadRow.replies))
+    if status is not None:
+        query = query.where(
+            or_(
+                ThreadRow.status == status.value,
+                ThreadRow.replies.any(ThreadReplyRow.status == status.value),
+            )
+        )
+    if innovation_id is not None:
+        query = query.where(ThreadRow.innovation_id == innovation_id)
+    return [_thread(r) for r in db.scalars(query.order_by(ThreadRow.created_at.desc())).all()]
+
+
 class DbThreadAdminService:
-    def __init__(self, db: Session) -> None:
+    def __init__(self, db: Session, notify: Notifications) -> None:
         self._db = db
+        self._notify = notify
 
     def list(self, status: ModerationStatus | None, innovation_id: str | None) -> list[AdminThread]:
-        query = select(ThreadRow).options(selectinload(ThreadRow.replies))
-        if status is not None:
-            query = query.where(
-                or_(
-                    ThreadRow.status == status.value,
-                    ThreadRow.replies.any(ThreadReplyRow.status == status.value),
-                )
-            )
-        if innovation_id is not None:
-            query = query.where(ThreadRow.innovation_id == innovation_id)
-        rows = self._db.scalars(query.order_by(ThreadRow.created_at.desc())).all()
-        return [_thread(r) for r in rows]
+        return _list_threads(self._db, status, innovation_id)
 
     def set_status(self, thread_id: str, status: ModerationStatus) -> AdminThread:
         row = _get(self._db, ThreadRow, parse_uuid(thread_id), thread_id)
+        published = status == ModerationStatus.PUBLISHED and row.status != status.value
         row.status = status.value
         self._db.commit()
+        if published:
+            self._notify.send(
+                self._notify.mails.thread_published(row.email, row.title, row.innovation_id)
+            )
         return _thread(row)
 
     def set_reply_status(self, reply_id: str, status: ModerationStatus) -> AdminReply:
         row = _get(self._db, ThreadReplyRow, parse_uuid(reply_id), reply_id)
+        published = status == ModerationStatus.PUBLISHED and row.status != status.value
         row.status = status.value
         self._db.commit()
+        if published:
+            self._notify.send(self._notify.mails.reply_published(row.email, row.thread.innovation_id))
         return _reply(row)
+
+
+def _signup(row: TestSignup) -> AdminTestSignup:
+    return AdminTestSignup(
+        id=str(row.id),
+        innovation_id=row.innovation_id,
+        innovation_title=row.innovation.title,
+        problem_report_id=str(row.problem_report_id),
+        problem_text=row.problem_report.text,
+        email=row.email,
+        status=SignupStatus(row.status),
+        created_at=row.created_at,
+    )
+
+
+def _list_signups(
+    db: Session, innovation_id: str | None, status: SignupStatus | None
+) -> list[AdminTestSignup]:
+    query = select(TestSignup).options(
+        selectinload(TestSignup.innovation), selectinload(TestSignup.problem_report)
+    )
+    if innovation_id is not None:
+        query = query.where(TestSignup.innovation_id == innovation_id)
+    if status is not None:
+        query = query.where(TestSignup.status == status.value)
+    return [_signup(r) for r in db.scalars(query.order_by(TestSignup.created_at.desc())).all()]
+
+
+class DbTestSignupAdminService:
+    def __init__(self, db: Session, notify: Notifications) -> None:
+        self._db = db
+        self._notify = notify
+
+    def list(self, innovation_id: str | None, status: SignupStatus | None) -> list[AdminTestSignup]:
+        return _list_signups(self._db, innovation_id, status)
+
+    def set_status(self, signup_id: str, status: SignupStatus) -> AdminTestSignup:
+        row = _get(self._db, TestSignup, parse_uuid(signup_id), signup_id)
+        changed = row.status != status.value
+        row.status = status.value
+        self._db.commit()
+        if changed:
+            self._notify.send(
+                self._notify.mails.test_signup_status(
+                    row.email, str(row.id), row.innovation_id, row.innovation.title, status.value
+                )
+            )
+        return _signup(row)

@@ -17,7 +17,8 @@ public: POST /match?test_signup=true {text, city, email, consent}
           -> normal match response + one test_signups row per matched innovation (status applied)
 admin:  inbox shows new signups
         GET /admin/test-signups?innovation_id=&status=
-        POST /admin/test-signups/{id}/status {accepted|rejected|completed} -> email to the signup's email (background task)
+        POST /admin/test-signups/{id}/status {accepted|rejected|completed} -> email to the signup's email;
+              accepted carries {WEB_URL}/innovations/{id}?test_signup={signup_id} (the uuid is the tester's token)
 anyone: POST /innovations/{id}/feedback {stars, comment, test_signup_id?}  (per-IP rate limit)
 admin:  GET /admin/innovations/{id}/feedback -> rating avg/count, signups, recent comments
 ```
@@ -48,7 +49,7 @@ feedback(id uuid pk, innovation_id text fk innovations,  -- rag's table (rag/sql
 1. `test_signups` + admin status change + email.
 2. `feedback` + admin feedback view (already mocked in `GET /admin/innovations/{id}/feedback`).
 
-Demo script: someone describes a problem with "chcę testować" ticked, the admin accepts, the email lands in Mailpit, then a rating with an improvement comment shows up in the admin feedback view.
+Demo script: someone describes a problem with "chcę testować" ticked, the admin accepts, the email (with the feedback link) lands in the test inbox, then a rating with an improvement comment shows up in the admin feedback view.
 
 ## Deferred
 Test rounds and verified tester reports through one-time links: add these when ROPS runs real testing rounds (architecture §8).
