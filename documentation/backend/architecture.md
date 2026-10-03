@@ -160,6 +160,20 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 
 CSV export is a streaming response. Cities with fewer than 5 problem reports are shown as "too few to display".
 
+### Public endpoints (no auth; per-IP rate limit on writes)
+
+| Feature | Endpoints |
+|---|---|
+| Matching | `POST /match?test_signup=` `{text, city, email?, consent}` → `{problem_report_id, innovations, similar_reports, test_signup_ids}`; `test_signup=true` needs an email (422 otherwise) |
+| Problem reports | `GET /problem-reports/{id}` (public page with `admin_reply`), `POST /problem-reports/{id}/support` ("mnie też") |
+| Ideas | `POST /ideas` `{summary, essence, target_group, stage, social_canvas?, email?, consent}`, `POST /ideas/{id}/grant-application {grant_call_id}` (open calls only, stored in `generated_documents`) |
+| Library | `GET /innovations` (published only; filters `challenge_area`, `q`, `limit`, `offset`), `GET /innovations/{id}` (with `rating_avg`, `rating_count`), `POST /innovations/{id}/feedback {stars, comment, test_signup_id?}` |
+| Threads | `GET /innovations/{id}/threads` (published threads + published replies), `POST /innovations/{id}/threads` (202, `pending`), `POST /threads/{id}/replies` (202, `pending`) |
+| Middleman | `POST /middleman {innovation_id, institution_type, needs, email?, consent}` (the response is the stored document) |
+| Grant calls | `GET /grant-calls` (open only) |
+
+The public API is mocked for now (`backend/app/services/public/mock.py`): it reads and writes the admin mocks, so public actions show up in the admin panel, and word overlap stands in for rag and the LLM until the db layer and the rag client land.
+
 ## 6. Data model
 
 Two rag tables (used as merged), plus flat match-api tables. match-api also extends `innovations` with extra columns that rag ignores at query time (rag still filters on `tags`, `city`, `status`).
@@ -301,7 +315,7 @@ erDiagram
 - **Generated documents** store Middleman service cards and grant-application drafts so the user and admin can reopen them. They are not re-submitted into an external grant DB (that stays deferred).
 - **Naming:** always `city` (not `location`), always `stars` on feedback.
 
-Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `POST /threads/{id}/replies`, `POST /threads/{id}/helpful`, `POST /middleman`, grant generator on an idea (both persist a `generated_documents` row).
+Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `POST /threads/{id}/replies`, `POST /middleman`, grant generator on an idea (both persist a `generated_documents` row).
 
 ## 7. Failure modes
 

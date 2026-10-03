@@ -224,6 +224,10 @@ class MockIdeaAdminService:
         except KeyError:
             raise NotFoundError(idea_id) from None
 
+    # public writes land here so they show up in the admin inbox
+    def add(self, idea: Idea) -> None:
+        self._items[idea.id] = idea
+
     def reply(self, idea_id: str, message: str) -> Idea:
         updated = self.get(idea_id).model_copy(update={"admin_reply": message})
         self._items[idea_id] = updated
@@ -258,6 +262,15 @@ class MockProblemReportAdminService:
             return self._items[problem_report_id]
         except KeyError:
             raise NotFoundError(problem_report_id) from None
+
+    def add(self, report: ProblemReport) -> None:
+        self._items[report.id] = report
+
+    def support(self, problem_report_id: str) -> ProblemReport:
+        report = self.get(problem_report_id)
+        updated = report.model_copy(update={"support_count": report.support_count + 1})
+        self._items[problem_report_id] = updated
+        return updated
 
     def reply(self, problem_report_id: str, message: str) -> ProblemReport:
         updated = self.get(problem_report_id).model_copy(update={"admin_reply": message})
