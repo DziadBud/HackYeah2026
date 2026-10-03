@@ -19,9 +19,10 @@ class Settings(BaseSettings):
     # demo only: skip the admin login. honoured only together with debug=true
     admin_auth_disabled: bool = False
 
-    rabbitmq_url: str = "amqp://guest:guest@localhost:5672/%2F"
-    embed_queue: str = "innovation.embed"
-    # shared with the rag consumer, which reads the pdf from the path in the message
+    rag_url: str = "http://localhost:8001"
+    # embedding a 10 mb pdf on cpu can take minutes
+    rag_timeout_seconds: float = 300
+    # uploaded pdfs are kept on disk so an innovation can be re-embedded later
     upload_dir: str = "/data/uploads"
     max_upload_bytes: int = 10 * 1024 * 1024
 

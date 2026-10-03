@@ -7,9 +7,115 @@ class VectorStoreError(RuntimeError):
     pass
 
 
+def _vector_literal(values: Sequence[float]) -> str:
+    return "[" + ",".join(str(float(value)) for value in values) + "]"
+
+
 class PostgresVectorStore:
     def __init__(self) -> None:
         self.database_url = os.getenv("DATABASE_URL")
+        self.min_match_score = float(os.getenv("MATCH_MIN_SCORE", "0.15"))
+
+    def get_content(self, innovation_id: str) -> str:
+        if not self.database_url:
+            raise VectorStoreError("DATABASE_URL is not configured")
+
+        try:
+            import psycopg
+        except ImportError as error:
+            raise VectorStoreError("psycopg is required to read innovations") from error
+
+        try:
+            with psycopg.connect(self.database_url) as connection:
+                with connection.cursor() as cursor:
+                    cursor.execute(
+                        "SELECT title, summary, content FROM innovations WHERE id = %s",
+                        (innovation_id,),
+                    )
+                    row = cursor.fetchone()
+                    if row is None:
+                        raise VectorStoreError(
+                            f"innovation does not exist: {innovation_id}"
+                        )
+                    if not row[2]:
+                        raise VectorStoreError(
+                            f"innovation has no content: {innovation_id}"
+                        )
+                    sections = [
+                        f"Tytuł: {row[0]}" if row[0] else "",
+                        f"Streszczenie: {row[1]}" if row[1] else "",
+                        f"Treść: {row[2]}",
+                    ]
+                    return "\n\n".join(section for section in sections if section)
+        except VectorStoreError:
+            raise
+        except Exception as error:
+            raise VectorStoreError(f"could not read innovation content: {error}") from error
+
+    def get_innovation(self, innovation_id: str) -> dict[str, object]:
+        if not self.database_url:
+            raise VectorStoreError("DATABASE_URL is not configured")
+
+        try:
+            import psycopg
+        except ImportError as error:
+            raise VectorStoreError("psycopg is required to read innovations") from error
+
+        try:
+            with psycopg.connect(self.database_url) as connection:
+                with connection.cursor() as cursor:
+                    cursor.execute(
+                        """
+                        SELECT i.id, i.title, i.content, i.tags, i.status,
+                               COUNT(c.id)::int AS chunk_count
+                        FROM innovations AS i
+                        LEFT JOIN innovation_chunks AS c ON c.innovation_id = i.id
+                        WHERE i.id = %s
+                        GROUP BY i.id
+                        """,
+                        (innovation_id,),
+                    )
+                    row = cursor.fetchone()
+                    if row is None:
+                        raise VectorStoreError(
+                            f"innovation does not exist: {innovation_id}"
+                        )
+                    return {
+                        "innovation_id": row[0],
+                        "title": row[1],
+                        "content": row[2],
+                        "tags": row[3],
+                        "status": row[4],
+                        "chunk_count": row[5],
+                    }
+        except VectorStoreError:
+            raise
+        except Exception as error:
+            raise VectorStoreError(f"could not read innovation: {error}") from error
+
+    def create_test_innovation(self, innovation_id: str, text: str) -> None:
+        if not self.database_url:
+            raise VectorStoreError("DATABASE_URL is not configured")
+
+        try:
+            import psycopg
+        except ImportError as error:
+            raise VectorStoreError("psycopg is required to create test innovations") from error
+
+        try:
+            with psycopg.connect(self.database_url) as connection:
+                with connection.cursor() as cursor:
+                    cursor.execute(
+                        """
+                        INSERT INTO innovations (id, title, content, summary, status)
+                        VALUES (%s, %s, %s, %s, 'published')
+                        """,
+                        (innovation_id, "Test innovation", text, text[:500]),
+                    )
+        except Exception as error:
+            raise VectorStoreError(
+                f"could not create test innovation: {error}"
+            ) from error
 
     def insert_document(
         self,
@@ -65,7 +171,7 @@ class PostgresVectorStore:
                                 chunk,
                                 source,
                                 page,
-                                list(embedding),
+                                _vector_literal(embedding),
                             ),
                         )
                         row = cursor.fetchone()
@@ -84,9 +190,9 @@ class PostgresVectorStore:
         query: str,
         embedding: Sequence[float],
         top_k: int,
+        search_tests: bool,
         city: str | None,
         title: str | None,
-        tags: Sequence[str],
     ) -> list[dict[str, object]]:
         if not self.database_url:
             raise VectorStoreError("DATABASE_URL is not configured")
@@ -108,84 +214,63 @@ class PostgresVectorStore:
                         """
                         WITH ranked AS (
                             SELECT
-                                i.id AS innovation_id,
+                                i.id AS parent_id,
                                 c.id AS child_id,
                                 i.title,
                                 i.city,
                                 i.summary,
-                                i.image_url,
                                 i.page_url AS parent_url,
-                                i.tags,
                                 c.source,
                                 c.page,
                                 c.text,
-                                1 - (c.embedding <=> %s) AS vector_score,
+                                1 - (c.embedding <=> %s::vector) AS vector_score,
                                 CASE
                                     WHEN %s <> '' AND i.title ILIKE ('%%' || %s || '%%')
                                     THEN 1.0 ELSE 0.0
-                                END AS title_score,
-                                CASE
-                                    WHEN %s <> '' AND EXISTS (
-                                        SELECT 1 FROM unnest(i.tags) AS tag
-                                        WHERE tag ILIKE ('%%' || %s || '%%')
-                                    )
-                                    THEN 1.0 ELSE 0.0
-                                END AS tag_score
+                                END AS title_score
                             FROM innovation_chunks AS c
                             JOIN innovations AS i ON i.id = c.innovation_id
-                            WHERE (%s IS NULL OR i.city = %s)
-                              AND (%s IS NULL OR i.title ILIKE ('%%' || %s || '%%'))
+                            WHERE (%s::text IS NULL OR i.city = %s)
+                              AND (%s::text IS NULL OR i.title ILIKE ('%%' || %s || '%%'))
                               AND (
-                                  cardinality(%s::text[]) = 0
-                                  OR i.tags && %s::text[]
+                                  NOT %s
+                                  OR EXISTS (
+                                      SELECT 1 FROM feedback AS f
+                                      WHERE f.innovation_id = i.id
+                                        AND f.kind = 'test_signup'
+                                  )
                               )
                               AND i.status = 'published'
                         )
-                        SELECT innovation_id, child_id, title, city, summary,
-                               image_url, parent_url, tags, source, page, text, score
+                        SELECT parent_id, score
                         FROM (
-                            SELECT DISTINCT ON (innovation_id)
-                                innovation_id, child_id, title, city, summary,
-                                image_url, parent_url, tags, source, page, text,
-                                vector_score + (title_score * 0.2) + (tag_score * 0.2)
-                                    AS score
+                            SELECT DISTINCT ON (parent_id)
+                                parent_id,
+                                (vector_score * 0.5) + (title_score * 0.5) AS score
                             FROM ranked
-                            ORDER BY innovation_id, score DESC
+                            ORDER BY parent_id, score DESC
                         ) AS best_matches
+                        WHERE score >= %s
                         ORDER BY score DESC
                         LIMIT %s
                         """,
                         (
-                            list(embedding),
-                            query,
-                            query,
+                            _vector_literal(embedding),
                             query,
                             query,
                             city,
                             city,
                             title,
                             title,
-                            list(tags),
-                            list(tags),
+                            search_tests,
+                            self.min_match_score,
                             top_k,
                         ),
                     )
                     rows = cursor.fetchall()
                     return [
                         {
-                            "parent_id": row[0],
-                            "child_id": row[1],
                             "innovation_id": row[0],
-                            "title": row[2],
-                            "city": row[3],
-                            "summary": row[4],
-                            "image_url": row[5],
-                            "parent_url": row[6],
-                            "tags": row[7],
-                            "source": row[8],
-                            "page": row[9],
-                            "text": row[10],
-                            "score": float(row[11]),
                         }
                         for row in rows
                     ]

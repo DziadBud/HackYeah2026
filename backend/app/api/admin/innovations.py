@@ -1,15 +1,13 @@
-from fastapi import APIRouter, Depends, File, Form, Query, UploadFile, status
+from fastapi import APIRouter, BackgroundTasks, Depends, File, Form, Query, UploadFile, status
 
 from app.schemas.admin.common import ChallengeArea, Page
 from app.schemas.admin.innovations import (
-    CostLevel,
     Innovation,
     InnovationFeedback,
     InnovationStats,
     PublicationStatus,
     InnovationUpdate,
     InnovationUploaded,
-    Readiness,
 )
 from app.config import settings
 from app.services.admin.deps import get_innovation_service, get_innovation_upload_service
@@ -30,23 +28,17 @@ def list_innovations(
     return svc.list(status, q, limit, offset)
 
 
-# 202: the row exists as a draft, rag embeds the pdf asynchronously and only then is it searchable
+# 202: the row exists as a draft; a background task sends the pdf to rag and publishes it on success
 @router.post("", response_model=InnovationUploaded, status_code=status.HTTP_202_ACCEPTED)
 def create_innovation(
+    background: BackgroundTasks,
     file: UploadFile = File(...),
     title: str = Form(min_length=1, max_length=300),
     summary: str = Form(min_length=1, max_length=5000),
-    problem: str = Form(min_length=1, max_length=5000),
-    innovator: str = Form(min_length=1, max_length=200),
     challenge_areas: list[ChallengeArea] = Form(min_length=1),
-    readiness: Readiness = Form(),
-    cost_level: CostLevel = Form(),
-    target_group: list[str] = Form(default=[]),
     tags: list[str] = Form(default=[]),
     city: str = Form(default="", max_length=200),
     page_url: str | None = Form(default=None, max_length=2000),
-    image_url: str | None = Form(default=None, max_length=2000),
-    video_url: str | None = Form(default=None, max_length=2000),
     svc: InnovationUploadService = Depends(get_innovation_upload_service),
 ) -> InnovationUploaded:
     # read one byte past the limit so oversized files fail without loading them whole
@@ -55,20 +47,14 @@ def create_innovation(
         NewInnovation(
             title=title,
             summary=summary,
-            problem=problem,
-            innovator=innovator,
             challenge_areas=challenge_areas,
-            readiness=readiness,
-            cost_level=cost_level,
-            target_group=target_group,
             tags=tags,
             city=city,
             page_url=page_url,
-            image_url=image_url,
-            video_url=video_url,
         ),
         pdf,
     )
+    background.add_task(svc.embed, created.id, created.file_path)
     return InnovationUploaded(id=created.id, title=created.title, status=created.status)
 
 

@@ -55,6 +55,16 @@ Baza do dev lokalnego — podnieś samego Postgresa z Dockera:
 docker compose up db
 ```
 
+### 2b. Frontend w Dockerze z hot reload
+
+Backend zostaje na obrazie z `docker-compose.yml`; tylko `web` leci na `next dev` z montowanym kodem:
+
+```bash
+docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build
+```
+
+Na Windows włączony jest polling (`WATCHPACK_POLLING`). Zmiana `package.json` wymaga przebudowy / świeżego `npm ci` w volume.
+
 ### 3. Tylko wybrany serwis w Dockerze
 
 ```bash

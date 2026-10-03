@@ -1,0 +1,3991 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "hackyeah-api",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": [
+          "health"
+        ],
+        "summary": "Health",
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "type": "object",
+                  "title": "Response Health Health Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/auth/login": {
+      "post": {
+        "tags": [
+          "admin:auth"
+        ],
+        "summary": "Login",
+        "operationId": "login_admin_auth_login_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "Successful Response"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/auth/logout": {
+      "post": {
+        "tags": [
+          "admin:auth"
+        ],
+        "summary": "Logout",
+        "operationId": "logout_admin_auth_logout_post",
+        "responses": {
+          "204": {
+            "description": "Successful Response"
+          }
+        }
+      }
+    },
+    "/admin/auth/me": {
+      "get": {
+        "tags": [
+          "admin:auth"
+        ],
+        "summary": "Me",
+        "operationId": "me_admin_auth_me_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminMe"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/innovations": {
+      "get": {
+        "tags": [
+          "admin:innovations"
+        ],
+        "summary": "List Innovations",
+        "operationId": "list_innovations_admin_innovations_get",
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/PublicationStatus"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Status"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Q"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 20,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Page_Innovation_"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "admin:innovations"
+        ],
+        "summary": "Create Innovation",
+        "operationId": "create_innovation_admin_innovations_post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_create_innovation_admin_innovations_post"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InnovationUploaded"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/innovations/{innovation_id}": {
+      "get": {
+        "tags": [
+          "admin:innovations"
+        ],
+        "summary": "Get Innovation",
+        "operationId": "get_innovation_admin_innovations__innovation_id__get",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Innovation"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "admin:innovations"
+        ],
+        "summary": "Update Innovation",
+        "operationId": "update_innovation_admin_innovations__innovation_id__patch",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InnovationUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Innovation"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/innovations/{innovation_id}/publish": {
+      "post": {
+        "tags": [
+          "admin:innovations"
+        ],
+        "summary": "Publish Innovation",
+        "operationId": "publish_innovation_admin_innovations__innovation_id__publish_post",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Innovation"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/innovations/{innovation_id}/unpublish": {
+      "post": {
+        "tags": [
+          "admin:innovations"
+        ],
+        "summary": "Unpublish Innovation",
+        "operationId": "unpublish_innovation_admin_innovations__innovation_id__unpublish_post",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Innovation"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/innovations/{innovation_id}/feedback": {
+      "get": {
+        "tags": [
+          "admin:innovations"
+        ],
+        "summary": "Innovation Feedback",
+        "operationId": "innovation_feedback_admin_innovations__innovation_id__feedback_get",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InnovationFeedback"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/innovations/{innovation_id}/stats": {
+      "get": {
+        "tags": [
+          "admin:innovations"
+        ],
+        "summary": "Innovation Stats",
+        "operationId": "innovation_stats_admin_innovations__innovation_id__stats_get",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InnovationStats"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/inbox": {
+      "get": {
+        "tags": [
+          "admin:inbox"
+        ],
+        "summary": "Get Inbox",
+        "operationId": "get_inbox_admin_inbox_get",
+        "parameters": [
+          {
+            "name": "since",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Since"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Inbox"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/ideas": {
+      "get": {
+        "tags": [
+          "admin:ideas"
+        ],
+        "summary": "List Ideas",
+        "operationId": "list_ideas_admin_ideas_get",
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/IdeaStatus"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Status"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Idea"
+                  },
+                  "title": "Response List Ideas Admin Ideas Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/ideas/{idea_id}": {
+      "get": {
+        "tags": [
+          "admin:ideas"
+        ],
+        "summary": "Get Idea",
+        "operationId": "get_idea_admin_ideas__idea_id__get",
+        "parameters": [
+          {
+            "name": "idea_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Idea Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Idea"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/ideas/{idea_id}/reply": {
+      "post": {
+        "tags": [
+          "admin:ideas"
+        ],
+        "summary": "Reply To Idea",
+        "operationId": "reply_to_idea_admin_ideas__idea_id__reply_post",
+        "parameters": [
+          {
+            "name": "idea_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Idea Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReplyRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Idea"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/ideas/{idea_id}/status": {
+      "post": {
+        "tags": [
+          "admin:ideas"
+        ],
+        "summary": "Set Idea Status",
+        "operationId": "set_idea_status_admin_ideas__idea_id__status_post",
+        "parameters": [
+          {
+            "name": "idea_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Idea Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IdeaStatusRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Idea"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/problem-reports": {
+      "get": {
+        "tags": [
+          "admin:problem-reports"
+        ],
+        "summary": "List Problem Reports",
+        "operationId": "list_problem_reports_admin_problem_reports_get",
+        "parameters": [
+          {
+            "name": "challenge_area",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/ChallengeArea"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Challenge Area"
+            }
+          },
+          {
+            "name": "location",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Location"
+            }
+          },
+          {
+            "name": "is_critical",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Is Critical"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProblemReport"
+                  },
+                  "title": "Response List Problem Reports Admin Problem Reports Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/problem-reports/{problem_report_id}": {
+      "get": {
+        "tags": [
+          "admin:problem-reports"
+        ],
+        "summary": "Get Problem Report",
+        "operationId": "get_problem_report_admin_problem_reports__problem_report_id__get",
+        "parameters": [
+          {
+            "name": "problem_report_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Problem Report Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemReport"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/problem-reports/{problem_report_id}/reply": {
+      "post": {
+        "tags": [
+          "admin:problem-reports"
+        ],
+        "summary": "Reply To Problem Report",
+        "operationId": "reply_to_problem_report_admin_problem_reports__problem_report_id__reply_post",
+        "parameters": [
+          {
+            "name": "problem_report_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Problem Report Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReplyRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemReport"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/grant-calls": {
+      "get": {
+        "tags": [
+          "admin:grant-calls"
+        ],
+        "summary": "List Grant Calls",
+        "operationId": "list_grant_calls_admin_grant_calls_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/GrantCall"
+                  },
+                  "type": "array",
+                  "title": "Response List Grant Calls Admin Grant Calls Get"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "admin:grant-calls"
+        ],
+        "summary": "Create Grant Call",
+        "operationId": "create_grant_call_admin_grant_calls_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrantCallCreate"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GrantCall"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/grant-calls/{call_id}": {
+      "patch": {
+        "tags": [
+          "admin:grant-calls"
+        ],
+        "summary": "Update Grant Call",
+        "operationId": "update_grant_call_admin_grant_calls__call_id__patch",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrantCallUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GrantCall"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/reports/trends": {
+      "get": {
+        "tags": [
+          "admin:reports"
+        ],
+        "summary": "Trends",
+        "operationId": "trends_admin_reports_trends_get",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/ReportFormat",
+              "default": "json"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TrendRow"
+                  },
+                  "title": "Response Trends Admin Reports Trends Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/reports/critical": {
+      "get": {
+        "tags": [
+          "admin:reports"
+        ],
+        "summary": "Critical",
+        "operationId": "critical_admin_reports_critical_get",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/ReportFormat",
+              "default": "json"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CriticalRow"
+                  },
+                  "title": "Response Critical Admin Reports Critical Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/reports/locations": {
+      "get": {
+        "tags": [
+          "admin:reports"
+        ],
+        "summary": "Locations",
+        "operationId": "locations_admin_reports_locations_get",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/ReportFormat",
+              "default": "json"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LocationRow"
+                  },
+                  "title": "Response Locations Admin Reports Locations Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/reports/gaps": {
+      "get": {
+        "tags": [
+          "admin:reports"
+        ],
+        "summary": "Gaps",
+        "operationId": "gaps_admin_reports_gaps_get",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/ReportFormat",
+              "default": "json"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GapRow"
+                  },
+                  "title": "Response Gaps Admin Reports Gaps Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/reports/innovations": {
+      "get": {
+        "tags": [
+          "admin:reports"
+        ],
+        "summary": "Innovations",
+        "operationId": "innovations_admin_reports_innovations_get",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/ReportFormat",
+              "default": "json"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/InnovationStatsRow"
+                  },
+                  "title": "Response Innovations Admin Reports Innovations Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/match": {
+      "post": {
+        "tags": [
+          "match"
+        ],
+        "summary": "Match",
+        "operationId": "match_match_post",
+        "parameters": [
+          {
+            "name": "test_signup",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Test Signup"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MatchRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/problem-reports/{problem_report_id}": {
+      "get": {
+        "tags": [
+          "problem-reports"
+        ],
+        "summary": "Get Problem Report",
+        "operationId": "get_problem_report_problem_reports__problem_report_id__get",
+        "parameters": [
+          {
+            "name": "problem_report_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Problem Report Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublicProblemReport"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/problem-reports/{problem_report_id}/support": {
+      "post": {
+        "tags": [
+          "problem-reports"
+        ],
+        "summary": "Support Problem Report",
+        "operationId": "support_problem_report_problem_reports__problem_report_id__support_post",
+        "parameters": [
+          {
+            "name": "problem_report_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Problem Report Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SupportResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ideas": {
+      "post": {
+        "tags": [
+          "ideas"
+        ],
+        "summary": "Create Idea",
+        "operationId": "create_idea_ideas_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IdeaCreate"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IdeaCreated"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ideas/{idea_id}/grant-application": {
+      "post": {
+        "tags": [
+          "ideas"
+        ],
+        "summary": "Generate Grant Application",
+        "operationId": "generate_grant_application_ideas__idea_id__grant_application_post",
+        "parameters": [
+          {
+            "name": "idea_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Idea Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrantApplicationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GeneratedDocument"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/innovations": {
+      "get": {
+        "tags": [
+          "innovations"
+        ],
+        "summary": "List Innovations",
+        "operationId": "list_innovations_innovations_get",
+        "parameters": [
+          {
+            "name": "challenge_area",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/ChallengeArea"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Challenge Area"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Q"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 20,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Page_LibraryInnovation_"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/innovations/{innovation_id}": {
+      "get": {
+        "tags": [
+          "innovations"
+        ],
+        "summary": "Get Innovation",
+        "operationId": "get_innovation_innovations__innovation_id__get",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LibraryInnovation"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/innovations/{innovation_id}/feedback": {
+      "post": {
+        "tags": [
+          "innovations"
+        ],
+        "summary": "Add Feedback",
+        "operationId": "add_feedback_innovations__innovation_id__feedback_post",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FeedbackCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FeedbackCreated"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/innovations/{innovation_id}/threads": {
+      "get": {
+        "tags": [
+          "innovations"
+        ],
+        "summary": "List Threads",
+        "operationId": "list_threads_innovations__innovation_id__threads_get",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Thread"
+                  },
+                  "title": "Response List Threads Innovations  Innovation Id  Threads Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "innovations"
+        ],
+        "summary": "Create Thread",
+        "operationId": "create_thread_innovations__innovation_id__threads_post",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThreadCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Submitted"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/threads/{thread_id}/replies": {
+      "post": {
+        "tags": [
+          "threads"
+        ],
+        "summary": "Reply To Thread",
+        "operationId": "reply_to_thread_threads__thread_id__replies_post",
+        "parameters": [
+          {
+            "name": "thread_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Thread Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReplyCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Submitted"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/middleman": {
+      "post": {
+        "tags": [
+          "documents"
+        ],
+        "summary": "Middleman",
+        "operationId": "middleman_middleman_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MiddlemanRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GeneratedDocument"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/grant-calls": {
+      "get": {
+        "tags": [
+          "knowledge"
+        ],
+        "summary": "Open Grant Calls",
+        "operationId": "open_grant_calls_grant_calls_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/GrantCall"
+                  },
+                  "type": "array",
+                  "title": "Response Open Grant Calls Grant Calls Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AdminMe": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "username": {
+            "type": "string",
+            "title": "Username"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "username"
+        ],
+        "title": "AdminMe"
+      },
+      "AreaMatches": {
+        "properties": {
+          "challenge_area": {
+            "$ref": "#/components/schemas/ChallengeArea"
+          },
+          "matches": {
+            "type": "integer",
+            "title": "Matches"
+          }
+        },
+        "type": "object",
+        "required": [
+          "challenge_area",
+          "matches"
+        ],
+        "title": "AreaMatches"
+      },
+      "Body_create_innovation_admin_innovations_post": {
+        "properties": {
+          "file": {
+            "type": "string",
+            "format": "binary",
+            "title": "File"
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 300,
+            "minLength": 1,
+            "title": "Title"
+          },
+          "summary": {
+            "type": "string",
+            "maxLength": 5000,
+            "minLength": 1,
+            "title": "Summary"
+          },
+          "challenge_areas": {
+            "items": {
+              "$ref": "#/components/schemas/ChallengeArea"
+            },
+            "type": "array",
+            "minItems": 1,
+            "title": "Challenge Areas"
+          },
+          "tags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Tags",
+            "default": []
+          },
+          "city": {
+            "type": "string",
+            "maxLength": 200,
+            "title": "City",
+            "default": ""
+          },
+          "page_url": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 2000
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page Url"
+          }
+        },
+        "type": "object",
+        "required": [
+          "file",
+          "title",
+          "summary",
+          "challenge_areas"
+        ],
+        "title": "Body_create_innovation_admin_innovations_post"
+      },
+      "ChallengeArea": {
+        "type": "string",
+        "enum": [
+          "Rodzina i piecza zastepcza",
+          "Bezdomnosc",
+          "Niepelnosprawnosc",
+          "Ubostwo",
+          "Integracja cudzoziemcow",
+          "Zdrowie",
+          "Zdrowie psychiczne",
+          "Seniorzy"
+        ],
+        "title": "ChallengeArea"
+      },
+      "CriticalRow": {
+        "properties": {
+          "problem_report_id": {
+            "type": "string",
+            "title": "Problem Report Id"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "challenge_area": {
+            "$ref": "#/components/schemas/ChallengeArea"
+          },
+          "distinct_locations": {
+            "type": "integer",
+            "title": "Distinct Locations"
+          },
+          "growth_ratio_7d": {
+            "type": "number",
+            "title": "Growth Ratio 7D"
+          },
+          "score": {
+            "type": "number",
+            "title": "Score"
+          }
+        },
+        "type": "object",
+        "required": [
+          "problem_report_id",
+          "text",
+          "challenge_area",
+          "distinct_locations",
+          "growth_ratio_7d",
+          "score"
+        ],
+        "title": "CriticalRow"
+      },
+      "DocumentKind": {
+        "type": "string",
+        "enum": [
+          "middleman",
+          "grant_application"
+        ],
+        "title": "DocumentKind"
+      },
+      "FeedbackComment": {
+        "properties": {
+          "comment": {
+            "type": "string",
+            "title": "Comment"
+          },
+          "rating": {
+            "type": "integer",
+            "maximum": 5.0,
+            "minimum": 1.0,
+            "title": "Rating"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "comment",
+          "rating",
+          "created_at"
+        ],
+        "title": "FeedbackComment"
+      },
+      "FeedbackCreate": {
+        "properties": {
+          "stars": {
+            "type": "integer",
+            "maximum": 5.0,
+            "minimum": 1.0,
+            "title": "Stars"
+          },
+          "comment": {
+            "type": "string",
+            "maxLength": 2000,
+            "title": "Comment",
+            "default": ""
+          },
+          "test_signup_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Test Signup Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "stars"
+        ],
+        "title": "FeedbackCreate"
+      },
+      "FeedbackCreated": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "title": "FeedbackCreated"
+      },
+      "GapRow": {
+        "properties": {
+          "problem_report_id": {
+            "type": "string",
+            "title": "Problem Report Id"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "challenge_area": {
+            "$ref": "#/components/schemas/ChallengeArea"
+          },
+          "best_match_similarity": {
+            "type": "number",
+            "title": "Best Match Similarity"
+          }
+        },
+        "type": "object",
+        "required": [
+          "problem_report_id",
+          "text",
+          "challenge_area",
+          "best_match_similarity"
+        ],
+        "title": "GapRow"
+      },
+      "GeneratedDocument": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "kind": {
+            "$ref": "#/components/schemas/DocumentKind"
+          },
+          "innovation_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Innovation Id"
+          },
+          "idea_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Idea Id"
+          },
+          "grant_call_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Grant Call Id"
+          },
+          "output": {
+            "type": "string",
+            "title": "Output"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "output",
+          "created_at"
+        ],
+        "title": "GeneratedDocument"
+      },
+      "GrantApplicationRequest": {
+        "properties": {
+          "email": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 254,
+                "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Email"
+          },
+          "consent": {
+            "type": "boolean",
+            "title": "Consent",
+            "default": false
+          },
+          "grant_call_id": {
+            "type": "string",
+            "title": "Grant Call Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "grant_call_id"
+        ],
+        "title": "GrantApplicationRequest"
+      },
+      "GrantCall": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Name"
+          },
+          "deadline": {
+            "type": "string",
+            "format": "date",
+            "title": "Deadline"
+          },
+          "open": {
+            "type": "boolean",
+            "title": "Open",
+            "default": false
+          },
+          "sections": {
+            "items": {
+              "$ref": "#/components/schemas/GrantSection"
+            },
+            "type": "array",
+            "title": "Sections",
+            "default": []
+          },
+          "id": {
+            "type": "string",
+            "title": "Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "deadline",
+          "id"
+        ],
+        "title": "GrantCall"
+      },
+      "GrantCallCreate": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Name"
+          },
+          "deadline": {
+            "type": "string",
+            "format": "date",
+            "title": "Deadline"
+          },
+          "open": {
+            "type": "boolean",
+            "title": "Open",
+            "default": false
+          },
+          "sections": {
+            "items": {
+              "$ref": "#/components/schemas/GrantSection"
+            },
+            "type": "array",
+            "title": "Sections",
+            "default": []
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "deadline"
+        ],
+        "title": "GrantCallCreate"
+      },
+      "GrantCallUpdate": {
+        "properties": {
+          "name": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Name"
+          },
+          "deadline": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Deadline"
+          },
+          "open": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Open"
+          },
+          "sections": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/GrantSection"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sections"
+          }
+        },
+        "type": "object",
+        "title": "GrantCallUpdate"
+      },
+      "GrantSection": {
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Description"
+          },
+          "required": {
+            "type": "boolean",
+            "title": "Required",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "title"
+        ],
+        "title": "GrantSection"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Idea": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "summary": {
+            "type": "string",
+            "title": "Summary"
+          },
+          "essence": {
+            "type": "string",
+            "title": "Essence",
+            "default": ""
+          },
+          "target_group": {
+            "type": "string",
+            "title": "Target Group"
+          },
+          "stage": {
+            "$ref": "#/components/schemas/IdeaStage"
+          },
+          "social_canvas": {
+            "$ref": "#/components/schemas/SocialCanvas"
+          },
+          "status": {
+            "$ref": "#/components/schemas/IdeaStatus"
+          },
+          "admin_reply": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Admin Reply"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "summary",
+          "target_group",
+          "stage",
+          "social_canvas",
+          "status",
+          "created_at"
+        ],
+        "title": "Idea"
+      },
+      "IdeaCreate": {
+        "properties": {
+          "email": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 254,
+                "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Email"
+          },
+          "consent": {
+            "type": "boolean",
+            "title": "Consent",
+            "default": false
+          },
+          "summary": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Summary"
+          },
+          "essence": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Essence"
+          },
+          "target_group": {
+            "type": "string",
+            "maxLength": 500,
+            "minLength": 1,
+            "title": "Target Group"
+          },
+          "stage": {
+            "$ref": "#/components/schemas/IdeaStage"
+          },
+          "social_canvas": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/SocialCanvas"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "summary",
+          "essence",
+          "target_group",
+          "stage"
+        ],
+        "title": "IdeaCreate"
+      },
+      "IdeaCreated": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "status": {
+            "$ref": "#/components/schemas/IdeaStatus"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "status"
+        ],
+        "title": "IdeaCreated"
+      },
+      "IdeaStage": {
+        "type": "string",
+        "enum": [
+          "concept",
+          "prototype",
+          "pilot",
+          "running"
+        ],
+        "title": "IdeaStage"
+      },
+      "IdeaStatus": {
+        "type": "string",
+        "enum": [
+          "new",
+          "in_review",
+          "accepted",
+          "rejected"
+        ],
+        "title": "IdeaStatus"
+      },
+      "IdeaStatusRequest": {
+        "properties": {
+          "status": {
+            "$ref": "#/components/schemas/IdeaStatus"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "title": "IdeaStatusRequest"
+      },
+      "Inbox": {
+        "properties": {
+          "new_ideas": {
+            "items": {
+              "$ref": "#/components/schemas/Idea"
+            },
+            "type": "array",
+            "title": "New Ideas"
+          },
+          "new_problem_reports": {
+            "items": {
+              "$ref": "#/components/schemas/ProblemReport"
+            },
+            "type": "array",
+            "title": "New Problem Reports"
+          },
+          "critical_problem_reports": {
+            "items": {
+              "$ref": "#/components/schemas/ProblemReport"
+            },
+            "type": "array",
+            "title": "Critical Problem Reports"
+          }
+        },
+        "type": "object",
+        "required": [
+          "new_ideas",
+          "new_problem_reports",
+          "critical_problem_reports"
+        ],
+        "title": "Inbox"
+      },
+      "Innovation": {
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Title"
+          },
+          "summary": {
+            "type": "string",
+            "title": "Summary"
+          },
+          "challenge_areas": {
+            "items": {
+              "$ref": "#/components/schemas/ChallengeArea"
+            },
+            "type": "array",
+            "title": "Challenge Areas"
+          },
+          "city": {
+            "type": "string",
+            "title": "City",
+            "default": ""
+          },
+          "page_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page Url"
+          },
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "status": {
+            "$ref": "#/components/schemas/PublicationStatus"
+          }
+        },
+        "type": "object",
+        "required": [
+          "title",
+          "summary",
+          "challenge_areas",
+          "id",
+          "status"
+        ],
+        "title": "Innovation"
+      },
+      "InnovationFeedback": {
+        "properties": {
+          "rating_avg": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rating Avg"
+          },
+          "rating_count": {
+            "type": "integer",
+            "title": "Rating Count"
+          },
+          "test_signups": {
+            "type": "integer",
+            "title": "Test Signups"
+          },
+          "recent_comments": {
+            "items": {
+              "$ref": "#/components/schemas/FeedbackComment"
+            },
+            "type": "array",
+            "title": "Recent Comments"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rating_avg",
+          "rating_count",
+          "test_signups",
+          "recent_comments"
+        ],
+        "title": "InnovationFeedback"
+      },
+      "InnovationStats": {
+        "properties": {
+          "innovation_id": {
+            "type": "string",
+            "title": "Innovation Id"
+          },
+          "matches_total": {
+            "type": "integer",
+            "title": "Matches Total"
+          },
+          "matches_7d": {
+            "type": "integer",
+            "title": "Matches 7D"
+          },
+          "matches_prev_7d": {
+            "type": "integer",
+            "title": "Matches Prev 7D"
+          },
+          "people_reached": {
+            "type": "integer",
+            "title": "People Reached"
+          },
+          "distinct_locations": {
+            "type": "integer",
+            "title": "Distinct Locations"
+          },
+          "last_matched_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Last Matched At"
+          },
+          "matches_by_week": {
+            "items": {
+              "$ref": "#/components/schemas/WeeklyMatches"
+            },
+            "type": "array",
+            "title": "Matches By Week"
+          },
+          "matches_by_area": {
+            "items": {
+              "$ref": "#/components/schemas/AreaMatches"
+            },
+            "type": "array",
+            "title": "Matches By Area"
+          },
+          "matches_by_location": {
+            "items": {
+              "$ref": "#/components/schemas/LocationMatches"
+            },
+            "type": "array",
+            "title": "Matches By Location"
+          },
+          "test_signups": {
+            "$ref": "#/components/schemas/SignupCounts"
+          },
+          "rating_avg": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rating Avg"
+          },
+          "rating_count": {
+            "type": "integer",
+            "title": "Rating Count"
+          },
+          "rating_distribution": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array",
+            "maxItems": 5,
+            "minItems": 5,
+            "title": "Rating Distribution"
+          },
+          "recent_comments": {
+            "items": {
+              "$ref": "#/components/schemas/FeedbackComment"
+            },
+            "type": "array",
+            "title": "Recent Comments"
+          },
+          "recent_problem_reports": {
+            "items": {
+              "$ref": "#/components/schemas/MatchedProblemReport"
+            },
+            "type": "array",
+            "title": "Recent Problem Reports"
+          }
+        },
+        "type": "object",
+        "required": [
+          "innovation_id",
+          "matches_total",
+          "matches_7d",
+          "matches_prev_7d",
+          "people_reached",
+          "distinct_locations",
+          "last_matched_at",
+          "matches_by_week",
+          "matches_by_area",
+          "matches_by_location",
+          "test_signups",
+          "rating_avg",
+          "rating_count",
+          "rating_distribution",
+          "recent_comments",
+          "recent_problem_reports"
+        ],
+        "title": "InnovationStats"
+      },
+      "InnovationStatsRow": {
+        "properties": {
+          "innovation_id": {
+            "type": "string",
+            "title": "Innovation Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "status": {
+            "$ref": "#/components/schemas/PublicationStatus"
+          },
+          "matches_total": {
+            "type": "integer",
+            "title": "Matches Total"
+          },
+          "matches_7d": {
+            "type": "integer",
+            "title": "Matches 7D"
+          },
+          "matches_prev_7d": {
+            "type": "integer",
+            "title": "Matches Prev 7D"
+          },
+          "people_reached": {
+            "type": "integer",
+            "title": "People Reached"
+          },
+          "distinct_locations": {
+            "type": "integer",
+            "title": "Distinct Locations"
+          },
+          "test_signups_applied": {
+            "type": "integer",
+            "title": "Test Signups Applied"
+          },
+          "test_signups_accepted": {
+            "type": "integer",
+            "title": "Test Signups Accepted"
+          },
+          "test_signups_rejected": {
+            "type": "integer",
+            "title": "Test Signups Rejected"
+          },
+          "rating_avg": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rating Avg"
+          },
+          "rating_count": {
+            "type": "integer",
+            "title": "Rating Count"
+          },
+          "last_matched_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Last Matched At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "innovation_id",
+          "title",
+          "status",
+          "matches_total",
+          "matches_7d",
+          "matches_prev_7d",
+          "people_reached",
+          "distinct_locations",
+          "test_signups_applied",
+          "test_signups_accepted",
+          "test_signups_rejected",
+          "rating_avg",
+          "rating_count",
+          "last_matched_at"
+        ],
+        "title": "InnovationStatsRow"
+      },
+      "InnovationUpdate": {
+        "properties": {
+          "title": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Title"
+          },
+          "summary": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Summary"
+          },
+          "challenge_areas": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/ChallengeArea"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Challenge Areas"
+          },
+          "city": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "City"
+          },
+          "page_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page Url"
+          }
+        },
+        "type": "object",
+        "title": "InnovationUpdate"
+      },
+      "InnovationUploaded": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "status": {
+            "$ref": "#/components/schemas/PublicationStatus"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "status"
+        ],
+        "title": "InnovationUploaded"
+      },
+      "InstitutionType": {
+        "type": "string",
+        "enum": [
+          "gmina",
+          "cus",
+          "ngo",
+          "other"
+        ],
+        "title": "InstitutionType"
+      },
+      "LibraryInnovation": {
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "title": "Title"
+          },
+          "summary": {
+            "type": "string",
+            "title": "Summary"
+          },
+          "challenge_areas": {
+            "items": {
+              "$ref": "#/components/schemas/ChallengeArea"
+            },
+            "type": "array",
+            "title": "Challenge Areas"
+          },
+          "city": {
+            "type": "string",
+            "title": "City",
+            "default": ""
+          },
+          "page_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page Url"
+          },
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "status": {
+            "$ref": "#/components/schemas/PublicationStatus"
+          },
+          "rating_avg": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rating Avg"
+          },
+          "rating_count": {
+            "type": "integer",
+            "title": "Rating Count",
+            "default": 0
+          }
+        },
+        "type": "object",
+        "required": [
+          "title",
+          "summary",
+          "challenge_areas",
+          "id",
+          "status"
+        ],
+        "title": "LibraryInnovation"
+      },
+      "LocationMatches": {
+        "properties": {
+          "location": {
+            "type": "string",
+            "title": "Location"
+          },
+          "matches": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Matches"
+          },
+          "note": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Note"
+          }
+        },
+        "type": "object",
+        "required": [
+          "location",
+          "matches"
+        ],
+        "title": "LocationMatches"
+      },
+      "LocationRow": {
+        "properties": {
+          "location": {
+            "type": "string",
+            "title": "Location"
+          },
+          "challenge_area": {
+            "$ref": "#/components/schemas/ChallengeArea"
+          },
+          "problem_reports": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Problem Reports"
+          },
+          "note": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Note"
+          }
+        },
+        "type": "object",
+        "required": [
+          "location",
+          "challenge_area",
+          "problem_reports"
+        ],
+        "title": "LocationRow"
+      },
+      "LoginRequest": {
+        "properties": {
+          "username": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Username"
+          },
+          "password": {
+            "type": "string",
+            "maxLength": 1024,
+            "minLength": 1,
+            "title": "Password"
+          }
+        },
+        "type": "object",
+        "required": [
+          "username",
+          "password"
+        ],
+        "title": "LoginRequest"
+      },
+      "MatchRequest": {
+        "properties": {
+          "email": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 254,
+                "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Email"
+          },
+          "consent": {
+            "type": "boolean",
+            "title": "Consent",
+            "default": false
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 3,
+            "title": "Text"
+          },
+          "city": {
+            "type": "string",
+            "maxLength": 200,
+            "title": "City",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "text"
+        ],
+        "title": "MatchRequest"
+      },
+      "MatchResponse": {
+        "properties": {
+          "problem_report_id": {
+            "type": "string",
+            "title": "Problem Report Id"
+          },
+          "innovations": {
+            "items": {
+              "$ref": "#/components/schemas/MatchedInnovation"
+            },
+            "type": "array",
+            "title": "Innovations"
+          },
+          "similar_reports": {
+            "items": {
+              "$ref": "#/components/schemas/SimilarProblemReport"
+            },
+            "type": "array",
+            "title": "Similar Reports"
+          },
+          "test_signup_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Test Signup Ids",
+            "default": []
+          }
+        },
+        "type": "object",
+        "required": [
+          "problem_report_id",
+          "innovations",
+          "similar_reports"
+        ],
+        "title": "MatchResponse"
+      },
+      "MatchedInnovation": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "summary": {
+            "type": "string",
+            "title": "Summary"
+          },
+          "why": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Why"
+          },
+          "tags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Tags"
+          },
+          "city": {
+            "type": "string",
+            "title": "City"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "summary",
+          "why",
+          "tags",
+          "city"
+        ],
+        "title": "MatchedInnovation"
+      },
+      "MatchedProblemReport": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "challenge_area": {
+            "$ref": "#/components/schemas/ChallengeArea"
+          },
+          "location": {
+            "type": "string",
+            "title": "Location"
+          },
+          "support_count": {
+            "type": "integer",
+            "title": "Support Count"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "challenge_area",
+          "location",
+          "support_count",
+          "created_at"
+        ],
+        "title": "MatchedProblemReport"
+      },
+      "MiddlemanRequest": {
+        "properties": {
+          "email": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 254,
+                "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Email"
+          },
+          "consent": {
+            "type": "boolean",
+            "title": "Consent",
+            "default": false
+          },
+          "innovation_id": {
+            "type": "string",
+            "title": "Innovation Id"
+          },
+          "institution_type": {
+            "$ref": "#/components/schemas/InstitutionType"
+          },
+          "needs": {
+            "type": "string",
+            "maxLength": 3000,
+            "minLength": 3,
+            "title": "Needs"
+          }
+        },
+        "type": "object",
+        "required": [
+          "innovation_id",
+          "institution_type",
+          "needs"
+        ],
+        "title": "MiddlemanRequest"
+      },
+      "ModerationStatus": {
+        "type": "string",
+        "enum": [
+          "pending",
+          "published",
+          "hidden"
+        ],
+        "title": "ModerationStatus"
+      },
+      "Page_Innovation_": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/Innovation"
+            },
+            "type": "array",
+            "title": "Items"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "limit": {
+            "type": "integer",
+            "title": "Limit"
+          },
+          "offset": {
+            "type": "integer",
+            "title": "Offset"
+          }
+        },
+        "type": "object",
+        "required": [
+          "items",
+          "total",
+          "limit",
+          "offset"
+        ],
+        "title": "Page[Innovation]"
+      },
+      "Page_LibraryInnovation_": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/LibraryInnovation"
+            },
+            "type": "array",
+            "title": "Items"
+          },
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "limit": {
+            "type": "integer",
+            "title": "Limit"
+          },
+          "offset": {
+            "type": "integer",
+            "title": "Offset"
+          }
+        },
+        "type": "object",
+        "required": [
+          "items",
+          "total",
+          "limit",
+          "offset"
+        ],
+        "title": "Page[LibraryInnovation]"
+      },
+      "ProblemReport": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "challenge_area": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ChallengeArea"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "location": {
+            "type": "string",
+            "title": "Location"
+          },
+          "support_count": {
+            "type": "integer",
+            "title": "Support Count"
+          },
+          "is_critical": {
+            "type": "boolean",
+            "title": "Is Critical"
+          },
+          "criticality_score": {
+            "type": "number",
+            "title": "Criticality Score"
+          },
+          "admin_reply": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Admin Reply"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "challenge_area",
+          "location",
+          "support_count",
+          "is_critical",
+          "criticality_score",
+          "created_at"
+        ],
+        "title": "ProblemReport"
+      },
+      "PublicProblemReport": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "challenge_area": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ChallengeArea"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "city": {
+            "type": "string",
+            "title": "City"
+          },
+          "support_count": {
+            "type": "integer",
+            "title": "Support Count"
+          },
+          "admin_reply": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Admin Reply"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "challenge_area",
+          "city",
+          "support_count",
+          "created_at"
+        ],
+        "title": "PublicProblemReport"
+      },
+      "PublicationStatus": {
+        "type": "string",
+        "enum": [
+          "draft",
+          "published"
+        ],
+        "title": "PublicationStatus"
+      },
+      "Reply": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "body": {
+            "type": "string",
+            "title": "Body"
+          },
+          "author_label": {
+            "type": "string",
+            "title": "Author Label"
+          },
+          "kind": {
+            "$ref": "#/components/schemas/ReplyKind"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "body",
+          "author_label",
+          "kind",
+          "created_at"
+        ],
+        "title": "Reply"
+      },
+      "ReplyCreate": {
+        "properties": {
+          "email": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 254,
+                "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Email"
+          },
+          "consent": {
+            "type": "boolean",
+            "title": "Consent",
+            "default": false
+          },
+          "body": {
+            "type": "string",
+            "maxLength": 5000,
+            "minLength": 1,
+            "title": "Body"
+          },
+          "author_label": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Author Label"
+          }
+        },
+        "type": "object",
+        "required": [
+          "body",
+          "author_label"
+        ],
+        "title": "ReplyCreate"
+      },
+      "ReplyKind": {
+        "type": "string",
+        "enum": [
+          "practitioner",
+          "expert",
+          "mentor",
+          "admin"
+        ],
+        "title": "ReplyKind"
+      },
+      "ReplyRequest": {
+        "properties": {
+          "message": {
+            "type": "string",
+            "maxLength": 5000,
+            "minLength": 1,
+            "title": "Message"
+          }
+        },
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "title": "ReplyRequest"
+      },
+      "ReportFormat": {
+        "type": "string",
+        "enum": [
+          "json",
+          "csv"
+        ],
+        "title": "ReportFormat"
+      },
+      "SignupCounts": {
+        "properties": {
+          "applied": {
+            "type": "integer",
+            "title": "Applied"
+          },
+          "accepted": {
+            "type": "integer",
+            "title": "Accepted"
+          },
+          "rejected": {
+            "type": "integer",
+            "title": "Rejected"
+          }
+        },
+        "type": "object",
+        "required": [
+          "applied",
+          "accepted",
+          "rejected"
+        ],
+        "title": "SignupCounts"
+      },
+      "SimilarProblemReport": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "city": {
+            "type": "string",
+            "title": "City"
+          },
+          "support_count": {
+            "type": "integer",
+            "title": "Support Count"
+          },
+          "admin_reply": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Admin Reply"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "city",
+          "support_count"
+        ],
+        "title": "SimilarProblemReport"
+      },
+      "SocialCanvas": {
+        "properties": {
+          "problem": {
+            "type": "string",
+            "title": "Problem"
+          },
+          "solution": {
+            "type": "string",
+            "title": "Solution"
+          },
+          "beneficiaries": {
+            "type": "string",
+            "title": "Beneficiaries"
+          },
+          "resources": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Resources"
+          }
+        },
+        "type": "object",
+        "required": [
+          "problem",
+          "solution",
+          "beneficiaries"
+        ],
+        "title": "SocialCanvas"
+      },
+      "Submitted": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "status": {
+            "$ref": "#/components/schemas/ModerationStatus"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "status"
+        ],
+        "title": "Submitted"
+      },
+      "SupportResponse": {
+        "properties": {
+          "support_count": {
+            "type": "integer",
+            "title": "Support Count"
+          }
+        },
+        "type": "object",
+        "required": [
+          "support_count"
+        ],
+        "title": "SupportResponse"
+      },
+      "Thread": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "innovation_id": {
+            "type": "string",
+            "title": "Innovation Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "body": {
+            "type": "string",
+            "title": "Body"
+          },
+          "author_label": {
+            "type": "string",
+            "title": "Author Label"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "replies": {
+            "items": {
+              "$ref": "#/components/schemas/Reply"
+            },
+            "type": "array",
+            "title": "Replies"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "innovation_id",
+          "title",
+          "body",
+          "author_label",
+          "created_at",
+          "replies"
+        ],
+        "title": "Thread"
+      },
+      "ThreadCreate": {
+        "properties": {
+          "email": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 254,
+                "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Email"
+          },
+          "consent": {
+            "type": "boolean",
+            "title": "Consent",
+            "default": false
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 200,
+            "minLength": 1,
+            "title": "Title"
+          },
+          "body": {
+            "type": "string",
+            "maxLength": 5000,
+            "minLength": 1,
+            "title": "Body"
+          },
+          "author_label": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Author Label"
+          }
+        },
+        "type": "object",
+        "required": [
+          "title",
+          "body",
+          "author_label"
+        ],
+        "title": "ThreadCreate"
+      },
+      "TrendRow": {
+        "properties": {
+          "week_start": {
+            "type": "string",
+            "format": "date",
+            "title": "Week Start"
+          },
+          "challenge_area": {
+            "$ref": "#/components/schemas/ChallengeArea"
+          },
+          "location": {
+            "type": "string",
+            "title": "Location"
+          },
+          "problem_reports": {
+            "type": "integer",
+            "title": "Problem Reports"
+          },
+          "support_count": {
+            "type": "integer",
+            "title": "Support Count"
+          }
+        },
+        "type": "object",
+        "required": [
+          "week_start",
+          "challenge_area",
+          "location",
+          "problem_reports",
+          "support_count"
+        ],
+        "title": "TrendRow"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "WeeklyMatches": {
+        "properties": {
+          "week_start": {
+            "type": "string",
+            "format": "date",
+            "title": "Week Start"
+          },
+          "matches": {
+            "type": "integer",
+            "title": "Matches"
+          }
+        },
+        "type": "object",
+        "required": [
+          "week_start",
+          "matches"
+        ],
+        "title": "WeeklyMatches"
+      }
+    }
+  }
+}

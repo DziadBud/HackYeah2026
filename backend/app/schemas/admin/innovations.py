@@ -11,31 +11,13 @@ class PublicationStatus(StrEnum):
     PUBLISHED = "published"
 
 
-class Readiness(StrEnum):
-    CONCEPT = "concept"
-    PROTOTYPE = "prototype"
-    PILOT = "pilot"
-    RUNNING = "running"
-
-
-class CostLevel(StrEnum):
-    LOW = "low"
-    MEDIUM = "medium"
-    HIGH = "high"
-
-
 class InnovationBase(BaseModel):
     title: str = Field(min_length=1)
     summary: str
-    problem: str = ""
-    innovator: str = ""
+    # read from rag's area:<slug> tags
     challenge_areas: list[ChallengeArea]
-    target_group: list[str]
-    # nullable in the db for rows created before these columns existed
-    readiness: Readiness | None = None
-    cost_level: CostLevel | None = None
     city: str = ""
-    video_url: str | None = None
+    page_url: str | None = None
 
 
 class InnovationUploaded(BaseModel):
@@ -46,18 +28,13 @@ class InnovationUploaded(BaseModel):
 
 
 class InnovationUpdate(PatchModel):
-    nullable_fields = frozenset({"video_url"})
+    nullable_fields = frozenset({"page_url"})
 
     title: str | None = Field(default=None, min_length=1)
     summary: str | None = None
     challenge_areas: list[ChallengeArea] | None = None
-    problem: str | None = None
-    innovator: str | None = None
-    target_group: list[str] | None = None
-    readiness: Readiness | None = None
-    cost_level: CostLevel | None = None
     city: str | None = None
-    video_url: str | None = None
+    page_url: str | None = None
 
 
 class Innovation(InnovationBase):
