@@ -29,5 +29,18 @@ services:
       db:
         condition: service_healthy
 
+  web:
+    build:
+      context: ./frontend
+      # NEXT_PUBLIC_* is baked at build time, so the browser must reach the api
+      # directly (published on the host), not the compose-internal hostname.
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:${API_PORT:-8000}}
+    container_name: hackyeah-web
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    depends_on:
+      - api
+
 volumes:
   postgres_data:
