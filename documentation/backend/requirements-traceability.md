@@ -15,7 +15,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 - **How:**
   - the library lists `innovations` rows tagged `type:innovation`; films are linked through `page_url`
   - ROPS reports and the Mapa Wyzwan are `type:report` rows embedded with `/embed/pdf`; "ask the report" over their chunks is deferred until they are embedded
-  - the admin uploads a PDF per innovation; rag embeds it from a RabbitMQ message and the innovation is published once indexed
+  - the admin uploads a PDF per innovation; match-api sends it to rag `/embed/pdf` in a background task and publishes the innovation once indexed
   - aggregated needs and trends exist only under `/admin/reports/*`
 - **Gap:** `/embed/pdf` stores no page numbers, so report answers can't cite pages.
 
@@ -47,7 +47,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 - **Where:** `/admin/*` behind the admin session (§4, §5).
 - **How:**
   - login
-  - innovation create from a PDF (file saved, draft row, `innovation.embed_requested` on RabbitMQ; rag embeds and publishes it), metadata edit (incl. `problem`, `target_group`, `challenge_areas`, …), publish/unpublish, feedback counts
+  - innovation create from a PDF (file saved, draft row, background call to rag `/embed/pdf`, published on success), metadata edit (incl. `problem`, `target_group`, `challenge_areas`, …), publish/unpublish, feedback counts
   - innovation list with stats per innovation: matches (total, 7d trend, by week, area and city), people reached, testers, ratings, matched problems (`/admin/reports/innovations`, `/admin/innovations/{id}/stats`)
   - inbox: new ideas, problem reports, critical problem reports, signups, pending threads / replies
   - replies, idea status, test signup status, thread moderation, grant call open/close, generated-document list, reports with CSV
