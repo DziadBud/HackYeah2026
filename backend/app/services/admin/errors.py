@@ -24,3 +24,7 @@ class UploadTooLargeError(Exception):
 
 class InvalidRequestError(Exception):
     """request is well-formed but breaks a rule that spans fields"""
+
+
+class UpstreamUnavailableError(Exception):
+    """a service we depend on (rag) is down, slow or returned an error"""

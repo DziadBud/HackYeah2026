@@ -22,6 +22,8 @@ class Settings(BaseSettings):
     rag_url: str = "http://localhost:8001"
     # embedding a 10 mb pdf on cpu can take minutes
     rag_timeout_seconds: float = 300
+    # /query embeds the text and asks rag's llm (ollama on cpu) for the answer
+    rag_query_timeout_seconds: float = 60
     # uploaded pdfs are kept on disk so an innovation can be re-embedded later
     upload_dir: str = "/data/uploads"
     max_upload_bytes: int = 10 * 1024 * 1024

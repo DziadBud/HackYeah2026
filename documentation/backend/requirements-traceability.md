@@ -5,7 +5,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 ## R1 Matchmaking spoleczny (M, 10%)
 - **Where:** `POST /match` (§3) calling rag `POST /query`; `innovations` + `innovation_chunks` (§6).
 - **How:**
-  - rag retrieval over published `type:innovation` rows, top 3, each with an LLM-written reason built only from the retrieved rows
+  - rag retrieval over published rows, top 3 in rag's order, plus rag's one LLM-written `answer` for the whole result (no per-innovation reason)
   - 3 similar problem reports are returned too (pg_trgm, same city first)
   - a per-IP rate limit guards LLM spend
 - **Done when:** the 8 queries in `documentation/sample-data/sample-matchmaking-queries.md` return the expected id in the top 3.

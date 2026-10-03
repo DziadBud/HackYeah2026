@@ -5,8 +5,7 @@ from app.schemas.admin.grant_calls import GrantCall
 from app.schemas.admin.innovations import Innovation
 from app.schemas.public.documents import MiddlemanRequest
 
-# stand-ins for rag retrieval and the llm, shared by the mock and db services until the
-# rag client and llm prompts land
+# stand-ins for the llm (middleman, grant drafts) and for rag retrieval in the mock services
 
 
 def words(text: str) -> set[str]:
@@ -17,11 +16,6 @@ def words(text: str) -> set[str]:
 
 def overlap(query: set[str], innovation: Innovation) -> int:
     return len(query & words(f"{innovation.title} {innovation.summary}"))
-
-
-def explain_fit(innovation: Innovation) -> str:
-    areas = ", ".join(a.value for a in innovation.challenge_areas)
-    return f"Pasuje, bo dotyczy: {areas or innovation.title}."
 
 
 def middleman_card(innovation: Innovation, data: MiddlemanRequest) -> str:

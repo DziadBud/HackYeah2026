@@ -34,7 +34,8 @@ from app.schemas.public.threads import (
 from app.services.admin.db import grant_call_to_schema, innovation_to_schema, parse_uuid
 from app.services.admin.innovation_upload import area_tag
 from app.services.admin.errors import InvalidRequestError, NotFoundError
-from app.services.public.drafts import explain_fit, grant_draft, middleman_card, overlap, words
+from app.services.public.drafts import grant_draft, middleman_card
+from app.services.public.interfaces import Retriever
 
 MAX_MATCHES = 3
 SIMILAR_REPORTS = 3
@@ -62,23 +63,27 @@ def _document(row: DocumentRow) -> GeneratedDocument:
 
 
 class DbMatchService:
-    def __init__(self, db: Session) -> None:
+    def __init__(self, db: Session, rag: Retriever) -> None:
         self._db = db
+        self._rag = rag
 
     def match(self, data: MatchRequest, test_signup: bool) -> MatchResponse:
         if test_signup and not data.email:
             raise InvalidRequestError("email is required to sign up for testing")
 
-        # word overlap stands in for rag /query until the rag client lands
-        query = words(data.text)
-        published = [
-            innovation_to_schema(r)
+        # before any write: when rag is down nothing is stored and the user can retry
+        result = self._rag.query(data.text, MAX_MATCHES)
+        rows = {
+            r.id: r
             for r in self._db.scalars(
-                select(InnovationRow).where(InnovationRow.status == PublicationStatus.PUBLISHED.value)
+                select(InnovationRow).where(
+                    InnovationRow.id.in_(result.innovation_ids),
+                    InnovationRow.status == PublicationStatus.PUBLISHED.value,
+                )
             ).all()
-        ]
-        scored = sorted(((overlap(query, i), i) for i in published), key=lambda p: p[0], reverse=True)
-        matches = [i for score, i in scored[:MAX_MATCHES] if score > 0]
+        }
+        # keep rag's ranking
+        matches = [innovation_to_schema(rows[i]) for i in result.innovation_ids if i in rows]
 
         # before the insert, so the new report doesn't come back as similar to itself
         similar = self._similar_reports(data.text, data.city)
@@ -105,12 +110,12 @@ class DbMatchService:
 
         return MatchResponse(
             problem_report_id=str(report.id),
+            answer=result.answer,
             innovations=[
                 MatchedInnovation(
                     id=i.id,
                     title=i.title,
                     summary=i.summary,
-                    why=explain_fit(i),
                     tags=[f"area:{a.value}" for a in i.challenge_areas],
                     city=i.city,
                 )
