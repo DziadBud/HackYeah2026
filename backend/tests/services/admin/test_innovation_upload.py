@@ -3,23 +3,14 @@ from pathlib import Path
 import pytest
 
 from app.schemas.admin.common import ChallengeArea
-from app.schemas.admin.innovations import CostLevel, Readiness
-from app.services.admin.errors import (
-    EmbedPublishError,
-    InvalidUploadError,
-    UploadTooLargeError,
-)
+from app.services.admin.errors import InvalidUploadError, UploadTooLargeError
 from app.services.admin.innovation_upload import InnovationUploadService, NewInnovation
 
 PDF = b"%PDF-1.7 fake body"
 DATA = NewInnovation(
     title="Wibraap: opaska dla seniorów",
     summary="Opis",
-    problem="Seniorzy nie slysza alarmow",
-    innovator="Fundacja Testowa",
     challenge_areas=[ChallengeArea.SENIORS, ChallengeArea.MENTAL_HEALTH],
-    readiness=Readiness.PILOT,
-    cost_level=CostLevel.LOW,
     tags=["opaska"],
 )
 
@@ -27,6 +18,7 @@ DATA = NewInnovation(
 class FakeStore:
     def __init__(self, fail: bool = False) -> None:
         self.rows: dict[str, list[str]] = {}
+        self.published: list[str] = []
         self.fail = fail
 
     def insert_draft(self, innovation_id: str, data: NewInnovation, tags: list[str]) -> None:
@@ -34,8 +26,8 @@ class FakeStore:
             raise RuntimeError("db down")
         self.rows[innovation_id] = tags
 
-    def delete(self, innovation_id: str) -> None:
-        self.rows.pop(innovation_id, None)
+    def publish(self, innovation_id: str) -> None:
+        self.published.append(innovation_id)
 
 
 class FakeFiles:
@@ -51,22 +43,22 @@ class FakeFiles:
         path.unlink(missing_ok=True)
 
 
-class FakePublisher:
+class FakeRag:
     def __init__(self, fail: bool = False) -> None:
-        self.sent: list[tuple[str, str]] = []
+        self.embedded: list[tuple[str, str, bytes]] = []
         self.fail = fail
 
-    def publish_embed_requested(self, innovation_id: str, file_path: str) -> None:
+    def embed_pdf(self, innovation_id: str, filename: str, pdf: bytes) -> None:
         if self.fail:
-            raise ConnectionError("broker down")
-        self.sent.append((innovation_id, file_path))
+            raise ConnectionError("rag down")
+        self.embedded.append((innovation_id, filename, pdf))
 
 
-def make(tmp_path: Path, store=None, publisher=None, max_bytes: int = 1024):
+def make(tmp_path: Path, store=None, rag=None, max_bytes: int = 1024):
     store = store or FakeStore()
-    publisher = publisher or FakePublisher()
-    svc = InnovationUploadService(store, FakeFiles(tmp_path), publisher, max_bytes)
-    return svc, store, publisher
+    rag = rag or FakeRag()
+    svc = InnovationUploadService(store, FakeFiles(tmp_path), rag, max_bytes)
+    return svc, store, rag
 
 
 @pytest.mark.parametrize(
@@ -78,12 +70,12 @@ def make(tmp_path: Path, store=None, publisher=None, max_bytes: int = 1024):
     ],
 )
 def test_create(tmp_path, content, err) -> None:
-    svc, store, publisher = make(tmp_path)
+    svc, store, rag = make(tmp_path)
 
     if err:
         with pytest.raises(err):
             svc.create(DATA, content)
-        assert store.rows == {} and publisher.sent == []
+        assert store.rows == {} and list(tmp_path.iterdir()) == []
         return
 
     created = svc.create(DATA, content)
@@ -91,25 +83,33 @@ def test_create(tmp_path, content, err) -> None:
     assert created.status == "draft"
     assert created.id.startswith("wibraap-opaska-dla-seniorow-")
     assert store.rows[created.id] == ["opaska", "type:innovation", "area:seniorzy", "area:zdrowie-psychiczne"]
-    assert publisher.sent == [(created.id, created.file_path)]
     assert Path(created.file_path).read_bytes() == PDF
+    # embedding is a separate background step
+    assert rag.embedded == [] and store.published == []
 
 
-def test_create_publish_fails_rolls_back(tmp_path) -> None:
-    svc, store, _ = make(tmp_path, publisher=FakePublisher(fail=True))
+@pytest.mark.parametrize(
+    "rag_fails, want_published",
+    [
+        pytest.param(False, True, id="#1 - OK - embedded and published"),
+        pytest.param(True, False, id="#2 - FAIL - rag down, stays draft"),
+    ],
+)
+def test_embed(tmp_path, rag_fails, want_published) -> None:
+    svc, store, rag = make(tmp_path, rag=FakeRag(fail=rag_fails))
+    created = svc.create(DATA, PDF)
 
-    with pytest.raises(EmbedPublishError):
-        svc.create(DATA, PDF)
+    svc.embed(created.id, created.file_path)
 
-    assert store.rows == {}
-    assert list(tmp_path.iterdir()) == []
+    assert (store.published == [created.id]) is want_published
+    if not rag_fails:
+        assert rag.embedded == [(created.id, f"{created.id}.pdf", PDF)]
 
 
 def test_create_insert_fails_removes_file(tmp_path) -> None:
-    svc, _, publisher = make(tmp_path, store=FakeStore(fail=True))
+    svc, _, _ = make(tmp_path, store=FakeStore(fail=True))
 
     with pytest.raises(RuntimeError):
         svc.create(DATA, PDF)
 
-    assert publisher.sent == []
     assert list(tmp_path.iterdir()) == []

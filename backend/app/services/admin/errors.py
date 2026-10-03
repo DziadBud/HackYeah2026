@@ -22,9 +22,5 @@ class UploadTooLargeError(Exception):
     """uploaded file exceeds the size limit"""
 
 
-class EmbedPublishError(Exception):
-    """the embed request could not be queued; nothing was stored"""
-
-
 class InvalidRequestError(Exception):
     """request is well-formed but breaks a rule that spans fields"""
