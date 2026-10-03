@@ -50,15 +50,14 @@ The home page is a regular page, not a full-height chat: hero (greeting, "O nas 
 
 | Screen | Does | API |
 |---|---|---|
-| `/` chat (`components/chat/Chat.tsx`) | problem text -> top innovations (cards with "Dlaczego pasuje" when `why` is set; `area:*` tags shown as Polish labels) | `POST /match` |
-| `/` chat, "Chcę testować" checkbox (also set by the quick action and by `/?testuj=1`) | email + consent, then the same match also signs the person up to test the matched innovations | `POST /match?test_signup=true` |
+| `/` chat (`components/chat/Chat.tsx`) | problem text -> top innovations (cards with "Dlaczego pasuje" when `why` is set; `area:*` tags shown as Polish labels); the three hero tiles are single choice: "Szukam rozwiązania" and "Mam pomysł" only put a template into the message field and close the form, "Złóż wniosek" shows the form and hides the chat (conversation, message field, "Czym jest Hub"), leaving only the welcome card with the tiles and the form; no email field, no tester option | `POST /match` |
 | `/` chat, similar problems (`SimilarReports.tsx`) | the `similar_reports` of the match, each with "Mnie też" | `POST /problem-reports/{id}/support` |
-| `/` chat, "Zgłoś pomysł" / "Mam pomysł" (`IdeaForm.tsx`) | summary, essence, target group, stage, optional email + consent | `POST /ideas` |
+| `/` chat, "Złóż wniosek" tile and `/?wniosek=1` (`IdeaForm.tsx`) | summary, essence, target group, stage, optional email + consent | `POST /ideas` |
 | `/innowacje` (`LibraryList.tsx`) | published innovations, 24 per page with "Pokaż więcej" | `GET /innovations?limit=&offset=` |
 | `/innowacje/{id}` (`InnovationDetail.tsx`) | description, target group, stage, cost, rating, film; "Więcej informacji (PDF)" opens the source PDF in a new tab when `has_pdf`, otherwise the placeholder `public/pdf/karta-innowacji-przyklad.pdf` (`SAMPLE_PDF_URL`, also used by the offline demo entries); 404 (unknown or draft) shows "Nie znaleziono innowacji" | `GET /innovations/{id}`, `GET /innovations/{id}/pdf` (link) |
 | `/innowacje/{id}` community (`Community.tsx`) | published threads with published replies; new threads and replies go to ROPS moderation (202, not shown until published) | `GET /innovations/{id}/threads`, `POST /innovations/{id}/threads`, `POST /threads/{id}/replies` |
 
-Testing has no per-innovation sign-up in the backend ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)), so the detail page's "Zgłoś się do testowania" box links to `/?testuj=1`. Likes, notifications and the thread "pomocne" counter have no endpoint, so the detail page does not show them; its action bar has only "Zgłoś się do testowania" and "Skopiuj link do tej strony". Optional emails are sent with `consent: true` only after the person ticks the consent checkbox shown next to the email field.
+The public UI does not use `POST /match?test_signup=true`: the detail page's "Zgłoś się do testowania" box links to `/?wniosek=1`, which opens the "Złóż wniosek" form, and ROPS follows up from the ideas inbox. Likes, notifications and the thread "pomocne" counter have no endpoint, so the detail page does not show them; its action bar has "Zgłoś się do testowania", "Więcej informacji (PDF)" and "Skopiuj link do tej strony". Optional emails are sent with `consent: true` only after the person ticks the consent checkbox shown next to the email field.
 
 ## Admin panel (`/admin`)
 

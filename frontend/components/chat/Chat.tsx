@@ -18,8 +18,6 @@ type Message =
       innovations: InnovationCardData[];
       similar: SimilarProblemReport[];
       demo: boolean;
-      // null when the person did not ask to test
-      testSignups: number | null;
     };
 
 const QUICK_ACTIONS = [
@@ -42,18 +40,15 @@ const QUICK_ACTIONS = [
     prompt: "Reprezentuję jednostkę samorządu terytorialnego lub OPS. Potrzebujemy: ",
   },
   {
-    icon: "flaky",
-    title: "Chcę testować",
-    desc: "Sprawdź nowe prototypy i weź udział w testach",
-    prompt: "Chciałbym przystąpić do testowania innowacji społecznej: ",
+    icon: "send",
+    title: "Złóż wniosek",
+    desc: "Wyślij swój pomysł lub innowację do zespołu ROPS",
+    // opens the idea form instead of filling the chat
+    prompt: "",
   },
 ];
-const IDEA_ACTION = "Mam pomysł";
-const TESTER_ACTION = "Chcę testować";
-const TESTER_PROMPT = QUICK_ACTIONS.find((a) => a.title === TESTER_ACTION)!.prompt;
+const APPLY_ACTION = "Złóż wniosek";
 const HERO_ACTIONS = QUICK_ACTIONS.filter((a) => a.title !== "Jestem z instytucji");
-
-const FOLLOW_UP = "\n\nGmina lub miejscowość: \nKogo dotyczy problem: \nCo już próbowaliście: ";
 
 // minimal shape of the web speech recognition api (not in lib.dom yet)
 interface Recognition {
@@ -99,22 +94,18 @@ export function Chat() {
   const [pending, setPending] = useState(false);
   const [status, setStatus] = useState("");
   const [recording, setRecording] = useState(false);
-  const [tester, setTester] = useState(false);
-  const [email, setEmail] = useState("");
-  const [consent, setConsent] = useState(false);
-  const [ideaOpen, setIdeaOpen] = useState(false);
+  // the hero tiles are single choice; "Złóż wniosek" is the only one that shows the form
+  const [action, setAction] = useState<string | null>(null);
+  const ideaOpen = action === APPLY_ACTION;
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const recognitionRef = useRef<Recognition | null>(null);
   const nextId = useRef(1);
 
   useEffect(() => () => recognitionRef.current?.stop(), []);
 
-  // /?testuj=1 comes from the "Zgłoś się do testowania" box on an innovation page
+  // /?wniosek=1 comes from the "Zgłoś się do testowania" box on an innovation page
   useEffect(() => {
-    if (new URLSearchParams(window.location.search).has("testuj")) {
-      setTester(true);
-      fillPrompt(TESTER_PROMPT, "Opisz problem, podaj e-mail i wyślij: zapiszemy Cię do testów dopasowanych innowacji.");
-    }
+    if (new URLSearchParams(window.location.search).has("wniosek")) setAction(APPLY_ACTION);
   }, []);
 
   function fillPrompt(text: string, note: string) {
@@ -132,7 +123,7 @@ export function Chat() {
     if (pending) return;
     const text = input.trim();
     if (text.length < 3) {
-      setStatus("Opisz problem kilkoma słowami albo skorzystaj z przycisku Podpowiedz, co dopisać.");
+      setStatus("Opisz problem kilkoma słowami.");
       textareaRef.current?.focus();
       return;
     }
@@ -145,17 +136,8 @@ export function Chat() {
     setPending(true);
     let reply: Omit<Extract<Message, { role: "assistant" }>, "id" | "time" | "role">;
     try {
-      const res = await api.match(tester ? { text, email: email.trim(), consent } : { text }, tester);
-      reply = {
-        innovations: res.innovations.map(toCard),
-        similar: res.similar_reports,
-        demo: false,
-        testSignups: tester ? res.test_signup_ids.length : null,
-      };
-      if (tester) {
-        setTester(false);
-        setConsent(false);
-      }
+      const res = await api.match({ text });
+      reply = { innovations: res.innovations.map(toCard), similar: res.similar_reports, demo: false };
     } catch (err) {
       if (err instanceof ApiError && err.status >= 400 && err.status < 500 && err.status !== 404) {
         // the request itself was rejected: give the text back instead of faking an answer
@@ -165,33 +147,32 @@ export function Chat() {
         setStatus(
           err.status === 429
             ? "Wysłano zbyt wiele zapytań. Odczekaj chwilę i spróbuj ponownie."
-            : "Nie udało się wysłać: sprawdź opis (do 2000 znaków) i adres e-mail.",
+            : "Nie udało się wysłać: sprawdź opis (do 2000 znaków).",
         );
         return;
       }
       // match-api unreachable: answer from the bundled demo data, clearly marked
-      reply = { innovations: demoMatch(text), similar: [], demo: true, testSignups: tester ? 0 : null };
+      reply = { innovations: demoMatch(text), similar: [], demo: true };
     }
     setMessages((m) => [...m, { id: nextId.current++, role: "assistant", time: now(), ...reply }]);
     setPending(false);
   }
 
-  function openIdeaForm() {
-    setIdeaOpen(true);
+  function chooseAction(title: string, prompt: string) {
+    setAction(title);
+    if (title !== APPLY_ACTION) return fillPrompt(prompt, "Wstawiono szablon zapytania do pola tekstowego");
+    // the chat is hidden while the form is open
+    recognitionRef.current?.stop();
+    // a chat template is not an idea summary, so it does not go into the form
+    if (QUICK_ACTIONS.some((a) => a.prompt && input.startsWith(a.prompt.trim()))) setInput("");
     setStatus("");
   }
 
-  function completeWithAi() {
-    if (!input.trim()) {
-      setStatus("Najpierw opisz problem kilkoma słowami, a podpowiem, co warto dodać.");
-      textareaRef.current?.focus();
-      return;
-    }
-    if (input.includes("Gmina lub miejscowość:")) {
-      setStatus("Pytania pomocnicze są już w treści. Uzupełnij je i wyślij.");
-      return;
-    }
-    fillPrompt(input + FOLLOW_UP, "Dodano pytania pomocnicze. Uzupełnij je, żeby wyniki były trafniejsze.");
+  function closeIdeaForm(msg = "") {
+    setAction(null);
+    setStatus(msg);
+    // the chat is shown again on the next render
+    requestAnimationFrame(() => textareaRef.current?.focus());
   }
 
   function toggleRecording() {
@@ -241,8 +222,6 @@ export function Chat() {
   const secondaryBtn =
     "flex min-h-12 grow items-center justify-center gap-space-xs rounded-full border border-outline bg-surface-container-low px-space-md py-2 text-center text-body-md font-bold text-primary hover:bg-surface-container-high sm:grow-0 hc-edge";
 
-  const activePrompt = QUICK_ACTIONS.find((a) => input.startsWith(a.prompt.trim()))?.title;
-
   return (
     <div className="mx-auto flex w-full max-w-[820px] flex-col gap-space-md py-space-md">
       <section
@@ -263,6 +242,7 @@ export function Chat() {
           </p>
           <a
             href="#o-hubie"
+            hidden={ideaOpen}
             className="inline-flex min-h-12 w-fit items-center gap-space-xs rounded-lg border border-outline bg-surface-container-lowest px-space-md text-body-md font-bold text-primary hover:bg-surface-container-high hc-edge"
           >
             O nas / Czym jest Hub
@@ -273,17 +253,13 @@ export function Chat() {
         {messages.length === 0 && (
           <ul className="grid grid-cols-1 gap-space-sm sm:grid-cols-3">
             {HERO_ACTIONS.map((a) => {
-              const selected = activePrompt === a.title || (a.title === TESTER_ACTION && tester && !activePrompt);
+              const selected = action === a.title;
               return (
                 <li key={a.title}>
                   <button
                     type="button"
                     aria-pressed={selected}
-                    onClick={() => {
-                      if (a.title === IDEA_ACTION) return openIdeaForm();
-                      if (a.title === TESTER_ACTION) setTester(true);
-                      fillPrompt(a.prompt, "Wstawiono szablon zapytania do pola tekstowego");
-                    }}
+                    onClick={() => chooseAction(a.title, a.prompt)}
                     className={`group flex h-full w-full flex-col items-start gap-space-xs rounded-xl bg-surface-container-lowest p-space-md text-left shadow-sm hover:bg-surface-container-high hc-edge ${
                       selected ? "border-2 border-primary" : "border border-transparent"
                     }`}
@@ -301,7 +277,7 @@ export function Chat() {
         )}
       </section>
 
-      <section aria-labelledby="chat-log-heading" className="flex flex-col gap-space-lg" hidden={messages.length === 0 && !pending}>
+      <section aria-labelledby="chat-log-heading" className="flex flex-col gap-space-lg" hidden={ideaOpen || (messages.length === 0 && !pending)}>
         <h2 id="chat-log-heading" className="sr-only">
           Rozmowa z asystentem
         </h2>
@@ -344,23 +320,12 @@ export function Chat() {
                       ))}
                     </div>
                   )}
-                  {m.testSignups !== null && !m.demo && (
-                    <p className="flex items-start gap-2 rounded-lg bg-surface-container p-space-sm text-body-md text-on-surface">
-                      <Icon name="how_to_reg" size={22} className="mt-0.5 text-primary" />
-                      <span>
-                        {m.testSignups > 0
-                          ? `Zapisaliśmy Cię do testów tych innowacji (liczba zgłoszeń: ${m.testSignups}). Koordynator ROPS odezwie się na podany adres e-mail.`
-                          : "Nie znaleźliśmy innowacji do przetestowania, więc nie zapisaliśmy zgłoszenia do testów."}
-                      </span>
-                    </p>
-                  )}
                   {m.similar.length > 0 && <SimilarReports reports={m.similar} />}
                   {m.demo && (
                     <p className="flex items-start gap-2 rounded-lg bg-surface-container p-space-sm text-caption text-on-surface-variant">
                       <Icon name="info" size={18} className="mt-0.5 text-primary" />
                       <span>
                         Tryb demonstracyjny: wyszukiwarka jest chwilowo niedostępna, to przykładowe wyniki z bazy innowacji.
-                        {m.testSignups !== null && " Zgłoszenie do testów nie zostało zapisane."}
                       </span>
                     </p>
                   )}
@@ -379,6 +344,7 @@ export function Chat() {
 
       <section
         aria-labelledby="chat-input-heading"
+        hidden={ideaOpen}
         className="flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-xl hc-edge"
       >
         <h2 id="chat-input-heading" className="sr-only">
@@ -405,7 +371,6 @@ export function Chat() {
               onKeyDown={(e) => {
                 if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) {
                   e.preventDefault();
-                  // through the form, so the tester fields get validated too
                   e.currentTarget.form?.requestSubmit();
                 }
               }}
@@ -417,49 +382,7 @@ export function Chat() {
               Enter dodaje nową linię, Ctrl + Enter wysyła wiadomość.
             </p>
           </div>
-          <div className="flex flex-col gap-space-xs">
-            <label className="flex min-h-12 items-center gap-space-sm text-body-md text-on-surface">
-              <input
-                type="checkbox"
-                checked={tester}
-                onChange={(e) => setTester(e.target.checked)}
-                className="size-6 shrink-0 accent-primary-container"
-              />
-              <span>Chcę testować dopasowane innowacje</span>
-            </label>
-            {tester && (
-              <div className="flex flex-col gap-space-xs rounded-lg bg-surface-container-low p-space-sm hc-edge">
-                <label htmlFor="tester-email" className="text-body-md font-bold text-primary">
-                  E-mail do kontaktu w sprawie testów
-                </label>
-                <input
-                  id="tester-email"
-                  type="email"
-                  required
-                  maxLength={254}
-                  autoComplete="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="min-h-12 w-full rounded-lg border-[1.5px] border-outline bg-surface px-space-sm text-body-md text-on-surface"
-                />
-                <label className="flex min-h-12 items-start gap-space-sm text-body-md text-on-surface">
-                  <input
-                    type="checkbox"
-                    required
-                    checked={consent}
-                    onChange={(e) => setConsent(e.target.checked)}
-                    className="mt-0.5 size-6 shrink-0 accent-primary-container"
-                  />
-                  <span>Zgadzam się na kontakt ROPS w sprawie testów (wymagane).</span>
-                </label>
-              </div>
-            )}
-          </div>
           <div className="flex flex-wrap items-center gap-space-xs pt-space-xs">
-            <button type="button" onClick={completeWithAi} className={secondaryBtn}>
-              <Icon name="auto_awesome" size={22} fill className="text-secondary" />
-              <span>Dopełnij tekst z AI</span>
-            </button>
             <button
               type="button"
               onClick={toggleRecording}
@@ -502,20 +425,13 @@ export function Chat() {
         <div id="idea-form">
           <IdeaForm
             initialSummary={input.trim()}
-            onCancel={() => {
-              setIdeaOpen(false);
-              textareaRef.current?.focus();
-            }}
-            onDone={(msg) => {
-              setIdeaOpen(false);
-              setStatus(msg);
-              textareaRef.current?.focus();
-            }}
+            onCancel={() => closeIdeaForm()}
+            onDone={closeIdeaForm}
           />
         </div>
       )}
 
-      <section id="o-hubie" aria-labelledby="o-hubie-heading" className="scroll-mt-28 flex flex-col gap-space-xs py-space-sm">
+      <section id="o-hubie" aria-labelledby="o-hubie-heading" hidden={ideaOpen} className="scroll-mt-28 flex flex-col gap-space-xs py-space-sm">
         <h2 id="o-hubie-heading" className="text-headline-sm font-semibold text-primary">
           Czym jest Małopolski Hub Innowacji Społecznych?
         </h2>
