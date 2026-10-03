@@ -140,7 +140,7 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 | test signup accepted / rejected / completed | the signup's `email` |
 | thread / reply published | the author's `email` (if set) |
 
-- **Admin side:** one shared admin login from env (`ADMIN_USERNAME`, `ADMIN_PASSWORD`; compose defaults to `admin` / `1234` for the demo), server-side sessions in memory, `HttpOnly; Secure; SameSite=Strict` cookie; see [.claude/designs/admin-auth.md](../../.claude/designs/admin-auth.md).
+- **Admin side:** one shared admin login from env (`ADMIN_USERNAME`, `ADMIN_PASSWORD`; compose has no default password, so nobody can log in until `ADMIN_PASSWORD` is set in the root `.env`; `DEBUG` and `ADMIN_AUTH_DISABLED` default to false), server-side sessions in memory, `HttpOnly; Secure; SameSite=Strict` cookie; see [.claude/designs/admin-auth.md](../../.claude/designs/admin-auth.md).
   - `require_admin` guards `/admin/*`.
   - `POST /admin/auth/login {username, password}`, `POST /admin/auth/logout`, `GET /admin/auth/me`.
   - Sessions: 8 h absolute, 30 min idle; login limited to 5 failures per username per 15 min; a foreign `Origin` on unsafe methods gets 403.

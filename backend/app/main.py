@@ -6,10 +6,10 @@ from app.api.admin import router as admin_router
 from app.api.public import router as public_router
 from app.config import settings
 
-# docs list every admin route, so they are only served in debug
+# docs list every admin route, so they are only served in debug.
+# fastapi's own debug flag stays off: it returns tracebacks to the client
 app = FastAPI(
     title=settings.app_name,
-    debug=settings.debug,
     docs_url="/docs" if settings.debug else None,
     redoc_url="/redoc" if settings.debug else None,
     openapi_url="/openapi.json" if settings.debug else None,

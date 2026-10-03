@@ -4,7 +4,7 @@
 
 **Changed:**
 - IP logic removed; no IP stored on sessions (see [notifications-without-accounts.md](notifications-without-accounts.md)).
-- Hackathon simplification: one shared admin login from env (`ADMIN_USERNAME`, `ADMIN_PASSWORD`; compose defaults `admin` / `1234`) instead of per-admin accounts. The password is hashed with argon2id once at startup; sessions, the login rate limit (per username) and the CSRF check are unchanged. Per-admin accounts and the tables below come back with OIDC (Rollout step 5), and with one shared login, admin actions are not tied to a person until then.
+- Hackathon simplification: one shared admin login from env (`ADMIN_USERNAME`, `ADMIN_PASSWORD`; compose defaults the username to `admin` and has no default password) instead of per-admin accounts. The password is hashed with argon2id once at startup; sessions, the login rate limit (per username) and the CSRF check are unchanged. Per-admin accounts and the tables below come back with OIDC (Rollout step 5), and with one shared login, admin actions are not tied to a person until then.
 
 ## Goal
 Only named ROPS staff can use `/admin/*` (match-api). The rag service (`rag/`) has no auth and stays on the internal network; admin content changes go through match-api. Reports, problem reports and replies must never leak to the public (brief requirement, R6, R11). Every admin action is tied to a specific person.
@@ -122,4 +122,4 @@ The first bottleneck is the session lookup per request, which matters only at hu
 ## Open questions
 1. **MFA (TOTP) now?** About two hours of extra work. I suggest skipping it for the demo and mentioning it on the slides as part of the OIDC path.
 2. **Admin UI hosting:** will it be served from the same domain as the API? Cookies assume same-site. If not, we fall back to a short-lived bearer token held in memory plus a refresh cookie, which is more complex.
-3. **Who are the admins in the demo?** Resolved: one shared env login, `admin` / `1234` by default in compose; set a real password in `.env` for anything shared.
+3. **Who are the admins in the demo?** Resolved: one shared env login; compose has no default password (set `ADMIN_PASSWORD` in the root `.env`), and `DEBUG` / `ADMIN_AUTH_DISABLED` default to false.

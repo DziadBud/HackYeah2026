@@ -68,12 +68,13 @@ services:
     environment:
       # +psycopg: only psycopg 3 is installed
       DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
-      DEBUG: ${DEBUG:-true}
-      # demo login; override in .env for anything shared
+      # safe by default: no /docs, admin login required. set these in the root .env for local dev
+      DEBUG: ${DEBUG:-false}
       ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
-      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-1234}
-      # hackathon demo: admin panel without login (only works with DEBUG=true)
-      ADMIN_AUTH_DISABLED: ${ADMIN_AUTH_DISABLED:-true}
+      # empty means nobody can log in to /admin
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
+      # skips the admin login; honoured only with DEBUG=true
+      ADMIN_AUTH_DISABLED: ${ADMIN_AUTH_DISABLED:-false}
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
       GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
       RAG_URL: http://rag:8000
