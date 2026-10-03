@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 from app.services.chunking import split_text
 from app.services.embedding import EmbeddingService
 from app.services.pdf import extract_pdf_text
+from app.services.tagging import MockTaggingService
 from app.services.vector_store import get_vector_store
 
 MAX_DOCUMENT_BYTES = 10 * 1024 * 1024
@@ -49,6 +50,7 @@ class EmbedRequest(BaseModel):
 
 class EmbedResponse(BaseModel):
     innovation_id: str
+    tags: list[str]
     child_ids: list[str]
     child_count: int
     dimensions: int
@@ -56,6 +58,7 @@ class EmbedResponse(BaseModel):
 
 app = FastAPI(title="HackYeah RAG API", version="0.1.0")
 embedding_service = EmbeddingService()
+tagging_service = MockTaggingService()
 
 
 @app.get("/health", tags=["health"])
@@ -94,12 +97,14 @@ def _embed_document(request: EmbedRequest) -> EmbedResponse:
             chunk_size=request.chunk_size,
             chunk_overlap=request.chunk_overlap,
         )
+        tags = tagging_service.generate(request.text)
         vectors = embedding_service.embed_many(chunks)
         parent_id, child_ids = get_vector_store().insert_document(
             text=request.text,
             innovation_id=request.innovation_id,
             source=request.source,
             page=request.page,
+            tags=tags,
             chunks=chunks,
             embeddings=vectors,
         )
@@ -110,6 +115,7 @@ def _embed_document(request: EmbedRequest) -> EmbedResponse:
 
     return EmbedResponse(
         innovation_id=parent_id,
+        tags=tags,
         child_ids=[str(child_id) for child_id in child_ids],
         child_count=len(child_ids),
         dimensions=len(vectors[0]),

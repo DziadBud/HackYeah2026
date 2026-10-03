@@ -16,8 +16,17 @@ class FakeEmbeddingService:
         return [[0.1, 0.2, 0.3] for _ in texts]
 
 
+class FakeTaggingService:
+    def generate(self, text: str) -> list[str]:
+        return ["senior-support", "accessibility"]
+
+
 class FakeVectorStore:
+    def __init__(self) -> None:
+        self.insert_kwargs: dict[str, object] = {}
+
     def insert_document(self, **kwargs: object) -> tuple[str, list[str]]:
+        self.insert_kwargs = kwargs
         chunks = cast(list[str], kwargs["chunks"])
         return (
             "wibraap",
@@ -90,7 +99,9 @@ def test_query_rejects_more_than_three_results():
 
 def test_embed_stores_vector(monkeypatch):
     monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
-    monkeypatch.setattr("app.main.get_vector_store", lambda: FakeVectorStore())
+    monkeypatch.setattr("app.main.tagging_service", FakeTaggingService())
+    store = FakeVectorStore()
+    monkeypatch.setattr("app.main.get_vector_store", lambda: store)
 
     response = client.post(
         "/embed",
@@ -112,6 +123,8 @@ def test_embed_stores_vector(monkeypatch):
     assert response.status_code == 201
     body = response.json()
     assert body["innovation_id"] == "wibraap"
+    assert body["tags"] == ["senior-support", "accessibility"]
+    assert store.insert_kwargs["tags"] == ["senior-support", "accessibility"]
     assert body["child_count"] > 1
     assert len(body["child_ids"]) == body["child_count"]
     assert body["dimensions"] == 3

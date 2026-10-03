@@ -18,6 +18,7 @@ class PostgresVectorStore:
         innovation_id: str,
         source: str,
         page: int | None,
+        tags: Sequence[str],
         chunks: Sequence[str],
         embeddings: Sequence[Sequence[float]],
     ) -> tuple[str, list[UUID]]:
@@ -46,6 +47,10 @@ class PostgresVectorStore:
                         raise VectorStoreError(
                             f"innovation does not exist: {innovation_id}"
                         )
+                    cursor.execute(
+                        "UPDATE innovations SET tags = %s, updated_at = now() WHERE id = %s",
+                        (list(tags), innovation_id),
+                    )
                     cursor.execute(
                         "DELETE FROM innovation_chunks WHERE innovation_id = %s",
                         (innovation_id,),
