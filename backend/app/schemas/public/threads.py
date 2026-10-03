@@ -28,8 +28,7 @@ class ThreadCreate(OptionalContact):
 class ReplyCreate(OptionalContact):
     body: str = Field(min_length=1, max_length=5000)
     author_label: str = Field(min_length=1, max_length=100)
-    # the public can only post as practitioners; experts and mentors are set by ROPS
-    kind: ReplyKind = ReplyKind.PRACTITIONER
+    # no kind here: public replies are always practitioner, expert/mentor/admin are set by ROPS
 
 
 class Reply(BaseModel):
@@ -46,7 +45,6 @@ class Thread(BaseModel):
     title: str
     body: str
     author_label: str
-    helpful_count: int
     created_at: datetime
     replies: list[Reply]
 

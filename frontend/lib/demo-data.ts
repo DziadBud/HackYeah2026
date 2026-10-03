@@ -248,7 +248,7 @@ export function findInnovation(id: string): DemoInnovation | undefined {
 }
 
 export function toInnovation(d: DemoInnovation): Innovation {
-  return { id: d.id, title: d.title, summary: d.summary, tags: d.tags, location: d.deployedIn };
+  return { id: d.id, title: d.title, summary: d.summary, tags: d.tags, city: d.deployedIn };
 }
 
 // naive keyword overlap; stands in for the backend's hybrid search when the

@@ -2,6 +2,7 @@ from datetime import date
 
 from app.main import app
 from app.schemas.admin.grant_calls import GrantCallCreate
+from app.schemas.admin.ideas import IdeaStatus
 from app.services.admin import deps as admin_deps
 
 IDEA = {
@@ -43,5 +44,15 @@ def test_grant_application_closed_call_422(client) -> None:
     closed = grant_calls.create(GrantCallCreate(name="Nabór 2025", deadline=date(2025, 12, 1), open=False))
 
     res = client.post(f"/ideas/{idea_id}/grant-application", json={"grant_call_id": closed.id})
+
+    assert res.status_code == 422
+
+
+def test_grant_application_rejected_idea_422(client) -> None:
+    idea_id = client.post("/ideas", json=IDEA).json()["id"]
+    app.dependency_overrides[admin_deps.get_idea_service]().set_status(idea_id, IdeaStatus.REJECTED)
+    open_call = client.get("/grant-calls").json()[0]
+
+    res = client.post(f"/ideas/{idea_id}/grant-application", json={"grant_call_id": open_call["id"]})
 
     assert res.status_code == 422

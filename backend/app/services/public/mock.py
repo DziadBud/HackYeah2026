@@ -200,6 +200,8 @@ class MockIdeaService:
 
     def grant_application(self, idea_id: str, data: GrantApplicationRequest) -> GeneratedDocument:
         idea = self._ideas.get(idea_id)
+        if idea.status == IdeaStatus.REJECTED:
+            raise InvalidRequestError("this idea was rejected")
         call = next((c for c in self._grant_calls.list() if c.id == data.grant_call_id), None)
         if call is None:
             raise NotFoundError(data.grant_call_id)
@@ -264,7 +266,7 @@ class MockThreadService:
         _published(self._innovations, innovation_id)
         return [
             Thread(
-                **{k: v for k, v in t.items() if k not in ("status", "replies")},
+                **{k: v for k, v in t.items() if k not in ("status", "replies", "helpful_count")},
                 replies=[r["reply"] for r in t["replies"] if r["status"] == ModerationStatus.PUBLISHED],
             )
             for t in self._threads.values()
@@ -281,7 +283,13 @@ class MockThreadService:
 
     def reply(self, thread_id: str, data: ReplyCreate) -> Submitted:
         thread = self._published_thread(thread_id)
-        reply = Reply(id=_new_id(), body=data.body, author_label=data.author_label, kind=data.kind, created_at=_now())
+        reply = Reply(
+            id=_new_id(),
+            body=data.body,
+            author_label=data.author_label,
+            kind=ReplyKind.PRACTITIONER,
+            created_at=_now(),
+        )
         thread["replies"].append({"reply": reply, "status": ModerationStatus.PENDING})
         return Submitted(id=reply.id, status=ModerationStatus.PENDING)
 

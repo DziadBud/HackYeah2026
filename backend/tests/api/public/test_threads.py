@@ -1,3 +1,6 @@
+from app.main import app
+from app.services.public import deps
+
 THREAD = {"title": "Pytanie", "body": "Jak to wdrożyć w gminie?", "author_label": "Urzędnik, Bochnia"}
 
 
@@ -27,3 +30,12 @@ def test_unknown_thread_404(client) -> None:
 
 def test_thread_on_draft_innovation_404(client) -> None:
     assert client.post("/innovations/paszport-choroby-rzadkiej/threads", json=THREAD).status_code == 404
+
+
+def test_public_reply_cannot_claim_mentor(client) -> None:
+    body = {"body": "Jestem ekspertem", "author_label": "Ktoś", "kind": "mentor"}
+    reply_id = client.post("/threads/thread-wibraap-1/replies", json=body).json()["id"]
+
+    svc = app.dependency_overrides[deps.get_thread_service]()
+    replies = [r["reply"] for r in svc._threads["thread-wibraap-1"]["replies"]]
+    assert next(r for r in replies if r.id == reply_id).kind == "practitioner"

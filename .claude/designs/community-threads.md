@@ -17,9 +17,8 @@ Non-goals:
 public:  GET  /innovations/{id}/threads          -> published threads + published replies
          POST /innovations/{id}/threads {title, body, author_label, email?}
               -> status pending; admin notified
-         POST /threads/{id}/replies {body, author_label, email?, kind?}
+         POST /threads/{id}/replies {body, author_label, email?}  (always practitioner)
               -> status pending (admin/mentor replies may be published immediately)
-         POST /threads/{id}/helpful              -> helpful_count + 1
 admin:   inbox shows pending threads / replies
          GET  /admin/threads?status=&innovation_id=
          POST /admin/threads/{id}/status {published|hidden}

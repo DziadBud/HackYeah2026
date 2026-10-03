@@ -21,6 +21,7 @@ class MatchService(Protocol):
 
 
 class ProblemReportService(Protocol):
+    # the db implementation must treat hidden reports as not found
     def get(self, problem_report_id: str) -> PublicProblemReport: ...
     def support(self, problem_report_id: str) -> SupportResponse: ...
 
