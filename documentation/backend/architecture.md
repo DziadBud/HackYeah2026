@@ -152,7 +152,7 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 | Inbox | `GET /admin/inbox?since=`: new ideas, new problem reports, critical problem reports, new test signups, pending threads / replies |
 | Ideas | `GET /admin/ideas` (filter `status`), `GET /admin/ideas/{id}`, `POST .../{id}/reply`, `POST .../{id}/status` (`accepted` creates a draft innovation, §2) |
 | Problem reports | `GET /admin/problem-reports` (filters `challenge_area`, `city`), `GET /admin/problem-reports/{id}`, `POST .../{id}/reply`, `POST .../{id}/hide` |
-| Threads | `GET /admin/threads` (filter `status`, `innovation_id`), `POST .../{id}/status` (`published`\|`hidden`), `POST .../replies/{id}/status` |
+| Threads | `GET /admin/threads` (filter `innovation_id`, and `status`, which matches the thread or any of its replies, so `?status=pending` is the moderation queue; each thread carries all its replies), `POST .../{id}/status` (`published`\|`hidden`), `POST .../replies/{id}/status` (same body) |
 | Testing | `GET /admin/test-signups` (filter `innovation_id`, `status`), `POST /admin/test-signups/{id}/status` (`accepted`\|`rejected`\|`completed`) |
 | Grant calls | `GET /admin/grant-calls`, `POST /admin/grant-calls`, `PATCH /admin/grant-calls/{id}` (open/close, form sections) |
 | Generated docs | `GET /admin/generated-documents` (filter `kind`, `innovation_id`, `idea_id`) |

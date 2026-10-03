@@ -39,7 +39,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 - **Where:** `admin_reply` on `problem_reports` and `ideas`; `threads` + `thread_replies` on each innovation ([.claude/designs/community-threads.md](../../.claude/designs/community-threads.md)); the email notifier (§4).
 - **How:**
   - the admin answers an idea (emailed if it has an email), or answers a problem report once on its public page
-  - per-innovation community threads: public create starts as `pending`, ROPS moderates to `published` / `hidden`; flat replies with role `kind` (public replies are always practitioner; expert / mentor / admin set by ROPS)
+  - per-innovation community threads: public create starts as `pending`, ROPS moderates to `published` / `hidden` (`GET /admin/threads?status=pending`, `POST /admin/threads/{id}/status`, `POST /admin/threads/replies/{id}/status`); flat replies with role `kind` (public replies are always practitioner; expert / mentor / admin set by ROPS)
   - mentors are admins (or reply with `kind = mentor`)
   - no public accounts
 

@@ -20,6 +20,7 @@ from app.services.admin.db import (
     DbInnovationStore,
     DbProblemReportAdminService,
     DbReportAdminService,
+    DbThreadAdminService,
 )
 from app.services.admin.innovation_upload import InnovationUploadService
 from app.services.admin.interfaces import (
@@ -29,6 +30,7 @@ from app.services.admin.interfaces import (
     InnovationAdminService,
     ProblemReportAdminService,
     ReportAdminService,
+    ThreadAdminService,
 )
 from app.storage import LocalFileStorage
 
@@ -78,6 +80,10 @@ def get_grant_call_service(db: Session = Depends(get_db)) -> GrantCallAdminServi
 
 def get_report_service(db: Session = Depends(get_db)) -> ReportAdminService:
     return DbReportAdminService(db)
+
+
+def get_thread_service(db: Session = Depends(get_db)) -> ThreadAdminService:
+    return DbThreadAdminService(db)
 
 
 # own short sessions inside the store: the row must be committed before rag embeds it
