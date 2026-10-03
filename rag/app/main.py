@@ -9,6 +9,7 @@ from app.services.vector_store import get_vector_store
 class QueryRequest(BaseModel):
     query: str = Field(min_length=1, max_length=2_000)
     top_k: int = Field(default=3, ge=1, le=3)
+    city: str | None = Field(default=None, min_length=1, max_length=200)
     title: str | None = Field(default=None, max_length=500)
     tags: list[str] = Field(default_factory=list, max_length=20)
 
@@ -23,6 +24,7 @@ class QueryMatch(BaseModel):
     parent_id: str
     child_id: str
     title: str
+    city: str
     summary: str
     image_url: str | None
     parent_url: str | None
@@ -36,6 +38,7 @@ class QueryMatch(BaseModel):
 class EmbedRequest(BaseModel):
     text: str = Field(min_length=1, max_length=100_000)
     title: str = Field(default="", max_length=500)
+    city: str = Field(default="", max_length=200)
     summary: str = Field(default="", max_length=5_000)
     image_url: str | None = Field(default=None, max_length=2_000)
     parent_url: str | None = Field(default=None, max_length=2_000)
@@ -52,6 +55,7 @@ class EmbedResponse(BaseModel):
     child_count: int
     dimensions: int
     title: str
+    city: str
     summary: str
     image_url: str | None
     parent_url: str | None
@@ -76,6 +80,7 @@ def query(request: QueryRequest) -> QueryResponse:
             query=request.query,
             embedding=query_vector,
             top_k=request.top_k,
+            city=request.city,
             title=request.title,
             tags=request.tags,
         )
@@ -97,6 +102,7 @@ def embed(request: EmbedRequest) -> EmbedResponse:
         parent_id, child_ids = get_vector_store().insert_document(
             text=request.text,
             title=request.title,
+            city=request.city,
             summary=request.summary,
             image_url=request.image_url,
             parent_url=request.parent_url,
@@ -117,6 +123,7 @@ def embed(request: EmbedRequest) -> EmbedResponse:
         child_count=len(child_ids),
         dimensions=len(vectors[0]),
         title=request.title,
+        city=request.city,
         summary=request.summary,
         image_url=request.image_url,
         parent_url=request.parent_url,

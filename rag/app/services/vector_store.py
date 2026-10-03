@@ -16,6 +16,7 @@ class PostgresVectorStore:
         *,
         text: str,
         title: str,
+        city: str,
         summary: str,
         image_url: str | None,
         parent_url: str | None,
@@ -45,13 +46,14 @@ class PostgresVectorStore:
                     cursor.execute(
                         """
                         INSERT INTO rag_documents
-                            (text, title, summary, image_url, parent_url, tags, source, page)
-                        VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                            (text, title, city, summary, image_url, parent_url, tags, source, page)
+                        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
                         RETURNING id
                         """,
                         (
                             text,
                             title,
+                            city,
                             summary,
                             image_url,
                             parent_url,
@@ -98,6 +100,7 @@ class PostgresVectorStore:
         query: str,
         embedding: Sequence[float],
         top_k: int,
+        city: str | None,
         title: str | None,
         tags: Sequence[str],
     ) -> list[dict[str, object]]:
@@ -124,6 +127,7 @@ class PostgresVectorStore:
                                 d.id AS parent_id,
                                 c.id AS child_id,
                                 d.title,
+                                d.city,
                                 d.summary,
                                 d.image_url,
                                 d.parent_url,
@@ -147,7 +151,8 @@ class PostgresVectorStore:
                                 END AS tag_score
                             FROM rag_chunks AS c
                             JOIN rag_documents AS d ON d.id = c.parent_id
-                            WHERE (%s IS NULL OR d.title ILIKE ('%%' || %s || '%%'))
+                                                        WHERE (%s IS NULL OR d.city = %s)
+                                                            AND (%s IS NULL OR d.title ILIKE ('%%' || %s || '%%'))
                               AND (
                                   cardinality(%s::text[]) = 0
                                   OR d.tags && %s::text[]
@@ -157,6 +162,7 @@ class PostgresVectorStore:
                             parent_id,
                             child_id,
                             title,
+                            locale,
                             summary,
                             image_url,
                             parent_url,
@@ -170,6 +176,7 @@ class PostgresVectorStore:
                                 parent_id,
                                 child_id,
                                 title,
+                                locale,
                                 summary,
                                 image_url,
                                 parent_url,
@@ -191,6 +198,8 @@ class PostgresVectorStore:
                             query,
                             query,
                             query,
+                            city,
+                            city,
                             title,
                             title,
                             list(tags),
@@ -204,14 +213,15 @@ class PostgresVectorStore:
                             "parent_id": row[0],
                             "child_id": row[1],
                             "title": row[2],
-                            "summary": row[3],
-                            "image_url": row[4],
-                            "parent_url": row[5],
-                            "tags": row[6],
-                            "source": row[7],
-                            "page": row[8],
-                            "text": row[9],
-                            "score": float(row[10]),
+                            "city": row[3],
+                            "summary": row[4],
+                            "image_url": row[5],
+                            "parent_url": row[6],
+                            "tags": row[7],
+                            "source": row[8],
+                            "page": row[9],
+                            "text": row[10],
+                            "score": float(row[11]),
                         }
                         for row in rows
                     ]

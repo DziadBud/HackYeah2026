@@ -38,6 +38,7 @@ class FakeSearchVectorStore(FakeVectorStore):
                 "parent_id": "parent-1",
                 "child_id": "child-1",
                 "title": "Senior support",
+                "city": "Krakow",
                 "summary": "Services for older residents.",
                 "image_url": "https://example.com/senior-support.jpg",
                 "parent_url": "https://example.com/senior-support",
@@ -93,6 +94,7 @@ def test_embed_stores_vector(monkeypatch):
         json={
             "text": "support for seniors " * 20,
             "title": "Senior support",
+            "city": "Krakow",
             "summary": "Services for older residents.",
             "image_url": "https://example.com/senior-support.jpg",
             "parent_url": "https://example.com/senior-support",
@@ -111,6 +113,7 @@ def test_embed_stores_vector(monkeypatch):
     assert len(body["child_ids"]) == body["child_count"]
     assert body["dimensions"] == 3
     assert body["title"] == "Senior support"
+    assert body["city"] == "Krakow"
     assert body["summary"] == "Services for older residents."
     assert body["image_url"] == "https://example.com/senior-support.jpg"
     assert body["parent_url"] == "https://example.com/senior-support"
@@ -128,6 +131,7 @@ def test_query_searches_children_with_title_and_tag_filters(monkeypatch):
         "/query",
         json={
             "query": "support",
+            "city": "Krakow",
             "title": "Senior",
             "tags": ["seniors"],
         },
@@ -139,6 +143,7 @@ def test_query_searches_children_with_title_and_tag_filters(monkeypatch):
             "parent_id": "parent-1",
             "child_id": "child-1",
             "title": "Senior support",
+            "city": "Krakow",
             "summary": "Services for older residents.",
             "image_url": "https://example.com/senior-support.jpg",
             "parent_url": "https://example.com/senior-support",

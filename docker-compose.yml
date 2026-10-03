@@ -14,6 +14,7 @@ services:
       - ./rag/sql/001_rag_chunks.sql:/docker-entrypoint-initdb.d/02-rag_chunks.sql:ro
       - ./rag/sql/002_parent_metadata.sql:/docker-entrypoint-initdb.d/03-parent_metadata.sql:ro
       - ./rag/sql/003_parent_links.sql:/docker-entrypoint-initdb.d/04-parent_links.sql:ro
+      - ./rag/sql/004_localization.sql:/docker-entrypoint-initdb.d/05-localization.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-hackyeah} -d ${POSTGRES_DB:-hackyeah}"]
       interval: 5s
