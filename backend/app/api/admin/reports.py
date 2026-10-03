@@ -3,10 +3,11 @@ from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
 from app.schemas.admin.common import ReportFormat
+from app.schemas.admin.innovations import InnovationStatsRow
 from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
 from app.services.admin.csv_export import rows_to_csv
-from app.services.admin.deps import get_report_service
-from app.services.admin.interfaces import ReportAdminService
+from app.services.admin.deps import get_innovation_service, get_report_service
+from app.services.admin.interfaces import InnovationAdminService, ReportAdminService
 
 router = APIRouter(prefix="/reports", tags=["admin:reports"])
 
@@ -53,3 +54,12 @@ def gaps(
 ) -> list[GapRow] | StreamingResponse:
     rows = svc.gaps()
     return rows if format == ReportFormat.JSON else _csv("gaps", rows, GapRow)
+
+
+@router.get("/innovations", response_model=list[InnovationStatsRow])
+def innovations(
+    format: ReportFormat = ReportFormat.JSON,
+    svc: InnovationAdminService = Depends(get_innovation_service),
+) -> list[InnovationStatsRow] | StreamingResponse:
+    rows = svc.stats_report()
+    return rows if format == ReportFormat.JSON else _csv("innovations", rows, InnovationStatsRow)

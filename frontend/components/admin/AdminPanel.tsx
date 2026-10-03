@@ -1,11 +1,15 @@
 "use client";
 
-import { useEffect, useId, useState } from "react";
-import { ApiError, adminApi, type AdminInnovation, type Idea, type IdeaStatus, type ProblemReport } from "@/lib/api";
+import Link from "next/link";
+import { useId, useState } from "react";
+import { adminApi, type Idea, type IdeaStatus, type ProblemReport } from "@/lib/api";
 import { ADMIN_MOCK, AREA_LABEL, type AdminData } from "@/lib/admin-mock";
 import { Icon } from "@/components/Icon";
+import { card, fmtDate, ghostBtn, h2, primaryBtn, td, th } from "@/components/admin/styles";
+import { useApiOrMock } from "@/components/admin/useApiOrMock";
 
-type Source = "loading" | "api" | "mock";
+// innovations have their own screen (/admin)
+type PanelData = Omit<AdminData, "innovations">;
 
 const IDEA_STATUS: Record<IdeaStatus, string> = {
   new: "Nowy",
@@ -24,35 +28,20 @@ const SECTIONS = [
   { id: "skrzynka", label: "Skrzynka" },
   { id: "zgloszenia", label: "Zgłoszenia problemów" },
   { id: "pomysly", label: "Pomysły" },
-  { id: "innowacje", label: "Innowacje" },
   { id: "raporty", label: "Raporty" },
   { id: "nabory", label: "Nabory" },
 ];
 
-const card = "rounded-xl bg-surface-container-lowest p-space-md shadow-sm hc-edge lg:p-space-lg";
-const h2 = "flex items-center gap-2 text-headline-md font-semibold text-primary";
-const primaryBtn =
-  "flex min-h-12 items-center justify-center gap-space-xs rounded-lg bg-primary px-space-md text-label-lg font-semibold text-on-primary hover:bg-primary-container disabled:opacity-70";
-const ghostBtn =
-  "flex min-h-12 items-center justify-center gap-space-xs rounded-lg bg-surface-container-high px-space-md text-label-lg font-semibold text-primary hover:bg-surface-container-highest hc-edge";
-const th = "border-b-2 border-outline px-3 py-2 text-left text-label-md font-semibold text-primary";
-const td = "border-b border-surface-container-highest px-3 py-2 align-top text-body-md";
-
-function fmtDate(iso: string) {
-  return new Date(iso).toLocaleString("pl-PL", { dateStyle: "medium", timeStyle: "short" });
-}
-
-async function loadFromApi(): Promise<AdminData> {
-  const [problemReports, ideas, innovations, trends, critical, gaps, grantCalls] = await Promise.all([
+async function loadFromApi(): Promise<PanelData> {
+  const [problemReports, ideas, trends, critical, gaps, grantCalls] = await Promise.all([
     adminApi.problemReports(),
     adminApi.ideas(),
-    adminApi.innovations(),
     adminApi.trends(),
     adminApi.critical(),
     adminApi.gaps(),
     adminApi.grantCalls(),
   ]);
-  return { problemReports, ideas, innovations: innovations.items, trends, critical, gaps, grantCalls };
+  return { problemReports, ideas, trends, critical, gaps, grantCalls };
 }
 
 function ReplyForm({ onSend, previous }: { onSend: (msg: string) => Promise<void>; previous?: string | null }) {
@@ -101,30 +90,13 @@ function AreaChip({ area }: { area: ProblemReport["challenge_area"] }) {
 }
 
 export function AdminPanel() {
-  const [source, setSource] = useState<Source>("loading");
-  const [data, setData] = useState<AdminData | null>(null);
-  const [status, setStatus] = useState("");
-
-  useEffect(() => {
-    loadFromApi()
-      .then((d) => {
-        setData(d);
-        setSource("api");
-      })
-      .catch((err: unknown) => {
-        setData(structuredClone(ADMIN_MOCK));
-        setSource("mock");
-        setStatus(
-          err instanceof ApiError && err.status === 401
-            ? "API wymaga logowania (ustaw ADMIN_AUTH_DISABLED=true przy DEBUG=true). Pokazuję lokalne dane testowe."
-            : "Nie udało się połączyć z API. Pokazuję lokalne dane testowe.",
-        );
-      });
-  }, []);
+  const { data, setData, source, notice: status, setNotice: setStatus } = useApiOrMock<PanelData>(loadFromApi, () =>
+    structuredClone(ADMIN_MOCK),
+  );
 
   // in api mode the server answers with the updated row; offline we patch locally
   async function mutate<T extends { id: string }>(
-    key: "problemReports" | "ideas" | "innovations" | "grantCalls",
+    key: "problemReports" | "ideas" | "grantCalls",
     id: string,
     call: () => Promise<T>,
     local: (item: T) => T,
@@ -143,41 +115,39 @@ export function AdminPanel() {
 
   if (!data) {
     return (
-      <div className="py-space-xl">
-        <h1 className="text-headline-lg font-bold text-primary">Panel administratora</h1>
-        <p role="status" className="mt-space-sm text-body-lg text-on-surface-variant">
-          Wczytuję dane…
-        </p>
-      </div>
+      <p role="status" className="py-space-lg text-body-lg text-on-surface-variant">
+        Wczytuję dane…
+      </p>
     );
   }
 
   const newIdeas = data.ideas.filter((i) => i.status === "new");
   const unanswered = data.problemReports.filter((r) => !r.admin_reply);
   const critical = data.problemReports.filter((r) => r.is_critical);
-  const published = data.innovations.filter((i) => i.status === "published");
 
   const stats = [
     { label: "Nowe pomysły", value: newIdeas.length, icon: "lightbulb", href: "#pomysly" },
     { label: "Zgłoszenia bez odpowiedzi", value: unanswered.length, icon: "forum", href: "#zgloszenia" },
     { label: "Zgłoszenia krytyczne", value: critical.length, icon: "report_problem", href: "#zgloszenia" },
-    { label: "Opublikowane innowacje", value: published.length, icon: "verified", href: "#innowacje" },
+    { label: "Krytyczne problemy w raporcie", value: data.critical.length, icon: "psychology", href: "#raporty" },
   ];
 
   return (
-    <div className="flex flex-col gap-space-lg py-space-md">
-      <header className={`${card} flex flex-col gap-space-sm`}>
-        <p className="flex flex-wrap items-center gap-2">
-          <span className="rounded bg-secondary-fixed px-2 py-0.5 text-caption font-bold text-on-secondary-fixed">tylko dla ROPS</span>
-          <span className="rounded bg-tertiary-fixed px-2 py-0.5 text-caption font-semibold text-on-tertiary-fixed">
-            {source === "api" ? "Dane z API (mocki backendu)" : "Tryb offline: lokalne dane testowe"}
-          </span>
-        </p>
-        <h1 className="text-headline-lg-mobile font-bold tracking-tight text-primary sm:text-headline-lg">Panel administratora</h1>
+    <div className="flex flex-col gap-space-lg">
+      <div className={`${card} flex flex-col gap-space-sm`}>
         <p className="text-body-lg text-on-surface-variant">
-          Zgłoszenia mieszkańców, pomysły, baza innowacji i raporty trendów. Logowanie jest wyłączone na czas demonstracji.
+          Zgłoszenia mieszkańców, pomysły, raporty trendów i nabory.{" "}
+          <Link href="/admin" className="underline hover:text-primary">
+            Statystyki innowacji
+          </Link>{" "}
+          są na osobnej stronie.
         </p>
-        <nav aria-label="Sekcje panelu">
+        {source === "mock" && (
+          <span className="self-start rounded bg-tertiary-fixed px-2 py-0.5 text-caption font-semibold text-on-tertiary-fixed">
+            Tryb offline: lokalne dane testowe
+          </span>
+        )}
+        <nav aria-label="Sekcje strony">
           <ul className="flex flex-wrap gap-space-xs">
             {SECTIONS.map((s) => (
               <li key={s.id}>
@@ -191,7 +161,7 @@ export function AdminPanel() {
         <p role="status" className="min-h-6 text-body-md font-semibold text-primary">
           {status}
         </p>
-      </header>
+      </div>
 
       <section id="skrzynka" aria-labelledby="skrzynka-h" className={card}>
         <h2 id="skrzynka-h" className={h2}>
@@ -354,60 +324,6 @@ export function AdminPanel() {
             </li>
           ))}
         </ul>
-      </section>
-
-      <section id="innowacje" aria-labelledby="innowacje-h" className={card}>
-        <h2 id="innowacje-h" className={h2}>
-          <Icon name="verified" size={28} />
-          Baza innowacji
-        </h2>
-        <div className="mt-space-md overflow-x-auto" tabIndex={0} role="region" aria-labelledby="innowacje-caption">
-          <table className="w-full min-w-[640px] border-collapse">
-            <caption id="innowacje-caption" className="pb-2 text-left text-body-md text-on-surface-variant">
-              Innowacje w bazie ROPS. Tylko opublikowane pojawiają się w czacie i bibliotece.
-            </caption>
-            <thead>
-              <tr>
-                <th scope="col" className={th}>Nazwa</th>
-                <th scope="col" className={th}>Obszar</th>
-                <th scope="col" className={th}>Gotowość</th>
-                <th scope="col" className={th}>Status</th>
-                <th scope="col" className={th}>Akcja</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.innovations.map((i) => (
-                <tr key={i.id}>
-                  <th scope="row" className={`${td} text-left font-semibold text-primary`}>
-                    {i.title}
-                    <span className="block font-normal text-on-surface-variant">{i.summary}</span>
-                  </th>
-                  <td className={td}>{i.challenge_areas.map((a) => AREA_LABEL[a]).join(", ")}</td>
-                  <td className={td}>{i.readiness}</td>
-                  <td className={td}>{i.status === "published" ? "Opublikowana" : "Szkic"}</td>
-                  <td className={td}>
-                    <button
-                      type="button"
-                      className={ghostBtn}
-                      onClick={() =>
-                        mutate<AdminInnovation>(
-                          "innovations",
-                          i.id,
-                          () => adminApi.setInnovationPublished(i.id, i.status !== "published"),
-                          (x) => ({ ...x, status: x.status === "published" ? "draft" : "published" }),
-                          i.status === "published" ? `Wycofano publikację: ${i.title}.` : `Opublikowano: ${i.title}.`,
-                        )
-                      }
-                    >
-                      {i.status === "published" ? "Wycofaj" : "Opublikuj"}
-                      <span className="sr-only">: {i.title}</span>
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
       </section>
 
       <section id="raporty" aria-labelledby="raporty-h" className={`${card} flex flex-col gap-space-lg`}>

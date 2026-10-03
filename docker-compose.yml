@@ -10,23 +10,9 @@ services:
       - "${POSTGRES_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      # file mounts only (directory+files into the same path breaks on Docker Desktop)
-      - ./docker/postgres/init/01-pgvector.sql:/docker-entrypoint-initdb.d/01-pgvector.sql:ro
-      - ./rag/sql/001_rag_chunks.sql:/docker-entrypoint-initdb.d/02-rag_chunks.sql:ro
-      - ./rag/sql/002_parent_metadata.sql:/docker-entrypoint-initdb.d/03-parent_metadata.sql:ro
-      - ./rag/sql/003_parent_links.sql:/docker-entrypoint-initdb.d/04-parent_links.sql:ro
-      - ./rag/sql/004_localization.sql:/docker-entrypoint-initdb.d/05-localization.sql:ro
-      - ./rag/sql/005_city.sql:/docker-entrypoint-initdb.d/06-city.sql:ro
-      - ./rag/sql/006_innovations.sql:/docker-entrypoint-initdb.d/07-innovations.sql:ro
-      - ./backend/sql/001_innovations_extend.sql:/docker-entrypoint-initdb.d/08-innovations_extend.sql:ro
-      - ./backend/sql/002_problem_reports.sql:/docker-entrypoint-initdb.d/09-problem_reports.sql:ro
-      - ./backend/sql/003_ideas.sql:/docker-entrypoint-initdb.d/10-ideas.sql:ro
-      - ./backend/sql/004_grant_calls.sql:/docker-entrypoint-initdb.d/11-grant_calls.sql:ro
-      - ./backend/sql/005_test_signups.sql:/docker-entrypoint-initdb.d/12-test_signups.sql:ro
-      - ./backend/sql/006_feedback.sql:/docker-entrypoint-initdb.d/13-feedback.sql:ro
-      - ./backend/sql/007_threads.sql:/docker-entrypoint-initdb.d/14-threads.sql:ro
-      - ./backend/sql/008_thread_replies.sql:/docker-entrypoint-initdb.d/15-thread_replies.sql:ro
-      - ./backend/sql/009_generated_documents.sql:/docker-entrypoint-initdb.d/16-generated_documents.sql:ro
+      # Single directory mount only — file mounts into the same path break on Docker Desktop (RO fs).
+      # Sources live in rag/sql/; copies for init order are under docker/postgres/init/.
+      - ./docker/postgres/init:/docker-entrypoint-initdb.d:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-hackyeah} -d ${POSTGRES_DB:-hackyeah}"]
       interval: 5s
@@ -63,12 +49,8 @@ services:
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
       GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
       RABBITMQ_URL: amqp://${RABBITMQ_USER:-hackyeah}:${RABBITMQ_PASSWORD:-hackyeah}@rabbitmq:5672/
-      UPLOAD_DIR: /data/uploads
     ports:
       - "${API_PORT:-8000}:8000"
-    volumes:
-      # the rag consumer must mount the same volume at /data/uploads to read the pdfs
-      - uploads:/data/uploads
     depends_on:
       db:
         condition: service_healthy
@@ -107,4 +89,3 @@ services:
 volumes:
   postgres_data:
   rabbitmq_data:
-  uploads:

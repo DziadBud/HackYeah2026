@@ -41,9 +41,9 @@ flowchart LR
 
 | | rag service (`rag/`) | match-api (`backend/`) |
 |---|---|---|
-| Purpose | embed one innovation's text (`POST /embed`, `POST /embed/pdf`); retrieval (`POST /query`) | `/match` (calls rag, LLM explanation, optional test signup), problem reports, ideas, threads, Middleman / grant drafts, admin (incl. PDF upload that triggers embedding) |
+| Purpose | embed one innovation's text (`POST /embed`, `POST /embed/pdf`); retrieval (`POST /query`) | `/match` (calls rag, LLM explanation, optional test signup), problem reports, ideas, admin (incl. PDF upload that triggers embedding) |
 | Exposure | internal compose network only (no auth) | public + `/admin/*` |
-| Writes | `innovation_chunks` | `innovations` rows (admin CRUD), `problem_reports`, `ideas`, `grant_calls`, `test_signups`, `feedback`, `threads`, `thread_replies`, `generated_documents` |
+| Writes | `innovation_chunks` | `innovations` rows (admin CRUD), `problem_reports`, `ideas`, `grant_calls`, `test_signups`, `feedback` |
 | Down means | `/match` returns 503 (problem report still stored); uploaded innovations stay draft until re-uploaded | site down |
 
 How rag behaves, and what match-api does about it:
@@ -124,10 +124,9 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 
 | Event | Recipient |
 |---|---|
-| new idea, new problem report, new pending thread | admin (`ADMIN_NOTIFY_EMAIL`) |
+| new idea, new problem report | admin (`ADMIN_NOTIFY_EMAIL`) |
 | `admin_reply` set, idea status changed | the item's `email` |
-| test signup accepted / rejected / completed | the signup's `email` |
-| thread / reply published | the author's `email` (if set) |
+| test signup accepted / rejected | the signup's `email` |
 
 - **Admin side:** per-admin accounts (argon2id hashes) in env (`ADMIN_ACCOUNTS`), server-side sessions in memory, `HttpOnly; Secure; SameSite=Strict` cookie; see [.claude/designs/admin-auth.md](../../.claude/designs/admin-auth.md).
   - `require_admin` guards `/admin/*`.
@@ -140,13 +139,11 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 |---|---|
 | Auth | `POST /admin/auth/login` (public), `POST /admin/auth/logout`, `GET /admin/auth/me` |
 | Innovations | `GET /admin/innovations` (filters `status`, `indexed`, `q`, `limit`, `offset`), `POST /admin/innovations` (multipart metadata + PDF, 202, embeds in the background), `GET /admin/innovations/{id}`, `PATCH /admin/innovations/{id}` (metadata only), `POST .../{id}/pdf` (upload or replace the PDF, 202), `POST .../{id}/publish`, `POST .../{id}/unpublish`, `GET .../{id}/feedback` (rating avg/count, signups) |
-| Inbox | `GET /admin/inbox?since=`: new ideas, new problem reports, critical problem reports, new test signups, pending threads / replies |
+| Inbox | `GET /admin/inbox?since=`: new ideas, new problem reports, critical problem reports, new test signups |
 | Ideas | `GET /admin/ideas` (filter `status`), `GET /admin/ideas/{id}`, `POST .../{id}/reply`, `POST .../{id}/status` (`accepted` creates a draft innovation, §2) |
-| Problem reports | `GET /admin/problem-reports` (filters `challenge_area`, `city`), `GET /admin/problem-reports/{id}`, `POST .../{id}/reply`, `POST .../{id}/hide` |
-| Threads | `GET /admin/threads` (filter `status`, `innovation_id`), `POST .../{id}/status` (`published`\|`hidden`), `POST .../replies/{id}/status` |
-| Testing | `GET /admin/test-signups` (filter `innovation_id`, `status`), `POST /admin/test-signups/{id}/status` (`accepted`\|`rejected`\|`completed`) |
+| Problem reports | `GET /admin/problem-reports` (filters `challenge_area`, `city`), `GET /admin/problem-reports/{id}`, `POST .../{id}/reply` |
+| Testing | `GET /admin/test-signups` (filter `innovation_id`, `status`), `POST /admin/test-signups/{id}/status` |
 | Grant calls | `GET /admin/grant-calls`, `POST /admin/grant-calls`, `PATCH /admin/grant-calls/{id}` (open/close, form sections) |
-| Generated docs | `GET /admin/generated-documents` (filter `kind`, `innovation_id`, `idea_id`) |
 | Reports | `GET /admin/reports/trends`, `/critical`, `/locations`, `/gaps`, each with `?format=json\|csv` |
 
 ### Reports are queries, not jobs
@@ -160,52 +157,26 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 
 CSV export is a streaming response. Cities with fewer than 5 problem reports are shown as "too few to display".
 
-### Public endpoints (no auth; per-IP rate limit on writes)
-
-| Feature | Endpoints |
-|---|---|
-| Matching | `POST /match?test_signup=` `{text, city, email?, consent}` → `{problem_report_id, innovations, similar_reports, test_signup_ids}`; `test_signup=true` needs an email (422 otherwise) |
-| Problem reports | `GET /problem-reports/{id}` (public page with `admin_reply`), `POST /problem-reports/{id}/support` ("mnie też") |
-| Ideas | `POST /ideas` `{summary, essence, target_group, stage, social_canvas?, email?, consent}`, `POST /ideas/{id}/grant-application {grant_call_id}` (open calls only, stored in `generated_documents`) |
-| Library | `GET /innovations` (published only; filters `challenge_area`, `q`, `limit`, `offset`), `GET /innovations/{id}` (with `rating_avg`, `rating_count`), `POST /innovations/{id}/feedback {stars, comment, test_signup_id?}` |
-| Threads | `GET /innovations/{id}/threads` (published threads + published replies), `POST /innovations/{id}/threads` (202, `pending`), `POST /threads/{id}/replies` (202, `pending`) |
-| Middleman | `POST /middleman {innovation_id, institution_type, needs, email?, consent}` (the response is the stored document) |
-| Grant calls | `GET /grant-calls` (open only) |
-
-The public API is mocked for now (`backend/app/services/public/mock.py`): it reads and writes the admin mocks, so public actions show up in the admin panel, and word overlap stands in for rag and the LLM until the db layer and the rag client land.
-
 ## 6. Data model
 
-Two rag tables (used as merged), plus flat match-api tables. match-api also extends `innovations` with extra columns that rag ignores at query time (rag still filters on `tags`, `city`, `status`).
+Two rag tables, used as merged, plus five flat match-api tables.
 
 ```mermaid
 erDiagram
     INNOVATIONS ||--o{ INNOVATION_CHUNKS : "indexed as"
     INNOVATIONS ||--o{ TEST_SIGNUPS : "tested by"
     INNOVATIONS ||--o{ FEEDBACK : rated
-    INNOVATIONS ||--o{ THREADS : "discussed in"
-    INNOVATIONS ||--o{ GENERATED_DOCUMENTS : "adapted as"
     PROBLEM_REPORTS ||--o{ TEST_SIGNUPS : "volunteers from"
-    TEST_SIGNUPS |o--o{ FEEDBACK : "may leave"
     IDEAS |o--o| INNOVATIONS : "becomes"
-    IDEAS ||--o{ GENERATED_DOCUMENTS : "grant draft from"
-    GRANT_CALLS ||--o{ GENERATED_DOCUMENTS : "filled for"
-    THREADS ||--o{ THREAD_REPLIES : "has"
     INNOVATIONS {
         text id PK "rag table"
         text title
         text summary
-        text problem "what need it solves"
-        text innovator
-        text[] challenge_areas "Mapa areas"
-        text[] target_group
-        text readiness "concept|prototype|pilot|running"
-        text cost_level "low|medium|high"
-        text[] tags "type:* + area:* mirrors"
+        text[] tags "type:* + challenge areas"
         text city
         text image_url
         text page_url
-        text video_url
+        text parent_url
         text status "draft|published"
         timestamptz created_at
         timestamptz updated_at
@@ -229,9 +200,7 @@ erDiagram
         text[] matched_innovation_ids
         text email "null"
         text admin_reply "null"
-        bool hidden "moderation"
         timestamptz created_at
-        timestamptz updated_at
     }
     IDEAS {
         uuid id PK
@@ -245,7 +214,6 @@ erDiagram
         text email "null"
         text admin_reply "null"
         timestamptz created_at
-        timestamptz updated_at
     }
     GRANT_CALLS {
         uuid id PK
@@ -259,63 +227,23 @@ erDiagram
         text innovation_id FK
         uuid problem_report_id FK "the match it came from"
         text email
-        text status "applied|accepted|rejected|completed"
+        text status "applied|accepted|rejected"
         timestamptz created_at
-        timestamptz updated_at
     }
     FEEDBACK {
         uuid id PK
         text innovation_id FK
-        uuid test_signup_id FK "null if open rating"
         int stars "1..5"
         text comment
         timestamptz created_at
     }
-    THREADS {
-        uuid id PK
-        text innovation_id FK
-        text title
-        text body
-        text author_label
-        text email "null"
-        text status "pending|published|hidden"
-        int helpful_count
-        timestamptz created_at
-        timestamptz updated_at
-    }
-    THREAD_REPLIES {
-        uuid id PK
-        uuid thread_id FK
-        text body
-        text author_label
-        text email "null"
-        text kind "practitioner|expert|mentor|admin"
-        text status "pending|published|hidden"
-        timestamptz created_at
-    }
-    GENERATED_DOCUMENTS {
-        uuid id PK
-        text kind "middleman|grant_application"
-        text innovation_id FK "null"
-        uuid idea_id FK "null"
-        uuid grant_call_id FK "null"
-        jsonb input
-        text output
-        text email "null"
-        timestamptz created_at
-    }
 ```
 
-- **Innovations** keep the rag columns and add match-api fields used by the library card, Middleman and LLM explanations: `problem`, `innovator`, `challenge_areas`, `target_group`, `readiness`, `cost_level`, `video_url`. Films still link through `page_url` / `video_url`. Dropped: unused `parent_url` (rag aliases `page_url` as `parent_url` in responses only).
-- **Tags:** every row carries `type:innovation` or `type:report` (ROPS reports and Mapa Wyzwań PDFs), so reports never show up in `/match`. Challenge areas are also mirrored as `area:*` tags for rag filters; canonical values live in `challenge_areas`.
+- **Innovation fields** are only what rag's table has. Challenge areas go in `tags`, films are linked through `page_url`.
+- **Tags:** every row carries `type:innovation` or `type:report` (ROPS reports and Mapa Wyzwań PDFs), so reports never show up in `/match`.
 - **Taxonomy:** the 8 Mapa challenge areas (Rodzina i piecza zastepcza, Bezdomnosc, Niepelnosprawnosc, Ubostwo, Integracja cudzoziemcow, Zdrowie, Zdrowie psychiczne, Seniorzy).
-- **city** = gmina, picked from a fixed list (seed/JSON). Free-text city spellings are rejected on write.
-- **Criticality** is not stored: reports compute it on read (problem reports × distinct cities × 7d growth).
-- **Threads** are per-innovation community discussions (R5). No public accounts: `author_label` + optional `email`. Flat replies only (no nested reply trees). `helpful_count` stays in the table, but the public "pomocne" endpoint is deferred, so nothing increments it yet. Public replies are always `practitioner`; `expert` / `mentor` / `admin` are set by ROPS. Public lists show `published` only; `pending` waits for ROPS moderation.
-- **Generated documents** store Middleman service cards and grant-application drafts so the user and admin can reopen them. They are not re-submitted into an external grant DB (that stays deferred).
-- **Naming:** always `city` (not `location`), always `stars` on feedback.
-
-Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `POST /threads/{id}/replies`, `POST /middleman`, grant generator on an idea (both persist a `generated_documents` row).
+- **city** = gmina, picked from a fixed list.
+- **Generated content is not stored:** the grant application generator and Middleman return LLM output.
 
 ## 7. Failure modes
 
@@ -328,40 +256,37 @@ Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `P
 | spam on public routes | per-IP rate limit, input length caps |
 | prompt injection | user text treated as data, explanations limited to retrieved rows |
 | SMTP unset or down | email skipped; the admin still sees the inbox, the reply is on the public page |
-| "mnie też" or ratings sent many times | inflated `support_count` (feeds criticality) and `rating_avg`; the per-IP rate limit on public writes is a blocker before a live launch |
-| spam threads or replies | per-IP rate limit; default `pending` until admin publishes |
+| "mnie też" pressed many times | inflated count, accepted (browser remembers the click) |
 | Postgres down | everything down; accepted for MVP |
 
 ## 8. Deferred (add only when needed)
 
 | Idea | Add when |
 |---|---|
-| contacts table, profile pages, nested reply trees | flat threads + one `admin_reply` column are not enough |
+| contacts table, profile/reply links, message threads | one reply column is not enough |
 | outbox, worker, webhooks to the grant DB | real integration is needed |
 | admin accounts and sessions in Postgres | more than one match-api replica |
 | test rounds, verified tester reports | ROPS runs real testing rounds |
-| submitting grant applications into an external system | applications leave the platform |
+| stored grant applications | applications are submitted through the platform |
 | report snapshots / materialized views | report queries get slow |
-| per-user likes (instead of counters) | anonymous inflation becomes a real problem |
 
 ## 9. Layout and build order
 
 ```
 backend/             # match-api
   app/               # api/*.py, api/admin/*.py, schemas/, services/ (interface + mock first, db next), rag client
-  sql/               # match-api tables + innovations ALTER, mounted into initdb after rag's
+  sql/               # one schema file for the 5 tables, mounted into initdb after rag's
 rag/                 # used as merged
 docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit
 ```
 
-1. Backend schema file + compose (one `DATABASE_URL`, `RAG_URL`, mailpit): match-api tables + `innovations` column extensions.
-2. Admin innovations on rag's table: PDF upload + background `/embed/pdf` + auto-publish; idea accept creates a draft innovation; seed the 8 samples (incl. `problem`, `target_group`, …).
+1. Backend schema file + compose (one `DATABASE_URL`, `RAG_URL`, mailpit).
+2. Admin innovations on rag's table: PDF upload + background `/embed/pdf` + auto-publish; idea accept creates a draft innovation; seed the 8 samples.
 3. `/match` calling rag, LLM explanation; the 8 sample queries pass.
-4. Problem reports, support, similar reports; admin problem reports + reply + hide.
+4. Problem reports, support, similar reports; admin problem reports + reply.
 5. Ideas + admin ideas, inbox, notifier.
-6. Threads + replies (public write, admin moderate); wire innovation detail page off the API.
-7. Reports (SQL) + CSV.
-8. `test_signup` on `/match`, feedback (optional `test_signup_id`), grant calls + generator, Middleman — both LLM outputs stored in `generated_documents`.
+6. Reports (SQL) + CSV.
+7. `test_signup` on `/match`, feedback, grant calls + generator, Middleman.
 
 ## 10. Verification
 
@@ -372,29 +297,25 @@ docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit
   - draft innovations and `type:report` rows are never returned
   - with rag stopped, `/match` returns 503 and the problem report is stored
   - every `/admin/*` route returns 401 without a session (parametrised test)
-  - pending threads stay invisible on the public innovation page until published
 
 ## 11. Open questions
 
 1. Can we scrape the Biblioteka Innowacji, or do we stay on sample data plus hand-curated entries?
 2. The ROPS PDFs (Mapa Wyzwan, Canvas, reports) need downloading by hand into the repo.
 3. Things for the rag owner (rag stays as merged):
-   - `all-MiniLM-L6-v2` is English-only and the content is Polish (a 384-dim multilingual MiniLM is a drop-in without changing `vector(384)`)
+   - `all-MiniLM-L6-v2` is English-only and the content is Polish
    - the title/tag boost only fires when the whole query is a substring
-   - a null `city` makes `/query` fail with 500 — match-api always writes `city` (`''` when unknown)
+   - a null `city` makes `/query` fail with 500
 
 ## Changes
 
 1. Admin auth: per-admin accounts + server-side session cookie instead of a shared JWT.
 2. IP logic removed; an optional email is stored on the item for notifications.
 3. The rag service owns chunking, embedding and retrieval; `/match` calls it over HTTP, rag down gives 503 with the problem report kept.
-4. Data model: merged rag tables + match-api tables (`problem_reports`, `ideas`, `grant_calls`, `test_signups`, `feedback`, `threads`, `thread_replies`, `generated_documents`):
-   - the email and `admin_reply` live on the item; problem reports also have `hidden`
-   - "mnie też" is a counter; thread "pomocne" is deferred
-   - innovations keep rag columns and add `problem`, `innovator`, `challenge_areas`, `target_group`, `readiness`, `cost_level`, `video_url`; challenge areas are mirrored into `area:*` tags for rag
-   - `location` is renamed to `city`; cities come from a fixed list
-   - criticality is computed on read, not stored
-   - Middleman and grant drafts are stored in `generated_documents`
-   - community threads are first-class (pending moderation, flat replies, role `kind`)
-   - contacts, nested reply trees, test rounds, per-item tokens and index jobs stay deferred
+4. Data model cut to the merged rag tables + five flat match-api tables (`problem_reports`, `ideas`, `grant_calls`, `test_signups`, `feedback`):
+   - the email and `admin_reply` live on the item
+   - "mnie też" is a `support_count`
+   - innovations use only rag's columns; created from an admin PDF (or an accepted idea) and published once embedded
+   - `location` is renamed to `city`
+   - contacts, interests, test rounds, per-item tokens and index jobs are dropped
 5. RabbitMQ added to docker compose (`rabbitmq`, `RABBITMQ_URL` passed to the api); no publisher in match-api yet.

@@ -31,9 +31,9 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 ## R4 Tester innowacji (S)
 - **Where:** `POST /match?test_signup=true`, `test_signups`, `feedback` ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)).
 - **How:**
-  - testing is part of matching: with `?test_signup=true` and an email, the user volunteers to test the innovations matched for their problem (one `test_signups` row each, linked to the problem report); the admin accepts, rejects or marks `completed`, and the applicant is emailed
-  - ratings and comments go to `feedback` (per-IP rate limited); improvement proposals are comments; optional `test_signup_id` marks feedback from a real tester
-  - the admin sees the rating average, count and signups per innovation
+  - testing is part of matching: with `?test_signup=true` and an email, the user volunteers to test the innovations matched for their problem (one `test_signups` row each, linked to the problem report); the admin accepts or rejects, and the applicant is emailed
+  - ratings and comments go to `feedback` (per-IP rate limited); improvement proposals are comments
+  - the admin sees the rating average, count, star distribution, comments and signups by status per innovation (`GET /admin/innovations/{id}/stats`)
 
 ## R5 Platforma komunikacji (S)
 - **Where:** `admin_reply` on `problem_reports` and `ideas`; `threads` + `thread_replies` on each innovation ([.claude/designs/community-threads.md](../../.claude/designs/community-threads.md)); the email notifier (§4).
@@ -47,9 +47,10 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 - **Where:** `/admin/*` behind the admin session (§4, §5).
 - **How:**
   - login
-  - innovation create from a PDF (file saved, draft row, `innovation.embed_requested` on RabbitMQ; rag embeds and publishes it), metadata edit (incl. `problem`, `target_group`, `challenge_areas`, …), PDF re-upload, publish/unpublish, feedback counts
-  - inbox: new ideas, problem reports, critical problem reports, signups, pending threads / replies
-  - replies, idea status, test signup status, thread moderation, grant call open/close, generated-document list, reports with CSV
+  - innovation create from a PDF (embedded by rag in a background task, published once indexed), metadata edit, PDF re-upload, publish/unpublish, feedback counts
+  - innovation list with stats per innovation: matches (total, 7d trend, by week, area and city), people reached, testers, ratings, matched problems (`/admin/reports/innovations`, `/admin/innovations/{id}/stats`)
+  - inbox: new ideas, problem reports, critical problem reports, signups
+  - replies, idea status, test signup status, grant call open/close, reports with CSV
 
 ## R7 Middleman innowacji (S)
 - **Where:** `POST /middleman` (match-api), `generated_documents` (`kind = middleman`).
@@ -111,10 +112,10 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 | Req | MVP depth |
 |---|---|
 | R1 | full |
-| R2 | library, SQL reports; ask-report deferred until report PDFs are embedded |
-| R3 | idea card + Canvas answers; generator for one fictional grant call (stored) |
-| R4, R5, R7 | thin, working end to end (threads moderated; Middleman stored) |
-| R6 | CRUD, inbox, replies, thread moderation, reports |
+| R2 | library, ask-report, SQL reports |
+| R3 | idea card + Canvas answers; generator for one fictional grant call |
+| R4, R5, R7 | thin, working end to end |
+| R6 | CRUD, inbox, replies, reports, per-innovation stats |
 | R8 | needs frontend work |
 | R9-R12 | by design; inbox + optional email notifier |
 | R13, R14 | regression suite; support + critical report |
