@@ -22,7 +22,7 @@ def login(
     svc: AdminAuthService = Depends(get_auth_service),
 ) -> None:
     try:
-        token = svc.login(body.email, body.password)
+        token = svc.login(body.username, body.password)
     except InvalidCredentialsError:
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, "invalid credentials") from None
     except TooManyAttemptsError:
@@ -45,4 +45,4 @@ def logout(
 
 @router.get("/me", response_model=AdminMe)
 def me(admin: AdminPrincipal = Depends(require_admin)) -> AdminMe:
-    return AdminMe(id=admin.id, email=admin.email)
+    return AdminMe(id=admin.id, username=admin.username)

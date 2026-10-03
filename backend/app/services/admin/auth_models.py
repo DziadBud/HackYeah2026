@@ -5,7 +5,7 @@ from datetime import datetime
 @dataclass(frozen=True)
 class AdminAccount:
     id: str
-    email: str
+    username: str
     password_hash: str
     is_active: bool = True
 
@@ -23,4 +23,4 @@ class AdminSession:
 @dataclass(frozen=True)
 class AdminPrincipal:
     id: str
-    email: str
+    username: str

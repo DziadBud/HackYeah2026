@@ -5,7 +5,7 @@ from fastapi.routing import APIRoute
 
 from app.config import settings
 from app.main import app
-from tests.api.admin.conftest import ADMIN_EMAIL, ADMIN_PASSWORD
+from tests.api.admin.conftest import ADMIN_USERNAME, ADMIN_PASSWORD
 
 LOGIN = "/admin/auth/login"
 PUBLIC = {LOGIN, "/admin/auth/logout"}
@@ -38,7 +38,7 @@ def test_bearer_header_no_longer_accepted(client) -> None:
 
 
 def test_login_sets_hardened_cookie(client) -> None:
-    res = client.post(LOGIN, json={"email": ADMIN_EMAIL, "password": ADMIN_PASSWORD})
+    res = client.post(LOGIN, json={"username": ADMIN_USERNAME, "password": ADMIN_PASSWORD})
     assert res.status_code == 204
     cookie = res.headers["set-cookie"].lower()
     assert "admin_session=" in cookie
@@ -49,11 +49,11 @@ def test_login_sets_hardened_cookie(client) -> None:
 @pytest.mark.parametrize(
     "body,status",
     [
-        ({"email": ADMIN_EMAIL, "password": "wrong"}, 401),
-        ({"email": "nobody@rops.test", "password": ADMIN_PASSWORD}, 401),
-        ({"email": ADMIN_EMAIL}, 422),
+        ({"username": ADMIN_USERNAME, "password": "wrong"}, 401),
+        ({"username": "nobody", "password": ADMIN_PASSWORD}, 401),
+        ({"username": ADMIN_USERNAME}, 422),
     ],
-    ids=["#1 - FAIL - wrong password", "#2 - FAIL - unknown email", "#3 - FAIL - no password"],
+    ids=["#1 - FAIL - wrong password", "#2 - FAIL - unknown username", "#3 - FAIL - no password"],
 )
 def test_login_failures(client, body, status) -> None:
     assert client.post(LOGIN, json=body).status_code == status
@@ -61,13 +61,13 @@ def test_login_failures(client, body, status) -> None:
 
 def test_login_rate_limited(client) -> None:
     for _ in range(5):
-        client.post(LOGIN, json={"email": ADMIN_EMAIL, "password": "wrong"})
-    res = client.post(LOGIN, json={"email": ADMIN_EMAIL, "password": ADMIN_PASSWORD})
+        client.post(LOGIN, json={"username": ADMIN_USERNAME, "password": "wrong"})
+    res = client.post(LOGIN, json={"username": ADMIN_USERNAME, "password": ADMIN_PASSWORD})
     assert res.status_code == 429
 
 
 def test_me_and_logout(client, auth) -> None:
-    assert client.get("/admin/auth/me").json() == {"id": "admin-1", "email": ADMIN_EMAIL}
+    assert client.get("/admin/auth/me").json() == {"id": "admin-1", "username": ADMIN_USERNAME}
     token = client.cookies["admin_session"]
     assert client.post("/admin/auth/logout").status_code == 204
     # the old token must be dead server-side, not just removed from the browser
@@ -101,7 +101,7 @@ def test_demo_mode_skips_login(client, monkeypatch) -> None:
     monkeypatch.setattr(settings, "debug", True)
     monkeypatch.setattr(settings, "admin_auth_disabled", True)
     assert client.get("/admin/inbox").status_code == 200
-    assert client.get("/admin/auth/me").json()["email"] == "demo@rops.test"
+    assert client.get("/admin/auth/me").json()["username"] == "demo"
 
 
 def test_demo_flag_ignored_without_debug(client, monkeypatch) -> None:

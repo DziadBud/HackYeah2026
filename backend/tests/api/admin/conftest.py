@@ -9,7 +9,7 @@ from app.services.admin.auth import AdminAuthService, hash_password
 from app.services.admin.auth_models import AdminAccount
 from app.services.admin.auth_store import InMemoryAdminAuthStore
 
-ADMIN_EMAIL = "admin@rops.test"
+ADMIN_USERNAME = "admin"
 ADMIN_PASSWORD = "correct horse battery"
 
 
@@ -21,7 +21,7 @@ def admin_password_hash() -> str:
 
 def make_auth_service(password_hash: str, **overrides) -> AdminAuthService:
     store = InMemoryAdminAuthStore(
-        [AdminAccount(id="admin-1", email=ADMIN_EMAIL, password_hash=password_hash)]
+        [AdminAccount(id="admin-1", username=ADMIN_USERNAME, password_hash=password_hash)]
     )
     params = {
         "session_ttl": timedelta(hours=8),
@@ -41,6 +41,7 @@ def fresh_services(admin_password_hash):
     problem_reports = mock.MockProblemReportAdminService()
     inbox = mock.MockInboxAdminService(ideas, problem_reports)
     grant_calls = mock.MockGrantCallAdminService()
+    reports = mock.MockReportAdminService()
     app.dependency_overrides = {
         deps.get_auth_service: lambda: auth,
         deps.get_innovation_service: lambda: innovations,
@@ -48,6 +49,7 @@ def fresh_services(admin_password_hash):
         deps.get_problem_report_service: lambda: problem_reports,
         deps.get_inbox_service: lambda: inbox,
         deps.get_grant_call_service: lambda: grant_calls,
+        deps.get_report_service: lambda: reports,
     }
     yield
     app.dependency_overrides = {}
@@ -61,6 +63,6 @@ def client() -> TestClient:
 @pytest.fixture
 def auth(client) -> dict[str, str]:
     # logs `client` in; the session cookie lives in its cookie jar, so no headers are needed
-    res = client.post("/admin/auth/login", json={"email": ADMIN_EMAIL, "password": ADMIN_PASSWORD})
+    res = client.post("/admin/auth/login", json={"username": ADMIN_USERNAME, "password": ADMIN_PASSWORD})
     assert res.status_code == 204
     return {}

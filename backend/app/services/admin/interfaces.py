@@ -9,6 +9,8 @@ from app.schemas.admin.inbox import Inbox
 from app.schemas.admin.innovations import (
     Innovation,
     InnovationFeedback,
+    InnovationStats,
+    InnovationStatsRow,
     PublicationStatus,
     InnovationUpdate,
 )
@@ -19,7 +21,7 @@ from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
 # R6/R11: jedyny sposob wejscia do panelu, brak kont publicznych
 # persistence for admin auth; in-memory now, postgres tables from .claude/designs/admin-auth.md later
 class AdminAuthStore(Protocol):
-    def get_admin_by_email(self, email: str) -> AdminAccount | None: ...
+    def get_admin_by_username(self, email: str) -> AdminAccount | None: ...
     def get_admin(self, admin_id: str) -> AdminAccount | None: ...
     def create_session(self, session: AdminSession) -> None: ...
     def get_session(self, token_hash: bytes) -> AdminSession | None: ...
@@ -33,6 +35,7 @@ class AdminAuthStore(Protocol):
 # brief wymaga szybkiej aktualizacji wiedzy: real impl embeds on edit so changes reach /match at once
 # draft vs published: unpublished items must never be returned by matching
 # feedback() = R4 tester: ratings and "chce testowac" counts per innovation
+# stats() / stats_report(): what the admin watches per innovation (matches, reach, testers, ratings)
 class InnovationAdminService(Protocol):
     def list(
         self, status: PublicationStatus | None, q: str | None, limit: int, offset: int
@@ -43,6 +46,9 @@ class InnovationAdminService(Protocol):
         self, innovation_id: str, status: PublicationStatus
     ) -> Innovation: ...
     def feedback(self, innovation_id: str) -> InnovationFeedback: ...
+    def stats(self, innovation_id: str) -> InnovationStats: ...
+    # quoted: list() above shadows the builtin
+    def stats_report(self) -> "list[InnovationStatsRow]": ...
 
 
 # R12 pytanie jury: "jak admin dowiaduje sie o nowym pomysle?"

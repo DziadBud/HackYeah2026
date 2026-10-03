@@ -1,7 +1,18 @@
 // offline copy of the backend admin mocks (backend/app/services/admin/mock.py),
 // used when match-api is unreachable so the panel can still be demoed.
 
-import type { AdminInnovation, ChallengeArea, CriticalRow, GapRow, GrantCall, Idea, ProblemReport, TrendRow } from "@/lib/api";
+import type {
+  AdminInnovation,
+  ChallengeArea,
+  CriticalRow,
+  GapRow,
+  GrantCall,
+  Idea,
+  InnovationStats,
+  InnovationStatsRow,
+  ProblemReport,
+  TrendRow,
+} from "@/lib/api";
 
 export const AREA_LABEL: Record<ChallengeArea, string> = {
   "Rodzina i piecza zastepcza": "Rodzina i piecza zastępcza",
@@ -100,6 +111,7 @@ export const ADMIN_MOCK: AdminData = {
       target_group: ["osoby niesłyszące", "osoby niedosłyszące"],
       readiness: "prototype",
       cost_level: "medium",
+      video_url: "https://example.com/wibraap.mp4",
       status: "published",
     },
     {
@@ -160,3 +172,118 @@ export const ADMIN_MOCK: AdminData = {
     },
   ],
 };
+
+const WEEKS = ["2026-08-24", "2026-08-31", "2026-09-07", "2026-09-14", "2026-09-21", "2026-09-28"];
+
+function stats(
+  id: string,
+  a: {
+    weekly: number[];
+    locations: [string, number][];
+    areas: [ChallengeArea, number][];
+    people: number;
+    signups: [number, number, number];
+    ratings: number[];
+    comments: [string, number, number][];
+    reports: [string, ChallengeArea, string, number, number][];
+  },
+): InnovationStats {
+  const count = a.ratings.reduce((x, y) => x + y, 0);
+  const reports = a.reports.map(([text, challenge_area, location, support_count, days], n) => ({
+    id: `problem-report-${id}-${n + 1}`,
+    text,
+    challenge_area,
+    location,
+    support_count,
+    created_at: ago(days * 24),
+  }));
+  return {
+    innovation_id: id,
+    matches_total: a.weekly.reduce((x, y) => x + y, 0),
+    matches_7d: a.weekly[a.weekly.length - 1],
+    matches_prev_7d: a.weekly[a.weekly.length - 2],
+    people_reached: a.people,
+    distinct_locations: a.locations.length,
+    last_matched_at: reports.length ? reports.map((r) => r.created_at).sort().at(-1)! : null,
+    matches_by_week: a.weekly.map((matches, n) => ({ week_start: WEEKS[n], matches })),
+    matches_by_area: a.areas.map(([challenge_area, matches]) => ({ challenge_area, matches })),
+    // same privacy rule as the backend: fewer than 5 problem reports is not shown
+    matches_by_location: a.locations.map(([location, n]) =>
+      n >= 5 ? { location, matches: n } : { location, matches: null, note: "too few problem reports to display" },
+    ),
+    test_signups: { applied: a.signups[0], accepted: a.signups[1], rejected: a.signups[2] },
+    rating_avg: count ? Math.round((a.ratings.reduce((s, n, i) => s + (i + 1) * n, 0) / count) * 100) / 100 : null,
+    rating_count: count,
+    rating_distribution: a.ratings,
+    recent_comments: a.comments.map(([comment, rating, days]) => ({ comment, rating, created_at: ago(days * 24) })),
+    recent_problem_reports: reports,
+  };
+}
+
+const EMPTY = { weekly: [0, 0, 0, 0, 0, 0], locations: [], areas: [], people: 0, signups: [0, 0, 0] as [number, number, number], ratings: [0, 0, 0, 0, 0], comments: [], reports: [] };
+
+// offline copy of the backend stats fixture (MockInnovationAdminService._ACTIVITY)
+export const INNOVATION_STATS_MOCK: Record<string, InnovationStats> = {
+  wibraap: stats("wibraap", {
+    weekly: [2, 3, 5, 4, 6, 9],
+    locations: [["Kraków", 15], ["Tarnów", 8], ["Nowy Sącz", 4], ["Wieliczka", 2]],
+    areas: [["Niepelnosprawnosc", 26], ["Seniorzy", 3]],
+    people: 61,
+    signups: [5, 2, 1],
+    ratings: [1, 0, 2, 4, 5],
+    comments: [
+      ["Dzieci w naszym ośrodku po raz pierwszy poczuły koncert. Prosimy o wersję dziecięcą kamizelki.", 5, 1],
+      ["Aplikacja na telefon czasem gubi połączenie z kamizelką.", 3, 4],
+    ],
+    reports: [
+      ["Głusi uczniowie nie mogą uczestniczyć w szkolnych koncertach i apelach.", "Niepelnosprawnosc", "Tarnów", 6, 2],
+      ["Brak oferty kulturalnej dla osób niedosłyszących w domu kultury.", "Niepelnosprawnosc", "Kraków", 3, 5],
+    ],
+  }),
+  straznik: stats("straznik", {
+    weekly: [1, 2, 2, 4, 5, 7],
+    locations: [["Kraków", 9], ["Skawina", 6], ["Myślenice", 4], ["Bochnia", 2]],
+    areas: [["Niepelnosprawnosc", 13], ["Seniorzy", 8]],
+    people: 38,
+    signups: [4, 3, 1],
+    ratings: [0, 1, 2, 8, 13],
+    comments: [
+      ["Świetny pomysł, chcemy przetestować w naszym DPS.", 5, 1],
+      ["Potrzeba tańszej wersji dla gmin.", 4, 3],
+      ["Opaska powinna działać też bez smartfona.", 4, 6],
+    ],
+    reports: [
+      ["Mama jest niedosłysząca i nie słyszy czujnika dymu w nocy.", "Seniorzy", "Skawina", 9, 1],
+      ["Mieszkańcy DPS z aparatami słuchowymi nie reagują na alarm pożarowy.", "Niepelnosprawnosc", "Kraków", 4, 3],
+    ],
+  }),
+};
+
+export function mockInnovationStats(id: string): InnovationStats {
+  return INNOVATION_STATS_MOCK[id] ?? stats(id, EMPTY);
+}
+
+// the shape of GET /admin/reports/innovations, built from the detail stats
+export function mockInnovationStatsReport(innovations: AdminInnovation[]): InnovationStatsRow[] {
+  return innovations
+    .map((i) => {
+      const s = mockInnovationStats(i.id);
+      return {
+        innovation_id: i.id,
+        title: i.title,
+        status: i.status,
+        matches_total: s.matches_total,
+        matches_7d: s.matches_7d,
+        matches_prev_7d: s.matches_prev_7d,
+        people_reached: s.people_reached,
+        distinct_locations: s.distinct_locations,
+        test_signups_applied: s.test_signups.applied,
+        test_signups_accepted: s.test_signups.accepted,
+        test_signups_rejected: s.test_signups.rejected,
+        rating_avg: s.rating_avg,
+        rating_count: s.rating_count,
+        last_matched_at: s.last_matched_at,
+      };
+    })
+    .sort((a, b) => b.matches_total - a.matches_total);
+}

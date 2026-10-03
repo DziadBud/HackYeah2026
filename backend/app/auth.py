@@ -8,7 +8,7 @@ from app.services.admin.errors import NotAuthenticatedError
 
 SESSION_COOKIE = "admin_session"
 # principal used when the login is switched off for the demo
-DEMO_ADMIN = AdminPrincipal(id="demo-admin", email="demo@rops.test")
+DEMO_ADMIN = AdminPrincipal(id="demo-admin", username="demo")
 _UNSAFE_METHODS = {"POST", "PUT", "PATCH", "DELETE"}
 
 

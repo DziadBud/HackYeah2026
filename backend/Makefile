@@ -1,4 +1,4 @@
-.PHONY: venv run test up down hash-password migrate
+.PHONY: venv run test up down migrate openapi
 
 venv:
 	python3 -m venv .venv && .venv/bin/pip install -r requirements-dev.txt
@@ -22,6 +22,6 @@ migrate:
 		docker exec -i hackyeah-db psql -U hackyeah -d hackyeah -v ON_ERROR_STOP=1 < "$$f"; \
 	done
 
-# usage: make hash-password EMAIL=admin@rops.krakow.pl
-hash-password:
-	.venv/bin/python -m app.cli.hash_admin_password $(EMAIL)
+# api contract + swagger page in documentation/api; regenerate after any api change and commit them
+openapi:
+	DEBUG=false .venv/bin/python -m scripts.export_openapi

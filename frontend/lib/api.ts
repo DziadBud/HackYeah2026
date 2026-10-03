@@ -94,6 +94,61 @@ export interface AdminInnovation {
   status: PublicationStatus;
 }
 
+export interface FeedbackComment {
+  comment: string;
+  rating: number;
+  created_at: string;
+}
+
+// one row of GET /admin/reports/innovations (also streams as csv)
+export interface InnovationStatsRow {
+  innovation_id: string;
+  title: string;
+  status: PublicationStatus;
+  // problem reports whose top 3 contained this innovation
+  matches_total: number;
+  matches_7d: number;
+  matches_prev_7d: number;
+  // matched problem reports plus their "mnie też" presses
+  people_reached: number;
+  distinct_locations: number;
+  test_signups_applied: number;
+  test_signups_accepted: number;
+  test_signups_rejected: number;
+  rating_avg: number | null;
+  rating_count: number;
+  last_matched_at: string | null;
+}
+
+export interface InnovationStats {
+  innovation_id: string;
+  matches_total: number;
+  matches_7d: number;
+  matches_prev_7d: number;
+  people_reached: number;
+  distinct_locations: number;
+  last_matched_at: string | null;
+  // last 6 weeks, oldest first
+  matches_by_week: { week_start: string; matches: number }[];
+  matches_by_area: { challenge_area: ChallengeArea; matches: number }[];
+  // matches is null when the location has fewer than 5 problem reports
+  matches_by_location: { location: string; matches: number | null; note?: string | null }[];
+  test_signups: { applied: number; accepted: number; rejected: number };
+  rating_avg: number | null;
+  rating_count: number;
+  // index 0 = 1 star ... index 4 = 5 stars
+  rating_distribution: number[];
+  recent_comments: FeedbackComment[];
+  recent_problem_reports: {
+    id: string;
+    text: string;
+    challenge_area: ChallengeArea;
+    location: string;
+    support_count: number;
+    created_at: string;
+  }[];
+}
+
 export type IdeaStatus = "new" | "in_review" | "accepted" | "rejected";
 export type IdeaStage = "concept" | "prototype" | "pilot" | "running";
 
@@ -158,7 +213,7 @@ export interface GrantCall {
   sections: { title: string; description?: string | null; required: boolean }[];
 }
 
-export type ReportName = "trends" | "critical" | "locations" | "gaps";
+export type ReportName = "trends" | "critical" | "locations" | "gaps" | "innovations";
 
 const post = <T>(path: string, body?: unknown) =>
   request<T>(path, { method: "POST", body: body === undefined ? undefined : JSON.stringify(body) });
@@ -174,8 +229,11 @@ export const adminApi = {
   setIdeaStatus: (id: string, status: IdeaStatus) =>
     post<Idea>(`/admin/ideas/${encodeURIComponent(id)}/status`, { status }),
   innovations: () => request<Page<AdminInnovation>>("/admin/innovations?limit=100"),
+  innovation: (id: string) => request<AdminInnovation>(`/admin/innovations/${encodeURIComponent(id)}`),
   setInnovationPublished: (id: string, published: boolean) =>
     post<AdminInnovation>(`/admin/innovations/${encodeURIComponent(id)}/${published ? "publish" : "unpublish"}`),
+  innovationStats: (id: string) => request<InnovationStats>(`/admin/innovations/${encodeURIComponent(id)}/stats`),
+  innovationStatsReport: () => request<InnovationStatsRow[]>("/admin/reports/innovations"),
   trends: () => request<TrendRow[]>("/admin/reports/trends"),
   critical: () => request<CriticalRow[]>("/admin/reports/critical"),
   gaps: () => request<GapRow[]>("/admin/reports/gaps"),

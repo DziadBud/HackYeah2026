@@ -9,8 +9,9 @@ class Settings(BaseSettings):
     cors_origins: list[str] = ["http://localhost:3000"]
     database_url: str = "postgresql+psycopg://hackyeah:hackyeah@localhost:5432/hackyeah"
 
-    # email -> argon2id hash, generate with `make hash-password`
-    admin_accounts: dict[str, str] = {}
+    # one shared admin login from env; empty means nobody can log in
+    admin_username: str = ""
+    admin_password: str = ""
     admin_session_ttl_hours: int = 8
     admin_session_idle_minutes: int = 30
     admin_login_max_failures: int = 5
