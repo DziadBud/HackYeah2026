@@ -9,7 +9,7 @@ export function InnovationCard({
   innovation: Innovation;
   headingLevel?: "h2" | "h3";
 }) {
-  const { id, title, summary, why, tags, location } = innovation;
+  const { id, title, summary, why, tags, city } = innovation;
   return (
     <article className="flex w-full flex-col justify-between gap-space-md rounded-xl bg-surface-container-low p-space-md shadow-sm hc-edge">
       <div className="flex flex-col gap-space-xs">
@@ -30,10 +30,10 @@ export function InnovationCard({
             {why}
           </p>
         )}
-        {location && (
+        {city && (
           <p className="flex items-center gap-2 pt-2 text-caption text-on-surface-variant">
             <Icon name="place" size={18} className="text-primary" />
-            <span>Wdrożono: {location}</span>
+            <span>Wdrożono: {city}</span>
           </p>
         )}
       </div>

@@ -20,19 +20,19 @@ export interface Innovation {
   // llm explanation of the fit; absent when the llm is down
   why?: string | null;
   tags?: string[];
-  location?: string | null;
+  city?: string | null;
 }
 
 export interface SimilarProblemReport {
   id: string;
   text: string;
-  location?: string | null;
+  city?: string | null;
   support_count: number;
 }
 
 export interface MatchRequest {
   text: string;
-  location?: string;
+  city?: string;
 }
 
 export interface MatchResponse {
@@ -54,10 +54,10 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export const api = {
-  match: (text: string, location?: string) =>
+  match: (text: string, city?: string) =>
     request<MatchResponse>("/match", {
       method: "POST",
-      body: JSON.stringify({ text, location } satisfies MatchRequest),
+      body: JSON.stringify({ text, city } satisfies MatchRequest),
     }),
 };
 

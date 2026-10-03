@@ -17,8 +17,8 @@ public: POST /match?test_signup=true {text, city, email, consent}
           -> normal match response + one test_signups row per matched innovation (status applied)
 admin:  inbox shows new signups
         GET /admin/test-signups?innovation_id=&status=
-        POST /admin/test-signups/{id}/status {accepted|rejected} -> email to the signup's email (background task)
-anyone: POST /innovations/{id}/feedback {stars, comment}        (per-IP rate limit)
+        POST /admin/test-signups/{id}/status {accepted|rejected|completed} -> email to the signup's email (background task)
+anyone: POST /innovations/{id}/feedback {stars, comment, test_signup_id?}  (per-IP rate limit)
 admin:  GET /admin/innovations/{id}/feedback -> rating avg/count, signups, recent comments
 ```
 
@@ -29,9 +29,11 @@ There is no separate signup endpoint: volunteering is an option on the match req
 test_signups(id uuid pk, innovation_id text fk innovations,
              problem_report_id uuid fk problem_reports,  -- the match it came from
              email text,
-             status text,  -- applied | accepted | rejected
-             created_at)
-feedback(id uuid pk, innovation_id text fk innovations, stars int, comment text, created_at)
+             status text,  -- applied | accepted | rejected | completed
+             created_at, updated_at)
+feedback(id uuid pk, innovation_id text fk innovations,
+         test_signup_id uuid fk test_signups null,  -- set when a tester rates
+         stars int, comment text, created_at)
 ```
 
 ## Failure modes
@@ -39,7 +41,7 @@ feedback(id uuid pk, innovation_id text fk innovations, stars int, comment text,
 |---|---|
 | spam signups or ratings | per-IP rate limit, length caps |
 | email send fails | logged, not retried; the admin still sees the status |
-| anyone can rate without having tested | accepted for the MVP; shown as an average with a count |
+| anyone can rate without having tested | accepted for the MVP; optional `test_signup_id` marks real-tester feedback; shown as an average with a count |
 
 ## Rollout
 1. `test_signups` + admin status change + email.

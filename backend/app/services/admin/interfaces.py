@@ -8,7 +8,6 @@ from app.schemas.admin.ideas import Idea, IdeaStatus
 from app.schemas.admin.inbox import Inbox
 from app.schemas.admin.innovations import (
     Innovation,
-    InnovationCreate,
     InnovationFeedback,
     InnovationStats,
     InnovationStatsRow,
@@ -41,7 +40,6 @@ class InnovationAdminService(Protocol):
     def list(
         self, status: PublicationStatus | None, q: str | None, limit: int, offset: int
     ) -> Page[Innovation]: ...
-    def create(self, data: InnovationCreate) -> Innovation: ...
     def get(self, innovation_id: str) -> Innovation: ...
     def update(self, innovation_id: str, data: InnovationUpdate) -> Innovation: ...
     def set_status(

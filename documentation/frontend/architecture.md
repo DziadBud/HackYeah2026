@@ -39,7 +39,7 @@ frontend/
   Makefile                      # install / dev / build / lint / up / down
 ```
 
-UI follows the Stitch mockups in [stitch/](stitch/) and the tokens in [DESIGN.md](DESIGN.md).
+UI follows the Stitch mockups in [stitch/](stitch/) and the tokens in [DESIGN.md](DESIGN.md). Community threads on the innovation detail page (`components/innovation/Community.tsx`) are backed by match-api `threads` / `thread_replies` (see [backend architecture §6](../backend/architecture.md) and [.claude/designs/community-threads.md](../../.claude/designs/community-threads.md)); until those endpoints exist, the component keeps local demo state.
 
 ## Admin panel (`/admin`)
 

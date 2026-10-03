@@ -1,3 +1,4 @@
+from collections.abc import Sequence
 from datetime import date, datetime, timedelta, timezone
 
 from app.schemas.admin.common import ChallengeArea, Page
@@ -13,7 +14,6 @@ from app.schemas.admin.innovations import (
     AreaMatches,
     FeedbackComment,
     Innovation,
-    InnovationCreate,
     InnovationFeedback,
     InnovationStats,
     InnovationStatsRow,
@@ -27,6 +27,7 @@ from app.schemas.admin.innovations import (
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
 from app.services.admin.errors import NotFoundError
+from app.services.admin.innovation_upload import NewInnovation
 from app.services.admin.interfaces import IdeaAdminService, ProblemReportAdminService
 
 NOW = datetime(2026, 10, 3, 9, 0, tzinfo=timezone.utc)
@@ -88,14 +89,26 @@ class MockInnovationAdminService:
             offset=offset,
         )
 
-    def create(self, data: InnovationCreate) -> Innovation:
-        item = Innovation(
-            id=f"innovation-{len(self._items) + 1}",
+    # InnovationStore for uploads; the real table lands once the data model is settled
+    # Sequence, not list: the class's own list() method shadows the builtin here
+    def insert_draft(self, innovation_id: str, data: NewInnovation, tags: Sequence[str]) -> None:
+        self._items[innovation_id] = Innovation(
+            id=innovation_id,
+            title=data.title,
+            summary=data.summary,
+            problem=data.problem,
+            innovator=data.innovator,
+            challenge_areas=data.challenge_areas,
+            target_group=data.target_group,
+            readiness=data.readiness,
+            cost_level=data.cost_level,
+            city=data.city,
+            video_url=data.video_url,
             status=PublicationStatus.DRAFT,
-            **data.model_dump(),
         )
-        self._items[item.id] = item
-        return item
+
+    def delete(self, innovation_id: str) -> None:
+        self._items.pop(innovation_id, None)
 
     def get(self, innovation_id: str) -> Innovation:
         try:
@@ -338,6 +351,10 @@ class MockIdeaAdminService:
         except KeyError:
             raise NotFoundError(idea_id) from None
 
+    # public writes land here so they show up in the admin inbox
+    def add(self, idea: Idea) -> None:
+        self._items[idea.id] = idea
+
     def reply(self, idea_id: str, message: str) -> Idea:
         updated = self.get(idea_id).model_copy(update={"admin_reply": message})
         self._items[idea_id] = updated
@@ -372,6 +389,15 @@ class MockProblemReportAdminService:
             return self._items[problem_report_id]
         except KeyError:
             raise NotFoundError(problem_report_id) from None
+
+    def add(self, report: ProblemReport) -> None:
+        self._items[report.id] = report
+
+    def support(self, problem_report_id: str) -> ProblemReport:
+        report = self.get(problem_report_id)
+        updated = report.model_copy(update={"support_count": report.support_count + 1})
+        self._items[problem_report_id] = updated
+        return updated
 
     def reply(self, problem_report_id: str, message: str) -> ProblemReport:
         updated = self.get(problem_report_id).model_copy(update={"admin_reply": message})
