@@ -11,6 +11,37 @@ class PostgresVectorStore:
     def __init__(self) -> None:
         self.database_url = os.getenv("DATABASE_URL")
 
+    def get_content(self, innovation_id: str) -> str:
+        if not self.database_url:
+            raise VectorStoreError("DATABASE_URL is not configured")
+
+        try:
+            import psycopg
+        except ImportError as error:
+            raise VectorStoreError("psycopg is required to read innovations") from error
+
+        try:
+            with psycopg.connect(self.database_url) as connection:
+                with connection.cursor() as cursor:
+                    cursor.execute(
+                        "SELECT content FROM innovations WHERE id = %s",
+                        (innovation_id,),
+                    )
+                    row = cursor.fetchone()
+                    if row is None:
+                        raise VectorStoreError(
+                            f"innovation does not exist: {innovation_id}"
+                        )
+                    if not row[0]:
+                        raise VectorStoreError(
+                            f"innovation has no content: {innovation_id}"
+                        )
+                    return str(row[0])
+        except VectorStoreError:
+            raise
+        except Exception as error:
+            raise VectorStoreError(f"could not read innovation content: {error}") from error
+
     def insert_document(
         self,
         *,
@@ -154,12 +185,10 @@ class PostgresVectorStore:
                               )
                               AND i.status = 'published'
                         )
-                        SELECT parent_id, child_id, title, city, summary,
-                               parent_url, tags, source, page, text, score
+                        SELECT parent_id, score
                         FROM (
                             SELECT DISTINCT ON (parent_id)
-                                parent_id, child_id, title, city, summary,
-                                parent_url, tags, source, page, text,
+                                parent_id,
                                 vector_score + (title_score * 0.2) + (tag_score * 0.2)
                                     AS score
                             FROM ranked
@@ -187,17 +216,7 @@ class PostgresVectorStore:
                     rows = cursor.fetchall()
                     return [
                         {
-                            "parent_id": row[0],
-                            "child_id": row[1],
-                            "title": row[2],
-                            "city": row[3],
-                            "summary": row[4],
-                            "parent_url": row[5],
-                            "tags": row[6],
-                            "source": row[7],
-                            "page": row[8],
-                            "text": row[9],
-                            "score": float(row[10]),
+                            "innovation_id": row[0],
                         }
                         for row in rows
                     ]

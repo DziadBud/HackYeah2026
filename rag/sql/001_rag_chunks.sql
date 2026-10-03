@@ -3,6 +3,7 @@ CREATE EXTENSION IF NOT EXISTS pg_trgm;
 CREATE TABLE IF NOT EXISTS innovations (
     id text PRIMARY KEY,
     title text NOT NULL,
+    content text NOT NULL DEFAULT '',
     summary text NOT NULL DEFAULT '',
     tags text[] NOT NULL DEFAULT '{}',
     city text,

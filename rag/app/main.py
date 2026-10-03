@@ -5,6 +5,7 @@ from app.services.chunking import split_text
 from app.services.embedding import EmbeddingService
 from app.services.pdf import extract_pdf_text
 from app.services.tagging import MockTaggingService
+from app.services.answer import MockAnswerService
 from app.services.vector_store import get_vector_store
 
 MAX_DOCUMENT_BYTES = 10 * 1024 * 1024
@@ -22,30 +23,16 @@ class QueryRequest(BaseModel):
 class QueryResponse(BaseModel):
     query: str
     top_k: int
+    answer: str
     matches: list["QueryMatch"]
 
 
 class QueryMatch(BaseModel):
-    parent_id: str
-    child_id: str
-    title: str
-    city: str
-    summary: str
-    parent_url: str | None
-    tags: list[str]
-    source: str
-    page: int | None
-    text: str
-    score: float
+    innovation_id: str
 
 
 class EmbedRequest(BaseModel):
     innovation_id: str = Field(min_length=1, max_length=100)
-    text: str = Field(min_length=1, max_length=1_000_000)
-    source: str = Field(default="api", min_length=1, max_length=500)
-    page: int | None = Field(default=None, ge=1)
-    chunk_size: int = Field(default=800, ge=100, le=4_000)
-    chunk_overlap: int = Field(default=120, ge=0, le=1_000)
 
 
 class EmbedResponse(BaseModel):
@@ -59,6 +46,7 @@ class EmbedResponse(BaseModel):
 app = FastAPI(title="HackYeah RAG API", version="0.1.0")
 embedding_service = EmbeddingService()
 tagging_service = MockTaggingService()
+answer_service = MockAnswerService()
 
 
 @app.get("/health", tags=["health"])
@@ -82,7 +70,13 @@ def query(request: QueryRequest) -> QueryResponse:
     except RuntimeError as error:
         raise HTTPException(status_code=503, detail=str(error)) from error
 
-    return QueryResponse(query=request.query, top_k=request.top_k, matches=matches)
+    answer = answer_service.generate(request.query, matches)
+    return QueryResponse(
+        query=request.query,
+        top_k=request.top_k,
+        answer=answer,
+        matches=matches,
+    )
 
 
 @app.post("/embed", response_model=EmbedResponse, status_code=201, tags=["rag"])
@@ -90,20 +84,27 @@ def embed(request: EmbedRequest) -> EmbedResponse:
     return _embed_document(request)
 
 
-def _embed_document(request: EmbedRequest) -> EmbedResponse:
+def _embed_document(
+    request: EmbedRequest,
+    *,
+    text_override: str | None = None,
+    source: str = "innovation",
+) -> EmbedResponse:
     try:
+        store = get_vector_store()
+        text = text_override or store.get_content(request.innovation_id)
         chunks = split_text(
-            request.text,
-            chunk_size=request.chunk_size,
-            chunk_overlap=request.chunk_overlap,
+            text,
+            chunk_size=800,
+            chunk_overlap=120,
         )
-        tags = tagging_service.generate(request.text)
+        tags = tagging_service.generate(text)
         vectors = embedding_service.embed_many(chunks)
-        parent_id, child_ids = get_vector_store().insert_document(
-            text=request.text,
+        parent_id, child_ids = store.insert_document(
+            text=text,
             innovation_id=request.innovation_id,
-            source=request.source,
-            page=request.page,
+            source=source,
+            page=None,
             tags=tags,
             chunks=chunks,
             embeddings=vectors,
@@ -127,8 +128,6 @@ async def embed_pdf(
     file: UploadFile = File(...),
     innovation_id: str = Form(...),
     source: str | None = Form(default=None),
-    chunk_size: int = Form(default=800, ge=100, le=4_000),
-    chunk_overlap: int = Form(default=120, ge=0, le=1_000),
 ) -> EmbedResponse:
     if file.content_type != "application/pdf":
         raise HTTPException(status_code=415, detail="file must be a PDF")
@@ -141,12 +140,12 @@ async def embed_pdf(
         text = extract_pdf_text(data)
         request = EmbedRequest(
             innovation_id=innovation_id,
-            text=text,
-            source=source or file.filename or "pdf-upload",
-            chunk_size=chunk_size,
-            chunk_overlap=chunk_overlap,
         )
-        return _embed_document(request)
+        return _embed_document(
+            request,
+            text_override=text,
+            source=source or file.filename or "pdf-upload",
+        )
     except ValueError as error:
         raise HTTPException(status_code=422, detail=str(error)) from error
     except RuntimeError as error:
