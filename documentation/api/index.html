@@ -1804,6 +1804,41 @@
         }
       }
     },
+    "/innovations/{innovation_id}/pdf": {
+      "get": {
+        "tags": [
+          "innovations"
+        ],
+        "summary": "Get Innovation Pdf",
+        "operationId": "get_innovation_pdf_innovations__innovation_id__pdf_get",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/innovations/{innovation_id}/feedback": {
       "post": {
         "tags": [
@@ -2889,13 +2924,29 @@
             },
             "type": "array",
             "title": "Critical Problem Reports"
+          },
+          "pending_threads": {
+            "items": {
+              "$ref": "#/components/schemas/AdminThread"
+            },
+            "type": "array",
+            "title": "Pending Threads"
+          },
+          "new_test_signups": {
+            "items": {
+              "$ref": "#/components/schemas/TestSignup"
+            },
+            "type": "array",
+            "title": "New Test Signups"
           }
         },
         "type": "object",
         "required": [
           "new_ideas",
           "new_problem_reports",
-          "critical_problem_reports"
+          "critical_problem_reports",
+          "pending_threads",
+          "new_test_signups"
         ],
         "title": "Inbox"
       },
@@ -3356,6 +3407,11 @@
             "type": "integer",
             "title": "Rating Count",
             "default": 0
+          },
+          "has_pdf": {
+            "type": "boolean",
+            "title": "Has Pdf",
+            "default": false
           }
         },
         "type": "object",
@@ -4112,6 +4168,54 @@
           "support_count"
         ],
         "title": "SupportResponse"
+      },
+      "TestSignup": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "innovation_id": {
+            "type": "string",
+            "title": "Innovation Id"
+          },
+          "problem_report_id": {
+            "type": "string",
+            "title": "Problem Report Id"
+          },
+          "email": {
+            "type": "string",
+            "title": "Email"
+          },
+          "status": {
+            "$ref": "#/components/schemas/TestSignupStatus"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "innovation_id",
+          "problem_report_id",
+          "email",
+          "status",
+          "created_at"
+        ],
+        "title": "TestSignup"
+      },
+      "TestSignupStatus": {
+        "type": "string",
+        "enum": [
+          "applied",
+          "accepted",
+          "rejected",
+          "completed"
+        ],
+        "title": "TestSignupStatus"
       },
       "Thread": {
         "properties": {

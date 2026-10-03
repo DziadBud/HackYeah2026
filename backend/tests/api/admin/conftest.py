@@ -39,10 +39,10 @@ def fresh_services(admin_password_hash):
     innovations = mock.MockInnovationAdminService()
     ideas = mock.MockIdeaAdminService()
     problem_reports = mock.MockProblemReportAdminService()
-    inbox = mock.MockInboxAdminService(ideas, problem_reports)
+    threads = mock.MockThreadAdminService()
+    inbox = mock.MockInboxAdminService(ideas, problem_reports, threads)
     grant_calls = mock.MockGrantCallAdminService()
     reports = mock.MockReportAdminService()
-    threads = mock.MockThreadAdminService()
     app.dependency_overrides = {
         deps.get_auth_service: lambda: auth,
         deps.get_innovation_service: lambda: innovations,

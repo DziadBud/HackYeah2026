@@ -14,6 +14,7 @@ from app.services.public.db import (
     DbProblemReportService,
     DbThreadService,
 )
+from app.services.notify import Notifier, get_notifier
 from app.services.public.interfaces import (
     DocumentService,
     IdeaService,
@@ -28,24 +29,30 @@ from app.services.public.interfaces import (
 _rag = RagClient(settings.rag_url, settings.rag_timeout_seconds, settings.rag_query_timeout_seconds)
 
 
-def get_match_service(db: Session = Depends(get_db)) -> MatchService:
-    return DbMatchService(db, _rag)
+def get_match_service(
+    db: Session = Depends(get_db), notifier: Notifier = Depends(get_notifier)
+) -> MatchService:
+    return DbMatchService(db, _rag, notifier)
 
 
 def get_problem_report_service(db: Session = Depends(get_db)) -> ProblemReportService:
     return DbProblemReportService(db)
 
 
-def get_idea_service(db: Session = Depends(get_db)) -> IdeaService:
-    return DbIdeaService(db)
+def get_idea_service(
+    db: Session = Depends(get_db), notifier: Notifier = Depends(get_notifier)
+) -> IdeaService:
+    return DbIdeaService(db, notifier)
 
 
 def get_library_service(db: Session = Depends(get_db)) -> LibraryService:
     return DbLibraryService(db)
 
 
-def get_thread_service(db: Session = Depends(get_db)) -> ThreadService:
-    return DbThreadService(db)
+def get_thread_service(
+    db: Session = Depends(get_db), notifier: Notifier = Depends(get_notifier)
+) -> ThreadService:
+    return DbThreadService(db, notifier)
 
 
 def get_document_service(db: Session = Depends(get_db)) -> DocumentService:

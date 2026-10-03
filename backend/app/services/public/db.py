@@ -35,6 +35,7 @@ from app.services.admin.db import grant_call_to_schema, innovation_to_schema, pa
 from app.services.admin.innovation_upload import area_tag
 from app.services.admin.errors import InvalidRequestError, NotFoundError
 from app.services.public.drafts import grant_draft, middleman_card
+from app.services.notify import Notifier
 from app.services.public.interfaces import Retriever
 
 MAX_MATCHES = 3
@@ -63,9 +64,10 @@ def _document(row: DocumentRow) -> GeneratedDocument:
 
 
 class DbMatchService:
-    def __init__(self, db: Session, rag: Retriever) -> None:
+    def __init__(self, db: Session, rag: Retriever, notifier: Notifier) -> None:
         self._db = db
         self._rag = rag
+        self._notifier = notifier
 
     def match(self, data: MatchRequest, test_signup: bool) -> MatchResponse:
         if test_signup and not data.email:
@@ -107,6 +109,9 @@ class DbMatchService:
             ]
             self._db.add_all(signups)
         self._db.commit()
+        # only reports that left an email wait for a personal answer; the rest show up in the inbox
+        if data.email:
+            self._notifier.new_problem_report(str(report.id), data.text)
 
         return MatchResponse(
             problem_report_id=str(report.id),
@@ -184,8 +189,9 @@ class DbProblemReportService:
 
 
 class DbIdeaService:
-    def __init__(self, db: Session) -> None:
+    def __init__(self, db: Session, notifier: Notifier) -> None:
         self._db = db
+        self._notifier = notifier
 
     def create(self, data: IdeaCreate) -> IdeaCreated:
         row = IdeaRow(
@@ -199,6 +205,7 @@ class DbIdeaService:
         )
         self._db.add(row)
         self._db.commit()
+        self._notifier.new_idea(str(row.id), data.summary)
         return IdeaCreated(id=str(row.id), status=IdeaStatus.NEW)
 
     def grant_application(self, idea_id: str, data: GrantApplicationRequest) -> GeneratedDocument:
@@ -287,8 +294,9 @@ class DbLibraryService:
 
 
 class DbThreadService:
-    def __init__(self, db: Session) -> None:
+    def __init__(self, db: Session, notifier: Notifier) -> None:
         self._db = db
+        self._notifier = notifier
 
     def list(self, innovation_id: str) -> list[Thread]:
         _published(self._db, innovation_id)
@@ -333,6 +341,7 @@ class DbThreadService:
         )
         self._db.add(row)
         self._db.commit()
+        self._notifier.new_thread(innovation_id, data.title)
         return Submitted(id=str(row.id), status=ModerationStatus.PENDING)
 
     def reply(self, thread_id: str, data: ReplyCreate) -> Submitted:
@@ -349,6 +358,7 @@ class DbThreadService:
         )
         self._db.add(row)
         self._db.commit()
+        self._notifier.new_thread_reply(thread.title)
         return Submitted(id=str(row.id), status=ModerationStatus.PENDING)
 
 

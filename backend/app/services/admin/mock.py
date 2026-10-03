@@ -30,7 +30,11 @@ from app.schemas.admin.threads import AdminReply, AdminThread
 from app.schemas.public.threads import ModerationStatus, ReplyKind
 from app.services.admin.errors import NotFoundError
 from app.services.admin.innovation_upload import NewInnovation
-from app.services.admin.interfaces import IdeaAdminService, ProblemReportAdminService
+from app.services.admin.interfaces import (
+    IdeaAdminService,
+    ProblemReportAdminService,
+    ThreadAdminService,
+)
 
 NOW = datetime(2026, 10, 3, 9, 0, tzinfo=timezone.utc)
 MIN_LOCATION_PROBLEM_REPORTS = 5
@@ -395,10 +399,14 @@ class MockProblemReportAdminService:
 class MockInboxAdminService:
     # reads through the other services so status changes and replies show up here
     def __init__(
-        self, ideas: IdeaAdminService, problem_reports: ProblemReportAdminService
+        self,
+        ideas: IdeaAdminService,
+        problem_reports: ProblemReportAdminService,
+        threads: ThreadAdminService,
     ) -> None:
         self._ideas = ideas
         self._problem_reports = problem_reports
+        self._threads = threads
 
     def get(self, since: datetime | None) -> Inbox:
         def fresh(created_at: datetime) -> bool:
@@ -411,6 +419,8 @@ class MockInboxAdminService:
                 r for r in reports if r.admin_reply is None and fresh(r.created_at)
             ],
             critical_problem_reports=[r for r in reports if r.is_critical],
+            pending_threads=self._threads.list(ModerationStatus.PENDING, None),
+            new_test_signups=[],
         )
 
 

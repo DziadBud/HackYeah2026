@@ -71,7 +71,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 
 ## R10 Integration and automation (X)
 - **Where:** admin inbox (§5), email notifier (§4), `grant_calls`.
-- **How:** the inbox surfaces new items (ideas, problem reports, signups, pending threads). The optional email notifier (background task after commit, at-most-once, Mailpit in the demo) emails the admin on new ideas, problem reports and pending threads, and authors on replies, status changes and published threads. Grant calls have an open/close switch. An outbox and webhooks for the grant DB are deferred (§8).
+- **How:** the inbox surfaces new items (ideas, problem reports, test signups, pending threads and replies). The email notifier (background task after commit, at-most-once, Mailpit in the demo) emails the admin on new ideas, problem reports with an email and pending threads / replies, and authors on replies, idea status changes and published threads / replies. Opening a grant call emails every idea author who left an email. An outbox and webhooks for the grant DB are deferred (§8).
 
 ## R11 Data security, no real personal data (X)
 - **Where:** §4, §6.
@@ -86,7 +86,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 ## R12 Fast admin notification and reply path (jury question)
 - **Where:** inbox + replies (§5), threads moderation, email notifier (§4).
 - **How:**
-  1. Every new idea, problem report or pending thread appears in `GET /admin/inbox?since=`, and the admin gets an email.
+  1. Every new idea, problem report or pending thread / reply appears in `GET /admin/inbox?since=`, and the admin gets an email (problem reports only when the author left one).
   2. The admin sets `admin_reply`, or publishes / hides a thread.
   3. An author with an email gets it by email; a problem report reply is also on its public page for everyone who pressed "mnie też".
 

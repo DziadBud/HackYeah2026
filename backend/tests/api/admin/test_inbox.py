@@ -25,3 +25,12 @@ def test_inbox_reflects_status_and_reply(client, auth) -> None:
     body = client.get("/admin/inbox", headers=auth).json()
     assert "idea-1" not in {i["id"] for i in body["new_ideas"]}
     assert "problem-report-1" not in {r["id"] for r in body["new_problem_reports"]}
+
+
+def test_inbox_pending_threads(client, auth) -> None:
+    body = client.get("/admin/inbox", headers=auth).json()
+    assert "thread-1" in {t["id"] for t in body["pending_threads"]}
+    assert body["new_test_signups"] == []
+    client.post("/admin/threads/thread-1/status", json={"status": "published"}, headers=auth)
+    body = client.get("/admin/inbox", headers=auth).json()
+    assert "thread-1" not in {t["id"] for t in body["pending_threads"]}
