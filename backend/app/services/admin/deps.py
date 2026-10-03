@@ -1,10 +1,14 @@
 # override these (app.dependency_overrides or edit) to switch to db-backed services
 from datetime import timedelta
+from functools import cache
+from pathlib import Path
 
 from app.config import settings
+from app.messaging import RabbitEmbedPublisher
 from app.services.admin.auth import AdminAuthService
 from app.services.admin.auth_models import AdminAccount
 from app.services.admin.auth_store import InMemoryAdminAuthStore
+from app.storage import LocalFileStorage
 from app.services.admin.interfaces import (
     GrantCallAdminService,
     IdeaAdminService,
@@ -13,6 +17,7 @@ from app.services.admin.interfaces import (
     ProblemReportAdminService,
     ReportAdminService,
 )
+from app.services.admin.innovation_upload import InnovationUploadService
 from app.services.admin.mock import (
     MockGrantCallAdminService,
     MockIdeaAdminService,
@@ -70,3 +75,14 @@ def get_grant_call_service() -> GrantCallAdminService:
 
 def get_report_service() -> ReportAdminService:
     return _reports
+
+
+# the pdf and the rabbit message are real; the innovation row goes to the mock until the data model is settled
+@cache
+def get_innovation_upload_service() -> InnovationUploadService:
+    return InnovationUploadService(
+        store=_innovations,
+        files=LocalFileStorage(Path(settings.upload_dir)),
+        publisher=RabbitEmbedPublisher(settings.rabbitmq_url, settings.embed_queue),
+        max_bytes=settings.max_upload_bytes,
+    )

@@ -3,6 +3,7 @@ import re
 import pytest
 from fastapi.routing import APIRoute
 
+from app.config import settings
 from app.main import app
 from tests.api.admin.conftest import ADMIN_EMAIL, ADMIN_PASSWORD
 
@@ -94,3 +95,16 @@ def test_allowed_origin_passes(client, auth) -> None:
 
 def test_openapi_schema(client) -> None:
     assert client.get("/openapi.json").status_code == 200
+
+
+def test_demo_mode_skips_login(client, monkeypatch) -> None:
+    monkeypatch.setattr(settings, "debug", True)
+    monkeypatch.setattr(settings, "admin_auth_disabled", True)
+    assert client.get("/admin/inbox").status_code == 200
+    assert client.get("/admin/auth/me").json()["email"] == "demo@rops.test"
+
+
+def test_demo_flag_ignored_without_debug(client, monkeypatch) -> None:
+    monkeypatch.setattr(settings, "debug", False)
+    monkeypatch.setattr(settings, "admin_auth_disabled", True)
+    assert client.get("/admin/inbox").status_code == 401

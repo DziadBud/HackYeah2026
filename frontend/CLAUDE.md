@@ -15,10 +15,13 @@ Talks only to `match-api` over HTTP; it never touches the DB.
 ## Layout
 
 - `app/layout.tsx`: shell, nav, global styles — no feature logic
-- `app/page.tsx`: public UI (problem -> matched innovations)
-- `app/admin/`: admin UI (behind auth later), one route per area
+- `app/page.tsx`: public UI, chat (problem -> matched innovations)
+- `app/innowacje/`: innovation library and detail pages
+- `app/admin/`: admin UI (login off for the demo), one route per area
+- `components/`: shared UI (toolbar, header, footer, cards) and feature folders
+- `lib/demo-data.ts`, `lib/admin-mock.ts`: fallbacks while the api is missing
 - `lib/api.ts`: the only place that knows the API shape; typed client
-- `app/globals.css`: Tailwind entry + theme tokens
+- `app/globals.css`: Tailwind entry + design tokens (documentation/frontend/DESIGN.md)
 
 New features go in new route folders so devs rarely edit the same file.
 
@@ -41,3 +44,10 @@ New features go in new route folders so devs rarely edit the same file.
 - Comments only for non-obvious why; lowercase, short.
 - Before a PR: `make lint` and `make build` pass.
 - No premature abstractions; add a component only on the second use.
+
+## Accessibility (WCAG 2.1 AA is 20% of the score)
+
+- Use the tokens (`text-body-lg`, `bg-primary`, ...), never raw colours or px font sizes: high contrast and A+/A++ depend on them.
+- Every boxed surface gets `hc-edge` so it keeps an outline in high contrast.
+- Icons via `<Icon name=...>` (always aria-hidden); new glyph -> add to `scripts/fetch-icons.sh` and run it.
+- Visible label for every field, min 48 px targets, no text under 14 px, feedback via `role="status"`.

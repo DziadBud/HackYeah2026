@@ -1,79 +1,123 @@
 # Requirements traceability
 
-Maps each requirement from `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI.md` to the part of [architecture.md](architecture.md) that implements it. M = mandatory, S = extra module (+5% each), X = cross-cutting, D = deliverable.
+Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Malopolskie-HUBMI.md` to the part of [architecture.md](architecture.md) that implements it. M = mandatory, S = extra module (+5% each), X = cross-cutting, D = deliverable.
 
 ## R1 Matchmaking spoleczny (M, 10%)
-- **Where:** `POST /match` (§3) calling rag `POST /query`, `innovation` + `chunk` (§6), data imported by the rag service (§2).
-- **How:** hybrid retrieval (full-text + trigram + pgvector, rank fusion) over published innovations, top 5 with an LLM-written reason built only from retrieved rows. 3 similar existing problem reports are returned too (same location first, else same challenge area). Per-IP rate limit (nothing stored) guards LLM spend.
+- **Where:** `POST /match` (§3) calling rag `POST /query`; `innovations` + `innovation_chunks` (§6).
+- **How:**
+  - rag retrieval over published `type:innovation` rows, top 3, each with an LLM-written reason built only from the retrieved rows
+  - 3 similar problem reports are returned too (pg_trgm, same city first)
+  - a per-IP rate limit guards LLM spend
 - **Done when:** the 8 queries in `documentation/sample-data/sample-matchmaking-queries.md` return the expected id in the top 3.
 
 ## R2 Zasobnik wiedzy (S)
-- **Where:** public `GET /innovations`, `GET /challenge-areas`; `GET /ask-report`; `/admin/reports/*` (§5).
-- **How:** library from `innovation` rows with `video_url`; the 8 challenge areas from the Mapa Wyzwan PDF; reports and Canvas chunked and embedded, "ask the report" answers from retrieved chunks with page references. Admin edits embed inline, so updates are instant. Aggregated needs and trends exist only under `/admin/reports/*` (SQL on request), never public.
+- **Where:** public `GET /innovations`, `GET /innovations/{id}`; `/admin/reports/*` (§5).
+- **How:**
+  - the library lists `innovations` rows tagged `type:innovation`; films are linked through `page_url`
+  - ROPS reports and the Mapa Wyzwan are `type:report` rows embedded with `/embed/pdf`; "ask the report" over their chunks is deferred until they are embedded
+  - the admin uploads a PDF per innovation; rag embeds it from a RabbitMQ message and the innovation is published once indexed
+  - aggregated needs and trends exist only under `/admin/reports/*`
+- **Gap:** `/embed/pdf` stores no page numbers, so report answers can't cite pages.
 
 ## R3 Kreator pomyslow (S)
-- **Where:** `POST /ideas`, `idea` and `grant_call` tables, `/admin/grant-calls`.
-- **How:** idea card = summary, target group, stage, plus optional Canvas answers in `idea.social_canvas`. An optional email (with consent) links the idea to a `contact`; status changes and the admin reply are emailed with a `/profile/{token}` link. Without an email, a fallback `access_token` link (`GET /ideas/status/{token}`). Grant application generator: while `grant_call.open`, the LLM fills the call's `sections` from the idea card. Assistant and visualisation: stretch.
+- **Where:** `POST /ideas`, `ideas` and `grant_calls` tables, `/admin/ideas`, `/admin/grant-calls`, `generated_documents`.
+- **How:**
+  - idea card = summary, essence, target group, stage, plus optional Canvas answers in `ideas.social_canvas`
+  - an optional email gets the status change and the `admin_reply`
+  - an accepted idea becomes a draft innovation; it is matchable once the admin uploads its PDF and rag embeds it
+  - grant application generator: while a `grant_calls` row is open, the LLM fills that call's `sections` from the idea card and stores the draft in `generated_documents` (`kind = grant_application`)
+  - assistant and visualisation: stretch
 
 ## R4 Tester innowacji (S)
-- **Where:** test rounds, signups, reports and ratings ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)); replaces the generic `feedback` table.
-- **How:** admin opens a test round; applicants sign up with optional email `contact` (emailed on accept/reject and when rounds open in their challenge area / gmina), else a fallback status link; reference code for phone lookup. Ratings are per-IP rate limited, nothing stored. Admin sees counts per innovation.
+- **Where:** `POST /match?test_signup=true`, `test_signups`, `feedback` ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)).
+- **How:**
+  - testing is part of matching: with `?test_signup=true` and an email, the user volunteers to test the innovations matched for their problem (one `test_signups` row each, linked to the problem report); the admin accepts, rejects or marks `completed`, and the applicant is emailed
+  - ratings and comments go to `feedback` (per-IP rate limited); improvement proposals are comments; optional `test_signup_id` marks feedback from a real tester
+  - the admin sees the rating average, count and signups per innovation
 
 ## R5 Platforma komunikacji (S)
-- **Where:** `admin_reply` on `idea` and `problem_report`, `/admin/ideas/{id}/reply`, `/admin/problem-reports/{id}/reply`, email notifier + `/profile/{token}` (§4).
-- **How:** admin answers an idea (emailed to its contact, else seen on the fallback link), or answers a problem report once on its public page; the author and supporters who left an email get it by email. Mentors are admins. No accounts, no passwords.
+- **Where:** `admin_reply` on `problem_reports` and `ideas`; `threads` + `thread_replies` on each innovation ([.claude/designs/community-threads.md](../../.claude/designs/community-threads.md)); the email notifier (§4).
+- **How:**
+  - the admin answers an idea (emailed if it has an email), or answers a problem report once on its public page
+  - per-innovation community threads: public create starts as `pending`, ROPS moderates to `published` / `hidden`; flat replies with role `kind` (public replies are always practitioner; expert / mentor / admin set by ROPS)
+  - mentors are admins (or reply with `kind = mentor`)
+  - no public accounts
 
 ## R6 Panel administratora (S)
-- **Where:** `/admin/*` and rag `POST /documents` / `GET /index-jobs/{id}` behind the admin session dependency (§4, §5).
-- **How:** login, innovation add/edit/publish/unpublish with feedback counts (R4), imports with job status, inbox (new ideas, new and critical problem reports), idea and problem report replies, grant call open/close, reports.
+- **Where:** `/admin/*` behind the admin session (§4, §5).
+- **How:**
+  - login
+  - innovation create from a PDF (file saved, draft row, `innovation.embed_requested` on RabbitMQ; rag embeds and publishes it), metadata edit (incl. `problem`, `target_group`, `challenge_areas`, …), PDF re-upload, publish/unpublish, feedback counts
+  - inbox: new ideas, problem reports, critical problem reports, signups, pending threads / replies
+  - replies, idea status, test signup status, thread moderation, grant call open/close, generated-document list, reports with CSV
 
 ## R7 Middleman innowacji (S)
-- **Where:** `POST /middleman` (match-api).
-- **How:** input = innovation id + institution type (gmina, CUS, NGO). The LLM drafts a service card (who pays, who decides, channels, partners, fixed vs variable cost) from that innovation's stored fields only; unknown figures are marked "to estimate". One prompt, one card.
+- **Where:** `POST /middleman` (match-api), `generated_documents` (`kind = middleman`).
+- **How:** input = innovation id + institution type + its needs. The LLM drafts a service card from that innovation's row and chunks only; unknown figures are marked "to estimate". The draft is stored so the institution and the admin can reopen it.
 
 ## R8 Accessibility, WCAG 2.1 AA (X, 20%)
-- **Backend part:** plain-language Polish validation errors, no time limits on public flows, captions/transcripts stored with innovation videos, text answers suitable for read-aloud.
+- **Backend part:** plain-language Polish validation errors, no time limits on public flows, text answers suitable for read-aloud.
 - **Frontend part:** contrast, keyboard navigation, labels, text-size toggle, axe + keyboard-only run (not covered here).
 
 ## R9 Scalability (X)
 - **Where:** §1, §7.
-- **How:** match-api is stateless and scales horizontally; pgvector HNSW index; heavy imports and retrieval live in the rag service (if down, `/match` returns 503 and still stores the problem report); in-process per-IP rate limit (nothing stored) protects LLM spend; notifications are a background task after commit. Next steps are read replicas, then a queue for rag imports (§8).
+- **How:**
+  - match-api is stateless apart from admin sessions held in memory
+  - retrieval and embedding live in rag; pgvector HNSW index
+  - the per-IP rate limit protects LLM spend
+- **Next steps:** admin sessions in Postgres for more than one replica, then read replicas (§8).
 
 ## R10 Integration and automation (X)
-- **Where:** admin inbox (§5), email notifier (§4), `grant_call` table.
-- **How (MVP):** the inbox surfaces new ideas, new and critical problem reports. The optional email notifier (SMTP from env, background task after commit, at-most-once, no-op if unset; Mailpit in the demo) emails the admin on new ideas and first critical crossing, and residents who left an email on replies, status changes and matching test rounds (recipient table in §4). Grant calls have an open/close switch. Webhooks, outbox and worker (grant DB integration) are deferred (§8) and would be more notifiers on the same events.
+- **Where:** admin inbox (§5), email notifier (§4), `grant_calls`.
+- **How:** the inbox surfaces new items (ideas, problem reports, signups, pending threads). The optional email notifier (background task after commit, at-most-once, Mailpit in the demo) emails the admin on new ideas, problem reports and pending threads, and authors on replies, status changes and published threads. Grant calls have an open/close switch. An outbox and webhooks for the grant DB are deferred (§8).
 
 ## R11 Data security, no real personal data (X)
-- **Where:** §4.
-- **How:** no public accounts or passwords; no IP stored anywhere (rate limit is in-process only); email only when given with consent, deletable via "usuń moje dane" on the profile page; per-admin accounts with argon2id hashes, revocable HttpOnly session cookies, login rate limit, secrets from env; location picked from a list; free-text length capped; seed/synthetic data only; user text is data, never instructions.
+- **Where:** §4, §6.
+- **How:**
+  - no public accounts or passwords, no IP stored
+  - an email only when given with consent, stored on the item / thread
+  - per-admin accounts with argon2id hashes, revocable HttpOnly session cookies, login rate limit, secrets from env
+  - city picked from a list, free text length-capped, synthetic seed data only
+  - problem reports and threads can be `hidden` by an admin
+  - user text is data, never instructions
 
 ## R12 Fast admin notification and reply path (jury question)
-- **Where:** admin inbox + replies (§5), email notifier, contacts and profile / fallback links (§4).
-- **How:** every new idea or problem report appears in `GET /admin/inbox?since=`; critical problem reports are flagged there, and an email goes out on new ideas and first critical crossing. The admin replies; residents who left an email get it by email (author + supporters for a problem report), others see it on the public problem report page or their fallback link. One problem report reply covers the whole cluster.
+- **Where:** inbox + replies (§5), threads moderation, email notifier (§4).
+- **How:**
+  1. Every new idea, problem report or pending thread appears in `GET /admin/inbox?since=`, and the admin gets an email.
+  2. The admin sets `admin_reply`, or publishes / hides a thread.
+  3. An author with an email gets it by email; a problem report reply is also on its public page for everyone who pressed "mnie też".
 
 ## R13 Match relevance (jury question)
 - **Where:** §3.
-- **How:** keyword + semantic retrieval fused, deterministic ranking, LLM only explains. The 8 sample queries plus 15-20 realistic Polish queries are kept as a regression list and slide evidence.
+- **How:** rag retrieval with deterministic ranking; the LLM only explains. The 8 sample queries plus 15-20 realistic Polish queries are kept as a regression list and slide evidence.
+- **Risk:** the English-only embedding model (§11).
 
 ## R14 Originality (X, 10% bonus)
 - **Where:** problem reports + support + critical report (§3, §5).
-- **How:** every problem becomes a counted problem report. Users see similar problem reports and press "me too" instead of writing again (deduped by localStorage, and by contact when an email is given; replies reach every supporter who left one); criticality = problem reports x distinct locations x 7d growth ratio feeds an admin-only radar, and the gaps report shows which innovations ROPS is missing.
+- **How:**
+  - every problem becomes a counted problem report
+  - users press "mnie też" on similar reports instead of writing again
+  - criticality = problem reports x distinct cities x 7d growth ratio feeds an admin-only radar
+  - the gaps report shows needs with no matching innovation
 
 ## R15 Submission package and running-cost estimate (D)
-- **How:** cost sheet from the design: small VM or container + managed Postgres with pgvector, local embeddings (no per-call cost), LLM pay-per-call limited by per-IP rate limits, SMTP relay (free tier at this volume), ~0.25 FTE content editor, a few hours per week of admin triage, one-off accessibility audit. Demo is `docker compose up`; diagrams from `architecture.md` go on the slides.
+- **How:**
+  - cost sheet: small VM or container + managed Postgres with pgvector, local embeddings (no per-call cost), LLM pay-per-call limited by rate limits, SMTP relay (free tier), ~0.25 FTE content editor, a one-off accessibility audit
+  - demo is `docker compose up`; diagrams from `architecture.md` go on the slides
 
 ## Coverage
 
 | Req | MVP depth |
 |---|---|
 | R1 | full |
-| R2 | library, ask-report, SQL reports |
-| R3 | idea card + Canvas answers; generator for one fictional grant call |
-| R4, R5, R7 | thin, working end to end |
-| R6 | CRUD, imports, inbox, replies, reports |
+| R2 | library, SQL reports; ask-report deferred until report PDFs are embedded |
+| R3 | idea card + Canvas answers; generator for one fictional grant call (stored) |
+| R4, R5, R7 | thin, working end to end (threads moderated; Middleman stored) |
+| R6 | CRUD, inbox, replies, thread moderation, reports |
 | R8 | needs frontend work |
-| R9-R12 | by design; inbox + optional email notifier to admin and contacts; webhooks and other channels deferred |
+| R9-R12 | by design; inbox + optional email notifier |
 | R13, R14 | regression suite; support + critical report |
 | R15 | documents |
 
-Gaps: the RULES PDF is unread and may add constraints; innovation data beyond the 8 samples depends on the ROPS answer.
+Gaps: the RULES PDF is unread and may add constraints; innovation data beyond the 8 samples depends on the ROPS answer; no page citations for reports.

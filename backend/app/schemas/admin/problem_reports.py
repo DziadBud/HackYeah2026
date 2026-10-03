@@ -8,7 +8,8 @@ from app.schemas.admin.common import ChallengeArea
 class ProblemReport(BaseModel):
     id: str
     text: str
-    challenge_area: ChallengeArea
+    # null when the llm classification failed
+    challenge_area: ChallengeArea | None
     location: str
     support_count: int
     is_critical: bool
