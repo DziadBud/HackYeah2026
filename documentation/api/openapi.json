@@ -3215,6 +3215,10 @@
             "type": "string",
             "title": "Problem Report Id"
           },
+          "answer": {
+            "type": "string",
+            "title": "Answer"
+          },
           "innovations": {
             "items": {
               "$ref": "#/components/schemas/MatchedInnovation"
@@ -3241,6 +3245,7 @@
         "type": "object",
         "required": [
           "problem_report_id",
+          "answer",
           "innovations",
           "similar_reports"
         ],
@@ -3260,17 +3265,6 @@
             "type": "string",
             "title": "Summary"
           },
-          "why": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Why"
-          },
           "tags": {
             "items": {
               "type": "string"
@@ -3288,7 +3282,6 @@
           "id",
           "title",
           "summary",
-          "why",
           "tags",
           "city"
         ],

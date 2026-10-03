@@ -86,6 +86,6 @@ def get_innovation_upload_service() -> InnovationUploadService:
     return InnovationUploadService(
         store=DbInnovationStore(SessionLocal),
         files=LocalFileStorage(Path(settings.upload_dir)),
-        rag=RagClient(settings.rag_url, settings.rag_timeout_seconds),
+        rag=RagClient(settings.rag_url, settings.rag_timeout_seconds, settings.rag_query_timeout_seconds),
         max_bytes=settings.max_upload_bytes,
     )
