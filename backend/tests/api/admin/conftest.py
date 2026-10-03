@@ -41,6 +41,7 @@ def fresh_services(admin_password_hash):
     problem_reports = mock.MockProblemReportAdminService()
     inbox = mock.MockInboxAdminService(ideas, problem_reports)
     grant_calls = mock.MockGrantCallAdminService()
+    reports = mock.MockReportAdminService()
     app.dependency_overrides = {
         deps.get_auth_service: lambda: auth,
         deps.get_innovation_service: lambda: innovations,
@@ -48,6 +49,7 @@ def fresh_services(admin_password_hash):
         deps.get_problem_report_service: lambda: problem_reports,
         deps.get_inbox_service: lambda: inbox,
         deps.get_grant_call_service: lambda: grant_calls,
+        deps.get_report_service: lambda: reports,
     }
     yield
     app.dependency_overrides = {}

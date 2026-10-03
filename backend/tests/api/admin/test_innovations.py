@@ -1,6 +1,8 @@
 import pytest
 
 from app.main import app
+from app.schemas.admin.common import ChallengeArea
+from app.schemas.admin.innovations import CostLevel, Readiness
 from app.services.admin import deps
 from app.services.admin.errors import EmbedPublishError, InvalidUploadError, UploadTooLargeError
 from app.services.admin.innovation_upload import CreatedInnovation, InnovationUploadService, NewInnovation
@@ -8,6 +10,15 @@ from app.storage import LocalFileStorage
 
 BASE = "/admin/innovations"
 PDF = b"%PDF-1.7 fake"
+UPLOADED = NewInnovation(
+    title="Nowa innowacja",
+    summary="Opis",
+    problem="Problem",
+    innovator="Fundacja Testowa",
+    challenge_areas=[ChallengeArea.SENIORS],
+    readiness=Readiness.CONCEPT,
+    cost_level=CostLevel.LOW,
+)
 FORM = {
     "title": "Opaska",
     "summary": "Opis",
@@ -162,8 +173,10 @@ def test_stats_suppresses_small_locations(client, auth) -> None:
 
 
 def test_stats_for_new_innovation_are_empty(client, auth) -> None:
-    created = client.post(BASE, json=NEW, headers=auth).json()
-    body = client.get(f"{BASE}/{created['id']}/stats", headers=auth).json()
+    # creation goes through the pdf upload, so the draft is put into the mock store directly
+    innovations = app.dependency_overrides[deps.get_innovation_service]()
+    innovations.insert_draft("nowa-abc123", UPLOADED, [])
+    body = client.get(f"{BASE}/nowa-abc123/stats", headers=auth).json()
     assert body["matches_total"] == 0
     assert body["rating_avg"] is None
     assert len(body["matches_by_week"]) == 6

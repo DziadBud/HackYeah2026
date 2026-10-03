@@ -1,5 +1,3 @@
-import re
-import unicodedata
 import uuid
 from datetime import UTC, datetime
 
@@ -28,6 +26,7 @@ from app.schemas.public.threads import (
     ThreadCreate,
 )
 from app.services.admin.errors import InvalidRequestError, NotFoundError
+from app.services.public.drafts import explain_fit, grant_draft, middleman_card, overlap, words
 from app.services.admin.mock import (
     MockGrantCallAdminService,
     MockIdeaAdminService,
@@ -47,12 +46,6 @@ def _now() -> datetime:
 
 def _new_id() -> str:
     return str(uuid.uuid4())
-
-
-def _words(text: str) -> set[str]:
-    # crude polish stemming: diacritics folded, first 5 letters of every word longer than 3
-    folded = unicodedata.normalize("NFKD", text.lower().replace("ł", "l")).encode("ascii", "ignore").decode()
-    return {w[:5] for w in re.findall(r"\w+", folded) if len(w) > 3}
 
 
 def _published(innovations: MockInnovationAdminService, innovation_id: str) -> Innovation:
@@ -76,10 +69,10 @@ class MockMatchService:
         if test_signup and not data.email:
             raise InvalidRequestError("email is required to sign up for testing")
 
-        query = _words(data.text)
+        query = words(data.text)
         published = self._innovations.list(PublicationStatus.PUBLISHED, None, 1000, 0).items
         scored = sorted(
-            ((len(query & _words(f"{i.title} {i.summary} {i.problem}")), i) for i in published),
+            ((overlap(query, i), i) for i in published),
             key=lambda pair: pair[0],
             reverse=True,
         )
@@ -117,7 +110,7 @@ class MockMatchService:
                     id=i.id,
                     title=i.title,
                     summary=i.summary,
-                    why=f"Pasuje, bo dotyczy: {', '.join(a.value for a in i.challenge_areas) or i.title}.",
+                    why=explain_fit(i),
                     tags=[f"area:{a.value}" for a in i.challenge_areas],
                     city=i.city,
                 )
@@ -129,7 +122,7 @@ class MockMatchService:
 
     def _similar_reports(self, query: set[str], city: str) -> list[SimilarProblemReport]:
         reports = self._problem_reports.list(None, None, None)
-        scored = [(len(query & _words(r.text)), r.location.lower() == city.lower(), r) for r in reports]
+        scored = [(len(query & words(r.text)), r.location.lower() == city.lower(), r) for r in reports]
         best = sorted((s for s in scored if s[0] > 0), key=lambda s: (s[1], s[0]), reverse=True)
         return [
             SimilarProblemReport(
@@ -207,18 +200,13 @@ class MockIdeaService:
             raise NotFoundError(data.grant_call_id)
         if not call.open:
             raise InvalidRequestError("this grant call is closed")
-        # stand-in for the llm: one section per form section, filled from the idea card
-        sections = [
-            f"## {s.title}\n{idea.summary if i == 0 else '[uzupełnij]'}"
-            for i, s in enumerate(call.sections)
-        ]
         return self._documents.add(
             GeneratedDocument(
                 id=_new_id(),
                 kind=DocumentKind.GRANT_APPLICATION,
                 idea_id=idea.id,
                 grant_call_id=call.id,
-                output="\n\n".join(sections) or idea.summary,
+                output=grant_draft(idea.summary, call),
                 created_at=_now(),
             )
         )
@@ -345,13 +333,7 @@ class MockDocumentService:
 
     def middleman(self, data: MiddlemanRequest) -> GeneratedDocument:
         innovation = _published(self._innovations, data.innovation_id)
-        # stand-in for the llm service card
-        output = (
-            f"Usługa: {innovation.title} dla instytucji typu {data.institution_type.value}\n"
-            f"Potrzeba: {data.needs}\n"
-            f"Na czym polega: {innovation.summary}\n"
-            f"Koszt: do oszacowania (poziom {innovation.cost_level.value})"
-        )
+        output = middleman_card(innovation, data)
         return self._documents.add(
             GeneratedDocument(
                 id=_new_id(),

@@ -97,9 +97,13 @@ class InnovationUploadService:
 
 
 def _tags(data: NewInnovation) -> list[str]:
-    # rag only filters on tags, so the type and the challenge areas are mirrored there
-    extra = ["type:innovation", *(f"area:{_slug(a.value)}" for a in data.challenge_areas)]
-    return list(dict.fromkeys([*data.tags, *extra]))
+    return with_area_tags([*data.tags, "type:innovation"], data.challenge_areas)
+
+
+def with_area_tags(tags: list[str], areas: list[ChallengeArea]) -> list[str]:
+    # rag only filters on tags, so the challenge areas are mirrored there as area:<slug>
+    kept = [t for t in tags if not t.startswith("area:")]
+    return list(dict.fromkeys([*kept, *(f"area:{_slug(a.value)}" for a in areas)]))
 
 
 def _new_id(title: str) -> str:

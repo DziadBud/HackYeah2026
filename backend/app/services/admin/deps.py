@@ -1,14 +1,27 @@
-# override these (app.dependency_overrides or edit) to switch to db-backed services
+# per-request db-backed services; tests override these with the mocks in mock.py
 from datetime import timedelta
 from functools import cache
 from pathlib import Path
 
+from fastapi import Depends
+from sqlalchemy.orm import Session
+
 from app.config import settings
+from app.db.session import SessionLocal, get_db
 from app.messaging import RabbitEmbedPublisher
 from app.services.admin.auth import AdminAuthService
 from app.services.admin.auth_models import AdminAccount
 from app.services.admin.auth_store import InMemoryAdminAuthStore
-from app.storage import LocalFileStorage
+from app.services.admin.db import (
+    DbGrantCallAdminService,
+    DbIdeaAdminService,
+    DbInboxAdminService,
+    DbInnovationAdminService,
+    DbInnovationStore,
+    DbProblemReportAdminService,
+    DbReportAdminService,
+)
+from app.services.admin.innovation_upload import InnovationUploadService
 from app.services.admin.interfaces import (
     GrantCallAdminService,
     IdeaAdminService,
@@ -17,15 +30,7 @@ from app.services.admin.interfaces import (
     ProblemReportAdminService,
     ReportAdminService,
 )
-from app.services.admin.innovation_upload import InnovationUploadService
-from app.services.admin.mock import (
-    MockGrantCallAdminService,
-    MockIdeaAdminService,
-    MockInboxAdminService,
-    MockInnovationAdminService,
-    MockProblemReportAdminService,
-    MockReportAdminService,
-)
+from app.storage import LocalFileStorage
 
 _auth = AdminAuthService(
     InMemoryAdminAuthStore(
@@ -40,48 +45,39 @@ _auth = AdminAuthService(
     failure_window=timedelta(minutes=settings.admin_login_window_minutes),
 )
 
-# module-level singletons so mock state survives between requests
-_innovations = MockInnovationAdminService()
-_ideas = MockIdeaAdminService()
-_problem_reports = MockProblemReportAdminService()
-_inbox = MockInboxAdminService(_ideas, _problem_reports)
-_grant_calls = MockGrantCallAdminService()
-_reports = MockReportAdminService()
-
-
 def get_auth_service() -> AdminAuthService:
     return _auth
 
 
-def get_innovation_service() -> InnovationAdminService:
-    return _innovations
+def get_innovation_service(db: Session = Depends(get_db)) -> InnovationAdminService:
+    return DbInnovationAdminService(db)
 
 
-def get_inbox_service() -> InboxAdminService:
-    return _inbox
+def get_inbox_service(db: Session = Depends(get_db)) -> InboxAdminService:
+    return DbInboxAdminService(db)
 
 
-def get_idea_service() -> IdeaAdminService:
-    return _ideas
+def get_idea_service(db: Session = Depends(get_db)) -> IdeaAdminService:
+    return DbIdeaAdminService(db)
 
 
-def get_problem_report_service() -> ProblemReportAdminService:
-    return _problem_reports
+def get_problem_report_service(db: Session = Depends(get_db)) -> ProblemReportAdminService:
+    return DbProblemReportAdminService(db)
 
 
-def get_grant_call_service() -> GrantCallAdminService:
-    return _grant_calls
+def get_grant_call_service(db: Session = Depends(get_db)) -> GrantCallAdminService:
+    return DbGrantCallAdminService(db)
 
 
-def get_report_service() -> ReportAdminService:
-    return _reports
+def get_report_service(db: Session = Depends(get_db)) -> ReportAdminService:
+    return DbReportAdminService(db)
 
 
-# the pdf and the rabbit message are real; the innovation row goes to the mock until the data model is settled
+# own short sessions inside the store: the row must be committed before the rabbit publish
 @cache
 def get_innovation_upload_service() -> InnovationUploadService:
     return InnovationUploadService(
-        store=_innovations,
+        store=DbInnovationStore(SessionLocal),
         files=LocalFileStorage(Path(settings.upload_dir)),
         publisher=RabbitEmbedPublisher(settings.rabbitmq_url, settings.embed_queue),
         max_bytes=settings.max_upload_bytes,
