@@ -28,6 +28,7 @@ class SocialCanvas(BaseModel):
 class Idea(BaseModel):
     id: str
     summary: str
+    essence: str = ""
     target_group: str
     stage: IdeaStage
     social_canvas: SocialCanvas

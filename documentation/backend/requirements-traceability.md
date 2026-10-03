@@ -11,10 +11,10 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 - **Done when:** the 8 queries in `documentation/sample-data/sample-matchmaking-queries.md` return the expected id in the top 3.
 
 ## R2 Zasobnik wiedzy (S)
-- **Where:** public `GET /innovations`, `GET /challenge-areas`, `POST /ask-report`; `/admin/reports/*` (§5).
+- **Where:** public `GET /innovations`, `GET /innovations/{id}`; `/admin/reports/*` (§5).
 - **How:**
   - the library lists `innovations` rows tagged `type:innovation`; films are linked through `page_url`
-  - ROPS reports and the Mapa Wyzwan are `type:report` rows embedded with `/embed/pdf`; "ask the report" answers from their chunks
+  - ROPS reports and the Mapa Wyzwan are `type:report` rows embedded with `/embed/pdf`; "ask the report" over their chunks is deferred until they are embedded
   - the admin uploads a PDF per innovation; rag embeds it from a RabbitMQ message and the innovation is published once indexed
   - aggregated needs and trends exist only under `/admin/reports/*`
 - **Gap:** `/embed/pdf` stores no page numbers, so report answers can't cite pages.
@@ -39,7 +39,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 - **Where:** `admin_reply` on `problem_reports` and `ideas`; `threads` + `thread_replies` on each innovation ([.claude/designs/community-threads.md](../../.claude/designs/community-threads.md)); the email notifier (§4).
 - **How:**
   - the admin answers an idea (emailed if it has an email), or answers a problem report once on its public page
-  - per-innovation community threads: public create starts as `pending`, ROPS moderates to `published` / `hidden`; flat replies with role `kind` (practitioner / expert / mentor / admin); `helpful_count` counter
+  - per-innovation community threads: public create starts as `pending`, ROPS moderates to `published` / `hidden`; flat replies with role `kind` (public replies are always practitioner; expert / mentor / admin set by ROPS)
   - mentors are admins (or reply with `kind = mentor`)
   - no public accounts
 
@@ -111,7 +111,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 | Req | MVP depth |
 |---|---|
 | R1 | full |
-| R2 | library, ask-report, SQL reports |
+| R2 | library, SQL reports; ask-report deferred until report PDFs are embedded |
 | R3 | idea card + Canvas answers; generator for one fictional grant call (stored) |
 | R4, R5, R7 | thin, working end to end (threads moderated; Middleman stored) |
 | R6 | CRUD, inbox, replies, thread moderation, reports |

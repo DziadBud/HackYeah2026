@@ -160,6 +160,20 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 
 CSV export is a streaming response. Cities with fewer than 5 problem reports are shown as "too few to display".
 
+### Public endpoints (no auth; per-IP rate limit on writes)
+
+| Feature | Endpoints |
+|---|---|
+| Matching | `POST /match?test_signup=` `{text, city, email?, consent}` → `{problem_report_id, innovations, similar_reports, test_signup_ids}`; `test_signup=true` needs an email (422 otherwise) |
+| Problem reports | `GET /problem-reports/{id}` (public page with `admin_reply`), `POST /problem-reports/{id}/support` ("mnie też") |
+| Ideas | `POST /ideas` `{summary, essence, target_group, stage, social_canvas?, email?, consent}`, `POST /ideas/{id}/grant-application {grant_call_id}` (open calls only, stored in `generated_documents`) |
+| Library | `GET /innovations` (published only; filters `challenge_area`, `q`, `limit`, `offset`), `GET /innovations/{id}` (with `rating_avg`, `rating_count`), `POST /innovations/{id}/feedback {stars, comment, test_signup_id?}` |
+| Threads | `GET /innovations/{id}/threads` (published threads + published replies), `POST /innovations/{id}/threads` (202, `pending`), `POST /threads/{id}/replies` (202, `pending`) |
+| Middleman | `POST /middleman {innovation_id, institution_type, needs, email?, consent}` (the response is the stored document) |
+| Grant calls | `GET /grant-calls` (open only) |
+
+The public API is mocked for now (`backend/app/services/public/mock.py`): it reads and writes the admin mocks, so public actions show up in the admin panel, and word overlap stands in for rag and the LLM until the db layer and the rag client land.
+
 ## 6. Data model
 
 Two rag tables (used as merged), plus flat match-api tables. match-api also extends `innovations` with extra columns that rag ignores at query time (rag still filters on `tags`, `city`, `status`).
@@ -297,11 +311,11 @@ erDiagram
 - **Taxonomy:** the 8 Mapa challenge areas (Rodzina i piecza zastepcza, Bezdomnosc, Niepelnosprawnosc, Ubostwo, Integracja cudzoziemcow, Zdrowie, Zdrowie psychiczne, Seniorzy).
 - **city** = gmina, picked from a fixed list (seed/JSON). Free-text city spellings are rejected on write.
 - **Criticality** is not stored: reports compute it on read (problem reports × distinct cities × 7d growth).
-- **Threads** are per-innovation community discussions (R5). No public accounts: `author_label` + optional `email`. Flat replies only (no nested reply trees). `helpful_count` is a counter like `support_count`. Public lists show `published` only; `pending` waits for ROPS moderation.
+- **Threads** are per-innovation community discussions (R5). No public accounts: `author_label` + optional `email`. Flat replies only (no nested reply trees). `helpful_count` stays in the table, but the public "pomocne" endpoint is deferred, so nothing increments it yet. Public replies are always `practitioner`; `expert` / `mentor` / `admin` are set by ROPS. Public lists show `published` only; `pending` waits for ROPS moderation.
 - **Generated documents** store Middleman service cards and grant-application drafts so the user and admin can reopen them. They are not re-submitted into an external grant DB (that stays deferred).
 - **Naming:** always `city` (not `location`), always `stars` on feedback.
 
-Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `POST /threads/{id}/replies`, `POST /threads/{id}/helpful`, `POST /middleman`, grant generator on an idea (both persist a `generated_documents` row).
+Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `POST /threads/{id}/replies`, `POST /middleman`, grant generator on an idea (both persist a `generated_documents` row).
 
 ## 7. Failure modes
 
@@ -314,7 +328,7 @@ Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `P
 | spam on public routes | per-IP rate limit, input length caps |
 | prompt injection | user text treated as data, explanations limited to retrieved rows |
 | SMTP unset or down | email skipped; the admin still sees the inbox, the reply is on the public page |
-| "mnie też" / "pomocne" pressed many times | inflated count, accepted (browser remembers the click) |
+| "mnie też" or ratings sent many times | inflated `support_count` (feeds criticality) and `rating_avg`; the per-IP rate limit on public writes is a blocker before a live launch |
 | spam threads or replies | per-IP rate limit; default `pending` until admin publishes |
 | Postgres down | everything down; accepted for MVP |
 
@@ -376,7 +390,7 @@ docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit
 3. The rag service owns chunking, embedding and retrieval; `/match` calls it over HTTP, rag down gives 503 with the problem report kept.
 4. Data model: merged rag tables + match-api tables (`problem_reports`, `ideas`, `grant_calls`, `test_signups`, `feedback`, `threads`, `thread_replies`, `generated_documents`):
    - the email and `admin_reply` live on the item; problem reports also have `hidden`
-   - "mnie też" / thread "pomocne" are counters
+   - "mnie też" is a counter; thread "pomocne" is deferred
    - innovations keep rag columns and add `problem`, `innovator`, `challenge_areas`, `target_group`, `readiness`, `cost_level`, `video_url`; challenge areas are mirrored into `area:*` tags for rag
    - `location` is renamed to `city`; cities come from a fixed list
    - criticality is computed on read, not stored

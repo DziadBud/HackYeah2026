@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api import health
 from app.api.admin import router as admin_router
+from app.api.public import router as public_router
 from app.config import settings
 
 # docs list every admin route, so they are only served in debug
@@ -25,3 +26,4 @@ app.add_middleware(
 
 app.include_router(health.router)
 app.include_router(admin_router)
+app.include_router(public_router)
