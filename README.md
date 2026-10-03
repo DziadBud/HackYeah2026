@@ -5,7 +5,8 @@ Matchmaking problemów społecznych z innowacjami z bazy ROPS.
 ## Struktura
 
 ```
-backend/        FastAPI (match-api / ingest) — patrz backend/CLAUDE.md
+backend/        FastAPI (match-api: publiczne API + /admin) — patrz backend/CLAUDE.md
+rag/            FastAPI (serwis RAG: indeksowanie + wyszukiwanie, POST /query)
 frontend/       Next.js (public UI + admin UI) — patrz frontend/CLAUDE.md
 docker/         inicjalizacja Postgresa (pgvector)
 documentation/  architektura, kryteria, dane przykładowe

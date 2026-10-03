@@ -25,7 +25,6 @@ services:
       ADMIN_ACCOUNTS: ${ADMIN_ACCOUNTS:-{}}
       # hackathon demo: admin panel without login (only works with DEBUG=true)
       ADMIN_AUTH_DISABLED: ${ADMIN_AUTH_DISABLED:-true}
-      DATABASE_URL: postgresql://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
       DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
     ports:
       - "${API_PORT:-8000}:8000"
