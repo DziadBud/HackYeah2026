@@ -21,6 +21,13 @@ class FakeTaggingService:
         return ["senior-support", "accessibility"]
 
 
+class FakeAnswerService:
+    def generate(self, query: str, matches: list[dict[str, object]]) -> str:
+        if not matches:
+            return f"Nie znaleziono dopasowanych innowacji dla: {query}."
+        return "Znaleziono innowację o identyfikatorze: wibraap."
+
+
 class FakeVectorStore:
     def __init__(self) -> None:
         self.insert_kwargs: dict[str, object] = {}
@@ -62,6 +69,7 @@ def test_health():
 
 def test_query_returns_no_result_answer(monkeypatch):
     monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
+    monkeypatch.setattr("app.main.answer_service", FakeAnswerService())
     monkeypatch.setattr("app.main.get_vector_store", lambda: FakeVectorStore())
 
     response = client.post("/query", json={"query": "support for seniors"})
@@ -77,6 +85,7 @@ def test_query_returns_no_result_answer(monkeypatch):
 
 def test_query_returns_only_innovation_ids(monkeypatch):
     monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
+    monkeypatch.setattr("app.main.answer_service", FakeAnswerService())
     store = FakeSearchVectorStore()
     monkeypatch.setattr("app.main.get_vector_store", lambda: store)
 
@@ -126,6 +135,7 @@ def test_embed_fetches_content_and_stores_generated_tags(monkeypatch):
 
 def test_embed_pdf_extracts_full_document(monkeypatch):
     monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
+    monkeypatch.setattr("app.main.tagging_service", FakeTaggingService())
     monkeypatch.setattr("app.main.get_vector_store", lambda: FakeVectorStore())
     monkeypatch.setattr(
         "app.main.extract_pdf_text", lambda data: "whole PDF document text"

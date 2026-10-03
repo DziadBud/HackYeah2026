@@ -1,24 +1,22 @@
 from collections.abc import Mapping, Sequence
 
+from app.services.ollama import OllamaClient
 
-class MockAnswerService:
-    """Deterministic stand-in for an LLM grounded in retrieved matches."""
+
+class AnswerService:
+    def __init__(self, client: OllamaClient | None = None) -> None:
+        self.client = client or OllamaClient()
 
     def generate(
         self, query: str, matches: Sequence[Mapping[str, object]]
     ) -> str:
-        if not matches:
-            return f"Nie znaleziono dopasowanych innowacji dla: {query}."
-
-        innovation_ids = [str(match["innovation_id"]) for match in matches[:3]]
-        if len(innovation_ids) == 1:
-            return f"Znaleziono innowację o identyfikatorze: {innovation_ids[0]}."
-        if len(innovation_ids) == 2:
-            return (
-                "Znaleziono innowacje o identyfikatorach: "
-                f"{innovation_ids[0]} oraz {innovation_ids[1]}."
-            )
-        return (
-            "Znaleziono innowacje o identyfikatorach: "
-            f"{innovation_ids[0]}, {innovation_ids[1]} oraz {innovation_ids[2]}."
+        result = self.client.generate(
+            "Odpowiedz po polsku w jednym lub dwóch zdaniach. "
+            "Podsumuj wyłącznie to, co wynika z listy znalezionych identyfikatorów. "
+            "Nie wymyślaj szczegółów i nie używaj markdown.\n\n"
+            f"Zapytanie: {query}\n"
+            f"Znalezione innowacje: {[match['innovation_id'] for match in matches[:3]]}"
         )
+        if not isinstance(result, str) or not result.strip():
+            raise RuntimeError("LLM returned an invalid answer")
+        return result.strip()

@@ -17,7 +17,7 @@ class EmbeddingService:
         try:
             response = httpx.post(
                 self.service_url,
-                json={"texts": texts},
+                json={"inputs": texts},
                 timeout=60.0,
             )
             response.raise_for_status()
@@ -25,7 +25,7 @@ class EmbeddingService:
         except (httpx.HTTPError, ValueError) as error:
             raise RuntimeError("external embedding service request failed") from error
 
-        vectors = payload.get("embeddings")
+        vectors = payload
         if not isinstance(vectors, list) or len(vectors) != len(texts):
             raise RuntimeError("external embedding service returned invalid embeddings")
 

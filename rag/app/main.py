@@ -4,8 +4,8 @@ from pydantic import BaseModel, Field
 from app.services.chunking import split_text
 from app.services.embedding import EmbeddingService
 from app.services.pdf import extract_pdf_text
-from app.services.tagging import MockTaggingService
-from app.services.answer import MockAnswerService
+from app.services.tagging import TaggingService
+from app.services.answer import AnswerService
 from app.services.vector_store import get_vector_store
 
 MAX_DOCUMENT_BYTES = 10 * 1024 * 1024
@@ -45,8 +45,8 @@ class EmbedResponse(BaseModel):
 
 app = FastAPI(title="HackYeah RAG API", version="0.1.0")
 embedding_service = EmbeddingService()
-tagging_service = MockTaggingService()
-answer_service = MockAnswerService()
+tagging_service = TaggingService()
+answer_service = AnswerService()
 
 
 @app.get("/health", tags=["health"])

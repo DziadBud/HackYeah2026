@@ -75,17 +75,58 @@ services:
       rabbitmq:
         condition: service_healthy
 
+  embeddings:
+    image: ghcr.io/huggingface/text-embeddings-inference:cpu-1.8
+    container_name: hackyeah-embeddings
+    command:
+      - --model-id
+      - ${EMBEDDING_MODEL:-sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2}
+      - --port
+      - "80"
+    volumes:
+      - embedding_models:/data
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: hackyeah-ollama
+    volumes:
+      - ollama_models:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  ollama-init:
+    image: ollama/ollama:latest
+    container_name: hackyeah-ollama-init
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["ollama pull $${OLLAMA_MODEL:-qwen2.5:1.5b}"]
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    volumes:
+      - ollama_models:/root/.ollama
+    depends_on:
+      ollama:
+        condition: service_healthy
+
   rag:
     build: ./rag
     container_name: hackyeah-rag
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
-      EMBEDDING_SERVICE_URL: ${EMBEDDING_SERVICE_URL}
+      EMBEDDING_SERVICE_URL: http://embeddings:80/embed
+      OLLAMA_URL: http://ollama:11434
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:1.5b}
     ports:
       - "${RAG_PORT:-8001}:8000"
     depends_on:
       db:
         condition: service_healthy
+      embeddings:
+        condition: service_started
+      ollama-init:
+        condition: service_completed_successfully
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
       interval: 10s
@@ -108,3 +149,5 @@ volumes:
   postgres_data:
   rabbitmq_data:
   uploads:
+  embedding_models:
+  ollama_models:
