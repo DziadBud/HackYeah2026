@@ -1,3 +1,4 @@
+import logging
 import re
 import unicodedata
 import uuid
@@ -6,12 +7,9 @@ from pathlib import Path
 from typing import Protocol
 
 from app.schemas.admin.common import ChallengeArea
-from app.schemas.admin.innovations import CostLevel, Readiness
-from app.services.admin.errors import (
-    EmbedPublishError,
-    InvalidUploadError,
-    UploadTooLargeError,
-)
+from app.services.admin.errors import InvalidUploadError, UploadTooLargeError
+
+logger = logging.getLogger(__name__)
 
 PDF_MAGIC = b"%PDF-"
 
@@ -20,17 +18,10 @@ PDF_MAGIC = b"%PDF-"
 class NewInnovation:
     title: str
     summary: str
-    problem: str
-    innovator: str
     challenge_areas: list[ChallengeArea]
-    readiness: Readiness
-    cost_level: CostLevel
-    target_group: list[str] = field(default_factory=list)
     tags: list[str] = field(default_factory=list)
     city: str = ""
     page_url: str | None = None
-    image_url: str | None = None
-    video_url: str | None = None
 
 
 @dataclass(frozen=True)
@@ -43,7 +34,7 @@ class CreatedInnovation:
 
 class InnovationStore(Protocol):
     def insert_draft(self, innovation_id: str, data: NewInnovation, tags: list[str]) -> None: ...
-    def delete(self, innovation_id: str) -> None: ...
+    def publish(self, innovation_id: str) -> None: ...
 
 
 class FileStorage(Protocol):
@@ -51,8 +42,8 @@ class FileStorage(Protocol):
     def delete(self, path: Path) -> None: ...
 
 
-class EmbedPublisher(Protocol):
-    def publish_embed_requested(self, innovation_id: str, file_path: str) -> None: ...
+class EmbeddingClient(Protocol):
+    def embed_pdf(self, innovation_id: str, filename: str, pdf: bytes) -> None: ...
 
 
 class InnovationUploadService:
@@ -60,12 +51,12 @@ class InnovationUploadService:
         self,
         store: InnovationStore,
         files: FileStorage,
-        publisher: EmbedPublisher,
+        rag: EmbeddingClient,
         max_bytes: int,
     ) -> None:
         self._store = store
         self._files = files
-        self._publisher = publisher
+        self._rag = rag
         self._max_bytes = max_bytes
 
     def create(self, data: NewInnovation, pdf: bytes) -> CreatedInnovation:
@@ -77,23 +68,24 @@ class InnovationUploadService:
         innovation_id = _new_id(data.title)
         path = self._files.save(f"{innovation_id}.pdf", pdf)
         try:
-            # committed before publishing: rag looks the row up as soon as it gets the message
+            # committed before embedding: rag looks the row up and replaces its chunks
             self._store.insert_draft(innovation_id, data, _tags(data))
         except Exception:
             self._files.delete(path)
             raise
 
-        try:
-            self._publisher.publish_embed_requested(innovation_id, str(path))
-        except Exception as exc:
-            # no outbox: undo instead, so there is never a draft that nobody will embed
-            self._store.delete(innovation_id)
-            self._files.delete(path)
-            raise EmbedPublishError("could not queue the embedding, try again") from exc
-
         return CreatedInnovation(
             id=innovation_id, title=data.title, status="draft", file_path=str(path)
         )
+
+    def embed(self, innovation_id: str, file_path: str) -> None:
+        # runs as a background task after the 202; a failure leaves the draft unpublished
+        path = Path(file_path)
+        try:
+            self._rag.embed_pdf(innovation_id, path.name, path.read_bytes())
+            self._store.publish(innovation_id)
+        except Exception:
+            logger.exception("embedding failed, innovation %s stays draft", innovation_id)
 
 
 def _tags(data: NewInnovation) -> list[str]:
@@ -104,6 +96,15 @@ def with_area_tags(tags: list[str], areas: list[ChallengeArea]) -> list[str]:
     # rag only filters on tags, so the challenge areas are mirrored there as area:<slug>
     kept = [t for t in tags if not t.startswith("area:")]
     return list(dict.fromkeys([*kept, *(f"area:{_slug(a.value)}" for a in areas)]))
+
+
+def area_tag(area: ChallengeArea) -> str:
+    return f"area:{_slug(area.value)}"
+
+
+def areas_from_tags(tags: list[str] | None) -> list[ChallengeArea]:
+    by_tag = {area_tag(a): a for a in ChallengeArea}
+    return [by_tag[t] for t in tags or [] if t in by_tag]
 
 
 def _new_id(title: str) -> str:

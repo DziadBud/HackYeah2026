@@ -10,9 +10,6 @@ services:
       - "${POSTGRES_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      # Single directory mount only — file mounts into the same path break on Docker Desktop (RO fs).
-      # Sources live in rag/sql/; copies for init order are under docker/postgres/init/.
-      - ./docker/postgres/init:/docker-entrypoint-initdb.d:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-hackyeah} -d ${POSTGRES_DB:-hackyeah}"]
       interval: 5s
@@ -37,10 +34,40 @@ services:
       timeout: 5s
       retries: 10
 
+  # single place that applies the schema: rag/sql (rag's tables) then backend/sql (match-api's).
+  # runs on every up, so every file must be idempotent
+  migrate:
+    image: pgvector/pgvector:pg17
+    container_name: hackyeah-migrate
+    environment:
+      PGHOST: db
+      PGUSER: ${POSTGRES_USER:-hackyeah}
+      PGPASSWORD: ${POSTGRES_PASSWORD:-hackyeah}
+      PGDATABASE: ${POSTGRES_DB:-hackyeah}
+      # hide "already exists, skipping" notices on re-runs
+      PGOPTIONS: -c client_min_messages=warning
+    volumes:
+      - ./rag/sql:/sql/rag:ro
+      - ./backend/sql:/sql/backend:ro
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        set -e
+        psql -v ON_ERROR_STOP=1 -q -c "CREATE EXTENSION IF NOT EXISTS vector"
+        for f in /sql/rag/*.sql /sql/backend/*.sql; do
+          echo "=== $$f"
+          psql -v ON_ERROR_STOP=1 -q -f "$$f"
+        done
+    depends_on:
+      db:
+        condition: service_healthy
+
   api:
     build: ./backend
     container_name: hackyeah-api
     environment:
+      # +psycopg: only psycopg 3 is installed
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
       DEBUG: ${DEBUG:-true}
       # demo login; override in .env for anything shared
       ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
@@ -49,13 +76,13 @@ services:
       ADMIN_AUTH_DISABLED: ${ADMIN_AUTH_DISABLED:-true}
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
       GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
-      RABBITMQ_URL: amqp://${RABBITMQ_USER:-hackyeah}:${RABBITMQ_PASSWORD:-hackyeah}@rabbitmq:5672/
+      RAG_URL: http://rag:8000
     ports:
       - "${API_PORT:-8000}:8000"
     depends_on:
-      db:
-        condition: service_healthy
-      rabbitmq:
+      migrate:
+        condition: service_completed_successfully
+      rag:
         condition: service_healthy
 
   embeddings:
@@ -104,8 +131,8 @@ services:
     ports:
       - "${RAG_PORT:-8001}:8000"
     depends_on:
-      db:
-        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
       embeddings:
         condition: service_started
       ollama-init:
