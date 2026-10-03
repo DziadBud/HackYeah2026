@@ -18,8 +18,6 @@ class QueryRequest(BaseModel):
     search_tests: bool = False
     city: str | None = Field(default=None, min_length=1, max_length=200)
     title: str | None = Field(default=None, max_length=500)
-    tags: list[str] = Field(default_factory=list, max_length=20)
-
 
 class QueryResponse(BaseModel):
     query: str
@@ -36,7 +34,6 @@ class QueryTestResponse(BaseModel):
     innovation_id: str
     title: str
     content: str
-    tags: list[str]
     status: str
     chunk_count: int
 
@@ -47,7 +44,6 @@ class EmbedRequest(BaseModel):
 
 class EmbedResponse(BaseModel):
     innovation_id: str
-    tags: list[str]
     child_ids: list[str]
     child_count: int
     dimensions: int
@@ -59,7 +55,6 @@ class TestEmbedRequest(BaseModel):
 
 app = FastAPI(title="HackYeah RAG API", version="0.1.0")
 embedding_service = EmbeddingService()
-tagging_service = TaggingService()
 answer_service = AnswerService()
 
 
@@ -79,7 +74,6 @@ def query(request: QueryRequest) -> QueryResponse:
             search_tests=request.search_tests,
             city=request.city,
             title=request.title,
-            tags=request.tags,
         )
     except RuntimeError as error:
         raise HTTPException(status_code=503, detail=str(error)) from error
@@ -136,14 +130,12 @@ def _embed_document(
             chunk_size=800,
             chunk_overlap=120,
         )
-        tags = tagging_service.generate(text)
         vectors = embedding_service.embed_many(chunks)
         parent_id, child_ids = store.insert_document(
             text=text,
             innovation_id=request.innovation_id,
             source=source,
             page=None,
-            tags=tags,
             chunks=chunks,
             embeddings=vectors,
         )
@@ -154,7 +146,6 @@ def _embed_document(
 
     return EmbedResponse(
         innovation_id=parent_id,
-        tags=tags,
         child_ids=[str(child_id) for child_id in child_ids],
         child_count=len(child_ids),
         dimensions=len(vectors[0]),

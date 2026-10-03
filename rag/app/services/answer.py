@@ -11,11 +11,11 @@ class AnswerService:
         self, query: str, matches: Sequence[Mapping[str, object]]
     ) -> str:
         result = self.client.generate(
-            "Odpowiedz po polsku w jednym lub dwóch zdaniach. "
-            "Podsumuj wyłącznie to, co wynika z listy znalezionych identyfikatorów. "
-            "Nie wymyślaj szczegółów i nie używaj markdown.\n\n"
-            f"Zapytanie: {query}\n"
-            f"Znalezione innowacje: {[match['innovation_id'] for match in matches[:3]]}"
+            "Napisz po polsku jedno krótkie zdanie wyjaśniające, czego ogólnie "
+            "dotyczy zapytanie użytkownika. Nie podsumowuj wyników wyszukiwania, "
+            "nie wymieniaj identyfikatorów innowacji, nie dodawaj faktów spoza "
+            "zapytania i nie używaj markdown.\n\n"
+            f"Zapytanie użytkownika: {query}"
         )
         if isinstance(result, dict):
             result = (

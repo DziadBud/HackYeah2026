@@ -50,9 +50,9 @@ flowchart LR
 | Down means | `/match` returns 503 (problem report still stored); uploaded innovations stay draft until re-uploaded | site down |
 
 How rag behaves, and what match-api does about it:
-- **`POST /query {query, top_k ≤ 3, city?, title?, tags?}`:**
+- **`POST /query {query, top_k ≤ 3, city?, title?}`:**
   - returns the best chunk per innovation, `status = 'published'` only
-  - the tags filter is an overlap, so `/match` always sends `tags: ["type:innovation"]`
+    - ranks results with equal weights: 50% vector similarity and 50% basic title match; `city` remains an optional filter
 - **Temporary `GET /query/test/{innovation_id}`:** reads one stored innovation, its tags, status, text, and chunk count for verifying test embeddings.
 - **`POST /embed {innovation_id}`:**
   - needs an existing `innovations` row and replaces all of its chunks

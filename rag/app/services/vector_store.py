@@ -118,7 +118,6 @@ class PostgresVectorStore:
         innovation_id: str,
         source: str,
         page: int | None,
-        tags: Sequence[str],
         chunks: Sequence[str],
         embeddings: Sequence[Sequence[float]],
     ) -> tuple[str, list[UUID]]:
@@ -147,10 +146,6 @@ class PostgresVectorStore:
                         raise VectorStoreError(
                             f"innovation does not exist: {innovation_id}"
                         )
-                    cursor.execute(
-                        "UPDATE innovations SET tags = %s, updated_at = now() WHERE id = %s",
-                        (list(tags), innovation_id),
-                    )
                     cursor.execute(
                         "DELETE FROM innovation_chunks WHERE innovation_id = %s",
                         (innovation_id,),
@@ -192,7 +187,6 @@ class PostgresVectorStore:
         search_tests: bool,
         city: str | None,
         title: str | None,
-        tags: Sequence[str],
     ) -> list[dict[str, object]]:
         if not self.database_url:
             raise VectorStoreError("DATABASE_URL is not configured")
@@ -220,7 +214,6 @@ class PostgresVectorStore:
                                 i.city,
                                 i.summary,
                                 i.page_url AS parent_url,
-                                i.tags,
                                 c.source,
                                 c.page,
                                 c.text,
@@ -229,21 +222,10 @@ class PostgresVectorStore:
                                     WHEN %s <> '' AND i.title ILIKE ('%%' || %s || '%%')
                                     THEN 1.0 ELSE 0.0
                                 END AS title_score,
-                                CASE
-                                    WHEN %s <> '' AND EXISTS (
-                                        SELECT 1 FROM unnest(i.tags) AS tag
-                                        WHERE tag ILIKE ('%%' || %s || '%%')
-                                    )
-                                    THEN 1.0 ELSE 0.0
-                                END AS tag_score
                             FROM innovation_chunks AS c
                             JOIN innovations AS i ON i.id = c.innovation_id
-                                                        WHERE (%s::text IS NULL OR i.city = %s)
-                                                            AND (%s::text IS NULL OR i.title ILIKE ('%%' || %s || '%%'))
-                              AND (
-                                  cardinality(%s::text[]) = 0
-                                  OR i.tags && %s::text[]
-                              )
+                            WHERE (%s::text IS NULL OR i.city = %s)
+                              AND (%s::text IS NULL OR i.title ILIKE ('%%' || %s || '%%'))
                               AND (
                                   NOT %s
                                   OR EXISTS (
@@ -258,8 +240,7 @@ class PostgresVectorStore:
                         FROM (
                             SELECT DISTINCT ON (parent_id)
                                 parent_id,
-                                vector_score + (title_score * 0.2) + (tag_score * 0.2)
-                                    AS score
+                                (vector_score * 0.5) + (title_score * 0.5) AS score
                             FROM ranked
                             ORDER BY parent_id, score DESC
                         ) AS best_matches
@@ -276,8 +257,6 @@ class PostgresVectorStore:
                             city,
                             title,
                             title,
-                            list(tags),
-                            list(tags),
                             search_tests,
                             top_k,
                         ),
