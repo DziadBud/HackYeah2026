@@ -77,9 +77,9 @@ flowchart TD
     P -.-> Q["rag consumer (owned by rag): /data/uploads/{id}.pdf -> chunks, status = published"]
 ```
 
-- **Create from a PDF:** `POST /admin/innovations`, multipart form with `file` (PDF) + `title`, `summary`, `author`, `tags` (repeatable), `city`, `page_url`, `image_url`.
+- **Create from a PDF:** `POST /admin/innovations`, multipart form with `file` (PDF) + `title`, `summary`, `problem`, `innovator`, `challenge_areas` (repeatable, Mapa areas), `readiness`, `cost_level`, `target_group` and `tags` (repeatable), `city`, `page_url`, `image_url`, `video_url`.
   - The id is a slug of the title plus a random suffix.
-  - Tags get `type:innovation` and `author:<name>` added, since rag's table has no author column.
+  - Tags get `type:innovation` and one `area:<slug>` per challenge area added (e.g. `area:zdrowie-psychiczne`), since rag filters only on tags.
   - Commit happens before publish because the consumer looks the row up as soon as it gets the message.
   - If the publish fails, the row and the file are deleted and the request returns 503. So there is never a draft nobody will embed, and no outbox is needed.
 - **Message contract** (queue `innovation.embed`, durable, persistent messages, publisher confirms; at-least-once):

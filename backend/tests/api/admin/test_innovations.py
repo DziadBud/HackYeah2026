@@ -8,7 +8,16 @@ from app.storage import LocalFileStorage
 
 BASE = "/admin/innovations"
 PDF = b"%PDF-1.7 fake"
-FORM = {"title": "Opaska", "summary": "Opis", "author": "Jan Testowy", "tags": ["Seniorzy", "pilotaz"]}
+FORM = {
+    "title": "Opaska",
+    "summary": "Opis",
+    "problem": "Seniorzy nie slysza alarmow",
+    "innovator": "Fundacja Testowa",
+    "challenge_areas": ["Seniorzy"],
+    "readiness": "pilot",
+    "cost_level": "low",
+    "tags": ["opaska", "pilotaz"],
+}
 
 
 def test_list_filtered(client, auth) -> None:
@@ -62,7 +71,25 @@ def test_upload(client, auth, error, want) -> None:
     if want == 202:
         assert res.json() == {"id": "opaska-abc123", "title": "Opaska", "status": "draft"}
         data, pdf = svc.calls[0]
-        assert (data.author, data.tags, data.city, pdf) == ("Jan Testowy", ["Seniorzy", "pilotaz"], "", PDF)
+        assert (data.innovator, data.challenge_areas, data.tags, data.city, pdf) == (
+            "Fundacja Testowa", ["Seniorzy"], ["opaska", "pilotaz"], "", PDF
+        )
+
+
+@pytest.mark.parametrize(
+    "override",
+    [
+        pytest.param({"problem": ""}, id="#1 - FAIL - empty problem"),
+        pytest.param({"challenge_areas": ["Kosmos"]}, id="#2 - FAIL - unknown area"),
+        pytest.param({"readiness": "someday"}, id="#3 - FAIL - unknown readiness"),
+    ],
+)
+def test_upload_invalid_field_422(client, auth, override) -> None:
+    app.dependency_overrides[deps.get_innovation_upload_service] = lambda: FakeUploadService()
+    res = client.post(
+        BASE, data={**FORM, **override}, files={"file": ("a.pdf", PDF, "application/pdf")}, headers=auth
+    )
+    assert res.status_code == 422
 
 
 def test_upload_missing_fields_422(client, auth) -> None:
@@ -129,4 +156,7 @@ def test_upload_lands_in_mock_list(client, auth, tmp_path) -> None:
     created = client.get(f"{BASE}/{res.json()['id']}", headers=auth).json()
     assert created["status"] == "draft"
     assert created["challenge_areas"] == ["Seniorzy"]
+    assert (created["problem"], created["innovator"], created["readiness"]) == (
+        "Seniorzy nie slysza alarmow", "Fundacja Testowa", "pilot"
+    )
     assert published == [created["id"]]

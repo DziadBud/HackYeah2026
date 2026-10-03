@@ -5,6 +5,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Protocol
 
+from app.schemas.admin.common import ChallengeArea
+from app.schemas.admin.innovations import CostLevel, Readiness
 from app.services.admin.errors import (
     EmbedPublishError,
     InvalidUploadError,
@@ -18,11 +20,17 @@ PDF_MAGIC = b"%PDF-"
 class NewInnovation:
     title: str
     summary: str
-    author: str
+    problem: str
+    innovator: str
+    challenge_areas: list[ChallengeArea]
+    readiness: Readiness
+    cost_level: CostLevel
+    target_group: list[str] = field(default_factory=list)
     tags: list[str] = field(default_factory=list)
     city: str = ""
     page_url: str | None = None
     image_url: str | None = None
+    video_url: str | None = None
 
 
 @dataclass(frozen=True)
@@ -89,12 +97,15 @@ class InnovationUploadService:
 
 
 def _tags(data: NewInnovation) -> list[str]:
-    # rag's innovations table has no author column; tags are the only free-form field
-    extra = ["type:innovation", f"author:{data.author}"]
+    # rag only filters on tags, so the type and the challenge areas are mirrored there
+    extra = ["type:innovation", *(f"area:{_slug(a.value)}" for a in data.challenge_areas)]
     return list(dict.fromkeys([*data.tags, *extra]))
 
 
 def _new_id(title: str) -> str:
-    ascii_title = unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode()
-    slug = re.sub(r"[^a-z0-9]+", "-", ascii_title.lower()).strip("-")[:40] or "innovation"
-    return f"{slug}-{uuid.uuid4().hex[:6]}"
+    return f"{_slug(title)[:40].strip('-') or 'innovation'}-{uuid.uuid4().hex[:6]}"
+
+
+def _slug(text: str) -> str:
+    ascii_text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "-", ascii_text.lower()).strip("-")

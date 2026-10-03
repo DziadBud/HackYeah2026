@@ -2,6 +2,8 @@ from pathlib import Path
 
 import pytest
 
+from app.schemas.admin.common import ChallengeArea
+from app.schemas.admin.innovations import CostLevel, Readiness
 from app.services.admin.errors import (
     EmbedPublishError,
     InvalidUploadError,
@@ -13,8 +15,12 @@ PDF = b"%PDF-1.7 fake body"
 DATA = NewInnovation(
     title="Wibraap: opaska dla seniorów",
     summary="Opis",
-    author="Jan Testowy",
-    tags=["Seniorzy"],
+    problem="Seniorzy nie slysza alarmow",
+    innovator="Fundacja Testowa",
+    challenge_areas=[ChallengeArea.SENIORS, ChallengeArea.MENTAL_HEALTH],
+    readiness=Readiness.PILOT,
+    cost_level=CostLevel.LOW,
+    tags=["opaska"],
 )
 
 
@@ -84,7 +90,7 @@ def test_create(tmp_path, content, err) -> None:
 
     assert created.status == "draft"
     assert created.id.startswith("wibraap-opaska-dla-seniorow-")
-    assert store.rows[created.id] == ["Seniorzy", "type:innovation", "author:Jan Testowy"]
+    assert store.rows[created.id] == ["opaska", "type:innovation", "area:seniorzy", "area:zdrowie-psychiczne"]
     assert publisher.sent == [(created.id, created.file_path)]
     assert Path(created.file_path).read_bytes() == PDF
 

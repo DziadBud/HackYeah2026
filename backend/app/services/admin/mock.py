@@ -85,15 +85,18 @@ class MockInnovationAdminService:
     # InnovationStore for uploads; the real table lands once the data model is settled
     # Sequence, not list: the class's own list() method shadows the builtin here
     def insert_draft(self, innovation_id: str, data: NewInnovation, tags: Sequence[str]) -> None:
-        areas = {a.value: a for a in ChallengeArea}
         self._items[innovation_id] = Innovation(
             id=innovation_id,
             title=data.title,
             summary=data.summary,
-            challenge_areas=[areas[t] for t in tags if t in areas],
-            target_group=[],
-            readiness="",
-            cost_level="",
+            problem=data.problem,
+            innovator=data.innovator,
+            challenge_areas=data.challenge_areas,
+            target_group=data.target_group,
+            readiness=data.readiness,
+            cost_level=data.cost_level,
+            city=data.city,
+            video_url=data.video_url,
             status=PublicationStatus.DRAFT,
         )
 

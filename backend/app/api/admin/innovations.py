@@ -1,12 +1,14 @@
 from fastapi import APIRouter, Depends, File, Form, Query, UploadFile, status
 
-from app.schemas.admin.common import Page
+from app.schemas.admin.common import ChallengeArea, Page
 from app.schemas.admin.innovations import (
+    CostLevel,
     Innovation,
     InnovationFeedback,
     PublicationStatus,
     InnovationUpdate,
     InnovationUploaded,
+    Readiness,
 )
 from app.config import settings
 from app.services.admin.deps import get_innovation_service, get_innovation_upload_service
@@ -33,11 +35,17 @@ def create_innovation(
     file: UploadFile = File(...),
     title: str = Form(min_length=1, max_length=300),
     summary: str = Form(min_length=1, max_length=5000),
-    author: str = Form(min_length=1, max_length=200),
+    problem: str = Form(min_length=1, max_length=5000),
+    innovator: str = Form(min_length=1, max_length=200),
+    challenge_areas: list[ChallengeArea] = Form(min_length=1),
+    readiness: Readiness = Form(),
+    cost_level: CostLevel = Form(),
+    target_group: list[str] = Form(default=[]),
     tags: list[str] = Form(default=[]),
     city: str = Form(default="", max_length=200),
     page_url: str | None = Form(default=None, max_length=2000),
     image_url: str | None = Form(default=None, max_length=2000),
+    video_url: str | None = Form(default=None, max_length=2000),
     svc: InnovationUploadService = Depends(get_innovation_upload_service),
 ) -> InnovationUploaded:
     # read one byte past the limit so oversized files fail without loading them whole
@@ -46,11 +54,17 @@ def create_innovation(
         NewInnovation(
             title=title,
             summary=summary,
-            author=author,
+            problem=problem,
+            innovator=innovator,
+            challenge_areas=challenge_areas,
+            readiness=readiness,
+            cost_level=cost_level,
+            target_group=target_group,
             tags=tags,
             city=city,
             page_url=page_url,
             image_url=image_url,
+            video_url=video_url,
         ),
         pdf,
     )
