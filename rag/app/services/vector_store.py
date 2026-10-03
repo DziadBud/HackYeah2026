@@ -11,6 +11,61 @@ class PostgresVectorStore:
     def __init__(self) -> None:
         self.database_url = os.getenv("DATABASE_URL")
 
+    def get_content(self, innovation_id: str) -> str:
+        if not self.database_url:
+            raise VectorStoreError("DATABASE_URL is not configured")
+
+        try:
+            import psycopg
+        except ImportError as error:
+            raise VectorStoreError("psycopg is required to read innovations") from error
+
+        try:
+            with psycopg.connect(self.database_url) as connection:
+                with connection.cursor() as cursor:
+                    cursor.execute(
+                        "SELECT content FROM innovations WHERE id = %s",
+                        (innovation_id,),
+                    )
+                    row = cursor.fetchone()
+                    if row is None:
+                        raise VectorStoreError(
+                            f"innovation does not exist: {innovation_id}"
+                        )
+                    if not row[0]:
+                        raise VectorStoreError(
+                            f"innovation has no content: {innovation_id}"
+                        )
+                    return str(row[0])
+        except VectorStoreError:
+            raise
+        except Exception as error:
+            raise VectorStoreError(f"could not read innovation content: {error}") from error
+
+    def create_test_innovation(self, innovation_id: str, text: str) -> None:
+        if not self.database_url:
+            raise VectorStoreError("DATABASE_URL is not configured")
+
+        try:
+            import psycopg
+        except ImportError as error:
+            raise VectorStoreError("psycopg is required to create test innovations") from error
+
+        try:
+            with psycopg.connect(self.database_url) as connection:
+                with connection.cursor() as cursor:
+                    cursor.execute(
+                        """
+                        INSERT INTO innovations (id, title, content, summary, status)
+                        VALUES (%s, %s, %s, %s, 'published')
+                        """,
+                        (innovation_id, "Test innovation", text, text[:500]),
+                    )
+        except Exception as error:
+            raise VectorStoreError(
+                f"could not create test innovation: {error}"
+            ) from error
+
     def insert_document(
         self,
         *,
@@ -18,6 +73,7 @@ class PostgresVectorStore:
         innovation_id: str,
         source: str,
         page: int | None,
+        tags: Sequence[str],
         chunks: Sequence[str],
         embeddings: Sequence[Sequence[float]],
     ) -> tuple[str, list[UUID]]:
@@ -46,6 +102,10 @@ class PostgresVectorStore:
                         raise VectorStoreError(
                             f"innovation does not exist: {innovation_id}"
                         )
+                    cursor.execute(
+                        "UPDATE innovations SET tags = %s, updated_at = now() WHERE id = %s",
+                        (list(tags), innovation_id),
+                    )
                     cursor.execute(
                         "DELETE FROM innovation_chunks WHERE innovation_id = %s",
                         (innovation_id,),
@@ -84,6 +144,7 @@ class PostgresVectorStore:
         query: str,
         embedding: Sequence[float],
         top_k: int,
+        search_tests: bool,
         city: str | None,
         title: str | None,
         tags: Sequence[str],
@@ -108,12 +169,11 @@ class PostgresVectorStore:
                         """
                         WITH ranked AS (
                             SELECT
-                                i.id AS innovation_id,
+                                i.id AS parent_id,
                                 c.id AS child_id,
                                 i.title,
                                 i.city,
                                 i.summary,
-                                i.image_url,
                                 i.page_url AS parent_url,
                                 i.tags,
                                 c.source,
@@ -139,18 +199,24 @@ class PostgresVectorStore:
                                   cardinality(%s::text[]) = 0
                                   OR i.tags && %s::text[]
                               )
+                              AND (
+                                  NOT %s
+                                  OR EXISTS (
+                                      SELECT 1 FROM feedback AS f
+                                      WHERE f.innovation_id = i.id
+                                        AND f.kind = 'test_signup'
+                                  )
+                              )
                               AND i.status = 'published'
                         )
-                        SELECT innovation_id, child_id, title, city, summary,
-                               image_url, parent_url, tags, source, page, text, score
+                        SELECT parent_id, score
                         FROM (
-                            SELECT DISTINCT ON (innovation_id)
-                                innovation_id, child_id, title, city, summary,
-                                image_url, parent_url, tags, source, page, text,
+                            SELECT DISTINCT ON (parent_id)
+                                parent_id,
                                 vector_score + (title_score * 0.2) + (tag_score * 0.2)
                                     AS score
                             FROM ranked
-                            ORDER BY innovation_id, score DESC
+                            ORDER BY parent_id, score DESC
                         ) AS best_matches
                         ORDER BY score DESC
                         LIMIT %s
@@ -167,25 +233,14 @@ class PostgresVectorStore:
                             title,
                             list(tags),
                             list(tags),
+                            search_tests,
                             top_k,
                         ),
                     )
                     rows = cursor.fetchall()
                     return [
                         {
-                            "parent_id": row[0],
-                            "child_id": row[1],
                             "innovation_id": row[0],
-                            "title": row[2],
-                            "city": row[3],
-                            "summary": row[4],
-                            "image_url": row[5],
-                            "parent_url": row[6],
-                            "tags": row[7],
-                            "source": row[8],
-                            "page": row[9],
-                            "text": row[10],
-                            "score": float(row[11]),
                         }
                         for row in rows
                     ]
