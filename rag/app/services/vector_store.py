@@ -84,6 +84,7 @@ class PostgresVectorStore:
         query: str,
         embedding: Sequence[float],
         top_k: int,
+        search_tests: bool,
         city: str | None,
         title: str | None,
         tags: Sequence[str],
@@ -139,6 +140,14 @@ class PostgresVectorStore:
                                   cardinality(%s::text[]) = 0
                                   OR i.tags && %s::text[]
                               )
+                              AND (
+                                  NOT %s
+                                  OR EXISTS (
+                                      SELECT 1 FROM feedback AS f
+                                      WHERE f.innovation_id = i.id
+                                        AND f.kind = 'test_signup'
+                                  )
+                              )
                               AND i.status = 'published'
                         )
                         SELECT innovation_id, child_id, title, city, summary,
@@ -167,6 +176,7 @@ class PostgresVectorStore:
                             title,
                             list(tags),
                             list(tags),
+                            search_tests,
                             top_k,
                         ),
                     )

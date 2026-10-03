@@ -30,7 +30,6 @@ services:
       DEBUG: ${DEBUG:-true}
       ADMIN_ACCOUNTS: ${ADMIN_ACCOUNTS:-{}}
       DATABASE_URL: postgresql://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
-      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
     ports:
       - "${API_PORT:-8000}:8000"
     depends_on:

@@ -32,7 +32,11 @@ class FakeVectorStore:
 
 
 class FakeSearchVectorStore(FakeVectorStore):
+    def __init__(self) -> None:
+        self.search_kwargs: dict[str, object] = {}
+
     def search(self, **kwargs: object) -> list[dict[str, object]]:
+        self.search_kwargs = kwargs
         return [
             {
                 "parent_id": "parent-1",
@@ -118,14 +122,16 @@ def test_embed_stores_vector(monkeypatch):
 
 def test_query_searches_children_with_title_and_tag_filters(monkeypatch):
     monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
+    store = FakeSearchVectorStore()
     monkeypatch.setattr(
-        "app.main.get_vector_store", lambda: FakeSearchVectorStore()
+        "app.main.get_vector_store", lambda: store
     )
 
     response = client.post(
         "/query",
         json={
             "query": "support",
+            "search_tests": True,
             "city": "Krakow",
             "title": "Senior",
             "tags": ["seniors"],
@@ -133,6 +139,7 @@ def test_query_searches_children_with_title_and_tag_filters(monkeypatch):
     )
 
     assert response.status_code == 200
+    assert store.search_kwargs["search_tests"] is True
     assert response.json()["matches"] == [
         {
             "parent_id": "parent-1",

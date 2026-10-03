@@ -12,6 +12,7 @@ MAX_DOCUMENT_BYTES = 10 * 1024 * 1024
 class QueryRequest(BaseModel):
     query: str = Field(min_length=1, max_length=2_000)
     top_k: int = Field(default=3, ge=1, le=3)
+    search_tests: bool = False
     city: str | None = Field(default=None, min_length=1, max_length=200)
     title: str | None = Field(default=None, max_length=500)
     tags: list[str] = Field(default_factory=list, max_length=20)
@@ -72,6 +73,7 @@ def query(request: QueryRequest) -> QueryResponse:
             query=request.query,
             embedding=query_vector,
             top_k=request.top_k,
+            search_tests=request.search_tests,
             city=request.city,
             title=request.title,
             tags=request.tags,
