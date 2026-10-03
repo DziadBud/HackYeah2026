@@ -27,3 +27,13 @@ def test_patch_unknown_404(client, auth) -> None:
 def test_create_invalid_deadline_422(client, auth) -> None:
     res = client.post(BASE, json={"name": "x", "deadline": "soon"}, headers=auth)
     assert res.status_code == 422
+
+
+def test_patch_null_deadline_422(client, auth) -> None:
+    res = client.patch(f"{BASE}/call-1", json={"deadline": None}, headers=auth)
+    assert res.status_code == 422
+
+
+def test_patch_sections_get_defaults(client, auth) -> None:
+    res = client.patch(f"{BASE}/call-1", json={"sections": [{"title": "A"}]}, headers=auth)
+    assert res.json()["sections"] == [{"title": "A", "description": None, "required": True}]

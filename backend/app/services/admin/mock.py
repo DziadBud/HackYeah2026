@@ -20,14 +20,10 @@ from app.schemas.admin.innovations import (
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
 from app.services.admin.errors import NotFoundError
+from app.services.admin.interfaces import IdeaAdminService, ProblemReportAdminService
 
 NOW = datetime(2026, 10, 3, 9, 0, tzinfo=timezone.utc)
 MIN_LOCATION_PROBLEM_REPORTS = 5
-
-
-class MockAuthAdminService:
-    def login(self, username: str, password: str) -> str:
-        return "mock-admin-token"
 
 
 class MockInnovationAdminService:
@@ -102,7 +98,10 @@ class MockInnovationAdminService:
 
     def update(self, innovation_id: str, data: InnovationUpdate) -> Innovation:
         item = self.get(innovation_id)
-        updated = item.model_copy(update=data.model_dump(exclude_unset=True))
+        # model_validate, not model_copy: copy skips validation and nested defaults
+        updated = Innovation.model_validate(
+            item.model_dump() | data.model_dump(exclude_unset=True)
+        )
         self._items[innovation_id] = updated
         return updated
 
@@ -254,14 +253,24 @@ class MockProblemReportAdminService:
 
 
 class MockInboxAdminService:
+    # reads through the other services so status changes and replies show up here
+    def __init__(
+        self, ideas: IdeaAdminService, problem_reports: ProblemReportAdminService
+    ) -> None:
+        self._ideas = ideas
+        self._problem_reports = problem_reports
+
     def get(self, since: datetime | None) -> Inbox:
         def fresh(created_at: datetime) -> bool:
             return since is None or created_at > since
 
+        reports = self._problem_reports.list(None, None, None)
         return Inbox(
-            new_ideas=[i for i in _IDEAS if fresh(i.created_at)],
-            new_problem_reports=[i for i in _PROBLEM_REPORTS if fresh(i.created_at)],
-            critical_problem_reports=[i for i in _PROBLEM_REPORTS if i.is_critical],
+            new_ideas=[i for i in self._ideas.list(IdeaStatus.NEW) if fresh(i.created_at)],
+            new_problem_reports=[
+                r for r in reports if r.admin_reply is None and fresh(r.created_at)
+            ],
+            critical_problem_reports=[r for r in reports if r.is_critical],
         )
 
 
@@ -294,7 +303,9 @@ class MockGrantCallAdminService:
             call = self._items[call_id]
         except KeyError:
             raise NotFoundError(call_id) from None
-        updated = call.model_copy(update=data.model_dump(exclude_unset=True))
+        updated = GrantCall.model_validate(
+            call.model_dump() | data.model_dump(exclude_unset=True)
+        )
         self._items[call_id] = updated
         return updated
 

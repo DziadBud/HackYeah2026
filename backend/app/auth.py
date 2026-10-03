@@ -1,16 +1,58 @@
-from fastapi import Depends, HTTPException, status
-from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+import hashlib
+import hmac
 
-_bearer = HTTPBearer(auto_error=False)
+from fastapi import Depends, HTTPException, Request, Response, status
+
+from app.config import settings
+from app.services.admin.auth import AdminAuthService
+from app.services.admin.auth_models import AdminPrincipal
+from app.services.admin.deps import get_auth_service
+from app.services.admin.errors import NotAuthenticatedError
+
+SESSION_COOKIE = "admin_session"
+_UNSAFE_METHODS = {"POST", "PUT", "PATCH", "DELETE"}
+
+
+def client_ip_hash(request: Request) -> str:
+    # raw ips are never stored (R11); behind a proxy run uvicorn with --proxy-headers
+    ip = request.client.host if request.client else "unknown"
+    return hmac.new(settings.ip_hash_salt.encode(), ip.encode(), hashlib.sha256).hexdigest()
+
+
+def set_session_cookie(response: Response, token: str) -> None:
+    response.set_cookie(
+        SESSION_COOKIE,
+        token,
+        max_age=settings.admin_session_ttl_hours * 3600,
+        httponly=True,
+        # local dev runs over plain http
+        secure=not settings.debug,
+        samesite="strict",
+        path="/",
+    )
+
+
+def clear_session_cookie(response: Response) -> None:
+    response.delete_cookie(
+        SESSION_COOKIE, httponly=True, secure=not settings.debug, samesite="strict", path="/"
+    )
+
+
+def require_same_origin(request: Request) -> None:
+    # csrf defence on top of samesite=strict; non-browser clients send no origin and
+    # cannot carry the admin's browser cookie, so a missing header is allowed
+    origin = request.headers.get("origin")
+    if request.method in _UNSAFE_METHODS and origin and origin not in settings.cors_origins:
+        raise HTTPException(status.HTTP_403_FORBIDDEN, "origin not allowed")
 
 
 def require_admin(
-    creds: HTTPAuthorizationCredentials | None = Depends(_bearer),
-) -> None:
-    # stub: any bearer token passes, real jwt decode + role check comes later
-    if creds is None:
-        raise HTTPException(
-            status.HTTP_401_UNAUTHORIZED,
-            "missing bearer token",
-            headers={"WWW-Authenticate": "Bearer"},
-        )
+    request: Request, svc: AdminAuthService = Depends(get_auth_service)
+) -> AdminPrincipal:
+    token = request.cookies.get(SESSION_COOKIE)
+    if not token:
+        raise HTTPException(status.HTTP_401_UNAUTHORIZED, "not logged in")
+    try:
+        return svc.authenticate(token)
+    except NotAuthenticatedError:
+        raise HTTPException(status.HTTP_401_UNAUTHORIZED, "session expired") from None

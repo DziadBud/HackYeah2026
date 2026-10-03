@@ -19,11 +19,11 @@ flowchart LR
     subgraph API["match-api (public)"]
         IPM[IP middleware]
         PUB["/match, /problem-reports, /ideas, /feedback"]
-        ADM["/admin/*<br/>JWT middleware"]
+        ADM["/admin/*<br/>admin session"]
     end
 
     subgraph ING["ingest-service (admin only)"]
-        IMP["/ingest/*<br/>JWT middleware"]
+        IMP["/ingest/*<br/>admin session"]
     end
 
     DB[("Postgres + pgvector")]
@@ -40,7 +40,7 @@ flowchart LR
 | | ingest-service | match-api |
 |---|---|---|
 | Purpose | import, parse, chunk, embed, upsert | matching, problem reports, ideas, admin |
-| Exposure | admin only (same JWT dependency) | public + `/admin/*` |
+| Exposure | admin only (same session dependency) | public + `/admin/*` |
 | Writes | `innovation`, `chunk`, `ingest_job` | `problem_report`, `problem_report_support`, `idea`, `feedback`, `innovation` (admin edits) |
 | Down means | no new imports; matching unaffected | users blocked; imports unaffected |
 
@@ -96,11 +96,11 @@ Ranking is deterministic; the LLM only explains and may cite only retrieved rows
 
 - **Public side has no users.** IP middleware on public routes: resolve client IP (`X-Forwarded-For` only from our proxy), hash with a server-side salt, never store the raw IP. It rate limits per `ip_hash` and gives dedupe through a unique `(problem_report_id, ip_hash)` on `problem_report_support`.
 - Known limits: shared NAT undercounts, VPN inflates. Acceptable; criticality also needs several locations.
-- **Admin side:** JWT with `role=admin`, one shared dependency (`require_admin`) used by `/admin/*` and `/ingest/*`: 401 without a token, 403 otherwise. Token is obtained from public `POST /admin/auth/login {username, password} -> {access_token, token_type}`; credentials and signing key from env.
+- **Admin side:** per-admin accounts (argon2id hashes) and server-side sessions in an `HttpOnly; Secure; SameSite=Strict` cookie; see [.claude/designs/admin-auth.md](../../.claude/designs/admin-auth.md). One shared dependency (`require_admin`) is used by `/admin/*` and `/ingest/*` and returns 401 without a valid session. `POST /admin/auth/login {email, password}` sets the cookie, `POST /admin/auth/logout` revokes it, `GET /admin/auth/me` returns the admin. Sessions: 8 h absolute, 30 min idle. Login is limited to 5 failures per email or ip_hash per 15 min. Unsafe methods with a foreign `Origin` get 403 (CSRF). `/docs` is served only in debug. MVP keeps accounts in env (`ADMIN_ACCOUNTS`, from `make hash-password`) and sessions in memory; they move to `admin_user` / `admin_session` tables with the DB layer.
 - **Replies without accounts:** an idea returns a random `access_token` (stored hashed); `GET /ideas/{token}` shows status and the admin reply. An problem report reply is stored on the problem report and shown to everyone who created or supported it, so one reply covers the whole cluster.
 - **Email notifier (MVP, optional):** one email to the admin on a new idea and when an problem report first crosses the critical threshold. SMTP settings from env, sent via FastAPI `BackgroundTasks`, no-op if unset. At-most-once, best effort; the inbox stays the source of truth.
 
-## 5. Admin endpoints (all under `/admin`, behind the JWT dependency except login)
+## 5. Admin endpoints (all under `/admin`, behind the admin session except login and logout)
 
 | Feature | Endpoints |
 |---|---|
@@ -254,7 +254,7 @@ app/
   services/admin/        # interface + mock implementation first, DB-backed later
 ```
 
-New deps (pinned, separate commit): sqlalchemy, psycopg, pgvector, fastembed, pypdf, pyjwt, anthropic.
+New deps (pinned, separate commit): sqlalchemy, psycopg, pgvector, fastembed, pypdf, argon2-cffi, anthropic.
 
 1. Schema, `common/`, compose.
 2. ingest: JSON import -> embed -> upsert; load the 8 samples.
@@ -269,7 +269,7 @@ New deps (pinned, separate commit): sqlalchemy, psycopg, pgvector, fastembed, py
 
 - Unit: chunker, parsers, rank fusion, auth dependency (admin / non-admin / none), IP middleware (dedupe, rate limit).
 - Regression: the 8 queries in `sample-matchmaking-queries.md` return the expected id in the top 3.
-- Integration: `docker compose up`, import samples, curl `/match`; unpublished items never returned; every `/admin/*` and `/ingest/*` route returns 401/403 without an admin token (parametrised test).
+- Integration: `docker compose up`, import samples, curl `/match`; unpublished items never returned; every `/admin/*` and `/ingest/*` route returns 401/403 without an admin session (parametrised test).
 - Idempotency: same import twice leaves counts unchanged; same IP supporting the same problem report twice counts once.
 
 ## 11. Open questions
@@ -279,7 +279,7 @@ New deps (pinned, separate commit): sqlalchemy, psycopg, pgvector, fastembed, py
 
 ## Changes (after Notion brief comparison)
 
-1. Admin login endpoint added (`POST /admin/auth/login`), so a JWT can be obtained.
+1. Admin auth: per-admin accounts + server-side session cookie instead of a shared JWT (revocation, audit, no token in JS).
 2. Admin endpoint table completed (innovation get/unpublish/feedback, inbox `since`, idea/problem report detail and filters, report `format`).
 3. Single optional email notifier moved from deferred into the MVP; webhooks/outbox/worker stay deferred.
 4. Similar problem reports: 3 nearest, same location first, falling back to same challenge area.

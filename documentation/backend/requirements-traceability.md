@@ -24,7 +24,7 @@ Maps each requirement from `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI
 - **How:** admin answers an idea through the submitter's private link, or answers an problem report once on its public page for everyone who pressed "me too". Mentors are admins. No accounts.
 
 ## R6 Panel administratora (S)
-- **Where:** `/admin/*` and `/ingest/*` behind JWT middleware (§4, §5).
+- **Where:** `/admin/*` and `/ingest/*` behind the admin session dependency (§4, §5).
 - **How:** login, innovation add/edit/publish/unpublish with feedback counts (R4), imports with job status, inbox (new ideas, new and critical problem reports), idea and problem report replies, grant call open/close, reports.
 
 ## R7 Middleman innowacji (S)
@@ -45,7 +45,7 @@ Maps each requirement from `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI
 
 ## R11 Data security, no real personal data (X)
 - **Where:** §4.
-- **How:** no public accounts; salted `ip_hash`, raw IPs never stored; admin-only JWT, secrets from env; location picked from a list; free-text length capped; seed/synthetic data only; user text is data, never instructions.
+- **How:** no public accounts; salted `ip_hash`, raw IPs never stored; per-admin accounts with argon2id hashes, revocable HttpOnly session cookies, login rate limit, secrets from env; location picked from a list; free-text length capped; seed/synthetic data only; user text is data, never instructions.
 
 ## R12 Fast admin notification and reply path (jury question)
 - **Where:** admin inbox + replies (§5), email notifier and access-token link (§4).

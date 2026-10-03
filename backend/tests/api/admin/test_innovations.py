@@ -62,3 +62,14 @@ def test_unknown_id_404(client, auth) -> None:
     ]:
         res = client.request(method, f"{BASE}/nope{path}", json={} if method == "PATCH" else None, headers=auth)
         assert res.status_code == 404, (method, path)
+
+
+def test_patch_null_required_field_422(client, auth) -> None:
+    res = client.patch(f"{BASE}/wibraap", json={"title": None}, headers=auth)
+    assert res.status_code == 422
+
+
+def test_patch_null_video_url_clears_it(client, auth) -> None:
+    res = client.patch(f"{BASE}/wibraap", json={"video_url": None}, headers=auth)
+    assert res.status_code == 200
+    assert res.json()["video_url"] is None

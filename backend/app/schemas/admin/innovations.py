@@ -3,7 +3,7 @@ from enum import StrEnum
 
 from pydantic import BaseModel, Field
 
-from app.schemas.admin.common import ChallengeArea
+from app.schemas.admin.common import ChallengeArea, PatchModel
 
 
 class PublicationStatus(StrEnum):
@@ -25,7 +25,9 @@ class InnovationCreate(InnovationBase):
     pass
 
 
-class InnovationUpdate(BaseModel):
+class InnovationUpdate(PatchModel):
+    nullable_fields = frozenset({"video_url"})
+
     title: str | None = Field(default=None, min_length=1)
     summary: str | None = None
     challenge_areas: list[ChallengeArea] | None = None

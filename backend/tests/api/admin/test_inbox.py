@@ -12,3 +12,16 @@ def test_inbox_since_filters(client, auth) -> None:
 
 def test_inbox_bad_since(client, auth) -> None:
     assert client.get("/admin/inbox", params={"since": "yesterday"}, headers=auth).status_code == 422
+
+
+def test_inbox_naive_since_422(client, auth) -> None:
+    res = client.get("/admin/inbox", params={"since": "2026-10-01T00:00:00"}, headers=auth)
+    assert res.status_code == 422
+
+
+def test_inbox_reflects_status_and_reply(client, auth) -> None:
+    client.post("/admin/ideas/idea-1/status", json={"status": "rejected"}, headers=auth)
+    client.post("/admin/problem-reports/problem-report-1/reply", json={"message": "ok"}, headers=auth)
+    body = client.get("/admin/inbox", headers=auth).json()
+    assert "idea-1" not in {i["id"] for i in body["new_ideas"]}
+    assert "problem-report-1" not in {r["id"] for r in body["new_problem_reports"]}

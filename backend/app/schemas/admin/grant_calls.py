@@ -2,6 +2,8 @@ from datetime import date
 
 from pydantic import BaseModel, Field
 
+from app.schemas.admin.common import PatchModel
+
 
 class GrantSection(BaseModel):
     title: str
@@ -16,7 +18,7 @@ class GrantCallCreate(BaseModel):
     sections: list[GrantSection] = []
 
 
-class GrantCallUpdate(BaseModel):
+class GrantCallUpdate(PatchModel):
     name: str | None = Field(default=None, min_length=1)
     deadline: date | None = None
     open: bool | None = None
