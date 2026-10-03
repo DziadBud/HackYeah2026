@@ -15,6 +15,7 @@ type Message =
       id: number;
       role: "assistant";
       time: string;
+      answer: string;
       innovations: InnovationCardData[];
       similar: SimilarProblemReport[];
       demo: boolean;
@@ -81,7 +82,7 @@ function innovationsPhrase(n: number) {
 }
 
 function toCard(i: MatchedInnovation): InnovationCardData {
-  return { id: i.id, title: i.title, summary: i.summary, why: i.why, tags: areaLabelsFromTags(i.tags), city: i.city };
+  return { id: i.id, title: i.title, summary: i.summary, tags: areaLabelsFromTags(i.tags), city: i.city };
 }
 
 function now() {
@@ -137,7 +138,12 @@ export function Chat() {
     let reply: Omit<Extract<Message, { role: "assistant" }>, "id" | "time" | "role">;
     try {
       const res = await api.match({ text });
-      reply = { innovations: res.innovations.map(toCard), similar: res.similar_reports, demo: false };
+      reply = {
+        answer: res.answer,
+        innovations: res.innovations.map(toCard),
+        similar: res.similar_reports,
+        demo: false,
+      };
     } catch (err) {
       if (err instanceof ApiError && err.status >= 400 && err.status < 500 && err.status !== 404) {
         // the request itself was rejected: give the text back instead of faking an answer
@@ -152,7 +158,7 @@ export function Chat() {
         return;
       }
       // match-api unreachable: answer from the bundled demo data, clearly marked
-      reply = { innovations: demoMatch(text), similar: [], demo: true };
+      reply = { answer: "", innovations: demoMatch(text), similar: [], demo: true };
     }
     setMessages((m) => [...m, { id: nextId.current++, role: "assistant", time: now(), ...reply }]);
     setPending(false);
@@ -302,6 +308,7 @@ export function Chat() {
                   </span>
                 </p>
                 <div className="flex w-full flex-col gap-space-md rounded-xl rounded-tl-none bg-surface-container-lowest p-space-md text-on-surface shadow-sm hc-edge md:p-space-lg">
+                  {m.answer && m.innovations.length > 0 && <p className="text-body-lg">{m.answer}</p>}
                   {m.innovations.length > 0 ? (
                     <p className="text-body-lg">
                       Znalazłem <strong>{innovationsPhrase(m.innovations.length)}</strong> z Małopolski, które pasują

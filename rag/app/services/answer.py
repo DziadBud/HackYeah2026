@@ -10,13 +10,17 @@ class AnswerService:
     def generate(
         self, query: str, matches: Sequence[Mapping[str, object]]
     ) -> str:
-        result = self.client.generate(
-            "Napisz po polsku jedno krótkie zdanie wyjaśniające, czego ogólnie "
-            "dotyczy zapytanie użytkownika. Nie podsumowuj wyników wyszukiwania, "
-            "nie wymieniaj identyfikatorów innowacji, nie dodawaj faktów spoza "
-            "zapytania i nie używaj markdown.\n\n"
-            f"Zapytanie użytkownika: {query}"
-        )
+        try:
+            result = self.client.generate(
+                "Napisz po polsku jedno krótkie zdanie wyjaśniające, czego ogólnie "
+                "dotyczy zapytanie użytkownika. Nie podsumowuj wyników wyszukiwania, "
+                "nie wymieniaj identyfikatorów innowacji, nie dodawaj faktów spoza "
+                "zapytania i nie używaj markdown.\n\n"
+                f"Zapytanie użytkownika: {query}"
+            )
+        except RuntimeError:
+            # ollama is optional: matches still go back, just without the summary
+            return ""
         answer = self._extract_text(result)
         return answer or f"Zapytanie dotyczy: {query}."
 

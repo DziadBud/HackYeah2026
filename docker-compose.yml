@@ -86,7 +86,8 @@ services:
         condition: service_healthy
 
   embeddings:
-    image: ghcr.io/huggingface/text-embeddings-inference:cpu-1.8
+    build:
+      context: ./embeddings
     container_name: hackyeah-embeddings
     command:
       - --model-id
@@ -143,6 +144,19 @@ services:
       interval: 10s
       timeout: 5s
       retries: 10
+
+  # one-shot: embeds published innovations without chunks (the rag/sql seed rows)
+  seed-embed:
+    build: ./rag
+    container_name: hackyeah-seed-embed
+    command: ["python", "-m", "app.embed_missing"]
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
+      RAG_URL: http://rag:8000
+    depends_on:
+      rag:
+        condition: service_healthy
+
   web:
     build:
       context: ./frontend

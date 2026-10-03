@@ -70,8 +70,6 @@ export interface MatchedInnovation {
   id: string;
   title: string;
   summary: string;
-  // explanation of the fit; null when the llm is down
-  why: string | null;
   // raw tags, e.g. "area:Seniorzy"
   tags: string[];
   city: string;
@@ -87,6 +85,8 @@ export interface SimilarProblemReport {
 
 export interface MatchResponse {
   problem_report_id: string;
+  // rag's llm summary of the problem, one for the whole result; empty when the llm is down
+  answer: string;
   innovations: MatchedInnovation[];
   similar_reports: SimilarProblemReport[];
   // one per matched innovation when test_signup=true

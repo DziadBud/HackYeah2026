@@ -18,11 +18,6 @@ def overlap(query: set[str], innovation: Innovation) -> int:
     return len(query & words(f"{innovation.title} {innovation.summary}"))
 
 
-def explain_fit(innovation: Innovation) -> str:
-    areas = ", ".join(a.value for a in innovation.challenge_areas)
-    return f"Pasuje, bo dotyczy: {areas or innovation.title}."
-
-
 def middleman_card(innovation: Innovation, data: MiddlemanRequest) -> str:
     return (
         f"Usługa: {innovation.title} dla instytucji typu {data.institution_type.value}\n"
