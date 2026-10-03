@@ -20,7 +20,7 @@ class FakeVectorStore:
     def insert_document(self, **kwargs: object) -> tuple[str, list[str]]:
         chunks = cast(list[str], kwargs["chunks"])
         return (
-            "00000000-0000-0000-0000-000000000001",
+            "wibraap",
             [
                 f"00000000-0000-0000-0000-00000000000{index + 2}"
                 for index in range(len(chunks))
@@ -37,6 +37,7 @@ class FakeSearchVectorStore(FakeVectorStore):
             {
                 "parent_id": "parent-1",
                 "child_id": "child-1",
+                "innovation_id": "wibraap",
                 "title": "Senior support",
                 "city": "Krakow",
                 "summary": "Services for older residents.",
@@ -93,6 +94,7 @@ def test_embed_stores_vector(monkeypatch):
         "/embed",
         json={
             "text": "support for seniors " * 20,
+            "innovation_id": "wibraap",
             "title": "Senior support",
             "city": "Krakow",
             "summary": "Services for older residents.",
@@ -108,17 +110,10 @@ def test_embed_stores_vector(monkeypatch):
 
     assert response.status_code == 201
     body = response.json()
-    assert body["parent_id"] == "00000000-0000-0000-0000-000000000001"
+    assert body["innovation_id"] == "wibraap"
     assert body["child_count"] > 1
     assert len(body["child_ids"]) == body["child_count"]
     assert body["dimensions"] == 3
-    assert body["title"] == "Senior support"
-    assert body["city"] == "Krakow"
-    assert body["summary"] == "Services for older residents."
-    assert body["image_url"] == "https://example.com/senior-support.jpg"
-    assert body["parent_url"] == "https://example.com/senior-support"
-    assert body["source"] == "sample"
-    assert body["page"] == 2
 
 
 def test_query_searches_children_with_title_and_tag_filters(monkeypatch):
@@ -142,6 +137,7 @@ def test_query_searches_children_with_title_and_tag_filters(monkeypatch):
         {
             "parent_id": "parent-1",
             "child_id": "child-1",
+            "innovation_id": "wibraap",
             "title": "Senior support",
             "city": "Krakow",
             "summary": "Services for older residents.",
@@ -154,6 +150,52 @@ def test_query_searches_children_with_title_and_tag_filters(monkeypatch):
             "score": 0.91,
         }
     ]
+
+
+def test_query_returns_parent_metadata_for_visible_result(monkeypatch):
+    monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
+    monkeypatch.setattr(
+        "app.main.get_vector_store", lambda: FakeSearchVectorStore()
+    )
+
+    response = client.post("/query", json={"query": "support"})
+    match = response.json()["matches"][0]
+
+    assert match["title"] == "Senior support"
+    assert match["summary"] == "Services for older residents."
+    assert match["parent_url"] == "https://example.com/senior-support"
+
+
+def test_embed_pdf_extracts_full_document(monkeypatch):
+    monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
+    monkeypatch.setattr("app.main.get_vector_store", lambda: FakeVectorStore())
+    monkeypatch.setattr(
+        "app.main.extract_pdf_text", lambda data: "whole PDF document text"
+    )
+
+    response = client.post(
+        "/embed/pdf",
+        files={"file": ("report.pdf", b"pdf bytes", "application/pdf")},
+        data={
+            "innovation_id": "wibraap",
+            "title": "Report",
+            "summary": "Full report summary",
+            "parent_url": "https://example.com/report",
+        },
+    )
+
+    assert response.status_code == 201
+    assert response.json()["innovation_id"] == "wibraap"
+
+
+def test_embed_pdf_rejects_non_pdf():
+    response = client.post(
+        "/embed/pdf",
+        files={"file": ("report.txt", b"text", "text/plain")},
+        data={"innovation_id": "wibraap"},
+    )
+
+    assert response.status_code == 415
 
 
 def test_embed_rejects_empty_text():

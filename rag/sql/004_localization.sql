@@ -1,5 +1,5 @@
-ALTER TABLE rag_documents
+ALTER TABLE innovations
     ADD COLUMN IF NOT EXISTS city text NOT NULL DEFAULT '';
 
-CREATE INDEX IF NOT EXISTS rag_documents_city_idx
-ON rag_documents (city);
+CREATE INDEX IF NOT EXISTS innovations_city_idx
+ON innovations (city);

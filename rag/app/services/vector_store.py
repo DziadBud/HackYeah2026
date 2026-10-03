@@ -15,17 +15,12 @@ class PostgresVectorStore:
         self,
         *,
         text: str,
-        title: str,
-        city: str,
-        summary: str,
-        image_url: str | None,
-        parent_url: str | None,
-        tags: Sequence[str],
+        innovation_id: str,
         source: str,
         page: int | None,
         chunks: Sequence[str],
         embeddings: Sequence[Sequence[float]],
-    ) -> tuple[UUID, list[UUID]]:
+    ) -> tuple[str, list[UUID]]:
         if len(chunks) != len(embeddings):
             raise VectorStoreError("each child chunk must have one embedding")
         if not self.database_url:
@@ -44,39 +39,28 @@ class PostgresVectorStore:
                 register_vector(connection)
                 with connection.cursor() as cursor:
                     cursor.execute(
-                        """
-                        INSERT INTO rag_documents
-                            (text, title, city, summary, image_url, parent_url, tags, source, page)
-                        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
-                        RETURNING id
-                        """,
-                        (
-                            text,
-                            title,
-                            city,
-                            summary,
-                            image_url,
-                            parent_url,
-                            list(tags),
-                            source,
-                            page,
-                        ),
+                        "SELECT id FROM innovations WHERE id = %s FOR UPDATE",
+                        (innovation_id,),
                     )
-                    row = cursor.fetchone()
-                    if row is None:
-                        raise VectorStoreError("database did not return a parent id")
-                    parent_id = row[0]
+                    if cursor.fetchone() is None:
+                        raise VectorStoreError(
+                            f"innovation does not exist: {innovation_id}"
+                        )
+                    cursor.execute(
+                        "DELETE FROM innovation_chunks WHERE innovation_id = %s",
+                        (innovation_id,),
+                    )
                     child_ids: list[UUID] = []
                     for index, (chunk, embedding) in enumerate(zip(chunks, embeddings)):
                         cursor.execute(
                             """
-                            INSERT INTO rag_chunks
-                                (parent_id, chunk_index, text, source, page, embedding)
+                            INSERT INTO innovation_chunks
+                                (innovation_id, chunk_index, text, source, page, embedding)
                             VALUES (%s, %s, %s, %s, %s, %s)
                             RETURNING id
                             """,
                             (
-                                parent_id,
+                                innovation_id,
                                 index,
                                 chunk,
                                 source,
@@ -84,15 +68,15 @@ class PostgresVectorStore:
                                 list(embedding),
                             ),
                         )
-                        child_row = cursor.fetchone()
-                        if child_row is None:
+                        row = cursor.fetchone()
+                        if row is None:
                             raise VectorStoreError("database did not return a child id")
-                        child_ids.append(child_row[0])
-                    return parent_id, child_ids
+                        child_ids.append(row[0])
+                    return innovation_id, child_ids
         except VectorStoreError:
             raise
         except Exception as error:
-            raise VectorStoreError(f"could not store embedding: {error}") from error
+            raise VectorStoreError(f"could not store embeddings: {error}") from error
 
     def search(
         self,
@@ -124,70 +108,49 @@ class PostgresVectorStore:
                         """
                         WITH ranked AS (
                             SELECT
-                                d.id AS parent_id,
+                                i.id AS innovation_id,
                                 c.id AS child_id,
-                                d.title,
-                                d.city,
-                                d.summary,
-                                d.image_url,
-                                d.parent_url,
-                                d.tags,
-                                d.source,
-                                d.page,
+                                i.title,
+                                i.city,
+                                i.summary,
+                                i.image_url,
+                                i.page_url AS parent_url,
+                                i.tags,
+                                c.source,
+                                c.page,
                                 c.text,
                                 1 - (c.embedding <=> %s) AS vector_score,
                                 CASE
-                                    WHEN %s <> ''
-                                        AND d.title ILIKE ('%%' || %s || '%%')
+                                    WHEN %s <> '' AND i.title ILIKE ('%%' || %s || '%%')
                                     THEN 1.0 ELSE 0.0
                                 END AS title_score,
                                 CASE
                                     WHEN %s <> '' AND EXISTS (
-                                        SELECT 1
-                                        FROM unnest(d.tags) AS tag
+                                        SELECT 1 FROM unnest(i.tags) AS tag
                                         WHERE tag ILIKE ('%%' || %s || '%%')
                                     )
                                     THEN 1.0 ELSE 0.0
                                 END AS tag_score
-                            FROM rag_chunks AS c
-                            JOIN rag_documents AS d ON d.id = c.parent_id
-                                                        WHERE (%s IS NULL OR d.city = %s)
-                                                            AND (%s IS NULL OR d.title ILIKE ('%%' || %s || '%%'))
+                            FROM innovation_chunks AS c
+                            JOIN innovations AS i ON i.id = c.innovation_id
+                            WHERE (%s IS NULL OR i.city = %s)
+                              AND (%s IS NULL OR i.title ILIKE ('%%' || %s || '%%'))
                               AND (
                                   cardinality(%s::text[]) = 0
-                                  OR d.tags && %s::text[]
+                                  OR i.tags && %s::text[]
                               )
+                              AND i.status = 'published'
                         )
-                        SELECT
-                            parent_id,
-                            child_id,
-                            title,
-                            city,
-                            summary,
-                            image_url,
-                            parent_url,
-                            tags,
-                            source,
-                            page,
-                            text,
-                            score
+                        SELECT innovation_id, child_id, title, city, summary,
+                               image_url, parent_url, tags, source, page, text, score
                         FROM (
-                            SELECT DISTINCT ON (parent_id)
-                                parent_id,
-                                child_id,
-                                title,
-                                city,
-                                summary,
-                                image_url,
-                                parent_url,
-                                tags,
-                                source,
-                                page,
-                                text,
+                            SELECT DISTINCT ON (innovation_id)
+                                innovation_id, child_id, title, city, summary,
+                                image_url, parent_url, tags, source, page, text,
                                 vector_score + (title_score * 0.2) + (tag_score * 0.2)
                                     AS score
                             FROM ranked
-                            ORDER BY parent_id, score DESC
+                            ORDER BY innovation_id, score DESC
                         ) AS best_matches
                         ORDER BY score DESC
                         LIMIT %s
@@ -212,6 +175,7 @@ class PostgresVectorStore:
                         {
                             "parent_id": row[0],
                             "child_id": row[1],
+                            "innovation_id": row[0],
                             "title": row[2],
                             "city": row[3],
                             "summary": row[4],
