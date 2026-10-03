@@ -69,7 +69,6 @@ export function Chat() {
   const [pending, setPending] = useState(false);
   const [status, setStatus] = useState("");
   const [recording, setRecording] = useState(false);
-  const [fileName, setFileName] = useState<string | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const recognitionRef = useRef<Recognition | null>(null);
   const nextId = useRef(1);
@@ -273,7 +272,7 @@ export function Chat() {
 
       <section
         aria-labelledby="chat-input-heading"
-        className="z-30 mt-space-md flex flex-col gap-space-sm rounded-xl bg-surface-container-lowest p-space-md shadow-xl hc-edge md:sticky md:bottom-4"
+        className="z-30 mt-space-md flex flex-col gap-space-sm rounded-xl bg-surface-container-lowest p-space-md shadow-xl hc-edge"
       >
         <h2 id="chat-input-heading" className="sr-only">
           Napisz wiadomość
@@ -352,27 +351,6 @@ export function Chat() {
                 <Icon name="search" size={22} />
               </button>
             </div>
-          </div>
-          <div className="flex flex-wrap items-center gap-2 rounded-lg bg-surface-container p-2 text-caption text-primary">
-            <input
-              id="chat-attachment"
-              type="file"
-              accept=".pdf,.docx,image/*"
-              className="peer sr-only"
-              onChange={(e) => {
-                const f = e.target.files?.[0];
-                setFileName(f ? f.name : null);
-                if (f) setStatus(`Dołączono plik: ${f.name}.`);
-              }}
-            />
-            <label
-              htmlFor="chat-attachment"
-              className="flex min-h-11 cursor-pointer items-center gap-2 rounded px-2 underline peer-focus-visible:outline-3 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-focus"
-            >
-              <Icon name="attach_file" size={18} className="text-secondary" />
-              Dołącz dokumentację, diagnozę lokalną lub zdjęcie (PDF, DOCX, JPG)
-            </label>
-            {fileName && <span className="text-on-surface-variant">Wybrano: {fileName}</span>}
           </div>
         </form>
         <p role="status" className="min-h-6 text-caption font-semibold text-primary">

@@ -57,16 +57,6 @@ export function SiteHeader() {
             <Icon name="menu" size={24} />
             <span>Menu</span>
           </button>
-          <Link
-            href="/admin"
-            aria-label="Panel administratora"
-            title="Panel administratora"
-            className="flex size-12 items-center justify-center rounded-full"
-          >
-            <span className="flex size-8 items-center justify-center rounded-full bg-primary text-on-primary">
-              <Icon name="person" size={18} />
-            </span>
-          </Link>
         </div>
       </div>
 
@@ -80,7 +70,7 @@ export function SiteHeader() {
           if (e.target === e.currentTarget) e.currentTarget.close();
         }}
       >
-        <div className="flex h-full flex-col justify-between">
+        <div className="flex h-full flex-col">
           <div className="flex flex-col">
             <div className="mb-space-sm flex items-center justify-between border-b border-surface-container-highest pb-space-sm">
               <div className="flex flex-col">
@@ -119,25 +109,6 @@ export function SiteHeader() {
                   </li>
                 ))}
               </ul>
-            </nav>
-          </div>
-          <div className="mt-space-md flex flex-col gap-space-xs border-t border-surface-container-highest pt-space-md">
-            <div className="flex items-center justify-between px-space-xs">
-              <span className="text-label-md font-semibold uppercase tracking-wider text-on-surface-variant">
-                Strefa Urzędu
-              </span>
-              <span className="rounded bg-secondary-fixed px-2 py-0.5 text-caption font-bold text-on-secondary-fixed">
-                tylko dla ROPS
-              </span>
-            </div>
-            <nav aria-label="Strefa Urzędu">
-              <Link
-                href="/admin"
-                className={item}
-                aria-current={isActive(pathname, "/admin") ? "page" : undefined}
-              >
-                Panel administratora
-              </Link>
             </nav>
           </div>
         </div>
