@@ -11,6 +11,8 @@ class TaggingService:
             "Zwróć wyłącznie poprawny JSON jako tablicę stringów, bez markdown.\n\n"
             f"Tekst innowacji:\n{text}"
         )
+        if isinstance(result, dict):
+            result = result.get("tags")
         if not isinstance(result, list) or not all(
             isinstance(tag, str) for tag in result
         ):

@@ -35,11 +35,14 @@ class FakeVectorStore:
     def get_content(self, innovation_id: str) -> str:
         return "support for seniors " * 20
 
+    def create_test_innovation(self, innovation_id: str, text: str) -> None:
+        self.test_innovation = (innovation_id, text)
+
     def insert_document(self, **kwargs: object) -> tuple[str, list[str]]:
         self.insert_kwargs = kwargs
         chunks = cast(list[str], kwargs["chunks"])
         return (
-            "wibraap",
+            str(kwargs["innovation_id"]),
             [
                 f"00000000-0000-0000-0000-00000000000{index + 2}"
                 for index in range(len(chunks))
@@ -131,6 +134,25 @@ def test_embed_fetches_content_and_stores_generated_tags(monkeypatch):
     assert store.insert_kwargs["tags"] == ["senior-support", "accessibility"]
     assert body["child_count"] >= 1
     assert body["dimensions"] == 3
+
+
+def test_embed_test_accepts_plain_text_without_innovation_id(monkeypatch):
+    monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
+    monkeypatch.setattr("app.main.tagging_service", FakeTaggingService())
+    store = FakeVectorStore()
+    monkeypatch.setattr("app.main.get_vector_store", lambda: store)
+
+    response = client.post(
+        "/embed/test",
+        json={"text": "Wsparcie dla osób starszych"},
+    )
+
+    assert response.status_code == 201
+    body = response.json()
+    assert body["innovation_id"].startswith("test-")
+    assert body["tags"] == ["senior-support", "accessibility"]
+    assert body["dimensions"] == 3
+    assert store.test_innovation[1] == "Wsparcie dla osób starszych"
 
 
 def test_embed_pdf_extracts_full_document(monkeypatch):

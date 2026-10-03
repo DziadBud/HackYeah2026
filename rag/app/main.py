@@ -1,5 +1,6 @@
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from pydantic import BaseModel, Field
+from uuid import uuid4
 
 from app.services.chunking import split_text
 from app.services.embedding import EmbeddingService
@@ -43,6 +44,10 @@ class EmbedResponse(BaseModel):
     dimensions: int
 
 
+class TestEmbedRequest(BaseModel):
+    text: str = Field(min_length=1, max_length=10_000)
+
+
 app = FastAPI(title="HackYeah RAG API", version="0.1.0")
 embedding_service = EmbeddingService()
 tagging_service = TaggingService()
@@ -82,6 +87,21 @@ def query(request: QueryRequest) -> QueryResponse:
 @app.post("/embed", response_model=EmbedResponse, status_code=201, tags=["rag"])
 def embed(request: EmbedRequest) -> EmbedResponse:
     return _embed_document(request)
+
+
+@app.post("/embed/test", response_model=EmbedResponse, status_code=201, tags=["rag"])
+def embed_test(request: TestEmbedRequest) -> EmbedResponse:
+    innovation_id = f"test-{uuid4()}"
+    try:
+        store = get_vector_store()
+        store.create_test_innovation(innovation_id, request.text)
+        return _embed_document(
+            EmbedRequest(innovation_id=innovation_id),
+            text_override=request.text,
+            source="test",
+        )
+    except RuntimeError as error:
+        raise HTTPException(status_code=503, detail=str(error)) from error
 
 
 def _embed_document(

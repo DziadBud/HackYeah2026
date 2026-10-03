@@ -42,6 +42,30 @@ class PostgresVectorStore:
         except Exception as error:
             raise VectorStoreError(f"could not read innovation content: {error}") from error
 
+    def create_test_innovation(self, innovation_id: str, text: str) -> None:
+        if not self.database_url:
+            raise VectorStoreError("DATABASE_URL is not configured")
+
+        try:
+            import psycopg
+        except ImportError as error:
+            raise VectorStoreError("psycopg is required to create test innovations") from error
+
+        try:
+            with psycopg.connect(self.database_url) as connection:
+                with connection.cursor() as cursor:
+                    cursor.execute(
+                        """
+                        INSERT INTO innovations (id, title, content, summary, status)
+                        VALUES (%s, %s, %s, %s, 'published')
+                        """,
+                        (innovation_id, "Test innovation", text, text[:500]),
+                    )
+        except Exception as error:
+            raise VectorStoreError(
+                f"could not create test innovation: {error}"
+            ) from error
+
     def insert_document(
         self,
         *,
