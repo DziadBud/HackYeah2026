@@ -1,6 +1,6 @@
 # Requirements traceability
 
-Maps each requirement from `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI.md` to the part of [architecture.md](architecture.md) that implements it. M = mandatory, S = extra module (+5% each), X = cross-cutting, D = deliverable.
+Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Malopolskie-HUBMI.md` to the part of [architecture.md](architecture.md) that implements it. M = mandatory, S = extra module (+5% each), X = cross-cutting, D = deliverable.
 
 ## R1 Matchmaking spoleczny (M, 10%)
 - **Where:** `POST /match` (§3) calling rag `POST /query`; `innovations` + `innovation_chunks` (§6).
