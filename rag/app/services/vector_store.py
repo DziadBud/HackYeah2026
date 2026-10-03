@@ -28,7 +28,7 @@ class PostgresVectorStore:
             with psycopg.connect(self.database_url) as connection:
                 with connection.cursor() as cursor:
                     cursor.execute(
-                        "SELECT content FROM innovations WHERE id = %s",
+                        "SELECT title, summary, content FROM innovations WHERE id = %s",
                         (innovation_id,),
                     )
                     row = cursor.fetchone()
@@ -36,11 +36,16 @@ class PostgresVectorStore:
                         raise VectorStoreError(
                             f"innovation does not exist: {innovation_id}"
                         )
-                    if not row[0]:
+                    if not row[2]:
                         raise VectorStoreError(
                             f"innovation has no content: {innovation_id}"
                         )
-                    return str(row[0])
+                    sections = [
+                        f"Tytuł: {row[0]}" if row[0] else "",
+                        f"Streszczenie: {row[1]}" if row[1] else "",
+                        f"Treść: {row[2]}",
+                    ]
+                    return "\n\n".join(section for section in sections if section)
         except VectorStoreError:
             raise
         except Exception as error:
