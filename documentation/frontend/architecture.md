@@ -20,14 +20,23 @@ Principle (same as backend): build the smallest thing that covers the requiremen
 ```
 frontend/
   app/
-    layout.tsx     # shell: nav, global styles
-    page.tsx       # public UI: match form + results
-    admin/page.tsx # admin UI skeleton (one route per area later)
-    globals.css    # tailwind entry + theme tokens
-  lib/api.ts       # typed match-api client (the only place that knows the API)
-  Dockerfile       # multi-stage, standalone output
-  Makefile         # install / dev / build / lint / up / down
+    layout.tsx                  # shell: a11y toolbar, header + menu, footer, fonts
+    page.tsx                    # public UI: chat (problem -> matched innovations)
+    innowacje/page.tsx          # innovation library
+    innowacje/[id]/page.tsx     # innovation detail: description, community threads, test sign-up
+    admin/page.tsx              # admin panel (login off for the demo, see §6)
+    deklaracja-dostepnosci/     # accessibility statement
+    globals.css                 # tailwind entry + design tokens, high-contrast and text-scale modes
+    fonts/                      # self-hosted icon font subset (scripts/fetch-icons.sh)
+  components/                   # A11yToolbar, SiteHeader, SiteFooter, InnovationCard, chat/, innovation/, admin/
+  lib/api.ts                    # typed match-api client (the only place that knows the API)
+  lib/demo-data.ts              # demo innovations until /match and public innovation endpoints exist
+  lib/admin-mock.ts             # offline copy of the backend admin mocks
+  Dockerfile                    # multi-stage, standalone output
+  Makefile                      # install / dev / build / lint / up / down
 ```
+
+UI follows the Stitch mockups in [stitch/](stitch/) and the tokens in [DESIGN.md](DESIGN.md).
 
 As features land, each gets its own route folder (`app/issues/`, `app/ideas/`, `app/admin/reports/`, …) so devs rarely edit the same file — same rule as the backend.
 
@@ -58,8 +67,21 @@ See the repo [README](../../README.md) for the full run guide.
 
 | Idea | Add when |
 |---|---|
-| Admin auth (store JWT, protect `/admin/*`) | backend admin endpoints exist |
-| Shared UI components / design system | a pattern repeats a second time |
+| Admin login screen (`POST /admin/auth/login`, session cookie) | after the demo; panel already sends the cookie |
 | Data fetching lib (TanStack Query) | manual fetch/loading state becomes noise |
 | i18n | an English version is required |
 | E2E tests (Playwright) | flows stabilise |
+
+## 6. Accessibility (WCAG 2.1 AA, 20% of the score)
+
+- Toolbar on every page: skip link, accessibility statement, text size A / A+ / A++ (scales the root font, all sizes are rem), high contrast (black / yellow / white, remaps the colour tokens), read aloud (Web Speech API, reads the selection or `main`). Preferences persist in `localStorage` and apply before hydration.
+- Atkinson Hyperlegible Next, body 18 px, nothing under 14 px; targets at least 48 px.
+- Dual focus ring (amber outline + navy halo) on `:focus-visible`; form fields have a 4.6:1 border (DESIGN.md's `#CBD5E1` fails 1.4.11, so we use `outline`).
+- Landmarks and headings on every page, labelled forms, `role="status"` for feedback, `role="log"` for the chat, native `<dialog>` for the menu (focus trap, Esc).
+- `prefers-reduced-motion` respected. Icons are always `aria-hidden`.
+- Checked with axe-core (tags wcag2a/aa, wcag21a/aa) on every page, desktop and 390 px, normal and high contrast: 0 violations. Manual screen reader pass still to do.
+
+### Demo integration
+
+- Chat calls `POST /match`; until it exists the 404 falls back to `demoMatch` over `lib/demo-data.ts` with a visible "Tryb demonstracyjny" note.
+- Admin panel calls the real `/admin/*` endpoints (backed by the backend's mock services) with `credentials: "include"`. The backend skips the login when `DEBUG=true` and `ADMIN_AUTH_DISABLED=true` (compose sets both for the demo). If the API is down or answers 401, the panel switches to `lib/admin-mock.ts` and says so.

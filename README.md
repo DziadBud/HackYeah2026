@@ -70,6 +70,7 @@ Zmienne środowiskowe trzymamy w `.env` (nigdy nie commitujemy — wzorce w `.en
 | `API_PORT` | compose | `8000` | port hosta dla API |
 | `WEB_PORT` | compose | `3000` | port hosta dla frontendu |
 | `POSTGRES_*` | compose / backend | `hackyeah` | dane dostępowe do bazy |
+| `ADMIN_AUTH_DISABLED` | compose / backend | `true` w compose, `false` w kodzie | demo: panel admina bez logowania; działa tylko z `DEBUG=true` |
 | `NEXT_PUBLIC_API_URL` | frontend (build arg) | `http://localhost:8000` | adres API widziany przez przeglądarkę; wkompilowany na etapie build |
 
 > `NEXT_PUBLIC_*` jest wstrzykiwany przy budowaniu obrazu, nie w runtime — zmiana wymaga przebudowania `web`.
