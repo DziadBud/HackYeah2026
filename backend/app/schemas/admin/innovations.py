@@ -21,8 +21,11 @@ class InnovationBase(BaseModel):
     video_url: str | None = None
 
 
-class InnovationCreate(InnovationBase):
-    pass
+class InnovationUploaded(BaseModel):
+    id: str
+    title: str
+    # stays draft until rag has embedded the pdf
+    status: PublicationStatus
 
 
 class InnovationUpdate(PatchModel):

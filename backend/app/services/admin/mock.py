@@ -12,7 +12,6 @@ from app.schemas.admin.inbox import Inbox
 from app.schemas.admin.innovations import (
     FeedbackComment,
     Innovation,
-    InnovationCreate,
     InnovationFeedback,
     PublicationStatus,
     InnovationUpdate,
@@ -80,15 +79,6 @@ class MockInnovationAdminService:
             limit=limit,
             offset=offset,
         )
-
-    def create(self, data: InnovationCreate) -> Innovation:
-        item = Innovation(
-            id=f"innovation-{len(self._items) + 1}",
-            status=PublicationStatus.DRAFT,
-            **data.model_dump(),
-        )
-        self._items[item.id] = item
-        return item
 
     def get(self, innovation_id: str) -> Innovation:
         try:

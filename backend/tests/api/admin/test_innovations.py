@@ -1,12 +1,13 @@
+import pytest
+
+from app.main import app
+from app.services.admin import deps
+from app.services.admin.errors import EmbedPublishError, InvalidUploadError, UploadTooLargeError
+from app.services.admin.innovation_upload import CreatedInnovation, NewInnovation
+
 BASE = "/admin/innovations"
-NEW = {
-    "title": "Nowa innowacja",
-    "summary": "Opis",
-    "challenge_areas": ["Seniorzy"],
-    "target_group": ["seniorzy"],
-    "readiness": "concept",
-    "cost_level": "low",
-}
+PDF = b"%PDF-1.7 fake"
+FORM = {"title": "Opaska", "summary": "Opis", "author": "Jan Testowy", "tags": ["Seniorzy", "pilotaz"]}
 
 
 def test_list_filtered(client, auth) -> None:
@@ -22,21 +23,57 @@ def test_list_bad_limit(client, auth) -> None:
     assert client.get(BASE, params={"limit": 0}, headers=auth).status_code == 422
 
 
-def test_create_then_publish_and_unpublish(client, auth) -> None:
-    res = client.post(BASE, json=NEW, headers=auth)
-    assert res.status_code == 201
-    created = res.json()
-    assert created["status"] == "draft"
-
-    res = client.post(f"{BASE}/{created['id']}/publish", headers=auth)
-    assert res.json()["status"] == "published"
-    res = client.post(f"{BASE}/{created['id']}/unpublish", headers=auth)
+def test_publish_and_unpublish(client, auth) -> None:
+    res = client.post(f"{BASE}/wibraap/unpublish", headers=auth)
     assert res.json()["status"] == "draft"
+    res = client.post(f"{BASE}/wibraap/publish", headers=auth)
+    assert res.json()["status"] == "published"
 
 
-def test_create_invalid_area(client, auth) -> None:
-    res = client.post(BASE, json={**NEW, "challenge_areas": ["Kosmos"]}, headers=auth)
+class FakeUploadService:
+    def __init__(self, error: Exception | None = None) -> None:
+        self.calls: list[tuple[NewInnovation, bytes]] = []
+        self.error = error
+
+    def create(self, data: NewInnovation, pdf: bytes) -> CreatedInnovation:
+        if self.error:
+            raise self.error
+        self.calls.append((data, pdf))
+        return CreatedInnovation(id="opaska-abc123", title=data.title, status="draft", file_path="/x.pdf")
+
+
+@pytest.mark.parametrize(
+    "error, want",
+    [
+        pytest.param(None, 202, id="#1 - OK"),
+        pytest.param(InvalidUploadError("file is not a pdf"), 415, id="#2 - FAIL - not a pdf"),
+        pytest.param(UploadTooLargeError("too big"), 413, id="#3 - FAIL - too large"),
+        pytest.param(EmbedPublishError("broker down"), 503, id="#4 - FAIL - publish failed"),
+    ],
+)
+def test_upload(client, auth, error, want) -> None:
+    svc = FakeUploadService(error)
+    app.dependency_overrides[deps.get_innovation_upload_service] = lambda: svc
+
+    res = client.post(BASE, data=FORM, files={"file": ("opaska.pdf", PDF, "application/pdf")}, headers=auth)
+
+    assert res.status_code == want
+    if want == 202:
+        assert res.json() == {"id": "opaska-abc123", "title": "Opaska", "status": "draft"}
+        data, pdf = svc.calls[0]
+        assert (data.author, data.tags, data.city, pdf) == ("Jan Testowy", ["Seniorzy", "pilotaz"], "", PDF)
+
+
+def test_upload_missing_fields_422(client, auth) -> None:
+    app.dependency_overrides[deps.get_innovation_upload_service] = lambda: FakeUploadService()
+    res = client.post(BASE, data={"title": "Opaska"}, files={"file": ("a.pdf", PDF, "application/pdf")}, headers=auth)
     assert res.status_code == 422
+
+
+def test_upload_requires_admin(client) -> None:
+    app.dependency_overrides[deps.get_innovation_upload_service] = lambda: FakeUploadService()
+    res = client.post(BASE, data=FORM, files={"file": ("a.pdf", PDF, "application/pdf")})
+    assert res.status_code == 401
 
 
 def test_get_and_patch(client, auth) -> None:
