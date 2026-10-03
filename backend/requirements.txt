@@ -5,7 +5,5 @@ sqlalchemy==2.0.*
 psycopg[binary]==3.*
 pgvector==0.3.*
 argon2-cffi==25.*
-google-genai==2.*
-pydantic-ai==2.*
 httpx==0.28.*
 python-multipart==0.0.*

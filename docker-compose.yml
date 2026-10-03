@@ -74,8 +74,6 @@ services:
       ADMIN_PASSWORD: ${ADMIN_PASSWORD:-1234}
       # hackathon demo: admin panel without login (only works with DEBUG=true)
       ADMIN_AUTH_DISABLED: ${ADMIN_AUTH_DISABLED:-true}
-      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
-      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
       RAG_URL: http://rag:8000
     ports:
       - "${API_PORT:-8000}:8000"
