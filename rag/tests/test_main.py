@@ -16,11 +16,6 @@ class FakeEmbeddingService:
         return [[0.1, 0.2, 0.3] for _ in texts]
 
 
-class FakeTaggingService:
-    def generate(self, text: str) -> list[str]:
-        return ["senior-support", "accessibility"]
-
-
 class FakeAnswerService:
     def generate(self, query: str, matches: list[dict[str, object]]) -> str:
         if not matches:
@@ -139,9 +134,8 @@ def test_query_rejects_more_than_three_results():
     assert response.status_code == 422
 
 
-def test_embed_fetches_content_and_stores_generated_tags(monkeypatch):
+def test_embed_fetches_content_and_stores_chunks(monkeypatch):
     monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
-    monkeypatch.setattr("app.main.tagging_service", FakeTaggingService())
     store = FakeVectorStore()
     monkeypatch.setattr("app.main.get_vector_store", lambda: store)
 
@@ -150,15 +144,12 @@ def test_embed_fetches_content_and_stores_generated_tags(monkeypatch):
     assert response.status_code == 201
     body = response.json()
     assert body["innovation_id"] == "wibraap"
-    assert body["tags"] == ["senior-support", "accessibility"]
-    assert store.insert_kwargs["tags"] == ["senior-support", "accessibility"]
     assert body["child_count"] >= 1
     assert body["dimensions"] == 3
 
 
 def test_embed_test_accepts_plain_text_without_innovation_id(monkeypatch):
     monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
-    monkeypatch.setattr("app.main.tagging_service", FakeTaggingService())
     store = FakeVectorStore()
     monkeypatch.setattr("app.main.get_vector_store", lambda: store)
 
@@ -170,14 +161,12 @@ def test_embed_test_accepts_plain_text_without_innovation_id(monkeypatch):
     assert response.status_code == 201
     body = response.json()
     assert body["innovation_id"].startswith("test-")
-    assert body["tags"] == ["senior-support", "accessibility"]
     assert body["dimensions"] == 3
     assert store.test_innovation[1] == "Wsparcie dla osób starszych"
 
 
 def test_embed_pdf_extracts_full_document(monkeypatch):
     monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
-    monkeypatch.setattr("app.main.tagging_service", FakeTaggingService())
     monkeypatch.setattr("app.main.get_vector_store", lambda: FakeVectorStore())
     monkeypatch.setattr(
         "app.main.extract_pdf_text", lambda data: "whole PDF document text"

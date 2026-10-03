@@ -221,7 +221,7 @@ class PostgresVectorStore:
                                 CASE
                                     WHEN %s <> '' AND i.title ILIKE ('%%' || %s || '%%')
                                     THEN 1.0 ELSE 0.0
-                                END AS title_score,
+                                END AS title_score
                             FROM innovation_chunks AS c
                             JOIN innovations AS i ON i.id = c.innovation_id
                             WHERE (%s::text IS NULL OR i.city = %s)
@@ -249,8 +249,6 @@ class PostgresVectorStore:
                         """,
                         (
                             _vector_literal(embedding),
-                            query,
-                            query,
                             query,
                             query,
                             city,
