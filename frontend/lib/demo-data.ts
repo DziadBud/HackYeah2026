@@ -1,28 +1,10 @@
-// demo content until match-api serves innovations (GET /innovations/{id}) and
-// /match. the first two entries come from the Stitch mockup, the rest from
+// offline fallback, shown with a "Tryb demonstracyjny" note only when match-api is
+// unreachable. the first two entries come from the Stitch mockup, the rest from
 // documentation/sample-data/sample-social-innovations.json. all people and
 // comments are synthetic.
 
-import type { Innovation } from "@/lib/api";
-
-export interface ThreadReply {
-  author: string;
-  role: string;
-  kind: "expert" | "mentor" | "practitioner";
-  when: string;
-  body: string;
-}
-
-export interface Thread {
-  id: string;
-  author: string;
-  initials: string;
-  meta: string;
-  title: string;
-  body: string;
-  helpful: number;
-  replies: ThreadReply[];
-}
+import type { Thread } from "@/lib/api";
+import type { InnovationCardData } from "@/components/InnovationCard";
 
 export interface DemoInnovation {
   id: string;
@@ -38,7 +20,6 @@ export interface DemoInnovation {
   problem: string;
   solution: string;
   results?: string;
-  likes: number;
   keywords: string[];
   photoCaption?: string;
   threads: Thread[];
@@ -73,50 +54,47 @@ export const INNOVATIONS: DemoInnovation[] = [
       "Reanimacja świetlic wiejskich w oparciu o wolontariat międzypokoleniowy. Młodzież uczy obsługi smartfonów, a seniorzy prowadzą warsztaty ginących zawodów.",
     results:
       "Wzrost samodzielności cyfrowej o 68% u uczestników, odnowienie więzi sąsiedzkich oraz uruchomienie lokalnych samopomocowych sieci dowozu leków.",
-    likes: 142,
     keywords: ["senior", "seniorzy", "świetlica", "wieś", "wiejsk", "międzypokolen", "samotn", "izolacj", "aktywizacj", "integracj"],
     photoCaption:
       "Warsztaty cyfrowe w świetlicy wiejskiej w powiecie tarnowskim – testy praktyczne innowacji, edycja 2023/2024.",
     threads: [
       {
         id: "thread-1",
-        author: "Anna K. (Koordynator GOPS Iwanowice)",
-        initials: "AK",
-        meta: "Zadano 2 dni temu • Kategoria: Logistyka i transport",
+        innovation_id: "sasiedzki-klub-aktywnego-seniora",
+        author_label: "Anna K. (Koordynator GOPS Iwanowice)",
+        created_at: "2026-10-01T09:12:00Z",
         title: "Jak poradzić sobie z transportem seniorów z odległych przysiółków?",
         body: "Chcemy uruchomić klub w remizie OSP, jednak część samotnych seniorów mieszka ponad 3 km od centrum wsi bez chodnika. Czy w ramach testowania innowacji można zorganizować refundację paliwa dla młodych wolontariuszy dowożących sąsiadów?",
-        helpful: 12,
         replies: [
           {
-            author: "Tomasz Nowak",
-            role: "Ekspert ds. Innowacji ROPS Kraków",
+            id: "reply-1",
+            author_label: "Tomasz Nowak (Ekspert ds. Innowacji ROPS Kraków)",
             kind: "expert",
-            when: "Wczoraj, 10:14",
+            created_at: "2026-10-02T10:14:00Z",
             body: "Pani Anno, jak najbardziej! W testach w powiecie tarnowskim sprawdził się model sąsiedzkiego carpoolingu z bonem mobilnościowym rozliczanym ryczałtowo. W naszym pakiecie wdrożeniowym (Rozdział 4, str. 38) znajduje się gotowy wzór umowy porozumienia wolontariackiego na zwrot kosztów przejazdów bez konieczności skomplikowanych faktur. Chętnie pomożemy przygotować to w Państwa gminie.",
           },
           {
-            author: "Marek Z.",
-            role: "Praktyk (UG Limanowa)",
+            id: "reply-2",
+            author_label: "Marek Z. (UG Limanowa)",
             kind: "practitioner",
-            when: "Wczoraj, 14:30",
+            created_at: "2026-10-02T14:30:00Z",
             body: "Dodatkowo warto zgrać zajęcia z lokalnymi kursami busów gminnych, a w dni powrotów wieczornych współpracujemy ze strażakami z OSP, którzy użyczają 9-osobowego busa ratowniczego. Seniorzy są zachwyceni tą formą!",
           },
         ],
       },
       {
         id: "thread-2",
-        author: "Zofia B. (Biblioteka Publiczna w Żabnie)",
-        initials: "ZB",
-        meta: "1 tydzień temu • Kategoria: Dostępność materiałów",
+        innovation_id: "sasiedzki-klub-aktywnego-seniora",
+        author_label: "Zofia B. (Biblioteka Publiczna w Żabnie)",
+        created_at: "2026-09-26T11:00:00Z",
         title: "Czy scenariusze zajęć cyfrowych nadają się dla osób 80+ z poważniejszymi wadami wzroku?",
         body: "Chcemy włączyć do warsztatów pensjonariuszy z lokalnego domu pobytu dziennego. Zastanawiamy się, czy czcionki i plansze edukacyjne posiadają warianty o wysokim kontraście i powiększonej skali druku?",
-        helpful: 8,
         replies: [
           {
-            author: "Katarzyna Wojtasik",
-            role: "Mentor innowacji (Fundacja Dolina Dunajca)",
+            id: "reply-3",
+            author_label: "Katarzyna Wojtasik (Fundacja Dolina Dunajca)",
             kind: "mentor",
-            when: "6 dni temu",
+            created_at: "2026-09-27T16:40:00Z",
             body: "Pani Zofio, tak! W pakiecie dołączono specjalną paczkę „Materiały Wielkodrukowe (High Contrast A3)” ze stopniem pisma min. 24 pkt oraz prekonfigurowanymi lupami ekranowymi dla tabletów z systemem Android i iOS. Wszystkie karty pracy mają czarne obramowania na żółtym tle zgodnie z WCAG.",
           },
         ],
@@ -138,7 +116,6 @@ export const INNOVATIONS: DemoInnovation[] = [
     solution:
       "Cykl warsztatów prowadzonych przez przeszkoloną młodzież szkolną w bibliotekach i świetlicach, z materiałami w dużym druku.",
     results: "Uczestnicy samodzielnie zakładają Profil Zaufany i rozpoznają typowe próby oszustw.",
-    likes: 87,
     keywords: ["senior", "seniorzy", "cyfrow", "internet", "e-usług", "wykluczen", "młodzież", "oszust", "bezpieczeństw"],
     threads: [],
   },
@@ -237,7 +214,6 @@ export const INNOVATIONS: DemoInnovation[] = [
       fullTitle: s.title,
       summary: s.solution,
       recommended: false,
-      likes: 0,
       threads: [],
     }),
   ),
@@ -247,13 +223,13 @@ export function findInnovation(id: string): DemoInnovation | undefined {
   return INNOVATIONS.find((i) => i.id === id);
 }
 
-export function toInnovation(d: DemoInnovation): Innovation {
+export function toInnovation(d: DemoInnovation): InnovationCardData {
   return { id: d.id, title: d.title, summary: d.summary, tags: d.tags, city: d.deployedIn };
 }
 
 // naive keyword overlap; stands in for the backend's hybrid search when the
 // api is unreachable so the demo still answers.
-export function demoMatch(text: string, limit = 3): Innovation[] {
+export function demoMatch(text: string, limit = 3): InnovationCardData[] {
   const q = text.toLowerCase();
   return INNOVATIONS.map((d) => ({
     d,

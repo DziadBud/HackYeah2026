@@ -25,7 +25,7 @@ export function useApiOrMock<T>(load: () => Promise<T>, mock: () => T) {
         setSource("mock");
         setNotice(
           err instanceof ApiError && err.status === 401
-            ? "API wymaga logowania (ustaw ADMIN_AUTH_DISABLED=true przy DEBUG=true). Pokazuję lokalne dane testowe."
+            ? "Sesja wygasła: odśwież stronę i zaloguj się ponownie. Pokazuję lokalne dane testowe."
             : "Nie udało się połączyć z API. Pokazuję lokalne dane testowe.",
         );
       });

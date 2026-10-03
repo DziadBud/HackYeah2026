@@ -6,7 +6,8 @@ import { Icon } from "@/components/Icon";
 const btn =
   "flex min-h-12 items-center gap-2 rounded-xl bg-surface-container-lowest px-space-md text-label-lg font-semibold text-primary shadow-sm hover:bg-surface-container-high hc-edge";
 
-export function ActionBar({ likes }: { likes: number }) {
+// like and notifications have no backend endpoint yet; they only toggle locally
+export function ActionBar() {
   const [liked, setLiked] = useState(false);
   const [notify, setNotify] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -39,7 +40,7 @@ export function ActionBar({ likes }: { likes: number }) {
           className={`${btn} aria-pressed:bg-secondary-fixed aria-pressed:text-on-secondary-fixed`}
         >
           <Icon name="favorite" size={22} fill className="text-secondary" />
-          <span>Polub innowację ({likes + (liked ? 1 : 0)})</span>
+          <span>{liked ? "Polubiono" : "Polub innowację"}</span>
         </button>
         <button
           type="button"

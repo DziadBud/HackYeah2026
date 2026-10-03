@@ -1,14 +1,26 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { api, type Innovation } from "@/lib/api";
+import { ApiError, api, type MatchedInnovation, type SimilarProblemReport } from "@/lib/api";
 import { demoMatch } from "@/lib/demo-data";
+import { areaLabelsFromTags } from "@/lib/labels";
 import { Icon } from "@/components/Icon";
-import { InnovationCard } from "@/components/InnovationCard";
+import { InnovationCard, type InnovationCardData } from "@/components/InnovationCard";
+import { IdeaForm } from "@/components/chat/IdeaForm";
+import { SimilarReports } from "@/components/chat/SimilarReports";
 
 type Message =
   | { id: number; role: "user"; text: string }
-  | { id: number; role: "assistant"; time: string; innovations: Innovation[]; demo: boolean };
+  | {
+      id: number;
+      role: "assistant";
+      time: string;
+      innovations: InnovationCardData[];
+      similar: SimilarProblemReport[];
+      demo: boolean;
+      // null when the person did not ask to test
+      testSignups: number | null;
+    };
 
 const QUICK_ACTIONS = [
   {
@@ -36,6 +48,9 @@ const QUICK_ACTIONS = [
     prompt: "Chciałbym przystąpić do testowania innowacji społecznej: ",
   },
 ];
+const IDEA_ACTION = "Mam pomysł";
+const TESTER_ACTION = "Chcę testować";
+const TESTER_PROMPT = QUICK_ACTIONS.find((a) => a.title === TESTER_ACTION)!.prompt;
 
 const FOLLOW_UP = "\n\nGmina lub miejscowość: \nKogo dotyczy problem: \nCo już próbowaliście: ";
 
@@ -59,6 +74,10 @@ function innovationsPhrase(n: number) {
   return `${n} sprawdzonych innowacji społecznych`;
 }
 
+function toCard(i: MatchedInnovation): InnovationCardData {
+  return { id: i.id, title: i.title, summary: i.summary, why: i.why, tags: areaLabelsFromTags(i.tags), city: i.city };
+}
+
 function now() {
   return new Date().toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
 }
@@ -69,11 +88,23 @@ export function Chat() {
   const [pending, setPending] = useState(false);
   const [status, setStatus] = useState("");
   const [recording, setRecording] = useState(false);
+  const [tester, setTester] = useState(false);
+  const [email, setEmail] = useState("");
+  const [consent, setConsent] = useState(false);
+  const [ideaOpen, setIdeaOpen] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const recognitionRef = useRef<Recognition | null>(null);
   const nextId = useRef(1);
 
   useEffect(() => () => recognitionRef.current?.stop(), []);
+
+  // /?testuj=1 comes from the "Zgłoś się do testowania" box on an innovation page
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).has("testuj")) {
+      setTester(true);
+      fillPrompt(TESTER_PROMPT, "Opisz problem, podaj e-mail i wyślij: zapiszemy Cię do testów dopasowanych innowacji.");
+    }
+  }, []);
 
   function fillPrompt(text: string, note: string) {
     setInput(text);
@@ -88,26 +119,52 @@ export function Chat() {
 
   async function send() {
     const text = input.trim();
-    if (!text) {
-      setStatus("Wpisz wiadomość lub skorzystaj z przycisku Dopełnij tekst z AI.");
+    if (text.length < 3) {
+      setStatus("Opisz problem kilkoma słowami albo skorzystaj z przycisku Dopełnij tekst z AI.");
       textareaRef.current?.focus();
       return;
     }
-    setMessages((m) => [...m, { id: nextId.current++, role: "user", text }]);
+    const userId = nextId.current++;
+    setMessages((m) => [...m, { id: userId, role: "user", text }]);
     setInput("");
     setStatus("");
     setPending(true);
-    let innovations: Innovation[];
-    let demo = false;
+    let reply: Omit<Extract<Message, { role: "assistant" }>, "id" | "time" | "role">;
     try {
-      innovations = (await api.match(text)).innovations;
-    } catch {
-      // match-api not up yet: answer from the bundled demo data instead of failing
-      innovations = demoMatch(text);
-      demo = true;
+      const res = await api.match(tester ? { text, email: email.trim(), consent } : { text }, tester);
+      reply = {
+        innovations: res.innovations.map(toCard),
+        similar: res.similar_reports,
+        demo: false,
+        testSignups: tester ? res.test_signup_ids.length : null,
+      };
+      if (tester) {
+        setTester(false);
+        setConsent(false);
+      }
+    } catch (err) {
+      if (err instanceof ApiError && err.status >= 400 && err.status < 500 && err.status !== 404) {
+        // the request itself was rejected: give the text back instead of faking an answer
+        setMessages((m) => m.filter((x) => x.id !== userId));
+        setInput(text);
+        setPending(false);
+        setStatus(
+          err.status === 429
+            ? "Wysłano zbyt wiele zapytań. Odczekaj chwilę i spróbuj ponownie."
+            : "Nie udało się wysłać: sprawdź opis (do 2000 znaków) i adres e-mail.",
+        );
+        return;
+      }
+      // match-api unreachable: answer from the bundled demo data, clearly marked
+      reply = { innovations: demoMatch(text), similar: [], demo: true, testSignups: tester ? 0 : null };
     }
-    setMessages((m) => [...m, { id: nextId.current++, role: "assistant", time: now(), innovations, demo }]);
+    setMessages((m) => [...m, { id: nextId.current++, role: "assistant", time: now(), ...reply }]);
     setPending(false);
+  }
+
+  function openIdeaForm() {
+    setIdeaOpen(true);
+    setStatus("");
   }
 
   function completeWithAi() {
@@ -192,7 +249,11 @@ export function Chat() {
             <li key={a.title}>
               <button
                 type="button"
-                onClick={() => fillPrompt(a.prompt, `Wstawiono szablon: ${a.title}. Dokończ opis i wyślij.`)}
+                onClick={() => {
+                  if (a.title === IDEA_ACTION) return openIdeaForm();
+                  if (a.title === TESTER_ACTION) setTester(true);
+                  fillPrompt(a.prompt, `Wstawiono szablon: ${a.title}. Dokończ opis i wyślij.`);
+                }}
                 className="group flex h-full w-full items-start gap-space-sm rounded-xl bg-surface-container-lowest p-space-md text-left shadow-sm hover:bg-surface-container-high hc-edge"
               >
                 <span className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-surface-container text-primary group-hover:bg-primary group-hover:text-on-primary">
@@ -251,10 +312,24 @@ export function Chat() {
                       ))}
                     </div>
                   )}
+                  {m.testSignups !== null && !m.demo && (
+                    <p className="flex items-start gap-2 rounded-lg bg-surface-container p-space-sm text-body-md text-on-surface">
+                      <Icon name="how_to_reg" size={22} className="mt-0.5 text-primary" />
+                      <span>
+                        {m.testSignups > 0
+                          ? `Zapisaliśmy Cię do testów tych innowacji (liczba zgłoszeń: ${m.testSignups}). Koordynator ROPS odezwie się na podany adres e-mail.`
+                          : "Nie znaleźliśmy innowacji do przetestowania, więc nie zapisaliśmy zgłoszenia do testów."}
+                      </span>
+                    </p>
+                  )}
+                  {m.similar.length > 0 && <SimilarReports reports={m.similar} />}
                   {m.demo && (
                     <p className="flex items-start gap-2 rounded-lg bg-surface-container p-space-sm text-caption text-on-surface-variant">
                       <Icon name="info" size={18} className="mt-0.5 text-primary" />
-                      <span>Tryb demonstracyjny: serwer dopasowań jest niedostępny, wyniki pochodzą z przykładowej bazy innowacji.</span>
+                      <span>
+                        Tryb demonstracyjny: serwer dopasowań jest niedostępny, wyniki pochodzą z przykładowej bazy innowacji.
+                        {m.testSignups !== null && " Zgłoszenie do testów nie zostało zapisane."}
+                      </span>
                     </p>
                   )}
                 </div>
@@ -294,10 +369,12 @@ export function Chat() {
               rows={3}
               value={input}
               onChange={(e) => setInput(e.target.value)}
+              maxLength={2000}
               onKeyDown={(e) => {
                 if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) {
                   e.preventDefault();
-                  void send();
+                  // through the form, so the tester fields get validated too
+                  e.currentTarget.form?.requestSubmit();
                 }
               }}
               aria-describedby="chat-input-hint"
@@ -307,6 +384,44 @@ export function Chat() {
             <p id="chat-input-hint" className="text-caption text-on-surface-variant">
               Enter dodaje nową linię, Ctrl + Enter wysyła wiadomość.
             </p>
+          </div>
+          <div className="flex flex-col gap-space-xs">
+            <label className="flex min-h-12 items-center gap-space-sm text-body-md text-on-surface">
+              <input
+                type="checkbox"
+                checked={tester}
+                onChange={(e) => setTester(e.target.checked)}
+                className="size-6 shrink-0 accent-primary-container"
+              />
+              <span>Chcę testować dopasowane innowacje</span>
+            </label>
+            {tester && (
+              <div className="flex flex-col gap-space-xs rounded-lg bg-surface-container-low p-space-sm hc-edge">
+                <label htmlFor="tester-email" className="text-body-md font-bold text-primary">
+                  E-mail do kontaktu w sprawie testów
+                </label>
+                <input
+                  id="tester-email"
+                  type="email"
+                  required
+                  maxLength={254}
+                  autoComplete="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="min-h-12 w-full rounded-lg border-[1.5px] border-outline bg-surface px-space-sm text-body-md text-on-surface"
+                />
+                <label className="flex min-h-12 items-start gap-space-sm text-body-md text-on-surface">
+                  <input
+                    type="checkbox"
+                    required
+                    checked={consent}
+                    onChange={(e) => setConsent(e.target.checked)}
+                    className="mt-0.5 size-6 shrink-0 accent-primary-container"
+                  />
+                  <span>Zgadzam się na kontakt ROPS w sprawie testów (wymagane).</span>
+                </label>
+              </div>
+            )}
           </div>
           <div className="flex flex-col items-stretch justify-between gap-space-sm pt-space-xs sm:flex-row sm:items-center">
             <div className="flex flex-wrap items-center gap-space-xs">
@@ -331,12 +446,9 @@ export function Chat() {
             <div className="flex shrink-0 flex-wrap items-center gap-space-xs">
               <button
                 type="button"
-                onClick={() =>
-                  fillPrompt(
-                    input.trim() ? input : "Zgłaszam propozycję nowej innowacji społecznej: ",
-                    "Opisz swój pomysł: na czym polega, dla kogo jest i na jakim jest etapie.",
-                  )
-                }
+                aria-expanded={ideaOpen}
+                aria-controls="idea-form"
+                onClick={openIdeaForm}
                 className={`${secondaryBtn} justify-center bg-surface-container-high hover:bg-surface-container-highest hc-edge`}
               >
                 <Icon name="add_circle" className="text-secondary" />
@@ -357,6 +469,23 @@ export function Chat() {
           {status}
         </p>
       </section>
+
+      {ideaOpen && (
+        <div id="idea-form">
+          <IdeaForm
+            initialSummary={input.trim()}
+            onCancel={() => {
+              setIdeaOpen(false);
+              textareaRef.current?.focus();
+            }}
+            onDone={(msg) => {
+              setIdeaOpen(false);
+              setStatus(msg);
+              textareaRef.current?.focus();
+            }}
+          />
+        </div>
+      )}
 
       <section id="o-hubie" aria-labelledby="o-hubie-heading" className="flex flex-col gap-space-xs rounded-xl bg-surface-container-low p-space-md hc-edge md:p-space-lg">
         <h2 id="o-hubie-heading" className="text-headline-sm font-semibold text-primary">

@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { ApiError, adminApi, type AdminInnovation, type InnovationStats } from "@/lib/api";
-import { ADMIN_MOCK, AREA_LABEL, mockInnovationStats } from "@/lib/admin-mock";
+import { ADMIN_MOCK, mockInnovationStats } from "@/lib/admin-mock";
+import { AREA_LABEL, COST, READINESS } from "@/lib/labels";
 import { Icon } from "@/components/Icon";
 import { BarList, Stars, Trend, WeeklyColumns, plural } from "@/components/admin/charts";
-import { COST, READINESS, StatusBadge } from "@/components/admin/InnovationList";
+import { StatusBadge } from "@/components/admin/InnovationList";
 import { card, fmtDate, ghostBtn, h2 } from "@/components/admin/styles";
 import { useApiOrMock } from "@/components/admin/useApiOrMock";
 
@@ -126,9 +127,9 @@ export function InnovationStatsView({ id }: { id: string }) {
           <dt className="font-semibold text-primary">Dla kogo</dt>
           <dd>{i.target_group.join(", ")}</dd>
           <dt className="font-semibold text-primary">Etap</dt>
-          <dd>{READINESS[i.readiness] ?? i.readiness}</dd>
+          <dd>{i.readiness ? READINESS[i.readiness] : "–"}</dd>
           <dt className="font-semibold text-primary">Koszt wdrożenia</dt>
-          <dd>{COST[i.cost_level] ?? i.cost_level}</dd>
+          <dd>{i.cost_level ? COST[i.cost_level] : "–"}</dd>
           {i.video_url && (
             <>
               <dt className="font-semibold text-primary">Film</dt>

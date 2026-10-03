@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useId, useState } from "react";
 import { adminApi, type Idea, type IdeaStatus, type ProblemReport } from "@/lib/api";
-import { ADMIN_MOCK, AREA_LABEL, type AdminData } from "@/lib/admin-mock";
+import { ADMIN_MOCK, type AdminData } from "@/lib/admin-mock";
+import { AREA_LABEL } from "@/lib/labels";
 import { Icon } from "@/components/Icon";
 import { card, fmtDate, ghostBtn, h2, primaryBtn, td, th } from "@/components/admin/styles";
 import { useApiOrMock } from "@/components/admin/useApiOrMock";
@@ -86,7 +87,11 @@ function ReplyForm({ onSend, previous }: { onSend: (msg: string) => Promise<void
 }
 
 function AreaChip({ area }: { area: ProblemReport["challenge_area"] }) {
-  return <span className="rounded bg-surface-container-high px-2 py-0.5 text-caption text-primary">{AREA_LABEL[area]}</span>;
+  return (
+    <span className="rounded bg-surface-container-high px-2 py-0.5 text-caption text-primary">
+      {area ? AREA_LABEL[area] : "Obszar nieprzypisany"}
+    </span>
+  );
 }
 
 export function AdminPanel() {
@@ -209,7 +214,7 @@ export function AdminPanel() {
                     <AreaChip area={r.challenge_area} />
                     <span className="flex items-center gap-1 text-caption text-on-surface-variant">
                       <Icon name="place" size={16} className="text-primary" />
-                      {r.location}
+                      {r.location || "Gmina nieznana"}
                     </span>
                     <span className="text-caption text-on-surface-variant">• {fmtDate(r.created_at)}</span>
                   </div>
@@ -260,18 +265,22 @@ export function AdminPanel() {
                   {idea.summary}
                 </h3>
                 <dl className="grid grid-cols-1 gap-x-space-md gap-y-1 text-body-md sm:grid-cols-[max-content_1fr]">
-                  <dt className="font-semibold text-primary">Problem</dt>
-                  <dd>{idea.social_canvas.problem}</dd>
-                  <dt className="font-semibold text-primary">Rozwiązanie</dt>
-                  <dd>{idea.social_canvas.solution}</dd>
-                  <dt className="font-semibold text-primary">Dla kogo</dt>
-                  <dd>{idea.social_canvas.beneficiaries}</dd>
-                  {idea.social_canvas.resources && (
-                    <>
-                      <dt className="font-semibold text-primary">Zasoby</dt>
-                      <dd>{idea.social_canvas.resources}</dd>
-                    </>
-                  )}
+                  {[
+                    ["Na czym polega", idea.essence],
+                    ["Dla kogo", idea.target_group],
+                    // canvas answers are optional when the idea comes from the public form
+                    ["Problem", idea.social_canvas.problem],
+                    ["Rozwiązanie", idea.social_canvas.solution],
+                    ["Beneficjenci", idea.social_canvas.beneficiaries],
+                    ["Zasoby", idea.social_canvas.resources],
+                  ]
+                    .filter(([, value]) => value)
+                    .map(([label, value]) => (
+                      <div key={label} className="contents">
+                        <dt className="font-semibold text-primary">{label}</dt>
+                        <dd>{value}</dd>
+                      </div>
+                    ))}
                 </dl>
                 <form
                   className="flex flex-wrap items-end gap-space-xs"
