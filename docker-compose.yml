@@ -22,6 +22,9 @@ services:
     container_name: hackyeah-api
     environment:
       DEBUG: ${DEBUG:-true}
+      ADMIN_ACCOUNTS: ${ADMIN_ACCOUNTS:-{}}
+      IP_HASH_SALT: ${IP_HASH_SALT:-}
+      DATABASE_URL: postgresql://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
       DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-hackyeah}:${POSTGRES_PASSWORD:-hackyeah}@db:5432/${POSTGRES_DB:-hackyeah}
     ports:
       - "${API_PORT:-8000}:8000"
