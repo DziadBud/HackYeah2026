@@ -18,5 +18,8 @@ class Settings(BaseSettings):
     # demo only: skip the admin login. honoured only together with debug=true
     admin_auth_disabled: bool = False
 
+    gemini_api_key: str = ""
+    gemini_model: str = "gemini-2.0-flash"
+
 
 settings = Settings()
