@@ -107,8 +107,8 @@ class MockInnovationAdminService:
             status=PublicationStatus.DRAFT,
         )
 
-    def delete(self, innovation_id: str) -> None:
-        self._items.pop(innovation_id, None)
+    def publish(self, innovation_id: str) -> None:
+        self.set_status(innovation_id, PublicationStatus.PUBLISHED)
 
     def get(self, innovation_id: str) -> Innovation:
         try:

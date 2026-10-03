@@ -347,8 +347,8 @@ class DbInnovationAdminService:
         return sorted(rows, key=lambda r: r.matches_total, reverse=True)
 
 
-# InnovationStore for uploads: its own short session, so the row is committed before the
-# rabbit message goes out (the upload service relies on that order)
+# InnovationStore for uploads: its own short sessions, so the draft is committed before rag
+# embeds it, and publish runs from the background task after the request session is gone
 class DbInnovationStore:
     def __init__(self, sessions: sessionmaker[Session]) -> None:
         self._sessions = sessions
@@ -376,11 +376,11 @@ class DbInnovationStore:
                 )
             )
 
-    def delete(self, innovation_id: str) -> None:
+    def publish(self, innovation_id: str) -> None:
         with self._sessions.begin() as db:
             row = db.get(InnovationRow, innovation_id)
             if row is not None:
-                db.delete(row)
+                row.status = PublicationStatus.PUBLISHED.value
 
 
 class DbIdeaAdminService:

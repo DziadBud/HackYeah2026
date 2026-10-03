@@ -4,7 +4,7 @@ from app.main import app
 from app.schemas.admin.common import ChallengeArea
 from app.schemas.admin.innovations import CostLevel, Readiness
 from app.services.admin import deps
-from app.services.admin.errors import EmbedPublishError, InvalidUploadError, UploadTooLargeError
+from app.services.admin.errors import InvalidUploadError, UploadTooLargeError
 from app.services.admin.innovation_upload import CreatedInnovation, InnovationUploadService, NewInnovation
 from app.storage import LocalFileStorage
 
@@ -62,6 +62,9 @@ class FakeUploadService:
         self.calls.append((data, pdf))
         return CreatedInnovation(id="opaska-abc123", title=data.title, status="draft", file_path="/x.pdf")
 
+    def embed(self, innovation_id: str, file_path: str) -> None:
+        self.embedded = (innovation_id, file_path)
+
 
 @pytest.mark.parametrize(
     "error, want",
@@ -69,7 +72,6 @@ class FakeUploadService:
         pytest.param(None, 202, id="#1 - OK"),
         pytest.param(InvalidUploadError("file is not a pdf"), 415, id="#2 - FAIL - not a pdf"),
         pytest.param(UploadTooLargeError("too big"), 413, id="#3 - FAIL - too large"),
-        pytest.param(EmbedPublishError("broker down"), 503, id="#4 - FAIL - publish failed"),
     ],
 )
 def test_upload(client, auth, error, want) -> None:
@@ -81,6 +83,7 @@ def test_upload(client, auth, error, want) -> None:
     assert res.status_code == want
     if want == 202:
         assert res.json() == {"id": "opaska-abc123", "title": "Opaska", "status": "draft"}
+        assert svc.embedded == ("opaska-abc123", "/x.pdf")
         data, pdf = svc.calls[0]
         assert (data.innovator, data.challenge_areas, data.tags, data.city, pdf) == (
             "Fundacja Testowa", ["Seniorzy"], ["opaska", "pilotaz"], "", PDF
@@ -195,23 +198,25 @@ def test_stats_require_session(client) -> None:
     assert client.get("/admin/reports/innovations").status_code == 401
 
 
-def test_upload_lands_in_mock_list(client, auth, tmp_path) -> None:
-    published: list[str] = []
+def test_upload_embeds_and_publishes(client, auth, tmp_path) -> None:
+    embedded: list[str] = []
 
-    class FakePublisher:
-        def publish_embed_requested(self, innovation_id: str, file_path: str) -> None:
-            published.append(innovation_id)
+    class FakeRag:
+        def embed_pdf(self, innovation_id: str, filename: str, pdf: bytes) -> None:
+            embedded.append(innovation_id)
 
     innovations = app.dependency_overrides[deps.get_innovation_service]()
-    svc = InnovationUploadService(innovations, LocalFileStorage(tmp_path), FakePublisher(), max_bytes=1024)
+    svc = InnovationUploadService(innovations, LocalFileStorage(tmp_path), FakeRag(), max_bytes=1024)
     app.dependency_overrides[deps.get_innovation_upload_service] = lambda: svc
 
     res = client.post(BASE, data=FORM, files={"file": ("opaska.pdf", PDF, "application/pdf")}, headers=auth)
 
+    assert res.json()["status"] == "draft"
+    # the testclient runs background tasks before returning, so rag has already embedded it
     created = client.get(f"{BASE}/{res.json()['id']}", headers=auth).json()
-    assert created["status"] == "draft"
+    assert created["status"] == "published"
     assert created["challenge_areas"] == ["Seniorzy"]
     assert (created["problem"], created["innovator"], created["readiness"]) == (
         "Seniorzy nie slysza alarmow", "Fundacja Testowa", "pilot"
     )
-    assert published == [created["id"]]
+    assert embedded == [created["id"]]

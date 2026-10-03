@@ -6,9 +6,9 @@ from pathlib import Path
 from fastapi import Depends
 from sqlalchemy.orm import Session
 
+from app.clients.rag import RagClient
 from app.config import settings
 from app.db.session import SessionLocal, get_db
-from app.messaging import RabbitEmbedPublisher
 from app.services.admin.auth import AdminAuthService, hash_password
 from app.services.admin.auth_models import AdminAccount
 from app.services.admin.auth_store import InMemoryAdminAuthStore
@@ -80,12 +80,12 @@ def get_report_service(db: Session = Depends(get_db)) -> ReportAdminService:
     return DbReportAdminService(db)
 
 
-# own short sessions inside the store: the row must be committed before the rabbit publish
+# own short sessions inside the store: the row must be committed before rag embeds it
 @cache
 def get_innovation_upload_service() -> InnovationUploadService:
     return InnovationUploadService(
         store=DbInnovationStore(SessionLocal),
         files=LocalFileStorage(Path(settings.upload_dir)),
-        publisher=RabbitEmbedPublisher(settings.rabbitmq_url, settings.embed_queue),
+        rag=RagClient(settings.rag_url, settings.rag_timeout_seconds),
         max_bytes=settings.max_upload_bytes,
     )

@@ -49,13 +49,13 @@ services:
       ADMIN_AUTH_DISABLED: ${ADMIN_AUTH_DISABLED:-true}
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
       GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
-      RABBITMQ_URL: amqp://${RABBITMQ_USER:-hackyeah}:${RABBITMQ_PASSWORD:-hackyeah}@rabbitmq:5672/
+      RAG_URL: http://rag:8000
     ports:
       - "${API_PORT:-8000}:8000"
     depends_on:
       db:
         condition: service_healthy
-      rabbitmq:
+      rag:
         condition: service_healthy
 
   embeddings:

@@ -62,7 +62,7 @@ How rag behaves, and what match-api does about it:
 - Tag generation and grounded answer generation use the separate `ollama` container with `qwen2.5:1.5b`; the `ollama-init` container downloads the model into the persistent `ollama_models` volume.
 - **`innovations.city` is nullable but returned as `str`:** match-api always writes `city` (`''` when unknown).
 
-RabbitMQ (`rabbitmq` in compose, management UI on :15672) runs next to Postgres for match-api to publish to. The api container gets `RABBITMQ_URL`; match-api has no publisher code yet.
+match-api calls rag directly over HTTP (`RAG_URL`); there is no queue between them. The `rabbitmq` service in compose is not used by match-api.
 
 ## 2. Flow: adding innovations
 
@@ -80,7 +80,11 @@ flowchart TD
     E -- error --> G["stays draft, error logged; admin re-uploads"]
 ```
 
-- **Create from a PDF:** `POST /admin/innovations` takes the metadata (title, summary, tags, city, image_url, page_url) plus the PDF. match-api validates it (PDF, ≤ 10 MB, the same limits as rag), inserts the row as `draft`, commits, returns 202 with the id, and calls rag `/embed/pdf` in a FastAPI background task. On success it sets `status = 'published'`.
+- **Create from a PDF:** `POST /admin/innovations` takes the metadata (`title`, `summary`, `problem`, `innovator`, `challenge_areas`, `readiness`, `cost_level`, `target_group`, `tags`, `city`, `page_url`, `image_url`, `video_url`) plus the PDF.
+  - match-api validates it (PDF, ≤ 10 MB, the same limits as rag), saves the file under `UPLOAD_DIR`, inserts the row as `draft`, commits, and returns 202 with the id.
+  - A FastAPI background task then sends the PDF to rag `POST /embed/pdf`; on success match-api sets `status = 'published'`. The draft is committed first because rag looks the row up and replaces its chunks.
+  - Trade-off: a background task instead of a queue. Simple and enough for a handful of uploads, but a process restart mid-embed loses the task (the row stays draft; the admin uploads again), and nothing retries.
+  - Tags get `type:innovation` and one `area:<slug>` per challenge area, since rag filters only on tags.
 - **Idea → innovation:** accepting an idea creates a `draft` innovations row from the idea card and stores it in `ideas.innovation_id`. It stays invisible until the admin uploads its PDF with `POST /admin/innovations/{id}/pdf`, which runs the same background embed.
 - **Re-upload** replaces all chunks; editing metadata (`PATCH`) does not re-embed.
 - **No job table:** the admin list shows `indexed` (has chunks, `EXISTS` on `innovation_chunks`) next to `status`. A failed embed leaves the row as an unindexed draft.
@@ -361,7 +365,7 @@ backend/             # match-api
   app/               # api/*.py, api/admin/*.py, schemas/, services/ (interface + mock first, db next), rag client
   sql/               # match-api tables + innovations ALTER, mounted into initdb after rag's
 rag/                 # used as merged
-docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit
+docker-compose.yml   # postgres (pgvector image), rag, embeddings, ollama, api, mailpit
 ```
 
 1. Backend schema file + compose (one `DATABASE_URL`, `RAG_URL`, mailpit): match-api tables + `innovations` column extensions.
@@ -407,4 +411,4 @@ docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit
    - Middleman and grant drafts are stored in `generated_documents`
    - community threads are first-class (pending moderation, flat replies, role `kind`)
    - contacts, nested reply trees, test rounds, per-item tokens and index jobs stay deferred
-5. RabbitMQ added to docker compose (`rabbitmq`, `RABBITMQ_URL` passed to the api); no publisher in match-api yet.
+5. Innovation upload calls rag `POST /embed/pdf` directly from a background task and publishes the innovation on success; no queue between match-api and rag.
