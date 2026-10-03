@@ -109,12 +109,11 @@ class PostgresVectorStore:
                         """
                         WITH ranked AS (
                             SELECT
-                                i.id AS innovation_id,
+                                i.id AS parent_id,
                                 c.id AS child_id,
                                 i.title,
                                 i.city,
                                 i.summary,
-                                i.image_url,
                                 i.page_url AS parent_url,
                                 i.tags,
                                 c.source,
@@ -150,16 +149,16 @@ class PostgresVectorStore:
                               )
                               AND i.status = 'published'
                         )
-                        SELECT innovation_id, child_id, title, city, summary,
-                               image_url, parent_url, tags, source, page, text, score
+                        SELECT parent_id, child_id, title, city, summary,
+                               parent_url, tags, source, page, text, score
                         FROM (
-                            SELECT DISTINCT ON (innovation_id)
-                                innovation_id, child_id, title, city, summary,
-                                image_url, parent_url, tags, source, page, text,
+                            SELECT DISTINCT ON (parent_id)
+                                parent_id, child_id, title, city, summary,
+                                parent_url, tags, source, page, text,
                                 vector_score + (title_score * 0.2) + (tag_score * 0.2)
                                     AS score
                             FROM ranked
-                            ORDER BY innovation_id, score DESC
+                            ORDER BY parent_id, score DESC
                         ) AS best_matches
                         ORDER BY score DESC
                         LIMIT %s
@@ -185,17 +184,15 @@ class PostgresVectorStore:
                         {
                             "parent_id": row[0],
                             "child_id": row[1],
-                            "innovation_id": row[0],
                             "title": row[2],
                             "city": row[3],
                             "summary": row[4],
-                            "image_url": row[5],
-                            "parent_url": row[6],
-                            "tags": row[7],
-                            "source": row[8],
-                            "page": row[9],
-                            "text": row[10],
-                            "score": float(row[11]),
+                            "parent_url": row[5],
+                            "tags": row[6],
+                            "source": row[7],
+                            "page": row[8],
+                            "text": row[9],
+                            "score": float(row[10]),
                         }
                         for row in rows
                     ]

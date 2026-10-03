@@ -27,11 +27,9 @@ class QueryResponse(BaseModel):
 class QueryMatch(BaseModel):
     parent_id: str
     child_id: str
-    innovation_id: str | None
     title: str
     city: str
     summary: str
-    image_url: str | None
     parent_url: str | None
     tags: list[str]
     source: str

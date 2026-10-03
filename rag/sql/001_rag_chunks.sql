@@ -6,7 +6,6 @@ CREATE TABLE IF NOT EXISTS innovations (
     summary text NOT NULL DEFAULT '',
     tags text[] NOT NULL DEFAULT '{}',
     city text,
-    image_url text,
     page_url text,
     status text NOT NULL DEFAULT 'draft',
     created_at timestamptz NOT NULL DEFAULT now(),
