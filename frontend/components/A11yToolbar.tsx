@@ -103,20 +103,24 @@ export function A11yToolbar() {
   }
 
   const btn =
-    "min-h-11 px-space-sm flex items-center gap-1 rounded text-on-primary hover:bg-primary aria-pressed:bg-primary aria-pressed:underline aria-pressed:underline-offset-4";
+    "min-h-12 px-space-sm flex items-center gap-1 rounded text-on-primary hover:bg-primary aria-pressed:bg-primary aria-pressed:underline aria-pressed:underline-offset-4";
 
   return (
     <div className="w-full bg-primary-container text-on-primary">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-space-sm px-gutter-sm text-label-md font-semibold sm:px-gutter">
         <div className="flex flex-wrap items-center gap-x-space-sm">
-          <a className="rounded px-space-xs py-2 underline" href="#main-content">
+          {/* on phones the skip link shows only on focus, so the toolbar keeps to two rows */}
+          <a
+            className="sr-only flex min-h-12 items-center rounded px-space-xs underline focus:not-sr-only sm:not-sr-only"
+            href="#main-content"
+          >
             Przejdź do treści głównej
           </a>
           <span aria-hidden="true" className="hidden opacity-60 sm:inline">
             |
           </span>
-          <Link className="rounded px-space-xs py-2 hover:underline" href="/deklaracja-dostepnosci">
-            Deklaracja dostępności
+          <Link className="flex min-h-12 items-center rounded px-space-xs hover:underline" href="/deklaracja-dostepnosci">
+            Dla osób z niepełnosprawnościami
           </Link>
         </div>
         <div className="flex flex-wrap items-center gap-space-xs" role="group" aria-label="Ustawienia dostępności">

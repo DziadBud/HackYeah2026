@@ -180,7 +180,7 @@ CSV export is a streaming response. Cities with fewer than 5 problem reports are
 | Matching | `POST /match?test_signup=` `{text, city, email?, consent}` → `{problem_report_id, innovations, similar_reports, test_signup_ids}`; `test_signup=true` needs an email (422 otherwise) |
 | Problem reports | `GET /problem-reports/{id}` (public page with `admin_reply`), `POST /problem-reports/{id}/support` ("mnie też") |
 | Ideas | `POST /ideas` `{summary, essence, target_group, stage, social_canvas?, email?, consent}`, `POST /ideas/{id}/grant-application {grant_call_id}` (open calls only, stored in `generated_documents`) |
-| Library | `GET /innovations` (published only; filters `challenge_area`, `q`, `limit`, `offset`), `GET /innovations/{id}` (with `rating_avg`, `rating_count`), `POST /innovations/{id}/feedback {stars, comment, test_signup_id?}` |
+| Library | `GET /innovations` (published only; filters `challenge_area`, `q`, `limit`, `offset`), `GET /innovations/{id}` (with `rating_avg`, `rating_count`, `has_pdf`), `GET /innovations/{id}/pdf` (the admin-uploaded source PDF from `upload_dir`, inline; 404 for drafts or when there is no file), `POST /innovations/{id}/feedback {stars, comment, test_signup_id?}` |
 | Threads | `GET /innovations/{id}/threads` (published threads + published replies), `POST /innovations/{id}/threads` (202, `pending`), `POST /threads/{id}/replies` (202, `pending`) |
 | Middleman | `POST /middleman {innovation_id, institution_type, needs, email?, consent}` (the response is the stored document) |
 | Grant calls | `GET /grant-calls` (open only) |
@@ -404,5 +404,7 @@ docker-compose.yml   # postgres (pgvector image), rag, embeddings, ollama, api, 
    - Middleman and grant drafts are stored in `generated_documents`
    - community threads are first-class (pending moderation, flat replies, role `kind`)
    - contacts, nested reply trees, test rounds, per-item tokens and index jobs stay deferred
+5. RabbitMQ added to docker compose (`rabbitmq`, `RABBITMQ_URL` passed to the api); no publisher in match-api yet.
+6. Public `GET /innovations/{id}/pdf` serves a published innovation's source PDF; `GET /innovations/{id}` reports `has_pdf` so the UI shows the link only when the file exists.
 5. Innovation upload calls rag `POST /embed/pdf` directly from a background task and publishes the innovation on success; no queue between match-api and rag.
 6. One schema definition: each table is defined once by its owner. rag owns `innovations`, `innovation_chunks` and `feedback` (`rag/sql`); match-api owns only its own tables (`backend/sql`) and maps rag's tables exactly, adding no columns. Dropped from innovations: `problem`, `innovator`, `target_group`, `readiness`, `cost_level`, `video_url`, `image_url`; `challenge_areas` is read from `area:<slug>` tags. A one-shot compose `migrate` service applies `rag/sql` then `backend/sql` on every `up`, before `rag` and `api` start; the `docker/postgres/init` copies are gone. match-api writes rag's `feedback`: API `stars` maps to `rating`, tester feedback is `kind='test_signup'`; the signup id is validated but not stored.

@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useId, useState } from "react";
 import { adminApi, type AdminInnovation, type ChallengeArea, type InnovationStatsRow } from "@/lib/api";
-import { ADMIN_MOCK, AREA_LABEL, mockInnovationStatsReport } from "@/lib/admin-mock";
+import { ADMIN_MOCK, mockInnovationStatsReport } from "@/lib/admin-mock";
+import { AREA_LABEL, COST, READINESS } from "@/lib/labels";
 import { Icon } from "@/components/Icon";
 import { Trend, plural } from "@/components/admin/charts";
 import { card, field, fmtDate, ghostBtn, h2, primaryBtn } from "@/components/admin/styles";
@@ -13,14 +14,6 @@ export interface Row {
   innovation: AdminInnovation;
   stats: InnovationStatsRow | undefined;
 }
-
-export const READINESS: Record<string, string> = {
-  concept: "Koncepcja",
-  prototype: "Prototyp",
-  pilot: "Pilotaż",
-  running: "Wdrożona",
-};
-export const COST: Record<string, string> = { low: "niski", medium: "średni", high: "wysoki" };
 
 type Sort = "matches" | "growth" | "rating" | "testers" | "title";
 const SORTS: Record<Sort, string> = {
@@ -231,7 +224,7 @@ function InnovationRow({ row, onToggle }: { row: Row; onToggle: () => void }) {
           </span>
         ))}
         <span className="text-caption text-on-surface-variant">
-          • {READINESS[i.readiness] ?? i.readiness} • koszt wdrożenia: {COST[i.cost_level] ?? i.cost_level}
+          • {i.readiness ? READINESS[i.readiness] : "etap nieznany"} • koszt wdrożenia: {i.cost_level ? COST[i.cost_level] : "nieznany"}
         </span>
       </div>
       <h3 id={hId} className="text-headline-sm font-semibold text-primary">

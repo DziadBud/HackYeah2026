@@ -1,12 +1,23 @@
+from pathlib import Path
+
 from fastapi import APIRouter, Depends, Query, status
+from fastapi.responses import FileResponse
+
+from app.config import settings
 
 from app.schemas.admin.common import ChallengeArea, Page
 from app.schemas.public.innovations import FeedbackCreate, FeedbackCreated, LibraryInnovation
 from app.schemas.public.threads import Submitted, Thread, ThreadCreate
+from app.services.admin.errors import NotFoundError
 from app.services.public.deps import get_library_service, get_thread_service
 from app.services.public.interfaces import LibraryService, ThreadService
 
 router = APIRouter(prefix="/innovations", tags=["innovations"])
+
+
+def _pdf_path(innovation_id: str) -> Path:
+    # same name the admin upload saves under
+    return Path(settings.upload_dir) / f"{innovation_id}.pdf"
 
 
 @router.get("", response_model=Page[LibraryInnovation])
@@ -24,7 +35,25 @@ def list_innovations(
 def get_innovation(
     innovation_id: str, svc: LibraryService = Depends(get_library_service)
 ) -> LibraryInnovation:
-    return svc.get(innovation_id)
+    card = svc.get(innovation_id)
+    return card.model_copy(update={"has_pdf": _pdf_path(card.id).is_file()})
+
+
+@router.get("/{innovation_id}/pdf", response_class=FileResponse)
+def get_innovation_pdf(
+    innovation_id: str, svc: LibraryService = Depends(get_library_service)
+) -> FileResponse:
+    # the lookup 404s drafts, so only published innovations' pdfs are public
+    card = svc.get(innovation_id)
+    path = _pdf_path(card.id)
+    if not path.is_file():
+        raise NotFoundError(innovation_id)
+    return FileResponse(
+        path,
+        media_type="application/pdf",
+        filename=f"{card.id}.pdf",
+        content_disposition_type="inline",
+    )
 
 
 @router.post(
