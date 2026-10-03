@@ -6,7 +6,7 @@ ROPS has ~200 social innovations that nobody can find. Matchmaking (problem text
 - the rag service (`rag/`): chunking, embedding and retrieval. It is finished and is used as merged.
 - match-api (`backend/`): the public API and the admin panel.
 
-Inputs: `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI.md`, `documentation/sample-data/` (8 innovations, 8 test queries), the shared team Notion page (`HackYeah`).
+Inputs: `documentation/knowledge-base/CRITERIA-Wojewodztwo-Malopolskie-HUBMI.md`, `documentation/sample-data/` (8 innovations, 8 test queries), the shared team Notion page (`HackYeah`).
 
 Principle: hackathon scope. Build the smallest thing that covers every requirement ([requirements-traceability.md](requirements-traceability.md)), with as few tables as possible. Anything that can be a SQL query on read is not a job. Deferred ideas are listed in section 8.
 
