@@ -15,6 +15,11 @@ class PostgresVectorStore:
         self,
         *,
         text: str,
+        title: str,
+        summary: str,
+        image_url: str | None,
+        parent_url: str | None,
+        tags: Sequence[str],
         source: str,
         page: int | None,
         chunks: Sequence[str],
@@ -39,11 +44,21 @@ class PostgresVectorStore:
                 with connection.cursor() as cursor:
                     cursor.execute(
                         """
-                        INSERT INTO rag_documents (text, source, page)
-                        VALUES (%s, %s, %s)
+                        INSERT INTO rag_documents
+                            (text, title, summary, image_url, parent_url, tags, source, page)
+                        VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
                         RETURNING id
                         """,
-                        (text, source, page),
+                        (
+                            text,
+                            title,
+                            summary,
+                            image_url,
+                            parent_url,
+                            list(tags),
+                            source,
+                            page,
+                        ),
                     )
                     row = cursor.fetchone()
                     if row is None:
@@ -76,6 +91,132 @@ class PostgresVectorStore:
             raise
         except Exception as error:
             raise VectorStoreError(f"could not store embedding: {error}") from error
+
+    def search(
+        self,
+        *,
+        query: str,
+        embedding: Sequence[float],
+        top_k: int,
+        title: str | None,
+        tags: Sequence[str],
+    ) -> list[dict[str, object]]:
+        if not self.database_url:
+            raise VectorStoreError("DATABASE_URL is not configured")
+        top_k = min(top_k, 3)
+
+        try:
+            import psycopg
+            from pgvector.psycopg import register_vector
+        except ImportError as error:
+            raise VectorStoreError(
+                "psycopg and pgvector are required to search embeddings"
+            ) from error
+
+        try:
+            with psycopg.connect(self.database_url) as connection:
+                register_vector(connection)
+                with connection.cursor() as cursor:
+                    cursor.execute(
+                        """
+                        WITH ranked AS (
+                            SELECT
+                                d.id AS parent_id,
+                                c.id AS child_id,
+                                d.title,
+                                d.summary,
+                                d.image_url,
+                                d.parent_url,
+                                d.tags,
+                                d.source,
+                                d.page,
+                                c.text,
+                                1 - (c.embedding <=> %s) AS vector_score,
+                                CASE
+                                    WHEN %s <> ''
+                                        AND d.title ILIKE ('%%' || %s || '%%')
+                                    THEN 1.0 ELSE 0.0
+                                END AS title_score,
+                                CASE
+                                    WHEN %s <> '' AND EXISTS (
+                                        SELECT 1
+                                        FROM unnest(d.tags) AS tag
+                                        WHERE tag ILIKE ('%%' || %s || '%%')
+                                    )
+                                    THEN 1.0 ELSE 0.0
+                                END AS tag_score
+                            FROM rag_chunks AS c
+                            JOIN rag_documents AS d ON d.id = c.parent_id
+                            WHERE (%s IS NULL OR d.title ILIKE ('%%' || %s || '%%'))
+                              AND (
+                                  cardinality(%s::text[]) = 0
+                                  OR d.tags && %s::text[]
+                              )
+                        )
+                        SELECT
+                            parent_id,
+                            child_id,
+                            title,
+                            summary,
+                            image_url,
+                            parent_url,
+                            tags,
+                            source,
+                            page,
+                            text,
+                            score
+                        FROM (
+                            SELECT DISTINCT ON (parent_id)
+                                parent_id,
+                                child_id,
+                                title,
+                                summary,
+                                image_url,
+                                parent_url,
+                                tags,
+                                source,
+                                page,
+                                text,
+                                vector_score + (title_score * 0.2) + (tag_score * 0.2)
+                                    AS score
+                            FROM ranked
+                            ORDER BY parent_id, score DESC
+                        ) AS best_matches
+                        ORDER BY score DESC
+                        LIMIT %s
+                        """,
+                        (
+                            list(embedding),
+                            query,
+                            query,
+                            query,
+                            query,
+                            title,
+                            title,
+                            list(tags),
+                            list(tags),
+                            top_k,
+                        ),
+                    )
+                    rows = cursor.fetchall()
+                    return [
+                        {
+                            "parent_id": row[0],
+                            "child_id": row[1],
+                            "title": row[2],
+                            "summary": row[3],
+                            "image_url": row[4],
+                            "parent_url": row[5],
+                            "tags": row[6],
+                            "source": row[7],
+                            "page": row[8],
+                            "text": row[9],
+                            "score": float(row[10]),
+                        }
+                        for row in rows
+                    ]
+        except Exception as error:
+            raise VectorStoreError(f"could not search embeddings: {error}") from error
 
 
 def get_vector_store() -> PostgresVectorStore:

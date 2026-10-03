@@ -8,17 +8,38 @@ from app.services.vector_store import get_vector_store
 
 class QueryRequest(BaseModel):
     query: str = Field(min_length=1, max_length=2_000)
-    top_k: int = Field(default=5, ge=1, le=20)
+    top_k: int = Field(default=3, ge=1, le=3)
+    title: str | None = Field(default=None, max_length=500)
+    tags: list[str] = Field(default_factory=list, max_length=20)
 
 
 class QueryResponse(BaseModel):
     query: str
     top_k: int
-    matches: list[dict[str, object]]
+    matches: list["QueryMatch"]
+
+
+class QueryMatch(BaseModel):
+    parent_id: str
+    child_id: str
+    title: str
+    summary: str
+    image_url: str | None
+    parent_url: str | None
+    tags: list[str]
+    source: str
+    page: int | None
+    text: str
+    score: float
 
 
 class EmbedRequest(BaseModel):
     text: str = Field(min_length=1, max_length=100_000)
+    title: str = Field(default="", max_length=500)
+    summary: str = Field(default="", max_length=5_000)
+    image_url: str | None = Field(default=None, max_length=2_000)
+    parent_url: str | None = Field(default=None, max_length=2_000)
+    tags: list[str] = Field(default_factory=list, max_length=20)
     source: str = Field(default="api", min_length=1, max_length=500)
     page: int | None = Field(default=None, ge=1)
     chunk_size: int = Field(default=800, ge=100, le=4_000)
@@ -30,6 +51,10 @@ class EmbedResponse(BaseModel):
     child_ids: list[str]
     child_count: int
     dimensions: int
+    title: str
+    summary: str
+    image_url: str | None
+    parent_url: str | None
     source: str
     page: int | None
 
@@ -45,7 +70,19 @@ def health() -> dict[str, str]:
 
 @app.post("/query", response_model=QueryResponse, tags=["rag"])
 def query(request: QueryRequest) -> QueryResponse:
-    return QueryResponse(query=request.query, top_k=request.top_k, matches=[])
+    try:
+        query_vector = embedding_service.embed(request.query)
+        matches = get_vector_store().search(
+            query=request.query,
+            embedding=query_vector,
+            top_k=request.top_k,
+            title=request.title,
+            tags=request.tags,
+        )
+    except RuntimeError as error:
+        raise HTTPException(status_code=503, detail=str(error)) from error
+
+    return QueryResponse(query=request.query, top_k=request.top_k, matches=matches)
 
 
 @app.post("/embed", response_model=EmbedResponse, status_code=201, tags=["rag"])
@@ -59,6 +96,11 @@ def embed(request: EmbedRequest) -> EmbedResponse:
         vectors = embedding_service.embed_many(chunks)
         parent_id, child_ids = get_vector_store().insert_document(
             text=request.text,
+            title=request.title,
+            summary=request.summary,
+            image_url=request.image_url,
+            parent_url=request.parent_url,
+            tags=request.tags,
             source=request.source,
             page=request.page,
             chunks=chunks,
@@ -74,6 +116,10 @@ def embed(request: EmbedRequest) -> EmbedResponse:
         child_ids=[str(child_id) for child_id in child_ids],
         child_count=len(child_ids),
         dimensions=len(vectors[0]),
+        title=request.title,
+        summary=request.summary,
+        image_url=request.image_url,
+        parent_url=request.parent_url,
         source=request.source,
         page=request.page,
     )
