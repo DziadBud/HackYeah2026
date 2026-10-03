@@ -3,7 +3,7 @@
 Maps each requirement from `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI.md` to the part of [architecture.md](architecture.md) that implements it. M = mandatory, S = extra module (+5% each), X = cross-cutting, D = deliverable.
 
 ## R1 Matchmaking spoleczny (M, 10%)
-- **Where:** `POST /match` (§3), `innovation` + `chunk` (§6), data from ingest (§2).
+- **Where:** `POST /match` (§3) calling rag `POST /query`, `innovation` + `chunk` (§6), data imported by the rag service (§2).
 - **How:** hybrid retrieval (full-text + trigram + pgvector, rank fusion) over published innovations, top 5 with an LLM-written reason built only from retrieved rows. 3 similar existing problem reports are returned too (same location first, else same challenge area). Per-IP rate limit (nothing stored) guards LLM spend.
 - **Done when:** the 8 queries in `documentation/sample-data/sample-matchmaking-queries.md` return the expected id in the top 3.
 
@@ -24,7 +24,7 @@ Maps each requirement from `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI
 - **How:** admin answers an idea (emailed to its contact, else seen on the fallback link), or answers a problem report once on its public page; the author and supporters who left an email get it by email. Mentors are admins. No accounts, no passwords.
 
 ## R6 Panel administratora (S)
-- **Where:** `/admin/*` and `/ingest/*` behind the admin session dependency (§4, §5).
+- **Where:** `/admin/*` and rag `/ingest*` behind the admin session dependency (§4, §5).
 - **How:** login, innovation add/edit/publish/unpublish with feedback counts (R4), imports with job status, inbox (new ideas, new and critical problem reports), idea and problem report replies, grant call open/close, reports.
 
 ## R7 Middleman innowacji (S)
@@ -37,7 +37,7 @@ Maps each requirement from `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI
 
 ## R9 Scalability (X)
 - **Where:** §1, §7.
-- **How:** match-api is stateless and scales horizontally; pgvector HNSW index; heavy imports live in a separate service; in-process per-IP rate limit (nothing stored) protects LLM spend; notifications are a background task after commit. Next steps are read replicas, then a queue for ingest (§8).
+- **How:** match-api is stateless and scales horizontally; pgvector HNSW index; heavy imports and retrieval live in the rag service (if down, `/match` returns 503 and still stores the problem report); in-process per-IP rate limit (nothing stored) protects LLM spend; notifications are a background task after commit. Next steps are read replicas, then a queue for rag imports (§8).
 
 ## R10 Integration and automation (X)
 - **Where:** admin inbox (§5), email notifier (§4), `grant_call` table.
