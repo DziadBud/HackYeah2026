@@ -1,6 +1,17 @@
-# public mocks share the admin mock singletons, so public writes appear in the admin panel.
-# tests override these the same way as the admin deps
-from app.services.admin import deps as admin
+# per-request db-backed services; tests override these with the mocks in mock.py
+from fastapi import Depends
+from sqlalchemy.orm import Session
+
+from app.db.session import get_db
+from app.services.public.db import (
+    DbDocumentService,
+    DbIdeaService,
+    DbKnowledgeService,
+    DbLibraryService,
+    DbMatchService,
+    DbProblemReportService,
+    DbThreadService,
+)
 from app.services.public.interfaces import (
     DocumentService,
     IdeaService,
@@ -10,50 +21,31 @@ from app.services.public.interfaces import (
     ProblemReportService,
     ThreadService,
 )
-from app.services.public.mock import (
-    MockDocumentService,
-    MockDocumentStore,
-    MockIdeaService,
-    MockKnowledgeService,
-    MockLibraryService,
-    MockMatchService,
-    MockProblemReportService,
-    MockThreadService,
-)
-
-_documents = MockDocumentStore()
-_match = MockMatchService(admin._innovations, admin._problem_reports)
-_problem_reports = MockProblemReportService(admin._problem_reports)
-_ideas = MockIdeaService(admin._ideas, admin._grant_calls, _documents)
-_library = MockLibraryService(admin._innovations)
-_threads = MockThreadService(admin._innovations)
-_document_service = MockDocumentService(admin._innovations, _documents)
-_knowledge = MockKnowledgeService(admin._innovations, admin._grant_calls)
 
 
-def get_match_service() -> MatchService:
-    return _match
+def get_match_service(db: Session = Depends(get_db)) -> MatchService:
+    return DbMatchService(db)
 
 
-def get_problem_report_service() -> ProblemReportService:
-    return _problem_reports
+def get_problem_report_service(db: Session = Depends(get_db)) -> ProblemReportService:
+    return DbProblemReportService(db)
 
 
-def get_idea_service() -> IdeaService:
-    return _ideas
+def get_idea_service(db: Session = Depends(get_db)) -> IdeaService:
+    return DbIdeaService(db)
 
 
-def get_library_service() -> LibraryService:
-    return _library
+def get_library_service(db: Session = Depends(get_db)) -> LibraryService:
+    return DbLibraryService(db)
 
 
-def get_thread_service() -> ThreadService:
-    return _threads
+def get_thread_service(db: Session = Depends(get_db)) -> ThreadService:
+    return DbThreadService(db)
 
 
-def get_document_service() -> DocumentService:
-    return _document_service
+def get_document_service(db: Session = Depends(get_db)) -> DocumentService:
+    return DbDocumentService(db)
 
 
-def get_knowledge_service() -> KnowledgeService:
-    return _knowledge
+def get_knowledge_service(db: Session = Depends(get_db)) -> KnowledgeService:
+    return DbKnowledgeService(db)

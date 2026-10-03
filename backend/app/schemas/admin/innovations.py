@@ -31,8 +31,9 @@ class InnovationBase(BaseModel):
     innovator: str = ""
     challenge_areas: list[ChallengeArea]
     target_group: list[str]
-    readiness: Readiness
-    cost_level: CostLevel
+    # nullable in the db for rows created before these columns existed
+    readiness: Readiness | None = None
+    cost_level: CostLevel | None = None
     city: str = ""
     video_url: str | None = None
 
