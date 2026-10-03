@@ -63,8 +63,12 @@ services:
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
       GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
       RABBITMQ_URL: amqp://${RABBITMQ_USER:-hackyeah}:${RABBITMQ_PASSWORD:-hackyeah}@rabbitmq:5672/
+      UPLOAD_DIR: /data/uploads
     ports:
       - "${API_PORT:-8000}:8000"
+    volumes:
+      # the rag consumer must mount the same volume at /data/uploads to read the pdfs
+      - uploads:/data/uploads
     depends_on:
       db:
         condition: service_healthy
@@ -103,3 +107,4 @@ services:
 volumes:
   postgres_data:
   rabbitmq_data:
+  uploads:

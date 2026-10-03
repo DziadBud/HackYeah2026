@@ -6,7 +6,7 @@ ROPS has ~200 social innovations that nobody can find. Matchmaking (problem text
 - the rag service (`rag/`): chunking, embedding and retrieval. It is finished and is used as merged.
 - match-api (`backend/`): the public API and the admin panel.
 
-Inputs: `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI.md`, `documentation/sample-data/` (8 innovations, 8 test queries), the shared team Notion page (`HackYeah`).
+Inputs: `documentation/knowledge-base/CRITERIA-Wojewodztwo-Malopolskie-HUBMI.md`, `documentation/sample-data/` (8 innovations, 8 test queries), the shared team Notion page (`HackYeah`).
 
 Principle: hackathon scope. Build the smallest thing that covers every requirement ([requirements-traceability.md](requirements-traceability.md)), with as few tables as possible. Anything that can be a SQL query on read is not a job. Deferred ideas are listed in section 8.
 
@@ -334,14 +334,13 @@ Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `P
 
 ```
 backend/             # match-api
-  app/               # api/*.py, api/admin/*.py, schemas/, services/, rag client
-  app/db/models/     # one SQLAlchemy model file per table (§6)
-  sql/               # one migration file per table (001..009), initdb after rag's
+  app/               # api/*.py, api/admin/*.py, schemas/, services/ (interface + mock first, db next), rag client
+  sql/               # match-api tables + innovations ALTER, mounted into initdb after rag's
 rag/                 # used as merged
 docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit
 ```
 
-1. Backend schema + models + compose: `backend/sql/001`–`009` (one file per table / ALTER), mounted as initdb `08`–`16`; models under `app/db/models/` (one file per table).
+1. Backend schema file + compose (one `DATABASE_URL`, `RAG_URL`, mailpit): match-api tables + `innovations` column extensions.
 2. Admin innovations on rag's table: PDF upload + background `/embed/pdf` + auto-publish; idea accept creates a draft innovation; seed the 8 samples (incl. `problem`, `target_group`, …).
 3. `/match` calling rag, LLM explanation; the 8 sample queries pass.
 4. Problem reports, support, similar reports; admin problem reports + reply + hide.
@@ -384,5 +383,4 @@ docker-compose.yml   # postgres (pgvector image), rabbitmq, rag, api, mailpit
    - Middleman and grant drafts are stored in `generated_documents`
    - community threads are first-class (pending moderation, flat replies, role `kind`)
    - contacts, nested reply trees, test rounds, per-item tokens and index jobs stay deferred
-5. SQLAlchemy models under `backend/app/db/models/` (one file per table); schema in `backend/sql/001`–`009` (one migration per table, initdb `08`–`16`). Compose mounts individual SQL files only (directory+file mounts broke on Docker Desktop).
 5. RabbitMQ added to docker compose (`rabbitmq`, `RABBITMQ_URL` passed to the api); no publisher in match-api yet.

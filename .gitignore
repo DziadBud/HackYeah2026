@@ -242,3 +242,4 @@ yarn-error.log*
 .claude/context/*
 # typescript incremental build cache
 *.tsbuildinfo
+backend/data/

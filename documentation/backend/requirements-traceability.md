@@ -1,6 +1,6 @@
 # Requirements traceability
 
-Maps each requirement from `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI.md` to the part of [architecture.md](architecture.md) that implements it. M = mandatory, S = extra module (+5% each), X = cross-cutting, D = deliverable.
+Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Malopolskie-HUBMI.md` to the part of [architecture.md](architecture.md) that implements it. M = mandatory, S = extra module (+5% each), X = cross-cutting, D = deliverable.
 
 ## R1 Matchmaking spoleczny (M, 10%)
 - **Where:** `POST /match` (§3) calling rag `POST /query`; `innovations` + `innovation_chunks` (§6).
@@ -15,7 +15,7 @@ Maps each requirement from `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI
 - **How:**
   - the library lists `innovations` rows tagged `type:innovation`; films are linked through `page_url`
   - ROPS reports and the Mapa Wyzwan are `type:report` rows embedded with `/embed/pdf`; "ask the report" answers from their chunks
-  - the admin uploads a PDF per innovation; rag embeds it in the background and the innovation is published once indexed
+  - the admin uploads a PDF per innovation; rag embeds it from a RabbitMQ message and the innovation is published once indexed
   - aggregated needs and trends exist only under `/admin/reports/*`
 - **Gap:** `/embed/pdf` stores no page numbers, so report answers can't cite pages.
 
@@ -47,7 +47,7 @@ Maps each requirement from `documentation/CRITERIA-Wojewodztwo-Malopolskie-HUBMI
 - **Where:** `/admin/*` behind the admin session (§4, §5).
 - **How:**
   - login
-  - innovation create from a PDF (embedded by rag in a background task, published once indexed), metadata edit (incl. `problem`, `target_group`, `challenge_areas`, …), PDF re-upload, publish/unpublish, feedback counts
+  - innovation create from a PDF (file saved, draft row, `innovation.embed_requested` on RabbitMQ; rag embeds and publishes it), metadata edit (incl. `problem`, `target_group`, `challenge_areas`, …), PDF re-upload, publish/unpublish, feedback counts
   - inbox: new ideas, problem reports, critical problem reports, signups, pending threads / replies
   - replies, idea status, test signup status, thread moderation, grant call open/close, generated-document list, reports with CSV
 
