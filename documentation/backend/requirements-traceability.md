@@ -53,6 +53,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
   - innovation list with stats per innovation: matches (total, 7d trend, by week, area and city), people reached, testers, ratings, matched problems (`/admin/reports/innovations`, `/admin/innovations/{id}/stats`)
   - inbox: new ideas, problem reports, critical problem reports, signups, pending threads / replies
   - replies, idea status, test signup status, thread moderation, grant call open/close, generated-document list, reports with CSV
+  - grant applications (Zał. 3): list filtered by status and call, full read-only form (`/admin/grant-applications`, panel at `/admin/wnioski`)
 
 ## R7 Middleman innowacji (S)
 - **Where:** `POST /middleman` (match-api), `generated_documents` (`kind = middleman`).

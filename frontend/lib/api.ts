@@ -630,6 +630,15 @@ export const adminApi = {
       method: "PATCH",
       body: JSON.stringify({ open }),
     }),
+  grantApplications: (status?: GrantApplicationStatus, grantCallId?: string) => {
+    const q = new URLSearchParams();
+    if (status) q.set("status", status);
+    if (grantCallId) q.set("grant_call_id", grantCallId);
+    const qs = q.toString();
+    return request<GrantApplication[]>(`/admin/grant-applications${qs ? `?${qs}` : ""}`);
+  },
+  grantApplication: (id: string) =>
+    request<GrantApplication>(`/admin/grant-applications/${enc(id)}`),
   threads: (status?: ModerationStatus, innovationId?: string) => {
     const q = new URLSearchParams();
     if (status) q.set("status", status);
