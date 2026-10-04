@@ -5,7 +5,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 ## R1 Matchmaking spoleczny (M, 10%)
 - **Where:** `POST /match` (§3) calling rag `POST /query`; `innovations` + `innovation_chunks` (§6).
 - **How:**
-  - rag retrieval over published rows, top 3 in rag's order, plus rag's one LLM-written `answer` for the whole result (no per-innovation reason)
+  - rag retrieval (multilingual embeddings + pgvector) over published rows, top 3 in rag's order; no LLM call per match (rag dropped `answer`, the client keeps it optional)
   - 3 similar problem reports are returned too (pg_trgm, same city first)
   - a per-IP rate limit guards LLM spend
 - **Done when:** the 8 queries in `documentation/sample-data/sample-matchmaking-queries.md` return the expected id in the top 3.
@@ -57,7 +57,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 
 ## R7 Middleman innowacji (S)
 - **Where:** `POST /middleman` (match-api), `generated_documents` (`kind = middleman`).
-- **How:** input = innovation id + institution type + its needs. The LLM drafts a service card from that innovation's row and chunks only; unknown figures are marked "to estimate". The draft is stored so the institution and the admin can reopen it.
+- **How:** input = innovation id + institution type + its needs. A template fills a service card from that innovation's row; unknown figures are marked "to estimate". The draft is stored so the institution and the admin can reopen it. API only, no frontend screen.
 
 ## R8 Accessibility, WCAG 2.1 AA (X, 20%)
 - **Backend part:** plain-language Polish validation errors, no time limits on public flows, text answers suitable for read-aloud.
@@ -94,8 +94,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 
 ## R13 Match relevance (jury question)
 - **Where:** §3.
-- **How:** rag retrieval with deterministic ranking; the LLM only explains. The 8 sample queries plus 15-20 realistic Polish queries are kept as a regression list and slide evidence.
-- **Risk:** the English-only embedding model (§11).
+- **How:** rag retrieval with deterministic ranking over `paraphrase-multilingual-MiniLM-L12-v2` embeddings, no LLM in the ranking. The 8 sample queries plus 15-20 realistic Polish queries are kept as a regression list and slide evidence.
 
 ## R14 Originality (X, 10% bonus)
 - **Where:** problem reports + support + critical report (§3, §5).
@@ -107,7 +106,8 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 
 ## R15 Submission package and running-cost estimate (D)
 - **How:**
-  - cost sheet: small VM or container + managed Postgres with pgvector, local embeddings (no per-call cost), LLM pay-per-call limited by rate limits, SMTP relay (free tier), ~0.25 FTE content editor, a one-off accessibility audit
+  - cost sheet: [documentation/running-cost.md](../running-cost.md)
+  - name, description, module list and links to demo, slides / video and mockups: repo [README](../../README.md) (links still placeholders)
   - demo is `docker compose up`; diagrams from `architecture.md` go on the slides
 
 ## Coverage
@@ -117,11 +117,12 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 | R1 | full |
 | R2 | library, SQL reports; ask-report deferred until report PDFs are embedded |
 | R3 | idea card + Canvas answers; generator for one fictional grant call (stored) |
-| R4, R5, R7 | thin, working end to end (threads moderated; Middleman stored) |
+| R4, R5 | thin, working end to end (threads moderated) |
+| R7 | API only, template card, no UI |
 | R6 | CRUD, inbox, replies, thread moderation, reports, per-innovation stats |
-| R8 | needs frontend work |
+| R8 | toolbar, contrast mode, read-aloud, dictation; axe 0 violations; manual screen reader pass to do |
 | R9-R12 | by design; inbox + optional email notifier |
 | R13, R14 | regression suite; support + critical report |
-| R15 | documents |
+| R15 | README + running-cost.md; demo, slides and mockup links pending |
 
-Gaps: the RULES PDF is unread and may add constraints; innovation data beyond the 8 samples depends on the ROPS answer; no page citations for reports.
+Gaps: the RULES PDF is unread and may add constraints; no page citations for reports.
