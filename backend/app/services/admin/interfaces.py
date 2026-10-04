@@ -94,12 +94,15 @@ class GrantCallAdminService(Protocol):
     def update(self, call_id: str, data: GrantCallUpdate) -> GrantCall: ...
 
 
-# filled Zał. 3 forms from the public generator; read-only review, decisions happen outside the app
+# filled Zał. 3 forms from the public generator; a decision on a submitted form is final and mails the applicant
 class GrantApplicationAdminService(Protocol):
     def list(
         self, status: GrantApplicationStatus | None = None, grant_call_id: str | None = None
     ) -> list[GrantApplication]: ...
     def get(self, application_id: str) -> GrantApplication: ...
+    def decide(
+        self, application_id: str, status: GrantApplicationStatus, message: str | None
+    ) -> GrantApplication: ...
 
 
 # R2 + R14: trendy i agregacja potrzeb tylko dla admina, nigdy publicznie (wymog briefu)

@@ -224,7 +224,9 @@ export interface TestSignupCreated {
 }
 
 // ROPS Zał. 3 — public grant application (AI draft + user edit)
-export type GrantApplicationStatus = "draft" | "submitted";
+// accepted / rejected are set only by the admin and are final
+export type GrantApplicationStatus = "draft" | "submitted" | "accepted" | "rejected";
+export type GrantApplicationDecision = "accepted" | "rejected";
 export type ApplicantType = "person" | "organization" | "informal_group";
 
 export interface PlanStep {
@@ -639,6 +641,8 @@ export const adminApi = {
   },
   grantApplication: (id: string) =>
     request<GrantApplication>(`/admin/grant-applications/${enc(id)}`),
+  decideGrantApplication: (id: string, status: GrantApplicationDecision, message?: string) =>
+    post<GrantApplication>(`/admin/grant-applications/${enc(id)}/status`, { status, message: message || null }),
   threads: (status?: ModerationStatus, innovationId?: string) => {
     const q = new URLSearchParams();
     if (status) q.set("status", status);

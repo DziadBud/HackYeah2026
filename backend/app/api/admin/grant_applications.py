@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Depends
 
+from app.schemas.admin.grant_applications import GrantApplicationDecision
 from app.schemas.public.grant_applications import GrantApplication, GrantApplicationStatus
 from app.services.admin.deps import get_grant_application_service
 from app.services.admin.interfaces import GrantApplicationAdminService
@@ -22,3 +23,12 @@ def get_grant_application(
     svc: GrantApplicationAdminService = Depends(get_grant_application_service),
 ) -> GrantApplication:
     return svc.get(application_id)
+
+
+@router.post("/{application_id}/status", response_model=GrantApplication)
+def decide_grant_application(
+    application_id: str,
+    body: GrantApplicationDecision,
+    svc: GrantApplicationAdminService = Depends(get_grant_application_service),
+) -> GrantApplication:
+    return svc.decide(application_id, body.status, body.message)

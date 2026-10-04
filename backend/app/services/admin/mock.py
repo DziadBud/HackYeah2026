@@ -38,7 +38,7 @@ from app.schemas.public.grant_applications import (
     PlanStep,
 )
 from app.schemas.public.threads import ModerationStatus, ReplyKind
-from app.services.admin.errors import NotFoundError
+from app.services.admin.errors import InvalidRequestError, NotFoundError
 from app.services.admin.innovation_upload import NewInnovation
 from app.services.admin.interfaces import (
     IdeaAdminService,
@@ -539,6 +539,16 @@ class MockGrantApplicationAdminService:
             return self._items[application_id]
         except KeyError:
             raise NotFoundError(application_id) from None
+
+    def decide(
+        self, application_id: str, status: GrantApplicationStatus, message: str | None
+    ) -> GrantApplication:
+        current = self.get(application_id)
+        if current.status != GrantApplicationStatus.SUBMITTED:
+            raise InvalidRequestError(f"only a submitted application can be decided, this one is {current.status}")
+        decided = current.model_copy(update={"status": status})
+        self._items[application_id] = decided
+        return decided
 
 
 class MockReportAdminService:

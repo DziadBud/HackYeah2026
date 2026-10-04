@@ -5,7 +5,7 @@ from decimal import Decimal
 from enum import StrEnum
 from typing import Annotated, ClassVar, Literal
 
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, Field, field_validator, model_validator
 
 from app.schemas.admin.common import PatchModel
 from app.schemas.public.common import OptionalContact
@@ -14,6 +14,9 @@ from app.schemas.public.common import OptionalContact
 class GrantApplicationStatus(StrEnum):
     DRAFT = "draft"
     SUBMITTED = "submitted"
+    # set by the admin only (POST /admin/grant-applications/{id}/status); final
+    ACCEPTED = "accepted"
+    REJECTED = "rejected"
 
 
 class ApplicantType(StrEnum):
@@ -227,6 +230,13 @@ class GrantApplicationUpdate(PatchModel):
     # shape depends on applicant_type — see Person/OrganizationDeclarations
     declarations: dict | None = None
     email: str | None = None
+
+    @field_validator("status")
+    @classmethod
+    def _applicant_cannot_decide(cls, v: GrantApplicationStatus | None) -> GrantApplicationStatus | None:
+        if v in (GrantApplicationStatus.ACCEPTED, GrantApplicationStatus.REJECTED):
+            raise ValueError("only the admin can accept or reject an application")
+        return v
 
 
 class GrantApplication(BaseModel):

@@ -290,7 +290,7 @@ class DbIdeaService:
         row = self._db.get(GrantApplicationRow, parse_uuid(application_id))
         if row is None:
             raise NotFoundError(application_id)
-        if row.status == GrantApplicationStatus.SUBMITTED.value:
+        if row.status != GrantApplicationStatus.DRAFT.value:
             raise InvalidRequestError("this application was already submitted")
         patch = data.model_dump(exclude_unset=True)
         if "action_plan" in patch and patch["action_plan"] is not None:

@@ -14,6 +14,7 @@ import {
   PERSON_FIELDS,
 } from "@/components/grant/labels";
 import { MoneyInput, fmtZl } from "@/components/grant/MoneyInput";
+import { fieldKind, formatError, inputAttrs, sanitize } from "@/components/grant/validation";
 
 const field =
   "min-h-12 w-full rounded-lg border-[1.5px] border-outline bg-surface p-space-sm text-body-md text-on-surface aria-[invalid=true]:border-error";
@@ -30,27 +31,16 @@ const textBtn =
 
 // placeholder note the generator puts on steps without a cost
 const ESTIMATE_NOTE = "do oszacowania";
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const SAVED_MSG = "Szkic wniosku został zapisany.";
 
 type StepKey = "preparation" | "testing_phase_1" | "testing_phase_2";
 type Errors = Record<string, string>;
 
 // minimum to send: who applies, how to reach them, what for and how much; all declarations are mandatory
-const REQUIRED_APPLICANT: Record<ApplicantType, { key: string; id: string; label: string; email?: boolean }[]> = {
-  person: [
-    { key: "first_name", id: "app-first_name", label: "Imię" },
-    { key: "last_name", id: "app-last_name", label: "Nazwisko" },
-    { key: "email", id: "app-email", label: "E-mail", email: true },
-  ],
-  organization: [
-    { key: "name", id: "org-name", label: "Nazwa podmiotu" },
-    { key: "email", id: "org-email", label: "E-mail", email: true },
-  ],
-  informal_group: [
-    { key: "representative_full_name", id: "inf-representative_full_name", label: "Reprezentant — imię i nazwisko" },
-    { key: "representative_email", id: "inf-representative_email", label: "E-mail", email: true },
-  ],
+const REQUIRED_APPLICANT: Record<ApplicantType, string[]> = {
+  person: ["app-first_name", "app-last_name", "app-email"],
+  organization: ["org-name", "org-email"],
+  informal_group: ["inf-representative_full_name", "inf-representative_email"],
 };
 
 function emptyStep(): PlanStep {
@@ -84,18 +74,40 @@ function hasApplicantData(d: GrantApplication) {
   return filled(d.applicant) || Object.values(d.declarations).some(Boolean);
 }
 
-function validate(d: GrantApplication): Errors {
+type ApplicantInput = { id: string; key: string; label: string; value: string };
+
+// every §2 input of the current applicant type, in form order
+function applicantInputs(d: GrantApplication): ApplicantInput[] {
+  const from = (prefix: string, fields: readonly (readonly [string, string])[], values: Record<string, unknown>) =>
+    fields.map(([key, label]) => ({ id: `${prefix}-${key}`, key, label, value: str(values[key]) }));
+  if (d.applicant_type === "person") return from("app", PERSON_FIELDS, d.applicant);
+  if (d.applicant_type === "informal_group") return from("inf", INFORMAL_FIELDS, d.applicant);
+  const contact = (which: string) => (d.applicant[which] as Record<string, unknown> | undefined) ?? {};
+  return [
+    ...from("org", ORG_FIELDS, d.applicant),
+    ...from("representative", CONTACT_FIELDS, contact("representative")),
+    ...from("working_contact", CONTACT_FIELDS, contact("working_contact")),
+  ];
+}
+
+// format errors always; missing required fields only once the user tries to send
+function validate(d: GrantApplication, requiredToo: boolean): Errors {
   const e: Errors = {};
-  if (!d.title.trim()) e["app-title"] = "Wpisz tytuł innowacji.";
-  for (const f of REQUIRED_APPLICANT[d.applicant_type]) {
-    const v = str(d.applicant[f.key]).trim();
-    if (!v) e[f.id] = `Uzupełnij pole „${f.label}”.`;
-    else if (f.email && !EMAIL_RE.test(v)) e[f.id] = "Wpisz poprawny adres e-mail, np. jan@przyklad.pl.";
+  if (requiredToo && !d.title.trim()) e["app-title"] = "Wpisz tytuł innowacji.";
+  const required = new Set(REQUIRED_APPLICANT[d.applicant_type]);
+  for (const f of applicantInputs(d)) {
+    if (!f.value.trim()) {
+      if (requiredToo && required.has(f.id)) e[f.id] = `Uzupełnij pole „${f.label}”.`;
+      continue;
+    }
+    const msg = formatError(fieldKind(f.key), f.value);
+    if (msg) e[f.id] = msg;
   }
+  if (!requiredToo) return e;
   const amount = amountOf(d);
   if (amount === null || amount <= 0) e["app-amount"] = "Podaj wnioskowaną kwotę grantu.";
   const missing = Object.keys(declLabelsFor(d.applicant_type)).filter((k) => !d.declarations[k]);
-  if (missing.length) e[`decl-${missing[0]}`] = `Zaznacz wszystkie oświadczenia (brakuje: ${missing.length}).`;
+  if (missing.length) e["decl-all"] = `Zaznacz wszystkie oświadczenia (brakuje: ${missing.length}).`;
   return e;
 }
 
@@ -114,23 +126,36 @@ function FieldError({ errors, id }: { errors: Errors; id: string }) {
 
 function TextField({
   id,
+  fieldKey,
   label,
   value,
   onChange,
+  onBlur,
   errors,
 }: {
   id: string;
+  fieldKey: string;
   label: string;
   value: string;
   onChange: (v: string) => void;
+  onBlur: (id: string) => void;
   errors: Errors;
 }) {
+  const kind = fieldKind(fieldKey);
   return (
     <div className="flex flex-col gap-1">
       <label className={labelCls} htmlFor={id}>
         {label}
       </label>
-      <input id={id} className={field} value={value} onChange={(e) => onChange(e.target.value)} {...errProps(errors, id)} />
+      <input
+        id={id}
+        className={field}
+        value={value}
+        onChange={(e) => onChange(sanitize(kind, e.target.value))}
+        onBlur={() => onBlur(id)}
+        {...inputAttrs(fieldKey)}
+        {...errProps(errors, id)}
+      />
       <FieldError errors={errors} id={id} />
     </div>
   );
@@ -154,6 +179,8 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
   const [draft, setDraft] = useState<GrantApplication | null>(null);
   const [dirty, setDirty] = useState(false);
   const [showErrors, setShowErrors] = useState(false);
+  // fields the user has left; their format errors show before the first send
+  const [touched, setTouched] = useState<Set<string>>(new Set());
   const [confirmClose, setConfirmClose] = useState(false);
   const [busy, setBusy] = useState(false);
   const [busyLabel, setBusyLabel] = useState("");
@@ -284,7 +311,7 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
     if (!draft) return false;
     if (submit) {
       setShowErrors(true);
-      if (Object.keys(validate(draft)).length > 0) {
+      if (Object.keys(validate(draft, true)).length > 0) {
         setError("");
         requestAnimationFrame(() => summaryRef.current?.focus());
         return false;
@@ -371,10 +398,17 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
     if (await save(false)) onDone(SAVED_MSG);
   }
 
-  const errors = draft && showErrors ? validate(draft) : {};
+  const touch = (id: string) => setTouched((t) => (t.has(id) ? t : new Set(t).add(id)));
+  const errors: Errors = !draft
+    ? {}
+    : showErrors
+      ? validate(draft, true)
+      : Object.fromEntries(Object.entries(validate(draft, false)).filter(([id]) => touched.has(id)));
   const errorList = Object.entries(errors);
   const declLabels = declLabelsFor(draft?.applicant_type ?? "person");
-  const declError = errorList.find(([id]) => id.startsWith("decl-"));
+  const declError = errorList.find(([id]) => id === "decl-all");
+  const declKeys = Object.keys(declLabels);
+  const declTicked = draft ? declKeys.filter((k) => draft.declarations[k]).length : 0;
   const amount = draft ? amountOf(draft) : null;
   const planTotal = draft ? sumPlan(draft.action_plan) : 0;
   const amountA11y = errProps(errors, "app-amount", planTotal > 0 ? "amount-hint" : undefined);
@@ -462,7 +496,7 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
                     ? "szablon"
                     : (draft.generated_by ?? "—")}
                 {" · "}
-                status: {draft.status === "submitted" ? "wysłany" : "szkic"}
+                status: {draft.status === "draft" ? "szkic" : "wysłany"}
                 {dirty && " · niezapisane zmiany"}
               </p>
 
@@ -536,7 +570,9 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
                       <TextField
                         key={key}
                         id={`app-${key}`}
+                        fieldKey={key}
                         label={label}
+                        onBlur={touch}
                         value={str(draft.applicant[key])}
                         onChange={(v) => setApplicantField(key, v)}
                         errors={errors}
@@ -551,7 +587,9 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
                         <TextField
                           key={key}
                           id={`org-${key}`}
+                          fieldKey={key}
                           label={label}
+                          onBlur={touch}
                           value={str(draft.applicant[key])}
                           onChange={(v) => setApplicantField(key, v)}
                           errors={errors}
@@ -573,7 +611,9 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
                               <TextField
                                 key={key}
                                 id={`${which}-${key}`}
+                                fieldKey={key}
                                 label={label}
+                                onBlur={touch}
                                 value={contact[key] ?? ""}
                                 onChange={(v) => setOrgContact(which, key, v)}
                                 errors={errors}
@@ -591,7 +631,9 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
                       <TextField
                         key={key}
                         id={`inf-${key}`}
+                        fieldKey={key}
                         label={label}
+                        onBlur={touch}
                         value={str(draft.applicant[key])}
                         onChange={(v) => setApplicantField(key, v)}
                         errors={errors}
@@ -674,8 +716,30 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
                     {declError[1]}
                   </p>
                 )}
+                <label className="flex min-h-12 items-center gap-space-sm rounded-lg bg-surface-container-low px-space-sm text-body-md font-bold text-primary hc-edge">
+                  <input
+                    id="decl-all"
+                    type="checkbox"
+                    className="size-6 shrink-0 accent-primary-container"
+                    checked={declTicked === declKeys.length}
+                    ref={(el) => {
+                      if (el) el.indeterminate = declTicked > 0 && declTicked < declKeys.length;
+                    }}
+                    aria-describedby={declError ? "decl-err" : undefined}
+                    onChange={(e) => {
+                      const on = e.target.checked;
+                      edit((d) => ({
+                        ...d,
+                        declarations: { ...d.declarations, ...Object.fromEntries(declKeys.map((k) => [k, on])) },
+                      }));
+                    }}
+                  />
+                  <span>
+                    Składam wszystkie poniższe oświadczenia ({declTicked} z {declKeys.length})
+                  </span>
+                </label>
                 <ul className="flex flex-col gap-space-xs">
-                  {Object.keys(declLabels).map((key) => (
+                  {declKeys.map((key) => (
                     <li key={key}>
                       <label className="flex min-h-12 items-start gap-space-sm text-body-md text-on-surface">
                         <input

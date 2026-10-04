@@ -13,6 +13,7 @@ from fastapi import BackgroundTasks
 from app.config import settings
 from app.schemas.admin.ideas import IdeaStatus
 from app.schemas.admin.test_signups import TestSignupStatus
+from app.schemas.public.grant_applications import GrantApplicationStatus
 from app.services.notify.mail import Mail, Mailer, Rendered, SmtpMailer, build_mailer, render
 
 __all__ = ["Mail", "Mailer", "Notifier", "Rendered", "SmtpMailer", "build_mailer", "get_notifier"]
@@ -238,6 +239,44 @@ class Notifier:
                     "ograniczona, ale inne innowacje też szukają testerów."
                 ),
                 cta_label="Zobacz inne innowacje",
+                cta_url=self._url("/innowacje"),
+            )
+        else:
+            return
+        self._send(email, mail)
+
+    def grant_application_decided(
+        self, email: str | None, title: str, status: GrantApplicationStatus, message: str | None
+    ) -> None:
+        title = title.strip() or "Twój wniosek"
+        if status == GrantApplicationStatus.ACCEPTED:
+            mail = Mail(
+                subject=f"Twój wniosek grantowy został przyjęty: {_short(title)}",
+                badge="Przyjęty",
+                heading="Gratulacje, Twój wniosek został przyjęty!",
+                intro="Zespół Hubu zapoznał się z wnioskiem i chce wesprzeć Twoją innowację.",
+                quote_label="Twój wniosek",
+                quote=title,
+                reply=message or "",
+                steps=(
+                    "Wkrótce się odezwiemy, żeby omówić umowę i kolejne kroki.",
+                    "Zachowaj tę wiadomość – przyda się przy rozmowie.",
+                ),
+                cta_label="Zobacz inne innowacje",
+                cta_url=self._url("/innowacje"),
+            )
+        elif status == GrantApplicationStatus.REJECTED:
+            mail = Mail(
+                subject=f"Odpowiedź w sprawie wniosku: {_short(title)}",
+                heading="Tym razem nie możemy przyznać grantu",
+                intro=(
+                    "Dziękujemy za przygotowanie wniosku. Możesz złożyć nowy w kolejnym naborze – "
+                    "warto też zobaczyć, jak podobne problemy rozwiązano w innych gminach."
+                ),
+                quote_label="Twój wniosek",
+                quote=title,
+                reply=message or "",
+                cta_label="Przeglądaj innowacje",
                 cta_url=self._url("/innowacje"),
             )
         else:
