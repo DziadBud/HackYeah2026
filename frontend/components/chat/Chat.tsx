@@ -104,7 +104,7 @@ export function Chat() {
 
   useEffect(() => () => recognitionRef.current?.stop(), []);
 
-  // /?wniosek=1 comes from the "Zgłoś się do testowania" box on an innovation page
+  // /?wniosek=1 opens the "Złóż wniosek" form (deep link / tile)
   useEffect(() => {
     if (new URLSearchParams(window.location.search).has("wniosek")) setAction(APPLY_ACTION);
   }, []);

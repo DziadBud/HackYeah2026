@@ -8,7 +8,6 @@ import { AREA_LABEL, COST, READINESS } from "@/lib/labels";
 import { Icon } from "@/components/Icon";
 import { ActionBar } from "@/components/innovation/ActionBar";
 import { Community } from "@/components/innovation/Community";
-import { TestSignup } from "@/components/innovation/TestSignup";
 
 const SITE = "Małopolski Hub Innowacji Społecznych";
 const card = "flex flex-col gap-space-md rounded-xl bg-surface-container-lowest p-space-md shadow-sm hc-edge lg:p-space-lg";
@@ -212,7 +211,7 @@ export function InnovationDetail({ id }: { id: string }) {
             </p>
           )}
         </div>
-        <ActionBar pdfUrl={i.pdfUrl} />
+        <ActionBar pdfUrl={i.pdfUrl} title={i.title} />
       </header>
 
       <div className="grid grid-cols-1 items-start gap-space-lg lg:grid-cols-12">
@@ -268,7 +267,7 @@ export function InnovationDetail({ id }: { id: string }) {
           </div>
         </div>
 
-        <aside aria-label="Kontakt i zgłoszenia" className="flex flex-col gap-space-lg lg:col-span-4">
+        <aside aria-label="Kontakt" className="flex flex-col gap-space-lg lg:col-span-4">
           <section aria-labelledby="opiekun-heading" className={card}>
             <h2 id="opiekun-heading" className="flex items-center gap-2 text-headline-sm font-semibold text-primary">
               <Icon name="support_agent" size={24} />
@@ -315,7 +314,6 @@ export function InnovationDetail({ id }: { id: string }) {
               </li>
             </ul>
           </section>
-          <TestSignup title={i.title} />
         </aside>
       </div>
     </div>
