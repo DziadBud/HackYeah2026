@@ -12,6 +12,7 @@ import type {
   InnovationStats,
   InnovationStatsRow,
   ProblemReport,
+  TestSignup,
   TrendRow,
 } from "@/lib/api";
 
@@ -24,6 +25,7 @@ export interface AdminData {
   gaps: GapRow[];
   grantCalls: GrantCall[];
   threads: AdminThread[];
+  testSignups: TestSignup[];
 }
 
 const NOW = Date.parse("2026-10-03T09:00:00Z");
@@ -205,6 +207,44 @@ export const ADMIN_MOCK: AdminData = {
         { title: "Plan wdrożenia", required: true },
         { title: "Budżet", required: false },
       ],
+    },
+  ],
+  testSignups: [
+    {
+      id: "signup-3",
+      innovation_id: "straznik",
+      innovation_title: "Strażnik",
+      problem_report_id: null,
+      email: "ops.wieliczka@example.com",
+      status: "applied",
+      created_at: ago(5),
+    },
+    {
+      id: "signup-1",
+      innovation_id: "wibraap",
+      innovation_title: "Wibraap",
+      problem_report_id: "problem-report-1",
+      email: "tester@example.com",
+      status: "applied",
+      created_at: ago(30),
+    },
+    {
+      id: "signup-2",
+      innovation_id: "wibraap",
+      innovation_title: "Wibraap",
+      problem_report_id: "problem-report-2",
+      email: "tester2@example.com",
+      status: "accepted",
+      created_at: ago(48),
+    },
+    {
+      id: "signup-4",
+      innovation_id: "wibraap",
+      innovation_title: "Wibraap",
+      problem_report_id: null,
+      email: "dps@example.com",
+      status: "rated",
+      created_at: ago(240),
     },
   ],
 };

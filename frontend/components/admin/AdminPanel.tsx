@@ -10,8 +10,8 @@ import { card, fmtDate, ghostBtn, h2, primaryBtn, td, th } from "@/components/ad
 import { pendingThreadCount, ThreadModeration } from "@/components/admin/ThreadModeration";
 import { useApiOrMock } from "@/components/admin/useApiOrMock";
 
-// innovations have their own screen (/admin)
-type PanelData = Omit<AdminData, "innovations">;
+// innovations (/admin) and test signups (/admin/testerzy) have their own screens
+type PanelData = Omit<AdminData, "innovations" | "testSignups">;
 
 const IDEA_STATUS: Record<IdeaStatus, string> = {
   new: "Nowy",

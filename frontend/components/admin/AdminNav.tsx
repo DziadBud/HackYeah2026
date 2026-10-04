@@ -7,6 +7,7 @@ import { Icon } from "@/components/Icon";
 const TABS = [
   { href: "/admin", label: "Innowacje i statystyki", icon: "bar_chart" },
   { href: "/admin/zgloszenia#forum", label: "Zgłoszenia i forum", icon: "forum" },
+  { href: "/admin/testerzy", label: "Zgłoszenia do testów", icon: "how_to_reg" },
 ];
 
 function isActive(pathname: string, href: string) {

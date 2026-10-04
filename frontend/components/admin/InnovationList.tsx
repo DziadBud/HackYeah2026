@@ -8,7 +8,8 @@ import { AREA_LABEL, COST, READINESS } from "@/lib/labels";
 import { Icon } from "@/components/Icon";
 import { Trend, plural } from "@/components/admin/charts";
 import { card, field, fmtDate, ghostBtn, h2, primaryBtn } from "@/components/admin/styles";
-import { useApiOrMock } from "@/components/admin/useApiOrMock";
+import { RatingsDropdown } from "@/components/admin/RatingsDropdown";
+import { useApiOrMock, type Source } from "@/components/admin/useApiOrMock";
 
 export interface Row {
   innovation: AdminInnovation;
@@ -201,7 +202,7 @@ export function InnovationList() {
         <ul className="flex flex-col gap-space-md">
           {rows.map((r) => (
             <li key={r.innovation.id}>
-              <InnovationRow row={r} onToggle={() => togglePublished(r)} />
+              <InnovationRow row={r} source={source} onToggle={() => togglePublished(r)} />
             </li>
           ))}
         </ul>
@@ -210,7 +211,7 @@ export function InnovationList() {
   );
 }
 
-function InnovationRow({ row, onToggle }: { row: Row; onToggle: () => void }) {
+function InnovationRow({ row, source, onToggle }: { row: Row; source: Source; onToggle: () => void }) {
   const { innovation: i, stats: s } = row;
   const hId = `${i.id}-h`;
   const flags = attention(row);
@@ -228,7 +229,9 @@ function InnovationRow({ row, onToggle }: { row: Row; onToggle: () => void }) {
         </span>
       </div>
       <h3 id={hId} className="text-headline-sm font-semibold text-primary">
-        {i.title}
+        <Link href={`/admin/innowacje/${encodeURIComponent(i.id)}`} className="underline-offset-4 hover:underline">
+          {i.title}
+        </Link>
       </h3>
       <p className="text-body-md text-on-surface-variant">{i.summary}</p>
 
@@ -277,6 +280,8 @@ function InnovationRow({ row, onToggle }: { row: Row; onToggle: () => void }) {
           ))}
         </ul>
       )}
+
+      <RatingsDropdown innovationId={i.id} title={i.title} count={s?.rating_count ?? 0} source={source} />
 
       <div className="flex flex-wrap items-center justify-between gap-space-sm">
         <span className="text-caption text-on-surface-variant">
