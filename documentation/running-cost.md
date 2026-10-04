@@ -35,6 +35,6 @@ Infrastrukturę może też dać istniejąca serwerownia urzędu marszałkowskieg
 
 - więcej ruchu: druga replika match-api i frontendu za load balancerem (najpierw przenieść sesje admina z pamięci do Postgresa), większy VM pod embeddingi
 - więcej danych: indeks HNSW w pgvector obsługuje dziesiątki tysięcy innowacji i fragmentów na tym samym serwerze
-- integracje (baza grantów, powiadomienia o naborach): przez API match-api; RabbitMQ jest już w compose na potrzeby przyszłej kolejki, dziś nieużywany
+- integracje (baza grantów, powiadomienia o naborach): przez API match-api; kolejkę (np. RabbitMQ) dodamy dopiero, gdy będzie potrzebna
 
 Szczegóły techniczne: [backend/architecture.md](backend/architecture.md) (§7 tryby awarii, §8 odłożone).
