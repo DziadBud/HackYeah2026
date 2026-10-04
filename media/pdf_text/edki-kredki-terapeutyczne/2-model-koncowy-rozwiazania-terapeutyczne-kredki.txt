@@ -1,0 +1,702 @@
+--- strona 1 ---
+
+Terapeutyczne kredki dla dzieci
+ze spastycznością kończyny górnej.
+Innowacja testowana w ramach „Inkubatora Włączenia Społecznego” – Projektu
+wdrażanego w ramach IV Osi Priorytetowej Programu Operacyjnego Wiedza Edukacja
+Rozwój (Działanie 4.1: Innowacje społeczne), na zlecenie Ministerstwa Funduszy i Polityki
+Regionalnej, finansowanego ze środków Unii Europejskiej w ramach Europejskiego Funduszu
+Społecznego.
+Grantobiorca: Aleksandra Satława
+
+--- strona 2 ---
+
+Spis treści
+
+Edki – terapeutyczne kredki przeznaczone są dla dzieci ze spastyczną kończyną górną
+i problemami motoryki małej. _______________________________________________ 3
+Opis grupy docelowej i potrzeb odbiorców rozwiązania ___________________________ 3
+Warsztaty projektowe – partycypacja odbiorców ______________________________ 3
+Grupa odbiorców rozwiązania _____________________________________________ 5
+Potrzeby odbiorców rozwiązania ___________________________________________ 5
+Opis rozwiązania i jego funkcjonalności ________________________________________ 7
+Proces projektowy ______________________________________________________ 7
+Opis projektu__________________________________________________________ 10
+Scenariusze użytkowe ___________________________________________________ 15
+Instrukcja wykonania kredek _____________________________________________ 17
+Graficzny instruktaż ____________________________________________________ 23
+Szablony do zabaw z kredkami ____________________________________________ 25
+Przebieg testów _________________________________________________________ 27
+Przebieg testów - dokumentacja zdjęciowa __________________________________ 28
+Wyniki opracowane przez ekspertów _________________________________________ 31
+Ocena projektu pod kątem wzorniczym _____________________________________ 31
+Ocena projektu pod kątem fizjoterapii ______________________________________ 34
+Rekomendacje i zalecenia dla przyszłych użytkowników __________________________ 39
+Rekomendacje dotyczące wykonania kredek _________________________________ 39
+Rekomendacje dotyczące grupy odbiorców __________________________________ 40
+Podsumowanie __________________________________________________________ 40
+Załączniki _______________________________________________________________ 41
+
+--- strona 3 ---
+
+Edki – terapeutyczne kredki przeznaczone są dla dzieci
+ze spastyczną kończyną górną i problemami motoryki małej.
+Celem innowacji jest opracowanie i przetestowanie zestawu terapeutycznych kredek dla
+dzieci zmagających się ze spastycznością kończyny górnej. Projekt umożliwi najmłodszym
+z niedowładem ręki dostęp do twórczych działań plastycznych, jakimi są pisanie, rysowanie,
+kolorowanie – będące podstawowymi formami działań w harmonijnym rozwoju każdego
+dziecka.
+Projekt terapeutycznych kredek zakłada udostępnianie na zasadach open source – otwartej
+licencji – do samodzielnego wykonania, które następuje w 8 krokach.
+W skład innowacji wchodzą:
+• projekt wzorniczy kredki wraz z wydrukiem 3d i silikonową formą
+• graficzne instrukcje do samodzielnego wykonania kredek i scenariusze użytkowe
+• graficzne szablony wspomagające zabawę z kredkami
+Opis grupy docelowej i potrzeb odbiorców rozwiązania
+Warsztaty projektowe – partycypacja odbiorców
+W ramach pracy nad projektem badaczka User Experience Dominika Michna i projektantka
+Aleksandra Satława przeprowadziły warsztaty z wykorzystaniem istniejących na rynku
+kredek woskowych. w warsztatach wzięło udział 5 dzieci w wieku od 6-14 lat z deficytami
+w obrębie motoryki małej i ze spastyczną kończyną – Rosti, Julka, Olek, Antek, Staś.
+Spotkanie odbyło się w Specjalnym Ośrodku Szkolno-Wychowawczym nr 3 w Krakowie,
+a jego celem było:
+● określenie potrzeb odbiorców rozwiązania,
+● określenie słabych i mocnych stron kredek dostępnych na rynku oraz
+zainteresowania dzieci zabawami twórczymi.
+
+--- strona 4 ---
+
+● zrekrutowanie grupy dzieci do etapu testowania rozwiązania.
+Warsztaty polegały na rysowaniu przy użyciu:
+• stożkowe kredki zakładane na opuszki palców,
+• tradycyjne kredki woskowe,
+• ergonomiczne kredki woskowe ze ściętymi krawędziami,
+• duże płaskie kredki w formie misia,
+• duże kredki w kształcie jajek.
+Wnioski z przeprowadzonych warsztatów:
+• tradycyjne kredki bardzo szybko się łamały pod wpływem nacisku, a do rysowania
+nimi potrzebne było dużo siły. Staś po odkryciu jak łatwo się łamią, łamał je celowo.
+• Staś rolował kredki ale nie chciał rysować. Wynikało to z potrzeby dużej stymulacji.
+• Wszystkie dzieci wykazywały potrzebę masażu – zabawy kredkami między dłońmi
+w ten sposób stymulowały się i oswajały się z narzędziami.
+• Zauważona została potrzeba kredek wielokolorowych lub dwukolorowych, które
+umożliwiałyby obrót nadgarstka – fizjoterapię.
+• Rysowanie wymagało pomocy terapeutki.
+
+Terapeutka pomaga dziecku w rysowaniu.
+
+--- strona 5 ---
+
+Grupa odbiorców rozwiązania
+•
+Wywiady oraz konsultacje z ekspertami pokazały, że największą szansę na efektywną
+terapię dłoni przez działania plastyczne i twórcze mają dzieci w wieku 4-15 lat z:
+•
+obustronną spastyką dłoni – ta grupa nie rekompensuje sobie używania zdrowej
+dłoni do działań plastycznych, dzięki czemu dochodzi do czynnej terapii,
+•
+spektrum spastyczności od mniejszego do średniego – dzieci, które wykazują
+ruchomość kończyny i chęć czynnej współpracy,
+•
+dzieci bez dużej niepełnosprawności intelektualnej – są one w stanie zainteresować
+się działaniami artystycznymi i samodzielnie lub z pomocą opiekuna wykonać zadania
+oraz brać udział w procesie wytwarzania kredek,
+•
+dzieci z problemami motoryki małej.
+Potrzeby odbiorców rozwiązania
+Potrzeba działań twórczych i plastycznych
+Dzieci ze spastyczną kończyną są poniekąd wykluczone z aktywności plastycznych.
+Malowanie i rysowanie za pomocą zwykłych kredek i narzędzi pisarskich jest niemożliwe.
+Obserwacje pokazały dużą potrzebę angażowania się dzieci w zajęcia malarskie, plastyczne
+i kreatywne. Zabawy plastyczne i manualne wzbogacają świat dziecka, wpływając na rozwój
+wyobraźni, wyładowania emocji oraz zdolności małej motoryki. Dla dzieci ze spastyką
+barierą jest brak odpowiednich narzędzi, jak również szablonów będących przygotowanym
+materiałem graficznym, wspierającym rozwój artystyczny i pomagającym w terapii dłoni.
+Dzieci z niesprawną kończyną potrzebują działać na dużych formatach papieru – minimum
+A3.
+Potrzeba aktywnej fizjoterapii przez zabawę
+Dzieci chętniej biorą one udział w terapii, która jest połączona z kreatywną zabawą. Pozwala
+to im choć na moment zapomnieć o terapeutycznym wymiarze ćwiczeń. Prawidłowa terapia
+przez zabawę plastyczną powinna mobilizować mięśnie prostowników dłoni do otwarcia
+
+--- strona 6 ---
+
+i wyprostu, aktywizować kciuk, nadgarstek, przedramię, łokieć a także budować dobre
+wzorce związane z przyjmowaną postawą całego ciała, bez konieczności kompensacji. Dzieci
+z niesprawną kończyną potrzebują budowania dobrych wzorców ruchowych np. pronacji
+i supinacji.
+Potrzeba integracji społecznej, włączenia społecznego
+Działania plastyczne i twórcze często wymagają interakcji z innymi osobami a także
+pomagają komunikować się ze światem za pomocą obrazów i kolorów. Podczas warsztatów
+terapii zajęciowej dzieci pracują w grupie, wzorując się na innych lub z nimi współpracując.
+
+--- strona 7 ---
+
+Opis rozwiązania i jego funkcjonalności
+Proces projektowy
+W fazie szkiców powstało wiele różnych koncepcji, z których 2 zostały wybrane do
+wymodelowania. Pierwsza zakładała odlew kredek o geometrycznej formie obrotowej,
+a druga organiczne kształty wkładane między palce. Obie odpowiadały na założenia
+projektowe. Jednak kolejny etap procesu projektowego – modelowanie w glinie - pokazał, że
+druga koncepcja, pomimo tego, że umożliwia intuicyjne chwytanie, to wysuwa się
+ze spastycznej dłoni i nie daje możliwości precyzyjnego rysowania, a jej forma jest
+trudniejsza do wykonania samodzielnego odlewu.
+Wybrany został zatem pomysł na kredkę, która umożliwiała nieskomplikowane odlewanie,
+w łatwy sposób trzyma się między palcami i nie wypadała, co więcej umożliwia
+ergonomiczne trzymanie.
+W kolejnym etapie powstał próbny wydruk i forma z silikonu modelarskiego. Prototyp ten
+wymagał dopracowania. Naniesiono więc zmiany szerokości i długości kredki, wielkości
+wcięcia i dopracowano cały proces powstawania, aby był możliwie jak najprostszy.
+
+--- strona 8 ---
+
+Szkic przedstawiający koncepcje.
+
+Pierwsze próby z formami obrotowymi.
+
+--- strona 9 ---
+
+Odlewy pierwszych prototypów kredek.
+
+--- strona 10 ---
+
+Opis projektu
+
+Kredki w użyciu.
+Terapeutyczne funkcje kredek - mobilizacja palców dłoni do wyprostu poprzez wkładanie
+kredki między palce,
+•
+umożliwienie łatwego trzymania / chwytu pisarskiego,
+•
+stymulacja czucia głębokiego poprzez masaż, toczenie kredki w dłoniach lub na
+papierze,
+•
+rozluźnienie całej kończyny górnej,
+•
+rotacja nadgarstka dzięki obracaniu dwukolorowej kredki.
+
+--- strona 11 ---
+
+Wydrukowana instrukcja wykonania kredek.
+
+Wydrukowana forma 3D, silikonowa forma i woskowy prototyp kredki.
+
+--- strona 12 ---
+
+Wersje kolorystyczne kredek.
+
+Wersje kolorystyczne kredek.
+
+--- strona 13 ---
+
+Wersje kolorystyczne kredek.
+
+Funkcje kredki.
+
+--- strona 14 ---
+
+Funkcje kredki.
+
+Funkcje kredki.
+
+--- strona 15 ---
+
+Scenariusze użytkowe
+
+Masaż. Turlanie kredki w dłoniach lub po kartce oswaja z narzędziem i pobudza krążenie.
+Toczona po kartce kredka zostawia ciekawe ślady.
+
+Chwyt pomiędzy palcami stożkową częścią do dołu. Wkładanie kredki pomiędzy palce
+mobilizuje dłoń do wyprostu. Wcięcie w kredce umożliwia trzymanie kredki pomiędzy
+palcami. Stożkowy czubek daje możliwość precyzyjnego rysowania lub podążania za śladem.
+
+--- strona 16 ---
+
+Chwyt pomiędzy palcami płaską częścią do dołu. Wkładanie kredki między palce mobilizuje
+dłoń do wyprostu. Wcięcie w kredce umożliwia trzymanie kredki pomiędzy palcami.
+Ćwiczenie daje możliwość rysowania dużą płaszczyzną i jest potrzebne w przypadku
+wypełniania – kolorowania.
+
+Kredki w obu rękach. Rysowanie oburęczne rozwija zdolności ruchowo-koordynacyjne
+i intelektualne.
+
+--- strona 17 ---
+
+Chwyt pisarski. Kształt kredki ułatwia prawidłowe i precyzyjne trzymanie narzędzia.
+Instrukcja wykonania kredek
+Do wykonania kredki potrzebne są:
+•
+Silikon modelarski 100 g i utwardzacz 5 g
+•
+Wydrukowana 3D kredka
+•
+Duża gumka recepturka
+•
+Rękawiczki jednorazowe
+•
+Dwustronna taśma
+•
+Patyczki drewniane
+•
+Nożyk do tapet
+•
+2 kubki np. po jogurcie
+•
+Stary garnuszek lub puszki po konserwach do topienia wosku
+•
+Kredki z wosku pszczelego, sojowego lub ryżowego - mogą być niepotrzebne
+•
+i połamane.
+
+--- strona 18 ---
+
+Proces powstawania kredki składa się z 8 kroków:
+
+Krok 1. Należy pobrać komputerowy model kredki wykonać go w technologii druku 3D. Taki
+druk można zlecić w wielu punktach, nawet tradycyjnych drukarniach. Ośrodki
+terapeutyczne, Warsztaty Terapii Zajęciowej często dysponują drukarkami 3d.
+
+Krok 2. W kubku za pomocą drewnianego patyczka lub plastikowej łyżki trzeba wymieszać
+100 g silikonu modelarskiego i 5 g utwardzacza. Zestaw silikonu i utwardzacza możliwy do
+kupienia w sklepach modelarskich lub budowlanych.
+
+--- strona 19 ---
+
+Krok 3. W drugim kubku na środku dna należy przykleić za pomocą taśmy dwustronnej
+wydrukowaną kredkę. Model powinien być przyklejony jak na zdjęciu.
+
+Krok 4. Do kubka z modelem 3D należy wlać przygotowaną wcześniej masę silikonową. Po
+24 godzinach masa będzie sucha.
+
+--- strona 20 ---
+
+Krok 5. Zastygniętą masę trzeba wyciągnąć z kubka i za pomocą nożyka przeciąć formę na 2
+części, wyjmując jednocześnie wydrukowany model 3d. Przecięcie powinno wyglądać jak na
+zdjęciu – przez środek formy.
+
+Krok 6. Następnie należy ponownie precyzyjnie złączyć dwie części formy, używając gumki.
+
+--- strona 21 ---
+
+Krok 7. Niepotrzebne i połamane kredki zdanego koloru należy roztopić w kąpieli wodnej.
+Temperatura topnienia nie powinna być wyższa niż 80 stopni C. Należy zachować ostrożność
+i mieszać wosk patyczkiem.
+
+Krok 8. Roztopiony wosk trzeba wlać do otworu w silikonowej formie tak, aby nie wylał się
+poza otwór. Po 20 minutach można otworzyć formę. Kredka będzie gotowa do użycia po 30
+minutach.
+
+--- strona 22 ---
+
+Jednocześnie można wykonać kilka form dla odlewów większej ilości kredek.
+Można także wykonać kredki dwukolorowe. w tym celu wybrany kolor wosku należy wlać
+do połowy formy, poczekać 10 minut, a następnie wlać inny kolor. Możliwe jest też zrobienie
+kredki wielokolorowej lub z drobinkami innego koloru. Przed wlaniem roztopionego wosku
+do formy trzeba włożyć rozkruszone wiórki woskowe.
+Wymiary kredki – rysunek techniczny.
+
+--- strona 23 ---
+
+Graficzny instruktaż
+Instruktaż w formie graficznej ma pomóc rodzicom, wolontariuszom i terapeutom wykonać
+kredkę krok po kroku oraz zrozumieć ćwiczenia i zabawy.
+Instrukcje zostały zaprojektowane w sposób czytelny i prosty, dostosowano je do formatu a4
+– najbardziej dostępnego i możliwego do wydruku na domowej drukarce. Przerywane linie
+pomagają złożyć kartkę w mniejszy format - harmonijkę.
+3 strony zawierają:
+• informacje na temat projektu,
+• informacje jak wykonać kredkę,
+• informacje w jaki sposób korzystać z kredek.
+Fotograficzna dokumentacja instrukcji - informacje na temat projektu.
+
+--- strona 24 ---
+
+Fotograficzna dokumentacja instrukcji - informacje jak wykonać kredkę.
+Fotograficzna dokumentacja instrukcji - informacje w jaki sposób korzystać z kredek.
+
+--- strona 25 ---
+
+Szablony do zabaw z kredkami
+Do zestawu dodatkowo zaprojektowane zostały 3 szablony - instrukcje wspomagające
+zabawę z kredkami. Ich celem jest rozwijanie zdolności manualnych za pomocą ćwiczeń:
+•
+korzystania z wszystkich oferowanych przez kredki chwytów,
+•
+naukę rysowania - podążania za linią, wypełniania, wykonywania dużych kolistych
+ruchów,
+•
+pobudzania kreatywności.
+Szablony zostały zaprojektowane w formacie A3 jako najbardziej przystępnym dla dzieci
+ze spastyczną kończyną.
+
+--- strona 27 ---
+
+Przebieg testów
+Testy odbywały się z udziałem ekspertek w Specjalnym Ośrodku Szkolno-Wychowawczym nr
+3 w Krakowie. w testowaniu brało udział siedmioro dzieci w obecności terapeutek
+i opiekunek. Poza testami w placówce, każde dziecko dostało zestaw kredek wraz
+z materiałami do samodzielnego wykonania poza ośrodkiem – w domu, z rodzicami. Podczas
+3 spotkań dzieci brały udział w:
+•
+indywidualnym rysowaniu na szablonach,
+•
+warsztatach z wykonywania kredki krok po kroku,
+•
+wspólnym rysowaniu gąsienicy.
+Po przeprowadzonych warsztatach testy miały charakter ciągły, gdyż Specjalistyczny
+Ośrodek Szkolno-Wychowawczy dostał zestaw kredek, silikonową formę, kredkę
+
+--- strona 28 ---
+
+wydrukowaną w technologii 3d oraz pakiet instrukcji i szablonów – wszystkie opracowane
+w projekcie elementy.
+Grupą testującą rozwiązanie było siedmioro dzieci w wieku 6-14 lat zmagających się
+ze spastycznymi kończynami, porażeniem czterokończynowym, problemami motoryki małej.
+Wszystkie biorące w testach dzieci miały orzeczoną niepełnosprawność intelektualną.
+Cele testów:
+•
+czy rozwiązanie jest dobrze odbierane przez dzieci,
+•
+czy forma kredki zachęca do rysowania,
+•
+czy kredka spełnia założone funkcje terapeutyczne,
+•
+czy proces powstawania / wykonywania kredek jest prosty,
+•
+czy instrukcje wykonania i scenariusze zabaw są zrozumiałe i czytelne,
+•
+w jaki sposób można jeszcze dopracować i rozwijać projekt?
+•
+Jakie mogą być miejsca zastosowania innowacji?
+•
+Jakie są słabe i mocne strony innowacji?
+Przebieg testów - dokumentacja zdjęciowa
+
+Rysowanie na szablonach.
+
+--- strona 29 ---
+
+Rysowanie na szablonach.
+
+Wspólne rysowanie gąsienicy.
+
+--- strona 30 ---
+
+Wspólne rysowanie gąsienicy.
+
+Rysowanie na szablonach.
+
+--- strona 31 ---
+
+Wyniki opracowane przez ekspertów
+Ocena projektu pod kątem wzorniczym
+dr Aleksandra Satława – badaczka, projektantka, wykładowczyni w Instytucie Sztuki
+i Designu na Uniwersytecie Pedagogicznym w Krakowie gdzie współprowadzi Laboratorium
+Dostępności i naucza Podstaw Projektowania Uniwersalnego. Specjalizuje się
+w projektowaniu produktu, designie uniwersalnym oraz często podejmuje się tematyki
+projektowania dla dzieci. w ramach Inkubatora Dostępności działającego przy ROPS Kraków
+projektowała Hop Hop – mobilny plac zabaw. Współpracuje z firmami i instytucjami, które
+wymagają interwencji projektowych.
+Terapeutyczne kredki
+Rodzice, opiekunowie, pedagodzy, terapeuci i wszyscy pracujący z dziećmi mają wpływ na
+kształtowanie ważnych postaw u dzieci, ale również na projektantach spoczywa
+odpowiedzialność za wspieranie prawidłowego rozwoju najmłodszych odbiorców.
+Szczególnie teraz w dobie nadmiaru dóbr materialnych, projekty, które oferują dzieciom
+możliwość korzystania na równych zasadach z edukacji, zabawy lub terapii, bez względu na
+zamożność, stopień niepełnosprawności czy płeć są jeszcze bardziej potrzebne.
+Bazując na własnych doświadczeniach projektowych, dochodzę do wniosku, że dzieci
+i młodzież to jedna z najbardziej wymagających grup odbiorców ze względu na szybko
+zmieniające się potrzeby wynikające z przemian fizycznych, emocjonalnych czy
+poznawczych. Stanowią oni blisko 20 procent polskiej populacji, a często też pomimo tego
+samego wieku, potrzeby i oczekiwania mogą być bardzo różne. Przed projektantami
+i architektami stoi zatem szereg wyzwań związanych ze współczesnym dzieciństwem.
+Kluczowe jest też zrozumienie potrzeb dzieci z różnymi trudnościami i zapewnienie im
+równych szans rozwoju. Szczególnie ważne przy powstawaniu terapeutycznych kredek było
+dla mnie, aby nie stygmatyzowały, nie zawstydzały w użytkowaniu, a swoją formą nie
+komunikowały odrębności. O takim podejściu w projektowaniu uniwersalnym pisał już blisko
+
+--- strona 32 ---
+
+50 lat temu Victor Papanek w „Dizajnie dla realnego świata”. Zauważył on, że istnieją
+kierunki zaniedbane, które wymagają pracy projektanta. Jako jeden z przykładów podał
+projektowanie urządzeń edukacyjnych i treningowych dla dzieci i osób
+z niepełnosprawnościami.
+Funkcje kredek
+Projekt terapeutycznych kredek idealnie wpisuje się w zasady projektowania uniwersalnego
+bliskoznacznego z poprawą dostępności i designem włączającym. Aidan O’Connor
+w publikacji Inclusive, therapeutic and assistive design for children zaznacza, że wspólnym
+mianownikiem wymienionych powyżej działań jest projektowanie w taki sposób, aby jak
+najwięcej użytkowników mogło korzystać z danego rozwiązania. w przypadku Innowacji
+punktem wyjścia były potrzeby dzieci ze spastyczną kończyną i trudnościami motoryki małej,
+jednak poprzez jego uniwersalne cechy mogą korzystać z niego wszyscy.
+Cechy o jakich mowa to symetryczny kształt kredki wspomagający ergonomiczne trzymanie
+bez dużej siły nacisku – co jest ważne w przypadku dzieci ze spastyką. Obrotowa
+i symetryczna forma daje także możliwość toczenia narzędzia w dłoni – co pozwala dzieciom
+na masaż i oswojenie się z narzędziem przed rozpoczęciem rysowania. Edki - Terapeutyczne
+kredki wyróżniają się wcięciem, które otwiera pole dla nowych funkcji użytkowych. Dzieci
+mogą rysować wkładając kredki między palce – bez obawy, że się wysuną. Rysowanie w ten
+sposób stymuluje dłoń i palce do wyprostu, a przesuwana po kartce otwarta dłoń dostaje
+więcej bodźców. Sama kredka jest duża i szeroka w porównaniu do tradycyjnych kredek,
+dzięki czemu nie łamie się i nie zużywa się tak szybko.
+Grupa odbiorców
+Uczestnicząc w testach w Ośrodku na Praskiej, przeprowadziłam warsztaty polegające na
+wykonywaniu kredek – topieniu, wlewaniu do silikonowej formy. Podczas ich trwania można
+było zauważyć duże zainteresowanie dzieci samym procesem powstawania. Angażowały się
+one w kruszenie wosku, mieszanie w garnku czy wyjmowanie z formy. Taka partycypacja
+
+--- strona 33 ---
+
+wzmocniła poczucie sprawczości i uświadomiła im w jaki sposób powstaje narzędzie, którym
+rysują. Kredki zostały pozytywnie odebrane przez dzieci oraz ich terapeutki i opiekunki.
+Poza warsztatami wykonywania kredek – krok po kroku przeprowadziłam również spotkania,
+w których dzieci rysowały za pomocą terapeutycznych kredek na zaprojektowanych
+szablonach i warsztaty ze wspólnego rysowania gąsienicy. Szczególnie ciekawe były te
+ostatnie, gdyż pokazały, że praca w grupie daje dzieciom więcej motywacji do działań.
+Zaprojektowane 3 szablony w mojej ocenie wymagają dopracowania informacji tekstowej.
+Jest ona za mała w stosunku do grafik. Dzieci i terapeutki korzystały z szablonów w sposób
+intuicyjny, bez czytania tekstu.
+Testy pokazały, że można poszerzyć grupę odbiorców rozwiązania również do dzieci z dużą
+niepełnosprawnością ruchową i intelektualną. Warunkiem jest zainteresowanie dziecka
+rysowaniem i kredką.
+Ocena prototypu
+Do wykonania formy na kredkę potrzebny jest jej wydruk w technologii 3D. Punkty druku 3d
+są obecnie ogólnodostępne. Przy czym należy pamiętać, że druk metodą proszkową 3D
+(SLS,MJF) będzie dokładniejszy niż druk przy pomocy filamentu. Do wykonania silikonowych
+form użyto zarówno wydruków proszkowych i filamentowych. Kredki, które zostały odlane
+z formy filamentowej posiadają poziome paski. Detal ten jednak nie przeszkadza
+w użytkowaniu, a druk filamentowy jest o wiele tańszy niż proszkowy.
+Cały proces powstawania narzędzia można zamknąć w 8 krokach, wydaje się dosyć prosty,
+jest jednak czasochłonny. Trzeba poczekać 24 godzin aż silikon modelarski zwiąże i będzie
+twardą masą. Sama silikonowa forma jest wielorazowa i może służyć na nieskończoną ilość
+odlewów kredek.
+Prototypy kredek zostały wykonane z połamanych kredek z wosku pszczelego, sojowego
+i ryżowego. Co oznacza, że są w 100 procentach naturalne, a ich pozostałości – resztki
+można ponownie przetopić. Samodzielne wytapianie terapeutycznych kredek daje również
+
+--- strona 34 ---
+
+możliwość stworzenia kredki wielokolorowej, dwukolorowej lub z drobinkami innego koloru
+– według kreatywności tworzących je opiekunów, wolontariuszy czy rodziców. Podczas
+testów dzieci wykazywały większe zainteresowanie wielokolorowymi kredkami niż
+jednokolorowymi.
+Właśnie w procesie powstawania kredki upatruję ciekawą zabawę – naukę dobierania
+kolorów, kreatywności, precyzji. Również testy pokazały, że ten aspekt w kontekście całego
+projektu jest bardzo ważny.
+Ocena projektu pod kątem fizjoterapii
+Zofia Karska-Widomska – mgr fizjoterapii, absolwentka Akademii Osteopatii w Krakowie,
+fizjoterapeutka, osteopatka, założycielka kompleksowych gabinetów terapeutycznych
+AnatoMe. Pracuje z małymi pacjentami i doskonale rozumie ich potrzeby. w 2021 roku brała
+udział w procesie powstawania i testowania Innowacji Hop-Hop – mobilny plac zabaw dla
+dzieci z trudnościami motorycznymi.
+Od początku byłam ciekawa tematu terapeutycznych kredek. Pracując z dziećmi, które mają
+duże problemy motoryczne, w tym z motoryką małą, zauważyłam dużą potrzebę narzędzi
+wspierających tę sferę. Nie tylko dzieci z niesprawną kończyną górną, ale też dzieci
+z deficytami motorycznymi wymagają aktywnej pracy.
+Jako mama, 8-letniej Hani z nadpobudliwością ruchową i 4-letniej Amelki z osłabionym
+napięciem mięśniowym, które miały okazję bawić się terapeutycznymi kredkami, mogę
+stwierdzić, że jest to pomocne narzędzie dla każdego dziecka. Dla Hani atrakcyjne było
+turlanie kredki po kartce, ściskanie w rękach, odczuwanie kształtu kredki, zabawa
+w masowanie. Hania jest precyzyjna w rysowaniu. Bawiła się kilkoma kredkami jak
+kuleczkami, kręciła nimi w dłoniach - rozmasowała napięcie - po czym wracała do
+kolorowania. Kredka daje możliwości chwytne, dlatego łatwo układała się w jej palcach.
+Amelka, jak i inni mali pacjenci z osłabieniem mięśniowym muszą wkładać w rysowanie dużo
+siły, dlatego pisanie, rysowanie tradycyjnymi środkami - kredkami czy ołówkami nie jest dla
+
+--- strona 35 ---
+
+nich łatwe. Ergonomiczne wycięcie pozwala na chwycenie kredki w sposób, który ułatwia
+docisk do kartki. Kredki, które dostałam do testowania były wykonane z wosku
+i pozostawiały widoczne ślady podczas rysowania nawet przez dzieci z osłabionym
+napięciem mięśniowym.
+Wydaje mi się jednak, że trudnością może być samo wykonanie kredki i dobór materiałów,
+z których się ją zrobi może zaburzyć jej funkcjonalność, np. ktoś wykona kredkę
+z nieodpowiedniego wosku – nasycenie koloru będzie zbyt małe i wymuszające włożenie
+dużej siły w rysowanie. z drugiej strony aspekt recyklingowy i fakt, że możemy przetopić
+niepotrzebne kredki do zrobienia tych terapeutycznych jest bardzo ciekawy. Może w samych
+rekomendacjach dla rodziców, należy zaznaczyć z jakiego wosku powinni korzystać przy
+wykonywaniu kredek swoim dzieciom. z własnego doświadczenia wiem, że nie wszystkie
+kredki świecowe rysują tak samo i nie wszystkie spełniają oczekiwania dzieci dotyczące
+wyraźnego śladu, który daje flamaster czy farba. Dużą zaletą terapeutycznych kredek jest to,
+że są niewielkie i krótkie dzięki czemu nie kruszą się, nie łamią i nie brudzą.
+Jako fizjoterapeutka, na początku daje dzieciom możliwość wykorzystania zabawki na swój
+sposób – pierwotny. Tak było też w przypadku kredek. Obserwowałam jak zachowa się
+dziecko podczas pierwszego kontaktu z kredką, bez koniecznych instrukcji i tłumaczenia.
+Chciałam zaobserwować spontaniczny, intuicyjny chwyt. Anielka od razu wzięła kredkę
+miedzy palce częścią płaska do dołu i myślała, że w ten sposób zamaluje duże powierzchnie.
+Pokazało to, że od razu szukała możliwości kompensacji, żeby nie korzystać z motoryki
+mniejszej. Sama wykorzystała kredkę do swoich potrzeb. w kolejnym kroku zaczynam
+objaśniać, chwytać narzędzie i pokazywać jak się je wykorzystuje. w ten sposób dzieci uczą
+się przez naśladowanie. Ćwiczenia w rysowaniu zaczynałyśmy od zabaw na czystej kartce –
+rysowanie serduszka, czyli częściowo rysowanie okręgu i linii. Zauważyłam, że Anielka
+podczas korzystania z kredki miała rozluźniony bark i rękę.
+Ciekawą funkcją kredki jest możliwość stymulacji czucia głębokiego – opisane na przykładzie
+Hani. Również dzieci ze spektrum autyzmu wykazują potrzebę dostymulowania. Niestety
+
+--- strona 36 ---
+
+często robią to poprzez wkładanie przedmiotów do buzi. w tym przypadku niewielki rozmiar
+kredki może być dla nich zagrożeniem. Widzę jednak duży potencjał wykorzystania kredek
+w terapii SI, która polega na stałym kontakcie z terapeutą 1:1.
+W przeciwieństwie do motoryki dużej, człowiek nie rodzi się ze zdolnościami motoryki małej,
+która bazuje na neuropatyczności mózgu. Oznacza to, że motoryka mniejsza rozwija się
+środowiskowo. Dbając o chwyt, dając dziecku od początku narzędzia, które może trzymać na
+różne sposoby, wspieramy naturalne procesy. Poprzez powtarzalność takich czynności,
+dziecko rozwija zdolności motoryczne. Motoryka duża to rozwój ruchów globalnych,
+a mniejsza tych precyzyjnych, które wymagają mniejszych narzędzi. Kredka jest idealnym
+środkiem, który poprze zabawę może wspierać rozwój i terapię. Chwyt pisarski wynikający
+z chwytu szczypcowego powinien być rozwijany między 3 a 5 rokiem życia. Istnieje duże
+prawdopodobieństwo, ze kredka będzie pomagała w prostowaniu dłoni dzieci ze
+spastycznością, chociaż nie miałam okazji przetestować jej pod tym kątem. w spastyczności
+ważne jest, aby rozwijać właśnie ruchy globalne idące z całej łopatki - metodyka PNF.
+i właśnie terapeutyczne kredki jako dodatek do pracy globalnej mogłyby się sprawdzić.
+Dostymulowanie poprzez masaże - danie dziecku czegoś do ręki, żeby się bawiło
+i rozlużniało. Supinacja i pronacja nadgarstka to impuls wychodzący właśnie z barku.
+To co wydaje mi się największym utrudnieniem w powstawaniu kredek, to dostęp rodziców
+do technologii – wydruku 3d. Jako rodzic i specjalista widzę zatem alternatywną ścieżkę
+rozwoju tego procesu. Terapeuci, ośrodki terapeutyczne powinny wspomóc rodziców
+poprzez wydrukowanie im szablonu 3d. Często w takich placówkach i szkołach znajdują się
+drukarki. Wystarczy, że rodzice odleją formę i kredki. Rodziców często przeraża ogrom treści
+przekazywanej przez specjalistów, ogrom pracy, ćwiczeń i sprzętu. w tym wypadku
+wystarczyłoby poinstruować rodziców, że można dać kredkę dziecku do rysowania
+i obserwować jego zachowanie. w ten sposób wykonywano by domową terapię poprzez
+przyjemną zabawę.
+
+--- strona 37 ---
+
+Ocena projektu pod kątem zajęć plastycznych z dziećmi
+Ewa Leszczyńska – pedagog, uczestniczyła w szkoleniu terapii iręki, pracuje z podopiecznymi
+Ośrodka Szkolno-Wychowawczego nr 3 w Krakowie, prowadzi z nimi m.in. zajęcia z działań
+twórczych.
+Funkcje kredek i grupa odbiorców
+Ciekawe jest, że dzieci zaczynały chwytać kredkę w sposób intuicyjny lub zupełnie inny niż
+w załączonych graficznych instrukcjach. Niektórzy wymagali pomocy i instruktażu, bo forma
+kredki jest nieoczywista. Tak było w przypadku Antka, który ma zdiagnozowany autyzm
+i każda nieznana sytuacja czy obiekt wzbudza jego frustracje i dezorientację, lecz po kilku
+próbach oswajania z kredkami, bardzo je polubił. Takie działanie jest też nauką radzenia
+sobie z nowymi sytuacjami – tutaj nieszablonowymi sposobami rysowania w przypadku
+dzieci z niepełnosprawnościami.
+W przypadku Maksa, który ma czterokończynowe porażenie mózgowe można było zauważyć
+charakterystyczne łapanie kredki od góry, a dłoń układała się w formę „koszyka” i opadała
+na szeroką część kredki, dzięki czemu cała dłoń była podparta. Możliwość rysowania w taki
+sposób jest dla niego jak najbardziej terapeutyczna i dostępna. Zwykłe kredki nie oferują
+takiej funkcji. Fajnie, że stworzone kredki są gruba i pękate. Maks jest dzieckiem z dużą
+spastycznością dwustronną i próby wkładania kredek między palce nie zawsze należały do
+udanych. Wraz z Marzeną zauważyłyśmy, że w przypadku dzieci z dużym spektrum
+niepełnosprawności dłoni wskazane byłoby, aby część odpowiedzialna za rysowanie
+precyzyjne była dłuższa. Wówczas dzieci z dużą spastycznością i małą mobilnością dłoni
+lepiej radziłyby sobie z rysowaniem kredką między palcami. Projektantka rozwiązania
+wytłumaczyła nam jednak, że wydłużenie kredki spowoduje rezygnację z funkcji chwytu
+pisarskiego, którą jako terapeutka dłoni uważam za bardzo ważną. Coraz więcej dzieci jest
+diagnozowanych w kierunku zaburzeń motoryki małej. Rozwijanie i nauka chwytu
+pęsetowego i pisarskiego jest też istotna w przypadku dzieci z niepełnosprawnościami.
+
+--- strona 38 ---
+
+Terapeutyczne kredki nie wymagają zastosowania adaptacji w postaci nakładek
+umożliwiających lub ułatwiających czynność chwytania.
+Inną odkrytą przez dzieci funkcją było rysowanie całą powierzchnią kredki za pomocą
+przesuwania i toczenia po kartce. Kredka zostawiała wówczas różne abstrakcyjne ślady.
+Niektóre dzieci z niepełnosprawną dłonią, wymagają dużej stymulacji i rozluźnienia ręki,
+dlatego funkcja turlania po papierze czy między dłońmi jest bardzo trafionym
+spostrzeżeniem. Przyrząd daje swobodę ruchu i pobudza sensorycznie.
+Zajęcia z kredkami
+Dzieci biorące udział w testowaniu były w stanie skupić się na danej czynności przez krótki
+czas, co charakteryzuje tę grupę odbiorców. Przeprowadzone kilkukrotnie warsztaty
+z odlewania kredek i wspólnego rysowania gąsienicy były bardzo ciekawe i wprowadziły
+świeżość do codziennych zajęć w ośrodku. Można było zauważyć, że dzieci wykazały duże
+zainteresowanie, biorąc udział w mieszaniu wosku, wlewaniu go do formy i obserwacji jak
+ciało stałe zamienia się w płynne. z kolei w kolorowaniu gąsienicy mogły wziąć udział
+podopieczni z różnych klas – pani Marzeny i innych pedagogów. Dzięki takie współpracy
+wszyscy byli zaangażowani w rysowanie na dużym formacie - co jest wielkim atutem.
+Podczas tego ćwiczenia niektórzy zorientowali się, że kredka ma też funkcje precyzyjnego
+i „szybkiego” rysowania. Szczególnie ta druga była wykorzystywana w wypełnianiu kolorem
+gąsienicy.
+To co ucieszyło dzieci i było dużym bonusem do prowadzonych warsztatów, to że każde
+dziecko dostało w prezencie swój komplet kredek.
+Na jednym ze spotkań dzieci rysowały kredkami po zaproponowanych szablonach: falach,
+mieście i ślimaku. Wszystkie zaproponowane wzory rozwijają kreatywność i umiejętności
+podążania za śladem, wspomagają wykonywanie dużych kolistych ruchów. Fajnie, że
+powstały w formacie A3 – to ułatwia dzieciom rysowanie i wypełnianie rysunków. Przy pracy
+z tymi szablonami nie zwróciłam jednak uwagi na teks – instrukcje, które skierowane były do
+
+--- strona 39 ---
+
+opiekunów. Zlał się on z grafikami na szablonach. Natomiast instrukcje wykonania i zabawy
+z kredkami są przyjemne graficznie i czytelnie. Dobrze, że są składane w mały format –
+można je bez problemu schować do pudełka.
+Cieszymy się, że szkoła dostała zestaw kredek wraz z wydrukiem 3D, formą i szablonami
+i będziemy mogli korzystać z niego podczas zajęć plastycznych. Nasza placówka dysponuje
+drukarką 3D, tak więc w przyszłości będzie możliwe wykonanie kredek. Sama forma kredki
+jak i wszystkie funkcje są bardzo ciekawym rozwiązaniem. Samodzielne wykonywanie kredek
+daje możliwość tworzenia pięknych kolorów, które są atrakcyjne dla dzieci – to one mogą
+wybierać z ilu i jakich kolorów ma się składać kredka.
+Z własnego doświadczenia, nie jestem przekonana czy rodzice zaangażują się w wykonanie
+kredki z dziećmi w warunkach domowych. Wydaje mi się, że projekt znajdzie szerokie
+zastosowanie w szkołach, przedszkolach, ośrodkach specjalnych jako nowatorskie
+i terapeutyczne narzędzie.
+Rekomendacje i zalecenia dla przyszłych użytkowników
+Rekomendacje dotyczące wykonania kredek
+Rozwiązanie jest relatywnie tanie w wykonaniu. Przy założeniu, że korzystamy z odpadów
+woskowych kredek, najdroższym elementem w procesie powstawania jest trójwymiarowy
+model kredki. Posłuży on jednak – jak i sama silikonowa forma do wykonania nieskończonej
+ilości kredek.
+Silikon modelarski najlepiej zakupić przez strony internetowe.
+Do wykonania kredek najlepiej użyć odpadów z naturalnego wosku – pszczelego, sojowego
+lub ryżowego. Dobór tych materiałów zapewni intensywne kolory. Należy zwrócić uwagę czy
+nie topimy kredek z wosku syntetycznego.
+
+--- strona 40 ---
+
+Cały proces wykonania zamyka się w 8 krokach, które szczegółowo są opisane w instrukcji.
+Szczególną ostrożność należy zachować podczas topienia wosku, najlepiej robić to w kąpieli
+wodnej.
+Rekomendacje dotyczące grupy odbiorców
+Testy pokazały, że kredki są atrakcyjnym i terapeutycznym narzędziem dla dzieci:
+•
+z małą, średnią i dużą spastycznością,
+•
+z porażeniem czterokończynowym,
+•
+ze spektrum autyzmu,
+•
+z małym lub dużym napięciem mięśniowym,
+•
+z trudnościami w obszarze motoryki mniejszej,
+•
+z nadpobudliwością ruchową i trudnościami koncentracyjnymi.
+Jeśli narzędzia te mogą być używane przez najbardziej wymagające grupy, znajdą też
+zastosowanie wśród pozostałych odbiorców.
+Podsumowanie
+Edki - terapeutyczne kredki to projekt, który odpowiada na zdefiniowane założenia
+projektowe. Najważniejsze korzyści, jakie daje innowacja to:
+•
+wspomaganie fizjoterapii dłoni,
+•
+umożliwienie rysowanie i działań twórczych dzieciom ze spastyką dłoni,
+•
+dostępność i możliwość do wykonania w każdych warunkach,
+•
+nauka prawidłowego chwytu pisarskiego,
+•
+terapia poprzez zabawę,
+•
+wspomaganie procesów sprawczości i samodzielności.
+Dążenie do samodzielności i usprawnienia dziecka w czynnościach pisania, rysowania,
+malowania i innych działań twórczych jest ważnym celem w terapii niesprawnej kończyny.
+
+--- strona 41 ---
+
+Czynności te są podstawowymi potrzebami dzieci w każdym wieku i wpływają na rozwój
+emocji, wrażliwości, kreatywności oraz komunikowania się ze światem.
+W przypadku Innowacji punktem wyjścia były potrzeby dzieci ze spastyczną kończyną
+i trudnościami motoryki małej, jednakże poprzez jego uniwersalne cechy, z kredek mogą
+korzystać wszyscy. Projekt znajdzie zastosowanie w domach, przedszkolach, szkołach,
+ośrodkach specjalistycznych, gabinetach fizjoterapeutycznych.
+
+Edki-terapeutyczne kredki.
+Załączniki
+1. Dokumentacja fotograficzna prototypów
+2. Graficzna instrukcja wykonania kredek
+3. Specyfikacja techniczna kredek
+4. Szablony do pracy z kredkami
+5. Projekt wzorniczy kredki

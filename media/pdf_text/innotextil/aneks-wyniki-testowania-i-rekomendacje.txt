@@ -1,0 +1,382 @@
+--- strona 1 ---
+
+1 | S t r o n a | A N E K S
+
+Wydział Form Przemysłowych ASP w Krakowie
+Sprawozdanie z etapu
+testowania
+Aneks
+Opracowanie Bożena Groborz
+2019-03-05
+
+--- strona 2 ---
+
+2 | S t r o n a | A N E K S
+
+Spis
+treści
+I. Podsumowanie wyników testowania ................................................................................................... 3
+Osoby testujące ................................................................................................................................... 3
+Pani Barbara .................................................................................................................................... 5
+Pani Teresa ...................................................................................................................................... 8
+Pan Andrzej I .................................................................................................................................. 11
+Pan Andrzej II ................................................................................................................................. 14
+II. Zakres zmian/braku zmian wynikających z procesu testowania w odniesieniu do początkowej wersji
+modelu ................................................................................................................................................... 16
+III. Rekomendacje do przygotowania modelu opracowane na podstawie wyników testowania ........... 17
+IV. Wskazania dotyczące sposobu użytkowania projektu „Innotextil”, uzyskane na podstawie
+technologicznego i użytkowego procesu testowania ............................................................................. 18
+V. Informacje przydatne dla osób zależnych i opiekunów używających Innotextil ............................. 19
+VI. Dokumentacja zdjęciowa ................................................................................................................ 20
+
+--- strona 3 ---
+
+3 | S t r o n a | A N E K S
+
+I. Podsumowanie wyników testowania
+Testowanie produktu przyniosło rezultaty odbiegające od założeń postawionych na początku projektu.
+Zgodnie z nimi oczekiwaliśmy, że spodnie będą pomagać w monitorowaniu i wspomaganiu procesu
+rehabilitacji w większości sytuacji kiedy schorzenie wpływa na zburzenie wzorca chodu. Wyniki testów
+pokazały że spodnie z zastosowanymi czujnikami najlepiej sprawdziły się w przypadku osoby ze scho-
+rzeniem stawu kolanowego (po założeniu endoprotezy stawu kolanowego). W przypadku pozostałych
+osób gdzie zaburzenia wzorca chodu są wynikiem innych schorzeń, wyniki pomiarów wykazywały dys-
+proporcję w wykresach dla nogi prawej i lewej, jednak wyniki były trudniejsze do zinterpretowania.
+Osoby testujące
+Testowaniu podane zostały 4 osoby (pełne dane osobowe znajdują się w ankietach):
+osoba
+Barbara
+wiek
+74 lata
+Problem
+zdrowotny
+Po zabiegu wstawienia endoprotezy stawu kolanowego (2017)
+Rehabilitacja
+Korzysta doraźnie z programów rehabilitacyjnych
+Aktywność
+fizyczna
+Sprawna, stara się być aktywna,
+Przede wszystkim dożo chodzi, stara się zrobić ok. 10 000 kroków
+dziennie
+Stosunek do
+nowych technolo-
+gii
+Używa smartfona, zdaje sobie sprawę, że nie ma odwrotu od rozwoju
+technologii;
+Z aplikacji w telefonie nie korzysta zbyt dużo, używa krokomierza;
+używa komputera, obsługuje bankowość elektroniczną;
+inne
+Osoba samotna, ma dodatkową motywację w utrzymywaniu sprawno-
+ści fizycznej – chce być jak najdłużej samodzielna
+
+osoba
+Teresa
+wiek
+74 lata
+Problem
+zdrowotny
+Po złamaniu biodra prawego
+Rehabilitacja
+W trakcie rehabilitacji domowej, wybiera się na rehabilitację chociaż
+równocześnie lekarz jest zaskoczony szybkim powrotem do niemal
+pełnego zdrowia;
+Aktywność
+fizyczna
+Aktywna, opiekuje się chorym mężem, stara się chodzić, pewien pro-
+blem stanowią schody; jeździ samochodem; przed złamaniem jeździła
+sporo na rowerze i hulajnodze;
+Stosunek do
+nowych technolo-
+gii
+Chętnie używa komputera, smartphona, jest otarta na różne nowinki
+technologiczne, używała krokomierza;
+inne
+Osoba bardzo ruchliwa, aktywna, nie lubi siedzieć w domu
+
+osoba
+Andrzej I
+wiek
+66 lat
+Problem
+zdrowotny
+Po porażeniu czterokończynowym spowodowanym ropnym zapale-
+niem opon mózgowo-rdzeniowych (przełom septyczny, ok. 3 mie-
+sięczna śpiączka) w 2014 r, obecnie sprawny i samodzielny, utyka ze
+względu na opadającą stopę;
+Rehabilitacja
+Pozostaje w regularnym kontakcie z rehabilitantem, codziennie wyko-
+nuje ćwiczenia zalecone przez rehabilitanta;
+Aktywność
+fizyczna
+Codziennie ćwiczy – ok. 2-3 godzin, chodzi na zajęcia pilates, strea-
+ching, gimnastyka uelastyczniająca, siłownia; chodzi mniej ok. 3000
+
+--- strona 4 ---
+
+4 | S t r o n a | A N E K S
+
+kroków dziennie, chyba, że jest na „wyjeździe” albo nie ma samo-
+chodu – wtedy nawet do 20 000 kroków.
+Stosunek do
+nowych technolo-
+gii
+Z jednej strony krytykuje przywiązanie innych osób do smartfona i
+„tęskni” za starą Nokią, z drugiej bardzo szybko nauczył się korzystać
+z licznika kroków, Skype’a, WhatsUp, Skycash, z internetu i poczty w
+telefonie.
+inne
+Entuzjasta nowych rozwiązań technologicznych zwłaszcza wspoma-
+gających rehabilitację; wciąż szuka sposobu na poprawę stanu lewej
+nogi; marzy o powrocie na narty – próbował, ale miał problem ze skrę-
+tem i kontrolowaniem lewej nogi;
+
+osoba
+Andrzej II
+wiek
+65 lat
+Problem
+zdrowotny
+Nieokreślony problem z biodrem oddziałowujący na … nogę,
+otyłość
+Rehabilitacja
+Korzysta doraźnie
+Aktywność
+fizyczna
+Aktywność niska, chodzi niechętnie raczej jest to związane z wagą i
+faktem, że szybko się męczy; lubi jeździć na nartach, każdego roku
+jeździe z przyjaciółmi do Austrii lub Włoch
+Stosunek do
+nowych technolo-
+gii
+Trochę „gadżeciarz” zwłaszcza w dziedzinie sprzętu fotograficznego i
+odtwarzania muzyki, używa Iphona, korzysta z social media,
+inne
+Lubi podróżować, wypoczywać na plaży i w ciepłych miejscach
+
+Podczas testów zapisanych zostało blisko 70 pomiarów zawierających od. Ok. 300-15000 próbek każdy.
+
+--- strona 5 ---
+
+5 | S t r o n a | A N E K S
+
+Pani Barbara
+Ze względu na przyczyny zaburzenia chodu wykresy mają różny charakter. Zrzuty ekranu 1-6 pokazują
+wykresy dla chodu Pani Barbary. Wzorzec chodu jest tu prawidłowy, za to wyraźnie wdać, że prawa
+noga (zielona linia) nie osiąga takiego zgięcia w kolanie jak noga lewa. Testy prowadzone były podczas
+spaceru po płaskim i dość równym terenie. Wykresy nie zmieniały się w trakcie, również dzięki wzmoc-
+nieniu zamocowania czujników oraz dobrym dopasowaniu do ciała.
+
+1.
+
+2.
+
+--- strona 6 ---
+
+6 | S t r o n a | A N E K S
+
+3.
+
+4.
+
+--- strona 7 ---
+
+7 | S t r o n a | A N E K S
+
+5.
+6.
+
+--- strona 8 ---
+
+8 | S t r o n a | A N E K S
+
+Pani Teresa
+Wykresy 7- 11 pokazują wzorzec chodu pani Teresy. Wszystkie testy wykonywane były w różnych
+odstępach czasowych. Wykresy mają podobny kształt i wynika z niego, że ugięcie kolan ma podobny
+zakres. Pozorna różnica w wartościach kąta pomiędzy kolejnymi rysunkami wynika z faktu przemiesz-
+czenia się czujników w stosunku do stawu kolanowego – spodnie były niewystarczająco opięte.
+
+7.
+8.
+
+--- strona 9 ---
+
+9 | S t r o n a | A N E K S
+
+9.
+10.
+
+--- strona 10 ---
+
+10 | S t r o n a | A N E K S
+
+11.
+
+--- strona 11 ---
+
+11 | S t r o n a | A N E K S
+
+Pan Andrzej I
+Wykresy 12- 16 pokazują chód Andrzeja I. Porównanie wykresów z nakręconymi filmami, które pod-
+dano analizie w programie KINOVEA potwierdziło, że Andrzej nie do końca prostuje prawą nogę. Jest
+to wynik słabszego podparcia na nodze lewej i skracaniu tej fazy ruchu. Dysproporcje nasilają się w
+przypadku chodzenia po ternie trudniejszym (np. „z górki”, po schodach).
+Wykresy 12-13. Pokazują wykresy chodu po równej podłodze wewnątrz budynku (podczas spotkań
+związanych z dopracowywaniem systemu i kalibracją sprzętową). Wykresy 14-16. Pochodzą z testów
+prowadzonych na zewnątrz.
+
+12.
+13.
+
+--- strona 12 ---
+
+12 | S t r o n a | A N E K S
+
+14.
+15.
+
+--- strona 13 ---
+
+13 | S t r o n a | A N E K S
+
+16.
+15-16. Wykresy podczas przemieszczania się po drodze nachylonej (w dół)
+
+--- strona 14 ---
+
+14 | S t r o n a | A N E K S
+
+Pan Andrzej II
+Pomiary nie zostały przeprowadzone w pełni ponieważ podczas testów uszkodzony został jeden z prze-
+wodów, w skutek czego pomiary rejestrował jeden czujnik.
+
+--- strona 15 ---
+
+15 | S t r o n a | A N E K S
+
+--- strona 16 ---
+
+16 | S t r o n a | A N E K S
+
+II. Zakres zmian/braku zmian wynikających z procesu testowania w odnie-
+sieniu do początkowej wersji modelu
+W procesie testowania zaobserwowaliśmy konieczność wprowadzenia następujących zmian:
+1. Wzmocnienie mocowania czujników w tunelach. Czujniki, mimo zastosowania elastycznych
+taśm przewodzących, mają „skłonność” do wysuwania się podczas chodzenia. Każdy z nich
+należy zamocować na stałe – „zaszywając” je w tunelu.
+2. Wprowadzona została korekta oprogramowania umożliwiająca import plików do word’a.
+
+--- strona 17 ---
+
+17 | S t r o n a | A N E K S
+
+III. Rekomendacje do przygotowania modelu opracowane na podstawie wy-
+ników testowania
+Przeprowadzone testy pokazały, że mimo mniejszej niż początkowo zakładano dokładności pomiarów,
+projekt INNOTEXTIL spełnia swoje założenia. Spodnie z czujnikami pozwalają na obserwowanie na
+bieżąco wzorca chodu, zbieranie danych w dłuższym okresie czasu, porównywanie ich i obserwowanie
+postępów (lub ich braku) w rehabilitacji.
+Ze względu na rodzaj zastosowanych czujników spodnie najlepiej sprawdzą się w przypadku schorzeń
+bezpośrednio wpływających na zakres ruchu stawu kolanowego – np. po operacjach wstawienia endo-
+protezy kolana lub innych, w przypadku których rehabilitacja wiąże się ze stopniowym zwiększaniem
+zakresu ruchu.
+W takiej sytuacji urządzenie może pomóc poprzez zobrazowanie co oznacza zwiększenie zakresu ruchu
+np. o 20% Równocześnie obserwowanie postępów w rehabilitacji stanowi znaczną motywację do dal-
+szego wykonywania ćwiczeń. Może też stanowić rodzaj „uspokajacza” że ćwiczenie wykonywane jest
+prawidłowo.
+Pewnym problemem jest stosunek osób starszych do nowych technologii. Znaczna motywacją jest chęć
+poprawy swojego stanu zdrowia. Większość osób testowanych uważała się za zdrową i w pełni sprawną,
+dlatego testowanie urządzenia było dla nich swego rodzaju ciekawostką, interesującym doświadcze-
+niem. W przypadku gdy osoba testująca stara się zmniejszyć swoja niepełnosprawność (Andrzej I), jej
+zainteresowanie urządzeniem i zaangażowanie w testowanie było znacznie większe. Wiąże się to z na-
+dzieją, że urządzenie pomoże lepiej wykonywać ćwiczenia i wykrywać popełniane błędy, a co za tym
+idzie przyczyni się do poprawy prawności. Ze strony tego testującego jest deklaracja dalszego używania
+urządzenia, łącznie z próbą testowania podczas jazdy na nartach.
+Biorąc pod uwagę że do grupy 65+ dołączają kolejne roczniki, których stosunek do nowych technologii
+jest radykalnie inny, można oczekiwać, że problem związany z obsługą tego typu urządzeń bardzo
+szybko się zmniejszy.
+Opinia fizjoterapeuty (mgr Paweł Wójciak)
+Wykorzystane do badań legginsy z wbudowanym czujnikiem pomiaru ruchu z pewnością mogą być
+pomocne do monitorowania postępów rehabilitacji. Będą szczególnie przydatne u osób, które mają pro-
+blem z pełną ruchomościom stawów kolanowych jakie występują np. po rekonstrukcji ACL, endopro-
+tezoplastyce stawu kolanowego, zaburzeniom balansu mięśniowego w obrębie kończyn dolnych.
+Dzięki zainstalowanemu czujnikowi istnieje możliwość funkcjonalnego badania ruchomości stawów
+kolanowych zarówno podczas wykonywania prostych ćwiczeń fizycznych, chodu po prostej na-
+wierzchni, jak i w bardziej wymagających warunkach (np. schody, piesze wędrówki po górach).
+
+--- strona 18 ---
+
+18 | S t r o n a | A N E K S
+
+IV. Wskazania dotyczące sposobu użytkowania projektu „Innotextil”, uzy-
+skane na podstawie technologicznego i użytkowego procesu testowania
+Spodnie z czujnikami najlepiej sprawdzą się w przypadku osób, które prowadzą rehabilitację kolana a
+jej celem jest stopniowe zwiększanie zakresu ruchu kolana. Czujniki zbierają dane dość precyzyjnie,
+jednak należy pamiętać, że inne ich ułożenie w stosunku do osi kolana powoduje mniej dokładny po-
+miar.
+Należy zawsze zwracać szczególną uwagę na właściwe ułożenie czujników na kolanie. Czujnik powi-
+nien być umieszczony centralnie w stosunku do obu kolan. Powinien znajdować się na tej samej wyso-
+kości na obu kolanach i tak samo wyśrodkowany. Wówczas oprócz informacji porównującej pracę obu
+kolan względem siebie, uzyskujemy informację o kątach pod jakimi zginane są kolana.
+Ważne jest również dobre dopasowanie spodni do rozmiaru osoby, która będzie je nosić. Spodnie po-
+winny być mocno dopasowane – zapobiegnie to przemieszczaniu się czujników w trakcie chodzenia.
+Spodnie można prać ręcznie, wcześniej należy odłączyć jednostkę sterującą. Podczas prania należy uwa-
+żać na złączki i czujniki.
+
+--- strona 19 ---
+
+19 | S t r o n a | A N E K S
+
+V. Informacje przydatne dla osób zależnych i opiekunów używających Inno-
+textil
+Urządzenie może wesprzeć proces rehabilitacji przede wszystkim poprzez dostarczenie obiektywnych
+informacji o parametrach pracy kolan. Dzięki temu można nie tylko kontrolować postępy w powrocie
+do zdrowia ale również zaobserwować pojawiające się zmiany w funkcjonowaniu narządu ruchu.
+
+--- strona 20 ---
+
+20 | S t r o n a | A N E K S
+
+VI. Dokumentacja zdjęciowa
+
+--- strona 21 ---
+
+21 | S t r o n a | A N E K S
+
+--- strona 22 ---
+
+22 | S t r o n a | A N E K S
+
+--- strona 23 ---
+
+23 | S t r o n a | A N E K S
+
+--- strona 24 ---
+
+24 | S t r o n a | A N E K S
+
+--- strona 25 ---
+
+25 | S t r o n a | A N E K S
+
+--- strona 26 ---
+
+26 | S t r o n a | A N E K S
+
+--- strona 27 ---
+
+27 | S t r o n a | A N E K S
+
+--- strona 28 ---
+
+28 | S t r o n a | A N E K S
+
+--- strona 29 ---
+
+29 | S t r o n a | A N E K S
+
+--- strona 30 ---
+
+30 | S t r o n a | A N E K S
+
+--- strona 31 ---
+
+31 | S t r o n a | A N E K S

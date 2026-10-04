@@ -1,0 +1,951 @@
+--- strona 1 ---
+Uniwersytet Medyczny Im. K. Marcinkowskiego w Poznaniu
+REKOMENDACJE DLA RODZICÓW:
+„AuTyzm i Ja”
+Poznań 2021
+
+--- strona 2 ---
+Zespół badaczy i naukowców
+z Uniwersytetu Medycznego
+w Poznaniu pod kierunkiem
+dr n. o zdr. Anny Kostiukow
+Poznań 2021
+
+--- strona 3 ---
+Innowacja Społeczna pn.
+„AuTyzm i Ja”
+w ramach Projektu grantowego: Inkubator Dostępności, współfinansowanego
+ze środków Europejskiego Funduszu Społecznego w ramach Programu
+Operacyjnego Wiedza Edukacja Rozwój 2014-2020, oś Priorytetowa IV Innowacje
+społeczne i współpraca ponadnarodowa, Działanie 4.1 Innowacje społeczne,
+współfinansowanego ze środków Europejskiego Funduszu Społecznego.
+Rekomendacje DLA RODZICÓW / OPIEKUNÓW dotyczące edukacji przedszkolnej
+i wczesnej interwencji osób ze spektrum autyzmu i innymi zaburzeniami
+neurorozwojowymi.
+Uniwersytet Medyczny Im. K. Marcinkowskiego w Poznaniu
+Poznań, 2021 r.
+1
+
+--- strona 4 ---
+2
+
+--- strona 5 ---
+1. Spis treści
+1. Wstęp_______________________________________________________________________5
+1.1. Autyzm_________________________________________________________________5
+1.2. Obraz kliniczny dziecka ze spektrum autyzmu_____________________________8
+1.3. Zaburzenia integracji sensorycznej_ _____________________________________10
+1.4. Osoby z ASD, niepełnosprawnością sensoryczną oraz innymi
+zaburzeniami neurorozwojowymi w przestrzeni przedszkolnej_ ____________12
+2. Wytyczne dla rodziców______________________________________________________14
+3. Elektroniczny Dzienniczek Obserwacji Dziecka (EDOD)________________________20
+4. Podsumowanie_____________________________________________________________27
+5. Literatura___________________________________________________________________28
+3
+
+--- strona 6 ---
+4
+
+--- strona 7 ---
+1. Wstęp
+1.1. Autyzm
+Autyzm definiowany jest jako całościowe zaburzenie neurorozwojowe. Obraz
+osoby ze spektrum z racji różnorodności, jaką się cechuje, może być różny
+w zależności od występujących objawów oraz ich nasilenia.
+Klasyfikacja diagnostyczna DSM V wyróżnia następujące deficyty:
+•
+zaburzenia komunikacji społecznej i interakcji,
+•
+ograniczone, powtarzalne wzorce zachowań, zainteresowań
+i aktywności.
+Często wiążą się z tym również choroby współistniejące, które także mogą
+utrudniać funkcjonowanie. Objawy autyzmu są znane, natomiast powód ich
+występowania nie [1].
+Na całym świecie prowadzone są badania na temat przyczyn występowania
+autyzmu. Coraz częściej mówi się o wieloczynnikowym pochodzeniu,
+podkreślając wagę czynników środowiskowych.
+Wskazuje się, iż wpływ może mieć:
+•
+genetyka,
+•
+aspekt biologiczny,
+•
+aspekt odpornościowy,
+•
+aspekt psychospołeczny [2],
+Wśród przyczyn środowiskowych znaczenie mogą mieć np.:
+•
+pestycydy,
+•
+ołów,
+•
+metylo-rtęć,
+•
+spaliny samochodowe,
+•
+inne substancje zaburzające pracę układu hormonalnego [3].
+5
+
+--- strona 8 ---
+Dla rozwoju płodu, a konkretnie układu nerwowego bardzo ważna jest
+witamina D. Zaleca się suplementację tej witaminy kobietom w ciąży.
+Jej niedobór może skutkować licznymi problemami neurorozwojowymi,
+w tym wymieniany jest autyzm [4, 5].
+Diagnostyka autyzmu opiera się na obserwacji klinicznej dziecka. Brak jest
+precyzyjnego narzędzia, które wskazałoby zaburzenie lub je definitywnie
+wykluczyło. Trudności w rozpoznawaniu ASD (Zaburzenia ze spektrum
+autyzmu) wynikają również z różnorodnego obrazu pacjentów. Osoby
+z tą samą diagnozą mogą prezentować bardzo różny obraz funkcjonowania
+w codziennym życiu [6]. Niezbędne jest interdyscyplinarne podejście.
+Diagnoza kliniczna jest wynikiem obserwacji, testów, kwestionariuszy i analiz.
+Wywiad z rodziną dostarcza dużo informacji, natomiast jest jedynie jednym
+z elementów składających się na zdefiniowanie rozpoznania u pacjenta [7].
+Kolejnym etapem jest analiza potencjalnej przyczyny wystąpienia autyzmu.
+U około 30% pacjentów wiązane jest to z czynnikami genetycznymi. Ryzyko
+wystąpienia zaburzenia u krewnych I stopnia jest 20-krotnie większe. Jeśli chodzi
+o bliźnięta monozygotyczne to prawdopodobieństwo wynosi 80%. Istotne
+jest również przeprowadzenie wywiadu na temat chorób matki w przebiegu
+ciąży. Szczególnie ważne są informacje na temat wystąpienia niedoczynności
+tarczycy, cukrzycy, nadciśnienia tętniczego oraz anemii. Istotne są notatki
+na temat infekcji, obecności tytoniu, czy też przyjmowanych przez mamę leków
+w ciąży. Wywiad okołoporodowy skupia się wokół urodzeniowej masy ciała,
+ilości uzyskanych punktów w skali Apgar, ułożenia dziecka, jak i innych np.
+żółtaczki [8].
+W Polsce autyzm jest diagnozowany średnio w 3. – 4. roku życia [6]. Bardzo
+ważne jest wczesne jego wykrycie ze względu na szybsze wdrożenie leczenia.
+Wczesne wspomaganie skutkować będzie lepszym rokowaniem pacjentów
+oraz poprawą jakości ich życia.
+6
+
+--- strona 9 ---
+Istotne w procesie diagnostycznym jest różnicowanie autyzmu z innymi
+zaburzeniami, w których obraz kliniczny pacjenta jest zbliżony do ASD.
+Warto wówczas uwzględnić schizofrenię, której objawy mogą pokrywać
+się z autyzmem. Zgodnie z DSM-V wśród objawów autyzmu wymienia się
+wycofanie społeczne, zawężony obszar zainteresowań oraz deficyty w obszarze
+komunikacji, podczas gdy, zgodnie z tą samą klasyfikacją schizofrenia
+charakteryzuje się: nietypowymi zachowaniami, chaotycznym myśleniem,
+niezorganizowaniem, halucynacjami oraz złudzeniami [9].
+Trudność diagnostyczna może również pojawić na etapie określenia nasilenia
+cech autystycznych. Zespół Aspergera określany również jako „autyzm
+wysokofunkcjonujący” przejawia bardzo podobne cechy, jednak ich nasilenie
+jest znacznie niższe niż w przypadku autyzmu [10].
+7
+
+--- strona 10 ---
+1.2. Obraz kliniczny dziecka ze spektrum autyzmu
+Określenie „spektrum” autyzmu nawiązuje do „spektrum” objawów, które
+mogą występować u osób z ASD.
+Już w 6. miesiącu życia zauważyć można niepokojące objawy. Manifestują się
+one:
+•
+brakiem interakcji w zabawie,
+•
+niewystępowaniem uśmiechu społecznego,
+•
+brakiem lub epizodycznym kontaktem wzrokowym,
+•
+nieprawidłowym zachowaniem w sytuacjach społecznych.
+W wieku 8 / 10 miesięcy dziecko nie reaguje zwykle na imię.
+Do 12. miesiąca nie występuje intencyjność, zainteresowanie drugim
+człowiekiem ani zaangażowanie w nawiązanie interakcji.
+Między l., a 2. rokiem życia zaniepokoić może brak reakcji na gesty społeczne
+(np. „pa, pa”) wynikające z niezrozumienia ich przez dziecko. Ponadto
+w tym przedziale wiekowym dziecko nie wodzi wzrokiem za interesującym
+przedmiotem czy osobą.
+W drugim roku życia deficyty są już wyraźnie zauważalne, są to np.:
+•
+brak spontaniczności w reakcji na bliskie osoby,
+•
+trudności w ekspresji uczuć,
+•
+deficyt gestykulacji intencyjnej,
+•
+brak myślenia abstrakcyjnego i wchodzenia w interakcje
+z rówieśnikami,
+•
+brak umiejętności zabawy polegającej na udawaniu [11],
+Pojawiać się mogą również bardzo trudne zachowania niepożądane. Jednym
+z nich są zachowania agresywne. Może to być autoagresja lub zachowanie
+skierowane do innych osób. U starszych dzieci zdarza się, iż w skrajnych
+przypadkach dochodzi do prób samobójczych [12],
+8
+
+--- strona 11 ---
+W zakresie integracji sensorycznej często autyzm związany jest z dyspraksją,
+która definiowana jest jako zaburzenie koordynacji ruchowej. 86,9% osób
+z autyzmem narażone jest na występowanie upośledzenia ruchowego [13].
+Dyspraksja charakteryzuje się trudnościami w planowaniu motorycznym,
+dzieci często nie mają pomysłu jak wykonywać różne czynności.
+Charakteryzują się niezbornością ruchową.
+Problemy żołądkowo-jelitowe dotyczą ponad 80% dzieci z autyzmem.
+Przejawiać się mogą odmawianiem jedzenia, szybkim konsumowaniem,
+wystąpieniem wymiotów oraz problemów z przeżuwaniem [14], U 64,1% osób
+występuje nadwaga [15]. Trudności w wykrywaniu tych zaburzeń wiążą się
+z utrudnioną komunikacją [6]. Problemy żywieniowe mogą oddziaływać
+na ogólne zachowanie osób z autyzmem, zatem przy poszukiwaniu przyczyn
+nieprawidłowych zachowań należy zwrócić uwagę na diagnostykę
+w kierunku wystąpienia problemów gastroenterologicznych.
+Kolejną przeciwnością z jaką boryka się spora część dzieci z autyzmem
+są zaburzenia snu. Szacuje się, że dotyczy od 44 do 86% osób z ASD.
+Skutkować mogą nieprawidłowymi zachowaniami w ciągu dnia [16].
+Zmniejszenie przesypianych godzin w nocy przyczyniać się może do deficytów
+społecznych, stereotypowych zachowań [17],
+Osoby z autyzmem narażone są również na problemy psychiczne. Przejawiają
+się one upośledzeniem funkcjonowania intelektualnego, depresją czy też
+zaburzeniami lękowymi [18], Pojawić się też mogą zaburzenia obsesyjno-
+kompulsyjne [19], Bardzo ważne jest zrozumienie oraz okazanie wsparcia
+rodzinie [20].
+Około 40% osób z autyzmem ma zaburzone mechanizmy odpornościowe
+[21], a wśród chorób współwystępujących często wymienia się padaczkę.
+Występuje ona znacznie częściej w populacji osób z autyzmem w porównaniu
+z osobami neurotypowymi [22].
+9
+
+--- strona 12 ---
+Zaburzenia integracji sensorycznej dotyczą około 90% osób z autyzmem.
+Są jednym z obszarów diagnostycznych. U wielu osób występuje nadwrażliwość
+dotykowa [23]. Często również nadwrażliwość występuje w obszarze słuchowym.
+Objawiać się może irytacją na głośne, specyficzne dźwięki [24],
+1.3. Zaburzenia integracji sensorycznej
+Definicją integracji sensorycznej jest organizacja wrażeń zmysłowych
+w taki sposób, aby reakcja organizmu była odpowiednia do bodźca. Ten
+neurofizjologiczny proces warunkuje odpowiednią reakcję motoryczną,
+behawioralną, emocjonalną oraz proces koncentracji [25].
+Początek rozwoju integracji sensorycznej sięga okresu prenatalnego. Prawidłowe
+odbieranie oraz przetwarzanie wrażeń sensorycznych warunkuje prawidłowy
+rozwój psychoruchowy dziecka. Zdobywanie kolejnych „kamieni milowych”
+jest możliwe przy spełnieniu pewnych warunków, wśród których wymienia się
+prawidłową organizację układu nerwowego [26]. Problemy w skupieniu, uczeniu
+się, czy też negatywne wyniki w przedszkolu/szkole mogą być silnie powiązane
+z zaburzeniami SI (ang. Sensory Integration – SI) [24].
+Wymienia się wiele przyczyn występowania zaburzeń integracji sensorycznej.
+Rozpoczynając od najwcześniejszego okresu życia u około 50% dzieci urodzonych
+przedwcześnie w wieku <30 tygodnia odkryto problemy w obszarze przetwarzania
+sensorycznego [27], Wcześniactwo jest poważnym zagrożeniem w kontekście
+zaburzeń SI. Przyjście na świat przed 38. tygodniem ciąży skutkuje tym, że dziecko
+nie jest przygotowane na warunki panujące poza organizmem matki. Ponadto
+pojawiają się hipotezy, iż związek ten może wynikać z przebywania w inkubatorze
+na oddziale, dłuższego czas przebywania na OlOMie po porodzie, jak i dłuższego
+okresu intubacji [24]. Bardzo ważne w poszukiwaniu przyczyn wystąpienia
+nieprawidłowości w obszarze sensorycznym jest wywiad okołoporodowy,
+szczególnie sposób porodu. Zmysł dotyku i propriocepcji ma szczególne znaczenie
+w prawidłowym rozwoju mózgu, dlatego znacznie bardziej pożądanym sposobem
+10
+
+--- strona 13 ---
+rozwiązania ciąży jest poród fizjologiczny, w porównaniu do cesarskiego cięcia.
+Przejście przez kanał rodny dostarcza pierwszych, bardzo istotnych bodźców.
+Kształtuje również odporność oraz dojrzałość emocjonalną. Dzieci, które przyszły
+na świat poprzez cesarskie cięcie narażone są na występowanie zaburzeń
+koordynacji, problemy z koncentracją uwagi, orientacją przestrzenną, pojawiać
+się może niezgrabność ruchowa oraz zaburzenia integracji sensorycznej [28].
+Terapia integracji sensorycznej opiera się o zabawę. Nie są to jednak przypadkowe
+aktywności, a są one zainicjowane przez dziecko, ale prowadzone przez terapeutę
+czynności. Szczególnie ważne są tutaj układy: przedsionkowy, proprioceptywny
+oraz dotykowy [29]. Na początku terapii należy kłaść nacisk na kanał sensoryczny,
+który funkcjonuje najlepiej. Terapeuta powinien bacznie obserwować dziecko
+oraz aktywności, które podejmuje najchętniej (będą wskazywały na potrzebę
+stymulacji w tych obszarach), a następnie w oparciu o nie budować całe
+spotkanie. Początek wizyty warto zacząć od zabaw, które będą budowały
+relację dziecko-terapeuta. Bardzo ważne jest zrozumienie celu terapii. Integracja
+Sensoryczna wpływa na Ośrodkowy Układ Nerwowy (OUN) oraz funkcje
+rozwojowe, nie polega na wypracowywaniu konkretnych umiejętności, z którymi
+przychodzi rodzic [30],
+Warto wspomnieć w kontekście integracji sensorycznej o „diecie sensorycznej”,
+którą wprowadziła Willbarger. Od jej nazwiska technikę określa się „masażem/
+szczotkowaniem Willbarger”. Oznacza to dostarczanie zoptymalizowanych
+pod kątem ilości jak i jakości wrażeń zmysłowych. Należy zaspokajać potrzeby
+sensoryczne dziecka, natomiast nie pozwolić, aby dziecko się rozregulowało ich
+nadmiarem [29].
+Poniżej schemat przedstawiający podział zaburzeń integracji sensorycznej (Ryc.1)
+11
+
+--- strona 14 ---
+Ryc. 1. Schematyczne przedstawienie Zaburzeń Przetwarzania Sensorycznego [25]
+1.4. Osoby z ASD, niepełnosprawnością sensoryczną oraz
+innymi zaburzeniami neurorozwojowymi w przestrzeni
+przedszkolnej
+Badania ankietowe przeprowadzone na potrzeby napisania tego przewodnika
+dostarczają informacji, iż 100% ankietowanych uważa, że zaburzenie ze spektrum
+autyzmu wpływa na funkcjonowanie w przestrzeni przedszkolnej. Wszyscy
+respondenci opowiedzieli się również za tym, iż zaburzenia integracji sensorycznej
+dotyczą grupy ich podopiecznych. W przypadku osób z autyzmem szczególnie
+ważne jest indywidualne dopasowanie do potrzeb dziecka zarówno terapii,
+miejsca jak i podejścia.
+Funkcjonowanie mózgu u dzieci z ASD zmienia się w ciągu pierwszych 2 lat,
+prawdopodobnie w wyniku dynamicznej interakcji między neurobiologicznymi
+procesami i skutkami nietypowych procesów rozwojowych. Podkreśla to znaczenie
+wczesnego dostępu do interwencji, jak i jej potrzeby w celu zajęcia się aspektami
+12
+
+--- strona 15 ---
+rozwoju. Plastyczność mózgu zmniejsza się wraz z wiekiem. Bardzo ważne jest
+zatem nieustanne stosowanie terapii [31], Uważa się, że te zaburzenia mają
+negatywny wpływ na dalszy rozwój mózgu i zachowania. Wczesne intensywne
+interwencje mogą pomóc wpłynąć na poprawę rozwoju społecznego i inne
+czynniki ryzyka, a tym samym złagodzić deficyty związane z ASD [32],
+Dzieci z autyzmem są bardziej narażone na ciągłe trudności z czytaniem
+w porównaniu z osobami neurotypowymi. Zbadano, czy umiejętności czytania
+w wieku przedszkolnym są powiązane z późniejszą jej zdolnością. Wykonanie
+zadań w przedszkolu pozwalało na przewidywanie, które dzieci w pierwszym roku
+szkoły odnosiły sukcesy w czytaniu (słownictwo, pisanie imion i szybkie nazywanie
+znajomych przedmiotów i kształtów). Wyniki te mogą stanowić podstawę
+przyszłych interwencji [33].
+Zainteresowanie społeczne i problemy behawioralne mają kluczowe znaczenie
+dla wczesnego rozwoju funkcjonowania adaptacyjnego dzieci z autyzmem [34],
+Wczesna interwencja ukierunkowana na umiejętności językowe i motoryczne może
+poprawić późniejsze osiągnięcia w tej populacji [35],
+Wyniki podkreślają znaczenie rozważenia aspektów medycznych u wszystkich
+małych dzieci z ASD oraz potrzebę indywidualizacji i dostosowania interwencji
+do ich konkretnych potrzeb [36]. Wyniki sugerują, że ważne jest skoncentrowanie
+się na interwencjach wpływających indywidualnie na każdego pacjenta zamiast
+prób znalezienia uniwersalnego leczenia / terapii dla dzieci z ASD [37].
+13
+
+--- strona 16 ---
+2. Wytyczne dla rodziców
+Dzieci z zaburzeniami ze spektrum wymagają specjalnego wsparcia,
+zarówno w domu, jak i w placówce oświatowej. Poniżej przedstawione
+zostały informacje na temat funkcjonowania osób z ASD dla rodziców dzieci
+ze spektrum autyzmu.
+Do zapamiętania:
+1. Zamiennie stosuje się określeń „autyzm” i „spektrum autyzmu”.
+2. Dzieci z diagnozą ze spektrum mają nieprawidłowości w każdej sferze
+funkcjonowania.
+3. Przyczyny występowania autyzmu są złożone - genetyczne oraz
+niegenetyczne.
+4. Autyzm nie jest chorobą, a zaburzeniem rozwojowym.
+5. Mimo to, niemal wszystkie osoby z tym zaburzeniem, posiadają choroby
+współistniejące.
+6. Spośród nieprawidłowości funkcjonowania organizmu dziecka
+z autyzmem, najczęstszymi są zaburzenia żołądkowo-jelitowe (inaczej
+nazywane gastroenterologicznymi).
+7. Wraz z problemami gastroenterologicznymi zazwyczaj występują
+problemy ze spaniem, z wybiórczością pokarmową, z agresją
+i autoagresją.
+8. Istnieje udowodniony naukowo związek ze stanem jelit dziecka
+a występowaniem zachowań niepożądanych. Dlatego, jeśli Twoje
+dziecko ma problem z kontrolą zachowania, udaj się również
+na diagnostykę funkcjonowania jelit.
+9. Wraz z autyzmem mogą współwystępować choroby i dolegliwości natury
+psychicznej. Spośród najczęściej współwystępujących jest ADHD.
+10. Spośród nieprawidłowości funkcjonowania organizmu dziecka,
+występować mogą zaburzenia immunologiczne, neurologiczne,
+motoryczne i wiele innych.
+11. W zaburzeniach ze spektrum autyzmu występuje szereg dolegliwości
+medycznych, które należy diagnozować i leczyć.
+14
+
+--- strona 17 ---
+12. Dzieci ze spektrum autyzmu, ze względu na naturę tego zaburzenia,
+nie potrafią zwykle komunikować swoich dolegliwości. Nie oznacza
+to jednak, że nie odczuwają bólu lub innych objawów, które mogą ich
+przerażać i być niezrozumiałymi dla nich samych, jak i innych.
+13. Rokowanie osób ze spektrum autyzmu zależne jest od chorób
+współwystępujących.
+14. Każde dziecko ze spektrum autyzmu po diagnozie ma prawo otrzymać
+orzeczenie o potrzebie kształcenia specjalnego, wydane przez
+publiczne poradnie psychologiczno-pedagogiczne, a także orzeczenia
+o niepełnosprawności, wydane przez rejonowe orzecznictwo.
+15. Nauka umiejętności globalnych, które angażują wiele zmysłów, sprzyja
+rozwojowi koordynacji, wpływają na pozytywny rozwój umiejętności
+praksyjnych. Dlatego zachęcaj dziecko do nauki jazdy na rowerze!
+16. Pozwól dziecku na swobodną zabawę na placu zabaw, niech chodzi
+po krawężnikach, aniżeli przesiaduje przed komputerem.
+17. Bardzo ważne jest, aby rodzice korzystali ze wsparcia psychologa, który
+pozwoli im na zrozumienie sytuacji, oraz umożliwi pełne funkcjonowanie
+rodziny.
+18. Kierując się doświadczeniem rodziców zalecane jest, aby posyłać swoje
+dzieci na zajęcia dodatkowe. Szczególnie korzystną sytuacją okazują
+się zajęcia dodatkowe przeprowadzane w miejscu, do którego dziecko
+na co dzień uczęszcza - w przedszkolu. Niweluje to konieczność dojazdów,
+które mogą być drażniące i rozregulowujące dla dzieci. Ponadto jest
+to znane dzieciom środowisko, więc uniknąć można w ten sposób
+niepotrzebnego stresu. Rodzice mogą również uczestniczyć w procesie
+terapeutycznym.
+19. Rozwój społeczny jest zapoczątkowywany w środowisku rodzinnym,
+a następnie jego kontynuacja zachodzi w grupach szkolnych,
+rówieśniczych, pracowniczych.
+20. W codziennym życiu rozwój społeczny dziecka „toczy się”. Zachodzi
+on pod wpływem dwóch istotnych procesów: socjalizacji i wychowania.
+Występowanie u dziecka zaburzeń ze spektrum utrudnia uruchamianie
+tych procesów.
+15
+
+--- strona 18 ---
+21. Rozwój społeczny zapoczątkowywany jest już na wczesnym etapie
+rozwoju w rodzinie, a następnie jest kontynuowany w innych
+środowiskach, w których funkcjonuje dziecko z autyzmem.
+22. W Polsce podejmowanych jest wiele inicjatyw istotnych dla społecznej
+przyszłości osób z autyzmem. Warto przeprowadzać systematyczne
+przeglądy takich działań. Wartymi uwagi są:
+www.spektrumwsparcia.pl
+www.spektrumautyzmu.pl
+www.wspektrumzycia.pl
+23. Podstawą prawidłowego funkcjonowania dziecka z autyzmem
+w przedszkolu jest współpraca rodziców z terapeutami. Narzędziem, które
+to usprawnia jest stworzony w ramach projektu Elektroniczny Dzienniczek
+Obserwacji Dziecka (EDOD).
+RODZICU ZWRÓĆ UWAGĘ NA NASTĘPUJĄCE CZYNNIKI MOGĄCE WSPIERAĆ
+TWOJE DZIECKO!
+Wytyczne dla rodziców:
+1. Wykonaj badania diagnostyczne wykluczające najczęściej występujące
+choroby współistniejące:
+a. udaj się z dzieckiem do neurologa dziecięcego by wykluczyć
+padaczkę i in. choroby neurologiczne,
+b. udaj się z dzieckiem do gastroenterologa by wykluczyć zaburzenia
+układu pokarmowego,
+c. udaj się z dzieckiem do genetyka by mieć pewność czy zaburzenia nie
+wynikają z współistniejącej choroby o podłożu genetycznym,
+d. udaj się z dzieckiem do okulisty by dowiedzieć się czy nie występuje
+wada wzroku, która powinna być korygowana,
+e. udaj się do audiologa by wykluczyć zaburzenia słuchu.
+16
+
+--- strona 19 ---
+2. Wykonaj podstawowe badania laboratoryjne w celu wykluczenia również
+innych chorób współistniejących.
+3. Wykonaj badania w kierunku alergii i nietolerancji pokarmowych.
+W przypadku ich wystąpienia stosuj się do zaleceń dietetycznych.
+4. Dbaj o stałe pory posiłków.
+5. Pamiętaj o stałej liczba posiłków każdego dnia.
+6. Szczególnie ważne jest stosowanie kuchni domowej.
+7. Wspólne jedzenia posiłków integruje całą rodzinę! Jest to szczególny czas
+w ciągu dnia.
+8. Pamiętaj, aby uzupełniać płyny dziecka w postaci wody!
+9. Pamiętaj, aby spożywać posiłki bez TV i innych sprzętów elektronicznych.
+10. Bardzo ważna jest probiotykoterapia oraz suplementacja Omega 3
+natomiast zalecana jest wizyta u dietetyka.
+11. Pamiętaj o wyeliminowanie białego cukru na rzecz zdrowych przekąsek.
+12. Obserwuj częstotliwości wypróżniania się wraz z jakością snu oraz
+występowaniem zachowań niepożądanych.
+13. Jeśli Twoje dziecko uporczywie obwąchuje przedmioty, zatyka uszy, czy
+jest hiperaktywne to należy w pierwszej kolejności udać się na diagnozę
+integracji sensorycznej do wykwalifikowanego terapeuty.
+14. Podstawą prawidłowego funkcjonowania dziecka z autyzmem jest
+współpraca rodziców z terapeutami. Korzystaj z Elektronicznego
+Dzienniczka Obserwacji Dziecka (EDOD) stworzonego w ramach projektu.
+17
+
+--- strona 20 ---
+18
+
+--- strona 21 ---
+19
+
+--- strona 22 ---
+3. Elektroniczny Dzienniczek
+Obserwacji Dziecka (EDOD)
+Zalecane jest zapoznanie się ze wstępem, gdzie opisane jest zaburzenie
+ze spektrum autyzmu oraz proces integracji sensorycznej w oparciu o wiedzę
+naukową. To umożliwi zrozumienie wielu aspektów oraz szerszy pogląd
+na funkcjonowanie dzieci w przestrzeni przedszkolnej. Następnie w wytycznych
+dla rodziców sugerowane są przykłady oddziaływań, które mogą przyczynić
+się do poprawy w funkcjonowaniu dzieci. Wytyczne dla nauczycieli dostarczają
+przydatnych wskazówek mających na celu poprawę jakości edukacji
+przedszkolnej osób z ASD.
+W założeniu najbardziej korzystną sytuacją jest, aby rodzic i nauczyciel oceniali
+regularnie to samo dziecko co tydzień. Natomiast każdy, zarówno rodzice, jak
+i nauczyciele, będą mieć swoje płaszczyzny oceny.
+Model oceny dziecka przedstawia poniższa tabela, która stanowi integralną część
+dzienniczka.
+20
+
+--- strona 23 ---
+Lp.
+Oceniana cecha
+Sposób oceny
+Kto ocenia
+daną cechę?
+1.
+Ogólna subiektywna
+ocena zachowania
+dziecka
+(pod kątem występowania
+zachowań niepożądanych
+takich jak np. agresja,
+autoagresja, różnego
+rodzaju stymulacje,
+zachowania destrukcyjne
+itp.)
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem 3 pkt
+rodzice
+i nauczyciele
+2.
+Ogólna ocena higieny snu
+(średnia, subiektywna
+ocena rodzica związana
+z tematem snu dziecka;
+z tym szybkością zasypiania,
+występowania przerw
+w nocy, innych problemów
+związanych ze snem)
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice
+3.
+Ocena częstotliwości
+i jakości wypróżniania się
+Dziecka
+(przy założeniu, że normą sa
+2 wypróżnienia na dobę lub
+nie rzadziej niż raz na dwa
+dni)
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice
+i nauczyciele
+4.
+Ocena spożywania
+posiłków przez Dziecko
+(subiektywna, średnia ocena
+związana z jakimikolwiek
+trudnościami związanymi
+z żywieniem, w tym
+z wybiórczością pokarmową,
+regularnością posiłków,
+częstotliwością jedzenia itp.)
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice
+i nauczyciele
+21
+
+--- strona 24 ---
+Lp.
+Oceniana cecha
+Sposób oceny
+Kto ocenia
+daną cechę?
+5.
+Subiektywna ocena
+komunikacji Dziecka
+(subiektywna ocena
+dotycząca nawiązywania
+relacji i rozwoju umiejętności
+komunikacyjnych –
+zarówno werbalnych, jak
+i niewerbalnych)
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice /
+nauczyciele
+6.
+Ocena poziomu
+wykonywania poleceń
+przez Dziecko
+(ocena pod kątem chęci
+wykonywania zadań,
+umiejętności ich wykonania,
+rozumienia poleceń)
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice /
+nauczyciele
+7.
+Subiektywna ocena
+poziomu nasilenia zaburzeń
+sensorycznych
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice /
+nauczyciele
+8.
+Ocena występowania
+rówieśniczych interakcji
+społecznych
+(ocena pod kątem
+ew. braku interakcji,
+lub występowanie ich
+sporadycznie, czy obecna
+jest komunikacja)
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice /
+nauczyciele
+9.
+Ocena poziomu możliwości
+realizacji podstawy
+programowej.
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+nauczyciele
+22
+
+--- strona 25 ---
+Lp.
+Oceniana cecha
+Sposób oceny
+Kto ocenia
+daną cechę?
+10.
+Ocena poziomu
+samodzielności w toalecie
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice /
+nauczyciele
+11.
+Ocena poziomu
+samodzielności w kuchni
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice /
+nauczyciele
+12.
+Ocena poziomu
+samodzielności podczas
+ubierania się i rozbierania
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice /
+nauczyciele
+13.
+Ocena aktywności podczas
+przerw między zadaniami,
+spędzanie czasu wolnego
+(pod kątem występowania
+ew. autostymulacji)
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice /
+nauczyciele
+14.
+Ocena poziomu
+koncentracji uwagi w trakcie
+dnia
+(np. na zadaniach lub
+ogólnie)
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice /
+nauczyciele
+15.
+Ocena umiejętności
+naśladowania
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice /
+nauczyciele
+23
+
+--- strona 26 ---
+Lp.
+Oceniana cecha
+Sposób oceny
+Kto ocenia
+daną cechę?
+16.
+Ocena umiejętności
+nawiązywania kontaktu
+wzrokowego
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+rodzice /
+nauczyciele
+17.
+Ocena umiejętności / chęci
+uczestniczenia w zajęciach
+grupowych
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+nauczyciel
+18.
+Ocena umiejętności / chęci
+uczestniczenia w zajęciach
+indywidualnych
+brak problemu – 0 pkt
+mały problem – 1 pkt
+umiarkowany problem – 2 pkt
+poważny problem – 3 pkt
+nauczyciel
+Elektroniczny Dzienniczek Obserwacji Dziecka (EDOD) umożliwia założenie
+indywidualnego konta każdego dziecka. Dostęp do niego będą mieli
+zarówno nauczyciele jak i rodzice. Zalecane jest, aby raz w tygodniu były
+uzupełniane w nim informacje zarówno przez placówkę jak i opiekunów.
+Dzienniczek ma postać elektroniczną, zatem jest wygodny w użytkowaniu,
+można z niego korzystać w dowolnym miejscu i czasie. Regularne zapisywanie
+informacji pozwoli na ocenę postępów rozwojowych, porównywanie
+kolejnych lat nauki, wyłapanie mocnych i słabszych stron dziecka oraz
+szczególne wspieranie tych sfer.
+24
+
+--- strona 27 ---
+25
+
+--- strona 28 ---
+26
+
+--- strona 29 ---
+4. Podsumowanie
+Osoby z zaburzeniem ze spektrum autyzmu i innymi niepełnosprawnościami
+sensorycznymi to grupa bardzo heterogeniczna. Pamiętać należy zatem, aby
+w podejściu edukacyjnym zachować zasadę indywidualnego dostosowania
+zajęć do konkretnej osoby. Powinny być one celowane w słabsze strony dziecka,
+aby kierować je do poprawy. Praktykowanych jest wiele metod i podejść
+do usprawniania osób z ASD we wczesnym etapie edukacji. Powyżej na podstawie
+światowych publikacji opisana została część z nich oraz ich skuteczność
+potwierdzona naukowo.
+W procesie edukacji nie należy zapominać o zaangażowaniu rodziny oraz
+okazaniu szczególnego wsparcia. Zaleca się regularne spotkania z psychologiem
+w celu zadbania o mentalne zrozumienie sytuacji. Z pewnością przyczyni się
+to do poprawy jakości życia rodzin, co przekładać się będzie również na lepsze
+funkcjonowanie dziecka z niepełnosprawnością.
+27
+
+--- strona 30 ---
+5. Literatura
+1. Shen L, Liu X, Zhang H i wsp. Biomarkers in autism spectrum disorders: Current
+progress. Clin Chim Acta. 2020; 502: 41 – 54.
+2. Bahmani M, Sarrafchi A, Shirzad H, Rafieian-Kopaei M. Autism:
+Pathophysiology and Promising Herbal Remedies. Curr Pharm Des. 2016; 22:
+277-85.
+3. Kern JK, Geier DA, Sykes LK, Haley BE, Geier MR. The relationship between
+mercury and autism: A comprehensive review and discussion. J Trace Elem
+Med Biol. 2016; 37: 8-24.
+4. Principi N, Esposito S. Vitamin D Deficiency During Pregnancy and Autism
+Spectrum Disorders Development. Front Psychiatry. 2020; 10: 987.
+5. Berridge MJ. Vitamin D deficiency: infertility and neurodevelopmental
+diseases (attention deficit hyperactivity disorder, autism, and schizophrenia).
+Am J Physiol Cell Physiol. 2018; 314: 135-151.
+6. Drimalla H, Scheffer T, Landwehr N i wsp. Towards the automatic detection
+of social biomarkers in autism spectrum disorder: introducing the simulated
+interaction task (SIT), Nature Digital Medicine. 2020; 2: 25.
+7. Winczura B. Wczesne rozpoznawanie autyzmu u małych dzieci – sygnały
+ostrzegawcze dla diagnozy zaburzeń ze spektrum autyzmu. Psychiatr Psychol
+Klin 2019;19:216-225.
+8. Szczałuba K. Diagnostyka genetycznych przyczyn chor.b spektrum
+autystycznego z perspektywy lekarza specjalisty genetyki klinicznej,
+Psychiatr. Pol. 2014; 48: 677-688.
+9. Chisholm K, Lin A, Abu-Akel A, Wood SJ. The association between autism
+and schizophrenia spectrum disorders: A review of eight alternate models of
+cooccurrence. Neurosci Biobehav Rev. 2015; 55: 173-83.
+10. Giambattista C, Ventura P, Trerotoli P i wsp. Subtyping the autism spectrum
+disorder: Comparison of Children with High Functioning Autism and Asperger
+Syndrome. J Autism Dev Disord. 2019; 49: 138-150.
+28
+
+--- strona 31 ---
+11. Tenenbaum EJ, Carpenter KLH, Sabatos-DeVito M i wsp. A Six-Minute
+Measure of Vocalizations in Toddlers with Autism Spectrum Disorder. Autism
+Res. 2020; 25.
+12. Leader G, Tuohy E, Chen JL, Mannion A, Gilroy SP. Feeding Problems,
+Gastrointestinal Symptoms, Challenging Behavior and Sensory Issues in
+Children and Adolescents with Autism Spectrum Disorder. J Autism Dev
+Disord. 2020; 50: 1401-1410.
+13. Staples KL., Reid G. Fundamental movement skills and autism spectrum
+disorders. J Autism Dev Disord. 2010; 40: 209-217.
+14. Silva DVD, Santos PNM, Silva DAVD. Excess weight and gastrointestinal
+symptoms in a group of autistic children. Rev Paul Pediatr. 2020; 38: 201.
+15. Monteiro MA, Santos AAAD, Gomes LMM, Rito RVVF. Autism spectrum
+disorder: A systematic review about nutritional internentions. Rev Paul Pediatr.
+2020; 38: 201-208.
+16. Wintier T, Schoch H, Frank MG, Peixoto L. Sleep, brain development, and
+autism spectrum disorders: Insights from animal models. J Neurosci Res. 2020;
+25: 17-23.
+17. Schreck KA, Mulick JA, Smith AF. Sleep problems as possible predictors of
+intensified symptoms of autism. Res Dev Disabil. 2004; 25: 57-66.
+18. Joshi G, Wozniak J, Petty C i wsp. Psychiatric comorbidity and functioning
+in a clinically referred population of adults with autism spectrum disorders:
+a comparative study. J Autism Dev Disord. 2013; 43: 1314-1325
+19. Pazuniak M, Pekrul SR. Obsessive-Compulsive Disorder in Autism Spectrum
+Disorder Across the Lifespan. Child Adolesc Psychiatr Clin N Am. 2020; 29:
+419-432.
+20. Lugneg.rd T, Hallerb.ck MU, Gillberg C. Psychiatric comorbidity in young
+adults with a clinical diagnosis of Asperger syndrome. Res Dev Disabil. 2011;
+32: 1910-1917.
+21. Lai MC, Lombardo MV, Baron-Cohen S. Autism. Lancet. 2014; 383: 896-910.
+22. Berg A, Plioplys S. Epilepsy and Autism: Is there a special relationship?
+Epilepsy Behav. 2012;23: 193-198.
+29
+
+--- strona 32 ---
+23. Balasco L, Provenzano G, Bozzi Y. Sensory Abnormalities in Autism Spectrum
+Disorders: A Focus on the Tactile Domain, From Genetic Mouse Models to the
+Clinic. Front Psychiatry. 2020; 10: 1016.
+24. Stefanelli ACGF, Zanchetta S, Furtado EF. Auditory hyper-responsiveness in
+autism spectrum disorder, terminologies and physiological mechanisms
+involved: systematic review. Codas. 2020; 32: 201.
+25. Barańska E, Gajewska E, Sobieska M. Zaburzenia przetwarzania
+sensorycznego u dzieci – klasyfikacja grup diagnostycznych i objawy.
+Dysfunkcje narzgd.w ruchu
+26. Interdyscyplinarne rozumienia problem.w związanych z diagnostyką
+i terapią dziecka. Wydawnictwo Naukowe Uniwersytetu Medycznego im.
+Karola Marcinkowskiego w Poznaniu. 2012. Ayres A. J. Dziecko a integracja
+sensoryczna. Harmonia Universalis. 2015; 29-40.
+27. Ryckmana J, Hiltonb C, Rogersc C, Pineda R. Sensory processing disorder
+in preterm infants during early childhood and relationships to early
+neurobehavior. Early Human Development. 2017; 113: 18-22.
+28. Tobor E, Litera M. Pre- i postnatalny wpływ dotyku na jakość życia
+noworodka. Wybrane aspekty opieki pielęgniarskiej i położniczej w różnych
+specjalnościach medycyny. Tom 6. red. J. Siekierki, M. Zimnowody
+i D. Żurawickiej.
+29. Przyrowski Z, Integracja sensoryczna. Wprowadzenie do teorii, diagnozy
+i terapii, EMPIS. 2015. 185-237.
+30. Odowska-Szlachcic B. Integracja sensoryczna w autyzmie. Harmonia
+Universalis. 2018; 1: 171-246.
+31. Landa RJ. Efficacy of early interventions for infants and young children
+with, and at risk for, autism spectrum disorders. Int Rev Psychiatry. 2018
+Feb;30(l ):25-39. doi: 10.1080/09540261.2018.1432574. Epub 2018 Mar 14. PMID:
+29537331; PMCID: PMC6034700.
+30
+
+--- strona 33 ---
+32. Herbrecht E, Kievit E, Spiegel R, Dima D, Goth K, Schmeck K. Become
+Related: FIAS, an Intensive Early Intervention for Young Children with
+Autism Spectrum Disorders. Psychopathology. 2015;48(3):162-72. doi:
+10.1159/000375504. Epub 2015 Mar 31. PMID: 25832916
+33. Westerveld MF, Paynter J, O’Leary K, Trembath D. Preschool predictors of
+reading ability in the first year of schooling in children with ASD. Autism Res.
+2018 Oct;l 1 (10): 1332-1344. doi: 10.1002/aur.l999. Epub 2018 Aug 26. PMID:
+30145812.
+34. Franchini M, Zoller D, Gentaz E, Glaser B, Wood de Wilde H, Kojovic N, Eliez S,
+Schaer M. Early Adaptive Functioning Trajectories in Preschoolers With Autism
+Spectrum Disorders. J Pediatr Psychol. 2018 Aug 1 ;43{7):800-813. doi: 10.1093/
+jpepsy/jsy024. PMID: 29701857.
+35. Miller LE, Burke JD, Troyb E, Knoch K, Herlihy LE, Fein DA. Preschool predictors
+of school-age academic achievement in autism spectrum disorder. Clin
+Neuropsychol. 2017 Feb;31 (2):382-403. doi: 10.1080/13854046.2016.1225665.
+Epub 2016 Oct 5. PMID: 27705180; PMCID: PMC5464727.
+36. Eriksson MA, Westerlund J, Hedvall A, Amark P, Gillberg C, Pernell E. Medical
+conditions affect the outcome of early intervention in preschool children
+with autism spectrum disorders. Eur Child Adolesc Psychiatry. 2013 Jan;22(l):
+23-33. doi: 10.1007/s00787-012-0312-7. Epub 2012 Jul 27. PMID: 22836733.
+37. Van der Paelt S, Warreyn P, Roeyers H. Effect of community interventions
+on social – communicative abilities of preschoolers with autism
+spectrum disorder. Dev Neurorehabil. 2016 Jun;19(3):162-74. doi:
+10.3109/17518423.2014.933983. Epub 2014 Jul 16. PMID: 25029102.
+38. Law GC, Neihart M, Dutt A. The use of behavior modeling training in
+a mobile app parent training program to improve functional communication
+of young children with autism spectrum disorder. Autism. 2018 May;22{4):424-
+439. doi: 10.1177/1362361316683887. Epub 2017 Mar 1. PMID: 29153002.
+31
+
+--- strona 34 ---
+39. Rollins PR, Campbell M, Hoffman RT, Self K. A community-based early
+intervention program for toddlers with autism spectrum disorders. Autism.
+2016 Feb;20(2):219-32. doi: 10.11 77/1362361315577217. Epub 2015 Apr 23. PMID:
+25907978.
+40. Kasari C, Gulsrud A, Paparella T, Hellemann G, Berry K. Randomized
+comparative efficacy study of parent-mediated interventions for toddlers
+with autism. J Consult Clin Psychol. 2015 Jun;83(3):554-63. doi: 10.1037/
+a0039080. Epub 2015 Mar 30. PMID: 25822242; PMCID: PMC4755315.
+41. Poslawsky IE, Naber FB, Bakermans-Kranenburg MJ, van Daalen E, van
+Engeland H, van Uzendoorn MH. Video-feedback Intervention to promote
+Positive Parenting adapted to Autism (VIPP-AUTI): A randomized controlled
+trial. Autism. 2015 Jul;l9(5):588-603. doi: 10.1177/1362361314537124. Epub 2014
+Jun 11. PMID: 24919961.
+42. Mohammed Taresh S, Aniza Ahmad N, Rosian S, Ma’rof AM, Mohammed
+Zaid S. Mainstream Preschool Teachers’ Skills at Identifying and Referring
+Children with Autism Spectrum Disorder (ASD). Int J Environ Res Public Health.
+2020 Jun 16;17(12):4284. doi: 10.3390/ijerph 17124284. PMID: 32560042; PMCID:
+PMC7344551.
+43. Sullivan K, Stone WL, Dawson G. Potential neural mechanisms underlying the
+effectiveness of early intervention for children with autism spectrum disorder.
+Res Dev Disabil. 2014 Nov;35(l 1 ):2921-32. doi: 10.1016/j.ridd.2014.07.027. Epub
+2014 Aug 8. PMID: 25108609; PMCID: PMC41 63495.
+44. Skogli EW, Andersen PN, Isaksen J. An Exploratory Study of Executive
+Function Development in Children with Autism, after Receiving Early
+Intensive Behavioral Training. Dev NeurorehabiL 2020 Oct;23(7):439-447. doi:
+10.1080/17518423.2020.1756499. Epub 2020 May 13. PMID: 32397778.
+45. Reichow B, Hume K, Barton EE, Boyd BA. Early intensive behavioral
+intervention (EIBI) for young children with autism spectrum disorders
+(ASD). Cochrane Database Syst Rev. 2018 May 9;5(5):CD009260. doi:
+10.1002/14651858.CD009260.pub3. PMID: 29742275; PMCID: PMC6494600.
+32
+
+--- strona 35 ---
+46. Peters-Scheffer N, Didden R, Korzilius H, Matson J. Cost comparison of early
+intensive behavioral intervention and treatment as usual for children with
+autism spectrum disorder in The Netherlands. Res Dev Disabil. 2012 Nov-
+Dec;33(6):l 763-72. doi: 10.101 6/j.ridd.2012.04.006. Epub 2012 Jun 14. PMID:
+22705454.
+47. Novak I, Morgan C. High-risk follow-up: Early intervention and rehabilitation.
+Handb Clin Neurol. 2019; 162:483-510. doi: 10.101 6/B978-0-444-64029-1.00023-0.
+PMID: 31324326.
+48. Yu L, Zhu X. Effectiveness of a SCERTS Model-Based Intervention for Children
+with Autism Spectrum Disorder [ASD] in Hong Kong: A Pilot Study. J Autism
+Dev Disord. 2018 Nov;48(l 1 ):3794-3807. doi: 10.1007/sl0803-018-3649-z. Erratum
+in: J Autism Dev Disord. 2018 Dec 11;: PMID: 29907953; PMCID: PMC6290670.
+49. Franchini M, Zoller D, Gentaz E, Glaser B, Wood de Wilde H, Kojovic N, Eliez S,
+Schaer M. Early Adaptive Functioning Trajectories in Preschoolers With Autism
+Spectrum Disorders. J Pediatr Psychol. 2018 Aug 1 ;43{7):800-813. doi: 10.1093/
+jpepsy/jsy024. PMID: 29701857.
+50. Radley KC, Hanglein J, Arak M. School-based social skills training for
+preschool-age children with autism spectrum disorder. Autism. 2016
+Nov;20{8):938-951. doi: 10.1177/1362361315617361. Epub 2016 Feb 5. PMID:
+26851232.
+51. Rogerson J, Falkmer M, Cuomo B, Falkmer T, Whitehouse AJO, Granich J,
+Vaz S. Parental experiences using the Therapy Outcomes by You (TOBY)
+application to deliver early intervention to their child with autism. Dev
+NeurorehabiL 2019 May;22(4):219-227. doi: 10.1080/17518423.2018.1440259.
+Epub 2018 Feb 27. PMID: 29485349.
+52. Zwaigenbaum L, Bauman ML, Choueiri R, Kasari C, Carter A, Granpeesheh
+D, Mailloux Z, Smith Roley S, Wagner S, Fein D, Pierce K, Buie T, Davis PA,
+Newschaffer C, Robins D, Wetherby A, Stone WL, Yirmiya N, Estes A, Hansen
+RL, McPartland JC, Natowicz MR. Early Intervention for Children With Autism
+Spectrum Disorder Under 3 Years of Age: Recommendations for Practice and
+Research. Pediatrics. 2015 Oct;136 Suppl 1 :S60 – 81. doi: 10.1542/peds.2014-
+3667E. PMID: 26430170.
+33
+
+--- strona 36 ---
+53. Herbrecht E, Kievit E, Spiegel R, Dima D, Goth K, Schmeck K. Become
+Related: FIAS, an Intensive Early Intervention for Young Children with
+Autism Spectrum Disorders. Psychopathology. 2015;48(3):162-72. doi:
+10.1159/000375504. Epub 2015 Mar 31. PMID: 25832916.
+54. Van der Paelt S, Warreyn P, Roeyers H. Effect of community interventions
+on social – communicative abilities of preschoolers with autism
+spectrum disorder. Dev Neurorehabil. 2016 Jun;l 9(3):162-74. doi:
+10.3109/17518423.2014.933983. Epub 2014 Jul 16. PMID: 25029102
+55. Eriksson MA, Westerlund J, Hedvall A, Amark P, Gillberg C, Pernell E. Medical
+conditions affect the outcome of early intervention in preschool children
+with autism spectrum disorders. Eur Child Adolesc Psychiatry. 2013 Jan;22(l):
+23-33. doi: 10.1007/S00787-012-0312-7. Epub 2012 Jul 27. PMID: 22836733.
+34
+
+--- strona 37 ---
+Profesjonalne wsparcie edukacyjne w zakresie tematyki autyzmu
+www.spektrumautyzmu.pl
+Diagnoza i terapia dzieci z autyzmem
+www.wielkopolskieCentrumFizjoterapii/dzieci
+Usamodzielnienie i uzawodowienie osób z autyzmem
+www.wspektrumzycia.pl
+Edukacja przedszkolna dzieci z autyzmem
+https://wielkopolskiecentrumfizjoterapii.pl/przedszkole/

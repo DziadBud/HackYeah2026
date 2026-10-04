@@ -1,0 +1,514 @@
+--- strona 1 ---
+Twój dziennik obserwacji ucznia
+Ankiety badawcze udostępniane są w każdy piątek, dostępne do uzupełnienia bezterminowo.
+OCENA NAUCZYCIELA
+OCENA RODZICA
+Ogólna subiektywna ocena zachowania dziecka (pod kątem występowania zachowań niepożądanych takich jak np. agresja, autoagresja itp.):
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+Ogólna ocena higieny snu (ocena rodzica związana z szybkością zasypiania, występowania przerw w nocy, innych problemów związanych ze snem):
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+
+
+--- strona 2 ---
+Ocena częstotliwości i jakości wypróżniania się Dziecka (przy założeniu że normą sa 2 wypróżnienia na dobę lub nie rzadziej niż raz na dwa dni):
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+Ocena spożywania posiłków przez Dziecko (subiektywna ocena związana z ew. wybiórczością pokarmową, regularnością posiłków, częstotliwością jedzenia itp.):
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+Ocena poziomu komunikacji Dziecka (ocena dotycząca umiejętności komunikacyjnych- zarówno werbalnych, jak i niewerbalnych):
+mały problem
+umiarkowany problem
+poważny problem
+
+
+--- strona 3 ---
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+Ocena poziomu wykonywania poleceń przez Dziecko (ocena pod kątem chęci wykonywania zadań, umiejętności ich wykonania, rozumienia poleceń):
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+Ocena poziomu nasilenia zaburzeń sensorycznych:
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+Ocena występowania rówieśniczych interakcji społecznych (ocena pod kątem ew. Braku interakcji, lub występowanie ich sporadycznie, czy obecna jest komunikacja):
+
+
+--- strona 4 ---
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+Ocena poziomu możliwości realizacji podstawy programowej:
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+Ocena poziomu samodzielności w toalecie:
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+
+
+--- strona 5 ---
+Ocena poziomu samodzielności w kuchni:
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+Ocena poziomu samodzielności podczas ubierania się i rozbierania:
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+Ocena aktywności podczas przerw między zadaniami, spędzanie czasu wolnego (pod kątem występowania ew. autostymulacji):
+umiarkowany problem
+poważny problem
+
+
+--- strona 6 ---
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+Ocena poziomu koncentracji uwagi w trakcie dnia (np. na zadaniach lub ogólnie):
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+Ocena umiejętności naśladowania:
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+
+
+--- strona 7 ---
+Ocena umiejętności nawiązywania kontaktu wzrokowego:
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+Ocena umiejętności / chęci uczestniczenia w zajęciach grupowych:
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+mały problem
+umiarkowany problem
+poważny problem
+Ocena umiejętności / chęci uczestniczenia w zajęciach indywidualnych:
+mały problem
+umiarkowany problem
+poważny problem
+
+
+--- strona 8 ---
+2021-10-15
+2021-10-22
+2021-10-29
+2021-11-05
+2021-11-19
+2021-11-26
+2021-12-03
+2021-12-10
+2021-12-17
+2021-12-24
+2021-12-31
+2022-01-07
+2022-01-14
+2022-01-21
+2022-01-28
+2022-02-04
+2022-02-11
+2022-02-18
+2022-02-25
+2022-03-04
+2022-03-11
+2022-03-18
+brak problemu
+© 2021 Elektroniczny Dzienniczek Obserwacji Dziecka
+

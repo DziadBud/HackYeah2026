@@ -27,14 +27,15 @@ export interface DemoInnovation {
 // placeholder until the real innovation pdfs are uploaded; the file says it is an example
 export const SAMPLE_PDF_URL = "/pdf/karta-innowacji-przyklad.pdf";
 
+// mock contact: no real person, phone or inbox until ROPS gives the real caretaker
 export const CARETAKER = {
-  name: "Magdalena Szybist",
+  name: "Anna Przykładowa",
   role: "Koordynator Inkubatora Innowacji ROPS",
-  phone: "+48 12 422 06 36 wew. 42",
-  phoneHref: "tel:+48124220636",
-  email: "innowacje@rops.krakow.pl",
+  phone: "+48 000 000 000",
+  phoneHref: "tel:+48000000000",
+  email: "opiekun.innowacji@example.com",
   hours: "Środy: 09:00 – 14:00",
-  place: "Kraków, ul. Piastowska 32 (pok. 114)",
+  place: "Kraków, ul. Przykładowa 1 (pok. 100)",
 };
 
 export const INNOVATIONS: DemoInnovation[] = [

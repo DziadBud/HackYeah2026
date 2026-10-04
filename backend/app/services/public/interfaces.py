@@ -17,6 +17,7 @@ from app.schemas.public.innovations import (
     LibraryInnovation,
     TestSignupCreate,
     TestSignupCreated,
+    LikeState,
 )
 from app.schemas.public.match import MatchRequest, MatchResponse
 from app.schemas.public.problem_reports import PublicProblemReport, SupportResponse
@@ -62,6 +63,9 @@ class LibraryService(Protocol):
     def get(self, innovation_id: str) -> LibraryInnovation: ...
     def add_feedback(self, innovation_id: str, data: FeedbackCreate) -> FeedbackCreated: ...
     def sign_up_for_test(self, innovation_id: str, data: TestSignupCreate) -> TestSignupCreated: ...
+    def likes(self, innovation_id: str, client_id: str | None) -> LikeState: ...
+    # idempotent: liking twice or unliking a non-like leaves one state
+    def set_like(self, innovation_id: str, client_id: str, liked: bool) -> LikeState: ...
 
 
 # R5: community threads, published only; new posts wait for moderation

@@ -16,6 +16,8 @@ function isActive(pathname: string, href: string) {
 
 export function SiteHeader() {
   const pathname = usePathname();
+  // the admin panel has its own navigation; the public switch would only lead out of it
+  const admin = pathname === "/admin" || pathname.startsWith("/admin/");
 
   return (
     <header className="sticky top-0 z-40 w-full bg-surface/95 shadow-sm backdrop-blur-xl hc-edge">
@@ -32,23 +34,25 @@ export function SiteHeader() {
             </span>
           </span>
         </Link>
-        <nav aria-label="Główna" className="w-full shrink-0 sm:w-auto">
-          <ul className="flex rounded-full bg-surface-container p-1 hc-edge">
-            {NAV.map((n) => (
-              <li key={n.href} className="flex-1 sm:flex-none">
-                <Link
-                  href={n.href}
-                  aria-current={isActive(pathname, n.href) ? "page" : undefined}
-                  className="flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-full px-space-md text-label-lg font-semibold text-on-surface-variant hover:bg-surface-container-highest hover:text-primary aria-[current=page]:bg-primary-container aria-[current=page]:text-on-primary aria-[current=page]:shadow-sm"
-                >
-                  <Icon name={n.icon} size={22} />
-                  <span className="lg:hidden">{n.short}</span>
-                  <span className="hidden lg:inline">{n.label}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        {!admin && (
+          <nav aria-label="Główna" className="w-full shrink-0 sm:w-auto">
+            <ul className="flex rounded-full bg-surface-container p-1 hc-edge">
+              {NAV.map((n) => (
+                <li key={n.href} className="flex-1 sm:flex-none">
+                  <Link
+                    href={n.href}
+                    aria-current={isActive(pathname, n.href) ? "page" : undefined}
+                    className="flex min-h-12 items-center justify-center gap-2 whitespace-nowrap rounded-full px-space-md text-label-lg font-semibold text-on-surface-variant hover:bg-surface-container-highest hover:text-primary aria-[current=page]:bg-primary-container aria-[current=page]:text-on-primary aria-[current=page]:shadow-sm"
+                  >
+                    <Icon name={n.icon} size={22} />
+                    <span className="lg:hidden">{n.short}</span>
+                    <span className="hidden lg:inline">{n.label}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
       </div>
     </header>
   );

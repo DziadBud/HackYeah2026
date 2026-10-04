@@ -1,0 +1,606 @@
+--- strona 1 ---
+Model końcowy innowacji BaWita
+Innowacja testowana w ramach „Inkubatora Włączenia Społecznego” –
+Projektu wdrażanego w ramach IV Osi Priorytetowej Programu Operacyjnego
+Wiedza Edukacja Rozwój (Działanie 4.1: Innowacje społeczne), na zlecenie
+Ministerstwa Funduszy i Polityki Regionalnej, finansowanego ze środków Unii
+Europejskiej w ramach Europejskiego Funduszu Społecznego.
+
+--- strona 2 ---
+
+2
+Spis treści
+Opis grupy docelowej i odbiorców rozwiązania ____________________________________ 3
+I. Grupa docelowa innowacji BaWita ___________________________________________ 3
+II. Charakterystyka problemów pojawiających się w grupie docelowej ________________ 3
+III. Odbiorcy rozwiązania ____________________________________________________ 4
+Opis rozwiązania i jego funkcjonalności __________________________________________ 6
+I. Opis tablicy manipulacyjnej i wymiennych akcesoriów – wygląd ____________________ 6
+II. Opis tablicy manipulacyjnej wraz z akcesoriami – funkcje _________________________ 7
+III. Opis książeczki zawierającej instrukcję użytkowania i scenariusze__________________ 8
+IV. Elementy zestawu BaWita _________________________________________________ 9
+V. Dokumentacja fotograficzna – książeczka ____________________________________ 10
+VI. Dokumentacja fotograficzna – tablica gotowa do testów _______________________ 11
+Przebieg i wyniki testów _____________________________________________________ 15
+I. Przebieg testowania _____________________________________________________ 15
+II. Wyniki testowania na podstawie informacji zebranych podczas spotkania
+z osobami testującymi _____________________________________________________ 16
+Rekomendacje i zalecenia dla przyszłych użytkowników ____________________________ 21
+I.Rekomendacje dla użytkowników BaWity (w wersji testowanej) wynikające
+z procesu testowania ______________________________________________________ 21
+II.Wnioski i rekomendacje wynikające z analizy możliwości wprowadzenia ulepszeń. ____ 22
+III.Wnioski z analizy możliwości skalowania projektu. _____________________________ 24
+Podsumowanie ____________________________________________________________ 26
+Spis załączników ___________________________________________________________ 27
+
+--- strona 3 ---
+
+3
+Opis grupy docelowej i odbiorców rozwiązania
+I.Grupa docelowa innowacji BaWita
+Grupą docelową innowacji BaWita są dorosłe osoby cierpiące na zespół otępienny we
+wczesnym stadium. Narzędzie wspomagające rehabilitację kierujemy do osób w pełni
+komunikatywnych, ale mających problemy z pamięcią i niską motywacją do ćwiczeń.
+Zakładamy, że tablica może być wykorzystywana w różnorodny sposób (nie w pełnym
+zakresie) również przez inne osoby np. rehabilitowane pamięciowo po udarach i wylewach,
+nie w pełni komunikatywne, nie w pełni sprawne manualnie itp.
+II.Charakterystyka problemów pojawiających się w grupie docelowej
+Otępienie należy do jednej z najczęściej stawianych diagnoz w przypadku pacjentów
+w podeszłym wieku. z uwagi na problem starzenia się społeczeństwa, rośnie również
+rozpowszechnienie zespołów otępiennych. Dane epidemiologiczne mówią o występowaniu
+otępienia u 9,5% osób powyżej 65. roku życia w Europie. w Polsce natomiast występuje
+u 400 tysięcy chorych w grupie powyżej 65. roku życia. w wyniku wydłużania się średniej
+długości życia liczba ta będzie wzrastać. Różnorodne niefarmakologiczne programy pracy
+z chorymi z otępieniem dążą do poprawy sprawności fizycznej, usprawnienia wyższych
+czynności nerwowych, takich jak pamięć, myślenie, rozumienie, ocena rzeczywistości.
+Poprzez indywidualnie dostosowaną rehabilitację obejmującą różne metody pracy można
+osiągnąć 3 zasadnicze cele: poprawić jakość życia tych chorych, wpłynąć pozytywnie na ich
+samodzielność i funkcjonowanie społeczne oraz stan psychiczny. Jedną z dolegliwości, z którą
+się zmagają pacjenci z otępieniem jest problem z pamięcią. z badań wynika, że ćwiczenia nie
+są w stanie poprawić pamięci chorych „w ogóle”, ale można istotnie poprawić
+funkcjonowanie chorych z demencją w trenowanym zakresie np. pamięci proceduralnej (jak
+wykonać jakąś czynność). Poprzez powtarzanie ćwiczeń z zapamiętywaniem
+i przypominaniem właściwej sekwencji czynności w życiu codziennym np. szykowanie
+śniadania, plan dnia, korzystanie z toalety, czy przygotowanie do wyjścia z domu oraz
+udostępnienie „przypominaczy” w formie graficznej chory jest w stanie usamodzielnić się
+
+--- strona 4 ---
+
+4
+w pewnych działaniach. Problem niezależnego funkcjonowania chorych z zespołem
+otępiennym, wykonywanie podstawowych funkcji życia codziennego i udział w życiu
+społecznym jest niejednokrotnie najważniejszym celem do osiągnięcia zarówno przez
+chorego, jak i jego opiekuna. Przy różnorodnych ćwiczeniach stymulujących (nie tylko
+pamięć), ale szczególnie przy terapii reminiscencyjnej opiekunowie zauważyli, że przedmioty
+drewniane są preferowane przez seniorów, kojarzą się z latami dzieciństwa i bezpieczeństwa.
+III.Odbiorcy rozwiązania
+Ze względu na możliwości poznawcze grupy docelowej oraz formę tablicy i sposobów jej
+wykorzystywania odbiorcami rozwiązania są nie tylko osoby rehabilitowane, czyli nasza
+grupa docelowa, ale też terapeuci prowadzący zajęcia.
+Podczas badania potrzeb grupy docelowej zidentyfikowano najczęstsze trudności
+występujące w procesach rehabilitacyjnych:
+1. Niechęć podopiecznych do powtarzania monotonnych ćwiczeń.
+2. Znudzenie nieelastycznymi narzędziami – zawsze w tej samej formie, ćwiczącymi jedną
+umiejętność.
+3. Nieprzystosowanie narzędzi używanych do ćwiczeń do potrzeb i możliwości poznawczych
+osób rehabilitowanych między innymi:
+a) Za małe elementy manipulacyjne;
+b) Kolorystyka, tematyka skierowana do dzieci – poczucie infantylizacji;
+c) Jednopłaszczyznowa stymulacja np. same obrazki, sam tekst;
+d) Za łatwe narzędzia, przez to niemotywujące do dalszych ćwiczeń;
+4. Ogólny brak motywacji do zajęć rehabilitacyjnych, wspomagających.
+5. Mała dostępność narzędzi do pracy z osobami dorosłymi.
+6. Konieczność wspierania się zabawkami, układankami dla dzieci.
+7. Mała elastyczność narzędzi terapeutycznych, trudność w rozbudowywaniu ich funkcji.
+Innowacja BaWita odpowiada na niektóre ze zidentyfikowanych problemów w grupie
+odbiorców:
+
+--- strona 5 ---
+
+5
+1. Podczas zajęć można ćwiczyć pamięć proceduralną jednocześnie pracując nad
+sprawnością manualną.
+2. Ćwiczenia zapewniają stymulację wielopłaszczyznową: obraz, dotyk, ruch, napis,
+powtarzanie czynności.
+3. Dzięki wykończeniu tablicy w sposób zapewniający przyjemne doznania sensoryczne
+wzrasta motywacja do wykonywania ćwiczeń i wielokrotnych powtórzeń
+manipulacyjnych.
+4. Treść i estetyka dopasowana do grupy docelowej.
+5. Elastyczność narzędzia pozwala na dopasowanie stopnia trudności ćwiczeń do kondycji
+chorego.
+6. Łatwość rozwijania scenariuszy i tworzenia nowych zadań na bazie jednego narzędzia.
+BaWita – tablica manipulacyjna jako dorosła zabawka terapeutyczna dla seniorów pozwala
+na prowadzenie zajęć rehabilitacyjnych, które są komfortowe dla chorego i sprawiają mu
+radość. z drugiej strony terapeuta ma łatwość dostosowania ćwiczeń do stopnia sprawności
+i zaangażowania ćwiczącego nawet podczas już trwającej sesji. Te czynniki bezpośrednio
+pozytywnie wpływają na motywację uczestników procesu do dalszych rehabilitacji.
+
+--- strona 6 ---
+
+6
+Opis rozwiązania i jego funkcjonalności
+BaWita to innowacyjne narzędzie zaprojektowane w konwencji tablicy manipulacyjnej jako
+dorosłej zabawki terapeutycznej dla seniorów. BaWitę wyróżnia możliwość
+wielopłaszczyznowej stymulacji równocześnie oraz wymienne elementy składowe
+podnoszące efektywność i elastyczność urządzenia.
+I.Opis tablicy manipulacyjnej i wymiennych akcesoriów – wygląd
+1. Jest prostokątna o wymiarach 75x50 cm. Podstawa ma delikatnie widoczny rysunek
+forniru brzozowego, natomiast w miejscach frezowania widoczne jest drewno sosnowe.
+2. W środkowej części tablicy 9 cm od krawędzi górnej i dolnej znajdują się prowadnice
+wyposażone w elementy manipulacyjne:
+a) Sznurek - element drewniany czerwony kwadrat;
+b) drut prowadnica na wzór liczydła - element drewniany pomarańczowy koralik
+w kształcie walca;
+c) zagłębienie „kanał” - element drewniany żółty prostokąt;
+d) zagłębienie „kanał-slalom” - element drewniany zielony trójkąt;
+e) koło zębate z prowadnicą - element drewniany niebieskie koło;
+f) suwak - element drewniany indygowy kwiat;
+g) tkanina z guzikiem zatrzaskowym na końcu, do zapinania - element drewniany
+fioletowe serce.
+3. Do drewnianych elementów manipulacyjnych można zamocować wymienne
+komponenty, w testowanych egzemplarzach są to nazwy dni tygodnia. Kafelki z opisami
+procesu „Dni tygodnia” są wydrukowane na taśmie ferromagnetycznej w kolorystyce
+zgodnej z przypisanymi kolejnym dniom kształtami na prowadnicach. Wielkość napisów
+jest dobrana proporcjonalnie do wielkości elementów, na których są mocowane. Litery
+pogrubione, drukowane, czcionka bezszeryfowa.
+4. W górnej i dolnej części tablicy są widoczne miejsca, w których można przyczepić
+wymienne kafelki procesu „Harmonogram Dnia”.
+
+--- strona 7 ---
+
+7
+5. Kafelki procesu „Harmonogram Dnia” są zrobione ze sklejki brzozowej z kontrastowymi,
+wyciętymi laserem oznaczeniami poszczególnych faz procesu. Oznaczenia zawierają napis
+i rysunek.
+6. Od spodu tablica jest wyposażona w cztery przyssawki zapewniające stabilną i bezpieczną
+pozycję narzędzia podczas wykonywania ćwiczeń.
+7. Poszczególne egzemplarze tablicy i drewnianych kafelków różnią się nieznacznie od
+siebie kolorystyką i usłojeniem drewna, jest to naturalne przy zastosowaniu tego
+materiału, jednocześnie brzoza jest mało wyrazista, więc różnice są nieznaczne.
+II.Opis tablicy manipulacyjnej wraz z akcesoriami – funkcje
+1. Funkcje tablicy manipulacyjnej poszczególne elementy do manipulacji na prowadnicach:
+a) Czerwony kwadrat na sznurku – umieszczenie ruchomego elementu w dopasowanym
+do jego kształtu otworze w tablicy.
+b) Pomarańczowy koralik w kształcie walca na drucie – przesunięcie po drucie koralika
+z pozycji na górze tablicy do pozycji na dole tablicy.
+c) Żółty prostokąt zamontowany w kanale – przesunięcie w kanale prowadzącym
+prostokąta z pozycji na górze tablicy do pozycji na dole tablicy.
+d) Zielony trójką zamontowany w kanale-slalomie – przesunięcie w kanale-slalomie
+prowadzącym trójkąta z pozycji na górze tablicy do pozycji na dole tablicy.
+e) Niebieskie koło zamontowane na kole zębatym – przesunięcie ruchem okrężnym
+wzdłuż prowadnicy koła z pozycji na górze tablicy do pozycji na dole tablicy.
+f) Indygowy kwiat zamontowany na maszynce suwaka – otwarcie suwaka ruchem z góry
+tablicy na dół tablicy.
+g) Fioletowe serce zamontowane na jednej części zatrzasku na parcianej taśmie –
+zapięcie zatrzasku poprzez wcelowanie w drugą część napy umieszczoną na końcu
+parcianej taśmy w dole tablicy.
+2. Opisane w punkcie 1 manipulacje a-d można wykonać również w kierunku z dołu tablicy
+do góry tablicy, punkt e może polegać na zapięciu suwaka, a punkt f na rozpięciu
+zatrzasku.
+
+--- strona 8 ---
+
+8
+a) Funkcja stymulująca zapamiętywanie prostego procesu „Dni tygodnia” jest
+realizowana poprze umieszczenie za pomocą magnesów wymiennych kafelków
+na elementach manipulacyjnych prowadnic. na tak przygotowanej tablicy wykonuje
+się ćwiczenia manipulacyjne zgodnie ze scenariuszem warsztatu „Dni tygodnia”.
+b) Funkcja umożliwiająca ćwiczenie złożonego procesu „Harmonogram dnia” jest
+realizowana poprzez umocowanie za pomocą magnesów 14 wymiennych tabliczek
+z opisami na górnej i dolnej krawędzi tablicy (po siedem). na tak przygotowanej
+tablicy wykonuje się ćwiczenia manipulacyjne zgodnie ze scenariuszem warsztatu
+„Harmonogram dnia”.
+c) Tablica i poszczególne elementy manipulacyjne zostały wykończone w taki sposób,
+aby dotykanie ich było przyjemne i zachęcające do używania: jest gładka, ma
+zaoblone krawędzie, przy dotyku czuć fakturę.
+III.Opis książeczki zawierającej instrukcję użytkowania i scenariusze
+1. Książeczki zawierają instrukcję użytkowania tablicy, jest w niej opisany skład zestawu,
+sposób przygotowania tablicy do ćwiczeń i zasady bezpiecznej eksploatacji.
+2. W książeczce są dwa scenariusze zajęć dla seniorów:
+a) Prosty „Dni tygodnia”
+b) Złożony „Harmonogram dnia”.
+3. Każdy scenariusz zawiera informacje na temat grupy docelowej, celu przeprowadzanych
+ćwiczeń, przebiegu sesji oraz wskazówki na temat możliwych modyfikacji i rozwinięć
+scenariusza.
+4. Książeczka składa się z 12 stron połączonych trwale przez zbindowanie, taka forma
+pozwala na łatwe użycie książeczki podczas warsztatu poprzez umieszczenie potrzebnej
+strony jako początkowej.
+5. Książeczki zostały przygotowane w formacie pionowym A4 i wydrukowane w kolorze,
+taka forma umożliwia samodzielny wydruk oraz zapewnia miejsce na robienie notatek
+obok tekstu.
+
+--- strona 9 ---
+
+9
+IV.Elementy zestawu BaWita
+1. Drewniana lampka tablica z prowadnicami i zamontowanymi elementami
+manipulacyjnymi.
+2. Komplet 7 płytek magnetycznych do scenariusza „Dni tygodnia”.
+3. Komplet 14 kafelków drewnianych do scenariusza „Harmonogram dnia”
+4. Wydrukowana książeczka zawierająca instrukcję obsługi oraz opis dwóch scenariuszy
+warsztatów.
+
+--- strona 10 ---
+
+10
+V.Dokumentacja fotograficzna – książeczka
+
+Zdjęcie 1: BaWita scenariusz zajęć.
+
+Zdjęcie 2: BaWita otwarty scenariusz zajęć – instrukcja.
+
+--- strona 11 ---
+
+11
+VI.Dokumentacja fotograficzna – tablica gotowa do testów
+
+Zdjęcie 3: Gotowa tablica BaWita po zamontowaniu wszystkich elementów.
+
+--- strona 12 ---
+
+12
+
+Zdjęcie 4: Zestaw: gotowa tablica BaWita, instrukcja, podpisy dni tygodnia, wymienne kafelki w
+woreczku.
+
+--- strona 13 ---
+
+13
+
+Zdjęcie 5: Zestawy: gotowa tablica BaWita, instrukcja, podpisy dni tygodnia, wymienne kafelki w
+woreczku.
+
+Zdjęcie 6: Zestawy: gotowa tablica BaWita, instrukcja, podpisy dni tygodnia, wymienne kafelki w
+woreczku.
+
+--- strona 14 ---
+
+14
+
+Zdjęcie 7: Tylna część gotowych tablic BaWita z instrukcją.
+
+--- strona 15 ---
+
+15
+Przebieg i wyniki testów
+Testowanie tablic BaWita odbyło się Domu Spokojnej Starości "Słoneczny Parasol"
+w Sulbinach.
+Osobami testującymi było 7 pensjonariuszy wytypowanych przez opiekunkę-terapeutkę
+zgodnie z założonymi kryteriami, czyli cierpiących na zespół otępienny we wczesnym stadium
+lub po udarach. Warunkiem udziału w testach była wysoka komunikatywność, manualna
+możliwość korzystania z narzędzia, trudności z motywacją do ćwiczeń.
+W związku ze specyfiką placówki i rozkładu dnia podopiecznych z tablicy korzystało więcej
+osób. Ćwiczenia odbywały się we wspólnej przestrzeni i zarówno testujący, jak i pozostałe
+osoby brały udział w ćwiczeniach w sposób aktywny używając tablicy i pasywny – jako
+obserwatorzy.
+Okres testowania został poprzedzony spotkaniem instruktarzowo-wprowadzającym.
+Wywiad z osobami testującymi i terapeutą został przeprowadzony po okresie 3-4 tygodni
+użytkowania BaWity.
+I.Przebieg testowania
+1. Tablica była użytkowana podczas ćwiczeń popołudniowych przez wszystkich testujących
+przez cały czas trwania testów.
+2. Ćwiczenia odbywały się w przestrzeni wspólnej tak, że brali w nich udział sami ćwiczący
+i zainteresowani obserwatorzy.
+3. Sesje ćwiczeniowe z poszczególnymi użytkownikami odbywały się raz dziennie i trwały
+10-25 minut w zależności od ich kondycji psycho-fizycznej danego dnia i możliwości
+poznawczych.
+4. Wszyscy testujący w pierwszym tygodniu testów wykonywali ćwiczenia zgodnie
+z przygotowanymi scenariuszami. Najpierw łatwiejszego później trudniejszego.
+5. Ćwiczenia rozpoczęły się od zapoznania z mechaniką tablicy i zadaniach związanych
+z kolejnością dni tygodnia.
+6. Podczas kolejnych sesji terapeuta rozwijał scenariusz dni tygodnia oraz wprowadzał
+harmonogram dnia wraz z dodatkowymi opcjami.
+
+--- strona 16 ---
+
+16
+7. Tempo wprowadzania kolejnych elementów np. opisywanie czynności związanych
+z dniem tygodnia, czy miejsca wykonywania czynności z harmonogramu dnia było
+uzależnione od stopnia sprawności testującego.
+8. W drugim i trzecim tygodniu testów terapeuta wprowadził nowe scenariusze zajęć
+wykorzystując elementy BaWity:
+a) Zadania związane z kształtami ruchomych elementów: co jest w kształcie trójkąta,
+znajdź trójkąty w tym pomieszczeniu, co kojarzy Ci się z tym kształtem.
+b) Zadania związane z kolorami ruchomych elementów: jakie kwiaty są żółte, jakie
+przedmioty w tym pomieszczeniu są żółte, jakie owoce są w tym kolorze.
+c) Zadania związane z elementami harmonogramu dnia: co konkretnie trzeba zrobić pod
+hasłem ubieranie się, jakie elementy garderoby po kolei nakładamy; co robimy przed
+w trakcie i po spacerze; jak trzeba się ubrać na spacer w zimie, a jak w lecie.
+9. Podczas całego okresu testowania tablica cieszyła się dużym zainteresowaniem,
+a ćwiczenia wykonywane z jej pomocą należały do "atrakcji dnia".
+10. Ze względu na specyfikę podopiecznych Domu Spokojnej Starości (nie należących do
+grupy testowej) nie było możliwe udostępnianie tablicy do samodzielnych ćwiczeń,
+jedynie pod nadzorem terapeuty. Tablica została przygotowana w sposób
+uniemożliwiający przenoszenie jej przez osoby nie w pełni sprawne fizycznie - waga
+i przyssawki. Zestaw zawiera elementy nie przytwierdzone na stałe (tabliczki), więc
+istniało niebezpieczeństwo rozkompletowania zestawu.
+11. Tablica i wymienne kafelki podczas testów nie uległy żadnym uszkodzeniom.
+12. Na opisach procesu „Dni Tygodnia” widać ślady użycia nie wpływające na funkcjonalność,
+jedynie na estetykę.
+II.Wyniki testowania na podstawie informacji zebranych podczas spotkania
+z osobami testującymi
+1. Ocena tablicy BaWita (forma, funkcjonalność, wielkość elementów, kolorystyka etc.):
+a) Wszyscy testujący bardzo pozytywnie ocenili formę tablicy, bardzo im się podobała
+zarówno wizualnie, jak też funkcjonalnie.
+
+--- strona 17 ---
+
+17
+b) Stwierdzili, że jest ładna, przyjazna, zachęcająca do aktywności i miła w dotyku.
+c) Wielkość samej tablicy została oceniona jako odpowiednia, dostatecznie duża aby
+zmieściły się na niej potrzebne elementy, jednocześnie dopasowana do wielkości
+stołu do ćwiczeń.
+d) Przyssawki są niezbędne przy wykonywaniu poszczególnych zadań, dzięki nim tablica
+jest nieruchoma i można swobodnie manewrować elementami na prowadnicach
+i tabliczkami bez niebezpieczeństwa strącenia tablicy ze stołu.
+e) Jasne drewno podstawy stanowi dobry kontrast dla ruchomych elementów tablicy,
+jednocześnie dobrze się kojarzy użytkownikom.
+f) Inny kolor drewna w profilowaniu prowadnic pomaga znaleźć właściwą drogę.
+g) Wykończenie tablicy poprzez dokładne wyszlifowanie wszystkich krawędzi okazało się
+bardzo ważne, ponieważ niektórzy użytkownicy wodzili palcami również
+w zagłębieniach prowadnic.
+h) Kolory elementów ruchomych na prowadnicach bardzo się podobają, są odpowiednio
+kontrastowe, wspomagały zapamiętywanie oraz tworzenie nowych scenariuszy
+ćwiczeń (o których będzie mowa w dalszej części raportu).
+i) Wielkość i kształty elementów ruchomych na prowadnicach są odpowiednie do
+użytkowania przez osoby o różnej sprawności motorycznej. Łatwo je chwycić i nimi
+manipulować. Kształty były wykorzystywane do tworzenia nowych scenariuszy
+ćwiczeń (ćwiczeń (o których będzie mowa w dalszej części raportu).
+j) Magnetyczne opisy ruchomych elementów (dni tygodnia) - użytkownicy bez
+problemu umieszczali je we wskazanych miejscach, jednak mieli problemy
+z odczepieniem tabliczek. Trudno było im chwycić i podważyć magnetyczny element.
+Przysparzało to problemów w przypadku popełnienia błędu w kolejności ułożenia
+elementów przez ćwiczącego, jednak było też zabezpieczeniem przed zagubieniem
+elementów lub pomieszaniem kolejności dni tygodnia podczas ćwiczeń.
+k) Prowadnice - mają kilka poziomów trudności manualnej, zostały ułożone zgodnie
+z narastającą trudnością manewrowania. Użytkownicy wskazali na najtrudniejsze
+i sprawiające kłopoty zadania:
+
+--- strona 18 ---
+
+18
+• koło zębate z prowadnicą - wymagało nauczenia się mechaniki działania
+prowadnicy, zwykle kilka prób pozwalało na opanowanie tej umiejętności
+• suwak - ze względu na blokadę samoistnego rozsunięcia konieczne było ciągnięcie
+za suwak w odpowiedniej płaszczyźnie, nie pociąganie drewnianego kwiatka do
+góry. Po kilku próbach użytkownicy sami potrafili znaleźć odpowiedni kąt
+prowadzenia suwaka.
+• pasek z zatrzaskiem - ten element wymagał nie tylko precyzji w przyłożeniu do
+siebie obu części zatrzasku, ale też użycia siły. Niektórym osobom z ograniczoną
+sprawnością manualną ten element sprawiał trudność do końca fazy testów.
+l) Zarówno użytkownicy, jak i terapeuta potwierdzili, że różnorodne poziomy trudności
+prowadnic są wskazane oraz jeśli ich obsługa wymaga dodatkowych ćwiczeń, to jest
+to również czynnik motywujący.
+m) Tabliczki z rysunkami i opisami do ćwiczenia procesu "Harmonogram dnia" zostały
+ocenione jako czytelne. Umieszczenie na nich ikony i opisu było pomocne dla
+użytkowników. Wielkość tabliczek, rysunków i liter jest odpowiednia. Tabliczki są
+montowane na tablicy za pomocą magnesów, dobranych biegunami, tak aby nie dało
+się zrobić zbyt wielu błędów. Niektórym użytkownikom sprawiało trudność
+chwycenie przymocowanej tabliczki, może potrzebne byłby kołeczki do podnoszenia
+tabliczek, takie jak w dopasowankach dla dzieci.
+2. Ocena tablicy BaWita – wpływ na aktywność użytkowników (zmiany w wykonywaniu
+zadań, podejściu użytkowników, zaangażowaniu, funkcjach pamięciowych podczas
+trwania testu):
+a) Zarówno terapeuta jak i osoby testujące wskazały, że BaWita jest bardzo praktyczna
+i wielofunkcyjna. Nigdy się nie nudzi. Jest ważnym uzupełnieniem oferty narzędzi do
+ćwiczeń z seniorami.
+b) Użytkownicy nabierali wprawy w manipulowaniu poszczególnymi elementami tablicy
+w zróżnicowanym stopniu, uzależnionym od ich ogólnej sprawności.
+
+--- strona 19 ---
+
+19
+c) Osoby bardziej sprawne manualnie pomimo łatwości w manipulowaniu elementami
+tablicy wykazywały duże zaangażowanie w ćwiczenia, prawdopodobnie motywacja
+była wspomagana różnorodnością scenariuszy wykorzystywanych przez terapeutę.
+d) Wszyscy użytkownicy byli bardzo zainteresowani wykonywaniem ćwiczeń przy
+pomocy BaWity.
+e) Niektórzy użytkownicy szybko zapamiętali kolejność elementów procesów, inni
+pomimo wielu powtórzeń przy każdej sesji ćwiczeniowej uczyli się od początku.
+f) Ponieważ nie robiono testów obiektywnych oceniających funkcje pamięciowe przed
+i po teście, nie można ocenić wpływu sesji ćwiczeniowych z BaWitą na te funkcje,
+jednak terapeuta twierdzi, że u niektórych użytkowników widać było coraz większą
+łatwość w prawidłowym układaniu elementów.
+g) Trudno ocenić na jak długo u ćwiczących utrzymają się efekty poprawy
+w zapamiętaniu poszczególnych elementów scenariuszy - czas testów był
+ograniczony, jednocześnie choroba otępienna jest postępująca.
+3. Pomysły użytkowników na zmiany, ulepszenia w tablicy aby była bardziej funkcjonalna,
+uniwersalna:
+a) Prowadnica polegająca na prowadzeniu ruchomej kulki za pomocą patyczka lub palca
+do dołka.
+b) Prowadnica labirynt.
+c) Prowadnica wymagająca nawlekania koralików na drut lub sznurek.
+d) Dopasowywanie kształtów - podobne jak dopasowanki/układanki dla dzieci.
+e) Wymienne opisy na tabliczkach.
+f) Kolejne komplety tabliczek z innymi procesami (nie tylko harmonogram dnia).
+g) Pomysły na nowe scenariusze zajęć, procesy do ćwiczeń:
+• Zawód – czynność;
+• Pory roku – miesiące;
+• Pory roku - rodzaj odzieży, akcesoria;
+• Drzewa – liście;
+
+--- strona 20 ---
+
+20
+• Zwierzęta - miejsce występowania;
+• Państwa – stolice;
+• Święta – tradycje;
+• Emocje;
+• Przysłowia;
+• Dbanie o higienę osobistą;
+• Elementy garderoby;
+• Rodzina.
+
+--- strona 21 ---
+
+21
+Rekomendacje i zalecenia dla przyszłych użytkowników
+I.Rekomendacje dla użytkowników BaWity (w wersji testowanej) wynikające
+z procesu testowania
+1. Forma tablicy jest odpowiednia, narzędzie rehabilitacyjne w postaci atrakcyjnego
+wizualnie i funkcjonalnie urządzenia do manipulacji i ćwiczenia procesów powoduje
+wzrost zainteresowania rehabilitacją u użytkowników.
+2. Forma tablicy i poszczególnych elementów jest dopasowana do potrzeb użytkowników o
+zróżnicowanym stopniu sprawności intelektualnej i manualnej.
+3. Ćwiczenia z tablicą powinny się odbywać pod kierunkiem terapeuty lub opiekuna, który
+będzie zadawał odpowiednie ćwiczenia i czuwał nad bezpieczeństwem podczas
+warsztatów.
+4. Konieczne jest stopniowe wprowadzanie użytkowników w proces ćwiczeń. Należy
+rozpocząć od zapoznania pacjenta z funkcjami manipulacyjnymi, zasadą działania
+poszczególnych prowadnic. na kolejnych sesjach wprowadzać scenariusze w pierwszej
+kolejności prosty „Dni tygodnia”, a później złożony „Harmonogram dnia”.
+5. Jeśli pacjent jest wystarczająco sprawny intelektualnie w kolejnych krokach można
+rozbudowywać te dwa scenariusze ćwiczeń oraz wprowadzać nowe (oparte
+na dostępnych elementach zestawu).
+6. W przypadku użytkowników o wysokiej sprawności manualnej/ruchowej można
+wprowadzić ćwiczenia wymagające ruchów z dołu do góry lub na boki (odwrócenie
+tablicy).
+7. Tempo wprowadzania kolejnych modyfikacji, nowości i utrudnień jest uzależniony od
+kondycji pacjenta.
+8. Po odbyciu kilku sesji ćwiczeniowych, przy zapewnieniu odpowiednich warunków
+(bezpieczne zamocowanie tablicy do stołu, wyeliminowanie ryzyka zagubienia
+ruchomych elementów itp.) możliwe jest samodzielne korzystanie z narzędzia przez
+pacjenta.
+
+--- strona 22 ---
+
+22
+II.Wnioski i rekomendacje wynikające z analizy możliwości wprowadzenia
+ulepszeń.
+1. Opisy elementów na magnetycznej taśmie - problemy z ich odczepianiem:
+a) możliwe jest nieznaczne powiększenie pasków taśmy,
+b) ponieważ podpisy powinny być nieruchome podczas manipulacji elementami
+w prowadnicy trudno będzie znaleźć rozwiązanie techniczne, które jednocześnie było
+łatwe w użyciu dla ćwiczących (odczepianie).
+2. Opisy elementów na magnetycznej taśmie – trwałość elementów:
+a) można rozważyć wykorzystanie innego materiału do wykonania opisów, wymagałoby
+to przeprowadzenia prototypowania;
+b) przy doborze innego materiału trzeba uwzględnić konieczność nieruchomego
+mocowania opisów do elementów manipulacyjnych;
+c) jednocześnie warto zauważyć, że zastosowane rozwiązanie jest ekonomiczne i łatwe
+w produkcji;
+d) przy kilku wersjach opisów (dla różnych scenariuszy) ich częstotliwość użytkowania
+spadnie i będą służyły bez uszkodzeń dłuższy czas.
+3. Kwadratowe tabliczki z elementami procesu montowane na magnesy do tablicy –
+trudności z ich chwyceniem z płaskiej powierzchni:
+a) tabliczki można wyposażyć w uchwyty kołeczki. Należy zwrócić uwagę na wielkość
+uchwytów i trwałość ich przymocowania do tabliczki. Możliwe, że powinny być
+w kontrastowym kolorze, aby użytkownik mógł je łatwo znaleźć. Taka modyfikacja
+wymaga przeprowadzenia odpowiednich prób i prototypowania.
+4. Nowe scenariusze na bazie BaWity w obecnej formie:
+a) warto spisać kolejne pomysły na ćwiczenia i dodać je jako rozwinięcie scenariuszy już
+umieszczonych w zestawie.
+b) mamy nadzieję, że będzie scenariusze i propozycje modyfikacji będą źródłem
+inspiracji dla terapeutów, a faktyczny zbiór potencjalnych scenariuszy jest
+nieograniczony.
+
+--- strona 23 ---
+
+23
+5. Nowe komplety tabliczek pozwalające na ćwiczenie innych procesów według kolejnych
+scenariuszy:
+a) założeniem przy projekcie innowacji było przetestowanie dwóch scenariuszy jednego
+łatwego opartego tylko na podpisanych elementach ruchomych w prowadnicach
+i drugiego bardziej złożonego opartego na 14 wymiennych tabliczkach. Testy miały
+wykazać czy takie rozwiązania się sprawdzają i czy warto tworzyć kolejne scenariusze
+i wymienne elementy.
+b) rozwinięcie tablicy poprzez dodanie kolejnych scenariuszy wymaga:
+• rozpisania procesu na 7 lub 14 etapów;
+• krótkiego nazwania poszczególnych etapów procesu w sposób umożliwiający
+umieszczenie opisów na elementach wymiennych;
+• konieczne jest ustalenie odpowiedniej kolejności poszczególnych elementów
+procesu aby dopasować kolorystycznie opisy i zamontować w tabliczkach
+magnesy odpowiednią stroną (bieguny);
+• wykonania projektów graficznych odpowiednich kompletów podpisów lub
+tabliczek Ważne aby tabliczki zaprojektować w oparciu o już istniejący projekt,
+zachować wymiary zewnętrzne aby mieściły się na tablicy, zamieścić na nich opis
+i rysunek.
+6. Tabliczki z możliwością samodzielnej wymiany opisów/nazw poszczególnych faz procesu:
+a) pomysł można zrealizować poprzez wyposażenie tabliczek w plastikowe kieszonki, do
+których będą wsuwane różne wydruki z odpowiednimi elementami procesu;
+b) jest to rozwiązanie, które wymaga opracowania technicznego i prototypowania, ze
+szczególnym uwzględnieniem trwałości elementów;
+c) takie rozwiązanie pozwoliłoby na tworzenie autorskich scenariuszy procesów przez
+terapeutę, czy grupę terapeutyczną, jak też używania zdjęć, czy wydruków (np.
+realizacja pomysłu na scenariusz rodzina) albo przygotowywania ilustracji do
+kafelków przez podopiecznych np. podczas zajęć plastycznych.
+7. Nowe rodzaje prowadnic:
+
+--- strona 24 ---
+
+24
+a) pomysły są interesujące i pozwalają przypuszczać, że po przeprowadzeniu
+prototypowania można opracować tablicę BaWita 2.0 o wyższym poziomie trudności
+manualnej, bardziej ambitną wersję – jednak będzie to nowe narzędzie;
+b) obecnie zamontowane prowadnice nie wymagają modyfikacji, a tablica nie jest
+przystosowana do wymieniania tych elementów.
+III.Wnioski z analizy możliwości skalowania projektu.
+1. Możliwe jest przygotowanie kolejnych scenariuszy ćwiczeń bazujących na istniejących
+elementach zestawu dla testowanej grupy docelowej zgodnie z rekomendacjami ujętymi
+punkcie II podpunkt 4.
+2. Możliwe jest przygotowanie nowych zestawów tabliczek i opisów scenariuszy do ćwiczeń
+dla testowanej grupy docelowej zgodnie z rekomendacjami ujętymi punkcie II podpunkt
+5.
+3. Możliwe jest zrealizowanie całkowicie nowej formy tabliczek z wymiennymi opisami
+zgodnie z rekomendacjami ujętymi w punkcie II podpunkt 6.
+4. Ciekawym rozwiązaniem byłoby stworzenie bazy scenariuszy w Internecie, z których
+mogliby korzystać terapeuci podczas zajęć. w takim miejscu mogłyby być dostępne
+gotowe do wydruku propozycje kafelków do różnych procesów.
+5. Dalszym krokiem mogłoby być stworzenie platformy dla terapeutów do wymiany
+doświadczeń z pracy z BaWitą, dzielenia się swoimi pomysłami na warsztaty czy
+scenariuszami i przygotowanymi samodzielnie projektami kafelków.
+6. Jeśli pomysł z większą liczbą scenariuszy i elementów wymiennych miałby być
+zrealizowany warto pomyśleć o sposobie przechowywania poszczególnych elementów
+zestawu – Skrzynka Narzędziowa Terapeuty, która może zawierać również inne pomoce
+nie związane z BaWitą.
+7. Po zbadaniu potrzeb innych grup docelowych można dla nich stworzyć nowe projekty
+scenariuszy lub wzorniki tabliczek do procesów (np. w innej konwencji bez napisów dla
+osób nie umiejących czytać).
+
+--- strona 25 ---
+
+25
+8. Po przeprowadzeniu kolejnej fazy badania potrzeb użytkowników można zaprojektować
+wspomnianą w punkcie II podpunkt 7 tablicę z innymi wersjami prowadnic lub zadań dla
+seniorów lub innych grup docelowych.
+
+--- strona 26 ---
+
+26
+Podsumowanie
+Poniższe podsumowanie jest wynikiem naszych obserwacji i spostrzeżeń w trakcie realizacji
+projektu, a nie ustrukturyzowanego procesu ewaluacyjnego.
+Praca nad przygotowaniem innowacyjnej tablicy manipulacyjnej dla seniorów BaWita
+wymagała dużego zaangażowania ze względu na konieczność poznania faktycznych potrzeb
+grupy docelowej ze zwróceniem uwagi na wszystkich użytkowników procesu
+rehabilitacyjnego i warunków jego realizacji.
+W toku projektu okazało się, że rozmowa z osobami dla których przygotowujemy nowe
+narzędzie musi być oparta na konkretach. Dopiero spotkania z pokazywaniem i testowaniem
+różnych form makiet i prototypów dały nam informacje potrzebne do przygotowania
+ostatecznej wersji projektu BaWity. Wybuch kreatywnych pomysłów podczas spotkania
+potestowego z użytkownikami pokazał nam, że pacjenci docenili naszą pracę. Fakt, że
+zastosowaliśmy się do ich wskazówek pobudził w nich chęć tworzenia kolejnych wersji
+narzędzi do ćwiczeń przeznaczonych specjalnie dla dorosłych.
+Najbardziej zapadły nam w pamięć wypowiedzi terapeuty po okresie testowania, że
+nareszcie ma narzędzie, które jest przystosowane do potrzeb dorosłych pacjentów.
+Jednocześnie terapeutka wspomniała, że w takich domach często jest jeden lub dwóch
+terapeutów (zwykle pracują w innych godzinach) i bardzo rzadko jest okazja do czerpania
+inspiracji od innych osób. Stąd w rozdziale dotyczącym skalowania projektu pojawił się
+pomysł stworzenia platformy czy nawet społeczności dla użytkowników BaWity.
+Widzimy, że przetestowane przez nas narzędzie jest funkcjonalne i potrzebne, dlatego
+kolejnym etapem prac nad BaWitą powinna być analiza możliwości upowszechnienia
+narzędzia, opracowania procesu produkcji tablic w przystępnych cenach, jednocześnie
+w odpowiedniej jakości umożliwiającej certyfikację narzędzia.
+
+--- strona 27 ---
+
+27
+Spis załączników
+Załączniki do Modelu końcowego innowacji BaWita:
+1. Książeczka ze scenariuszami i instrukcją obsługi – plik Model końcowy BaWita_załącznik
+książeczka.pdf
+2. Książeczka ze scenariuszami i instrukcją obsługi – pliki edytowalne i produkcyjne folder
+Model końcowy BaWita_załącznik książeczka produkcja
+3. Projekt wzorniczo-wykonawczy – plik Model końcowy BaWita_załącznik projekt.pdf
+4. Projekt wzorniczo-wykonawczy wersja edytowalna – plik Model końcowy
+BaWita_załącznik projekt.docx

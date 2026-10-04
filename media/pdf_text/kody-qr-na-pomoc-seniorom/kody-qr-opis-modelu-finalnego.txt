@@ -1,0 +1,165 @@
+--- strona 1 ---
+
+Model finalny portalu w ramach projektu
+Innowacji Społecznej pn.
+“Kody QR na pomoc Seniorom”
+
+Spis treści:
+
+1.
+Autorzy projektu
+2.
+Opis projektu
+3.
+Korekty po testach z użytkownikami
+4.
+Rekomendacje do przyszłych etapów
+5.
+Architektura informacji - model finalny
+6.
+Formularz danych
+
+Wszystkie elementy innowacji zostały udostępnione na podstawie
+Licencji Creative Commons CC.BY 4.0
+
+--- strona 2 ---
+
+1. Autorzy projektu
+
+Autorami projektu Innowacji Społecznej pn. “Kody QR na pomoc Seniorom” są: Maria
+Wojtacha, Marta Salawa, Mateusz Kopacz (SKM Group Mateusz Kopacz), Joanna Szaniawska,
+Piotr Marcowski.
+
+2. Opis projektu
+W ramach innowacji stworzono i przetestowano model “kodów QR na pomoc seniorom”.
+Model składa się z fizycznie dostępnych naszywek lub naklejek kodów QR, umieszczonych na
+ubraniu seniora lub innych częściach garderoby, czy rzeczy osobistych. Kody QR można
+generować na specjalnie do tego stworzonej platformie internetowej. Mają one stanowić
+narzędzie pomocy osobom starszym cierpiącym na zaniki pamięci, demencję, choroby
+otępienne. Po odczytaniu kodu przy pomocy telefonu, osoba gotowa do udzielenia pomocy
+może mieć dostęp do podstawowych informacji o seniorze takich jak pesel, miejsce
+zamieszkania (miasto), osoba do kontaktu (telefon), ważne choroby, schorzenia, grupa krwi.
+Innowacja dotyczy problemów osób starszych i/lub niesamodzielnych, a w szczególności obawy
+przed samodzielnym wychodzeniem z domu - strach przed zaginięciem, zesłabnięciem lub
+innym zdarzeniem wynikającym z niepełnosprawności i/lub chorób przewlekłych i
+tymczasowych. Osoby starsze po 60 roku życia i/lub osoby zmagające się z
+niepełnosprawnościami, czy przewlekłymi lub tymczasowymi chorobami, często niechętnie
+samodzielnie wychodzą z domu z obawy przed zaginięciem, zesłabnięciem, silną reakcją
+alergiczną lub doświadczeniem mogącym zagrozić ich zdrowiu i życiu w momencie nie
+uzyskania szybkiej pomocy. Seniorzy w decyzji o pozostaniu w domu często są utwierdzani
+przez rodzinę i osoby z najbliższego otoczenia – wynika to z troski o bliską osobę. Niechęć lub
+niemoc realizowania samodzielnie podstawowych czynności poza domem, takich jak wyjście na
+spacer, do sąsiada, na zakupy itp.. wpływa niekorzystanie na samopoczucie osób starszych,
+brakuje im niezależności. Innowacja dostarcza nowe narzędzie - platformę internetową, która
+służy do założenia osobistego, chronionego hasłem konta, dzięki któremu użytkownicy mogą
+wprowadzić swoje dane w ramach dostępnego na stronie formularza i następnie wygenerować
+swój unikalny kod QR. Kod pobrany ze strony może być wydrukowany w formie nalepki lub
+
+--- strona 3 ---
+
+wszywki tekstylnej. Kody mogą być noszone na odzieży lub innych częściach garderoby, czy
+przedmiotach osobistych.
+Innowacja wspiera system udzielania pomocy osobom starszym, daje dostęp do danych,
+zwłaszcza społecznych, które są istotne dla ratowników medycznych, czy innego personelu
+medycznego. Narzędzie pomaga dotrzeć im szybko do osób kontaktowych, rodziny, sąsiadów
+itp., którzy mogą stanowić ważne źródło informacji o danej osobie.
+
+3. Korekty po testach z użytkownikami
+
+Po przeprowadzeniu testów z użytkownikami, obserwacje i zebrane podczas
+spotkań informacje zostały zanotowane, pogrupowane i usystematyzowane a następni,
+na podstawie całego zebranego materiału wyciągnięte zostały wnioski. Wnioski zostały
+przekształcone w rekomendacje korekty projektu oraz wprowadzone w finalny model
+strony. Poniżej znajduje się lista korekt uwzględnionych w projekcie.
+
+Strona internetowa - strona główna:
+● Korekta komunikacji na całej stronie - jaśniejsze i bardziej przystępne
+komunikaty i informacje o projekcie, uproszczenie instrukcji i wyjaśnień, dodanie
+pomocnych wskazówek, usunięcie zbędnych informacji, uproszczenie
+używanego w komunikatach języka,
+● Dodanie osobnej podstrony “Jak to działa” wyjaśniającej cel projektu oraz kroki
+do podjęcia a także odpowiedzi na podstawowe, najczęściej pojawiające się
+podczas testów pytania. Dodanie zdjęć do instrukcji,
+● Korekta infografiki na stronie głównej wyjaśniającej działanie kodów.
+
+Strona internetowa - formularz:
+● Korekta instrukcji wprowadzającej do formularza - skrócenie do jednego ekranu,
+wyjaśnienie dalszych kroków, typu danych do uzupełnienia,
+
+--- strona 4 ---
+
+● Podzielenie formularza na krótsze kroki - zamiast całego formularza na jednej
+stronie, dane zostały podzielone na grupy i przedstawione do uzupełnienia w
+ramach kolejnych kroków pojawiających się na ekranie. Dzięki temu użytkownik
+może lepiej skupić się na konkretnych danych do uzupełnienia, bez pominięcia
+innych,
+● Podział formularza na 2 części - dane podstawowe (najważniejsze) i dane
+dodatkowe,
+● Dodanie wskazówek pomocniczych przy niektórych danych, wyjaśniających ich
+możliwe zastosowanie,
+● Usunięcie danych: PESEL oraz nr budynku/mieszkania,
+● Korekta oznaczenia widoczności danych,
+● Dodanie informacji i paska wskazującego użytkownikowi na jakim etapie
+uzupełniania formularza się znajduje,
+● Dodanie widocznego logo projektu w całym formularzu,
+● Usunięcie zakładki “Dokumentacja medyczna” z widoku mojego konta.
+
+Strona internetowa - widok zeskanowanego kodu:
+● Uproszczenie komunikacji,
+● Korekta widoczności danych.
+
+Metki i naklejki:
+Zarówno metki jak i naklejki ocenione były bardzo pozytywnie - wielkość, rodzaj
+użytego materiału, ilość określona jako wystarczająca.
+
+--- strona 5 ---
+
+4. Rekomendacje do przyszłych etapów
+
+Poniżej zebrane zostały rekomendacje do projektu, które warto zgłębić, dalej
+przetestować lub przemyśleć w sytuacji dalszego rozwoju projektu i wprowadzenia go
+na większą skalę:
+● Zamieszczenie na stronie instruktażowego video pokazującego działanie kodów,
+● Dodanie sekcji z opiniami/historiami użytkowników
+● Zautomatyzowanie logistyki zamawiania i dostarczania metek/naklejek
+● Kampania promocyjna projektu - edukacja społeczna o istnieniu rozwiązania
+
+5. Architektura informacji - model finalny
+
+Główne elementy składowe modelu finalnego portalu to:
+a. Strona główna:
+- informacje o projekcie
+- infografika skrótowo przedstawiająca działanie kodów
+- przycisk do rejestracji/logowania
+- sekcja “Kontakt”
+- logo partnerów
+b. Zakładka “Jak to działa”:
+- instrukcja ze zdjęciami wyjaśniająca poszczególne kroki do podjęcia
+- odpowiedzi na najważniejsze pytania
+- przycisk do rejestracji/logowania
+c. Widok rejestracji i logowania:
+- możliwość zarejestrowania nowego użytkownika lub zalogowania do
+istniejącego konta
+d. Formularz danych podzielony na kroki
+
+--- strona 6 ---
+
+e. Widok “Moje konto”
+f. Widok zeskanowanego kodu QR (indywidualnego dla każdego
+użytkownika) - widok mobilny
+
+6. Formularz danych
+
+Formularz danych został skorygowany w oparciu o przeprowadzone testy z
+użytkownikami. Pierwotnie zaprojektowany formularz miał układ jednostronnego
+arkusza z poszczególnymi danymi widocznymi w formie rozwijanej listy. Podczas badań
+wzbudził jednak u części badanych poczucie skomplikowanej i żmudnej czynności do
+wykonania.
+W związku z tym, formularz został przeprojektowany - dane zostały
+pogrupowane na 2 części: dane najważniejsze oraz dane dodatkowe. W każdej sekcji
+znajdują się krótkie kroki zawierające tylko jedną daną do podania, by użytkownik mógł
+skupić się na konkretnej informacji. Dodatkowo przy niektórych danych pojawiają się
+pomocne informacje dot. celu podawania konkretnej informacji lub sytuacji w jakiej
+może okazać się pomocna. Po każdym kroku użytkownik przechodzi do następnego,
+klikając w przycisk “dalej”. W każdym momencie uzupełniania formularza istnieje
+możliwość zapisania obecnego stanu i wypełnienia pozostałej części później.

@@ -1,0 +1,2625 @@
+--- strona 1 ---
+
+KOŃCOWY MODEL ROZWIĄZANIA
+„GO AHEAD – MÓW ŚMIAŁO”
+Innowacja testowana w ramach „Inkubatora Dostępności” – Projektu wdrażanego w ramach
+IV Osi Priorytetowej Programu Operacyjnego Wiedza Edukacja Rozwój
+(Działanie 4.1: Innowacje społeczne), na zlecenie Ministerstwa Rozwoju, finansowanego
+ze środków Unii Europejskiej w ramach Europejskiego Funduszu Społecznego.
+
+--- strona 2 ---
+
+Spis treści
+WSTĘP .............................................................................................................................. 3
+1.
+OPIS GRUPY DOCELOWEJ I ODBIORCÓW ROZWIĄZANIA ............................................. 4
+1.1 SAMODZIELNOŚĆ OSÓB NIEPEŁNOSPRAWNYCH INTELEKTUALNIE .................................. 6
+1.2 METODY ROZWIJANIA SAMODZIELNOŚCI U OSÓB Z NIEPEŁNOSPRAWNOŚCIĄ
+INTELEKTUALNĄ ...................................................................................................................... 8
+1.3 NIEPEŁENOSPRAWNOŚĆ INTELEKTUALNA- DEFINICJA I KLASYFIKACJA ......................... 10
+1.4 CHARAKTERYSTYKA FUNKCJONOWANIA OSÓB Z NIEPEŁNOSPRAWNOŚCIĄ
+INTELEKTUALNĄ: ................................................................................................................... 10
+1.5 PROCESY UMYSŁOWE OSÓB Z NIEPEŁNOSPRAWNOŚCIĄ INTELEKTUALNĄ ................... 12
+1.6 USPRAWNIANIE ZABURZONYCH FUNKCI UMYSŁOWYCH OSÓB Z
+NIEPEŁNOSPRAWNOŚCIĄ INTELEKTUALNĄ .......................................................................... 18
+2.
+KOMUNIKACJA, JĘZYK I MOWA ................................................................................ 27
+3.
+OPIS ROZWIĄZANIA I JEGO FUNKCJONALNOŚCI ........................................................ 34
+4.
+PROGRAM SZKOLENIA DLA KADRY ........................................................................... 42
+5.
+NARZĘDZIA MONITORUJĄCE POSTĘPY UCZESTNIKÓW .............................................. 44
+6.
+SCENARIUSZE ZAJĘĆ ................................................................................................. 47
+Scenariusz zajęć nr 1: Temat: Dbam o zdrowie - HIGIENA OSOBISTA .............................. 47
+Scenariusz zajęć nr 2: Temat: BEZPIECZEŃSTWO NA ULICY ............................................. 57
+Scenariusz zajęć nr 3 Temat zajęć: PIERWSZA POMOC PRZY OPARZENIU ...................... 68
+Scenariusz zajęć nr 4 :Temat: WIZYTA U LEKARZA. .......................................................... 75
+Scenariusz zajęć nr 5: Temat: ZAKUPY .............................................................................. 90
+7.
+WYNIKI TESTÓW, REKOMENDACJE I ZALECENIA DLA PRZYSZŁYCH UŻYTKOWNIKÓW 101
+8.
+PODSUMOWANIE. .................................................................................................. 105
+
+--- strona 3 ---
+
+WSTĘP
+
+„GO AHEAD – mów śmiało” to narzędzie (aplikacja) służące rozwijaniu umiejętności
+komunikacyjnych osób z niepełnosprawnością intelektualną. Umiejętności te są uznane za
+jedne z niezbędnych zarówno do nawiązywania i podtrzymywania relacji społecznych z
+innym jak również nabywanie kompetencji społecznych warunkujących podjęcie
+niezależnego życia, stosownie do możliwości psychofizycznych. Usprawniona dzięki aplikacji
+komunikacja korzystnie wpłynie też na proces uczenia i rozwijania umiejętności
+samoobsługowych Beneficjentów potrzebnych do samodzielnego prowadzenia
+gospodarstwa domowego i funkcjonowania w środowisku.
+„Człowiek, który postępuje niezależnie, który angażuje swoje siły w wykonanie zadań,
+pokonuje sam siebie, doskonali się i rozwija swoje zdolności”
+/Maria Montessori/
+
+--- strona 4 ---
+
+1. Opis grupy docelowej i odbiorców rozwiązania
+Adresatami zajęć testujących Innowację są osoby z niepełnosprawnością
+intelektualną w stopniu umiarkowanym i znacznym, uczestnicy Warsztatów Terapii
+Zajęciowej prowadzonych przez Stowarzyszenie „Radość” w Dębicy.
+Realizatorami Programu są oligofrenopedagodzy, instruktorzy terapii zajęciowej
+przygotowani do pracy z osobami z niepełnosprawnością intelektualną i prowadzenia zajęć
+rozwijających kompetencje społeczno-zawodowe podopiecznych. Dla potrzeb realizacji
+programu w ramach projektu została opracowana koncepcja oraz program szkolenia
+realizatorów dotyczący wykorzystywania aplikacji przygotowanej w ramach Innowacji.
+
+Samodzielność i niezależność jest potrzebą rozwojową każdego człowieka. Dotyczy
+zarówno osób zdrowych jak i osób z niepełnosprawnością, niezależnie od jej rodzaju, także
+osób z niepełnosprawnością intelektualną. Obejmuje nie tylko umiejętności radzenia sobie
+bez pomocy innych w zakresie czynności samoobsługowych. To przede wszystkim autonomia
+i gotowość do podejmowania wyzwań i pokonywania różnych przeszkód, gotowość do
+podejmowania zadań opartych na osobistej aktywności, której źródłem jest wola działania
+osoby z niepełnosprawnościa.
+Daje ona poczucie niezależności, samodzielności oraz pełni życia. Aby była możliwa, osoba
+z niepełnosprawnością musi być wyposażona w umiejętności i kompetencje społeczne
+pozwalające na aktywność w różnych sferach życia.
+Do dorosłości przygotowujemy się stopniowo, w procesie edukacji, wychowania, obserwacji
+oraz poprzez podejmowanie prób i gromadzenie doświadczeń. Od dzieciństwa stopniowo
+opanowujemy umiejętności niezbędne do niezależnego życia, rozwijamy swoje możliwości,
+poznajemy własną odrębność i kształtujemy własną tożsamość. Niezależność może
+przejawiać się w możliwości organizacji swojej pracy, podejmowaniu samodzielnych decyzji,
+nowych wyzwań, w gotowości do nabywania nowych kompetencji, własnego rozwoju.
+Ważna jest też gotowość do współdziałania i współpracy.
+
+--- strona 5 ---
+
+Niezwykle ważna jest tu rola rodziców i otoczenia, które samodzielność dziecka może
+rozwijać lub ograniczać, a nawet tłumić. Rodzice nadmiernie chroniąc dziecko, czasami
+odbierają mu możliwość stania się samodzielną i niezależną osobą. Nie dają mu szansy
+rozwoju i uczenia się na własnych błędach. Dziecko nabiera wówczas przekonania, że rodzice
+nie wierzą w jego możliwości, a ono samo do niczego się nie nadaje.
+W szczególnej sytuacji znajduje się otoczenie osób z niepełnosprawnością, zwłaszcza
+intelektualną. Rodzicom dziecka z niepełnosprawnością nie jest łatwo podążać drogą
+wiodącą do jego autonomii. Przyzwyczajeni do stałego czuwania przy dziecku, troski,
+a czasem walki o jego zdrowie, bezpieczeństwo i lepszą jakość życia, często nie zauważają
+jego potrzeby odrębności i decyzyjności. Wyręczając dziecko we wszystkim pozbawiają je
+radości z pierwszych odkryć i sukcesów, a przede wszystkim ograniczają lub opóźniają jego
+potencjalny rozwój, na miarę możliwości psychofizycznych. Wskutek tego dorosłe osoby z
+niepełnosprawnością często są nieporadne, niesamodzielne i zależne od swoich najbliższych.
+Nie potrafią zatroszczyć się o siebie i swoje sprawy. Nie uczestniczą w życiu swojego
+otoczenia, nie pracują – żyją „obok społeczeństwa”. Przyzwyczajenie do stałego instruowania
+i programowania ich aktywności przez dorosłych procentuje dodatkową bezradnością
+i uzależnieniem od innych. Zamiast tego osoba z niepełnosprawnością potrzebuje
+szczególnego wsparcia i pomocy, odpowiedniej zachęty ze strony otoczenia w kształtowaniu
+kompetencji społecznych oraz umiejętności niezbędnych do prowadzenia niezależnego życia.
+
+Ważnymi obszarami warunkującymi samodzielność osób z niepełnosprawnością
+intelektualną, o które powinni zadbać ich opiekunowie, są umiejętności samoobsługowe
+i komunikacyjne, które wpływają na wszystkie inne obszary funkcjonowania, w tym działanie
+w świecie zewnętrznym, ciekawość poznawczą, nawiązywanie i podtrzymywanie
+satysfakcjonujących relacji społecznych.
+
+Istotnym aspektem takiego wsparcia jest zapewnienie odpowiednich narzędzi,
+pomocy oraz metod pracy dostosowanych do szczególnych potrzeb edukacyjnych osób
+z niepełnosprawnościami i zapewnienie warunków do kształtowania i trenowania
+samodzielności.
+
+--- strona 6 ---
+
+Aktualnie w obszarze usprawniania i aktywizowania osób z niepełnosprawnością
+intelektualną brak jest efektywnych, interaktywnych narzędzi rozwijających ich umiejętności
+i kompetencje komunikacyjne. Rolę taką może pełnić Innowacja „GO AHEAD – mów śmiało”,
+która nastawiona jest na kształtowanie tych umiejętności, co zwiększy szanse życiowe
+dorosłych osób niepełnosprawnych z niepełnosprawnością intelektualną. Usprawni ich
+aktywność społeczną i zawodową. Przyczyni się do zniwelowania poczucia wykluczenia
+społecznego.
+
+Narzędzie - oprogramowanie tematyczne, opracowane w ramach Innowacji
+„ GO AHEAD – mów śmiało” umożliwia interaktywne nauczanie wielozmysłowe, poszerzenie
+zakresu umiejętności samoobsługowych i kompetencji pozwalających na samodzielne
+poruszania się w przestrzeni publicznej, co korzystnie wpłynie na ich poczucie własnej
+wartości i sprawczości. W aspekcie społecznym samodzielność zwiększona dzięki korzystaniu
+z narzędzia przełoży się na zmniejszenie zakresu niezbędnego wsparcia osób drugich
+i odciążeniu rodziców i opiekunów.
+1.1 SAMODZIELNOŚĆ OSÓB NIEPEŁNOSPRAWNYCH INTELEKTUALNIE
+
+Proces rozwoju samodzielności można rozpatrywać w trzech aspektach:
+samodzielności praktycznej, umysłowej i społecznej.
+- Aspekt praktyczny dotyczy głównie czynności samoobsługowych, takie jak: korzystanie z
+toalety, mycie się, ubieranie i rozbieranie, czynności związane z prowadzeniem
+gospodarstwa domowego, utrzymanie porządku, dbanie o siebie oraz o swoje otoczenie.
+- Aspekt umysłowy polega na umiejętności podejmowania wyborów oraz rozwiązywania
+problemów zarówno podczas nauki, realizacji zainteresowań, samodzielnym zdobywaniu
+doświadczeń, wyrażaniu swoich opinii, pokonywaniu przeszkód. Dzięki rozwojowi tych
+umiejętności człowiek nabywa umiejętności niezbędne do pokonywania trudności
+życiowych, do rozwoju woli działania, podejmowania ważnych decyzji życiowych oraz
+budowania własnego kodeksu etycznego i hierarchii wartości.
+
+--- strona 7 ---
+
+- Samodzielność społeczna przejawia się w swobodzie w nawiązywaniu i podtrzymywaniu
+relacji społecznych, wysoko rozwiniętą umiejętnością współdziałania i pracy w zespole,
+umiejętnością rozwiązywania konfliktów, czy negocjacji. Osoby z wysoko rozwiniętymi
+umiejętnościami społecznymi w dorosłym życiu nie mają zazwyczaj problemów z
+wypełnianiem przypisanych im ról społecznych.
+Opisane powyżej aspekty samodzielności ukazują jak ważną rolę odgrywa ona w życiu
+każdego człowieka. Wpływa na jego jakość, pozwala zaspokoić potrzeby, realizować swoje
+pasje i marzenia oraz odnaleźć swoje miejsce w społeczeństwie.
+Dorosła, w pełni ukształtowana osoba samodzielna to jednostka pewna siebie, którą cechuje
+poczucie bezpieczeństwa i wiara we własne możliwości. Taka osoba dobrze radzi sobie
+z wyzwaniami edukacyjnymi i zawodowymi, potrafi sprostać wymaganiom stawianym jej
+przez życie. Człowiek samodzielny to taki, który jest otwarty na nowe możliwości, ma
+zaufanie do swoich wyborów, jest gotowy na zmiany i wyzwania, nie boi się wypowiadać
+własnych opinii. Cechuje się twórczym sposobem myślenia, nie boi się ryzyka, jest świadomy
+konsekwencji swoich działań, także w nieznanej przyszłości i w sytuacjach trudnych,
+nieprzewidzianych. Dlatego w rozwijaniu samodzielności ważne jest kształtowanie
+elastyczności, kreatywności i umiejętności poszukiwania informacji. Dzięki takim
+oddziaływaniom człowiek jest przygotowany na różne sytuacje i reaguje adekwatnie,
+zwiększając swoją zaradność życiową i niezależność od innych.
+Na nabywanie kompetencji i umiejętności związanych z samodzielnością osób
+z niepełnosprawnością intelektualną składa się kilka czynników. Są to:
+▪
+otoczenie wychowawcze i terapeutyczne,
+▪
+kompetencje motoryczne, poznawczo-emocjonalne,
+▪
+liczba i charakter zgromadzonych doświadczeń.
+Osoby z zaburzeniami rozwoju uczą się wolniej. Aby opanować nową umiejętność, wymagają
+odpowiednich metod nauczania, dostosowanych do ich indywidualnych potrzeb, znacznie
+większej liczby powtórzeń danej czynności, niż osoby rozwijające się w sposób normatywny.
+
+--- strona 8 ---
+
+Musimy być jednak świadomi ograniczeń osób z niepełnosprawnością intelektualną i stawiać
+przed nimi cele realne do osiągnięcia, na miarę ich możliwości psychofizycznych.
+1.2 METODY ROZWIJANIA SAMODZIELNOŚCI U OSÓB Z
+NIEPEŁNOSPRAWNOŚCIĄ INTELEKTUALNĄ
+
+Osoby z niepełnosprawnością, w tym z niepełnosprawnością intelektualną, w zakresie
+rozwoju samodzielności, potrzebują dodatkowych oddziaływań, dostosowanych do
+specyficznych potrzeb, wynikających z charakteru ograniczeń. Podczas pracy z nimi najpierw
+należy przeprowadzić diagnozę funkcjonalną posiadanych umiejętności.
+Głównymi umiejętnościami, które warunkują samodzielność osób z niepełnosprawnością
+intelektualną są:
+▪
+komunikacja,
+▪
+umiejętności z zakresu rozwoju społecznego,
+▪
+samoobsługa (samodzielne korzystanie z toalety, czynności higieniczne, ubieranie się
+i rozbieranie, samodzielne przygotowywanie i jedzenie posiłków, samodzielne
+spędzanie czasu, realizacja czynności związanych z prowadzeniem gospodarstwa
+domowego).
+W tym celu wykorzystujemy różnorodne metody i techniki pracy, dostosowane do
+indywidualnych możliwości i potrzeb psychofizycznych osoby z niepełnosprawnością.
+
+Pojęcie „specjalne potrzeby edukacyjne” po raz pierwszy użyto w opublikowanym
+w 1978 roku brytyjskim dokumencie rządowym zwanym Raportem Warnock (od nazwiska
+Helen Mary Warnock, przewodniczącej Komisji ds. Edukacji Niepełnosprawnych Dzieci
+i Młodzieży). W dokumencie przygotowanym przez Ministerstwo Edukacji Narodowej
+pt. Reforma Systemu Kształcenia Uczniów ze Specjalnymi Potrzebami Edukacyjnymi (1998)
+terminem „specjalne potrzeby edukacyjne” określa się „potrzeby osób (dzieci i młodzieży
+doświadczających trudności w uczeniu się, wynikające z ich niepełnosprawności lub innych
+przyczyn”.
+
+--- strona 9 ---
+
+W trakcie uczenia nowych i deficytowych umiejętności należy wybrać najbardziej
+skuteczną w pracy z daną osobą strategię nauczania. Korzystne jest w pracy z osobami
+z zaburzeniami rozwoju stosowanie wizualnych pomocy, które są dla nich bardziej
+zrozumiałe. Pedagogika specjalna wyróżnia tu:
+• modelowanie, czyli prezentację wykonania czynności, której uczymy. Poprzez
+obserwację i naśladowanie osoby prezentującej, osoby z niepełnosprawnością
+przyswajają sobie właściwe schematy działania. Jeżeli osoba z niepełnosprawnością
+nie jest w stanie samodzielnie powtórzyć wykonywanych czynności, powinniśmy
+zastosować pomoc fizyczną. Polega ona na poruszaniu konkretnej części ciała osoby
+z niepełnosprawnością w celu wykonania przez nią danej czynności np. mycia rąk,
+czy jedzenia posiłków.
+• podpowiedzi modelujące i fizyczne, podpowiedzi werbalne oraz wskazujące,
+• podpowiedzi werbalne (słowne) służą do modelowania poprawnej wypowiedzi
+lub przypomnienia o zadaniu, które miało być wykonane,
+• podpowiedź wskazująca polega na wskazaniu przez terapeutę przedmiotu
+potrzebnego do wykonania danej czynności (np. szczoteczki do zębów podczas mycia
+zębów, mydła itp.).
+• stopniowe zmierzanie do celu przez stosowanie wzmocnień - Rozwijając
+samodzielność dziecka możemy również korzystać z procedury kształtowania,
+w której stopniowo zmierzamy do celu, czyli uczenia zachowania lub kształtowania
+umiejętności, które chcemy uzyskać. Polega ono na dostarczaniu wzmocnień dla
+zachowań coraz bardziej zbliżonych do zachowania docelowego. Wzmocnieniem
+może być np. ulubiona aktywność, smakołyk lub pochwała. Techniką rozwoju
+umiejętności samoobsługowych w pedagogice specjalnej jest też - nauka poprzez
+łańcuch zachowań - Podczas stosowania tej procedury dzielimy uczoną przez nas
+czynność na mniejsze sekwencje. Naukę zaczynamy od nauczania jednej z nich
+(pierwszej lub ostatniej). Po osiągnięciu danej sekwencji przechodzimy do kolejnej.
+Naukę kończymy w momencie, kiedy osoba ucząca się samodzielnie wykonuje całą
+czynność,
+
+--- strona 10 ---
+
+• komunikacja wspomagająca lub alternatywna - do wspomagania rozwoju mowy
+i komunikacji wykorzystuje się pomoce w postaci symboli obrazkowych, zdjęć
+czy gestów. Z ich pomocą osoba z niepełnosprawnością wyraża swoje potrzeby,
+emocje oraz komentuje sytuacje z otoczenia.
+1.3 NIEPEŁENOSPRAWNOŚĆ INTELEKTUALNA- DEFINICJA I KLASYFIKACJA
+
+Według klasyfikacji ICD10, upośledzenie umysłowe to stan zahamowania lub
+niepełnego rozwoju umysłu, który charakteryzuje się statystycznie istotnym obniżeniem
+ogólnej sprawności intelektualnej w porównaniu z wartością przeciętną (IQ < 70) – w tym
+zdolności: poznawczych, komunikacyjnych, ruchowych i społecznych.
+Klasyfikacja niepełnosprawności intelektualnej w zależności od głębokości upośledzenia:
+▪
+Upośledzenie lekkie (IQ: 50 - 69)
+▪
+Upośledzenie umiarkowane (IQ: 35 - 49)
+▪
+Upośledzenie znaczne (IQ: 20 - 34)
+▪
+Upośledzenie głębokie (IQ < 20)
+Upośledzenie powoduje obniżenie funkcjonowania przystosowawczego w różnych
+obszarach życia, pogłębiające się wraz z głębokością upośledzenia. Wpływa na ograniczenie
+zdolności osób z niepełnosprawnością intelektualną do samodzielnego funkcjonowania,
+dbania o własne zdrowie i bezpieczeństwo, zaspokajania własnych potrzeb, prowadzenia
+gospodarstwa domowego, nawiązywania kontaktów interpersonalnych na płaszczyźnie
+społecznej, podejmowania odpowiedzialnych decyzji, uczenia się i organizacji czasu wolnego.
+
+1.4 CHARAKTERYSTYKA FUNKCJONOWANIA OSÓB Z NIEPEŁNOSPRAWNOŚCIĄ
+INTELEKTUALNĄ:
+▪ Upośledzenie lekkie (IQ 50 - 69):
+
+--- strona 11 ---
+
+o pełna niezależność w samoobsłudze (jedzenie mycie się, ubieranie, kontrola
+zwieraczy), praktycznych i domowych czynnościach,
+o trudności w uczeniu się, wykorzystywaniu podstawowych technik szkolnych
+(pisanie, czytanie, liczenie) – pomocne są specjalnie profilowane programy
+nauczania,
+o potencjalna zdolność do pracy wymagającej praktycznych umiejętności.
+▪ Upośledzenie umiarkowane (IQ 35 - 49)
+o Ograniczona umiejętność posługiwania się mową,
+o upośledzenie w zakresie samoobsługi i grafomotoryki,
+o bardzo duże ograniczenia nabywania wiedzy i umiejętności (tylko część osób
+z upośledzeniem umiarkowanym jest w stanie opanować, w zakresie
+podstawowym, czytanie, pisanie i liczenie)
+o potencjalna zdolność do wykonywania prostych, praktycznych prac pod
+nadzorem opiekuna
+o całkowita niezależność w dorosłym życiu to rzadkość,
+o zdolność do nawiązywania kontaktu, porozumiewania się i angażowania
+w proste społeczne działania i relacje.
+▪ Upośledzenie znaczne (IQ 20 - 34)
+o podobieństwo w zakresie obrazu klinicznego do upośledzenia
+umiarkowanego,
+o niższy poziom osiągnięć w zakresie edukacji i zaradności życiowej,
+o częste współistnienie uszkodzenia aparatu ruchowego i innych deficytów
+neurologicznych
+o wymaga nadzoru i kontrolowanego środowiska
+• Upośledzenie głębokie (IQ < 20)
+o poważne trudności w rozumieniu i spełnianiu poleceń lub instrukcji
+o brak zdolności do dbania o swoje własne podstawowe potrzeby
+o wymagają stałej pomocy i nadzoru
+o duże deficyty neurologiczne i fizyczne.
+
+--- strona 12 ---
+
+1.5 PROCESY UMYSŁOWE OSÓB Z NIEPEŁNOSPRAWNOŚCIĄ
+INTELEKTUALNĄ
+MYŚLENIE
+Myślenie osób z niepełnosprawnością umysłową cechuje:
+▪
+spowolnienie tempa myślenia,
+▪
+obniżony krytycyzm,
+▪
+występowanie trudności w definiowaniu pojęć abstrakcyjnych,
+▪
+występowanie trudności we wnioskowaniu i abstrahowaniu,
+▪
+niska płynność myślenia (mniejsza wyobraźnia),
+▪
+niedostateczny poziom przyswajania reguł i zasad,
+▪
+utrudnienia w zakresie zdolności analizy i syntezy,
+▪
+upośledzenie wnioskowania, myślenia indukcyjnego oraz wnioskowania przez
+analogię,
+▪
+osłabiona regulacyjna rola myślenia,
+▪
+preferowanie poznania bezpośredniego, z zastosowaniem działań konkretnych,
+doświadczeń i obserwacji (charakter konkretno obrazowy myślenia).
+U niektórych osób z niepełnosprawnością intelektualną występuje zdolność do
+szeregowania, klasyfikowania, przyporządkowywania, dodawania, mnożenia w odwołaniu do
+przedmiotów.
+DOJRZAŁOŚĆ SPOŁECZNA
+Funkcjonowanie społeczne osób z niepełnosprawnością intelektualną cechuje:
+▪
+utrudnione przystosowanie społeczne,
+▪
+trudności w zakresie zdolności empatycznych, zdolności wczuwania się w sytuację
+innej osoby, spostrzegania społecznego,
+▪
+słabo rozwinięte umiejętności komunikowania się,
+
+--- strona 13 ---
+
+▪
+zaburzenia rozwoju moralnego,
+▪
+niewłaściwe odczytywanie (rozumienie) sygnałów społecznych;
+▪
+brak krytycyzmu, infantylizm, łatwowierność.
+
+UWAGA I PAMIĘĆ
+
+U osób z niepełnosprawnością intelektualną uwaga dowolna na materiale
+konkretnym jest zazwyczaj prawidłowa, a na materiale abstrakcyjnym – ograniczona,
+Dominuje uwaga mimowolna nad dowolną. Koncentrację uwagi przyciągają bodźce
+wyraziste, intensywne. Często występują zaburzenia uwagi na bodźcach znaczących i mała
+podzielność uwagi.
+
+Pamięć to proces zapamiętywania, przechowywania i odtwarzania otrzymanych
+informacji. U osób z niepełnosprawnością intelektualną dominuje dobra pamięć
+mechaniczna. Osłabiona jest pamięć logiczna i dowolna. Wpływa to na słabe tempo uczenia
+się, uczenie się bez zrozumienia, wolne tempo zapamiętywania, ograniczoną pojemność
+pamięci. Zdolność do przechowywania w pamięci spostrzeżeniowych zjawisk jest osłabiona
+i powoduje mniejszą gotowość do ich odtwarzania, powolniejsze tempo przyswajania zasad
+i norm, oraz klasyfikacji pojęć.
+Upośledzenie umysłowe w stopniu lekkim: Dobra pamięć mechaniczna, zdarzają się
+przypadki wybitnie dobrej pamięci fotograficznej. Słaba pamięć logiczna i dowolna. Wolne
+tempo uczenia. Uczenie się bez zrozumienia. Zdolność zapamiętywania piosenek i wierszy.
+Upośledzenie umysłowe w stopniu umiarkowanym: Podobnie jak w upośledzeniu lekkim
+dobra pamięć mechaniczna, zdarzają się przypadki wybitnie dobrej pamięci fotograficznej.
+Ograniczony zakres pamięci. Bardzo wolne tempo uczenia się. Potrafi zapamiętać proste
+piosenki i wiersze.
+Upośledzenie umysłowe w stopniu znacznym: Zapamiętywanie znacznie utrudnione. Zakres
+pamięci znikomy, mała trwałość pamięci. Potrafi zapamiętać najprostsze układy ruchowe.
+
+--- strona 14 ---
+
+Osoby dorosłe z upośledzeniem głębokim potrafią powtórzyć zdanie, zapamiętać i wykonać
+proste polecenia.
+Upośledzenie umysłowe w stopniu głębokim: Zapamiętywanie i uczenie się są zniesione
+lub widoczne jedynie w opanowywaniu prostych reakcji ruchowych np. odszukiwanie
+schowanego przedmiotu, rozpoznawanie bliskich osób.
+MOTYWACJA I FUNKCJONOWANIE EMOCJONALNE
+
+U osób z niepełnosprawnością intelektualną motywację do uczenia się i aktywności
+cechuje: zwolnione tempo pracy, brak samodzielności, pomysłowości i przemyślanego
+działania. Wymagają wsparcia, gdyż w chwilach trudności załamują się. Korzystnie na ich
+funkcjonowanie wpływają bodźce do pracy w postaci pochwały, zachęty, nagrody, a czasem
+wyraźnego polecenia (rozkazu).
+W sferze funkcjonowania emocjonalnego występuje osłabiona kontrola emocji, popędów,
+dążeń, zdolności do uczuć wyższych, niedojrzałość emocjonalna, nadmierna pobudliwość,
+nieadekwatność reakcji emocjonalnych i tendencja do obniżonego samopoczucia
+w przypadku niepowodzenia.
+Upośledzenie umysłowe w stopniu lekkim: Osłabiona kontrola emocji, popędów, dążeń.
+Zachowana zdolność do uczuć wyższych. Utrudnione przystosowanie społeczne. Niektóre
+osoby z upośledzeniem lekkim osiągają wysoki stopień uspołecznienia.
+Upośledzenie umysłowe w stopniu umiarkowanym:
+Osoba ujawnia wrażliwość emocjonalną, głębokie przywiązanie się do osób bliskich.
+Słabo kontroluje emocje, popędy i dążenia.
+Upośledzenie umysłowe w stopniu znacznym:
+Osoby z upośledzeniem znacznym są zdolne do okazywania uczuć, przywiązania, choć
+wyrażają je w sposób infantylny. Często nie kontrolują emocji i popędów. Są mało
+
+--- strona 15 ---
+
+samodzielne, czasami realizują swoje proste potrzeby, zazwyczaj nie potrafią zadbać
+samodzielnie o higienę osobistą.
+Upośledzenie umysłowe w stopniu głębokim:
+Osoby z upośledzeniem głębokim są zdolne do wyrażania prostych emocji. Najczęściej brak
+objawów życia uczuciowego i przejawów samodzielności. W wyniku długotrwałego ćwiczenia
+można nauczyć je sygnalizowania potrzeb fizjologicznych.
+SPOSTRZEGANIE
+Sprawność percepcji wzrokowej jest uzależniona od stopnia upośledzenia. Zaburzenie tej
+funkcji powoduje trudności z wyróżnieniem istotnych szczegółów w spostrzeganym
+materiale:
+Upośledzenie umysłowe w stopniu lekkim: Sprawność spostrzegania zasadniczo w normie.
+Mogą jednak występować zaburzenia: wolny tok spostrzegania, trudności z wyróżnieniem
+istotnych szczegółów lub spostrzeżenia nieprecyzyjne.
+Upośledzenie umysłowe w stopniu umiarkowanym: Obniżona sprawność spostrzegania.
+Spostrzega cechy konkretne, nie odróżnia cech ważnych.
+Upośledzenie umysłowe w stopniu znacznym: Znacznie obniżona sprawność i szybkość
+spostrzegania. Spostrzeżenia niedokładne. Trudności w rozpoznawaniu przedmiotów,
+wyodrębnianiu elementów całości.
+Upośledzenie umysłowe w stopniu głębokim: Głęboko zaburzona sprawność spostrzegania.
+Reakcje głównie na bodźce sygnalizujące pokarm lub obecność osób bliskich. Czasami nie
+udaje się wywołać koncentracji wzroku na przedmiocie.
+SPRAWNOŚĆ SENSORYCZNA: WRAŻLIWOŚĆ SŁUCHOWA
+Sprawność sensoryczna, wrażliwość słuchowa u osób z niepełnosprawnością
+intelektualną jest uzależniona od sprawności ośrodkowego układu nerwowego, od którego
+
+--- strona 16 ---
+
+zależy różnicowanie dźwięków, ich analiza i synteza. Jeżeli ośrodek słuchowy kory mózgowej
+jest uszkodzony lub mniej sprawny, proces różnicowania, analizowania i syntezowania
+dźwięków jest zaburzony. Może się zdarzyć, że osoby z zaburzeniami percepcji słuchowej
+poszczególne dźwięki słyszą bardzo dobrze, bez względu na odległość, lecz nie potrafią ich
+różnicować, analizować czy też dokonywać ich syntezy. Zaburzenia percepcji słuchowej
+u osób z upośledzeniem w stopniu znacznym utrudniają opanowanie umiejętności czytania
+i pisania. Zaburzenia percepcji słuchowej mogą występować z różnym nasileniem u osób
+z niepełnosprawnością intelektualną, niezależnie od stopnia upośledzenia.
+MOWA
+U osób z niepełnosprawnością intelektualną często występują trudności z formułowaniem
+myśli i wypowiedzi, agramatyzmy, mały zasób słów i pojęć, częste wady wymowy.
+MOTORYKA, SPRAWNOŚĆ RUCHOWA
+W zakresie ogólnego rozwoju ruchowego (motoryka duża) u osób z niepełnosprawnością
+intelektualną mogą wystąpić opóźnienia lub zaburzenia w rozwoju ruchowym, mała
+aktywność ruchowa, ogólna niezręczność ruchowa i mała wyćwiczalność w zakresie dużych
+ruchów związana z zakłóceniami napięcia mięśniowego. Wrażenie ogólnej niezręczności
+może wynikać z braku koordynacji ruchów przy współdziałaniu różnych grup mięśniowych.
+Może się to przejawiać w:
+▪
+osiąganiu z opóźnieniem różnych umiejętności ruchowych w czynnościach
+codziennych,
+▪
+ogólnym spowolnieniu ruchowym,
+▪
+trudności w wykonywaniu ruchów precyzyjnych.
+▪
+nasilonej męczliwości,
+▪
+trudnościach w wykonywaniu ruchów równoczesnych,
+▪
+unikaniu zajęć ruchowych,
+
+--- strona 17 ---
+
+▪
+zakłóceniach koordynacji wzrokowo-ruchowej w czynnościach i zadaniach, w których
+ruch odbywa się pod kontrolą wzorku oraz w naśladowaniu demonstrowanego ruchu.
+Zakłócenia motoryki manualnej (motoryka mała, grafomotoryka) mogą występować na tle
+ogólnej niesprawności ruchowej lub mogą być zaburzeniem izolowanym.
+Do objawów zaburzenia koordynacji wzrokowo-ruchowej na tym tle należy zaliczyć:
+▪
+opóźnienia w rozwoju praksji,
+▪
+małą wyćwiczalność w zakresie ruchów drobnych, związaną z nadmiernym lub za
+małym napięciem mięśni oraz brakiem koordynacji ruchów palców, dłoni
+i przedramienia,
+▪
+zakłócenia koordynacji wzrokowo-ruchowej przy czynnościach wykonywanych pod
+kontrolą wzroku,
+▪
+niedostosowanie szybkości ruchów rąk do wykonywanej czynności,
+▪
+unikanie podejmowania czynności manualnych.
+Czynności wymagające koordynacji wzrokowo-ruchowej mogą być zdezorganizowane
+i wynikać także z zakłóceń w spostrzeganiu wzrokowym. Mogą mieć formę:
+▪
+trudności w wyodrębnianiu części w złożonej całości oraz w scalaniu poszczególnych
+części w całość,
+▪
+trudności w dostrzeganiu różnic pomiędzy podobnymi przedmiotami, obrazami
+i układami przestrzennymi oraz podobieństw w układach pozornie całkowicie
+różnych,
+▪
+trudności w odwzorowywaniu graficznym i przestrzennym złożonych struktur, przede
+wszystkim o charakterze abstrakcyjnym,
+▪
+trudności w rozumieniu i wnioskowaniu na materiale obrazowym.
+Zaburzenia koordynacji wzrokowo-ruchowej mogą występować z różnym nasileniem u osób
+upośledzonych, niezależnie od stopnia upośledzenia.
+
+--- strona 18 ---
+
+SPRAWNOŚĆ GRAFICZNA
+Sprawność graficzna uzależniona jest od precyzji ruchów palców i dłoni oraz zdolności
+regulowania napięcia mięśni, w zależności od wykonywanych czynności. Ta tzw. „mała
+motoryka” umożliwia pisanie, zapinanie guzików i wykonywanie innych ruchów drobnych.
+Warunkuje też wykonywanie czynności samoobsługowych.
+Zaburzenia sprawności graficznej są częstą dysfunkcją u osób z niepełnosprawnością
+intelektualną. Stopień zaburzenia sprawności graficznej pogłębia się w większości wraz ze
+stopniem upośledzenia.
+Do ważniejszych zaburzeń małej motoryki, zaliczyć można:
+• opóźnienia w rozwoju praksji (umiejętności posługiwania się przedmiotami
+codziennego użytku)
+• brak precyzji ruchów związanych z nadmiernym lub za małym napięciem mięśni oraz
+z brakiem koordynacji ruchów palców, dłoni i przedramienia
+• zakłócenia koordynacji wzrokowo-ruchowej przy czynnościach wykonywanych pod
+kontrolą wzroku (niski poziom graficzny oraz trudności w zajęciach plastycznych)
+• szybkość ruchów rąk niedostosowaną do wykonywanych czynności,
+• niechęć do podejmowania czynności graficznych.
+1.6 USPRAWNIANIE ZABURZONYCH FUNKCI UMYSŁOWYCH OSÓB Z
+NIEPEŁNOSPRAWNOŚCIĄ INTELEKTUALNĄ
+MOWA, ZDOLNOŚĆ KOMUNIKOWANIA SIĘ Z INNYMI:
+Zalecenia do pracy terapeutycznej:
+- posługiwanie się prostymi wypowiedziami,
+- stosowanie pojęć znanych uczniom,
+- definiowanie pojęć nieznanych bądź znanych pobieżnie,
+- prezentowanie instrukcji wykonania danej czynności w postaci jasnych, zrozumiałych
+
+--- strona 19 ---
+
+komunikatów,
+- używanie instrukcji nie tylko słownych, lecz: obrazkowych, pisemnych, pisemno-
+obrazkowych.
+
+MYŚLENIE:
+Zalecenia do pracy terapeutycznej:
+- stosowanie metod słownych: instrukcji, charakterystyki sytuacji, wykorzystywanie
+przekazów multimedialnych, filmów, obrazków, bezpośredniego pokazu,
+- stosowanie prezentacji z wykorzystaniem konkretnych materiałów, sprzętu, narzędzi,
+- dzielenie działania na etapy, części, każdy etap silnie zaznaczony , wyodrębniony spośród
+całości,
+- przedstawianie różnorodnych sytuacji, zagrożeń,
+- stosowanie technik ułatwiających transfer wiadomości (wykorzystywanie pomysłów
+uczestników zajęć, motywowanie do tworzenia pomysłów),
+- oferowanie wydłużonego czasu na pokaz i ćwiczenie konkretnych umiejętności,
+- wyjaśnianie pojęć nie znanych, ze szczególnym „zatrzymaniem” na cechach istotnych,
+- korzystanie z metod rozwiązywania problemów, metod aktywizujących (gier i zabaw
+dydaktycznych, symulacji),
+- rozwijanie umiejętności szeregowania, klasyfikowania, porządkowania,
+- dążenie do maksymalnego posługiwania się schematami ułatwiającymi zapamiętanie
+i wykorzystywanie wiedzy w odpowiednim momencie,
+- wykorzystywanie technik mnemotechnicznych oraz atrakcyjnych zabaw dydaktycznych
+ułatwiających zapamiętywanie,
+- stosowanie pogadanek przybliżających trudne sytuacje.
+
+ZDOLNOŚĆ KONCENTRACJI UWAGI:
+Zalecenia do pracy terapeutycznej:
+- korzystanie z materiału konkretnego podczas prezentacji,
+- pomysłowość w przedstawianiu elementów ważnych, istotnych dla zajęć w celu
+zwiększenia wyrazistości przekazu, atrakcyjności, która ułatwi koncentrowanie uwagi na
+
+--- strona 20 ---
+
+określonych bodźcach,
+- dbanie o przerwy, relaks w chwilach utraty zdolności do koncentracji na materiale,
+- stosowanie różnorodnych metod pracy,
+- organizowanie zajęć w różnych formach.
+
+SPRAWNOŚĆ PAMIĘCI:
+Zalecenia do pracy terapeutycznej:
+- wykorzystywanie technik ułatwiających zapamiętanie materiału,
+- oznaczanie w sposób wyrazisty treści znaczących,
+- dążenie do tworzenia schematów, ułatwiających „poruszanie” się w różnych sytuacjach,
+- dbałość o dostarczanie podczas zajęć wyselekcjonowanego, określonego materiału
+„na temat”,
+- dbałość o uporządkowanie materiału prezentowanego na zajęciach,
+- częste i wielokrotnie powtarzanie ćwiczeń,
+- stosowanie atrakcyjnych metod i form pracy,
+- nawiązywanie - np.: podawanie przykładów różnych sytuacji „z życia”, do wiedzy
+uczestników zajęć, do sytuacji znanych, przeżywanych lub zaobserwowanych.
+Rozwijanie:
+- zakresu pamięci – poszerzanie zakresu materiału, który może osoba zapamiętać,
+- trwałości pamięci – zwiększenie poziomu przechowywania zapamiętanego materiału,
+- wierności pamięci – tzn. zwiększenia dokładności materiału zapamiętywanego,
+- gotowości pamięci – tzn. łatwości przypominania sobie opanowanego wcześniej materiału
+w danym momencie,
+- szybkości zapamiętywania
+
+MOTYWACJA
+Zalecenia do pracy terapeutycznej:
+- dbałość o określanie zawsze na początku zajęć oraz w każdej nadarzającej się sytuacji
+
+--- strona 21 ---
+
+celowości, przydatności poznanego materiału,
+- tworzenie systemu motywacyjnego (konkursy, zdobywanie punktów, stopni),
+- wykorzystywanie atrakcyjnych środków dydaktycznych, korzystanie z metod
+aktywizujących, metod problemowych,
+- tworzenie miłej, pobudzającej do nauki atmosfery,
+- zapewnianie o możliwości wsparcia, pomocy, rady,
+- dbałość o samodzielność, aktywność uczestników na zajęciach,
+- zawieranie umów-kontraktów – określenie regulaminu oraz systemu nagród i kar,
+- motywowanie do działania, do podejmowania wysiłku, do kończenia pracy poprzez
+wszelkie formy zachęty, pochwały, słowa i gesty uznania i akceptacji,
+- dbałość o dostarczanie na każdych zajęciach uczestnikom informacji, oceny ich wkładu
+pracy, zaangażowania, efektów działalności oraz wskazanie tych elementów, które wymagają
+modyfikacji, większego wysiłku i zaangażowania,
+- określanie pożądanych osiągnięć po każdych zajęciach, by każdy uczestnik miał okazję
+osiągnąć sukces, uwierzyć we własne siły i możliwości.
+
+FUNKCJONOWANIE EMOCJONALNE
+Zalecenia do pracy terapeutycznej:
+- identyfikowanie, diagnozowanie stanów emocjonalnych uczestników zajęć,
+- właściwe reagowanie adekwatnie do reakcji uczestników,
+- dbałość o właściwy dobór uczestników do zajęć (według różnych kryteriów ważnych
+z punktu widzenia prowadzącego i realizowanych treści)
+- tworzenie przyjaznej, dobrej atmosfery w czasie zajęć,
+- redukowanie napięć poprzez wnikliwą obserwację czynników je wywołujących,
+- minimalizowanie czynników powodujących napięcia, stres, lęk, strach,
+- stosowanie tzw. rusztowania społecznego – posługiwanie sie metodami wspierającymi
+porozumienie bez przemocy,
+- docenianie wysiłków i osiągnięć – wprowadzenie systemu nagradzania za określone
+osiągnięcia – dbałość o pełnienie w czasie zajęć przez poszczególnych uczniów różnych
+
+--- strona 22 ---
+
+funkcji,
+- ciągła kontrola aktywności w trakcie zajęć uczniów,
+- kontrola rozumienia i prawidłowego realizowania treści programowych.
+
+DOJRZAŁOŚĆ SPOŁECZNA
+Zalecenia do pracy terapeutycznej:
+- korzystanie z metod ułatwiających uczniom wczuwanie się w sytuację innych,
+współodczuwanie, rozumienie sytuacji (metody ekspresji, impresji, drama, symulacja,metody
+o charakterze aktywizującym),
+- prezentowanie różnorodnych zachowań ludzkich na te same bodźce, w tych samych lub
+podobnych sytuacjach,
+- rozróżnianie i nazywanie rożnych stanów emocjonalnych,
+- dbałość o właściwą komunikację interpersonalną na zajęciach zarówno w gronie
+uczestników, jak i pomiędzy instruktorem i uczestnikami zajęć,
+- stwarzanie atmosfery zapewniającej komfort, bezpieczeństwo, możliwość samorealizacji,
+rozwijania swoich umiejętności w tempie dostosowanym do indywidualnych możliwości
+uczestników zajęć, z uwzględnieniem przede wszystkim mocnych, ale też i słabych stron
+uczestników zajęć – osób z niepełnosprawnością intelektualną,
+- zapewnienie uczestnikom zajęć poczucia bezpieczeństwa i akceptacji oraz dostarczenie
+różnorodnych doświadczeń społecznych,
+- wspieranie w budowaniu realistycznego obrazu siebie oraz stwarzanie życzliwej i serdecznej
+atmosfery wychowawczej poprzez dostrzeganie i docenianie nawet drobnych, ale
+rzeczywistych sukcesów,
+- zachęcanie do samodzielnego podejmowania decyzji i wykonywania zadań.
+
+SPRAWNOŚĆ SENSORYCZNA: WRAŻLIWOŚĆ SŁUCHOWA
+Zalecenia do pracy terapeutycznej:
+- Usprawnianie funkcji słuchowych odbywa się przede wszystkim na materiale dźwiękowym.
+- Materiał dźwiękowy powinien być wzbogacony o inne pomoce (np. zestawy obrazków,
+plansz itp.) ułatwiające kojarzenie dźwięków.
+
+--- strona 23 ---
+
+Im głębszy stopień upośledzenia, tym mniejsza efektywność oddziaływań terapeutyczno -
+kompensacyjnych.
+MOTORYKA:
+Zalecenia do pracy terapeutycznej:
+- dbałość o koordynację statyczną,
+- dokładność w prezentacji wykonania danego ruchu,
+- stosowanie przerw relaksacyjnych,
+- częste powtórzenia,
+- dokładność w ćwiczeniu układu ruchów (kontrola terapeuty podczas pierwszych
+samodzielnych prób),
+- podział skomplikowanych układów ruchów na etapy.
+
+KSZTAŁTOWANIE PROCESÓW PERCEPCYJNYCH:
+Zalecenia do pracy terapeutycznej:
+- dbałość o wyrazistość, czytelność przekazu zarówno słownego, jak i konkretnego (obrazek,
+fotografia, instrukcja słowna, pisemna)
+- stwarzanie komfortowej atmosfery, sprzyjającej percepcji, rozumieniu, zapamiętywaniu,
+- stosowanie różnych środków dydaktycznych,
+- dbałość o właściwe miejsca pracy,
+- dbałość o dobrze zorganizowaną i przeprowadzoną prezentację prowadzącego (dostępne
+stanowisko dla wszystkich uczestników zajęć, możliwość powtórek).
+Działania terapeutyczne powinny być ukierunkowane na:
+- stymulacje i korygowanie funkcji słabo rozwiniętych lub zaburzonych,
+- rozwijanie nowych umiejętności,
+- wykonywanie ćwiczeń i czynności wymagających zaangażowania zaburzonych funkcji
+Prowadzona rehabilitacja, stosowane metody i formy terapii muszą uwzględniać
+indywidualne możliwości psychofizyczne osób upośledzonych. Zaburzone lub słabo
+
+--- strona 24 ---
+
+wykształcone funkcje umysłowe i sprawności osób z niepełnosprawnością intelektualną
+można wyćwiczyć na drodze intensywnego treningu.
+
+Na poziomie motywacji i koncentracji uwagi, działania prowadzących zajęcia
+z osobami z niepełnosprawnością intelektualną muszą skupiać się w szczególny sposób na
+warunkach uczenia się. Dotyczy to nie tylko dobrze oświetlonego miejsca, właściwego
+dostępu do źródeł informacji czy dopasowanego miejsca pracy, ale również stworzenia
+przyjaznej atmosfery sprzyjającej poczuciu bezpieczeństwa.
+
+Ważne w rozwijaniu nowych umiejętności osób z niepełnosprawnością intelektualną
+są też skuteczne wzmocnienia, takie jak: konkretne nagrody, dyplomy czy odznaki oraz
+organizowanie praktycznego kontekstu przekazywanej wiedzy.
+Odmienne potrzeby oddziaływań dydaktycznych wymagają umiejętności odkodowania
+informacji zmysłowej, którą uczestnicy muszą posiąść, aby móc zrozumieć sens
+analizowanych sytuacji. Wiąże się to z procesem rozpoznania i zrozumienia szeregu symboli
+reprezentujących daną rzeczywistość, które pozwolą uczestnikom poruszać się
+w skomplikowanym świecie schematów, znaków i plansz.
+Osoby z niepełnosprawnością intelektualną często nie posiadają umiejętności samodzielnego
+porządkowania i powtarzania wiedzy. Dlatego tak ważne jest, aby te procesy odbywały się
+w różnych kontekstach, formach z wykorzystaniem różnych kanałów przekazu (np.
+audytywne, wizualne czy audiowizualne). Myśląc o trafnym oddziaływaniu należy również
+podkreślić znaczenie środków dydaktycznych oraz dobór właściwych form nauczania.
+Zasady obowiązujące w nauczaniu i rehabilitacji osób z niepełnosprawnością
+▪ zasady dydaktyki ogólnej
+▪ szczegółowe zasady pracy dostosowane do rodzaju i zakresu niepełnosprawności
+- Każdy człowiek ma swoje potencjalne możliwości.
+- Każdy potrafi coś zrobić.
+
+--- strona 25 ---
+
+- Każdy człowiek ma prawo do uczenia się i rozwoju.
+- Rozwój bazuje na umiejętnościach już opanowanych.
+- Motywacja decyduje, na ile chcemy podwyższyć swoje kompetencje, nauczyć się czegoś
+nowego.
+- Uczymy się przez doświadczenie i ćwiczenia.
+- Uczymy się przez całe życie.
+Zasady treningu umiejętności społecznych:
+▪ Zasada partnerstwa – poszanowanie praw i indywidualności uczestnika zajęć, zdobycie
+zaufania, akceptacji i chęci współpracy.
+▪ Zasada wielostronności oddziaływań – ćwiczymy różne umiejętności niezbędne do
+codziennego funkcjonowania i życia z innymi.
+▪ Zasada powtarzalności oddziaływań
+▪ Zasada zgodności psychospołecznych i biologicznych metod oddziaływania – łączenie
+treningu, rehabilitacji i leczenia farmakologicznego
+▪ Zasada optymalnej stymulacji - niedobór bodźców i monotonia mogą powodować
+bierność i utratę zainteresowań. Nadmiar bodźców i stawianie zbyt trudnych zadań
+wpływa demobilizująco.
+▪ Trening umiejętności społecznych zaczynamy po nawiązaniu tzw. kontaktu
+terapeutycznego.
+▪ Trudności uczestnika formułujemy w kategoriach operacyjnych. Uwzględniamy mocne
+strony uczestników zajęć.
+▪ Podajemy jasne instrukcje i wyjaśniamy każdy etap treningu.
+▪ Podajemy i egzekwujemy od uczestników zajęć informacje zwrotne - dokonujemy
+ewaluacji oceny postępów treningu
+▪ Tempo realizacji treningu dostosowujemy do aktualnych możliwości każdego uczestnika
+▪ Stwarzamy warunki do aktywności
+▪ Zachęcamy uczestników do podejmowania działań, inspirujemy ich aktywność własną
+
+--- strona 26 ---
+
+▪ Systematycznie obserwujemy zachowanie uczestników i udzielamy im niezbędnego
+wsparcia.
+Specyfika działań dydaktycznych powinna uwzględniać także takie zabiegi edukacyjne jak:
+– utrzymanie odpowiedniego poziomu motywacji;
+– rozwijanie umiejętności odkodowania informacji zmysłowej lub znakowej;
+– stosowanie komunikatów porządkujących wiedzę;
+– realizowanie ciągłego procesu powtarzania;
+– nadawanie edukacji kontekstu praktycznego.
+
+Uczestnik zajęć, osoba z niepełnosprawnością intelektualną mająca specjalne
+potrzeby edukacyjne musi wiedzieć, jaki jest cel zajęć i jak zdobyta wiedza i umiejętności jest
+potrzebna do samodzielnego funkcjonowania w codziennym życiu.
+Prowadzone zajęcia muszą również uwzględniać zasadę wszechstronnej znajomości
+uczestnika zajęć, która umożliwi odwoływanie się do jego doświadczeń i przeżyć.
+Tworzenie praktycznego kontekstu sytuacyjnego związanego z życiem codziennym,
+sprzyja wytworzeniu się określonego spoiwa i spostrzeżeń łączących doświadczenia życiowe
+uczestnika i jego wiedzę na ich temat z treściami świeżo poznanymi na zajęciach,
+co umożliwia lepsze zapamiętanie, przechowanie oraz odtworzenie wiedzy.
+
+--- strona 27 ---
+
+2. KOMUNIKACJA, JĘZYK I MOWA
+W otaczającym nas świecie mamy do czynienia z nieustannym obiegiem informacji,
+a osadzony w nim człowiek, posiada naturalną skłonność do jej poszukiwania i uzyskiwania.
+Dostęp do informacji otrzymujemy za pośrednictwem zmysłów i dzięki zachodzącym
+w mózgu operacjom myślowym. Rola człowieka nie ogranicza się jednak tylko do odbioru
+informacji i ich przetwarzania, my sami również jesteśmy źródłem informacji dla innych,
+a kiedy mamy wolę jej przekazania, stajemy się nadawcami informacji.
+Proces wymiany informacji między nadawcą i odbiorcą, a także pomiędzy grupami
+i zbiorowościami ludzkimi nazywany jest komunikowaniem się bądź też porozumiewaniem
+się. Łaciński odpowiednik terminu komunikacja – cominicare oznacza „ być w relacji,
+uczestniczyć, być w związku z.” (Słownik języka polskiego 1998) By omawiany akt
+komunikacyjny zaistniał, muszą być spełnione określone warunki.
+Komunikowanie się jest procesem interpersonalnym, wymaga obecności co najmniej
+2 osób, pozostających ze sobą w związku – w relacji. Niezbędne jest zatem nawiązanie
+kontaktu, np. poprzez zbliżenie się, wzbudzenie zainteresowania własną osobą, wejście
+w obszar uwagi drugiej osoby i stworzenie z nią wspólnego pola uwagi. W codziennych
+sytuacjach spotykamy szereg osób, z którymi wchodzimy w relacje, jedne z nich trwają
+dłużej, inne krócej, w jednych komunikujemy się częściej, w drugich rzadziej, a jeszcze
+w innych w ogóle. Są osoby, z którymi chcemy wchodzić w relacje, są też takie, których być
+może unikamy. Z osobami, które zaspokoją nasze potrzeby (rozumianymi w szerokim tego
+słowa znaczeniu), które są źródłem naszych inspiracji, z którymi łączą nas wspólne pasje
+i zainteresowania, cele, idee, działania, wchodzimy w relacje znacznie częściej. Pozostając
+w relacji, z człowiekiem w obecności, którego czujemy się m.in. bezpiecznie, akceptowani,
+wartościowi, potrzebni i sprawczy, istnieje większe prawdopodobieństwo zaistnienia aktu
+komunikacyjnego, niż w relacji z osobą, która nie daje nam poczucia bezpieczeństwa, jest
+nieprzewidywalna i traktuje nas w sposób dyrektywny.
+Komunikacja ma swoje źródło w potrzebach człowieka. Potrzeby są motorem
+napędowym podejmowanych przez nadawcę i odbiorcę działań związanych z informacją. To
+potrzeby aktywizują człowieka do zachowywania się w określony sposób, w tym także do
+
+--- strona 28 ---
+
+komunikowania się. Kiedy chcemy coś mieć, być z kimś, czegoś uniknąć lub poznać określony
+element otaczającej rzeczywistości, stajemy się aktywni i jeżeli trzeba, odpowiednio
+modyfikujemy zachowanie, aż przyniesie ono skutek. Mówimy głośniej i wyraźniej,
+podchodzimy bliżej, analizujemy informacje pochodzące z kontekstu sytuacyjnego, prosimy
+o powtórzenie.
+Wymiana informacji między nadawcą i odbiorcą, wiąże się również z posiadaniem
+motywacji do takowej wymiany. Mimo realnie istniejących potrzeb, możemy pozostawać
+bierni, nie robiąc nic, by je zaspokoić. Dzieje się tak wówczas, gdy zachowania komunikacyjne
+nie spotykają się odbiorem, bo nikt nie zwraca na nie uwagi, bo są nietypowe i niezrozumiałe
+- generalnie, gdy nie przynoszą zamierzonych efektów. Brak sprawczych, skutecznych form
+ekspresji i recepcji informacji, skutkuje spadkiem motywacji angażowania się w tego typu
+zachowania. Jeżeli sygnalizujemy swoje potrzeby, a nikt w otoczeniu na to nie reaguje, bądź
+też reaguje, ale nie zaspokaja naszych potrzeb, to w którymś momencie stracimy motywację
+i zaprzestaniemy powielać nieskuteczne formy zachowań. Sytuacja powyższa manifestować
+się może wycofaniem z interakcji społecznej, biernością bądź też przyjęciem zewnątrz
+sterownej postawy wobec innych. Tym bardziej nastąpi to szybko, gdy repertuar zachowań
+możliwych do zaprezentowania przez daną osobę będzie ograniczony np. z powodu
+niepełnosprawności.
+Kolejnym ważnym elementem procesu komunikowania się jest obecność wiedzy
+nadawcy, dotyczącej tego jaką informację przekazać, jak ją zorganizować, a także w jaki
+sposób ją przekazać. Informacja, zanim zostanie przekazana, na początku ma charakter
+osobisty i znana jest tylko nadawcy. Jest wewnętrzną reprezentację umysłową nadawcy,
+który dąży do tego, by identyczna reprezentacja umysłowa powstała w umyśle odbiorcy.
+By było to możliwe, konieczne jest jej uzewnętrznienie. W tym celu nadawca na poziomie
+umysłowym opracowuje program zewnętrznych środków, które uzewnętrznią wewnętrzny
+stan jego umysłu. Środkami, o których mowa są emitowane przez nadawcę zachowania.
+Każde zachowanie możemy potraktować jako nośnik informacji o jego autorze,
+ponieważ podlega ono interpretacji i nadawane jest mu określone znaczenie. Dzieje się tak,
+niezależnie od tego czy prezentująca je osoba, chce przekazać informację, czy też nie. Widok
+dziecka, drepczącego w miejscu z przywartymi do siebie kolanami, z wyciągniętą ręką
+
+--- strona 29 ---
+
+w kierunku kubka z wodą, czy też wpatrującego się w okno witryny sklepowej, to
+zachowania, których interpretacja dostarcza nam informacji o jego potrzebach .
+Zachowań powyższych nie możemy traktować jednak jako komunikacji. Mogą być
+jedynie źródłem informacji, nie zawsze prawidłowo odczytanej. Osoba obserwująca może
+interpretować to zachowanie, ale wyciągnięte wnioski nie muszą być prawidłowe. Nie są
+zatem komunikacją, czyli wymianą informacji.
+Zachowań powyższych, pomimo tego, iż są źródłem informacji, iż są jednocześnie
+zachowaniami intencjonalnymi, nie można traktować jako zachowań komunikacyjnych.
+Zdolność człowieka do interpretacji zachowań nie czyni z nich zachowań komunikacyjnych.
+Zachowanie komunikacyjne to zachowanie, które jest źródłem informacji, które jest
+skierowane do drugiej osoby, ale przede wszystkim, to zachowanie, którego autor ma
+intencję - zamiar przekazania informacji.
+Informacja w procesie komunikowania się przekazywana jest w formie niejęzykowej
+i/lub językowej. W związku z powyższym możemy mówić o zachowaniach komunikacyjnych
+niejęzykowych i zachowaniach komunikacyjnych językowych. Zachowania niejęzykowe
+i zachowania językowe mogą ze sobą współwystępować.
+Zachowanie niejęzykowe to zespół czynności wykonywanych przez człowieka,
+będących nośnikiem informacji, w których znaczenie przekazywane jest za pomocą ruchów,
+dźwięków, znaków nie spełniających cech języka naturalnego. Z uwagi na niejęzykowy
+charakter zachowań komunikacyjnych możemy mówić o komunikacji niejęzykowej bądź też
+o komunikacji niewerbalnej. Przykładem zachowań niejęzykowych o charakterze
+komunikacyjnym są, np. ruchy rąk (unoszenie, machanie, sięganie), przenoszenie kierunku
+spojrzenia, ruchy mimiczne twarzy, płacz, skinienie głową. Zalicza się tu także siłę, timbre
+i wysokość głosu, pauzy w toku mówienia, pantomimikę, postawę ciała, posługiwanie się
+przestrzenią.
+Zachowanie językowe to pojęcie równoznaczne z pojęciem mowy, która jest
+zespołem, „ czynności, jakie przy udziale języka wykonuje człowiek poznając rzeczywistość
+i przekazując jej interpretację innym uczestnikom życia społecznego”. Zachowanie językowe
+realizowane może być tzw. w mowie zewnętrznej, nazywanej komunikacją językową lub
+komunikacją werbalną, której „wynikiem jest tekst zorganizowany w postać dźwiękową
+
+--- strona 30 ---
+
+(wtórnie w postać graficzną lub gestową), umożliwiający porozumiewanie się w grupie
+społecznej.” Komunikacja językowa ma ścisły związek z językiem, odwołuje się do systemu
+znaków oraz reguł ich użycia. Realizowana jest w wyniku czynności mówienia, pisania
+i gestykulowania.
+Zachowanie językowe to także akt użycia języka dokonujący się w tzw. mowie
+wewnętrznej, nazywany cerebracją, którego wynikiem jest pozbawiony warstwy fonicznej
+tekst pomyślany. Mowa wewnętrzna związana jest z poznawczymi procesami organizującymi
+w umyśle człowieka wiedzę i doświadczenie o rzeczywistości oraz z procesami quasi-
+komunikacyjnymi, organizującymi wiedzę i doświadczenie z zamiarem ich przekazania.
+Wymienione powyżej zachowania komunikacyjne, jak każde zachowania pociągają za
+sobą określone konsekwencje. Nadawca, emitując zachowanie będące nośnikiem informacji,
+jest zainteresowany jego sprawczością. Oczekuje, by odbiorca potwierdził zachowaniem
+odbiór informacji. Ten może to zrobić pod warunkiem, że nadawca kierując komunikat
+pozyskał jego uwagę, potrafił ją utrzymać, a emitując zachowania komunikacyjne użył form
+zrozumiałych dla odbiorcy. Odbiorca skieruje swoją uwagę na nadawcę, gdy będzie miał taką
+możliwość, potrzebę i motywację, a w jego umyśle powstanie obraz wewnętrznej
+reprezentacji umysłu nadawcy, gdy będzie rozumiał repertuar środków komunikacyjnych,
+którymi posłużył się nadawca. Proces porozumiewania wiąże się z nieustannym
+dokonywaniem przekładu informacji, ze strony nadawcy z jej wewnętrznej formy na
+zewnętrzną, a ze strony odbiorcy z jej formy zewnętrznej na wewnętrzną. Moment
+oczekiwania nadawcy na potwierdzenie odbioru informacji to moment, w którym powinna
+nastąpić zamiana ról między nadawcy i odbiorcą. Każdy uczestnik procesu komunikacyjnego
+w sposób naprzemienny pełni obydwie role. Dokonujący się przekaz informacji wymaga
+czasu i ma określoną ciągłość, a naprzemienność aktywności uczestniczących w nim
+partnerów komunikacyjnych sprawia, iż akt komunikacyjny staje się dialogiem. Dialog
+w ontogenezie rozwoju człowieka ma swój początek już w trakcie pierwszych interakcji
+niemowlęcia z matką. To dzięki matce dziecko odkrywa naprzemienny rytm interakcji
+komunikacyjnej, który ma miejsce w trakcie codziennie wykonywanych czynności, m.in.
+w trakcie karmienia, przewijania, zabiegów pielęgnacyjnych oraz w zabawie. Aktywność
+
+--- strona 31 ---
+
+dziecka w dialogu, początkowo jest aktywnością bez-słowną, ale w wyniku interakcji
+społecznych, w których modelowane są zachowania komunikacyjne, otrzymuje ono materiał
+językowy niezbędny do nauki języka, w rezultacie czego jego uczestnictwo w dialogu staje się
+dialogiem słownym.
+Jako, iż proces komunikowania się przebiega nie tylko w wymiarze niejęzykowym,
+ale także w wymiarze językowym, nie sposób nie odnieść się do zagadnień związanych
+z językiem i mową. Zakres pojęć, komunikacja i język, pokrywa się ze sobą w sposób
+częściowy, a mianowicie wówczas, kiedy mowa jest o komunikacji językowej lub werbalne.
+Natomiast nie pokrywają się ze sobą w obszarze komunikacji niejęzykowej czy też
+niewerbalnej oraz kiedy mówi się o języku w jego funkcji reprezentatywnej
+(przedstawieniowej), ponieważ język jest nie tylko narzędziem komunikowania się, ale także
+jest sposobem interpretowania rzeczywistości w umyśle. Natomiast jeżeli chodzi o relacje
+komunikacji i mowy, to pojęcia powyższe pokrywają się ze sobą, kiedy mówimy
+o komunikacji językowej, natomiast nie pokrywają się, kiedy mówimy o mowie wewnętrznej.
+Język to system znaków i reguł ich użycia, natomiast mowa to konkretny akt użycia
+języka (Kurcz 2005: 16). Dla uzupełnienia definicji mowy, odwołam się także do definicji
+L. Kaczmarka (1982), który traktuje mowę jako dźwiękowy, oparty na języku, sposób
+porozumiewania się ludzi, w ramach którego wyodrębnić można czynność nadawania mowy,
+czynność odbioru mowy oraz wytwór mówienia i rozumienia nazywany tekstem. Nadawanie
+mowy (mówienie) jest zespołem czynności związanych z przekształcaniem spostrzeżeń,
+wyobrażeń, procesów myślowych w odpowiednie symbole (znaki)). Z kolei odbiór mowy to
+zespół czynności związanych z analizą i syntezą słyszanych dźwięków mowy oraz wiązania ich
+z określoną treścią.
+Zestawiając ze sobą powyższe definicje języka i mowy, bez trudu dostrzegamy
+prymarną – priorytetową rolę języka, język bez mowy może istnieć, natomiast istnienie
+mowy bez języka jest nie możliwe. Centralne miejsce w definicji języka zajmuje pojęcie
+znaku. Znak to obiekt lub zjawisko postrzegane zmysłowo, które informuje o czymś
+i zastępuje określony element rzeczywistości. W literaturze przedmiotu obok pojęcia znaku
+
+--- strona 32 ---
+
+funkcjonuje również pojęcie symbolu. Symbol definiowany jest jako model rzeczy, działań
+lub zjawisk . W niniejszej pracy, terminy powyższe będą traktowane jako tożsame i odnosić
+się będą się znaków językowych spełniających kryteria języków naturalnych oraz języków
+sztucznych. Używane będą zamiennie. Znaki posiadają swoją formę i znaczenie, tzn. odnoszą
+się do czegoś z wyłączeniem samych siebie. Są symbolami elementów rzeczywistości, do
+których się odnoszą, a także w pełni niezależne od sytuacji, dlatego mogą odwoływać się do
+rzeczywistości, która nie podlega bezpośredniej percepcji. Charakteryzują się określonym
+czasem trwania i postrzegania. Mogą tworzyć system, tzn. układ znaków, w którym każdy
+element pozostaje w określonej relacji do innych elementów tego układu i pełni ściśle
+określoną funkcję. Zbiór znaków, tworzący system, używany do przekazywania informacji
+nazywany jest kodem. Język jest kodem, jednakże trzeba zauważyć, iż kod jest pojęciem
+nadrzędnym w stosunku do języka, ponieważ kodem są nie tylko znaki językowe, ale także
+inne systemy znaków funkcjonujące w świecie ludzi, zwierząt i maszyn. Warunkiem
+skutecznej komunikacji jest posługiwanie się przez partnerów komunikacyjnych, nadawcy
+i odbiorcy, tym samym systemem znaków.
+Ze względu na funkcje znaki dzielą się na symptomy: czyli objawy, wskaźniki i przejawy
+jakiegoś zjawiska oraz na sygnały, które mogą być: językowe, migowo-językowe
+i niejęzykowe). Symptomy są znakami tylko dla odbiorcy, natomiast sygnały są zarówno dla
+odbiorcy jak i nadawcy. Symptomy mogą z czasem w wyniku procesu uczenia się
+przekształcać w sygnały. Przykładem przetransponowania znaku jednostronnego,
+odbieranego tylko przed odbiorcę, na znak dwustronny, który jest uświadamiany zarówno
+przez nadawcę i odbiorcę, są wczesne interakcje dziecka z matką, w których dziecko
+uświadamia sobie skutki swoich zachowań, a następnie w sposób celowy i zamierzony
+próbuje wywierać na nią wpływ.
+Język to nie tylko system znaków, to także reguły ich użycia. Reguły powyższe to. min.
+reguły składniowe, gramatyczne i fleksyjne. Sprawne i skuteczne komunikowanie się
+w sposób językowy wymaga od partnerów interakcji posiadania określonej wiedzy
+
+--- strona 33 ---
+
+i umiejętności, które będą ją realizowały, a mianowicie: kompetencji językowej, kompetencji
+komunikacyjnej i kompetencji kulturowej.
+Kompetencja językowa, jest terminem wprowadzonym przez Noama Chomsky`ego
+(1965/1982), który oznacza wiedzę umysłową związaną z posługiwaniem się systemem
+językowym Ma ona swój komponent utajony, uwarunkowany biologicznie: uniwersalną
+gramatykę (UG) oraz komponent jawny, uwarunkowany społecznie: wiedzę metajęzykową.
+Uniwersalna gramatyka traktowana jest jako forma wiedzy utajonej, ponieważ o jej cechach
+możemy wnioskować dopiero na podstawie postrzeganych zachowań językowych (mowy,
+gestów języka migowego). Komponent utajony pozwala nam w sposób nieuświadomiony
+konstruować zdania zgodnie z regułami danego języka, natomiast komponent jawny pozwala
+nam rozumieć reguły, które stosujemy konstruując zdania, dzięki czemu wiemy, np. dlaczego
+jest ono poprawne gramatycznie.
+Wyróżnia się trzy składniki kompetencji językowej (za: Kurcz, 2005):
+• syntaktyczny – związany z regułami składni,
+• semantyczny – związany ze znaczeniem zdania,
+• fonologiczny – związany z dźwiękową formą zdania, którego jednostką fonologiczną
+jest fonem – najmniejszy możliwy do zidentyfikowania dźwięk mowy.
+Kompetencja komunikacyjna, jest terminem wprowadzonym przez Della Hymesa (1972),
+który oznacza umiejętność posługiwania się językiem odpowiednio do sytuacji społecznej
+i do relacji z innymi uczestnikami interakcji komunikacyjnej. „ Jednostką tej kompetencji jest
+wypowiedź i leżący u jej podstaw akt mowy, czyli intencja mówiącego. Pojęciem łączącym
+w sobie przynajmniej dwie wypowiedzi (np. Pytanie - Odpowiedź) jest dyskurs, … .” .
+Posiada swój komponent utajony, uwarunkowany biologicznie: teorię umysłu (TU), oraz
+komponent jawny, uwarunkowany społecznie: wiedzę meta pragmatyczną. Kompetencja
+komunikacyjna uwarunkowana jest znajomością znaków wykorzystywanymi w procesie
+komunikowania się, a także rozumieniem sytuacji, w której dany znak można zastosować
+
+--- strona 34 ---
+
+Kompetencja kulturowa, jest terminem propagowanym m.in. przez Ernesta Cassirera,
+Teodozję Rittel, Stanisława Grabiasa, który oznacza wiedzę na temat zjawisk rzeczywistości
+powstającą z udziałem języka. Jej rozwój umożliwia poznawanie nowych terminów, symboli
+i znaków współczesnej cywilizacji i kultury, a także reguł i sposobów ich zastosowania.
+Każda z wymienionych kompetencji realizuje odmienne funkcję, które się wzajemnie
+uzupełniają, umożliwiając efektywny rozwój zdolności i umiejętności posługiwania się
+językiem, każda nich też może ulegać rożnym zaburzeniom. „Zaburzenie kompetencji
+językowej nosi nazwę specyficznego zaburzenia rozwoju językowego, a zaburzenie
+kompetencji komunikacyjnej – autyzmu”.
+3. OPIS ROZWIĄZANIA I JEGO FUNKCJONALNOŚCI
+Prototyp aplikacji został zaprojektowany i wykonany zgodnie z zapotrzebowaniem grupy
+docelowej, jaką są osoby niepełnosprawne intelektualnie. Aplikacja na potrzeby realizacji
+innowacji została umieszczona w chmurze i jest dostępna dla każdego urządzenia typu
+android (w okresie realizacji innowacji). Po pobraniu aplikacji na urządzenie android,
+wystarczy zarejestrować się a następnie zalogować na swoje konto.
+W aplikacji występują dwa typy użytkowników: opiekun, który ma dostęp do kont wszystkich
+uczestników oraz użytkownicy właściwi. Dzięki takiemu podziałowi, opiekun ma możliwość
+monitorowania postępów uczestników i sprawdzania, które z tematów nie są opanowane
+w sposób zadowalający i wymagają powtórzenia.
+Dzięki monitorowaniu postępów nabywania wiedzy i kompetencji komunikacyjnych
+uczestników możliwa jest ewaluacja tematów oraz ich zawartości. Drugim rodzajem
+użytkownika są testerzy aplikacji/pozostali odbiorcy, którzy mają możliwość wykonywania
+zawartych w aplikacji zadań/quizów.
+Po pobraniu aplikacji z linku uruchamiamy ją na telefonie. Kolejnym krokiem jest
+zarejestrowanie się. Jest ono proste i nie wymaga potwierdzenia rejestracji. Po rejestracji
+można się zalogować do aplikacji za pomocą adresu email oraz hasła - w ten sposób
+
+--- strona 35 ---
+
+rozpoczynamy. Osoba korzystająca z aplikacji ma możliwość dowolnego wyboru tematów,
+ich kolejność nie jest odgórnie narzucona.
+Aplikacja zawiera 5 historyjek/quizów a każda z nich składa się z minimum 5 „kroków ”.
+Użytkownik otrzymuje graficzne przedstawienie „historyjki” (czyli określonej sytuacji
+społecznej) a jego zadaniem jest wybór komunikatu zwrotnego, właściwego do określonej
+sytuacji. Efektem jego akcji jest określona reakcja uczestnika „rozmowy” przedstawiona w
+formie emotikonów. Po przejściu wszystkich kroków w danej „historyjce” użytkownik ma
+dostęp do informacji o sukcesie swoich działań. Każdy quiz/historyjka został poprzedzony
+filmikiem instruktażowym. Dodatkowo wszystkie wyniki są zapisywane na koncie
+użytkownika z datą i godziną wypełniania testu oraz ilością prawidłowych i nieprawidłowych
+odpowiedzi.
+Schemat aplikacji mobilnej
+
+--- strona 36 ---
+
+Funkcje aplikacji mobilnej:
+1. Logowanie
+
+--- strona 37 ---
+
+Przyciski login oraz hasło służą do wprowadzenia danych dostępowych. Przycisk „nie
+pamiętasz hasła?” służy do przejścia do widoku resetu hasła. Natomiast „zarejestruj się”
+służy do przejścia do widoku rejestracji.
+2. Reset hasła
+
+W celu resetu hasła należy w przycisku „podaj login lub e-mail” podać email lub login
+użytkownika, który ma mieć zresetowane hasło. Przycisk „wyślij kod” wysyła żądanie na
+serwer.
+3. Reset hasła potwierdzenie
+
+--- strona 38 ---
+
+W przycisku „podaj kod” użytkownik wprowadza kod, który dostał na e-mail, który
+potwierdza, że e-mail należy do niego. W przycisku „nowe hasło” ustawia nowe hasło.
+Przycisk „zapisz hasło” wysyła żądanie na serwer.
+4. Rejestracja
+
+Widok odpowiada za rejestrację nowego użytkownika. Użytkownik uzupełnia dane i poprzez
+przycisku „ZAREJESTRUJ” wysyła je na serwer.
+5. Wybór opcji
+
+--- strona 39 ---
+
+Przycisk „wybierz tematykę” odpowiedzialny jest za przejście do wyboru tematyk, natomiast
+„Zobacz wyniki” odpowiada za przejście do ekranu wyników użytkownika.
+
+6. Wybór tematyki
+
+W tym ekranie użytkownikowi wyświetlane są tematyki edukacyjne.
+
+7. Lekcja
+
+--- strona 40 ---
+
+Na ekranie użytkownikowi wyświetlana jest lekcja. Po kliknięciu w zdjęcie, wyświetlany jest
+jego opis.
+Niektóre zdjęcia są w formie pytań na które użytkownik może udzielić odpowiedzi. Po
+kliknięciu na odpowiedź, użytkownikowi wyświetlana jest informacja o poprawności i
+uzasadnieniu odpowiedzi.
+8. Wyniki uczestnika
+
+--- strona 41 ---
+
+Ekran pokazuje użytkownikowi informację o wynikach jego quizu. Wyniki sortowane są
+malejąco na podstawie daty ukończenia quizu.
+9. Wyniki z perspektywy opiekuna
+
+Ekran ukazuje opiekunowi wyniki uczestników quizu w formie zagnieżdżonej listy. W polu
+„Szukaj” może filtrować po imieniu oraz nazwisku danego użytkownika aplikacji.
+Ekran pokazuje ilość poprawnych i nieprawidłowych odpowiedzi udzielonych przez
+użytkownika.
+
+--- strona 42 ---
+
+4. Program szkolenia dla kadry
+Przed rozpoczęciem używania aplikacji opiekunowie grup powinni odbyć szkolenie z zakresu
+użytkowania aplikacji oraz wszystkich jej funkcji. W ten sposób zyskują odpowiednią wiedze
+i kompetencje aby prowadzić zajęcia z grupami testującymi aplikację. Przewidywany czas
+szkolenia: 2h zegarowe. Poniżej przedstawiono ramowy plan szkolenia:
+1. Zapoznanie użytkowników z aplikacją
+a) Ogólne przedstawienie aplikacji
+b) Przedstawienie układu aplikacji
+2. Przejście przez flow aplikacji
+a) Przejście przez flow z punktu widzenia zwykłego użytkownika
+b) Przejście przez flow z punktu widzenia opiekuna
+3. Zapoznanie użytkowników z systemem logowania
+a) zapoznanie użytkowników z rejestracją
+b) zapoznanie użytkowników z logowaniem
+c) zapoznanie użytkowników z resetem hasła
+d) zapoznanie użytkowników z kontem administratora
+e) zapoznanie użytkowników ze sposobem tworzenia konta opiekuna
+4. Zapoznanie użytkowników z systemem „Tematów” w aplikacji
+a) Zapoznanie z systemem lekcji
+b) Zapoznanie z systemem quizów
+5. Zapoznanie użytkowników z systemem wyników
+a) Zapoznanie użytkowników z podglądem wyników pojedynczego użytkownika
+b) Zapoznanie użytkowników ze zbiorczym podglądem wyników wszystkich
+użytkowników
+c) Zapoznanie użytkowników z systemem eksportu danych z aplikacji.
+
+Instrukcja użytkowania dla kadry:
+
+--- strona 43 ---
+
+Aplikacja „Go ahead – MÓW ŚMIAŁO” jest narzędziem do nauki prawidłowego
+zachowania się w różnych sytuacjach społecznych i wzbogacania umiejętności
+komunikacyjnych użytkowników.
+Zasady użytkowania urządzenia:
+1. Pobierz urządzenie na telefon z oprogramowaniem android. Link do aplikacji to:
+https://drive.google.com/file/d/1jOle7K9YCO-HbGBHP042I1CPVpMUSbRY/view?usp=drivesdk
+2. Po pobraniu aplikacji należy założyć własne konto poprzez kliknięcie w pole „ZAREJESTRUJ
+SIĘ” i podanie wymaganych danych.
+3. Kliknij „ZAREJESTRUJ” – zapamiętaj podane przez siebie dane: LOGIN I HASŁO.
+4. Następnie zaloguj się na swoje konto. Wpisz wybrany przez siebie LOGIN i HASŁO i kliknij
+„ZALOGUJ SIĘ”.
+5. Po zalogowaniu ukażą się pola z napisami: WYBIERZ TEMATYKĘ, ZOBACZ WYNIKI
+I WYLOGUJ.
+6. Aplikacja ma formę Quizów o tematyce: OPARZENIA, RUCH DROGOWY, KĄPIEL, WIZYTA
+U LEKARZA i ZAKUPY. Wybierz i kliknij w pole z interesującym cię tematem.
+7. Po dotknięciu pola z wybranym tematem pokażą się komunikaty lub zdjęcia związane
+z różnymi sytuacjami dotyczącymi wybranej tematyki i kolejne pola z możliwymi
+odpowiedziami/reakcjami.
+8. Po dokonaniu wyboru ukaże się emotikonka przedstawiająca reakcję na odpowiedź, po
+której możesz poznać czy odpowiedź była właściwa i opis, który będzie tłumaczył dlaczego
+dana odpowiedź jest poprawna lub dlaczego jest błędna.
+9. Jeśli chcesz sprawdzić ile udzieliłeś dobrych, a ile złych odpowiedzi kliknij w pole „ZOBACZ
+WYNIKI”.
+
+--- strona 44 ---
+
+10. Jeżeli będziesz chciał sprawdzić swoją wiedzę z kolejnego tematu, kliknij „NASTĘPNY
+TEMAT”, a następnie „WYBIERZ TEMATYKĘ”.
+11.Jeżeli chciałbyś zakończyć korzystanie z aplikacji kliknij w pole WYLOGUJ.
+Życzę zadowolenia z korzystania z aplikacji.
+5. Narzędzia monitorujące postępy uczestników
+Innowacja „Go ahead” zakłada dwa rodzaje monitorowania postępów uczestników:
+• Pierwszy jest wbudowany w aplikację – rejestr odpowiedzi użytwkoników.
+Gromadzone wyniki wypełnionych quizów po każdej lekcji/temacie, który będzie
+omawiany z uczestnikami pozwolą na obserwację przyrostu wiedzy. Sposób liczbowy
+monitorowania postępów ułatwia późniejsze przeliczenie procentowe w skali całej
+aplikacji, czyli 5 lekcji z różnych tematów rozwijających kompetencję komunikacyjną
+osób z niepełnosprawnościa.
+• Drugi rodzaj monitorowania odbywa się w czasie i po zajęciach - ma on formę ankiety
+wypełnianej przez osobę prowadzącą (wzór ankiety poniżej).
+
+Wzór ankiety dla prowadzących zajęcia:
+Tabela 1:
+
+Data spotkania:
+Tak
+Nie
+Czasami
+Uwagi
+dodatkowe
+1.
+Czy aplikacja jest łatwa
+w obsłudze dla uczestnika?
+
+2.
+Czy aplikacja jej możliwość
+wykorzystania wpływają na
+motywacje uczestnika ?
+
+--- strona 45 ---
+
+Data spotkania:
+Tak
+Nie
+Czasami
+Uwagi
+dodatkowe
+3.
+Czy uczestnik potrzebuje
+pomocy przy obsłudze
+aplikacji ?
+
+4.
+Czy samodzielnie wykonuje
+zadania?
+
+5.
+Sposób pracy: samodzielny,
+czasami oczekuje pomocy,
+najczęściej oczekuje
+pomocy, bierny
+*Podkreśl właściwe
+
+6.
+Aktywność/ zaangażowanie
+na zajęciach: aktywnie
+uczestniczy, wskazuje bierny
+Stosunek wobec zleconych
+mu zadań, nie chce brać
+udziału
+*Podkreśl właściwe
+
+7.
+Inne
+
+Uzyskane dane liczbowe przedstawione w formie procentów z obydwu narzędzi
+monitorujących postępy uczestników pozwolą na sprawdzenie efektywności aplikacji
+w rozwoju kompetencji komunikacyjnych osób dorosłych z niepełnosprawnością
+intelektualną.
+Trzeci rodzaj monitoringu postępu użytkowników odbywał się za pomocą arkusza
+ankietowego wypełnianego przez użytkowników aplikacji (na pierwszych i ostatnich zajęciach
+ten sam, ze wsparciem prowadzących), który pozwolił zweryfikować postępy w nabywaniu
+
+--- strona 46 ---
+
+kompetencji społecznych. Zostały one zawarte w scenariuszach zajęć w formie quizów
+sprawdzających wiedzę uczestników.
+
+--- strona 47 ---
+
+6. Scenariusze zajęć
+Test rozwiązania z wykorzystaniem aplikacji poprzedzały spotkania grupowe dotyczące
+poszczególnych tematów poruszanych w aplikacji. Prowadzone były przez terapeutów,
+którzy kontynuowali w dalszej kolejności indywidualne spotkania z wykorzystaniem aplikacji.
+Miały one charakter wprowadzający do tematu i pozwalały zintensyfikować oddziaływania
+edukacyjne.
+Scenariusz zajęć nr 1: Temat: Dbam o zdrowie - HIGIENA OSOBISTA
+
+Uczestnicy zajęć: 8 osób (2 grupy po 4 osoby) z niepełnosprawnością intelektualną w stopniu
+umiarkowanym i znacznym, uczestników WTZ
+Cel ogólny:
+- uświadomienie potrzeby przestrzegania higieny osobistej,
+- kształtowanie nawyku mycia rąk i korzystania z codziennej kąpieli.
+- przygotowanie osób z niepełnosprawnością intelektualną do samodzielnego
+funkcjonowania poprzez rozwijanie i doskonalenie umiejętności samoobsługowych
+w zakresie prawidłowych nawyków higienicznych.
+- wdrażanie uczestników do utrzymywaniu ładu i porządku w pomieszczeniach sanitarnych.
+Cele szczegółowe:
+- Poznanie zasad higieny osobistej,
+- poznanie i stosowanie odpowiedniej kolejności przy myciu rąk,
+- kształtowanie umiejętności mycia rąk,
+- kształtowanie umiejętności społecznych (stosowanie form grzecznościowych,
+porządkowanie po sobie łazienki, pomaganie innym, uważne słuchanie wypowiedzi innych
+osób),
+- rozwijanie myślenia i bogacenie słownika za pomocą zabaw dydaktycznych,
+- rozwijanie umiejętności odpowiedniego korzystania z przyborów toaletowych oraz
+przedmiotów służących do higieny osobistej,
+
+--- strona 48 ---
+
+- wdrażanie do wykonywania kolejnych czynności związanych z myciem całego ciała.
+- doskonalenie umiejętności prawidłowego używania mydła, ręcznika, grzebienia, gąbki,
+szczoteczki.
+- rozumienie konieczności zmiany bielizny osobistej i odzieży.
+- wdrażanie do zachowania zasady niekorzystania z cudzych przedmiotów osobistego użytku.
+Cele operacyjne:
+Uczestnik:
+- rozpoznaje i nazywa przybory toaletowe,
+- samodzielnie wykonuje zabiegi higieniczne, potrafi poprawnie umyć się i wytrzeć,
+- wykazuje zainteresowanie zdobywaniem wiedzy dotyczącej higieny,
+- potrafi umyć ręce i całe ciało zachowując kolejne etapy,
+- odtwarza ruchem demonstrowane czynności mycia rąk, mycia całego ciała,
+- poznaje przybory toaletowe, służące do utrzymania higieny ciała,
+- rozpoznaje węchem produkty służące do higieny osobistej,
+- rozumie znaczenie higieny osobistej dla funkcjonowania organizmu,
+- uczestnik podejmuje indywidualne decyzje dotyczące preferowanych środków higieny
+osobistej adekwatnie do jego potrzeb (odpowiedni dezodorant, mydło, szampon).
+Metody:
+- Czynne: ćwiczenia praktyczne, kierowanie aktywnością uczestnika, wykonywanie zadań.
+- Słowne: rozmowy, opowiadanie, objaśnienia i instrukcje.
+- Percepcyjne: obserwacja i pokaz, przykład instruktora.
+- zabawy ruchowe,
+- zajęcia plastyczne.
+Formy pracy:
+- indywidualna, grupowa
+Środki dydaktyczne i pomoce do zajęć:
+- Plakat z mottem lekcji: MOTTO: „Szlachetne zdrowie, nikt się nie dowie jako smakujesz,
+aż się zepsujesz” (Jan Kochanowski).
+
+--- strona 49 ---
+
+- różne przybory do higieny osobistej i ilustracje związane z tym tematem,
+- plakaty tematyczne np. Etapy mycia rąk,
+- komputer z dostępem do Internetu do wykorzystania materiałów dydaktycznych, np.: film
+- pokaz prawidłowego mycia rąk -https://www.youtube.com/watch?v=m5uEjEV0eDY
+- środki dydaktyczne zamieszczone na portalu Scholaris: Przybory do kąpieli produkty higieny
+osobistej,
+- kolorowanka – Łazienka,
+- teksty wierszy związanych z tematem zajęć,
+- zagadki tematyczne.
+Tematyka zajęć:
+- Zasady mycia rąk
+- Zasady mycia całego ciała
+
+PRZEBIEG ZAJĘĆ:
+I. Część wstępna
+1. Powitanie - Przywitanie się uczestników różnymi częściami ciała (np. ręką, kolanem,
+kciukiem, łokciem). W trakcie przywitania uczestnicy poruszają się swobodnie po sali i
+wykonują kolejne polecenia instruktora: podchodzą do każdej osoby z grupy i witają się
+wymienioną przez instruktora częścią ciała.
+2. Podanie tematu i celu zajęć.
+- Rozmowa kierowana nt. Znaczenie higieny (dla zdrowia, funkcjonowania społecznego);
+Nauczyciel prowadzi dalej dyskusję wzbudzając wśród uczestników zainteresowanie
+tematem oraz chęć wypowiedzi. Przykładowe pytania: Do czego służy woda? co powinno się
+znajdować w łazience? Kiedy należy myć ręce? Jakie przybory służą do mycia rąk? Jakie
+przybory potrzebne są do umycia zębów? Dlaczego należy się myć?.
+Zabawa ruchowa: Uczestnicy wykonują polecenia instruktora:
+• Wstaną i zamienią się miejscami osoby, które dzisiaj myły zęby;
+
+--- strona 50 ---
+
+• Wstaną i zamienia się miejscami osoby, które dzisiaj czesały włosy,
+• Wstaną i zamienia się miejscami osoby, które myły dzisiaj ręce.
+II. Realizacja tematu
+1. Omówienie etapów mycia rąk:
+• Odkręć wodę
+• Zamocz ręce i nadgarstki
+• Nałóż mydło - najlepiej mydło w płynie
+• Myj ręce zaczynając od:
+- paznokci
+- wewnętrznej strony dłoni
+- palców po kolei
+- przestrzeni między palcami
+- spodu dłoni
+- wierzchu dłoni
+- kciuków
+- nadgarstków
+• Opłucz ręce
+• Wytrzyj ręce do sucha, najlepiej w ręcznik papierowy.
+2. Utrwalenie wiadomości: Oglądanie filmu edukacyjnego – Zasady mycia rąk
+3. Omówienie etapów kąpieli całego ciała
+Kolejność czynności:
+1. Przygotowujemy ręczniki, środki higieny osobistej do kąpieli, czystą bieliznę, środki do
+sprzątania łazienki
+2. Zdjąć ubranie.
+3. Spłukać ciało ciepłą wodą.
+4. Namydlić ciało, szczególnie pachy, pachwiny, stopy.
+5. Spłukać ciało ciepłą wodą.
+6. Wytrzeć ciało ręcznikiem.
+
+--- strona 51 ---
+
+7. Założyć czystą bieliznę.
+8. Odłożyć na miejsce przybory toaletowe.
+9. Rozczesujemy włosy
+10. Umyć wannę i umywalkę.
+11. Umyć i wytrzeć podłogę.
+4. Omówienie zasad dbałości o czystość otoczenia, zwłaszcza pomieszczeń sanitarnych
+(łazienka, toaleta)
+5. Utrwalenie wiadomości:
+Przeprowadzenie (rywalizacja 2 grup uczestników) quizu na temat „Higiena osobista”
+Podział grupy na 2 drużyny za pomocą losowania kolorowych patyczków. Kolejno
+odpowiadają na pytania.
+Za prawidłową odpowiedź drużyna otrzymuje 1 pkt., za błędną -1 pkt. a pytanie przechodzi
+na grupę drugą, która może podać odpowiedź. Prowadzący zapisuje punkty na tablicy.
+- Polecenie: Dokończ poniższe zdania na temat higieny osobistej.
+Powstanie w ten sposób dekalog zasad, które każdy człowiek powinien stosować.
+1. Szczotkuj zęby przez ............... minuty, przynajmniej 2 razy dziennie.
+2. Zmieniaj szczoteczkę do zębów na nową, co .....................................................................
+3. Myj całe swoje ciało pod prysznicem lub w wannie.............................................................
+4. Po wizycie w toalecie .....................................................................................................
+5. Zmieniaj .............................................................................. bieliznę osobistą.
+6. Myj ręce przed każdym ...................................................................................................
+Prawidłowe odpowiedzi:
+- Pyt.1 - 3 minuty,
+- Pyt. 2 - 1 miesiąc,
+- Pyt. 3 - raz dziennie,
+- Pyt. 4 - wymyj ręce,
+- Pyt. 5 - codziennie,
+- Pyt. 6 - posiłkiem.
+
+--- strona 52 ---
+
+III. Zajęcia aktywizujące:
+1) Ćwiczenie: Co służy do mycia?:
+- oglądanie przyborów do mycia, grupowanie elementów na te, które służą do kąpieli, do
+mycia rąk, zębów, pielęgnacji włosów itp.
+2) Zabawa:
+- rozpoznawanie za pomocą dotyku zakrytych tkaniną przedmiotów służących do
+utrzymania higieny ciała (np. szczotka do pielęgnacji paznokci, szczotka do zębów,
+mydelniczka, ręcznik, gąbka, pumeks; myjka, szczotka do mycia pleców)
+- rozpoznawanie węchem produktów służących do higieny osobistej, np.: pasta do zębów,
+mydło w płynie, krem do rąk, dezodorant;
+3) Zabawa ruchowa z elementem naśladownictwa (Pantonima):
+Myjemy zęby, twarz, ręce, włosy, nogi, kąpiemy się; przedstawienie czynności związanych
+z dbaniem o higienę. Na początku instruktor wydaje polecenia, a następnie zastępuje go
+chętny uczestnik.
+IV. Podsumowanie zajęć - utrwalenie wiedzy
+1) Zagadki
+W celu utrwalenia poznanych już informacji nauczyciel zadaje zagadki, na które dzieci będą
+starać się odpowiedzieć. Wybrany uczestnik odnajduje odpowiedź także wśród obrazków.
+2) Kolorowanie obrazków związanych z higieną.
+3) Podsumowanie instruktora – podkreślanie znaczenia częstego mycia rąk, higieny całego
+ciała.
+Podziękowanie za czynny udział w zajęciach.
+Materiały do zajęć:
+Zagadki:
+Rozpuszczam się w wodzie,
+ubywa mnie co dzień.
+
+--- strona 53 ---
+
+Kto o czystość dba,
+ten mnie dobrze zna. (MYDŁO)
+Kot ma długie, ostre,
+często nimi drapie.
+Wystrzegaj się bardzo,
+żebyś nie miał takich. (PAZNOKCIE)
+Chociaż mam zęby, to nic nie jadam
+Tylko splątane włosy układam (GRZEBIEŃ)
+Kim jestem? Pytam siebie!
+Patrząc na mnie – widzisz siebie (LUSTERKO)
+Rymowanki:
+- KTO SIĘ CHĘTNIE ORAZ CZĘSTO MYJE MAŁO CIERPI, DŁUGO ŻYJE!
+- KIEDY ZNAJDĘ SIĘ W ŁAZIENCE NAJPIERW SIUSIU - POTEM RĘCE.
+- WODA I MYDŁO TO NAJLEPSZE PACHNIDŁO!
+- W ZDROWYM CIELE ZDROWY DUCH.
+Wiersz I. R. Salach „Czystość to zdrowie”
+Kiedy rano wstaję, do łazienki idę,
+kran odkręcam z ciepłą wodą i dokładnie myję ...
+zęby, twarz i szyję.
+Gdy już się ubiorę, to przeczeszę włosy,
+by nie sterczał krzywo w górę
+ani jeden kosmyk.
+Ręce zawsze czyste mam,
+O paznokcie krótkie dbam.
+Czyste włosy mam i szyję
+no bo się dokładnie myję.
+
+--- strona 54 ---
+
+Żeby zdrowym zawsze być,
+Trzeba się dokładnie myć.
+I pamięta każdy zuch:
+W zdrowym ciele zdrowy duch.
+Rozmowa na temat wiersza:
+• Co robimy rano, gdy wstajemy z łóżka?
+• Co robimy, gdy się już ubierzemy?
+• Co trzeba robić, żeby zawsze być zdrowym?
+• Co znaczy powiedzenie – w zdrowym ciele zdrowy duch?
+Zagadka: Co to są choroby brudnych rąk?
+„Choroba brudnych rąk” – choroby wywołujące zatrucia pokarmowe; drobnoustroje
+chorobotwórcze są przenoszone poprzez brudne ręce, nie myte owoce i warzywa spożywane
+na surowo, brudne naczynia (np. żółtaczka, czerwonka).
+Ćwiczenie sprawdzające: Poniżej wypisano różne przedmioty, które znajdują się w łazience.
+Czerwonym kolorem podkreśl te przybory higieniczne, które każdy powinien mieć
+i których nie wolno nikomu pożyczać:
+mydło - grzebień - krem do rąk - szczoteczka do zębów - suszarka do włosów - dezodorant -
+pasta do zębów – ręcznik - gąbka do kąpieli - proszek do prania - szampon do włosów
+
+QUIZ – ANKIETA EDUKACYJNA: Czy dbasz o zdrowie i znasz podstawowe zasady higieny?
+Odpowiedz na poniższe pytania?
+1. Czy myjesz zęby po każdym posiłku?
+TAK – 5 CZASAMI – 2 NIE – 0
+2. Czy najchętniej na drugie śniadanie jadasz owoce, ciemne pieczywo i pijesz sok?
+TAK – 5 CZASAMI – 2 NIE – 0
+
+--- strona 55 ---
+
+3. Czy śpisz w ciągu nocy minimum 9 godzin?
+TAK – 5 CZASAMI – 2 NIE – 0
+4. Czy wietrzysz pokój w trakcie nauki i przed snem?
+TAK – 5 CZASAMI – 2 NIE – 0
+5. Czy chodzisz na kontrolne badania do dentysty przynajmniej raz na pół roku?
+TAK – 5 CZASAMI – 2 NIE – 0
+6. Czy myjesz ręce przed każdym posiłkiem, a także po wizycie w toalecie?
+TAK – 5 CZASAMI – 2 NIE – 0
+7. Czy myjesz się rano?
+TAK – 5 CZASAMI – 2 NIE – 0
+8. Czy zmieniasz codziennie bieliznę osobistą?
+TAK – 5 CZASAMI – 2 NIE – 0
+9. Czy myjesz owoce i warzywa przed jedzeniem?
+TAK – 5 CZASAMI – 2 NIE – 0
+10. Czy po zabawie z psem lub kotem myjesz ręce?
+TAK – 5 CZASAMI – 2 NIE – 0
+
+WYNIKI:
+36 – 50 pkt. – Gratuluję! Jesteś osobą, która nie tylko zna podstawowe zasady higieny,
+ale stosuje je w życiu codziennym. Prawdopodobnie, nie będziesz miał kłopotów ze swoim
+zdrowiem.
+20 – 35 pkt. – Osiągnięty przez Ciebie wynik jest zadawalający. Musisz popracować nad sobą.
+Wygląda, bowiem na to, że znasz podstawowe zasady higieny, lecz brakuje Ci wytrwałości
+w ich stosowaniu.
+0 – 19 pkt. – Wynik ten świadczy niezbyt dobrze o Tobie. Albo nie znasz, zasad higieny, albo
+jesteś zbyt leniwy, żeby je stosować. Musisz, czym prędzej to zmienić, inaczej będziesz miał
+kłopoty ze swoim zdrowiem.
+
+--- strona 56 ---
+
+QUIZ SPRAWDZAJĄCY
+W pytaniach prawidłowa jest 1 odpowiedź lub należy podać swoją odpowiedź.
+Pytania:
+1. Nigdy nie pożyczaj
+a) szamponu do włosów (b) szczoteczki do zębów c) suszarki do włosów
+2. Szczotkuj zęby przez 2 minuty, przynajmniej:
+a) 1 raz dziennie (b) 3 razy dziennie c) po każdym posiłku.
+3. Zmieniaj szczoteczkę do zębów na nową, co
+a) co miesiąc b) co 2 miesiące (c) co 3 miesiące
+4. Jak często powinieneś myć całe ciało pod prysznicem lub wannie?
+(a) raz dziennie b) 2 razy dziennie c) po każdym zabrudzeniu
+5. Jak często powinieneś zmieniać bieliznę osobistą?
+(a) codziennie b) co 2 dzień c) raz na tydzień
+6. Jak często kontrolujemy stan uzębienia u stomatologa?
+a) co miesiąc (b)co pół roku c)co rok
+7. Każdy z domowników powinien mieć:
+a) własną pastę do zębów (b) własny ręcznik c) własny szampon do włosów
+8. Myję ręce (podaj 3 sytuacje): ……………..
+9. Obcinamy paznokcie
+a) codziennie b) co 2 dni (c) kiedy są zbyt długie
+10. Odzież powinna być
+a) czysta i modna b) modna i wygodna (c) czysta
+
+--- strona 57 ---
+
+Scenariusz zajęć nr 2: Temat: BEZPIECZEŃSTWO NA ULICY
+Uczestnicy: 8 osób (2 grupy po 4 osoby) z niepełnosprawnością intelektualną w stopniu
+umiarkowanym, uczestników WTZ.
+Czas zajęć: Materiał przygotowany na zajęcia może być realizowany na 2 (90 min)
+lub 3 godzinach lekcyjnych – zależnie od indywidualnych potrzeb uczestników zajęć
+lub całego zespołu.
+Cel główny:
+Organizacja zajęć dla osób z niepełnosprawnością intelektualną w stopniu umiarkowanym,
+uczestników WTZ na temat bezpiecznego uczestnictwa w ruchu drogowym i poruszania się
+w lokalnym środowisku.
+Uświadomienie zagrożeń istniejących w ruchu drogowym.
+Wyposażenie uczestników w takie umiejętności i wiadomości, które spowodują, że staną się
+oni świadomymi uczestnikami ruchu drogowego, dbającymi o bezpieczeństwo swoje i
+innych.
+Cele szczegółowe:
+▪
+poznanie podstawowych zasad bezpiecznego poruszania się w środowisku i przepisów
+ruchu drogowego dotyczących pieszych
+▪
+poznanie zasad przechodzenia przez przejście z sygnalizacją świetlną
+▪
+nauka odpowiedniego zachowania podczas przechodzenia przez jezdnię bez sygnalizacji
+świetlnej.
+▪
+utrwalenie wiedzy i umiejętności uczestników na temat zasad poruszania się pojazdów
+i pieszych po drodze:
+▪
+Ukazanie sytuacji, które mogą stanowić potencjalne zagrożenie na drodze.
+Cele operacyjne:
+Uczestnik zajęć:
+
+--- strona 58 ---
+
+▪
+potrafi określić miejsca bezpiecznego przechodzenia przez jezdnię (sygnalizacja świetlna,
+pasy, znak informacyjny – przejście dla pieszych)
+▪
+rozpoznaje kolory sygnalizacji świetlnej i określa ich przeznaczenie
+▪
+wskazuje znaki drogowe oznaczające przejście dla pieszych,
+▪
+potrafi właściwie reagować na znaki i sygnały
+▪
+potrafi umiejętnie zademonstrować poprawne przechodzenie przez jezdnię
+▪
+zna zagrożenia związane z poruszaniem się po drogach,
+▪
+zna 5 zasad przechodzenia przez jezdnię,
+▪
+dba o bezpieczeństwo swoje i innych. potrafi prawidłowo ocenić i uniknąć ryzyka
+związanego z ruchem drogowym, na podstawie znajomości znaków.
+▪
+potrafi korzystać z informacji zawartych na znakach drogowych
+Pomoce i środki dydaktyczne:
+▪
+plansze, ilustracje przedstawiające przejścia dla pieszych (z sygnalizacją, bez sygnalizacji),
+▪
+plansza ze znakiem drogowym: przejście dla pieszych
+▪
+plansza/zdjęcia z omawianymi elementami drogi (droga, pobocze, chodnik, sygnalizacja
+świetlna, przejście dla pieszych),
+▪
+plansze przedstawiające scenki bezpiecznego przechodzenia przez jezdnię,
+▪
+wiersze tematyczne,
+▪
+karty pracy,
+▪
+kredki/farby, klej,
+▪
+sprzęt multimedialny
+▪
+linki do filmów dydaktycznych o ruchu drogowym
+Metody pracy:
+▪
+podające:
+▪
+pogadanka
+▪
+objaśnianie
+▪
+praktyczna
+
+--- strona 59 ---
+
+▪
+pokaz
+▪
+ćwiczenia praktyczne: wypełnianie kart pracy, ćwiczenia w przechodzeniu przez
+zebrę
+▪
+burza mózgów,
+▪
+ćwiczenia ruchowe,
+Formy:
+▪
+praca z grupą
+▪
+praca indywidualna z uczestnikiem zajęć
+ZAGADNIENIA TEMATYCZNE:
+I. Znaki i sygnały drogowe
+▪ Pojęcie znaku i sygnału
+▪ Rodzaje znaków: ostrzeżenia, zakazy, nakazy i informacje
+▪ Typy znaków: pionowe, poziome, sygnały świetlne, znaki osób uprawnionych, sygnały
+dźwiękowe
+▪ Sposób reagowania na poszczególne znaki
+▪ Hierarchia ważności znaków
+▪ Konsekwencje braku respektowania znaków drogowych
+
+II. Zasady poruszania się po drodze
+▪
+Podstawowe zasady ruchu pieszych w terenie zabudowanym i poza nim
+▪
+Zasady poruszania się pieszych po zmierzchu
+▪
+Zasada szczególnej ostrożności i ograniczonego zaufania
+▪
+Zasady poruszania się kolumny pieszych
+
+--- strona 60 ---
+
+▪
+Miejsca szczególnie niebezpieczne dla pieszych (tory, skrzyżowania, zakręty)
+▪
+Zagrożenia, jakie występują na drodze (niesprzyjające warunki drogowe)
+▪
+Zasady zachowania w momencie ograniczenia widoczności drogi (trudne warunki
+atmosferyczne, zakręty, zaparkowane samochody).
+PRZEBIEG ZAJĘĆ:
+I. Wstęp – nawiązanie do tematu:
+- Instruktor pokazuje makiety znaków drogowych, sygnalizatora oraz pasów dla pieszych -
+zadaniem uczestników zajęć jest odgadnąć, o czym będą dzisiejsze zajęcia.
+- Instruktor pokazuje zdjęcie przedstawiające zebrę (zwierzę) oraz pasy na przejściu dla
+pieszych (zebra); pyta uczestników, co przedstawiają te dwa zdjęcia. - Rozmowa z uczniami
+ma doprowadzić do stwierdzenia, że to samo słowo ma inne znaczenie.
+- Instruktor pokazuje przejście dla pieszych i przedstawia temat zajęć: Bezpieczeństwo na
+drodze
+II. Realizacja tematu:
+Rozmowa kierowana: Nauczyciel zadaje pytanie: Dlaczego w niektórych miejscach na ulicy
+są zaznaczone przejścia dla pieszych? Pomysły uznane za najtrafniejsze zostają zapisane
+na tablicy.
+• Instruktor wyjaśnia podstawowe zasady przechodzenia przez jezdnię. Czyta wiersz Wandy
+Chotomskiej „Gdy zamierzam przejść przez ulicę”
+Na chodniku przystań bokiem.
+Popatrz w lewo bystrym okiem.
+Skieruj w prawo wzrok sokoli.
+Znów na lewo spójrz powoli.
+Jezdnia wolna, więc swobodnie mogą przez nią przejść przechodnie.
+
+--- strona 61 ---
+
+Uczestnicy zajęć wykonują opisane w wierszu czynności.
+• Wycieczka na przejścia dla pieszych w pobliżu Warsztatów Terapii Zajęciowej
+- Uczniowie wraz z nauczycielem wychodzą na zewnątrz w celu obserwacji ruchu
+drogowego.
+W czasie wyjścia uczestnicy zajęć mają za zadanie: obserwowanie sposobów
+przechodzenia przez ulicę, sprawdzenie, czy wybrane w czasie zajęć rozwiązania
+stosowane są w rzeczywistości, jakie znaki drogowe oznaczają przejścia.
+W miarę możliwości uczestnicy powinni zobaczyć przejścia z sygnalizacją oraz bez.
+Nauczyciel zwraca uwagę na znaki oznaczające przejście dla pieszych.
+• Po powrocie rozmowa o zaobserwowanych sposobach przechodzenia przez ulicę.
+• Wspólne zastanowienie się, które zachowania pomagają w zachowaniu bezpieczeństwa
+w czasie przechodzenia przez ulicę.
+Są to:
+-zatrzymanie się przed przejściem,
+-sprawdzenie, czy żaden pojazd się nie zbliża,
+- szybki krok w czasie przechodzenia przez jezdnię
+Zasady przechodzenia przez jezdnię (zilustrowane znakami drogowymi):
+1. Zatrzymaj się – przed wejściem na pasy należy zawsze się zatrzymać, nawet kiedy
+przechodzimy przez przejście z sygnalizacją świetlną. - znak drogowy STOP
+2. Popatrz – przed wejściem na przejście dla pieszych należy rozejrzeć się: w lewo, w prawo
+oraz ponownie w lewo
+3. Posłuchaj – uczestnicząc w ruchu drogowym należy zwracać uwagę również na dźwięki,
+które mogą sygnalizować zbliżające się niebezpieczeństwo, jadący samochód lub motor.
+
+--- strona 62 ---
+
+4. Pomyśl – przed przekroczeniem jezdni bez sygnalizacji świetlnej zawsze należy
+przeanalizować sytuację, czy mamy odpowiednią ilość czasu na przejście nim nadjedzie
+pojazd.
+• OMÓWIENIE ZASAD PRZECHODZENIA PRZEZ DROGĘ Z SYGNALIZACJĄ ŚWIETLNĄ
+1. ŚWIATŁO CZERWONE - STÓJ
+
+2. ŚWIATŁO ŻÓŁTE - UWAŻAJ! Przygotuj się na zmianę światła!
+
+3. ŚWIATŁO ZIELONE - PRZEJDŹ na drugą stronę drogi
+
+• PORUSZANIE SIĘ POBOCZEM – prowadzący przekazuje uczestnikom informacje:
+− Pieszy jest obowiązany iść lewą stroną drogi.
+− Piesi idący jezdnią są obowiązani iść jeden za drugim.
+− Pieszy, z wyjątkiem osoby niepełnosprawnej, korzystając z tej drogi, jest obowiązany
+ustąpić miejsca rowerowi.
+− Pieszy po zmierzchu jest obowiązany używać elementów odblaskowych w sposób
+widoczny dla innych uczestników ruchu.
+− Jeżeli nie ma pobocza lub czasowo nie można z niego korzystać, pieszy może
+korzystać z jezdni, pod warunkiem zajmowania miejsca jak najbliżej jej krawędzi i
+ustępowania miejsca nadjeżdżającemu pojazdowi.
+• PORUSZANIE SIĘ NA ROLKACH – prowadzący przekazuje uczestnikom informacje:
+− Zgodnie z ustawą prawo o ruchu drogowym osobę poruszającą się na rolkach
+obowiązują przepisy dotyczące ruchu pieszych, a nie na przykład rowerzystów.
+− Jadąc na rolkach nie zapomnij o odpowiednich ochraniaczach, kasku i odblaskach.
+
+--- strona 63 ---
+
+• Rozmowa z uczestnikami na temat ich doświadczeń w poruszaniu się poboczem
+w środowisku, powtarzanie obowiązujących zasad
+III. Ćwiczenia praktyczne:
+•
+Rozmowa na temat konsekwencji kontaktu pieszego z pojazdem mechanicznym
+Ćwiczenie: .
+Uczestnicy wybierają duże twarde przedmioty np. meble i stukają w nie dłonią.
+Następnie powtarzają czynność, uderzając lekko w swój brzuch:
+Rozmowa na temat doznań i odczuć: „Co czujecie stukając w stół/ szafkę i brzuch. Czujecie
+różnicę? Ciało ludzkie jest miękkie, a stół/ szafka twarde – to tak jak twardy jest pojazd.
+Przy zderzeniu z pojazdem człowiek zawsze ulega wypadkowi i potrzebuje pomocy.
+• Zabawa muzyczno- ruchowa utrwalająca znajomość kolorów i prawidłowych zachowań na
+kolor czerwony i zielony. Uczestnicy chodzą po sali, instruktor pokazuje szablony świateł
+czerwonego i zielonego. Zadaniem uczestników zajęć jest zatrzymać się na widok światła
+czerwonego, chodzić po sali, gdy instruktor pokazuje szablon światła z kolorem zielonym.
+• Zabawa ruchowa utrwalająca znajomość kierunków: prawy, lewy, na wprost
+Uczestnicy zajęć stają za krzesłami, instruktor prosi o: spojrzenie w lewo, prawo;
+naprzemienne podnoszenie do góry prawej i lewej ręki; równoczesne podniesienie do
+góry obu rąk; naprzemienne unoszenie prawego i lewego kolana; pochylenia tułowia w
+lewą stronę, pochylenia tułowia w prawą stronę; wykonanie kilku kroków przed siebie –
+każde ćwiczenie należy wykonać kilkakrotnie.
+• Ćwiczenie: Każdy z uczestników zajęć przechodzi przez wyznaczoną „ulicę” –
+z zachowaniem zasad bezpieczeństwa:
+- zatrzymanie się przed wejściem na ulicę
+- schowanie telefonu,
+- spojrzenie w lewo, w prawo i jeszcze raz w lewo
+- słuchanie, czy nie zbliża się żaden pojazd
+- przejście żwawym krokiem na drugą stronę.
+
+--- strona 64 ---
+
+Pogratulowanie każdemu z uczestników, który prawidłowo przeszedł przez „ulicę”.
+• Wykonanie pracy plastycznej: malowanie farbami sygnalizatora świetlnego.
+IV. Podsumowanie - Przypomnienie podstawowych informacji z zajęć nt. bezpieczeństwa
+na drodze.
+Pytania do uczestników zajęć:
+− kogo najczęściej można spotkać na chodniku, a kto porusza się po drogach?
+− czy można przebiegać przez ulicę?
+− czy można wchodzić na ulicę na czerwonym świetle?
+− czy można wchodzić na ulicę na zielonym świetle?
+− czy można przechodzić przez ulicę, gdy nie ma pasów dla pieszych?
+− czy dzieci mogą same chodzić po ulicy?
+− czy na ulicy można grać w piłkę?
+− czy jadąc na rowerze można czepiać się innych pojazdów?
+− czy bezpiecznie jest zjeżdżać z górki na sankach prosto na ulicę?
+− Co się może wydarzyć kiedy pieszy spotka się z samochodem?
+− Jakie mogą być konsekwencje takiego spotkania?
+− Jak należy się zachować, aby być bezpiecznym na drodze? – powtórzenie zasad
+przechodzenia przez jezdnię:
+1. Zatrzymaj się przed wejściem na pasy i przez przejście z sygnalizacją świetlną.
+2. Popatrz – przed wejściem na przejście dla pieszych należy rozejrzeć się: w lewo, prawo
+oraz ponownie w lewo
+3. Posłuchaj – uczestnicząc w ruchu drogowym należy zwracać uwagę również na dźwięki,
+które mogą sygnalizować zbliżające się niebezpieczeństwo, jadący samochód lub motor
+
+--- strona 65 ---
+
+4. Pomyśl – przed przekroczeniem jezdni bez sygnalizacji świetlnej zawsze należy
+przeanalizować sytuację, czy mamy odpowiednią ilość czasu na przejście nim nadjedzie
+pojazd.
+5. Nie korzystamy z telefonu podczas przechodzenia przez ulicę (nie należy rozmawiać
+przez telefon, grać na nim, oglądać ani robić zdjęcia) - Dlaczego takie postępowanie może
+być niebezpieczne? (ponieważ przeszkadza to w skupieniu i właściwej analizie sytuacji).
+
+Instruktor dziękuje uczestnikom za udział w zajęciach.
+ANKIETA SPRAWDZAJĄCA:
+1. ZASADY PRZECHODZENIA PRZEZ JEZDNIĘ Z SYGNALIZACJĄ ŚWIETLNĄ
+DOPASUJ ODPOWIEDNIE KOMUNIKATY DO KOLORU ŚWIATŁA
+
+--- strona 66 ---
+
+Oznaczenie
+Znak
+Komunikat
+Światło żółte oznacza:
+
+PRZEJDŹ na drugą stronę
+drogi
+
+Światło czerwone oznacza:
+
+UWAŻAJ!
+Przygotuj się na zmianę
+światła!
+Światło zielone oznacza:
+
+STÓJ
+
+2. CO OZNACZAJĄ ZNAKI DROGOWE
+
+Znak drogowy
+
+Prawidłowa odpowiedź
+
+Przejście dla pieszych
+
+Znak STOP - oznacza: nakaz
+zatrzymania się przed
+skrzyżowaniem lub drogą
+z pierwszeństwem przejazdu,
+
+"Sygnały świetlne" - znak
+ostrzega przed miejscem,
+w którym ruch jest kierowany
+za pomocą sygnalizacji
+świetlnej.
+
+--- strona 67 ---
+
+Znak drogowy
+
+Prawidłowa odpowiedź
+
+Miejsce uczęszczane przez dzieci
+w wieku od 7 do 15 lat. (szkoły
+podstawowe, gimnazja,
+placówki prowadzące zajęcia
+z dziećmi, tereny zabaw itp.
+
+Przejazd kolejowy
+
+3. WYMIEŃ ZASADY PRZECHODZENIA PRZEZ JEZDNIĘ BEZ SYGNALIZACJI ŚWIETLNEJ:
+Prawidłowa odpowiedź:
+1) Zatrzymaj się
+2) Spójrz w lewo
+3) Spójrz w prawo
+4) Ponownie spójrz w lewo
+5) Jeżeli nic nie jedzie, idź szybkim krokiem, nie korzystaj z telefonu
+
+4. ODPOWIEDZ NA PONIŻSZE PYTANIA: TAK LUB NIE
+
+Nr.
+Pytanie
+TAK
+NIE
+1.
+Czy można przebiegać przez ulicę?
+
+2.
+Czy można wchodzić na ulicę na czerwonym świetle?
+
+3.
+Czy można wchodzić na ulicę na zielonym świetle?
+
+--- strona 68 ---
+
+Nr.
+Pytanie
+TAK
+NIE
+4.
+Czy można wchodzić na ulicę na żółtym świetle?
+
+5.
+Czy można przechodzić przez ulicę, gdy nie ma pasów
+dla pieszych?
+
+6.
+Czy na ulicy można grać w piłkę?
+
+7.
+Czy jadąc na rowerze można czepiać się innych
+pojazdów?
+
+8.
+Czy bezpiecznie jest zjeżdżać z górki na sankach prosto
+na ulicę?
+
+Scenariusz zajęć nr 3 Temat zajęć: PIERWSZA POMOC PRZY OPARZENIU
+Cele kształcenia:
+Cele ogólne:
+• zapoznanie z najczęściej spotykanymi przyczynami oparzeń
+• zapoznanie z zasadami udzielania pierwszej pomocy po oparzeniach,
+• podniesienie świadomości o zagrożeniach oparzeniem w codziennym życiu
+• poznanie sposobów zapobiegania oparzeniom
+• wdrażanie do zachowań mających na celu bezpieczeństwo swoje i innych.
+
+Cele szczegółowe:
+▪ wyrobienie nawyku ostrożności w sytuacjach zagrażających oparzeniom
+▪ nauka udzielania pomocy w przypadku oparzeń termicznych
+▪ zapoznanie uczestników z zasadami postępowania w przypadku oparzeń I stopnia
+
+--- strona 69 ---
+
+▪ zapoznanie uczestników z zasadami postępowania w przypadku oparzeń II stopnia
+▪ poznanie domowych sposobów radzenia sobie w sytuacji niewielkich oparzeń,
+▪ nauka zgłaszania zdarzenia do służb ratowniczych – wzywania pogotowia
+ratunkowego
+Cele operacyjne:
+Uczestnik zajęć:
+- zna potencjalne źródła poparzeń (emitery wysokiej temperatury, środki chemiczne
+używane
+w gospodarstwie domowym, zagrożenia oparzeniem słonecznym),
+- zna objawy oparzeń I i II stopnia,
+- zna zasady udzielania pomocy z objawami oparzenia I i II stopnia,
+- zna numery telefonów alarmowych.
+
+Uczestnik zajęć potrafi:
+- prawidłowo zachować się w sytuacji oparzenia,
+- udzielić pomocy osobie z oparzeniem termicznym,
+- udzielić pomocy osobie z oparzeniem słonecznym i udarem słonecznym,
+- dobrać materiały opatrunkowe do opatrzenia rany po oparzeniu,
+- założyć jałowy opatrunek, jeżeli sytuacja tego wymaga,
+- wykorzystać środki przynoszące ulgę oparzonemu , znajdujące się w apteczce pierwszej
+pomocy,
+- wezwać pomoc do poszkodowanego,
+- powiadomić dorosłych o niebezpiecznym zdarzeniu,
+- prawidłowo pielęgnuje poszkodowanego do czasu przybycia profesjonalnej pomocy.
+Metody:
+Metody podające: opis, opowiadanie, pogadanka;
+Metody praktyczne: pokaz, ćwiczenia praktyczne, symulacje;
+Metody aktywizujące: burza mózgów, analiza przypadków
+
+--- strona 70 ---
+
+Formy pracy:
+Dyskusja kierowana, pokaz ilustracji, filmów edukacyjnych, praca indywidualna, praca w
+zespole, ćwiczenia w parach, komunikaty motywujące uczestników do aktywności,
+komunikaty korygujące;
+Środki dydaktyczne:
+▪ ilustracje przedstawiające źródła zagrożeń oparzeniem ,
+▪ tablice informacyjne,
+▪ symbole reprezentujące niebezpieczne substancje ,
+▪ ilustracje/fotografie różnych stopni oparzeń,
+▪ filmy edukacyjne;
+▪ prezentacja multimedialna
+▪ plansze dydaktyczne ilustrujące zasady udzielania pierwszej pomocy w przypadku
+oparzeń,
+Pomoce dydaktyczne:
+Rzutnik multimedialny, telefon, komputer, apteczka pierwszej pomocy z wyposażeniem:
+gaza, bandaż, przylepiec, nożyczki, plaster z opatrunkiem, rękawiczki lateksowe;
+Uczestnicy zajęć: 8 osób z niepełnosprawnością intelektualną (2 grupy po 4 osoby);
+uczestnicy Warsztatów Terapii Zajęciowej
+Czas realizacji: 90 min.
+Przebieg zajęć:
+I. Wprowadzenie do tematu
+1. Wyjaśnienie, czym jest oparzenie: „to uszkodzenie tkanki skóry na skutek działania
+wysokiej temperatury lub substancji żrących”.
+2. Burza mózgów- uczestnicy zajęć podają sytuacje, w których dochodzi do oparzeń ciała;
+3. Wypisanie sytuacji zagrażających oparzeniem na tablicy .
+- dotknięcie rozgrzanego przedmiotu;
+
+--- strona 71 ---
+
+- Miejsca przygotowywania posiłków (kuchenka: groźba przechylenia się garnka z gorącym
+płynem, gorący tłuszcz z patelni, możliwość zapalenia się tłuszczu na patelni);
+- możliwość oparzenia się parą przy otwieraniu gorącego piekarnika;
+- ściągnięcie z kuchenki garnka/ patelni z gorącą potrawą – zwracać uwagę na odpowiednie
+ustawienie garnka, zwłaszcza z długim uchwytem, wystającym poza powierzchnię kuchenki;
+- oblanie się gorącym płynem np.: gorące napoje, posiłki;
+- parzące rośliny, m.in..: Barszcz Sosnowskiego, pokrzywa, wilczomlecz, jaskółcze ziele,
+arcydzięgiel , niebezpieczne zwłaszcza w słoneczne dni, mogą parzyć także na odległość;
+- grill;
+- długotrwałe opalanie się i przebywanie na słońcu;
+- ukąszenia owadów (np. czerwone mrówki);
+- żrące substancje chemiczne;
+- prąd elektryczny;
+
+4. Dyskusja – uczestnicy opowiadają o sytuacjach, w których doznali oparzeń, ich
+przeżyciach, zachowaniach (co robili, kto im pomógł, co robił);
+5. Terapeuta uzupełnia wypowiedzi uczestników , posługuje się foliogramami, zdjęciami z
+sytuacji zagrażających oparzeniem;
+6. Rozmowa, jak wygląda skóra po oparzeniu, terapeuta pokazuje ilustracje – informuje o
+różnych stopniach oparzeń;
+Stopnie oparzeń i ich objawy:
+I stopień – zaczerwienienie skóry,
+II stopień – bąble na skórze,
+III stopień – zwęglenie skóry.
+II. Zajęcia praktyczne – trening radzenia sobie w przypadku oparzenia
+
+--- strona 72 ---
+
+1. Prowadzący demonstruje środki opatrunkowe, podaje ich nazwy ; uczestnicy powtarzają:
+gaziki, plastry, opaska uciskowa, bandaż, plastry z opatrunkiem;
+2. Określanie nazw i przeznaczenia środków opatrunkowych – (rywalizacja 4 osobowych
+zespołów)
+3. Pokaz terapeuty: postępowanie po oparzeniu (chłodzenie miejsca oparzenia,
+4. Ćwiczenia w opatrywaniu oparzonych miejsc (symulacje) – zgodnie z zasadami udzielania
+pierwszej pomocy po oparzeniu.
+Pierwsza pomoc:
+I stopień - polewanie miejsce oparzone zimną wodą przez około 20 minut,
+- przykrywamy oparzone miejsce gazą sterylną,
+- położyć oparzonego, unieść mu nogi, zapewnić spokój,
+- wezwać osobę dorosłą.
+II stopień (i III)
+- nie zdejmować przylepionej odzieży (jedynie pierścionki i paski),
+- nie przekłuwać pęcherzy,
+- opatrzyć ranę po zaschnięciu,
+- udać się do lekarza.
+5. Wzywanie pogotowia ratunkowego do zdarzenia: oparzenie
+a) zapoznanie uczestników z numerami służb ratunkowych : 112 i 999
+b) demonstracja terapeuty: wzywanie pogotowia ratunkowego
+b) ćwiczenia praktyczne uczestników zajęć – każdy z uczestników ćwiczy umiejętność
+wzywania pogotowia wg zasady:
+Meldunek o wypadku:
+1. miejsce wypadku,
+2. rodzaj wypadku,
+3. liczba poszkodowanych i ich stan,
+
+--- strona 73 ---
+
+4. informacja o udzielonej pomocy,
+5. dane personalne zgłaszającego.
+III. Podsumowanie zajęć – powtórzenie podstawowych wiadomości na temat udzielania
+pierwszej pomocy po oparzeniach.
+1. Pierwsza pomoc po oparzeniu – rozróżnianie, kiedy pomoc może być udzielona w
+miejscu oparzenia, a kiedy należy udać się do lekarza;
+2. Rozmowa na temat sposobów zapobiegania oparzeniom – bezpiecznego zachowania się
+w sytuacjach zagrażających oparzeniem – Pogadanka: „Lepiej zapobiegać niż leczyć
+oparzenia”
+QUIZ SPRAWDZAJĄCY
+1) Właściwą reakcją na oparzenie jest:
+a) założenie bandaża elastycznego
+b) posmarowanie oparzonego miejsca masłem
+c) polewanie miejsca oparzonego zimną wodą przez około 20 minut
+2) Czy można przekłuwać bąble po oparzeniu? (zakreśl właściwą odpowiedź)
+TAK - NIE
+3) Objawy oparzenia to (podkreśl właściwe:
+siniaki - zaczerwienienie skóry – wysypka (krostki) - bąble na skórze – zwęglenie skóry.
+4) Jakie numery mają służby ratownicze? Dopasuj (strzałkami) odpowiednie numery
+do pojazdów ratowniczych.
+
+--- strona 74 ---
+
+Rodzaj pojazdu
+Numer telefonu
+
+997
+
+999
+
+112
+
+Europejski numer alarmowy to:
+998
+
+Prawidłowe odpowiedzi:
+
+5) Dopasuj numery odpowiednich służb ratowniczych do sytuacji na ilustracjach
+Kogo wezwiesz? Pod jaki numer zadzwonisz? Zakreśl właściwy numer.
+997 - 999 - 112 - 998
+
+--- strona 75 ---
+
+997 - 999 - 112 - 998
+997 - 999 - 112 - 998
+997 - 999 - 112 - 998
+
+Scenariusz zajęć nr 4 :Temat: WIZYTA U LEKARZA.
+
+Uczestnicy: 8 osób (2 grupy po 4 osoby) z niepełnosprawnością intelektualną w stopniu
+umiarkowanym, uczestników WTZ.
+Czas zajęć: Materiał przygotowany na zajęcia może być realizowany na 2 (90 min)
+lub 3 godzinach lekcyjnych – zależnie od indywidualnych potrzeb uczestników zajęć lub
+całego zespołu.
+Cele kształcenia:
+Cel ogólny:
+
+- organizacja zajęć dla osób z niepełnosprawnością intelektualną w stopniu umiarkowanym,
+uczestników WTZ na temat wizyty u lekarza
+- uświadomienie potrzeby dbania o zdrowie i regularności wykonywania badań
+- wyposażenie uczestników w takie umiejętności i wiadomości, które spowodują, że staną się
+oni świadomymi pacjentami, osobami dbającymi o zdrowie własne i innych
+
+--- strona 76 ---
+
+- przygotowanie osób z niepełnosprawnością intelektualną do samodzielnego
+funkcjonowania w społeczeństwie poprzez rozwijanie i doskonalenie umiejętności
+społecznych.
+Cele szczegółowe:
+- wyrobienie nawyku dbania o stan swojego zdrowia
+- dostrzeganie związku pomiędzy działaniami profilaktycznymi, chorobą a leczeniem,
+poddawanie się leczeniu – uczestnicy wiedzą że przyjmowanie leków, regularne badania oraz
+wizyty u lekarza są konieczne
+- nauka zgłaszania zdarzeń do służy ratowniczej – wzywania pogotowania ratunkowego
+- poznanie domowych sposobów radzenia sobie w sytuacji przeziębienia, niewielkich infekcji
+- ukazanie sytuacji które mogą stanowić potencjalne zagrożenie dla zdrowia (unikanie dużych
+skupisk ludzi chorych, unikanie przeciągów)
+- kształtowanie umiejętności odpowiedniego doboru ubioru do panujących warunków
+pogodowych
+- kształtowanie umiejętności społecznych (stosowanie form grzecznościowych
+(m. in. w trakcie wizyty u lekarza i w aptece), w razie potrzeby pomaganie innym, uważne
+słuchanie wypowiedzi innych osób)
+- rozwijanie myślenia i bogacenie słownika za pomocą zabaw dydaktycznych,
+- wdrażanie do wykonywania czynności, zaleceń lekarza oraz regularności przyjmowania
+leków, wykonywania badań które w razie potrzeby zalecił lekarz
+Cele operacyjne:
+Uczestnik:
+- umie prawidłowo dbać o swoje zdrowie
+
+--- strona 77 ---
+
+- dostrzega związek pomiędzy chorobą a leczeniem
+- potrafi wezwać pomoc w postaci pogotowia ratunkowego
+- zna domowe sposoby radzenia sobie w sytuacji prostych infekcji, przeziębienia
+- rozpoznaje sytuacje które mogą stanowić potencjalne zagrożenie dla zdrowia i życia
+- odpowiednio dobiera odzież do warunków pogodowych
+- rozumie znaczenie regularnych badań i wizyt u lekarza dla prawidłowego funkcjonowania
+organizmu
+- potrafi powiadomić dorosłych o niebezpiecznym zdarzeniu
+- prawidłowo stosuje formy grzecznościowe
+- potrafi umiejętnie opisać i ocenić stan swojego zdrowia
+- wymienia sytuacje, w których należy udać się do lekarza
+- zna przebieg wizyty u lekarza i nazwy podstawowych specjalizacji lekarskich (np. dentysta,
+okulista itp.)
+Metody:
+- czynne: ćwiczenia praktyczne, kierowanie aktywnością uczestnika, wykonywanie zadań
+- słowne: rozmowy, opowiadanie, instrukcje i objaśnienia
+- percepcyjne: obserwacja i pokaz, przykłady instruktora
+- zajęcia z kartami pracy.
+Formy pracy:
+- indywidualna, grupowa
+Środki dydaktyczne i pomoce do zajęć:
+
+--- strona 78 ---
+
+- ilustracje przedstawiające sytuacje które mogą stanowić potencjalne zagrożenie dla
+zdrowia,
+- prezentacja multimedialna,
+- plansze dydaktyczne dotyczące umiejętności prawidłowego zachowania się podczas wizyty
+lekarskiej
+- filmy edukacyjne
+- komputer z dostępem do Internetu
+Przebieg zajęć:
+I. Wprowadzenie do tematu:
+1. Wyjaśnienie czym jest zdrowie „ stan pełnego fizycznego, umysłowego i społecznego
+dobrostanu a nie tylko całkowity brak choroby czy niepełnosprawności”.
+2. Burza mózgów – uczestnicy zajęć podają sytuację, w których dochodzi do utraty
+zdrowia lub sytuacje, które mogą przyczynić się do powstania choroby.
+3. Wypisanie na tablicy sytuacji które mogą spowodować utratę zdrowia.
+- przebywanie w dużych skupiskach chorych osób
+- nieumiejętne dostosowanie ubioru do warunków pogodowych
+- znajdowanie się w miejscach dużych przeciągów
+- przebywanie w miejscach w których występują substancje szkodliwe, alergeny itp.
+- nieostrożne, nieumiejętne korzystanie ze sprzętów domowych
+- niewłaściwe żywienie, niezdrowy tryb życia
+- lekceważenie pierwszych objawów choroby.
+4. Dyskusja – uczestnicy opowiadają o sytuacjach, w których byli chorzy opisują swój stan
+w jakim byli oraz próbują znaleźć przyczynę swojej choroby. Dyskutują na temat ich przeżyć
+oraz zachowaniach, które im towarzyszyły. Starają się opisać jakie kroki poczynili aby
+polepszyć swój stan zdrowia (udanie się do lekarza, zastosowanie odpowiednich leków).
+
+--- strona 79 ---
+
+5. Terapeuta uzupełnia wypowiedzi uczestników, posługuje się zdjęciami, planszami
+związanymi ze stanami zdrowia i choroby.
+6. Rozmowa, jak wygląda przebieg wizyty lekarskiej. Terapeuta pokazuje ilustracje
+informuje o prawidłowych, akceptowalnych społecznie zachowaniach związanych z wizytą w
+przychodni, szpitalu itp.
+II. Zajęcia praktyczne – trening radzenia sobie w sytuacji wizyty u lekarza.
+1. Prowadzący demonstruje na kartach, obrazkach sytuacje choroby (np. katar, ból
+głowy, ból gardła, ból pleców) .
+2. Uczestnicy losują jedną kartę obrazującą stan chorobowy i określają jak może czuć się
+osoba, która posiada taką dolegliwość. Dostrzegają, że niezależnie od faktu co boli
+daną osobę powinna udać się po pomoc.
+3. Uczestnicy starają się dopasować wyznaczone objawy i choroby do odpowiednich
+specjalizacji lekarskich.
+4. Pokaz terapeuty z zastosowaniem prezentacji multimedialnej oraz filmu pt. „Wizyta u
+lekarza”.
+5. Ćwiczenia praktyczne uczestników – wizyta u lekarza (z wykorzystaniem wcześniej
+wylosowanej dolegliwości).
+Krótka podpowiedź:
+1. Powitanie z lekarzem
+2. Ocena i opis swojego stanu zdrowia
+3. Wysłuchanie i odpowiedź na pytania zadawane przez lekarza
+4. Przyjęcie recept, skierowań i ewentualne dopytanie o szczegóły związane z leczeniem
+5. Podziękowanie za pomoc lekarzowi
+6. Pożegnanie
+III. Podsumowanie zajęć
+1. Powtórzenie podstawowych wiadomości na temat wizyty u lekarza, określenia i
+oceny swojego stanu zdrowia.
+2. Wykonywanie kart pracy.
+
+--- strona 80 ---
+
+3. Podziękowanie za wspólne zajęcia.
+
+Karta pracy „Wizyta u lekarza”
+Zadanie 1. Z podanych poniżej atrybutów wybierz te, które przedstawiają atrybuty lekarza.
+link do kart pracy Bezpieczny Przedszkolak
+
+--- strona 86 ---
+
+Zadanie 2. Kiedy boli Cię gardło, kaszlesz, masz katar i bolą Cię kości udajesz się do:
+a) Stolarza
+b) Kosmetyczki
+c) Lekarza
+d) Fryzjera
+Zadanie 3. Czy można samemu bez konsultacji z lekarzem stosować leki: (zakreśl właściwą
+odpowiedź)
+TAK – NIE
+Zadanie 4. Spośród podanych poniżej nazw wybierz te które dotyczą specjalizacji lekarzy:
+OKULISTA
+
+NAUCZYCIEL
+
+LARYNGOLOG
+
+POLICJANT
+
+PEDIATRA
+
+AKTOR
+
+STOMATOLOG
+
+ELEKTRYK
+CHIRURG
+
+GEODETA
+
+PSYCHIATRA
+
+--- strona 90 ---
+
+Scenariusz zajęć nr 5: Temat: ZAKUPY
+
+Uczestnicy: 8 osób (2 grupy po 4 osoby) z niepełnosprawnością intelektualną w stopniu
+umiarkowanym, uczestników WTZ
+Czas zajęć: Materiał przygotowany na zajęcia może być realizowany na 2 (90 min) lub 3
+godzinach lekcyjnych – zależnie od indywidualnych potrzeb uczestników zajęć lub całego
+zespołu.
+Cele kształcenia:
+Cel ogólny:
+
+- organizacja zajęć dla osób z niepełnosprawnością intelektualną w stopniu umiarkowanym,
+uczestników WTZ na temat wizyty w sklepie spożywczym i robienia zakupów
+
+--- strona 91 ---
+
+- uświadomienie potrzeby robienia zakupów uzupełniania braków w produktach
+spożywczych, artykułach higienicznych i środkach czystości
+- wyposażenie uczestników w takie umiejętności i wiadomości, które spowodują, że staną się
+oni świadomymi konsumentami
+- przygotowanie osób z niepełnosprawnością intelektualną do samodzielnego
+funkcjonowania w społeczeństwie poprzez rozwijanie i doskonalenie umiejętności
+społecznych.
+- trening ekonomiczny
+Cele szczegółowe:
+- wyrobienie nawyku robienia listy zakupów, świadomego kupowania brakujących
+produktów, planowania codziennych posiłków
+- dostrzeganie związku pomiędzy ilością gotówki jaką dysponuje dana osoba a możliwościami
+zakupowymi
+- nauka planowania i gospodarowania domowym budżetem
+- nauka porównywania produktów – wybór produktu w najkorzystniejszej cenie
+- kształtowanie rozumienia możliwości kupowania, sprzedawania i płacenia za dane produkty
+- umiejętność radzenia sobie w sytuacjach niespodziewanych (np. brak danego produktu)
+- ukazanie różnych sytuacji jakie mogą przydarzyć się podczas robienia zakupów (np. brak
+możliwości zapłacenia kartą, wybór za dużej ilości produktów w stosunku do posiadanej
+kwoty, brak umiejętności znalezienia określonego produktu)
+- kształtowanie umiejętności społecznych (stosowanie form grzecznościowych, w razie
+potrzeby pomaganie innym, uważne słuchanie wypowie komunikatów, nauka proszenia o
+pomoc)
+
+--- strona 92 ---
+
+- rozwijanie myślenia i bogacenie słownika za pomocą zabaw dydaktycznych
+- poznanie wartości pieniądza
+- wdrażanie do wykonywania czynności związanych z robieniem zakupów, wybieranie
+określonych produktów, proszenie o pomoc w wyborze asortymentu, umiejętność ważenia
+produktów, płacenie za wykonane zakupy
+Cele operacyjne:
+Uczestnik:
+- umie prawidłowo zapłacić za zakupy (kartą lub gotówką)
+- dostrzega związek pomiędzy ilością posiadanej gotówki a możliwościami zakupu produktów
+- potrafi w razie potrzeby poprosić o pomoc obsługę sklepu
+- wie w jaki sposób radzić sobie w nieprzewidywalnych sytuacjach (np. kiedy nie działa
+terminal płatniczy stosuje gotówkę)
+- odpowiednio wybiera produkty, umie znaleźć pokrewne w razie braku pierwotnych (np. na
+liście znajdowała się sałata masłowa wybiera jej zamiennik)
+- rozumie znaczenie uzupełniania zapasów spożywczych, chemicznych, higienicznych
+- potrafi odpowiednio zarządzać domowym budżetem
+- prawidłowo stosuje formy grzecznościowe
+- potrafi umiejętnie przygotować i zrealizować listę zakupów (napisać- w przypadku
+uczestników z opanowaną umiejętnością pisania , lub przygotować listę za pomocą
+symboli/obrazków/zdjęć)
+- zna przebieg wizyty w sklepie oraz sytuacji zakupowych (wybór towaru na odpowiednich
+stanowiskach np. na stanowisku mięsnym umie określić czego i ile potrzebuje)
+
+--- strona 93 ---
+
+Metody:
+- podające: opis, pogadanka
+- praktyczne: pokaz, ćwiczenia praktyczne, symulacje
+- percepcyjne: obserwacja i pokaz, przykłady instruktora
+- zajęcia z kartami pracy.
+Formy pracy:
+- indywidualna, grupowa
+Środki dydaktyczne i pomoce do zajęć:
+- ilustracje przedstawiające różne branże sklepów w tym np. (piekarnia, cukiernia, sklep
+mięsny, księgarnia itp.)
+- prezentacja multimedialna,
+- fotografie produktów
+- plansze dydaktyczne dotyczące wybranych produktów spożywczych oraz działów na jakich
+można je znaleźć
+- komputer z dostępem do Internetu
+Pomoce dydaktyczne:
+rzutnik multimedialny, koszyki z nazwą produktów, komputer, plastikowe owoce, warzywa,
+produkty higieniczne, chemiczne itp., kasa fiskalna, wózek zakupowy, monety i banknoty,
+portfel, siatki na zakupy,
+Przebieg zajęć:
+I. Wprowadzenie do tematu:
+1. Piosenka na powitanie „Wszyscy są – witam Was”.
+
+--- strona 94 ---
+
+2. Prowadzący zapoznaje uczestników z tematem zajęć. Dyskusja na temat konieczności
+robienia zakupów. Jak przygotowujemy się do wyjścia do sklepów, co powinniśmy zabrać
+oraz gdzie udać się w celu ich wykonania.
+3. Zabawa dydaktyczna pod kierunkiem prowadzącego „Gdzie możemy kupić wybrane
+produkty?” Na tablicy zostają przyczepione magnesami zdjęcia różnego rodzaju produktów
+spożywczych, chemicznych, higienicznych itp. Uczestnicy mają za zadanie dopasować
+odpowiedni produkt do sklepu bądź miejsca w sklepie w jakim może go znaleźć.
+4. Słuchanie utworu Czesława Janczarskiego „Gdzie się co kupuje?” Prowadzący czyta
+tekst wiersza i prosi uczestników o uważne słuchanie, informuje ich, że po
+skończonym czytaniu będą musieli odpowiedzieć na kilka pytań.
+Tekst utworu:
+Mama poprosiła Anię, aby poszła do sklepu po chleb i syrop od kaszlu. Pieniądze położyła
+na stole, gdy Ania pobiegła do łazienki, żeby się umyć i uczesać Uszatek przechylił głowę
+na bok i pomyślał: „Wyręczę Anię”.
+Wziął pieniądze ze stołu, wziął siatkę na zakupy i pobiegł do sklepu spożywczego. Stanął
+przed ladą.
+-Poproszę o syrop od kaszlu- powiedział.
+-Misiuniu- odpowiedziała pani zza lady- idź do apteki. O tam jest apteka, po przeciwnej
+stronie ulicy.
+Pobiegł Uszatek do apteki. Stanął przy ladzie.
+-Poproszę o chlebek- szepnął niepewnie
+-Chlebek?- zdziwiła się pani sprzedająca leki. –Tu jest apteka, Misiuniu. Idź do sklepu
+spożywczego. O, tam jest ten sklep, po przeciwnej stronie ulicy.
+Wyszedł Uszatek z apteki. Było mu bardzo przykro, że nie umiał wyręczyć Ani. Na ulicy
+spotkał Anię. Dziewczynka wybiegła zaraz za Uszatkiem.
+-Oj, Misiu, Misu!- pokiwała głową
+A potem wytłumaczyła niedźwiadkowi, gdzie się co kupuje.
+Pytania do utworu:
+
+--- strona 95 ---
+
+1) O zakup jakich produktów poprosiła mama Anię?
+2) Gdzie Miś chciał zakupić chlebek?
+3) W jaki sklepie Miś chciał zakupić syrop na kaszel?
+4) Czy Misiowi udało się wyręczyć Anię?
+5) Jakie błędy popełnił Miś?
+Zajęcia praktyczne:
+Zabawa ruchowo naśladowcza – robimy zakupy!
+Uczestnicy zajęć dzielą się na 4 grupy. Każda grupa dostaję do zrealizowania listę zakupów
+zawierającą różne produkty.
+Zadanie numer 1.
+Jak należy przygotować się do zrobienia zakupów.
+Uczestnicy powinni zadbać o: siatkę, torbę na zakupy, posiadanie portfela z gotówką lub
+kartą płatniczą nie mogą również zapomnieć o wspomnianej wyżej przygotowanej liście.
+Zadanie numer 2.
+Uczestnicy planują do jakich sklepów musza udać się aby zakupić zapisane na liście zakupów
+produkty. W razie potrzeby nauczyciel koryguje odpowiedzi i naprowadza uczniów na
+poprawne rozwiązania.
+Zadanie numer 3:
+Uczestnicy udają się do sklepu i wykonują powierzoną listę, jeżeli zachodzi taka potrzeba
+powinni poprosić obsługę sklepu o pomoc, wybierają produkty z określonych działów sklepu
+lub różnych rodzajów sklepów dokonują zakupów udają się do kasy i płacą za zrobione
+zakupy. Na końcu chowają zakupy do przygotowanych wcześniej toreb, odbierają resztę i
+paragon.
+Krótka podpowiedź jak należy zachować się w sklepie:
+
+--- strona 96 ---
+
+1. Po wejściu do sklepu przywitaj się słowami: „Dzień dobry”
+2. Przygotuj listę zakupów i zorientuj się na jakich działach będziesz musiał dokonywać
+zakupów.
+3. Wyszukaj potrzebne produkty i umieść je w koszyku/ wózku. W razie potrzeby poproś
+obsługę sklepu o pomoc.
+4. Udaj się do kasy celem sfinalizowania zakupów.
+5. Wyłóż wszystkie produkty na ladę.
+6. Po skasowaniu przez ekspedientkę/ sprzedawcę wszystkich produktów zapłać za nie
+gotówką lub kartą płatniczą.
+7. Po odebraniu reszty i paragonu spakuj swoje zakupy.
+8. Podziękuj i pożegnaj się ze sprzedawcą.
+9. Odnieś lub odłóż koszyk/ wózek w wyznaczone miejsce.
+Zakończenie zajęć.
+Podsumowanie informacji na temat zakupów spożywczych oraz wypełnienie karty zadań
+dotyczącej zakupów, możliwości płacenia oraz sytuacji jakie mogą zdarzyć się w sklepie.
+Ankieta edukacyjna: ZAKUPY
+Zadanie 1.
+Dopasuj wybrany produkt do rodzaju sklepu, działu w którym będziesz możesz go zakupić.
+
+--- strona 98 ---
+
+Zadanie 2.
+Określ, czy wszystkie zdania są prawdziwe (zdania odczytuje prowadzący)
+Zakreśl prawidłowe odpowiedzi (w przypadku uczestników piszących).
+- W sklepie kosmetycznym zakupisz: chleb, bułki, drożdżówki.
+
+PRAWDA/FAŁSZ
+- Nabiał (mleko, ser, jajka) znajdziesz na dziale chemicznym.
+
+PRAWDA/ FAŁSZ
+- Na dziale mięsnym kupisz wędlinę.
+
+PRAWDA/FAŁSZ
+- Po bukiet kwiatów udasz się do jubilera
+
+PRAWDA/FAŁSZ
+- Tort na urodziny zamówisz w cukierni.
+
+PRAWDA/FAŁSZ
+- Szampon do włosów znajdziesz na dziale z artykułami papierniczymi.
+PRAWDA/FAŁSZ
+- Owoce i warzywa kupisz w aptece.
+
+PRAWDA/FAŁSZ
+- Po gazetę udasz się do sklepu ogrodniczego
+
+PRAWDA/FAŁSZ
+
+Zadanie 3 - Dla grupy posiadającej umiejętność liczenia lub używania kalkulatora
+W Twoim portfelu znajduje się banknot 20 złotowy. Mama poprosiła Cię o zakupienie chleba,
+jajek i czekolady. Z poniższej listy produktów wraz z cenami ustal czy posiadana przez Ciebie
+kwota wystarczy Ci na zrealizowanie zakupów.
+
+--- strona 99 ---
+
+Produkt i kwota
+Chleb 7 zł
+Margaryna 5 zł
+Ciastka czekoladowe 2,50 zł
+Mleko 6 zł
+Woda mineralna 2 zł
+Jajka 8 zł
+Makaron 4 zł
+Jogurt 2 zł
+Czekolada 3 zł
+Chusteczki higieniczne 4 zł
+Szampon 5 zł
+Mydło 4 zł
+
+--- strona 101 ---
+
+7. Wyniki testów, rekomendacje i zalecenia dla przyszłych
+użytkowników
+Innowacja została przetestowana w Warsztatach Terapii Zajęciowej w Dębicy. Narzędzie
+testowało 8 uczestników WTZ . Są to osoby pełnoletnie z niepełnosprawnością intelektualną
+w stopniu umiarkowanym i znacznym o niskim poziomie kompetencji społecznych
+i umiejętności komunikacyjnych, co stanowi dla nich przeszkodę w nawiązywaniu bliskich
+relacji i jest często przyczyną poczucia niższej wartości i osamotnienia.
+Z tego powodu mają też ograniczoną możliwość przekazywania komunikatów w sytuacjach
+nagłych, wymagających pomocy lub interwencji innych, np. w czasie pogorszenia stanu
+zdrowia, doznania urazu, dostrzeżenia awarii.
+Aby ograniczyć konieczność wykorzystywania pośrednictwa innych, opracowano narzędzie:
+aplikację „Go ahead – mów śmiało”, która służy rozwijaniu umiejętności komunikacyjnych.
+Spotkania z Testerami prowadziło czterech instruktorów terapii zajęciowej z WTZ w Dębicy.
+Miały one formę spotkań grupowych z wykorzystaniem scenariuszy tematycznych oraz
+indywidualne testowanie z wykorzystaniem aplikacji „Go AHEAD – mów śmiało”. Łącznie 6
+godzin na jednego uczestnika.
+Na wstępie przeprowadzono ankietę monitorującą dotyczącą poziomu motywacji Testerów
+do korzystania z narzędzia i ich umiejętności samodzielnej obsługi urządzenia z systemem
+android. Na zakończenie ponownie przeprowadzono ankietę, o takiej samej treści, celem
+obserwacji zmian w zakresie użytkowania aplikacji u członków grupy testującej.
+Ankieta wstępna wykazała problemy u większości Testerów wynikające z braku
+wcześniejszego doświadczenia w korzystaniu z urządzeń IT. Trudność w obsłudze aplikacji
+wystąpiło zwłaszcza u osób z zaburzoną koordynacją ruchową i niską sprawnością manualną.
+Konieczne było wsparcie opiekuna i dłuższy czas na wykonanie zadania . Wszystkie osoby
+z grupy testującej chętnie uczestniczyły w zajęciach i zainteresowane były nowym
+narzędziem. Ankieta końcowa wykazała istotny postęp w zakresie posługiwania się
+urządzeniem z systemem android.
+
+--- strona 102 ---
+
+Tematem zajęć w ramach etapu testowania były różne sytuacje wymagające kompetencji
+społecznych i umiejętności komunikacyjnych:
+• Radzenie sobie w sytuacji oparzenia
+• Ruch drogowy
+• Higiena osobista
+• Zachowanie u lekarza
+• Zakupy
+Po zapoznaniu Testerów z zasadami działania aplikacji i omówieniu funkcji aplikacji,
+Uczestnicy rozwiązywali Quizy tematyczne sprawdzające i utrwalające ich wiedzę
+z omawianych zagadnień. Pomocą w aplikacji był film przed każdym z tematów z instrukcją
+postępowania przy obsłudze aplikacji i rozwiązywaniu testów.
+Testerzy chętnie odpowiadali na pytania zadawane w poszczególnych częściach aplikacji.
+Zaskoczeni byli reakcjami narzędzia na udzieloną odpowiedź: zastosowaniem emotikonek,
+które mimiką określały prawidłową lub negatywną reakcję/ odpowiedź na zadane pytanie.
+Niektórym uczestnikom w obsłudze narzędzia pomagali opiekunowie. Ich rolą było
+przeczytanie polecenia/pytania lub pomoc w kolejnych krokach aplikacji
+wprowadzających do kolejnego tematu.
+Testy sprawdzające przeprowadzone przed przystąpieniem do testowania aplikacji
+wykazały deficyty informacji w zakresach wiedzy dotyczących sytuacji testowanych
+w aplikacji. Szczególne deficyty z zakresu higieny dotyczyły właściwego dbania o jamę ustną
+i zęby, prawidłowego mycia ciała i rąk. Większość Testerów z tematu o oparzeniach nie znała
+właściwej reakcji na oparzenia i nie potrafiła podać numerów alarmowych w nagłych
+sytuacjach. Niektórzy mieli trudność z określeniem, w jakich działach w sklepie kupuje się
+określone towary. Nie uwzględniali również możliwości robienia zakupów z wykorzystaniem
+karty płatniczej.
+W zakresie bezpieczeństwa na drodze Testerzy dopuszczali przechodzenie przez ulicę mimo
+braku pasów dla pieszych i nie potrafili podać procedury przechodzenia przez jezdnię.
+W temacie dotyczącym wizyty u lekarza i dbałości o zdrowie Testerzy dopuszczali
+w większości możliwość stosowania leków bez konsultacji z lekarzem. Nie znali nazw
+
+--- strona 103 ---
+
+specjalizacji lekarzy i nie potrafili podać numeru alarmowego pogotowia ratunkowego.
+Prowadzone zajęcia i spotkania przeprowadzone z użyciem aplikacji w zdecydowanej
+większości wzbogaciły wiedzę i zasób słownictwa osób testujących. Testowanie aplikacją
+wzbogaciło i utrwaliło ich wiedzę w sprawdzanych obszarach. Świadczyły o tym wyniki
+testów przeprowadzonych na ostatnich zajęciach i opinie Opiekunów prowadzących
+testowanie aplikacji.
+
+Opierając się na wynikach obserwacji prowadzonych przez Opiekunów,
+podsumowując realizację innowacji i opracowania narzędzia można wyciągnąć następujące
+wnioski:
+1. Korzyścią aplikacji „Go ahead – mów śmiało” jest przyrost wiedzy i słownictwa u Testerów.
+2. Możliwość korzystania z aplikacji na telefonie, który jest urządzeniem bardzo atrakcyjnym
+dla osób z niepełnosprawnością intelektualną, zwiększa motywację do wzbogacania wiedzy,
+nawet gdy proponowane w aplikacji informacje nie zawsze mieszczą się w obszarze
+zainteresowań Testerów. Korzystanie z telefonu wpłynęło na zwiększenie ich zaangażowania
+w wykonywanie zadań, niwelowało zniechęcenie pojawiające się zazwyczaj przy konieczności
+czytania tekstów.
+3. Samodzielność Testerów w posługiwaniu się aplikacją (obsługa aplikacji) uzależniona jest
+od poziomu sprawności czytania i rozumienia przeczytanych komunikatów.
+Przy wykorzystywania narzędzia przez osoby z głębszą niepełnosprawnością intelektualną
+niezbędna jest pomoc opiekuna przy logowaniu się do aplikacji i jej obsłudze z powodu
+niedostatecznie opanowanej u niektórych osób techniki czytania ze zrozumieniem.
+Rekomendacje:
+1. Wykorzystanie aplikacji na telefon podczas edukacji osób z niepełnosprawnością
+intelektualną zwiększa atrakcyjność procesu nabywania wiedzy czy umiejętności, więc warto
+ten rodzaj przekazu zastosować w edukacji dotyczącej różnych dziedzin codziennego życia,
+co korzystnie może wpłynąć na poprawę zaradności życiowej i zmniejszenie potrzeby
+wsparcia ze strony innych, odciążając otoczenie z konieczności opieki.
+
+--- strona 104 ---
+
+2. Umiejętność korzystania z telefonu i obsługi aplikacji ma wpływ na poprawę samooceny
+i poczucia wartości Testerów: wzrost sprawczości, niezależności, samodzielności, a także
+wzrost motywacji do zdobywania wiedzy i poszerzania swojej niezależności.
+3. Korzystanie z aplikacji telefonicznej powoduje poprawę w poczuciu przynależności
+niepełnosprawnych, zmniejsza odczucie wykluczenia społecznego.
+4. Korzyścią aplikacji dostrzeżoną na etapie testowania była niewielka ilość pytań w
+poszczególnych Quizach o zróżnicowanej tematyce, co zapobiegało rozproszeniu uwagi,
+znużeniu i zmęczeniu psychicznemu u osób z zaburzoną koncentracją uwagi, które
+zaobserwowano w dłuższych zajęciach prowadzonych metodą tradycyjną, z wykorzystaniem
+scenariuszy tematycznych.
+5. Biorąc pod uwagę opinię Testerów narzędzie może posłużyć rozwijaniu kompetencji
+społecznych z innych dziedzin: zgłaszano zainteresowanie nabycia poprzez aplikację wiedzy
+w zakresie: zachowania w klubie fitness, możliwości poszerzenia wiedzy z zakresu pierwszej
+pomocy przedmedycznej i zasad zdrowego żywienia.
+Narzędzie, jak się okazało w czasie testowania ma jednak pewne ograniczenia.
+1. Aplikacja, w pełni samodzielnie, może być wykorzystywana tylko przez osoby z opanowaną
+techniką czytania ze zrozumieniem i posiadającym telefon z systemem android.
+2. Niektóre osoby testujące miały trudność w zrozumieniu pojęć dla nich abstrakcyjnych
+takich jak: aplikacja, logowanie, login itp. Dla niektórych z osób konieczne było indywidualne
+wsparcie Opiekuna, zwłaszcza na etapie wdrażania do obsługi urządzenia. Dlatego wskazane
+jest przeprowadzenie zajęć wprowadzających bogacących wiedzę w tym zakresie.
+3. Korzyścią dla aplikacji byłoby zastosowanie przekazu w formie obrazków, animacji,
+filmików, co ułatwiłoby odbiór treści.
+4. Wydaje się, że korzyścią dla aplikacji byłoby stosowanie krótszych komunikatów lub
+komunikatów obrazkowych oraz odpowiedzi w formie potwierdzająco- przeczącej: TAK /NIE.
+5. Zgłaszanym postulatem było większe pogłębienie jednego – dwóch tematów
+(dokładniejsze omówienie ) przy ograniczeniu ilości omawianych zagadnień.
+Dobrym rozwiązaniem byłoby skonsultowanie z odbiorcami tematów/obszarów kolejnej
+aplikacji. Takie rozwiązanie dałoby im poczucie sprawstwa, współtworzenia narzędzia.
+
+--- strona 105 ---
+
+6. Aplikacja daje możliwość korzystania, powtórzenia w warunkach domowych
+7. Istotnym problemem dostrzeżonym na etapie testowania było zapominanie przez osoby z
+niepełnosprawnością intelektualną hasła lub adresów mailowych. Rozwiązaniem mogłaby
+być możliwość logowania z imienia lub przy użyciu znaku graficznego.
+8. Podsumowanie.
+Podczas testowania aplikacji „Go AHEAD – mów śmiało” okazało się, że aplikacja jest
+atrakcyjnym narzędziem edukacyjnym dającym możliwość urozmaicenia zajęć kształtujących
+kompetencje społeczne osób z niepełnosprawnością intelektualną, w tym umiejętności
+komunikacyjne. Jest narzędziem zachęcającym i motywującym do zdobywania wiedzy
+w danej, wybranej dziedzinie. Przynosi radość i satysfakcję z uzyskanych wyników.
+Mając na uwadze duże zaangażowanie i zainteresowanie narzędziem w grupie testującej
+i postępy Testerów w zakresie komunikatywności i umiejętności społecznych można
+stwierdzić także, że aplikacja „Go AHEAD – mów śmiało” obok walorów edukacyjnych, może
+być polecana jako narzędzie niwelujące wykluczenie technologiczne osób z
+niepełnosprawnością intelektualną.

@@ -1,0 +1,413 @@
+Model finalny innowacji
+„EV moduł do wózków”
+Innowacja testowana w ramach „Inkubatora Włączenia Społecznego” –
+Projektu wdrażanego w ramach IV Osi Priorytetowej Programu Operacyjnego Wiedza Edukacja Rozwój (Działanie 4.1: Innowacje społeczne),
+na zlecenie Ministerstwa Funduszy i Polityki Regionalnej, finansowanego ze środków Unii Europejskiej w ramach Europejskiego Funduszu Społecznego.
+
+Wszystkie elementy innowacji zostały udostępnione na podstawie Licencji Creative Commons CC.BY 4.0
+
+21380454925695
+Innowatorzy i autorzy opracowania: IVAN ATAMANCHUK, VOLODYMYR ATAMANCHUK
+
+Spis treści TOC \o "1-3" \h \z \u
+Opis innowacji i jej przeznaczenie PAGEREF _Toc151659594 \h 3
+Moduł EV – wersja finalna PAGEREF _Toc151659595 \h 4
+Wykaz części modułu EV, ilustracje i rysunki techniczne: PAGEREF _Toc151659596 \h 6
+Części modułu PAGEREF _Toc151659597 \h 6
+Rączka PAGEREF _Toc151659598 \h 7
+Metalowa rama modułu PAGEREF _Toc151659599 \h 8
+Obudowa na elektronikę i LED PAGEREF _Toc151659600 \h 9
+Centralny uchwyt PAGEREF _Toc151659601 \h 10
+Uchwyt silnika PAGEREF _Toc151659602 \h 11
+Pilot PAGEREF _Toc151659603 \h 12
+Śruba trapezowa 8mm - długość 330mm PAGEREF _Toc151659604 \h 13
+Uchwyt na akumulator PAGEREF _Toc151659605 \h 13
+Części elektroniki PAGEREF _Toc151659606 \h 14
+Części przyłączeniowe PAGEREF _Toc151659607 \h 16
+Uchwyt złącza PAGEREF _Toc151659608 \h 16
+Łączniki do wózka, Śruba kontrolna złącza PAGEREF _Toc151659609 \h 18
+Montaż poszczególnych części modułu EV PAGEREF _Toc151659610 \h 20
+Programowanie części elektronicznych PAGEREF _Toc151659611 \h 20
+Montaż części modułu EV PAGEREF _Toc151659612 \h 22
+Sposób montażu części przyłączeniowych PAGEREF _Toc151659613 \h 30
+Instrukcja użytkowania modułu PAGEREF _Toc151659614 \h 35
+Przebieg etapu testowania i rekomendacje do dalszej pracy PAGEREF _Toc151659615 \h 36
+I faza testów PAGEREF _Toc151659616 \h 36
+II faza testów PAGEREF _Toc151659617 \h 38
+Podsumowanie rekomendacji do dalszej pracy nad modułem: PAGEREF _Toc151659618 \h 41
+
+Opis innowacji i jej przeznaczenie
+Moduł elektryczny do wózków przeznaczony jest do codziennego użytku przez osoby z niepełnosprawnościami. Innowacyjna konstrukcja pozwala na zastosowanie tego modułu w każdym pomieszczeniu, nawet w domu użytkownika. Dzięki innowacyjnej konstrukcji udało się zachować gabaryty wózka oraz jego środek ciężkości. Pozwala to na wykorzystanie modułu we własnym domu, autobusie, sklepie, centrum handlowym, w pracy oraz na ulicy. Dzięki takiej konstrukcji użytkownik może zainstalować ten moduł samodzielnie, bez pomocy z zewnątrz. Również dzięki konstrukcji udało się zrobić moduł jak najlżejszy, którego waga nie przekracza 11,5 kilograma. Cała elektronika i baterie schowane są w ramie modułu. Istnieją dwa tryby ruchu, do przodu i do tyłu. Sterowanie kierunkiem ruchu jak i zakrętami odbywa się za pomocą panelu sterującego, który obsługuje się jedną ręką. Dzięki temu użytkownicy, którzy mają ograniczoną zdolność do siedzenia w pozycji pionowej lub mają dodatkowe problemy ruchowe w obrębie rąk, mogą sterować modułem w dowolnej pozycji siedzącej i półleżącej i tylko jedną ręką. Montaż i demontaż modułu zajmuje minutę, po czym można go już bez problemu użytkować. Dzięki wszystkim innowacjom cena tego modułu może sięgać 1500 zł, czyli mniej niż jakiekolwiek inne moduły do wózków oferowane na rynku.
+Innowacja skierowana jest do osób z niepełnosprawnościami, poruszających się na wózkach. Osoby te często borykają się z problemem utrudnionej mobilności. Aby poruszać się po ulicach, często potrzebują pomocy z zewnątrz, specjalistycznego lub publicznego transportu. Częstym problemem jest pokonanie ramp najazdowych do sklepów lub po prostu samodzielne poruszanie się po nierównym terenie miasta, kiedy to osoba poruszająca się na wózku uzależniona jest od pomocy innych osób.
+Proponowane rozwiązanie pozwoli osobom z niepełnosprawnościami na większą samodzielność, mobilność i bezpieczeństwo. Zwiększając mobilność, osoba będzie mogła podróżować samodzielnie, korzystać ze sklepów i autobusów wyposażonych w rampę i pokonywać większe dystanse.
+Moduł EV – wersja finalna
+Finalna wersja została wymodelowana i stworzona w oparciu o rozwiązanie dwukołowe. Podczas testów wewnętrznych zidentyfikowano i wyeliminowano wady wcześniejszych wersji prototypów. Co ważne, użytkownik jest w stanie samodzielnie zainstalować ten moduł na własnym wózku, bez pomocy osób z zewnątrz.
+Waga produktu wynosi 11,5 kilograma, a akumulator pozwala na przejechanie z użytkownikiem do 10 kilometrów.
+W trakcie testów i modyfikacji udało się stworzyć rozwiązanie najtańsze i najbardziej efektywne w użytkowaniu. Cała elektronika została umieszczona w korpusie modelu, pomiędzy elektrycznymi kołami, co poprawiło hermetyczne właściwości modułu oraz jego ergonomię.
+Urządzenie posiada dwa szeroko rozstawione elektryczne koła silnikowe oraz specjalnie zaprojektowane mocowanie, które może posłużyć do montażu modułu zarówno pomiędzy osiami wózka w środku jego ciężaru, jak i za wózkiem, nie zwiększając jego wymiarów, ale dodając do niego 2 dodatkowe koła i odpowiednio poprawiając jego stabilność i zwrotność.
+Mimo wyeliminowania początkowych wad produktu, należy pamiętać, że moduł jest wciąż wersją prototypową, która wymaga kolejnych faz testowania i dostosowania jego funkcjonalności do różnych potrzeb użytkowników. Do produkcji modułu w większej skali byłaby także konieczna jest wymiana większości plastikowych części modułu oraz łącznika z wózkiem na aluminiowe, co znacznie przyspieszy czas jego produkcji, a także obniży jego koszt. Z naszego punktu widzenia również właściwym krokiem byłoby zastąpienie pilota przewodowego pilotem bezprzewodowym.
+
+Zdj. 1 Moduł EV – widok z tyłu wózka.
+
+Zdj. 2. Moduł EV – widok z boku wózka.
+W związku ze znaczną modyfikacją naszego rozwiązania, w module pojawił się pilot sterujący z 2 joystickami. Jeden odpowiada za kierunki ruchu do przodu i do tyłu, a drugi odpowiada za sterowanie prędkością obrotową prawego i lewego silnika elektrycznego, co z kolei umożliwia skręcanie całego wózka w prawo i w lewo. Modyfikacja ta była efektem rekomendacji użytkowników w procesie testowania i stanowiła odpowiedź na problemy z trzymaniem kierownicy przez testerów o ograniczonej ruchomości w obrębie kończyn górnych.
+Moduł mocowany jest do wózka w sposób stabilny i bezpieczny za pomocą specjalnie zaprojektowanych uchwytów/mocowań, które opisane są w poniższej części dokumentu.
+Wykaz części modułu EV, ilustracje i rysunki techniczne:
+Części modułu
+Nazwa
+Szt.
+Cena
+Suma zł
+Rączka (Plastik)
+1
+50
+50
+Metalowa rama modułu (AL)
+1
+130
+130
+Obudowa na elektronikę i LED (Plastik)
+1
+120
+120
+Centralny uchwyt (Al)
+1
+50
+50
+Uchwyt silnika (Al)
+2
+30
+60
+Pilot (Plastik)
+1
+70
+70
+Uchwyt na akumulator (Plastik)
+1
+10
+10
+Śruba trapezowa 8mm - długość 330mm (Metal)
+1
+20
+20
+Podsumowanie
+9
+wartość:
+510
+Wszystkie części z tworzyw sztucznych zostały wyprodukowane przy użyciu technologii druku 3D, która jest najdroższą metodą wytwarzania części z tworzyw sztucznych, ale także najszybszą.
+Do seryjnej produkcji części aluminiowych i plastikowych tego modułu należałoby zastosować metodę formowania wtryskowego. To znacznie skróci czas i koszty produkcji. Takie części będą znacznie mocniejsze i tańsze niż analogi produkowane przy użyciu technologii druku 3D. Wszystkie niezbędne modele 3D znajdują się w bibliotece projektu.
+Rączka
+
+Zdj. 3. Rączka.
+Materiał: ABS
+Zaprojektowano: Atamanchuk
+Wyprodukowano: Atamanchuk
+Rączka ma za zadanie poprawić wygodę przenoszenia i montażu modułu.
+Metalowa rama modułu
+
+Zdj. 4. Rama.
+Materiał: Aluminium/ABS
+Zaprojektowano: Atamanchuk
+Wyprodukowano: Atamanchuk
+Obudowa na elektronikę i LED
+
+Zdj. 5. Obudowa.
+Materiał: ABS
+Zaprojektowano: Atamanchuk
+Wyprodukowano: Atamanchuk
+Centralny uchwyt
+
+Zdj. 6. Centralny uchwyt.
+Materiał: Aluminium
+Zaprojektowano: Atamanchuk
+Wyprodukowano: Atamanchuk
+Uchwyt został zaprojektowany tak, aby skutecznie i szybko łączyć się z uchwytem głównym wózka i skutecznie utrzymywać ładunek rzutowany przez moduł elektryczny i wózek podczas ruchu.
+Uchwyt silnika
+
+Zdj. 7. Uchwyt silnika.
+Materiał: Aluminium
+Zaprojektowano: Atamanchuk
+Wyprodukowano: Atamanchuk
+Pilot
+
+Zdj. 8. Pilot.
+Materiał: ABS
+Zaprojektowano: Atamanchuk
+Wyprodukowano: Atamanchuk
+
+Zdj. 9 i 10. Pilot.
+Śruba trapezowa 8mm - długość 330mm
+
+Zdj. 11. Śruba.
+Materiał: stal nierdzewna
+Uchwyt na akumulator
+
+Zdj. 12. Uchwyt na akumulator wraz z wymiarami.
+Materiał: ABS
+Zaprojektowano: Atamanchuk
+Wyprodukowano: Atamanchuk
+Części elektroniki
+
+Nazwa
+Szt.
+Cena
+Suma zł
+Dwukanałowy kontroler silników BLDC 2 x 10 A/36 V
+1
+229
+229
+Potencjometr obrotowy 500R 500 Ohm liniowy
+2
+1.5
+3
+Akumulator – Li-ion 36V 5800mAh
+1
+260
+260
+Ładowarka 36V 10A
+1
+82
+82
+Silnik elektryczny 350W, 36V
+2
+180
+360
+Podsumowanie
+7
+Wartość
+934
+
+Części elektroniki są łatwo dostępne do zakupu w sklepach stacjonarnych i internetowych.
+
+Zdj. 13. Przykładowy silnik 350W z oponą. SynPM – synchroniczny z magnezami.
+
+Zdj. 14. Sterownik 350W.
+
+Zdj. 15. Potencjometr 1K.
+
+Części przyłączeniowe
+
+Nazwa
+Szt.
+Cena
+Suma zł
+Uchwyt złącza
+1
+100
+100
+Łączniki do wózka
+2
+30
+60
+Śruba kontrolna złącza
+2
+10
+20
+Podsumowanie
+5
+Wartość
+180
+
+Części przyłączeniowe służą do instalacji modułu do wózka. Części wykorzystane do prototypu powstały dzięki technologii druku 3D. Wszystkie niezbędne modele do druku lub produkcji znajdują się w bibliotece projektu. Przy wykonywaniu własnego prototypu zalecamy użycie tworzywa węglowego lub ABS ze względu na jego wysoką twardość i wysoką jakość pracy w różnych temperaturach. Do masowej produkcji zalecamy formowanie wtryskowe tworzywa ABS.
+Uchwyt złącza
+
+Zdj. 16. Uchwyt złącza.
+
+Zdj. 17. Rzuty uchwytu złącza.
+Materiał: Aluminium
+Zaprojektowano: Atamanchuk
+Wyprodukowano: Atamanchuk
+Ten uchwyt służy do mocowania do wózka. Dzięki zaprojektowanej lekkiej konstrukcji montażowej uchwyt może być zamontowany samodzielnie przez osobę z niepełnosprawnością. Również po rozłożeniu istnieje możliwość złożenia wózka do transportu w samochodzie. Materiał wykonania - aluminium. Zapewnia to przyczepną lekką i niezawodną konstrukcję. Uchwyt modułu elektrycznego jest na nim zamontowany z przodu i jest bezpiecznie zamocowany dzięki czerwonemu zamkowi. Schemat instalacji zostanie przedstawiony w dziale "instalacja".
+Łączniki do wózka, Śruba kontrolna złącza
+
+Zdj. 18. Łączniki do wózka wraz ze śrubą kontrolną.
+
+Zdj. 19. Łączniki do wózka wraz ze śrubą kontrolną.
+
+Zdj. 20. Łączniki do wózka.
+Materiał: Aluminium
+Zaprojektowano: Atamanchuk
+Wyprodukowano: Atamanchuk
+Uchwyt ten montowany jest na stojaku do wózka. Jest przeznaczony do połączenia wózka z uchwytem łączącym. Dzięki metalowej śrubie połączenie jest niezawodne i łatwe. Konstrukcja przystosowana jest do montażu na wózku i nie utrudnia składania wózka przy transportowaniu lub przechowywaniu.
+
+Zdj. 21. Śruba.
+Montaż poszczególnych części modułu EV
+Programowanie części elektronicznych
+Na początek potrzebujemy programatora, aby poprawnie zaprogramować sterownik.
+Bierzemy ST-Link/V2, który można kupić w sklepie internetowym.
+
+Zdj. 22. Przykładowy programator.
+Podłączamy go do naszego kontrolera zgodnie z podaną instrukcją.
+
+Zdj. 23. Sposób podłączenia do kontrolera.
+Złącza USB-A podłączamy do komputera. Na komputerze instalujemy oprogramowanie dla programatorów STM32CubeProgrammer z oficjalnej web strony ST-Link. Podłączamy się do naszego kontrolera i programujemy go kodem, który znajduje się folderze dokumentacji projektu.
+
+Zdj. 24. Sposób programowania.
+Później podłączamy potencjometry do naszego kontrolera zgodnie z podanym schematem.
+
+Zdj. 25. Sposób podłączenia potencjometrów.
+Montaż części modułu EV
+Pilot
+Potencjometry instalujemy do pilota i łączymy nakrętką potencjometru.
+
+Zdj. 26. Sposób instalacji potencjometrów.
+
+Zdj. 27. Sposób instalacji potencjometrów.
+
+Zdj. 28. Schemat podłączenia potencjometrów.
+Spawamy kable zgodnie ze schematem i podłączamy do głównego kontrolera w gniazdo sterujące 1.
+
+Zdj. 29. Sposób zasilania.
+Zasilanie 3.3V bierzemy z centralnego gniazda przez które programowaliśmy kontroler
+
+Zdj. 30. Sposób zasilania.
+Zamykamy pilot dzięki śrubie M2.5 o długości 25 mm
+
+Zdj. 31. Pilot.
+Silniki
+
+Zdj. 32. Montaż silników.
+Do zaprojektowanych rynien przystawiamy osie silników, a przez otwór w pionowej płycie montażowej przeprowadzamy kable od strony, z której sterownik będzie montowany w przyszłości.
+Mocujemy silniki za pomocą metalowych łączników i dokręcamy 4 śruby po 6 mm dla każdego silnika.
+
+Zdj. 33. Montaż silników.
+Za pomocą śrub M3 przymocowujemy sterownik główny do pionowej ściany.
+
+Zdj. 34. Podłączenie kabli silnikowych.
+Podłączamy wszystkie silnikowe kable zgodnie z przeznaczeniem.
+
+Zdj. 35. Montaż akumulatora.
+Montujemy akumulator na pionowej ścianie za pomocą uchwytu do akumulatora śrubami M2.5x4szt. 2 na górze, 2 na dole.
+
+Zdj. 36. Montaż akumulatora.
+Montujemy na ścianie naszej obudowy i zaciskamy go własną nakrętką.
+Podłączamy przycisk włączenia modułu do kontrolera.
+
+Zdj. 37. Podłączenie przycisku włączenia modułu do kontrolera.
+Instalujemy obudowę modułu za pomocą zaprojektowanych rowków i skręcamy ją dwoma śrubami M4 z przodu.
+
+Zdj. 38. Instalacja obudowy.
+Centralny uchwyt i rączka
+
+Zdj. 39. Sposób montażu - uchwyt i rączka.
+W korpus wkręcamy śruby 320 mm i mocujemy je nakrętkami od dołu.
+
+Zdj. 40. Sposób montażu - uchwyt i rączka.
+Następnie włóż uchwyt i zamocuj go nakrętkami 8 mm.
+
+Zdj. 41. Gotowy uchwyt.
+Zamykamy pokrywę i nasz moduł jest gotowy do pracy.
+Sposób montażu części przyłączeniowych
+W pierwszej kolejności należy zamontować uchwyty łączące po bokach wózka.
+
+Zdj. 42 Montaż uchwytów przyłączeniowych.
+Uchwyty montujemy za pomocą śrub 4M 30mm i nakrętek 4M
+
+Zdj. 43. Montaż uchwytów przyłączeniowych.
+Następnie wyjmij śruby kontrolne i umieść moduł przyłączeniowy na wózku.
+
+Zdj. 44. Montaż uchwytu złącza.
+Aby zapewnić stabilność montażu, zamocuj uchwyt złącza za pomocą śrub kontrolnych.
+
+Zdj. 45. Montaż elementów przyłączeniowych.
+Weź moduł elektryczny w dłonie i umieść go pod wózkiem pod kątem, tak aby dolna śruba łącząca modułu weszła w odpowiedni rowek w module przyłączeniowym wózka.
+
+Zdj. 46. Sposób montażu modułu EV do elementów przyłączeniowych.
+
+Zdj. 47. Sposób montażu modułu EV do elementów przyłączeniowych.
+Następnie pociągnij cały moduł do siebie, tak aby górna śruba łącząca modułu połączyła się z odpowiednim rowkiem na module łączącym z wózkiem.
+
+Zdj. 48. Sposób montażu modułu EV do elementów przyłączeniowych.
+
+Zdj. 49. Sposób montażu modułu EV do elementów przyłączeniowych.
+
+Zdj. 50. Sposób montażu modułu EV do elementów przyłączeniowych.
+Wciśnij zacisk.
+
+Zdj. 51. Sposób montażu modułu EV do elementów przyłączeniowych.
+Moduł jest gotowy do pracy i bezpiecznie zamocowany.
+Instrukcja użytkowania modułu
+Sposób ładowania modułu
+Ładowanie modułu odbywa się za pomocą ładowarki. Naładowanie modułu do 100% trwa 4 godziny. Dzięki otrzymanej energii można przejechać do 8,5 km z prędkością 7 km na godzinę i wagą użytkownika do 90 kilogramów wraz z wózkiem.
+Sposób użytkowania modułu
+W tej konfiguracji sterowanie modułem odbywa się za pomocą pilota sterującego z dwoma regulatorami. Pierwszy regulator reguluję kierunek ruchu do przodu lub do tyłu. Oznacza to, że obracając go w jednym kierunku, poruszamy się do przodu, a obracając go w drugim, cofamy się.
+Drugi regulator odpowiada za różnicę prędkości prawego i lewego silnika elektrycznego, co w praktyce daje nam możliwość skrętu. Czyli przy ustawieniu pierwszego regulatora w pozycji „do przodu” kręcimy drugim regulatorem do przodu i prawy silnik kręci się szybciej, a lewy wolniej. Dzięki temu nasz wózek skręca w lewo. Przekręcając drugi regulator w drugą stronę, lewy silnik elektryczny kręci się szybciej niż prawy, a nasz wózek skręca w prawo. Ta sama logika działa podczas jazdy do tyłu.
+Przebieg etapu testowania i rekomendacje do dalszej pracy
+I faza testów
+Zadaniem zespołu projektowego w pierwszym etapie testowania innowacji było sprawdzenie w praktyce charakterystyk dwóch wyprodukowanych modułów elektrycznych a następnie wybór jednego optymalnego rozwiązania i jego modernizacja. Model ten powinien być ostateczny i na jego podstawie powinien powstać moduł gotowy do prototypowania. W celu przetestowania prototypów konieczne było stworzenie listy podstawowych testów, które dawałyby możliwość oceny skuteczności rozwiązania w praktyce.
+W testowaniu wzięły udział 2 osoby, poruszające się na wózkach.
+Tester 1 – mężczyzna, 64 lata. Z powodu choroby przeszedł amputację obu nóg a także ma problemy z poruszaniem lewą ręką, która nie jest w pełni sprawna.
+Tester 2 – kobieta, 54 lata. Z powodu wad wrodzonych ma zesztywnienie stawu biodrowego z niemożnością poruszania prawą nogą. Ze względu na tę chorobę, podczas korzystania z wózka, osoba musi utrzymywać nogę w stanie zawieszenia, dlatego też pozycja oparcia wózka powinna być lekko pochylona do tyłu.
+Termin realizacji zadania: 12.12.2022 – 13.01.2023.
+W ramach działań wykonano 3 testy:
+Test 1 – Ergonomia.
+W tej sekcji testom podlegały następujące zagadnienia:
+jak wygodne jest dla użytkownika przechowywanie modułu (jego wymiary i waga);
+jak wygodne jest dla użytkownika zainstalowanie modułu do wózka;
+czy mocowanie modułu jest wystarczająco bezpieczne dla użytkownika;
+czy korzystanie z modułu jest wystarczająco wygodne dla użytkownika.
+Testerom spodobał się rozmiar i waga modułu. Sam moduł nie zajmuje dużo wolnego miejsca i można go przechowywać na niewielkiej powierzchni.
+Montaż modułu jest stosunkowo łatwy i trwa do minuty, jeśli wcześniej zamontowano uchwyty, które pozostają na stałe przymocowane do wózka i nie uniemożliwiają jego złożenie przed transportem.
+Mocowanie modułu było niezawodne i nie sprawiało problemów.
+4.1. Kierownica samego modułu jest umieszczona zbyt wysoko, co nie jest wygodne w użytkowaniu.
+Propozycja 1 - obniżyć wysokość kierownicy.
+Propozycja 2 - przewidzieć możliwość regulacji wysokości kierownicy.
+4.2. Sporo osób z niepełnosprawnościami ma problemy z obsługą modułu dwiema rękami.
+Propozycja 1 - przeprojektować wszystkie elementy sterujące, aby umożliwić sterowanie jedną ręką.
+Propozycja 2 – zrewidować ogólną koncepcję zarządzania modułem.
+Test 2 – Proces ruszania wózka wyposażonego w moduł EV.
+W tej sekcji testowane były następujące zagadnienia:
+ruszanie z miejsca na płaskiej powierzchni;
+ruszanie z miejsca w górę, pod kątem do 7%
+ruszanie z miejsca z góry, pod kątem do 7%
+Wystartowanie modułu na płaskiej powierzchni nie wykazało żadnych problemów.
+Start z góry ujawnił istotne problemy z wolną mocą modułu:
+Za mało mocy, aby wjechać w górę, pod kątem do 7%;
+Pozycja silnika poza wymiarami wózka jest niebezpieczna ze względu na to, że w momencie wjazdu na rampę cały wózek zamienia się w trójkołowiec i w tym momencie poziom zagrożenia znacznie wzrasta i dochodzi tu duże prawdopodobieństwo przewrócenia się wózka na bok. Jest to szczególnie widoczne przy wjeździe na rampę pod kątem.
+Propozycja 1 - zwiększenie liczby kół silnikowych do dwóch, co da możliwość uzyskania większej mocy już na samym początku użytkowania modułu.
+Propozycja 2 - zaprojektowanie położenia kół na tym samym poziomie co kierownicy, co powinno wpłynąć na stabilność całej konstrukcji zarówno przy wjeździe na rampę jak i przy zjeździe z niej.
+Podczas zjeżdżania ze wzniesienia pod kątem do 7% nie wykryto żadnych znaczących problemów poza opisanym powyżej problemem ze stabilnością.
+Test 3 – Jazda w małym pomieszczeniu.
+Symulacja jazdy w małym mieszkaniu, sklepie, autobusie lub pociągu. Podczas jazdy w małym pomieszczeniu nie wykryto żadnych istotnych problemów. Kierownica bardzo korzystnie wpływa na zwrotność całego wózka. Podczas skręcania obracające się koła wózka dodawały całej konstrukcji dodatkowej stabilności.
+Zespół projektowy przetestował 2 modele i otrzymał wystarczająco dużo przydatnych informacji, aby zaktualizować moduł.
+II faza testów
+Zadaniem zespołu projektowego w 2 fazie testów innowacji było przetestowanie charakterystyk finalnego wyprodukowanego modułu elektrycznego.
+W celu przetestowania prototypu konieczne było stworzenie listy podstawowych testów, które dawałyby możliwość analizy użyteczności rozwiązania w praktyce.
+Termin realizacji zadania: 13.02.2022 – 28.02.2023.
+W ramach działań wykonano 3 testy:
+Test 1 – Ergonomia.
+W tej sekcji testowane były następujące zagadnienia:
+jak wygodne jest dla użytkownika przechowywanie modułu (jego wymiary i waga);
+jak wygodne jest dla użytkownika zainstalowanie modułu do wózka;
+czy mocowanie modułu jest wystarczająco bezpieczne dla użytkownika;
+czy korzystanie z modułu jest wystarczająco wygodne dla użytkownika.
+Moduł nie przeszedł znaczących zmian wielkości i wagi w porównaniu do poprzedniej wersji, więc testerzy nadal są zadowoleni z jego rozmiarów i wagi. Sam moduł nie zajmuje dużo wolnego miejsca i można go przechowywać na niewielkiej powierzchni.Ze względu na niewielkie rozmiary i sterowanie modułem przez pilota, nasz zespół zaprojektował kilka wariantów montażu modułu:Wariant 1 - w centralnej części wózka, czyli między przednią a tylną osią.Wariant 2 - kilka centymetrów za tylną osią kół.Każda z opcji montażu ma swoje wady i zalety, które zostały wykazane w czwartej części testu.
+Sposób montażu modułu też się nie zmienił i jest stosunkowo łatwy i trwa do minuty, jeśli wcześniej zamontowano uchwyty, które pozostają na stałe przymocowane do wózka i uniemożliwiają jego złożenia przed transportem.
+Mocowanie modułu nadał pozostaje niezawodne i nie sprawia problemów.
+Dzięki zmianom w zarządzaniu modułem poprawiła się ergonomia jego użytkowania. Dzięki zastosowaniu pilota sterującego użytkownik może siedzieć na wózku w wygodny lub możliwy dla niego sposób. Sposób sterowania jest odpowiedni zarówno dla osób korzystających z wózka w pozycji siedzącej, jak i dla osób korzystających z niego w pozycji leżącej. Zespół projektowy proponuje jednak wprowadzenie dodatkowych udogodnień w zakresie sterowania, obejmujących stworzenie pilota bezprzewodowego.
+Propozycja 1 - Zmienić pilota z „przewodowego” na „bezprzewodowy”. Poprawi to ergonomię użytkowania modułu.
+Test 2 – Proces ruszania wózka wyposażonego w moduł EV.
+W tej sekcji testowaniu podlegały następujące elementy:
+ruszanie z miejsca na płaskiej powierzchni;
+ruszanie z miejsca w górę, pod kątem do 7%;
+ruszanie z miejsca z góry, pod kątem do 7%.
+Wystartowanie modułu na płaskiej powierzchni nie wykazało żadnych problemów.
+Dzięki zastosowaniu dwóch silników elektrycznych zamiast jednego, udało się znacznie poprawić zarówno moc samego modułu, jak i płynność jego ruchu, szczególnie przy ruszaniu z miejsca. Moduł uruchamia się idealnie i płynnie dzięki płynnej regulacji obrotów przez pilota. Dzięki dwóm silnikom elektrycznym moduł ma wystarczającą moc, aby pociągnąć użytkownika zarówno po płaskiej powierzchni, jak i pod górę o nachyleniu 7%. Niestety, podczas końcowych testów ujawniono kilka krytycznych momentów, które są niezbędne do opracowania kodu oprogramowania. Szybkość i moc jazdy do tyłu jest znacznie mniejsza niż prędkość i moc jazdy do przodu. Powoduje to dyskomfort podczas jazdy do tyłu.
+Podczas zjeżdżania z 7% wzniesienia silniki elektryczne hamują sam moduł, ładując w ten sposób akumulatory. Tryb ten nazywany jest rekuperacją i jest niezbędny zarówno ze względów bezpieczeństwa, jak i do pozyskania dodatkowej energii elektrycznej z energii kinetycznej użytkownika. Innymi słowy, zatrzymując cały wózek wraz z użytkownikiem z większą prędkością, wirtualnie zamieniamy silniki elektryczne w hamulce, które generują prąd elektryczny przez hamowanie i przesyłają go z powrotem do akumulatora do dalszego wykorzystania podczas następnej jazdy.
+Test 3 – Jazda w małym pomieszczeniu, małym mieszkaniu, symulacja jazdy w sklepie, autobusie lub pociągu.
+Podczas testowania modułu w małych pomieszczeniach o dużych wymaganiach dotyczących manewrowości, moduł miał kilka niewygodnych funkcji. Mianowicie promień skrętu modułu jest zbyt duży. W trakcie dalszych testów wewnętrznych odkryliśmy kilka sposobów rozwiązania tej niedogodności.
+Opcja 1 - programowo zwiększyć różnicę obrotów między silnikami elektrycznymi, co zwiększy efektywność zakrętu.
+Rezultatem jest przetwarzanie kodu oprogramowania.
+Opcja 2 - umieścić koła szerzej w module, aby uzyskać lepszą manewrowość.
+Efekt - poszerzenie rozstawu osi modułu jest możliwe tylko przy sposobie montażu modułu z tyłu wózka, gdyż poszerzenie rozstawu osi po umieszczeniu z przodu blokuje przednią oś skrętu wózka.
+Test 4 – Zasięg/moc/biezpieczeństwo.
+Ta część testów powstała z powodu rozbieżności w wynikach testów sposobu montażu modułu w przedniej części wózka przed środkiem ciężkości oraz testów sposobu montażu modułu w tylnej części wózka poza środkiem ciężkości.
+Montując moduł w przedniej części, zauważyliśmy lepszą charakterystykę zasięgu na jednym ładowaniu akumulatora, ale mniejszą moc samego modułu. Przy włączaniu dużej mocy jakość styku kół z nawierzchnią nie była wystarczająca. Dlatego ten sposób montażu nadaje się na dłuższą podróż (w porównaniu do sposobu montażu modułu za wózkiem), ale z możliwością osiągnięcia mniejszej mocy modułu.
+Montując moduł w tylnej części wózka uzyskaliśmy znacznie lepsze dane dotyczące osiągnięcia mocy modułu. Jest to szczególnie widoczne podczas jazdy w górę i w dół góry. Podczas zjeżdżania ze wzniesienia ciężar użytkownika przesuwa się do tyłu, co zmniejsza obciążenie przedniej osi, a tym samym obniża jakość przyczepności osi do drogi. Ale w ten sposób zwiększa obciążenie tylnej osi i zwiększa jakość przyczepności tylnej osi do drogi. Dodatkowy szerszy rozstaw osi modułu dodaje stabilności całej konstrukcji i pozwala użytkownikowi na bezpieczniejszy wjazd na rampę lub krawężnik.
+Podsumowanie rekomendacji do dalszej pracy nad modułem:
+Wprowadzenie wersji bezprzewodowej pilota, służącego do sterowania modułem
+Aby zaktualizować sterowanie do wersji bezprzewodowej, należy dodać kontroler radiowy do wyjściowego kanału komunikacyjnego kontrolera. Do sterownika radiowego należy podłączy c bezprzewodowy panel sterujący z czteropozycyjnym regulatorem, który będzie sterował kierunkiem ruchu naszego modułu.
+Poprawa szybkości jazdy do tyłu.
+Aby poprawić prędkość wsteczną, należy zmienić kod programowania głównego sterownika i zapisać go zgodnie z jazdą do przodu.
+Poprawa promienia skrętu.
+Aby poprawić jakość i zmniejszyć promień skrętu, należy zmienić kod programu głównego sterownika tak, aby różnica w prędkościach silników elektrycznych była jeszcze większa. Również rozszerzenie osi silników elektrycznych powinno pozytywnie wpłynąć na jakość skrętu.

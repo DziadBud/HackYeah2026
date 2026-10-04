@@ -1,0 +1,128 @@
+--- strona 1 ---
+
+1
+Wykonanie elementu trzymającego
+Nazwa projektu:
+
+Cloudleg
+Data sporządzenia:
+31.03.2023
+Miejsce sporządzenia:
+Poznań
+Autor:
+
+Bartłomiej Stroiński
+
+--- strona 2 ---
+
+2
+Spis treści
+Wstęp ____________________________________________________________________ 3
+Element trzymający w postaci pasków parcianych __________________________________ 5
+Dane techniczne __________________________________________________________ 6
+Element trzymający w postaci „spodenko – nóg”___________________________________ 7
+System magnetyczny _________________________________________________________ 8
+Podsumowanie _____________________________________________________________ 9
+
+--- strona 3 ---
+
+3
+Wstęp
+Niniejszy raport zawiera materiał dokumentujący wykonanie elementu trzymającego
+sztucznych nóg w ramach testowania innowacji społecznej pn. „Cloudleg”, realizowanej
+w ramach projektu pn. „Inkubator Włączenia Społecznego” finansowanego ze środków
+Unii Europejskiej. Zadanie została zrealizowane w marcu 2023.
+Element trzymający to produkt, który łączy nogi wykonane w poprzednim zadaniu
+z użytkownikiem tych nóg. Jego zadaniem jest stabilizacja nóg, zabezpieczenie przed
+odłączeniem się ich od użytkownika, zabezpieczenie przed wypadnięciem nóg z wózka,
+a także sprawianie komfortu związanego z cechami wymienionymi powyżej.
+
+Zdjęcie 1. Autor wraz z wykonawczynią elementu trzymającego w zakładzie krawieckim omawia
+sposób wykonania produktu.
+W dokumencie specyfikacja innowacji autor założył wykonanie elementu trzymającego
+w oparciu o paski parciane zapinane wokół pasa użytkownika, połączone z paskami łączące je
+z nogami, jednak w trakcie prac nad innowacją autor sprawdził inne rozwiązanie nazwane
+„spodenko-nogi” które okazało się znacznie lepsze od opartego na paskach parcianych.
+
+--- strona 4 ---
+
+4
+W tym zadaniu autor zlecił wykonanie po 2 wymienionych wcześniej rodzajów elementów
+trzymających na każdą parę nogi.
+
+Zdjęcie 2. Prace nad elementem trzymającym w zakładzie krawieckim.
+
+--- strona 5 ---
+
+5
+Element trzymający w postaci pasków parcianych
+Dwa takie elementy zostały wykonane przez zakład krawiecki w taki sam sposób
+jak w prototypowym etapie projektu i w układzie opisanym w rozdziale wstępnym wyżej.
+
+Zdjęcie 3. Element trzymający w postaci pasków parcianych na użytkowniczce. Widać jego
+konstrukcję. Paski parciane zaciskające się na nogach są podszyte w długości styku z nogami
+paskiem silikonowym, aby nie ześlizgiwać się z nóg. Zacisk tych pasków utrzymany jest na rzepach.
+Zacisk tych pasów wykorzystuje sprężystość sztucznych nóg.
+Jedyna różnica polega na tym, że końcówki pasków podwiązkowych, czyli tych idących
+od pasa mają przyczepione paski mocowane wokół ud sztucznych nóg zamykane na rzepy
+i wyszyte w spodniej części podkładem silikonowym tak aby miały przyczepność
+z obejmowanym udem sztucznej nogi.
+
+--- strona 6 ---
+
+6
+Dane techniczne
+Szerokość wszystkich pasków: 30mm
+Długość pasku na pasie: ok 130 cm
+Długość „podwiązek” odchodzących od pasa: 40 cm
+Długość jednej prawej opaski zaciskającej wokół nogi: 83 cm
+Długość jednej lewej opaski zaciskającej wokół nogi: 83 cm
+Długość kontynuacji podwiązki odchodzącej od opaski zaciskającej: ok 16 cm
+Ilość klamer: 3 szt.
+Długość rzepów i pasków silikonowych: dobrać indywidualnie w zależności od grubości
+sztucznej nogi
+
+--- strona 7 ---
+
+7
+Element trzymający w postaci „spodenko – nóg”
+„Spodenko – nogi” to prostsza konstrukcja od produktu opartego na paskach parcianych;
+składa się ona z zakupionych krótkich bezszwowych, rozciągliwych spodenek sportowych
+oraz 2 wykonanych przez krawcową obejm z pasków parcianych zamykanych rzepami.
+Złożenie tego elementu trzymającego polega na tym, że na końcówki ud sztucznych nóg
+zakładane są nogawki spodenek w długości dopasowanej do użytkownika a następnie
+nogawki te są zaciskane na elastycznej sztucznej nodze przez obejmę z paska parcianego
+zamykanego na rzep. Jako spodenki zakupiono produkt: Bezszwowe legginsy Stradivarius,
+rozmiar L - 2 szt. i XL – 2 szt. Jako opasek zaciskowych użyto 2 pasków parcianych
+o szerokości 30 mm i długości 83 cm każdy. Długość rzepów dobrano indywidualnie
+w zależności od grubości sztucznej nogi.
+
+Zdjęcie 4. Konstrukcja elementu trzymającego w postaci "spodenko-nóg" na testerce. Nogawki
+spodenek "złapane są" na zasadzie zacisku między paskiem zaciskowym na rzepy a sprężystymi
+nogami.
+
+--- strona 8 ---
+
+8
+System magnetyczny
+Do testowego elementu trzymającego należy zaliczyć także magnes spinający, który
+ulokowany jest w wewnętrznej części uda każdej ze sztucznych nóg. Sposób wykonania
+tej użyteczności opisany jest w raporcie z odlania 2 par końcowych protez.
+
+Zdjęcie 5. Widoczna, zewnętrza części magnesu spinającego po wewnętrznej stronie uda w pobliżu
+kolana na sztucznej nodze.
+
+--- strona 9 ---
+
+9
+Podsumowanie
+Elementy trzymające to stosunkowo proste technologicznie produkty, które zostały
+wykonane szybko i wzbogacone elementami pasmanteryjnymi. Już podczas prac nad nimi
+wszystko wskazywało na to, że testujący użytkownicy będą zdecydowanie chętniej używać
+„spodenko – nóg” niż konstrukcji parcianej. W trakcie testowania wyszły pewne
+niedoskonałości pasków obejmujących spodenki, które są opisane w raporcie testowania nóg
+i są łatwe do poprawy w przyszłości.
+
+Zdjęcie 6. Szycie elementu trzymającego w postaci pasów parcianych w zakładzie krawieckim.
+
+https://creativecommons.org/licenses/by/4.0/deed.pl

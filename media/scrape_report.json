@@ -1,0 +1,94 @@
+{
+  "summary": {
+    "categories": 9,
+    "listing_entries": 115,
+    "innovations": 40,
+    "in_several_categories": 0,
+    "with_primary_pdf": 38,
+    "pdf_files": 179,
+    "docx_odt_files": 14,
+    "documents_bytes": 465438597,
+    "with_online_video": 12,
+    "online_videos": 13,
+    "online_videos_unavailable": 0,
+    "with_video_files_in_materials": 4,
+    "video_files_in_materials": 5,
+    "video_files_bytes": 437489097,
+    "photos": 1467,
+    "innovations_with_photos": 37,
+    "with_issues": 6
+  },
+  "broken_links": [
+    {
+      "innovation": "inteligentny-organizer-do-lekow",
+      "kind": "materials",
+      "url": "https://rops.krakow.pl/pliki/IS/bibloteka/inteligentnyorganizer.zip",
+      "status": 404
+    }
+  ],
+  "skipped_archives": [
+    {
+      "innovation": "autyzm-i-ja",
+      "path": "autyzmija/Końcowa  wersja narzędzia online.zip",
+      "bytes": 150189116,
+      "reason": "too big to open (films / source code)"
+    },
+    {
+      "innovation": "dialog-ponad-kulturami",
+      "path": "dialogponadkulturami/filmy tutorialowe.zip",
+      "bytes": 26829409149,
+      "reason": "too big to open (films / source code)"
+    },
+    {
+      "innovation": "dialog-ponad-kulturami",
+      "path": "dialogponadkulturami/Webinarium szkoleniowe.zip",
+      "bytes": 2094560252,
+      "reason": "too big to open (films / source code)"
+    },
+    {
+      "innovation": "drogowskazy-ajkum",
+      "path": "drogowskazyajkum/Załączniki.zip",
+      "bytes": 352226586,
+      "reason": "too big to open (films / source code)"
+    },
+    {
+      "innovation": "edki-kredki-terapeutyczne",
+      "path": "terapeutycznekredki/Załączniki.zip",
+      "bytes": 428866764,
+      "reason": "too big to open (films / source code)"
+    },
+    {
+      "innovation": "go-ahead-mow-smialo",
+      "path": "goahead/Załączniki.zip",
+      "bytes": 226651339,
+      "reason": "too big to open (films / source code)"
+    },
+    {
+      "innovation": "health-guide-pl",
+      "path": "healthguide/HealthGuide_kody źródłowe.zip",
+      "bytes": 144164382,
+      "reason": "too big to open (films / source code)"
+    },
+    {
+      "innovation": "jezykolamacz",
+      "path": "jezykolamacz/Jezykolamacz aplikacja kod.zip",
+      "bytes": 460559052,
+      "reason": "too big to open (films / source code)"
+    },
+    {
+      "innovation": "jezykolamacz",
+      "path": "jezykolamacz/Materiały dodatkowe.zip",
+      "bytes": 203542437,
+      "reason": "too big to open (films / source code)"
+    }
+  ],
+  "dropped_images": {
+    "strip_or_banner": 337,
+    "blank": 11,
+    "page_of_text_or_drawing": 226,
+    "too_small": 19,
+    "duplicate": 470,
+    "logo_shared_by_innovations": 48
+  },
+  "title_differs_from_listing": []
+}

@@ -1,14 +1,53 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-import { api, ApiError } from "@/lib/api";
+import { api, ApiError, type LikeState } from "@/lib/api";
 import { Icon } from "@/components/Icon";
+
+const CLIENT_KEY = "hubmi-client-id";
+
+// one anonymous id per browser, so a like can be taken back; null when storage is blocked
+function clientId(): string | null {
+  try {
+    let id = localStorage.getItem(CLIENT_KEY);
+    if (!id) {
+      id = crypto.randomUUID();
+      localStorage.setItem(CLIENT_KEY, id);
+    }
+    return id;
+  } catch {
+    return null;
+  }
+}
+
+function likesLabel(n: number): string {
+  if (n === 1) return "1 polubienie";
+  const tens = n % 100;
+  const ones = n % 10;
+  if (ones >= 2 && ones <= 4 && (tens < 12 || tens > 14)) return `${n} polubienia`;
+  return `${n} polubień`;
+}
 
 const field =
   "min-h-12 w-full rounded-lg border-[1.5px] border-outline bg-surface p-space-sm text-body-md text-on-surface";
 
-export function ActionBar({ innovationId, pdfUrl, title }: { innovationId: string; pdfUrl: string; title: string }) {
+export function ActionBar({
+  innovationId,
+  pdfUrl,
+  title,
+  filmAnchor,
+}: {
+  innovationId: string;
+  // null: no pdf for this innovation, so no download tile
+  pdfUrl: string | null;
+  title: string;
+  // id of the film section on the page; no tile when the innovation has no film
+  filmAnchor?: string;
+}) {
   const [copied, setCopied] = useState(false);
+  const [like, setLike] = useState<LikeState>({ like_count: 0, liked: false });
+  const [likeBusy, setLikeBusy] = useState(false);
+  const [likeStatus, setLikeStatus] = useState("");
   const [formOpen, setFormOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [busy, setBusy] = useState(false);
@@ -21,6 +60,40 @@ export function ActionBar({ innovationId, pdfUrl, title }: { innovationId: strin
     if (!formOpen) return;
     emailRef.current?.focus();
   }, [formOpen]);
+
+  useEffect(() => {
+    const id = clientId();
+    if (!id) return;
+    let live = true;
+    api
+      .likes(innovationId, id)
+      .then((s) => live && setLike(s))
+      .catch(() => {
+        // the count is a nice-to-have; the button still works when the api comes back
+      });
+    return () => {
+      live = false;
+    };
+  }, [innovationId]);
+
+  async function toggleLike() {
+    const next = !like.liked;
+    const id = clientId();
+    setLikeStatus("");
+    if (!id) {
+      setLikeStatus("Przeglądarka blokuje zapis danych strony, więc nie można polubić.");
+      return;
+    }
+    setLikeBusy(true);
+    try {
+      // no success message: aria-pressed and the count already say it
+      setLike(await api.setLike(innovationId, id, next));
+    } catch {
+      setLikeStatus("Nie udało się zapisać polubienia. Spróbuj ponownie.");
+    } finally {
+      setLikeBusy(false);
+    }
+  }
 
   async function copyLink() {
     try {
@@ -48,18 +121,28 @@ export function ActionBar({ innovationId, pdfUrl, title }: { innovationId: strin
           <Icon name="how_to_reg" size={22} />
           <span>Zgłoś się do testowania</span>
         </button>
-        <a
-          href={pdfUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex min-h-12 items-center justify-center gap-2 rounded-lg bg-surface-container-lowest px-space-md py-2 text-center text-label-lg font-semibold text-primary shadow-sm hover:bg-surface-container-high hc-edge"
-        >
-          <Icon name="info" size={22} />
-          <span>
-            Więcej informacji (PDF)
-            <span className="sr-only">, otwiera się w nowej karcie</span>
-          </span>
-        </a>
+        {pdfUrl && (
+          <a
+            href={pdfUrl}
+            download
+            className="flex min-h-12 items-center justify-center gap-2 rounded-lg bg-surface-container-lowest px-space-md py-2 text-center text-label-lg font-semibold text-primary shadow-sm hover:bg-surface-container-high hc-edge"
+          >
+            <Icon name="download" size={22} />
+            <span>
+              Więcej informacji (PDF)
+              <span className="sr-only">, pobiera plik</span>
+            </span>
+          </a>
+        )}
+        {filmAnchor && (
+          <a
+            href={`#${filmAnchor}`}
+            className="flex min-h-12 items-center justify-center gap-2 rounded-lg bg-surface-container-lowest px-space-md py-2 text-center text-label-lg font-semibold text-primary shadow-sm hover:bg-surface-container-high hc-edge"
+          >
+            <Icon name="play_circle" size={22} />
+            <span>Zobacz film</span>
+          </a>
+        )}
         <button
           type="button"
           onClick={copyLink}
@@ -69,8 +152,23 @@ export function ActionBar({ innovationId, pdfUrl, title }: { innovationId: strin
           <span>Skopiuj link do tej strony</span>
         </button>
         <span role="status" className="text-body-md font-semibold text-primary">
-          {copied ? "Skopiowano link." : ""}
+          {copied ? "Skopiowano link." : likeStatus}
         </span>
+        <button
+          type="button"
+          aria-pressed={like.liked}
+          disabled={likeBusy}
+          onClick={toggleLike}
+          className={`flex min-h-12 items-center justify-center gap-2 rounded-lg px-space-md py-2 text-label-lg font-semibold shadow-sm disabled:cursor-wait disabled:opacity-80 hc-edge sm:ml-auto ${
+            like.liked
+              ? "bg-primary text-on-primary hover:bg-primary-container"
+              : "bg-surface-container-lowest text-primary hover:bg-surface-container-high"
+          }`}
+        >
+          <Icon name="thumb_up" size={22} fill={like.liked} />
+          <span>{like.liked ? "Lubisz to" : "Lubię to"}</span>
+          <span className="text-body-md font-normal">({likesLabel(like.like_count)})</span>
+        </button>
       </div>
 
       {formOpen && (

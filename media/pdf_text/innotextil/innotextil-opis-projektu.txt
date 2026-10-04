@@ -1,0 +1,1370 @@
+--- strona 1 ---
+UMOWA O POWIERZENIE GRANTU
+NR MI- 430- 17 – 2 /18
+INNOTEXTIL
+
+--- strona 3 ---
+INNOTEXTIL
+testowanie systemu
+inteligentnej odzieży
+dedykowanej osobom
+starszym oraz
+niepełnosprawnym
+ruchowo
+15.VII.2018–30.III.2019
+projekt realizowany
+w ramach projektu
+Małopolski Inkubator
+Innowacji Społecznych,
+finansowanego ze środków
+Europejskiego Funduszu
+Społecznego w ramach
+Programu Operacyjnego
+Wiedza Edukacja Rozwój
+2014-2020
+
+--- strona 5 ---
+5
+przed
+projektem
+s. 7
+I.
+wniosek
+o grant
+s. 11
+III.
+prototyp
+s. 41
+II.
+przykłady
+materiałów
+i technologii
+s. 15
+IV.
+testy
+s. 71
+V.
+podsumowanie
+s. 79
+
+--- strona 7 ---
+7
+przed
+projektem
+
+--- strona 8 ---
+Projekt INNOTEXTIL
+8
+
+--- strona 9 ---
+Projekt INNOTEXTIL
+9
+Projekt dyplomowy, którego koncepcja została rozwnięta i przetestowana
+w ramach grantu.
+W ramach pracy dyplomowej, autorka opracowała między innymi materiał
+poświęcony analizie chodu, który potwierdził potrzebę projektowania tego
+typu „narzędzi” wspomagających rehabilitację.
+temat pracy: Projekt „inteligentnej” odzieży, wspomagajacej proces
+rehabilitacji medycznej.
+autor: Katarzyna Król
+promotor: dr Bożena Groborz
+rok realizacji: 2017/2018
+
+--- strona 11 ---
+11
+I.
+wniosek
+o grant
+
+--- strona 12 ---
+Projekt INNOTEXTIL
+12
+Informację o możliwości pozyskania grantu otrzymaliśmy dzięki współpracy
+z menadżerem Wydziału. Z jego pomocą napisany został również wniosek.
+Na etapie pisania wniosku konieczne było również wprowadzenie niezbęd
+nych zmian w koncepcji. Wiązało sie to z założeniami projektu grantowego,
+dedykowanemu osobom z grupy 65+, osobom niepełnosprawnym i osobom
+zależnym. W związku z tym sformułowaliśmy nowe założenia projektowe.
+W projekcie przewidziany został również etap pozwalający na sprawdzenie
+technologii półprzemysłowego wytwarzania miękkich sensorów i układów
+przewodzących jako ewentualną alternatywę dla taśm przewodzących.
+opracowanie merytoryczne wniosku:
+Bożena Groborz
+opracowanie formalne wniosku:
+Tomasz Czerwicki
+
+--- strona 13 ---
+Projekt INNOTEXTIL
+13
+użytkownik:
+osoba w wieku 65+,
+z zaburzeniami we wzorcu chodu – przyczyna
+
+zaburzeń dowolna,
+osoba chodząca – planowane testy miały mieć
+
+formę spaceru;
+działanie odzieży:
+monitorowanie stopnia odstępstw od wzorca chodu
+
+w czasie rzeczywistym,
+sygnalizowanie odstępstw;
+konfiguracja
+czujniki,
+przewodzące taśmy elastyczne,
+jednostka sterująca – zasilana baterią,
+
+komunikująca się z aplikacją w smartfonie
+
+za pomocą bluetooth;
+testy
+w formie spacerów lub „nordic walking”;
+inne
+prosty układ elementów pozwalający na
+
+samodzielne zbudowanie układu;
+
+--- strona 15 ---
+15
+II.
+przykłady
+materiałów
+i technologii
+
+--- strona 16 ---
+Projekt INNOTEXTIL
+16
+Najistotniejsze dla projektu było zbudowanie „miękkiej instalacji” składają
+cej sie z czujników, elementów przewodzących i jednostki sterującej. Całość
+musiała być łatwa do integracji z ubraniem – tak aby nie sprawiała wrażenia
+doczepionych do ubrania „dziwnych” mechanicznych elementów.
+Podczas pierwszego etapu prac związanych z innowacją dokonane zosta
+ło rozeznanie możliwości technologicznych dostępnych w firmach polskich
+oraz zagranicznych. W tym celu wykorzystano bazę informacyjną firm obec
+nych na targach TECHTEXTILE 2017 (Frankfurt nad Menem, Niemcy), wy
+konano przegląd firm polskich obecnych w Internecie, wykorzystano inne
+materiały własne. Zorganizowany został również wyjazd studyjno-szkole
+niowy do St Gallen (Szwajcaria) w celu zapoznania się z możliwościami
+technologicznymi i produkcyjnymi firmy Froster Rohner Ag., która opraco
+wuje i produkuje tekstylia techniczne w oparciu o wysoce wyrafinowane
+możliwości nowoczesnych technik haftu. Ich główne kompetencje to m.in.
+wykonywanie trwałych i elastycznych połączeń elementów elektronicznych
+na tkaninach, rozwój zminiaturyzowanych elementów elektronicznych i ich
+integracja z tekstyliami. Posiadają gamę materiałów przewodzących, pro
+dukują struktury tekstylne m.in. do zastosowań w czujnikach. Firma oferuje
+wsparcie na wszystkich etapach procesu – od prototypowania do produkcji
+seryjnej.
+To czego najbardziej chcieliśmy dowiedzieć się w firmie, to czy istnieje możli
+wość, techniczna ale również ekonomiczna, wykonania układu przenoszące
+go informacje z kolan do jednostki zasilającej i komunikującej się za pośred
+nictwem połączenia bluetooth z aplikacją, przy użyciu haftu przewodzącego
+(braliśmy również pod uwagę możliwość wytworzenia własnych czujników).
+Chcieliśmy również poznać nieco lepiej możliwości tej technologii.
+Wizyta studyjna
+w Forester
+Rohner w Saint
+Gallen
+
+--- strona 17 ---
+Projekt INNOTEXTIL
+17
+Pobyt w firmie podzielony został na następujące etapy: I. prezentacja tech
+nologii stosowanych przez firmę (z wyłączeniem produkcji materiałów prze
+wodzących – ze względu na restrykcyjną ochronę know-how firmy). II. Omó
+wienie przedstawionej koncepcji projektu pod kątem możliwości realizacji
+projektu w firmie.
+Podczas części pierwszej przedstawicielka działu badawczego firmy zapre
+zentowała możliwości oferowane przez firmę, zwłaszcza w zakresie produk
+cji tkanin haftowanych. Mieliśmy okazję zobaczyć prak maszynowy (nieste
+ty tu również obowiązywał zakaz fotografowania, ze względu na tajemnicę
+handlową; w trakcie naszej wizyty produkowane były tkaniny dla marki
+Coco Chanel).
+Podczas analizy koncepcji spodni przedstawione zostały założenia funkcjo
+nalne INNOTEXTILu i pierwsze projekty pokazujące założenia formalne – czyli
+wygląd spodni. Technologia haftu przewodzącego mogłaby w tym wypadku
+być zastosowana. Wymagałaby ona opracowania ze względu na koniecz
+ność uzyskania efektu rozciągliwości w różnych kierunkach – zależnie od
+pracy materiału na ciele. Zaletą takiego opracowania przez zespół firmy
+Forester Rohner jest gwarancja jakości i trwałości takiego układu. Wadą –
+bardzo wysoki koszt opracowania – szacunkowy koszt takiego układu to ok.
+10 000–20 000 euro, co ma uzasadnienie dopiero gdy planuje się urucho
+mienie większej produkcji.
+
+--- strona 18 ---
+Projekt INNOTEXTIL
+18
+Podczas przeglądu ofert firm zamieszczonych w Internecie okazało się,
+że również polskie firmy zaczynają oferować rozwiązania z zakresu smart
+textiles, jednak ich liczba jest stosunkowo nieduża w porównaniu z ofertą
+firm zagranicznych. Inteligencja tkanin skupia się przede wszystkim na wy
+korzystaniu lub łączeniu w różnych układach kilku technologii: promienio
+wania podczerwonego (wykorzystywane w odzieży ogrzewanej), techno
+logii bluetooth (możliwość bezprzewodowego łączenia z urządzeniami),
+technologie solarne (możliwość posiadania niezależnego źródła energii),
+technologii LED (niemal nieograniczona możliwość montowanie źródeł
+światła), nici przewodzące (możliwość coraz łatwiejszego integrowania
+elektroniki z materiałami tekstylnymi)
+Rozdzielenie firm na grupy polskich producentów i zagranicznych jest w tej
+dziedzinie trudne a wręcz nie możliwe. Znaczna część półproduktów do
+produkcji tego typu odddzieży dostarczana jest przez producentów krajów
+azjatyckich, pozostałe są produkowane w wyspecjalizowanych zakładach
+w różnych częściach świata. Każdy taki ubiór to tak naprawdę konglomerat
+elementów pochodzących z różnych źródeł, skonfigurowanych w dowolny
+sposób.
+W Polsce pod hasłem „inteligentna odzież” dostępne są przede wszystkim
+produkty, których zadaniem jest ogrzewanie ciała. Często również z moż
+liwością regulacji tej temperatury. Jedna z takich marek jest GLOVII (dane
+firmy: SUNEN Sp. z o.o., Wrocławska 114, 81-530 Gdynia), oferująca odzież
+ogrzewaną, zasilaną akumulatorem. Element grzewczy zbudowany z włók
+na węglowego zapewnia niespotykaną odporność i trwałość oraz dzięki
+emisji fal podczerwonych posiada właściwości lecznicze. (…) Termoaktywna
+tkanina zapewnia szybkie odprowadzanie wilgoci i posiada właściwości bio
+statyczne, dzięki czemu dodatkowo wspomaga pracę systemu grzewczego.1
+W ofercie firmy znajdują się bluzy, spodnie i rękawice. Z opisów wynika, że
+elementy grzewcze montowane są w postaci gotowych paneli; nie ma in
+formacji czy marka jest producentem tych elementów czy kupuje/importuje
+gotowe elementy.
+1 Informacja ze strony producenta https://glovii.com/pl/heated-clothing/359-265-
+gj1-5908246724559.html [21.11.2018]
+Podczerwień
+
+--- strona 19 ---
+Projekt INNOTEXTIL
+19
+produkty marki GLOVII, materiały ze strony internetowej producenta, [20.11.2018]
+
+--- strona 20 ---
+Projekt INNOTEXTIL
+20
+Kolejną firmą rozwijająca technologię dogrzewania odzieży jest SMART-TEX
+(NETINWEST Jerzy Furmaniak, ul.Szymanowskiego 5, 93–426 Łódź), oferują
+ca odzież do zastosowań w sytuacjach szczególnych – odzież motocyklo
+wa, nurkowa, do pracy w niskich temperaturach. Ogrzewanie odbywa się
+również za pośrednictwem paneli grzewczych emitujących promieniowa
+nie podczerwone. Istotną cechą ich produktów jest możliwość ich użycia
+w zastosowaniach wymagających pełnej izolacji od środowiska wodnego.
+Ponadto firma oferuje nici przewodzące metalizowane, przystosowane do
+szycia ręcznego i maszynowego.1
+Technologie ogrzewanej odzieży stosują również znane marki odzieżowe.
+Znana włoska marka Ermenegildo Zegna wypuścił w 2015 roku eleganckie
+kurtki „ocieplane” elektrycznie. Projekt został opracowany wspólnie z dzia
+łem badawczym firmy Forster Rohner. Po odłączeniu baterii kurtkę można
+prać w temp. 300 C.2
+1 Informacja ze strony producenta https://smart-tex.pl/ [21.11.2018]
+2 http://www.frti.ch/en/portfolio_page/zegna-2015/ [21.11.2018]
+produkty marki SMART-TEX, materiały ze
+strony internetowej – system ogrzewania
+ogólny, system ogrzewania dla nurków
+[20.11.2018]
+
+--- strona 21 ---
+Projekt INNOTEXTIL
+21
+Ogrzewana kurtka, Ermenegildo Zegna [20.11.2018]
+WARMX.de, producent odzieży ogrzewanej [20.11.2018]
+
+--- strona 22 ---
+Projekt INNOTEXTIL
+22
+Bluetooth to technologia bezprzewodowego przesyłu danych na krótki za
+sięg – do 10 m w linii prostej. (…). Bluetooth wykorzystywany jest w spe
+cyficznych przypadkach –  większy zasięg nie jest potrzebny, aby wygodnie
+korzystać z pozbawionych okablowania urządzeń we własnym domu.
+Technologia wykorzystuje fale radiowe, czyli promieniowanie elektroma
+gnetyczne – spoza częstotliwości, na której operuje większość urządzeń.
+Sygnał Bluetooth jest wyjątkowy także dlatego, że jest bardzo słaby. To ta
+jego cecha sprawia, że rozchodzi się w promieniu ok. 10 metrów. Ograni
+czenie jest jednak celowe i ma dwie ogromne zalety. Po pierwsze: dzięki
+niemu Bluetooth działa bez zakłóceń (bo kilkanaście czy kilkadziesiąt pi
+conetów działających we wspólnym zasięgu mogłoby stanowić problem),
+a po drugie: technologia jest niezwykle energooszczędna i tania.1
+Dostępność tej technologii sprawiła, że bardzo szybko została ona „zaprzę
+gnięta” do poprawiania jakości naszego życia. O ile w przypadku smart
+odzieży czy smart tekstyliów nie jest to bezpośrednia integracja tak jak w
+przypadku np. nici przewodzących, to jej znaczenie dla budowy systemów
+integrowanych z odzieżą ma znaczenie nie do przecenienia. Dzięki połącze
+niu bluetooth możemy w łatwy sposób „połączyć” odzież z komputerem,
+który jest niewielkich rozmiarów i mamy go zwykle przy sobie czyli z na
+szym smartphonem. Bluetooth w prosty sposób rozwiązuje problem stero
+wania „ubranym urządzeniem”, przechowywaniem danych i szybką infor
+macją zwrotną, jeżeli nasze „ubieralne urządzenie” ma np. coś monitorować
+i na bieżąco wspomagać podejmowanie przez nas decyzji. Technologię tę
+stosuje się niemal we wszystkich urządzeniach wymagających połączenia
+z plikacjami sterującymi lub interpretującymi dane.
+Przykładem może być linia produktów firmy GLOVII, przeznaczonych do
+uprawiania sportu w niższych temperaturach, pozwalających łatwo używać
+telefonu lub odtwarzacza muzyki bez przerywania aktywności.
+1 https://puczynski.gadzetomania.pl/58951,jak-to-dziala-cz-9-bluetooth
+Bluetooth
+
+--- strona 23 ---
+Projekt INNOTEXTIL
+23
+produkty marki GLOVII, materiały
+ze strony internetowej producenta,
+[20.11.2018]
+
+--- strona 24 ---
+Projekt INNOTEXTIL
+24
+Rozwój technik wykorzystujących światło słoneczne jako źródło zasilania
+to nie tylko potrzeba wynikająca z chęci realizacji celów ekologicznych
+lecz również potrzeba zadbania o możliwość bezproblemowego zasilania
+rozmaitych przenośnych urządzeń w energię elektryczną. Niezależnie od
+tego jak mało prądu potrzebują nowoczesne urządzenia, czy jak nowocze
+sna technologię wykorzystują, bez zasilania nie są w stanie funkcjonować.
+Dlatego współcześnie coraz częściej próbuje się wykorzystać technologie
+solarne w celu zapewnienia zasilania chociażby naszych smartfonów czy
+innych „osobistych” urządzeń. Nie jest to bezzasadne zważywszy, że urzą
+dzenia te już dawno przestały służyć jedynie do wykonywania połączeń
+telefonicznych. Uzbrojone w przeróżne aplikacje stały się nie tylko centrum
+rozrywki czy kontaktu z całym światem, ale również stały się urządzeniem
+wspierającym osoby z niepełnosprawnościami, chorobami przewlekłymi
+(np. bardzo wiele aplikacji wspomaga cukrzyków w różnym wieku), stały
+się „guzikiem” uruchamiającym alarm w niebezpiecznej sytuacji, „oczami”
+dla niewidomych itp. Biorąc pod uwagę, że telefon komórkowy „uwolnił”
+nas od przywiązania do gniazdka telefonicznego, pozostało nam uwolnić się
+również od gniazdka elektrycznego.
+Dzisiejsza technologia solarna pozwala na produkowanie ogniw słonecznych,
+które są znacznie lżejsze i elastyczniejsze oraz maja większą wydajność. Co
+raz częściej mówi się też o możliwości nadrukowywania ogniw słonecznych
+na dowolne materiały. W tej dziedzinie obiecująca wydaje się być technolo
+gia perowskitów, wynalazek polskiej inżynier Olga Malinkiewicz, założycielki
+Saule Technologies. W 2016 roku firma zaprezentowała pierwsze praktyczne
+zastosowanie perowskitów w postaci ładowarki do telefonu.
+Cienka jak włos folia pokryta kryształem stała się ładowarką do telefonu. – Bę
+dziemy mieli telefon, który na swoim nieużywanym obecnie odwrocie będzie
+miał ogniwo perowskitowe – tłumaczy Olga Malinkiewicz. Jej wynalazek nało
+żony na telefon będzie go ładował czerpiąc energię choćby z biurkowej lampki.
+fot. materiały informacyjne TVN24bis.pl [21.11.2018]
+Technologie
+solarne
+
+--- strona 25 ---
+Projekt INNOTEXTIL
+25
+Prototyp cienkiego i lekkiego modułu zasilającego np. smartfony zaprezen
+towano w czasie International Conference on Perovskite Thin Film Photo
+voltaics (ABXPV) w Barcelonie. To efekt wielu miesięcy intensywnej pracy
+młodego zespołu naukowców zrzeszonych w Saule Technologies.
+- To pierwszy przykład implementacji technologii perowskitowej w elek
+tronice użytkowej. W kolejnych etapach prac laboratorium będą powsta
+wały coraz większe i wydajniejsze powierzchnie nadruku, umożliwiające
+wytwarzanie nawet wielkoformatowych ogniw fotowoltaicznych. Ich zasto
+sowaniem są zainteresowane różne branże i sektory przemysłu na całym
+świecie, a także największe światowe marki – mówi Piotr Krych, prezes
+zarządu Saule.1
+Rozwój tych technologii jest szczególnie oczekiwany przez projektantów in
+teligentnych tkanin i odzieży.
+W Polsce technologię solarna w odzieży próbuje zastosować firma SMAR
+T-TEX. Na stronie producenta znajduje się informacja o trwających pracach.
+Ogniwa solarne elastyczne, ogniwa fotowoltaiczne / flexible solar panel
+/ – zastosujemy w Kurtce Solarnej – Solar Panel Jacket. Kurtka Solar będzie
+miała wszyte małe elastyczne panele, dzięki którym będzie można dołado
+wać smartfona lub zasilić odtwarzacz MP3. Kurtka solarna / Kurtka Solar /
+jest aktualnie przez nas projektowana.2
+1 https://tvn24bis.pl/tech,80/sukces-olgi-malinkiewicz-ladowarka-do-telefonow-na-
+bazie-perowskitow,627149.html
+2 https://smart-tex.pl/kurtka-solarna-solar-panel-jacket/
+Projekt kurtki solarnej. Materiały ze
+strony producenta SMART-TEX; [15.11.2018]
+
+--- strona 26 ---
+Projekt INNOTEXTIL
+26
+Nad nowymi technologiami solarnymi, dedykowanymi ściśle przemysłowy
+tekstylnemu i odzieżowemu pracują m. in. naukowcy z Jinan University.
+Researchers are giving a whole new meaning to ‚power dressing’ with the
+invention of smart clothes that use the sun’s rays to change devices. Two
+types of fibres are interlaced between cotton to form a flexible material that
+is fully charged by sunlight.1
+Naukowcy nadają nowy sens wyrażeniu „Power dress” (ubranie z mocą) dzię
+ki wynalazkowi inteligentnych ubrań, które wykorzystują promienie słonecz
+ne do ładowania rozmaitych urządzeń. Dzieki zastosowaniu dwóch rodzajów
+włókien przeplecionych pomiędzy bawełną, otrzymali elastyczny materiał,
+który jest ładowany energią światła słonecznego (art. z 2016 roku).
+1 https://www.dailymail.co.uk/sciencetech/article-3823205/Now-S-call-power-
+dressing-Smart-clothes-use-solar-energy-charge-devices.html [20.11.2018]
+
+--- strona 27 ---
+Projekt INNOTEXTIL
+27
+Technologia LED, ze względu na minimalny pobór mocy oraz możliwość
+produkowania źródeł światła o niewielkich rozmiarach stała się również
+materiałem chętnie wykorzystywanym w nowych formach odzieży. Świa
+tło w odzieży wykorzystuje się najczęściej w projektach gdzie znaczenie
+ma przede wszystkim autoekspresja (szczególnie chętnie w kostiumach
+scenicznych) lub informacja (np. w odzieży motocyklowej lub rowerowej).
+Przydatne są również „miękkie latarki” zamontowane w czapce czy kurtce.
+Diody LED zrewolucjonizowały projektowanie oświetlenia, teraz wkraczają
+w świat tkanin dekoracyjnych. Firma Ferster Rohner, w której odbyła się
+wizyta studyjna zespołu, od lat wykonuje na zlecenie klientów tkaniny
+rozbłyskujące światłem, w 2018 zaprezentowała swoja pierwszą kolekcję
+świecących taknin dekoracycjnych. Jest to możliwe dzięki opatentowanej
+technologii haftu nićmi przewodzącymi i metodzie trwałego łączenia diód
+LED (wzór opracowany przez firmę Ferstner Rohner) z tkaniną.
+11 cm
+Technologia LED
+https://largerthanlifeuk.com/wp-content/
+gallery/spark/Spark7.jpg
+[10.03.2019]
+http://www.e-broidery.ch/de/wp-content/
+uploads/sites/2/2017/06/ORGANZA-
+CONTINUUM_anthracite_WEB-uai-516x344.
+jpg [10.03.2019]
+
+--- strona 28 ---
+Projekt INNOTEXTIL
+28
+Możliwość zastosowania przewodzących nici leży u podstaw nowoczesnego
+projektowania odzieży zintegrowanej z elektroniką. Elastyczne (ale nie roz
+ciągliwe) nici zastąpiły początkowo całkowicie sztywne, później elastyczne
+kable. Budowa nici jest prosta – jest to zwykle włókno poliestrowe powle
+kane metaliczna warstwą. Kolor nici może być różny – zależnie od użytego
+metalu, jednak jego rodzaj ma znaczenie dla stopnia przewodnictwa.
+Jak ważnym elementem w projektowaniu inteligentnej odzieży są przewo
+dzące nici pokazuja poniższe przykłady.
+Nici przewodzące to również możliwość projektowania rozmaitych „mięk
+kich” sensorów.
+Firma Forster Rohner opracowuje w swoim laboratorium sensory, które
+w połączeniu z odpowiednia jednostką sterującą, potrafią wychwytywać
+najróżniejsze sygnały. Firma wykorzystuje do tego celu opatentowaną tech
+nologię haftu nićmi przewodzącymi (il. str. 27) Sensory projektowane są
+indywidualnie, zależnie od zamówienia i przeznaczenia.1
+W Polsce jednym z dostawców nici tego rodzaju (oprócz aukcji na portalach
+1 http://www.frti.ch/en/technologie-2/
+Przykład technologii hybrydowej łączącej przewodzące włókna i technologię druku,
+dzięki czemu uzyskano nową elastyczną technologię przewodzącą do aplikacji
+odzieżowych. http://www.osadirect.com/news/article/1462/university-of-tokyo-
+reseachers-develop-novel-conductive-thread/ [15.11.2018]
+Nici
+przewodzące
+
+--- strona 29 ---
+Projekt INNOTEXTIL
+29
+Forster Rohner, materiały ze strony firmy;
+[15.11.2018]
+
+--- strona 30 ---
+Projekt INNOTEXTIL
+30
+Haft wykonany izolowanymi
+nićmi przewodzącymi pozwolił
+na zaprojektowanie instalacji
+„oświetleniowej”.
+http://www.karynlao.com/brainstorm/
+[15.11.2018]
+Dziewięć głośników, wyhaftowanych
+nićmi przewodzącymi.
+http://etextilelounge.com/conductive-
+thread-speaker-coil-sampler/
+
+--- strona 31 ---
+Projekt INNOTEXTIL
+31
+internetowych) jest firma SMART-TEX, która ma w ofercie 4 rodzaje tego
+produktu:
+1. Nić przewodząca Typ 100×3 /3PLY- splot trzywarstwowy/
+Średnica nici: 0,12 mm, rezystancja 23 Ohm/m
+Waga: 0,33 g / m, 3030m / kg
+2. Nić przewodząca Typ 275×2/ 2PLY- splot dwuwarstwowy/
+Średnica nici: 0,25 mm, rezystancja 16 Ohm/m
+Waga: 0,51 g / m, 2150m / kg
+3. Nić przewodząca Typ 275×4 / 4PLY- splot czterowarstwowy/
+Średnica nici: 0,35 mm, rezystancja 6,2 Ohm/m
+Waga: 1,16 g/m, 1005m / kg
+4. Nić przewodząca Typ 275×6/ 6PLY- splot sześciowarstwowy/
+Średnica nici: 0,48 mm , rezystancja 4,4 Ohm/m
+Waga: 1,72 g/m, 662 m/ kg.
+Są to produkty w opakowaniach obliczonych dla producentów odzeży.
+Nici można kupić również na stronach firm botland.pl, nettigo.pl, kamami.pl.
+Uznaną europejską marką zajmującą się produkcją i dystrybucją materiałów
+dla smart fashion jest firma Kitronik z Wielkiej Brytanii, zlokalizowana w Not
+thinngham. Część jej wyrobów jest dystrybuowana na polskich stronach.
+nici przewodzące SMART-TEX, Polska,
+https://smart-tex.pl/nici-przewodzace/
+[10.10.2018]
+
+--- strona 32 ---
+Projekt INNOTEXTIL
+32
+Odzież noszona przez człowieka poddawana jest wielu próbom, płaski
+kawałek materiału musi dopasować się do obłych kształtów. Co więcej,
+w przypadku używania sensorów, odzież zwykle musi być dopasowana co
+w połączeniu z ruchem ciała może sprawiać problemy. Zaczęto więc szukać
+sposobów na wyprodukowanie materiałów przewodzących elastycznych
+w znaczeniu rozciągliwych. Metody są różne. Firma Forster Rohner projektu
+je układy haftu w taki sposób, żeby układ szwów, jego „rysunek” sprawiał,
+że układ będzie pracował razem z dzianiną. Inną metodą jest opisana wyżej
+metoda druku gdzie sam nadruk dzięki dodatkowi włókien staje się ela
+styczny i rozciągliwy.
+nici przewodzące o różnych barwach,
+producent SWICOFIL, Szwajcaria,
+https://www.swicofil.com/commerce/
+products/3plasma-metal-coated/215/
+introduction [10.10.2018]
+nici przewodzące SOVETL, Chiny, http://
+www.sovetl.net/High-Temperature-
+Series/Stainless-Steel-Fiber-Yarn.html
+[10.10.2018]
+przędza przewodząca, producent
+HUITONG, Chiny, http://en.ht-metalfiber.
+com/products_detail/productId=11.html
+[20.03.2019]
+
+--- strona 33 ---
+Projekt INNOTEXTIL
+33
+Przykład „elastycznego” obwodu, Forter
+Rohner, mat. własne
+fot. ze strony producenta, przykłady
+elastycznych taśm oferowanych przez
+AMOHR
+https://materialdistrict.com/material/
+textile-sensor/textile-sensor-pla1018-1/
+[12.07.2018]
+Przewodzące materiały tekstylne nie są wyłącznie domeną projektów zwią
+zanych z projektowaniem odzieży. Dynamiczny rozwój tej branży w znacz
+nym stopniu wymusił przemysł motoryzacyjny. Mając te wiedzę, udało nam
+się dotrzeć do firmy AMOHR Technische Textilien GmbH (Niemcy, Hünefeld
+straße 57a, D-42285 Wuppertal). Firma produkuje specjalistyczne taśmy
+tekstylne od ponad 100 lat. Są to taśmy do najróżniejszych zastosowań
+zwłaszcza przemysłowych oraz taśmy przewodzące o różnych parametrach.
+Taśmy przewodzące produkowane przez firmę AMOHR poza zastosowaniem
+w przemyśle motoryzacyjnym znalazły również zastosowanie w projektach
+o charakterze medyczno-rehabilitacyjnym. Np. taśmy które wykorzystują
+przepływ impulsów elektrycznych do mierzenia nacisku, zostały zastoso
+wane w łóżkach szpitalnych, do monitorowania ruchów pacjenta. Dzięki
+temu personel medyczny może być informowany w sytuacji gdy pacjent
+może z łóżka spaść, może to być też informacja przydatna w zapobieganiu
+powtawaniu odleżyn
+
+--- strona 34 ---
+Projekt INNOTEXTIL
+34
+Przemysł tekstylny i odzieżowy jest uznawany za drugiego po przemyśle
+samochodowym pod względem niekorzystnego oddziaływania na środo
+wisko. Dotyczy to przede wszystkim świata mody, generującego potrzebę
+szybkiej konsumpcji i ciągłej wymiany rzeczy na nowe. Szkodliwe oddzia
+ływanie przemysłów tekstylnego i odzieżowego wynika przede wszystkim
+ze zużywania ogromnych ilości wody i energii. Ponadto ogromny poziom
+zapotrzebowania na tkaniny, niemożliwy do zaspokojenia produkcją tkanin
+z włókien naturalnych (wełna, bawełna, len, jedwab) wymusił produkcję
+ogromnych ilości włókien syntetycznych, czego konsekwencją jest m.in.
+problem recyklingu tych materiałów.
+Zasygnalizowane powyżej problemy, sprawiły jednak, że w technologiach
+włókienniczych również obserwujemy wiele zmian. Naukowcy pracują nad
+nowymi włóknami, pochodzenia naturalnego i w 100% biodegradowalny
+mi; rozwijane są technologie ograniczające zużycie wody i energii – np.
+proces lyocellizacji, w wyniku którego uzyskujemy lyocell, materiał zbliżony
+do wiskozy, ale o parametrach od niej lepszych i uzyskany w znacznie mniej
+szkodliwym dla środowiska procesie.
+W odzieży sportowej najważniejszym surowcem jest poliester. Mimo po
+wszechnej niechęci do tzw. syntetyków, prawie nikt już nie wyobraża sobie
+aktywności fizycznej w bawełnianej koszulce; zdecydowana większość z
+nas wybiera tzw. odzież funkcyjną, oddychającą, wysychającą bardzo szyb
+ko, regulującą temperaturę ciała, dostarczającą skórze substancji odżyw
+czych i posiadającą wiele innych cech. Zawdzięczamy to przede wszystkim
+nowym technologiom i możliwości produkcji włókien o grubości poniżej
+jednego mikrona. W połączeniu z innymi technologiami – takimi jak PCM
+(Phase Change Materials) czy metodom konstruowania struktury przędzy
+czy materiałów tekstylnych – możemy dziś uzyskać materiały o niezwykłych
+właściwościach.
+Obecnie na świecie mamy wielu producentów tekstyliów, część z nich pro
+wadzi własne laboratoria badawcze, gdzie każdego roku powstają nowe
+lub udoskonalone włókna do zastosowań w przemyśle włókienniczym.
+Tkanina energear, materiały ze strony
+producenta
+
+--- strona 35 ---
+Projekt INNOTEXTIL
+35
+Firma Schoeller Textil AG (Bahnhofstrasse 17, 9475 Sevelen, Szwajcaria) to
+prawdziwy potentat w dziedzinie nowoczesnych tekstyliów funkcyjnych. Ich
+lista jest długa: 3XDRY, 3XDRY Bio, active>silver, c_change, camoshield, ce
+ramic coating, ceraspace, coldblack, corkshell, ecodye, ecorepel, ecorepel
+Bio, energear, Flash, Gamex, NanoSphere, pyroshell, reflex, schoeller-PCM.
+Za każdą z tych nazw kryje się wiele rozmaitych tkanin i dzianin, z zaapliko
+waną technologią lub ich kombinacją.
+Jedną z bardzo interesujących technologii jest energear. Na stronie produ
+centa czytamy: Wszystkie żywe organizmy stale emitują energię. Tekstylia
+z energear™ odbijają energię, którą ciało wydziela w postaci promieni pod
+czerwonych. Może to pozytywnie oddziaływać nasze ciało i zgromadzoną
+energię życiową. Wiedza o pozytywnych właściwościach promieniowania
+podczerwonego ma swoje źródło w azjatyckiej medycynie leczniczej i jest
+szeroko stosowana na całym świecie.1
+Technologia active>silver™ odpowiada z kolei na problem związany z bak
+teriostatycznością tkanin. Jest to duży problem, ponieważ wiele tkanin
+funkcyjnych nie nadaje się do prania w wysokiej temperaturze, która jest
+jednym z najłatwiejszych sposobów na pozbycie się bakterii.
+
+Odporne na nieprzyjemne zapachy wykończenie jest szczególnie korzystne
+dla tkanin delikatnych, w szczególności tych, które mają bezpośredni kon
+takt ze skórą, takich jak odzież sportowa lub bielizna. Tekstylia tego rodzaju
+są w szczególny sposób stale narażone na działanie bakterii, które powodu
+ją powstawanie nieprzyjemnego zapachu.
+W celu uzyskania trwałego i odpornego na pranie wykończenia, sole sre
+bra są trwale związane z powierzchnią tkaniny w następstwie specjalnego
+procesu. W rezultacie tkaniny z powłoką active>silver™ pozostają dłużej
+higienicznie świeże a wykończenie sprawia, że tkanina jest jeszcze wygod
+niejsza w noszeniu. Wykończenie active>silver™ nie oddziałuje na natural
+ną florę bakteryjną skóry.2
+1 https://www.schoeller-textiles.com/en/technologies/energear [10.10.208]
+2 https://www.schoeller-textiles.com/en/technologies/activesilver [10.10.208]
+Tkanina bez powłoki active>silver™,
+tkanina bez powłoki active>silver™,
+materiały ze strony producenta
+[10.10.2018]
+Przykłady
+materiałów
+tekstylnych
+
+--- strona 36 ---
+Projekt INNOTEXTIL
+36
+Technologia PCM firmy Outlast (Golden, Colorado, USA; oddziały w Niem
+czech i Honkkongu) była jedną z pierwszych opatentowanych technologii
+(2003) pozwalających na „zaprogramowanie tkaniny” tak aby utrzymywała
+stałą temperaturę pomiędzy materiałem a skórą. Najogólniej rzecz ujmując
+działa to w następujący sposób: mikronowej wielkości kuleczki parafiny ab
+sorbują nadmiar ciepła gdy temperatura się podwyższa lub uwalniają zgro
+madzone ciepło gdy temperatura się obniża. Temperaturę optymalna, do
+utrzymania której dążymy, można dość dowolnie zaprogramować.
+Technologia Outlast® ma zastosowanie przede wszystkim w odzieży spor
+towej (nanoszona jest w formie nadruku na tkaninę lub gotowe wyroby)
+i rodukcji pościeli (aplikacja następuje na etapie produkcji włókna lub na
+etapie produkcji przędzy).
+Tencel™ to najbardziej znany wyrób firmy Lenzing (Lenzing Aktiengesell
+schaft, Werkstraße 2, 4860 Lenzing, Austria) austriackiej firmy tekstylnej.
+Tencel to nic innego jak zastrzeżona nawa włókna lyocellowego, które omó
+wione zostało wcześniej.
+zasada działania technologii PCM
+Outlast®, materiały ze strony producenta
+[10.10.2018]
+
+--- strona 37 ---
+Projekt INNOTEXTIL
+37
+
+--- strona 38 ---
+Projekt INNOTEXTIL
+38
+Etap pozyskiwania wiedzy na temat materiałów i technologii do wykorzy
+stania w projekcie wiązał się z koniecznością sprawdzenie możliwości reali
+zowania INNOTEXTILu zarówno jako pojedynczych modeli jak i małych serii.
+Mimo bardzo szerokiej oferty firm produkujących tkaniny przeznaczone
+do wykonywania odzieży sportowej, oferta dostępna dla polskiego klien
+ta detalicznego jest bardzo ograniczona. Tkaniny funkcyjne marki Shoeller,
+Outlast, Lenzing są niemal nie do zdobycia – firmy nie prowadzą sprze
+daży detalicznej, w polskich hurtowniach materiały te nie są dostępne ze
+względu na wysoką cenę. W przypadku polskich producentów sprawa ma
+się dość podobnie – produkcja realizowana jest głównie na zamówienie, a
+minimalna ilość materiału możliwego do zakupienia to cała belka. Również
+wybór w polskich sklepach jest znikomy, a zdecydowana większość tego
+rynku przeniosła się do internetu.
+Tekstylia funkcyjne firmy Kol-sport,
+materiały ze strony producenta
+[10.10.2018]
+Dzianina
+Ostatecznie jako materiał wskazany do zakupu wybrana została oddychają
+ca dzianina firmy Janmar Sport:
+S-013/270, Szerokość: 150cm, Gramatura: 270g/m2, Skład: 8% EL, 92% PES
+w kolorze czarnym, oraz siatka odzieżowa w kolorze czarnym.
+Cena za mb. Ok. 21 pln.
+Ze względu na planowany termin testów (I-III) wybrana została dzianina
+o wyższej gramaturze.
+Materiały
+i technologie
+wybrane
+do realizacji
+
+--- strona 39 ---
+Projekt INNOTEXTIL
+39
+Przewody
+Ponieważ projekt wymaga układu przewodzącego współpracującego do
+brze z elastyczną dzianiną, zdecydowaliśmy o wyborze taśm przewodzą
+cych firmy AMOHR. Są to dwa rodzaje taśm, o podobnych właściwościach
+techniczny, z izolowanym przewodem. Jedna z taśm ma wygląd dekoracyj
+nej taśmy wykończeniowej ze względu na widoczne elementy miedziane,
+druga jest całkowicie czarna.
+Koszt zakupu taśm to ok. 2,5 euro za m/b. Minimalny nawój to 100 mb.
+Czujniki
+Do realizacji projektu wybrane zostały czujniki ugięcia 112 x 6,3 mm
+– SparkFun
+Długość całkowita: 112,24 mm
+Długość użyteczna czujnika: 95,25 mm
+Szerokość: 6,35 mm
+koszt: ok. 100 pln/sztuka
+Czujnik o długości 112 mm zwiększa swoją rezystancję podczas zgięcia, me
+talowymi padami zwróconymi na zewnątrz (tekst do środka łuku). Wypro
+wadzenia mają popularny raster 2,54 mm (0,1”), dzięki temu czujnik można
+wpiąć w płytkę stykową bądź połączyć przy pomocy przewodów.
+Czujniki tego typu są wykorzystywane w interaktywnych rękawicach, służą
+cych do sterowania robotami, np. w Nintendo Power Glove.
+Produkt kompatybilny z Arduino
+Producent udostępnia przykładowy kod wraz ze schematem podłączenia
+dla użytkowników Arduino.
+Producent nie odnosi się w swojej specyfikacji do kwestii związanych
+z możliwością kontaktu z wodą (zamoczone i wysuszone czujniki działają
+bez zmian). Można więc było przyjąć, że po odłączeniu jednostki sterującej
+i baterii spodnie z czujnikami będzie można wyprać w niskiej temperaturze.
+dokumentacja czujnika
+https://botland.com.pl/index.php?controller=attachment&id_attach
+ment=700
+
+--- strona 40 ---
+Projekt INNOTEXTIL
+40
+Jednostka sterująca
+Ten element projektu składa się z kilku części:
+1. Akumulator Li-Pol Akyga 750mAh 1S 3.7V, cena brutto ok. 20 pln
+2. Adafruit Feather 32u4 Bluefruit LE 4.1 – zgodny z Arduino
+
+cena brutto ok. 175 pln
+3. Etui na w/w elementy – pudełko zostanie wykonane techniką druku
+
+3d, cena brutto ok. 70–200 pln/ sztukę, zależnie od wybranej
+
+technologii wydruku
+Aplikacja
+Aplikacja powinna zostać przygotowana jako przystosowana do pracy
+w środowisku Android i Apple (projekt nie przewidywał finansowania gra
+ficznego opracowania aplikacji oraz UX)
+projekt etui – Katarzyna Król
+
+--- strona 41 ---
+41
+III.
+prototyp
+
+--- strona 42 ---
+Projekt INNOTEXTIL
+42
+Założenia
+Usprawnienie procesu rehabilitacji medycznej
+i umożliwienie zdalnych konsultacji z fizjoterapeutą
+poprzez monitorowanie i zapisywanie wybranych
+parametrów ruchu.
+Dla kogo przeznaczony jest projekt?
+Osoby dorosłe, poddawane rehabilitacji ruchowej, które:
+poruszają się samodzielnie, jednak ich chód nie
+jest w pełni prawidłowy i nie chcą utrwalać popełnianych
+błędów,
+są na etapie „rehabilitacji domowej” i oprócz
+ćwiczeń z fizjoterapeutą samodzielnie wykonują zalecane
+ćwiczenia i aktywności, a także starają się normalnie
+funkcjonować w życiu codziennym,
+chętnie korzystają z nowinek technologicznych, są
+użytkownikami smartfona.
+Planowane funkcje projektu:
+pomiar wybranych parametrów chodu,
+przesyłanie informacji do aplikacji mobilnej,
+informowanie o błędach w chodzie w czasie rzeczywistym,
+gromadzenie danych w aplikacji do wglądu
+fizjoterapeuty lub lekarza jak również samego pacjenta,
+możliwość skalibrowania ustawień dla
+indywidualnych potrzeb danego pacjenta
+
+--- strona 43 ---
+Projekt INNOTEXTIL
+43
+Forma:
+forma odzieży,
+forma odpowiednia do noszenia na co dzień (jako
+indywidualny element odzieży lub pod ubraniem),
+wykorzystanie czujników monitorujących ruch,
+konstrukcja ubioru uniemożliwiająca
+przemieszczanie się czujników,
+lekki, oddychający i przyjazny dla skóry materiał,
+uniwersalna forma, dostosowana do różnych typów
+użytkowników.
+Pożądane cechy wizualne:
+atrakcyjna forma odzieży sportowej, wpisującej się
+w aktualne trendy,
+nieprzywołująca skojarzeń ze sprzętem
+medycznym.
+
+--- strona 44 ---
+Projekt INNOTEXTIL
+44
+Spodnie typu legginsy są obecnie akceptowane również przez osoby star
+sze, głównie ze względu na komfort użytkowania. Sportowa odzież funkcyj
+ne wykonywana jest z nowoczesnych i tzw. oddychających materiałów. Jest
+łatwa do utrzymania w czystości, szybko schnie. Znaczenie ma również fakt,
+że odzież ta w dużym stopniu ma związek z samopoczuciem aktywnych
+seniorów. Wielu z nich czuje się bardziej komfortowo, młodziej, atrakcyjnej,
+postrzega siebie jako dopasowanych do grupy ćwiczących. Z tego powodu
+podczas projektowania pod uwagę wzięto aktualne trendy w projektowaniu
+odzieży sportowej. Korekta w formie wiąże się przede wszystkim w pod
+wyższeniu stanu, dzięki czemu zniwelowany został problem najczęstszego
+mankamentu sylwetki – większy brzuch (zwłaszcza w sylwetce męskiej).
+Inspiracje
+autor: Katarzyna Król
+
+--- strona 45 ---
+Projekt INNOTEXTIL
+45
+1. Projekt legginsów damskich
+przeznaczonych do integracji
+z układem elektronicznym do
+monitorowania parametrów chodu.
+autor: Katarzyna Król
+
+--- strona 46 ---
+Projekt INNOTEXTIL
+46
+
+--- strona 47 ---
+Projekt INNOTEXTIL
+47
+
+--- strona 48 ---
+Projekt INNOTEXTIL
+48
+Projekt legginsów męskich
+przeznaczonych do integracji
+z układem elektronicznym do
+monitorowania parametrów chodu.
+autor: Bożena Groborz
+Inspiracje
+autor: Bożena Groborz
+
+--- strona 49 ---
+Projekt INNOTEXTIL
+49
+
+--- strona 50 ---
+Projekt INNOTEXTIL
+50
+
+--- strona 51 ---
+Projekt INNOTEXTIL
+51
+
+--- strona 52 ---
+Projekt INNOTEXTIL
+52
+
+Aby połączyć taśmę z czujnikiem należy rozpleść jej końce na od
+cinku ok. 2 cm, tak aby wydobyć przewód.
+
+Następnie, należy skręcić wysnute części przewodu i poddać je
+pobieleniu z dużą ilością topnika celem usunięcia izolacji z przewodów
+i zapewnienia dobrego połączenia elektrycznego. Po wykonaniu pobielenia
+należy przygotować parę koszulek termokurczliwych o średnicy 1,5 mm,
+czujnik oraz koszulkę termokurczliwą zabezpieczającą przyłącze czujnika.
+
+W kolejnym kroku należy nasunąć koszulki termokurczliwe o śred
+nicy 1,5 mm na taśmy przewodzące.
+
+Przed przystąpieniem do wykonania połączenia lutowniczego
+zalecane jest pewne umocowanie czujnika ugięcia, np. w imadle. Nale
+ży zachować szczególną ostrożność podczas lutowania czujnika – przyłącze
+nie powinno być jednorazowo ogrzewane w czasie dłuższym niż 2 sekun
+dy – przegrzanie przyłącza spowoduje oderwanie się przyłącza od folii –
+a w konsekwencji nieodwracalne uszkodzenie czujnika.
+
+Po wykonaniu i weryfikacji połączenia lutowanego, należy nasu
+nąć i ogrzać koszulki termokurczliwe – preferowane jest użycie stacji lutow
+niczej na gorące powietrze.
+Ostatni krok montażu czujnika polega na nasunięciu koszulki termokurczli
+wej o średnicy 5 mm i zgrzaniu jej – zapewni to ochronę złącza podatnego
+na wyłamanie.
+
+Drugi koniec taśmy należy połączyć z męskimi złączami JST-SM.
+Montaż taśm tekstronicznych do przewodów JST 2 SM (umiejscowionych na
+plecach i umożliwiających połączenie z jednostką sterująca) należy wykonać
+analogicznie jak montaż czujników – rozpleść, pobielić oraz zabezpieczyć
+koszulką termokurczliwą.
+Wykonanie
+instalacji
+(instrukcja)
+
+--- strona 53 ---
+Projekt INNOTEXTIL
+53
+Przed przystąpieniem do montażu jednostki sterującej należy skompletować
+podzespoły analogicznie jak na ilustracji z następnej strony:
+1. JP1 – przewód z konektorem JST-SM czujnika ugięcia 1 (do nabycia: https://
+botland.com.pl/pl/akcesoria-do-paskow-i-tasm-led/11124-konektor-do-tasm-i
+-paskow-led-jst-sm-2-pin.html?search_query=jst&results=101);
+2. JP2 – przewód z konektorem JST-SM czujnika ugięcia 2;
+3. U1 – kontroler sterujący Adafruit Feather 32u4 Bluefruit LE 4.1 (do nabycia:
+https://botland.com.pl/pl/plytki-zgodne-z-arduino-adafruit/6566-adafruit-fe
+ather-32u4-bluefruit-le-41-zgodny-z-arduino.html);
+4. U2 – czujnik MPU6050 (do nabycia: https://botland.com.pl/pl/zyroskopy/
+3888-mpu-6050-3-osiowy-akcelerometr-i-zyroskop-i2c-modul-dfrobot.html?
+search_query=mpu+6050&results=3);
+5. C1 – górna pokrywa obudowy jednostki sterującej (do wytworzenia metodą
+druku 3D według instrukcji na str. 53;
+6. C2 – dolna pokrywa obudowy jednostki sterującej – z gniazdem USB;
+7. S1 – przycisk bistabilny;
+8. J1 – wtyczka zasilania JST 2mm (do nabycia: https://botland.com.pl/pl/zy
+roskopy/3888-mpu-6050-3-osiowy-akcelerometr-i-zyroskop-i2c-modul-dfro
+bot.html?search_query=mpu+6050&results=3);
+9. B1 – bateria LIPO ok 500 mAh (do nabycia: https://botland.com.pl/pl/aku
+mulatory-li-pol/6049-akumulator-li-pol-akyga-470mah-1s-37v.html).
+Wykonanie
+jednostki
+sterującej
+
+--- strona 54 ---
+Projekt INNOTEXTIL
+54
+Po skompletowaniu elementów należy przystąpić do montażu układu elek
+tronicznego techinką lutowania.
+
+Po zakończeniu lutowania należy umieścić komponenty w obudowie oraz
+zabezpieczyć je z wykorzystaniem kleju na gorąco. W trakcie wykonywa
+nia polaczenia klejonego, wtyczka baterii powinna zostać umieszczona
+w gnieździe modułu Feather. Zaleca się wykonanie połączenia klejonego
+z wciśnięta wtyczką USB co zwiększy prawdopodobieństwo prawidłowego
+umiejscowienia modułu i możliwość jego późniejszego ładowania.
+Wydruk obudowy 
+zabezpieczone komponenty
+
+--- strona 55 ---
+Projekt INNOTEXTIL
+55
+Wydruk obudowy
+Obudowę jednostki sterującej zaleca się wydrukować w technologii FDM.
+Plik STL obiektu można pobrać z: https://drive.google.com/open?id=1i05_
+rKPwOTI-PB4V5qbHIkknLeZ5Vbj_. Po pobraniu obiektu, należy poddać go
+pocięciu w dedykowanym do drukarki oprogramowaniu. Poniżej przedsta
+wiono ustawienie ubiektu w programie Slic3r PE dedykowanym dla drukarki
+Prusa Mk3.
+
+Zaleca się wykonanie modelu w rozdzielczości 0,15 mm i wypełnieniem
+20%. Po wygenerowaniu GKODu należy przesłać go do drukarki i wykonać
+wydruk.
+Wykonanie instalacji, oprogramowania
+i merytoryczne opracowanie instrukcji
+mgr inż. Jacek Wesół
+Marek Kolodziejczyk
+
+--- strona 56 ---
+Projekt INNOTEXTIL
+56
+
+--- strona 57 ---
+Projekt INNOTEXTIL
+57
+Ponieważ jednym z istotnych utrudnień związanych z zastosowaniem czuj
+ników ugięcia jest problem ich „ustabilizowania” na kolanie, powierzchnia
+lewej strony tkaniny w okolicy czujnika została pokryta paskami silikonu.
+
+--- strona 58 ---
+Projekt INNOTEXTIL
+58
+Rozruch urządzenia
+Po podłączeniu do zasilania urządzenie dokonuje rozruchu w czasie
+8 sekund. Rozruch sygnalizowany jest poprzez miganie diody. Aby przy
+stąpić do pracy z urządzeniem należy uruchomić aplikację move zgodnie
+z dołączoną do niej instrukcją. UWAGA – ładowanie urządzenia odbywa się
+w trybie „włączony”.
+Uruchamianie aplikacji
+1. Przejdź do ekranu 2. n
+2. Włącz kolejne funkcje żeby połączyć aplikację z urządzeniem. opq
+3. Wykonaj kalibrację. rs
+Żeby można było korzystać z urządzenia niezbędne jest pobranie i zainsta
+lowanie w smartphonie aplikacji MOVE
+
+Link do aplikacji: https://drive.google.com/drive/folders/1TIqIXBFvDUIh4n
+nyX-7MEwI5r-msig59?usp=sharing
+pliki z pomiarami, będą znajdować się w pamięci wewnętrznej telefonu
+w folderze MoveLogs)
+Autor logo aplikacji – mgr Katarzyna Król
+Autor aplikacji – mgr inż. Mateusz Patyk
+Aplikacja
+MOVE
+n
+o
+p
+
+--- strona 59 ---
+Projekt INNOTEXTIL
+59
+Kalibracja
+Poprawna praca systemu możliwa jest jedynie po wykonaniu kalibracji.
+Odczyty systemu będą różnić się przy każdym uruchomieniu systemu jak
+również przy zmianie użytkownika. Prawidłowe wykonanie kalibracji po
+zwala na uzyskanie względnie powtarzalnych wyników i prawidłową pracę
+algorytmu diagnostycznego. W celu wykonania kalibracji należy:
+1. Wyprostować nogi w stawach kolanowych.
+2. Przejść do drugiego ekranu aplikacji move, wcisnąć przycisk „kalibracja”
+oraz przejść do trzeciego ekranu aplikacji.
+3. Po odczekaniu dwóch sekund, na przebiegu powinien pojawić się pik
+wartości ekstremum informujący o upłynięciu okresu bazowania – wyświe
+tlane przebiegi powinny oscylować teraz wokół wartości zera.
+4. W czasie ośmiu sekund przejść kilkanaście kroków co pozwoli urządze
+niu na zbadanie sposobu zmian rezystancji czujników ugięcia umiejscowio
+nych na stawach kolanowych użytkownika (zależnych od sposobu ubrania
+systemu).
+5. Pojawienie się kolejnego piku ekstremum sygnalizuje zakończenie pro
+cesu kalibracji.
+Analiza chodu w czasie rzeczywi
+stym
+Algorytm analityczny bazuje na
+analizie wartości punktów cha
+rakterystycznych trajektorii chodu
+użytkownika względem wzorca re
+ferencyjnego.
+Dla celów projektu skupiono się na
+analizie przebiegu ekstremów któ
+ry na bieżąco dokonuje pomiarów
+wartości napięcia (po skalibrowa
+niu są one zbliżone do wartości
+kąta ugięcia wprzypadku prawi
+dłowego założenia systemu move)
+z częstotliwością 100 próbkowań na
+sekundę. Jednocześnie na bieżąco
+liczona jest pochodna uzyskanych
+sygnałów.
+Po skalibrowaniu urządzenia moż
+na rozpocząć obserwację – czyli np.
+krótki spacer, podczas którego urzą
+dzenie w czasie rzeczywistym reje
+struje i obrazuje nasz wzorzec chodu.
+pik ekstremum
+q
+r
+s
+
+--- strona 60 ---
+Projekt INNOTEXTIL
+60
+
+--- strona 61 ---
+Projekt INNOTEXTIL
+61
+
+--- strona 62 ---
+Projekt INNOTEXTIL
+62
+zdjęcia w studio (s. 72–79)
+fot.: Anna Szwaja
+
+--- strona 63 ---
+Projekt INNOTEXTIL
+63
+
+--- strona 64 ---
+Projekt INNOTEXTIL
+64
+
+--- strona 65 ---
+Projekt INNOTEXTIL
+65
+
+--- strona 66 ---
+Projekt INNOTEXTIL
+66
+
+--- strona 67 ---
+Projekt INNOTEXTIL
+67
+
+--- strona 68 ---
+Projekt INNOTEXTIL
+68
+
+--- strona 69 ---
+Projekt INNOTEXTIL
+69
+
+--- strona 71 ---
+71
+IV.
+testy
+
+--- strona 72 ---
+Projekt INNOTEXTIL
+72
+W testowaniu brały udział cztery osoby w wieku 65, 66, 74 lata z zaburze
+niami wzorca chodu.
+Testowanie produktu przyniosło rezultaty częściowo odbiegające od zało
+żeń postawionych na początku projektu. Zgodnie z nimi oczekiwaliśmy, że
+spodnie będą pomagać w monitorowaniu i wspomaganiu procesu rehabi
+litacji w większości sytuacji kiedy schorzenie wpływa na zburzenie wzorca
+chodu. Wyniki testów pokazały że spodnie z zastosowanymi czujnikami naj
+lepiej sprawdziły się w przypadku osoby ze schorzeniem stawu kolanowego
+(po wszczepieniu endoprotezy stawu kolanowego). W przypadku pozosta
+łych osób gdzie zaburzenia wzorca chodu są wynikiem innych schorzeń,
+wyniki pomiarów wykazywały dysproporcję w wykresach dla nogi prawej
+i lewej, jednak wyniki były trudniejsze do zinterpretowania.
+Czujniki dobrze pokazują również zmiany polegajace na przeprostowywaniu
+stawów kolanowych lub prostowaniu ich tylko częściowo.
+Podczas testów zapisanych zostało blisko 70 pomiarów zawierających
+ok. 300–15000 próbek każdy.
+Na etapie kalibrowania systemu wyniki porównywane były z danymi uzy
+skanymi przy pomocy oprogramowania KINOVEA, z wynikami obserwacji
+„na żywo” oraz dokumentacją filmową.
+Na wszystkich etapach testów obecny był specjalista fizjoterapeuta.
+
+--- strona 73 ---
+Projekt INNOTEXTIL
+73
+
+--- strona 74 ---
+Projekt INNOTEXTIL
+74
+
+Osoba
+Barbara
+
+Wiek
+74 lata
+Problem zdrowotny
+Po zabiegu wstawienia endoprotezy stawu kolanowego
+
+Rehabilitacja
+Korzysta doraźnie.
+Aktywność fizyczna
+Sprawna, stara się być aktywna, przede wszystkim dużo
+
+chodzi, stara się zrobić ok. 10 000 kroków dziennie
+
+Stosunek do
+nowych technologii
+Używa smartfona, zdaje sobie sprawę, że nie ma odwrotu od
+
+rozwoju technologii; z aplikacji w telefonie nie korzysta zbyt
+
+dużo, używa krokomierza; używa komputera, obsługuje
+
+bankowość elektroniczną;
+
+Inne
+Osoba samotna, ma dodatkową motywację w utrzymywaniu
+
+sprawności fizycznej – chce być jak najdłużej samodzielna.
+Ze względu na przyczyny zaburzenia chodu wykresy poszczególnych osób
+mają różny wygląd. Ilustracje pokazują wykresy dla chodu Pani Barbary.
+Wzorzec chodu jest tu prawidłowy, za to wyraźnie wdać, że prawa noga
+(zielona linia) nie osiąga takiego zgięcia w kolanie jak noga lewa. Testy pro
+wadzone były podczas spaceru po płaskim i dość równym terenie. Wykresy
+nie zmieniały się w trakcie, również dzięki wzmocnieniu zamocowania czuj
+ników oraz dobremu dopasowaniu spodni do ciała.
+
+--- strona 75 ---
+Projekt INNOTEXTIL
+75
+
+Osoba
+Teresa
+
+Wiek
+74 lata
+Problem zdrowotny
+Po złamaniu biodra prawego.
+
+Rehabilitacja
+W trakcie rehabilitacji domowej, wybiera się na rehabilitację
+
+chociaż lekarz jest „zaskoczony szybkim powrotem do niemal
+
+pełnego zdrowia”.
+Aktywność fizyczna
+Aktywna, opiekuje się chorym mężem, stara się chodzić,
+
+pewien problem stanowią schody; jeździ samochodem; przed
+
+złamaniem jeździła sporo na rowerze i hulajnodze.
+
+Stosunek do
+nowych technologii
+Chętnie używa komputera, smartphona, jest otwarta na różne
+
+nowinki technologiczne, używa krokomierza.
+
+Inne
+Osoba bardzo ruchliwa, aktywna, nie lubi siedzieć w domu.
+Testy wykonywane były w różnych odstępach czasowych. Wykresy mają
+podobny kształt i wynika z niego, że istnieje różnica pomiędzy pracą obu
+nóg. Jednak nie wynika ona bezpośrednio z różnicy w zgięciu kolan lecz
+wyprowadzenia ruchu w stawie biodrowym. Dysproporcja pogłębia się
+przy wchodzeniu i schodzeniu po schodach (wykres 3,4) Pozorna różnica
+w wartościach kąta pomiędzy kolejnymi rysunkami wynika z faktu prze
+mieszczenia się czujników w stosunku do stawu kolanowego – spodnie były
+niewystarczająco opięte.
+
+--- strona 76 ---
+Projekt INNOTEXTIL
+76
+
+Osoba
+Andrzej I
+
+Wiek
+66 lat
+
+Problem zdrowotny Po porażeniu czterokończynowym spowodowanym ropnym
+
+zapaleniem opon mózgowo-rdzeniowych, obecnie sprawny
+
+i samodzielny, utyka ze względu na lekko opadającą stopę.
+
+Rehabilitacja
+Pozostaje w regularnym kontakcie z rehabilitantem, codziennie
+
+wykonuje ćwiczenia zalecone przez rehabilitanta.
+
+Aktywność fizyczna Codziennie ćwiczy – ok. 2–3 godzin, chodzi na zajęcia pilates,
+
+streaching, gimnastyka uelastyczniająca, siłownia; chodzi do ok.
+
+3000 kroków dziennie;
+
+Stosunek do
+
+nowych technologii Z jednej strony krytykuje przywiązanie innych osób do
+
+smartfona i „tęskni” za starą Nokią, równocześnie korzysta
+
+z licznika kroków, Skype’a, WhatsUp, Skycash, internetu i poczty
+
+w telefonie.
+
+Inne
+Entuzjasta nowych rozwiązań technologicznych zwłaszcza
+
+sposobu na poprawę stanu lewej nogi; marzy o powrocie
+
+na narty – próbował, ale miał problem ze skrętem i
+
+kontrolowaniem lewej nogi.
+Porównanie wykresów z nakręconymi filmami, które poddano analizie
+w programie KINOVEA potwierdziło, że Andrzej I nie do końca prostuje pra
+wą nogę. Jest to wynik słabszego podparcia na nodze lewej i skracaniu
+tej fazy ruchu. Dysproporcje nasilają się w przypadku chodzenia po ternie
+trudniejszym (np. „z górki”, po schodach).
+Wykresy 1, 2 pokazują wykresy chodu po równej podłodze wewnątrz budyn
+ku (podczas spotkań związanych z dopracowywaniem systemu i kalibracją
+sprzętową). Wykresy 3, 4. Pochodzą z testów prowadzonych na zewnątrz.
+Wykres 4 – droga „z górki” na ugiętych nogach.
+
+--- strona 77 ---
+Projekt INNOTEXTIL
+77
+
+Osoba
+Andrzej II
+
+Wiek
+65 lat
+Problem zdrowotny
+Nieokreślony problem z biodrem oddziałowujący na lewą
+
+nogę, nadwaga.
+
+Rehabilitacja
+Korzysta doraźnie.
+Aktywność fizyczna
+Aktywność niska, chodzi niechętnie raczej jest to związane z
+
+wagą i faktem, że szybko się męczy; lubi jeździć
+
+na nartach,
+
+Stosunek do
+nowych technologii
+Trochę „gadżeciarz” zwłaszcza w dziedzinie sprzętu
+
+fotograficznego i odtwarzania muzyki, używa Iphona,
+
+korzysta z social media.
+
+Inne
+Lubi podróżować, wypoczywać na plaży i w ciepłych miejscach.
+Wyniki testów u Andrzej II pokazały, że jego wzorzec chodu również wyka
+zuje odstępstwa. Na wykresach wyraźnie widać mniejszy kąt zgięcia lewe
+go kolana. Potwierdziło to ogólne stwierdzenie testowanego, że „wie, że od
+lat chodzi nierówno”.
+
+--- strona 79 ---
+79
+V.
+podsumowanie
+
+--- strona 80 ---
+Projekt INNOTEXTIL
+80
+
+Przeprowadzone testy pokazały, że mimo mniejszej niż począt
+kowo zakładano dokładności pomiarów, projekt INNOTEXTIL spełnia swo
+je zadanie. Spodnie z czujnikami pozwalają na obserwowanie na bieżąco
+wzorca chodu, zbieranie danych w dłuższym okresie czasu, porównywanie
+ich i obserwowanie postępów (lub ich braku) w rehabilitacji.
+
+Ze względu na rodzaj zastosowanych czujników wydaje się,
+spodnie najlepiej sprawdzą się w przypadku schorzeń bezpośrednio wpły
+wających na zakres ruchu stawu kolanowego – np. po operacjach wstawie
+nia endoprotezy kolana lub innych, w przypadku których rehabilitacja wiąże
+się ze stopniowym zwiększaniem zakresu ruchu. W takiej sytuacji urządze
+nie może pomóc poprzez zobrazowanie co oznacza zwiększenie zakresu
+ruchu np. o 20% Równocześnie, obserwowanie postępów w rehabilitacji
+moze stanowić znaczną motywację do dalszego wykonywania ćwiczeń.
+Może być również informacją dla terapeuty czy pacjent realizuje zalecenia.
+
+Należałoby wykonać zdecydowanie większą liczbę testów, na gru
+pie osób z taką samą przyczyna zaburzeń wzorca chodu. Dopiero wtedy
+można byłoby wyciągnąć wnioski dotyczące powtarzalności wyników.
+
+Założenie dotyczące samodzielnego wykonania jest w tym wy
+padku dość trudne do zrealizowania. Odrzucenie tego założenia pozwoli
+sięgnąć po droższe technologie ale uzyskać precyzyjniejszy pomiar.
+
+Pewnym problemem jest stosunek osób starszych do nowych
+technologii; potwierdza się podział występujący u innych grup osób niepeł
+nosprawnych – grupy do i po 30 roku życia używają nowych technologii do
+radzenia sobie z niepełnosprawnością w zupełnie inny sposób. To podejście
+jednak łatwo „poprawić” motywacją osiągnięcia lepszego stanu zdrowia.
+Większość osób testowanych uważała się za zdrową i w pełni sprawną,
+dlatego testowanie urządzenia było dla nich swego rodzaju ciekawostką,
+interesującym doświadczeniem.
+W przypadku gdy osoba testująca starała się zmniejszyć swoją niepełno
+sprawność, jej zainteresowanie urządzeniem i zaangażowanie w testowa
+nie było znacznie większe. Wiąże się to z nadzieją, że urządzenie pomoże
+lepiej wykonywać ćwiczenia i wykrywać popełniane błędy, a co za tym
+idzie przyczyni się do poprawy prawności. Ze strony jednego z testujących
+pojawiła się deklaracja dalszego używania urządzenia, łącznie z próbą te
+stowania podczas jazdy na nartach.
+Biorąc pod uwagę że do grupy 65+ dołączają kolejne roczniki, których stosu
+nek do nowych technologii jest radykalnie inny, można oczekiwać, że pro
+blem związany z obsługą tego typu urządzeń bardzo szybko się zmniejszy.
+
+--- strona 81 ---
+Projekt INNOTEXTIL
+81
+
+Należy zawsze zwracać szczególną uwagę na właściwe ułożenie
+czujników na kolanie. Czujnik powinien być umieszczony centralnie w sto
+sunku do obu kolan. Powinien znajdować się na tej samej wysokości na obu
+kolanach i tak samo wyśrodkowany. Wówczas oprócz informacji porównują
+cej pracę obu kolan względem siebie, uzyskujemy informację o kątach pod
+jakimi zginane są kolana.
+
+Ważne jest również dobre dopasowanie spodni do rozmiaru osoby,
+która będzie je nosić. Spodnie powinny być mocno dopasowane – zapobie
+gnie to przemieszczaniu się czujników w trakcie chodzenia.
+
+W przypadku wdrożenia projektu konieczne bedzie zaprojektowa
+nie aplikacji dla użytkownika uwględniającej User Experience. Dzięki temu
+cały system będzie łatwiejszy w obsłudze dla użytkownika.
+
+Spodnie można prać ręcznie, wcześniej należy odłączyć jednostkę
+sterującą. Podczas prania należy uważać na złączki i czujniki.
+
+Opinia fizjoterapeuty (mgr Paweł Wójciak)
+Wykorzystane do badań legginsy z wbudowanym czujnikiem pomiaru ruchu
+z pewnością mogą być pomocne do monitorowania postępów rehabilitacji.
+Będą szczególnie przydatne u osób, które mają problem z pełną ruchomo
+ścią stawów kolanowych jakie występują np. po rekonstrukcji ACL, endo
+protezoplastyce stawu kolanowego, z zaburzeniami balansu mięśniowego
+w obrębie kończyn dolnych.
+Dzięki zainstalowanemu czujnikowi istnieje możliwość funkcjonalnego
+badania ruchomości stawów kolanowych zarówno podczas wykonywania
+prostych ćwiczeń fizycznych, chodu po prostej nawierzchni, jak i w bardziej
+wymagających warunkach (np. schody, piesze wędrówki po górach).

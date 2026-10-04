@@ -1,0 +1,278 @@
+--- strona 1 ---
+
+Model końcowy
+„Drogowskazy Ajkum”
+Innowacja testowana w ramach „Inkubatora Włączenia Społecznego” –
+Projektu wdrażanego w ramach IV Osi Priorytetowej Programu Operacyjnego
+Wiedza Edukacja Rozwój (Działanie 4.1: Innowacje społeczne), na zlecenie
+Ministerstwa Funduszy i Rozwoju Regionalnego, finansowanego ze środków Unii
+Europejskiej w ramach Europejskiego Funduszu Społecznego.
+
+Wszystkie elementy innowacji zostały udostępnione na podstawie Licencji
+Creative Commons CC.BY 4.0
+
+--- strona 2 ---
+
+Spis treści
+Wstęp ............................................................................................................................................... 3
+Opis grupy docelowej ....................................................................................................................... 3
+Cel innowacji .................................................................................................................................... 4
+Opis rozwiązania i jego funkcjonalności. .......................................................................................... 4
+Wymagania techniczne: ...................................................................................................... 5
+Instalacja Sklep Play ............................................................................................................ 5
+Instalacja ręczna ................................................................................................................. 6
+Pliki źródłowe ..................................................................................................................... 6
+Funkcjonalności .................................................................................................................. 7
+System identyfikacji wizualnej rozwiązania .......................................................................... 14
+Przebieg i wyniki testów ................................................................................................................. 17
+Etap 1 ................................................................................................................................ 17
+Etap 2 ................................................................................................................................ 18
+Pozostałe rekomendacje i zalecenia dla przyszłych użytkowników ........................................ 19
+Podsumowanie ............................................................................................................................... 20
+Załączniki ........................................................................................................................................ 20
+
+--- strona 3 ---
+
+Wstęp
+Fundacja AJKUM imienia Anny i Józefa Kumorek to fundacja powstała w grudniu 2020
+roku. Kluczowe pytanie brzmi – dlaczego?
+We wrześniu 2020 przy jednym stole spotkały się osoby z doświadczeniem w realizacji
+projektów społecznych oraz CEO Grup Samsic Polska Agnieszka Stefanowska, która chciała
+działalnością charytatywną uczcić pamięć swoich rodziców. i tak na kanwie rozmów powstał
+pomysł stworzenia Fundacji AJKUM, której jednym z głównych celów było ochrona zdrowia
+w tym działania onkologiczne.
+Opis grupy docelowej
+Główną grupą docelową proponowanego rozwiązania są pacjenci onkologiczni. w codziennych
+działaniach, prócz zmagania się z chorobą nowotworową muszą zmierzyć się z rozbudowanymi
+wymogami współpracy podczas leczenia w specjalistycznych placówkach leczenia nowotworów.
+Rozbudowane architektonicznie budynki pełne zaułków, przejść, wind powodują dużo
+dezorientacji i stresu związanego z poruszaniem się. Pacjent musi przemieszczać się pomiędzy
+różnymi jednostkami a niejednokrotnie jest zmęczony, obolały i przytłoczony prowadzonym
+leczeniem. Jego percepcja jest znacznie obniżona. Dodatkowo szukanie odpowiedniego miejsca
+wzbudza stres, który nie jest sprzymierzeńcem procesu leczenia. Dlatego, oczywiste dla nas było
+podjęcie działań, które wpłyną na ułatwienie poruszania się po budynkach medycznych aby
+zminimalizować stres i napięcie pacjentów.
+
+--- strona 4 ---
+
+Cel innowacji
+Celem innowacji było stworzenie i przetestowanie systemu nawigacji po budynkach
+użyteczności publicznej (głównie centrach leczenia specjalistycznego, np. onkologicznego).
+Zaprojektowany w ramach realizacji innowacji system opiera się na sieci check pointów,
+zamontowanych na trwałe do ściany lub umieszczonych na standach, które za pomocą
+dedykowanej aplikacji wskazują drogę do siebie nawzajem nawigując użytkownika „krok po
+kroku”. Dzięki temu, pacjenci i użytkownicy o obniżonej percepcji spowodowanej chorobą,
+wiekiem czy brakiem osoby towarzyszącej mogą bezpiecznie poruszać się po budynku i bez
+problemu odnajdować interesujące ich pomieszczenia.
+Opis rozwiązania i jego funkcjonalności.
+Rozwiązanie zostało przetestowane we współpracy z Zagłębiowskim Centrum Onkologii
+w Dąbrowie Górniczej (http://www.zco-dg.pl/), które było odbiorcą urządzeń. System nawigacji
+„Drogowskazy AJKUM” został stworzony po to aby pomóc osobom starszym, niedowidzącym,
+nieposiadającym telefonów komórkowych oraz mających problem w komunikacji
+międzyludzkiej, w łatwym i intuicyjnym dotarciu do do odpowiedniego miejsca w szpitalu.
+W różnych punktach szpitala rozmieszczono urządzenia podłączone na stałe do prądu, gdzie
+każdy mógł do niego podejść i wybrać na dotykowym ekranie 1 z 6 pozycji zaprogramowanych
+dla danego punktu i uzyskać wskazówkę dojścia do wybranego miejsca. Wskazówki zostają
+wyświetlone na ekranie w formie strzałki, opisu tekstowego oraz komunikatu głosowego: “W
+celu dojścia do Recepcji idź prosto i skręć w prawo”. Osoba starsza może wyświetlić i odsłuchać
+kilkukrotnie taki komunikat, dzięki czemu ma możliwość upewnienia się czy dobrze zrozumiała
+komunikat. Z uwagi na różnorodność grupy pacjentów, interfejs oraz system identyfikacji
+wizualnej projektuzostał przetłumaczony na dwa języki - angielski i ukraiński (domyślnym
+
+--- strona 5 ---
+
+językiem jest polski). Dla prawidłowego funkcjonowania rozwiązania konieczne jest zapewnienie
+określonym warunków. Zostały one opisane poniżej.
+Wymagania techniczne:
+Język programowania: Kotlin
+IDE: Android Studio
+Oprogramowanie: Android w wersji 9 lub wyższej.
+Sprzęt: Tablet o rozmiarze minimum 7”, minimum 1GB RAM, wbudowany dysk minimum 16GB,
+system Android.
+Połączenie z Internetem jest wymagane jedynie do pobrania aplikacji. Do jej prawidłowego
+funkcjonowania nie jest ono wymagane.
+Instalacja Sklep Play
+1. Podłączamy tablet do Internetu.
+2. Otwieramy aplikację Sklep Play i wyszukujemy „Drogowskazy”.
+3. Klikamy w ikonę aplikacji, a następnie instalujemy ją.
+4. Uruchamiamy aplikację.
+
+--- strona 6 ---
+
+Instalacja ręczna
+1. Podłączamy tablet do Internetu.
+2. Uruchamiamy przeglądarkę internetową przykładowo Chrome lub Firefox.
+3. Wpisujemy adres: https://ajkum.pl/drogowskazy/drogowskazy_v_1_0_0.apk.
+4. Po pobraniu instalujemy aplikację na tablecie.
+5. Do poprawnej instalacji może być wymagane zezwolenie na instalowanie aplikacji z
+nieznanych źródeł (Ustawienia > Aplikacje i powiadomienia > Aplikacje ze specjalnym
+dostępem > Instalowanie nieznanych aplikacji > Wybrana przeglądarka Internetowa
+przykładowo Chrome lub Firefox > Zezwól z tego źródła).
+6. Uruchamiamy aplikację.
+Pliki źródłowe
+1. Kod źródłowy aplikacji: https://ajkum.pl/drogowskazy/drogowskazy_source_v_1_0_0.zip
+2. Plik źródłowy projektu graficznego aplikacji:
+https://ajkum.pl/drogowskazy/drogowskazy_app_project.zip
+3. Plik źródłowy logotypu aplikacji: https://ajkum.pl/drogowskazy/drogowskazy_logo.zip
+4. Plik źródłowy tabliczki informacyjnej:
+https://ajkum.pl/drogowskazy/drogowskazy_info.zip
+5. Plik źródłowy rollupu: https://ajkum.pl/drogowskazy/drogowskazy_rollup.zip
+Po uruchomieniu aplikacji nie jesteśmy w stanie powrócić do ekranu startowego (wymusza ona
+na nas korzystanie z niej). Jest to zabezpieczenie przed nieuprawnionym dostępem do
+urządzenia dla osób trzecich.
+
+--- strona 7 ---
+
+Po ponownym uruchomieniu tabletu domyślnie trzeba ręcznie uruchomić aplikację. Jeżeli
+chcemy aby aplikacja uruchamiała się wraz ze startem systemu Android przechodzimy do
+Ustawienia > Aplikacje i powiadomienia > Aplikacje domyślne > Aplikacja ekranu głównego >
+Wybieramy Drogowskazy AJKUM.
+Funkcjonalności
+Widok startowy
+Po uruchomieniu aplikacji mamy możliwość przejścia do panelu administracyjnego lub do
+widoku wskazówek głosowych. Aplikacja automatycznie uruchamia się wraz z tabletem.
+
+--- strona 8 ---
+
+Logowanie
+Logowanie do panelu jest zabezpieczone hasłem Ajkum2022.
+
+Panel administracyjny
+W panelu administracyjnym mamy możliwość dodania opisu miejsca, w którym znajduje się
+urządzenie, nowych wskazówek głosowych, tekstowych oraz graficznych jak również możemy
+edytować lub usunąć obecnie dodane wskazówki.
+
+--- strona 9 ---
+
+Panel administracyjny
+Po kliknięciu przycisku dodaj w poprzednim widoku, definiujemy nazwę miejsca docelowego
+w trzech językach. Wybieramy odpowiednią wskazówkę tekstową, automatycznie zostaje
+wybrana wskazówka głosowa oraz graficzna. Na końcu wybieramy typ “Medyczny” (np. rentgen)
+lub “Niemedyczny” (np. toaleta). Medyczny przycisk jest podświetlony na czerwono natomiast
+Niemedyczny występuje w kolorze szarym. Maksymalnie możemy zdefiniować sześć miejsc
+docelowych, co zostało zaproponowane na etapie projektowania aplikacji. Sześć miejsc
+docelowych daje optymalna/maksymalną widoczność pól na tablecie.
+
+--- strona 11 ---
+
+Miejsca docelowe
+Po kliknięciu przycisku „wskazówki” na ekranie startowym przechodzimy do widoku wszystkich
+wskazówek. Maksymalnie wyświetla nam się sześć miejsc docelowych. w górnym prawym rogu
+mamy możliwość zmiany języka na angielski lub ukraiński.
+
+--- strona 12 ---
+
+Wskazówka
+Po kliknięciu w przycisk z wcześniej zdefiniowanym miejscem docelowym otrzymujemy
+komunikat tekstowy, graficzny oraz głosowy, w którym kierunku mamy podążać. Mamy
+możliwość odtworzenia komunikatu głosowego tyle razy ile będzie nam potrzebne do
+prawidłowego przyswojenia.
+
+--- strona 13 ---
+
+Powrót do ekranu startowego
+W momencie gdy aplikacja działa, a chcielibyśmy dokonać zmian w miejscach docelowych
+jesteśmy w stanie powrócić do ekranu startowego klikając odpowiednia kombinację na ekranie:
+1. Klikamy dwa razy w logo, następnie dwa razy ikonę serca w lewym górnym rogu ekranie.
+2. Klikamy naprzemiennie logo i ikonę serca powtarzając tę procedurę do czasu aż nie
+ujrzymy ekranu startowego.
+
+--- strona 14 ---
+
+System identyfikacji wizualnej rozwiązania
+Ikona aplikacji
+Ikona jest formą graficzną łatwo rozpoznawalną i zapamiętywaną̨ w otoczeniu wypełnionym
+komunikatami. Jest to połączenie litery “i” oraz znaku drogowego C-5 “nakaz jazdy prosto”.
+
+--- strona 15 ---
+
+Rollup
+Im mniej elementów tym czytelniejszy przekaz.  W szpitalu funkcjonowały 2 typy urządzeń
+(wolnostojący i naścienny). Na nośniku nie umieszczamy wizualizacji pełnego standu, a jedynie
+kluczowy element – panel dotykowy.
+
+--- strona 16 ---
+
+Tabliczka informacyjna
+Dla łatwiejszej lokalizacji urządzeń została umieszczona dodatkowa tabliczka z ikoną systemu,
+prostopadle do ściany.
+
+--- strona 17 ---
+
+Przebieg i wyniki testów
+Test rozwiązania w praktyce składał się z dwóch etapów i jego realizacja nie przekroczyła okresu
+1 miesiąca. Zgodnie z zaleceniami kadry medycznej (konsylium zorganizowane 24.10.2022r.)
+realizacja obu etapów testów odbyła się przy jednorazowym zaangażowaniu określonej grupy
+pacjentów/ek, wyrażających chęć udziału w testowaniu, co zostało uzasadnione stopniem
+zaawansowania choroby.
+Etap 1
+Pierwszy test przeprowadzono na 9 urządzeniach, drugi na 8, w związku z kradzieżą dwóch
+tabletów 20.10.2022 oraz 08.11.2022r. Oba przypadki zostały zgłoszone przez Zagłębiowskie
+Centrum Onkologii (ZCO) na policję, która podjęła działania dochodzeniowo-śledcze w kierunku
+rozpoznania okoliczności wykroczeń.
+Na podstawie 1 testowania wprowadzono następujące poprawki do oprogramowania:
+− Uzupełnienie komunikatów, zweryfikowano poprawność pod tym kątem wszystkich
+urządzeń
+− Wprowadzono poprawny komunikat odnośnie sugerowanych kierunków poruszania się
+(prawo/lewo), zweryfikowano poprawność pod tym kątem pozostałe urządzenia
+− Zmieniono kolorystykę
+− Wyeliminowano zacięcia aplikacji i uzupełniono komendy głosowe w języku polskim
+i ukraińskim, zweryfikowano poprawność pod tym kątem pozostałych urządzeń
+− Przestawiono, przesunięto odpowiednio urządzenie, aby zagwarantować dostępność
+osobom poruszającym się na wózkach, zweryfikowano dostępność pod kątem
+niepełnosprawności ruchowej pozostałe urządzenia
+
+--- strona 18 ---
+
+Opinie testujących:
+− łatwość i prostota obsługi
+− trafna odległość pomiędzy umieszonymi względem siebie urządzeniami
+− dobry odbiór dźwiękowy urządzeń, odpowiednia głośność urządzeń
+− wyraźne komunikaty pod kątem odsłuchu w danym języku
+− możliwość ponownego odsłuchu komunikatów
+− system pomocny dla pacjentów z obniżoną percepcją – uzupełniający znajomość
+pomieszczeń szpitalnych
+− system pomocny zwłaszcza dla osób odwiedzających chore osoby przebywające na
+oddziałach.
+Etap 2
+Przeprowadzenie II części testu systemu nawigacji nastąpiło 07.11.2022r. Kolejna grupa 5 osób
+testujących sprawdziła produkt po wprowadzonych poprawkach stosując tę samą procedurę
+testowania co w przypadku testu nr 1.
+Na podstawie 2 etapu wyciągnięto następujące wnioski:
+− Rekomendacja dla przyszłych użytkowników o zwiększenie ilości urządzeń, aby objęły
+zasięgiem znaczny obszar danej placówki
+− Rekomendacja o możliwość zaangażowania w system nawigacji tabletów o większych
+rozmiarach od obecnie zastosowanych (25x17cm)
+− Rekomendacja dla przyszłych użytkowników o zwiększenie ilości urządzeń, aby objęły
+zasięgiem znaczny obszar danej placówki, urządzenia dostosowane do umieszczenia ich na
+zewnątrz budynku
+
+--- strona 19 ---
+
+− Rekomendacja wprowadzenia dodatkowej opcji w urządzeniach o rzut budynku z
+pulsującym punktem wskazującym na aktualne położenie korzystającego/ej z tabletu
+Pozostałe rekomendacje i zalecenia dla przyszłych użytkowników
+− Uchwyty na tablety powinny zostać dobrze przymocowane do ściany lub podłogi, a same
+tablety zabezpieczone w taki sposób aby nie dało się ich łatwo wyjąć z uchwytów.
+− Urządzenia powinny zostać umieszczone w dobrze widocznym miejscu.
+Urządzenia powinny zostać umieszczone w niedalekich odległościach od siebie ze względu na
+dwupoziomową strukturę wskazówek oraz łatwość dotarcia do celu.
+
+--- strona 20 ---
+
+Podsumowanie
+Proponowane rozwiązanie wyróżnia się przede wszystkim następującymi cechami: zapewnia
+wsparcie pacjenta/tki w poruszaniu się po rozbudowanych budynkach użyteczności publicznej
+(szpitalach), jest dostępne dla seniora/ki oraz osoby z niepełnosprawnością bez konieczności
+posiadania przez osoby smartfona oraz specjalnie dedykowanej aplikacji i umiejętności
+korzystania z jego funkcji, cechuje go także prostota i wysoka intuicyjność systemu.
+Proponowane przez nas rozwiązanie jest modelem, który niewątpliwie chce rozpocząć
+wdrażanie, ulepszanie i rozbudowywanie dalszego wsparcia osób z ograniczeniami
+w mobilności, percepcji spowodowanymi niepełnosprawnością lub /i podeszłym wiekiem.
+Zapraszamy do skorzystania z ww. założeń przy projektowaniu systemu nawigacji po
+rozbudowanych placówkach użyteczności publicznej i dzielenia się dobrymi praktykami, które
+służą wzmacnianiu dostępności dla szerokiego grona odbiorców/czyń.
+Załączniki
+1. Specyfikacja techniczna oprogramowania i jego montażu
+2. Kod źródłowy oprogramowania
+3. Projekt graficzny systemu komunikacji wizualnej

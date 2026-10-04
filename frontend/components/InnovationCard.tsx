@@ -10,6 +10,8 @@ export interface InnovationCardData {
   // display labels, not raw tags
   tags?: string[];
   city?: string;
+  // cover photo; cards without one keep the text-only layout
+  imageUrl?: string;
 }
 
 export function InnovationCard({
@@ -19,10 +21,19 @@ export function InnovationCard({
   innovation: InnovationCardData;
   headingLevel?: "h2" | "h3";
 }) {
-  const { id, title, summary, why, tags, city } = innovation;
+  const { id, title, summary, why, tags, city, imageUrl } = innovation;
   return (
     <article className="flex w-full flex-col justify-between gap-space-md rounded-xl bg-surface-container-low p-space-md shadow-sm hc-edge">
       <div className="flex flex-col gap-space-xs">
+        {imageUrl && (
+          // eslint-disable-next-line @next/next/no-img-element -- api-hosted photo; decorative, the title below names the innovation
+          <img
+            src={imageUrl}
+            alt=""
+            loading="lazy"
+            className="mb-space-xs aspect-[4/3] w-full rounded-lg bg-surface-container object-cover"
+          />
+        )}
         {tags && tags.length > 0 && (
           <ul className="flex flex-wrap gap-2" aria-label="Kategorie">
             {tags.map((t) => (

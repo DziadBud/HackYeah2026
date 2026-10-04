@@ -1,0 +1,483 @@
+--- strona 1 ---
+
+1
+
+Model innowacji
+„Dostępna szermierka”
+Etap II
+Wg umowy o powierzenie Grantu nr IS 430-12-3/21
+
+--- strona 2 ---
+
+2
+
+Spis treści
+Model innowacji „Dostępna szermierka” Etap II ..................................................................... 1
+Opis problemu - cele projektowe ........................................................................................... 3
+Opis platformy i jej przeznaczenie .......................................................................................... 4
+Parametry techniczne i sposób wykonania ............................................................................ 6
+Wizualizacja poglądowa z głównymi elementami projektu ............................................. 10
+Opis elementów specjalnie zaprojektowanych i wykonanych w ramach projektu .......... 13
+Opis elementów gotowych ............................................................................................... 17
+Sposób użytkowania ............................................................................................................. 22
+Podsumowanie ..................................................................................................................... 27
+Dokumentacja techniczna .................................................................................................... 29
+
+--- strona 3 ---
+
+3
+
+Opis problemu - cele projektowe
+Innowacja odpowiada na problem w dostępie do sprzętu sportowego (taniego, lekkiego,
+łatwego w obsłudze) – niezbędnego do uprawiania szermierki na wózkach. Szermierka na
+wózkach to jedna z pierwszych dyscyplin sportowych uprawianych przez osoby
+z niepełnosprawnościami. Na potrzeby tej dyscypliny stworzono dostosowane urządzenia
+(takie jak platforma szermiercza - Rysunek 1). Jednak rozwój technologiczny w szermierce na
+wózkach „zatrzymał” się na latach dziewięćdziesiątych ubiegłego wieku. Wiele organizacji
+zajmujących się sportem osób niepełnosprawnych boryka się z takimi problemami jak koszt
+wyposażenia sportowego, waga, skomplikowane i często wadliwe mocowania wózków
+do platform, konieczność uczestnictwa osób trzecich w przeprowadzeniu treningu i wiele
+innych. Głównym celem projektu było zminimalizowanie kosztów produkcji, wagi urządzenia,
+konieczności korzystania z pomocy osób trzecich (sprawnych fizycznie).
+
+Rysunek 1 - Przykładowa platforma szermiercza - źródło (https://hksapd.org)
+Główne założenia projektowe:
+• Niższa w stosunku do obecnych na rynku platform tradycyjnych cena,
+• Lekkość produktu,
+• Samoobsługowość przez osobę z niepełnosprawnościami,
+• Zastosowanie nowoczesnych materiałów kompozytowych oraz stopów aluminium.
+
+--- strona 4 ---
+
+4
+
+Osiągnięcie powyższych celów powinno spowodować, że w Polsce ale i nie tylko wzrośnie
+zainteresowanie w/w dyscypliną sportową. Obecnie zauważana jest niechęć klubów
+sportowych zajmujących się szermierką klasyczną w powoływaniu sekcji integracyjnych tj.
+łączących szermierkę na wózkach z szermierką klasyczną. Głównym powodem pojawiania się
+niechęci jest przede wszystkim cena rynkowa dostępnego specjalistycznego sprzętu
+sportowego. Obecnie ceny platform szermierczych oscylują w granicach 17 000,00
+do 40 000,00 złotych. Nasze rozwiązanie konstrukcyjne to prognozowany koszt produkcyjny
+na poziomie 5 000,00 do 6 000,00 tysięcy złotych (cena uwarunkowana stanem rynku
+i dostępnością podzespołów bazowych).
+Zastosowanie lekkich oraz łatwo dostępnych materiałów, podzespołów korzystnie wpłynie
+na wagę platformy a tym samym na poprawę obsługi platformy przez użytkowników.
+Według danych Głównego Urzędu Statystycznego w Polsce osób z niepełnosprawnościami,
+które maja prawne potwierdzenie niepełnosprawności jest ponad trzy miliony. Jednak
+w rzeczywistości ilość ta jest szacowana na ok cztery do siedmiu milionów z czego ponad pół
+miliona to osoby w wieku do 44 roku życia. Dane te zostały oszacowane na podstawie
+Narodowego Spisu Powszechnego Ludności i Mieszkań z 2011 oraz Europejskiego
+Ankietowego Badania Zdrowia. Na tej podstawie można oszacować, że ok 20%
+niepełnosprawnych w wieku do 44 lat to sto tysięcy potencjalnych odbiorców.
+Opis platformy i jej przeznaczenie
+Platforma szermiercza jest sprzętem sportowym stanowiącym wyposażenie sportowe
+klubów zajmujących się szermierka na wózkach (Rysunek 1). Urządzenie pozwala na
+ustawienie dwóch zawodników (zblokowanie) względem siebie z zachowaniem przepisów
+międzynarodowych IWAS. Platforma umożliwia regulowanie odległości pomiędzy
+zawodnikami oraz zachowanie kąta pomiędzy nimi (110◦ – pomiędzy stanowiskiem a osią
+łączącą dwa elementy). Blokowanie wózków powinno odbywać się w sposób zapewniający
+stabilną pozycję wózków względem siebie a tym samym platformy szermierczej. Mocowanie
+
+--- strona 5 ---
+
+5
+
+wózka wymaga stabilizacji zarówno przednich jak i tylnych kół. z uwagi na to, że zawodnicy
+zróżnicowani są ze względu na prawo oraz lewo ręcznych, platforma powinna pozwalać na
+dostosowanie ze względu na tą cechę.
+
+Rysunek 2 – platforma (okład prawo - praworęczny) z zachowanym kontem 110 o
+Do wyprodukowania platformy wykorzystano ogólnodostępne materiały co wynikło z trzech
+przesłanek:
+• Trudność w dostępie do materiałów kompozytowych (kryzys na rynku
+materiałowym),
+• Koszt materiałów,
+• Spełnienie jednego z założeń tj. niska cena.
+Zastosowanie tych rozwiązań pozwala na powtarzalność produkcji w mało skomplikowanych
+warunkach warsztatowych tj. z wykorzystanej podstawowych narzędzi.
+
+--- strona 6 ---
+
+6
+
+Parametry techniczne i sposób wykonania
+Platforma składa się z dwóch stanowisk wykonanych z płyty sklejkowej o grubości 20 mm
+połączonych belką aluminiową (profil stosowany do budowy drukarek CNC) za pomocą
+której wymuszona jest odległość pomiędzy zawodnikami oraz zachowany jest kąt 110◦. Belka
+stanowi „szynę” po której poruszają się wózki z kółkami (Rysunek 2 oraz Rysunek 17)
+przytwierdzone śrubą M5 do stanowiska szermiercze.
+
+Rysunek 3 - wózek jezdny (po szynie łączącej)
+Każde ze stanowisk zachowuje wymiary: 100 cm szerokości, 100 cm głębokości oraz 5 cm
+wysokości od podłoża co pozwala na swobodny najazd wózkiem – Rysunek 4. Wymiary
+podyktowane są różną szerokością wózków szermierczych które najczęściej wykonywane są
+indywidualnie dla każdego zawodnika.
+
+--- strona 7 ---
+
+7
+
+Rysunek 4 - stanowisko szermiercze (element platformy)
+Belka łącząca dwa stanowiska poprowadzona jest przez całą szerokość stanowiska co sprzyja
+stabilności podczas gwałtownych natarć (odrywanie się stanowiska od podłożą) – Rysunek 2.
+Stanowiska zostały przefrezowane (kształt litery U) co pozwala na modyfikację ułożenia
+zawodników bez rozpinania stanowisk od belki łączącej - Rysunek 4:
+• praworęczny – praworęczny
+• praworęczny – leworęczny
+• leworęczny – leworęczny
+Dzięki zastosowaniu kółek na których spoczywa stanowisko zmiana orientacji staje się
+jeszcze prostsza Rysunek 5.
+
+--- strona 8 ---
+
+8
+
+Rysunek 5 - kółka ułatwiające przemieszczanie stanowiska
+Odległość między stanowiskami fiksowana jest za pomocą śruby M5x90 wkręcanej
+do elementu blokującego Rysunek 6 oraz Rysunek 7. Element blokujący jest dostępny
+w każdym sklepie zajmującym się urządzeniami CNC.
+
+Rysunek 6 - element fiksujący
+
+--- strona 9 ---
+
+9
+
+Mocowanie wózka za tylne koła realizowane jest za pomocą naciąganych linek stalowych
+przeciąganym pomiędzy rafka koła a ciągiem (elementem pozwalającym na napędzanie
+wózka) Rysunek 7. Mocowanie przedniej osi realizowane jest za pomocą taśmy stalowej
+połączonej ze śrubą dociskową która unieruchamia wózek i dociska do przedniej belki
+aluminiowej zaznaczonej na Rysunek 8. Połączenie taśmy ze śrubą realizowane jest za
+pomocą spawania zgrzewanego
+
+Rysunek 7 - linka blokująca tylne koła
+
+Rysunek 8 - blokowanie przednich kół
+
+--- strona 10 ---
+
+10
+
+Wizualizacja poglądowa z głównymi elementami projektu
+
+Rysunek 9 – Wykonana platforma szermiercza z wózkiem (układ stron prawa – prawa)
+
+--- strona 11 ---
+
+11
+
+Rysunek 10 – stanowisko szermiercze z przypiętym wózkiem
+
+--- strona 12 ---
+
+12
+
+Rysunek 11 – Płyty V-Plate oraz kółek jezdnych
+1. Śruba montażowa kółko M5
+2. Płyta montażowa V-Plate
+3. Nakrętka mimośrodkowa M5
+4. Łożysko 625 RS2
+5. Podkładka M5
+6. Kółko pasowe
+7. Łożysko 625 RS2
+8. Nakrętka samokontrująca M5
+
+--- strona 13 ---
+
+13
+
+Rysunek 12 - złożenie przedniej belki blokującej
+1. Nakrętka motylkowa M5
+2. Podkładka M5
+3. Belka aluminiowa blokująca przednie koła wózka
+4. Tulejka dystansująca
+5. Podkładka M5 ()
+6. Śruba montażowa M5x120
+Opis elementów specjalnie zaprojektowanych i wykonanych
+w ramach projektu
+„Systemy szermiercze” składające się z platformy szermierczej i wózka szermierczego
+powstały z potrzeby zaspokojenia potrzeb weteranów wojennych (w Wielkiej Brytanii) po
+i Wojnie Światowej. Od tego czasu dyscyplina ta znajduje coraz więcej zwolenników a tym
+samym zawodników chcących uprawiać szermierkę na wózkach. Główną przeszkodą stojącą
+na drodze rozwoju jest przede wszystkim cena sprzętu. Dlatego też niniejszy projekt zakłada
+wykorzystanie jak najwięcej ogólnodostępnych elementów konstrukcyjnych. Elementy
+wymagające indywidualnej produkcji zostały wykonane z materiałów dostępnych
+w dowolnych sklepach budowlanych (np. CASTORAMA, LEROY MERLIN, PRAKTIKER i inne)
+
+--- strona 14 ---
+
+14
+
+oraz w firmach specjalizujących się w technologii CNC (np. https://abc-rc.pl ; https://www.v-
+slot.pl/).
+Podkład stanowiska szermierczego
+
+Rysunek 1 - Przykładowy frez do drewna 5mm
+Stanowisko szermiercze wykonano z płyty sklejkowej o grubości 20mm. Płytę należy dociąć
+do wymiarów 1000 mm na 1000 mm. z założenia stanowisko ma umożliwiać swobodna
+zmianę układu zawodników względem siebie (praworęczna – praworęczna, leworęczna –
+leworęczna, praworęczna – leworęczna), dlatego wykonano rowek o szerokości 5 mm
+w kształcie litery U w całej miąższości płyty. Wymiary wyfrezowanego rowka to 800 mm na
+800 mm. Należy nawiercić otwory umożliwiające montaż przedniej belki blokującej wózek
+oraz przelotek wraz z napinaczem linki stalowej blokującej tylne koła Rysunek 14.
+
+--- strona 15 ---
+
+15
+
+Rysunek 14 – Podkład stanowiący bazę stanowiska szermierczego
+Przednia belka szermiercza
+Belka została wykonana z profilu aluminiowego o wymiarach 31 mm szerokość, 80 mm
+wysokość, 4 mm grubość ścianki. w profilu wykonano cztery otwory prostokątne
+o wymiarach 10 na 20 mm umożliwiające przeciągnięcie taśmy stalowej sprężynowej
+mocującej przednie koła wózka - Rysunek 15. Belka zamontowana jest na dwóch śrubach
+M8x120. Przy połączeniach śruba - podkład stanowiska (płyta sklejkowa) należy wykorzystać
+możliwie największe podkładki w celu minimalizowania degradacji płyty (efekt walcowania).
+w prototypie wykorzystano podkładki o wymiarach M6x80. Przy montażu zastosowano
+tulejkę dystansującą w celu zwiększenia wysokości przedniej blokady kół. w finalnym
+projekcie można pominąć ten element co powinno poprawić wytrzymałość na ścinanie śruby
+mocującej. Nakrętki motylkowe znacznie ułatwiają montaż i demontaż belki bez konieczności
+wykorzystania kluczy (narzędzi).
+
+--- strona 16 ---
+
+16
+
+Rysunek 15 - belka aluminiowa blokująca przednie koła wózka
+Mocowanie przednich kółek wózka
+Walka szermiercza na wózkach bywa bardzo gwałtowna. Zawodnicy często bardzo mocno
+pracują całym ciałem (wypady, powroty). Takie sytuacje wymagają solidnego
+przytwierdzenia wózka do platformy (dotyczy to zarówno przednich kółek jak i tylnych
+wózka. w zaproponowanym rozwiązaniu zastosowano taśmę sprężynową o wysokości 10
+mm i grubości 0,4 mm. Taśma została przyspawana (spawanie zgrzewowe) do nakrętki
+o rozmiarze M12. Za pomocą śruby dociskowej przednie koła wózka zostają zablokowane -
+Rysunek 16.
+
+--- strona 17 ---
+
+17
+
+Rysunek 16 - Taśma mocująca przednie koła
+Opis elementów gotowych
+Belka łącząca stanowiska – V-Slot
+Profil aluminiowy wykonany ze stopu aluminium 7050. Dzięki unikalnemu kształtowi cechuje
+się bardzo wysoką wytrzymałością na zginanie oraz ścinanie. Wyżłobienia boczne oraz
+czołowe pozwalają na poruszanie się po nich kółek pasowych a tym samym na swobodne
+i dowolne regulowanie odległości między stanowiskami. Wymiary profilu przedstawiono
+w rysunkach technicznych.
+
+Rysunek 17 - Profil aluminiowy V-Slot
+
+--- strona 18 ---
+
+18
+
+Płyta montażowa – V-Slot Gantry Plate
+Płyta o wymiarach 88 na 127 mm i grubości 3 mm wykonana ze stopu aluminium 7050. Płyta
+fabrycznie jest wyposażona w liczne otwory montażowe co nadaje jej dowolność
+(uniwersalność) montażu. Stanowi element połączeniowy profilu aluminiowego, kółek
+pasowych oraz płyty stanowiska szermierczego.
+
+Rysunek 18 - Płyta montażowa - V-Slot Gantry Plate
+Łożyska do kółek pasowych – Belka
+Łożyska są niezbędnym elementem tocznym stanowiącym część kółek pasowych. w projekcie
+zastosowano 32 łożyska z oznaczeniem 625 2RS.
+
+Rysunek 2 - łożysko 625 2RS
+
+--- strona 19 ---
+
+19
+
+Kółka pasowe
+Kółka pasowe nylonowe pozwalają na swobodne przesuwanie (zmianę odległości między
+zawodnikami) stanowisk szermierczych wzdłuż belki łączącej Rysunek 17. w projekcie
+zastosowano 8 kółek do każdego stanowiska. w celu zmniejszenia kosztów można
+zastosować 4 kółka na stanowisko czyli po dwa na płytę montażową V-Slot Gantry Plate.
+
+Rysunek 20 - nylonowe koło pasowe
+Łącznik V-Slot
+Łącznik w niniejszym projekcie stanowi blokadę uniemożliwiającą przemieszczanie się
+stanowisk podczas walki (fiksowanie odległości pomiędzy zawodnikami).
+
+Rysunek 21 - Łącznik (blokada) V-Slot
+
+--- strona 20 ---
+
+20
+
+Przelotki dla linek
+Element aluminiowy bądź ze stali nierdzewnej który jest elementem systemu mocowania kół
+tylnych. Przelotka przymocowywana jest do stanowiska za pomocą wkrętów do drewna
+o długości nie większej a niżeli 20 mm ale nie krótszej od 10 mm. Na stanowisko
+wykorzystywane są cztery przelotki.
+
+Rysunek 22 - Przelotka linki - mocowanie tylnych kół
+Linka stalowa
+Linka stalowa o średnicy 4mm zakończona oczkiem umożliwiającym zaczepienie o śrubę
+w celu jej napięcia. Długość linki należy dostosować do rozmieszczenia przelotek oraz
+napinacza linki.
+
+Rysunek 23 - Linka stalowa
+Napinacz linki stalowej
+Napinacz służy do naciągnięcia linki blokującej tylne koła. Za pomocą pręta gwintowanego
+umożliwia precyzyjną regulację napięcia linki.
+
+--- strona 21 ---
+
+21
+
+Rysunek 24 - Napinacz linki stalowej
+Taśma sprężynowa
+Taśma sprężynowa pełni funkcję naciągu przytwierdzającego przednie kółka wózka do belki
+blokującej wózek. Parametry taśmy to 10 mm wysokości i 0,4 mm grubości.
+
+Rysunek 25 - Taśma sprężynowa
+Kółka jezdna po podłodze
+Rozmiar kółek należy dobrać do finalnie zastosowanej miąższości płyty oraz profilu
+łączącego.
+
+--- strona 22 ---
+
+22
+
+Sposób użytkowania
+Przed przystąpieniem do użytkowania platform użytkownik jest zobowiązany
+do zaznajomienia się z treścią instrukcji. Platforma przewidziana jest do wykorzystania
+w pomieszczeniach zadaszonych (osłoniętych od deszczu). Platforma składa się z dwóch
+stanowisk połączonych belką dystansującą.
+Platforma pozwala na korzystanie z niej przez zawodników prawo i leworęcznych.
+Różnorodność ustawień i stosowania systemu mocowania pomaga osiągnięcie optymalnych
+parametrów mobilności ustawień oraz bezpieczeństwa użytkowania. Przy indywidualnym
+dopasowaniu platform zawsze należy uwzględnić:
+• wagę osoby
+• sprawność fizyczną i psychiczną,
+• warunki użytkowania
+• środowisko
+Platforma służy do pozycjonowania zawodników względem siebie (odległość oraz kont 110◦)
+oraz zapobiega przed przesuwaniem się zawodników. Platforma jest uniwersalna pod
+względem szerokości, głębokość, wysokości wózka oraz wielkości przednich kółek wózka.
+W celu podpięcia wózka należy:
+• Najechać na platformę w kierunku oznaczonym literą „P” Rysunek 29 zatrzymać
+wózek i wstępnie zacisnąć hamulce wózka,
+• Zabezpieczyć koła tylne systemem blokującym poprzez przełożenie linki mocującej nr
+1 przez oczko prowadzące nr 2 a następnie przez rawkę koła na drugą stronę nr 3.
+• Dalej przez oczko prowadzenia nr 4.
+• Końcówkę zablokować na trzpieniu ustalającym śrubą blokującą nr 5.
+• Zmienić położenie dźwigni nr 6 co spowoduje naciągnięcie linki i stabilizację koła
+tylnego.
+
+--- strona 23 ---
+
+23
+
+• Następnie wsunąć koła przednie w system blokujący i pozycjonujący nr 7. Pokrętłem
+zablokować koło przednie pozycjonując do belki nr 8.
+
+7
+8
+
+--- strona 24 ---
+
+24
+
+Regulacja platformy
+Uniwersalność systemu pozwala na mieszane ustawienie platform względem siebie (prawo -
+leworęczni). do ustawienia platformy względem siebie służy belka z systemem wózkowym
+(V-Slot) Rysunek 26.
+
+Rysunek 26 - Belka z systemem wózkowym
+Wstępnie każde ze stanowisk jest zamontowane na belce. Pozycja ustalona jest poprzez
+trzpień znajdujący się w rowku równoległym do krawędzi górnej platformy nr 2 - Rysunek 27
+Należy poluzować śrubę nr 1 - Rysunek 27 Przesunięcie jego położenia wzdłuż rowka pozwala
+na zmianę osi obrotu platformy co skutkuje zmiana położenia na przeciwne nr 4 - Rysunek
+28. Wysunąć wózek nr 3 - Rysunek 28.
+
+--- strona 25 ---
+
+25
+
+Rysunek 27 - zmiana strony platformy z prawej na lewą
+
+Rysunek 28 - zmiana strony platformy z prawej na lewą
+Należy obrócić stanowisko przeciwnie do ruchu wskazówek zegara nr 5.
+
+--- strona 26 ---
+
+26
+
+Rysunek 29 - zmiana strony platformy z prawej na lewą
+Po zmianie strony na lewą należy dokręcić śrubę nr 6. Wsunąć wózek w szczelinę nr 7
+i dokręcić śrubę motylkową.
+
+Rysunek 30 - zmiana strony platformy z prawej na lewą
+
+--- strona 27 ---
+
+27
+
+Podsumowanie
+Na podstawie już wykonanego prototypu wnioskujemy, że koszt produkcji platformy nie
+powinien przekroczyć 5 000,00 zł w wersji podstawowej (bez uwzględnienia kosztów
+osobowych).
+Niestety nie udało się spełnić wszystkich zakładanych rezultatów tzn. pełna
+samoobsługowość przez zawodników z niepełnosprawnościami. Jednak zdecydowanie
+sprostano takim kryteriom jak cena, waga (ok 15 kg łącznie).
+Zastosowane materiały pozwalają na stwierdzenie, że zaprojektowana platforma to produkt
+w 100% ekologiczny (drewno oraz stopy aluminium).
+Na podstawie doświadczeń uważamy, że należy poprawić system blokowania stanowisk
+(zapobieżenie przesuwania się w trakcie walk). Zauważono, że obecna blokada Rysunek 21
+w czasie ok 2 tygodni ulega uszkodzeniu (złamanie śruby mocujące). Dobrym rozwiązaniem
+może być zamienienie łącznika (stanowiącego blokadę) na zmodyfikowany zgodnie z Rysunek
+31. Dzięki temu blokadę stanowić będzie sam łącznik a śruba M5. Docisk łącznik może być
+realizowany za pomocą rękojeści zaciskowej Rysunek 32 co pozwoli na wyeliminowanie
+konieczności użycia klucza.
+Kolejną zmianą w projekcie powinna być zmiana śruby motylkowej M5 Rysunek 12 na docisk
+mimośrodowy Rysunek 33 który przyśpieszy i poprawi blokowanie położenia stanowisk
+względem siebie.
+Ponad to korzystając z technologii CNC (V-Slot) istnieje możliwość zmodyfikowania platformy
+w sposób pozwalający na elektryczne sterowanie odległością między zawodnikami.
+
+--- strona 28 ---
+
+28
+
+Rysunek 31 - Zmodyfikowany łącznik
+
+Rysunek 32 - Rękojeść zaciskowa
+
+--- strona 29 ---
+
+29
+
+Rysunek 33 - docisk mimośrodowy
+
+Dokumentacja techniczna
+
+--- strona 31 ---
+
+31
+
+--- strona 32 ---
+
+32
+
+--- strona 33 ---
+
+33
+
+--- strona 34 ---
+
+34
+
+--- strona 35 ---
+
+35
+
+--- strona 36 ---
+
+36
+
+--- strona 37 ---
+
+37

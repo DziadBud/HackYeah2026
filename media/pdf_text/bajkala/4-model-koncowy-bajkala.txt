@@ -1,0 +1,785 @@
+--- strona 1 ---
+
+1
+
+Model końcowy innowacji Bajkala
+Innowacja testowana w ramach „Inkubatora Włączenia Społecznego” –
+Projektu wdrażanego w ramach IV Osi Priorytetowej Programu Operacyjnego Wiedza
+Edukacja Rozwój (Działanie 4.1: Innowacje społeczne),
+na zlecenie Ministerstwa Funduszy i Polityki Regionalnej, finansowanego ze środków
+Unii Europejskiej w ramach Europejskiego Funduszu Społecznego.
+
+Wszystkie elementy innowacji zostały udostępnione na podstawie
+Licencji Creative Commons CC.BY 4.0
+
+--- strona 2 ---
+
+2
+
+Spis treści modelu końcowego innowacji Bajkala
+Opis grupy docelowej i odbiorców rozwiązania ...................................................................................... 4
+I.
+Grupa docelowa innowacji Bajkala .......................................................................................... 5
+II.
+Charakterystyka problemów pojawiających się w grupie docelowej: ..................................... 5
+III.
+Odbiorcy rozwiązania ............................................................................................................... 7
+Opis rozwiązania i jego funkcjonalności .................................................................................................. 9
+I.
+Opis drewnianej lampki – wygląd .......................................................................................... 10
+II.
+Opis drewnianej lampki – funkcje .......................................................................................... 11
+III.
+Opis opowiadania i nagrań .................................................................................................... 11
+IV.
+Opis książeczek – słowników ................................................................................................. 12
+V.
+Elementy zestawu Bajkala...................................................................................................... 12
+VI.
+Dokumentacja fotograficzna – książeczka i instrukcja ........................................................... 13
+VII.
+Dokumentacja fotograficzna – lampka gotowa do testów .................................................... 16
+Przebieg i wyniki testów ........................................................................................................................ 19
+I.
+Przebieg testowania ............................................................................................................... 20
+II.
+Informacje zebrane podczas wywiadów – przebieg testowania: .......................................... 22
+III.
+Wyniki testowania na podstawie informacji zebranych podczas wywiadów z grupami
+testującymi ........................................................................................................................................ 23
+1.
+Ocena lampki Bajkala (forma, kształt, kolor, funkcja światła itp.): ....................................... 23
+2.
+Ocena nagranego opowiadania (treść, długość, języki itp.): ................................................. 24
+3.
+Ocena książeczki-słownika: ................................................................................................... 25
+Rekomendacje i zalecenia dla przyszłych użytkowników ...................................................................... 26
+I.
+Rekomendacje dla użytkowników Bajkali (w wersji testowanej) wynikające z procesu
+testowania. ........................................................................................................................................ 27
+II.
+Wnioski i rekomendacje wynikające z analizy możliwości wprowadzenia ulepszeń. ............ 27
+III.
+Wnioski z analizy możliwości skalowania projektu. ............................................................... 31
+
+--- strona 3 ---
+
+3
+
+Podsumowanie ...................................................................................................................................... 33
+Spis załączników .................................................................................................................................... 36
+
+--- strona 4 ---
+
+4
+
+Opis grupy docelowej i odbiorców
+rozwiązania
+
+--- strona 5 ---
+
+5
+
+I. Grupa docelowa innowacji Bajkala
+Grupą docelową innowacji Bajkala są dzieci uchodźcze z rodzin czeczeńskich mieszkające w
+Polsce. Ze względu na formę rozwiązania może być ono wykorzystywane przez
+użytkowników w dowolnym wieku, jednak największe zainteresowanie wzbudzało u dzieci w
+wieku 4-11 lat.
+II. Charakterystyka problemów pojawiających się w grupie
+docelowej:
+Jednym z największych wyzwań współczesności jest integracja migrantów. Ich prawidłowe
+funkcjonowanie w nowym kraju utrudniają bariery kulturowe, językowe, prawne i
+psychologiczne. Szczególną grupą migrantów, ze względu na potrzeby i trudności
+adaptacyjne są dzieci uchodźcze.
+Praca z nimi pokazuje, że największy wpływ na problemy z włączeniem społecznym i na
+jakość życia w Polsce mają:
+1. Szok kulturowy
+Życie w grupie społecznej, którą łączą zwyczaje, język i religia, kody kulturowe jest
+zjawiskiem naturalnym. Nie trzeba zastanawiać się nad tym, jak się zachować w danej
+sytuacji, dlatego że wszyscy wokół widzą świat tak samo i wiedzą, czego oczekiwać od siebie
+nawzajem. Gdy dziecko uchodźcze trafia do Polski w sposób nagły znajduje się w nowym
+środowisku kulturowym i społecznym. Istotą szoku kulturowego jest brak poczucia
+bezpieczeństwa, niepewność i zagubienie, wynikające z sytuacji, w której człowiek nie zna
+norm obowiązujących w nowym środowisku. Nie potrafi się w nim odnaleźć, a okazuje się, że
+dotychczasowe sposoby funkcjonowania w społeczności nie sprawdzają się. Dzieci uchodźcze
+są narażone na sprzeczne normy i obyczaje, ponieważ zależne są zarówno od rodziców, jak i
+szkoły oraz nauczycieli w Polsce – a to może wymagać szacunku dla wartości i obowiązków
+ze sobą sprzecznych. Zderzenie kultur wywołuje napięcia, silne reakcje stresowe,
+
+--- strona 6 ---
+
+6
+
+dezorientację, frustrację i bezradność wynikające z nieznajomości symboli, rytuałów i
+zachowań.
+Szok kulturowy niweluje się poprzez edukację kulturalną, integrację społeczną, wymianę
+doświadczeń, tłumaczenie polskich kodów kulturowych na język zrozumiały dla młodych
+odbiorców. Bajka jest kanałem komunikacyjnym, który w przystępny i zrozumiały sposób
+zwróci uwagę, pokaże, nauczy tego co ważne, aby się lepiej zaadaptować.
+2. Deficyt poczucia bezpieczeństwa
+Uchodźstwo wiąże się z ciągłym brakiem poczucia bezpieczeństwa, wynikającym z przeżyć
+przed wyjazdem z rodzimego kraju, drogi do Polski oraz niepewności obecnej sytuacji i
+trudności w adaptacji w nowym środowisku.
+Dzieci przeżywają stratę: utraciły przyjaciół, ukochane zwierzęta, ważne miejsca, nie mają
+kontaktu z rodziną, nie mogą wziąć udziału w ważnych rytuałach, świętach, uroczystościach.
+Po przyjeździe do Polski rodziny czekają wiele miesięcy na przyznanie międzynarodowej
+ochrony prawnej. Niektóre dzieci spędzają w ośrodkach dla uchodźców całe lata, niepewne
+nawet najbliższej przyszłości. Bez prawdziwego domu.
+Doświadczenia uchodźcze i warunki po przyjeździe do Polski często prowadzą do pogłębienia
+deficytów, a nawet do posttraumatycznych zaburzeń rozwojowych.
+Przeciwdziałanie długotrwałemu deficytowi poczucia bezpieczeństwa i przynależności jest
+głównym obszarem działań organizacji pomocowych. Opieka psychologów, pedagogów i
+innych specjalistów skupia się na przywróceniu stabilizacji emocjonalnej dzieci, aby mogły
+uczestniczyć w życiu społeczności, integrować się z nowym środowiskiem. Warunkiem
+powodzenia w nauce języka, otwarcia na nową kulturę, zapełnienie luk edukacyjnych jest
+zbudowanie poczucia bezpieczeństwa.
+3. Brak znajomości języka polskiego
+Bariera językowa utrudnia adaptację i budowanie relacji dziecka czeczeńskiego z polską
+społecznością. Dzieci idą do szkoły, często nie znając języka – nierzadko w trakcie roku
+szkolnego – co wiąże się ze słabymi wynikami i brakiem motywacji do dalszej nauki. Niestety,
+polski system edukacji nie wypracował mechanizmów włączających, adaptujących i
+
+--- strona 7 ---
+
+7
+
+powoduje, że zarówno dzieci jak i nauczyciele są zdani na własne pomysły radzenia sobie z
+trudnościami, w tym – z sytuacją włączenia.
+Trudnością jest też rozszyfrowywanie kodów kulturowych na poziomie języka. Dzieci
+wychowane w innej kulturze zwyczajnie nie znają słownictwa powiązanego z bajkami i
+opowieściami. Uczą się języka polskiego w zakresie komunikacyjnym, wynikającym z braku
+możliwości finansowania takiej nauki.
+Nauka języka jest wspierana przez szkołę, wolontariuszy i samorządy, jednak często
+ogranicza się do bieżących potrzeb, nie znajdując miejsca i czasu na wyjaśnienie kodów
+kulturowych.
+Rodzice dzieci czeczeńskich zwykle sami nie znają w wystarczającym stopniu języka polskiego
+by zapobiegać wykluczeniu, jednocześnie często muszą poświęcać dużo czasu na zajęcia
+zarobkowe w niskopłatnych zawodach i nie mają możliwości uzupełnienia swoich
+umiejętności językowych i informacji kulturowych, aby podzielić się tymi kompetencjami z
+dziećmi.
+III. Odbiorcy rozwiązania
+Ze względu na grupę docelową rozwiązania i występujące tradycyjne zachowania rodzin
+czeczeńskich, w Polsce odbiorcami rozwiązania są wszystkie młodsze dzieci należące do
+rodzin i ich matki. Z kontaktów z grupami testującymi oraz z rozmów, wywiadów i fokusów
+przeprowadzonych podczas tworzenia rozwiązania wynika, że w wielu rodzinach
+potencjalnych odbiorców występują charakterystyczne sytuacje:
+1. Główną lub wyłączną opiekę nad dziećmi sprawuje matka.
+2. Dzieci dopóki przebywają wyłącznie w gronie rodzinnym (nie uczęszczają do
+placówek wychowawczo-oświatowych) mają bardzo ograniczony lub żaden kontakt z
+językiem polskim. Nauka języka polskiego rozpoczyna się dopiero wraz z
+rozpoczęciem edukacji w przedszkolu.
+3. W domach dominuje mieszanka języków czeczeńskiego i rosyjskiego. Bajki, filmy i
+programy telewizyjne są odtwarzane w języku rosyjskim.
+
+--- strona 8 ---
+
+8
+
+4. Starsze dzieci w różnym stopniu znają język polski, często mają trudności ze
+zrozumieniem treści książek i opowiadań ze względu na braki w słownictwie.
+5. Matki w różnym stopniu znają język polski, często nie mają możliwości rozwijania tej
+kompetencji. W sposób naturalny rozmowy z dziećmi prowadzą w języku rodzinnym,
+czyli mieszance czeczeńsko-rosyjskiej.
+6. Matki znają język rosyjski – wszystkie uczyły się go w szkole, jako języka
+podstawowego, wykładowego.
+7. Dzieci znają język rosyjski w wersji „domowej”, często nie potrafią czytać ani po
+rosyjsku, ani po czeczeńsku.
+Rozwiązanie Bajkala odpowiada na niektóre problemy wynikające z powyższej sytuacji
+odbiorców, poprzez udostępnienie w przyjaznej formie specjalnie przygotowanych treści
+językowych dla tej grupy.
+
+--- strona 9 ---
+
+9
+
+Opis rozwiązania i jego funkcjonalności
+
+--- strona 10 ---
+
+10
+
+Innowacyjny zestaw Bajkala to drewniana lampka ledowa, w kształcie archetypicznego
+domku z funkcją odtwarzacza mp3 w połączeniu z nagraniem autorsko opracowanej bajki i
+dołączonej książeczki ze słownikiem.
+I. Opis drewnianej lampki – wygląd
+1. Konstrukcja kubikowa z dwuspadowym dachem. Całość ma wyraźnie widoczny
+rysunek drewna sosnowego.
+2. Ściany szczytowe – frontowa i tylna – są takie same, mają po 11 diod LED,
+zabezpieczony tkaniną otwór pozwalający na emisję dźwięku oraz ozdobne
+elementy frezowane.
+3. Ściana prawa jest wyposażona w 3 diody LED, zabezpieczony tkaniną otwór
+pozwalający na emisję dźwięku, oznaczone miejsce dotykowego czujnika regulacji
+światła zagłębione we frezowaniu oraz otwór wyprowadzenia kabla zasilającego.
+Ściana prawa jest połączona z prawą częścią spadzistego dachu wyposażonego w
+3 diody LED umieszczone w poziomych frezowaniach.
+4. Ściana lewa jest wyposażona w 1 diodę LED, zabezpieczony tkaniną otwór
+pozwalający na emisję dźwięku, przesuwany kołeczek/włącznik – włączanie
+dźwięku – oraz oznaczone przyciski sterujące głośnością i sposobem odtwarzania
+nagrań (kolejność, pauza etc). Ściana lewa jest połączona z prawą częścią
+spadzistego dachu wyposażonego w 3 diody LED umieszczone w poziomych
+frezowaniach.
+5. Diody LED dają ciepłe, żółte światło rozchodzące się we wszystkich kierunkach.
+6. Lampka jest wyposażona w biały kabel zasilający o długości 235 cm, zakończony
+wtyczką USB, podłączaną do zasilacza sieciowego.
+7. Poszczególne egzemplarze różnią się od siebie usłojeniem drewna, jednak ogólnie
+sprawiają wrażenie identycznych.
+
+--- strona 11 ---
+
+11
+
+II. Opis drewnianej lampki – funkcje
+1. Funkcja świecenia realizowana dzięki wyposażeniu drewnianej konstrukcji w
+łańcuch diod LED. Dotykowy włącznik zainstalowany w lampce ma funkcję
+ściemniacza, dzięki czemu można regulować jasność emitowanego światła.
+2. Funkcja odtwarzania nagrań realizowana poprzez wyposażenie lampki w płytkę
+sterującą wraz z kartą pamięci SD zawierającą nagrania i głośnik. Dźwięk może być
+odtwarzany w trybie ciągłym, można go zatrzymać, regulować głośność,
+przełączyć odtwarzanie pomiędzy polską i czeczeńsko-rosyjską wersją nagrania.
+3. Funkcje świecenia i odtwarzania nagrania są niezależne od siebie, można ich
+używać razem lub osobno.
+4. Lampka została wykończona w taki sposób, aby dotykanie jej było przyjemne i
+zachęcające do używania: jest gładka, ma zaoblone krawędzie, powierzchnia
+drewna jest wykończona woskiem.
+III. Opis opowiadania i nagrań
+1. Opowiadanie „Burza” zostało napisane specjalnie z myślą o grupie docelowej,
+treść opowiadania jest w załączniku „Model końcowy Bajkala_załącznik
+książeczka”.
+a. Treść zawiera odwołania do kultury czeczeńskiej – wilk/wilczyca.
+b. Główny bohater ma imię często spotykane w grupie odbiorców.
+c. Wiek bohaterów i opisane sytuacje pozwalają na utożsamienie się
+słuchaczom z grupy docelowej z postaciami z opowiadania.
+d. Śledzenie przygód bohaterów – które prowadzą do pozytywnego
+zakończenia – pozwala na przeżycie różnorodnych emocji.
+e. W opowiadaniu zastosowano proste słownictwo, pozbawione
+wielowarstwowych konstrukcji gramatycznych, znaczeniowych i zdań
+nadmiernie złożonych.
+
+--- strona 12 ---
+
+12
+
+2. Nagrania zostały przygotowane w dwóch wersjach językowych polskiej i
+czeczeńsko-rosyjskiej. Oba nagrania trwają 12 minut. W obu wersjach
+opowiadanie jest czytane przez kobiety.
+IV. Opis książeczek – słowników
+1. Książeczki zawierają treść opowiadania w trzech wersjach językowych: polskiej,
+czeczeńskiej i rosyjskiej.
+2. Skład książeczki pozwala na synchroniczne śledzenie treści, we wszystkich trzech
+wersjach językowych.
+3. Słowniczek – na marginesach stron zostały umieszczone wybrane słowa w trzech
+językach opatrzone grafiką.
+4. Książeczka składa się z 20 stron i okładki.
+5. Okładka książeczki jest sztywna, brązowa (naturalny kolor i faktura kartonu) z
+czarnym nadrukiem, strony białe z czarnym nadrukiem.
+6. Grafiki zostały tak zaprojektowane aby mogły służyć za kolorowankę.
+7. Książeczki zostały przygotowane w formacie poziomym A5, w kolorystyce czarno-
+białej, taka forma umożliwia samodzielny wydruk.
+V. Elementy zestawu Bajkala
+1. Drewniana lampka z kablem zasilającym i wtyczką USB, z zamontowaną kartą
+pamięci micro SD z nagraniami opowiadania.
+2. Zasilacz 5V - 2A z gniazdem USB.
+3. Wydrukowana książeczka-słownik.
+4. Instrukcja użytkowania.
+
+--- strona 13 ---
+
+13
+
+VI. Dokumentacja fotograficzna – książeczka i instrukcja
+
+--- strona 14 ---
+
+14
+
+--- strona 15 ---
+
+15
+
+--- strona 16 ---
+
+16
+
+VII. Dokumentacja fotograficzna – lampka gotowa do testów
+
+--- strona 17 ---
+
+17
+
+--- strona 18 ---
+
+18
+
+--- strona 19 ---
+
+19
+
+Przebieg i wyniki testów
+
+--- strona 20 ---
+
+20
+
+Testowanie lampek Bajkala odbyło się w czterech grupach testowych – rodzinach dzieci
+nominalnie objętych testem. Ponieważ rozwiązanie w projekcie innowacji jest kierowane do
+dzieci w wieku 7-11 lat chodzących do szkoły podstawowej, a w rodzinach dzieci testujących
+było rodzeństwo spełniające kryteria testu lub będące blisko docelowej grupy wiekowej, w
+teście wzięto pod uwagę również tę grupę. Testowanie rozwiązania trwało 8-10 tygodni.
+I. Przebieg testowania
+1. Grupa testowa w sumie objęła 4 matki i 12 dzieci w wieku 3-13 lat.
+2. Testy odbyły się w domach testujących w okresie grudzień 2022-luty 2023.
+3. Testowanie lampek Bajkala rozpoczęło się od spotkań pre-testowych z testującymi.
+Odbyły się cztery takie spotkania, w których uczestniczyli: mentorka z Fundacji Polska
+Gościnność oraz dzieci, które testowały rozwiązanie wraz z opiekunkami (matkami).
+4. Każda grupa testowa otrzymała do użytku zestaw Bajkala zawierający:
+a. Drewnianą lampkę z zasilaczem, z zamontowaną kartą pamięci z nagraniami
+opowiadania.
+b. Wydrukowaną książeczkę-słownik w dwóch egzemplarzach.
+c. Instrukcję użytkowania.
+5. Podczas spotkań pre-testowych prowadząca przedstawiła skrótowo testującym
+rodzinom ideę i założenia projektu, zaprezentowała funkcje lampki oraz opowiedziała
+o książeczce-słowniku. Następnie przedstawiła kolejne kroki w projekcie, poprosiła
+matki o współpracę w zakresie inicjowania używania lampki i zaoferowała pomoc w
+przypadku problemów technicznych z urządzeniem.
+6. Podczas spotkań pre-testowych uczestniczące dzieci były bardzo zainteresowane
+Bajkalą. W pierwszej kolejności zwróciły uwagę na formę, czyli kształt domku, później
+skupiały się na funkcjonalności oświetlenia i możliwości regulacji, a trzecim krokiem
+było odsłuchiwanie nagrań i testowanie przełączania wersji językowych. Z
+zachowania dzieci można wnioskować, że zainteresowanie treścią nagrań było
+wzmocnione dzięki atrakcyjnej formie lampki
+
+--- strona 21 ---
+
+21
+
+7. Matki uczestniczące w spotkaniach pre-testowych były bardzo wzruszone zaistniałą
+sytuacją, mówiły jak ważne jest dla nich podjęcie tematu pomocy we włączeniu
+społecznym akurat ich grupy (uchodźców z Czeczeni), przygotowanie specjalnych
+treści w języku czeczeńskim i nawiązujących do sytuacji społecznej dzieci uchodźczych
+z Czeczeni. Opowiadały o emocjach związanych z usłyszeniem nagrania w języku
+ojczystym i zobaczeniu wydrukowanej książeczki-słownika.
+8. Podczas spotkań pre-testowych prowadząca zauważyła, że funkcje i regulacje Bajkali
+były dla dzieci intuicyjne, w zasadzie po pierwszej próbie potrafiły kontrolować
+urządzenie. Natomiast matki musiały próbować kilkukrotnie poszczególnych regulacji,
+posiłkowały się również instrukcją użytkowania.
+9. Żadna z grup testowych nie zgłosiła podczas testu problemów technicznych z
+urządzeniem. Nie było również innych przeszkód, które uniemożliwiłyby
+przeprowadzenie odpowiednio długiego testowania.
+10. Wywiady podsumowujące testowanie zostały przeprowadzone po okresie 8-10
+tygodni użytkowania Bajkali w domach testujących.
+11. Podczas spotkań podsumowujących obecne były wszystkie dzieci użytkujące w danej
+rodzinie lampkę (z jednym wyjątkiem), matka oraz prowadząca testy mentorka z
+Fundacji Polska Gościnność. Spostrzeżenia były zgłaszane zarówno przez testujących
+(dzieci) jak też przez ich opiekunki (matki).
+12. Spotkania podsumowujące polegały na przeprowadzeniu swobodnej rozmowy z
+dziećmi i ich matkami na temat użytkowanego rozwiązania. Prowadząca wspomagała
+się formularzem zawierającym listę zagadnień istotnych przy ocenie Bajkali pod
+kątem jej funkcjonalności, użyteczności i możliwych ulepszeń. Lista pytań zawartych
+w formularzu:
+a. Kto używał lampki? Jak często? Przy jakich okazjach? Do czego (światło,
+słuchanie, zabawa)?
+b. Czy dzieci chciały używać lampki same, spontanicznie?
+c. Jak podoba się lampka – forma?
+d. Jak podobało się opowiadanie? Czy treść opowiadania była ciekawa?
+
+--- strona 22 ---
+
+22
+
+e. Które nagrania były bardziej używane, jakie powinny być w przyszłości polskie,
+czeczeńsko-rosyjskie, inne?
+f. Czy używaliście książeczki? W jaki sposób?
+g. Czy Bajkala coś zmieniła? Słuchanie, czytanie, ciekawość, rozmowy.
+h. Jakie zmiany, żeby częściej używać?
+i. Jakie opowiadania? W jakim języku? Czy potrzebny słowniczek? Czy potrzebny
+tekst?
+j. Czy pokazywaliście lampkę innym osobom?
+k. Dodatkowe uwagi.
+II. Informacje zebrane podczas wywiadów – przebieg
+testowania:
+1. We wszystkich grupach dzieci używały lampki podczas całego okresu testowania.
+2. W początkowym okresie wszyscy testujący byli bardzo zainteresowani treścią nagrań,
+później nastąpiło zróżnicowanie:
+a. Dzieci młodsze chętnie słuchały nagrań cały czas.
+b. Dzieci starsze znudziły się treścią i już rzadziej korzystały z tej funkcji.
+3. Preferencje wyboru języka nagrania były bardzo zróżnicowane, w obrębie każdej
+grupy byli użytkownicy częściej słuchający wersji polskiej i ci którzy wybierali wersję
+czeczeńsko-rosyjską.
+4. Funkcja oświetlenia była wykorzystywana przez wszystkich testujących przez cały czas
+trwania testów.
+5. W początkowej fazie testu dzieci sięgały po lampkę w różnych momentach dnia,
+później zwykle było to wieczorem, w powiązaniu z przygotowaniem do snu.
+6. Młodsi użytkownicy 3-8 lat wykorzystywali lampkę do różnych zabaw: światło w
+namiocie, ognisko na biwaku, odgrywanie sceny burzy z opowiadania itp.
+7. Wszyscy użytkownicy spontanicznie sięgali po Bajkalę, w trzech grupach również
+matki inicjowały zainteresowanie testowanym rozwiązaniem.
+
+--- strona 23 ---
+
+23
+
+8. We wszystkich grupach Bajkala została pokazana osobom spoza testu:
+a. W szkole i na zajęciach pozalekcyjnych;
+b. Koleżankom i kolegom odwiedzającym rodzinę;
+c. Wolontariuszce z Fundacji Chlebem i Solą (wypożyczenie na kilka dni).
+Wszystkie osoby postronne wyraziły duże zainteresowanie Bajkalą, podobała im się, a
+nawet deklarowały chęć zakupienia egzemplarza dla siebie.
+III. Wyniki testowania na podstawie informacji zebranych
+podczas wywiadów z grupami testującymi
+1. Ocena lampki Bajkala (forma, kształt, kolor, funkcja światła itp.):
+a. Wszyscy testujący bardzo pozytywnie ocenili formę lampki, bardzo im się
+podobała zarówno wizualnie, jak też funkcjonalnie.
+b. Kształt domku kojarzył się dzieciom bardzo pozytywnie.
+c. Zwrócono uwagę na miłe doznania związane z dotykaniem lampki, głaskaniem
+jej, starannością wykończenia drewna.
+d. Funkcja świecenia przez cały okres testów była czynnikiem wzmacniającym
+zainteresowanie Bajkalą. Użytkownicy doceniali kolor światła, sposób jego
+emisji (ze wszystkich stron) i możliwość regulacji natężenia.
+e. Testujący pozytywnie ocenili długi kabel, który pozwala na przestawianie
+lampki w dogodne miejsce, niezależnie od usytuowania gniazdek.
+f. Propozycje testujących odnośnie wprowadzenia zmian w formie lampki:
+i. Większy domek.
+ii. Dodanie w wykończeniu koloru.
+iii. Nadanie nowego kształtu: samochodu, rakiety, gwiazdy, planety.
+
+--- strona 24 ---
+
+24
+
+2. Ocena nagranego opowiadania (treść, długość, języki itp.):
+a. Opowiadanie podobało się wszystkim testującym. Zwrócili uwagę na
+adekwatność treści do ich sytuacji. Podobała im się konstrukcja powodująca
+napięcie emocjonalne (burza, zagubienie w lesie) i pozytywne zakończenie.
+b. Najciekawsze elementy opowiadania wymienione przez testujące dzieci:
+i. Wilk ze snów,
+ii. Ognisko w lesie,
+iii. Dobre zakończenie,
+iv. Ibrahim, bo mało jest dzieci, które się tak nazywają,
+v. Rozmowy przy ognisku,
+vi. To, że Ibrahim chodził do szkoły tak jak ja,
+vii. To, że się zaprzyjaźnili,
+viii. Że było strasznie, ale potem dobrze.
+c. Wszystkie dzieci oceniły, że opowiadanie jest za krótkie.
+d. Testujący docenili łatwość w zrozumieniu treści opowiadania dzięki
+odpowiedniemu doborowi słownictwa i konstrukcji gramatycznych.
+e. Wersja nagrania polskojęzyczna była chętnie słuchana przez wszystkich
+użytkowników, szczególnie przez dzieci szkolne.
+f. Wersja nagrania czeczeńsko-rosyjska była chętniej słuchana przez najmłodsze
+dzieci 3-4 lata ponieważ była dla nich bardziej zrozumiała. U starszych dzieci
+obudziła zainteresowanie językiem czeczeńskim, ponieważ były w niej słowa,
+których wcześniej nie znały.
+g. Dwie matki aby dobrze zrozumieć wersję polską, posiłkowały się nagraniem
+czeczeńsko-rosyjskim oraz tekstami pisanymi w wersji rosyjskiej i czeczeńskiej.
+h. Propozycje testujących odnośnie wprowadzenia zmian w przygotowanych
+nagraniach:
+i.
+Wydłużenie treści opowiadania.
+
+--- strona 25 ---
+
+25
+
+ii.
+Zamieszczenie większej liczby opowiadań np. o zwierzętach, o
+dzieciach, o zabawie, o kosmosie, polskie baśnie w prostej formie
+językowej.
+iii.
+Kolejne nagrania powinny być w języku polskim odpowiednio
+uproszczonym, a nagrania w językach: czeczeńskim, czeczeńsko-
+rosyjskim i rosyjskim mogą być jako dodatek.
+iv.
+Nagranie wersji rosyjskojęzycznej.
+3. Ocena książeczki-słownika:
+a. Forma książeczki podobała się uczestnikom testów.
+b. We wszystkich grupach książeczka była używana tylko na początkowym etapie
+testów.
+c. Matki przeczytały różne wersje językowe z zainteresowaniem. Używały tekstu
+czeczeńskiego i rosyjskiego w celu lepszego zrozumienia treści opowiadania
+po polsku.
+d. Dzieci młodsze nie umiały samodzielnie korzystać z tekstu pisanego, a starsze
+stwierdziły, że nie lubią czytać po polsku, a po rosyjsku i czeczeńsku nie
+potrafią.
+e. Jedna z matek używała książeczki i słownika do zabawy z dziećmi.
+f. Propozycje testujących odnośnie wprowadzenia zmian w książeczce-słowniku:
+i.
+Bardziej rozbudowana wersja słownika.
+ii.
+Więcej obrazków.
+iii.
+Kolorowy wydruk.
+
+--- strona 26 ---
+
+26
+
+Rekomendacje i zalecenia dla
+przyszłych użytkowników
+
+--- strona 27 ---
+
+27
+
+I. Rekomendacje dla użytkowników Bajkali (w wersji
+testowanej) wynikające z procesu testowania.
+1. Forma lampki jest odpowiednia, nośnik nagranych treści w postaci atrakcyjnego
+wizualnie i funkcjonalnie urządzenia powoduje wzrost zainteresowania u
+użytkowników. Konieczne jest wprowadzenie odbiorców poprzez przeprowadzenie
+instruktażu używania lampki i jej funkcji oraz zapoznania z treścią i możliwościami
+korzystania z nagrań i książeczki-słownika.
+2. Opowiadanie nagrane w egzemplarzu testowym spełniło oczekiwania użytkowników
+zarówno pod względem treści, jak też formy. Użytkowników należy poinstruować w
+jaki sposób mogą zmieniać wersję językową nagrania, zatrzymywać odtwarzanie i
+regulować głośność. Zwrócić ich uwagę na możliwość dostosowania nadawania treści
+poprzez wymienione regulacje do ich możliwości poznawczych.
+3. Książeczka-słownik jest szczególnie przydatna na pierwszym etapie użytkowania
+Bajkali. Podczas przekazywania zestawu warto poinstruować odbiorców w jaki
+sposób mogą korzystać z książeczki np. poprzez śledzenie trzech wersji językowych
+lub jednej wybranej; zabawę z wyrażeniami słownikowymi; kolorowanie grafik
+słownikowych. Podczas testów były dostarczane dwa egzemplarze książeczki, tak aby
+użytkownicy mogli jeden z nich zachować w niezmienionej formie, a drugi np.
+pokolorować, robić notatki etc.
+II. Wnioski i rekomendacje wynikające z analizy możliwości
+wprowadzenia ulepszeń.
+1. Większy domek. Analiza możliwości powiększenia całej lampki prowadzi do wniosków
+związanych z koniecznością wprowadzenia zmian w projekcie (nie ma możliwości
+„zwykłego” przeskalowania projektu):
+
+--- strona 28 ---
+
+28
+
+a. Przy powiększeniu poszczególnych elementów konieczne będzie użycie
+większej liczby elementów mocujących i łączeniowych.
+b. Dla zachowania walorów estetycznych i funkcjonalnych może być konieczne
+wprowadzenie większej liczby diod LED lub zwiększenia źródeł światła.
+c. Przy dużym przeskalowaniu konieczna będzie rewizja frezowania zarówno pod
+kątem estetycznym jak i funkcjonalnym oraz wytrzymałości konstrukcji.
+d. Uwagę również zwraca spodziewany wzrost wagi Bajkali po zwiększeniu
+elementów, teraz gotowa lampka waży około 1 kilograma, w zależności od
+przeskalowania trzeba pomyśleć o bezpieczeństwie użytkowników w
+przypadku nieumyślnego strącenia lampki: możliwe uszkodzenia całej lampki,
+możliwe uszkodzenia osób i przedmiotów po uderzeniu cięższą lampką. Jeśli
+nadal miałby być mobilna, to możliwe, że powinna być dodatkowo
+ustabilizowana obciążeniem mocowanym w dnie konstrukcji.
+2. Dodanie w wykończeniu lampki kolorów. Możliwe jest użycie ekologicznych farb do
+pomalowania korpusu lampki, jednak w związku z projektem frezowań i
+zachowaniem designu w zaprojektowanej estetyce rekomendujemy użycie jednego
+koloru farby do pomalowania wybranych elementów lub całej lampki jednolicie. Przy
+pomalowaniu całej konstrukcji na jednolity kolor powinna zostać użyta farba
+niekryjąca, tak aby nadal widoczna była struktura i usłojenie drewna.
+3. Zmiana formy lampki na inny kształt – konieczne jest przygotowanie nowego projektu
+wzorniczo-wykonawczego.
+4. Jakość dźwięku. Przy odtwarzaniu wersji polskojęzycznej całe nagranie jest słyszalne
+w bardzo dobrej jakości niezależnie od poziomu głośności. Przy wersji czeczeńsko-
+rosyjskiej przy ustawionej wysokiej głośności niektóre głoski charakterystyczne dla
+języka czeczeńskiego powodują dodatkowy pogłos, powodujący obniżoną
+zrozumiałość nagrania. Rekomendacje i możliwe rozwiązania:
+a. Odsłuchiwanie nagrań w wersji czeczeńsko-rosyjskiej na niższym poziomie
+głośności.
+
+--- strona 29 ---
+
+29
+
+b. Dla przyszłych nagrań (w innych językach niż polski) analiza struktury
+nagrywanego języka, w szczególności głosek charakterystycznych
+brzmieniowo, występujących w specyficznych rejestrach, pod kątem
+możliwości występowania podobnych zakłóceń.
+c. Ulepszenie konstrukcji poprzez umocowanie po wewnętrznej stronie ścianek
+domku dodatkowego wypełnienia akustycznego np. cienka warstwa gąbki
+montowana na zszywki. To rozwiązanie wymagałoby przeprowadzenia
+kolejnych testów.
+d. Zmiana głośników na bardziej zaawansowane technologicznie, dobrane do
+odtwarzania szerszego zakresu pasma. To rozwiązanie może wpłynąć na cenę
+lampki, jednak powinno wydatnie poprawić jej funkcjonalność.
+5. Dłuższe opowiadanie. Możliwe jest nagranie dłuższych form (nagranie w obu
+wersjach językowych miało po 12 minut) jednak optymalna/maksymalna długość
+nagrania nie jest znana, potrzebne byłyby kolejne testy. Należy zwrócić uwagę na
+możliwości percepcyjne odbiorców z grupy docelowej, z drugiej strony Bajkala
+pozwala na wstrzymanie odtwarzania dźwięku i ponowne rozpoczęcie po dowolnym
+czasie.
+6. Większa liczba opowiadań napisanych i nagranych specjalnie do używania w Bajkali.
+Po analizie zebranych od użytkowników informacji wysunięto wnioski i rekomendacje
+dotyczące opowiadań i nagrań tworzonych w przyszłości:
+a. Opowiadania przygotowywane do odsłuchiwania w Bajkali (specjalnie
+tworzone do tego narzędzia włączenia społecznego), powinny
+charakteryzować się: odpowiednim doborem słów, uproszczonym językiem,
+konstrukcją opierającą się na zdaniach niezłożonych.
+b. Treść opowiadań powinna być interesująca dla grupy docelowej, dobrze aby
+opowiadała o dzieciach z podobnej grupy społecznej i o zwierzętach, zwracała
+uwagę na problemy dotyczące słuchaczy.
+
+--- strona 30 ---
+
+30
+
+c. Możliwe jest wprowadzanie bardziej skomplikowanych sformułowań jednak w
+sposób zamierzony, celowy i kontrolowany, tak aby przy okazji dzieci
+poszerzały słownictwo.
+d. Należy zachować wersje językowe nagrań polską i czeczeńsko-rosyjską, a
+dodatkowo można wprowadzić trzecią wersję rosyjską.
+e. Rekomendujemy również udostępnianie wersji tekstowych opowiadań w we
+wszystkich opracowanych wersjach językowych.
+7. Udostępnienie większej liczby nagrań w Bajkali. Analiza techniczna możliwości
+poszerzenia oferty nagrań w Bajkali prowadzi do następujących propozycji rozwiązań:
+a. Jeśli celem udostępniania Bajkali grupie docelowej jest działanie wspierające
+włączenie społeczne, to treści powinny być przygotowane specjalnie do tego
+narzędzia, zgodnie z rekomendacjami w punkcie 6 podpunktach a-d.
+b. Możliwe jest nagranie większej liczby plików na kartę pamięci, która jest na
+stałe zamocowana w Bajkali. Należy to zrobić przed umieszczeniem karty w
+konstrukcji lampy. Na późniejszych etapach konieczne jest rozmontowanie
+konstrukcji i wymontowanie karty w celu wgrania na nią nowych treści, co
+może zrobić tylko osoba odpowiednio przygotowana technicznie.
+c. Możliwa jest zmiana nośnika pamięci: w lampie należy zainstalować zamiast
+czytnika karty odbiornik bluetooth, który może się łączyć ze smartphonem.
+Nagrania wtedy można udostępnić w formie przesyłanych plików mp3 lub
+biblioteki umieszczonej w chmurze. Taka zmiana powinna być możliwa bez
+wprowadzania zmian w projekcie wzorniczo-wykonawczym (oprócz
+elementów elektroniki). Potrzebny byłoby przetestowanie takiego
+rozwiązania technicznego.
+d. Możliwa jest zmiana nośnika pamięci i konstrukcji lampy: w lampie należy
+zainstalować gniazdo USB z dostępem z zewnątrz. Nagrania można wtedy
+wgrywać na przenośną pamięć USB. Taka zmiana wymaga nowego projektu
+ułożenia elementów elektroniki wewnątrz konstrukcji oraz nowego projektu
+ściany lewej lub prawej.
+
+--- strona 31 ---
+
+31
+
+8. Rozbudowanie słownika w książeczce. Możliwe jest dodanie kolejnych wyrażeń do
+słownika, można dobrać zarówno słowa i sformułowania przydatne na co dzień, jak i
+te które mogą sprawiać trudność odbiorcom. Techniczne możliwości poszerzenia
+słownika:
+a. Można dodać kolejne strony do istniejącej książeczki. Należy utrzymać
+zaprojektowaną stylistykę grafik i krój pisma.
+b. Można zaprojektować dodatkowy słownik jako osobny plik – dokument do
+wydruku.
+c. Możliwe jest przeprojektowanie istniejącej książeczki, tak aby zmieścić więcej
+haseł słownikowych np. zmniejszyć czcionkę, zmniejszyć grafiki.
+9. Wprowadzenie większej liczby ilustracji. Możliwe jest zaprojektowanie ilustracji do
+opowiadania Burza, wtedy niezbędne byłoby przeprojektowanie książeczki, można
+również rozważyć zmianę formatu. Wpływ ilustracji na odbiór opowiadań i nagrań nie
+był objęty testowaniem.
+10. Książeczka w bardziej rozbudowanej gamie kolorystycznej. Jest możliwe
+wprowadzenie kolorów do publikacji, konieczne będzie zaprojektowanie nowej szaty
+graficznej. Testowana książeczka była utrzymana w kolorystyce czarno-białej aby
+możliwe było wydrukowanie jej na zwykłej drukarce (dostępność), grafiki zostały tak
+zaprojektowane aby mogły służyć za kolorowanki dla użytkowników.
+11. Bardziej atrakcyjna zawartość książeczki. Aby wzbudzić zainteresowanie
+użytkowników książeczką, rekomendujemy dołączyć do niej ćwiczenia, zagadki,
+zabawy związane z treścią opowiadania i rozwijające kompetencje językowe oraz
+poznawcze użytkowników. Konieczne jest przygotowanie merytoryczne treści i
+opracowanie graficzne kolejnych stron do książeczki.
+III. Wnioski z analizy możliwości skalowania projektu.
+1. Możliwe jest przygotowanie kolejnych nagrań dla testowanej grupy docelowej
+zgodnie z rekomendacjami ujętymi punkcie II podpunkt 6.
+
+--- strona 32 ---
+
+32
+
+2. Bajkala może być przystosowana dla innych grup odbiorców np. dzieci uchodźczych z
+innych krajów, osób z trudnościami językowymi i adaptacyjnymi wynikającymi z
+niepełnosprawności intelektualnej, małych dzieci z rodzin potrzebujących wsparcia w
+opiece i poprawie funkcjonowania, dla dzieci wymagających stymulacji sensorycznej i
+słuchowej oraz zwiększonego poczucia bezpieczeństwa (np. ZA). Przy zmianie grupy
+docelowej należy zwrócić szczególną uwagę na:
+a. Dostosowanie treści opowiadań do grupy docelowej zwracając uwagę m.in.
+na: tematykę, poruszane problemy bohaterów, imiona bohaterów, wiek
+bohaterów, fabułę.
+b. Przygotowanie odpowiednich wersji językowych nagrania pomocnych dla
+grupy docelowej.
+c. Analizę brzmienia specyficznych głosek w wybranych do nagrań językach,
+dostosowanie parametrów technicznych głośnika do wyników akustycznych.
+d. Przystosowanie treści w książeczce-słowniku, wzbogacenie jej o dodatkowe
+elementy takie jak: zagadki, rysunki, dodatkowe wyjaśnienia do treści
+opowiadania.
+3. W przyszłości mogłaby powstać platforma w chmurze, na której byłyby dostępne
+nagrania i pliki tekstowe dla różnych grup odbiorców.
+
+--- strona 33 ---
+
+33
+
+Podsumowanie
+
+--- strona 34 ---
+
+34
+
+Poniższe podsumowanie jest wynikiem naszych obserwacji i spostrzeżeń w trakcie realizacji
+projektu, a nie ustrukturyzowanego procesu ewaluacyjnego.
+Praca nad przygotowaniem innowacyjnej lampki Bajkala wymagała dużego zaangażowania ze
+względu na konieczność zagłębienia się w kulturę czeczeńską i zrozumienie przyczyn
+pojawiających się trudności adaptacyjnych. W toku badania potrzeb grupy docelowej
+okazało się, że większość dzieci uchodźczych ma niewielką znajomość kultury czeczeńskiej i
+języka ojczystego, wynika to z uwarunkowań kraju uchodźczego i sytuacji rodzin przed
+wyjazdem i już na miejscu w Polsce. Podczas wywiadów zauważyliśmy, że w rodzinach
+czeczeńskich zwykle rodzice pełnią tradycyjne role, sposób traktowania i wychowywania
+dzieci (uzależniony w wielu przypadkach od wieku i płci) często jest związany z tradycją,
+kulturą i religią. Takie wzorce są naturalnie przekazywane dzieciom, często bez dodatkowych
+wyjaśnień czy porównania z innymi (np. obowiązującymi w polskim społeczeństwie).
+Wnioski te doprowadziły nas do weryfikacji wcześniejszej koncepcji przygotowywanej bajki.
+Przyjęliśmy nowe założenia według, których zostało napisane opowiadanie do Bajkali:
+1. Bajka ma nawiązywać do bohatera/kultury czeczeńskiej w zakresie powszechnie znanym
+przez zbadane w okresie przygotowawczym dzieci, czyli powinniśmy w niej umieścić
+Wilka/Wilczycę, symbol Czeczenii.
+2. Opowiadanie powinno być osadzone w rzeczywistych, współczesnych realiach,
+pozwalających na utożsamienie się grupy odbiorczej z bohaterami.
+3. Chcemy zawrzeć w treści pozytywne, a jednocześnie odmienne od czeczeńskich wzorce
+kulturowe takie jak rola kobiet i mężczyzn oraz dziewczynek i chłopców w rodzinie i
+społeczeństwie, jak też relacje między nimi.
+Wobec trudności związanych z przygotowaniem treści opowiadania, tłumaczeń i nagrań
+praca nad projektem wzorniczym i rozwiązaniami technicznym była prawdziwą
+przyjemnością, choć oczywiście i w tym zakresie pojawiły się niespodzianki. Zaplanowane na
+etapie przygotowywania projektu rozwiązania wydawały się optymalne, jednak w wyniku
+trudności z dostępem do elementów elektroniki (zerwane łańcuchy dostaw) musieliśmy
+zmodyfikować projekt np. sposób sterowania dźwiękiem.
+
+--- strona 35 ---
+
+35
+
+Myślimy, że Bajkala już teraz jest dobrym rozwiązaniem, spełniającym założenia innowacji.
+Faktycznie budzi zainteresowanie dzieci, jest chętnie przez nie używana, pozwala na uważne
+zapoznanie się z treścią nagrania. Jednocześnie widzimy, że aby przez długi czas spełniała
+swoją funkcję wspomagającą włączanie społeczne, konieczne jest udostępnienie większej
+liczby nagrań przygotowanych specjalnie do realizacji tego celu w tej grupie odbiorczej. A
+takie wnioski prowadzą nas do konieczności wprowadzenia w rozwiązaniu modyfikacji
+umożliwiających w łatwy sposób dostarczania nagrań do urządzenia, czyli zmiany projektu
+wykonawczego samego urządzenia. Kolejnym istotnym zagadnieniem jest kto i z jakich
+środków miałby tworzyć potrzebne treści i nagrania oraz w jaki sposób mogłyby być
+udostępniane grupie docelowej. Szczegółowe propozycje wprowadzenia ulepszeń są
+przedstawione i opatrzone wnioskami w rozdziale „Rekomendacje i zalecenia dla przyszłych
+użytkowników” punkt I.
+Podstawowym wnioskiem z realizacji projektu jest konieczność bardzo dobrego zbadania
+potrzeb grupy docelowej, szukanie przyczyn, a nie tylko objawów problemów. Rozwiązanie
+musi być nakierowane na człowieka, również tego bardzo młodego, jego możliwości
+poznawcze i motywacje, nawet jeśli są one dla nas zaskakujące – dzieci zupełnie inaczej
+postrzegają świat niż dorośli. Ta myśl powinna towarzyszyć wszystkim osobom chcącym
+używać i rozwijać projekt Bajkala.
+
+--- strona 36 ---
+
+36
+
+Spis załączników
+
+--- strona 37 ---
+
+37
+
+Załączniki do Modelu końcowego innowacji Bajkala:
+1. Nagranie bajki „Burza” wersja polskojęzyczna – plik Burza.mp3
+2. Nagranie bajki „Groza” wersja czeczeńsko-rosyjska – plik Groza.mp3
+3. Książeczka-słownik – plik Model końcowy Bajkala_załącznik książeczka.pdf
+4. Książeczka-słownik – pliki edytowalne i produkcyjne folder Model końcowy
+Bajkala_załącznik książeczka produkcja
+5. Instrukcja użytkowania – plik Model końcowy Bajkala_załącznik instrukcja.pdf
+6. Instrukcja użytkowania– pliki edytowalne i produkcyjne folder Model końcowy
+Bajkala_załącznik instrukcja produkcja
+7. Projekt wzorniczo-wykonawczy – plik Model końcowy Bajkala_załącznik
+projekt.pdf
+8. Projekt wzorniczo-wykonawczy wersja edytowalna – plik Model końcowy
+Bajkala_załącznik projekt.docx

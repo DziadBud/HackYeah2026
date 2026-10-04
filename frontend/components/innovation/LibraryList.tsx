@@ -10,7 +10,14 @@ import { InnovationCard, type InnovationCardData } from "@/components/Innovation
 const PAGE = 24;
 
 function toCard(i: LibraryInnovation): InnovationCardData {
-  return { id: i.id, title: i.title, summary: i.summary, tags: i.challenge_areas.map((a) => AREA_LABEL[a]), city: i.city };
+  return {
+    id: i.id,
+    title: i.title,
+    summary: i.tagline ?? i.summary,
+    tags: i.challenge_areas.map((a) => AREA_LABEL[a]),
+    city: i.city,
+    imageUrl: i.photos[0] ? api.innovationPhotoUrl(i.id, i.photos[0]) : undefined,
+  };
 }
 
 // GET /innovations (published only); the demo list only when the api is unreachable

@@ -1,0 +1,2457 @@
+--- strona 1 ---
+
+1
+Model końcowy innowacji Cloudleg
+Data sporządzenia:
+31.03.2023
+Miejsce sporządzenia:
+Poznań
+Autor:
+
+Bartłomiej Stroiński
+
+https://creativecommons.org/licenses/by/4.0/deed.pl
+
+--- strona 2 ---
+
+2
+Spis treści
+Innowacja _________________________________________________________________ 5
+Cel i założenia innowacji ______________________________________________________ 5
+Grupa docelowa produktu innowacji ____________________________________________ 7
+Raport ze spotkań informacyjnych, fokusa i pomiarów testerek innowacji Cloudleg _____ 8
+Wstęp ____________________________________________________________________ 8
+Założenia fokusu ____________________________________________________________ 8
+Wywiad ___________________________________________________________________ 9
+Anna, 41 lat. _____________________________________________________________ 9
+Edyta, 51 lat. ____________________________________________________________ 12
+Podsumowanie wywiadów fokusowych _________________________________________ 14
+Pomiary uczestniczek – testerek _______________________________________________ 14
+Wyniki pomiarów ________________________________________________________ 15
+Opis metodologii ________________________________________________________ 16
+Wnioski po rozmowach fokusowych i pomiarach __________________________________ 18
+Wykonanie i specyfikacja sztucznych nóg prototypowych __________________________ 19
+Pomocniczy plik nóg 3D ______________________________________________________ 19
+Przeprowadzenie studiów nad pozycją i wyglądem nóg ___________________________ 20
+Wstęp ___________________________________________________________________ 20
+Wprowadzenie ____________________________________________________________ 20
+Konsultacja rehabilitanta ____________________________________________________ 21
+Zatrudnienie modelki w ramach studiów nad pozycją i wyglądem nóg _________________ 22
+Wykonanie zdjęć ___________________________________________________________ 23
+Surówka - zdjęcia z aparatu – stykówka _________________________________________ 27
+Obróbka zdjęć _____________________________________________________________ 32
+Grafiki symulacyjne – stykówka _______________________________________________ 34
+Podsumowanie i wnioski _____________________________________________________ 37
+Nogi właściwe prototypowe _________________________________________________ 38
+Skan nóg ludzkich __________________________________________________________ 39
+
+--- strona 3 ---
+
+3
+Preprocessing _____________________________________________________________ 39
+Druk 3D __________________________________________________________________ 42
+Postprocessing ____________________________________________________________ 43
+Podsumowanie ____________________________________________________________ 44
+Element trzymający nogi prototypowe _________________________________________ 45
+Wykonanie elementu trzymającego ____________________________________________ 46
+Wykonanie elementu trzymającego lędźwiowego _________________________________ 48
+Złącze profilowe ___________________________________________________________ 50
+System magnetyczny ________________________________________________________ 52
+Sposób wykonania i specyfikacja sztucznych nóg testowych ________________________ 53
+Wstęp ___________________________________________________________________ 53
+Model pozytywowy atrap nóg ________________________________________________ 53
+Wykonanie siedziska ________________________________________________________ 53
+Zatrudnienie modelki _______________________________________________________ 58
+Zdjęcie wzoru nóg z modelki do formy negatywowej wstępnej _______________________ 58
+Odlew wzorcowego modelu pozytywowego atrap nóg _____________________________ 67
+Negatywowa forma kompozytowa zbrojona prętami mosiężnymi ___________________ 70
+Odlew sztucznych nóg _______________________________________________________ 79
+Magnesy spinające _________________________________________________________ 79
+Odlew końcowych protez estetycznych _______________________________________ 81
+Post-obróbka odlewów sztucznych nóg _________________________________________ 85
+Próby ilościowe i proporcjonalne ______________________________________________ 86
+Nieprzewidziane właściwości technologiczne_____________________________________ 87
+Elementy trzymające _______________________________________________________ 89
+Element trzymający w postaci pasków parcianych _________________________________ 91
+Dane techniczne _________________________________________________________ 92
+Element trzymający w postaci „spodenko – nóg”__________________________________ 93
+Dane techniczne _________________________________________________________ 93
+Uwagi dotyczące elementów trzymających ______________________________________ 94
+Ostateczne wykonanie sztucznych nóg __________________________________________ 94
+
+--- strona 4 ---
+
+4
+Spotkania testujące ________________________________________________________ 97
+Wstęp ___________________________________________________________________ 97
+Testowanie nóg w obecności autora____________________________________________ 98
+Spotkania testujące ________________________________________________________ 100
+Edyta, 51 lat. ___________________________________________________________ 101
+Anna, 42 lat. ___________________________________________________________ 111
+Podsumowanie wywiadów __________________________________________________ 124
+Użytkowanie produktów ___________________________________________________ 125
+
+--- strona 5 ---
+
+5
+Innowacja
+Cel i założenia innowacji
+Celem innowacji pn. Cloudleg było przetestowanie stosunkowo taniej metody (technologii)
+tworzenia i wykonania realistycznie wyglądających sztucznych nóg dla osób poruszających
+się̨ na wózku elektrycznym lub manualnym. Rozwiązanie powstało z myślą o osobach
+po amputacji obu nóg lub ich braku od urodzenia, powyżej kolan, o różnych lub tych samych
+długościach kikutów. Autor przetestował innowację na osobach z brakiem obu kończyn
+dolnych. Wytworzone w innowacji protezy były bardziej ubiorem niż̇ sprzętem
+ortopedycznym. Nogi Cloudleg ostatecznie zostały wykonane z formy negatywowej będącej
+głównym produktem niniejszej innowacji i przytwierdzone do użytkownika w sposób luźny
+i nieprzylegający bezpośrednio do ciała, żeby uniknąć problemów i dyskomfortu
+w użytkowaniu oraz żeby umożliwić ich szybkie i sprawne zdejmowanie podczas przesiadania
+się z i do wózka. Z tego powodu wypracowane „nogi” były wytworzone jako zgięte na stałe
+w siedzącej pozycji.
+Osoby bez nóg powyżej kolan, które z powodów zdrowotnych i psychicznych nie mogą
+używać protez funkcjonalnych do chodzenia i poruszają się tylko na wózku, wykazywały
+zainteresowanie i poszukiwały protez, które pełniłyby tylko funkcje wizerunkowe;
+wyglądałyby jak nogi, najlepiej bardzo estetyczne, byłyby łatwe do zakładania na nie ubioru,
+a jednocześnie byłby łatwo dostępne, lekkie, mobilne a przede wszystkim tańsze w stosunku
+do protez funkcjonalnych.
+Nogi wyprodukowane na bazie formy będącej głównym przedmiotem niniejszej innowacji
+nie są produktem medycznym i nie stanowią produktu zaopatrzenia ortopedycznego gdyż
+nie będą miały bezpośredniego kontaktu z ciałem użytkownika. Jednak na potrzeby
+niniejszego opisu i całego dokumentu będą nazwane zamiennie protezami, atrapami nóg,
+sztucznymi nogami, nogami kosmetycznymi, protezami kosmetycznymi.
+Cechy wypracowanego produktu:
+•
+protezy kosmetyczne nóg o realistycznym i atrakcyjnym wyglądzie
+
+--- strona 6 ---
+
+6
+•
+stosunkowo lekkie (lżejsze od protez funkcjonalnych)
+•
+do uzyskania bez potrzeby wizyty w zakładzie ortopedycznym
+•
+zabezpieczone przed spadnięciem nóg z wózka podczas używania za pomocą magnesu
+stabilizującego i urządzenia trzymającego
+•
+przytwierdzone z możliwością łatwego zdjęcia i ponownego przytwierdzenia również
+za pomocą magnesu stabilizującego oraz urządzenia trzymającego
+•
+zgięte w „kolanach” na stałe, zgięte „kostkach” około prostopadle do podudzi,
+czyli wypracowane jakby były w formie siedzącej
+•
+łatwe do konserwacji i wodoodporne z zewnątrz
+•
+łatwe do czyszczenia i konserwacji, niepochłaniające z zewnątrz płynów
+•
+technologia produkcji z formy negatywowej z możliwością łatwej i szybkiej regulacji
+długości przed dostarczeniem do użytkownika (obcinania części protezy w udzie)
+w zależności od długości kikuta użytkownika.
+Potrzeba produktu będącego dedykowanymi protezami kosmetycznymi nóg dla osób
+po obustronnej amputacji kończyn dolnych była podyktowana względami psychicznymi oraz
+społecznymi, w opinii grupy przedstawicieli docelowej pojawianie się z widocznym brakiem
+tak sporej części ciała jak nogi w miejscu publicznym lub danej grupie społecznej
+niż najbliższa rodzina może wywoływać szok u obserwatorów a u osoby z brakiem nóg
+wyraźny dyskomfort, a nawet wycofanie społeczne. Widoczny brak integralności ciała może
+prowadzić także do zaniżonej własnej wartości. W ujęciu długoterminowym problem może
+prowadzić od depresji i innych chorób psychicznych u reprezentantów grupy docelowej,
+zrywania relacji międzyludzkich a czasem do izolacji fizycznej i mentalnej. Wymienione
+czynniki mogą być szkodliwe nie tylko dla omawianych osób z niepełnosprawnością ruchową,
+ale mogą być szkodliwe makrospołecznie i makroekonomicznie, gdyż społeczności mogą
+tracić cennych członków, a rynek pracy może być pozbawiony wartościowych uczestników.
+Dr Urszula Horwath zajmująca się psychotraumatologią i pracą z osobami po amputacji
+zwraca uwagę w swoich szkoleniach na to, że osoby po utracie kończyn powinny być szybko
+zaprotezowane ponieważ pacjenci mają potrzebę kontroli nad swoim życiem
+a brak przystosowania i choćby poprawy swojego wyglądu może być przyczyną innych
+
+--- strona 7 ---
+
+7
+chorób lub nawet przedwczesnej śmierci. Nasila choroby przewlekłe, równie te będące
+powodem amputacji. Opisywana innowacja może być także przydatna dla osób podczas
+leczenia pourazowego jeszcze w szpitalu lub bezpośrednio po jego opuszczeniu jako pomoc
+psychologiczna.
+Grupa docelowa produktu innowacji
+Grupa docelowa to osoby po amputacji nóg, z wadami nóg lub amelią kończyn dolnych,
+które poruszają się na wózku i mają uraz lub wadę powodującą brak kończyn powyżej
+kolana. Poruszanie się na wózku może być na stałe lub tymczasowe i może być
+spowodowane względami zdrowotnymi, psychicznymi lub także chęcią odpoczęcia
+od chodzenia w protezach lub od używania lejów protez.
+Do grupy docelowej możemy zaliczyć także osoby, które po niedawnej stracie kończyn
+oswajają się psychicznie z tym faktem i estetyczne/kosmetyczne nogi mogą im w tym pomóc.
+Osoby takie mogą dążyć do akceptacji swojego nowego ciała i mogą planować w przyszłości
+pokazywanie się bez nóg, jednak na początku wolałyby nie pokazywać od razu swojej
+niepełnosprawności.
+Grupa docelowa to także osoby bez nóg, które chciałby dobrze wyglądać, nie ograniczać się
+w używaniu wszystkich elementów ubioru które chcą założyć.
+Dzięki wieloletniemu zaangażowaniu w działalność na rzecz osób z niepełnoprawnościami,
+między innymi w jako wolontariusz i kapitan jachtu w Fundacji Aktywnej Rehabilitacji
+i manager w Fundacji Kompilacja a także dzięki uczestnictwu w realizacji ogólnopolskiego
+projektu modowego dla osób niepełnosprawnych MONOMODA (monomoda.org) innowator
+ma kontakt i jest dobrze zsieciowany ze znaczną liczbą osób z niepełnosprawnościami.
+Właśnie to zsieciowanie i poznawanie wyzwań grupy docelowej pozwoliło autorowi
+na wymyślenie, zbadanie i opisanie niniejszej innowacji.
+
+--- strona 8 ---
+
+8
+Raport ze spotkań informacyjnych, fokusa i pomiarów testerek
+innowacji Cloudleg
+Wstęp
+W dniach 30.11.2022r. oraz 8.12.2022r. w Poznaniu odbyły się dwa spotkania
+informacyjno-fokusowe do etapu wykonania prototypu do testowania innowacji społecznej
+pn. „Cloudleg”, realizowanej w ramach projektu pn. „Inkubator Włączenia Społecznego”
+finansowanego ze środków Unii Europejskiej. W każdym spotkaniu uczestniczyły osobno
+testerki projektu Anna (30.11.2022r.) i Edyta (8.12.2022r.). Podczas każdego spotkania
+każdej testerce opisano specyfikację innowacji, przedstawiono założenia innowacji,
+jak będzie wyglądało jej prototypowanie, testowanie, program działań, istota produktu oraz
+jego efektów. Następnie z każdą z uczestniczek został przeprowadzony wywiad fokusowy,
+po którym specjalista – rehabilitant – protetyk Artur Rohde dokonał pomiarów uczestniczek
+na potrzeby przygotowania odpowiedniej wielkości sztucznych nóg. Niniejszy raport zawiera
+efekty działań przeprowadzonych w w/w dniach.
+Założenia fokusu
+1. Przedstawienie przyszłej testerce przez autora innowacji pomysłu innowacji, idei
+produktu, efektu produktu oraz planu realizacji innowacji w ramach niniejszego projektu.
+2. Poruszenie następujących tematów w formie pytań.
+•
+Pierwsze pojawienie się w przestrzeni publicznej po amputacji.
+•
+Czy była potrzeba zakrywania braku nóg, jeżeli tak do dlaczego?
+•
+Czy masz problem ze swoim wizerunkiem bez nóg w przestrzeni publicznej?
+•
+Co Cię w tym krępuje?
+•
+Czy Twoim zdaniem inne osoby z podobną niepełnosprawnością mają takie same
+odczucia jak Ty?
+•
+Jak powinny wyglądać sztuczne nogi robione w ramach innowacji, uwagi?
+•
+Co byś ubierała na sztuczne nogi robione w ramach innowacji?
+•
+Protezy w estetyce kosmetycznej, opinie.
+
+--- strona 9 ---
+
+9
+•
+Element trzymający - jak powinien funkcjonować?
+•
+Czy sztuczne nogi powinny być szczuplejsze od użytkownika, jeżeli użytkownik
+nie jest szczupły?
+3. Luźna rozmowa na tematy związane z innowacją i życiem testerki.
+Wywiad
+W listopadzie i grudniu 2022 roku zostały przeprowadzone wywiady fokusowe z 2 testerkami
+innowacji. Fokus miał służyć przygotowaniu sztucznych nóg zgodnie z potrzebami testerek.
+Poniżej streszczenie obu rozmów.
+Anna, 41 lat.
+Miejsce zamieszkania: miasto wojewódzkie poniżej 400 tyś. mieszkańców.
+Niepełnosprawność: Amputacja obustronna kończyn dolnych powyżej kolan z powodów
+urazowych w wieku 32 lat.
+Data rozmowy: 30 listopada 2022 r.
+Anna, osoba po amputacji obu nóg, opowiada o swoim doświadczeniu w związku
+z maskowaniem amputacji i próbami zakrycia braku nóg. W wywiadzie opisuje swoje
+pierwsze wyjście po amputacji, kiedy wybrała ustronne miejsce, takie jak las, aby uniknąć
+kontaktu z ludźmi. W swoim procesie adaptacji do nowej sytuacji, Anna próbowała różnych
+metod, aby zakryć brak kończyn dolnych i czuć się swobodniej w przestrzeni publicznej.
+
+--- strona 10 ---
+
+10
+
+Grafika 1. Po spotkaniu fokusowym i zdjęciu pomiarów uczestniczki, na zdjęciu od prawej Bartek -
+autor innowacji, Anna - testerka, Artur – rehabilitant, protetyk. Widać opisywany przez Annę śpiwór.
+Pierwszym rozwiązaniem, które przyjęła, było użycie specjalnie uszytego śpiwora do wózka.
+Taki śpiwór jest używany przez osoby na wózkach, aby ogrzać się w chłodniejszych
+warunkach. W przypadku Anny, śpiwór służył do zakrywania braku nóg, co pozwalało jej
+na lepsze samopoczucie w miejscach publicznych. Jednak rozwiązanie to miało swoje wady,
+takie jak nieodpowiednia temperatura latem, co powodowało przegrzewanie się i pocenie.
+Następnie Anna i jej rodzina próbowali stworzyć własne atrapy nóg z nóg manekinów
+wystawowych. Pomimo wysiłku włożonego przez ojca Anny, który jest osobą techniczną,
+próba zakończyła się niepowodzeniem, ponieważ nogi manekina były niewłaściwie zgięte
+i nie dawało się ich estetycznie przerobić. Wyglądały nienaturalnie, co było niezgodne
+z oczekiwaniami Anny.
+W trakcie poszukiwań rozwiązania, rodzina Anny próbowała również znaleźć protezy
+statyczne na rynku sprzedaży, które mogłyby służyć jako atrapy nóg, bezskutecznie.
+
+--- strona 11 ---
+
+11
+Nie wszyscy pacjenci mogą skutecznie nosić protezy funkcjonalne do chodzenia, a osoby,
+które nie mogą, nie mają alternatywy, aby zakryć swoją niepełnosprawność po amputacji
+nóg. Anna również należy do tej grupy osób.
+W rezultacie, z wszystkich prób, śpiwór okazał się najlepszym rozwiązaniem dla Anny,
+pomimo swoich wad. Stwierdziła, że do poruszania się w tym śpiworze jest przyzwyczajona,
+a otoczenie również się do tego przyzwyczaiło. Dla Anny istotne jest maskowanie braku
+kończyn dolnych, aby czuć się swobodniej w przestrzeni publicznej i nie przyciągać wzroku.
+Anna zdaje sobie sprawę, że samo poruszanie się z widocznym brakiem nóg na wózku
+przyciąga wzrok innych osób, ale uważa, że sama obecność wózków jest już bardziej
+znormalizowana w społeczeństwie.
+Z kolei brak nóg nadal wywołuje szok i zaciekawienie u innych osób, co dla Anny jest trudne
+do zaakceptowania. Dlatego stara się maskować swoją niepełnosprawność, aby zmniejszyć
+ewentualne reakcje ze strony otoczenia. Anna podkreśla, że każda osoba z
+niepełnosprawnością radzi sobie z nią na swój sposób, a maskowanie braku kończyn jest
+dla niej ważnym elementem w procesie adaptacji do nowej rzeczywistości.
+Anna ma nadzieję, że jej historia zainspiruje innych do poszukiwania najlepszych rozwiązań
+dla siebie i zrozumienia, że proces adaptacji niepełnosprawności nie ma jednoznacznego
+wzorca, ale może być indywidualny dla każdej osoby. Wyzwania, z jakimi się mierzą osoby
+z niepełnosprawnością, mogą być różnorodne i unikalne, a rodzaj wsparcia, jakiego
+potrzebują, może być również różny.
+W trakcie swojej podróży adaptacyjnej, Anna nauczyła się, że ważne jest, aby być otwartym
+na nowe pomysły i eksperymenty, nawet jeśli nie zawsze przynoszą pożądane rezultaty.
+Wypróbowanie różnych rozwiązań pozwoliło jej znaleźć sposób na radzenie sobie z własną
+niepełnosprawnością, co jest kluczowe dla jej dobrostanu emocjonalnego i psychicznego.
+W wywiadzie z innowatora z Anną, rozmawiają o aspektach psychologicznych związanych
+z życiem osoby niepełnosprawnej. Anna opowiada o swoim doświadczeniu i jak ważne jest
+dla niej ukrywanie swojej niepełnosprawności w miejscach publicznych. Podkreśla, że proces
+oswojenia się z brakiem nóg trwa długo, ale ostatecznie nie chce przyciągać uwagi osób
+postronnych.
+
+--- strona 12 ---
+
+12
+Anna w domu nie kryje swojej niepełnosprawności, natomiast w miejscach publicznych
+chciałaby uniknąć zainteresowania. Anna uważa, że osoby urodzone z niepełnosprawnością
+mogą również skorzystać z protez proponowanych w innowacji.
+Wg Anny protezy proponowane w innowacji mogą pomóc w rehabilitacji psychologicznej,
+szczególnie dla pacjentów po amputacji. Kluczowe jest, aby protezy wyglądały jak naturalne
+nogi, dopasowane do sylwetki, z ruchomą stopą i w kolorze skóry. Anna podkreśla,
+że estetyka robotyczna, popularna obecnie, jest atrakcyjna tylko dla wąskiej grupy
+odbiorców.
+Anna sugeruje, że protezy powinny być mocowane do ciała, aby uniknąć odpadania w trakcie
+jazdy na wózku. Pomysł na urządzenie mocujące typu „spodenko-nogi” (szorty łączące
+użytkownika z protezą estetyczną) wydaje się być interesujący, ale trzeba uwzględnić,
+że nie można oczekiwać, że protezy będą wypełniały wszystkie funkcje. Ważne jest,
+aby były łatwo zdejmowalne i umożliwiały korzystanie z toalety publicznej.
+Edyta, 51 lat.
+Miejsce zamieszkania: miasto wojewódzkie powyżej 400 tyś mieszkańców.
+Niepełnosprawność: Amputacja obustronna kończyn dolnych powyżej kolan z powodów
+urazowych w wieku 3 lat.
+Data rozmowy: 8.12.2022 r.
+Edyta opowiada o tym, że miała wypadek w wieku 3 lat i nie pamięta, jak było mieć nogi.
+Całe życie nie miała nóg i zawsze czuła się inna przez to. Kiedy miała 5 lat, stanęła na
+pierwszych protezach do chodzenia, ale wstydziła się ich używać. Jej mama przekonywała ją,
+żeby się nie wstydziła, ponieważ protezy pomogą jej normalnie funkcjonować w przyszłości.
+Wstyd powrócił, gdy dorosła i zaczęła myśleć o związkach. Teraz, gdy już nie używa protez
+funkcjonalnych i jeździ na wózku, nie ma z tym problemu.
+Kiedy urodziło się jej dziecko, wsiadła na wózek, co początkowo sprawiało jej trudność
+z powodu braku nóg, ale opieka nad dzieckiem skupiła jej uwagę na czymś innym. Przez brak
+protez było jej wygodniej zajmować się dzieckiem. Później zaczynała pojawiać się na placach
+zabaw i w przedszkolu na wózku bez protez, ponieważ chciała być bliżej swojego dziecka
+
+--- strona 13 ---
+
+13
+i łatwiej było je podnosić. Mimo strachu przed reakcjami innych ludzi, doszła do wniosku,
+że to ważniejsze. Gdyby nie miała dziecka, widoczny brak nóg mógłby sprawiać jej problem.
+
+Grafika 2. Po spotkaniu fokusowym i pomiarach testerki. Od lewej Artur - rehabilitant, protetyk,
+Edyta – testerka, Bartek - autor innowacji.
+W rozmowie poruszono również temat estetyki protez kończyn dolnych. Edyta podzieliła się
+swoją opinią na temat protez w stylu "cyber", mówiąc, że są one bardziej popularne wśród
+osób aktywnych fizycznie niż ze względu na ich estetykę. Edyta wyraziła również swoje
+preferencje dotyczące mocowania protez, mówiąc, że powinny być one gładkie i zapewniać
+ciągłość powierzchniową między protezą a resztą ciała.
+Na koniec Edyta wyraziła swoje entuzjastyczne nastawienie do proponowanej przez
+rozmówcę innowacji społecznej dotyczącej sztucznych, kosmetycznych protez kończyn
+dolnych. Podkreśliła, że innowacja ta daje jej możliwości decydowania, czy chce się pokazać
+bez protez, czy też w nich chodzić, co jest dla niej ważnym czynnikiem w życiu codziennym.
+
+--- strona 14 ---
+
+14
+Podsumowanie wywiadów fokusowych
+Po rozmowach fokusowych z testerkami autor innowacji uzyskał potwierdzenie, że jego
+innowacja jest oczekiwana przez respondentki. Również kształt, forma produktu i efektu
+produktu jaki założył autor jest zbieżna z potrzebami przyszłych użytkowniczek.
+Z rozmów nasuwały się także następujące wnioski.
+1. Osoby z niepełnosprawnością polegającą na braku nóg nie mają ogólnego problemu
+z samoakceptacją swojego ciała i swojej niepełnosprawności w chwili obecnej.
+Nie uważają się przez to za gorsze lub mniej estetyczne jednak chciałyby zakrywać lub
+maskować brak nóg w przestrzeni publicznej nie z powodu braku autoakceptacji,
+a z powodu niechęci do przyciągania uwagi osób postronnych.
+2. Z jednej strony oczekują, żeby element trzymający protezy w przedmiotowej innowacji
+do użytkownika będzie miał kształt ciągły i stały, a z drugiej strony chcą, żeby ułatwiał
+szybkie odpięcie sztucznych nóg.
+3. Obie respondentki chciałby używać sztucznych nóg wyglądających jak ludzkie ciało,
+nie mają potrzeby podążania za modą polegająca na protezach w estetyce robotycznej.
+4. Obie uczestniczki fokusa chciałby eksperymentować z odzieżą, której dotychczas
+nie używały.
+5. Obie interlokutorki miały odmienne zdanie czy atrapy nóg powinny być szczuplejsze
+w kształcie od użytkownika, jeżeli użytkownik nie jest szczupły.
+6. Widoczna była także wyraźna potrzeba ruchomej stopy pozwalające na zakładanie butów
+od zmiennej wysokości obcasa. Z powodów technicznych tej potrzeby autor nie jest
+w stanie spełnić w tym projekcie innowacji społecznej.
+Pomiary uczestniczek – testerek
+W dniach wywiadów fokusowych odbyły się także pomiary testerek. Pomiary służyły
+ustaleniu wymiarów modelki, która posłuży jako wzór do wykonania nóg prototypowych
+drukowanych w technologii 3D oraz nóg testowych odlewanych z pianki poliuretanowej.
+Pomiar odbywał się z zakładzie protetyczno – rehabilitacyjnym przez wykwalifikowanego
+protetyka i rehabilitanta.
+
+--- strona 15 ---
+
+15
+Wyniki pomiarów
+Obie uczestniczki miały bardzo zbliżone wymiary. Wzrost teoretyczny (czyli taki,
+gdyby miały nogi) to 166 cm.
+
+Grafika 3. Pomiary jednej z uczestniczek.
+Waga teoretyczna (czyli w przypadku, gdyby uczestniczki miały nogi) również dla obu
+uczestniczek jest taka sama i przedstawia się następująco:
+Średnia nieznaczna waga poniżej normy: 54,6 kg
+Średnia waga referencyjna: 59,8 kg
+Średnia nieznaczna waga powyżej normy 65,1 kg
+Obliczenia długości teoretycznych nóg również są takie same dla obu pań i przedstawiają się
+następująco: od ziemi do krętacza około 82 cm, od ziemi do a pachwiny 75 cm.
+
+--- strona 16 ---
+
+16
+Opis metodologii
+Poniżej zapis raportu z opisem metody obliczeń dostarczony przez protetyka – rehabilitanta.
+
+Grafika 4. Ilustracja dostarczona wraz z raportem od rehabilitanta.
+Podczas rozpoczęcia prac nad projektem założenia pierwotne zakładały wykorzystanie
+zasadniczych pomiarów antropometrycznych, jak również liczby fi jako złotej proporcji.
+W trakcie pobierania pomiarów od uczestniczek badania, zaczęło się pojawiać dużo
+zmiennych, wynikających z licznych danych i zarazem wytworzyło znaczącą złożoność
+zadania. Same pomiary stały się uporczywe, oraz skomplikowane, a co za tym idzie
+wykluczałyby osoby pozbawione wiedzy anatomicznej i zasadniczej medycznej z możliwości
+ich wykonania.
+Następnie złożoność obliczeń, oraz prawdopodobieństwo wynikające z błędów
+pomiarowych, wytwarzało sytuacje nie do przyjęcia, gdyż nie pozwalało na samodzielne
+działanie bez grona eksperckiego. Te właśnie czynniki zmusiły mnie do odejścia od koncepcji
+
+--- strona 17 ---
+
+17
+analizy opartej na zasadach antropologicznych, a ukierunkowałem się na zasadniczy element
+samego projektu, którym jest element mody, czy ukrycia dysfunkcji trwałej.
+Skorzystałem z podziału wprowadzoną przez artystów plastyków, a przede wszystkim
+z książki Andrew Loomis Figure drawing for all it’s worth wydanej w roku 1943. Obraz
+”ideału” w tym przypadku kobiety nieco się różni od obecnego, gdyż jest bardziej dziewczęcy
+i smukły. Nogi są o 10% a nawet 15% dłuższe, górna część sylwetki jest mniej masywna
+i delikatniejsza, a biodra szersze i krąglejsze. Omawiane tutaj proporcje są jednakże bardziej
+realistyczne niż lansowane obecnie w mediach. Wszystkie wymiary ciała kobiety można
+określić za pomocą długości głowy. Zmierz swoją głowę (od brody do jej czubka) i porównaj.
+Wzrost powinien wynosić osiem długości (głowy).
+W przypadku kobiety o wzroście 164 cm idealna długość głowy to 20,5 cm. Mając
+to na uwadze nogi stanowią 3 i 2/3 długości głowy (tu ok. 75 cm), czyli powinny one stanowić
+połowę długości ciała, a nawet nieco więcej (w przykładzie to 82 cm do 85 cm). Na wysokości
+drugiej głowy zaczynają się kolana (41 cm licząc od podłogi). Szerokość złączonych łydek
+powinna być równa długości głowy (20,5 cm). Ustalając że szpara kolanowa znajduje się
+w połowie długości kkd to następnym krocie jest odjęcie długości kikutów amputowanej
+kończyny od uda prozy kosmetycznej.
+Artur Rohde - Inovamed, 1.02.2023
+
+--- strona 18 ---
+
+18
+
+Grafika 5. Notatki autora innowacji związane z wymiarowaniem osoby
+po obustronnej amputacji nóg powyżej kolan.
+Wnioski po rozmowach fokusowych i pomiarach
+Na bazie danych z pomiarów i wywiadów prowadzący innowacje utrzymał założenia,
+zgodnie, z którymi prowadził do wytworzenia formy negatywowej zbrojonej prętami
+mosiężnymi służącej następnie do odlania sztucznych nóg zgodnie ze specyfikacją innowacji.
+Jednak w trakcie pracy nad przedmiotowym projektem autor starał się skupić większą uwagę
+na uzyskaniu elementu trzymającego posiadającego jednocześnie cechy ciągłości
+materiałowej i łatwego zdejmowania protez przez użytkownika.
+Dodatkowo na wzór nóg wybierane były modelki posiadające prezencje między szczupłą
+a taką jaką posiadają docelowe testerki co stanowiło kompromis między różnymi opiniami
+wyrażonymi w ostatnich pytaniach. Pozostałe cechy nóg i formy wypracowywanej
+w projekcie pozostały bez zmian.
+
+--- strona 19 ---
+
+19
+Takie same wymiary uczestniczek było bardzo dobrą wiadomością, która dała perspektywę
+porównawczą i pozwoliła zrobić sztuczne nogi w jednym wymiarze. Dane dotyczące wzrostu
+i wagi teoretycznej pozwoliły w przyszłości na wyszukanie modelek, które dały swoimi
+nogami wzór na protezy, które będą przygotowywane w ramach projektu.
+Złą wiadomością był z kolei fakt, że testerki mimo takich samych wymiarów mają różne
+wymiary wózków. Taka rozbieżność stanowiła duże wyzwanie w wypracowywaniu
+odpowiedniego kształtu, proporcji i układu sztucznych nóg.
+Wykonanie i specyfikacja sztucznych nóg prototypowych
+Pomocniczy plik nóg 3D
+W celu ułatwienia pracy nad materią opisywaną w kolejnych rozdziałach przy wykonywaniu
+sztucznych nóg warto zamówić sobie plik 3D z modelem średnich nóg ludzkich. W przypadku
+prowadzonej innowacji plik pozwolił prezentować partnerom jak sztuczne nogi mają mniej
+więcej wyglądać, obliczyć średnie rozmiary i objętość protez w celu liczenia czasu pracy
+nad nimi, obliczania kosztów oraz doboru odpowiednich maszyn, komponentów i narzędzi.
+Plik nie był modelem nóg, z którego będą one drukowane, tylko narzędziem
+pomocniczo-referencyjnym.
+
+Grafika 6. Draft służący do zlecenia wykonania pliku pomocniczego 3D.
+
+--- strona 20 ---
+
+20
+
+Grafika 7. Screen nóg z pliku pomocniczego 3D.
+Przeprowadzenie studiów nad pozycją i wyglądem nóg
+Wstęp
+Aby można było zeskanować i wydrukować sztuczne nogi prototypowe należało najpierw
+wypracować pozycje nóg poprzez studia nad pozycja i wyglądem nóg. Poniżej raport
+z przeprowadzenia tego zadania stanowiący opis przedmiotowych prac.
+Wprowadzenie
+Niniejszy raport zawiera opisy, specyfikę produktów oraz zadań w ramach wykonania
+prototypu do testowania innowacji społecznej pn. „Cloudleg”, realizowanej projekcie
+pn. „Inkubator Włączenia Społecznego” finansowanego ze środków Unii Europejskiej.
+Raport dotyczy zadań, na które składają się:
+•
+Zatrudnienie modelki w ramach studiów nad pozycją i wyglądem nóg
+•
+Wykonanie i obróbka profesjonalnych zdjęć
+•
+Konsultacja rehabilitanta
+
+--- strona 21 ---
+
+21
+Zespół tych zadań można nazwać subetapem przygotowawczym do skanowania nóg
+opisanym w osobnym raporcie. Cały ten etap autor nazywa studiami nad pozycją i wyglądem
+nóg, ponieważ podczas tej części prac było sprawdzone, czy kształty nóg zatrudnionych
+modelek będą pasować wizualnie do ciała testerki oraz w jaki sposób powinny być ułożone
+sztuczne nogi na wózku i w stosunku do użytkownika.
+
+Grafika 8. Stanowisko fotograficzne z teleobiektywem 100-400mm.
+Konsultacja rehabilitanta
+Po ustaleniu wymiarów teoretycznych testerek, czyli głownie wagi i wzrostu zatrudniono
+2 modelki o tych wymiarach. Dodatkowo zostały wynajęte wózku, które zostały dopasowane
+do modelek. Na tych wózkach wspólnie z rehabilitantem – technikiem została
+zaproponowana pozycja nóg, która jest zalecana dla ludzi, którzy korzystają z wózków
+i mają nogi. Pozycja ta jest zbieżna z wywiadem, jakiego dokonał autor innowacji
+z użytkownikami wózków. Pozycja ta polega na trzymaniu nóg lekko złączonych
+z równoległymi podudziami do siebie jak i stopami względem siebie. Po krótkich
+konsultacjach ustalono, że tylko tę pozycję autor będzie sprawdzał podczas kolejnych zadań.
+
+--- strona 22 ---
+
+22
+
+Grafika 9. Zaproponowana i ustalona pozycja nóg. Modelka Karina.
+Modelki miały nieznacznie różny wzrost; Izabela – 168 cm, Karina – 165 cm, dlatego podczas
+zdjęć siedziały na 2 różnych wózkach dopasowanych do ich wzrostu. Izabela na wózku
+czarnym, Karina na wózku koloru srebrnego.
+Zatrudnienie modelki w ramach studiów nad pozycją i wyglądem nóg
+Zatrudnione zostały 2 modelki na wypadek gdyby, któraś z modelek nie pojawiła się
+na umówionej sesji zdjęciowej i skanowaniu. Dodatkowym powodem zatrudnienia 2 kobiet
+do pozowania była dywersyfikacja wyboru kształtu nóg. Przezorność autora innowacji
+okazała się słuszna w innym zadaniu – skanowaniu nóg. Materiał wyjściowy po skanowaniu
+jednej z modelek okazał się bezużyteczny z tego powodu, że kobieta nie siedziała
+nieruchomo podczas skanowania, trudno było jej utrzymać stabilną i spokojną pozycję.
+
+--- strona 23 ---
+
+23
+
+Grafika 10. Modelka Izabela.
+Modelki uczestniczyły w 3 zadaniach: konsultacji rehabilitanta jako żywy model, zdjęciach
+oraz w skanowaniu 3D.
+Wykonanie zdjęć
+Sesja zdjęciowa odbyła się 21 grudnia 2022 r. Miała charakter techniczny, tzn. istotą jej było
+wykonanie profesjonalnych zdjęć technicznie, głównie z minimalizacją efektu paralaksy
+i dystorsji, a nie wykonania zdjęć o dużej wartości artystycznej i estetycznej. Do tego celu
+została zamówiona ścianka z podziałką decymetrową, która była używana jako tło. Jej celem
+była możliwość oceny wymiarów fotografowanych osób i obiektów oraz pomoc w kalibracji
+przy obróbce zdjęć. W celu minimalizacji efektu paralaksy użyto aparatu profesjonalnego,
+pełnoklatkowego Sony Alfa A7 oraz wynajęto profesjonalny teleobiektyw Sony FE 100-400
+mm f/4.5-5.6 GM OSS. Zdjęcia wykonywano z odległości około 17 metrów
+od fotografowanych obiektów. Taki setup pozwolił przy ogniskowej 200m i pełnej klatce
+wypłaszczyć maksymalnie perspektywę obiektów co ułatwiło obróbkę, łączenie różnych
+zdjęć oraz ocenę dopasowania nóg. Dodatkowo wykonano serię zdjęć z bliska z ogniskową
+
+--- strona 24 ---
+
+24
+20mm jako dodatkową referencję badawczą. Przyjęto, że każda seria zdjęć na 2 ogniskowych
+obejmie każdą modelkę oraz testerkę Annę od frontu, z boku oraz diagonalnie przednia-
+prawa strona. Dodatkowo serie będą urozmaicone zdjęciami ze spódnicą oraz bez.
+Załącznikiem do tego raportu jest katalog z wykonanymi 48 zdjęciami o nazwie: Surówka
+zdjęcia z aparatu JPEG
+Poniżej znajduje się 6 stron stykówek tych zdjęć zgodnie z następującym opisem
+Strona 27
+1. Ogniskowa 200mm - Modelka Izabela od frontu bez spódnicy
+2. Ogniskowa 200mm - Modelka Izabela diagonalnie bez spódnicy
+3. Ogniskowa 200mm - Modelka Izabela z boku bez spódnicy
+4. Ogniskowa 200mm - Modelka Izabela z boku w spódnicy
+5. Ogniskowa 200mm - Modelka Izabela diagonalnie w spódnicy
+6. Ogniskowa 200mm - Modelka Izabela od frontu w spódnicy
+7. Ogniskowa 20mm - Modelka Izabela od frontu w spódnicy
+8. Ogniskowa 20mm - Modelka Izabela diagonalnie w spódnicy
+9. Ogniskowa 20mm - Modelka Izabela z boku w spódnicy
+Strona 28
+1. Ogniskowa 20mm - Modelka Izabela z boku bez spódnicy
+2. Ogniskowa 20mm - Modelka Izabela diagonalnie bez spódnicy
+3. Ogniskowa 20mm - Modelka Izabela od frontu bez spódnicy
+4. Ogniskowa 20mm - Modelka Karina od frontu bez spódnicy
+5. Ogniskowa 20mm - Modelka Karina diagonalnie bez spódnicy
+6. Ogniskowa 20mm - Modelka Karina z boku bez spódnicy
+7. Ogniskowa 20mm - Modelka Karina z boku w spódnicy
+8. Ogniskowa 20mm - Modelka Karina diagonalnie w spódnicy
+9. Ogniskowa 20mm - Modelka Karina od frontu w spódnicy
+
+--- strona 25 ---
+
+25
+Strona 29
+1. Ogniskowa 200mm – Modelka Karina od frontu w spódnicy
+2. Ogniskowa 200mm – Modelka Karina diagonalnie w spódnicy
+3. Ogniskowa 200mm – Modelka Karina z boku bez spódnicy
+4. Ogniskowa 200mm – Modelka Karina z boku w spódnicy
+5. Ogniskowa 200mm – Modelka Karina diagonalnie bez spódnicy
+6. Ogniskowa 200mm – Modelka Karina od frontu bez spódnicy
+7. Ogniskowa 200mm – Testerka Anna od frontu bez spódnicy, czarny wózek
+8. Ogniskowa 200mm – Testerka Anna diagonalnie bez spódnicy, czarny wózek
+9. Ogniskowa 200mm – Testerka Anna z boku bez spódnicy, czarny wózek
+Strona 30
+1. Ogniskowa 20mm – Testerka Anna z boku bez spódnicy, czarny wózek
+2. Ogniskowa 20mm – Testerka Anna diagonalnie bez spódnicy, czarny wózek
+3. Ogniskowa 20mm – Testerka Anna od frontu bez spódnicy, czarny wózek
+4. Ogniskowa 20mm – Testerka Anna od frontu w spódnicy, czarny wózek
+5. Ogniskowa 20mm – Testerka Anna diagonalnie w spódnicy, czarny wózek
+6. Ogniskowa 20mm – Testerka Anna z boku w spódnicy, czarny wózek
+7. Ogniskowa 200mm – Testerka Anna z boku w spódnicy, czarny wózek
+8. Ogniskowa 200mm – Testerka Anna diagonalnie w spódnicy, czarny wózek
+9. Ogniskowa 200mm – Testerka Anna od frontu w spódnicy, czarny wózek
+Strona 31
+1. Ogniskowa 200mm – Testerka Anna z boku w spódnicy, srebrny wózek
+2. Ogniskowa 200mm – Testerka Anna diagonalnie w spódnicy, srebrny wózek
+3. Ogniskowa 200mm – Testerka Anna od frontu w spódnicy, srebrny wózek
+4. Ogniskowa 20mm – Testerka Anna od frontu w spódnicy, srebrny wózek
+5. Ogniskowa 20mm – Testerka Anna diagonalnie w spódnicy, srebrny wózek
+6. Ogniskowa 20mm – Testerka Anna z boku w spódnicy, srebrny wózek
+7. Ogniskowa 20mm – Testerka Anna od frontu bez spódnicy, srebrny wózek
+8. Ogniskowa 20mm – Testerka Anna diagonalnie bez spódnicy, srebrny wózek
+
+--- strona 26 ---
+
+26
+9. Ogniskowa 20mm – Testerka Anna z boku bez spódnicy, srebrny wózek
+Strona 32
+1. Ogniskowa 200mm – Testerka Anna z boku bez spódnicy, srebrny wózek
+2. Ogniskowa 200mm – Testerka Anna diagonalnie bez spódnicy, srebrny wózek
+3. Ogniskowa 200mm – Testerka Anna od frontu bez spódnicy, srebrny wózek
+
+Grafika 11. Przykład minimalizacji paralaksy i dystorsji - zdjęcie wykonane z odległości 17m
+przy ogniskowej 200mm spłaszczyło perspektywę.
+
+--- strona 27 ---
+
+27
+Surówka - zdjęcia z aparatu – stykówka
+
+Stykówka 1.
+
+--- strona 28 ---
+
+28
+
+Stykówka 2.
+
+--- strona 29 ---
+
+29
+
+Stykówka 3.
+
+--- strona 30 ---
+
+30
+
+Stykówka 4.
+
+--- strona 31 ---
+
+31
+
+Stykówka 5.
+
+--- strona 32 ---
+
+32
+
+Stykówka 6.
+Obróbka zdjęć
+Po zrobieniu zdjęć przyszedł czas na sprawdzenie czy nogi modelek, ich kształt i pozycja będą
+pasować do testerek. Jako, że obie testerki w projekcie mają te same wymiary autor
+innowacji zorganizował fotografowanie jednej testerki – Anny. Aby sprawdzić czy całość
+będzie pasować wizualnie grafik dokonał obróbki zdjęć poprzez nałożenie nóg modelek
+zdjęcia z testerek. Proces ten polegał na szparowaniu poszczególnych elementów ciała i
+wklejaniu ich na inne oraz dokonywaniu nieznacznych korekt wizualnych.
+Poniżej stykówka obrobionymi zdjęciami. Wykonano 21 grafik symulacji, które znajdują się w
+załączeniu do tego raportu w folderze: Symulacje po obróbce JPG.
+Poniżej lista grafik:
+Strona 34
+01 38x40 Ania front 200mm nogi Karony bez spódnicy.jpg
+02 43x40 Ania front 200mm nogi Izy bez spódnicy.jpg
+03 38x40 Ania side 200mm nogi Kariny bez spodnucy.jpg
+04 38x40 Ania side 200mm nogi Kariny spodnica.jpg.
+05 43x40 Ania side 200mm nogi Izy bez spódnicy.jpg
+06 43x40 Ania side 200mm nogi Izy spódnica.jpg
+
+--- strona 33 ---
+
+33
+07 38x40 Ania diagonal 200mm nogi Kariny bez spódnicy.jpg
+08 43x40 Ania diagonal 200mm nogi Kariny spodnica.jpg
+09 43x40 Ania diagonal 200mm nogi Izy bez spódnicy.jpg
+Strona 35
+11 38x40 Ania front 20mm nogi Kariny bez spódnicy.jpg
+12 38x40 Ania front 20mm nogi Kariny spodnica.jpg
+13 43x40 Ania front 20mm nogi Izy bez spódnicy.jpg
+14 43x40 Ania front 20mm nogi Izy spodnica.jpg
+15 38x40 Ania side 20mm nogi Kariny bez spódnicy.jpg
+16 38x40 Ania side 20mm nogi Karony spodnica.jpg
+17 43x40 Ania side 20mm nogi Izy bez spódnicy.jpg
+18 43x40 Ania side 20mm nogi Izy spodnica.jpg.
+Strona 36
+19 38x40 Ania diagonal 20mm nogi Kariny bez spódnicy.jpg
+20 38x40 Ania diagonal 20mm nogi Kariny spodnica
+21 43x40 Ania diagonal 20mm nogi Izy bez spódnicy.jpg
+22 43x40 Ania diagonal 20mm nogi Izy spodnica.jpg
+
+--- strona 34 ---
+
+34
+Grafiki symulacyjne – stykówka
+
+Stykówka 7.
+
+--- strona 35 ---
+
+35
+
+Stykówka 8.
+
+--- strona 36 ---
+
+36
+
+Stykówka 9.
+
+--- strona 37 ---
+
+37
+Podsumowanie i wnioski
+Wbrew obawom o mnogość możliwych pozycji ułożenia nóg na wózku, autor innowacji
+otrzymał, od rehabilitanta – technika wózków, wskazanie na jedną pozycję, która okazała się
+trafna i była zbliżona do preferowanych pozycji przez rozmówców autora – użytkowników
+wózków mających nogi.
+
+Grafika 12. Pokazanie dystansu przy zdjęciach minimalizujących efekt paralaksy
+przy ogniskowej 200mm.
+Dokonane symulacje graficzne na bazie wykonanych zdjęć prezentują się zdaniem autora
+świetnie, innowator zauważył nawet, że „przykładając” wirtualnie cudze nogi do ciała osoby
+bez nóg istnieje duży margines rozmiarów i długości tych nóg przy jednoczesnym dobrym
+i w miarę unitarnym wyglądzie takiego połączenia. Wniosek jest taki, że przyszłe sztuczne
+nogi mogą mieć nieznaczny rozstrzał rozmiarów w stosunku do użytkownika. Dokonanie
+powyższych działań pokazało, że wyzwaniem przy tworzeniu atrap nóg nie jest rozmiar tych
+nóg a raczej wysokość siedziska wózka w stosunku do podnóżka. Wnioski te zmuszą autora
+innowacji do zwracania większej uwagi na docelowe wymiary wózków użytkowników.
+
+--- strona 38 ---
+
+38
+Obie modelki nadają się do skanowania nóg opisanego w osobnym raporcie.
+
+Grafika 13. Autor innowacji ustawiający dokładnie kąt wózka do zdjęcia w układzie diagonalnym.
+Wszystkie wózki na zdjęciach sesyjnych były ustawione dokładnie w tym samym miejscu
+i pod tym samym kątem, ułatwiło to później przygotowanie symulacji graficznych.
+Nogi właściwe prototypowe
+Niniejszy opis zawiera sposób wykonania trzech zadań w zakresie wykonania prototypu
+do testowania innowacji społecznej pn. „Cloudleg”, realizowanej w ramach projektu
+pn. „Inkubator Włączenia Społecznego” finansowanego ze środków Unii Europejskiej.
+Zadania obejmują:
+•
+Skan 3D nóg ludzkich i przygotowanie danych do druku 3D
+•
+Druk 3D prototypowych nóg
+•
+Postprocessing prototypowych nóg wydrukowanych w technologii 3D.
+Przedmiotowe zadania doprowadzą do wytworzenia prototypowych sztucznych nóg
+bez elementu trzymającego.
+
+--- strona 39 ---
+
+39
+Skan nóg ludzkich
+Po dokonaniu studiów nad ułożeniem nóg na wózku (opisanego w osobnym rozdziale)
+dokonuje się skanu nóg siedzących obu kobiet. Skan odbywa się na wynajętych wózkach
+Sunrise Medical Quickie Hellium. Do skanowania używa się skanera Eva Artec. Skanowana
+jest tylko jedna noga każdej osoby, ponieważ podczas obróbki elektronicznej druga noga
+została wykonana analogicznie, jako jej lustrzane odbicie , by zachować symetrię
+obu kończyn. Skanowanie nóg obu modelek trwa około 5 godzin.
+
+Grafika 14. Skanowanie nogi modelki.
+Preprocessing
+Preprocessing to czynność polegającą na dopracowaniu danych elektronicznych po etapie
+skanowania. Jako, że dane bezpośrednie wynikowe ze skanowania zawierają dużo
+elementów niechcianych, takich jak np. artefakty, szumy, zniekształcenia, elementy
+i powierzchnie w pobliżu skanowanej nogi, należy takie dane oczyścić, dokonać ich retuszu
+oraz niezbędnej korekty kształtów.
+
+--- strona 40 ---
+
+40
+
+Grafika 15. Materiał elektroniczny bezpośrednio po skanowaniu. Widać dużą ilość elementów
+niepożądanych, głownie części wózka.
+Jako przykład preprocessingu można podać pracę designera 3D przy dopracowywaniu
+i modelowaniu stopy po skanowaniu, z uwagi na to, iż palce stopy nie zawsze odwzorowują
+się idealnie trzeba je poprawić.
+Po ewentualnych poprawkach dane są przygotowywane do druku 3D, co jest dodatkową
+częścią preprocessingu. Przygotowanie do druku 3D polega głownie na sprawdzeniu skali
+oraz dodaniu suportów, czyli elementów podporowych, które stabilizują drukowany obiekt
+i zapobiegają zmianie jego pozycji podczas druku.
+
+--- strona 41 ---
+
+41
+
+Grafika 16. Materiał elektroniczny po retuszu. Widać, że palce stóp
+nie są prawidłowo odwzorowane, nie posiadają odstępów.
+
+Grafika 17. Wyprofilowanie w preprocessingu tylko jednego odstępu
+między paluchem a palcem długim nie zawsze zadowoli prowadzącego innowację.
+
+Grafika 18. Ostatecznie desinger wyprofilowuje wszystkie palce stopy
+wraz z odstępami. Najbardziej mozolna część preprocessingu.
+
+--- strona 42 ---
+
+42
+W ramach preprocesingu kształt nóg zostaje także nieco zmodyfikowany na potrzeby
+urządzenia trzymającego, a także wprowadzenia magnesów spajających nogi razem. W celu
+dokonania tej drugiej czynności wypłaszczone zostają wewnętrzne powierzchnie ud tak
+aby obie nogi przylegały do siebie będąc przyciągane przez magnes neodymowy.
+Do preprocessingu można wykorzystać przykładowy software:
+•
+Artec Studio 12
+•
+Fusion360 Autodesk
+
+Grafika 19. Efekt końcowy preprocessingu przez zaprojektowaniem suportów.
+Druk 3D
+
+Grafika 20. Sztuczne nogi w wersji elektronicznej kompletne i przygotowane do druku.
+Widać założone supporty.
+
+--- strona 43 ---
+
+43
+Wydruk może być realizowany np. na drukarce wielkoformatowej CosmoMerlin 3D
+o pow. roboczej 1150 x 1250 x 1450 mm
+Z materiału HP PLA Black
+Waga całego wydruku wraz z podporami może wynieść: 12895g
+Czas druku 422 h
+Dysza Volcanoo 0,8 mm,
+wys warstwy 0,4 mm
+wypełnienie: honeycomb
+Postprocessing
+Postprocessing w tym projekcie polega na dopracowaniu wydrukowanych w technologii 3D
+sztucznych nóg oraz doprowadzeniu ich wizualnie do koloru i gładkości zbliżonych
+do ludzkich nóg. Postprocessing wyglądał następująco:
+1. Element zdejmuje się ze stołu roboczego drukarki 3D
+2. Element oczyszcza się z supportów (usunięcie materiałów podporowych)
+3. Element zostaje zeszlifowany papierem ściernym o gramaturze P120, następnie P240
+oraz P320
+4. Element jest odtłuszczany oraz trafia na lakiernię w celu pokrycia grawitacyjnego szpachlą
+5. Element jest szlifowany P120, P240, P320 oraz P500
+6. Element wraca do lakierni w celu pokrycia ponownego warstwą wypełniającą
+niedoskonałości
+7. Element jest szlifowany P320, P500, P800
+8. Element wraca do lakierni, nakładana jest baza RAL 1015 (x2) oraz lakier CLEAR (x2)
+9. Element jest polerowany ręcznie oraz mechanicznie pastą polerską
+
+--- strona 44 ---
+
+44
+Podsumowanie
+Opisane zadania doprowadzają do wykonania prototypowej pary sztucznych nóg
+bez elementu trzymającego. Wytworzone nogi przymierzone przez testerkę spełniały
+założenia określone w przez innowatora.
+
+Grafika 21. Gotowe nogi prototypowe już w "ubraniu" z niewidocznym
+na zdjęciu elementem trzymającym testowane przez testerkę Annę.
+
+--- strona 45 ---
+
+45
+Element trzymający nogi prototypowe
+W innowacji autor zaproponował wykonanie elementu łączącego sztuczne nogi z
+użytkownikiem za pomocą paska parcianego zapinanego wokół pasa użytkownika, od
+którego odchodzą po jednym zapinanym pasku parcianym łączącym się z każdą sztuczną
+nogą jak na załączonym rysunku.
+
+Grafika 22. Wstępny projekt autora innowacji prototypowego elementu trzymającego.
+
+--- strona 46 ---
+
+46
+Wykonanie elementu trzymającego
+Taki element zostaje wykonany i wstępnie przetestowany przez testerkę.
+
+Grafika 23. Zdjęcie prototypowego elementu trzymającego pasowego
+Przedstawiony element spełniał swoją rolę w sposób właściwy.
+
+Grafika 24. Prototypowy element trzymający pasowy
+połączony złączami profilowymi do sztucznych nóg.
+
+--- strona 47 ---
+
+47
+Podczas prac nad prototypowym elementem trzymającym pasowym zostaje przygotowana
+także prosta instrukcja dla użytkownika.
+
+Grafika 25. Instrukcja dla użytkownika prototypowego elementu trzymającego pasowego.
+Prototypowy element trzymający pasowy jest przytwierdzony do złączy profilowych
+sztucznych nóg w górnej części ud.
+
+--- strona 48 ---
+
+48
+Wykonanie elementu trzymającego lędźwiowego
+Podczas prac nad elementem trzymającym pasowym wymyślono zrobienie drugiego
+projektu o nieco innej konstrukcji paska rozkładającego siły na części lędźwiowej pleców.
+Taki element trzymający również wykonano.
+
+Grafika 26. Prototypowy element trzymający lędźwiowy przypięty do sztucznych nóg za pomocą
+złączy profilowych.
+Prototypowy element trzymający lędźwiowy jest przytwierdzony do złączy profilowych
+sztucznych nóg w zewnętrznych bocznych częściach ud.
+
+--- strona 49 ---
+
+49
+Do tego elementu wykonano także instrukcję dla użytkownika.
+
+Grafika 27. Instrukcja dla użytkownika prototypowego elementu trzymającego lędźwiowego.
+
+--- strona 50 ---
+
+50
+Złącze profilowe
+W związku z tym, że prototypowe nogi są twarde i śliskie dla materiałów tekstylnych
+nastąpiła potrzeba skonstruowania uniwersalnego swoistego interface, który pozwoliłby
+przytwierdzać elementy trzymające pasowy i lędźwiowy do monolitycznych sztucznych nóg.
+Opracowano złącze profilowe, każde dopasowane do swojej nogi. Złącze profilowe należy
+uznać jako część elementu trzymającego. Zaprojektowano złącze profilowe wydrukowane
+na drukarce 3D (oddzielnie od sztucznych nóg) przykręcane do nóg na śruby oraz posiadające
+zaczepy w bocznych, zewnętrznych częściach ud (dla elementu trzymającego lędźwiowego)
+oraz zaczepy w górnych częściach ud (dla elementu trzymającego pasowego). Dodatkowo
+złącza profilowe zostały zaprojektowane tak aby na nich testować inne elementy trzymające,
+na które przyjdą pomysły podczas testowania prototypu ze strony testerek i prowadzącego
+innowacje. W tym celu złącze posiada żłobienia okólne zewnętrzne oraz wspomniane już
+zaczepy (klipy).
+
+Grafika 28. Projekt złącza profilowego (w tylnej części uda)
+wraz ze sztuczną nogą.
+
+--- strona 51 ---
+
+51
+
+Grafika 29. Złącze profilowe (czarna część) i jego wewnętrzna część.
+Złącza profilowe mają także wewnętrzną przestrzeń od strony kikutów użytkownika pustą,
+w to miejsce zostało przeznaczone na element piankowy w celu ochrony użytkownika przed
+ostrymi krawędziami samego złącza.
+
+Grafika 30. Złącza profilowe i ich pianki ochronne.
+
+--- strona 52 ---
+
+52
+System magnetyczny
+Do prototypowego elementu trzymającego należy zaliczyć także magnes, który ulokowany
+jest w wewnętrznej części uda jednej nogi, przeciwległa noga ma w tym samym
+analogicznym (lustrzanym) miejscu element metalowy który jest przyciągany przez ten
+magnes. System taki przyciąga uda do siebie stabilizując je, co także przeciwdziała ich
+spadaniu z wózka. Magnes jest wymienny.
+
+Grafika 31. Wewnętrzne części ud. Po lewej magnes, po prawej zamalowany
+element metalowy przyciągany przez magnes.
+
+--- strona 53 ---
+
+53
+Sposób wykonania i specyfikacja sztucznych nóg testowych
+Wstęp
+Niniejszy rozdział zawiera opis wykonania krok po kroku testowych sztucznych nóg i formy
+do uzyskania tych nóg będących przedmiotem innowacji „Cloudleg”. W tym rozdziale
+przedstawione będą następujące informacje; dokładna specyfikacja techniczna
+i materiałoznawcza wypracowanej formy negatywowej z której uzyskane były 2 protezy
+kosmetyczne, wraz z opisem docelowo zastosowanej technologii produkcji i parametrów
+materiału (pianki poliuretanowej), sposób użytkowania narzędzia oraz wskazówki
+i rekomendacje dla przyszłych użytkowników oraz opis materiałoznawczy ostatecznej
+protezy kosmetycznej.
+Model pozytywowy atrap nóg
+Niniejszy opis zawiera materiał opisujący sposób wykonania wzorcowego modelu
+pozytywowego atrap nóg wypracowany w ramach testowania innowacji społecznej
+pn. „Cloudleg”, realizowanej w ramach projektu pn. „Inkubator Włączenia Społecznego”
+finansowanego ze środków Unii Europejskiej obejmuje:
+•
+wykonanie siedziska
+•
+zatrudnienie modelki
+•
+zdjęcie wzoru nóg z modelki do formy negatywowej wstępnej
+•
+odlew wzorcowego modelu pozytywowego atrap nóg
+Przedmiotowe zadanie doprowadzi do otrzymania gipsowego wzoru nóg siedzących
+w skali 1:1, które będzie niezbędne do realizacji kolejnego zadania polegającego
+na stworzeniu negatywowej formy kompozytowej zbrojonej prętami mosiężnymi opisanej
+w kolejnych krokach.
+Wykonanie siedziska
+Należy najpierw przeprowadzić wywiady przyszłych użytkowników sztucznych nóg dotyczące
+wymiarów ich wózków, na których będą docelowo będzie używany produkt. Proponuje się
+
+--- strona 54 ---
+
+54
+w zależności od rodzajów wózka wysłanie jednego z poniższych formularzy, gdzie przyszły
+użytkownik musi wpisać wymiary. Poniżej mamy
+
+Grafika 32. Arkusz pobrania wymiarów dla wózka elektrycznego.
+
+Grafika 33. Arkusz pobrania wymiarów dla wózka manualnego.
+
+--- strona 55 ---
+
+55
+Arkusze uwzględniają te same parametry dla każdego z wózka i są następujące:
+A. Głębokość podnóżka bezwzględna
+B. Wysokość przedniej krawędzi podnóżka nad podłożem
+C. Wysokość dolnej krawędzi podnóżka nad podłożem
+D. Głębokość siedziska wózka bezwzględna
+E. Odległość między przednią krawędzią siedziska a tylną krawędzią podnóżka bezwzględna
+F. Wysokość tylnej krawędzi siedziska wózka nad podłożem
+G. Różnica wysokości przedniej krawędzi siedziska wózka a tylną krawędzią podnóżka
+mierzona w pionie względem podłoża
+H. Odległość przedniej krawędzi siedziska wózka od tylnej krawędzi podnóżka mierzona
+w poziomie względem podłoża
+I. Wysokość przedniej krawędzi siedziska wózka nad podłożem
+Przy założeniu, że 4 punkty pomiarów są wspólne kolejno dla DF, DEGHI, AB oraz ACEGH
+dane z tych pomiarów powinny dać informacje o kątach i położeniu względem siebie
+kluczowych elementów wózka, które mają wpływ na pozycje nóg.
+Otrzymane dane o wymiarach mogą mieć przykład jak poniżej.
+A–12cm B–9 C–2 D-38 E-39,5 F-42,5 G-39 H-9 I-44
+Następnie na podstawie tych danych należy wykonać lub zlecić wykonanie rysunku
+technicznego siedziska, tak aby stolarz mógł wykonać ten przedmiot.
+Poniżej przykładowe rysunki siedziska.
+
+--- strona 56 ---
+
+56
+
+Grafika 34. Przykład projekt konstrukcji siedziska przed wychyleniem (jednostki bezwzględne).
+
+Grafika 35. Przykład projektu siedziska w 2 wymiarach pod kątem 7° w ujęciu wychylenia względem
+podłoża.
+Taki projekt należy przekazać stolarzowi wraz ze zleceniem wykonania opisanego obiektu.
+Siedzisko można wykonać ze sklejki odpadowej 10-20 mm grubości, łączonej wkrętami oraz
+klockami z drewna sosnowego również z użyciem wkrętów. Utrzymanie siedziska i podnóżka
+należy wykonać przez pionowe płaszczyzny płyt bocznych.
+
+--- strona 57 ---
+
+57
+
+Grafika 36. Przykładowe siedzisko po wykonaniu w stolarni.
+Zadaniem wykonanego siedziska będzie wyznaczenie osobom pobierającym wzór nóg
+od modelki kątów i stosunków wysokości ułożenia nóg. Głównie chodzi o kąt poziomy
+ułożenia stopy, kąt poziomy ułożenia ud, odległość siedziska od podnóżka w pionie
+i poziomie, symulacja szerokości siedziska wózka a także pomocniczo kąt oparcia siedziska.
+Dobrze jakby siedzisko było jak najbardziej ażurowe i nie posiadało zbędnych pionowych
+ścian ograniczających dostęp osoby, która będzie z nim pracowała oraz do nóg modelki.
+
+Grafika 37. Zdjęcie siedziska już w trakcie prac odwzorowujących nogi. Widać usuniętą
+ściankę za łydkami a także przycięcia ścianek bocznych na wysokości podnóżka.
+
+--- strona 58 ---
+
+58
+Zatrudnienie modelki
+Należy zatrudnić modela lub modelkę, której nogi będą wzorem modelowym dla przyszłych
+protez kosmetycznych. Modelka powinna wymiarami być zbliżona do docelowych
+użytkowników nóg a także do ich preferencji. W tym przykładzie opisana zostanie modelka
+która stanowiła wzór dla docelowych 2 użytkowniczek, których teoretyczny wzrost jest
+podobny i wynosi 166 cm a waga teoretyczna również jest podobna i mieści się w przedziale
+54,6 - 59,8. Modelka będzie miała wzrost 168 cm oraz wagę 55 kg.
+Dobrze, żeby model/modelka miała uniwersalny kształt nóg. Ponadto dobrze, żeby miała
+wyraźny kształt kolan, nie gładki (okrągły), wyraziste, dobrze wyglądające kostki,
+podkreślające „żywotność” stopy. Dobrze, żeby modelka była cierpliwa i została
+poinformowana, że będzie siedziała w jednej pozycji wiele godzin. Modelka powinna mieć
+także zaufanie do wykonawcy szczególnie podczas cięcia formy silikonowej, w której będzie
+miała oklejone nogi a także podczas jej nakładania na skórę. Ma to szczególne znaczenie,
+gdyż podczas otwierania formy artysta/wykonawca operuje ostrym narzędzie bezpośrednio
+przy skórze modela.
+Zdjęcie wzoru nóg z modelki do formy negatywowej wstępnej
+Poniższe zadania aż do odlania nóg z pianki poliuretanowej wymagają wiedzy i
+doświadczenia w materii, której będą dotyczyły. Prace można wykonać samemu, jednak
+autor rekomenduje, zatrudnię do tych aktywności albo wyspecjalizowaną firmę, albo artystę
+rzeźbiarza mającego doświadczenie w pracy z tworzywami sztucznymi.
+W tym podzadaniu zostanie opisany sposób wykonania formy negatywowej wstępnej
+z silikonu stosowanego do ludzkiego ciała oraz forma matka z gipsu. Forma ta posłuży
+w następnym podzadaniu do wykonania głównego produktu tego zadania - wzorcowego
+modelu pozytywowego atrap nóg z gipsu.
+Modelka powinna usiąść na siedzisku, które może być na postumencie, aby artyści pracujący
+nad formą jej nóg mieli do nich lepszy dostęp.
+
+--- strona 59 ---
+
+59
+Jako materiału kontaktowego z ciałem i odwzorowującego można użyto kauczuku
+silikonowego do odwzorowania ciała. Np. „Body Double” firmy Smooth-On, Inc. Jest to
+szybko sieciujący, 2-składnikowy kauczuk silikonowy, który może być nakładany
+bezpośrednio na skórę. Pozwala na odwzorowanie dowolnej części ciała (lub całego ciała)
+z najdrobniejszymi szczegółami. Kauczuk ten ma twardość Shore A: 25. Został wybrany
+taki produkt zamiast powszechnie używanych silikonów formierskich, ponieważ
+to bezpieczny, sprawdzony i przyjazny dla skóry silikon. Produkt ten także bardzo szybko
+utwardza się tworząc kauczuk odporny na rwanie, który dostarcza wiernych reprodukcji.
+W przeciwieństwie do alginianów, które umożliwiają tylko jeden odlew, stosując Body
+Double można wykonać wiele reprodukcji z gipsu, żywicy lanej, wosku, gipsu polimerowego
+Acrylic One, metali o niskiej temperaturze topnienia etc. Kolejną zaletą jest fakt,
+iż do wytwarzania form z Body Double zużywa się mniej materiału.
+Do wykonania form obu nóg zużyje się ok. 16 kg tego produktu z utwardzaczem (8,16 kg).
+Na początku, żeby sprawdzić czas wiązania oraz czy silikon będzie właściwie separowany
+należy nałożyć na nogę modelki miejscowo wazelinę do ciała jako separator a następnie
+porcję kilkunastu gramów silikonu wymieszanego z utwardzaczem. Nie trzeba dodatkowo
+stosować kompozytu w postaci gazy lub siatki wzmacniającej jeżeli używany silikon jest
+wysokogatunkowy i spełnia wszystkie wymagania wytrzymałościowe do tego zadania.
+Kiedy próbka zwiąże się w sposób odpowiedni i nie będzie problemu ze ściąganiem jej z ciała
+należy przystąpić do właściwych prac. Należy ustawić odpowiednio nogi modelki,
+nasmarować całą nogę modelki wazeliną do ciała (jako separator) i przystąpić do nakładania
+warstw silikonu.
+Bardzo ważnym etapem tutaj jest właściwie ustawienie nóg. Jest to bardzo trudne zadanie,
+ponieważ ułożenie to po związaniu silikonu jest nieodwracalne i ma wpływ na kształt
+otrzymanego wzoru, nie można go poprawić później, jeżeli jest nieodpowiednie lub bardzo
+trudno dokonać takich korekt. Chodzi o odpowiedni rozstaw stóp, ułożenie ud oraz
+odległości między kolanami. Problem polega na tym, że nie da się zaformować 2 nóg na raz.
+Nogi z modelki będą odwzorowywane pojedynczo; najlepiej jedna noga w jeden dzień. Każda
+
+--- strona 60 ---
+
+60
+z nóg będzie przygotowywana oddzielnie, żeby potem dwa odlewy zestawione razem dobrze
+wyglądały. Modelka będzie musiała więc utrzymywać pojedynczą nogę tak jakby obok była
+druga, druga noga będzie musiała pozostać oddalona w rozchylaniu, żeby zrobić miejsce
+do pracy nad odwzorowywaną kończyną. Do tego celu można ustabilizować tę nogę
+w miejscu docelowym poprzez wykonanie stabilizator referencyjny wskazujący miejsce
+kolana wykonanego z drewnianej tyczki i drutu. Stabilizacji dokonać, przez to, że modelka
+zewnętrzną częścią kolana dotykała końcówkę drutu wiedząc, że w tej pozycji ma być cała
+noga. Mimo tak użytej stabilizacji po zestawieniu ze sobą później gipsowych wzorów nóg
+mogą i tak być przesunięcia od 0,5 do 1 cm błędu w pozycji między nogami, które trzeba
+będzie zniwelować metodami rzeźbiarskimi. Aby uniknąć podobnych błędów w przyszłości
+autor sugeruje użycie 2 podobnych stabilizatorów od początku zamiast jednego po jednym
+na każdą nogę. Opisywany stabilizator będzie pewnym dyskomfortem dla modelki, ponieważ
+końcówka drutu stykająca się z ciałem powinna być najmniejsza, żeby uniknąć jej śladu
+w przyszłej formie oraz modelu wzorcowym i dokonywać jak najmniejszych retuszów
+a jednocześnie na tyle duża, żeby nie wrzynała się w nogę modelki za bardzo. Dodatkowo,
+aby utrzymać odpowiednią pozycje stóp na podnóżku należy narysować mazakiem obrys
+żądanego miejsca gdzie mają one być trzymane.
+
+Grafika 38. Dopasowywanie opisywanego stabilizatora referencyjnego do lewej nogi modelki
+przed odwzorowaniem tej kończyny. Widać także narysowane na podnóżku obwiednie
+zaznaczające miejsca, gdzie powinny być trzymane stopy.
+
+--- strona 61 ---
+
+61
+Jeżeli chodzi o pozycję ogólną nóg rekomenduje się zastosować podobną do tej z części
+prototypowej projektu i jeżeli są to jako wizualny referencyjny wzór można zastosować nogi
+wydrukowane w technologii druku 3D, które można postawić obok podczas ustawiania nóg
+modelki. Układ prosty wypracowany przez autora tego dokumentu w grudniu 2022 okazał
+się dobry i uniwersalny, był sprawdzony podczas testów nóg twardych prototypowych.
+Idealną temperaturą do pracy z silikonem do ciała jest przedział 20-23°C dolny przedział tego
+zakresy nie jest problemem, bo niższa temperatura powoduje nieco wolniejszą reakcję
+wiązania silikonu, przez co artyści nie będą musieli się spieszyć i będą mogli spokojnie
+nakładać formowany materiał na nogi.
+Przy niskich temperaturach należy zabezpieczyć modelce okrycie w postaci szlafroka.
+Po wymieszaniu małej partii silikonu z utwardzaczem w proporcjach określonych w instrukcji
+technicznej stosowania tego produktu należy przystąpić do nakładania pierwszej warstwy
+kontaktowej kauczuku na żywą nogę. Warstwa ta powinna być nakładana pędzlem,
+tak aby silikon dostał się we wszystkie zakamarki powierzchni skóry. Kolejne warstwy można
+już nakładać szpachelką. Warstw powinno być 5-6, każda po 2 – 3 mm grubości. Ilość warstw
+zależy głownie od połowy ilości dostępnego materiału na obie nogi. Każda porcja
+przygotowanego materiału wystarczała na około 15 min pracy plus czas utwardzania,
+czyli kolejne około 15 min. Nakładanie kolejnych warstw w odstępach czasowych jest
+niezbędne, żeby zapobiec nadmiernemu spływaniu silikonu.
+Warto zaznaczyć, że szybkość wiązania silikonu zależy od temperatury, jako, że ludzkie ciało
+ma swoją temperaturę wyższą od temperatury pomieszczenia różne warstwy będą wiązać
+w różnym czasie i osoba wykonująca formę odwzorowująca powinna te czasy monitorować
+i dostosowywać się do nich.
+
+--- strona 62 ---
+
+62
+
+Grafika 39. Nakładanie pędzlami pierwszej warstwy kontaktowej z silikonu na nogę modelki. Widać
+także spływającą część silikonu na podnóżek.
+Nogę ze związanymi wszystkimi warstwami silikonu prezentuje Grafika 34.
+Następnie po utwardzeniu się wszystkich warstw, które może nastąpić po około 2 godzinach
+od rozpoczęcia nakładania pierwszej warstwy można przystąpić do przygotowania formy
+matki gipsowej. Jest to dodatkowa forma przygotowywana na formie silikonowej będącej
+jeszcze na nodze. Zadaniem formy matki jest utrzymanie kształtu konstrukcyjnego formy
+kontaktowej silikonowej. Forma silikonowa po zdjęciu nie trzymałaby kształtu całej nogi
+i dlatego docelowo powinna być utrzymywana w konstrukcji – swoistej ortezie – formie
+matce gipsowej. Innymi słowy matka jest sztywną częścią całej formy negatywowej która
+stabilizuje w odpowiednim położeniu jej miękką część, czyli formę negatywową silikonową.
+Całą forma gipsowa powinna być jeszcze wzmocniona konstrukcją drewnianą,
+żeby ustabilizować kąt między udem a podudziem formy. Konstrukcja będzie spełniać swoją
+rolę przede wszystkim podczas rozformowywania, czyli podczas zdejmowania jej z nogi
+
+--- strona 63 ---
+
+63
+oraz wyciągania z niej odlewu, kiedy na całą formę matkę działają największe siły. Forma
+matka powinna wykonana z 2 rodzajów gipsu:
+•
+gipsu kompozytowego w postaci opasek gipsowych używanego w chirurgii urazowej do
+stabilizowania złamań
+•
+gipsu formierskiego 2 klasy twardości
+Jeżeli chodzi o opaski gipsowe można użyć na przykład takich produktów:
+1. Opaska Gipsowa OrthoBand Fast - Rolka 20cm x 3m. Czas wiązania wstępnego - 3 minuty.
+Usztywnienie całkowite - po 18h
+2. Opaska Gipsowa OrthoBand Fast - Rolka 15cm x 3m. Czas wiązania wstępnego - 3 minuty.
+Usztywnienie całkowite - po 18h
+3. Opaska Gipsowa GIPSET 12cmx3m
+4. Opaska gipsowa ROMED szybkowiążąca 15x3
+O łącznej długości 30-50 metrów bieżących na jedną nogę.
+Pierwsze warstwy formy matki (o łącznej grubości 1-3 cm) należy robić - można powiedzieć -
+metodą „chirurgiczną” z użyciem bandaży medycznych. Następnie powinny być pokrywane
+gipsem formierskim o warstwie około 1-3 cm. Na to przyjdzie jeszcze konstrukcja drewniana
+w postaci 2 łat lub tyczek sosnowych na dwa boki każdej nogi, które powinny być
+przytwierdzane do skorupy również za pomocą gipsu formierskiego.
+
+--- strona 64 ---
+
+64
+
+Grafika 40. Widok nierozformowanej jeszcze formy matki na warstwach silikonowych
+(niewidocznych) będących na nodze modelki. Widoczna warstwa z gipsu formierskiego, linie podziału
+sztuczkowego i wzmocnienia drewniane.
+Na każdej nodze forma matka ma być wykonywana z 2 półskorup (nazywanych sztuczkami)
+oddzielonych od siebie linią biegnącą z dołu do góry po najwyższym profilu poprzecznym
+nogi, dzielącą te sztuczkę na prawą i lewą. Układ taki jest niezbędny, że móc wydobyć silikon
+i nogę modelki z formy matki podczas rozformowywania a także, żeby wydobyć odlew
+wykonywany w przyszłości w tej formie.
+Formowanie konstrukcji przecięcia tych skorup będzie żmudnym i ręcznym procesem
+wykonanym po wyznaczonej linii podziału. Formuje się jedną sztuczkę, następnie,
+gdy ona już zwiąże na krawędź podziału należy nałożyć wykonany we własnym zakresie
+płyn separujący na bazie wody, mydła i olejów, żeby móc od tej krawędzi formować kolejną
+skorupę. Tak aby obie skorupy po związaniu łatwo oddzielić od siebie.
+
+--- strona 65 ---
+
+65
+Płyn separujący można przygotować sobie rozgotowując wiórki szarego mydła w wodzie
+a następnie dodając oleju.
+
+Grafika 41. Wykonana prawa sztuczka gipsowa formy matki prawej nogi przed wykonaniem
+lewej sztuczki prawej nogi na formie silikonowej będącej na modelce.
+Po 5-6 godzinach od nałożenia pierwszej warstwy silikonu mając pewność, że związał
+przystąpić do rozformowania całej konstrukcji. Ręcznie oddzielić od siebie półskorupy
+i rozpocząć rozcinanie „pończochy” silikonowej. Linie podziału powłoki silikonowej
+wyznaczyć w innym miejscu niż gipsowej formy matki i poprowadzić je one z boku. W tym
+celu podczas nakładania jeszcze warstw silikonowych w okolicach tej linii nałożyć więcej
+silikonu, aby powstały zgubienia, które pozwolą utrzymać sztywność rozcięcia i jego
+krawędzi. Sztywność pomaga w stabilizacji licowania miękkiej formy podczas wykonywania
+odlewów w przyszłości. Podział dokonywać był przy użyciu noża introligatorskiego. Sama
+operacja będzie wymagała dużego zaufania modelki do wykonującego cięcia artysty,
+ponieważ będzie operował on bardzo ostrym narzędziem przy bezpośrednim kontakcie
+z jej skórą a sam proces wymaga rozcinania tego jednym pociągnięciem noża po
+wyznaczonej linii. Rozcięcie silikonu jest niezbędne, aby uwolnić z niego nogę modelki.
+
+--- strona 66 ---
+
+66
+
+Grafika 42. Rozcinanie powłoki silikonowej formy negatywowej na nodze modelki.
+Linia podziału powinna biec po zewnętrznej stronie nogi od kostki przez zewnętrzny środek
+kolana, środkiem uda a potem w dół do miejsca, gdzie zewnętrzna część uda styka się
+z siedziskiem. Linia podziału ma być jedna na nogę, to wystarczy, by „wydobyć”
+z niej modelkę.
+Cały opisany proces dla jednej nogi powtórzyć w kolejny dzień dla drugiej, będzie on trwał
+około 6 godzin w ciągu jednego dnia.
+
+Grafika 43 i 44. Przykładowe elementy formy negatywowej jednej nogi uzyskane po zdjęciu ich
+z modelki.
+
+--- strona 67 ---
+
+67
+Odlew wzorcowego modelu pozytywowego atrap nóg
+Kolejnym etapem jest umieszczenie formy miękkiej w twardej i spasowanie do siebie
+ich elementów. Następnie spód każdej stopy, który stykał się z siedziskiem powinien zostać
+zamknięty płaską powierzchnią stolarską płytą laminowaną. Całość z zewnątrz powinna
+zostać zabezpieczona i spięta taśmą klejącą.
+W każdą z form wlać zmieszany z wodą gips dentystyczny. Gips ten jest idealny do tego typu
+odlewów, ponieważ krzywa w wykresie wiązania tego produktu jest płaska i stabilna.
+Wiązanie postępuje powoli i równomiernie, w przeciwieństwie do gipsów przemysłowych
+których wiązanie jest bardziej gwałtowne. Dodatkowo gips dentystyczny łatwo się
+odpowietrza, ilość pozostałych po związaniu bąbli powietrza jest minimalna co jest ważne
+w momencie, kiedy po wlaniu w formę mieszaniny wykonawca nie ma bezpośredniego
+dostępu do niego. Aby wlany gips dotarł do wszystkich wewnętrznych zakamarków formy
+silikonowej powinien zostać rozprowadzony grawitacyjnie poprzez poruszanie i obracanie
+formy w rękach w 3 wymiarach przez około 15 minut dla każdej z nóg. Nastąpi swoisty
+ręczny rotomoulding wlanego materiału, tak aby stworzył na wewnętrznych ściankach formy
+równomierną warstwę gipsu - około 5-10 mm. Związana tak warstwa utworzy swoistą
+gipsową wydmuszkę w kształcie każdej nogi. Otrzymany w ten sposób pozytywowy
+wzorcowy model gipsowy nóg będzie pusty w środku a jedyny dostęp do jego wnętrza
+będzie obejmował dziurę od strony ud w ich przekroju oraz w miejscu, gdzie ludzki wzorzec
+stykał się z siedziskiem.
+Gips dentystyczny przygotować zgodnie z instrukcją w ilości ok 10 kg na nogę licząc razem
+z wodą. Wlewka powinna pozostać w formie na 24h, po tym czasie całość otworzyć formę
+gipsową a modele nóg z niej wyjąć.
+Po wyciągnięciu z formy modele nóg poddać retuszowi. Usunąć ślady po rozcięciu,
+zaszpachlować miejsce po końcówce stabilizatora referencyjnego oraz inne nieznaczne
+ubytki.
+
+--- strona 68 ---
+
+68
+
+Grafika 45. Gipsowy model wzorcowy. W miejscu przyłożenia końcówki stabilizatora referencyjnego
+widoczne są ślady retuszu.
+Uzupełnić gipsem także brakującą ściankę „wydmuszki” nóg wzorcowych w miejscu gdzie
+dolne części ud stykały się z siedziskiem. Dokonać tego poprzez ułożenie modelu na siedzisku
+wzorcowym i dorobieniu ścianki na płaszczyźnie siedziska między krawędziami „wydmuszki”.
+W przypadku, kiedy gipsowe nogi po złożeniu w pozycji siedzącej nie odwzorowują idealnie
+swojego kształtu, z tego powodu, że ludzkie nogi, kiedy są złączone razem lub w podobnej
+pozycji podczas siedzenia mają inny kształt (szczególnie wewnętrzne części ud) niż kiedy
+noga jest niezłączona (podczas pobierania wzoru nogi były osobno, w momencie, kiedy jedna
+„udawała”, że są razem z rozsuniętą drugą tak aby wykonawca formy miał dostęp od
+aktualnie odwzorowywanej nogi) należy dokonać odpowiednich korekt; głównie poprzez
+usuwanie materiału. Boczne strony ud i okolice mogą być stosunkowo mocno przerzeźbione
+przez artystę, żeby utrzymać organiczną płynność anatomii formy modelu. Należy także
+domodelować końcówki ud, które stykają się z miednicą oraz dolne części uda tak aby stopy
+opierały się równo i w miarę lustrzanie na podnóżku, oraz żeby model wyglądał naturalnie
+i zgodnie z założeniami kierującego pracami.
+
+--- strona 69 ---
+
+69
+
+Grafika 46. Gipsowy model wzorcowy po odlaniu, widoczny realizm detali możliwy
+dzięki kunsztowi wykonującego go artysty oraz wysokiej jakości użytych materiałów.
+Korekty dokonywać ręcznie tynkarskimi siatkami ściernymi różnej gradacji tak aby uzyskać
+kształt nóg najbardziej naturalnie zbliżonych do oryginalnych nóg siedzących modelki.
+Na podobnej zasadzie odejmowania materiału przygotować też pasujące do siebie
+płaszczyzny o powierzchni około 7 cm ² przeznaczone na magnesy. Płaszczyzny umieścić
+w przedniej, wewnętrznej części ud, tak aby po złączeniu modeli nóg mogły przylegać
+do siebie.
+Pełne wyschnięcie nóg po odlaniu powinno trwać około tygodnia. Pracę poprawcze
+nad modelem gipsowym w przypadku pośpiechu można zacząć wcześniej.
+Po korekcie przychodzi czas na zagruntowanie gipsowego modelu nóg. Grunt na bazie
+wosków rozpuszczonych w toluenie będzie stanowił także materiał izolujący niezbędny
+to wykonania kolejnego zadania zrobienia formy ostatecznej.
+Opisany grunt dodatkowo przymknął małe pory i ślady po mikro-bąbelkach powietrza
+na powierzchni modelu gipsowego. Można zastosować na przykład rozdzielacz woskowy
+w płynie RENLEASE QZ5111.
+
+--- strona 70 ---
+
+70
+
+Grafika 47. Gotowy wzorcowy model pozytywowy atrap nóg (po prawej) w porwnaniu do nóg
+wykonanych (po lewej) w technologii 3D w poprzednim etapie grantu.
+Zamknięcie prac nad wzorcowym modem pozytywowym nóg w zasadzie zamyka możliwość
+dalszego wpływania na kształt nóg ostatecznych w przyszłości. Etap ten jest o tyle ważny,
+że podczas niego wypracowano wygląd atrap nóg, które będą robione w przyszłości. Opisane
+wyżej zadanie jest praco- i czasochłonne a także zwiera w sobie największy element inwencji
+twórczej w ostateczny kształt produktów przedmiotowej innowacji.
+Negatywowa forma kompozytowa zbrojona prętami mosiężnymi
+Opisane poniżej zadania opisują krok po kroku wykonanie głównego produktu innowacji
+„Cloudleg”, który w kolejnym zadaniu posłuży do wykonania odlewów sztucznych nóg
+skierowanych do grupy docelowej opisanej w specyfikacji innowacji tzn. osób bez obu nóg
+poniżej kolan, poruszających się na wózku; nie mogących na stałe lub tymczasowo używać
+protez funkcjonalnych do chodzenia. Przedmiotowa forma pozwoli na wykonanie wielu par
+sztucznych nóg z pianki poliuretanowej.
+
+--- strona 71 ---
+
+71
+Wykonane w poprzednim zadaniu wzorcowe modele pozytywowe nóg z gipsu
+dentystycznego należy ustabilizować tak, aby wykonawca – artysta miał dostęp
+do ich powierzchni zewnętrznej ze wszystkich stron. Za stabilizator można zaimprowizować
+np. 2 krzesła, które położone do góry nogami na stole stworzą konstrukcję, na którą założyć
+modele nóg w taki sposób, że wydmuszka każdego modelu została zatknięta na nogę krzesła.
+Opisany układ konstrukcji jest niezbędny ze względu na to, że podczas procesu formowania
+artysta będzie pracował z materiałem, którego nie może dotknąć, który jest lejny oraz musi
+być nałożony ze wszystkich stron. W przypadku większej ilości czasu na realizacje projektu -
+stabilizator pod wymiar, może być wykonany na zamówienie w ślusarni.
+
+Grafika 48. Ustabilizowany model gipsowy powleczony kilkoma warstwami silikonu formierskiego.
+Wykonawca – artysta powinien zaplanować przyszłe linie podziału nakładanej formy
+silikonowej tak aby przyszła forma jednej nogi była otwierana po rozłożeniu 4 skorup;
+2 bocznych, gdzie linia podziału powinna biec po najwyższym profilu przekroju poprzecznego
+na górze i dole nogi, biegnąc równolegle od stopy w górę do końca uda, jednej małej skorupy
+dolnej pod stopą, tworząc swoistą „podeszwę” gdzie linia podziału biegnie poziomo wokół
+stopy, otaczając ją po najwyższym profilu poziomym, oraz jednej skorupy mającej linie
+podziału wokół miejsca gdzie udo modelki stykało się z siedziskiem podczas pobierania
+wzoru jej nóg.
+
+--- strona 72 ---
+
+72
+
+Grafika 49. Poglądowy rysunek linii podziału jednej nogi.
+Następnie przystąpić do nakładania na gipsowe modele nóg dwuskładnikowego silikonu
+formierskiego o twardości w skali Shore’a 26-30, nakładanie powinno odbywać się
+w odpowiedniej temperaturze do tego procesu między 19 a 23 °C. Praca z tym silikonem
+powinna odbywać się zgodnie z instrukcją jego użycia.
+Na obie nogi może zostać użyte około 14 kg silikonu formierskiego.
+Miękka forma będzie gotowa do dalszych procesów po około 24h.
+Nakładanie warstw silikonu na modele powinno odbywać się w podobny sposób
+co w poprzednim zadaniu na nogach modelki. Pierwsza warstwa kontaktowa winna być
+nakładana pędzlem, kolejne pędzlem i szpachelką. Warstwa kontaktowa winna mieć
+około 1mm grubości, kolejne warstwy pogrubiające można nakładać silikonem
+przygotowanym z domieszką tiksotropów w postaci mączki koloidalnej. Domieszka taka
+ma za zadanie zagęszczenie silikonu i ułatwienie formowania go na elemencie
+trójwymiarowym. Inaczej mówiąc stosowana tu tiksotropia powinna zminimalizować efekt
+spływania nakładanego silikonu z modelu. Mączka może być dodawana po dodaniu
+utwardzacza do silikonu w ilościach zmiennych, uznaniowych wedle bieżącej potrzeby oraz
+w zależności od formowanej w danym momencie powierzchni.
+
+--- strona 73 ---
+
+73
+
+Grafika 50. Model gipsowy powleczony kilkoma warstwami silikonu formierskiego.
+Proporcje wsadowe mączki mogą być różne w zależności od układu powierzchni, pionowej,
+nawisowej i powinny być na bieżąco kontrolowane. Ilość warstw silikonu i ich gęstości może
+wynieść nawet kilkadziesiąt nałożeń po 200-300 ml materiału formowanego i powinna być
+ustalana na bieżąco na podstawie wiedzy, doświadczenia i bieżącego eksperymentu
+wykonawcy. W założeniu całość działań powinna doprowadzić do wykonania formy
+silikonowej wokół gipsowych modeli nóg o ściance nie mniejszej niż 5mm.
+Następnie w osobnych pudełkowych formach powinno się odlać z tego samego silikonu pasy
+o przekroju prostokąta około 3x2cm, które w miejscach wcześniej zaprojektowanego
+podziału przykleić na ten sam silikon do wykonanej powłoki formy. Pasy te będą stanowić
+swoiste zgrubienie na linii podziałów, które będą utrzymywały sztywność krawędzi
+po przecięciu. Pasy te będą też bardziej stabilizować krawędzie znajdując się bardziej w głębi
+powłoki formy sztywnej która będzie założona w kolejnym kroku na formę silikonową.
+Dodatkowo podobne pasy jednak szersze i bardziej masywne należy przykleić do większych
+powierzchni powłoki silikonowej znajdujących się w środkowych częściach między liniami
+podziału. Ich rolą będzie powstrzymywanie tych powierzchni przed zapadaniem się
+do wewnątrz formy podczas przyszłych odlewów sztucznych nóg. Pasy te nazywane roboczo
+zamkami mogą mieć przekrój prostokąta o wymiarach około 3-4 cm. Formy te
+
+--- strona 74 ---
+
+74
+będą w przyszłości zakleszczone wewnątrz formowanej później formy sztywnej z żelkotu
+poliestrowego.
+
+Grafika 51. Powłoka silikonu formierskiego z widocznymi paskami o profilu prostokąta w miejscu
+przyszłych linii podziało oraz "kluczami" na większych powierzchniach.
+Po związaniu silikonu kolejnym krokiem jest nałożenie żelkotu poliestrowego
+na wyformowany silikon. Żelkot nakładany powinien być pędzlem i wykonywany do postaci
+kompozytu, gdzie kolejne warstwy są przekładane matą z włókna szklanego do grubości
+powłoki około 4-5 mm. Laminowanych warstw powinno być 3-4. W liniach przecięcia
+na formie twardej formować także ścianki separacyjne biegnące po krawędzi każdej skorupy
+grubości około 4mm i wysokości około 20mm. Wzajemna powierzchnia stykająca się
+tych ścianek powinna być formowana przez wydzielanie jej podłużnymi arkuszami
+z tworzywa sztucznego np. takiego o nazwie handlowej „Aplak”. Ścianki winne być
+formowane fragment po fragmencie, jest to długa i żmudna praca. Kiedy forma przybierze
+żądany kształt należy dolaminować zbrojenie wzmacniające w postaci prętów mosiężnych
+⌀ 6 mm, po koło 1m bieżący na każdą stronę boczną nogi, łącznie 5 mb.
+Pręty w późniejszych pracach z formą nie tylko będą świetnie spełniły swoją rolę
+wzmacniającą konstrukcje ale będą także stanowiły świetny uchwyt ułatwiający rozdzielnie
+skorup formy podczas wyciągania odlanej sztucznej nogi.
+
+--- strona 75 ---
+
+75
+
+Grafika 52. Sztywne skorupy formy wykonane na formie miękkiej z żelkotu poliestrowego.
+Na obie nogi powinno zostać użyte około 14 kg żelkotu poliestrowego.
+Sztywna forma będzie wstępnie gotowa do dalszych procesów po około 24h.
+W ściankach kontaktowych biegnących wzdłuż linii podziałów nawiercić otwory na śruby
+w odstępach około 10-20 cm.
+Następnie rozchylić skorupy sztywnej formy by mieć dostęp do silikonowej formy miękkiej
+i przystąpić do rozcinania powłoki wzdłuż linii podziałów biegnących w większości
+po uformowanych pasach.
+Rozcinać poprzez jedno pociągniecie noża introligatorskiego prowadzonego między
+ściankami separacyjnymi formy twardej. Użyć świeżego, bardzo ostrego noża
+np. marki Olfa-OL.
+
+--- strona 76 ---
+
+76
+
+Grafika 53. Forma negatywowa jednej z nóg widać, jak część miękka i twarda
+są dopasowane do siebie.
+Opisane wyżej prace powinny doprowadzić do uzyskania kompletnych 2 form negatywowych
+(po jednej dla każdej nogi) składających się z wewnętrznej - miękkiej (silikonowej) oraz
+zewnętrznej - twardej (żelkotowej) części. Dodatkowo, każda z form powinna być podzielona
+na 4 skorupy, skręcane do siebie po swoich krawędziach śrubami. Boczne skorupy każdej
+z form powinny zostać wzmocnione prętami mosiężnymi.
+
+--- strona 77 ---
+
+77
+
+Grafika 54. Schemat konstrukcji formy z uwzględnieniem wymiarów powłok i opisami elementów
+na przykładzie przekrojów. Grafika: autor innowacji
+
+--- strona 78 ---
+
+78
+
+Grafika 55. Ogólny schemat budowy formy negatywowej z uwzględnieniem skorup i powłok
+składających się na nie. Grafika: autor innowacji
+Całość będzie stanowić wykonany główny produkt projektu i będzie służyć w kolejnym
+zadaniu do wykonania sztucznych nóg – protez kosmetycznych dla docelowych
+użytkowników.
+
+--- strona 79 ---
+
+79
+
+Grafika 56. Złożona forma negatywowa jednej nogi. Widać zbrojenie z prętów mosiężnych
+oraz skręcone śrubami i nakrętkami skorupy na paskach kontaktowych.
+Odlew sztucznych nóg
+Niniejszy opis zawiera krok po kroku instrukcje przygotowawczą i odlania 2 par końcowych
+protez estetycznych innowacji społecznej pn. „Cloudleg”. Opis przedstawia wykonanie
+produktu pochodnego głównego produktu innowacji. Wykonywany w opisie produkt
+zamiennie w dokumentacji nazywany jest sztucznymi nogami, atrapami nóg, protezami
+kosmetycznymi nóg, protezami estetycznymi.
+Magnesy spinające
+Aby sztuczne nogi były bardziej stabilne dobrze, aby podczas użytkowania przez osobę
+z grupy docelowej były spięte ze sobą magnesami umieszczonymi w przedniej części
+wewnętrznych ud każdej nogi w ten sposób, że magnesy będą skierowane do siebie
+przeciwnymi biegunami tak aby się przyciągały wzajemnie kiedy nogi są złączone
+a po złączeniu samych magnesów stabilnie i pewnie przylegały do siebie.
+
+--- strona 80 ---
+
+80
+Aby osiągnąć to zamierzenie należy stworzyć 2 elementy - magnesy spinające. Do wykonania
+ich użyć 2 magnesów neodymowych w obudowie z tuleją, sprzedawanych z haczykiem.
+Przykładowe wymiary i parametry każdej obudowy z magnesem to średnica 16mm,
+wysokość z tuleją 13mm, szerokość tulei 6mm, wysokość tulei 5mm, gwint wewnętrzny
+tulei M4, zastosowany magnes osadzony w obudowie NdFeB - N35 – neodymowy o udźwigu
+do 8 kg i sile przesunięcia 1,5 kg.
+
+Grafika 57. Para magnesów spinających po złożeniu, jeszcze przed zalaniem ich
+pianką podczas formowania sztucznej nogi.
+Z obu obudów wykręcić haczyki, a z jednej tulei wyciągnąć magnes walcowy, obrócić
+biegunem na drugą stronę i tak umieścić z powrotem klejąc na 2-składnikowy klej
+epoksydowy. W gwinty tulei obu obudów przykręcić dwie śruby długości około 50mm
+zakończone przykręconym płaskownikiem około 75 x 15 x 1 mm. Tak przygotowane
+elementy spinające będą gotowe do umieszczenia wewnątrz form przed odlaniem nogi.
+W taki sposób magnesy zostaną później zalane przez piankę. Na jedną nogę przygotować
+1 taki elementów spinających.
+
+--- strona 81 ---
+
+81
+
+Grafika 58. Schemat budowy krok po kroku magnesów spinających z proponowanymi
+wymiarami i opisami. Grafika: autor innowacji.
+Odlew końcowych protez estetycznych
+Uzyskana w poprzednim zadaniu negatywowa forma kompozytowa zbrojona prętami
+mosiężnymi powinna rozstać rozłożona. Na wewnętrzną powierzchnię miękkiej każdej formy
+
+--- strona 82 ---
+
+82
+nałożyć pędzelkiem cienki film z oleju silikonowego. Olej ten stanowi w tym wypadku
+separator ułatwiający oddzielenie odlanych nóg z poliuretanu od silikonowej wyściółki formy
+negatywowej. Zabieg ten może być dokonywany zarówno przez nakładanie pędzelkiem
+jak i natryskiwanie sprayem.
+Następnie obie formy skręcić śrubami i nakrętkami przechodzącymi przez wykonane dziurki
+w ściankach rozdzielających skorupy form.
+Formę ustabilizować na podłożu w celu przygotowania do odlewu, w taki sposób, żeby dziura
+wlotowa znajdowała się na górze instalacji a palce stopy w jak najniższym położeniu
+względem całej formy. Za stabilizator ponownie doraźnie można użyć krzesła ustawionego
+nogami do góry.
+
+Grafika 59. Ostateczna forma negatywowa przygotowana do wykonania odlewu sztucznej nogi.
+Na wewnętrznej płaszczyźnie uda formy w miejscu wypłaszczenia przeznaczonego
+na magnes umieścić element z magnesem spinającym i umocować go poprzez umieszczenie
+w tym samym miejscu po drugiej stronie ścianki formy negatywowej walca silnego magnesu
+neodymowego. Stabilizacja nastąpi poprzez przyciągnie magnetyczne tych dwóch
+elementów.
+
+--- strona 83 ---
+
+83
+
+Grafika 60. Magnes spinający umieszczony w środku formy nogi,
+chwilę przed wlaniem pianki poliuretanowej do wewnątrz formy.
+Do odlania jednej nogi będzie zużyte około 1500g piany poliuretanowej
+i 750g jej utwardzacza. Materiałem wsadowym może być np. pianka tapicerska Flex 140
+sprzedawana jako pianka plus utwardzacz w stosunku 2:1.
+
+Grafika 61. Formowanie nogi poprzez wlanie do formy negatywowej pianki poliuretanowej.
+Po wymieszaniu 2 składników pianki oraz dodaniu barwnika całość wlać do ustabilizowanej
+formy, po kilkunastu sekundach zamknąć otwór wlotowy powierzchnią płaską sklejki
+laminowanej tak aby powstrzymać opór reagującej pianki rozrastającej się od dołu ku górze
+formy. Po około 2 minutach trzymania całą siłą ciężaru ludzkiego ciała otworu wlotowego,
+zdjąć skleję i pozostawić formę do związania na około 1h.
+
+--- strona 84 ---
+
+84
+
+Grafika 62. Kilkanaście sekund po wlaniu pianki, pianka prze rozrastając się do góry
+chcąc uwolnić się przez otwór. Na zdjęciu widoczne tamowanie otworu sklejką przez wykonawcę nóg.
+Po tym czasie przystąpić do rozformowywania układu forma plus odlew poprzez rozdzielenie
+skorup. Otrzymaną sztuczną nogę poddać następnie post-obróbce opisaną w kolejnym
+opisie.
+Podobną procedurą powtórzyć dla drugiej nogi w formie przeznaczonej dla niej.
+Multiplikować dla żądanej ilości par.
+Należy mieć na uwadze, że forma ma ograniczoną żywotność oraz ilość odlewów. Obie
+właściwości zależne są od jakości materiałów użytych do wykonania formy a także samej
+jakości jej wykonania. Szacuje się, że z jednej formy można odlać od 100 do 200 sztucznych
+nóg. Na ilość ma także wpływ sposób przechowywania formy opisany w ostatnim rozdziale
+niniejszego dokumentu.
+
+--- strona 85 ---
+
+85
+
+Grafika 63. Gotowa para nóg po odlaniu.
+Post-obróbka odlewów sztucznych nóg
+Otrzymane odlewy nóg będą miały rodzaj wystającego „szwu” wystającego z powierzchni,
+powstałego w miejscu styku skorup miękkich formy. Należy usunąć je nożem
+introligatorskim, jednak nie przy samej powierzchni sztucznej nogi a około 0,5 mm powyżej,
+tak aby przypadkiem nie rozciąć gęstej powłoki pianki. Przez takie uszkodzenie pod
+wewnętrznym ciśnieniem protezy mogłaby zacząć się z czasem wydostawać pianka
+wewnętrzna mniejszej gęstości, podobnie jak w rozciętym siodełku rowerowym.
+
+--- strona 86 ---
+
+86
+Jeżeli pojawiły się także niepożądane artefakty w postaci gęstej pianki poliuretanowej
+w okolicy palców stóp sztucznej nogi należy usunąć je ręczną szlifierką pneumatyczną.
+
+Grafika 64. Usuwanie zbędnych pozostałości pianki poliuretanowej ze stopy
+sztucznej nogi poprzez frezowanie.
+Próby ilościowe i proporcjonalne
+Warto nadmienić, że większość procesów wymienionych powyżej powinna być poprzedzona
+licznymi próbami, które powinny doprowadzić wykonawcę zadania do ustalenia jakości, ilości
+i proporcji półproduktów. Część działań podejmowanych metodą prób i błędów ma zawsze
+miejsce w procesach technologicznych, szczególnie podczas realizacji prototypów oraz
+krótkich serii.
+Z doświadczeń autora niniejszego dokumentu w pracy nad sztucznymi nogami razem
+z wykonawcą w wyniku niepowodzeń podczas pracy z pianką Flex 100 została ona zmieniona
+na produkt o większej gęstości Flex 140. Prowadzono próby ilości pianki jaką należy wlać
+do formy, ponieważ zbyt mała ilość nie kompresowała się wystarczająco wewnątrz formy
+powodując formowanie produktu ze znacznymi ubytkami. Z kolei zbyt duża ilość, mogłaby
+rozsadzić formę a w mniej drastycznej opcji uformować nogi zbyt twarde.
+
+--- strona 87 ---
+
+87
+
+Grafika 65. Jedna z nieudanych nóg podczas uwalniania z formy,
+widać znaczne ubytki pianki na jej powierzchni.
+Należy także prowadzić poszukiwania idealnych proporcji barwnika, który na około
+2,5 kg pianki dodaje się w objętości zbliżonej do ziarna ryżu. Barwnik przed reakcją barwi
+piankę na inny kolor niż po zwiększeniu przez piankę swojej objętości po przereagowaniu.
+Efekty mogą być niestabilne, i za każdym razem tak odmiennie, że trudne
+do usystematyzowania w opisie. Do barwienia i poszukiwania odpowiedniego koloru
+sztucznych nóg można użyć np. BesColor Żółty 25g i BesColor Brązowy 25g. W przyszłości
+w celu ustalenia procedury barwienia nóg należałoby przeprowadzić od kilku
+do kilkudziesięciu prób mieszania kolorów wliczając w to reakcje pianki.
+Nieprzewidziane właściwości technologiczne
+Należy nadmienić, że w procesie odlewania nóg pojawiły się ich właściwości, które
+nie zostały wcześniej przewidziane.
+Do nieprzewidzianych właściwości należy kolor sztucznych nóg, który jest niestabilny
+w uzyskaniu a także wg subiektywnych opinii użytkowników daleki od oczekiwanego.
+Problem ten został opisany szczegółowo w poprzednim rozdziale.
+
+--- strona 88 ---
+
+88
+Kolejną nieprzewidzianą właściwością, są szwy technologiczne pojawiające się na sztucznych
+nogach w miejscu styku miękkich części formy. Szwy te nie były możliwe całkowicie
+do wyeliminowania na etapie tworzenia formy negatywowej jak i w post-obróbce.
+
+Grafika 66. Szwy widoczne na powierzchni sztucznych nóg.
+Z badania materii przedmiotu ex-post a także z rozmowy z wykonawcą opisanych działań
+(także ex-post) można wyciągnąć wnioski, że aby uniknąć szwów w przyszłości należałoby
+wykonać miękką część formy negatywowej z większej twardości silikonu formierskiego oraz
+zastosować większą ilość kluczy w postaci pasków silikonowych przy formowaniu powłoki
+silikonowej formy negatywowej. Jednak znalezienie tej twardości silikonu oraz ilości i układu
+kluczy należałoby dochodzić także licznymi, czasochłonnymi metodami prób i błędów.
+W opisanych powyżej procesach powinno dojść do wytworzenia pary naturalnej wielkości
+nóg ludzkich o fakturze skóry i sprężystości bardzo zbliżonej do ludzkiego ciała. Produkty
+po skompletowaniu z elementami trzymającymi uzyskanymi w kolejnym zadaniu gotowe
+do przekazania ich użytkownikom.
+
+--- strona 89 ---
+
+89
+
+Grafika 67. Widoczna powierzchnia magnesu spinającego
+w okolicach kolana, reszta przedmiotu.
+Elementy trzymające
+Niniejszy opis zawiera instrukcje wykonania elementu trzymającego sztucznych nóg
+w ramach testowania innowacji społecznej pn. „Cloudleg”. Element trzymający to produkt,
+który łączy nogi wykonane w poprzednim zadaniu z użytkownikiem tych nóg. Jego zadaniem
+jest stabilizacja nóg, zabezpieczenie przed odłączeniem się ich od użytkownika,
+zabezpieczenie przed wypadnięciem nóg z wózka a także sprawianie komfortu związanego
+z cechami wymienionymi powyżej.
+
+--- strona 90 ---
+
+90
+
+Grafika 68. Autor wraz z wykonawczynią elementu trzymającego w zakładzie krawieckim
+omawia sposób wykonania produktu.
+Autor założył wykonanie elementu trzymającego w oparciu o paski parciane zapinane wokół
+prasa użytkownika połączone z paskami łączące je z nogami, jednak w trakcie prac
+nad innowacją autor sprawdził inne rozwiązanie nazwane „spodenko-nogi” które okazało się
+znacznie lepsze od opartego na paskach parcianych. W kolejnych rozdziałach nastąpi opis
+wykonania obu rodzajów elementu, da to możliwość wybrania dla nich odpowiedniego
+rozwiązania.
+
+--- strona 91 ---
+
+91
+
+Grafika 69. Prace nad elementem trzymającym w zakładzie krawieckim.
+Element trzymający w postaci pasków parcianych
+Element taki może być wykonany przez zakład krawiecki w taki sam sposób
+jak w prototypowym etapie projektu i w układzie opisanym w rozdziale wstępnym wyżej.
+
+--- strona 92 ---
+
+92
+
+Grafika 70. Element trzymający w postaci pasków parcianych na użytkowniczce. Widać jego
+konstrukcję. Paski parciane zaciskające się na nogach są podszyte w długości styku z nogami paskiem
+silikonowym, aby nie ześlizgiwać się z nóg. Zacisk tych pasków utrzymany jest na rzepach. Zacisk tych
+pasów wykorzystuje sprężystość sztucznych nóg.
+Jedyna różnica polega na tym, że końcówki pasków podwiązkowych, czyli tych idących
+od pasa mają przyczepione paski mocowane wokół ud sztucznych nóg zamykane na rzepy
+i wyszyte w spodniej części podkładem silikonowym tak aby miały przyczepność
+z obejmowanym udem sztucznej nogi.
+Dane techniczne
+Szerokość wszystkich pasków: 30mm
+Długość pasku na pasie: ok 130 cm
+Długość „podwiązek” odchodzących od pasa: 40 cm
+Długość jednej prawej opaski zaciskającej wokół nogi: 83 cm
+Długość jednej lewej opaski zaciskającej wokół nogi: 83 cm
+Długość kontynuacji podwiązki odchodzącej od opaski zaciskającej: ok 16 cm
+Ilość klamr: 3 szt.
+Długość rzepów i pasków silikonowych: dobrać indywidualnie w zależności od grubości
+sztucznej nogi.
+
+--- strona 93 ---
+
+93
+Element trzymający w postaci „spodenko – nóg”
+„Spodenko – nogi” to prostsza konstrukcja od produktu opartego na paskach parcianych;
+składa się ona z zakupionych krótkich bezszwowych, rozciągliwych spodenek sportowych
+oraz 2 wykonanych przez krawcową obejm z pasków parcianych zamykanych rzepami.
+Złożenie tego elementu trzymającego polega na tym, że na końcówki ud sztucznych nóg
+zakładane są nogawki spodenek w długości dopasowanej do użytkownika a następnie
+nogawki te są zaciskane na elastycznej sztucznej nodze przez obejmę z paska parcianego
+zamykanego na rzep.
+Dane techniczne
+Jako spodenki zakupiono produkt: Bezszwowe legginsy Stradivarius, rozmiar L - 2 szt.
+i XL – 2 szt. Jako opasek zaciskowych użyto 2 pasków parcianych o szerokości 30 mm
+i długości 83 cm każdy. Długość rzepów dobrano indywidualnie w zależności od grubości
+sztucznej nogi.
+
+Grafika 71. Konstrukcja elementu trzymającego w postaci "spodenko-nóg" na testerce.
+Nogawki spodenek "złapane są" na zasadzie zacisku między paskiem zaciskowym na rzepy
+a sprężystymi nogami.
+
+--- strona 94 ---
+
+94
+Uwagi dotyczące elementów trzymających
+Elementy trzymające to stosunkowo proste technologicznie produkty, które mogą być
+wykonane szybko i wzbogacone elementami kupnymi. Już podczas prac nad nimi wszystko
+wskazywało na to, że testujący użytkownicy będą zdecydowanie chętniej używać „spodenko
+– nóg” niż konstrukcji parcianej. W trakcie testowania wyszły pewne niedoskonałości pasków
+obejmujących spodenki, które są opisane w raporcie testowania nóg i są łatwe do poprawy
+w przyszłości.
+
+Grafika 72. Szycie elementu trzymającego w postaci pasów parcianych w zakładzie krawieckim.
+Ostateczne wykonanie sztucznych nóg
+Poszczególne dokumenty raportujące z kolejnych zadań opisują wykonanie elementów
+protez kosmetycznych. Nogi de facto powinny zostać kompletnie „złożone” i wykonane
+podczas dostarczenia ich użytkownikom w ich miejscach zamieszkania lub innej dogodnej
+lokalizacji. Wtedy należy te nogi przyciąć do długości kikutów użytkowników i wtedy należy
+
+--- strona 95 ---
+
+95
+założyć na nie elementy trzymające dopasowane również do kikutów osób docelowo
+używających sztucznych nóg oraz rozmiarów tych osób.
+
+Grafika 73. Sztuczna noga testerki Edyty zaraz po przycięciu.
+Uda nóg powinny być wykonane w maksymalnej długości idąc w kierunku miednicy, można
+powiedzieć, że nawet kilka centymetrów aż nadto. Taka anatomia ma na celu stworzyć
+jak najbardziej uniwersalne nogi dla osób z różnymi długościami amputacji; od wyłuszczeń
+w stawie biodrowym do wyłuszczeń w kolanach. Z tego też powodu podczas dostarczania
+protez, do każdego użytkownika należy przyłożyć nogi pełnej długości, zaznaczyć markerem
+miejsce przycięcia a następnie przyciąć je długim nożem. Może to być nóż kuchenny
+profesjonalnie naostrzony do ostrości noża introligatorskiego. Przed przecięciem nóż
+powinien być spryskany olejem (np. WD40) tak aby zminimalizować tarcie podczas
+przecinania i wykonać cięcie możliwie jednym ruchem.
+Po przycięciu nóg, założeniu i wyregulowaniu elementu trzymającego sztuczne nogi będą
+gotowe do użytku przez użytkowników.
+
+--- strona 96 ---
+
+96
+
+Grafika 74. Przycięte sztuczne nogi z elementem trzymającym
+w postaci "spodenko - nóg" na testerce.
+
+--- strona 97 ---
+
+97
+Spotkania testujące
+Wstęp
+Pod koniec marca 2023 odbyły się dwa spotkania online testujące do etapu testowania
+innowacji społecznej pn. „Cloudleg”, realizowanej w ramach projektu pn. „Inkubator
+Włączenia Społecznego” finansowanego ze środków Unii Europejskiej. W każdym spotkaniu
+uczestniczyły osobno testerki projektu Anna i Edyta. Spotkania były następstwem testowania
+sztucznych nóg przez testerki w domu i przestrzeni publicznej. Zanim jednak je testowały,
+części atrap nóg zostały im dostarczone w miejsce zamieszkania i nogi te zostały ostatecznie
+wykonane w ich obecności. Sposób wykonania opisany jest w następnym rozdziale.
+W ramach spotkań testujących kobiety zostały zapytane o ich doświadczenia z używania
+testowanych protez, opinie oraz rekomendacje przyszłych zmian w ich konstrukcji
+i wyglądzie. Spotkania odbyły się w formie wywiadu, tak więc zapis autoryzowanych
+wywiadów oraz ich krótkie podsumowanie należy uznać dokument raportujący
+z przebiegu testu i zadania pn. „Spotkanie testujące dla 2 uczestników” opisanego
+w specyfikacji innowacji.
+
+Grafika 75. Ubrane i z elementem trzymającym sztuczne nogi
+w domu testerki czekające na testy.
+
+--- strona 98 ---
+
+98
+Testowanie nóg w obecności autora
+Należy wspomnieć, że testerka Anna testowała swoje nogi w przestrzeni publicznej
+w obecności autora, który podczas tego testu proponował i improwizował działania
+zmierzające do jak najlepszego sprawdzenia tych nóg w różnych sytuacjach. Spotkanie
+odbyło się w sklepie Ikea w Bydgoszczy. Uczestniczka w obecności autora sprawdziła,
+czy da radę wraz z testowanymi nogami skorzystać z dostosowanej do OzN toalety w sklepie.
+Dokonane zostały swego rodzaju crash-testy, gdzie testerka swoim wózkiem elektrycznym
+wraz ze sztucznymi nogami wjeżdżała w meble oraz w autora innowacji. Symulowane były
+także duże wstrząsy wózka wraz z testerką i nogami. W opinii autora test wypadł bardzo
+dobrze, nogi utrzymywały się podczas tych testów stabilnie, jednak niniejszy dokument
+powstał w celu opisania zdania testerki na ten temat, który opisany jest w
+
+--- strona 99 ---
+
+99
+Anna, 42 lat.
+
+Grafika 76. Wizyta w sklepie Ikea.
+
+--- strona 100 ---
+
+100
+Spotkania testujące
+Założenie rozmów z uczestniczkami było takie, aby zadać pytania o ocenę wyglądu nóg,
+ich stabilności, użytkowości, wadach, sposobu testowania, chęci do używania ich
+w przyszłości, chęci do posiadania więcej niż jednej pary, dodatkowych uwagach. Cały
+wywiad prowadzony był z uwzględnieniem informacji uzyskanych podczas wywiadów
+fokusowych z tymi samymi osobami w grudniu 2022. Wywiady w kolejnych rozdziałach
+są autoryzowane przez respondentki i trwały łącznie około 3 godzin.
+
+Grafika 77. Testerka i jej sztuczne nogi w przestrzeni publicznej.
+
+--- strona 101 ---
+
+101
+Edyta, 51 lat.
+Miejsce zamieszkania: miasto wojewódzkie powyżej 400 tyś mieszkańców.
+Niepełnosprawność: Amputacja obustronna kończyn dolnych powyżej kolan z powodów
+urazowych w wieku 3 lat.
+Czas rozmowy: marzec 2023
+BS: Powiedz proszę Twoje pierwsze wrażenia jak dostałaś ode mnie te nogi.
+Edyta: Najbardziej mnie zaskoczyła ich niska waga. Druga sprawa to wrażenie, że były
+nieprecyzyjnie zrobione. Kolejna sprawa to kolor – taki trochę kolor topielca [śmiech].
+BS: Czyli do koloru sztucznych nóg powinienem dodać więcej czerwieni, więcej różu,
+więcej życia?
+Edyta: Tak, dokładnie. Takie miałam pierwsze wrażenie.
+BS: Rozumiem, że z powodu tego koloru szybko ubrałaś te nogi w spodnie, żeby ich
+nie oglądać [śmiech]? Bardzo szybko je ubrałaś, jak wyszedłem od Ciebie z domu to jeszcze
+na dworzec nie zdążyłem dojechać a Ty już zdjęcia mi z testów wysłałaś. Doszły do mnie
+jak byłem jeszcze w autobusie miejskim.
+Edyta: Bo ja byłam bardzo ciekawa jak to będzie wyglądać w ubraniu, szybko chciałam
+te nogi przetestować. Ubrałam się w te nogi, zjechałam z nimi do garażu przymierzyć
+w samochodzie. Sprawdziłam, czy sobie z nimi poradzę, czy to się będzie na mnie trzymało
+w tych „spodnio-nogach”, bo na paskach nie próbowałam niestety.
+I to się sprawdza. Z samochodem jednak trzeba mieć osobę, która pomoże przepakować
+wózek, chyba, że ja coś wymyślę, żeby sobie ładować ten wózek na siedzenie obok
+na zasadzie podobnej jak to robią paraplegicy, że sobie siadają do samochodu, odpinają
+kółka od wózka, wkładają wózek i przerzucają go na siedzenie pasażera. Ja nie mogę
+tego tak robić, bo ja nie mam dźwigni i nóg, żeby się zaprzeć, więc jakbym tak zrobiła,
+wypadłabym z samochodu.
+
+--- strona 102 ---
+
+102
+
+Grafika 78. Testowanie sztucznych nóg w samochodzie przez Edytę.
+Dlatego ja mam wózek składany na płask i ja jak wsiądę na tylne siedzenie to go sobie
+wciągam tam, potem przechodzę między fotelami z tyłu do przodu i siadam w końcu
+na siedzeniu kierowcy. I dlatego ja mam tutaj trudność, to jest dla mnie ograniczające,
+ja sama z tym sobie nie poradzę, muszę wołać kogoś, żeby mi w tym pomógł. Ale mam
+nadzieję, że w przyszłości znajdę jakiś sposób, to jest do dopracowania jeszcze, tym bardziej
+że jestem na etapie wymiany wózka na nowy. Myślałam, że mogłabym mieć jakiś pas,
+który by mnie spinał z fotelem i wtedy mogłabym sobie ten wózek przerzucić na siedzenie.
+Kombinuję z tym, żeby nadal być samodzielną jednostką, nie lubię być zależna od kogoś.
+BS: A co, jeżeli miałabyś ściągać nogi przed wejściem do auta i zakładać je zaraz po wyjściu
+zasłaniając się drzwiami pojazdu?
+Edyta: To byłaby opcja, ja tak zrobiłam jak testowałam nogi w przestrzeni publicznej
+w sukience. Jak wyjeżdżałam z domu to syn mi pomógł, jednak jak wracałam to urwał mi się
+z nim kontakt i musiałam sobie poradzić sama z wyjściem z samochodu, jako że paski
+trzymające się już poluzowały więc musiałam sobie te nogi zdjąć, wypakować wózek
+i po prostu wyjść do domu. Trochę nieplanowanie zrobiłam właśnie tak jak mówisz. Te nogi
+są tak lekkie, że dało się to robić bez problemu. Wyzwaniem jednak pozostaje znalezienie
+miejsca, gdzie mogę spokojnie te nogi założyć lub ściągnąć przy samochodzie. Jak jesteś
+na parkingu np. przy galerii handlowej to nie ma takiej opcji, dużo ludzi chodzi, wszyscy
+patrzą, zaglądają. Myślę, że takie sprawy jak człowiek sobie coś poprawia w okolicach pasa
+to przyciągają wzrok.
+
+--- strona 103 ---
+
+103
+
+Grafika 79. Sztuczne nogi testerki Edyty w spodniach jeansowych.
+BS: A co z elementem trzymającym w postaci pasków parcianych?
+Edyta: Gdyby one były robione z materiałów i rzepów bieliźniarskich, delikatnych takich,
+z których jest robiona bielizna to one nie byłyby takie tragiczne. Problem polega na tym,
+że ten element jest z robiony z pasków, z których są robione rączki do toreb. Uważam,
+że element ten byłby użyteczny, gdyby nie te toporne paski. W takiej formie jest to porażka
+materiałowa.
+Te paski są za wielkie oraz z materiału problemowego, który może przetrzeć skórę
+użytkownika. Nie jest to materiał przyjazny ciału, nie nadaje się do założenia na gołe ciało.
+Problem, o którym mówię będzie jeszcze większy latem, kiedy nie da się założyć kilku warstw
+rzeczy, żeby uchronić się przed ocieraniem skóry przez te paski.
+
+--- strona 104 ---
+
+104
+
+Grafika 80, 81, 82. Testy sztucznych nóg przez Edytę w domu.
+Te paski wyglądają także okropnie. Dla porównania mam biustonosz sportowy, który ma
+paski z materiałów bieliźniarskich, gdzie są rzepy i regulacja długości, bielizna ta jest bardzo
+wygodna nawet kiedy jest ciepło oraz podczas aktywnego użytkowania. A w Twoim projekcie
+są wręcz paski przemysłowe. Ja rozumiem, że to jest prototyp lub produkt testowy dlatego
+w przyszłości mógłbyś zwrócić uwagę na te elementy, bo pachwiny, biodra i pas to są bardzo
+wrażliwe elementy ciała i powinny być w kontakcie z bardzo delikatnymi materiałami.
+Dlatego przez cały czas testowania używałam jak już wcześniej mówiłam elementu
+trzymającego „spodenko-nogi” a nie pasków.
+BS: A jak sprawił się element trzymający w postaci „spodenko-nóg”?
+Edyta: Tak jak mówiłam; te paski trzymające spodenki się zsunęły po kilkugodzinnym
+użytkowaniu. Przyczyna tego jest taka, że splot paska jest w jakiś sposób śliski, spodenki
+lycrowe są śliskie i także sama noga jest gładka, czyli śliska. Wszystko to wymaga między
+sobą czegoś gumowego, co zatrzymuje ześlizgiwanie się z siebie tych elementów. Myślę,
+że można byłby to ustabilizować dorabiając na końcu nogawki spodenek pasek gumowy
+lub silikonowy, wtedy byłby większe tarcie i pasek trzymałby stabilnie nogi i spodenki. Mam
+na myśli taki pasek silikonowy jakie mają np. pończochy samonośne.
+
+--- strona 105 ---
+
+105
+
+Grafika 83. "Spodenko - nogi" testowane przez Edytę.
+Przy obecnej pogodzie i przy obecnych temperaturach [marzec - przyp. redakcyjny] używanie
+„spodenko – nóg” było przyjemne. Natomiast przy 40 st. C to nie wiem czy te spodenki będą
+przyjemne. Fajnie byłoby, gdyby cały zestaw można byłoby bez rajstop lub pończoch nosić,
+co wymagałoby poprawy koloru i zniwelowania szwu.
+Warto dodać, że kikutami czułam te sztuczne nogi oczywiście poprzez ubranie, i miałam
+wrażenie, że nogi są za mocno przycięte. Tzn. jak ja siedzę, na wózku do czuję, że mam dużo
+luzu między sobą a nogami. Myślę, że za dużo je przyciąłeś. Dodatkowo wydają mi się te nogi
+wizualnie dla mnie za małe. Dawcą wzoru dla tych nóg była chyba szczupła, wysoka modelka
+a ja jestem typem raczej osoby o figurze sportsmenki, która uprawia sport, więc w moim
+przypadku wzorcem nóg powinna być dziewczyna bardziej „przy kości”. Dodatkowo ciemne
+rajstopy, w których je testowałam pogłębiły efekt szczupłości.
+
+--- strona 106 ---
+
+106
+BS: Płynne przeszłaś do odpowiedzi na moje kolejne pytanie, czyli doświadczenia z
+używania sztucznych nóg w przestrzeni publicznej.
+Edyta: Powiem Tobie o moim doświadczeniu, że kiedy byłam w przestrzeni publicznej
+ja naprawdę przekonałam się jeżdżąc po galerii, że wózek nic nie robi ludziom, wózek
+jest normą i pierwszy raz miałem wrażenie, że nikt mnie nie widział, nikt na mnie nie patrzył.
+Był to swoisty szok dla mnie. Czułam się wreszcie anonimowa, idea tych sztucznych nóg
+działa! Ja nie zdawałam sobie z tego sprawy jak ja przyciągam wzrok w przestrzeni
+publicznej, kiedy poruszałam się na wózku bez nóg, wtedy czułam na sobie spojrzenia innych
+a tu nagle jak założyłem te nogi - jak ręką odjął, ktoś zdjął te spojrzenia [śmiech]. Tak więc
+wtedy do mnie dotarło jak wcześniej intensywnie byłam obserwowana przez ludzi, wtedy,
+kiedy poruszałam się bez protez.
+Największe woow na mnie zrobiło, że wtedy byłam w sukience, jak używałam protez
+funkcjonalnych nie zakładałam sukienek, bo jednak to ciało jest powykrzywiane
+i powykręcane trochę w takiej pozycji i wydawało mi się, że za dużo będzie widać tych
+pasków i mocowań. Możliwość założenia sukienki zrobiła mi wtedy dużo dobrego. Fajnie
+się czułam, bardziej kobieco, ale brakowało mi szpilek, musisz pomyśleć o dostosowaniu stóp
+do szpilek. Taka możliwość byłaby wisienką na torcie tego projektu, bo kupiłam sobie
+baleriny na koturnach ale nie dało się ich wcisnąć na te stopy, ześlizgują się te buty
+na podwyższeniu, pasuje tylko płaskie obuwie na Twój produkt.
+
+--- strona 107 ---
+
+107
+
+Grafika 84 i 85. Zdjęcia Edyty ze sztucznymi nogami w przestrzeni publicznej.
+Może gdyby wyciąć kawałek pięty dałoby się założyć wyższe obuwie. W galerii byłam
+z koleżanką. Opinia jej była też „woow”, że super wyglądam, woow, że w sukience,
+fantastyczny widok itd. Ogólne woow.
+Pomysł na ten projekt ma sens. Ja jestem osobą, która generalnie nie potrzebuje tego,
+bo nie mam problemów z pokazaniem się w przestrzeni publicznej bez nóg, sztuczne nogi
+sprawiają mi też - tak jak mówiłam - problem z wejściem do samochodu a mimo tego myślę
+o nim w pozytywnym sensie.
+BS. Gdybym zostawił tobie te nogi to byłabyś skłonna je używać?
+Edyta: Myślę, że tak, gdyby były do mnie one lepiej dobrane. To jest kuszące, ale czuję taki
+dyskomfort, bo w protezach funkcjonalnych, które mam ja wyglądałam lepiej niż w twoich
+na wózku. Kluczem tutaj są proporcje, które nie podobają mi się, nogi są za drobne dla mnie,
+
+--- strona 108 ---
+
+108
+ja nie jestem tak drobnej budowy. Dodatkową kwestią jest jak już wspominałam używanie
+tych „spodenko-nóg” latem. Ale z protezami funkcjonalnymi też jest problem, ona mają
+szczelne leje i tam to dopiero jest piec. Więc można powiedzieć, że te „spodenko – nogi”
+i tak są lepsze niż protezy funkcjonalne, jeżeli chodzi o komfort latem bo te spodenki
+są bardziej przewiewne niż leje protez do chodzenia.
+Dla mnie dodatkowym plusem jeżdżenia na wózku z Twoimi nogami jest to, że ja siedzę
+prosto. Nogi te wymuszają na mnie ściągnięcie łopatek i prawidłową postawę. Nie wiem
+co jest tego przyczyną, czy kształt tych nóg czy to, że miałam sukienkę. To jest dobry powód,
+dla którego używałabym te nogi.
+BS: Chciałbym więcej dowiedzieć się na temat porównania mojego produktu do protez
+funkcjonalnych, tu już częściowo odpowiedziałaś na moje pytanie, czy jeszcze są jakieś
+podobieństwa lub różnice?
+Edyta: W protezach funkcjonalnych na wózku wyglądam proporcjonalnie, w sensie one
+są proporcjonalne do mojej sylwetki. Jeżeli natomiast chodzi o wygodę to wygrywają Twoje
+nogi. Z kolejnej strony protezy funkcjonalne mają taką przewagę nad Twoimi nogami,
+że w nich mogę na chwilę wstać z wózka i gdzieś podejść. Bo ja swego czasu w tych
+protezach dużo chodziłam. Ale to nie jest dla osób, które nie mogą i nie będą chodzić, mówię
+o swoim przypadku. Co to do tego chodzenia, jak jest np. gdzieś toaleta niedostosowana
+do osób z niepełnosprawnościami to ja sobie w proteazach funkcjonalnych w niej poradzę,
+bo wstanę z wózka i w nich wejdę tam i się normalnie załatwię, w twoich nogach już nie
+i będę musiała szukać toalety dostosowanej a nie wszędzie są takie.
+BS: Jaka była stabilność sztucznych nóg na wózku podczas testów?
+Edyta: Nie było tutaj problemów. Ten magnesik w kolanach świetny jest, bo jeszcze można
+sobie tam sukienkę wsadzić i już nie podwiewa jak szybko pędzisz na wózku a ja szybko
+jeżdżę na nim. Nie miałam żadnych problemów. Nawet jak mi się te paski zsunęły to nogi
+nadal stabilnie stały, nie było problemów. Nawet jakby, to nogi i tak by nie spadły ze mnie,
+bo miałam je w rajstopach na sobie i one jeszcze je awaryjnie trzymały. Nogi testowałam,
+w spodniach i sukience. W spodniach jest bezpiecznie, bo nogawki jeszcze je trzymają.
+
+--- strona 109 ---
+
+109
+Dla mnie ta modyfikacja jest o tyle fajna, że ja zawsze ubierałam się na sportowo,
+nie chodziłam elegancko ubrana, nie nakładałam sukienek, spódnic, takich rzeczy dlatego
+dla mnie te nogi dają nową perspektywę, bo umożliwiają takie kreacje.
+BS: Co sądzisz o opcji posiadania kilku par takich sztucznych nóg już ubranych na różne
+okazje?
+Edyta: Przebrać te nogi w ubranie nie jest problem, szybko się to robi. Trzymanie na tym
+spodni non stop chyba nie jest fajne, tym bardziej, że wydaje mi się, że dziewczyny,
+które chodzą elegancko ubrane to nie zakładają tego samego ubrania na drugi dzień. Wydaję
+mi się, że niekoniecznie byłaby potrzeba posiadania więcej niż jednej pary tego produktu.
+Ja trzymałam Twoje nogi w szafie w rajstopach, gdzie były ukryte przed kotami. Były ubrane,
+bo czekały na zakup butów. Może jest sens posiadania pary nóg dla butów płaskich i osobnej
+dla szpilek.
+BS: Czy kupiłabyś takie nogi, gdyby były w sprzedaży?
+Edyta: Jeżeli ten produkt odpowiadałby mi estetycznie to bym się zastanowiła. Musiałby
+mnie przyciągnąć wyglądem lub estetyką. Coś miałby w sobie mieć.
+Ktoś powiedział, że te nogi są jak biżuteria. A biżuterie kupuje się na zasadzie, że coś
+ci się podoba, coś jest ładne, coś jest woow. A ten twój prototyp nie robi jeszcze żadnego
+z tych wrażeń na mnie osobiście. Oczywiście, rozumiem, że to jest wersja testowa. Ja bym
+to kupiła nie z jakieś wielkiej potrzeby tylko z próżności, dokładnie tak jak biżuterię. Ja jestem
+oswojona z sobą i sobie radziłam bez tych nóg, ale żeby sobie podbić swoją samoocenę
+to bym sobie to kupiła, jeżeli to byłoby bardzo ładne. Żeby móc fajnie wyglądać, żeby móc
+założyć sukienkę, żeby dobrze się poczuć sama ze sobą.
+BS: Czy masz coś do dodania?
+Edyta: Ja całe życie nie miałam nóg i ja nie mam problemu z tym jak ja wyglądam, są osoby,
+które będą walczyć o ten produkt, bo one sobie nie będą wyobrażać wyjścia z domu bez
+niego i kupią go pewnie w każdej formie, nawet ze szwami lub nieidealnym kolorem.
+Będą osoby, którym będzie ten produkt niezbędny, żeby funkcjonować a dla mnie
+
+--- strona 110 ---
+
+110
+to jest taka przyjemność. Całe życie marzyłam o tym, żeby pobiegać boso po trawie, po rosie,
+albo żeby tańczyć na łące, no nie zrobię tego nigdy, ale w sukience pokazać się mogę.
+Takie są moje odczucia.
+
+--- strona 111 ---
+
+111
+Anna, 42 lat.
+Miejsce zamieszkania: miasto wojewódzkie poniżej 400 tyś. mieszkańców.
+Niepełnosprawność: Amputacja obustronna kończyn dolnych powyżej kolan z powodów
+urazowych w wieku 32 lat.
+Czas rozmowy: marzec 2023 r.
+BS: Jakie były Twoje pierwsze wrażenia po otrzymaniu sztucznych nóg testowych?
+Anna: Jak mam porównywać z tymi nogami pierwszymi, które były ciężkie, i oczywiście
+tu chodziło o to, żeby zobaczyć, jak to działa, to tutaj jest zdecydowana poprawa, ponieważ
+te nogi testowe są lekkie, co znacznie ułatwia montowanie ich na ciele. Te nogi
+są też szczuplejsze, o co prosiłam wcześniej i to też jest super. Byłam bardzo pozytywnie
+zaskoczona w porównaniu do tych pierwszych nóg prototypowych, które były już super.
+Ale uważam, że te testowe są znacznie lepsze i widzę w nich potencjał.
+BS: To wróćmy na chwilę jeszcze do tych pierwszych prototypowych nóg, które
+przywiozłem Tobie w pierwszej części projektu, jakie były ich zalety wg Ciebie?
+Anna: Te pierwsze nogi w mojej ocenie nadają się głównie do tego, żeby używać ich
+do robienia zdjęć. Te nogi sprawdzą się jako statyczne natomiast nie sprawdzą się jako nogi
+w ruchu, ponieważ wszystkie te łączenia - takie paski czy magnesy - ze względu na ciężkość
+tych nóg będą przeszkadzać. Więc jako statyczne nogi używane bez poruszania się na wózku
+np. do prezentowania się podczas zdjęć lub vloga są okay. Ale jako nogi, które mają być
+stosowane w codziennych czynnościach, w użytku jeszcze np. w przestrzeni publicznej
+i poddawaniu ich wstrząsom nie sprawdzą się. Ze względu na ich wagę i twardość
+to nie będzie po prostu działać.
+Te ciężkie pierwsze nogi ze względu na ich wagę wymagają także pomocy przy ubieraniu ich,
+sama nie byłam w stanie sobie z nimi poradzić. Pomagała mi mama z nimi lub Ty podczas
+Twojej wizyty. A jest to bardzo istotne, żeby przy obsłudze jakichkolwiek sztucznych nóg
+mogłabym poradzić sobie z nimi sama. Powtórzę: nogi pierwsze – prototypowe przy użyciu
+statycznym lub przy niewielkich ruchach i przemieszczaniu na małej przestrzeni są ok.
+Ale w przestrzeni publicznej nie widzę dla nich potencjału.
+
+--- strona 112 ---
+
+112
+
+Grafika 86, 87, 88. Testowanie nóg prototypowych wydrukowanych w technologii druku 3D
+jeszcze w poprzednim etapie niniejszego projektu.
+Oczywiście te nogi od strony wizualnej wyglądają bardzo dobrze. Film z tymi nogami
+zamieściłam na Instagramie i miałam głosy, że wyglądają bardzo dobrze. Sąsiadka mi nawet
+zwróciła uwagę, że super w nich wyglądam. Ktoś kto mnie zna i wie, że straciłam nogi
+i zobaczył mnie w takiej odsłonie z nogami był bardzo pozytywnie zaskoczony. Bardzo
+pozytywna ocena była też ze strony lekarza ortopedy – chirurga, który też widział mnie
+na tym nagraniu i na zdjęciach z tymi ciężkimi nogami i też powiedział, że to wygląda
+rewelacyjnie. Także wizualna ocena ze strony zarówno mojej jak i osób z zewnątrz jest
+bardzo pozytywna. Natomiast jak mówimy o użytkowaniu to wiemy, że jednak nogi lekkie
+będą się zdecydowanie lepiej sprawdzać.
+Należy też wskazać na to, że z uwagi na to, że nogi prototypowe są ciężkie one muszą być
+ze sobą mocno złączone – silnym magnesem neodymowym, a okazało się, że zastosowane
+magnesy były za słabe i te nogi się po prostu od siebie odczepiały w trakcie użytkowania.
+Taka przypadłość absolutnie nie może się dziać, bo nie chcemy sytuacji, kiedy ja jadę
+na wózku i nagle niespodziewanie odpada mi noga. Nie możemy mieć tego rodzaju sytuacji,
+ponieważ dążymy do tego, żebym ja się czuła w tym komfortowo i jadąc w przestrzeni
+publicznej na wózku z tymi nogami przyczepionymi do mnie nie spotkała mnie taka przykrość
+w postaci tego, że nagle ta noga odpada i ja nie tylko konfrontuję się z samym wózkiem
+i moją niepełnosprawnością, ale także zwracam na siebie uwagę tym, że nagle odpada
+mi noga i ludzie nie wiedzą o co chodzi. Zdecydowanie ten element powiązania tych nóg
+
+--- strona 113 ---
+
+113
+ze sobą jest bardzo istotny.
+Nie próbowałam przesiadać się z tymi twardymi nogami, bo one są także łatwe
+do uszkodzenia. Ich twardość może powodować, że mogą się obtłuc lub porysować. W tym
+zakresie one nie są praktyczne i nie sprawdzą się aktywnie. Statycznie tak, aktywnie nie. Jak
+ktoś je zamontuje na osobę siedzącą na wózku, to do zdjęcia jak najbardziej tak. Gdyby
+jednak trzeba było się z tymi nogami przemieszać po domu między meblami lub w terenie
+byłby problem, czyli potencjalnie także uszkodzenia. Nogi nie powinny być ciężkie, żeby
+nie utrudniać funkcjonowania.
+Kolejna sprawa to rozmiar stopy w tych twardych nogach. Generalnie rozmiar stopy jest
+bardzo istotny. Tutaj problemem było to, że w tych twardych nogach stopa była dość
+szeroka, a nawet tęga. I z tego powodu trudno było dobrać do nich obuwie. Jeszcze przed
+wypadkiem mój rozmiar obuwia był 38, czasem 37 i żaden z moich starych butów
+nie wchodził na te twarde stopy. Na tę stopę wszedł dopiero rozmiar 41 i to jeszcze były
+baleriny kupowane na tęgą stopę. Ja naturalnie miałam bardzo szczupłe stopy
+i jest to bardzo istotna sprawa dla mnie. Kupno obuwia na nogi prototypowe –
+twarde było wyzwaniem.
+BS: Przejdźmy z powrotem do nóg testowych miękkich…
+Anna: Pierwsze wrażenie było bardzo dobre dlatego, że te nogi są szczuplejsze –
+a o to prosiłam. One wyglądają już naturalnie. Pierwsze co się rzuca w oczy to one wyglądają
+właściwie jak prawdziwe nogi. Są także lekkie, co także jest ważne w momencie zakładania
+tych nóg. Jak najbardziej byłam pozytywnie zaskoczona tym produktem i efektem Twoich
+prac.
+BS: A jak było z ubieraniem nóg testowych?
+Anna: Te nogi można już ubierać samemu, z tym, że należy pamiętać, że w moim przypadku
+sprawdza się tylko montowanie ich ze spodenkami. Te nogi są dla mnie na pewno o wiele
+łatwiejsze w obsłudze w porównaniu do tych twardych. Na pewno ich lekkość powoduje,
+że jest mi łatwiej z tymi nogami samodzielnie sobie radzić.
+Z uwagi na to, że ja mam chore ręce i jest mi ogólnie trudniej rękoma operować to dla mnie
+
+--- strona 114 ---
+
+114
+wszystko co jest lżejsze i łatwiejsze w obsłudze jest lepsze. I jeżeli chodzi o te nogi
+to tutaj waga była bardzo ważna.
+
+Grafika 89, 90, 91. Testerka Anna ze sztucznymi nogami testowymi.
+Trzeba było do tych nóg kupić pończochy, nie rajstopy, bo nogi są osobno jak pończochy.
+Jedną z pierwszych rzeczy, na którą zwróciłam uwagę jest także kolor tych nóg, który moim
+zdaniem nie jest dokładnie jeszcze kolorem nogi, w związku z czym nie można z tymi nogami
+pokazać się bez rajstop lub pończoch i trzeba było na nie coś nałożyć. Więc trzeba było kupić
+pończochy i trzeba było kupić buty. I tutaj udało się nawet wcisnąć rozmiar buta 39, ale nadal
+trzeba było kupować baleriny i nie mogłam używać moich starych butów. Więc ten rozmiar
+stopy był już mniejszy, ale nadal za szeroki na 38. Po kupnie tego wszystkiego moja mama
+ubrała na te nogi pończochy i buty, zainstalowaliśmy te wszystkie przypięcia w oparciu
+o spodenki i zrobiliśmy mini sesję zdjęciową z tymi nogami w domu. Do sesji zdjęciowej
+ubrałam te nogi samodzielnie, bo jak przesiądę się z jednego wózka na drugi, to jestem
+w stanie te nogi podnieść z ziemi samodzielnie i wciągnąć je na siebie. Nogi co prawda były
+ubrane w rzeczy przez mamę, ale dałam radę sobie cały ten komplet założyć na siebie
+poprzez podniesienie nóg, położenie na podnóżku i siedzisku oraz naciągnięciu elementu
+trzymającego na siebie, a konkretnie na pupę. Te próby modowe były dokonywane
+ze spódniczkami, bo kiedyś bardzo lubiłam je nosić i planuję to robić dalej, dlatego
+nie próbowałam tych nóg w spodniach.
+
+--- strona 115 ---
+
+115
+
+Grafika 92, 93, 94. Testerka Anna sprawdza sztuczne nogi w przestrzeni publicznej.
+Widziałam zdjęcia drugiej testerki i fajnie, że u niej działa to także ze spodniami. Ja spodni
+jeszcze nie próbowałam, ale to nie znaczy, że nie spróbuję w przyszłości. Testowałam
+spódniczki, bo taki był mój wybór, natomiast z w związku z tym, że widzę duży potencjał
+w tym produkcie to chciałbym, żeby to wszystko się, rozwinęło na tyle, żeby także jeździć
+w jeansach, innych butach itd.
+BS: A coś o wadach nóg testowych?
+Anna: To co, dla mnie jest istotne, to to, żeby te nogi wyglądały jak najbardziej naturalnie.
+Kolor, który mają te nogi teraz jest wg mnie kolorem typowo technicznym, tzn. tu nie ma
+koloru skóry. Mam nadzieję, że docelowo zostanie to kiedyś poprawione i będzie to kolor
+naturalny skóry, żebym mogła być w pełni zadowolona z tego produktu. Kształt nóg jest
+super, ale jeszcze dopasowanie stopy mogłoby być lepsze. Dlaczego jeszcze kolor skóry jest
+istotny? Bo jak nałożymy na nogi pończochy o niższym DEN, to kolor pończoch nie przykryje
+tego technicznego obecnego koloru. Ten kolor techniczny jest bardzo trudny do przykrycia
+pończochami o niskim DEN. Teraz mamy wiosnę i jakbym chciała założyć np. różowe rajstopy
+to one nie przykryją tego koloru, bo różowe nie są dostępne w wysokim DEN. Podobnie
+z kabaretkami, tu też ten kolor techniczny będzie widoczny i nie zostanie przykryty.
+Nie będzie to wyglądać jakby skóra miała naturalny kolor.
+
+--- strona 116 ---
+
+116
+Tu trzeba patrzeć na funkcjonalność wizualną tych nóg, już jest bardzo dobrze, ale trzeba
+jeszcze kilka rzeczy dopracować. Nie chcę, żeby np. w kabaretkach było widać, że mam
+sztuczną nogę. Ten obecny kolor ogranicza możliwość ubrania wielu rzeczy.
+BS: A co sądzisz o szwach technologicznych widocznych na powierzchni nóg?
+Anna: Byłam o nich przez Ciebie poinformowana zanim je otrzymałam. Troszeczkę sobie
+wtedy inaczej je wyobrażałam, bo myślałam, że one będą po bokach, ale z uwagi na to,
+że one były na środku to udało się je jakoś zamaskować pończochą o wysokim DEN.
+Natomiast w docelowej wersji komercyjnej, jeżeli można byłoby to poprawić to uważam,
+że tych szwów nie powinno być. Jest to dodatkowy element, przy którym trzeba
+kombinować, żeby go zamaskować. Szwy obecnie także przeszkadzają w zakładaniu
+pończoch o niskim DEN. To znowu będzie zwracać uwagę, że coś z tą nogą jest nie tak.
+Jest to wada do wyeliminowania.
+BS: Dostałaś 2 elementy trzymające, jeden oparty na paskach, a drugi w postaci
+„spodenko-nóg” jakie doświadczenia?
+Anna: W moim przypadku montowanie tych nóg na paskach z tymi sprzączkami nie sprawdza
+się, ponieważ w takiej konfiguracji te nogi są bardziej ruchome, niestabilne. Nogi w takim
+układzie odstają bardziej od ciała, czyli od kikutów i nie są tak mocno sprzężone z całym
+tułowiem. To wszystko powoduje, że jak się ubiorę i na to nałożę spódniczkę to w momencie
+kiedy wózkiem zaczynam się poruszać te nogi się bardzo mocno ruszają. Wtedy komfort
+dla mnie, czyli osoby, która nie chce, żeby te nogi potencjalnie odpadły, jest zdecydowanie
+mniejszy, bo nogi podczas takiej jazdy ruszają się na wszystkie możliwe strony, są niestabilne.
+
+--- strona 117 ---
+
+117
+
+Grafika 95. Testy sztucznych nóg w przestrzeni publicznej.
+Tę uprząż testowałam zarówno na wózku manualnym (aktywnym) jak i elektrycznym.
+Przy wstrząsach, pokonywaniu większych progów te nogi sprawiały wrażanie jakby miały
+zaraz odpaść. Dodatkowo przy przesiadaniu się z tymi paskami nogi się słabo trzymają
+i to też jest spore utrudnienie. Miałam wrażenie przy przesiadaniu, że to zaraz się wszystko
+rozpadnie. A moja potrzeba jest taka, żeby te nogi były z człowiekiem jak najbardziej
+powiązane i dlatego najlepszym systemem, który to zapewnia jest właśnie ten drugi sposób,
+czyli „spodenko-nogi”, czyli rodzaj getrów łączących nogi z ciałem. I dopiero ten element
+spełnia tę funkcję, o którą mi chodzi. Ja wciągam cały ten system na siebie i w zasadzie czuję
+się tak jakbym po prostu siedziała w rajstopach. W tych spodenkach rozciągliwych
+ja nie odczuwam dyskomfortu, a do tego jest to na tyle silnie połączone z moim ciałem,
+że w momencie pokonywania progów i innych przeszkód, kiedy wózek poddawany jest
+wstrząsom oraz podczas przesiadania nogi są stabilne i nie mam wrażenia, że odpadną.
+Ten system daje komfort psychiczny, sprawdza się. Testowaliśmy go w przestrzeni publicznej
+i zdał egzamin, mimo że wcześniej byłam bardzo zestresowana obawą, że będzie inaczej.
+
+--- strona 118 ---
+
+118
+Reasumując, w moim przypadku sprawdzają się tylko „spodenko – nogi”.
+BS: Jak sprawdziły się nogi w przestrzeni publicznej?
+Anna: Rzeczywiście obawiałam się wyjścia z tymi nogami do przestrzeni publicznej dlatego,
+że obawiałam się, że te nogi odpadną, będzie jakaś niebezpieczna sytuacja w postaci jakiejś
+awarii z nimi związanej. I rzeczywiście ten wyjazd z domu do Ikei był dla mnie stresujący,
+bo nie miałam pewności czy to się będzie trzymać. Na początku, jak się poruszałam
+w tej przestrzeni, to trochę niepewnie. Ale im dłużej to było testowane, tym coraz bardziej
+okazywało się, że te nogi nie odpadają, są stabilne a do tego prezentują się bardzo dobrze.
+Czułam się w nich komfortowo i nie ukrywam, że po konfrontacji z lustrem i zdjęciami z tego
+wyjścia cała sytuacja wpłynęła bardzo pozytywnie na moją psychikę. Z tymi nogami, zarówno
+na zdjęciach jak i na nagraniach wyglądam bardzo naturalnie i jak poruszałam się
+w przestrzeni publicznej wśród ludzi, gdzie do tej pory jeździłam w śpiworze (o czym
+mówiłam w poprzednim wywiadzie do raportu do pierwszej części projektu), to ta nowa
+wersja bardzo zmienia komfort poruszania się w przestrzeni publicznej. Jestem
+przyzwyczajona do korzystania ze śpiwora, ale ta możliwość przywrócenia wyglądu z nogami,
+że te nogi są, mogę się lepiej ubrać, w ogóle, że mogę ubrać się na dole, gdzie mogę mieć
+buty, spódnicę itp. bardzo poprawia moje samopoczucie psychiczne. Dla mnie zdecydowanie
+ten wyjazd pokazał możliwości zastosowania tych nóg w praktyce i pewnie będę z nich
+w przyszłości korzystała przy podobnych wyjściach. Mam takie poczucie, że w zestawieniu
+z tymi nogami nie zwraca się uwagi na mój wózek. Sam wózek jako taki jest już pewnym
+elementem, który zwraca uwagę, jeśli dołożymy do tego brak nóg i ja musiałabym poruszać
+się z widocznym brakiem nóg jest dla mnie nie do przyjęcia, bo zwracałabym na siebie
+uwagę. Moim celem nie jest aż takie zwracanie na siebie uwagi tylko istotne jest dla mnie
+to poczucie komfortu w przestrzeni publicznej i właśnie te nogi plus ubiór daje mi to
+poczucie komfortu.
+
+--- strona 119 ---
+
+119
+
+Grafika 96. Testy nóg w toalecie dostosowanej do OzN w sklepie.
+Czułam, że wyglądam jak każda inna osoba na wózku, która ma nogi. Bo należy pamiętać
+o tym, że jest masa osób poruszających się na wózkach w wyniku różnych chorób
+czy urazów, które jednak nogi mają. I ja właśnie czułam się jak jedna z tych osób, i taka która
+ma nogi. Nie czułam, że zwracałam na siebie uwagę w jakiś szczególny sposób właśnie na tle
+innych osób, które poruszają się na wózkach. A należy pamiętać o tym, że osób
+poruszających się na wózkach w przestrzeni publicznej jest coraz więcej. Ja akurat czułam się
+komfortowo w tym stroju, w którym byłam, z tymi nogami, nie odczułam żadnego
+dyskomfortu jeżdżąc z tym zestawem wśród ludzi w przestrzeni publicznej.
+Czułam się swobodnie. Czułam się też zdecydowanie bardzo atrakcyjnie.
+Ja jestem generalnie przekonana, że nikt nie zdawał sobie sprawy z tego, że to nie są moje
+nogi i absolutnie nie mam poczucia, że ktokolwiek koncentrował się na tym, że mam
+sztuczne nogi. Nikt o tym nie wiedział tylko bardziej jak już koncentrował się na tym,
+że ładnie wyglądam. Ja jestem osobą, która jest przyzwyczajona do dbania o siebie, fajnego
+
+--- strona 120 ---
+
+120
+wyglądu, jeżeli chodzi o ubieranie się i miałam poczucie, że nie byłam przedmiotem
+zainteresowania z uwagi na brak nóg, tylko jak już to z uwagi, że wyglądam atrakcyjnie.
+Jak mówiłam, nie sądzę, że ktokolwiek zdawał sobie sprawę z tego, że te nogi są sztuczne.
+BS: Czy w tym całym setupie, który wtedy miałaś na sobie (nogi + ubiór) należałoby
+coś poprawić?
+Anna: Wydaje się, że akurat tam, gdzie byliśmy sprawdziło się wszystko. Ja nie skorzystałam
+nawet z przypięcia stóp do ramy wózka. Ten setup w zasadzie sprawdził się znakomicie,
+ale należy pamiętać, że wtedy elementem trzymającym były „spodenko – nogi”. Więc ten
+układ z tym elementem trzymającym i mocnymi magnesami, które są też ważne, wszystko
+działało jak trzeba. Wydaje mi się, że całość sprawdziła się perfekcyjnie i wszystko było okay.
+Nie napotkałam podczas tego wyjścia sytuacji, w której coś by nie działało lub nawet
+powodowało uczucie dyskomfortu.
+BS: Jak się czuło fizycznie te sztuczne nogi?
+Anna: Nie odczuwałam żadnego dyskomfortu czując te nogi poprzez ubranie kikutem.
+Ja mam czucie w kikutach i czułam te nogi, że są. W użytkowaniu jest to tak wygodne,
+że nie powoduje żadnego dyskomfortu w kontakcie z ciałem przez materiał izolujący.
+Nie mam tu żadnych zastrzeżeń.
+BS: Czy kupiłabyś taki produkt, gdyby był dostępny w sprzedaży?
+Anna: Bez wątpienia nabyłabym taki produkt dlatego, że bardzo fajnie się to sprawdziło
+i chciałbym z tych nóg korzystać.
+BS: Czy opcją jest posiadanie kilku par już ubranych w różne kreacje?
+Anna: Ja bym chciała móc z tych nóg korzystać w różnej formie tzn. chciałabym mieć
+możliwość ubierania ich w różne kolory pończoch, chciałbym je ubierać w jeansy lub inne
+spodnie. To co jest dla mnie istotne to to, żeby ubierać różne rodzaje obuwia. Tutaj
+testowaliśmy obuwie płaskie natomiast dla mnie kluczowym będzie też to, żeby móc ubrać
+szpilki, móc ubrać buty zimowe itd. Więc jest tu duże pole do popisu, żeby kontynuować
+prace nad stopą, bo tutaj odpowiedni kształt stopy będzie wyzwaniem. Projekt więc ma
+
+--- strona 121 ---
+
+121
+ogromny potencjał jeżeli chodzi o dopracowanie kwestii elastyczności stopy albo doczepiania
+innej stopy. Ale generalnie wystarczyłaby mi jedna para, bo mogę przecież te nogi przebierać
+w różne kreacje.
+BS: Wrażenia po testach zderzeniowych i wstrząsowych?
+Anna: To jest też dobre, że te nogi w konfrontacji z różnymi przeszkodami pozostają bardzo
+mocno zespolone z użytkownikiem (czyli ze mną) i to, że one nie odpadają jest istotne.
+Te testy podniosły moje poczucie komfortu, gdyż pomimo zderzeń z różnymi przedmiotami
+i meblami nie wydarzyło się nic z tego, czego obawiałam się wcześniej, mam tu na myśli to,
+że mogłyby odpaść i mogłoby się tam zrobić wielkie widowisko.
+Zdecydowanie widać tę odporność na wstrząsy i pokonywanie różnych przeszkód.
+
+Grafika 97. Kadr z filmu, zderzenie z meblem użytkowniczki ze sztucznymi nogami.
+BS: Zrobiłaś też próbę korzystania z toalety w tych nogach…
+Anna: Tego też się obawiałam, ale znowu nie było problemów. Myślałam, że jak w toalecie
+zdejmę te nogi to później będę miała problemy, żeby je znowu założyć. Dużo stresu było
+na samą myśl, że muszę to zrobić. Bałam się, że ich nie podniosę po zdjęciu i ich sama
+na siebie nie naciągnę. Okazało się jednak, że można sobie poradzić, można rzeczywiście
+te nogi z siebie ściągnąć, odstawić je na bok i potem po załatwianiu potrzeb fizjologicznych
+
+--- strona 122 ---
+
+122
+znowu je na siebie założyć. To, że ten test wyszedł pozytywnie upewniło mnie, że można
+ten produkt używać w przestrzeni publicznej i nie ma przeszkód z korzystania z nim z toalety.
+Test zdany na piątkę.
+BS: Jaki jest obiór tego produktu przez Twoich bliskich?
+Anna: Moi rodzice bardzo pozytywnie odbierają mnie w tych nogach i także cały ten projekt.
+Jak mówiłam w poprzednim wywiadzie kiedyś sami próbowaliśmy stworzyć domowymi
+metodami coś podobnego, ale nie wyszło.
+Moja mama z uwagi na to, że pomagała mi w ubieraniu na te nogi rzeczy i wyszukaniu też
+odpowiednich rzeczy do ubrania np. butów itd. ma bardzo pozytywny odbiór mnie jako
+osoby z tymi nogami, bo widzi, że wyglądam z nimi bardzo naturalnie, czyli tak jak dawniej.
+Ona widzi też, jak się dobrze z tymi nogami czuję.
+
+Grafika 98. Anna z testowanymi sztucznymi nogami.
+Mój tata widział zdjęcia z tego wyjazdu do Ikei i też bardzo pozytywnie odbiera ten projekt
+i to jak ja wizualnie się prezentuję. Moi rodzice wiedzą jak bardzo lubię modę i lubię
+
+--- strona 123 ---
+
+123
+się przebierać i wiedzą, że ja bardzo cierpiałam przez klika dobrych lat, że nie mogę właśnie
+ubrać nic na dole (spodni, spódnic, butów itd.) Wiedzą także, że możliwość pełnego
+ubierania się od stóp do samej góry znacząco poprawia mój stan psychiczny. A samopoczucie
+jest bardzo ważne dla osób niepełnosprawnych, po amputacjach, zwłaszcza po takich
+wysokich, kiedy nie można korzystać z protez funkcjonalnych. Rodzice są bardzo pozytywnie
+zaskoczeni efektami tego projektu.
+Znajomi również byli w pozytywnym szoku. Sąsiadka, która mnie spotkała chwaliła zdjęcia
+ze sztucznymi nogami, które widziała na Instagramie i cieszyła się, że będę mogła nosić
+sukienki, buty i ubierać się kobieco. Cieszę się, że taka była reakcja osoby, która nie jest
+niepełnosprawna. Mój nowy look chwaliła także moja kuzynka, znajomy ortopeda, inni
+znajomi i internauci. Można uznać, że ludzie, którzy widzieli mnie w tych nogach
+są zszokowani, że tak dobrze to wygląda.
+BS: Czy masz coś jeszcze do dodania?
+Anna: Mogę dodać, że kontaktowałam się mężczyzną z Austrii, który jest po wypadku
+motocyklowym i ma podobną amputację do mojej. Opowiedziałam mu o tym projekcie
+i powiedział, żebym mu koniecznie dała znać, jak projekt będzie się rozwijał, bo też był
+w szoku jak dobrze to wygląda, jak zobaczył zdjęcia. Widać, że zainteresowanie
+tym projektem jest. Projekt też może pomóc wielu osobom, które straciły lub stracą nogi
+podczas wojny w Ukrainie.
+
+--- strona 124 ---
+
+124
+Podsumowanie wywiadów
+Uczestniczki, bardzo pozytywnie oceniają swój wygląd w założonych sztucznych nogach oraz
+dobranym przez nie ubiorze. Po raz pierwszy od bardzo dawna mogły założyć sukienkę
+lub spódnicę.
+Ze spotkań wyłaniają się 3 pierwszorzędne wady nóg: kolor, szwy oraz potencjalne problemy
+w używaniem ich latem. W ramach oczekiwań chciałyby mieć możliwość stosowania butów
+na obcasie oraz mieć do dyspozycji większą gamę tęgości samych nóg.
+Zdecydowanym hitem jest urządzenie trzymające w postaci „spodenko – nóg”, podobne
+urządzenie oparte na pasach parcianych wymaga dopracowania i było niechętnie testowane.
+Testerom wystarczy jedna para nóg, którą mogłyby ubierać w zależności od swoich potrzeb.
+Używane protezy estetyczne traktowane były przez kobiety bardziej jak dodatek modowy
+lub biżuteria niż akcesorium ortopedyczne.
+Testerki oczekują, żeby prace nad tym produktem były kontynuowane w celu doskonalenia
+nóg oraz wyeliminowania zauważonych przez nie wad.
+
+--- strona 125 ---
+
+125
+Użytkowanie produktów
+Sztuczne nogi nadają się do użytku do czasu, kiedy zewnętrza powłoka nie zostanie
+przerwana. Wtedy użytkowanie należy zaprzestać a protezy zutylizować zgodnie
+z obowiązującym prawem dot. gospodarki odpadami komunalnymi.
+Podczas użytkowania końcówki sztucznych nóg nie powinny mieć kontaktu z ludzkim ciałem,
+aby to osiągnąć elementy ludzkiego ciała powinny w miejscu kontaktu z atrapami nóg
+być odziane. Sztuczne nogi nie są elementem zaopatrzenia ortopedycznego i medycznego,
+stanowią one dodatek lub akcesorium modowe.
+Sztuczne nogi czyścić wilgotną ścierką lub wilgotną ścierką po zdjęciu z niej odzieży i obuwia.
+Unikać zamoczenia powierzchni górnej, powstałej po przycięciu sztucznej nogi na wymiar.
+W przypadku zamoczenia, atrapę suszyć powierzchnią powstałą po przycięciu na wymiar
+skierowaną ku górze bez założonych na sztuczną nogę ubrań i obuwia.
+Formę negatywową przechowywać złożoną i skręconą, w ciemnym i suchym pomieszczeniu
+o temperaturze 18 – 22 st. C, chyba, że instrukcje lub karty techniczne komponentów
+użytych do jej stworzenia zalecają inaczej. Forma powinna być przechowywana
+w taki sposób, aby część sylikonowa miękka nie pokrywała się grawitacyjnie kurzem
+lub innymi zanieczyszczeniami mogącymi na niej osiąść.
+Przechowywanie formy z umieszczoną w niej odlaną nogą, tak aby elementy części
+silikonowej były umieszczone w swoich dedykowanych miejscach może znacznie przedłużyć
+żywotność całej formy.
+Forma nie powinna być przechowywana w pobliżu substancji będących rozpuszczalnikami
+komponentów, z których forma została zrobiona.

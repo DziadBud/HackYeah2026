@@ -1,0 +1,1546 @@
+--- strona 1 ---
+
+CZAS NA AKTYWNOŚĆ
+- PLATFORMA INTERNETOWA
+DLA OSÓB Z NIEPEŁNOSPRAWNOŚCIĄ INTELEKTUALNĄ
+
+Raport końcowy
+
+Kraków, czerwiec 2018
+
+--- strona 2 ---
+1
+Spis treści
+
+1. Opis innowacji społecznej
+2
+1.1 Historia i główne założenia innowacji
+2
+1.2 Panel użytkownika - główne funkcjonalności
+3
+1.2.1. Wydarzenia
+3
+1.2.2. Moje konto
+5
+1.2.3. Znajomi i czat
+6
+1.2.4. Pomoc
+7
+1.3 Panel administratora
+8
+2. Platforma z perspektywy użytkowników
+14
+2.1 Grupa testująca
+14
+2.2 Wnioski
+15
+3. Platforma z perspektywy wolontariuszy
+18
+4. Platforma z perspektywy rodziców / opiekunów
+20
+5. Platforma z perspektywy moderatora - relacja
+23
+6. Wady i zalety rozwiązania
+25
+6.1 Zalety rozwiązania
+25
+6.2 Wady rozwiązania
+28
+7. Podsumowanie realizacji projektu i analiza wyników testu
+30
+7.1 Podłoże teoretyczne
+30
+7.2 Podsumowanie
+31
+8. Rekomendacje i zalecenia
+35
+8.1. Rekomendacja zawsze aktualna: dobrze rozplanuj projekt w czasie!
+35
+8.2. Zastanów się, kto będzie odbiorcą platformy
+35
+8.3. Znajdź dobrego moderatora
+36
+8.4. Nie wszystko na raz! Wprowadzaj platformę krok po kroku.
+38
+9. Aneks - zapis źródłowego kodu platformy i dokumentacja wdrożeniowa.
+
+--- strona 3 ---
+2
+1. Opis innowacji społecznej
+
+1.1 Historia i główne założenia innowacji
+
+Pomysł stworzenia platformy internetowej “Czas na aktywność” narodził się na
+pierwszym hackathonie miasta Krakowa - KrakHack 2017. Celem imprezy było stworzenie
+innowacyjnych pomysłów na rozwiązania problemów społecznych ważnych z perspektywy
+mieszkańców miasta Krakowa, w oparciu o nowe technologie. Nasz zespół składał się
+ze specjalistek od lat pracujących z osobami z niepełnosprawnościami, skupionych wokół
+Stowarzyszenia Rodziców i Przyjaciół Dzieci z Zespołem Downa “Tęcza” w Krakowie.
+Szukałyśmy innowacji, która pozwoli nam zwiększenie aktywności społecznej naszych
+podopiecznych - dorosłych osób z zespołem Downa. Rozwiązanie miało przede wszystkim
+ułatwiać im pokonywanie przeszkód, które napotykają w związku z niepełnosprawnością,
+oraz przenosić ciężar organizacji czasu wolnego z rodziców na inne osoby wspierające:
+terapeutów, asystentów, wolontariuszy. Chciałyśmy stworzyć narzędzie, które pozwoli nam
+na integrację młodych osób z zespołem Downa z ich pełnosprawnymi rówieśnikami. W ten
+sposób powstał zarys platformy. Choć miałyśmy jedynie mgliste pojęcie, jak przełożyć nasze
+wizje na konkretne narzędzie, podjęłyśmy próbę przekonania do niej jurorów. Jury składające
+się z władz miasta, dyrektorów generalnych krakowskich firm i startupów doceniło nasz
+pomysł. Trafiłyśmy do finałowej 10., co dało nam wiarę w to, że miasto popiera innowacyjne
+działania na rzecz osób z niepełnosprawnościami. Choć KrakHacku nie wygrałyśmy, pomysł
+stał się dla nas tak bardzo ważny, że postanowiłyśmy znaleźć na niego finansowanie. W ten
+sposób trafiłyśmy do Małopolskiego Inkubatora Innowacji Społecznych.
+
+Środowisko osób z niepełnosprawnościami napotyka m.in. na dwa rodzaje
+wykluczenia: wykluczenia technologicznego oraz społecznego. Po pierwsze nie posiadają oni
+wysoko rozwiniętych zdolności korzystania z nowych technologii, które umożliwiłyby im
+samodzielność. Napotykają na liczne problemy związane z obsługą komputera, brakiem
+umiejętności sprawnego czytania, przeładowaniem informacyjnym sieci oraz wysokim
+poziomem skomplikowania informacji, który uniemożliwia im samodzielne przejrzenie
+oferty miasta i podjęcie aktywności. Po drugie, jest to grupa nierzadko wykluczona z życia
+społecznego oraz kulturalnego swojego miasta. Część z osób nie porusza się samodzielnie po
+mieście, nie jest w stanie samodzielnie np. znaleźć kasę biletową, kupić bilety czy odnaleźć
+się w tłumie ludzi. W praktyce czas wolny organizują im rodzice oraz instytucje, takie jak
+stowarzyszenia, szkoła czy warsztaty terapii zajęciowej. Powoduje to, że nie mogą rozwijać
+np. własnych zainteresowań, samodzielności, własnej inicjatywy. Skoro czas organizują im
+rodzice, to spędzają go w sposób zbliżony do nich, często nie wiedząc jak osoba młoda może
+bawić się w mieście i jak dużo ciekawych inicjatyw podejmuje ich lokalne środowisko.
+
+To właśnie z tymi problemami ma radzić sobie platforma “Czas na aktywność”.
+Poprzez uproszczony interfejs, zbudowany z elementów graficznych i dźwiękowych ma
+w czytelny i przejrzysty sposób przekazywać informacje osobom z niepełnosprawnościami.
+Informacjami, które platforma ma dostarczać są sposoby spędzania wolnego czasu oraz
+propozycje spotkań oraz wyjść na miasto.
+
+--- strona 4 ---
+3
+1.2 Panel użytkownika - główne funkcjonalności
+
+1.2.1. Wydarzenia
+
+Rys. 1 - Strona startowa
+
+Główną
+funkcjonalnością
+platformy
+jest
+wybór
+aktywności
+z
+puli
+wyselekcjonowanych, dopasowanych do jego możliwości wydarzeń. Uszeregowane są one
+w 4 kategorie: sport, kultura, wycieczki i spotkania. Każda kategoria ma dodatkowo
+przynajmniej 2 podkategorie.
+Dzięki możliwości edycji konkretne podkategorie krystalizowały się w trakcie
+testowania platformy, w oparciu o obserwację tego, w czym najchętniej biorą udział nasi
+odbiorcy. Aktualnie podział kategorii prezentuje się następująco:
+
+1. Sport
+a) ruch
+b) imprezy sportowe
+c) taniec
+
+2. Kultura
+a) kino i teatr
+b) muzyka
+c) warsztaty
+
+--- strona 5 ---
+4
+3. Wycieczki
+a) wycieczki jednodniowe
+b) dłuższe wyjazdy
+
+4. Spotkania
+a) wyjścia na miasto
+b) spotkania u znajomych
+
+Rys. 2 - Opis wydarzenia
+
+Po wyborze podkategorii, użytkownik przechodzi do ekranu z konkretnymi
+propozycjami wydarzeń. Wśród nich są zarówno te bardziej ustrukturyzowane (np. wyjście
+do kina czy kawiarni zaplanowane na konkretną datę i godzinę), jak i wydarzenia “luźne”
+(widoczne powyżej spotkanie ze znajomymi czy randka). To rozwiązanie, integrujące
+wydarzenia o większej, z góry ustalonej strukturze z tymi bardziej “luźnymi” (oddającymi
+inicjatywę w ręce osób niepełnosprawnych), odpowiada na potrzeby naszych odbiorców - nie
+tylko korzystania z oferty miasta, ale również uzyskania wsparcia w zakresie organizacji
+spotkań o charakterze typowo towarzyskim.
+Użytkownik ma możliwość przeczytania lub odsłuchania prostego tekstu
+zachęcającego do udziału w aktywności oraz zawierającego szczegóły ważne od strony
+organizacyjnej.
+Informacje, które widzi użytkownik na ekranie to data, godzina wydarzenia oraz jego
+koszt. Starałyśmy się wypracować taki opis wydarzeń, który z jednej strony pozwoli naszym
+odbiorcom zrozumieć i zapamiętać najważniejsze informacje, a z drugiej zawrze w sobie
+wszystkie szczegóły istotne z punktu widzenia rodziców.
+Po prawej stronie znajduje się przycisk “biorę udział”, który służy do zapisu na
+wydarzenie.
+
+--- strona 6 ---
+5
+Wydarzenia uszeregowane są w dodatkowe trzy kategorie - “Propozycje”;
+wydarzenia, w których użytkownik bierze udział (“Biorę udział”) oraz w wydarzenia z
+przeszłości (“Przeszłe”). Podział umożliwia każdemu użytkownikowi zapoznanie się z
+propozycjami, sprawdzenie, jakie wydarzenia zaplanował na najbliższe dni oraz podgląd
+atrakcji, w których brał udział - w tym m.in. oglądnięcie zdjęć dodanych przez
+administratora.
+
+1.2.2. Moje konto
+
+Rys. 3 - Moje konto
+
+Kolejną zakładką dostępną na platformie jest “moje konto”.
+Wszystkie dane widoczne na ekranie użytkownik podaje podczas rejestracji,
+możliwość edycji posiada jedynie moderator. Użytkownik widzi swój wiek, numer telefonu
+(który mógł udostępnić lub nie udostępniać na platformie), opis oraz ulubione aktywności.
+Na tym ekranie użytkownik może przejść również do swojej galerii zdjęć, gdzie istnieje
+możliwość załadowania kolejnych fotografii widocznych dla innych użytkowników w
+zakładce “Znajomi”.
+
+--- strona 7 ---
+6
+1.2.3. Znajomi i czat
+
+Rys. 4 - Znajomi
+
+Kolejną zakładką są “Znajomi”. Użytkownik ma możliwość przejrzenia wszystkich
+zarejestrowanych na platformie użytkowników: zarówno osób z niepełnosprawnościami,
+jak i wolontariuszy, moderatorów czy administratorów. Widzi awatara oraz imię i nazwisko
+każdej osoby mającej konto.
+W momencie otrzymania od znajomego wiadomości pojawia się niebieskie
+oznaczenie. W wypadku gdy użytkownik jest on-line, podczas otrzymania nowej wiadomości
+oprócz komunikatu wizualnego pojawia się również charakterystyczny dźwięk. Kliknięcie
+serca po prawej stronie powoduje dodanie innego użytkownika do ulubionych, co powoduje
+wyświetlanie go u góry ekranu.
+Po lewej stronie znajdują się dwa przyciski: “koperta”, która przenosi do czatu ze
+znajomym (podobnie jak widoczny u góry przycisk “czat z…”) oraz przycisk “Zobacz
+profil”, który przenosi użytkownika do profilu znajomego. Podobnie jak na stronie “Moje
+konto”, istnieje możliwość zobaczenia wieku, imienia i nazwiska, opisu i ulubionych
+aktywności znajomego. Numer telefonu widoczny będzie jedynie, gdy przy rejestracji
+użytkownik zaznaczył opcję “chcę, aby mój numer był widoczny dla innych użytkowników
+platformy”.
+
+--- strona 8 ---
+7
+
+Rys. 5 - Czat
+
+Ważną funkcją na platformie jest funkcja czatu ze znajomymi. Mamy tu możliwość
+wpisywania wiadomości tekstowych oraz wybierania emotikonek z dostępnego zbioru.
+U góry okienka widzimy awatar oraz imię i nazwisko znajomego, z którym akurat piszemy
+oraz mamy możliwość cofnięcia się do wcześniejszego ekranu.
+1.2.4. Pomoc
+
+--- strona 9 ---
+8
+Rys. 6 - Pomoc
+
+Dodatkową funkcjonalnością dostępną na platformie jest “Pomoc”. Dostępna jest ona
+na każdym etapie korzystania z platformy.
+Przyciśnięcie przycisku “Pomoc” w dowolnym momencie korzystania z platformy
+powoduje wyświetlenie ekranów pomocniczych przyporządkowanych do danego miejsca,
+w którym użytkownik się znajduje (czy to przy wyborze aktywności, czy w czacie ze
+znajomym) oraz uruchomienie nagrania lektorskiego (o treści identycznej jak widoczne
+teksty).
+
+1.3 Panel administratora
+
+Oprócz panelu dla użytkowników, dostępny jest również osobny system zarządzania
+treścią zaprojektowany specjalnie dla moderatora. Jego obecna forma była dostosowywana
+pod nasze potrzeby i zakłada dużą możliwość edycji treści. Poniżej znajduje się opis
+poszczególnych funkcjonalności dostępnych w panelu administratora wraz z podglądem
+danych ekranów.
+
+Rys. 7 - Panel administratora, strona startowa
+
+Pierwszym ekranem w panelu administratora jest strona startowa. Istnieje na niej
+możliwość wprowadzenia innego filmu (explainer video) oraz edycja treści strony głównej.
+
+--- strona 10 ---
+9
+
+Rys. 10 - Panel administratora, Kategorie
+
+Kolejną funkcją w panelu administratora jest edycja kategorii. Kategorie główne:
+sport, kultura, spotkania i wycieczki znajdujące się po lewej strone nie są modyfikowalne
+(przynajmniej przy obecnym kodzie), istnieje możliwość edycji podkategorii. Uwagę należy
+zwrócić jednak na fakt, że usuwanie podkategorii powoduje usunięcie wszystkich wydarzeń z
+danej podkategorii z przeszłości i przyszłości - o czym miałyśmy szansę się przekonać już na
+początku testów.
+
+--- strona 11 ---
+10
+Rys. 11 - Konta
+
+Moderator ma również możliwość wprowadzania zmian w kontach użytkowników:
+zmiany statusu użytkownika (z użytkownika nieaktywnego na aktywnego) oraz możliwość
+podglądu danych. Tylko moderator może wprowadzać zmiany w opisie użytkownika.
+
+Rys 11. - Panel administratora, wydarzenia
+
+Rys 12. - Panel administratora, dodawanie wydarzeń
+
+--- strona 12 ---
+11
+
+Funkcja dodawania wydarzeń jest w platformie najistotniejsza. Moderator posiada
+możliwość wprowadzenia dowolnego wydarzenia, dla którego musi uzupełnić:
+1. Typ (aktywne / nieaktywne)
+2. Kategorię i podkategorię
+3. Nazwę
+4. Adres
+5. Opis
+6. Koszt
+7. Maksymalną liczbę uczestników
+8. Maksymalną liczbę wolontariuszy
+9. Datę
+10. Miniaturę
+11. * dodatkowo istnieje możliwość dodania odsłuchu - nagrania lektorskiego
+
+Moderator ma również ograniczoną możliwość edycji istniejących wydarzeń, nie wszystkie
+funkcje posiadają możliwość zmiany - np. data, typ.
+
+Rys 13. Panel administratora, Kalendarz
+
+Moderator posiada możliwość podglądu pod wydarzenia w kalendarzu. Istnieje
+tu również funkcja sprawdzenia grafików wolontariuszy, jednak okazała się ona mało
+użyteczna.
+
+--- strona 13 ---
+12
+
+Rys 14. - Panel administratora, Wiadomości
+
+W funkcji “Wiadomości” istnieje możliwość edycji adresu kontaktowego. Na ten
+adres przesyłane są wiadomości ze strony głównej.
+
+Rys. 15 - Panel administratora, Statystyki
+
+--- strona 14 ---
+13
+
+Funkcją dodaną w późniejszym czasie, ze względu na opóźnienia ze strony software
+house’u, były statystyki. Znajdują się tutaj dane dotyczące ilości wejść na platformę (tylko z
+panelu użytkownika), dane dotyczące ilości wydarzeń w ogóle i w kategoriach, dane
+dotyczące ilości nawiązywanych rozmów z innymi członkami platformy.
+
+Rys. 16 - Panel administratora, regulamin
+
+Funkcją, którą dodaliśmy jako ostatnią, pod koniec maja - był regulamin. Dodanie tej
+funkcji było związane z wprowadzeniem RODO. Treści zawarte na tej stronie pokazywane
+są użytkownikowi w momencie zakładania konta i aby założyć konto w serwisie, konieczna
+jest ich akceptacja. Ważną informacją jest fakt, że użytkownikami platformy na dzień
+dzisiejszy są jedynie członkowie Stowarzyszenia, co powoduje, że regulacje dotyczące
+ochrony danych osobowych na platformie są elementem szerszej polityki organizacji.
+
+--- strona 15 ---
+14
+2. Platforma z perspektywy użytkowników
+
+2.1 Grupa testująca
+
+W testowaniu platformy internetowej “Czas na aktywność!” brało udział 10 osób
+z zespołem Downa, związanych ze Stowarzyszeniem Rodziców i Przyjaciół Dzieci
+z Zespołem Downa “Tęcza”. Jest to grupa zróżnicowana pod względem charakteru, sytuacji
+rodzinnej, poziomu funkcjonowania, zdolności społecznych i potrzeby kontaktów
+społecznych, ilości i jakości istniejących związków społecznych czy zdolności
+komputerowych. Te różnice istotnie wpłynęły na korzystanie z platformy przez
+użytkowników.
+Problemy dorosłych osób niepełnosprawnych intelektualnie zależą od poziomu ich
+funkcjonowania. Trudności dla tych z mniejszymi możliwościami dotyczą głównie kwestii
+finansowych i braku wystarczającej liczby placówek zapewniających rozwiązania
+dostosowane do ich potrzeb (brak wystarczającego wsparcia obejmującego np. refundację
+kosztów codziennego transportu do placówek, brak wystarczającej liczby wysoko
+wyspecjalizowanych placówek np. dla osób ze sprzężoną niepełnosprawnością lub
+autyzmem, brak rodzinnych domów opieki). Osoby wyżej funkcjonujące potrzebują
+natomiast możliwości i wsparcia w zakresie samodzielnego i aktywnego życia – korzystania
+z oferty kulturalnej, turystycznej miasta i okolicy, treningu społecznego, finansowego,
+mieszkań treningowych i chronionych.
+Udział osób niepełnosprawnych w aktywnym życiu miasta jest znikomy. Głównym
+powodem są trudności związane z ich ograniczonymi umiejętnościami i możliwościami
+w zakresie: znalezienia informacji o ciekawym wydarzeniu (informacje dostępne w
+Internecie są niedostosowane pod względem formy i treści do potrzeb osób
+niepełnosprawnych, trudno je znaleźć oraz wyselekcjonować te, w których chcieliby wziąć
+udział), realizacji planu (zakup biletów, dotarcie na miejsce wydarzenia). W małym stopniu
+promowana jest także samodzielna aktywność tej grupy osób, a wiele instytucji nie wie, jak
+odpowiedzieć na ich potrzeby. Dorosłe osoby niepełnosprawne potrzebują wsparcia i
+ciągłego treningu poszerzającego ich umiejętności i zakres możliwości korzystania z
+ciekawych wydarzeń. Wsparcia zazwyczaj udzielają im rodzice, niestety często wtórnie ich
+ograniczając – traktując swoje dzieci wciąż jak niedorosłe, niesprawne, odbierają im
+autonomię i utrudniają samodzielność.
+W innowacji skoncentrowaliśmy się na zwiększeniu ich aktywności i udziału w
+ofercie kulturalnej Krakowa, rozwijaniu samodzielności, samosterowności, autonomii,
+treningu społecznym i finansowym w odniesieniu do konkretnej grupy osób.
+Nasi uczestnicy to osoby z zespołem Downa, z orzeczonym znacznym stopniem
+niepełnosprawności intelektualnej, przy czym większość z nich funkcjonuje na poziomie
+niepełnosprawności intelektualnej w stopniu umiarkowanym.
+Na 10 testujących 8 czyta i pisze, choć u większości pojawiają się znaczne trudności
+z czytaniem ze zrozumieniem. 3 w pełni samodzielnie korzysta z komunikacji miejskiej,
+pozostali uzależnieni są od wsparcia rodziców lub wolontariuszy.
+Wszyscy odbiorcy platformy, podczas wstępnych rozmów deklarowali chęć
+zwiększenia liczby aktywności, w których biorą udział i zgłaszała trudności związane
+z samodzielnym realizowaniem swoich planów. Jak zauważyłyśmy w specyfikacji (Rozdział
+2.4 - “Zdolności i potrzeby społeczne”), tylko 1 na 10 osób niepełnosprawnych przed
+wprowadzeniem platformy sama organizowała sobie wyjścia. Dla reszty był to wybór ich
+
+--- strona 16 ---
+15
+rodziców, ograniczony jedynie do aktywności proponowanych przez ośrodki, do których
+należą. W wywiadach wstępnych nasi użytkownicy bezpośrednio stwierdzali, że czują się
+samotni - “brakuje im kontaktu z ludźmi” i że “chcieliby się spełnić w życiu społecznym”.
+Pośrednią grupą testujących byli rodzice naszych podopiecznych oraz wolontariusze.
+Ich perspektywa opisana została opisana w kolejnych punktach Raportu.
+Projektując platformę oraz wprowadzając niezbędne poprawki w trakcie starałyśmy
+się
+w
+maksymalnym
+stopniu
+dostosować
+jej
+funkcje
+do
+potrzeb
+odbiorców.
+Koncentrowałyśmy się w znacznym stopniu na wypracowaniu modelu współpracy między
+użytkownikami, moderatorem, wolontariuszami i rodzicami. Naszym celem było również
+zachęcenie osób z zespołem do podejmowania własnej inicjatywy - samodzielnego wyboru
+aktywności i zgłaszania własnych potrzeb.
+
+2.2 Wnioski
+
+Ze względu na niepełnosprawność użytkowników, wywiady podsumowujące musiały
+mieć formę dostosowaną do ich możliwości. Odpowiedzi na wiele pytań, które zadałybyśmy
+w grupie osób neurotypowych, mogłyby być zniekształcone i nierzetelne, ze względu na np.
+braku wglądu, braku autorefleksji, tendencję do koloryzacji, wymyślania. Dlatego w tej
+części raportu posłużyłyśmy się, oprócz wniosków z wywiadów, również obserwacjami
+zachowania użytkowników w trakcie testowania innowacji (te informacje wykorzystane
+zostały dużo większej mierze niż w części 4
+- “Platforma z perspektywy
+rodziców/opiekunów”) i danymi twardymi.
+Podczas wywiadów podsumowujących, użytkownicy poprawnie potrafili wyjaśnić
+istotę platformy “Czas na aktywność”. Zapytani o jej cel poprawnie wskazywali “organizację
+wyjść” lub “umawianie się na spotkania”. Duże znaczenie miała dla nich również funkcja
+społecznościowa - opowiadali, że na platformie konta mają również ich znajomi, z którymi
+mogą wymieniać wiadomości. Osoby słabiej piszące mówiły, że wysyłały sobie nawzajem
+emotikony - zapytane o ich znaczenie wskazywały swoje intencje, np. “lubię ją” (emotikona
+jako oznaka sympatii).
+Zapytani, czy platforma im się podoba, z entuzjazmem odpowiadali, że bardzo.
+Bardziej elokwentne osoby opowiadały, że platforma jest ładna, ma ładne obrazki. Kilka
+osób zwróciło uwagę, że podoba im się to, że w platformie są ich własne zdjęcia - czyli
+zdjęcia w galerii, ale i zdjęcia będące miniaturami wydarzeń w podkategoriach. Te drugie
+były zmieniane w trakcie testowania platformy przez moderatora, który zauważył, że
+podkategorie, na których użytkownicy widzą siebie lub swoich znajomych, spotykają się z
+bardzo dużą radością testujących.
+
+--- strona 17 ---
+16
+
+Rys. 17 - Najmniej atrakcyjne miniaturki
+
+Rys. 18 - Najbardziej atrakcyjne miniaturki
+
+Bardzo ważne i wzruszające dla moderatora i wolontariuszy były również sytuacje,
+które zdarzały się na wyjściach. Jedną z takich sytuacji opisała moderatorka:
+
+“10.04 - wyjście do kina
+Podczas jednego z kolejnych wyjść do kina (swoją drogą cieszących się bardzo dużą,
+jak nie największą popularnością wśród naszej grupy), zdarzyła się bardzo urocza sytuacja.
+Łukasz, po tym jak odprowadzałam go na przystanek, poprosił mnie, żebym z nim odeszła na
+bok od reszty grupy (byliśmy jeszcze z dwoma osobami). Był bardzo zawstydzony, nie
+wiedziałam o co mu chodzi. Przebąkiwał tylko coś w stylu “no nie wiem, głupio mi”. Gdy
+poprosiłam go, żeby powiedział co się stało, w końcu wydusił z siebie, o co mu chodziło.
+Powiedział, że bardzo chciałby mi podziękować, że go tak wyciągam z domu, że on jest
+bardzo za to wdzięczny, że może z nami chodzić do kina… po czym wręczył mi troszkę
+zgniecionego batonika :) Było mi wtedy naprawdę strasznie miło. Przypomniało mi się, że już
+podczas wywiadów wstępnych Mateusz sam opowiadał o swojej samotności i zadziwiał nas
+swoją elokwencją w opisie. Przypomniały mi się też jego słowa: “potrzebuję, żeby ktoś
+pomógł mi wyjść z domu”. Czułam ogromną satysfakcję z tego, że osiągnęłyśmy jeden z
+celów, który zakładałyśmy!
+Wydaje mi się, że przy natłoku pracy czasem można zapomnieć, że rzeczy które
+robimy, są dla kogoś i po coś. Nasi dzięki swojej wdzięczności i takim sytuacjom chyba nigdy
+nam na to nie pozwolą!”.
+Również wolontariusze opowiadali, jak dużo wdzięczności i sympatii okazują im
+osoby z zespołem Downa. Kontakt z osobami zdrowymi był dla użytkowników bardzo
+
+--- strona 18 ---
+17
+wartościowy, na co również zwracali uwagę ich rodzice. Członkowie grupy testującej bardzo
+często prawili komplementy wolontariuszom, przytulali się do nich, prosili o zapisanie
+swojego imienia na karteczce (którą później przechowywali na pamiątkę), pytali o nich
+podczas wyjść, w których wolontariusze nie mogli uczestniczyć. Czasami starali się
+przypodobać wolontariuszom i wzbudzić ich podziw. Jeden z chłopców, który wprawdzie nie
+uczestniczył w testowaniu platformy (jego rodzice zgłosili się do moderatora po usłyszeniu o
+projekcie od rodziców uczestniczki), jednak czasami uczestniczył w wyjściach zadziwił
+wolontariuszkę opowieściami o swoich studiach prawniczych i dziewczynie, studiującej
+medycynę. Wstydził się on również przyznać, że jeden z filmów, w których uczestniczyła
+grupa (“Maria Magdalena”) był dla niego nudny i zbyt wymagający - prawdopodobnie z
+obawy, że nie zaprosimy go w przyszłości na kolejne wyjścia. Po każdym z wyjść jego
+rodzice przesyłali również podziękowania moderatorce i prośbę o pamięć przy wyjściach, w
+których mógłby on również uczestniczyć.
+
+--- strona 19 ---
+18
+3. Platforma z perspektywy wolontariuszy
+
+Wolontariusze raczej niechętnie korzystali z platformy. W okresie od 1 maja do 13
+czerwca zanotowaliśmy jedynie 18 wizyt wolontariuszy na platformie przy aż 7 kontach.
+Średnia liczba wejść przez te 44 dni wyniosła więc jedynie 2,7 wejść.
+
+Imię
+Nazwisko
+Typ
+Ilość wejść Średnio dziennie
+O.
+B.
+Wolontariusz
+8
+0.2
+D.
+P.
+Wolontariusz
+3
+0.1
+M.
+B.
+Wolontariusz
+2
+0
+M.
+O.
+Wolontariusz
+0
+0
+N.
+P.
+Wolontariusz
+1
+0
+P.
+S.
+Wolontariusz
+3
+0.1
+B.
+J.
+Wolontariusz
+1
+0
+Tabela 1 - Wejścia wolontariuszy na platformę (1.05 - 13.06)
+
+Ze względu na skumulowanie działań: intensywny kontakt z rodzicami, dodatkowe
+szkolenie użytkowników w zakresie obsługi platformy przy jednoczesnej organizacji wyjść
+na miasto oraz kontakcie z firmą programistyczną, nie było czasu na dodatkowe
+motywowanie wolontariuszy do korzystania z narzędzia. Każdy z wolontariuszy zgłaszał się
+do nas w innym czasie, co skutkowało koniecznością prowadzenia indywidualnych spotkań
+i szkoleń dla każdego z nich. Początkowo wolontariusze otrzymywali informacje
+o nadchodzących wydarzeniach telefonicznie lub przez Facebooka. Ta opcja okazała się dla
+nich najbardziej użyteczna i liczne prośby moderatora o skorzystanie z platformy raczej nie
+spotykały się z entuzjazmem. Tylko jedna wolontariuszka, która dołączyła do projektu nieco
+później rzeczywiście wchodziła na platformę. Nie zapisywała się ona jednak na żadne
+wydarzenia, ale zaangażowała w inne działania Stowarzyszenia.
+Ciężko jest nam ocenić na tym etapie, czy niepowodzenie w zakresie korzystania
+z platformy przez wolontariuszy wynikało z jej nieatrakcyjności dla tej grupy czy tylko
+z braku czasu lub specyfiki grupy wolontariuszy (np. nie udało nam się zrekrutować osób
+zainteresowanych zarówno psychologią czy pedagogiką specjalną i nowymi technologiami /
+innowacjami społecznymi, nasi wolontariusze byli głównie studentami psychologii
+i pedagogiki). Aby uzyskać odpowiedzi na te pytania, konieczne byłyby dalsze testy.
+Z naszych kontaktów z wolontariuszami wynika jednak, że raczej preferują oni kontakt
+na Facebooku oraz kontakt telefoniczny. To bezpośrednie zapytania mają największy
+procent odpowiedzi (czyli finalnego zaangażowania się wolontariusza w zajęcia, wyjście).
+Angażując odpowiednio dużą liczbę wolontariuszy, umiejscowienie wydarzeń na platformie
+mogłoby skutkować nawet większą liczbą odpowiedzi i oszczędnością czasu dla
+koordynatora wolontariatu czy moderatora platformy. Ważnym elementem wydaje się
+również budowanie więzi i relacji poza wyjściami między wolontariuszami i użytkownikami
+narzędzia.
+Co jednak okazało się niewątpliwym sukcesem to sam wolontariat w Stowarzyszeniu:
+opieka nad osobami z zespołem Downa i uczestnictwo w wyjściach. Podczas ankiet
+ewaluacyjnych 100% wolontariuszy stwierdziło, że są zadowoleni z wolontariatu oraz 100%
+
+--- strona 20 ---
+19
+twierdziło, że podczas wolontariatu nabyli nowe umiejętności i wartościowe doświadczenia.
+Wolontariusze zostali również poproszeni o wypisanie 3 haseł/określeń kojarzących się im z
+wolontariatem. Ich opracowanie widoczne jest poniżej.
+
+Rys. 19 - Chmura z najczęściej pojawiającymi się hasłami
+
+Jak widać, skojarzenia wolontariuszy wiążą się zazwyczaj z samymi wydarzeniami i opieką,
+jaką sprawują nad osobami z zespołem Downa. Pojawiało się też hasło “aktywność” - co nie
+jest dziwne ze względu na nazwę projektu. Wolontariusze podkreślali również aspekt
+nabywania doświadczenia zawodowego.
+Podczas ankiety ewaluacyjnej wolontariusze zostali również poproszeni o zwięzłe
+określenie, z czym kojarzą mu się osoby z zespołem Downa. Można tu przytoczyć słowa
+jednej z osób: “Kojarzą mi się z chęcią życia, której brakuje wielu zdrowym osobom.
+Z otwartością, ciepłem, z chęcią poznawania świata i ludzi a także z dążeniem
+do nawiązywania relacji”. Wolontariusze oceniali więc swój wolontariat bardzo pozytywnie,
+a jeden z wolontariuszy stwierdził nawet, że znalazł w ten sposób swoją ścieżkę zawodową
+i “pierwszy raz w życiu poczuł się tak doceniony”.
+
+--- strona 21 ---
+20
+4. Platforma z perspektywy rodziców / opiekunów
+
+Rodziny osób z grupy testującej są bardzo zróżnicowane. Większość użytkowników
+platformy ma rodzeństwo, przeważnie starsze od siebie, samodzielne i mieszkające
+oddzielnie. Trzy matki samotnie wychowują dziecko, pozostałe to rodziny pełne. Jeden
+z użytkowników mieszka na stałe z dziadkami.
+Rodzice są w wieku 45 do 65 lat, w 6 przypadkach są aktywni zawodowo, kilkoro jest
+na emeryturze lub rencie. Status finansowy rodzin jest zróżnicowany, ale w większości
+określić go można jako dobry.
+Tym, co najbardziej odróżnia poszczególnych rodziców od siebie jest postawy wobec
+swojego dorosłego dziecka z niepełnosprawnością. Część z nich popycha swoje dzieci
+do samodzielności, zachęcając do podejmowania różnych wyzwań (podjęcie stażu, pracy,
+samodzielne korzystanie z komunikacji miejskiej, posiadanie własnej karty bankowej etc).
+Część stara się je nadmiernie chronić swoje dzieci przed zagrożeniami, które widzi wokół
+i koncentruje się na wypracowaniu mechanizmów zabezpieczających je - szuka
+zorganizowanego transportu lub samodzielnie zawozi dziecko na różne wydarzenia, oczekuje
+od organizatorów udziału dodatkowych opiekunów, ma określone oczekiwania dotyczące
+“jakości” organizowanych wydarzeń.
+Zróżnicowanie poziomu samodzielności użytkowników oraz postaw ich rodziców
+było bardzo widoczne w trakcie testowania innowacji. Poszczególni rodzice mieli różne
+oczekiwania i obserwacje, różny był również ich stopień zaangażowania w projekt. Kilkoro
+rodziców w ogóle nie interesowało się projektem w trakcie jego trwania, jedna mama była
+od początku sceptycznie nastawiona do pomysłu.
+Wśród osób rzeczywiście zaangażowanych można było zauważyć dwie dominujące
+postawy: tendencję do odsuwania się i umożliwienia eksploracji platformy swojemu dziecku
+oraz tendencję do aktywnego współuczestniczenia w korzystaniu z niej.
+Obrazując pierwszą postawę warto przytoczyć słowa jednej z matek: “Nie wiem,
+co ona na tej platformie robiła, nie wchodziłam na nią. Nie było takiej potrzeby. Czasem
+tylko chwaliła mi się jakąś wiadomością od znajomego, pytała czy może gdzieś iść. Wydaje
+mi się, że platforma była dla córki taką jej prywatną sprawą, czymś w pełni “jej”. Jak miała
+z nią jakiś problem to nie prosiła mnie o pomoc, tylko swoją siostrę - co z resztą robi
+zazwyczaj, mając problem z komputerem. Wydaje mi się, że to dobrze świadczy o tym całym
+projekcie, że ona tą platformę jakoś jednak sama zrozumiała i ja w tym wszystkim nie
+musiałam uczestniczyć. Nie uważam za dobre wtrącanie się w jej życie, w końcu jest
+dorosła”. Kilku rodziców bardziej aktywnie uczestniczyło w korzystaniu z platformy, razem
+ze swoim dzieckiem przeglądając wydarzenia oraz zachęcając dziecko do zaglądnięcia
+(“Może coś tam ciekawego się pojawiło”). Co ważne, większość z rodziców nie zna danych
+logowania swoich dzieci, a czat i wiadomości wymieniane z innymi użytkownikami
+pozostawały w sferze ich prywatności. Postawa, zgodnie z którą korzystanie z platformy jest
+prywatną sprawą dziecka, była więc częstsza w grupie zaangażowanych rodziców,
+choć uwzględniając wielkość prób trudno przyjąć to jako normę.
+W testowaniu duże znaczenie miał poziom umiejętności komputerowych zarówno
+użytkowników, jak i ich rodziców. Perspektywa zgłębiania tajników aplikacji dla kilku mam
+była z góry nieatrakcyjna. Nie próbowały poznać narzędzia, przez co nie miały również
+szansy pomóc swoim dzieciom czy zachęcić ich do testowania. W sytuacji, gdy użytkownik
+sam był w stanie sobie poradzić z platformą oraz sam upominał się o uczestnictwo
+w wyjściach, efekt był pozytywny - platforma była czymś zarezerwowanym tylko dla niego.
+Mama jednej z dziewczyn już w wywiadzie wstępnym podkreślała, że córka radzi sobie na
+komputerze lepiej niż ona. Jak stwierdziła - córka „jest mądrzejsza ode mnie 1000 razy!”.
+
+--- strona 22 ---
+21
+W jej sytuacji pomoc mamy była zupełnie niepotrzebna, wręcz zbędna, sama użytkowniczka
+była osobą najczęściej odwiedzającą platformę. W innej sytuacji były rodzice, którzy
+nie radzili sobie z obsługą komputera. Kilka razy zdarzyły się telefony do moderatorki
+platformy, jedna z mam sama przeszła przez szybki kurs obsługi platformy zanim pierwszy
+raz zaczęła wybierać wydarzenia z synem. Dwie osoby zgłosiły się również do moderatorki
+z problemami technologicznymi zupełnie nie dotyczącymi platformy, co pokazują zaufanie,
+jakim ją obdarzyły. Byli natomiast również tacy rodzice, którzy nie podjęli współpracy,
+nie zachęcali swojego dziecka do korzystania z platformy, a w konsekwencji
+i do uczestnictwa w wydarzeniach.
+
+Bardzo ważnym elementem projektu dla większości rodziców oraz zagadnieniem,
+które podnosili również terapeuci, jest bezpieczeństwo strony. Już w wywiadach wstępnych,
+określając swoje oczekiwania co do innowacji, rodzice zwracali uwagę na potrzebę
+zapewnienia bezpieczeństwa użytkownikom - zarówno w świecie wirtualnym, jak i realnym.
+Tata, który chyba najbardziej obawiał się o bezpieczeństwo platformy (wyrażał swoje obawy
+o to, że osoby z zespołem Downa są łatwowierne, więc bardzo łatwo jest je oszukać
+czy wyłudzić od nich dane), podsumowując projekt jako pierwszy plus podał to, że uważa
+platformę za bezpieczną - „że nikt poza nimi nie może na nią wejść”. Rodzice zwracali
+uwagę, że na platformie można pisać tylko z tymi osobami, które tam są - „wiemy, z kim
+mamy do czynienia”. Bardzo ważne było dla nich również to, że, jak to określiła jedna z
+mam “wiemy, kto jest po drugiej stronie” - wiedzą, że nad funkcjonowaniem platformy
+i organizacją wyjść czuwa moderator - asystent on-line, którego znają i darzą zaufaniem.
+Oprócz bezpieczeństwa danych rodzice zwracali też uwagę na bezpieczeństwo
+w rzeczywistości. W wywiadach wstępnych padły oczekiwania, aby wolontariuszami były
+osoby odpowiedzialne i zaufane. W trakcie rozmów podsumowujących z rodzicami, ci którzy
+mieli okazję poznać wolontariuszy w superlatywach wypowiadali się o kilku z nich -
+szczególnie o wolontariuszu, dzięki „Czasowi na aktywność” pierwszym i jak na razie
+jedynym stale współpracującym ze stowarzyszeniem wolontariuszem płci męskiej!
+Byli również bardzo zadowoleni z faktu, że ich dzieci zaczęły wychodzić również
+z wolontariuszami-rówieśnikami. Jest to inna sytuacja niż wyjścia organizowane przez
+ośrodki dziennej opieki czy szkoły, gdzie opiekunami są zwykle terapeuci z dyplomem.
+
+Naszą uwagę zwróciło jednak podejście rodziców do wolontariuszy. Część z nich
+widziała ich bardziej w roli opiekunów - odpowiedzialnych za organizację, finanse,
+nadzorujących użytkowników z pozycji “skośnej”. Mniejszość widziała w wolontariuszach
+raczej rówieśników, którzy wspierają użytkowników z niepełnosprawnością w samodzielnym
+udziale w wydarzeniach.
+
+Rodzice użytkowników zwracali również uwagę na ładną, ich zdaniem, grafikę oraz
+prostotę obsługi. Mówili, że strona jest miła dla oka i w prosty sposób można się na niej
+odnaleźć. Podobały się im również komunikaty głosowe, np. te z okienka „pomoc”, a także
+lektor czytający treści wydarzeń. Zwrócili jednak uwagę, że nie przy wszystkich
+wydarzeniach był lektor, co ich zdaniem było błędem.
+
+Funkcją, która spotkała się z najżywszym odbiorem według terapeutek
+ze Środowiskowego Domu Samopomocy była funkcja społecznościowa platformy -
+wysyłanie wiadomości. Według relacji terapeutek, podczas zajęć czwórka użytkowników
+platformy dzieliła się na pary i z osobnych pomieszczeń z komputerami wysyłała do siebie
+wiadomości - zawsze w salwach śmiechu. Również rodzice zwracali uwagę na to,
+że to głównie czat jest funkcją najbardziej zwracającą uwagę ich dzieci i przyciągającą ich
+do korzystania z platformy. Jedna z użytkowniczek odkryła również możliwość dzielenia się
+zdjęciami, co po przećwiczeniu bardzo chętnie zaczęła wykorzystywać - dodając
+kilkadziesiąt zdjęć. Jest to jednak funkcja skomplikowana (załadowanie zdjęcia
+w odpowiednim formacie nie jest proste), dlatego inne osoby musiały korzystać z pomocy
+
+--- strona 23 ---
+22
+rodziny czy terapeutów (oczywiście o ile wiedziały że na platformie istnieje możliwość
+wgrania własnych zdjęć do galerii).
+
+Tematem analizowanym podczas przygotowywania testowania były finanse.
+Zastanawialiśmy się, czy nie zapewnić w budżecie odpowiedniej puli na kupno biletów
+i wejściówek na różne wydarzenia. Plusem tego rozwiązania byłoby z pewnością większe
+zainteresowanie wyjściami. Z drugiej strony, istniało ryzyko, że po pierwsze przyzwyczaimy
+użytkowników do organizacji jedynie bezpłatnych wydarzeń, na co po zakończeniu projektu
+nie będzie środków, przez co wnioski z testowania nie będą obiektywne. Ostatecznie udało
+się zorganizować kilka wyjść w pełni odpłatnych oraz kilka bezpłatnych. Kwestie finansów
+nie stanowiły przeszkody w korzystaniu z projektu.
+
+Większość rodziców w pozytywny sposób wypowiadała się o platformie. Uważali
+ją za użyteczne narzędzie dla swoich dorosłych dzieci, służące zwiększaniu samodzielności
+oraz narzędzie przydatne do organizacji czasu wolnego. Pozytywną zmianą, jaką ich zdaniem
+platforma wywołała było większe wykorzystywanie inicjatywy dzieci w organizacji
+własnego czasu wolnego - i twierdzili, że chcieliby tego jeszcze więcej. Pojawiały się
+propozycje stworzenia pustych propozycji wydarzeń, w których użytkownicy wpisywali by
+swoje wymarzone wyjścia czy swoje pragnienia. Rodzice twierdzili także, że bardzo ważne
+jest, aby wszyscy wolontariusze byli otwarci na inicjatywę oddolną, słuchali (tego, czy np.
+ktoś nie wspomniał o kinie, albo że chciałby spróbować sushi), zgłaszali to a żeby
+opiekunowie starali się im te marzenia spełniać.
+
+--- strona 24 ---
+23
+
+5. Platforma z perspektywy moderatora - relacja
+
+Rola
+moderatora
+jest
+kluczowym
+elementem
+funkcjonowania
+platformy.
+Mimo ogólnej tendencji do automatyzacji różnych rozwiązań i przenoszenia wielu działań ze
+świata realnego do wirtualnego, rozwiązania adresowane do osób z niepełnosprawnością
+intelektualną będą zawsze wymagały wsparcia konkretnego człowieka, znającego potrzeby
+i możliwości użytkowników. W kontekście organizacji wyjść w przestrzeń miejską funkcja
+moderatora miała ogromne znaczenie. Poniżej prezentujemy opis platformy przygotowany
+przez moderatorkę - Joannę Kociołek.
+
+“Testowanie
+platformy
+internetowej
+“Czas
+na
+aktywność”
+było
+jednym
+z najciekawszych zadań i projektów w jakim miałam okazję uczestniczyć. Już na jego
+początku razem z koordynatorką Agatą Krzyżek, wiedziałyśmy, że mamy do czynienia
+z innowacją społeczną, której na próżno szukać nie tylko w Polsce, ale i na całym świecie.
+Podobne inicjatywy można było zliczyć na palcach jednej ręki, a ich efekty nierzadko
+pozostawiały wiele do życzenia.
+Przygotowując się do roli moderatora starałam się znaleźć jak najwięcej źródeł
+dotyczących podobnych inicjatyw. Niestety było ich bardzo niewiele, co sprawiło,
+że moderowanie było dla mnie naprawdę dużym wyzwaniem.
+Zakres obowiązków moderatorki bardzo zmienił się w stosunku do tego, co pierwotnie
+zakładałyśmy. Przede wszystkim przyjęłam na siebie rolę głównego opiekuna osób
+niepełnosprawnych podczas wyjść, nie tylko organizatora, jak pierwotnie przyjmowaliśmy.
+Już wcześniej miałam doświadczenia w byciu opiekunem osób niepełnosprawnych, długo
+byłam też wolontariuszką w Stowarzyszeniu Rodziców i Przyjaciół Dzieci z Zespołem Downa
+“Tęcza”, dlatego w tej roli odnalazłam się bez problemu. Czułam jednak spoczywającą
+na mnie odpowiedzialność za zdrowie i bezpieczeństwo podopiecznych. Podczas wyjść
+zdarzały się sytuacje kryzysowe (np. kilka razy ktoś wysiadł na złym przystanku, a ze względu
+na wadę wymowy bardzo ciężko było się z nim dogadać odnośnie tego, gdzie aktualnie się
+znajduje; praktycznie zawsze gdzieś się spóźnialiśmy), jednak ze wszystkich wybrnęliśmy bez
+większych problemów. Ważne było, aby w takich momentach zachować spokój, ponieważ
+osoby z zespołem Downa w łatwy sposób wpadają w negatywne emocje, widząc
+zdenerwowanie opiekuna. Te sytuacje oraz rozmowy z rodzicami dały mi do myślenia, że nie
+przy wszystkich osobach z zespołem rolę opiekuna może przejąć każdy wolontariusz.
+Mimo, że nasza grupa była bardzo sympatyczna i dobrze funkcjonująca (co nierzadko
+sprawiało, że i ja, i inni wolontariusze zapominaliśmy o tym, że jesteśmy opiekunami,
+a nie jedynie kolegami osób z zespołem Downa), ważne jest to, aby pamiętać
+o niepełnosprawności grupy. Idealnym rozwiązaniem okazywało się, gdy podczas wyjścia
+w spotkaniu uczestniczyła osoba doświadczona + dodatkowy wolontariusz. Wspaniałą
+wiadomością okazało się to, że w trakcie projektu udało się wyszkolić jednego wolontariusza
+do takiego poziomu, że w tym momencie będzie mógł on przyjąć rolę głównego opiekuna
+spotkań (fakt ten poparła koordynator oraz rodzice), a druga wolontariuszka znajduje się na
+prostej drodze do takiego stanu rzeczy.
+Zadaniem, które przypadło mi w udziale, i którego spodziewałam się od początku
+projektu było wyszukiwanie i organizowanie spotkań. Moim celem, od samego początku,
+było umożliwienie osobom z projektu doświadczania Krakowa w sposób podobny jak
+doświadczam go ja i inne osoby młode (w końcu jestem w zbliżonym wieku do użytkowników
+
+--- strona 25 ---
+24
+platformy). Już wcześniej zauważyłam, że ze względu na zależność od rodziców oraz
+instytucji takich jak - szkoły, warsztaty terapii zajęciowej, środowiskowe domy samopomocy,
+osoby z zespołem Downa uczestniczą w życiu społecznym w sposób bardzo
+sformalizowany. Jak już wychodzą w przestrzeń miejską, to odbywa się to z rodzicami, albo
+jest to z góry ustalona wycieczka szkolna lub wyjście ze stowarzyszenia, np. do muzeum czy
+kina. Brakuje tu spontaniczności i inicjatywy wychodzącej oddolnie. Można też
+zaobserwować mechanizm błędnego koła - skoro osoby z zespołem nie wiedzą jak mogą
+spędzać czas wolny ani gdzie pójść, to po prostu tego nie robią. Dlatego też w
+proponowanych wyjściach starałam się zawrzeć bardzo dużo wyjść społecznych - do
+kawiarni czy do knajpy. Wspaniałe okazały się również wyjścia do znajomych, które prawie
+zawsze łączyłam z jakimiś ciekawymi aktywnościami czy “warsztatami” - np. warsztatami
+urodowymi, które zorganizowały dwie wspaniałe wolontariuszki lub wspólnym pieczeniem
+pizzy (okazało się, że większość z nich po raz pierwszy robiła wtedy pizzę). Mimo
+ograniczeń technicznych (braku takiej funkcji w platformie) wypracowałam
+również metodę umieszczania na platformie propozycji wyjść - wyjście do znajomego oraz
+randkę. Wydarzeń zazwyczaj szukałam używając Facebooka, stron gromadzących
+wydarzenia kulturalne (np. KARNET), oraz stron instytucji kulturalnych miasta Krakowa.
+Okres testowania pozwolił nie tylko poznać preferencje użytkowników (np.
+preferencja wydarzeń darmowych oraz społecznych wyjść), ale także poszerzyć wiedzę na
+temat dostosowanych do potrzeb osób z niepełnosprawnościami instytucji. Wiem już na
+przykład, w którym kinie nawet w niewielkiej grupie opiekunowie mogą liczyć na bezpłatną
+wejściówkę oraz nawiązałam kontakt z Muzeum Narodowym, które od czerwca organizuje
+projekt bezpłatnych lekcji muzealnych dla szkół i instytucji. Wiem również, jakie instytucje
+niestety nie są zainteresowane współpracą ze Stowarzyszeniami działającymi na rzecz osób
+z niepełnosprawnościami. Tego typu wiedza z pewnością okaże się bardzo przydatna
+w przyszłości, podczas kontynuacji projektu.
+Generalnie innowację oceniam bardzo pozytywnie. Niezmiernie cieszył mnie
+entuzjazm użytkowników korzystających z platformy oraz uczęszczających w wyjściach.
+O projekcie dowiadywały się również inne osoby ze Stowarzyszenia (użytkownicy opowiadali
+swoim znajomym o wyjściach) i zgłaszały się do nas osoby również pragnące uczestniczyć
+w projekcie. Narzędzie znacznie usprawniło moją pracę, osobom niepełnosprawnym dało
+szansę organizacji czasu wolnego na miarę ich możliwości i pozwoliło mi też np. na kontakt
+z osobami, z którymi w inny sposób nie mogłam się wcześniej skontaktować.
+Bardzo wartościowym efektem projektu był też jego wpływ na życie osób będących
+wolontariuszami - zdobyli oni często pierwsze doświadczenia w pracy z osobami
+z niepełnosprawnościami, co bardzo ich rozwinęło. Wolontariusz, o którym wspominałam
+wcześniej, po kilku pierwszych wyjściach stwierdził, że odnalazł swoją drogę jako student
+psychologii - wcześniej czuł się dość zagubiony i nie wiedział, czym się chce zajmować
+w przyszłości. Bardzo martwił się również tym, że jest to dopiero jego drugi wolontariat.
+Również wolontariuszki będące studentami kosmetologii miały niepowtarzalną szansę
+wzbogacenia swojego CV o przeprowadzenie warsztatów urodowych. Samo Stowarzyszenie
+wyniosło z projektu bardzo wiele - zyskało impuls do tworzenia innowacji społecznych
+i zainteresowania się nowymi technologiami, które w przyszłości mogą wpłynąć na dalsze
+niszczenie barier i włączanie osób z niepełnosprawnościami do życia społecznego. Jestem
+bardzo zadowolona z faktu, że nasze Stowarzyszenie dalej będzie korzystało z platformy
+i dalej będzie ono miało szansę być użytecznym narzędziem organizacji czasu dla i przez
+osoby z zespołem Downa.”
+
+--- strona 26 ---
+25
+6. Wady i zalety rozwiązania
+6.1 Zalety rozwiązania
+
+Z wielką satysfakcją możemy stwierdzić, że zalety i korzyści płynące z projektu
+przewyższyły jego wady. Platforma oceniana jest pozytywnie przez wszystkie
+zainteresowane grupy - użytkowników, rodziców i wolontariuszy. Podstawowym celem
+istnienia platformy było zwiększenie uczestnictwa osób z niepełnosprawnością intelektualną,
+w tym z zespołem Downa w życiu społeczno-kulturalnym poprzez udzielenie im
+specjalistycznego wsparcia na etapie wyboru atrakcji i faktycznego udziału w wydarzeniu.
+Jak wykazujemy w punkcie 7 niniejszego opracowania, cel ten został osiągnięty, a narzędzie
+będzie wykorzystywane w codziennej pracy Stowarzyszenia.
+Niewątpliwym plusem rozwiązania jest prostota samej aplikacji. Wraz z firmą
+Poliman udało nam się stworzyć narzędzie, które w znacznym stopniu odpowiada potrzebom
+naszych odbiorców, opisanym w Wytycznych do przygotowania platformy. Narzędzie nie
+jest przeładowana pod względem liczby informacji, a te, które są w nim umieszczane
+dostosowane są pod względem formy i treści do odbiorców. Komunikaty są proste,
+konkretne, odnoszą się do doświadczeń użytkowników. Interfejs platformy jest prosty, oparty
+na obrazach i prostych słowach, zastosowano również elementy wspomagające (przyciski
+“Pomoc”, dzięki którym użytkownik może na każdym etapie przypomnieć sobie, do czego
+służy aktualna podstrona, komunikaty dźwiękowe). Komunikacja z użytkownikiem opiera się
+zarówno na słowach, obrazach, jak i dźwięku, co zwiększa szanse na zrozumienie i
+zapamiętanie informacji.
+Kolejną sprawą wartą wspomnienia jest stopniowe i zauważalne nabywanie
+sprawności w korzystaniu z platformy przez grupę testującą. Mimo początkowych
+problemów, występujących u części z nich, w końcu nabywali oni biegłość w korzystaniu z
+platformy - np. zapamiętali hasła, adres (albo po prostu wskoczył on im do “ulubionych”).
+Wobec tego poziom dostosowania platformy do potrzeb grupy testującej można ocenić jako
+optymalny - nie za łatwy, ale również nie za trudny. Taki stan rzeczy był właśnie naszym
+celem i założeniem.
+Zaletą jest również względna prostota organizacji wyjść. W naszym wypadku (w
+dużym mieście - Krakowie) oferta kulturalna okazała się wystarczająca do organizacji wyjść
+bezpłatnych lub niedrogich. Prawdopodobnie sytuacja będzie wyglądać podobnie również w
+innych większych (i mniejszych) miastach. Naszym celem była integracja i korzystanie z
+istniejących już zasobów - wyjście w miasto, które bardzo często okazywało się dla nas
+bardziej otwarte niż myślałyśmy. Chociaż zdarzały się sytuacje nieprzyjemne (dziwne
+spojrzenia, nieuprzejmość obsługi, brak odpowiedzi na zapytania o ceny biletów dla osób z
+niepełnosprawnością) to częściej spotykaliśmy się z ogromną sympatią - np. zagadującymi
+nas sprzedawcami w sklepie, zniżkami w kawiarniach, uśmiechami skierowanymi w naszą
+stronę ze strony innych gości restauracji. Dużym ułatwieniem jest również wykorzystanie
+pomocy wolontariuszy - opieka asystencka wiązałaby się z dodatkowymi kosztami.
+Niewątpliwym plusem jest osadzenie strony w internecie - aplikacja na telefon byłaby
+gorszym rozwiązaniem. Z wywiadów wstępnych z użytkownikami wynikało, że grupa
+docelowa korzysta raczej ze stron internetowych, a tylko niewielka część posiada na telefonie
+jakieś zainstalowane aplikacje (są to głównie gry). Konieczność instalacji oprogramowania
+byłaby niepotrzebną komplikacją, dodatkowo nie wszyscy testujący regularnie korzystają z
+telefonów komórkowych. Dzięki obecnemu kształtowi rozwiązania i osadzeniu platformy w
+
+--- strona 27 ---
+26
+internecie, użytkownicy mogą korzystać z niej na komputerze, tablecie i telefonie. Jest to dla
+nich rozwiązanie korzystne i wygodne, stanowiące duże ułatwienie.
+Kolejną zaletą jest połączenie funkcji społecznościowej (profile znajomych, czat oraz
+zdjęcia - te z wyjść, wprowadzane do platformy przez moderatora oraz te z galerii,
+wprowadzane przez użytkowników) i aktywizującej (propozycje wyjść na miasto i ich
+organizacja). Okazało się ono być bardzo dobrym rozwiązaniem. Podczas wywiadów
+wstępnych kilku rodziców wyraziło obawę, czy same wyjścia dadzą radę przyciągnąć
+użytkowników do regularnego korzystania z platformy. Okazuje się, że w wypadku osób
+potrafiących pisać oraz osób bardziej towarzyskich, odnotowaliśmy kilkukrotnie wyższą
+częstotliwość korzystania z platformy. Bardzo często wchodzili oni na nią tylko po to, aby
+korzystać z czatu. Dużym sukcesem były również emotikony dostępne na platformie.
+Podczas pierwszego kontaktu ze stroną, to właśnie one wywołały najgorętszą reakcję
+użytkowników. Emotikony stanowią również najprostszy komunikat, możliwy do
+przekazania również przez osoby radzące sobie gorzej z pisaniem i czytaniem.
+
+Kolejną zaletą, o której wspominałyśmy już w rozdziale 4 - „Platforma z perspektywy
+rodziców / opiekunów”, jest bezpieczeństwo rozwiązania. Nikt nieuprawniony nie może z
+niej korzystać. Nowy użytkownik, który założył konto musi zostać zaakceptowany przez
+moderatora. Każde założone w platformie konto może mieć dwa statusy: „aktywny” i
+„nieaktywny”. Nowe konto jest domyślnie „nieaktywne”, czyli nie jest widoczne na
+platformie, ani nie posiada uprawnień do zalogowania. Wobec tego osoby, które otrzymują
+dostęp na platformę, to jednostki sprawdzone. Nasze wątpliwości budził fakt, że informacja o
+konieczności aktywowania konta przez moderatora może być niezrozumiała dla nowych
+użytkowników platformy, jednak względy bezpieczeństwa uznałyśmy za ważniejsze.
+
+Rys. 20 - Panel administratora - widok kont
+
+Drugim elementem zabezpieczenia jest wykorzystanie dodatkowego elementu
+bezpieczeństwa przy logowaniu - obrazka zabezpieczającego. Osoba zakładająca konto,
+oprócz loginu i hasła musi wybrać jeden z dostępnych obrazków. Przy każdym kolejnym
+logowaniu musi kliknąć w tę samą ilustrację.
+
+--- strona 28 ---
+27
+
+Rys.21 - Zakładanie konta
+
+Wprowadzenie dodatkowego zabezpieczenia zostało zmotywowane faktem, że osoby
+z niepełnosprawnością często posiadają bardzo proste loginy i hasła, co stwarza ryzyko
+dostania się na konto niepożądanych osób oraz ataków programów wirusowych. Obrazek jest
+względnie łatwym komunikatem do zapamiętania przez osoby z niepełnosprawnością
+intelektualną.
+
+Terapeuci ze Środowiskowego Domu Samopomocy, którzy wraz ze swoimi
+podopiecznymi mieli okazję uczestniczyć w testowaniu, wskazywali również na kolejną jej
+zaletę związaną z bezpieczeństwem, jaką jest bezpieczeństwo kontaktów. Osoby z grupy
+testującej bardzo często dodają swoich opiekunów na mediach społecznościowych -
+Facebooku, Messengerze czy mają do nich prywatny numer telefonu. Mają potrzebę
+utrzymywania z nimi kontaktu również po zajęciach. Zdarzały się sytuacje, w których
+terapeuci otrzymywali telefony np. we wczesnych godzinach porannych albo ich
+facebookowa tablica była zasypywana emotikonkami. Te sytuacje powodowały czasem
+konieczność zablokowania podopiecznego na mediach społecznościowych. Platforma daje
+możliwość zaspokojenia potrzeby kontaktu oraz utrzymywania kontaktu z ulubionym
+terapeutą, wolontariuszem czy asystentem bez konieczności narażania go na nieprzyjemności
+na portalach, z których korzysta prywatnie.
+
+Ważną zaletą platformy jest również rozwijanie inicjatywy własnej osób z
+niepełnosprawnością - ich autonomii, samosterowności i samodzielności. Różnorodność
+propozycji wydarzeń możliwych do wprowadzenia przez moderatora powoduje większe
+dopasowanie do ich zainteresowań i preferencji. Pozwala im to również na odkrywanie
+nowych sposobów spędzania wolnego czasu przy pomocy swoistego asystenta on-line.
+Można to nazwać „samodzielnością kontrolowaną” (jak określił to jeden z rodziców przy
+starcie projektu).
+
+Co ważne, rozwiązanie w obecnym kształcie jest gotowe do przeniesienia na grunt
+innej organizacji ze względu na duże możliwości edycji. Zawartość platformy i propozycje są
+dodawane każdorazowo przez moderatora, więc w tej kwestii istnieje całkowita dowolność i
+możliwość dopasowania do potrzeb grupy o innym poziomie funkcjonowania, innych
+
+--- strona 29 ---
+28
+zainteresowaniach i możliwościach. Możliwe jest również stworzenie własnych podkategorii
+oraz zmiany elementów graficznych.
+
+6.2 Wady rozwiązania
+
+Jedną z największych wad platformy jest konieczność zaangażowania w jej działanie
+dużej liczby ludzi. Skuteczne moderowanie, obejmujące przeglądanie aktualnej oferty miasta,
+organizację wyjść, kontakt z użytkownikami i rodzicami, zapewnianie dodatkowego wsparcia
+wolontariuszy i udzielanie wsparcia osobom z niepełnosprawnością, jest czasochłonne i
+generuje koszty związane z wynagrodzeniem. Co więcej, kluczowe jest znalezienie osoby,
+która odnajdzie się w takiej pracy i będzie robić to z pasją. Poza finansami związanymi z
+zatrudnieniem moderatora narzędzie nie generuje dużych kosztów - osadzenie w sieci
+wymaga jedynie wykupu domeny, a wydarzenia można opierać na bezpłatnej ofercie miasta.
+
+Kolejną wadą jest uzależnienie funkcjonowania platformy, a konkretnie organizacji
+wyjść od grafiku wolontariuszy. Do płynnego funkcjonowania platformy potrzebna jest
+odpowiednio duża grupa współpracujących przy niej wolontariuszy. Do rozważenia pozostaje
+kwestia zaangażowania praktykantów (o tym więcej w Rozdziale 9 „Rekomendacje i
+zalecenia”). Istotne jest również, aby wolontariusze byli osobami odpowiedzialnymi, dobrze
+radzącymi sobie w sytuacjach kryzysowych i nieprzewidzianych oraz otwartymi na osoby z
+niepełnosprawnością. Nie każda osoba sprawdziłaby się w tej roli. Pytanie, na ile wydarzenia
+oparte na wolontariuszach sprawdziłyby się w przypadku użytkowników z większymi
+trudnościami. Być może byłaby wówczas potrzeba zatrudnienia choćby jednej osoby lepiej
+przygotowanej do takiej roli.
+
+Wyzwaniem może okazać się również kwestia zapewnienia np. biletów wstępu dla
+wolontariuszy. Nie możemy oczekiwać, że zawsze będą oni je sami opłacać - zwłaszcza, że
+już sam dojazd na miejsce spotkania ciągnie za sobą koszta związane z biletami. Część
+instytucji kulturalnych umożliwia opiekunom osób z niepełnosprawnością bezpłatne
+korzystanie ze swojej oferty, jednak nie wszędzie istnieje taka możliwość.
+
+Wadą platformy jest również jej raczej niewielka atrakcyjność dla wolontariuszy.
+Ze względu na jej prostotę oraz ograniczone funkcje, nie wszyscy mieli motywację, aby z
+niej korzystać. Kluczem jest tu dobór osób, które faktycznie chcą spędzić czas z osobami z
+niepełnosprawnością i są gotowe zaangażować się w projekt.
+
+Platforma jest gotowa do użytkowania i spełnia swoją rolę, jednak już dziś wiemy,
+że chciałybyśmy wprowadzić w niej kilka kosmetycznych zmian. Doskonale byłoby
+poprzedzić je testami użyteczności - np. z zastosowaniem okulografu. Jedyne badania
+użyteczności na jakie mogłyśmy sobie pozwolić były nasze własne obserwacje
+użytkowników i ich sposobu korzystania ze strony. Spośród zmian, które można by było
+wprowadzić warto wymienić: ułatwienie korzystania z funkcji dodawania zdjęć, która dla
+większości wydaje się nieczytelna czy np zwiększenie/przesunięcie niektórych przycisków.
+Ciekawa byłaby też możliwość wprowadzenia personalizacji grafik ilustrujących kategorie i
+podkategorie, gdyż personalizacja budziła u użytkowników ogromną radość (Rys. 18 -
+Najbardziej atrakcyjne miniaturki). Pisałyśmy już o tym w rozdziale 5. w Specyfikacji
+(grudzień, 2017):
+“Jak wynika z projektu POSEIDON, „jednym z kluczowych wniosków na tym początkowym
+etapie jest potrzeba wysokiego stopnia personalizacji, jaki powinna zapewniać aplikacja. Nie
+ma miejsca na uniwersalizm […] Osoby z zespołem Downa i ich opiekunowie muszą być w
+stanie wygrywać na przykład swoje rozkłady zajęć, instrukcje wideo czy informacje
+komunikacyjne i zdjęcia.”.”
+
+--- strona 30 ---
+29
+
+Ważnym tematem jest również możliwość odsłuchiwania treści strony. O ile stałe
+elementy można ująć w nagraniach, o tyle bieżące nagrywanie treści wydarzeń jest sporym
+utrudnieniem. Nasze zmagania z dźwiękiem prowadziły przez próby wykorzystania
+programów - syntetyzatorów mowy, przygotowywania nagrań na domowych komputerach,
+zaangażowania znajomych, posiadających bardziej profesjonalny sprzęt, a ostatecznie
+zakończyły się w studiu nagraniowym. Amatorskie nagrania były niewyraźne, pełne szumów.
+Każdorazowe nagrywanie audiodeskrypcji w studiu jest nierealne i kosztowne, a z kolei
+syntetyzatory mowy nie pasowały nam do miękkiego wizerunku platformy.
+
+W trakcie testowania pojawiło się również kilka nowych funkcji, które nie zostały
+zaplanowane na etapie opisu narzędzia. Kilka z nich, jak na przykład wyświetlanie listy
+znajomych biorących udział w danym wydarzeniu, udało się wprowadzić na bieżąco. Z tych,
+o których myślałyśmy, a nie zmieściły się już w naszym budżecie wspomnieć warto:
+-
+bardziej
+szczegółowy
+kalendarz,
+umożliwiający
+dokładniejsze
+i
+bardziej
+automatyczne planowanie wydarzeń,
+-
+wprowadzenie możliwości automatycznego wysyłania sms-ów (lub powiadomień
+push - co w dłuższej perspektywie jest bardziej opłacalne) do rodziców
+użytkowników z informacjami o szczegółach wydarzeń, na które się zapisali (celem
+byłoby ułatwienie kontaktu z opiekunem i potwierdzenie uczestnictwa w przypadku
+osób wymagających zaangażowania rodziców),
+-
+inną kolejność wyświetlania informacji dla wolontariuszy, dzięki której wydarzenia,
+na które nie ma wystarczającej liczby osób wspierających pojawiałyby się jako
+pierwsze, z oznaczeniem “Pilne”,
+-
+możliwości tworzenia wydarzeń widocznych tylko dla wybranych użytkowników, co
+umożliwiłoby nam pomoc w organizacji bardziej sprofilowanych wydarzeń dla
+konkretnych osób (np randki, wydarzenia dedykowane).
+
+Ostatnim tematem, który pojawił się w trakcie funkcjonowania platformy, jest
+konieczność dostosowania narzędzia do RODO - Rozporządzenia Ogólnego o Ochronie
+Danych Osobowych. Z perspektywy narzędzi adresowanych do osób z niepełnosprawnością
+intelektualną wyzwaniem jest skonstruowanie takich komunikatów, które będą zgodne z
+przepisami prawa i równocześnie zrozumiałe dla potencjalnego użytkownika.
+
+--- strona 31 ---
+30
+7. Podsumowanie realizacji projektu i analiza
+wyników testu
+
+7.1 Podłoże teoretyczne
+
+Podłożem teoretycznym podczas opracowywania koncepcji platformy było dla nas
+pojęcie zdrowia jako rozwoju Kazimierza Obuchowskiego1 oraz Międzynarodowa
+Klasyfikacja Funkcjonowania, Niepełnosprawności i Zdrowia (ICF). Ten integracyjny model
+ujmowania m.in. niepełnosprawności postrzega ją w sposób wielowymiarowy: jako
+interakcję wielu części składowych. Relacje między nimi znajdują się na poniższym
+wykresie.
+Rys. 22 - Zależności między składnikami ICF2
+Już w raporcie początkowym zauważyłyśmy, że zmiana poszczególnych elementów
+składowych tego systemu, może wpłynąć na inne jego elementy. W tym rozdziale
+chciałybyśmy zastanowić się, na ile udało nam się wpłynąć na poszczególne elementy
+systemu.
+Stworzenie i testowanie platformy “Czas na aktywność” było działalnością
+mieszczącą się w “czynnikach środowiskowych” koncepcji ICF. Jej wprowadzenie miało
+
+1 Obuchowski K. (2000): Galaktyka Potrzeb. Psychologia Dążeń Międzyludzkich., Wydawnictwo Zysk
+i S-ka, Poznań
+2 Źródło: www.watchdogpron.pl
+
+--- strona 32 ---
+31
+wpłynąć na aktywność oraz uczestnictwo użytkowników. Co ważne, nowe formy aktywności
+i uczestniczenia w życiu społecznym, umożliwiły funkcjonowanie na wyższym poziomie
+niezależności. Korzystanie z platformy pozwoliło również na bardziej adekwatne do wieku
+zaspokojenie potrzeb. Te dwa składniki z kolei miały wpłynąć na zmiany w czynnikach
+osobowych
+-
+rozwoju
+zainteresowań,
+różnorodnych
+umiejętności,
+samodzielności
+i samosterowności a także wiedzy nt. możliwości oferowanych przez miasto. Dodatkowo,
+zdobyte umiejętności i wiedza mogą w przyszłości w istotny sposób wpływać na dalsze
+interakcje: np. dzięki zdobyciu informacji na temat kawiarni w okolicy zamieszkania, osoba
+z niepełnosprawnością może próbować samodzielnie się tam wybierać.
+7.2 Analiza i podsumowanie
+
+Typ
+Ilość wejść
+Średnio dziennie
+Uczestnicy
+357
+8.1
+Wolontariusze
+18
+0.4
+Sumarycznie
+375
+8.5
+Tabela 1 - Dane dot. wejść na platformę (1.05-13.06)
+
+Powyższe dane przedstawiają aktywność użytkowników na platformie. Aktywność
+jest mierzona w odstępie czasowym co 30 minut. Jeśli w przeciągu 30 minut użytkownik
+wykonuje jakiekolwiek akcje w aplikacji, aktywność taka jest liczona jako jedno wejście.
+W tabeli nie zostały ujęte aktywności użytkowników o statusie “administrator” - czyli
+koordynatorki projektu oraz moderatorki. Statystyki nie doliczają również ich aktywności
+w panelu administratora. Statystyki nie obejmują pełnego czasu testowania, ponieważ ta
+funkcja pojawiła się stosunkowo późno.
+Z tabeli widać, że użytkownicy platformy przez 44 dni weszli na platformę ponad 350
+razy. Daje to średnio ponad 8 wejść dziennie, czyli prawie jedno wejście przez jednego
+użytkownika dziennie. Przyjmując za kryterium sukcesu 0,5 i więcej wejść na platformę na
+dzień (co w zupełności wystarcza do zapisywania się na wydarzenia na bieżąco), aż 60%
+użytkowników plasuje się powyżej tej granicy. Dodatkowo ze względu na fakt, że rodzice
+osób z grup mniej aktywnych kontaktowały się telefonicznie z moderatorką, wiemy że one
+również rzeczywiście korzystały z platformy - tylko odrobinę rzadziej, zawsze z rodzicami.
+Wątpliwości mamy tylko co do 2 osób. Należy zatem przyjąć, że aż 80% grupy było
+aktywnymi użytkownikami platformy. Jest to wynik, który należy uznać za ogromny sukces.
+Okazuje się, że w odniesieniu do aplikacji mobilnych dane dotyczące tzw. retencji (czyli
+ilości aktywnych użytkowników po określonym czasie) są zatrważające. Retencja aplikacji
+różni się w zależności od jej typu (gra, aplikacja informacyjna, aplikacja rozrywkowa,
+muzyczna), jednak wynosi od 10% do 50%3 - najwyższe wyniki w przypadku aplikacji
+informacyjnych. 25% aplikacji otwierana jest tylko raz, a większość aplikacji traci połowę
+swoich najaktywniejszych użytkowników w przeciągu trzech miesięcy4. Chociaż nasza
+platforma nie jest aplikacją mobilną, to wydaje się, że przywołanie tych danych jest w jej
+wypadku zasadne i obrazuje jak wysokie wyniki osiągnęłyśmy!
+
+3 Alhlou F. i in. (2016): Google analytics breakthrough : from zero to business impact, Wiley & Sons,
+Hoboken, New Jersey, s. 423
+4 Tamże, s. 422
+
+--- strona 33 ---
+32
+Podsumowując te twarde dane, byłyśmy w stanie stworzyć profil użytkowników
+aktywnych (często wchodzących na platformę samodzielnie), średnio aktywnych
+(wchodzących na platformę raz w tygodniu przy pomocy rodziców) oraz nieaktywnych na
+platformie.
+
+Użytkownicy bardzo aktywni
+Użytkownicy średnio
+aktywni
+Użytkownicy
+nieaktywni
+6 osób
+3 osoby
+1 osoba
+powyżej 0,5 wejść/dzień,
+kilkadziesiąt wejść
+kilkanaście wejść na
+platformę
+kilka wejść na platformę
+- osoby towarzyskie,
+prospołeczne
+- 3 osoby o największej ilości
+wejść - to osoby bardzo
+aktywnie korzystające z czatu
+(tysiące wysłanych
+wiadomości!!!), 2 z nich
+dobrze piszące, 1 radząca sobie
+gorzej
+- głównie osoby bardziej
+samodzielne, ale także takie,
+które otrzymały dużą pomoc ze
+strony zaangażowanych w
+projekt rodziców, innych
+użytkowników czy rodziny,
+zwłaszcza na początkowym
+etapie testowania innowacji
+- osoby często korzystające z
+komputera
+- osoby z większymi
+problemami społecznymi
+(nieśmiałe)
+- posiadające wspierających
+rodziców
+- kontakt rodziców z
+moderatorem podczas
+korzystania z platformy
+(smsy, telefony)
+- osoby rzadziej korzystające
+z komputera (co wynika z
+wywiadów wstępnych)
+- osoba z większymi
+problemami społecznymi
+(nieśmiałość)
+- brak wsparcia ze strony
+rodziców, kontakt z
+platformą jedynie
+podczas zajęć w ŚDS
+- brak responsywności
+rodziców (np.
+odpowiedzi na smsy)
+Tabela 2 - Profil użytkowników
+
+Aby przekonać osoby z grup średnio i mniej aktywnych, należałoby zastosować w ich
+przypadku więcej warsztatów indywidualnych. Dobrym pomysłem byłoby również
+zaangażowanie w projekt ich nauczycieli lub terapeutów. W naszym wypadku sprawdziło się
+zaangażowanie w projekt terapeutek z Środowiskowego Domu Samopomocy, dzięki którym
+prawdopodobnie użytkownik z ostatniej grupy w ogóle wchodził na platformę.
+
+W trakcie trwania innowacji odbyły się 22 spotkania jednorazowe oraz 1 zajęcia
+cykliczne (9 spotkań), 8 szkoleń, lub spotkań dla wolontariuszy. Daje to blisko 7 spotkań
+miesięcznie (od lutego), oraz około 1 szkolenie/spotkanie w miesiącu (od grudnia).
+Propozycji wydarzeń było w platformie więcej (Tabela 4, należy doliczyć około 10
+propozycji z usuniętych kategorii), jednak nie na wszystkie zebrała się grupa. W przypadku
+gdy na wydarzenie zgłosiła się tylko jedna chętna osoba, było ono odwoływane.
+W przypadku braku wolontariuszy na dane wydarzenie, również było odwoływane - jednak
+taka sytuacja miała miejsce rzadko, gdyż moderatorka planując wydarzenia wstępnie
+orientowała się w możliwościach czasowych wolontariuszy.
+
+--- strona 34 ---
+33
+Zrealizowane wydarzenia
+jednorazowe
+Zrealizowane wydarzenia
+cykliczne
+Szkolenia i spotkania
+(ewaluacyjne,
+wprowadzające)
+22
+9
+8
+Tabela 3 - zrealizowane wydarzenia
+
+Kategoria
+Subkategoria
+Ilość
+Sport
+Taniec
+1
+Sport
+Imprezy sportowe
+1
+Sport
+Ruch
+12
+Kultura
+Kino i teatr
+7
+Kultura
+Warsztaty
+2
+Kultura
+Muzyka
+4
+Wycieczki
+Wycieczki jednodniowe
+0
+Wycieczki
+Dłuższe wyjazdy
+2
+Spotkania
+Wyjścia na miasto
+9
+Spotkania
+Spotkania u znajomych
+4
+ŁĄCZNIE
+44
+Tabela 4 - propozycje wydarzeń (bez wydarzeń z usuniętych kategorii)
+
+Terminarz wyjść był w dużej mierze zależny od grafiku wolontariuszy, który często
+nie pokrywał się z grafikiem użytkowników. Na przykład razem z wolontariuszkami
+Dagmarą i Magdą początkowo planowałyśmy stworzenie cyklu warsztatów dla dziewcząt
+(warsztaty robienia mydła, warsztaty modowe połączone z wyjściem na zakupy, warsztaty
+DIY). Niestety jedyne dni, w które tak duże wydarzenia mogłyby się odbywać to sobota
+i niedziela - a wolontariuszek zazwyczaj nie było wtedy w Krakowie, gdyż pochodzą z
+innych miast. Wobec tego byliśmy zmuszeni przesunąć te plany na późniejszy okres.
+Podsumowując projekt uznałyśmy, że najlepszym rozwiązaniem tego problemu będzie
+zaangażowanie w projekt praktykantów, obok wolontariuszy. Jedna z członkiń
+Stowarzyszenia nawiązała już rozmowy z wykładowcami z Uniwersytetu Pedagogicznego,
+którzy wyrazili zainteresowanie projektem.
+Dużo naszej energii pochłonęło samo projektowanie platformy - badania
+użytkowników, obserwacje, gromadzenie źródeł naukowych i informacji dotyczących
+podobnych projektów. Po osadzeniu w internecie początkowej wersji platformy, aż do
+samego końca trwania projektu, wciąż wprowadzałyśmy zmiany na stronie, wymieniając
+setki maili z jej wykonawcami. Pozwoliło nam to lepiej dopasować platformę do naszych
+potrzeb i wyeliminowało błędy, jednak te poprawki i dodatkowe funkcje spowodowały
+wzrost kosztów i konieczność wygospodarowania dodatkowego budżetu.
+
+--- strona 35 ---
+34
+W budżecie nie zostały ujęte wszystkie elementy, jakie powinny być w nim zawarte.
+Przykładowo, zdecydowałybyśmy się na indywidualne warsztaty dla użytkowników -
+przynajmniej trzy na osobę. Dużą bolączką był dla nas również brak środków na nagrania
+lektorskie, które początkowo próbowałyśmy robić same. Nauka oprogramowania i próby
+pochłonęły bardzo dużą ilość czasu - a i tak nasze nagrania okazały się zbyt amatorskie
+i zostały odrzucone przez wykonawcę. Na szczęście udało nam się znaleźć lektora -
+wolontariusza, który wykonał dla nas nagrania lektorskie za darmo. Zajęło to jednak trochę
+czasu.
+Wydarzenia, w których uczestniczyło najwięcej osób i które oceniamy jako
+największy sukces to: wyjścia do kina oraz spotkania u znajomego. Te drugie
+urozmaicaliśmy o różne warsztaty i aktywności: np robienie pizzy, frytek, warsztaty
+urodowe. Te właśnie wydarzenia mają największy potencjał sukcesu (wyjścia zbliżające
+użytkowników do siebie - zaspokojenie potrzeby kontaktu w sposób adekwatny do wieku;
+niewielki koszt; długi czas trwania - zaleta dla rodziców) i o nie mieliśmy również najwięcej
+próśb. Niestety, aby w przyszłości można było organizować ich więcej,
+konieczne będzie znalezienie wolontariuszy, którym odpowiadają weekendowe terminy.
+Wyjścia do kina są natomiast bardzo proste do zorganizowania, zwłaszcza, że wiemy już w
+których miejscach w Krakowie opiekunowie mogą liczyć na darmowe bilety. Problemem jest
+tu jedynie fakt, że repertuary kin pojawiają się zazwyczaj w środku tygodnia, a wyjścia do
+platformy należy wprowadzić odpowiednio wcześniej (ponad tydzień), aby wszyscy
+użytkownicy mieli szansę się zapoznać z propozycjami. Dlatego bardzo często planowaliśmy
+wyjścia do kina nie wiedząc na co pójdziemy. Kolejną kwestią jest tutaj repertuar: repertuar
+kin dla osób z zespołem Downa jest mocno ograniczony, gdyż muszą oni oglądać filmy z
+dubbingiem lub w polskiej wersji językowej, ale także filmy dostosowane do ich możliwości
+poznawczych. Przykładowo, jednym z najgorzej odebranych filmów i wyjść w ogóle było
+wyjście na film “Maria Magdalena” - dwoje użytkowników zasnęło na sali filmowej! Mimo,
+że film był z dubbingiem, co wydawało się sugerować dostosowanie do
+możliwości młodszych osób, film był niezrozumiały i nudny dla naszych odbiorców.
+Czas tworzenia i testowania platformy był ekstremalnie krótki. Wiele działań toczyło
+się jednocześnie, dlatego skupiłyśmy się na najważniejszych działaniach - na niektóre
+nie wystarczyło czasu (np. odpowiedni PR, szeroko zakrojoną rekrutację wolontariuszy,
+szkolenia indywidualne). Z pewnością pozostaje nam niedosyt, jednak ciężko jest nam
+również nie czuć dumy z naszego dokonania. Dużo software house’ów i programistów,
+z którymi kontaktowałyśmy się kilka miesięcy temu celem stworzenia wyceny platformy
+twierdziło, że nie jest możliwe wykonanie jej w tak krótkim czasie. Chociaż z pewnością
+jakość projektu ucierpiała na tym pośpiechu to wiemy, że obrany przez nas kierunek jest
+właściwy, a całą innowację należy potraktować jako bardzo udane badanie pilotażowe.
+Widzimy, że wykorzystanie nowych technologii w działaniach stowarzyszeń i instytucji
+działających na rzecz osób z niepełnosprawnościami może przynosić wspaniałe rezultaty,
+zwłaszcza że te osoby są bardzo entuzjastycznie nastawione do świata technologii. Bardzo
+chętnie korzystają z urządzeń technologicznych, chętnie grają w gry i siedzą w internecie,
+bardzo żywo reagują na system wirtualnej rzeczywistości (mieliśmy okazję go testować
+podczas wyjścia na Festiwal Nauki i Sztuki). Możliwości są ogromne, tak samo jak potrzeby
+osób z niepełnosprawnościami.
+
+--- strona 36 ---
+35
+
+8. Rekomendacje i zalecenia
+
+8.1. Rekomendacja zawsze aktualna: dobrze rozplanuj projekt
+w
+czasie!
+
+Pierwszą i najważniejszą rekomendacją, jaką mamy dla osób chcących wprowadzać
+podobne rozwiązania w swoim środowisku jest zapewnienie sobie odpowiedniej ilości czasu.
+Zbudowanie platformy i dostosowanie jej do potrzeb odbiorców to ogromne i czasochłonne
+przedsięwzięcie. Aby zrobić to dobrze należy uwzględnić dużą liczbę bardzo szczegółowych
+informacji, co wydłuża proces samego przygotowywania narzędzia. Warto skorzystać z
+pomocy osób zajmujących się zawodowo user experience. W naszym przypadku dodatkowe
+konsultacje były niemożliwe ze względów czasowych i finansowych, ale jesteśmy
+przekonane, że takie rozwiązanie wpłynęłoby pozytywnie na efekt końcowy. Każde zdjęcie,
+wygląd przycisków, kolor, głos lektora - to wszystko ma swoje znaczenie, żeby przemyśleć i
+uwzględnić szczegóły, trzeba mieć wystarczającą ilość czasu.
+
+Warto założyć również odpowiednią ilość czasu na samo testowanie. Zanim
+użytkownicy nauczą się korzystać z narzędzie, a wychodzenie w przestrzeń miasta z użyciem
+platformy stanie się dla wszystkich proste i przyjemne minie sporo czasu. Warto poświęcić
+go na rozwijanie umiejętności komputerowych oraz tych niezbędnych z punktu widzenia
+samodzielnego korzystania z wydarzeń - w naszym przypadku platforma uwypukliła potrzebę
+prowadzenia treningów samodzielnego poruszania się komunikacją miejską oraz treningów
+finansowych. Jednym z pomysłów na wykorzystanie platformy jest wprowadzenie jej jako
+dodatkowy element pracy w pracowni komputerowej w szkole czy placówce dziennej. Poza
+treningiem pod okiem nauczycieli, stwarza to również możliwość szerszej współpracy
+między placówkami pomocy społecznej i oświatowymi a organizacją pozarządową oraz
+integrowanie osób z podobnymi potrzebami i trudnościami na co dzień przebywających w
+różnych ośrodkach.
+
+8.2. Zastanów się, kto będzie odbiorcą platformy
+
+Kolejnym ważnym obszarem jest dobór użytkowników. Narzędzie adresowane jest
+głównie do osób z niepełnosprawnością intelektualną w stopniu umiarkowanym lub lekkim
+(ocenionym na podstawie zakresu umiejętności, nie orzeczenia), które są gotowe na
+aktywność i chcą nawiązywać kontakty z innymi. Korzystanie z narzędzia ułatwiają takie
+umiejętności jak: czytanie ze zrozumieniem, pisanie prostych wiadomości, podstawowe
+umiejętności z zakresu obsługi komputera i telefonu komórkowego (ułatwia ustalenie
+szczegółów spotkania). Osoby z większymi trudnościami będą miały kłopot z korzystaniem z
+wszystkich funkcji platformy, chyba że potraktujemy ją jako przestrzeń do informowania
+rodziców o dostępnych wydarzeniach (co de facto miało miało miejsce . Po niewielkich
+
+--- strona 37 ---
+36
+zmianach obejmujących na przykład grafikę może być swobodnie wykorzystywana również
+dla innych grup - np seniorów.
+W trakcie testowania pojawiła się również propozycja wykorzystania narzędzia do
+komunikacji z wolontariuszami - jako baza informacji o wydarzeniach, w których mogą
+wziąć udział. Być może samo bycie na platformie ułatwiłoby kontakt z podopiecznymi
+Stowarzyszenia i zachęciło tych zaangażowanych w inne działania do włączenia się w jakieś
+wydarzenie dedykowane dla tej grupy. Wydaje nam się również, że obecność wolontariuszy
+na platformie umożliwiłaby nam unormowanie ich wzajemnych relacji. Dziś zdarza się tak,
+że wolontariusze, którzy podają podopiecznym Stowarzyszenia swój prywatny numer
+telefonu doświadczają znacznego przekraczania granic - bardzo częstych telefonów o
+dziwnych porach, wysyłania masy sms-ów i zdjęć. Sytuacje nie zdarzają się bardzo często,
+ale mają miejsce i skłaniają nas do rozmyślań o tym, jak dbać o ich czas wolny, prywatność
+równocześnie zakładając i oczekując otwartości na osoby z zespołem Downa i jak najbardziej
+“normalnych” relacji. Być może aktywność na platformie byłaby szansą na zaspokojenie
+potrzeb kontaktu z uszanowaniem prywatności wolontariuszy. Należałoby jednak
+odpowiednio motywować wolontariuszy do korzystania z narzędzia, na co w naszym
+wypadku nie wystarczyło czasu.
+Nasz platforma testowana była na grupie 10 osób. To za mało, aby wykorzystać
+wszystkie jej możliwości. Optymalną liczbą użytkowników wydaje nam się grupa 20-
+osobowa. Wówczas organizowane wyjścia mają szansę zebrać się w większych grupach (6-8
+osób), a ich ilość umożliwi wybieranie atrakcji z większej bazy. Wówczas konieczne jest
+jednak zaangażowanie odpowiedniej liczby wolontariuszy i ich aktywna postawa, tak aby
+moderator był w stanie myśleć o kilku wydarzeniach na raz.
+Rozwiązaniem, które chcemy wprowadzić w przyszłości jest umożliwienie
+organizowania wydarzeń dla mniejszych grup. Niektórzy nasi użytkownicy potrzebują
+wsparcia w organizacji wyjść na przykład na randkę, tylko dla siebie i swojego partnera.
+Zawężenie liczby osób zaproszonych, którym wydarzenie wyświetla się wśród propozycji
+pozwoliłoby na lepsze dopasowanie do ich potrzeb.
+
+8.3. Znajdź dobrego moderatora
+
+Kluczową rekomendacją jest odpowiednie dobranie moderatora. Ponieważ nasza
+moderatorka spisała się na medal, poniższy profil oparliśmy o jej cechy:
+-
+odpowiedni wiek - moderatorem powinna być osoba w wieku zbliżonym do
+użytkowników (w przypadku osób dorosłych), ułatwia to komunikację i dobór
+wydarzeń atrakcyjnych zarówno dla użytkowników, jak i wolontariuszy,
+-
+odpowiedzialność, komunikatywność, otwartość, cierpliwość,
+-
+doświadczenie w pracy z osobami z niepełnosprawnością intelektualną, znajomość
+grupy użytkowników - ich możliwości, potrzeb, zainteresowań,
+-
+umiejętność zarządzania innymi i współpracy - organizacja wydarzeń wymaga
+kooperacji z zespołem wolontariuszy oraz współdziałania z rodzicami i
+użytkownikami,
+-
+umiejętność wyszukiwania informacji o wydarzeniach kulturalnych, znajomość
+własnego miasta - osobie aktywnej łatwiej będzie zachęcić innych do aktywności,
+-
+umiejętności organizacyjne i radzenie sobie w sytuacjach trudnych,
+
+--- strona 38 ---
+37
+-
+“odpowiednio humanistyczny” umysł, aby być w stanie wczuć się w potrzeby osób z
+niepełnosprawnością i równocześnie “odpowiednio ścisły”, aby być w stanie
+obsługiwać narzędzie i łączyć różne informacje w czasie,
+-
+umiejętności techniczne - sprawna obsługa komputera, doświadczenie w obsłudze
+CMS stron internetowych lub gotowość do nauki.
+
+Projekt pokazał nam, jak ważne jest zbudowanie odpowiednich relacji między
+użytkownikami platformy, moderatorem, wolontariuszami i rodzicami. Minusem naszego
+rozwiązania, było skumulowanie odpowiedzialności za organizację i realizację wydarzeń
+oraz wsparcie użytkowników w korzystaniu z platformy w osobie moderatorki. Co więcej, to
+ona była adresatką większości pytań i wątpliwości ze strony rodziców. Dalsze korzystanie
+z platformy z pewnością umożliwi nam rozłożenie tych elementów na więcej osób, bo grupa
+tych, którzy wiedzą już jak z niej korzystać, do czego służy i na jakiej zasadzie organizowane
+są wyjścia jest większa. Jak w wielu działaniach projektowych, niezbędny jest zespół ludzi
+zaangażowanych we wdrażanie nowego rozwiązania.
+Ważnym obszarem jest odpowiednie zmotywowanie wolontariuszy do korzystania z
+narzędzia. Aby platforma działała sprawnie, wszyscy jej użytkownicy powinni
+systematycznie logować się, sprawdzać dostępne oferty wydarzeń, podtrzymywać kontakty z
+pozostałymi osobami. Dla wolontariuszy narzędzie jest umiarkowanie atrakcyjne, z
+pewnością nie będą korzystać z niego z takim zaangażowaniem, jak osoby z zespołem
+Downa. Pytanie, jak rozwiązać tę sytuację, aby z jednej strony utrzymać motywację
+wolontariuszy, a z drugiej uzyskać odpowiednią ich aktywność. Dużym problemem jest
+również dostępność czasowa wolontariuszy - nie jesteśmy w stanie określić, w jakich
+terminach będa odbywały się poszczególne wyjścia. Jednym ze sposobów, który przyszedł
+nam do głowy w trakcie testowania jest zaangażowanie studentów, dla których używanie
+platformy i uczestnictwo w wyjściach byłoby formą realizacji praktyk zawodowych. Byłaby
+to forma współpracy, w której łatwiej wprowadzić pewne ramy i oczekiwania niż w
+przypadku wolontariatu.
+W tym miejscu warto zaznaczyć, że ważnym obszarem we współpracy moderatora z
+pozostałymi użytkownikami platformy jest rozsądne stawianie granic i zaangażowanie
+rodziców lub opiekunów naszych przyszłych użytkowników w naukę obsługi platformy i
+budowanie nawyku sprawdzania, co słychać na platformie. Zanim wszystkie strony
+przyzwyczają się do tego, “jak to działa”, pojawia się mnóstwo oczekiwań związanych z
+odpowiedzialnością za każdy element działania projektu: zachęcenie do skorzystania z
+platformy, zmotywowanie do wyjścia z domu, dogranie terminu, przypomnienie terminu w
+odpowiednim momencie, odebranie użytkownika z domu, kupieniu biletów i zadbaniu o jego
+finanse (aby przypomnieć rodzicom o odpłatności, przypilnować co i za ile użytkownik
+kupuje), zadbanie o komfort w trakcie wydarzenia, bezpieczeństwo i dobrą zabawę, a na
+końcu odwiezienie do domu. Towarzyszą temu często intensywne emocje użytkowników,
+związane z radością ze spotkania z rówieśnikami, uczestnictwem w wydarzeniu i
+samodzielnością. Współpraca, elastyczność i wyrozumiałość są konieczne do tego, żeby
+wszystko odbyło się spokojnie i sprawnie. Konieczne jest wypracowanie i jasne określenie
+zasad, zgodnie z którym każdy ma swój obszar odpowiedzialności za siebie i swoje
+uczestnictwo w wydarzeniach, niezależnie od swojej niepełnosprawności. Ważne, aby
+stopniowo przyzwyczajać użytkowników i ich rodziców do tego, że platforma ma być
+narzędziem
+wzmacniającym
+ich
+samodzielność,
+a
+nie
+jedynie
+przenoszącym
+odpowiedzialność z organizowania czasu wolnego z rodziców na moderatora i wolontariuszy,
+a ich zadaniem jest tylko (i aż) wspieranie.
+
+--- strona 39 ---
+38
+8.4. Nie wszystko na raz! Wprowadzaj platformę krok po kroku.
+
+W naszym przypadku platforma musiała powstać i zostać przetestowana w kilka
+miesięcy. Formuła Inkubatora i idea sprawdzania rozwiązań w mniejszej skali spowodowała,
+że nasze działania musiały odbyć się w krótkim czasie. Z jednej strony pozwoliło nam to na
+sprawdzenie, czy kierunek który wybrałyśmy jest słuszny (odpowiedź brzmi: TAK), z drugiej
+spowodowało, że niektóre ważne etapy pokonałyśmy galopem. To z pewnością utrudniło
+naszym użytkownikom i nam samym używanie narzędzia, więc ewentualnym naśladowcom
+proponujemy spokojniejszą drogę.
+Osobom zainteresowanym stworzeniem i wdrożeniem platformy w życie w pierwszej
+kolejności proponujemy solidne przygotowanie narzędzia, osadzenie go w sieci, a następnie
+zbudowanie zespołu, który odpowiedzialny będzie za jego wprowadzenie w życie. W naszym
+przypadku szkolenie dla wolontariuszy, rodziców i użytkowników odbywało się w tym
+samym czasie. Platforma miała wówczas jeszcze wiele elementów wymagających poprawy,
+sporo funkcji nie działało. W jednym czasie konieczne było zapoznanie ich wszystkich nie
+tylko z techniczną stroną korzystania z platformy, ale również wzajemnego poznania się i
+przygotowania
+odpowiedniego
+“gruntu”
+do
+organizacji
+wyjść.
+
+Gdyby
+testowanie
+mogło
+zająć
+więcej
+czasu,
+w
+pierwszej
+kolejności
+przeprowadziłybyśmy szkolenia dla wolontariuszy, podczas których poznaliby nie tylko
+zasady funkcjonowania platformy, ale i otrzymali informacje o funkcjonowaniu osób z
+zespołem Downa, ich potrzebami i możliwościami. Później zorganizowałybyśmy warsztat
+dla rodziców, a na samym końcu dla użytkowników. Szkolenie dla warsztatów warto włączyć
+w szersze działania aktywizujące osoby z niepełnosprawnością, przyzwyczaić rodziców do
+tego, że ich dorosłe dzieci wychodzą z grupą, zbudować odpowiedni poziom wzajemnego
+zaufania, zapewnić o zrozumieniu potrzeb. Sytuacją idealną byłoby, gdyby wolontariusze
+uczestniczący w projekcie znali użytkowników wcześniej. W naszym przypadku większość z
+nich zrekrutowana została na potrzeby tego projektu. W takiej sytuacji warto zorganizować
+kilka spotkań dla osób z niepełnosprawnością z wolontariuszami, którzy będą wspierać ich w
+korzystaniu z platformy - aby mieli szansę się poznać, polubić i zbudować zaufanie. Zachęci
+to również obie strony do używania społecznych funkcji platformy, co w naszym przypadku
+okazało się kluczowe do przyzwyczajenia się do korzystania z aplikacji.
+Ważnym elementem projektu, na który warto przeznaczyć odpowiednią ilość czasu,
+jest szkolenie z obsługi platformy dla użytkowników. W naszym budżecie zabrakło środków
+na indywidualne spotkania z osobami testującymi, a zaplanowane szkolenie było za długie i
+ze względu na uczestnictwo dużej liczby osób mało efektywne. Ostatecznie konieczne było
+zorganizowanie dodatkowych spotkań, a ze względu na tempo realizacji projektu, udział
+niedoświadczonych wolontariuszy i rozpoczęcie testowania zanim jeszcze platforma działała
+bez zarzutu, obowiązek ten spadł na moderatorkę.
+Warto dołożyć wszelkich starań, aby wokół platformy zbudowana została
+społeczność. Z naszych obserwacji wynika, że tym, co najbardziej motywowało
+użytkowników do korzystania z narzędzia była właśnie możliwość kontaktu ze znajomymi
+oraz wracania do wspólnie spędzonych chwil. Uczestnictwo w wydarzeniach na początku
+było jedynie dodatkiem, dopiero z czasem, gdy użytkownicy wzięli udział w kilku, część z
+nich zaczęła szukać tam ciekawych propozycji.

@@ -1,0 +1,421 @@
+--- strona 1 ---
+
+Hop hop – mobilny plac zabaw
+
+Grantobiorca: Aleksandra Satława
+
+--- strona 2 ---
+
+Spis treści
+Hop hop – mobilny plac zabaw ............................................................................... 1
+Opis grupy docelowej rozwiązania.......................................................................... 4
+Sprawozdanie z przebiegu testowania i ................................................................. 4
+Szczegółowe wnioski z etapu testowania ........................................................... 5
+Opis rozwiązania Hop Hop – mobilny plac zabaw wraz ze specyfikacją techniczną
+– projektem wzorniczym ......................................................................................... 7
+Technologia i bezpieczeństwo ............................................................................ 7
+Ergonomia ........................................................................................................... 8
+Podstawowe wymiary zestawu............................................................................ 8
+Instruktaż zastosowania rozwiązania .................................................................... 10
+Gdzie korzystać z projektu / poszerzenie dostępności terapii ........................... 10
+Jak korzystać z projektu .................................................................................... 11
+Scenariusze ćwiczeń i zabaw ruchowych w ostatecznej wersji ........................... 17
+Chodzenie i skakanie pomiędzy elementami .................................................... 17
+Chodzenie i bieganie po torze sensorycznym ................................................... 19
+Wchodzenie i schodzenie ................................................................................. 21
+Turlanie się ....................................................................................................... 22
+Ćwiczenia na macie .......................................................................................... 24
+Skoki przez przeszkody .................................................................................... 26
+Rzucanie do celu ............................................................................................... 28
+Przechodzenie przez tunel ................................................................................ 30
+Przechodzenie przez tor przeszkód .................................................................. 32
+Czołganie się pod tunelem ................................................................................ 34
+Balansowanie na brzuchu ................................................................................. 37
+Bujanie się do przodu i do tyłu .......................................................................... 39
+Wspinanie się .................................................................................................... 41
+
+--- strona 3 ---
+
+Pomysł na własną zabawę ................................................................................ 44
+Wyciszenie po zabawie ..................................................................................... 47
+Podsumowanie ..................................................................................................... 49
+
+--- strona 4 ---
+
+Opis grupy docelowej rozwiązania
+
+Malejąca sprawność ruchowa i często występujące trudności psychoruchowe są
+coraz większym problemem wśród dzieci. Są one uwarunkowane genetycznie,
+społecznie i kulturowo. Wspomaganie prawidłowego rozwoju psychoruchowego,
+profilaktyka i dostęp do codziennej terapii jest ważnym elementem w życiu dziecka
+w wieku przedszkolnym i jego opiekuna. Rozwiązanie Hop hop – mobilny plac
+zabaw skierowane jest do:
+•
+dzieci w wieku przedszkolnym i wczesnoszkolnym – od 3 do 7 lat –
+z trudnościami i niepełnosprawnościami ruchowymi typu: nieprawidłowe
+napięcie mięśniowe, obniżona zdolność motoryczna ciała, problemy
+przetwarzania sensorycznego w obrębie układu proprioceptywnego, układu
+równowagi, lęków przed pokonywaniem przeszkód,
+•
+dzieci w wieku przedszkolnym i wczesnoszkolnym – od 3 do 7 lat –
+w celach prawidłowego rozwoju psychoruchowego, profilaktyki przez
+zabawę ruchową,
+•
+rodziców, opiekunów, fizjoterapeutów, terapeutów integracji sensorycznej,
+osób pracujących z dziećmi.
+
+Sprawozdanie z przebiegu testowania
+i przedstawienie wniosków
+
+W teście brało udział 7 dzieci w wieku 4-7 lat z trudnościami w obszarze motoryki
+dużej i problemami przetwarzania sensorycznego. Każde dziecko testowało
+rozwiązanie kilkukrotnie – wraz z opiekunem i terapeutą. Testy odbywały się
+w gabinecie AnatoMe pod opieką fizjoterapeuty Zofii Karskiej oraz projektantki
+wzornictwa Aleksandry Satławy. Spotkania miały charakter zarówno indywidualny,
+jak i grupowy.
+
+--- strona 5 ---
+
+Szczegółowe wnioski z etapu testowania
+
+1. Testy w gabinecie fizjoterapeuty pokazały, że kolejnym krokiem powinno być
+przeprowadzenie testów w przestrzeni domowej oraz w przedszkolach, np.
+w placówce z oddziałami integracyjnym.
+2. Dzieci, rodzice i terapeuci pozytywnie ocenili Hop hop – mobilny plac zabaw.
+Szczególnie zwrócili uwagę na jego niewielkie gabaryty, przy jednocześnie
+dużej możliwości kreowania zabaw i ćwiczeń ruchowych.
+3. Testy ukazały, że zestaw jest dla dzieci intuicyjny w obsłudze. Wiele zabaw
+i ćwiczeń dzieci wykonywały bez konieczności patrzenia w scenariusze na
+kartach.
+4. Wybrane testy odbywały się w dwuosobowych grupach, z użyciem dwóch
+i trzech zestawów - prototypów rozwiązania. Okazało się, że zestawy można
+ze sobą łączyć, co daje dzieciom szansę skonstruowanie bardziej
+skomplikowanych i rozbudowanych torów przeszkód oraz stwarza możliwość
+zabawy i terapii w grupie. Wnioskiem z tych testów może być obserwacja, że
+w przypadku grupowej terapii w gabinetach czy przedszkolach
+integracyjnych, dobrze sprawdzą się 2 zestawy lub więcej. Z kolei jeden
+zestaw może być używany przy terapii indywidualnej lub w domu.
+5. Projekt ma potencjał rozwojowy. Możliwe jest wykonywanie dodatkowych
+zabaw i ćwiczeń ruchowych. Terapeuci, eksperci i dzieci zasugerowali m.in.
+przeciąganie części maty przez siebie, dopasowanie dla dziecka
+indywidualnych ćwiczeń na macie, turlanie po ziemi i łapanie małych części
+maty, chodzenie po torze na palcach, chodzenie po torze wspak, ćwiczenia
+równoważne na matach z wykorzystaniem nafrezowanych części, ćwiczenie
+równoważne w pozycji stojącej na małym balancerze.
+6. Nowe zastosowanie znalazły też drewniane łączniki. Testy pokazały, że
+mogą także służyć jako elementy do masażu podczas relaksacji.
+7. Podczas testów terapeuta zwrócił uwagę, że zestaw nadaje się do terapii
+indywidualnej i dostosowuje się do konkretnych potrzeby dziecka. Karty ze
+
+--- strona 6 ---
+
+scenariuszami zabaw i ćwiczeń mają służyć jako pomoc, ale nie zawsze
+trzeba wykorzystywać wszystkie scenariusze.
+8. Dzieci bawiły się zestawem od 30 do 60 minut – był to optymalny czas, aby
+wykonać wszystkie ćwiczenia i zabawy ruchowe. W tym czasie dzieci nie
+wykazywały oznak znudzenia. Podczas każdego testu z równym
+zaciekawieniem eksplorowały zestaw.
+9. Testy wpłynęły na zmianę i udoskonalenie niektórych scenariuszów zabaw
+i ćwiczeń ruchowych. Zmiany zostały uwzględnione w nowych scenariuszach
+zawartych w instruktażu.
+10. W opisach na kartach dotyczących wykonania i wspomagania zmieniła się
+forma adresata z 2 osoby liczny pojedynczej na 2 osobę liczby mnogiej.
+Zmiana ta wynika z obserwacji, że dzieci często wykonują ćwiczenia
+z opiekunem lub w towarzystwie innego dziecka.
+11. Niektóre zabawy powinny być wykonywane przy asekuracji osób dorosłych,
+np. balansowanie na stojąco, wspinanie się.
+12. Podczas pierwszej tury testów dzieci miały niewielki problem z wkładaniem
+drewnianych łączników do otworów zestawu. Dlatego aby ułatwić
+korzystanie z mobilnego placu zabaw, zostały one powiększone. Zmiany
+zostały uwzględnione w kolejnym prototypie.
+13. W celu zwiększenia doznań sensorycznych, zmieniona została faktura na
+jednaj stronie zestawu.
+
+--- strona 7 ---
+
+Opis rozwiązania Hop Hop – mobilny plac
+zabaw wraz ze specyfikacją techniczną
+– projektem wzorniczym
+
+W skład projektu wchodzą:
+•
+Zestaw mobilnego placu zabaw – 6 części wykonanych z pianki TR 67 H-35
+w technologii cięcia i frezowania (przez firmę Polting Foam z Gliwic),
+•
+Drewniane łączniki – 4 sztuki wykonane w technologii toczenia i cięcia
+drewna,
+•
+Karty zawierające scenariusze – instrukcje, opisy zabaw i ćwiczeń –
+wersja drukowana dwustronnie na laminowanym papierze,
+•
+Plecak – opakowanie na drewniane łączniki oraz karty z instrukcjami.
+Technologia i bezpieczeństwo
+Prototyp został wykonany z pianki TR 67 H-35 w technologii cięcia i frezowania
+przez firmę Polting Foam z Gliwic. Materiał posiada Europejski Standard
+Bezpieczeństwa Zabawek EN71.
+Polting Foam wprowadził do swojej oferty zaawansowane pianki ekologiczne
+z rodziny EVA oraz PE w dużej mierze wolne od węgla pochodzenia kopalnego.
+Właściwości tych produktów są tak samo dobre jak tradycyjnych pianek, które
+powstały dzięki surowcom kopalnym. W procesie ich wytwarzania zwykły węgiel
+zastąpiony został tworzywem biotechnologicznym. Oznacza to, że zostało ono
+pozyskane z odnawialnych tworzyw biologicznych, takich jak bambus, słoma czy
+drewno - mówi specjalista pracujący w firmie. Faktura na jednej stronie mat
+wykonana została w technologii nakładania moletu.
+Drewniane łączniki zostały wykonane przez lokalnego stolarza.
+
+--- strona 8 ---
+
+Ergonomia
+Gabaryty projektu dla każdej wersji zabaw i ćwiczeń ruchowych zostały
+dostosowane do wymiarów, potrzeb i zakresów kątowych dzieci w wieku 3-7 lat.
+
+Podstawowe wymiary zestawu
+Zestaw złożony do wersji przestrzennego balancera, rzut z boku.
+
+Zestaw rozłożony na płaskie maty, rzut z góry.
+
+--- strona 10 ---
+
+Instruktaż zastosowania rozwiązania
+
+Gdzie korzystać z projektu / poszerzenie
+dostępności terapii
+
+Hop hop - mobilny plac zabaw może być używany:
+•
+w przestrzeniach domowych,
+•
+w gabinetach terapeutycznych, np. fizjoterapii, terapii integracji sensorycznej,
+•
+w przedszkolach, w tym przedszkolach integracyjnych, salach zabaw.
+
+--- strona 11 ---
+
+Jak korzystać z projektu
+Hop hop to zestaw składający się z 6 płaskich części, które tworzą 3 maty do
+ćwiczeń i zabaw. Maty przekształcają się w obiekty do ćwiczeń i zabaw ruchowych
+dzięki rowkom, otworom i drewnianym łącznikom.
+Do zestawu dołączone są karty z scenariuszami – propozycjami 15 zabaw i ćwiczeń
+ruchowych. W projekcie ważną rolę odgrywa rodzic lub terapeuta, dlatego instrukcje
+przeznaczone są zarówno dla dzieci - część graficzna, jak i dla opiekunów - część
+opisująca wykonanie ćwiczenia i zakres wspomagania.
+W matach zastosowane zostały dwa rodzaje faktur – gładka i chropowata. Po
+złożeniu obiektu z jednej strony tworzy się fala, będąc trzecim rodzajem doznań
+haptycznych.
+Projekt może zostać udostępniony na zasadach open design – otwartych zasobów.
+Każdy może pobrać przygotowany do wykonania projekt i zlecić jego wykonanie
+rekomendowanym firmom – wykonawcom.
+
+--- strona 12 ---
+
+Widok na wszystkie elementy po złożeniu w bujak
+
+Widok na wszystkie rozłożone elementy
+
+--- strona 13 ---
+
+Uchwyt w obiekcie złożonym
+
+Uchwyt w obiekcie rozłożonym
+
+--- strona 14 ---
+
+Łączenie elementów piankowych z drewnianymi łącznikami
+
+Drewniane łączniki wraz z opakowaniem i kartami ze scenariuszami
+
+--- strona 15 ---
+
+Widok na fakturę i nafrezowane rowki ułatwiające przekształcanie mat w obiekty
+przestrzenne
+
+Otwory do wsuwania drewnianych łączników
+
+--- strona 16 ---
+
+Widok na pofalowaną powierzchnię w obiekcie do wspinania
+
+Widok na środek obiektu do bujania
+
+--- strona 17 ---
+
+Scenariusze ćwiczeń i zabaw ruchowych
+w ostatecznej wersji
+
+Chodzenie i skakanie pomiędzy elementami
+
+Przód i tył karty ze scenariuszami
+
+--- strona 18 ---
+
+Chodzenie i skakanie pomiędzy elementami
+
+--- strona 19 ---
+
+Chodzenie i bieganie po torze sensorycznym
+
+Przód i tył karty ze scenariuszami
+
+--- strona 20 ---
+
+Chodzenie i bieganie po torze sensorycznym
+
+--- strona 21 ---
+
+Wchodzenie i schodzenie
+
+Przód i tył karty ze scenariuszami
+
+--- strona 22 ---
+
+Turlanie się
+
+Przód i tył karty ze scenariuszami
+
+--- strona 23 ---
+
+Turlanie się
+
+--- strona 24 ---
+
+Ćwiczenia na macie
+
+Przód i tył karty ze scenariuszami
+
+--- strona 25 ---
+
+Ćwiczenia na macie
+
+Ćwiczenia na macie
+
+--- strona 26 ---
+
+Skoki przez przeszkody
+
+Przód i tył karty ze scenariuszami
+
+--- strona 27 ---
+
+Skoki przez przeszkody
+
+--- strona 28 ---
+
+Rzucanie do celu
+
+Przód i tył karty ze scenariuszem
+
+--- strona 29 ---
+
+Rzucanie do celu
+
+--- strona 30 ---
+
+Przechodzenie przez tunel
+
+Przód i tył karty ze scenariuszem
+
+--- strona 31 ---
+
+Przechodzenie przez tunel
+
+--- strona 32 ---
+
+Przechodzenie przez tor przeszkód
+
+Przód i tył karty ze scenariuszem
+
+--- strona 33 ---
+
+Przechodzenie przez tor przeszkód
+
+--- strona 34 ---
+
+Czołganie się pod tunelem
+
+Przód i tył karty ze scenariuszem
+
+--- strona 35 ---
+
+Czołganie się pod tunelem
+
+--- strona 36 ---
+
+Czołganie się pod tunelem
+
+--- strona 37 ---
+
+Balansowanie na brzuchu
+
+Przód i tył karty ze scenariuszem
+
+--- strona 38 ---
+
+Balansowanie na brzuchu
+
+Balansowanie na brzuchu
+
+--- strona 39 ---
+
+Bujanie się do przodu i do tyłu
+
+Przód i tył karty ze scenariuszem
+
+--- strona 40 ---
+
+Bujanie się do przodu i do tyłu
+
+--- strona 41 ---
+
+Wspinanie się
+
+Przód i tył karty ze scenariuszem
+
+--- strona 42 ---
+
+Wspinanie się
+
+--- strona 43 ---
+
+Wspinanie się
+
+--- strona 44 ---
+
+Pomysł na własną zabawę
+
+Przód i tył karty ze scenariuszem
+
+--- strona 45 ---
+
+Pomysł na własną zabawę
+
+--- strona 46 ---
+
+Pomysł na własną zabawę
+
+--- strona 47 ---
+
+Wyciszenie po zabawie
+
+Przód i tył karty ze scenariuszem
+
+--- strona 48 ---
+
+Wyciszenie po zabawie
+
+--- strona 49 ---
+
+Podsumowanie
+Najważniejsze korzyści, jakie daje innowacja Hop hop – mobilny plac zabaw:
+•
+dostępność terapii poza gabinetem terapeutycznym - możliwość zastosowania
+w wielu miejscach, w tym w przestrzeniach domowych,
+•
+mnogość zabaw i ćwiczeń przy zachowaniu małych gabarytów zestawu,
+•
+wspomaganie prawidłowego rozwoju psychoruchowego,
+•
+wspomaganie terapii dzieci z trudnościami w obszarze motoryki dużej,
+•
+terapia przez zabawę,
+•
+mobilny charakter, łatwość przenoszenia i transportowania.

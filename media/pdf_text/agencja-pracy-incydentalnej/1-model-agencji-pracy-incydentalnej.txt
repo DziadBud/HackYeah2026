@@ -1,0 +1,1134 @@
+--- strona 1 ---
+
+1
+
+Model funkcjonowania
+„Agencji Pracy Incydentalnej”
+opracowany na potrzeby testu innowacji społecznej pn. „Precedens Pracy-Agencja Pracy
+Incydentalnej” w ramach projektu grantowego: Inkubator Włączenia Społecznego, finansowanego ze
+środków Europejskiego Funduszu Społecznego w ramach Programu Operacyjnego Wiedza Edukacja
+Rozwój 2014-2020
+Opracował zespół w składzie:
+Wersja wstępna modelu:
+Górak Anna, Górak Maciej, Gralczyk Jacek, Janota Justyna, Mikołajczyk Anna,
+Rak Magdalena, Szostak Iwona
+Końcowa wersja modelu wraz z rekomendacjami:
+Mikołajczyk Anna, Syzduł Beata
+Redaktor odpowiedzialny za zgodność modelu z umową o powierzenie grantu
+nr IS-430-4-3/22:
+Mikołajczyk Anna
+Podmiot odpowiedziany za opracowanie i wdrożenie modelu:
+Fundacja PEStka
+ul.MarszałkaJ.Piłsudskiego36/20
+25-431 Kielce
+Biuro Zarządu:
+ul.Targowa 18/925
+25-520 Kielce
+tel/fax 41 341 74 96
+biuro@fundacjapestka.pl
+fundacjapestka.pl
+Kielce, 26.02.2023r.
+
+--- strona 2 ---
+
+2
+
+Spis treści
+I. Główne założenia działalności Agencji Pracy Incydentalnej ................................................................. 4
+1. Informacja dot. działalności Agencji Pracy Incydentalnej (API) ...................................................... 4
+2. Wymogi dot. klientów ......................................................................................................................... 5
+a) Klienci .............................................................................................................................................. 5
+b) Zleceniodawca ................................................................................................................................. 7
+II. ASPEKTY PRAWNE ............................................................................................................................... 8
+1. Agencja Pracy Incydentalnej a Agencje Pracy Tymczasowej/Zatrudnienia ..................................... 8
+2. Agencja jako inkubator pracy w ramach nierejestrowanych działalności gospodarczych .............. 8
+3. Działalność nierejestrowana a prawa konsumentów...................................................................... 9
+4. Wytyczne co do gromadzenia informacji i sposobów jej zabezpieczenia (RODO) .......................... 9
+a) Agencja- Zleceniodawca .............................................................................................................. 9
+b) Agencja- Klient .......................................................................................................................... 10
+c) Klient-Zleceniodawca ................................................................................................................. 10
+5. Praca incydentalna a zasiłki z pomocy społecznej ......................................................................... 11
+6. Praca incydentalna, a prawo do renty ........................................................................................... 16
+III. ASPEKTY ORGANIZACYJNE ................................................................................................................ 17
+1. Podmiot prowadzący Agencję ....................................................................................................... 17
+2. Personel Agencji Pracy Incydentalnej............................................................................................ 18
+a) Case manager ............................................................................................................................ 18
+b) Broker pracy .............................................................................................................................. 19
+c) Psycholog ................................................................................................................................... 19
+3. Tworzenie i aktualizacja danych o klientach ................................................................................. 20
+4. Schemat działania API: .................................................................................................................. 21
+IV. ASPEKTY PSYCHOLOGICZNE ............................................................................................................. 23
+V. ASPEKTY RACHUNKOWO-PODATKOWE ............................................................................................ 24
+VI. PROMOCJA DZIAŁAŃ AGENCJI ......................................................................................................... 27
+VII. REINTEGRACJA ZAWODOWA I SPOŁECZNA W AGENCJI PRACY INCYDENTALNEJ, JAKO USŁUGA
+SPOŁECZNA I PRODUKT SPRZEDAŻY ...................................................................................................... 28
+1. Reintegracja zawodowa i społeczna jako usługa społeczna .......................................................... 28
+2. Reintegracja zawodowa i społeczna jako produkt sprzedaży ....................................................... 28
+a) Agencja Pracy Incydentalnej prowadzona przez podmiot ekonomii społecznej ...................... 29
+b) Sposoby zlecania zadań /zakupu usługi przez JST ..................................................................... 29
+
+--- strona 3 ---
+
+3
+
+c) Rozliczenia pomiędzy Agencją Pracy Incydentalnej a JST .......................................................... 30
+VIII. REKOMENDACJE ............................................................................................................................. 30
+IX. ZAŁĄCZNIKI (wzory dokumentów) ................................................................................................... 37
+
+--- strona 4 ---
+
+4
+
+I. Główne założenia działalności Agencji Pracy Incydentalnej
+Cel działania: podjęcie pracy w ramach nierejestrowanych działalności gospodarczych przez
+osoby o wielowarstwowych deprywacjach i dostosowanie oferty wykonywanych zadań do ich
+możliwości oraz uwarunkowań określających ich sytuację życiową.
+Model Agencji powraca do istoty pracy jako aktywności osobistej człowieka, a nie prawnej
+formuły regulującej relacje społeczne. „Agencja Pracy Incydentalnej” w założeniu
+maksymalnie odformalizuje pracę, tak, by stała się dostępna dla osób, które w danym
+momencie życia nie są w stanie podjąć zatrudnienia w ramach najczęściej wybieranych
+rozwiązań (umowa o pracę oraz umów cywilnoprawnych takich jak umowa zlecenie, umowa
+o dzieło).
+Główne zasady, których powinien przestrzegać podmiot prowadzący API określa Informacja
+dot. działalności Agencji Pracy Incydentalnej.
+1. Informacja dot. działalności Agencji Pracy Incydentalnej (API)
+Nasza dewiza „Ułatwimy znalezienie pracy przez każdego”
+1. API to forma innowacji społecznej, stanowiąca inkubator pracy dla osób prowadzących
+nierejestrowaną działalność gospodarczą.
+2. API dzięki swojej aktywności i kontaktom w różnych obszarach, poprzez skoncentrowanie
+się na potencjale osoby i przy uwzględnieniu potrzeb podmiotów/osób trzecich do
+możliwości oraz uwarunkowań sytuacji życiowej osoby, stwarza potencjalne warunki i daje
+jej szanse upodmiotowienia na rynku pracy (samozatrudnienie).
+3. Podmioty/osoby współpracujące z API ponoszą pełną i wyłączną odpowiedzialność za swoje
+działania.
+4. API umożliwia kontakt pomiędzy konkretną osobą prowadzącą nierejestrowaną działalność
+gospodarczą a podmiotem/osobą mogącym zlecić takiej osobie do wykonania określone
+usługi.
+
+--- strona 5 ---
+
+5
+
+5. Model API koncentruje się na potrzebach i oczekiwaniach głównie „pracownika
+samozatrudnionego” umożliwiając mu kontakt z podmiotem/osobą mogącym potencjalnie
+skorzystać z jego usług.
+6. Osoby prowadzące nierejestrowaną działalność gospodarczą wykonują wyłącznie zadania
+i czynności, które nie wymagają rejestracji jako czynny podatnik VAT oraz nie wymagają
+pozwoleń, licencji oraz obowiązku prowadzenia kasy fiskalnej.
+7. Wynagrodzenie za wykonaną pracę jest wypłacane osobie świadczącej usługi bezpośrednio
+przez podmiot/osobę je zlecającą. Dokonując rozliczeń, strony mogą skorzystać z druków,
+wzorów, draftów udostępnionych im przez API.
+8. Żadne z podejmowanych przez API działań zmierzających do umożliwienia kontaktu osoby
+prowadzącej nierejestrowaną działalność gospodarczą z podmiotem/osobą mogącym
+udzielić jej zlecenia lub związane z wykorzystaniem dokumentów, o których mowa w pkt
+powyżej, nie wiążą się z odpłatnością któregokolwiek z tych podmiotów.
+9. Do kontaktów i czynności z osobami prowadzącymi nierejestrowaną działalność
+gospodarczą wyznaczony zostaje przez API case manager, a w stosunku do potencjalnych
+zlecających – case manager/broker pracy*.
+*angażujemy specjalistę, który jest w zasobach kadrowych podmiotu prowadzącego API
+2. Wymogi dot. klientów
+W modelu Agencji Pracy Incydentalnej pojawiają się dwa rodzaje klientów:
+1. Osoba, wykonująca nierejestrowaną działalność gospodarczą- zwana dalej klientem
+2. Podmiot lub osoba zlecający prace do wykonania- zwany dalej zleceniodawcą
+a) Klienci
+1. Klient to osoba, które nie podejmuje zatrudnienia ze względu na dotychczasowe
+niepowodzenia w podejmowaniu pracy (w wyniku uwarunkowań zawinionych/nie
+zawinionych przez osobę lub spowodowane ograniczonym zaufaniem do nich jako do
+pracownika)
+stygmatyzujące
+go
+jako
+pracownika
+niepełnowartościowego,
+niestabilnego z powodu sytuacji w jakiej się znalazła.
+2. Klient to osoba wykluczona z więcej niż jednego powodu wymienionego poniżej:
+−
+bezdomność,
+−
+uzależnienie od alkoholu, narkotyków lub innych środków odurzających,
+
+--- strona 6 ---
+
+6
+
+−
+choroby psychiczne, kryzysy/załamania psychiczne,
+−
+długotrwałe bezrobocie,
+−
+przeszłość kryminalna,
+−
+niepełnosprawność,
+−
+niezaradność życiowa
+3. Osoba ta posiada:
+− duży zakres deficytów i doświadczanych problemów, zwłaszcza w sferze społecznej,
+− problemy z kierowaniem własnym życiem (podejmowania decyzji, rozwiązywania
+problemów),
+− brak perspektyw pełnej aktywizacji zawodowej,
+− niski rozwój umiejętności społecznych (komunikacja z ludźmi, nazywanie i
+komunikowanie emocji, rozwiązywanie konfliktów),
+− deficyt pełnienia ról społecznych (opiekuńcze, wychowawcze, obywatelskie),
+− niską samoocenę i samodyscyplinę
+4. Aby wykonywać działalność nierejestrową klient musi spełnić następujące warunki:
+−
+być pełnoletnią osobą fizyczną
+−
+osiągać przychody z działalności nieprzekraczające w żadnym miesiącu 50% kwoty
+minimalnego wynagrodzenia
+−
+nie wykonywać działalności w ramach spółki cywilnej
+−
+nie prowadzić działalności regulowanej
+−
+w okresie ostatnich 60 miesięcy nie wykonywać działalności gospodarczej
+w
+rozumieniu
+Ustawy
+Prawo przedsiębiorców.
+Zawieszenie
+działalności
+gospodarczej uważane jest na gruncie tych przepisów za jej niewykonywanie.
+Ważne!
+Ze względu na specyfikę społeczno-socjalną klientów przejawiającą się w korzystaniu ze
+świadczeń socjalnych, np. zasiłków w Ośrodkach Pomocy Społecznej ważne jest, aby case
+manager dokładnie przeanalizował sytuację klienta we współpracy z OPS-em, aby klient znał i
+rozumiał konsekwencje podjęcia zarobkowania „incydentalnego” (np. w konsekwencji
+pojawienia się dochodu zasiłki z pomocy społecznej mogą być obniżone, zawieszone lub
+odebrane na jakiś czas).
+Formularze dot. klienta:
+
+--- strona 7 ---
+
+7
+
+Zał. nr 1- Informacja dla klienta- kandydata do wykonywania pracy incydentalnej
+Zał. nr 3- Formularz rekrutacyjny klienta- kandydata do wykonywania zlecenia
+Zał. nr 3a- Zgoda na przetwarzanie danych osobowych
+Zał. nr 5 - Porozumienie API-Klient
+Zał. nr 7- Informacja dot. działalności Agencji Pracy Incydentalnej
+Zał. nr 9- Karta klienta
+Zał. nr 9a – Plan pracy klienta Agencja Pracy Incydentalnej
+Zał. nr 9b- Ewidencja sprzedaży bezrachunkowej
+Zał. nr 9c- Wzór faktury
+Zał. nr 9d- KP-dowód wpłaty
+b) Zleceniodawca
+Potencjalnym pracodawcą może być zarówno podmiot ekonomii społecznej, jak i podmiot
+komercyjny a także osoba fizyczna, np. zlecenie wyprasowania pościeli, mycia okien, pomoc
+sąsiedzka, wykonanie czynności w rolnictwie (kopanie ziemniaków, prace porządkowe
+w gospodarstwie, ogrodzie itp.).
+Nie ma większych wymagań co do zleceniodawcy.
+Rekrutacją zleceniodawców zajmuje się broker pracy lub case manager jeśli zatrudniamy tylko
+1 osobę.
+Formularze dot. zleceniodawców:
+Zał. nr 2- Informacja dla zleceniodawcy
+Zał. nr 4 - Formularz rekrutacyjny – zleceniodawca
+Zał. nr 6- Porozumienie API-Zleceniodawca
+Zał. nr 7- Informacja dot. działalności Agencji Pracy Incydentalnej
+Zał. nr 8 - Karta zleceniodawcy
+
+--- strona 8 ---
+
+8
+
+II. ASPEKTY PRAWNE
+1. Agencja Pracy Incydentalnej a Agencje Pracy Tymczasowej/Zatrudnienia
+Na rynku działają różne agencje, ułatwiające znalezienie zatrudnienia, czy pośredniczące
+w znalezieniu zatrudnienia tj. agencje pośrednictwa pracy, czy agencje zatrudnienia. Pomiędzy
+Agencją Pracy Incydentalnej (API), a ww. agencjami występują jednak wyraźne różnice:
+− API wykorzystuje formułę nierejestrowanej działalności gospodarczej, jako
+podstawowej formy angażowania wykonawców. Dla pozostałych ww. agencji
+podstawową formą zatrudnienia jest stosunek pracy lub umowa zlecenie.
+− API w przeciwieństwie do innych ww. agencji rezygnuje z takich „oczywistych
+oczywistości” jak wymagalność regularności pracy, sztywne dni i godziny jej
+wykonywania, prowadzenie skomplikowanej dokumentacji pracy itp. W swoim
+założeniu wspiera naturalne skłonności człowieka do wykonywania rzeczy użytecznych
+i budowania na tej podstawie relacji społecznych.
+− W odróżnieniu od innych agencji - API powinna być wykonywana jako działalność
+nieodpłatna statutowa.
+− Celem Agencji Pracy Incydentalnej jest upodmiotowienie osoby na rynku pracy,
+a celem innych ww. agencji jest znalezienie pracy/zatrudnienia,
+− Agencja Pracy Incydentalnej w założeniu powinna być prowadzona przez podmiot
+ekonomii społecznej, o którym mowa w ustawie z dnia 5 sierpnia 2022 r. o ekonomii
+społecznej (Dz. U. z 2022 r. poz.1812, 2140.), zwłaszcza podmiot prowadzący Klub
+Integracji Społecznej.
+2. Agencja jako inkubator pracy w ramach nierejestrowanych działalności
+gospodarczych
+Istota działalności nierejestrowanej jest uregulowana w ustawie z dnia 6 marca 2018 roku
+Prawo przedsiębiorców (Dz.U. z 2021 poz. 162 ze zm.).
+Co do zasady działalność nierejestrowana nie wymaga wpisu do CEiDG oraz nie wymaga
+zgłoszenia do innych organów administracji publicznej, niemniej z uwagi na zmienność prawa
+każdorazowo informacja ta powinna być przez klienta z pomocą case managera
+zweryfikowana.
+
+--- strona 9 ---
+
+9
+
+Agencja Pracy Incydentalnej nie jest agencją zatrudnienia w rozumieniu przepisów ustawy
+z dnia 20 kwietnia 2004 roku o promocji zatrudnienia i instytucjach rynku pracy (t.j. Dz.U.
+z 2022 roku poz. 690 ze zm.), a w szczególności nie prowadzi działalności gospodarczej
+w zakresie świadczenia którejkolwiek z usług wskazanych w art. 18 ust.1 Ustawy;
+Podmiot prowadzący Agencję nie podlega wpisowi do rejestru pomiotów prowadzących
+agencje zatrudnienia ponieważ nie prowadzi działalności regulowanej w rozumieniu
+przepisów ustawy Prawo przedsiębiorców, a także z uwagi na okoliczność, iż statutowym
+celem podmiotu. jako organizacji pozarządowej nie jest prowadzenie usług wymienionych
+w powołanym art. 18 ust.1 Ustawy o promocji zatrudnienia…..
+Działalność nierejestrowana nie zwalnia z tych obowiązków, które dotyczą wszystkich
+podmiotów działających w określonych branżach, i które nie są związane z wysokością
+przychodów. Dotyczy to m.in. konieczności przestrzegania wymogów bhp, sanitarnych czy
+obowiązku rejestrowania transakcji za pomocą kasy fiskalnej.
+W ramach modelu przyjmuje się, że klient nie będzie prowadzić działalności nierejestrowanej
+w tych obszarach, w których wymagana jest koncesja, zezwolenie albo wpis do rejestru
+działalności regulowanej, w tym w formie spółki cywilnej.
+3. Działalność nierejestrowana a prawa konsumentów
+Działalność nierejestrowana jest, co do zasady, działalnością gospodarczą na gruncie prawa
+cywilnego, a osoby, które prowadzą taką działalność, mają obowiązek respektować prawa
+konsumentów, w tym wykonywać obowiązki informacyjne, np. w zakresie udzielania
+informacji o prawie odstąpienia od umowy zawieranej na odległość.
+4. Wytyczne co do gromadzenia informacji i sposobów jej zabezpieczenia (RODO)
+a) Agencja- Zleceniodawca
+Zleceniodawca jest zobowiązany wykonać wszelkie obowiązki przewidziane przepisami
+rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w
+sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie
+swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne
+rozporządzenie o ochronie danych), ustawy o ochronie danych osobowy oraz innych
+
+--- strona 10 ---
+
+10
+
+przepisów, w sytuacji udostępnienia mu przez Agencję Pracy Incydentalnej danych osobowych
+Klienta, za co Zleceniodawca ponosi pełną i wyłączną odpowiedzialność.
+W praktyce Agencja nie udostępnia Zleceniodawcy danych Klienta. To Klient otrzymuje dane
+do osoby kontaktowej ze strony Zleceniodawcy celem uzgodnienia szczegółów wykonania
+prac obejmujące jej: imię, nazwisko, nr telefonu i/lub adres e-mailowy, upoważniając tym
+samym Agencję do przekazania tych danych Klientowi. Dlatego też zasadę odpowiedzialności
+Zleceniodawcy w zakresie przetwarzania danych stosuje się odpowiednio w stosunku do osoby
+kontaktowej, której dane osobowe zostały przekazane Agencji przez Zleceniodawcę.
+Odpowiednie zapisy znajdują się we wzorze Porozumienia między Agencją a Zleceniodawcą
+(załącznik nr 6)
+b) Agencja- Klient
+Klient udostępnia Agencji swoje dane osobowe wyrażając zgodę na ich przetwarzanie
+(załącznik nr 3a) oraz przekazuje dodatkowe informacje dot. m.in. kompetencji i preferencji
+zawodowych, których szczegółowy zakres został określony w Formularzu rekrutacyjnym
+klienta- kandydata do wykonywania zlecenia (zał. nr 3).
+Agencja jest zobowiązana wykonać w stosunku do Klienta wszelkie ewentualne obowiązki
+przewidziane przepisami rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z
+dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem
+danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia
+dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych), ustawy o ochronie danych
+osobowy oraz innych przepisów, za co Agencja ponosi pełną i wyłączną odpowiedzialność.
+c) Klient-Zleceniodawca
+Klient udostępnia swoje dane Zleceniodawcy dobrowolnie, w dowolny sposób. Aby uniknąć
+zbędnego formalizmu nie ma potrzeby spisywania dodatkowej umowy pomiędzy stronami.
+Rekomenduje się zawarcie umowy w formie ustnej.
+Jeśli obie strony są osobami fizycznymi przepisy dot. RODO nie mają zastosowania. Jeśli
+Zleceniodawcą jest podmiot, zastosowanie mają przepisy dot. RODO w zakresie
+
+--- strona 11 ---
+
+11
+
+dobrowolnego udostępniania danych osobowych oraz wewnętrzne regulacje w danym
+podmiocie (u danego Zleceniodawcy).
+5. Praca incydentalna a zasiłki z pomocy społecznej
+Ustawa z dnia 12 marca 2004 r. o pomocy społecznej (tj. Dz. U. z 2021 r. poz. 2268) wyróżnia
+trzy rodzaje zasiłków należących do świadczeń pieniężnych: zasiłek stały, okresowy oraz
+celowy.
+Uzyskanie pomocy w formie zasiłku, poza pewnymi wyjątkami uzależnione jest od spełnienia
+kryterium
+dochodowego.
+Kwoty
+zasiłków
+oraz
+kryteriów
+dochodowych
+określa
+rozporządzenie Rady Ministrów z dnia 14 lipca 2021 r. (Dz.U.2021r., poz.1296) w sprawie
+zweryfikowanych kryteriów dochodowych oraz kwot świadczeń pieniężnych z pomocy
+społecznej. Stawki te obowiązują od 1 stycznia 2022 r.
+Obecnie obowiązujące kryterium dochodowe wynosi:
+• 776,00 zł - kryterium dochodowe dla osoby samotnie gospodarującej,
+• 600,00 zł - kryterium dochodowe dla osoby w rodzinie.
+Na co należy zwrócić uwagę:
+Kryteria dochodowe podlegają weryfikacji, co trzy lata z uwzględnieniem wyniku badań progu
+interwencji socjalnej. Rada Dialogu Społecznego może również wystąpić do Rady Ministrów
+z wnioskiem o zweryfikowanie kwot kryteriów dochodowych, jeżeli w danym roku
+kalendarzowym kwota kryterium dochodowego osoby samotnie gospodarującej i kwota
+kryterium dochodowego na osobę w rodzinie będzie równa lub niższa niż minimum egzystencji
+ustalony przez Instytut Pracy i Spraw Socjalnych.
+Warto sprawdzić:
+• Aktualne kryterium dochodowe
+• Oczekujące wnioski Rady Dialogu Społecznego.
+
+Zasiłek stały
+Zasiłek stały przysługuje osobom pełnoletnim pozostającym w rodzinach lub samotnie
+gospodarującym, niezdolnym do pracy z powodu wieku lub całkowicie niezdolnym do pracy.
+Osoby te muszą spełniać obowiązujące kryteria dochodowe.
+
+--- strona 12 ---
+
+12
+
+Zasiłek okresowy
+Zasiłek okresowy przysługuje zarówno osobom samotnie gospodarującym, jak i osobom
+w rodzinie, spełniającym kryteria dochodowe. Ta forma wsparcia przysługuje w szczególności
+ze względu na długotrwałą chorobę, niepełnosprawność, bezrobocie, możliwość utrzymania
+lub nabycia uprawnień z innych systemów zabezpieczenia społecznego. Okres, na jaki
+przyznawany jest zasiłek zależy od okoliczności danej sprawy.
+Warto wiedzieć
+Zasiłek okresowy może być również wypłacany niezależnie od dochodu. Dotyczy to sytuacji
+podjęcia zatrudnienia przez osobę objętą kontraktem socjalnym, pobierającą zasiłek
+okresowy. W takim przypadku zasiłek może być wypłacany nadal niezależnie od dochodu,
+jednak nie dłużej niż do 2 miesięcy od dnia zatrudnienia i nie częściej niż raz na 2 lata.
+Zasiłek celowy i specjalny zasiłek celowy
+Zasiłek celowy może zostać przyznany w celu zaspokojenia potrzeby bytowej. Ustawa
+o pomocy społecznej nie zawiera wyczerpującego katalogu takich potrzeb, wskazując jedynie
+przykładowe potrzeby. W szczególności o zasiłek celowy można ubiegać się na pokrycie części
+lub całości kosztów zakupu żywności, leków i leczenia, opału, odzieży, niezbędnych
+przedmiotów użytku domowego, drobnych remontów i napraw w mieszkaniu, a także kosztów
+pogrzebu.
+Po spełnieniu określonych przesłanek o zasiłek mogą ubiegać się również osoby bezdomne.
+Otrzymanie zasiłku celowego, co do zasady uzależnione jest od spełniania kryterium
+dochodowego. Osoby lub rodziny, które poniosły straty w wyniku klęski żywiołowej lub
+ekologicznej albo w wyniku zdarzenia losowego mogą jednak ubiegać się o pomoc nawet po
+przekroczeniu kryterium dochodowego.
+Kryterium dochodowe nie obowiązuje także dla specjalnego zasiłku celowego. Jest on
+przyznawany w szczególnie uzasadnionych przypadkach, np. w celu realizacji kontraktu
+socjalnego. Wysokość specjalnego zasiłku celowego nie powinna przekraczać odpowiedniego
+kryterium dochodowego.
+Zasiłek celowy należy do fakultatywnych form pomocy społecznej. Oznacza to, iż nawet po
+spełnieniu określonych kryteriów organ nie ma obowiązku przyznania tego świadczenia.
+
+--- strona 13 ---
+
+13
+
+Wysokość zasiłku celowego nie jest konkretnie określona. Organ ustala ją indywidualnie,
+biorąc pod uwagę nie tylko sytuację osoby wnioskującej o pomoc, ale również możliwości
+finansowe.
+
+--- strona 14 ---
+
+14
+
+Warto sprawdzić
+Klientami Agencji Pracy Incydentalnej mogą być osoby zagrożone wykluczeniem społecznym,
+korzystające ze świadczeń pomocy społecznej (głównie z zasiłku okresowego, celowego
+i specjalnego zasiłku celowego). Warto o to dopytać, a najlepiej sprawdzić w ośrodku pomocy
+społecznej czy potencjalny klient Agencji Pracy Incydentalnej korzysta ze świadczeń pomocy
+społecznej. Jeżeli tak, warto zrobić symulację dochodów z Agencji Pracy Incydentalnej
+w kontekście prawa do zasiłku, a następnie przedstawić rekomendacje klientowi. Agencja
+Pracy Incydentalnej może być szansą dla klienta na uniezależnienie od świadczeń pomocy
+społecznej, ale też może przyczynić się do utraty/zawieszenia świadczeń pieniężnych z ośrodka
+pomocy społecznej. Decyzja w tej sprawie powinna należeć do klienta, po przedstawieniu
+obiektywnych danych. Rekomendacje Agencji Pracy Incydentalnej powinny wskazywać aspekt
+ekonomiczny podjęcia pracy oraz aspekt społeczno – zawodowy, związany z funkcjonowaniem
+klienta w społeczności lokalnej i pełnieniem ról społecznych.
+Analiza przypadku
+Zenon lat 30, samotnie gospodarujący, długotrwale bezrobotny, pobierający zasiłek okresowy w kwocie
+600 zł miesięcznie. Przykładowa propozycja zatrudnienia incydentalnego – sprzątanie.
+Zarobki wynikające z pracy incydentalnej nie powinny przekraczać w tym przypadku kwoty 176 zł
+miesięcznie. Wynika to z różnicy pomiędzy kryterium dochodowym – 776 zł, a zasiłkiem okresowym –
+600 zł.
+W podanej powyżej propozycji zatrudnienia klient Agencji Pracy Incydentalnej nie traci prawa do
+zasiłku okresowego. Dla Agencji niewielkie zlecenia są szansą na ocenę Wykonawcy – jego
+zaangażowania, umiejętności, solidności i punktualności. Dla klienta jest to szansa na odnalezienie się
+na rynku pracy i sprawdzenia się w nowej roli, a także na dodatkowe dochody.
+Zasady przyznawania zasiłku okresowego
+Art. 38. 1. Zasiłek okresowy przysługuje w szczególności ze względu na długotrwałą chorobę,
+niepełnosprawność, bezrobocie, możliwość utrzymania lub nabycia uprawnień do świadczeń z
+innych systemów zabezpieczenia społecznego:
+
+--- strona 15 ---
+
+15
+
+1) osobie samotnie gospodarującej, której dochód jest niższy od kryterium dochodowego osoby
+samotnie gospodarującej;
+2) rodzinie, której dochód jest niższy od kryterium dochodowego rodziny.
+2. Zasiłek okresowy ustala się:
+1) w przypadku osoby samotnie gospodarującej – do wysokości różnicy między kryterium
+dochodowym osoby samotnie gospodarującej a dochodem tej osoby, z tym że miesięczna
+kwota zasiłku nie może być wyższa niż kwota kryterium dochodowego na osobę w rodzinie;
+2) w przypadku rodziny – do wysokości różnicy między kryterium dochodowym rodziny
+a dochodem tej rodziny.
+3. Kwota zasiłku okresowego ustalona zgodnie z ust. 2 nie może być niższa niż 50% różnicy
+między:
+1) kryterium dochodowym osoby samotnie gospodarującej a dochodem tej osoby;
+2) kryterium dochodowym rodziny a dochodem tej rodziny.
+4. Kwota zasiłku okresowego nie może być niższa niż 20 zł miesięcznie.
+
+--- strona 16 ---
+
+16
+
+Rekomendacje
+Z uwagi na zmieniające się przepisy prawa, a także obiektywne trudności w porozumiewaniu
+się z osobami zagrożonymi wykluczeniem społecznym, w przypadku zatrudniania osoby
+pobierającej zasiłek z pomocy społecznej, case manager powinien skontaktować się z
+właściwym ośrodkiem pomocy społecznej w celu ustalenia sytuacji klienta.
+Case manager to osoba wszechstronna, posiadająca wiedzę interdyscyplinarną w zakresie
+wspierania osób z trudnościami na rynku pracy. Interdyscyplinarność nie oznacza jednak, że
+case manager w każdej dziedzinie jest ekspertem. Stąd powyższe rekomendacje.
+6. Praca incydentalna, a prawo do renty
+Osoby pobierające rentę mogą pracować zarówno w systemie pracy chronionej jak i na
+otwartym rynku. Nierejestrowana działalność gospodarcza może być jednym ze sposobów na
+dodatkowe źródło przychodów.
+W przypadku warunków jakie musi spełniać wielkość dochodu miesięcznego w ramach
+nierejestrowanej działalności gospodarczej (maksymalnie 50% najniższego wynagrodzenia)
+wydaje się być mało prawdopodobnym, aby kryterium 50% najniższego wynagrodzenia
+zrównało się lub przewyższyło kwotę 70% przeciętnego wynagrodzenia miesięcznego.
+Warto jednak znać i kontrolować obowiązujące w tym zakresie przepisy ZUS.
+Zmniejszenie lub zawieszenie renty z tytułu niezdolności do pracy
+− Po osiągnięciu przychodu w kwocie przekraczającej 70% przeciętnego miesięcznego
+wynagrodzenia, świadczenie ulega zmniejszeniu o kwotę przekroczenia nie większą
+jednak niż: 24% kwoty bazowej (obowiązującej przy ostatniej waloryzacji) dla
+emerytury lub renty z tytułu całkowitej niezdolności do pracy; 18% kwoty bazowej dla
+renty z tytułu częściowej niezdolności do pracy.
+− Po
+osiągnięciu
+przychodu
+w
+kwocie
+przekraczającej
+130%
+przeciętnego
+wynagrodzenia, prawo do renty z tytułu całkowitej lub częściowej niezdolności do
+pracy ulega zawieszeniu.
+Od 1 marca 2023r.
+
+--- strona 17 ---
+
+17
+
+Zarobki do 4713,50 zł brutto miesięcznie w marcu, kwietniu i maju 2023 roku nie wpłyną na
+zmniejszenie emerytury/renty.
+Warto sprawdzić
+Kwoty stanowiące równowartość 70 i 130 procent przeciętnego wynagrodzenia, są w każdym
+kwartale ogłaszane przez Prezesa ZUS w Monitorze Polskim. Komunikaty o wysokości tych
+kwot są dostępne również na stronie internetowej ZUS.
+Nie ulegają zmniejszeniu ani zawieszeniu świadczenia pobierane przez kobiety, które
+ukończyły 60 lat oraz mężczyzn, którzy ukończyli 65 lat. Limity dotyczą bowiem tylko osób,
+które nie osiągnęły jeszcze powszechnego wieku emerytalnego.
+Bez ograniczeń mogą również dorabiać niektórzy renciści. Chodzi o osoby, które pobierają
+renty dla inwalidów wojennych, inwalidów wojskowych, których niezdolność do pracy
+związana jest ze służbą wojskową. Ten przywilej dotyczy również rent rodzinnych
+przysługujących po uprawnionych do tych świadczeń. Jeżeli osoba pobiera rentę rodzinną,
+która jest kwotowo korzystniejsza od ustalonej emerytury z tytułu ukończenia powszechnego
+wieku emerytalnego – również może zarobkować bez ograniczeń.
+Wyjątek od tej zasady stanowią ci emeryci, którym ZUS podwyższył wyliczoną emeryturę do
+kwoty świadczenia minimalnego, które od marca 2023 r. wynosi 1588,44 zł. brutto. Wówczas,
+jeżeli przychód z tytułu pracy przekroczy wysokość kwoty podwyższenia do minimalnej
+emerytury, emerytura za dany okres będzie wypłacana w niższej kwocie, tj. bez dopłaty do
+minimum
+III. ASPEKTY ORGANIZACYJNE
+1. Podmiot prowadzący Agencję
+Model Agencji Pracy Incydentalnej powinien być wdrażany przez podmiot mający już
+doświadczenie w obszarze reintegracji społeczno-zawodowej. Idealnym rozwiązaniem byłoby,
+aby model Agencji Pracy Incydentalnej był realizowany jako równoległy komponent
+dodatkowy (integracja zawodowa) do realizowanego programu reintegracyjnego w Klubach
+Integracji Społecznej (uzupełnienie reintegracji społecznej). Obniżyło by to znacznie koszty
+funkcjonowania API o koszt personelu dodatkowego, np. psychologa, terapeuty uzależnień
+
+--- strona 18 ---
+
+18
+
+(nie musiałby być dodatkowo zatrudniany w API, ponieważ byłby dostępny w równolegle
+realizowanych programach reintegracyjnych).
+Model Agencji Pracy Incydentalnej jako ogniwo dodatkowe w formie innowacji społecznej,
+służy jako „pierwsza pomoc” na rynku pracy – niespotykane dotąd pośród już istniejących
+legalnych sposobów wsparcia i włączenia społecznego w systemie.
+Pożądanym podmiotem prowadzącym Agencje Pracy Incydentalnej są podmioty ekonomii
+społecznej, o których mowa w procedowanej obecnie ustawie z dnia 5 sierpnia 2022 r.
+o ekonomii społecznej. Podmioty ekonomii społecznej nie działają dla zysku, są zakorzenione
+lokalnie, znają społeczność lokalną, a ich działalność służy rozwojowi lokalnemu. Wśród nich
+szczególne znaczenie mają przedsiębiorstwa społeczne, w tym działające:
+• w celu reintegracyjnym, które zatrudniają osoby zagrożone wykluczeniem społecznym
+(a zatem potrafią pracować z osobami zagrożonymi wykluczeniem społecznym),
+• w celu realizacji usług społecznych (a zatem potrafią realizować usługi społeczne).
+2. Personel Agencji Pracy Incydentalnej
+Włączenie psychologa jest konieczne.
+a) Case manager
+Wymagania: osoba mająca podstawową wiedze na temat funkcjonowania podmiotów
+reintegracyjnych oraz posiadająca doświadczenie w zakresie realizacji działań na rzecz osób
+marginalizowanych z wielowarstwowym wykluczeniem.
+Forma zatrudnienia: umowa zlecenie
+Wymiar pracy: do 15 klientów ok. 25 godzin w miesiącu
+Zadania do wykonania:
+− rekrutacja klientów (osób wykonujących zlecenie na zasadzie nierejestrowanej
+działalności gospodarczej)
+− spisanie formularza rekrutacyjnego z klientem, prowadzenie indywidualnej karty
+klienta, spisanie porozumienia API-klient;
+− dopasowanie oczekiwań/możliwości klienta w stosunku do posiadanych ofert,
+wyszukuje podmiot z bazy, który wskazuje zadania możliwe do wykonania przez
+
+--- strona 19 ---
+
+19
+
+kandydata (kojarzenie klientów) - 1 klient może skorzystać kilka razy z oferty
+(cykliczność zadań) lub z oferty kilku pracodawców. Jeden pracodawca może mieć
+ofertę dla kilku klientów równocześnie.
+− nawiązanie i utrzymanie kontaktu z klientem, ustalanie harmonogramu prac-plan,
+prowadzenia indywidualnej karty klienta, sprawdzanie czy praca została wykonana,
+− potwierdzanie gotowości kandydata i określaniu terminu wykonania pracy
+z podmiotem/osobą zlecającą,
+− na prośbę klienta konsultacje poprawności wypełnienia dokumentów,
+− badanie satysfakcji z wykonanej pracy u zlecającego,
+− koordynowanie procesu wykonania,
+− wsparcie w zakresie logistyki przedsięwzięcia,
+− na koniec każdego miesiąca przygotowanie podsumowania wykonanych prac zgodnie
+z przepisami, ustalenie czy została dokonana zapłata;
+b) Broker pracy
+Wymagania: osoba znająca rynek pracodawców, w szczególności podmiotów ekonomii
+społecznej, posiadająca doświadczenie w poszukiwaniu pracodawców dla osób zagrożonych
+wykluczeniem społecznym, w tym w doradztwie zawodowym dla tych osób
+Forma zatrudnienia: umowa zlecenie
+Wymiar pracy: do 15 zleceniodawców ok.5 godzin w miesiącu
+Zadania do wykonania:
+− budowanie bazy danych potencjalnych pracodawców,
+− rozmowy z pracodawcami wg przyjętego wzorca-ankiety potrzeb
+− wyszukiwanie ofert pracy, kontakt z potencjalnymi zleceniodawcami/pracodawcami
+− w imieniu API weryfikacja i podpisywanie porozumienia z pracodawcą
+− przekazanie pracodawcy wzorów dokumentów, które pracodawca może wykorzystać
+do podpisania z klientem,
+− nawiązanie i utrzymanie kontaktu z pracodawcą.
+c) Psycholog
+Wymagania: ukończone studia wyższe psychologiczne, doświadczenie w pracy z osobami
+zagrożonymi wykluczeniem społecznym z wielowarstwowymi deprywacjami
+
+--- strona 20 ---
+
+20
+
+Forma zatrudnienia: umowa zlecenie
+Wymiar pracy: w zależności od potrzeb, ok. 2 godz. wsparcia dla klienta- osobę wykonująca
+pracę incydentalną
+Zadania do wykonania:
+− konsultacje motywujące na zlecenie case managera klienta w celu wykonania zadania
+− poradnictwo dla klienta- skierowanie do specjalisty/ośrodka wsparcia w celu
+podtrzymania motywacji do działania
+− dbanie o dobrostan psychiczny klientów, rozwiązywanie konfliktów
+Jeżeli organizacja/podmiot przystępujący do realizacji modelu ma już rozbudowaną sieć
+potencjalnych pracodawców można zminimalizować wymiar pracy brokera pracy i ograniczyć
+czynności przez niego wykonywane do pozyskiwania nowych pracodawców. Sprawy związane
+z kontaktami z pracodawcami, będącymi już w bazie można przypisać bezpośrednio case
+managerowi. Tym samym należy jednoznacznie stwierdzić, że case manager staje się
+kluczowym personelem Agencji Pracy Incydentalnej.
+Włączenie psychologa nie będzie konieczne w przypadku, kiedy model Agencji Pracy
+Incydentalnej będzie realizowany jako równoległy komponent dodatkowy (integracja
+zawodowa) do realizowanego programu reintegracyjnego np. w Klubach Integracji Społecznej
+(uzupełnienie reintegracji społecznej). Programy reintegracyjne z reguły zapewniają wsparcie
+psychologiczne.
+3. Tworzenie i aktualizacja danych o klientach
+Agencja prowadzi rejestr użytkowników (klientów/Zleceniodawców) co ułatwia
+sprawozdawczość (załącznik nr 0 - Numery ewidencyjne klientów i zleceniodawców.
+Agencja posiada i aktualizuje na bieżąco dane o klientach (zał. nr 9) i zleceniodawców (zał.
+nr.8).
+Klientów-zleceniobiorców rekrutuje case manager spośród m.in.:
+− absolwentów Klubów Integracji Społecznej oraz Centrów Integracji Społecznej którzy
+ukończyli program i nie osiągnęli zmiany zawodowej,
+
+--- strona 21 ---
+
+21
+
+− klientów OPSu (najtrudniejsze przypadki z którymi jest problem w ich aktywizacji)
+− podopiecznych placówek dla bezdomnych,
+− klientów organizacji pozarządowych ukierunkowanych na działania z grupami
+docelowymi określonymi w modelu,
+Klientów zleceniodawców rekrutuje broker pracy. Jeżeli organizacja/podmiot przystępujący
+do realizacji modelu ma już rozbudowaną sieć potencjalnych pracodawców sprawy związane
+z kontaktami z pracodawcami, będącymi już w bazie można przypisać bezpośrednio case
+managerowi. Broker może zajmować się pozyskiwaniem nowych zleceniodawców do bazy.
+4. Schemat działania API:
+1. informacja o możliwości zatrudnienia (załącznik nr 1) jest dostępna w miejscach gdzie
+potencjalni zleceniobiorcy otrzymują pomoc (ośrodki pomocy społecznej, organizacje
+pozarządowe obejmujące wsparciem osoby charakteryzujące się wielowarstwowymi
+deprywacjami, docelowo strona internetowa/portale społecznościowa API).
+2. Broker pracy* tworzy bazę potencjalnych pracodawców (wypełnia formularz
+rekrutacyjny załącznik nr 4) oraz wprowadza dane na podstawie Karty zleceniodawcy
+(załącznik nr 8)
+3. API spisuje porozumienie ze zleceniodawcą – (załącznik nr 6).
+4. Broker pracy* odpowiada za oferty pracy i kontakt ze Zleceniobiorcami. Pod uwagę
+brane są prace/usługi do wykonania incydentalnie np. 2-3 godziny w tygodniu,
+jednorazowe zlecenia, np. skoszenie trawnika, umycie okien, posprzątanie magazynu
+itp. Określane również są przybliżone terminy wykonania oraz kwota wynagrodzenia.
+Jeden pracodawca może skierować ofertę do kilku klientów.
+5. Za kontakty z Klientem (wykonawca prac) odpowiada case manager
+6. Case manager buduje baze danych o klientach na podstawie zał. nr 9
+7. Case manager jest personelem kluczowym API i jest osobą bezpośrednio kontaktującą
+się z klientem (osoba wykonująca zlecenie)
+8. Klient kontaktuje się z case managerem (telefonicznie, osobiście na dyżurach, w
+wyniku spotkań organizowanych w miejscach, gdzie te osoby przebywają). Case
+manager wyjaśnia szczegóły pomocy.
+
+--- strona 22 ---
+
+22
+
+9. Klient wspólnie z case managerem wypełnia Formularz rekrutacyjny klienta- kandydata
+do wykonywania zlecenia (załącznik nr 3 i 3a)
+10. Zostaje spisane porozumienie z klientem, który wykonuje zlecenie na podstawie
+przepisów o nierejestrowanej działalności gospodarczej (załącznik nr 5)
+11. Case manager zakłada indywidualną kartę klienta (załącznik nr 9 z załącznikami a-d),
+prowadzi jej aktualizację.
+12. Case manager na podstawie informacji od klienta wyszukuje z bazy zleceniodawców
+(przygotowana przez brokera) najtrafniejszą dla klienta ofertę
+13. Case manager umawia się z klientem (telefonicznie) i przedstawia mu propozycje
+czynności do wykonania. W celu zminimalizowania ryzyka przypisuje się do jednego
+zadania co najmniej 1 osobę na rezerwowej liście.
+14. Zostaje ustalony harmonogram prac klienta API na min. 1 miesiąc do przodu (załącznik
+nr 9a)
+15. Case manager kontaktuje się z klientem telefonicznie w dzień wykonania zlecenia
+upewniając się czy klient zjawi się na miejscu pracy. Jeśli są problemy
+z kontaktowaniem się proponuje zlecanie osobie z listy rezerwowej.
+16. Case manager przekazuje klientowi wzory rozliczeniowe (załącznik nr 9 b-d).
+W przypadku problemów pomaga w ich wypełnieniu.
+17. Case manager sprawdza u pracodawcy czy praca została wykonana należycie.
+18. Zostaje uregulowana należność w formie uzgodnionej między stronami (wzór
+dokumentowania wypłaty gotówkowej zawiera załącznik nr 9d). Wydanie faktury przez
+klienta nie jest obligatoryjne, odbywa się na wyraźną prośbę Zleceniodawcy.
+19. Case manager sprawdza, czy wypłata została zaewidencjonowana w ewidencji
+przychodów na koniec miesiąca, dokonuje też monitoringu wypłat na podstawie zał.
+nr 9 (karta klienta-monitoring wykonanych prac) badając osiągnięte przychody w
+danym miesiącu.
+20. Po zakończeniu współpracy case manager przypomina klientowi o złożeniu informacji
+w rozliczeniu rocznym PIT-36.
+21. Broker prowadzi równolegle ewidencję wykonanych prac na rzecz zleceniodawcy
+(załącznik nr 8 Karta zleceniodawcy-monitoring wykonanych prac). Jest w stałym
+
+--- strona 23 ---
+
+23
+
+kontakcie z case managerem. Obie osoby mają dostęp wzajemny do danych, za które
+odpowiadają.
+*jeżeli API nie zatrudnia brokera pracy jego obowiązki przejmuje case manager
+
+Do dyspozycji case managera jest psycholog, który będzie angażowany w przypadku
+konieczności zmotywowania klienta do konsekwentnej realizacji zadania bądź pokierowania
+klientem do specjalistów/ośrodków wsparcia/otoczenia osób w kryzysie
+IV. ASPEKTY PSYCHOLOGICZNE
+Celem Agencji Pracy Incydentalnej jest dać szansę na legalne zarobkowanie osobom
+z wielowarstwowymi deprywacjami oraz o podwyższonym ryzyku socjalno-społecznym
+w skrajnych warunkach zatrudnieniowych, minimalnych umiejętnościach, doświadczeniu
+zawodowemu czy tkwieniu w marazmie niemocy spowodowanej uzależnieniami, chorobą czy
+traumami z przeszłości
+Jest to innowacyjne podejście do zatrudnienia socjalnego i wykorzystanie nie stosowanych
+dotychczas form zatrudnienia względem osób z wielowarstwowym wykluczeniem. Takie
+wsparcie to początek jakiejkolwiek aktywności zawodowej i powolne przywracanie do norm
+na rynku pracy.
+Agencja umożliwia podjęcie pracy w ramach nierejestrowanych działalności i koncentruje się
+na potencjale osoby i dostosowaniu oferty wykonywanych zadań do jej możliwości oraz
+uwarunkowań określających jej sytuację życiową.
+API skierowana jest do osób, które ze względu na dotychczasowe niepowodzenia w
+podejmowaniu pracy (w wyniku uwarunkowań zawinionych/nie zawinionych przez osobę lub
+spowodowane ograniczonym zaufaniem do nich jako do pracownika) stygmatyzujące ich jako
+pracowników niepełnowartościowych, niestabilnych z powodu sytuacji w jakiej się znaleźli:
+bezdomność, alkoholizm, przeszłość kryminalna, choroby psychiczne itp.
+Osoby te niejednokrotnie, z zerowym rezultatem korzystały ze wsparcia programów
+reintegracji społeczno- zawodowej i w dalszym ciągu pozostają na peryferiach rynku pracy.
+
+--- strona 24 ---
+
+24
+
+Praca incydentalna pozwoli osobom uzyskać nawyk do wykonywania pracy, wzmocnić
+odpowiedzialność, zwiększyć samodyscyplinę oraz samoocenę i poczucie własnej wartości.
+Przygotowuje osoby do podjęcia stałego zatrudnienia po długotrwałym bezrobociu. Pomaga
+w wyjściu z izolacji i osamotnienia. Służy poznaniu własnych możliwości, rozwinięciu
+zainteresowań i predyspozycji oraz zachęciłaby do podejmowania własnych decyzji
+dotyczących celów zawodowych i kroków niezbędnych do ich realizacji.
+Skojarzenie
+osób
+marginalizowanych
+z
+podmiotami/
+osobami,
+zainteresowanymi
+krótkoterminowymi lub dorywczymi pracami pozwoli tym osobom legalnie zarobić
+jakiekolwiek pieniądze, na minimalnych warunkach zatrudnieniowych (mała liczba godzin,
+nieregularność wykonywania prac) i przybliżyć ich do normalności funkcjonowania w przyszłej
+relacji pracownik-pracodawca.
+Psycholog jest dostępny w Agencji jako konsultant dla case managera. Stanowi on bufor
+bezpieczeństwa w przypadku konfliktów, braku motywacji, pojawiających się problemów na
+styku pracobiorca-pracodawca.
+Włączenie psychologa nie będzie konieczne w przypadku, kiedy model Agencji Pracy
+Incydentalnej będzie realizowany jako równoległy komponent dodatkowy (integracja
+zawodowa) do realizowanego w danym podmiocie lub innym programu reintegracyjnego
+(uzupełnienie reintegracji społecznej). Programy reintegracyjne z reguły zapewniają wsparcie
+psychologiczne.
+V. ASPEKTY RACHUNKOWO-PODATKOWE
+Założenia do modelu:
+1. Zakłada się, że w ramach modelu Agencji Pracy Incydentalnej zajmujemy się
+wykonywaniem działalności nierejestrowanej, która nie będzie skutkowała powstaniem
+obowiązku rejestracji klienta jako czynnego płatnika podatku VAT oraz kasy fiskalnej.
+2. Klientami Agencji Pracy Incydentalnej będą wyłącznie osoby z grup narażonych na
+wykluczenie społeczne, z grupy wysokiego ryzyka socjalno-społecznego.
+3. Osoby prowadzące nierejestrowaną działalność gospodarczą wykonują wyłącznie zadania
+i czynności, które nie wymagają rejestracji jako czynny podatnik VAT oraz nie wymagają
+pozwoleń, licencji oraz obowiązku prowadzenia kasy fiskalnej.
+
+--- strona 25 ---
+
+25
+
+4. Wynagrodzenie za wykonaną pracę jest wypłacane osobie świadczącej usługi bezpośrednio
+przez podmiot/osobę je zlecającą. Dokonując rozliczeń, strony mogą skorzystać z druków,
+wzorów, draftów udostępnionych im przez API.
+5. Aby wykonywać działalność nierejestrowaną klient musi spełnić następujące warunki:
+−
+być osobą fizyczną
+−
+osiągać przychody z działalności nieprzekraczające w żadnym miesiącu 50% kwoty
+minimalnego wynagrodzenia
+−
+nie wykonywać działalności w ramach spółki cywilnej
+−
+nie prowadzić działalności regulowanej
+−
+w okresie ostatnich 60 miesięcy nie wykonywać działalności gospodarczej
+w
+rozumieniu
+Ustawy
+Prawo przedsiębiorców.
+Zawieszenie
+działalności
+gospodarczej uważane jest na gruncie tych przepisów za jej niewykonywanie.
+6. W ramach przyjętego modelu zakłada się, że prowadząc działalność nierejestrowaną klient
+nie ma obowiązku:
+− składać wniosku o wpis do CEIDG
+− uzyskiwać numeru NIP i REGON (wyjątek: Obowiązek rejestrowania transakcji przy
+pomocy kasy fiskalnej, podobnie jak prowadzenie działalności, która nie korzysta ze
+zwolnienia z VAT z uwagi na wartość sprzedaży, powodują konieczność uzyskania
+numeru NIP, także w przypadku działalności nierejestrowanej)
+− płacić składek na obowiązkowe ubezpieczenia społeczne ani składki zdrowotnej
+z tytułu działalności pozarolniczej (Przepisy o działalności nierejestrowanej nie
+zmieniają ogólnych zasad podlegania ubezpieczeniom społecznym przez osoby
+nieprowadzące działalności gospodarczej. Przepisy o działalności nierejestrowanej nie
+zmieniają ogólnych zasad podlegania ubezpieczeniom, dotyczących umowy o pracę czy
+z umowami cywilnoprawnymi)
+− odprowadzać zaliczek na PIT ani rozliczać go miesięcznie albo kwartalnie
+− płacić podatku VAT – obejmuje zwolnienie podmiotowe (uwaga! Nie dotyczy to
+niektórych rodzajów działalności – w przypadku których status podatnika VAT nie
+zależy od wartości sprzedaży. Osoby prowadzące taką działalność pozostają płatnikami
+podatku VAT, z wszelkimi wynikającymi z tego konsekwencjami (np. obowiązek
+uzyskania numeru NIP) Zgodnie z art. 113 ust. 13 ustawy o podatku od towarów i usług,
+
+--- strona 26 ---
+
+26
+
+opodatkowane VAT – niezależnie od wartości sprzedaży – są m.in. usługi prawnicze
+oraz usługi doradztwa, a także dostawa wyrobów z metali szlachetnych, towarów
+opodatkowanych
+akcyzą,
+środków
+transportu
+czy
+budynków.).
+Obowiązek
+rejestrowania transakcji przy pomocy kasy fiskalnej, podobnie jak prowadzenie
+działalności, która nie korzysta ze zwolnienia z VAT z uwagi na wartość sprzedaży,
+powodują konieczność uzyskania numeru NIP, także w przypadku działalności
+nierejestrowanej.
+− prowadzić rachunkowości w rozumieniu ustawy o rachunkowości
+7. W ramach przyjętego modelu klient prowadząc działalność nierejestrowaną powinien:
+− prowadzić uproszczoną ewidencję sprzedaży nieudokumentowanej (nierejestrowanej)
+(wzór stanowi załącznik nr 9b)
+− wystawiać na żądanie drugiej strony rachunek albo fakturę, ewentualnie fakturę
+uproszczoną (wzór stanowi załącznik nr 9c)
+− posiadać dokumenty kosztowe, faktury, rachunki (na nazwisko klienta) dokumentujące
+koszty wykonywania pracy incydentalnej (np. dojazd, narzędzia i materiały niezbędne
+do wykonania czynności)
+− rozliczać przychody z działalności nierejestrowanej (po odliczeniu kosztów) w zeznaniu
+rocznym PIT-36, według skali podatkowej wynikającej z ustawy o podatku
+dochodowym od osób fizycznych
+− respektować uprawnienia konsumenckie w relacjach ze swoimi klientami oraz
+wynikające z ustawy Kodeks cywilny
+8. Co do zasady, jeśli prowadzi się działalność nierejestrowaną i jednocześnie świadczy
+usługi w ramach umowy o świadczenie usług albo umowy zlecenia – klient podlega
+ubezpieczeniom jako zleceniobiorca w umowie zlecenia. Podmiot zawierający umowę
+na wykonanie usługi (zleceniodawca) pełni wówczas obowiązki płatnika składek i ma
+obowiązek w ciągu 7 dni dokonać zgłoszenia do ubezpieczeń społecznych lub
+ubezpieczenia zdrowotnego i opłacać składki ZUS za zleceniobiorcę (klienta).
+Od tej zasady istnieją wyjątki. Na przykład, jeśli zleceniobiorca jest studentem, który
+nie ukończył 26 lat, to nie podlega obowiązkowym ubezpieczeniom i zleceniodawca nie
+musi odprowadzać składek ZUS.
+
+--- strona 27 ---
+
+27
+
+Warto skontaktować się z właściwym terytorialnie dla klienta ZUS-em, aby
+indywidulanie rozpatrzyć czy w danym przypadku należy opłacić składki ZUS.
+9. Klient sprzedający w ramach umowy zlecenia własnoręcznie wykonane produkty, na
+przykład figurki lub ozdoby, to nie ma obowiązku opłacania składek społecznych ani
+zdrowotnych (powyższe wynika z faktu, że klient nie świadczy pracy, zatem nie podlega
+ubezpieczeniom z tytułu pozarolniczej działalności gospodarczej.
+VI. PROMOCJA DZIAŁAŃ AGENCJI
+Załączniki nr 1. oraz nr 2 zawierają przykładowe informacje, które może zawierać materiał
+promocyjno-rekrutacyjny skierowany do potencjalnych klientów Agencji.
+Rekomenduje się, aby Agencja posiadała również swoje konto na FB jako funpage oraz
+informację na stronie internetowej podmiotu, który tę Agencję prowadzi.
+Może być również opracowane logo Agencji Pracy Incydentalnej które powinno być
+nieodłącznym elementem materiałów wizualnych oraz promocyjnych.
+Podmiot w przypadku otwarcia działań Agencji dobrze by było, aby zrobił briefing, na który
+zaproszeni zostaną lokalni dziennikarze.
+Materiały informacyjno-promocyjne powinny być dystrybuowane w miejscach, gdzie
+pojawiają się osoby spełniające kryteria określone w opisie Grupy docelowej (np. schroniska
+dla bezdomnych, organizacje pozarządowe, parafie, grupy wsparcia, ośrodki pomocy
+społecznej, okręgowe ośrodki pomocy osobom pokrzywdzonym przestępstwem).
+Jeśli chodzi o przedsiębiorców wskazane jest wykorzystać własne kanały informacyjne i sieci
+kontaktów, w tym w szczególności Ośrodki Wsparcia Ekonomii Społecznej, organizacje
+pracodawców.
+
+--- strona 28 ---
+
+28
+
+VII. REINTEGRACJA ZAWODOWA I SPOŁECZNA W AGENCJI PRACY
+INCYDENTALNEJ, JAKO USŁUGA SPOŁECZNA I PRODUKT
+SPRZEDAŻY
+1. Reintegracja zawodowa i społeczna jako usługa społeczna
+Reintegracja zawodowa i społeczna jest usługą społeczną w rozumieniu art. 2 ust. 1 ustawy
+z dnia 19 lipca 2019 r. o realizowaniu usług społecznych przez centrum usług społecznych
+(Dz.U. 2019 poz. 1818).
+Zgodnie z opinią prof. Marka Rymszy, usługa społeczna posiada następujące cechy:
+− wsparcie w obszarze określanym w polityce społecznej jako „sfera społeczna”
+(współtworzy ją 14 wymienionych przez ustawodawcę zakresów)
+− ma charakter niematerialny (świadczenie pieniężne i pomoc rzeczowa nie są usługami
+społecznymi w rozumieniu ustawy)
+− jest świadczona bezpośrednio (zakładany bezpośredni kontakt usługodawcy
+z usługobiorcą)
+− jest świadczona przez osoby mające odpowiednie kwalifikacje (definicja nie ustanawia
+własnych wymogów kwalifikacyjnych, ale uznaje za obowiązujące wszystkie takie
+wymogi sformułowane w innych aktach prawnych)1.
+Reintegracja zawodowa prowadzona przez Agencję Pracy Incydentalnej spełnia wszystkie
+przesłanki definicji usług społecznych, o której mowa w ww. ustawie.
+2. Reintegracja zawodowa i społeczna jako produkt sprzedaży
+Reintegracja zawodowa i społeczna, jako usługa społeczna podlega wszelkim zasadom
+i prawom rynku, tj. popyt i podaż. W rozumieniu ekonomicznym jest również produktem, który
+można sprzedać za odpowiednią cenę. Takim produktem powinni być zainteresowani
+samorządowcy, którzy dostrzegają na swoim terenie obszary wykluczenia społecznego oraz
+deficyty pracowników w określonych zawodach i umożliwiać organizacjom pozarządowym w
+
+1 M. Rymsza, Dlaczego Centrum Usług Społecznych, Biblioteczka CUD, Warszawa 2020, s.16.
+
+--- strona 29 ---
+
+29
+
+ramach konkursów z pożytku publicznego realizować działania w tej formie aktywizującej jaką
+jest Agencja Pracy Incydentalnej.
+Agencja Pracy Incydentalnej będzie w szczególności pomocna w realizacji zadań gmin,
+powiatów, miast na prawach powiatu lub województw - instytucji, które w założeniu zajmują
+się przeciwdziałaniem bezrobociu i powołały w tym celu odpowiednie instytucje, tj.
+Powiatowy Urząd Pracy, czy Wojewódzki Urząd Pracy.
+Agencja Pracy Incydentalnej znacząco wesprze również ośrodki pomocy społecznej i centra
+usług społecznych w walce z wykluczeniem społecznym i przywróceniem na rynek pracy osób,
+które „nigdy nie pracowały, nie pracują i nie zamierzają pracować”.
+a) Agencja Pracy Incydentalnej prowadzona przez podmiot ekonomii społecznej
+Pożądanym podmiotem prowadzącym Agencje Pracy Incydentalnej są podmioty ekonomii
+społecznej, o których mowa w procedowanej obecnie ustawie z dnia 5 sierpnia 2022 r.
+o ekonomii społecznej. Podmioty ekonomii społecznej nie działają dla zysku, są zakorzenione
+lokalnie, znają społeczność lokalną, a ich działalność służy rozwojowi lokalnemu. Wśród nich
+szczególne znaczenie mają przedsiębiorstwa społeczne, w tym działające:
+− w celu reintegracyjnym, które zatrudniają osoby zagrożone wykluczeniem społecznym
+(a zatem potrafią pracować z osobami zagrożonymi wykluczeniem społecznym),
+− w celu realizacji usług społecznych (a zatem potrafią realizować usługi społeczne).
+b) Sposoby zlecania zadań /zakupu usługi przez JST
+W trybie ustawy o zamówieniach publicznych, w tym:
+−
+stosowanie klauzul i aspektów społecznych w zamówieniach publicznych, zgodnie
+z ustawą Prawo Zamówień Publicznych,
+−
+stosowanie art. 15 a ustawy o spółdzielniach socjalnych.
+W trybie ustawy o działalności pożytku publicznego i o wolontariacie, w tym:
+−
+otwarte konkursy ofert ogłaszane na podstawie ustawy o działalności pożytku
+publicznego i wolontariacie,
+
+--- strona 30 ---
+
+30
+
+−
+zlecenia bezkonkursowe, do 10 tys. zł na podstawie ustawy o działalności pożytku
+publicznego i wolontariacie (zadanie publiczne musi zostać zrealizowane w okresie nie
+dłuższym niż 90 dni).
+Wybór sposobu zlecania zadań/zakupu usługi jest uzależniony z jednej strony od
+Zamawiającego, a z drugiej strony od sytuacji podmiotów funkcjonujących na danym terenie,
+które potencjalnie mogą zrealizować przedmiotowe usługi.
+c) Rozliczenia pomiędzy Agencją Pracy Incydentalnej a JST
+W przypadku zlecania działalności w ramach Agencji Pracy Incydentalnej (w trybie ustawy
+o działalności pożytku publicznego i o wolontariacie) samorząd lokalny lub regionalny
+powinien rozliczać wykonanie zadania na podstawie rezultatów, tj.
+− Liczba osób zagrożonych wykluczeniem społecznym, które zostały zaangażowane
+w formie nierejestrowanej działalności,
+− Liczba podmiotów, które zaangażowały osoby zagrożeniem wykluczeniem społecznym
+w formie nierejestrowanej działalności.
+W przypadku Agencji Pracy Incydentalnej można również rozważyć budżet kapitacyjny, tj.
+przyznany w przeliczeniu na osoby zagrożone wykluczeniem społecznym na danym terenie
+(gminy, powiatu lub województwa).
+Rekomendacje:
+−
+zlecanie zadań przez samorządy w trybie ustawy o działalności pożytku publicznego
+i o wolontariacie, co umożliwia realizację usługi przez podmioty ekonomii społecznej
+nieprowadzące działalności gospodarczej,
+−
+rozliczanie rezultatów w oparciu o liczbę osób zagrożonych wykluczeniem społecznym,
+które zostały zaangażowane w formie nierejestrowanej działalności gospodarczej.
+VIII. REKOMENDACJE
+Model Agencji Pracy Incydentalnej był testowany przez okres 5 miesięcy. Obszar testowania
+obejmował wdrożenie wypracowanego „Wstępnego modelu funkcjonowania Agencji Pracy
+
+--- strona 31 ---
+
+31
+
+Incydentalnej” stanowiącego innowację społeczną jako inkubator pracy dla osób
+prowadzących nierejestrowaną działalność gospodarczą.
+Została wypracowana, przy współpracy z ewaluatorką zewnętrzną- p. Natalią Krygowską-
+Nowak, logika interwencji, obejmująca diagnozę, kierunek zmiany, realizację i efekty
+przeprowadzanego testu oraz oczekiwana zmianę w grupie docelowej.
+„Precedens Pracy- Agencja Pracy Incydentalnej” - Logika interwencji
+
+--- strona 32 ---
+
+32
+
+--- strona 33 ---
+
+33
+
+Opis logiki interwencji:
+−
+Diagnoza - Duży zakres deficytów i doświadczanych problemów, zwłaszcza w sferze społecznej,
+niechęć/niemoc do podjęcia jakiejkolwiek pracy. Brak perspektyw aktywizacji zawodowej.
+−
+Kierunek zmiany - umożliwienie legalnego zarabiania na podstawie nierejestrowanej działalności
+gospodarczej, zwiększenie motywacji osób o wielowarstwowych deficytach do podjęcia pracy
+na standardowych warunkach.
+−
+Realizacja - przygotowanie „Wstępnego modelu funkcjonowania Agencji Pracy Incydentalnej
+(API)” wraz ze wzorami dokumentów, Kojarzenie klienta z pracodawcą i czuwanie nad procesem
+współpracy aż do rozliczenia (przy wsparciu psychologa).
+−
+Efekty/produkty testu - „Model Agencji Pracy Incydentalnej” wraz z załącznikami oraz
+rekomendacjami.
+−
+Zmiana w grupie docelowej - podjęcie legalnej pracy w zakresie wykonywania prac
+incydentalnych, zwiększona motywacja/ gotowość do podjęcia pracy na standardowych
+warunkach, podjęcie zatrudnienia według standardowych norm rynku pracy lub rynku pracy
+chronionej co wiąże się z dobrowolną rezygnacją z korzystania z opieki społecznej (oszczędności
+w polityce społecznej).
+Zostały opracowane również rekomendacje dla przyszłych użytkowników, które
+przedstawiamy poniżej.
+1. Model Agencji Pracy Incydentalnej powinien być wdrażany przez podmiot mający już
+doświadczenie w obszarze reintegracji społeczno-zawodowej. Idealnym rozwiązaniem byłoby,
+aby model Agencji Pracy Incydentalnej był realizowany jako równoległy komponent
+dodatkowy (integracja zawodowa) do realizowanego programu reintegracyjnego w Klubach
+Integracji Społecznej (uzupełnienie reintegracji społecznej). Obniżyło by to znacznie koszty
+funkcjonowania API o koszt personelu dodatkowego, np. psychologa, terapeuty uzależnień
+(nie musiałby być dodatkowo zatrudniany w API, ponieważ byłby dostępny w równolegle
+realizowanych programach reintegracyjnych).
+2. Model Agencji Pracy Incydentalnej powinien być docelowo ogniwem dodatkowym -
+innowacją społeczną, która w znaczny sposób służyłaby jako „pierwsza pomoc” na rynku pracy
+– niespotykaną dotąd pośród już istniejących legalnych sposobów wsparcia i włączenia
+społecznego w systemie. Należy jednak znacząco zaznaczyć, że by owa “pierwsza pomoc” na
+
+--- strona 34 ---
+
+34
+
+zasadach nierejestrowanej działalności gospodarczej była efektywna i skutecznie wpłynęła na
+możliwość upodmiotowienia osoby na rynku pracy niezbędne są zmiany w ustawodawstwie.
+3. Jeżeli organizacja/podmiot przystępujący do realizacji modelu ma już rozbudowaną sieć
+potencjalnych pracodawców można zminimalizować wymiar pracy brokera pracy i ograniczyć
+czynności przez niego wykonywane do pozyskiwania nowych pracodawców. Sprawy związane
+z kontaktami z pracodawcami, będącymi już w bazie można przypisać bezpośrednio case
+managerowi. Tym samym należy jednoznacznie stwierdzić, że case manager staje się
+kluczowym personelem Agencji Pracy Incydentalnej.
+4. Pracodawcą/osoba zlecająca usługi może być zarówno podmiot jak i osoba fizyczna.
+5. Istnieje potrzeba zintensyfikowanej edukacji dotyczącej wiedzy o nierejestrowanej
+działalności gospodarczej nie tylko wśród potencjalnych klientów i pracodawców, lecz także
+wśród osób pracujących w systemie np. pomocy społecznej, urzędach pracy etc.
+6. Rekomenduje się maksymalne zmniejszenie wymogów biurokratycznych w modelu na
+korzyść skoncentrowania się na osobie, dialogu, towarzyszeniu - bardziej niż na dodatkowych
+aspektach administracyjnych, które rzutują na zwiększenie dystansu interpersonalnego
+między potencjalnymi klientami API a pracownikami API.
+7. Upodmiotowienie osoby na rynku pracy staje się efektywne przy zwiększonej pomocy
+terapeutycznej w sytuacji osobistej/ środowiskowego klienta (np. psycholog, terapia
+uzależnień).
+8. Istnieje potrzeba dialogu, jednoznacznej interpretacji i unifikacji przepisów prawnych w
+określonych ośrodkach pomocy społecznej, instytucjach - (ustawa o pomocy społecznej) ze
+względu na różne kierunki interpretacji.
+9. Proces testowania i wdrażania wstępnego modelu funkcjonowania Agencji Pracy
+Incydentalnej uwidocznił wyraźną potrzebę wprowadzenia zmian systemowych w
+ustawodawstwie ułatwiających podjęcie decyzji o zaprzestaniu korzystania z zasiłków
+pomocowych na korzyść stopniowej aktywizacji na rynku pracy na zasadach nierejestrowanej
+
+--- strona 35 ---
+
+35
+
+działalności gospodarczej (ustalenie pułapu dodatkowego dochodu bez utraty zasiłków-
+podobnie jak jest u rencistów)
+10. Konieczne jest opracowanie obrazowego i przystępnego poradnika dotyczącego
+nierejestrowanej działalności gospodarczej jako fundamentu stopniowego upodmiotowienia
+osoby o trudnym położeniu społecznym i osobistym na rynku pracy dla:
+a) klientów API,
+b) zleceniodawców – osób indywidualnych, PES, organizacji, firm
+c) decydentów, którzy mają możliwość zmian legislacyjnych umożliwiających łatwiejszy
+dostęp do możliwości stopniowego wprowadzania osób na rynek pracy
+d) pracowników socjalnych, urzędników
+11. Ze względu na specyfikę osób do których skierowany jest model (osoby zagrożone
+wykluczeniem społecznym, z wielowarstwowymi deprywacjami, o wysokim ryzyku socjalno-
+społecznym) rekomenduje się bardzo dokładnie przeanalizować formy bieżącego wsparcia
+finansowego klientów (głównie chodzi o wsparcie zasiłkowe z OPS). W niektórych
+przypadkach klient będzie musiał dokonać wyboru między rezygnacją lub tymczasowym
+zawieszeniem zasiłku na rzecz podjęcia pracy incydentalnej.
+12. Przy realizacji modelu konieczna jest współpraca z ośrodkami/ podmiotami/ instytucjami,
+których specyfika pracy zakłada bezpośrednie towarzyszenie osobie w wychodzeniu z
+kryzysu – przykład Klubów Integracji Społecznej prowadzonych przez Fundację PEStka
+(również szeroka grupa organizacji „nieoczywistych”, które mogłyby zaadaptować model API
+do swoich potrzeb). Stopniowe towarzyszenie osobie w procesie wychodzenia z kryzysu jest
+niezwykle istotnym i kluczowym elementem w pokonywaniu barier psychologicznych, które
+uniemożliwiają osobie podjęcie pierwszego – najważniejszego kroku na rynku pracy.
+13. Model można zastosować do obecnej sytuacji geopolitycznej jako pierwszą formą
+zatrudnienia u osób przebywających na terenie Rzeczpospolitej Polskiej w związku
+z działaniami wojennymi na Ukrainie. Obowiązuje osoby, które mają polski PESEL.
+
+--- strona 36 ---
+
+36
+
+14. Model Agencji Pracy Incydentalnej może być wdrażany jako odpowiedź na konkursy
+ogłaszane przez JST w ramach zadań zlecanych w trybie pożytku publicznego w obszarze
+reintegracji zawodowej grup marginalizowanych.
+
+--- strona 37 ---
+
+37
+
+IX. ZAŁĄCZNIKI (wzory dokumentów)
+0) Numery ewidencyjne klientów i zleceniodawców (.pdf,.xlsx)
+1) Informacja dla klienta- kandydata do wykonywania pracy incydentalnej (.docx,.pdf)
+2) Informacja dla zleceniodawcy (.docx,.pdf)
+3) Formularz rekrutacyjny klienta- kandydata do wykonywania zlecenia (.docx,.pdf)
+3a) Zgoda na przetwarzanie danych osobowych (.docx,.pdf)
+4) Formularz rekrutacyjny – zleceniodawca (.docx,.pdf)
+5) Porozumienie API-Klient (.docx,.pdf)
+6) Porozumienie API-Zleceniodawca (.docx,.pdf)
+7) Informacja o działalności Agencji Pracy Incydentalnej (.docx,.pdf)
+8) Karta zleceniodawcy (.docx,.pdf, xlsx)
+9) Karta klienta (.docx,.pdf, xlsx)
+9a) Plan pracy klienta Agencja Pracy Incydentalnej (.docx,.pdf, xlsx)
+9b) Ewidencja sprzedaży bezrachunkowej (.docx,.pdf, xlsx)
+9c) Wzór faktury (.docx,.pdf)
+9d) KP-dowód wpłaty

@@ -75,6 +75,25 @@ def update_innovation(
     return svc.update(innovation_id, body)
 
 
+# 202: rag re-embeds the new pdf in the background and replaces the chunks; on failure the
+# old chunks stay. a successful embed publishes the innovation, like the first upload
+@router.post(
+    "/{innovation_id}/pdf", response_model=InnovationUploaded, status_code=status.HTTP_202_ACCEPTED
+)
+def replace_innovation_pdf(
+    innovation_id: str,
+    background: BackgroundTasks,
+    file: UploadFile = File(...),
+    svc: InnovationAdminService = Depends(get_innovation_service),
+    upload: InnovationUploadService = Depends(get_innovation_upload_service),
+) -> InnovationUploaded:
+    innovation = svc.get(innovation_id)
+    pdf = file.file.read(settings.max_upload_bytes + 1)
+    path = upload.replace_pdf(innovation.id, pdf)
+    background.add_task(upload.embed, innovation.id, path)
+    return InnovationUploaded(id=innovation.id, title=innovation.title, status=innovation.status)
+
+
 @router.post("/{innovation_id}/publish", response_model=Innovation)
 def publish_innovation(
     innovation_id: str, svc: InnovationAdminService = Depends(get_innovation_service)

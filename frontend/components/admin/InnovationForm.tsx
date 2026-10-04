@@ -70,7 +70,8 @@ function validate(v: Values, pdf: File | null, needsPdf: boolean): Errors {
   if (v.areas.length === 0) e.areas = "Wybierz co najmniej jeden obszar wyzwań.";
   if (v.page_url.trim() && !/^https?:\/\/\S+$/i.test(v.page_url.trim()))
     e.page_url = "Link musi zaczynać się od http:// lub https://.";
-  if (!needsPdf) return e;
+  // editing: the pdf is optional, but a chosen file is checked the same way
+  if (!needsPdf && !pdf) return e;
   if (!pdf) e.pdf = "Dołącz kartę innowacji w PDF.";
   else if (!/\.pdf$/i.test(pdf.name) && pdf.type !== "application/pdf") e.pdf = "Plik musi być w formacie PDF.";
   else if (pdf.size > MAX_PDF_BYTES) e.pdf = `Plik jest za duży: maksymalnie ${fmtSize(MAX_PDF_BYTES)}.`;
@@ -155,16 +156,24 @@ export function InnovationForm({ initial }: { initial?: AdminInnovation }) {
 
   async function save(base: AdminInnovation) {
     const body = changes(base, values);
-    if (Object.keys(body).length === 0) {
+    const hasChanges = Object.keys(body).length > 0;
+    if (!hasChanges && !pdf) {
       setNotice("Brak zmian do zapisania.");
       return;
     }
     setBusy(true);
     try {
-      const updated = await adminApi.updateInnovation(base.id, body);
+      const updated = hasChanges ? await adminApi.updateInnovation(base.id, body) : base;
+      // 202: rag re-indexes the new card in the background; the download link serves it at once
+      if (pdf) await adminApi.replaceInnovationPdf(base.id, pdf);
       setSaved(updated);
       setValues(toValues(updated));
-      setNotice("Zapisano zmiany.");
+      setPdf(null);
+      setNotice(
+        pdf
+          ? "Zapisano zmiany. Nowa karta PDF jest już do pobrania; asystent przelicza dopasowania w tle."
+          : "Zapisano zmiany.",
+      );
     } catch (err) {
       setFailure(serverError(err));
       requestAnimationFrame(() => summaryRef.current?.focus());
@@ -197,7 +206,7 @@ export function InnovationForm({ initial }: { initial?: AdminInnovation }) {
         </h2>
         <p className="text-body-md text-on-surface-variant">
           {saved
-            ? "Zmiany widać od razu w bibliotece i panelu. Asystent dopasowuje innowacje na podstawie karty PDF, której nie można tu podmienić, więc zmiana opisu nie wpływa na dopasowania."
+            ? "Zmiany widać od razu w bibliotece i panelu. Asystent dopasowuje innowacje na podstawie karty PDF: zmiana opisu nie wpływa na dopasowania, nowa karta PDF tak."
             : "Innowacja zapisze się jako szkic. Po przetworzeniu karty PDF opublikuje się automatycznie i trafi do biblioteki oraz czatu."}{" "}
           Pola oznaczone gwiazdką (*) są wymagane.
         </p>
@@ -330,6 +339,34 @@ export function InnovationForm({ initial }: { initial?: AdminInnovation }) {
             <FieldError id={`${ID.page_url}-err`} msg={errors.page_url} />
           </div>
         </div>
+
+        {saved && (
+          <div className="flex flex-col gap-1">
+            <label htmlFor={ID.pdf} className="text-label-lg font-semibold text-primary">
+              Nowa karta innowacji (PDF, opcjonalnie)
+            </label>
+            <p id="nowa-pdf-hint" className="text-body-md text-on-surface-variant">
+              Zastępuje obecny plik pod tym samym linkiem „Więcej informacji (PDF)”. Maksymalnie{" "}
+              {fmtSize(MAX_PDF_BYTES)}.
+            </p>
+            <input
+              id={ID.pdf}
+              type="file"
+              accept="application/pdf,.pdf"
+              onChange={(e) => setPdf(e.target.files?.[0] ?? null)}
+              aria-invalid={!!errors.pdf}
+              aria-describedby={describe("pdf", "nowa-pdf-hint")}
+              className={`${field} py-space-sm file:mr-space-sm file:min-h-10 file:rounded-lg file:border-0 file:bg-surface-container-high file:px-space-sm file:text-label-lg file:font-semibold file:text-primary`}
+            />
+            {pdf && (
+              <p className="flex items-center gap-1 text-body-md text-on-surface">
+                <Icon name="attach_file" size={18} />
+                {pdf.name} ({fmtSize(pdf.size)})
+              </p>
+            )}
+            <FieldError id={`${ID.pdf}-err`} msg={errors.pdf} />
+          </div>
+        )}
 
         {!saved && (
           <>

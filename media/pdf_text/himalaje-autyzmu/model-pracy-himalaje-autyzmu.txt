@@ -1,0 +1,1904 @@
+--- strona 1 ---
+
+1
+
+Model pracy pn. ,,Himalaje Autyzmu”
+Spis treści
+Podstawowe założenia modelu ............................................................................... 3
+Opis metody pracy .................................................................................................. 7
+Opis zrealizowanych działań ................................................................................... 8
+Profil potencjalnego użytkownika testowanego rozwiązania ................................. 13
+Analiza wyników testu ........................................................................................... 13
+Wiedza dotycząca funkcjonowania osób z niepełnosprawnościami ...................... 19
+Wykorzystanie scenariusza wsparcia.................................................................... 21
+Rekomendacje i zalecenia .................................................................................... 30
+Podsumowanie ..................................................................................................... 36
+Aneks .................................................................................................................... 39
+
+--- strona 2 ---
+
+2
+Model pracy „Himalaje Autyzmu” to zbiór rozwiązań ułatwiających lub
+umożliwiających podejmowanie leczenia osób z niepełnosprawnościami, które
+przejawiają zachowania trudne w placówkach zdrowia. Za realizację byli
+odpowiedzialni asystenci osób z niepełnosprawnością doświadczeni w pracy
+z osobami wymagającymi wysokiego poziomu wsparcia.
+Dla przejrzystości ustalmy krótki słownik pojęć:
+1. Uczestnik – osoba, która testowała rozwiązanie, osoba
+z niepełnosprawnością przejawiająca trudne zachowania. Osoba
+o ograniczonej komunikacji werbalnej i niewerbalnej; Uczestnik przedstawiany
+poniżej to również pacjent, który nie rozumie co oznacza czekać na wizytę,
+ma złe skojarzenia dotyczące podejmowania jakichkolwiek działań
+medycznych.
+2. Asystent – asystent osobisty z osoby z niepełnosprawnością. Osoba
+wspierająca osobę z niepełnosprawnością w codziennych sprawach, również
+związanych z podejmowaniem leczenia. Asystenci zaangażowani w test to
+osoby z kilkuletnim zaangażowaniem w świadczenie usług asystenckich na
+rzecz osób z różnymi niepełnosprawnościami. Wiedza nabyta przez
+asystentów jest sumą różnych doświadczeń z pracy.
+3. Rodzic – osoba, która decyduje o zdrowiu i życiu swojego dziecka na mocy
+ubezwłasnowolnienia. Obecność rodzica jest konieczna podczas każdej
+wizyty ponieważ jego decyzja, podpisanie dokumentacji i świadoma zgoda jest
+konieczna żeby podjąć leczenie.
+W tekście będziemy odwoływać się do relacji rodzic/dziecko, ale również
+w kontekście dorosłych osób z niepełnosprawnością. Doświadczony rodzic,
+który często sam obciążony jest chorobami będzie potrzebował pomocy
+asystenta w zorganizowaniu wizyty, a przede wszystkim w towarzyszeniu
+,,dziecku” podczas leczenia.
+4. Osoba neuroatypowa – osoba, której fizyczna budowa mózgu i/lub ciała nie
+musi odbiegać od normy. Na poziomie funkcjonowania, odczuwania
+
+--- strona 3 ---
+
+3
+zmysłowego, interpretacji otaczającego świata działa zupełnie inaczej. Osoba
+z niepełnosprawnością;
+5. Osoba neurotypowa – osoba funkcjonująca społecznie, standardowo
+reagująca na bodźce płynące z otaczającego świata. Osoba funkcjonująca
+jako pełnosprawna.
+Podstawowe założenia modelu
+Model pracy przedstawiony poniżej, jest efektem wielu lat nauki, doświadczeń pracy
+z osobami przejawiającymi trudne zachowania i testu zaprojektowanych na tej
+podstawie rozwiązań, które mają na celu przygotować osoby z niepełnosprawnością
+do procedur medycznych, zmniejszyć ich stres i umożliwić diagnozę oraz podjąć
+leczenie. Test „Himalajów Autyzmu” opierał się na serii spotkań zarówno
+poprzedzających wizytę u lekarza (przygotowujących), jak i zrealizowanych zgodnie
+z scenariuszami wizyt ambulatoryjnych oraz w przychodni. Na podstawie tych
+doświadczeń powstał model pracy, który niniejszym przedstawiamy. . Model został
+przetestowany przez 9 uczestników, zgłoszonych przez rodziców, placówki wsparcia.
+Wśród uczestników są osoby w 3 grupach wiekowych: dzieci, nastolatkowie i osoby
+dorosłe. Takie rozróżnienie wynika z naszych doświadczeń; każda grupa wiekowa
+ma inne przywileje, inne rozwiązania systemowe, które będą wpływać na jakość
+i możliwość podejmowania leczenia.
+Osoba z niepełnosprawnością intelektualną może nigdy nie zrozumieć procesu
+leczenia. Gdyby porównać dziecko, które krzyczy podczas pobierania krwi
+w gabinecie do dziecka neuroatypowego zauważymy, że ich reakcje są podobne.
+Różnica polega na tym, że dziecko w normie intelektualnej wraz z wiekiem zrozumie
+cel badań i nawet jeśli będzie musiało się przygotować do badania, w wieku
+nastoletnim ,,wybaczy” rodzicowi cel badań bo będzie widziało efekty tych działań.
+Płaczące dziecko neurotypowe przepracuje z rodzicem celowość podejmowania
+leczenia, być może poprzez nagrodę za realizację badania/zabiegu.
+
+--- strona 4 ---
+
+4
+W świadomości dziecka neuroatypowego, które będzie zmuszane do wykonania
+badania w wyniku braku możliwości wytłumaczenia celu - będzie wzrastać bunt
+i agresja w stosunku do wykonywania kolejnych badań. Rodzice zmuszający swoje
+dzieci do przeprowadzenia badań poprzez ograniczenie ruchów często nie zdają
+sobie sprawy, że w przyszłości nie będą mieć wystarczająco dużo siły żeby
+,,przytrzymać” swoje dziecko w trakcie badań. Powyższe porównanie pokazuje jak
+ważne jest wprowadzenie procedury/ zaplanowanie badań w taki sposób żeby
+przymus był ostatecznością w podejmowaniu leczenia. Rodzice dzieci
+neuroatypowych próbują różnych sposobów na podejmowanie leczenia. Czasami
+pokazują torbę słodyczy w zamian za ,,spokój” podczas badania, czasami planują
+badania o takiej porze żeby dziecko nie miało siły na ”walkę” z personelem. Zawsze
+należy mieć na uwadze konsekwencje podejmowanych decyzji na przyszłe leczenie,
+z uwzględnieniem możliwości rodzica/opiekunów.
+Podstawowym założeniem testu jest wsparcie dorosłych osób z niepełnosprawnością
+oraz ich rodziców, którzy w momencie diagnozy potrzeb zgłaszają własne problemy
+zdrowia psychicznego i fizycznego. Często problemy zdrowotne opiekunów
+uniemożliwiają podejmowanie skutecznego leczenia ich dorosłych dzieci.
+Największym wyzwaniem jest podjęcie leczenia u dorosłej osoby, która przejawia
+charakterystyczne objawy wielu chorób. Rodzina ma świadomość, że badanie
+w kierunku diagnozy i leczenia powinno mieć miejsce kilka lat temu. U pacjentów
+tych rodzin znajdują się segregatory wyników badań, wyników niejednoznacznych
+(badanie nie powiodło się) i niezrealizowanych skierowań, ponieważ żadna placówka
+na terenie miejsca zamieszkania (szpital, przychodnia) nie podjęła się
+przeprowadzenia badania. Często lekarz specjalista, który dostaje skierowanie do
+lekarza nazywa go ,,życzeniowym”, mając na myśli roszczeniową postawę rodzica
+i niejednoznaczność objawów. Należy zauważyć, że wielu pacjentów przejawiających
+trudne zachowania, przejawia je w wyniku objawów różnych chorób i jako odpowiedź
+na dolegliwości. Wielu pacjentów nie potrafi powiedzieć, że coś boli.
+
+--- strona 5 ---
+
+5
+Wielu pacjentów nie płacze i nie objawia problemów ze zdrowiem poprzez apatię,
+niechęć do jedzenia i wiele innych. Okazują problemy poprzez różnice
+w zachowaniu, które zna tylko rodzic i otoczenie dziecka.
+Podstawowym założeniem modelu są spotkania usystematyzowane w cykl
+określonych, następujących po sobie działań, które pozwolą poznać uczestnika, jego
+środowisko, problemy zdrowotne oraz dotychczasowe próby leczenia.
+1. Spotkanie próbne to analiza funkcjonowania uczestnika w przestrzeni
+publicznej.
+2. Kolejnym etapem będzie spotkanie ,,0”. Spotkanie to będzie zaaranżowane
+z uczestnikiem do miejsca docelowego – miejsca, które uczestnik zna – być
+może ma złe skojarzenia. Spotkanie będzie miało charakter adaptacyjny,
+w ramach spaceru pójdziemy do placówki lub obok niej żeby sprawdzić co
+powoduje strach. Z doświadczeń wiemy, że może to być samo spotkanie
+lekarza, specyficzny dla miejsca zapach lub stres rodzica, pewna presja
+wywierana przez niego jako odpowiedź na stres związany z podjęciem
+leczenia. Po spotkaniu próbnym i spotkaniu ,,0” będziemy wiedzieć jakich
+reakcji możemy spodziewać się po uczestniku i w jaki sposób planować
+wsparcie żeby zapewnić bezpieczeństwo uczestnikowi i otoczeniu.
+3. Kolejny etap to spotkanie przygotowawcze, które odbędzie się w miejscu
+gdzie zaplanowaliśmy termin wizyty, ale tego dnia jeszcze nie spotykamy się
+w gabinecie – to kolejny etap wizyty adaptacyjnej. Po wszystkich spotkaniach
+powstanie scenariusz wizyty lekarskiej dla każdego uczestnika.
+W oparciu o scenariusz będziemy realizować wizyty lekarskie w ramach świadczeń
+NFZ. W skrajnych przypadkach zaplanowano możliwość skorzystania z wizyty
+prywatnej.
+Otwartość lekarza i wiedza dotycząca funkcjonowania osób neuroatypowych jest
+koniecznością w podejmowaniu leczenia. Nasz test obejmuje wsparcie procesu
+leczenia z pomocą doświadczonego asystenta osoby z niepełnosprawnością.
+Asystenci zaplanowali pracę w taki sposób żeby objąć wsparciem uczestnika
+
+--- strona 6 ---
+
+6
+w drodze do placówki zdrowia, w trakcie przeprowadzenia wizyty i podczas
+bezpiecznego powrotu do domu. Powyższy plan wynika
+z doświadczenia asystentów, często po trudnej wizycie u specjalisty przestraszony
+pacjent podejmuje ucieczkę albo skumulowany strach wyzwala w trakcie powrotu do
+domu. Rodzice mówią wprost o lęku związanym z brakiem sił w takich sytuacjach.
+Ten lęk utrudnia podejmowanie leczenia.
+Założeniem projektu było przeprowadzenie testu metod w podejmowaniu
+skutecznego leczenia osób przejawiających trudne zachowania. Testowanie
+dotyczyło 9 osób z niepełnosprawnością, które przez większość swojego życia miało
+trudne doświadczenia – w wielu przypadkach na wiele lat zablokowały one leczenie.
+Testowanie miało na celu wznowić leczenie lub wdrożyć działania w zakresie
+problemowych obszarów. Podczas etapu przygotowawczego asystenci
+przeprowadzili diagnozy potrzeb i sporządzili profile behawioralne (dostępne
+w aneksie na końcu raportu) w oparciu o rozmowy z rodzicami/opiekunami prawnymi
+uczestników, a także uwzględniając własne spostrzeżenia. Zaplanowano spotkanie
+próbne, spotkanie ,,0” i spotkanie przygotowawcze. Pod hasłem ,,trudne
+zachowania” znajdują się te zachowania, które utrudniają i uniemożliwiają
+przeprowadzenie badań. Na etapie tworzenia pomysłu innowacji myśleliśmy
+o trudnych zachowaniach standardowo: krzyk, agresja, autoagresja, zachowania.
+W trakcie spotkań z uczestnikami testu okazało się, że wielu ograniczeń nie można
+zdefiniować, wiele z nich jest zakorzenionych, skojarzonych i uwarunkowanych
+w pamięci i świadomości wielu osób. Najczęstszym problemem był opór jako
+odpowiedź na nieprzyjemny bodziec (czasami tylko spotkanie z lekarzem). Wiele
+osób z niepełnosprawnością nie rozumie procesu leczenia, a zalecenia lekarza
+i typowe, pożądane zachowania u lekarza są poza zdolnościami poznawczymi
+niektórych pacjentów.
+Bazując na doświadczeniu dwojga asystentów osób z niepełnosprawnością
+przygotowano scenariusze postępowania– kilka ważnych informacji dla każdego
+
+--- strona 7 ---
+
+7
+testera, które następnie – ze względu na pojawiające się trudności - ewoluowały lub
+były zmieniane.
+Postępowanie w podejmowaniu leczenia pacjenta przejawiającego trudne
+zachowania zawsze wymaga od personelu szpitala indywidualnego podejścia. Tym
+razem nie można potraktować osoby z niepełnosprawnością jako pacjenta, który
+może zająć wolne łóżko czy miejsce w poczekalni. Należy zwrócić uwagę na szereg
+trudności jakie mogą spotkać personel i innych pacjentów w momencie wystąpienia
+zachowań trudnych.
+Krzyk, agresja i autoagresja powodują niepokój u innych pacjentów, wpływają
+negatywnie na ich dobrostan. Trudno uczyć innych pacjentów tolerancji tych
+zachowań w momencie złego samopoczucia czy rekonwalescencji. Dlatego należy
+organizować czas badań w taki sposób żeby zminimalizować trudności dla innych
+pacjentów.
+Opis metody pracy
+Podczas etapu przygotowania przeprowadzono diagnozy potrzeb uczestników
+innowacji.
+W trakcie diagnozy oceniono możliwość nawiązania kontaktu z uczestnikiem (jego
+umiejętności werbalne i niewerbalne). Korzystając z wiedzy i doświadczenia
+asystentów w nawiązaniu efektywnego kontaktu sporządzono scenariusz wsparcia.
+Scenariusz wsparcia to ważne zalecenia, które nie mogą zostać pominięte
+w podejmowaniu leczenia osoby, która przejawia trudne zachowania. Są to
+spostrzeżenia rodziny i otoczenia pacjenta dotyczące wszystkich wizyt lekarskich
+w jakich uczestnik brał udział.
+Asystenci wnikliwie przeanalizowali ścieżkę leczenia pacjenta i zaznaczyli obszary
+wyjątkowo problemowe. Problemy wynikały z trudności zachowań uczestnika
+względem wymogów jakie stawia konkretne badanie. Na przykład osoba w spektrum
+
+--- strona 8 ---
+
+8
+autyzmu, która jest w ciągłym ruchu, przejawia zachowania stereotypowe - nie potrafi
+leżeć bez ruchu minimum 20 minut w trakcie badania rezonansu magnetycznego.
+Rozwiązaniem jest przeprowadzenie badania w narkozie, ale jest to trudny
+i wymagający dużego zaangażowania proces przyjęcia pacjenta neuroatypowego na
+oddział.
+Personel szpitala często nie zdaje sobie sprawy, że przyjęcie pacjenta na oddział
+może być niebezpieczne dla innych pacjentów i dla niego samego. Wymaga również
+od rodzica maksymalnego zaangażowania w towarzyszenie pacjentowi w trakcie
+pobytu na oddziale. Warto zaznaczyć, że nieznajomość funkcjonowania osób
+w spektrum autyzmu rodzi konflikty między rodzicem, a personelem. Personel
+uważa, że poradzą sobie z pacjentem na oddziale, nie rozumieją jednak, że pacjent
+nie będzie spokojnie leżał przez cały dzień z założonymi wenflonami w ciele, gdyż
+wymaga ciągłej opieki i kontroli aż do czasu przeprowadzenia badania. W trakcie
+testu często wybieraliśmy późniejszy termin badania, ale adekwatny do możliwości
+pacjenta, jego asystenta i rodzica. Preferowaliśmy wczesną godzinę ze względu na
+ułatwienie rodzicowi opieki podczas pilnowania uczestnika przed spożywaniem
+posiłków (wprowadzenie w stan narkozy wymaga od pacjenta bycia na czczo).
+Warto zaznaczyć, że doświadczenie asystentów pokazuje, że sytuacja rodzica osoby
+z niepełnosprawnością na oddziale się zmieniła. Personel docenia zaangażowanie
+rodzica i na koniec pobytu dostrzega konieczność obecności opiekuna i asystenta na
+oddziale, jako osób dbających o bezpieczeństwo zarówno pacjenta jak i innych
+pacjentów/personelu na oddziale.
+Opis zrealizowanych działań
+W trakcie testowania ,,Himalajów Autyzmu” stosowaliśmy ,,dobre praktyki”
+w podejmowaniu leczenia. Umawiając wizytę podkreślaliśmy, że pacjent to osoba
+z niepełnosprawnością znaczną. Mieliśmy sytuacje, w którym personel nie wiedział
+o ustawie pierwszeństwa w podejmowaniu leczenia przez osoby
+z niepełnosprawnością. Zasadę pierwszeństwa reguluje ustawa o szczególnych
+
+--- strona 9 ---
+
+9
+rozwiązaniach wspierających osoby o znacznym stopniu niepełnosprawności z dnia
+9 maja 2018r. (Dz.U. z 2018r. poz.932). Mając na uwadze możliwości działania
+personelu, przypominanie praw naszego uczestnika zawsze odbywało się w sposób
+łagodny. Nie szukaliśmy pomocy poprzez nacisk i pretensjonalność. W skrajnych
+sytuacjach prosiliśmy o kontakt z kierownikiem jednostki. Kiedy rozmowa nie poszła
+po naszej myśli załatwialiśmy sprawy pisemnie, prosząc o rozwiązanie problemu
+w podejmowaniu leczenia przez pracownika NFZ. Pod numerem 800 190 590 można
+uzyskać informacje dotyczące terminów leczenia, a także uzyskać najważniejsze
+informacje dotyczące praw pacjentów z niepełnosprawnością w różnym stopniu.
+Pracownik proponował dostępne rozwiązania, ale funkcjonowanie placówek zdrowia
+w teorii różni się od praktyki. Często – ze względu na pilną potrzebę wdrożenia
+leczenia – wizyta odbywała się w prywatnym gabinecie.
+W oparciu o powstałe scenariusze działań rozpoczęto ścieżkę leczenia. Zakładając,
+że czytelnik tego raportu może chcieć samodzielnie wykorzystać efekty naszego
+testu postanowiliśmy zawsze rozpoczynać współpracę od wizyty z lekarzem
+pierwszego kontaktu. Lekarz pierwszego kontaktu u każdego z naszych uczestników
+sprawdził – w miarę możliwości – stan zdrowia, również poprzez zlecenie badań
+krwi, moczu, kału.
+Należy napisać, że ze względu na doświadczenia uczestnika i lekarza, w większości
+przypadków (również przed pandemią) ,,leczenie” odbywało się zdalnie – rodzic
+dzwonił do lekarza kiedy kończyły się recepty na leki. Niestety podobny scenariusz
+dotyczy też leczenia psychiatrycznego, gdzie lekarz latami nie spotyka się
+z pacjentem – ma kontakt z jego rodzicem wyłącznie telefoniczny.
+Poniżej przedstawiono listę podjętych działań:
+W trakcie trwania testu asystenci wspierali przeprowadzenie co najmniej 12 pobrań
+krwi, 2 badania rezonansu magnetycznego w narkozie, 9 zabiegów
+stomatologicznych w narkozie, kilka kontroli stomatologicznych, 3 zabiegi iniekcji oka
+w narkozie, kilka wymazów z nosogardzieli, leczenie psychiatryczne bez
+
+--- strona 10 ---
+
+10
+przebywania na oddziale psychiatrycznym, badania laryngologiczne, badania
+ginekologiczne, kilka wizyt adaptacyjnych.
+Podstawowym rozwiązaniem, które przyczyni się do właściwego podejmowania
+leczenia przez najbliższe lata jest rozpoczęcie leczenia od lekarza pierwszego
+kontaktu. Jeśli lekarz odmawia leczenia, bagatelizuje opisywane problemy rodzic lub
+asystent powinien poprosić go o odmowę leczenia. Można również napisać mail do
+placówki zdrowia, do której należy pacjent z krótkim opisem problemów zdrowotnych
+i poprosić o rozwiązanie. Doświadczenie pokazuje, że często długoletnie kontakty
+lekarzy i pacjentów ostatecznie mają więcej wad niż zalet – rodzice i lekarz dla
+ułatwienia latami nie pojawiają się z dzieckiem u lekarza, relacja oparta jest
+wyłącznie o wypisywanie recept.
+1. Mount Everest – typ pacjenta: boi się podstawowych badań. Jako asystenci
+doświadczeni w towarzyszeniu naszym klientom i ich rodzinom zakładaliśmy
+scenariusze działań – spodziewaliśmy się, że danego dnia pobranie krwi
+może być szczególnie trudne. Na przykład: uczestnik nie spał od dwóch nocy
+– spodziewamy się zatem wyjątkowo trudnego przebiegu badania ze względu
+na zmęczenie. Efekt jest paradoksalny ponieważ w obrębie zachowań
+w spektrum autyzmu dużo łatwiej jest przeprowadzić badanie wcześnie rano,
+kiedy głód i potrzeba aktywności nie jest najważniejsza.
+Kolejną trudnością jest problem techniczny wynikający z pobierania krwi.
+Wiele osób ma niewidoczne żyły w zgięciu łokciowym (często nigdzie nie są
+one widoczne). Mamy wrażenie, że u osób z niepełnosprawnościami, których
+ciało ma specyficzną budowę ten problem jest jeszcze większy.
+Niedoświadczony pielęgniarz/pielęgniarka może robić wiele wkłuć zanim uda
+mu się ostatecznie pobrać krew. To wymaga od rodzica/asystenta
+dodatkowych rozwiązań w podjęciu badania.
+Ze względu na wiek i doświadczenia pacjenta korzystano z różnych metod.
+Często metody stosowane u dzieci neurotypowych działają, ale niestety
+zdarza się, że przynoszą odwrotny skutek. Osoby preferujące schematy wolą
+
+--- strona 11 ---
+
+11
+jasny i krótki komunikat tego, co się od nich oczekuje. W takich sytuacjach
+asystent i personel wydają polecenia, które są jedyną możliwością kontaktu
+i wróżą efektywny przebieg badania.
+2. Nanga Parbat – uczestnik od wielu lat ma objawy chorób, ale nikt nie wie od
+czego zacząć leczenie typ pacjenta: pacjent od dawna niediagnozowany,
+nieleczeony. Szczególnie problematyczni z punktu widzenia testu byli
+uczestnicy, którzy od wielu lat mieli różne, niepokojące objawy, ale żaden ze
+specjalistów nie chciał wdrożyć leczenia. W takich sytuacjach asystenci
+zaczynali, jak zwykle, od lekarza pierwszego kontaktu.
+W rzeczywistości leczenie takich pacjentów zaczyna się od szeregu badań,
+które można wykonać. Oznacza to wybór takich badań, które mogą wykluczyć
+lub potwierdzić chorobę, np. podczas badania krwi. Konkretnie, lekarz
+pierwszego kontaktu decyduje, które badania może zlecić w ramach NFZ, a za
+które rodzic musi zapłacić samodzielnie. Jeśli rodzic nie miał możliwości
+sfinansować badań wówczas asystenci szukali rozwiązania w szpitalach
+i przychodniach przyszpitalnych. Niestety, ważnym i działającym sposobem
+komunikowania się z placówkami zdrowia był współkontakt z pracownikiem
+NFZ. Kiedy pacjent neuroatypowy przejawia szereg objawów wskazujących na
+nieprawidłowości funkcjonowania organizmu, wtedy warto zasięgnąć porady
+pracownika NFZ. Podczas takiej rozmowy dowiemy się, że pacjent
+neuroatypowy jest takim samym pacjentem jak każdy inny i skierowanie na
+badania powinno być tak samo traktowane jak skierowanie osób
+neurotypowych. W rzeczywistości skontaktowanie się drogą mailową do
+miejsca gdzie można przeprowadzić badanie i przesłanie go również do
+pracownika NFZ, który ,,czuwa” nad sprawą, zachęca pracowników służby
+zdrowia do podjęcia leczenia na rzecz pacjenta neuroatypowego. Życie
+rodzica z osobą z niepełnosprawnością w kraju, gdzie nie istnieją rozwiązania
+systemowe na wsparcie rodzin z DOROSŁYM dzieckiem
+z niepełnosprawnością wpływa negatywnie na funkcjonowanie społeczne całej
+rodziny. W efekcie - rodzic często odbierany jest jako roszczeniowy,
+
+--- strona 12 ---
+
+12
+a personel nieprzychylnie – mimo wszelkich procedur - podejmuje leczenie.
+Często znajduje szereg ,,nie da się” żeby odmówić leczenia. Rozwiązaniem
+jest filtr w postaci asystenta osoby z niepełnosprawnością i pracownika obsługi
+NFZ, który podczas zgłoszenia problemu leczenia pacjenta czuwa i śledzi
+przebieg tego leczenia.
+3. K2 – leczenie od zawsze miało charakter przymusowy. Typ pacjenta: zawsze
+zmuszany do badania. Dużym wyzwaniem w podejmowaniu leczenia osób
+neuroatypowych jest uwzględnienie ścieżki leczenia z przeszłości. Jeśli
+uczestnik, pacjent przejawiający trudne zachowania jako dziecko był siłą
+zmuszany do leczenia przez rodziców lub w szkole było dwóch ,,sanitariuszy”,
+którzy przytrzymywali pacjenta podczas badania. Skala problemów wzrasta.
+Istnieje wiele luk w prawie dotyczącym tego w jaki sposób wspierać pacjenta
+podczas leczenia. Trud takich działań spada na rodzica, który z wiekiem nie
+ma możliwości wspierać swojego dziecka podczas badań. Należy zaznaczyć,
+że im więcej trudnych doświadczeń tym więcej rys na emocjach
+i funkcjonowaniu rodzica i jego dziecka. Jeżeli otoczenie, personel nie
+znajduje innej możliwości należy starać się o wykonywanie badań
+w znieczuleniu.
+4. Karakorum – Osoba z niepełnosprawnością porusza się na wózku – kto umie
+obsłużyć schodołaz? Typ pacjenta: nieznany. Naszym Karakorum jest
+sytuacja w której musimy tłumaczyć personelowi jaką niepełsnosprawność ma
+pacjent i z czym się wiąże. W kontakcie z personelem, rejestracją często
+musieliśmy opisywać CZYM JEST AUTYZM; dlaczego zależy nam na
+konkretnym terminie; dlaczego poza rodzicem będzie asystent. Jaka jest rola
+asystenta, czy asystent jest członkiem rodziny? Hamując frustrację, udało się
+dotrzeć do wrażliwości personelu na tyle, że wizyta przebiegła zgodnie
+z planem – leczenie przynosiło efekty. Najtrudniejsze było ustalenie
+z pracownikiem, że nie będziemy potrzebować żeby ktoś wyciągał schodołaz
+z piwnicy bo nasz uczestnik nie porusza się na wózku inwalidzkim.
+
+--- strona 13 ---
+
+13
+Profil potencjalnego użytkownika testowanego
+rozwiązania
+Uczestnik mogący skorzystać z efektów testu ,,Himalaje Autyzmu” to osoba
+z niepełnosprawnością, która przejawia zachowania uniemożliwiające standardowe
+przeprowadzenie badań. Wiek uczestnika jest dowolny, warto jednak rozróżnić plan
+leczenia w taki sposób żeby ograniczać sytuacje stresowe do minimum. Zawsze
+należy wykorzystać potencjał uczestnika i znajomość jego preferencji względem tego
+jak odczuwa zmysłami, np. nadwrażliwość na bodźce słuchowe, węchowe (zapach
+gazu podczas narkozy), dotykowe. Często osoby neuroatypowe mają obniżony próg
+bólu, ale zdarza się, że ktoś jest nadwrażliwy na bodźce i unika jakiegokolwiek
+kontaktu fizycznego, dotyku bo na poziomie jego odczuwania sprawia mu ból.
+Potencjalny użytkownik to pacjent, który przejawia zachowania trudne. Z powodu
+braku wiedzy i umiejętności personelu – jego leczenie jest wstrzymane albo
+prowadzone w sposób wybiórczy i chaotyczny. Użytkownikiem rozwiązania może być
+także rodzic/opiekun osoby neuroatypowej, który dzięki wypracowanym narzędziom
+i sugestiom zmieni sposób planowania leczenia.
+Analiza wyników testu
+Testerzy naszej innowacji to pacjenci z 3 grup wiekowych: dzieci, nastolatkowie,
+dorośli. Grupa wymagająca wysokiego poziomu wsparcia to grupa dorosłych.
+Problematyka wsparcia osób z niepełnosprawnością w ogóle, dzieli się na dwa
+etapy. Etap pierwszy to rozwój dziecka z niepełnosprawnością od urodzenia przez
+okres edukacji aż do zakończenia szkoły w wieku – maksymalnie - 24 lat. Dziecko
+z niepełnosprawnością w okresie edukacji ma wielorakie wsparcie od nauczycieli
+szkół specjalnych. Niektóre szkoły mają charakter szkoły behawioralnej, która
+w swoich założeniach przygotowuje dziecko do podejmowania leczenia. Przykład:
+dziecko w spektrum autyzmu można przygotować do wizyt lekarskich poprzez
+regularne, adaptacyjne wizyty lekarskie, które nie zawsze kojarzone są z bólem
+
+--- strona 14 ---
+
+14
+i złymi wspomnieniami. W ramach zajęć edukacyjnych można przygotować dziecko
+poprzez skojarzenie lusterka stomatologicznego jako elementu pozytywnego,
+wymagającego otworzenia ust i np. dostania nagrody za pokazanie stomatologowi
+zębów. Jest to najprostszy przykład, który jednocześnie może ułatwić leczenie
+stomatologiczne na całe życie. Wielu pacjentów musi co rok/co dwa lata przyjmować
+narkozę celem sprawdzenia stanu zębów, usunięcia osadu/kamienia nazębnego.
+Test zakładał przeprowadzenie wizyt w skuteczny sposób przyczyniając się do
+poprawy zdrowia uczestników. W trakcie trwania testu zrealizowano zaplanowane
+wizyty.
+Asystenci na podstawie formularza diagnozy/scenariusza wsparcia zaplanowali
+wizyty w taki sposób żeby zminimalizować wystąpienie trudnych zachowań. Niestety,
+procedury placówek zdrowia/szpitali nie zawsze potrafią w pełni odpowiedzieć na
+specyficzne potrzeby pacjenta. Największym problemem jest ustalenie sztywnego
+terminu (głównie stała godzina) wizyty/badania. Wynika to najczęściej z dwóch
+powodów: nieumiejętnego planowania wizyt przez pracowników rejestracji oraz
+przyczyn niezależnych, trudnych do zaplanowania – opóźnień wynikających
+z komplikacji zdrowotnych innych pacjentów. Jeśli rodzic dysponuje wsparciem
+asystenta dla swojego dziecka, problem zmniejsza się, ponieważ na czas
+oczekiwania asystent może zaplanować spacer lub inną czynność, która zajmie czas
+uczestnika i nie spowoduje eskalacji trudnych zachowań w obrębie poczekalni
+szpitala/gabinetu.
+Pandemia była wyjątkowym okresem podczas którego można było realizować wizyty
+lekarskie. Na etapie planowania testu w rodzicach pojawiało się mnóstwo wątpliwości
+czy trudny okres pandemii nie jest zbyt ryzykowny pod względem zdrowotnym.
+Możliwość zarażenia się pacjentów neuroatypowych jest większa ze względu na brak
+zrozumienia zasad reżimu sanitarnego (głównie niechęć do noszenia maseczki).
+Podobnie jak w przypadku planowania działań, tak w sytuacji pandemii efekt był
+paradoksalny. Sytuacja pandemii pokazała, którzy lekarze pracują z powołania i dla
+których cel jakim jest leczenie jest priorytetowy. Zanim jednak udało umówić się
+
+--- strona 15 ---
+
+15
+wizytę, należy oddać, że było to często poprzedzone kilkudziesięcioma telefonami,
+mailami bez odpowiedzi.
+Organizowanie czasu podczas oczekiwania na wizytę
+Podczas planowania testu zakładano, że należy przygotować dla uczestników szereg
+rozwiązań (zabawek, gier edukacyjnych lub rzeczy, które przywołują dobre reakcje)
+aby ukierunkować emocje właśnie na te elementy. Okazało się, że dla naszych
+uczestników ,,gadżety” stanowiły rozwiązanie ściśle, schematycznie powiązane
+z danym miejscem – zwykle domem.
+Nawet jeśli uczestnik zajmował się przez chwilę swoim gadżetem – po chwili
+orientował się, że schemat wykorzystania gadżetu uległ zmianie i element nie działa
+w ten sam sposób.
+W rozumieniu rodzica – uspokajacz. Najskuteczniejszym narzędziem jest możliwość
+spaceru, która jest preferowana przez większość uczestników i może funkcjonować
+w oderwaniu od schematu (eksplorowanie nowych miejsc jest pożądane). Niestety,
+procedura przyjęcia na oddział szpitalny, wyklucza możliwość wyjścia z oddziału
+wcześniej niż przed wypisem.
+Często oznacza to walkę z czasem rodzica i personelu, który po podobnym
+doświadczeniu niechętnie podejmuje kolejne działania na rzecz osób
+neuroatypowych.
+Gdyby podzielić podejście do osoby z niepełnosprawnością można wyróżnić dwa
+tryby. Pierwszy zakłada, że ,,dostosowanie się” osoby z niepełnosprawnością do
+odpowiednich zachowań w miejscach publicznych jest koniecznością. Drugi tryb to
+takie dostosowanie przestrzeni aby stała się przystępna – dostępna dla osoby
+z niepełnosprawnością.
+Wynik testu stanowczo udowadnia, że właśnie drugi tryb jest kluczem do sukcesu
+w podejmowaniu leczenia. Doświadczeni wieloma rozmowami o dostępności miejsc
+
+--- strona 16 ---
+
+16
+dla osób z niepełnosprawnością, chcemy wyjaśnić, że owa dostępność nie musi
+dotyczyć przełamywania barier architektonicznych, barier technicznych.
+Najczęstszym wrogiem dostępności jest brak zrozumienia, że trudne zachowanie nie
+wynika z braku pracy, wychowania, jest to niepełnosprawność pacjenta.
+Doświadczony asystent to zwiększenie bezpieczeństwa i dbałość o dobrostan
+pacjenta z niepełnosprawnością oraz innych pacjentów znajdujących się
+w przestrzeni placówki zdrowia.
+Bezpieczny transport uczestnika
+Okres przygotowawczy testu ujawnił kolejny problem blokujący regularność wizyt
+lekarskich osób z niepełnosprawnościami. Przejazd środkami publicznymi dla wielu
+osób z niepełnosprawnością jest sytuacją wyzwalającą trudne zachowania. Możemy
+domyślać się, że wynika to z zaskakującego przebiegu zachowań innych
+podróżnych. Nieoczekiwanych sytuacji. Problem jest związany również z ryzykiem
+jakiego obawiają się opiekunowie/rodzice - ucieczki dzieci (rodzice nie są w stanie
+,,złapać” swojego dziecka; mają doświadczenie trudnych sytuacji, w których piesi,
+inni uczestnicy ruchu nie potrafią/nie chcą pomóc);
+Kolejnym problemem jest posiadanie nieoficjalnego zakazu na przejazdy dla osób
+przejawiających trudne zachowania. Pod adresy tych uczestników taksówka
+przystosowana (teoretycznie) do przejazdu osób z niepełnosprawnością – nie
+przyjeżdża.
+W odpowiedzi na taką sytuację postanowiliśmy zbadać jakie są możliwości
+zabezpieczenia uczestnika w trakcie przejazdu.
+My, asystenci, mieliśmy wypracowane metody – włączaliśmy muzykę z przenośnego
+głośnika, proponowaliśmy uczestnikowi miejsce w samochodzie – na tylnej kanapie,
+za pasażerem – gdzie eskalacja trudnych zachowań nie wpływała na
+bezpieczeństwo przejazdu. Z czasem przejazd stawał się przyjemnością,
+zachowania trudne pojawiały się sporadycznie.
+
+--- strona 17 ---
+
+17
+Mając na uwadze powszechność naszego rozwiązania, chcieliśmy zaproponować
+rozwiązanie, z którego mogą skorzystać firmy zajmujące się przewozem osób
+z niepełnosprawnością. Nie istnieje żadne w pełni działające rozwiązanie.
+Początkowo rozmawialiśmy o dostosowaniu, które wiąże się z ograniczeniem
+ruchów. Po przeanalizowaniu tego rozwiązania ustaliliśmy, że takie rozwiązanie nie
+tylko wprowadzi stres i traumę związaną z przejazdem, ale również – po wyjściu
+uczestnika z samochodu – spowoduje eskalację trudnych zachowań. Z punktu
+widzenia naszego testu byłoby to podwójnie problemowe, bo mieliśmy opracować
+metodę, która będzie ograniczać podobne sytuacje w placówce zdrowia. Udało nam
+się jednak nawiązać współpracę z jedyną z Polskich firm, z którą opracowaliśmy
+innowacyjne rozwiązanie. Nasze doświadczenie pokazuje, że osoby z
+niepełnosprawnością często przejawiają autoagresję w sposób kaskadowy. Na
+przykład pojawienie się krzyku często poprzedza wykonywanie określonych ruchów –
+uderzeń w szybę, uderzaniu w drzwi, umieszczaniu nogi poza fotel pasażera. W tym
+celu wykorzystaliśmy czteropunktowy pas, który w sposób łagodny ogranicza
+niebezpieczne odchylenie uczestnika od fotela; ewentualne odpięcie pasu
+i przemieszczenie się w trakcie jazdy w pojeździe. Kolejnym rozwiązaniem jest
+nylonowa kratownica w szybie, która znajduje się najbliżej uczestnika. Kiedy
+uczestnik spróbuje uderzyć głową lub ręką w szybę szybko rezygnuje zdając sobie
+sprawę z niewystarczającej reakcji sensorycznej (kratownica amortyzuje uderzenie).
+Powyższe rozwiązanie powstrzyma łańcuchową reakcję trudnych zachowań. Gdyby
+podobne rozwiązania zaadaptować w samochodach dostosowanych do przejazdu
+osób z niepełnosprawnością (nie tylko osób poruszających się na wózkach) – osoby
+przejawiające trudne zachowania mogłyby wciąż korzystać z transportu działającego
+z myślą o dostosowaniu do niepełnosprawności.
+W trakcie testu asystenci mieli możliwość rozmowy z kierowcami, którzy na co dzień
+pracują w firmach przewożących osoby z niepełnosprawnością. Kierowcom brakuje
+wiedzy dotyczącej niepełnosprawności swoich klientów. Najpoważniejszą trudnością
+dla kierowców jest krzyk, który utrudnia im skupienie na prowadzeniu pojazdu.
+
+--- strona 18 ---
+
+18
+Rozwiązaniem w takiej sytuacji – jeżeli nie ma innej możliwości regulowania
+zachowań – przychodzą słuchawki z aktywną redukcją hałasu, które potrafią
+wybiórczo blokować dźwięk o wysokiej częstotliwości, jednocześnie dopuszczając
+dźwięki konieczne do prowadzenia pojazdu. Kolejnym argumentem za używaniem
+słuchawek, jest pewne dostosowanie kierowców do warunków pracy, wszak
+kierowcą w ogóle może być osoba głucha.
+Jest to rozwiązanie tyleż kontrowersyjne co przeciwdziała wykluczeniu klienta
+z przejazdów, które teoretycznie powinno odpowiadać na zachowania wynikające
+z niepełnosprawności. Problemem przejazdów jest też obecność innych klientów
+o różnych zachowaniach w trakcie tego samego przejazdu. Podobne doświadczenia
+mogą negatywnie wpływać na dobrostan innych osób z niepełnosprawnością.
+Założenia testu vs rzeczywistość
+Podejmowanie leczenia naszych uczestników miało charakter holistyczny. Dla
+przykładu uczestnik był na wizycie u psychiatry, zostało zmienione jego leczenie.
+Scenariusz wsparcia ulega zmianie po zastosowaniu leków. Oznaczało to, że wizyta
+będzie przebiegać w sposób niezgodny z oczekiwaniami. Zwykle, znając
+funkcjonowanie uczestnika przed wizytą u psychiatry spodziewaliśmy się trudnych
+zachowań. Czasami efekt był zaskakujący już dwa tygodnie po regularnym
+zażywaniu leków. Należy zaznaczyć, że efekty leczenia dla rodzica, opiekunów
+i lekarza psychiatrii różnią się. Celem leczenia dla rodzica jest utrzymanie
+świadomości i kontaktu z dzieckiem – wiąże się to z mniejszą ilością dawek
+proponowanego leczenia. Dla rodzica ważne są też sprawy związane
+z funkcjonowaniem uczestnika na co dzień, np. nadmierna produkcja śliny,
+wzmożony apetyt i zwiększona podaż na płyny. Generalizując, dla opiekunów
+placówek dziennych i lekarza lepsza sytuacją jest wyciszenie, zmniejszenie
+świadomości co ułatwia życie z uczestnikiem z ich punktu widzenia. Wracając do
+holistycznego podejścia do leczenia, jako asystenci zawsze aktualizowaliśmy plan
+działania przed każdą wizytą w oparciu o aktualny stan zdrowia,
+regularność/nieregularność snu itd.
+
+--- strona 19 ---
+
+19
+Przez cały czas trwania testu prowadziliśmy badania; poniżej znajdują się
+ujednolicone wartości określające udział oceniony w określonej poniżej skali.
+W trakcie każdej wizyty lub po zakończeniu, gdy opadały emocje związane
+z podjęciem leczenia asystenci podsumowywali wraz z rodzicami udział każdego
+komponentu, jego wpływ na przebieg wizyty.
+Objęta przez nas skala to ocena punktowa od 0-10.
+Wiedza dotycząca funkcjonowania osób z niepełnosprawnościami (10 w skali
+dziesięciopunktowej) – udział posiadanej, niezbędnej wiedzy w zakresie
+funkcjonowania osoby z niepełnosprawnością to najważniejszy oceniony przez nas
+aspekt. W etapie testowania asystenci posługiwali się narzędziami, które w sposób
+jasny i klarowny wyjaśniały zachowania uczestnika jakie mogą pojawić się w trakcie
+trwania wizyty.
+Otwartość personelu pozwalała zapoznać go z funkcjonowaniem danego pacjenta
+przed wizytą. Wykorzystanie narzędzi: instrukcji wsparcia; scenariusza wsparcia -
+okazały się bardzo ważne w procesie zrozumienia. Krótka forma wypowiedzi i jasne
+komunikaty potrafiły w kilka minut wyjaśnić funkcjonowanie pacjenta. Nikt nie
+wymagał całościowej wiedzy dotyczącej funkcjonowania osób w spektrum autyzmu.
+Wystarczyła otwartość i chęć przeczytania/posłuchania/zrozumienia kilku zdań, to
+uświadamiało personel i przygotowywało na trudności jakie mogą się pojawić
+w trakcie wizyty
+Udział rodzica- (3 w skali dziesięciopunktowej) – udział rodzica w procesie leczenia
+jest konieczny ze względu na konieczność podpisania dokumentacji przed
+wykonaniem zabiegu, przed badaniami. Również przed rutynowymi wizytami,
+zwłaszcza jeśli jest to pierwsza wizyta. Udział rodzica jest konieczny, ale możliwość
+jednoczesnego zaangażowania w opiekę nad dzieckiem przejawiającym trudne
+zachowania i wypełnianie dokumentacji medycznej jest bardzo trudne. W niektórych
+przypadkach niemożliwe ze względu na poziom stresu rodzica podczas wizyty.
+Złożoność procesu potrafi przerosnąć każdego rodzica, bez względu na wiek i stan
+zdrowia.
+
+--- strona 20 ---
+
+20
+Udział asystenta – (5 w skali dziesięciopunktowej) – udział asystenta w procesie
+leczenia. Zważywszy na stopień zażyłości, znajomość funkcjonowania uczestnika i –
+często – dostrzeganie niepokojących objawów zdrowotnych – asystent reprezentuje
+pacjenta z niepełnosprawnością. Asystent to osoba multifunkcyjna, poza
+towarzyszeniem osobie z niepełnosprawnością, często jest wsparciem również dla
+rodzica, który wychodząc z gabinetu nie pamięta zaleceń w wyniku stresu.
+Udział personelu – (7 w skali dziesięciopunktowej) – bez personelu medycznego:
+lekarza, pielęgniarek, pracownika – nie ma wizyty/badania. Niestety, często
+niewystarczająca wiedza dotycząca współpracy z osobami wymagającymi wysokiego
+poziomu wsparcia doprowadza do odmowy leczenia.
+Nie bez powodu nie ma elementu odnoszącego się do funkcjonowania osoby z
+niepełnosprawnością. Nigdy w rozmowach z rodzinami uczestników nie chcieliśmy
+urządzać konkursu na to, który uczestnik w jaki sposób podejmował leczenie.
+Możliwość wystąpienia trudnego zachowania jest często niezależna od działań na
+rzecz osoby z niepełnosprawnością. To po prostu niepełnosprawność tej osoby.
+Bazując na doświadczeniu dwojga asystentów osób z niepełnosprawnością
+przygotowano scenariusze postępowania (przykładowe scenariusze dostępne
+poniżej, w punkcie 6) – kilka ważnych informacji dla każdego testera, które następnie
+– ze względu na pojawiające się trudności - ewoluowały lub były zmieniane.
+Postępowanie w podejmowaniu leczenia pacjenta przejawiającego trudne
+zachowania zawsze wymaga od personelu szpitala indywidualnego podejścia. Tym
+razem nie można potraktować osoby z niepełnosprawnością jako pacjenta, który
+może zająć wolne łóżko czy miejsce w poczekalni. Należy zwrócić uwagę na szereg
+trudności jakie mogą spotkać personel i innych pacjentów w momencie wystąpienia
+zachowań trudnych.
+Krzyk, agresja i autoagresja powodują niepokój u innych pacjentów, wpływają
+negatywnie na ich dobrostan. Trudno uczyć innych pacjentów tolerancji tych
+
+--- strona 21 ---
+
+21
+zachowań w momencie złego samopoczucia czy rekonwalescencji. Dlatego należy
+organizować czas badań w taki sposób żeby zminimalizować trudności dla innych
+pacjentów.
+Wykorzystanie scenariusza wsparcia
+Scenariusze wizyt lekarskich
+To zbiór rozwiązań, które mogą przyczynić się do skutecznego leczenia.
+Wykorzystanie fiksacji, konkretnych elementów, z których uczestnik korzysta na co
+dzień może stanowić rozwiązanie w przypadku zachowania trudnego. Bazowanie na
+specyficznych zainteresowaniach naszych uczestników to główny sposób na
+rozwiązywanie problemów ad hoc. Specyficzne elementy, zachowania, będziemy
+wykorzystywać tylko do momentu wyciszenia trudnego zachowania żeby uczestnik
+nie przejawiał zachowania stereotypowego, które może utrudnić nawiązanie z nim
+kontaktu. Drugim sposobem na planowanie wizyty jest obserwacja uczestnika i próba
+rozwiązania prezentowanych zachowań korzystając z wiedzy dotyczącej reakcji na
+specyficzne bodźce. Chcemy wykorzystywać elementy, które w pozytywny sposób
+wpłyną na samopoczucie uczestnika, zwiększą bezpieczeństwo w trakcie przejazdu
+czy oczekiwania na wizytę, np. wykorzystanie koca obciążeniowego jako metody
+hamowania agresji wobec innych pacjentów/personelu/asystentów.
+Przykładowe sytuacje, w których wykorzystano scenariusze wsparcia.
+Uczestnik kolejnego dnia będzie miał pobraną krew
+• Rozmowa z rodzicem; ustalenie jakie problemy pojawiały się w przeszłości
+podczas pobierania krwi; czy wszystkie próby zakończyły się powodzeniem.
+Ustalić szczególne problemy, np. uczestnik ma ,,niewidoczne” żyły;
+preferowane miejsce na ciele, gdzie wcześniej pobierano skutecznie krew,
+ewentualne problemy, np. skłonność do wystąpienia krwiaków, krwawień,
+pękanie naczyń krwionośnych, nietolerancja na obecność plastra w miejscu
+wkłucia
+
+--- strona 22 ---
+
+22
+• Umówienie w poradni dogodnego terminu na przyjęcie pacjenta
+• Zweryfikowanie wiedzy personelu poprzez zadanie konkretnych pytań, np.
+Czy możemy liczyć na wsparcie innej pielęgniarki podczas pobierania krwi;
+czy mamy możliwość pierwszeństwa w pobraniu krwi – czy system wydawania
+,,numerków” uwzględnia pacjenta z niepełnosprawnością, czy po przyjściu do
+badań mamy zgłosić się do rejestracji czy oczekiwać w kolejce pacjentów
+• Poinformowanie personelu, że w trakcie badania będą uczestniczyć asystenci
+– zapytać czy to nie będzie problem
+• Zadajemy pytanie dotyczące przygotowania do badań: możliwość ilości
+wypicia płynów – wody przed badaniem
+• Jeżeli jest problem z pobraniem innego materiału do badań – zadajemy
+pytanie w jaki sposób możemy dostarczyć materiał jeżeli nie uda się go oddać
+razem z pobraniem krwi; doświadczenie pokazuje, że czasami jest problem
+z oddaniem, np. moczu kilkadziesiąt minut po pobraniu krwi
+• Rozmowa z rodzicem dotycząca procedur badania; uzyskanie informacji
+dotyczącej stresu rodzica najbliższym badaniem. Nasze doświadczenie
+pokazuje, że uczestnik łatwiej i chętniej podejmuje leczenie z znajomym
+asystentem.
+Uczestnik ma skierowanie na kolonoskopię w narkozie
+• Przeanalizowanie z rodzicem zaleceń dotyczących przygotowania do badania.
+Uczestnik to osoba z Zespołem Pradera – Williego; dominującym objawem
+jest niepohamowany apetyt. Głód przejawia się w agresję, autoagresję.
+Rodzic powtarza, że nie wyobraża sobie przygotowania do badania
+w kontekście rygoru jakim jest brak pokarmów stałych przez minimum 1,5
+dnia.
+• Telefoniczna rozmowa z przychodnią, w której zaplanowano wizytę. Rozmowa
+z pracownikiem rejestracji; przekierowanie rozmowy do lekarza anestezjologa,
+rozmowa dotycząca aktualnych badań krwi; przekierowanie rozmowy do
+lekarza wykonującego badanie, rozmowa dotycząca przygotowania do
+badania. W jaki sposób można dostarczać pokarm, który nie jest płynny.
+
+--- strona 23 ---
+
+23
+Rozmowa dotycząca możliwości rozpuszczenia leków w soku jabłkowym;
+przygotowanie klarownych galaretek, picie klarownych soków.
+Poinformowanie lekarza o zespole genetycznym pacjenta; rozmowa
+dotycząca trudności przygotowań, możliwości pojawienia się trudnych
+zachowań w przypadku oczekiwania na badanie. Lekarz zaordynował sztywny
+termin badania; asystent zadeklarował obecność rodzica i pacjenta na
+zaproponowaną godzinę badania. Rozmowa dotycząca poziomu uczestnictwa
+asystenta w procesie przygotowania na badanie; ze względu na wiek i stan
+zdrowia rodzica, który poprosił asystenta o wsparcie
+• Rozmowa z rodzicem, przekazanie zaleceń dotyczących przygotowania do
+badań. Propozycja pomocy asystenta w zakresie ustalonym przez lekarza,
+który ma wykonać badanie.
+• Dzień przed badaniem spacer z uczestnikiem uwzględniający bliskość toalety,
+propozycja zajęć wyjątkowo atrakcyjnych dla uczestnika celem odwrócenia
+uwagi od najsilniejszego z motywatorów – jedzenia.
+• Ustalenie z rodzicem poziomu uczestnictwa, czy rodzic jest w stanie brać
+udział w całości przedsięwzięcia – podpisanie dokumentacji jest zawsze
+koniecznością dla rodzica, który jest opiekunem prawnym. Wprowadzanie
+w stan narkozy dziecka często wywołuje u rodziców trudną reakcję, która
+negatywnie wpływa na poczucie bezpieczeństwa uczestnika
+• Wsparcie asystenta podczas wybudzenia z narkozy; wsparcie podczas
+bezpiecznego powrotu do domu
+Uczestnik ma zaplanowany termin na zabieg iniekcji oka w narkozie
+• Rozmowa z rodzicem dotycząca ostatniej wizyty okulistycznej (wizyta odbyła
+się w obecności asystenta)
+• Podsumowanie ostatniej wizyty, podział ról dotyczącej zakresu uczestnictwa.
+Ze względu na stan zdrowia rodzica – wsparcie w wypełnieniu dokumentacji
+do zabiegu
+
+--- strona 24 ---
+
+24
+• Rodzic zgłosił tendencję z której wynika, że pacjent niechętnie współpracuje
+z rodzicem w podejmowaniu leczenia ze względu na pojawienie się biernego
+oporu u dziecka.
+• Asystent potwierdza spostrzeżenia rodzica. Propozycja oczekiwania rodzica
+na zewnątrz podczas gdy asystent wraz z personelem będzie wspierał
+uczestnika podczas przygotowań.
+• Rozmowa z personelem – ze względu na trudność w zrozumieniu specyfiki
+funkcjonowania uczestnika, asystent prosi o kontakt z lekarzem, który ma
+przeprowadzić zabieg. Pracownik udzielił informacji, że kontakt z lekarzem
+jest niemożliwy. Prośba o maila do lekarza. Mail jest niedostępny dla
+pacjentów. Napisanie maila do ordynatora oddziału w związku z przebiegiem
+rozmowy; opisanie funkcjonowania uczestnika, poinformowanie o możliwości
+pojawienia się trudnych zachowań w trakcie opóźnień zabiegu; propozycja
+rozwiązania problemów ze względu na nieoczekiwane trudności. Prośba
+o zgodę na powyższe działania, pozostawienie numeru do asystenta.
+Rozmowa telefoniczna z lekarzem, wyrażenie zgody na zaproponowane
+działania.
+• Rozmowa z rodzicem dotycząca ustaleń z lekarzem, zaplanowanie przejazdu
+uczestnika i rodzica na zabieg.
+Uczestnik ma zaplanowany zabieg leczenia zębów w narkozie
+• Rozmowa z rodzicem dotycząca trudności wynikających z poprzednich
+doświadczeń w klinice. Trudności z oczekiwaniem na wizytę, trudności
+wynikające z opóźnień – w odpowiedzi: trudne zachowania uczestnika. Strach
+przed przystąpieniem do zabiegu; strach przed wejściem do kliniki, próba
+ucieczki uczestnika sprzed drzwi Sali zabiegowej, kilkukrotne próby
+dostarczenia uczestnika pod drzwi – również z wykorzystaniem wózka
+inwalidzkiego. Zastosowanie tabletki uspokajającej i przeciwbólowej noc przed
+zaplanowanym zabiegiem. Tabletka zadziałała w sposób paradoksalny –
+uczestnik nie spał całą noc. Rodzic wyraził trudność związaną
+z przygotowaniem uczestnika do zabiegu – przez całą noc rodzic siedział
+
+--- strona 25 ---
+
+25
+w kuchni i pilnował żeby uczestnik nie zjadł niczego – przed zabiegiem
+w narkozie wymagane jest bycie na czczo. Trudności wynikające z podaniem
+leków uspokajających godzinę przed zabiegiem, mimo, że uczestnik był
+wyciszony – zdawał sobie sprawę z sytuacji w jakiej się znajduje. Próba
+wstawania z wózka – upadek i trudności ze wstaniem, pojawienie się krzyku
+i zachowań autoagresywnych. Problemy związane z podaniem środków
+dożylnych – wyrywanie rąk w trakcie próby wbicia dożylnego; agresja
+ukierunkowana w stosunku do pielęgniarek; siłowe zmuszanie do podjęcia
+leczenia. Uczestnik włożył palec do oka pielęgniarki, która zrezygnowała
+z dalszych prób znieczulenia. Leczenie nie odbyło się, poproszono rodzica
+o ustalenie innego terminu leczenia.
+• Rozmowa telefoniczna z lekarzem anestezjologiem. Wykorzystanie auta
+dostosowanego do przewozu osoby poruszającej się na wózku. Propozycja
+asystenta dotycząca zastosowania tabletki uspokajającej zanim uczestnik
+zobaczy miejsce do którego przybył – opis poprzednich prób przygotowania
+do leczenia stomatologicznego w narkozie. Asystent zapytał, czy jest możliwe
+zastosowanie tabletki uspokajającej w aucie na parkingu. Lekarz
+poinformował o procedurach, które uniemożliwiają takie działanie. Ze względu
+na trudności i zachowanie bezpieczeństwa dla uczestnika i innych pacjentów
+lekarz wyraził zgodę na wprowadzenie pomysłu. Ze względu na poprzednie
+trudności wynikające z podejmowania leczenia w tym miejscu – asystent
+znający topografię budynku zapytał, czy jest możliwe żeby asystent
+z rodzicem i pacjentem wszedł innym wejściem żeby u uczestnika
+zminimalizować możliwość pojawienia się zachowań agresywnych. Lekarz
+wyraził zgodę na plan asystenta.
+• Dzięki podjętym działaniom, leczenie przyniosło oczekiwane rezultaty.
+
+--- strona 26 ---
+
+26
+Uczestnik nigdy nie był u ginekologa, mimo objawów wskazujących
+na choroby ginekologiczne. Uczestnik poruszający się na wózku
+inwalidzkim.
+• Znalezienie przez asystenta placówki, która ma możliwość przyjęcia dorosłego
+pacjenta z otyłością na badanie ginekologiczne. Wykonanie przez asystenta
+kilkudziesięciu telefonów dotyczących badania. Wysłanie kilku maili
+z zapytaniem o sprzęt wspomagający przy przesadzeniu pacjenta na kozła
+ginekologicznego – przede wszystkim podnośnik. Znalezienie prywatnego
+gabinetu ginekologicznego kilkadziesiąt kilometrów od miejsca zamieszkania
+uczestnika. Koszt wizyty i badania 250zł. Ze względu na obecność błony
+dziewiczej u uczestnika – lekarz zaproponował wykonanie usg
+ginekologicznego przez powłoki brzuszne. Jest to związane z trudnością
+wynikającą z utrzymaniem stałej higieny. Uczestnik to osoba niesamodzielna,
+lekarz poinformował, że przebicie błony dziewiczej wiąże się z ryzykiem
+częstszych infekcji intymnych. Ustalono, że badanie ograniczy się do usg
+i jeśli usg wykaże patologię w obrębie badanych narządów – zaplanuje wizytę
+z pełnym badaniem ginekologicznym.
+• Telefoniczna rozmowa z lekarzem wykonującym badanie, ustalenie ścieżki
+postępowania, poinformowanie lekarza o obecności asystentów
+wspomagających przetransportowanie uczestnika na kozła ginekologicznego.
+Ze względu na specyfikę funkcjonowania uczestnika oraz wydłużenie czasu
+badania, prośba o ustalenie sztywnego terminu dotarcia do przychodni.
+• Rozmowa z rodzicem dotycząca ustaleń i przebiegu badania. Badanie
+wykazało niepokojące patologie w obrębie badanych narządów. Lekarz wbrew
+ustaleniom poczynionym na wizycie, odmówił dalszego diagnozowania
+problemu i zaproponował inne rozwiązanie. Asystent spróbował znaleźć
+adekwatne miejsce do badania. Jedyne szpitale jakie umożliwiają takie
+badanie znajdują się w Warszawie.
+• Podjęto próbę umówienia takiej wizyty, niestety stan zdrowia –
+funkcjonowanie psychiczne uniemożliwiło podjęcie wizyty.
+
+--- strona 27 ---
+
+27
+Uczestnik mimo leczenia psychiatrycznego zaczął przejawiać
+dodatkowe, utrudniające dla otoczenia zachowania
+• Asystenci uzyskali informacje dotyczące kontaktu do lekarza psychiatrii, który
+podejmie się leczenia pacjenta przejawiającego trudne zachowania.
+Umówiono wizytę u lekarza psychiatrii. Ze względu na pandemię – wizyta
+mogła odbyć się wyłącznie online. Początkowo mama uczestnika podchodziła
+sceptycznie do takiej formy spotkania. Asystent zaplanował spotkanie, przybył
+na umówioną godzinę do mieszkania uczestnika – połączył się za pomocą
+komunikatora z lekarzem. Spotkanie trwało godzinę, obejmowało rozmowę
+z wszystkimi mieszkańcami. Uczestnik przejawiał wszystkie zachowania,
+również te określone jako nowe i szczególnie niepokojące. W ten sposób
+podobna forma wizyty przyczyniła się do ukazania wszystkich trudnych
+zachowań ponieważ uczestnik czuł się bezpiecznie w miejscu zamieszkania.
+Kolejne wizyty ograniczały się do chwilowego spotkania z lekarzem psychiatrii,
+który po dwóch minutach wyrażał strach przed pacjentem i sugerował
+asystentowi opuszczenie gabinetu.
+Pomijając trudności związane z lękiem lekarza przed pacjentem (sic!) -
+leczenie przyniosło oczekiwany skutek. Pacjent jest bardziej komunikatywny
+dzięki czemu jego potrzeby są lepiej rozumiane, a zapewnienie
+bezpieczeństwa – bardziej skuteczne.
+Uczestnik ma zaplanowany termin na rezonans magnetyczny głowy
+w narkozie
+• Uzyskanie skierowania od lekarza neurologa na wykonanie badania. Na
+prośbę asystenta dopisanie na skierowaniu uwzględnienia trudnych warunków
+przygotowania pacjenta do badania.
+• Asystenci poszukują miejsca, gdzie jest możliwe wykonanie badania
+w ramach świadczenia NFZ. Podczas kontaktu telefonicznego szpitale
+
+--- strona 28 ---
+
+28
+odmawiają badania ze względu na konieczność przyjęcia pacjenta na oddział.
+Asystenci podejmują temat badania osoby neuroatypowej z pracownikiem
+NFZ, na prośbę pracownika asystenci wysyłają maile do szpitali z pytaniem
+o możliwość i termin wykonania badania.
+Mail z pytaniem o możliwość badania trafia również do wiadomości
+pracownika NFZ. Z jednego z szpitali dostajemy odpowiedź zwrotną
+z propozycją wstawienia się na kwalifikację do przyjęcia na oddział. Asystent
+udaje się z rodzicem na wskazaną godzinę kwalifikacji. Asystent planuje
+spotkanie z ordynatorem w taki sposób żeby pacjent był kwalifikowany jako
+pierwszy – wynika to z trudności w oczekiwaniu na wizytę.
+Po przyjściu pod drzwi oddziału asystenta, rodzica i uczestnika, oczekujemy.
+Czekając ponad pół godziny razem z rodzicem staramy się przyśpieszyć
+proces, pytamy o możliwość skorzystania z toalety – dostajemy decyzję
+odmowną; najbliższa toaleta znajduje się 7 pięter niżej. Ostatecznie rodzic
+zostaje przyjęty na rozmowę, uczestnik z powodu braku toalety oddaje mocz
+pod samymi drzwiami oddziału. Podczas spotkania z ordynatorem rodzic
+dostaje informację, że nie ma możliwości wykonania rezonansu
+magnetycznego u osoby, która przejawia takie zachowania. Rozmowa odbywa
+się w jednym w większych krakowskich szpitali. Asystent doradził rodzicowi
+żeby poprosił o odpowiedź pisemną, ponieważ problem zdrowotny dziecka
+jest duży, a wszystkie placówki odmawiają przyjęcia. Ostatecznie, termin
+został wskazany dwa tygodnie później.
+Kilka dni przed przyjęciem asystent dzwoni do ordynatora celem
+doprecyzowania szczegółów przygotowania do badania. Ordynator
+bagatelizuje przedstawione problemy, ale jednocześnie zapewnia, że personel
+zna specyfikę funkcjonowania osób w spektrum autyzmu i na pewno poradzi
+sobie z trudnymi zachowaniami uczestnika. W dniu przyjęcia na oddział
+o godzinie 7:30 asystent wraz z matką i pacjentem zostają przyjęci na oddział.
+Na oddziale dostajemy informację dotyczącą braku możliwości opuszczenia
+
+--- strona 29 ---
+
+29
+oddziału w oczekiwaniu na badanie. Przed nami perspektywa 5h oczekiwania.
+Tym razem mieliśmy ,,szczęście” ponieważ uczestnik nie spał przez dwie
+noce pod rząd, przez większość czasu pobytu na oddziale śpi. Pielęgniarki
+przy zakładaniu wenflonów pytają o pomoc asystenta w zabezpieczeniu
+niepożądanych odruchów. Asystent wraz z opiekunem przez 5h próbuje
+odwrócić uwagę pacjenta od wenflonów, które uczestnik próbuje wyrwać przez
+sen. Podczas mierzenia saturacji – urządzenie zostaje przyczepione do palca
+w sposób bezbolesny – lekarz ponownie budzi pacjenta, co utrudnia proces
+zbadania go. Matka uczestnika po 13 jedzie wraz z nim celem przygotowania
+do narkozy. Badanie przebiega prawidłowo.
+Pacjent przejawia trudne zachowania w wyniku zakażenia w obrębie
+nosa. Matka uczestnika dostaje od lekarza leki uspokajające.
+• Asystenci poznają uczestnika w czasie, kiedy problem zakażenia w obrębie
+nosa jest aktualny. Matka w wyniku napotkanych trudności zaczyna szukać
+pomocy, zaczyna od lekarza pierwszego kontaktu. Lekarz twierdzi, że
+wykonanie wymazu z nosa u pacjenta jest niemożliwe – przekierowuje rodzica
+do psychiatry. Psychiatra zwiększa dawki leków psychotropowych żeby
+odciągnąć uwagę uczestnika od problemu w obrębie nosa. Matka intuicyjnie
+czuje, że to rozwiązanie nie jest odpowiednie.
+• Uczestnik zostaje przyjęty do testowania rozwiązań Himalajów Autyzmu.
+W ramach naszych założeń, zaczynamy od lekarza pierwszego kontaktu,
+który wykluczył możliwość wykonania badania. Rodzic decyduje się podjąć
+próbę. Dostajemy skierowanie do lekarza laryngologa, umawiamy się na
+kolejną wizytę, na której zaplanowano wykonanie wymazu z nosa. W dniu
+wizyty asystent z rodzicem i pacjentem podejmuje próbę wykonania wymazu –
+próba zakończona powodzeniem. Po otrzymaniu wyniku, rodzic podejmuje
+leczenie bakteryjnego zakażenia w obrębie nosa. Zwiększenie dawek leków
+psychotropowych okazuje się zbędne, zgodnie z intuicją rodzica.
+
+--- strona 30 ---
+
+30
+Obecność rodzica w trakcie badań
+Zauważyliśmy tendencję wynikającą z doświadczeń asystentów. Młody rodzic jest –
+co zrozumiałe – pełen strachu i obaw dotyczących przebiegu badań. Te obawy i
+niemoc rodzica w zapanowaniu nad emocjami ma swoje ujście w strachu dziecka
+przed procesem badania. Jest to często strach nieświadomy, nie jest on
+zorientowany jako odpowiedź na konkretne działanie, a często eskaluje się jeszcze
+w domu, w trakcie transportu jako odpowiedź na zachowanie rodzica. Rozwiązaniem
+jest współpraca z asystentem, który będzie towarzyszył dziecku w drodze na badanie
+i wspierał również rodzica. Ważnym argumentem za wyborem asystenta
+w podejmowaniu leczenia jest również fakt utożsamiania rodzica z podejmowanymi
+działaniami. Jeśli dziecko nie rozumie i nigdy nie zrozumie procesu leczenia,
+a będzie kojarzyć rodzica jako osobę decydującą o podejmowaniu leczenia
+(wywołaniu bólu) będzie to negatywnie wpływać na ich relację.
+Doświadczenie pokazuje, że dziecko często niechętnie podejmuje kroki leczenia z
+rodzicem w wyniku trudnych doświadczeń. Często odbiorcą ataków agresji jest
+rodzic, który spędza całe życie ze swoim dzieckiem. Asystent, który na co dzień
+kojarzony jest przez uczestnika jako osoba, która zabiera na spacer, pomaga
+podczas posiłku (silny motywator dla uczestników) - ma większe
+prawdopodobieństwo skuteczności w podjęciu leczenia, ponieważ podejmowanie
+leczenia jest tylko procentem spotkań w ramach usług asystenckich.
+Rekomendacje i zalecenia
+Jako asystenci testujący ,,Himalaje Autyzmu” marzymy o procedurze medycznej,
+która uwolni rodziców od stresu związanego z podejmowaniem leczenia osób
+neuroatypowych przejawiających trudne zachowania. Z pełną świadomością
+przyznajemy, że nie będzie to zadanie łatwe. Trudność będzie wynikać z faktu, że
+grupa pacjentów neuroatypowych jest szalenie różnorodna. Nie możemy porównać
+wsparcia tej grupy w kontekście żadnego działania dostępnego dla pacjentów
+w Polsce. Nawet jeśli istnieją ścieżki leczenia osób z nowotworami, badań
+
+--- strona 31 ---
+
+31
+endoskopowych i wszystkich innych, odnoszą się one do pacjentów neurotypowych,
+dla których zrozumienie procesu leczenia i przebieg poszczególnych działań jest
+możliwy do zrozumienia. Trud podjęcia leczenia osób neuroatypowych bez względu
+na rodzaj badania spada na rodzica. Nawet jeśli pacjent dysponuje wiedzą
+i działaniem doświadczonego asystenta, nie ma pewności prawidłowego przebiegu
+leczenia w danym miejscu. Nie wynika to z braku rozwiązań, a po prostu z braku
+zrozumienia, braku czasu personelu i niechęci do skupienia uwagi na konkretnym,
+indywidualnym pacjencie. Podjęcie skutecznego leczenia w danym miejscu wymaga
+od asystenta przeprowadzenie rozmowy z człowiekiem, który pełni rolę lekarza.
+Dzięki chęci zrozumienia funkcjonowania pacjenta neuroatypowego wizyta będzie
+miała prawidłowy przebieg, a całość procesu odbędzie się z uwzględnieniem
+dobrostanu pacjentów, personelu, rodzica i asystenta.
+Żeby jasno uzasadnić metodologię naszych działań, postanowiliśmy zawrzeć ją
+w poniższych punktach:
+Zacznij od wsparcia lekarza pierwszego kontaktu
+Początek leczenia zwykle zależy od lekarza pierwszego kontaktu.
+Pamiętaj o ustawach, które pomogą w leczeniu Twojego dziecka
+Godność pacjenta neuroatypowego i pacjenta neurotypowego jest taka sama.
+Agresja i autoagresja dla osób, które nie znają specyfiki funkcjonowania osoby
+z niepełnosprawnością jest odbierana kategoriami pejoratywnymi. Tymczasem, to
+często jedyne możliwości komunikacji pacjenta z otaczającym go światem.
+Osoba w spektrum autyzmu od wieku dziecięcego idzie na kompromisy dotyczące
+zrozumienia swojego najbliższego otoczenia. Zwykle zachowania, które przejawia
+w wieku dorosłym to ogrom pracy rodziny i otoczenia.
+Takie myślenie o osobie z niepełnosprawnością pozwala łagodniej interpretować
+zachowania uczestnika.
+
+--- strona 32 ---
+
+32
+Adaptacja
+Nie lubimy słowa adaptacja, ale na potrzeby tej wskazówki prosimy aby
+interpretować go dwustronnie jako metodę dopasowania miejsca do potrzeb osoby
+z niepełnosprawnością i – w ramach możliwości także w drugą stronę. Im więcej
+wizyt uczestnika w placówkach zdrowia tym łatwiej będzie mu zaakceptować
+miejsce. Mamy na myśli wizyty adaptacyjne, czyli takie, które dotyczą tylko
+zaznajomienia się z miejscem, nie wszystkie wizyty muszą być kojarzone z bólem.
+Warto będzie warunkować u pacjenta różne rozwiązania dotyczące kwestii leczenia,
+np. poprzez pozytywne skojarzenie lusterka stomatologicznego. Osiągnięcie sukcesu
+w zakresie leczenia to również wsparcie nauczycieli. Nie zdołamy wprowadzić zmian
+w zakresie edukacji specjalnej, które będą kłaść nacisk na pracę w podejmowaniu
+leczenia przez uczniów. Cytując rodzica uczestnika testu: ,,Wolałabym żeby przez
+lata nauki nauczyli moje dziecko przygotować się do wizyty u stomatologa niż przez
+lata próbować uczyć pisać i czytać”. Właściwy kontakt z nauczycielami oraz innymi
+terapeutami w ramach podejmowanych projektów może przyczynić się do
+wypracowania ścieżki postępowania u lekarza, tzw. instrukcji wsparcia czyli zbioru
+sugestii dla osób z otoczenia, które ułatwią kontakt. Instrukcja jest także dobrym
+narzędziem w przypadku osób poruszających się samodzielnie – w razie trudnej
+sytuacji posiadanie takiego rozwiązania jest kluczem do pomocy. Instrukcja wsparcia
+to przejrzysta informacja dotycząca czterech obszarów: dane kontaktowe, aktualne
+choroby; zażywane leki; co wywołuje negatywne reakcje (czego nie lubię)
+preferencje dotyczące nawiązania kontaktu tj. jeśli osoba z niepełnosprawnością ma
+nadwrażliwość sensoryczną będzie unikać kontaktu cielesnego; co wywołuje
+pozytywne reakcje (co lubię) – przykładowa instrukcja wsparcia znajduje się
+w aneksie poniżej.
+Przykładem adaptacji jest rozwiązanie wykorzystywane przez rodzica naszego
+uczestnika. Rodzic zabierał na własne wizyty swoje dziecko przez wiele lat dzięki
+czemu już w okresie nastoletnim wspólna droga do lekarza nie miała złych konotacji.
+
+--- strona 33 ---
+
+33
+Jeśli możesz, ustalaj wizyty mailowo
+Ważnym elementem w podejmowaniu leczenia w ogóle jest udzielanie informacji,
+zadawanie pytań w formie pisemnej, która jest dużo bardziej wiążąca niż rozmowa
+telefoniczna. Nasze doświadczenia pokazują, że załatwianie spraw telefonicznie nie
+wystarczy. Wynika to z faktu, że wizyty najczęściej ustala pracownik rejestracji
+w danej przychodni.
+Jeśli chcemy poinformować lekarza o potrzebie precyzyjnego ustalenia wizyty
+musimy prosić pracownika rejestracji o numer telefonu do lekarza. Proces ustalania
+wizyt telefonicznie zajmuje często połowę dnia. Skontaktowanie się bezpośrednio
+z lekarzem w czasie jego pracy często odrywa go od aktualnych działań co jest dla
+niego frustrujące i ostatecznie nie przynosi właściwego efektu. Mailowa prośba do
+rejestracji o przekazanie informacji odnośnie uczestnika pozwoli zapoznać się
+lekarzowi w wolnym czasie. Warto używać tej formy jako pewnego szablonu
+w zależności od typu wizyty/typu leczenia. Jeżeli pacjent przejawia trudne
+zachowania, przez telefon możemy uzyskać odmowę leczenia jako trudność wobec
+dobrostanu innych pacjentów.
+Umawianie wizyty pisemnie ,,ma masę” dzięki czemu skuteczność tego rozwiązania
+jest znacznie wyższa. W trudnych sytuacjach, kiedy nie uzyskamy odpowiedzi na
+maila, mamy pisemny dowód podejmowanych prób i wówczas możemy prosić
+o wsparcie pracownika NFZ w znalezieniu placówki, która podejmie się leczenia.
+Podsumowując w mailu powinny być zawarte najważniejsze informacje, takie jak –
+imię, nazwisko, krótki opis funkcjonowania/instrukcja wsparcia, numer skierowania
+bądź skan skierowania, skan orzeczenia oraz informację zawartą w mailu o stopniu
+znacznym oraz skan pełnomocnictwa rodzica/opiekuna.
+Nie jesteś filarem, który musi dźwigać wszystko
+Drogi rodzicu/opiekunie osoby z niepełnosprawnością nie pozwól aby niepowodzenia
+były Twoją winą. Myśl o sobie i swojej psychice, dbaj o emocje. Zaplanuj najpierw
+swoje leczenie jeśli źle się czujesz. Poszukaj systemowych form wsparcia, np.
+
+--- strona 34 ---
+
+34
+asystent rodziny z dzieckiem z niepełnosprawnością. Jeśli Twoje dziecko jest dorosłe
+być może w Twoim miejscu zamieszkania jest realizowany program usług
+asystenckich.
+Przygotuj się na ,,transmisję”
+Symboliczna granica zakończenia edukacji w naszym kraju oznacza często
+wykluczenie osoby z niepełnosprawnością z życia publicznego. Jeśli Twoje dziecko
+zbliża się do 24go roku życia poszukaj kolejnej drogi wspierającej jego rozwój, np.
+uczestnictwo w Środowiskowym Domu Samopomocy, zajęcia w ramach udziału
+w projektach aktywizujących prowadzonych przez organizacje pozarządowe.
+Transmisja to przede wszystkim przeniesienie leczenia z placówek ,,dla dzieci” do
+placówek dla dorosłych osób z niepełnosprawnością. Zapytaj lekarza, placówki
+zdrowia do której uczęszcza Twoje dziecko o miejsce, w którym będzie można
+kontynuować leczenie. Najlepiej mailowo.
+Rekomendacje dla instytucji
+Asystent zna pacjenta i jest *tu żeby pomóc
+Jako doświadczeni asystenci pamiętamy czas, kiedy pytano nas kim jesteśmy i co tu
+robimy. (*Tu: placówka zdrowia, urząd, instytucja publiczna). Cieszymy się, że nasze
+tłumaczenia nie poszły na marne bowiem z roku na rok obecność asystenta jest
+odbierana coraz lepiej. Doświadczony asystent zadba o dobrostan uczestnika
+z niepełnosprawnością, a tym samym o komfort dla innych pacjentów. Im lepsza
+współpraca asystenta i personelu, tym lepszy przebieg wizyty.
+Dostępność to nie definicja, to odpowiedź na trudności osób
+z niepełnosprawnościami
+Placówka dostępna dla osób z niepełnosprawnościami to nie tylko miejsce, w którym
+znajduje się podjazd, winda albo schodołaz w piwnicy. To przede wszystkim personel
+i kadra posiadająca wiedzę o ograniczeniach osób z niepełnosprawnościami. Ilekroć
+
+--- strona 35 ---
+
+35
+słyszymy słowo ,,dostępność”; ,,dostępny dla” obawiamy się, ,,że tylko w teorii”. Jeśli
+interpretować dostępność przez pryzmat definicji okaże się, że nie istnieje miejsce
+dostępne dla wszystkich osób z niepełnosprawnościami. Największą barierą
+dostępności jest bariera braku wiedzy z zakresu funkcjonowania osób z
+niepełnosprawnością. Odpowiednie przygotowanie personelu to klucz do
+dostępności placówki.
+Wystawienie skierowania to za mało
+Doświadczenie z testowania naszej innowacji pokazało, że istnieje wiele metod
+odmowy leczenia osoby z niepełnosprawnością. Na wiele z nich asystent znajduje
+rozwiązanie, ale nie wtedy, kiedy dostaje informację, że skierowanie ma
+nieodpowiedni symbol; skierowanie powinno sformułowane jako jednodniowy pobyt
+na oddziale; powinno zawierać dopisek: w trudnych warunkach itd. Podobne sytuacje
+powodują, że nasze działania spalają na panewce. Jeśli lekarz do którego
+przychodzimy z skierowaniem naprawdę chce podjąć się leczenia, wówczas
+sugeruje jaki zapis powinien dokładnie znajdować się na skierowaniu żeby badania
+w danej placówce były możliwe. Niestety, nawet przychylność lekarza wymaga od
+rodzica/opiekuna/asystenta powrotu do lekarza kierującego celem negocjowania
+skierowania. To krok w tył na ścieżce leczenia osoby z niepełnosprawnością.
+Pierwsza środa miesiąca
+Z punktu widzenia ilości problemów uczestników, najlepszym rozwiązaniem wydaje
+się ustalenie jednego dnia w miesiącu dla osób z danego regionu na wykonanie
+badań u osób przejawiających trudne zachowania. Podstawowa interpretacja tego
+pomysłu wydaje się jednak nielogiczna. Jeśli pacjent jest osobą z
+niepełnosprawnością – jego wizyta może trwać dłużej niż zaplanowano, a przez to
+oczekiwanie innych pacjentów wydłuży się. Z drugiej jednak strony – znając reakcje
+personelu na pojawienie się osoby z niepełnosprawnością pod gabinetem.
+
+--- strona 36 ---
+
+36
+Podsumowanie
+Założenia związane z testem metody pracy ,,Himalaje Autyzmu” zostały
+zrealizowane. Wskazaliśmy rodzicom/opiekunom metody, które pozwolą im
+skutecznie wdrożyć leczenie.
+Mając na względzie większość nierealnych planów dotyczących wsparcia osób
+z niepełnosprawnościami nie chcieliśmy obiecywać systemowego działania, np.
+wdrożenia procedury, bo przede wszystkim placówki zdrowia potrzebują zdobyć
+gruntowną wiedzę dotyczącą funkcjonowania i wsparcia pacjenta neuroatypowego.
+Jeszcze kilka lat temu w szpitalach pytano asystentów kim są i po co, 15 minut
+później nasza praca odpowiadała za nas. Podobnie w sytuacjach, kiedy w okresie
+pandemii - mimo próśb rodzica - nie wpuszczano nas do gabinetu. Dostawaliśmy
+polecenie żeby usiąść i poczekać.
+Nie usiedliśmy, czekaliśmy przed drzwiami wiedząc, że za chwilę lekarz poprosi nas
+o wsparcie. Obecność asystenta to także brak konieczności urlopu z pracy jednego
+z rodziców, co zwiększa możliwość częstszych, rutynowych wizyt.
+Nie możemy podsumować działań bez komentarza dotyczącego naszych relacji
+z rodzicami uczestników. To najlepszy efekt naszego działania kiedy na ostatnich
+wizytach staliśmy spokojnie obserwując rodzica pełnego sił i wiedzy, który jasno
+i klarownie przedstawia objawy i potrzeby, możliwości swojego dziecka w kontekście
+leczenia. Zadawali pytania, wymagając odpowiedzi. Nie pozwalali odesłać się spod
+drzwi gabinetu, pytali o pisemne uzasadnienie odmowy leczenia. Postawa
+rodziców/opiekunów to element, którego nie spodziewaliśmy się jako wyniku testu.
+Początkowo, założeniem testowania było uczestnictwo dwojga asystentów podczas
+całości przedsięwzięcia. Znając problemy w podejmowaniu leczenia, ale również
+swego rodzaju ,,wypalenie” rodziców, wspieraliśmy duet rodzic-dziecko. Większość
+rodziców naszych uczestników była albo spolegliwa albo wybuchowa, ale żadna z tej
+postawy nie przynosiła efektu. Chcemy podzielić się naszym doświadczeniem w tym
+względzie. Często z wypaleniem kojarzy się postawa spolegliwa, miła, ale
+
+--- strona 37 ---
+
+37
+niewymagająca. Tymczasem, owa wybuchowość też wynika z wypalenia, z braku sił
+i cierpliwości – stąd rodzic nie panuje nad emocjami. Warto dodać, że umówiona
+wizyta u lekarza dla asystentów to po prostu plan działania, który nie spędza nam
+snu z powiek. Korzystając z profilu behawioralnego i instrukcji wsparcia, scenariusza
+wsparcia planujemy działania, które naszym zdaniem przyczynią się do rezultatu.
+Praca asystenta podczas testu to również wsparcie rodzica. Przyłożyliśmy wielką
+wagę do tego żeby rodzic mógł spać spokojnie na kilka nocy przed badaniem/wizytą,
+odciążaliśmy go żeby zminimalizować stres związany z wizytą. Stres jest wynikiem
+nieudanych prób podejmowania leczenia duetu rodzic/dziecko
+z niepełnosprawnością. Nie zagwarantujemy, że przeczytanie naszego raportu
+pozwoli rodzicowi samodzielnie (bez udziału asystenta) podejmować leczenie ze
+swoim dzieckiem, ale jesteśmy pewni, że na pewno pomoże. Stres rodzica zawsze
+wpływa na jego dziecko w trakcie wizyty. Nie jest to myślenie magiczne,
+w większości przypadków, po wielu różnych doświadczeniach podjęcie leczenie
+w obecności asystenta przychodzi łatwiej. Oczywiście, wszystko zależy od ilości
+poprzednich doświadczeń. Jeśli rodzic zacznie podejmować leczenie w odpowiedni
+sposób ze swoim dzieckiem we wczesnym wieku korzystając z naszych rozwiązań,
+będzie miał mniej problemów z dzieckiem dorosłym. Teoretycznie.
+W praktyce często jest tak, że granica zakończenia edukacji przez dziecko wiąże się
+również z poszukiwaniem nowych miejsc leczenia. Szpitale dziecięce i poradnie
+z profilem pomocy dla dzieci z niepełnosprawnością nie mogą wspierać dorosłych
+pacjentów.
+Schemat transmisji wsparcia dziecka z niepełnosprawnością w wsparcie dziecka
+dorosłego w dalszym ciągu jest problematyczny.
+Poszukując nowego miejsca, gdzie nikt nie zna pacjenta, jego zachowań, rodzice
+często są sceptyczni w podejmowaniu leczenia. Niepewność rodzica przenosi się
+również na brak poczucia bezpieczeństwa przez pacjenta.
+
+--- strona 38 ---
+
+38
+Wracając do efektu testu, rodzice stojąc z jednym z asystentów przy okienku
+w rejestracji, często wycofywali się w kierunku drugiego asystenta mówiąc: ja tak nie
+potrafię rozmawiać. Rodzic miał na myśli postawę, w której asystent w sposób
+zrównoważony egzekwuje prawa osoby z niepełnosprawnością w podejmowaniu
+leczenia. Takie doświadczenia z rodzicami, pod koniec testu pokazały nam, że
+podczas ostatnich wizyt asystent stał obok, a rodzic potrafił z pełną świadomością
+i cierpliwością planować ścieżkę leczenia. Rozpierała nas duma.
+Doświadczony asystent osoby z niepełnosprawnością w większości przypadków jest
+bardzo dużą pomocą. Zaplanowanie wizyty, przejazdu i bezpiecznego powrotu do
+domu to wkład asystenta w proces leczenia osoby z niepełnosprawnością. Praca
+asystenta dla osoby dorosłej wciąż nie jest rozwiązaniem systemowym. Projekty
+asystenckie, podobnie jak większość projektów na rzecz osób
+z niepełnosprawnościami przejawiają tendencję do wsparcia osób
+wysokofunkcjonujących. Mamy nadzieję, że nasz test ukazuje szczególną moc
+sprawczą na rzecz osób niskofunkcjonujących, opiekunów oraz wsparcia personelu
+poprzez dbałość o dobrostan pacjentów.
+W przypadku dzieci do 16 roku życia rodzice mogą skorzystać z rozwiązania
+systemowego – asystenta rodziny z dzieckiem z niepełnosprawnością, jak również
+z projektów asystenckich w ogóle. Decyzje dotyczące leczenia zawsze zależą od
+możliwości i stanu zdrowia rodzica. Nie chodzi jednak o to aby obarczać rodzica
+niepowodzeniami. Odpowiedzialność za proces leczenia osoby
+z niepełnosprawnością, która nigdy nie będzie samodzielna to również odpowiednie
+wsparcie rodzica w zrozumieniu procesu leczenia i podaniu jasnych wskazówek
+dotyczących kolejnych planów.
+Brak wiedzy personelu dotyczącej funkcjonowania osoby, która przejawia trudne
+zachowania jest źródłem stresu dla rodzica i asystenta. Gdyby osoby wspierające
+miały możliwość zaplanowania czynności; przygotowania planu B w sytuacji gdyby
+uczestnik nie spał i nie potrafiłby leżeć, siedzieć – przygotowanie byłoby o wiele
+łatwiejsze. Jak duża musi być niewiedza personelu, który nie zdaje sobie sprawy, że
+
+--- strona 39 ---
+
+39
+osoba przejawiająca zachowania agresywne i autoagresywne stwarza realne
+zagrożenie nie tylko dla siebie,
+ale również dla innych pacjentów i całego personelu. Gdyby pacjent nie spał, miałby
+potrzebę ruchu – spaceru; oddział neurologiczny nie jest najlepszym miejscem na
+eksplorowanie terenu zwłaszcza w dobie pandemii, jak wtedy postąpiłby personel?
+Zapewne tak jak zawsze, czyli w momencie zagrożenia zdrowia pacjentów uchyliłby
+procedury, które w żaden sposób nie odpowiadają na potrzeby i reakcje zachowania
+pacjentów neuroatypowych.
+Aneks
+Określenie profili behawioralnych
+W ramach projektu ,,Himalaje Autyzmu” określono 9 profili behawioralnych. Profil
+behawioralny to formularz diagnozy uzupełniany przez asystentów podczas
+pierwszego spotkania z rodzicem/opiekunem prawnym. Profil behawioralny to także
+dokument, który jest modyfikowany adekwatnie do obecnej sytuacji uczestnika/jego
+rodziny/otoczenia. W spotkaniu brało udział 2 asystentów z uwagi na potrzebę
+poznania trudnych zachowań uczestnika. Jeden z asystentów notował informacje od
+bezpośredniego opiekuna. Drugi asystent podejmował próbę kontaktu z uczestnikiem
+,,na żywo”. Dzięki szczegółowym relacjom opiekunów asystenci ustalili najważniejsze
+informacje, które będą potrzebne na dalszym etapie współpracy. Profil behawioralny
+zawiera następujące informacje: ogólne informacje o uczestniku – kilka słów
+dotyczących uczestnika, wieku, jego miejsca zamieszkania, osób wspierających.
+Przebieg edukacji to podpunkt ważny z punktu widzenia funkcjonowania uczestnika
+poza domem – często pierwsze objawy trudnych zachowań odnotowują nauczyciele.
+Funkcjonowanie uczestnika w szkole daje obraz zachowań na różnych etapach życia
+i najważniejszym z punktu widzenia funkcjonowania osób ze spektrum autyzmu –
+rozpoczęcia okresu dojrzewania. To okres, w którym często pojawiają się nowe
+zachowania, a także problemy zdrowotne wynikające z tego procesu. Podpunkt
+dotyczący problemów zdrowia psychicznego i fizycznego określa jednostki
+
+--- strona 40 ---
+
+40
+chorobowe, które zostały zdiagnozowane w trakcie życia uczestnika. Niestety, dla
+wielu opiekunów i lekarzy prowadzących sygnały wysyłane przez pacjentów nie są
+czytelne i możliwe do podziału na zdrowie psychiczne i somatyczne. Często rodzice
+doszukują się w reakcjach swoich dzieci próby zakomunikowania bólu czy
+dyskomfortu, ale jedyną możliwością jest rozszerzenie diagnostyki uczestnika
+z przyjęciem na oddział szpitalny włącznie. Takie próby często kończyły się
+niepowodzeniem w wyniku braku rozwiązań systemowych dla pacjentów
+przejawiających zachowania nieakceptowane społecznie. Funkcjonowanie społeczne
+to informacje dotyczące reakcji uczestnika na konkretne sytuacje, konkretne miejsca,
+relacje z innymi ludźmi. Podpunkt podejmowanie leczenia opisuje próby oraz często
+niepowodzenia w kontakcie rodziny z specjalistami różnych dziedzin oraz
+wyjaśnienie zachowań, które przyczyniły się do nieskutecznego leczenia.
+Aktualne problemy to zbiór informacji dotyczących najważniejszych spraw, które
+utrudniają funkcjonowanie uczestnika/jego rodziny/środowiska.
+Scenariusz wizyty to kilka informacji/rad udzielonych przez środowisko uczestnika,
+które mogą pozytywnie wpłynąć na przebieg wizyty i przyczynić się do skutecznego
+leczenia.
+Trudności w podejmowaniu leczenia
+1. Trudności z punktu widzenia pacjenta neuroatypowego
+Obserwacja zachowań trudnych uczestnika, które pojawiają się w odpowiedzi na
+bodziec zewnętrzny pozwala zakładać, że są to sytuacje, które wywołują dyskomfort.
+Dla osób o niestandardowym przetwarzaniu sensorycznym nowy, nieznany dotąd
+dźwięk, zapach, światło może wywoływać sytuację stresującą, która jest
+niezrozumiała dla osoby o standardowym przetwarzaniu bodźców sensorycznych.
+Wnikliwa analiza uczestników pozwala na zaplanowanie wizyty w taki sposób żeby
+zminimalizować stres związany z nowymi sytuacjami.
+2. Trudności wynikające z akceptacji zachowań trudnych
+
+--- strona 41 ---
+
+41
+W naszym teście nie chcemy zmuszać personelu do podejmowania działań na rzecz
+osób przejawiających trudne zachowania. Chcemy przyczynić się do wsparcia
+procesu leczenia jako asystenci, którzy poznali funkcjonowanie osoby
+z niepełnosprawnością. Nie jesteśmy zwolennikami pretensjonalnego,
+problemogennego podejścia do kwestii leczenia osób przejawiających trudne
+zachowania. Chcemy znaleźć kompromis pomiędzy zachowaniem uczestnika,
+a umiejętnością akceptacji tych zachowań przez innych pacjentów i personel.
+Dołożymy wszelkich starań żeby każda wizyta odbywała się nie tylko
+z uwzględnieniem dobrostanu naszego uczestnika, ale także osób, które w danym
+dniu, o danym czasie korzystają z leczenia. Ważnym elementem pracy jest dla nas
+również wymiar edukacyjny, zwłaszcza dla osób, które nie potrafią zrozumieć
+trudnego zachowania, zadając pytania i próbując pomóc.
+Wiek pacjenta, a dostępność leczenia
+Podczas wyboru grupy docelowej dla naszego projektu postanowiliśmy zbadać
+potrzeby i możliwości leczenia osób ze spektrum na różnym etapie życia.
+Spodziewaliśmy się, że najmniej zgłoszeń będzie dotyczyło dzieci. Wynika to
+z łatwości podejmowania leczenia poprzez wykorzystanie metod siłowych,
+ograniczających swobodę bagatelizując dobrostan pacjenta. Niewielu rodziców liczy
+się z konsekwencjami takich działań na przyszłość. Rodzice nastolatków
+doświadczają nowych zachowań, które sprawiają szereg trudności i tym samym
+uniemożliwiają próby leczenia poprzez przymus – wywołując zachowania trudne,
+które mogą na długie lata utrudniać podejmowanie leczenia; badań profilaktycznych.
+Największa liczba osób zainteresowanych udziałem w projekcie to rodzice dorosłych
+osób ze spektrum autyzmu, którzy również nie zdawali sobie sprawy z faktu, że
+kiedyś będą słabsi od swoich dzieci i nie zdołają przy każdym badaniu ograniczać ich
+ruchów. Dlatego bardzo ważne jest edukowanie rodziców i szukanie metod
+o wzmocnieniu pozytywnym żeby na kolejnych etapach życia minimalizować
+zachowania trudne w odpowiedzi na leczenie.
+
+--- strona 42 ---
+
+42
+Co przeszkadza?
+Nie istnieją żadne rozwiązania systemowe dla podejmowania leczenia dla osób
+przejawiających zachowania trudne. Brak wiedzy, strach przed kontaktem lekarzy
+z dorosłymi pacjentami. Rozumiemy, że sytuacje podejmowania leczenia stanowią
+spore wyzwanie dla lekarzy, uważamy, że wielu sytuacji można uniknąć stosując
+rozwiązania, które będą rekomendacją na zakończenie testu.
+Co ułatwia?
+Od 2018 roku istnieje możliwość skorzystania z świadczeń zdrowotnych poza
+kolejnością dla osób z niepełnosprawnością w stopniu znacznym. To również okazja
+żeby w trakcie umawiania wizyty powiedzieć w rejestracji kilka informacji
+dotyczących pacjenta.
+Wielu pracowników rejestracji daje możliwość indywidualnego kontaktu z lekarzem
+celem zapoznania go z zachowaniami trudnymi, jakie pacjent może prezentować
+podczas wizyty.
+Bazujemy na kontakcie z lekarzem i hamowaniem roszczeniowych postaw dzięki
+czemu wielu lekarzy ufa nam i respektuje nasze rozwiązania przyczyniając się do
+umówienia wizyty lekarskiej. Należy zaznaczyć, że otwartość lekarzy, na tym etapie
+są to lekarze pierwszego kontaktu, często jest zależna od znajomości zachowań ze
+spektrum autyzmu, posiadania w rodzinie krewnego z niepełnosprawnością
+intelektualną. Wielu rodziców naszych uczestników ma dobre relacje z lekarzami
+pierwszego kontaktu, którzy chętnie dzielą się z nami wiedzą i możliwością
+rozwiązań problemów. Jednocześnie wykazują otwartość na nasze propozycje
+w podejmowaniu leczenia osób przejawiających trudne zachowania. Coraz więcej
+lekarzy rozumie obecność asystenta podczas wizyty, umiejętnie wykorzystując jego
+obecność i doświadczenie w przeprowadzeniu wizyty. Mamy nadzieję, że powyższe
+sytuacje przyczynią się do efektywnego rozwiązywania problemów i stworzenia
+metody pracy ułatwiającej leczenia osób przejawiających zachowania trudne
+
+--- strona 43 ---
+
+43
+Poniżej profile behawioralne uczestników testu
+Uczestnik 1
+Ogólne informacje o uczestniku
+Dziecko w wieku przedszkolnym (5 lat) Trafił do pogotowia opiekuńczego
+z powodu choroby psychicznej obojga rodziców. Ciotka chłopca wyraziła chęć
+opieki nad dzieckiem, ale w trakcie opieki zaczęły pojawiać się problemy
+w funkcjonowaniu: krzyk, izolacja społeczna, nieuzasadniony strach. Opiekunka
+pogotowia podejmuje liczne próby wsparcia chłopca adekwatnie do jego potrzeb
+i możliwości.
+Przebieg edukacji
+Uczęszcza na zajęcia do przedszkola w grupie dla dzieci ze spektrum autyzmu.
+Zajęcia są prowadzone na podstawie indywidualnego programu terapii. W wyniku
+pandemii pojawiły się trudności w regularnym uczęszczaniu na zajęcia. Brak
+regularności zajęć spowodował przerwanie schematu dnia.
+Problemy zdrowia psychicznego i fizycznego
+Chłopiec z powodu zaburzeń rozwojowych nie potrafi korzystać z toalety.
+Wypróżnianie odbywa się w pozycji stojącej tylko w jednym miejscu w domu przy
+założonym pampersie. Powyższy problem nie został zdiagnozowany na podstawie
+objawów klinicznych. Przyczyny takiego zachowania poszukują w zaburzeniach
+rozwojowych dziecka.
+Funkcjonowanie społeczne
+Chętnie podejmuje kontakt z osobami, które akceptuje. Nowe osoby początkowo
+ignoruje, potrzebuje długiego czasu do podjęcia kontaktu. Nawiązanie relacji
+zawsze odbywa się ze strony chłopca. Zainicjowanie relacji ze strony nowej osoby
+w otoczeniu może wywołać zachowanie trudne.
+Podejmowane leczenie
+
+--- strona 44 ---
+
+44
+Uczestnik 1
+W najbliższych miesiącach zaplanowano wizytę w poradni dla dzieci ze spektrum
+autyzmu.
+Zachowania trudne mają wpływ na profilaktykę leczenia, zwłaszcza w okresie
+pandemii.
+Aktualne problemy
+Nie akceptuje zmian w gabinecie lekarskim do którego przychodzi, preferuje
+współpracę z jednym lekarzem przez dłuższy okres czasu
+Podczas wyjścia z domu nie podąża za opiekunem, sam obiera kierunek drogi,
+każde narzucenie trasy przejścia powoduje histerię, agresję, krzyk, próbę ucieczki.
+Chłopiec nie ma poczucia niebezpieczeństwa np. wejścia pod nadjeżdżający
+samochód. Dla opiekuna chłopca każde wyjście z domu oznacza konieczność
+dodatkowej osoby do pomocy, która w razie trudnego zachowania przyjedzie
+samochodem, do którego chłopiec chętnie wsiada. Jazda autem łagodzi jego
+trudne zachowania
+Scenariusz wizyty
+Do realizacji wizyty potrzebny jest udział co najmniej jednego asystenta, który
+zaplanuje działania począwszy od wyjścia uczestnika z domu, przejazdu,
+motywację uczestnika do wejścia do budynku i zaplanowanie trasy przejścia do
+gabinetu lekarza. Jeśli będzie to nowy lekarz asystent będzie potrzebować zdjęcia
+lekarza w celu zmniejszenia dystansu podczas realnego spotkania.
+
+Uczestnik 2
+Ogólne informacje o uczestniku
+Dziecko w wieku 10 lat. Diagnoza ze spektrum autyzmu. Chłopiec ma brata 7 lat
+starszego oraz siostrę w wieku 8 lat. Brat chłopca również jest osobą ze spektrum
+
+--- strona 45 ---
+
+45
+Uczestnik 2
+autyzmu. Bracia diametralnie różnią się pod względem potrzeb. Opisywany
+uczestnik jest osobą, która nie mówi, unika kontaktu z ludźmi, ma trudności
+w komunikowaniu się z rodzicami; w przeciwieństwie do brata nie potrafi
+zakomunikować bólu. Problemy zdrowia fizycznego eskalują się poprzez
+zachowania trudne. Matka chłopca nie podejmuje leczenia ponieważ ma trudności
+z interpretacją zachowania. Matka skupiona na leczeniu starszego syna nie
+prowadzi leczenia profilaktycznego. Opiekę nad chłopcem sprawuje mama, tato
+w ciągu dnia jest w pracy.
+Przebieg edukacji
+Uczęszcza do szkoły specjalnej.
+Problemy zdrowia psychicznego i fizycznego
+Trudne zachowania nie mają jasnego pochodzenia. Rodzice nie potrafią jasno
+zinterpretować zachowania, które może wskazywać na ból w danym obszarze.
+Matka nie jest pewna, czy pojawienie się trudnego zachowania jest wynikiem
+problemu behawioralnego/psychicznego czy fizycznego bólu
+Funkcjonowanie społeczne
+Unikanie dotyku, brak kontaktu wzrokowego, nie reaguje na imię, brak komunikacji
+werbalnej, nieczytelne dla środowiska wyrażanie uczuć i emocji, charakterystyczne
+fiksacje uniemożliwiające nawiązanie kontaktu
+Podejmowane leczenie
+Tylko w nagłych przypadkach przy pojawieniu się objawów somatycznych; leczenie
+odbywa się poprzez ograniczenie zachowań mających wpływ na bezpieczeństwo
+uczestnika i personelu
+Aktualne problemy
+Ucieczki, brak współpracy dziecka z rodzicem, nieprzewidywalne zachowania,
+przejawy agresji wobec rodzica i otoczenia
+
+--- strona 46 ---
+
+46
+Uczestnik 2
+Scenariusz wizyty
+Z powodu nieczytelnej komunikacji werbalnej i niewerbalnej, potrzeba wykluczenia
+chorób somatycznych poprzez badania.
+Uwzględnienie dobrostanu uczestnika poprzez obserwację funkcjonowania
+w placówkach zdrowia (pojawienie się zachowań trudnych w odpowiedzi na
+skojarzenie miejsca, np. z bólem; nieoczekiwanym bodźcem).
+Potrzeba utrzymania dobrostanu uczestnika w podejmowaniu leczenia w celu
+wykluczenia w przyszłości nowych zachowań trudnych (np. autoagresja)
+
+Uczestnik 3
+Ogólne informacje o uczestniku
+Uczestnik w wieku 14 lat. Brak mowy werbalnej, dobra komunikacja niewerbalna
+z rodzicami. Nie ma rodzeństwa. Z powodu zachowań charakterystycznych dla
+osób ze spektrum autyzmu rodzina musiała przeprowadzić się z mieszkania
+w bloku do domu. Mieszkają w dużej odległości od miasta, w którym znajduje się
+szkoła odpowiadająca na potrzeby uczestnika.
+Rodzice pracują, matka obawia się przyszłości związanej z zakończeniem edukacji
+przez jej syna. Zdaje sobie sprawę z faktu, że zakończenie edukacji syna wiąże się
+z zakończeniem pracy mamy. Rodzice sprawują opiekę samodzielnie, nie
+posiadają wsparcia z zewnątrz, głównie z powodu braku zrozumienia
+funkcjonowania osób ze spektrum autyzmu
+Przebieg edukacji
+Rodzicom odmówiono opieki w szkole na terenie miejsca zamieszkania. Od
+początku edukacji chłopiec uczęszcza do szkół do dużego miasta.
+
+--- strona 47 ---
+
+47
+Uczestnik 3
+Problemy zdrowia psychicznego i fizycznego
+Problemy trawienne wymagające diagnostyki; trudności w podejmowaniu leczenia
+profilaktycznego – zależne od odpowiedniego podejścia personelu. W większości
+przypadków leczenia odbywa się siłowo poprzez ograniczenie niebezpiecznych
+zachowań.
+Funkcjonowanie społeczne
+Mimo braku komunikacji werbalnej, uczestnik funkcjonuje w schemacie
+narzuconym przez rodziców – słucha wskazówek, na prośbę zostawia rzeczy,
+które mogą mu zaszkodzić. Chłopiec nie wykazuje zainteresowania żadnymi
+zabawkami. Sprawnie posługuje się łyżką i widelcem.
+Czasami potrafi opanować trudne zachowanie poprzez umiejętność wyciszenia
+w konkretnym pomieszczeniu. Słuchając słów matki, która opisuje trudne
+zachowania, inicjuje kontakt poprzez złapanie za rękę
+Podejmowane leczenie
+Leczenie psychiatryczne, zażywanie leków uspokajających, które nasilają głód
+i pragnienie
+Leczenie odbywa się na pograniczu dobrostanu nie rozwiązując pierwotnego
+problemu
+Aktualne problemy
+Problemy z leczeniem zębów, problemy gastryczne, problemy urologiczne
+Scenariusz wizyty
+Przeprowadzenie badań z uwzględnieniem dobrostanu uczestnika i rodzica,
+zachowanie czujności z powodu trudności związanych z nieprzewidywalnym
+
+--- strona 48 ---
+
+48
+Uczestnik 3
+zachowaniem. Zaplanowanie wizyty w taki sposób żeby w przyszłości nie
+wzmacniać braku zrozumienia procesu leczenia przez pacjenta neuroatypowego .
+Ograniczenie lub eliminacja metod siłowych/ograniczających swobodę uczestnika
+jako metoda na utrzymanie dobrostanu w procesie leczenia. Zgłoszenie
+w rejestracji pacjenta z zachowaniami trudnymi żeby wizyta odbyła się zgodnie
+z planem, ograniczenie oczekiwania na wizytę. Przed wizytą rozmowa z lekarzem
+podejmującym badanie w celu usprawnienia procesu leczenia (zaznajomienie
+lekarza z zachowaniami pacjenta, które mogą uniemożliwić wykonanie badania);
+motywowanie uczestnika do podejmowania działań
+
+Uczestnik 4
+Ogólne informacje o uczestniku
+Uczestnik w wieku 17 lat. Mieszka razem z rodzicami i rodzeństwem.
+Przebieg edukacji
+Uczęszcza do szkoły specjalnej od dziecka. Od kilku lat uczęszcza do placówki dla
+osób ze spektrum autyzmu 2 razy w tygodniu.
+
+Problemy zdrowia psychicznego i fizycznego
+Problemy laryngologiczne, bóle brzucha, które według mamy wywołują trudne
+zachowania. Od roku z powodu braku diagnostyki matka dostrzega zmiany
+w zachowaniu – pojawienie się zachowań agresywnych i autoagresywnych.
+Z powodu infekcji bakteryjnej w obrębie nosa – napady agresji i liczne krwotoki
+z nosa. Wielokrotne próby pobrania wymazu z nosa nie powiodły się. Lekarz
+psychiatra zapisał leki uspokajające, które mają na celu osłabić reakcję bólową,
+swądem i innymi dolegliwościami nosa. Przyczyna problemu jest znana, ale
+
+--- strona 49 ---
+
+49
+Uczestnik 4
+obecnie nie ma sposobu na jego rozwiązanie.
+Bóle zębów.
+Funkcjonowanie społeczne
+Uczestnik od roku przejawia zachowania agresywne i autoagresywne, które źle
+wpływają na siostrę uczestnika (8 lat). Podczas diagnozy siostra przerywała matce
+mówiąc, że brat bije mamę. W mieszkaniu widać liczne ślady zachowań
+agresywnych – uszkodzone meble, ściany, sprzęty AGD
+W grupie rówieśniczej uczestnik również przejawia zachowania trudne.
+Problemy z zachowaniem (krzyk, impulsywność, agresja) pojawiły się w okresie
+dojrzewania.
+Podejmowane leczenie
+Podejmowane próby leczenia nie przynoszą efektów. Mama uczestnika często
+zostaje wyproszona z gabinetu z powodu trudnych zachowań syna. Obecnie brak
+możliwości podejmowania działań profilaktycznych
+Aktualne problemy
+Trudności podjęcia skutecznego leczenia przez matkę. Podczas wizyt lekarskich
+tata uczestnika wielokrotnie bierze urlop w pracy. Tata jest sfrustrowany,
+zwłaszcza jeśli wizyta nie zostaje zrealizowana.
+Uczestnik jest w okresie dojrzewania przez co mama w kontakcie z nauczycielami
+stara się odpowiednio pracować ze swoim synem. Niestety, mimo wskazówek
+pojawiają się reakcje niepożądane – pobudzenie seksualne. Mama czuje się
+przeciążona ilością zmian w zachowaniu syna.
+Scenariusz wizyty
+Na tym etapie asystenci muszą poznać funkcjonowanie uczestnika w ramach
+działań – spotkania próbnego i spotkania ,,0” aby sprecyzować trudności, które
+
+--- strona 50 ---
+
+50
+Uczestnik 4
+mogą się pojawić w obrębie placówki zdrowia. Uczestnik jest otwarty na kontakt
+z człowiekiem, uspokaja go głaskanie, używanie masażera do głowy, w razie
+problemów z oczekiwaniem na wizytę zostaną wykorzystane zabawki, elementy
+usprawniające motorykę małą jako metodę na organizację czasu i zmniejszenie
+stresu związanego z podjęciem leczenia.
+
+Uczestnik 5
+Ogólne informacje o uczestniku
+Uczestnik ma 17 lat, bezpośrednią opiekę sprawuje matka. Uczestnik mieszka
+w mieszkaniu.
+Matka ma problemy zdrowotne przez które kontakt jest utrudniony. Matka ma
+wsparcie ze strony rodziny. Z powodu pandemii uczestnik spędza większość czasu
+w domu z matką. W obecnej sytuacji przejawia lęk związany z opuszczeniem
+mieszkania w ogóle
+Przebieg edukacji
+Uczeń szkoły specjalnej. Z powodu trudnych zachowań rodzic często musi
+samodzielnie odbierać dziecko ze szkoły. Z powodu pandemii szkoła proponuje
+zajęcia zdalne, w których uczestnik nie chce brać udziału.
+
+Problemy zdrowia psychicznego i fizycznego
+Uczestnik nie pozwala na szczotkowanie zębów i regularną higienę ciała, co
+przyczynia się do problemów stomatologicznych i dermatologicznych.
+Występują częste problemy gastrologiczne: biegunki, wymioty. Mama oczekuje
+stałej współpracy z konkretnymi lekarzami celem przeprowadzania wizyt
+profilaktycznych.
+
+--- strona 51 ---
+
+51
+Uczestnik 5
+Funkcjonowanie społeczne
+Zachowania agresywne i autoagresywne pojawiają się podczas skojarzenia
+placówki zdrowia z nieprzyjemnym bodźcem z przeszłości. Ostatnie miesiące
+pogorszyły funkcjonowanie społeczne uczestnika przez co najbliższe środowisko
+nie potrafi jednoznacznie powiedzieć jak uczestnik odnajdzie się w nowej sytuacji
+związanej, np. z powrotem do szkoły, wizytą u lekarza po długim okresie braku
+leczenia
+Podejmowane leczenie
+Matka przyznaje, że póki uczestnik był dzieckiem, nie było problemów z leczeniem.
+Odkąd sama zauważa osłabienie i własne problemy zdrowotne wyraża lęk
+związany z podejmowaniem leczenia. Liczy się z konsekwencjami nieprawidłowych
+zachowań w placówkach zdrowia, chce znaleźć bezpieczną formę leczenia
+swojego dziecka ponieważ jak sama przyznaje,
+dla niej to również bardzo stresujące przeżycie. Wyznaczenie terminu wizyty
+lekarskiej powoduje u mamy podporządkowanie całego życia aż do terminu
+przeprowadzenia zabiegu/badania, kobieta w tym okresie skarży się na problemy
+ze snem i jakością życia w ogóle.
+Kobieta uważa, że jej strach i lęk udziela się synowi, który na kilka dni przed wizytą
+wykazuje objawy somatyczne takie jak: nadmierna potliwość, biegunki i obniżenie
+nastroju
+Aktualne problemy
+Okres dojrzewania wpływa na zachowanie, pojawiły się problemy ze snem. Matka
+ma wątpliwości dotyczące tego, które z zachowań wynikają z problemów
+somatycznych, a które z problemów wynikających z niepełnosprawności. Jak sama
+przyznała, często podaje synowi profilaktycznie leki przeciwbólowe i obawia się
+następstw tych działań. Dostała na to zgodę od lekarza pierwszego kontaktu, który
+
+--- strona 52 ---
+
+52
+Uczestnik 5
+jednocześnie w rozmowie z asystentem jest otwarty na rozszerzenie diagnostyki
+uczestnika.
+Scenariusz wizyty
+Podczas rozmowy z matką oraz środowiskiem, które bierze udział w planowaniu
+wizyt, okazuje się, że niestabilność zachowania wpływa na jakość
+przeprowadzonej wizyty. Jak sami zauważają nie da się przewidzieć jego
+zachowania tuż po wejściu do gabinetu.
+Matka uważa, że jest w stanie stwierdzić jak potoczy się wizyta kiedy zobaczy
+w jakim nastroju wstał jej syn. Asystenci zaproponowali aby umawiać wizytę na
+taką godzinę, by można było przed wizytą odbyć spacer i dołożyć wszelkich starań
+aby poprawić nastrój uczestnika, oczekując zminimalizowania zachowań trudnych
+podczas wizyty. Przygotowanie uczestnika przez asystentów nie może być
+kojarzone wyłącznie przez kontakt z placówką zdrowia dlatego pierwsze umówione
+spotkanie będzie spacerem w celu poznania uczestnika. Dopiero kolejne spotkania
+będą dotyczyć funkcjonowania w placówce zdrowia, np. w gabinecie lekarza
+pierwszego kontaktu (badanie kontrolne) aby asystenci mogli wnieść poprawki do
+scenariusza w razie umówienia wizyty u lekarza specjalisty, u którego trudniej
+o termin.
+
+Uczestnik 6
+Ogólne informacje o uczestniku
+Uczestnik w wieku 33 lat. W wieku 14 lat pojawienie się zachowań
+autoagresywnych. Uczestnik mieszka w mieszkaniu z mamą i jej partnerem. Ojciec
+zmarł wiele lat temu.
+Przebieg edukacji
+
+--- strona 53 ---
+
+53
+Uczestnik 6
+Podczas okresu edukacji liczne problemy związane z współpracą matki
+z nauczycielami. Po zajęciach uczestnik wracał do domu z licznymi uszkodzeniami
+ciała, siniakami, opuchliznami głównie w obrębie rąk i twarzy (prawdopodobnie
+w wyniku zachowań autoagresywnych) Po 10 latach od zakończenia edukacji
+uczestnik rozpoczął zajęcia w placówce dla dorosłych osób ze spektrum autyzmu.
+Problemy zdrowia psychicznego i fizycznego
+Nieregularny sen, uczestnik czasami nie śpi przez 3 doby, Zażywane leki
+psychiatryczne nie przynoszą zamierzonych efektów. Od wielu lat nieregularne
+miesiączki poprzedzone kilkoma dniami bardzo trudnych zachowań, uczestnik
+kuca podczas spaceru i wykazuje osłabienie.
+W wieku dziecięcym stwierdzono zanikanie kosmków jelitowych w diagnostyce
+endoskopowej. Po 25 latach od badania w dalszym ciągu występują problemy
+gastryczne. W 2019 pojawił się jednorazowy epizod padaczkowy. W 2016 roku
+uczestnik miał przeprowadzony rezonans głowy, który nie wykazał
+nieprawidłowości.
+Funkcjonowanie społeczne
+Krzyk, autoagresja, impulsywność zachowania i częsty brak snu uczestnika
+wpływa na funkcjonowanie rodziny. Uczestnik wymaga ciągłej kontroli ponieważ
+często uderza głową w ścianę, uderza pięścią w głowę, kanty stołów.
+Uczestnik lepiej funkcjonuje z partnerem mamy co powoduje pogorszenie relacji
+matki z córką, w sytuacjach kiedy zostają sami uczestnik wpada w zachowania
+trudne związane z zachowaniem agresywnym. Konieczność zabezpieczania leków
+i środków czystości przed wypiciem.
+Mama uczestnika po zakończonym okresie edukacji była zmuszona przerwać
+pracę ponieważ nie miała wsparcia żadnej instytucji, która w godzinach pracy
+mogłaby wspierać jej córkę.
+
+--- strona 54 ---
+
+54
+Uczestnik 6
+Podejmowane leczenie
+Zdiagnozowane problemy zdrowotne w wieku dziecięcym nie są profilaktycznie
+prowadzone w wyniku trudności jakie pojawiły się w okresie dojrzewania. Potrzeba
+badań endoskopowych, ginekologicznych, usg brzucha) Badania konieczne do
+przeprowadzenia są wykonywane w narkozie (leczenie stomatologiczne).
+Aktualne problemy
+Okresowe zmiany nastroju, które nie są związane z żadnym czynnikiem
+zewnętrznym mogą świadczyć o dyskomforcie związanym z bólem
+Uczestnik nawet jeśli jest w dobrym humorze, traci panowanie nad swoimi
+emocjami i prezentuje szereg zachowań trudnych
+Scenariusz wizyty
+Wizyta powinna zostać zaplanowana w taki sposób żeby minimalizować powstanie
+trudnych zachowań, które uniemożliwiają rodzicowi/asystentowi komunikację
+werbalną z lekarzem.
+Uczestnik nie rozumie procesu leczenia i każda sytuacja, w której został
+przymuszany do narkozy może implikować w przyszłości dodatkowe problemy
+o podłożu behawioralnym. Odpowiednie rozłożenie w czasie dawkowania leków
+przed narkozą może ułatwić wejście uczestnika na teren placówki.
+Na badania, które nie wymagają narkozy i są możliwe do przeprowadzenia
+przygotujemy kilka rozwiązań mających na celu zmotywowanie uczestnika do
+działań, np. uczestnik przepada za przewiązywaniem uszu reklamówek foliowych.
+W sytuacji trudnej może to posłużyć jako sposób na rozładowanie emocji
+
+--- strona 55 ---
+
+55
+Uczestnik 7
+Ogólne informacje o uczestniku
+Uczestnik jest w wieku 30 lat. Mieszka w mieszkaniu wraz z mamą, siostrą i jej
+rodziną – dwójką dzieci.
+Przebieg edukacji
+Ukończył szkołę specjalną. Jest uczestnikiem ŚDS, ale uczęszcza tam tylko 2 razy
+w tygodniu (w okresie pandemii tylko raz w tygodniu)
+Problemy zdrowia psychicznego i fizycznego
+Uczestnik od wielu lat przejawia zachowania związane z agresją i autoagresją.
+W 2014 roku podczas hositalizacji w szpitalu psychiatrycznym uczestnik miał
+wiązane kończyny co spowodowało problemy postrzegania ciała – uczestnik będąc
+w domu potrzebował ograniczania ruchu rąk aby czuć się bezpiecznie. Od wielu lat
+ma również problemy z funkcjonowaniem jelit, z zaparciami. W grudniu 2020r. trafił
+na oddział w wyniku zatrzymania pracy jelit i nerek. Badania krwi wykazały stan
+zapalny toczący się w organizmie. Zapisano leki na nieswoiste zapalenie jelit, po
+których pacjent funkcjonuje dużo lepiej.
+Podczas 2-tygodniowego pobytu w szpitalu lekarz psychiatra zmienił dawkowanie
+leków co wywołało sporą zmianę na korzyść w funkcjonowaniu uczestnika i tym
+samym jego rodziny.
+Mama uczestnika zgłosiła, że podczas mycia zębów uczestnik ucieka co może być
+związane ze stanem bólu zęba. W wyniku uderzeń głową w ściany i inne elementy,
+uczestnik często ma uszkodzenie skóry czoła/nosa. Podjęto próbę leczenia
+okulistycznego, ale w pierwszej dobie od zabiegu po uderzeniu w ścianę oko
+zostało uszkodzone i zdecydowano o braku możliwości kolejnej operacji
+Funkcjonowanie społeczne
+
+--- strona 56 ---
+
+56
+Uczestnik 7
+Uczestnik wymaga ciągłej obecności drugiej osoby, zarówno w domu –
+zachowania agresywne i autoagresywne, ale również na zewnątrz.
+Podczas spaceru z uczestnikiem, zdarza mu się zaczepiać, drapać, próbować
+uderzyć napotykane osoby, bardzo często próbuje uderzyć w samochód
+zaparkowany przy chodniku wzdłuż którego uczestnik idzie.
+Podczas zajęć w ŚDS potrzebuje zajęć 1:1, ponieważ trudne zachowania, jakie
+przejawia uczestnik mogą wpływać na bezpieczeństwo i dobrostan innych
+podopiecznych.
+Podejmowane leczenie
+Leczenie psychiatryczne, leczenie u gastroenterologa, skierowanie na
+kolonoskopię
+Aktualne problemy
+Dwa tygodnie po hospitalizacji pojawiły się problemy z zachowaniem uczestnika
+w domu i poza nim. Z jednej strony uczestnik jest bardziej aktywny, lepiej rozumie
+mowę werbalną i niewerbalną, ale niestety pojawiły się nowe zachowania –
+wbieganie na ulicę pod przejeżdżające auta co jest szczególnie niebezpieczne
+podczas sprawowania opieki przez mamę uczestnika – kobieta nie jest w stanie
+powstrzymywać syna przed niebezpiecznymi sytuacjami – sama jest w procesie
+leczenia okulistycznego, ma cukrzycę i nadciśnienie, które znacznie odbiło się na
+jej zdrowiu fizycznym. Po hospitalizacji pojawiły się również problemy
+z nieregularnym snem – uczestnik czasami nie przesypia nocy. Krzyczy, tupie i jest
+pobudzony. Rodzina obawia się problemów z sąsiadami i potrzebuje pomocy
+psychiatrycznej.
+Niestety, lekarz prowadzący uczestnika od wielu lat realizuje tylko wizyty zdalne,
+nie wyraża zgody na wizytę w gabinecie, a zaproponowane leczenie nie przynosi
+rezultatów. Przejazd uczestnika przy pomocy taksówek dostosowanych dla osób
+z niepełnosprawnościami jest niemożliwy ponieważ kierowcy nie potrafią poradzić
+
+--- strona 57 ---
+
+57
+Uczestnik 7
+sobie z uczestnikiem, który uderza rękami i głową w szyby. Podczas przejazdu
+również krzyczy, co uniemożliwia części kierowcom prowadzenie pojazdu.
+Scenariusz wizyty
+Wykorzystując fiksacje uczestnika dotyczące elementów, które angażują jego
+uwagę – układanie koralików; asystenci zaproponowali aby wykorzystywać je
+w oczekiwaniu na wizytę – jeśli będzie taka konieczność. Umawianie wizyt
+powinno odbywać się z jak najkrótszym czasem oczekiwania, gdyż każde kilka
+minut oczekiwania budzi w uczestniku frustrację i zachowania trudne.
+Uczestnik podczas oczekiwania na wizytę w przychodni jest w ciągłym ruchu,
+krzyczy, podskakuje i tupie nogami co wpływa negatywnie na funkcjonowanie całej
+przychodni. Zaproponowano wykorzystanie koca sensorycznego, który na czas
+przejazdu otuli ciało uczestnika i być może wyciszy część zachowań
+niebezpiecznych.
+Planowanie wizyty jest związane również z kontaktem z lekarzem, który dostanie
+informację dotyczącą funkcjonowania uczestnika, doświadczenie rodziny
+i nauczycieli pokazało, że część lekarzy już na początku współpracy rezygnuje
+z przyjęcia pacjenta, który przejawia zachowania trudne.
+
+Uczestnik 8
+Ogólne informacje o uczestniku
+Uczestnik to osoba w wieku 22 lat. Od kilku lat przejawia zachowania agresywne
+i autoagresywne, ze względu na chorobę mamy – opiekuna prawnego
+i konieczność operacji, nie jest w stanie zadbać o zdrowie swoje i swojego syna.
+Przebieg edukacji
+
+--- strona 58 ---
+
+58
+Uczestnik 8
+Uczeń szkoły w nurcie behawioralnym. Dwa razy w tygodniu uczęszcza na zajęcia
+do placówki dla osób ze spektrum autyzmu.
+
+Problemy zdrowia psychicznego i fizycznego
+Od kilku lat problemy związane z osteoporozą. Z opowieści mamy wynika, że już
+kilka lat temu pojawiły się symptomy wskazujące na problemy z tarczycą. Lekarz
+skierował pacjenta do poradni endokrynologicznej. Czas oczekiwania na wizytę to
+jeszcze 2 lata.
+Uczestnik to osoba w stopniu znacznym, rodzic nie wiedział, że dla osób w stopniu
+znacznym termin wizyty powinien zostać skrócony w oparciu o możliwości
+placówki.
+Problemy laryngologiczne, według mamy syn często dotyka swoich uszu z uwagi
+na ból, który potęguje zachowania trudne.
+Problemy stomatologiczne
+Problemy z oczami – uczestnik nie dostrzega wielu elementów podczas spaceru
+Funkcjonowanie społeczne
+Poruszanie się wymaga ciągłej kontroli asystenta/opiekuna w wyniku
+nieprzewidywalnych zachowań. Sporadycznie nawiązuje kontakt z innymi osobami,
+ale należy być ostrożnym ponieważ często na początku uczestnik rzuca
+przedmiotami w kogoś nowego.
+Podejmowane leczenie
+Od kilku lat leczenie tylko w przypadku somatycznych objawów – nie zawsze
+w bezpośrednim kontakcie uczestnika z lekarzem, coraz częściej wyłącznie
+poprzez kontakt z matką i opisanie objawów. Brak ścieżki leczenia
+profilaktycznego.
+
+--- strona 59 ---
+
+59
+Uczestnik 8
+Aktualne problemy
+Bóle zębów, zmiany w obrębie jamy ustnej, stany zapalne w jamie ustnej,
+problemy z słuchem, problemy okulistyczne – uczestnik od kilku lat ma problemy
+z wzrokiem.
+W rozmowie z mamą ustalono, że syn zawsze podejmował leczenie w sposób
+siłowy i mocno ograniczający przez tatę, w wyniku takiego postępowania
+występuje szereg zachowań utrudniających podejmowanie leczenia w placówce
+zdrowia.
+Scenariusz wizyty
+Zaplanowanie wizyty musi odbywać się w kilku etapach. Należy sprawdzić czy
+dana placówka wywołuje u uczestnika zachowania obronne, agresywne.
+Spodziewamy się łatwiejszej odpowiedzi w placówkach, w których uczestnik
+jeszcze nie był, których nie kojarzy z bólem i ograniczeniem poruszania.
+W ramach testu zaplanowano próbę podjęcia leczenia w placówkach zdrowia,
+które uczestnik zna poprzez kilkukrotne wizyty, które nie będą miały finału
+w postaci przeprowadzonej wizyty. Oczekujemy, że uczestnik skojarzy to miejsce
+na nowo, jako element spaceru.
+
+Uczestnik 9
+Ogólne informacje o uczestniku
+Uczestnik to osoba w wieku 32 lat. Mieszka z mamą w mieszkaniu.
+Przebieg edukacji
+Ukończenie szkoły specjalnej. W trakcie edukacji uczestnik sporadycznie
+przejawiał zachowania agresywne i autoagresywne. Funkcjonował w określonym
+
+--- strona 60 ---
+
+60
+Uczestnik 9
+schemacie dnia, w którym czuł się bezpieczny. Każda zmiana spowodowana, np.
+odwołaniem zajęć wywoływała zachowanie trudne w mieszkaniu uczestnika.
+Zdarzały się akty autoagresji poprzez bicie głowy oraz rozbicie okna w drzwiach.
+Od kilku lat uczęszcza do placówki dla osób ze spektrum autyzmu. W okresie
+pandemii placówka jest zamknięta, zdalne wsparcie nie jest realizowane z uwagi
+na brak zainteresowania uczestników placówki taką formą pracy.
+Problemy zdrowia psychicznego i fizycznego
+Trudności z chodzeniem, częste upadki, kilkukrotna kontuzja rzepki w kolanie.
+Trudności w podejmowaniu leczenia z mamą, podczas wejścia do gabinetu
+uczestnik wycofuje się. Problemy zdrowotne mamy spowodowały ograniczenie
+profilaktyki w leczeniu uczestnika. Potrzebna konsultacja z lekarzem ortopedą oraz
+stomatologiczna.
+W wyniku trudnych zachowań psychiatra kilkukrotnie zlecał badanie na obecność
+leków w organizmie w celu sprawdzenia przyswajalności tych leków.
+Funkcjonowanie społeczne
+Uczestnik dobrze funkcjonuje w schemacie. Niechętnie wraca do domu z placówki,
+podczas powrotu do domu wykazuje agresję wobec mamy. Często nakłania obce
+osoby do pomagania mu w zapięciu kurtki, wykonuje polecenia i jeśli ktoś
+odmawia, uczestnik reaguje wycofaniem lub autoagresją. Uczestnik przejawia
+trudne zachowania podczas przejazdów transportem dla osób
+z niepełnosprawnościami, często dochodzi do konfliktu z kierowcą, zwłaszcza jeśli
+uczestnik nie może zająć miejsca z przodu. W okresie pandemii to miejsce jest
+wyłączone ze strefy pasażerów.
+Podejmowane leczenie
+Kilkukrotne próby pobierania krwi zakończone ucieczką uczestnika z gabinetu.
+Niechęć uczestnika do podejmowania leczenia w obecności matki. W obecności
+matki pojawia się agresja ukierunkowana na nią oraz na osoby próbujące
+
+--- strona 61 ---
+
+61
+Uczestnik 9
+rozwiązać problem z atakiem agresji. Niechęć do zajęć rehabilitacji zleconych
+przez ortopedę. Nieudana próba leczenia zębów w narkozie – wycofanie
+uczestnika przed podaniem środka usypiającego.
+Aktualne problemy
+Brak przestrzeni dla rozwiązywania problemów zdrowotnych mamy z powodu
+konieczności opieki nad synem. Niechęć syna do opuszczania mieszkania jako
+efekt przyzwyczajenia i utrwalenia schematu. Ból zębów podczas mycia, problemy
+z autoagresją, w wyniku braku stałych czynności uczestnik prezentuje zachowania
+stereotypowe polegające na ,,strzelaniu” kicukami, uderzaniem rękami o skronie
+Scenariusz wizyty
+W ramach spotkania próbnego, przełamanie schematu przebywania wyłącznie
+w domu. Rozszerzenie spaceru z uwzględnieniem placówek zdrowia na trasie
+spaceru.
+Próba przejazdu samochodem i obserwacja zachowania celem ustalenia
+i zaplanowania przejazdu na wizyty lekarskie na dalszym etapie testu.
+Podczas oczekiwania na wizytę lub w trakcie badań (o ile będzie to możliwe)
+korzystanie przez uczestnika z telefonu/słuchawek, oglądanie filmików, które
+wyciszają jego trudne zachowania.
+
+--- strona 62 ---
+
+62
+Instrukcja wsparcia uczestnika
+
+Powyżej znajduje się przykładowa instrukcja wsparcia uczestnika. Uważamy to jako
+niezbędny element funkcjonowania społecznego osoby z niepełnosprawnością.
+Dobrym rozwiązaniem jest zalaminowanie tej instrukcji i posiadanie jej zawsze ze
+sobą, np. w plecaku dziecka.
+Treść: Instrukcja wsparcia uczestnika
+Dane kontaktowe: imię, nazwisko, adres, Nazwisko opiekuna+numer telefonu, Adres
+placówek wspierających, Jestem w spektrum autyzmu, Padaczka - zażywam leki, nie
+mam ataków od dawna. Co lubię: lubię biegać-uciekam, zjem wszystko w zasięgu
+wzroku, wyrzucam rzeczy przez okno/do kosza, niszczę dokumenty i przypadkowe
+przedmioty. Czego nie lubię: nie lubię dotyku, nie lubię głośnych dźwięków tłumu
+ludzi, drażnią mnie intensywne zapachy, biję się lekarzy, źle się czuję w nowych
+sytuacjach.

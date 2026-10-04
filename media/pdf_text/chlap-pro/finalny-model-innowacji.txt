@@ -1,0 +1,1828 @@
+--- strona 1 ---
+
+„ChlapPro”
+FINALNY MODEL INNOWACJI
+Innowacja społeczna pt. „ChlapPro” realizowana w ramach projektu
+grantowego: Inkubator Włączenia Społecznego, współfinansowanego ze
+środków Europejskiego Funduszu Społecznego w ramach Programu
+Operacyjnego Wiedza Edukacja Rozwój 2014-2020.
+https://creativecommons.org/licenses/by/4.0/deed.pl
+Grantobiorca: Klaudia Kaniewska
+Autor opracowania: Klaudia Kaniewska – tekst i zdjęcia
+Autor rysunków technicznych: Aleksandra Skała
+Opinia specjalisty: Łukasz Bernacki
+
+--- strona 2 ---
+
+Spis treści
+1. Opis innowacji i grupy docelowej ......................................................................... 3
+2. Analiza badań ankietowych .................................................................................. 4
+2.1.
+Wyniki konsultacji z testerami ChlapPro
+31
+3. Dokumentacja techniczna ochraniaczy ChlapPro .............................................. 37
+3.1.
+Specyfikacja techniczna materiału
+37
+3.2.
+Specyfikacja techniczna ChlapPro 1
+39
+3.3.
+Rysunki techniczne ChlapPro 1
+43
+3.4.
+Dokumentacja zdjęciowa ChlapPro 1
+44
+3.5.
+Rekomendacje dla wykonawcy ChlapPro 1
+53
+3.6.
+Rekomendacje dla użytkownika ChlapPro 1
+56
+3.7.
+Instrukcja użytkowania ChlapPro 1
+57
+3.8.
+Specyfikacja techniczna ChlapPro 2
+58
+3.9.
+Rysunki techniczne ChlapPro 2
+61
+3.10. Dokumentacja zdjęciowa ChlapPro 2
+62
+3.11. Rekomendacje dla wykonawcy ChlapPro 2
+70
+3.12. Rekomendacje dla użytkownika ChlapPro 2
+72
+3.13. Instrukcja użytkowania ChlapPro 2
+73
+4. Opinia specjalisty protetyka ............................................................................... 76
+5. Wnioski z etapu testowania ChlapPro ................................................................ 77
+6. Ankieta dla testerów ........................................................................................... 77
+7. List przewodni dla testera .................................................................................. 88
+
+--- strona 3 ---
+
+1.
+Opis innowacji i grupy docelowej
+ChlapPro to chlapoodporny ochraniacz protezy kończyny dolnej, którego celem jest
+zapewnienie ochrony przed zachlapaniem elementów znajdujących się w protezie,
+które nie są odporne na działanie wody. w ramach projektu powstały dwa rodzaje
+ochraniaczy dostosowanych do najpopularniejszych rodzajów protezy podudzia
+i uda. Innowacja skierowana jest do osób z niepełnosprawnością ruchową po
+amputacjach kończyn dolnych, poruszających się przy pomocy protez. Według
+danych NFZ w latach 2018 – 2022 co roku w Polsce wykonuje się średnio między 9,
+a 10 tysięcy amputacji kończyn dolnych. Większość osób po amputacjach posiada
+podstawowe lub średnio zaawansowane zaopatrzenie protetyczne, którego zakup
+generuje mniejsze koszty niż w przypadku kosztowych protez wodoodpornych. Brak
+wodoodporności elementów protez stanowi jedno z poważniejszych ograniczeń w ich
+użytkowaniu. Uniemożliwia to osobom po amputacjach prowadzenie aktywności na
+takim poziomie, jaki posiadają inne osoby w społeczeństwie, powodując tym samym
+ryzyko wykluczenia społecznego. Rozwiązanie skierowane jest do osób, które
+w związku z ograniczeniami wynikającymi z braku wodoodporności protez nie mogą
+w pełni wykonywać czynności związanych z codziennym funkcjonowaniem z uwagi
+na możliwość zachlapania protezy, narażając się na ryzyko wykluczenia
+społecznego.
+Głównym zadaniem ChlapPro jest ochrona przed zachlapaniem elementów protezy,
+które tego wymagają, szczególnie przegubu kolanowego oraz pompy
+podciśnieniowej. Chlapoodporny ochraniacz ChlapPro jest wykonany z materiału
+wodoodpornego, przepuszczającego powietrze. Ponadto materiał, struktura
+i wykonanie ochraniacza nie hamuje ruchów protezy. Jest on przeznaczony do
+użytkowania podczas wykonywania wszelkich czynności dnia codziennego z użyciem
+wody i łączących się z ryzykiem zachlapania protezy. Ochraniacz ten nie jest
+przeznaczony do wchodzenia z protezą do wody, np. pływania, czy kąpieli.
+
+--- strona 4 ---
+
+Potrzebą grupy docelowej w tym zakresie jest więc zmniejszenie lub wyeliminowanie
+ograniczeń w codziennym funkcjonowaniu. Rozwiązanie w postaci chlapoodpornego
+ochraniacza ChlapPro przyczyni się do zwiększenia możliwości wykonywania:
+• czynności domowych i codziennych obowiązków, tj. sprzątanie mieszkania,
+podlewanie ogrodu, korzystanie z samoobsługowej myjni samochodowej,
+• samodzielnej opieki nad dziećmi/zwierzętami (opieka podczas kąpieli,
+przebywania na basenie, czy nad jeziorem),
+• przemieszczania się w złych warunkach atmosferycznych (podczas deszczu,
+śniegu),
+• czynności wykonywanych podczas pracy zawodowej (pracy w fabrykach,
+laboratoriach, na budowach),
+• aktywności fizycznej i realizacji pasji (jazda na rowerze, nartach, wędkowanie,
+udział w imprezach plenerowych czy wyjazdach nad wodę).
+Zastosowanie ochraniacza daje szansę na powrót do pełniejszej aktywności
+społecznej osób z niepełnosprawnością ruchową poruszających się przy pomocy
+protez, bez względu na rodzaj posiadanego zaopatrzenia protetycznego.
+2.
+Analiza badań ankietowych
+Analiza przeprowadzonych testów polegała między innymi na zebraniu wyników
+ankiet na temat przetestowanych produktów. Każdy z testerów otrzymał taką samą
+ankietę oceniającą produkt pod względem dopasowania, zakładania oraz
+użytkowania ochraniaczy podczas wykonywania różnych czynności. Ankieta została
+przeprowadzona w formie online i nie była anonimowa ze względu na specyfikę
+analizy przeprowadzonych testów dla możliwości uszczegółowienia niejasnych
+odpowiedzi.
+Ankietę wypełniło 10 osób biorących udział w testach. Było to 6 osób, które
+przetestowały ochraniacz ChlapPro 2 i 4 osoby, które przetestowały ochraniacz
+
+--- strona 5 ---
+
+ChlapPro 1. z czego 5 osób stanowiły kobiety i 5 osób mężczyźni. Każdy z badanych
+należał do grupy osób po amputacji kończyny dolnej i posiadał protezę, która nie jest
+w pełni wodoodporna. Wszyscy testerzy posiadali doświadczenie w użytkowaniu
+protezy co najmniej od roku.
+Wszyscy testerzy zgodnie stwierdzili, że ochraniacze ChlapPro są prawidłowo
+dopasowane do protezy kończyny dolnej.
+Wykres 1 Poziom dopasowania ChlapPro do protezy.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+5 osób biorących udział w testach oceniło, że ochraniacz ChlapPro ubiera się bardzo
+łatwo, a drugie 5 oceniło poziom ubierania, jako łatwy.
+
+100%
+Bardzo dobrze
+Dobrze
+Przeciętnie
+Źle
+Bardzo źle
+
+--- strona 6 ---
+
+Wykres 2 Poziom trudności ubierania ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+4 ankietowanych oceniło poziom szybkości zakładania ochraniaczy ChlapPro na
+protezę jako bardzo szybki, a 5 osób jako szybki. 1 osoba oceniła ochraniacz
+w zakresie szybkości zakładania, jako przeciętny.
+
+50%
+50%
+Bardzo łatwo
+Łatwo
+Przeciętnie
+Trudno
+Bardzo trudno
+
+--- strona 7 ---
+
+Wykres 3 Szybkość zakładania ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+7 testerów ochraniaczy ChlapPro oceniło poziom ruchomości protezy z ChlapPro
+jako bardzo wysoki, 3 osoby na poziomie wysokim.
+
+40%
+50%
+10%
+Bardzo szybko
+Szybko
+Przeciętnie
+Wolno
+Bardzo wolno
+
+--- strona 8 ---
+
+Wykres 4 Zakres ruchomości protezy w ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+Kolejne pytania zadane testerom dotyczyły sprawdzenia, czy przetestowali
+ochraniacz podczas wykonywania następujących czynności:
+• czynności domowe i codzienne obowiązki,
+• sprawowanie opieki nad dziećmi lub zwierzętami,
+• przemieszczanie się podczas niekorzystnych warunków atmosferycznych,
+• aktywność zawodowa,
+• aktywność fizyczna i realizacja pasji.
+Osobom, które przetestowały ChlapPro podczas konkretnej czynności, zadano
+pytanie o doświadczenia z nim związane. Natomiast osobom, które nie
+przetestowały ChlapPro podczas wykonywania poszczególnej czynności,
+zadano pytania o opinię na temat możliwości wpływu ochraniacza na
+potencjalnie wykonywaną pracę.
+70%
+30%
+Bardzo wysoki
+Wysoki
+Przeciętny
+Niski
+Bardzo niski
+
+--- strona 9 ---
+
+Wszystkie osoby testowały ChlapPro w warunkach domowych i podczas
+wykonywania codziennych obowiązków, tj. sprzątanie mieszkania, podlewanie
+ogrodu, korzystanie z samoobsługowej myjni samochodowej itp. Kolejno zadane
+zostały pytania o ich doświadczenia podczas testowania w tych warunkach.
+Wykres 5 Testowanie ChlapPro podczas wykonywania czynności domowych
+i codziennych obowiązków.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+9 testerów oceniło, że ochraniacz ChlapPro ułatwił im wykonywanie czynności
+domowych i codziennych obowiązków. 1 ankietowany nie ma zdania na ten temat.
+100%
+Tak
+Nie
+
+--- strona 10 ---
+
+Wykres 6 Ułatwienie wykonywania czynności domowych i codziennych obowiązków
+dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+Wszyscy testerzy stwierdzili, że ChlapPro zwiększyło ich poczucie bezpieczeństwa
+podczas wykonywania czynności domowych i codziennych obowiązków.
+
+60%
+30%
+10%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 11 ---
+
+Wykres 7 Zwiększenie poczucia bezpieczeństwa podczas wykonywania czynności
+domowych i codziennych obowiązków dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+2 testerów odpowiedziało, że przetestowało ChlapPro podczas opieki nad dziećmi,
+zwierzętami, np. podczas kąpieli, przebywania na basenie, czy nad jeziorem itp. Tym
+osobom zostały zadane pytania o doświadczenia związane z ułatwieniem
+wykonywania tej czynności oraz o poziom bezpieczeństwa. 8 osób nie przetestowało
+ochraniacza w tych warunkach, w związku z tym zadano im pytania o opinię na ten
+temat.
+
+70%
+30%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 12 ---
+
+Wykres 8 Testowanie ChlapPro podczas opieki nad dziećmi, zwierzętami.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+2 osoby, które przetestowały ChlapPro podczas opieki nad dziećmi, zwierzętami
+zgodnie stwierdziły, że ochraniacz ułatwił im wykonywanie tej czynności.
+20%
+80%
+Tak
+Nie
+
+--- strona 13 ---
+
+Wykres 9 Ułatwienie samodzielnej opieki nad dziećmi, zwierzętami dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+2 osoby, które przetestowały ChlapPro podczas sprawowania opieki nad dziećmi,
+zwierzętami również zgodnie stwierdziły, że ochraniacz zwiększył ich poczucie
+bezpieczeństwa w trakcie wykonywania tej czynności.
+
+100%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 14 ---
+
+Wykres 10 Zwiększenie poczucia bezpieczeństwa podczas sprawowania opieki nad
+dziećmi, zwierzętami dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+8 testerów, którzy nie przetestowali ChlapPro w trakcie opieki nad dziećmi,
+zwierzętami, zapytano o opinię na ten temat. Ankietowani ocenili, że ChlapPro może
+mieć wpływ na ułatwienie samodzielnego wykonywania tej czynności.
+
+100%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 15 ---
+
+Wykres 11 Możliwość ułatwienia samodzielnej opieki nad dziećmi, zwierzętami dzięki
+ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+8 testerów, którzy nie przetestowali ChlapPro w trakcie opieki nad dziećmi,
+zwierzętami, zapytano o opinię na ten temat. Wszyscy ocenili, że ChlapPro może
+mieć wpływ na zwiększenie poczucia bezpieczeństwa podczas wykonywania tej
+czynności.
+
+50%
+50%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 16 ---
+
+Wykres 12 Możliwość zwiększenia poczucia bezpieczeństwa podczas opieki nad
+dziećmi, zwierzętami dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+9 testerów przetestowało ChlapPro podczas przemieszczania się w niesprzyjających
+warunków atmosferycznych, np. w trakcie opadów deszczu, śniegu. Tylko 1 osoba
+udzieliła odpowiedzi przeczącej.
+
+62,5%
+37,5%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 17 ---
+
+Wykres 13 Testowanie ChlapPro podczas złych warunków atmosferycznych.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+9 osobom, które przetestowały ChlapPro podczas niesprzyjających warunków
+atmosferycznych, zadano pytania o doświadczenia związane z ułatwieniem
+wykonywania tej czynności. Wszystkie osoby zgodnie stwierdziły, że ChlapPro ułatwił
+im przemieszczenie się podczas opadów deszczu, śniegu.
+
+90%
+10%
+Tak
+Nie
+
+--- strona 18 ---
+
+Wykres 14 Ułatwienie przemieszczania się podczas złych warunków
+atmosferycznych dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+Wszyscy testerzy, którzy przetestowali ChlapPro w trakcie przemieszczania się
+podczas niesprzyjających warunków atmosferycznych, ocenili, że ochraniacz
+zwiększa poczucie bezpieczeństwa podczas wykonywania tej czynności.
+100%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 19 ---
+
+Wykres 15 Zwiększenie poczucia bezpieczeństwa podczas przemieszczania się
+w złych warunkach atmosferycznych dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+1 osoba, która nie przetestowała ochraniacza w trakcie przemieszczania się
+w niesprzyjających warunkach atmosferycznych, została zapytana o opinię na temat
+możliwości ułatwienia przemieszczania się podczas niesprzyjających warunków
+atmosferycznych. Na tak zadane pytanie zdecydowanie zgodziła się z tym
+twierdzeniem.
+
+88,9%
+11,1%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 20 ---
+
+Wykres 16 Możliwość ułatwienia w przemieszczaniu się podczas złych warunków
+atmosferycznych dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+1 osoba, która nie przetestowała ochraniacza w trakcie przemieszczania się
+w niesprzyjających warunkach atmosferycznych, została zapytana o opinię na temat
+możliwości zwiększenia poczucia bezpieczeństwa podczas przemieszczania się
+w niesprzyjających warunków atmosferycznych. Na tak zadane pytanie
+zdecydowanie zgodziła się z tym twierdzeniem.
+
+100%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 21 ---
+
+Wykres 17 Możliwość zwiększenia poczucia bezpieczeństwa podczas
+przemieszczania się w złych warunkach atmosferycznych dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+2 testerów przetestowało ChlapPro podczas aktywności zawodowej, np. w fabrykach,
+laboratoriach, na budowach itp. 8 osób nie przetestowało ochraniacza w tych
+warunkach.
+
+100%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 22 ---
+
+Wykres 18 Testowanie ChlapPro podczas pracy zawodowej.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+Osobom, które przetestowały ChlapPro podczas aktywności zawodowej, zadano
+pytanie o doświadczenia związane z tą czynnością. 2 testerów, którzy przetestowali
+ChlapPro podczas aktywności zawodowej, stwierdziło, że ochraniacz wpłynął
+pozytywnie na ułatwienie wykonywania pracy zawodowej.
+
+20%
+80%
+Tak
+Nie
+
+--- strona 23 ---
+
+Wykres 19 Ułatwienie wykonywania pracy zawodowej dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+2 testerów, którzy przetestowali ChlapPro podczas aktywności zawodowej,
+stwierdzili, że ochraniacz wpłynął pozytywnie na zwiększenie poczucia
+bezpieczeństwa podczas wykonywania pracy.
+
+100%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 24 ---
+
+Wykres 20 Zwiększenie poczucia bezpieczeństwa podczas wykonywania pracy
+zawodowej dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+8 osobom, które nie przetestowały ChlapPro podczas aktywności zawodowej,
+zadano pytanie o opinie na temat możliwości wpływu ochraniacza na wykonywanie
+pracy zawodowej. Wszystkie osoby odpowiedziały, że zdecydowanie zgadzają się
+lub zgadzają się z takim stwierdzeniem.
+
+100%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 25 ---
+
+Wykres 21 Możliwość ułatwienia wykonywanej pracy zawodowej dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+8 osobom, które nie przetestowały ChlapPro podczas aktywności zawodowej,
+zadano pytanie o opinie na temat możliwości wpływu ochraniacza na zwiększenie
+poczucia bezpieczeństwa podczas wykonywania pracy zawodowej. Połowa osób
+odpowiedziała, że zdecydowanie zgadza się, a druga połowa zgadzają się z tym
+stwierdzeniem.
+
+37,5%
+62,5%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 26 ---
+
+Wykres 22 Możliwość zwiększenia poczucia bezpieczeństwa podczas wykonywania
+pracy zawodowej dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+3 osoby przetestowały ChlapPro podczas aktywności fizycznej i realizacji pasji, np.
+jazda na rowerze, nartach, wędkowanie, udział w imprezach plenerowych czy
+wyjazdów nad wodę itp. 7 osób nie przetestowało ochraniacza w tych warunkach.
+
+50%
+50%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 27 ---
+
+Wykres 23 Testowanie ChlapPro podczas aktywności fizycznej i realizacji pasji.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+Osobom, które przetestowały ChlapPro podczas aktywności fizycznej i realizacji pasji
+zadano pytanie o doświadczenia związane z tą czynnością. Wszyscy testerzy, którzy
+przetestowali ChlapPro podczas aktywności zawodowej, stwierdzili, że ochraniacz
+wpłynął pozytywnie na ułatwienie wykonywania aktywności fizycznej i realizacji pasji.
+30%
+70%
+Tak
+Nie
+
+--- strona 28 ---
+
+Wykres 24 Ułatwienie podejmowania aktywności fizycznej i realizacji pasji dzięki
+ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+Wszyscy testerzy, którzy przetestowali ChlapPro podczas aktywności fizycznej
+i realizacji pasji stwierdzili, że ochraniacz wpłynął pozytywnie na zwiększenie
+poczucia bezpieczeństwa podczas wykonywania tej czynności.
+
+100%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 29 ---
+
+Wykres 25 Zwiększenie poczucia bezpieczeństwa podczas podejmowania
+aktywności fizycznej i realizacji pasji dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+Osobom, które nie przetestowały ChlapPro podczas aktywności fizycznej i realizacji
+pasji zadano pytanie o opinie na temat możliwości wpływu ochraniacza na
+podejmowanie tej czynności. 4 osoby stwierdziły, że zdecydowanie zgadzają się, a 2
+osoby zgadzają się z tym stwierdzeniem. Tylko 1 ankietowany nie ma zdania na ten
+temat.
+
+100%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 30 ---
+
+Wykres 26 Możliwość ułatwienia podejmowanej aktywności fizycznej i realizacji pasji
+dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+Wszyscy testerzy, którzy nie przetestowali ChlapPro podczas aktywności fizycznej
+i realizacji pasji stwierdzili, że ochraniacz może mieć pozytywny wpływ na
+zwiększenie poczucia bezpieczeństwa podczas wykonywania tej czynności. 4 osoby
+stwierdziły, że zdecydowanie zgadzają się, a 2 osoby zgadzają się z tym
+stwierdzeniem. 1 ankietowany nie ma zdania na ten temat.
+
+57,1%
+28,6%
+14,3%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 31 ---
+
+Wykres 27 Możliwość zwiększenia poczucia bezpieczeństwa podczas podejmowania
+aktywności fizycznej i realizacji pasji dzięki ChlapPro.
+
+Źródło: opracowanie własne na podstawie badania ankietowego.
+2.1. Wyniki konsultacji z testerami ChlapPro
+Podczas indywidualnych konsultacji z testerami podsumowano wyniki konsultacji
+przeprowadzonych podczas testowania prototypów w ulepszonych wersjach.
+Dopytywano o kwestie wymagające doprecyzowania, ale także to, czy tester chciałby
+wykonać sobie taki ochraniacz samodzielnie oraz, czy forma tutorialu lub poradnika
+„krok po kroku” ze zdjęciami pomogłaby w samodzielnym wykonaniu.
+• Opinia testera ChlapPro 1 Jana Gierszewskiego – „Ochraniacz najbardziej
+przydatny będzie zimą oraz w deszczowe dni, gdy trzeba przejść jakiś odcinek
+do pracy, do garażu. Będę go używał podczas jazdy rowerem, spacerów po
+lesie, przy koszeniu trawy i podczas mycia auta. Bardzo użyteczna rzecz”.
+57,1%
+28,6%
+14,3%
+Zdecydowanie się zgadzam
+Zgadzam się
+Nie mam zdania
+Raczej się nie zgadzam
+Nie zgadzam się
+
+--- strona 32 ---
+
+„Ochraniacz zakładałem i zakładam dalej samodzielnie bez problemów.
+Dodatkowo mogę powiedzieć, że podoba mi się materiał, z którego wykonano
+ochraniacz: jest lekki i nieprzemakalny”.
+„Z pewnością nie wykonałbym ChlapPro tak dokładnie i precyzyjnie, więc
+uważam, że najlepiej, gdyby można było kupić gotowy wg rozmiaru”.
+„Z pewnością dla wielu takie dodatkowe wskazówki, jak wykonać ChlapPro
+będą potrzebne. Uważa, że powinny być dwie wersje: filmik oraz opisówka ze
+zdjęciami, jak wykonać ochraniacz”.
+• Opinia testera ChlapPro 1 Dominika Skalskiego – „Dzięki ochraniaczowi
+możemy się czuć dobrze i bez żadnych ograniczeń w okresie wiosennym
+i letnim wtedy często chodzimy w spodenkach i dzięki ochraniaczowi możemy
+zabezpieczyć części protezy, które są narażone na zachlapanie lub
+uszkodzenie podczas przy różnych pracach domowych ogrodowych, lub
+zawodowych”.
+„Myślę, że po przetestowaniu ochraniacza, to chciałbym mieć ChlapPro, bo na
+pewno będzie przydatny wiosną i latem do różnych prac związanych koło
+domu, aby ochronić części protezy, które mogą się uszkodzić podczas
+zachlapania. Myślę, że poleciłbym komuś zrobienie takiego ochraniacza. Sam
+raczej bym nie robił. Myślę, że jeśli ktoś by chciał sam uszyć taki ochraniacz,
+to na pewno filmik byłby pomocny. Osobiście bym udał się do krawcowej lub
+odpowiedniej osoby, żeby to wykonała. Moim zdaniem taki ochraniacz, to
+bardzo fajna sprawa, żeby zabezpieczyć elementy protezy, które nie są
+wodoodporne, jak pompki mechaniczne przy podciśnieniu”.
+• Opinia testerki ChlapPro 1 Weroniki Różyckiej – „Myślę, że gdybym nie miała
+teraz ChlapPro, to raczej poszłabym do krawcowej wykonać sobie taki
+ochraniacz. Taki profesjonalny poradnik z wykonania ochraniacza krok po
+kroku ze zdjęciami mógłby się przydać, nawet krawcowej.
+Ochraniacz ChlapPro zakładam całkowicie samodzielnie na swoją protezę
+nogi. Nie mam dodatkowych uwag do produktu”.
+
+--- strona 33 ---
+
+• Opinia testerki ChlapPro 1 Ewy Strzeleckiej – „Obie wersje ChlapPro 1
+ubierałam bez problemu sama i nie potrzebuję żadnej dodatkowej pomocy.
+Inicjatywa wykonania ochrony pompy przed zachlapaniem jest bardzo słuszna
+i ochraniacz powinien być dostępny dla wszystkich osób posiadających takie
+protezy. Ochraniacz jest wykonany z odpowiedniego materiału, posiada silikon
+zabezpieczający przed dostaniem się wody i gumosznurek dopasowujący
+ochraniacz do protezy”.
+„Myślę, że w warunkach domowych byłoby to dosyć skomplikowane, aby
+samemu go wykonać. Uważam, że taki poradnik, czy filmik mógłby być
+przydatny. Powinny być dwie wersje, ponieważ osoby niekorzystające
+z internetu mogłyby prześledzić krok po kroku w książeczce, a korzystające
+z internetu miałyby dwie wersje do wyboru. Książeczka powinna zawierać
+krótkie instrukcje pisane dużą, czytelną czcionką”.
+„Do ochraniacza nie mam już więcej uwag. Teraz czekam na jakieś
+rozwiązanie w kwestii możliwości swobodnego korzystania z protezy nad
+morzem, bez obaw o wsypanie się piasku, lub zamoczenie przez fale morskie.
+Robienie dodatkowej protezy kąpielowej jest kosztowne, a i chodzenie w niej
+nie jest wygodną sprawą (np. brzegiem morza). Kocham morze i zauważyłam
+ten problem. Niestety nie wymyśliłam żadnego rozwiązania i zakładam torebkę
+foliową, skarpetki, adidasy i tak chodzę brzegiem morza, nie jest to
+rozwiązanie godne czasów, w których żyjemy”.
+• Opinia testera ChlapPro 2 Piotra Kąkola – „Ochraniacz jest dla mnie pomocny
+głównie podczas opadów atmosferycznych”.
+„Gdybym nie miał takiego ChlapPro, to chciałbym, aby wykonała go dla mnie
+krawcowa. Uważam, że warto byłoby nakręcić filmik, jak można zrobić
+samemu ochraniacz ChlapPro 2. Myślę jednak, że taki instruktaż może się
+komuś przydać”.
+• Opinia testera ChlapPro 2 Andrzeja Tutki – „Sam nie byłbym w stanie
+wykonać takiego ochraniacza, więc na pewno zrobiłaby to dla mnie krawcowa.
+
+--- strona 34 ---
+
+Dla kogoś, kto ma, chociaż odrobinę zdolności krawieckich tutorial, na którym
+jest pokazane wszystko krok po kroku, będzie super sprawą”.
+• Opinia testerki ChlapPro 2 Jolanty Ożgi – „W związku z okresem zimowym nie
+miałam możliwości przetestowania jeszcze ochraniacza we wszystkich
+sytuacjach, np. podczas opieki nad dziećmi nad wodą czy podczas realizacji
+pasji. Jednak uważam, że jest to bardzo dobre rozwiązanie, które ułatwi mi
+w kolejnych miesiącach podejmowanie aktywności fizycznej w trakcie
+wyjazdów w okresach letnich”.
+„Gdybym nie miała teraz ochraniacza ChlapPro, to pewnie chciałabym go
+najlepiej zakupić, ale jeżeli nie byłby dostępny, to wolałabym, aby ktoś mi go
+wykonał. Myślę, że gdym miała komuś zlecić wykonanie ochraniacza, to taki
+profesjonalny poradnik ze zdjęciami, jak go wykonać mógłby być pomocny.
+Nie mam dodatkowych uwag. Ochraniacz podoba mi się, szczególnie jego
+estetyczny wygląd, ale także to, że jest on mały i mogę go ze sobą wszędzie
+zabrać. Można ewentualnie pomyśleć jeszcze nad jakimś woreczkiem
+dedykowanym do schowania ochraniacza w torebce lub plecaku, ale to jest
+dodatkowy pomysł”.
+• Opinia testerki ChlapPro 2 Katarzyny Mieczkowskiej – „Ochraniacz ChlapPro
+jest teraz idealny, bardzo estetycznie wykonany, nie zajmuje dużo miejsca,
+spełnia w 100% funkcję ochronną. Teraz nie będę się martwić o zachlapanie
+protezy, spacerując brzegiem morza. Ochroni ją również przed piaskiem na
+plaży. Będę z niego korzystać często. Ochraniacz zakładam samodzielnie”.
+„Zawsze próbowałam zrobić sama ochronić protezę przed np. zachlapaniem
+wodą, czy przedostaniem się piasku na plaży. Wykonywałam prowizoryczne
+osłony samodzielnie. Były to osłony jednorazowe. Po zdemontowaniu nie
+nadawały się do ponownego użytku. Także nie wiem, czy udałoby mi się
+zrobić coś takiego. Chętnie zobaczyłabym, jednak jak wykonać ChlapPro.
+Myślę, że filmik przydałby się użytkownikom, którzy nie mieli możliwości
+przetestowania ochraniacza”.
+
+--- strona 35 ---
+
+• Opinia testera ChlapPro 2 Marcina Papaja – „Wydaje mi się, że obecna wersja
+ochraniacza została znacząco poprawiona, szczególnie pod kątem
+dopasowania do protezy oraz zakładania. Proces zakładania jest szybki
+i intuicyjny. Wydaje mi się także, że ochraniacz będzie bardzo użyteczny
+podczas wykonywania codziennych obowiązków, gdzie powstaje ryzyko
+zachlapania protezy wodą. Zdecydowanie zwiększa bezpieczeństwo protezy
+w takich sytuacjach”.
+„Preferowałbym, żeby ochraniacz ktoś dla mnie wykonał, gdybym nie miał
+tego obecnego. Wydaje, mi się, że lepszym rozwiązaniem byłby poradnik ze
+zdjęciami, który można wydrukować jako instrukcję i przekazać wraz z innymi
+dokumentami osobie, która będzie szyć ochraniacz. Nie mam żadnych
+dodatkowych uwag. Uważam, że finalna wersja ochraniacza jest dopracowana
+i będzie spełniać swoje zadanie”.
+• Opinia testerki ChlapPro 2 Ewy Zalejskiej – „Myślę, że już ostatnio
+powiedziałam wszystkie moje uwagi na temat ChlapPro 2. Tak jak już
+wspomniałam, są to moje subiektywne uwagi, nie zaprzeczają one jednak
+przydatności produktu, który pełnia swój cel”.
+„Jeżeli chodzi o wykonanie ochraniacza, to wolałabym, aby ktoś mi go
+wykonał. Dlatego też, taki poradnik ze zdjęciami, jak to zrobić byłby wartością
+dodaną. Jeżeli chodzi o dodatkowe uwagi, to zastanawiam się jeszcze, czy nie
+powinno się wziąć pod uwagę osób leworęcznych w trakcie wszywania
+zamka?”.
+Na podstawie przeprowadzonych konsultacji oraz wyników ankiety wszystkie
+osoby testujące ChlapPro 1 stwierdziły, że ulepszona wersja ochraniacza
+ChlapPro 1 jest lepsza od wersji pierwotnej. Wszystkim testerom odpowiadały
+naniesione zmiany. Jeżeli chodzi o prototyp ChlapPro 2, testerzy oprócz
+jednej osoby, oceniły zmiany w ochraniaczu jako pozytywne. Testerka, która
+stwierdziła, że oprócz wyprofilowania wzoru bardziej odpowiadała jej pod
+innymi względami wersja pierwsza, stwierdziła również, że nie zaprzecza to
+temu, że ChlapPro 2 spełnia swoją główną funkcję, do której został stworzony.
+
+--- strona 36 ---
+
+Wszyscy testerzy ChlapPro 1 i 2 jednoznacznie stwierdzili, że ubierają
+ochraniacz samodzielnie bez dodatkowych przedmiotów. Testerzy stwierdzili
+również, że raczej nie zdecydowaliby się na samodzielne wykonanie
+ochraniacza. Głównym powodem jest brak umiejętności posługiwania się
+maszyną do szycia. Testerzy wskazywali na możliwość wykonania ChlapPro,
+np. przez krawcową lub wspominali o zainteresowaniu zakupem gotowego
+produktu. Wszystkie osoby biorące udział w testach jednoznacznie stwierdziły,
+że poradnik ze zdjęciami lub filmik w formie tutorialu byłby pomocny do
+wykonania ochraniacza. Nie wskazali jednoznacznie, która z form byłaby wg
+nich bardziej uzasadniona, głosy podzieliły się po połowie.
+
+--- strona 37 ---
+
+3.
+Dokumentacja techniczna ochraniaczy ChlapPro
+W innowacji powstały dwa rodzaje chlapoodpornego ochraniacza na protezę
+kończyny dolnej. ChlapPro 1 przeznaczona jest dla osób, które poruszają się przy
+pomocy protezy podudzia. Jego zadaniem jest zabezpieczenie pompy
+podciśnieniowej w protezie. ChlapPro 2 dedykowana jest dla osób po amputacjach
+powyżej kolana, użytkujących protezy, w których zastosowano przegub kolanowy.
+Wersja ta przeznaczona jest głównie do zabezpieczenia przegubu kolanowego oraz
+adaptera w tym adaptera skrętnego.
+3.1. Specyfikacja techniczna materiału
+Do wyprodukowania ochraniaczy w obu wersjach wykorzystano tkaninę poliestrową
+z membraną transparentną, wodoodporną. Materiał ten stosowany jest głównie do
+produkcji odzieży sportowej, przeciwdeszczowej.
+
+--- strona 38 ---
+
+Zdjęcie 1 Specyfikacja techniczna materiału.
+
+Źródło: importer tkanin GRANT.
+
+--- strona 39 ---
+
+3.2. Specyfikacja techniczna ChlapPro 1
+W specyfikacji technicznej ochraniacza ChlapPro 1 zostały ujęte wszystkie
+niezbędne elementy do wykonania 1 sztuki gotowego produktu wraz z parametrami
+technicznymi i materiałowymi oraz liczbą wykorzystanych elementów.
+Tabela 1 Specyfikacja techniczna ChlapPro 1.
+L.p
+.
+Nazwa
+elementu
+Parametry techniczne i materiałowe
+Liczba elementów
+(sztuki, długość)
+1.
+Tkanina
+OMNITWILL
+100% Poliester + membrana (tkanina
+wodoszczelna). Kolor szary. Tkanina
+poliestrowa z membraną
+transparentną, wodoodporna,
+przepuszczająca powietrze.
+Zastosowanie w odzieży sportowej,
+przeciwdeszczowej.
+
+0,5 metra
+bieżącego.
+2.
+Gumosznurek
+Guma okrągła, elastyczna w oplocie 3
+mm, poliestrowa, kolor czarny.
+1 szt. długość 35
+cm.
+1 szt. długość 29
+cm.
+
+--- strona 40 ---
+
+L.p
+.
+Nazwa
+elementu
+Parametry techniczne i materiałowe
+Liczba elementów
+(sztuki, długość)
+
+3.
+Stoper do
+gumosznurka
+Stoper plastikowy podwójny, 3 mm,
+kolor czarny.
+2 szt.
+4.
+Końcówka do
+sznurka
+zaciskowa
+Końcówka do sznurka plastikowa, 5
+mm, kolor czarny.
+2 szt.
+
+--- strona 41 ---
+
+L.p
+.
+Nazwa
+elementu
+Parametry techniczne i materiałowe
+Liczba elementów
+(sztuki, długość)
+3.
+Taśma
+uszczelniająca
+szwy
+Transparentna taśma uszczelniająca
+szwy. Wykonana z termoplastycznego
+poliuretanu. Zapobiega
+przedostawaniu się wody przez szwy.
+Stosuje się ją po wewnętrznej stronie
+materiału.
+
+Szerokość 20 mm
+– długość 0,5
+metra.
+5.
+Guma
+z sylikonem
+Skład: poliester, elastan, silikon. Kolor
+biały. Gumka ma z jednej strony
+pośrodku 2 silikonowe, falowane paski,
+każdy o szerokości 2 mm. Dzięki
+silikonowi gumka jest antypoślizgowa.
+Szerokość 30 mm.
+W rozmiarze S
+długość 24 cm.
+W rozmiarze M
+długość 26 cm.
+
+--- strona 42 ---
+
+L.p
+.
+Nazwa
+elementu
+Parametry techniczne i materiałowe
+Liczba elementów
+(sztuki, długość)
+Gumka z silikonem jest
+wykorzystywana do bielizny, ale
+również ubrań sportowych.
+Guma łatwo się rozciąga.
+
+6.
+Nici do szwów
+elastycznych
+Nici elastyczne, 100% poliester, kolor
+szary.
+5 metrów.
+7.
+Igła do
+maszyny
+Microtex [NM 60-80], 100% metal.
+1 szt.
+Źródło: opracowanie własne.
+
+--- strona 43 ---
+
+3.3. Rysunki techniczne ChlapPro 1
+Rysunki techniczne przedstawiają ochraniacz ChlapPro 1 na protezę podudzia,
+stosowany do zabezpieczenia pompy podciśnieniowej. Rzuty przedstawiają wymiary
+i elementy finalnego produktu po uszyciu. Zostały przygotowane trzy rzuty
+ochraniacza ChlapPro 1: widok z przodu, z tyłu oraz od wewnątrz. Rzuty te zostały
+przygotowane w formacie PDF i dołączone do niniejszego raportu w formie trzech
+osobnych załączników:
+• R.01 Widok zewnętrzny ochraniacza z przodu
+• R.02 Widok zewnętrzny ochraniacza z tyłu
+• R.03 Widok wewnętrzny ochraniacza.
+Rozmiary ChlapPro 1 – widok zewnętrzny.
+Rozmiar S, wymiary:
+• A
+2 cm
+• B
+3 cm
+• C
+22 cm
+• D
+2 cm
+• E
+29 cm
+• F
+19 cm
+• G
+19 cm
+Rozmiar M, wymiary:
+• A
+2 cm
+• B
+3 cm
+• C
+24 cm
+• D
+2 cm
+• E
+31 cm
+• F
+21 cm
+• G
+20 cm
+
+--- strona 44 ---
+
+Rozmiary ChlapPro 1 – widok wewnętrzny.
+Rozmiar S, wymiary:
+• A
+2 cm
+• B
+3 cm
+• C
+22 cm
+• D
+2 cm
+• E
+29 cm
+• F
+38 cm
+• G
+38 cm
+Rozmiar M, wymiary:
+• A
+2 cm
+• B
+3 cm
+• C
+24 cm
+• D
+2 cm
+• E
+31 cm
+• F
+42 cm
+• G
+40 cm
+3.4. Dokumentacja zdjęciowa ChlapPro 1
+ChlapPro 1 jest ochraniaczem zamocowanym na leju protezowym i nie dotyka ciała
+pacjenta. Poniżej zaprezentowane zostały zdjęcia gotowego ochraniacza
+ChlapPro 1.
+
+--- strona 45 ---
+
+Zdjęcie 2 ChlapPro 1 – widok zewnętrzny ochraniacza z przodu.
+
+Źródło: archiwum prywatne.
+
+--- strona 46 ---
+
+Zdjęcie 3 ChlapPro 1 – górny otwór na gumosznurek.
+
+Źródło: archiwum prywatne.
+
+--- strona 47 ---
+
+Zdjęcie 4 ChlapPro 1 – dolny otwór na gumosznurek.
+
+Źródło: archiwum prywatne.
+
+--- strona 48 ---
+
+Zdjęcie 5 ChlapPro 1 - widok zewnętrzny ochraniacza z tyłu.
+
+Źródło: archiwum prywatne.
+
+--- strona 49 ---
+
+Zdjęcie 6 ChlapPro 1 - widok wewnętrzny ochraniacza z przodu.
+
+Źródło: archiwum prywatne.
+
+--- strona 50 ---
+
+Zdjęcie 7 ChlapPro 1 - widok wewnętrzny ochraniacza z tyłu.
+
+Źródło: archiwum prywatne.
+
+--- strona 51 ---
+
+Zdjęcie 8 ChlapPro 1 - widok z góry.
+
+Źródło: archiwum prywatne.
+
+--- strona 52 ---
+
+Zdjęcie 9 ChlapPro 1 w rozmiarze S (od lewej) i M (od prawej).
+
+Źródło: archiwum prywatne.
+
+--- strona 53 ---
+
+Zdjęcie 10 ChlapPro 1 w rozmiarze S (3 od lewej) i M (1 od prawej).
+
+Źródło: archiwum prywatne.
+3.5. Rekomendacje dla wykonawcy ChlapPro 1
+Przed wykonaniem ChlapPro 1 należy pamiętać, że produkty, ilości, oraz wymiary
+zawarte w dokumentacji technicznej są rekomendacją wynikająca
+z przeprowadzonych testów, oraz konsultacji specjalistycznych. w związku z tym, że
+jest to prototyp innowacji społecznej, istnieje możliwość dokonania drobnych zmian
+uwzględniających indywidualne preferencje i potrzeby użytkownika protezy. Poniżej
+zostaną przedstawione elementy, które można zmodyfikować, a także kluczowe
+kwestie, na które należy zwrócić uwagę podczas szycia ochraniacza.
+Rekomendacje i zalecenia dot. dokumentacji technicznej ChlapPro 1:
+
+--- strona 54 ---
+
+1. Do wykonania ochraniacza potrzebna będzie tradycyjna maszyna do szycia.
+Zaleca się również wykorzystanie owerloka do obszycia szwu podklejonego
+taśmą uszczelniającą. Do zamocowania gumy z sylikonem warto użyć rygla.
+2. Rozmiar S ChlapPro 1 rekomendowany jest do leja o szerokości na obwodzie
+do 34,5 cm, a rozmiar M do leja o szerokości na obwodzie powyżej 34,5 cm.
+Pomiaru szerokości leja na obwodzie należy dokonać na poziomie 4 cm od
+dołu leja.
+3. Zalecane jest użycie tkaniny o nazwie OMNITWILL z uwagi na
+przeprowadzone testy jej wodoodporności i wytrzymałości. w przypadku
+zdecydowania się na inną tkaninę należy zwrócić uwagę, aby posiadała
+membranę wodoodporną, przepuszczającą powietrze i posiadała zbliżone
+parametry materiałowe wskazane w specyfikacji technicznej tkaniny
+OMNITWILL. w ramach materiału OMNITWILL istnieje możliwość wyboru
+koloru spośród: czerwonego, czarnego, szarego, granatowego. w specyfikacji
+podano, że należy zakupić 0,5 metra bieżącego materiału z uwagi na fakt, że
+ochraniacz musi zostać wykrojony z 3 części z uwzględnieniem obszycia
+materiału.
+4. Materiał OMNITWILL można prasować w niskiej temperaturze maksymalnie
+110 stopni jedynie na prawej stronie, nie należy prasować go po lewej
+(wewnętrznej) stronie.
+5. Podczas dokonywania wykroju należy doliczyć z każdej strony materiału
+dodatkowe około 1 cm do podszycia materiału (szwy). Na rysunkach
+technicznych zostały przedstawione finalne wymiary elementów ochraniacza.
+6. Rekomendowana długość gumosznurków w ochraniaczu ChlapPro 1 wynosi
+dla górnego gumosznurka 35 cm, a 29 cm dla dolnego gumosznurka,
+szerokość splotu 3 mm. w razie potrzeby istnieje możliwość wymiany
+gumosznurka na cieńszy lub węższy, lub też wydłużenie długości
+gumosznurków wskazanych w specyfikacji technicznej. w przypadku zmiany
+grubości gumosznurka należy uwzględnić również dopasowanie
+odpowiedniego rodzaju stopera oraz końcówki do sznurka.
+
+--- strona 55 ---
+
+7. Łączenie materiału (szew podklejony taśmą uszczelniającą) zaznaczone na
+rysunkach technicznych należy w pierwszej kolejności przeszyć tradycyjną
+maszyną do szycia, kolejno przeszyć owerlokiem. Na koniec podkleić taśmą
+uszczelniającą szwy od wewnętrznej (błyszczącej) strony. Podczas
+zaprasowywania taśmy termoplastycznej należy uważać na materiał, aby nie
+dotykać go od lewej strony.
+8. W ChlapPro 1 zastosowano białą gumę z sylikonem z uwagi na uniknięcie
+ryzyka zafarbowania elementów protezy. Zastosowana guma występuje
+również w kolorach: białym, czarnym i beżowym. Istnieje możliwość zamiany
+zastosowanej gumy na podobną, należy jednak zwrócić uwagę na to, aby
+znajdowała się na niej część sylikonowa, która dodatkowo trzyma ochraniacz
+w odpowiednim miejscu, zapobiegając jego zsuwaniu.
+9. W specyfikacji technicznej podano długości gumy potrzebnej do uszycia
+ChlapPro 1 (w rozmiarze S 24 cm, dla rozmiaru M 26 cm). Należy pamiętać,
+że podane wymiary są faktycznymi wymiarami gumy (bez rozciągnięcia).
+10. Gumę z sylikonem warto dodatkowo zamocować na ryglu lub stebnówce, aby
+zapobiec odstawaniu gumy.
+11. Na rysunkach technicznych R.01, R.02 i R.03 wymiar F oznacza szerokość
+górnego tunelu ze ściągaczem i ściągacza podszytego gumą z sylikonem.
+Wymiar F przedstawia wymiar po rozciągnięciu górnej części ochraniacza.
+Podczas wszywania gumy należy naciągnąć ją do wymiaru materiału
+podanego na rysunku technicznym R.03 w zależności od rozmiaru
+ochraniacza.
+12. Na rysunkach technicznych R.01, R.02 i R.03 wymiar G oznacza ogólną
+szerokość ochraniacza, tj. dolnego tunelu ze ściągaczem oraz środkowej
+części ochraniacza.
+13. Należy pamiętać, że każda proteza, tak jak zdrowe kończyny różni się pod
+kątem długości, grubości itp. Na rysunkach technicznych ChlapPro 1 zostały
+przedstawione szacowane wymiary ochraniacza. Istnieje jednak możliwość
+
+--- strona 56 ---
+
+dopasowania wymiarów ochraniacza do indywidualnych potrzeb, szczególnie
+wymiarów: C, F, G.
+14. Kolor nici należy dobrać do wybranego koloru materiału.
+15. Igła użyta do uszycia ochraniacza powinna być odpowiednio cienka
+i dostosowana do materiału wodoodpornego. w związku z tym, aby uniknąć
+nadmiernego dziurawienia materiału podczas szycia, warto zrobić test,
+przeszywając kawałek materiału.
+16. W trakcie szycia ChlapPro 1 należy korzystać z rysunków technicznych R.01,
+R.02 i R.03 oraz dokumentacji zdjęciowej ochraniacza.
+3.6. Rekomendacje dla użytkownika ChlapPro 1
+ChlapPro 1 służy do ochrany przed zachlapaniem pompy podciśnieniowej
+zastosowanej w protezie kończyny dolnej na poziomie podudzia podczas
+wykonywania czynności dnia codziennego, tj.:
+• czynności domowe: sprzątanie mieszkania, podlewanie ogrodu, korzystania
+z samoobsługowej myjni samochodowej,
+• sprawowanie opieki nad dziećmi/zwierzętami podczas kąpieli, przebywania na
+basenie, czy nad jeziorem,
+• przemieszczanie się w złych warunkach atmosferycznych podczas deszczu,
+czy też śniegu,
+• czynności wykonywanych podczas pracy zawodowej, np. pracy w fabrykach,
+laboratoriach, na budowach,
+• aktywność fizyczna i realizacji pasji: jazda na rowerze, nartach, wędkowania,
+udziału w imprezach plenerowych czy wyjazdów nad wodę.
+Należy pamiętać, że ochraniacz nie służy do wejścia z protezą do wody. Nie można
+więc w nim pływać, kąpać się itp. Ochraniacz ChlapPro 1 nie zabezpieczy w 100%
+protezy przed jej zalaniem, ponieważ jego funkcją jest zabezpieczenie protezy przed
+zachlapaniem podczas wykonywania codziennych czynności.
+
+--- strona 57 ---
+
+W przypadku zabrudzenia ochraniacza można go prać w temperaturze 30 stopni.
+Ochraniacz można prasować w niskiej temperaturze maksymalnie 110 stopni jedynie
+na prawej stronie materiału, nie należy prasować go od wewnętrznej (błyszczącej)
+strony. Nie należy wybielać materiału. Ochraniacz można suszyć bębnowo na niskich
+obrotach, ale zalecane jest suszenie go w sposób tradycyjny.
+3.7. Instrukcja użytkowania ChlapPro 1
+Masz przed sobą ochraniacz protezy nogi ChlapPro 1, który przeznaczony jest dla
+osób posiadających protezę na poziomie podudzia z wykorzystaniem pompy
+podciśnieniowej, która nie jest odporna na działanie wody.
+Jak zakładać ochraniacz ChlapPro 1?
+1. Ściągnij obuwie z protezy, a następnie przeciągnij ochraniacz przez stopę
+protezową, tak jakbyś zakładał/zakładała spodnie. Jeżeli masz ubrane długie
+spodnie, zaleca się, aby ochraniacz był założony pod spodniami, natomiast
+w przypadku wąskich spodni możesz ubrać go na wierzch.
+2. Ochraniacz naciągnij na dolną część leja protezowego, tak aby w całości
+zakrywał pompę podciśnieniową. Załóż ochraniacz w ten sposób, aby guma
+wewnątrz ochraniacza znajdowała się na górze, a gumosznurki były z przodu
+ochraniacza. To jak wysoko będzie sięgał u Ciebie ochraniacz, zależy od
+indywidualnej długości Twojej protezy. Dlatego też załóż go na tyle wysoko na
+leju, aby zasłaniał pompę podciśnieniową i kończył się za nią, nad stopą
+protezową.
+3. Ściągnij górny i dolny gumosznurek stoperem, tak aby przytrzymywał
+ochraniacz.
+4. Załóż ponownie obuwie na protezę.
+5. Ochraniacz jest gotowy do ochrony Twojej protezy przed zachlapaniem.
+Uwaga – przed założeniem ChlapPro 1 upewnij się, czy prawidłowo go zakładasz
+(zdjęcie poglądowe).
+
+--- strona 58 ---
+
+Zdjęcie ochraniacza ChlapPro 1 z przodu.
+
+3.8. Specyfikacja techniczna ChlapPro 2
+W specyfikacji technicznej ochraniacza ChlapPro 2 zostały ujęte wszystkie potrzebne
+elementy do wykonania 1 sztuki gotowego produktu wraz z parametrami
+technicznymi i materiałowymi oraz liczbą wykorzystanych elementów.
+
+--- strona 59 ---
+
+Tabela 4 Specyfikacja techniczna ChlapPro 2.
+L.p. Nazwa elementu
+Parametry techniczne i materiałowe
+Liczba elementów
+(sztuki, długość)
+1.
+Tkanina
+OMNITWILL
+100% Poliester + membrana
+(tkanina wodoszczelna). Kolor
+szary. Tkanina poliestrowa
+z membraną transparentną,
+wodoodporna, przepuszczająca
+powietrze. Zastosowanie w odzieży
+sportowej, przeciwdeszczowej.
+
+1 metr bieżący.
+2.
+Sznurówka
+Woskowane okrągłe sznurowadła
+do obuwia o średnicy 3,5 mm. Kolor
+szary. Sznurowadła wykonane są
+z wysokiej jakości mocnej,
+odpowiednio woskowanej oraz
+odpornej na przetarcia bawełny.
+Specjalny splot sznurowadeł
+zapobiega ich samoistnemu
+rozwiązywaniu podczas
+użytkowania.
+1 szt. długość 60
+cm.
+
+--- strona 60 ---
+
+L.p. Nazwa elementu
+Parametry techniczne i materiałowe
+Liczba elementów
+(sztuki, długość)
+
+3.
+Zamek
+błyskawiczny
+Zamek wodoszczelny, rozdzielczy.
+Wykonany z: poliestru, metalu.
+Kolor czarny. Szerokość ząbków:
+6,4 mm. Zamek błyskawiczny
+wodoodporny o dużej wytrzymałości
+na rozerwania i zagięcia.
+ZASTOSOWANIA ZAMKA: kurtki,
+bluzy, odzież sportowa, odzież
+robocza,
+plecaki, torby, śpiwory, namioty.
+
+1 szt.
+W rozmiarze S
+długość 40 cm.
+W rozmiarze M
+długość 45 cm.
+
+4.
+Nici do szwów
+elastycznych
+Nici elastyczne, 100% poliester,
+kolor szary.
+5 metrów.
+5.
+Igła do maszyny
+Microtex [NM 60-80], 100% metal.
+1 szt.
+Źródło: opracowanie własne.
+
+--- strona 61 ---
+
+3.9. Rysunki techniczne ChlapPro 2
+Rysunki techniczne przedstawiają ochraniacz ChlapPro 2 na protezę
+z wykorzystaniem przegubu kolanowego. Rzuty przedstawiają wymiary i elementy
+gotowego produktu po uszyciu. Zostały przygotowane trzy rzuty ochraniacza
+ChlapPro 2, które przedstawiają dwa widoki zewnętrzne ochraniacza oraz jeden
+widok wewnętrzny. Rzuty te zostały przygotowane w formacie PDF i dołączone do
+niniejszego raportu w formie trzech osobnych załączników:
+• R.04 Widok zewnętrzny ochraniacza nr 1
+• R.05 Widok zewnętrzny ochraniacza nr 2
+• R.06 Widok wewnętrzny ochraniacza.
+Rozmiary ChlapPro 2 – widok zewnętrzny.
+Rozmiar S, wymiary:
+• A
+2 cm
+• B
+40 cm
+• C
+42 cm
+• D
+14 cm
+• E
+19 cm
+• F
+0,8 cm
+Rozmiar M, wymiary:
+• A
+2 cm
+• B
+45 cm
+• C
+47 cm
+• D
+14 cm
+• E
+19 cm
+• F
+0,8 cm
+
+--- strona 62 ---
+
+Rozmiary ChlapPro 2 – widok wewnętrzny.
+Rozmiar S, wymiary:
+• A
+2 cm
+• B
+40 cm
+• C
+42 cm
+• D
+28 cm
+• E
+38 cm
+• F
+0,8 cm
+Rozmiar M, wymiary:
+• A
+2 cm
+• B
+45 cm
+• C
+47 cm
+• D
+28 cm
+• E
+38 cm
+• F
+0,8 cm
+3.10. Dokumentacja zdjęciowa ChlapPro 2
+ChlapPro 2 jest ochraniaczem mocowanym na adapterze łączącym pomiędzy lejem
+protezowym a przegubem kolanowym. w przypadku zastosowanego adaptera
+obrotowego, który nie jest wodoodporny, ochraniacz montowany jest nad adapterem.
+Ochraniacz ten nie ma styczności z ciałem pacjenta. Poniżej zaprezentowane są
+zdjęcia gotowego ochraniacza ChlapPro 2.
+
+--- strona 63 ---
+
+Zdjęcie 11 ChlapPro 2 – widok zewnętrzny z przodu na protezę lewej nogi.
+
+Źródło: archiwum prywatne.
+
+--- strona 64 ---
+
+Zdjęcie 12 ChlapPro 2 - widok zewnętrzny z przodu na protezę prawej nogi.
+
+Źródło: archiwum prywatne.
+
+--- strona 65 ---
+
+Zdjęcie 13 ChlapPro 2 – widok górnego tunelu ze ściągaczem.
+
+Źródło: archiwum prywatne.
+
+--- strona 66 ---
+
+Zdjęcie 14 ChlapPro 2 – widok dolnej części zamka.
+
+Źródło: archiwum prywatne.
+
+--- strona 67 ---
+
+Zdjęcie 15 ChlapPro 2 - widok zewnętrzny po rozłożeniu.
+
+Źródło: archiwum prywatne.
+
+--- strona 68 ---
+
+Zdjęcie 16 ChlapPro 2 - widok wewnętrzny po rozłożeniu.
+
+Źródło: archiwum prywatne.
+
+--- strona 69 ---
+
+Zdjęcie 17 ChlapPro 2 w rozmiarze S (od lewej strony) i M (od prawej strony).
+
+Źródło: archiwum prywatne.
+
+--- strona 70 ---
+
+Zdjęcie 18 ChlapPro 2 w rozmiarze S (4 od lewej strony) i M (2 od prawej strony).
+\
+Źródło: archiwum prywatne.
+3.11. Rekomendacje dla wykonawcy ChlapPro 2
+Przed wykonaniem ChlapPro 2 należy pamiętać, że produkty, ilości oraz wymiary
+zawarte w dokumentacji technicznej są rekomendacją wynikająca
+z przeprowadzonych testów, oraz konsultacji specjalistycznych. w związku z tym, że
+jest to prototyp innowacji społecznej, istnieje możliwość dokonania drobnych zmian
+uwzględniających indywidualne preferencje i potrzeby użytkownika protezy. Poniżej
+zostaną przedstawione elementy, które można zmodyfikować, a także kluczowe
+kwestie, na które należy zwrócić uwagę podczas szycia ochraniacza.
+
+--- strona 71 ---
+
+Rekomendacje i zalecenia dot. dokumentacji technicznej ChlapPro 2:
+1. Do wykonania ochraniacza potrzebna będzie tradycyjna maszyna do szycia.
+2. Rozmiar S ChlapPro 2 rekomendowany jest dla użytkowników o wzroście do
+172 cm, a rozmiar M dla osób od 173 cm. Dla upewnienia się, co do wyboru
+rozmiaru należy dokonać pomiaru długości swojego przegubu kolanowego
+w protezie, mierząc od adaptera znajdującego się tuż nad przegubem
+kolanowym do maksymalnie górnej części pokrycia kosmetycznego stopy.
+Rozmiar S będzie odpowiedni dla wyniku około 42 cm, a dla rozmiaru M około
+47 cm.
+3. Zalecane jest użycie tkaniny o nazwie OMNITWILL z uwagi na
+przeprowadzone testy jej wodoodporności i wytrzymałości. w przypadku
+zdecydowania się na inną tkaninę należy zwrócić uwagę, aby posiadała
+membranę wodoodporną, przepuszczającą powietrze i posiadała zbliżone
+parametry materiałowe wskazane w specyfikacji technicznej tkaniny
+OMNITWILL. w ramach materiału OMNITWILL istnieje możliwość wyboru
+koloru spośród: czerwonego, czarnego, szarego, granatowego. w specyfikacji
+podano, że należy zakupić 1 metr bieżący materiału z uwagi na fakt, że
+ochraniacz musi zostać wykrojony z 2 części z uwzględnieniem obszycia
+materiału.
+4. Materiał OMNITWILL można prasować w niskiej temperaturze maksymalnie
+110 stopni jedynie na prawej stronie, nie należy prasować go po lewej
+(wewnętrznej) stronie.
+5. Podczas dokonywania wykroju należy doliczyć z każdej strony materiału
+dodatkowe około 1 cm do podszycia materiału (szwy). Na rysunkach
+technicznych zostały przedstawione finalne wymiary elementów ochraniacza.
+6. Na rysunku R.06 został przedstawiony krój ChlapPro 2, który polega na
+sukcesywnym zwężaniu materiału od góry do dołu. Od około 1/3 materiału od
+góry występuje mocniejsze zwężenie, systematycznie ku dołowi.
+7. W razie potrzeby istnieje możliwość wymiany sznurówki na grubszą lub
+dłuższą od wskazanej w specyfikacji technicznej. Należy zwrócić uwagę, aby
+
+--- strona 72 ---
+
+sznurówka była najlepiej woskowana z uwagi na fakt, iż nie wchłania ona
+wody.
+8. W ChlapPro 2 zastosowano zamek błyskawiczny wodoodporny, rozdzielczy.
+w rozmiarze S długość zamka wynosi 40 cm, a rozmiarze M 45 cm. Istnieje
+możliwość dostosowania zamka do indywidualnych potrzeb długości
+ochraniacza poprzez zakup innej długości zamka. Należy jednak zwrócić
+uwagę, aby był on wodoodporny oraz rozdzielczy.
+9. W ochraniaczu ChlapPro 2 zamek zapina się od góry do dołu, jest to
+rekomendowany sposób wszycia zamka. Jeżeli jednak użytkownik będzie
+preferował zapinanie zamka od dołu do góry, to istnieje możliwość zmiany
+kierunku wszycia zamka.
+10. Należy pamiętać, że każda proteza, tak jak zdrowe kończyny różni się pod
+kątem długości, grubości itp. Na rysunkach technicznych R.04, R.05 i R.06
+zostały przedstawione szacowane wymiary ochraniacza. Istnieje jednak
+możliwość dopasowania wymiarów ochraniacza do indywidualnych potrzeb,
+szczególnie wymiarów: B, D, E.
+11. Kolor nici należy dobrać do wybranego koloru materiału.
+12. Igła użyta do uszycia ochraniacza powinna być odpowiednio cienka
+i dostosowana do materiału wodoodpornego. w związku z tym, aby uniknąć
+nadmiernego dziurawienia materiału podczas szycia, warto zrobić test,
+przeszywając kawałek materiału.
+13. W trakcie szycia ChlapPro 2 należy korzystać z rysunków technicznych R.04,
+R.05 i R.06 oraz dokumentacji zdjęciowej ochraniacza.
+3.12. Rekomendacje dla użytkownika ChlapPro 2
+ChlapPro 2 służy do ochrany przed zachlapaniem przegubu kolanowego
+zastosowanej w protezie kończyny dolnej podczas wykonywania czynności dnia
+codziennego, tj.:
+
+--- strona 73 ---
+
+• czynności domowe: sprzątanie mieszkania, podlewanie ogrodu, korzystania
+z samoobsługowej myjni samochodowej,
+• sprawowanie opieki nad dziećmi/zwierzętami podczas kąpieli, przebywania na
+basenie, czy nad jeziorem,
+• przemieszczanie się w złych warunkach atmosferycznych podczas deszczu,
+czy też śniegu,
+• czynności wykonywanych podczas pracy zawodowej, np. pracy w fabrykach,
+laboratoriach, na budowach,
+• aktywność fizyczna i realizacji pasji: jazda na rowerze, nartach, wędkowania,
+udziału w imprezach plenerowych czy wyjazdów nad wodę.
+Należy pamiętać, że ochraniacz nie służy do wejścia z protezą do wody. Nie można
+więc w nim pływać, kąpać się itp. Ochraniacz ChlapPro nie zabezpieczy w 100%
+protezy przed jej zalaniem, ponieważ jego funkcją jest zabezpieczenie protezy przed
+zachlapaniem podczas wykonywania codziennych czynności.
+W przypadku zabrudzenia ochraniacz można prać w temperaturze 30 stopni.
+Ochraniacz można prasować w niskiej temperaturze maksymalnie 110 stopni jedynie
+na prawej stronie materiału, nie należy prasować go od wewnętrznej (błyszczącej)
+strony. Nie należy wybielać materiału. Ochraniacz można suszyć bębnowo na niskich
+obrotach, ale zalecane jest suszenie go w sposób tradycyjny.
+3.13. Instrukcja użytkowania ChlapPro 2
+Masz przed sobą ochraniacz protezy nogi ChlapPro 2, który jest przeznaczony dla
+osób posiadających protezę z wykorzystaniem niewodoodpornego przegubu
+kolanowego.
+Jak zakładać ochraniacz ChlapPro 2?
+
+--- strona 74 ---
+
+1. Jeżeli masz ubrane długie spodnie, zaleca się, aby ochraniacz był założony
+pod spodniami, natomiast w przypadku wąskich spodni możesz ubrać go na
+wierzch. Nie musisz ściągać obuwia, aby założyć ochraniacz ChlapPro.
+2. Rozepnij zamek błyskawiczny, a następnie dopasuj rozłożony ochraniacz do
+kolana, w ten sposób, aby ściągacz ze sznurówką znajdował się na górze.
+Zamek błyskawiczny powinien znajdować się na boku protezy od jej
+wewnętrznej strony.
+3. Pomiędzy lejem protezowym a górną częścią przegubu kolanowego znajduje
+się adapter łączący te dwa elementy. w tym miejscu zwiąż ściśle sznurówkę.
+Jeżeli posiadasz adapter obrotowy, który nie jest wodoodporny, zwróć uwagę,
+aby zawiązać ochraniacz nad tym adapterem. Dzięki temu będzie on
+dodatkowo zabezpieczony.
+4. Zapnij zamek błyskawiczny z góry do dołu.
+5. Ochraniacz jest gotowy do ochrony Twojej protezy przed zachlapaniem.
+Uwaga – przed założeniem ChlapPro 2 upewnij się, czy prawidłowo go zakładasz
+(zdjęcie poglądowe).
+
+--- strona 75 ---
+
+Zdjęcie ochraniacza ChlapPro 2 z przodu na protezę lewej nogi.
+
+--- strona 76 ---
+
+Zdjęcie ochraniacza ChlapPro 2 z przodu na protezę prawej nogi.
+
+4.
+Opinia specjalisty protetyka
+Opinia specjalistyczna została wydana przez Pana Łukasza Bernackiego –
+dyplomowanego fizjoterapeutę i technika ortopedę/protetyka, który posiada 13-letnie
+doświadczenie w wykonywaniu protez kończyn dolnych oraz górnych. Należy
+wspomnieć, że w swojej pracy posiada również doświadczenie w obsłudze pacjentów
+
+--- strona 77 ---
+
+z niepełnosprawnościami, dobieraniu odpowiedniego zaopatrzenia protetycznego do
+indywidualnych potrzeb pacjentów, a także wystawianiu uzasadnień, opinii na temat
+zasadności doboru poszczególnych elementów zastosowanych w protezach. Swoje
+doświadczenie zebrał między innymi w pracy w międzynarodowej firmie wykonującej
+zaopatrzenie ortopedyczne. Niniejsza opinia została przygotowana na podstawie
+współpracy podczas całego projektu innowacji społecznej. Opinia stanowi załącznik
+do niniejszego dokumentu (opinia specjalisty protetyka).
+5.
+Wnioski z etapu testowania ChlapPro
+Po przeprowadzonej ankiecie badawczej oraz konsultacjach z testerami możemy
+wysnuć wnioski z drugiego etapu testowania.
+• Poziom dopasowania i ruchomości protezy z wykorzystaniem ChlapPro jest
+optymalny dla najczęściej występujących elementów protez kończyn dolnych.
+• ChlapPro jest łatwy i szybki w samodzielnym zakładaniu, bez potrzeby
+stosowania dodatkowych elementów lub pomocy innych osób.
+• ChlapPro nie blokuje dopływu powietrza do wewnętrznych elementów protezy.
+• ChlapPro ułatwia użytkownikom niewodoodpornych protez wykonywanie
+czynności, podczas których proteza jest narażona na zachlapania.
+• ChlapPro zwiększa poczucie bezpieczeństwa użytkowników
+niewodoodpornych protez, w trakcie których elementy protez są narażone na
+zachlapania.
+6.
+Ankieta dla testerów
+W pierwszym etapie testowania ankieta oraz konsultacje z testerami miały głównie
+na celu ocenę dopasowania i funkcjonalności elementów ochraniaczy. Stworzono
+dwie ankiety dla osób testujących ChlapPro 1 i ChlapPro 2. w drugim etapie
+testowania ochraniacza ChlapPro przewidziano aktualizację ankiety. Stworzona
+została jedna uniwersalna ankieta oceny prototypów ChlapPro dla obu wersji. Celem
+
+--- strona 78 ---
+
+tej ankiety była głównie ocena doświadczeń podczas testowania ChlapPro podczas
+wykonywania różnych czynności oraz opinii na jego temat.
+Ankieta została przeprowadzona w formie online, nie była anonimowa, co umożliwiło
+późniejsze dopytanie testera o szczegóły podczas konsultacji indywidualnych.
+Ankieta oceniająca ChlapPro1 i ChlapPro 2
+Ankieta dotyczy przetestowanego przez Ciebie ochraniacza ChlapPro po
+naniesionych zmianach. Jej celem jest sprawdzenie dopasowania, funkcjonalności
+oraz poziomu bezpieczeństwa podczas użytkowania ochraniacza ChlapPro w takcie
+wykonywania czynności, w których proteza narażona jest na zachlapanie.
+Wypełnienie ankiety zajmie około 5 minut.
+1. Jak oceniasz poziom dopasowania ochraniacza ChlapPro do Twojej protezy?
+a. Bardzo dobrze
+b. Dobrze
+c. Przeciętnie
+d. Źle
+e. Bardzo źle
+2. Jak oceniasz poziom trudności zakładania ochraniacza ChlapPro?
+a. Bardzo łatwo
+b. Łatwo
+c. Przeciętnie
+d. Trudno
+e. Bardzo trudno
+3. Jak oceniasz szybkość zakładania ochraniacza ChlapPro?
+a. Bardzo szybko
+
+--- strona 79 ---
+
+b. Szybko
+c. Przeciętnie
+d. Wolno
+e. Bardzo wolno
+4. Jak oceniasz zakres ruchomości Twojej protezy podczas użytkowania ochraniacza
+ChlapPro?
+a. Bardzo wysoki
+b. Wysoki
+c. Przeciętny
+d. Niski
+e. Bardzo niski
+5. Czy testowałeś/testowałaś ochraniacz ChlapPro podczas wykonywania czynności
+domowych i codziennych obowiązków np. sprzątanie mieszkania, podlewanie
+ogrodu, korzystanie z samoobsługowej myjni samochodowej itp.?
+a. TAK (przejdź do pytania 6 i 7)
+b. NIE (przejdź do pytania 8 i 9)
+6. Czy zgadzasz się ze stwierdzeniem, że ochraniacz ChlapPro ułatwił Ci
+wykonywanie czynności domowych i codziennych obowiązków, np. sprzątanie
+mieszkania, podlewanie ogrodu, korzystanie z samoobsługowej myjni samochodowej
+itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+
+--- strona 80 ---
+
+7. Czy zgadzasz się ze stwierdzeniem, że ochraniacz ChlapPro zwiększył Twoje
+poczucie bezpieczeństwa podczas wykonywania czynności domowych i codziennych
+obowiązków, np. sprzątanie mieszkania, podlewanie ogrodu, korzystanie
+z samoobsługowej myjni samochodowej itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+(Przejdź do pytania 10)
+8. Czy sądzisz, że ochraniacz ChlapPro może ułatwiać wykonywanie czynności
+domowych i codziennych obowiązków, np. sprzątanie mieszkania, podlewanie
+ogrodu, korzystanie z samoobsługowej myjni samochodowej itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+9. Czy sądzisz, że ochraniacz ChlapPro może zwiększać poczucie bezpieczeństwa
+podczas wykonywania czynności domowych i codziennych obowiązków, np.
+sprzątanie mieszkania, podlewanie ogrodu, korzystanie z samoobsługowej myjni
+samochodowej itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+
+--- strona 81 ---
+
+e. Zdecydowanie się nie zgadzam
+(Przejdź do pytania 10)
+10. Czy testowałeś/testowałaś ochraniacz ChlapPro podczas opieki nad dziećmi,
+zwierzętami, np. podczas kąpieli, przebywania na basenie, czy nad jeziorem itp.?
+a. TAK (przejdź do pytania 11 i 12)
+b. NIE (przejdź do pytania 13 i 14)
+11. Czy zgadzasz się ze stwierdzeniem, że ochraniacz ChlapPro ułatwił Ci
+samodzielną opiekę nad dziećmi, zwierzętami, np. podczas kąpieli, przebywania na
+basenie, czy nad jeziorem itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+12. Czy zgadzasz się ze stwierdzeniem, ochraniacz ChlapPro zwiększył Twoje
+poczucie bezpieczeństwa podczas opieki nad dziećmi, zwierzętami, np. podczas
+kąpieli, przebywania na basenie, czy nad jeziorem itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+(Przejdź do pytania 15)
+
+--- strona 82 ---
+
+13. Czy sądzisz, że ochraniacz ChlapPro może ułatwiać samodzielną opiekę nad
+dziećmi, zwierzętami, np. podczas kąpieli, przebywania na basenie, czy nad jeziorem
+itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+14. Czy sądzisz, że ochraniacz ChlapPro może zwiększać poczucie bezpieczeństwa
+podczas opieki nad dziećmi, zwierzętami, np. podczas kąpieli, przebywania na
+basenie, czy nad jeziorem itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+(Przejdź do pytania 15)
+15. Czy testowałeś/testowałaś ochraniacz ChlapPro w trakcie przemieszczania się
+w złych warunkach atmosferycznych, np. w deszczu, śniegu?
+a. TAK (przejdź do pytania 16 i 17)
+b. NIE (przejdź do pytania 18 i 19)
+16. Czy zgadzasz się ze stwierdzeniem, że ochraniacz ChlapPro ułatwił Ci
+przemieszczanie się w złych warunkach atmosferycznych, np. w deszczu, śniegu?
+a. Zdecydowanie się zgadzam
+
+--- strona 83 ---
+
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+17. Czy zgadzasz się ze stwierdzeniem, że ochraniacz ChlapPro zwiększył Twoje
+poczucie bezpieczeństwa podczas przemieszczania się w złych warunkach
+atmosferycznych, np. w deszczu, śniegu?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+(Przejdź do pytania 20)
+18. Czy sądzisz, że ochraniacz ChlapPro może ułatwiać przemieszczanie się w złych
+warunkach atmosferycznych, np. w deszczu, śniegu?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+19. Czy sądzisz, że ochraniacz ChlapPro może zwiększać poczucie bezpieczeństwa
+podczas przemieszczania się w złych warunkach atmosferycznych, np. w deszczu,
+śniegu?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+
+--- strona 84 ---
+
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+(Przejdź do pytania 20)
+20. Czy testowałeś/testowałaś ochraniacz ChlapPro podczas pracy zawodowej, np.
+w fabrykach, laboratoriach, na budowach itp.?
+a. TAK (przejdź do pytania 21 i 22)
+b. NIE (przejdź do pytania 23 i 24)
+21. Czy zgadzasz się ze stwierdzeniem, że ochraniacz ChlapPro ułatwił Ci
+wykonywanie czynności podczas pracy zawodowej, np. w fabrykach, laboratoriach,
+na budowach itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+22. Czy zgadzasz się ze stwierdzeniem, że ochraniacz ChlapPro zwiększył Twoje
+poczucie bezpieczeństwa podczas wykonywania pracy zawodowej, np. w fabrykach,
+laboratoriach, na budowach itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+(Przejdź do pytania 25)
+
+--- strona 85 ---
+
+23. Czy sądzisz, że ochraniacz ChlapPro może ułatwiać wykonywanie czynności
+podczas pracy zawodowej, np. w fabrykach, laboratoriach, na budowach itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+24. Czy sądzisz, że ochraniacz ChlapPro może zwiększać poczucie bezpieczeństwa
+podczas wykonywania pracy zawodowej, np. w fabrykach, laboratoriach, na
+budowach itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+(Przejdź do pytania 25)
+25. Czy testowałeś/testowałaś ochraniacz ChlapPro podczas aktywności fizycznej
+i realizacji pasji, np. jazda na rowerze, nartach, wędkowanie, udział w imprezach
+plenerowych czy wyjazdów nad wodę itp.?
+a. TAK (przejdź do pytania 26 i 27)
+b. NIE (przejdź do pytania 28 i 29)
+26. Czy zgadzasz się ze stwierdzeniem, że ochraniacz ChlapPro ułatwił Ci
+podejmowanie aktywności fizycznej i realizację pasji, np. jazda na rowerze, nartach,
+wędkowanie, udział w imprezach plenerowych czy wyjazdów nad wodę itp.?
+
+--- strona 86 ---
+
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+27. Czy zgadzasz się ze stwierdzeniem, że ochraniacz ChlapPro zwiększył Twoje
+poczucie bezpieczeństwa podczas podejmowania aktywności fizycznej i realizacji
+pasji, np. jazda na rowerze, nartach, wędkowanie, udziału w imprezach plenerowych
+czy wyjazdów nad wodę itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+(Przejdź do pytania 30)
+28. Czy sądzisz, że ochraniacz ChlapPro może ułatwiać podejmowanie aktywności
+fizycznej i realizację pasji, np. jazda na rowerze, nartach, wędkowanie, udział
+w imprezach plenerowych czy wyjazdów nad wodę itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+29. Czy sądzisz, że ochraniacz ChlapPro może zwiększać poczucie bezpieczeństwa
+podczas podejmowania aktywności fizycznej i realizacji pasji, np. jazda na rowerze,
+
+--- strona 87 ---
+
+nartach, wędkowanie, udziału w imprezach plenerowych czy wyjazdów nad wodę
+itp.?
+a. Zdecydowanie się zgadzam
+b. Zgadzam się
+c. Nie mam zdania
+d. Raczej się nie zgadzam
+e. Zdecydowanie się nie zgadzam
+(Przejdź do pytania 30)
+30. w tym miejscu możesz napisać, co jeszcze sądzisz o przetestowanym
+ochraniaczu ChlapPro. w jakich innych sytuacjach okazał się pomocny? Czy na coś
+jeszcze chciałbyś/chciałabyś zwrócić uwagę? (Odpowiedź nie jest wymagana)
+
+--- strona 88 ---
+
+7.
+List przewodni dla testera
+Witaj Testerze,
+dziękuję za Twój udział w ostatnich testach ochraniacza ChlapPro na protezę nogi.
+Na podstawie wyników ostatnich testów naniesione zostały poprawki. w związku
+z tym przesyłam Ci ochraniacz ChlapPro z prośbą o jego ponowne przetestowanie.
+Twoja opinia na temat tego ochraniacza jest dla nas bardzo ważna.
+W przesyłce znajdziesz:
+1. Instrukcję obsługi ochraniacza ChlapPro 1 / ChlapPro 2, z którą należy
+zapoznać się przed rozpoczęciem testowania produktu.
+2. Ochraniacz ChlapPro 1/ ChlapPro 2.
+Okres testowania:
+1. Czas na przetestowanie produktu masz do 05.03.2023 r.
+2. Podczas całego okresu testowania będziemy w kontakcie, aby móc na
+bieżąco monitorować przebieg testów, odpowiadać na pytania.
+3. Proszę o zrobienie zdjęcia, jak wygląda ochraniacz na Twojej protezie. Zdjęcie
+zrób tak, aby widoczna była Twoja proteza wraz z założonym ochraniaczem.
+Nie wymagamy, aby była widoczna na zdjęciu Twoja twarz.
+4. Pod koniec okresu testowania wyślę do Ciebie ankietę w formie elektronicznej,
+która będzie miała na celu Twoją ocenę testowanego ochraniacza oraz jego
+funkcjonalności.
+Zakończenie okresu testowania:
+• Ochraniacz ChlapPro jest dla Ciebie.
+Dziękuję za Twój udział w projekcie, życzę Ci udanego testowania ochraniacza
+ChlapPro. Mam nadzieję, że ten czas przyniesie Ci wiele satysfakcji z udziału
+w projekcie wspierającym osoby po amputacjach.
+Klaudia Kaniewska

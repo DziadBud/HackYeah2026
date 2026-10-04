@@ -1,0 +1,104 @@
+--- strona 1 ---
+„Hear - IT”
+Stowarzyszenie Edukacji Pozaformalnej
+„Meritum”
+
+--- strona 2 ---
+Krótki opis innowacji
+Jakich problemów dotyczy innowacja
+społeczna i jakie problemy rozwiązuje?
+Internetowa platforma edukacyjna opracowana
+w Polskim Języku Migowym dla osób g/Głuchych
+pragnących wejść w branżę IT. Zawiera video-słownik
+z głównymi pojęciami z obszaru programowania,
+podręczniki dot. języków programowania takich jak
+Python, Java, Javascript, kursy elearningowe oraz
+etiudy gamingowe dając dostęp do bazowej wiedzy
+programistycznej w języku PJM.
+Innowacja odpowiada na brak materiałów
+dydaktycznych do samodzielnej nauki z obszaru
+programowania i brak możliwości uczenia się podstaw
+programowania przez osoby g/Głuche.
+1
+2
+Projekt „Inkubator Włączenia Społecznego” realizowany
+przez Regionalny Ośrodek Polityki Społecznej
+w Krakowie, Fundację Rozwoju Demokracji Lokalnej
+im. Jerzego Regulskiego i Centrum Ewaluacji i Analiz
+Polityk Publicznych UJ, wdrażany w ramach IV Osi
+Priorytetowej Programu Operacyjnego Wiedza
+Edukacja Rozwój (Działanie 4.1: Innowacje społeczne), na
+zlecenie Ministerstwa Funduszy i Polityki Regionalnej,
+finansowany jest ze środków Unii Europejskiej w ramach
+Europejskiego Funduszu Społecznego.
+
+--- strona 3 ---
+Kto może skorzystać z innowacji?
+Elementy innowacji
+4
+Kod źródłowy platformy
+Szkoły policealne, uczelnie wyższe, technika, licea,
+organizacje pozarządowe zajmując się aktywizacją
+zawodową osób g/Głuchych.
+5
+Grupa docelowa
+3
+Osoby g/Głuche, zainteresowane kształceniem
+w obszarze IT.
+
+--- strona 4 ---
+O Autorach
+7
+Bartosz Kosiński
+Mirosław Bohatkiewicz
+Kamila Chęcińska
+Od ponad 15 lat uczy i opracowuje
+modele nauczania kompetencji
+cyfrowych z wykorzystaniem
+różnych narzędzi. Tworzy gry
+edukacyjne (cyfrowe i planszowe).
+Autor innowacji edukacyjnych,
+związanych z rozwojem kompetencji
+cyfrowych.
+Software Developer, w wolnym
+czasie prowadzi zajęcia
+dydaktyczne z programowania
+w Javie dla młodzieży. Absolwent
+Wytwarzania Mechatronicznego
+na Akademii Górniczo-Hutniczej,
+studiuje Game Design na Wyższej
+Szkole Europejskiej im. Ks. Józefa
+Tischnera.
+Instruktorka robotyki, trenerka
+kompetencji cyfrowych. Ukończyła
+Inżynierię Biomedyczną na
+Akademii Górniczo- Hutniczej
+w Krakowie, doktorantka na AGH.
+Wolontaryjnie promuje ideę nauki
+programowania wyrównującej
+szanse edukacyjne.
+Czy to działa?
+Innowacja przyniosła korzyści w postaci zaznajomienia
+się z podstawowymi pojęciami z obszaru
+programowania i pozwoliła zdobyć nowe umiejętności
+i wiedzę, która wcześniej przez odbiorców była
+uznawana za zbyt trudną. Innowacja jest skutecznym
+pierwszym krokiem, który osoby g/Głuche mogą
+podjąć, aby zwiększyć swoje szanse na rynku pracy.
+Stowarzyszenie Edukacji Pozaformalnej „Meritum”
+6
+Wcześniej myślałam, że g/Głusi nie są w stanie
+nauczyć się programowania. Dużo osób nie
+studiowało, a tu nie trzeba studiów, nie trzeba
+matury czy dyplomu, tylko umiejętności
+programowania.
+Uczestniczka etapu testowania
+
+--- strona 5 ---
+Zapraszamy do kontaktu
+z Działem Innowacji Społecznych
+Regionalnego Ośrodka Polityki Społecznej
+w Krakowie
+Zadzwoń: 12 422 06 36
+Napisz: biuro@rops.krakow.pl
+Śledź aktualności: www.rops.krakow.pl

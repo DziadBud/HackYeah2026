@@ -26,6 +26,7 @@ from app.schemas.public.innovations import (
     LibraryInnovation,
     TestSignupCreate,
     TestSignupCreated,
+    LikeState,
 )
 from app.schemas.public.match import (
     MatchedInnovation,
@@ -298,6 +299,9 @@ class MockLibraryService:
         self._innovations = innovations
         self._test_signups = test_signups or MockTestSignupAdminService()
         self._feedback: dict[str, list[FeedbackCreate]] = {}
+        self._likes: dict[str, set[str]] = {}
+        # innovation_profiles rows; tests add their own
+        self.profiles: dict[str, dict] = {}
 
     def list(
         self, challenge_area: ChallengeArea | None, q: str | None, limit: int, offset: int
@@ -321,12 +325,28 @@ class MockLibraryService:
         signup = self._test_signups.add(_published(self._innovations, innovation_id), data.email)
         return TestSignupCreated(id=signup.id, status=signup.status)
 
+
+    def likes(self, innovation_id: str, client_id: str | None) -> LikeState:
+        _published(self._innovations, innovation_id)
+        clients = self._likes.get(innovation_id, set())
+        return LikeState(like_count=len(clients), liked=client_id in clients)
+
+    def set_like(self, innovation_id: str, client_id: str, liked: bool) -> LikeState:
+        _published(self._innovations, innovation_id)
+        clients = self._likes.setdefault(innovation_id, set())
+        if liked:
+            clients.add(client_id)
+        else:
+            clients.discard(client_id)
+        return self.likes(innovation_id, client_id)
+
     def _card(self, innovation: Innovation) -> LibraryInnovation:
         stars = [f.stars for f in self._feedback.get(innovation.id, [])]
         return LibraryInnovation(
             **innovation.model_dump(),
             rating_avg=sum(stars) / len(stars) if stars else None,
             rating_count=len(stars),
+            **self.profiles.get(innovation.id, {}),
         )
 
 

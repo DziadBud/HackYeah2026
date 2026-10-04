@@ -1,0 +1,37 @@
+--- strona 1 ---
+Dane wnioskodawcy:
+imię
+
+nazwisko
+ulica/aleja
+
+nr bud. nr drzwi
+kod poczt.
+miejscowość
+adres e-mail
+Dane instytucji:
+pełna nazwa instytucji
+ulica/aleja nr bud.
+kod poczt. miejscowość
+Wniosek o zapewnienie dostępności
+(art 3., art 6 ust. 3 lit a-d ustawy o zapewnianiu dostępności osobom ze szczególnymi potrzebami z dnia 19 lipca 2019 r. oraz
+art. 4 ust. 1., art. 5 pkt. 1., art. 9 ust. 1., art 10 ust. 1., art 11 ust. 3., art 12 ust. 1 i 3. ustawy o języku migowym i innych środkach komunikowania
+się z dnia 19 sierpnia 2011 r.)
+Jestem osobą g/Głuchą, która nie ma możliwości swobodnej komunikacji w języku polskim w formie fonicznej.
+W związku z planowaną wizytą w Państwa Instytucji wnoszę o zapewnienie tłumacza polskiego języka migowego z biegłą znajomością tego języka
+W związku z art 10 ust. 1 oraz art 11 ust. 3. przywoływanej ustawy usługę powinna
+realizować w sposób:
+imię i nazwisko tłumacza z rejestru:
+numer telefonu do tłumacza:
+Potrzebuję zapewnienia dostępności, żeby móc się swobodnie komunikować z pracownikami w Państwa Instytucji
+Dzień wizyty w instytucji:
+Godzina wizyty w instytucji:
+Siedziba (ulica) instytucji - miejsce tłumaczenia:
+Sposób kontaktu ze mną to komunikacja:
+OŚWIADCZENIE O WYRAŻENIU ZGODY NA PRZETWARZANIE DANYCH OSOBOWYCH przez Instytucje do której kierowany jest wnio-
+sek na podstawie z art. 6 ust. 1 lit a. Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochro-
+ny osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu tych danych oraz uchylenia dyrekty-
+wy 95/46/WE (ogólne rozporządzenie o ochronie danych osobowych) wyrażam zgodę na przetwarzanie moich danych osobowych Instytucje do
+której kierowany jest wniosek w celu zrealizowania nieniejszego wniosku dotyczącego uzyskania dofinansowania, do którego dołączam mniejszą zgodę.
+_____________________
+Data, podpis

@@ -1,0 +1,524 @@
+--- strona 1 ---
+
+1
+
+Model końcowy aplikacji MOKAMILA (Dialog)
+
+Innowacja testowana w ramach „Inkubatora Włączenia Społecznego” –
+Projektu wdrażanego w ramach IV Osi Priorytetowej Programu Operacyjnego Wiedza
+Edukacja Rozwój (Działanie 4.1: Innowacje społeczne),
+na zlecenie Ministerstwa Funduszy i Polityki Regionalnej, finansowanego ze środków
+Unii Europejskiej w ramach Europejskiego Funduszu Społecznego.
+
+Wszystkie elementy innowacji zostały udostępnione na podstawie
+Licencji Creative Commons CC.BY 4.0
+
+--- strona 2 ---
+
+2
+
+Użytkownicy - do kogo kierowane są treści aplikacji
+
+Aplikacja „Mokamila” jest narzędziem stworzonym dla grupy
+Afgańczyków, którzy już przybyli i wciąż przybywają do Polski w związku ze
+zmianami społeczno-politycznymi, jakie miały miejsce w ostatnim roku w
+ich ojczyźnie. Znaczne zradykalizowanie nastrojów spowodowane tymi
+zmianami, a co za tym idzie zamknięcie się na zachodnie standardy życia
+i
+funkcjonowania,
+spowodowało
+gwałtowny
+spadek
+poczucia
+bezpieczeństwa wśród część afgańskiego społeczeństwa. Efektem tego jest
+emigracja dużej grupy Afgańczyków, zwłaszcza tych, którzy w ostatnich
+latach związani byli ze społecznością międzynarodową funkcjonującą w ich
+kraju. Duża grupa tych osób trafiła i wciąż trafia do Polski, która jest dla
+nich miejscem odległym kulturowo i w ogromnym stopniu nieznanym.
+
+W ewakuacji afgańskich uchodźców oraz działaniach pomocowych, a także
+tych zmierzających do ich możliwie szybkiej „aklimatyzacji” w polskich
+warunkach
+czynnie
+uczestniczyli
+i
+wciąż
+uczestniczą
+pracownicy,
+współpracownicy
+i
+wolontariusze
+Fundacji
+HumanDoc,
+a
+także
+współpracujący z nimi przedstawiciele ICAD. Ten bezpośredni kontakt
+wykonawcy aplikacji „Mokamila” z docelowa grupą jej użytkowników daje
+gwarancje skutecznego rozpowszechnienia informacji o tym narzędziu w
+grupie docelowej, jego skutecznego testowania, udoskonalania i wdrożenia.
+
+Dodatkowo w ramach projektu stworzono również wortal, który będzie
+dodatkowym, równoprawnym narzędziem projektowym. Efektem jego
+wdrożenia ma być również stworzenie skutecznego narzędzia, które służyć
+będzie
+pomocy
+społeczności
+afgańskiej
+w Polsce. Dzięki wortalowi Afgańczycy mają lepiej poznać standardy
+funkcjonowania
+i postępowania w Polsce, dowiedzieć się m.in. tego, jak funkcjonuje tu
+służba zdrowia, system edukacji, rynek pracy czy rynek nieruchomości.
+Wśród omówionym w wortalu tematów są też inne kwestie, które mają
+
+--- strona 3 ---
+
+3
+
+istotne znaczenie w codziennym funkcjonowaniu uchodźców, takie jak
+choćby komunikacja publiczna, korzystanie z usług, różnice kulturowe,
+święta i dni wolne od pracy czy bezpieczeństwo publiczne.
+
+Podobnie, jak aplikacja, wortal tworzony jest w języku dari i języku polskim.
+Jego część tłumaczona na język dari ma służyć przybliżeniu wymienionym
+m.in. powyżej kwestii stronie afgańskiej. Dodatkową jego funkcjonalnością
+jest natomiast to, że część stworzona w języku polskim kierowana jest do
+polskiego użytkownika, który może mieć styczność z uchodźcami
+z Afganistanu – np. do lekarzy, urzędników, lekarzy, nauczycieli, itd.
+
+Tak pomyślany system narzędzi ma być kompleksową formą wsparcia
+obydwu stron relacji: uchodźców afgańskich i społeczeństwa polskiego.
+Tworzenie tych narzędzi z wykorzystaniem pełnej formy dialogu, którego
+wyrazem są konsultacje prowadzone w grupach focusowych, jak również
+wykorzystanie wiedzy eksperckiej osób, które znają realia afgańskie,
+tamtejszą mentalność i sposób funkcjonowania afgańskiego społeczeństwa
+pozwala na skuteczne przygotowanie i wdrożenie funkcjonalnych i
+wykorzystywanych w praktyce rozwiązań.
+
+Nazwa i języki aplikacji
+
+Na wstępie warto wyjaśnić, iż aplikacja utworzona w ramach projektu
+nosi ostateczną nazwę „Mokamila”. W dokumentach projektowych wstępnie
+nosiła ona nazwę „Dialoq”. Warte podkreślenia jest to, że zmiana nazwy
+tego narzędzia jest wynikiem przeprowadzonego przez jej twórców procesu
+wstępnych konsultacji. Zaproponował ją jeden z uczestników grupy
+focusowej biorącej udział w rozmowach o zawartości merytorycznej tego
+rozwiązania.
+W języku dari, czyli tym, którym posługują się afgańscy uchodźcy
+ewakuowani i przybywający do Polski, oznacza ona „konwersację”. Z
+
+--- strona 4 ---
+
+4
+
+pewnością można więc uznać, że takie techniczne podejście do tworzenia
+tego narzędzia, które będzie jednym z efektów projektu, świadczy
+o tym, iż każdy element tworzonej aplikacji powstał w oparciu o wzajemne
+relacje, doświadczenia i ustalenia.
+
+Podkreślić też należy trafność ostatecznie przyjętej nazwy, nie tylko przez
+wzgląd na jej znaczenie. Aplikacja i jej zawartość mają bowiem służyć
+ostatecznym odbiorcom do nawiązywania relacji werbalnych, a w efekcie do
+podejmowania konwersacji z udziałem strony polskiej i afgańskiej.
+Dodatkowym atutem zmienionej nazwy jest również to, że jest ona w pełni
+zrozumiała dla strony afgańskiej, bo zaciągnięta została z języka dari, ale
+też wydaje się łatwiejsza do wymówienia i zapamiętania przez stronę polską
+– co testowano z udziałem ekspertów i ich bliskiego otoczenia.
+
+Aplikacja „Mokamila” uwzględnia trzy kody językowe:
+
+• język dari, którym posługują się ewakuowani z Afganistanu uchodźcy
+przeniesieni z ich ojczyzny do Polski – język ten zastosowano w formie
+pisanej
+• język polski w formie pisemnej, czyli język strony przyjmującej
+grupę afgańskich uchodźców
+• piktogramy, a zatem forma języka obrazkowego, który ma być
+pomocny dla niepiśmiennej części społeczności afgańskiej, która
+znalazła się w Polsce
+
+Taki dobór języków i ich formy gwarantuje dużą wartość użytkową
+narzędzia.
+Pozwalać
+będzie
+bowiem
+na
+powszechne
+jego
+wykorzystanie,
+zarówno
+dla
+piśmiennych,
+jak
+i niepiśmiennych użytkowników docelowych. Trzeba mieć bowiem
+świadomość, że mimo istnienia w teorii obowiązku edukacji dzieci w
+wieku 7-13 lat w Afganistanie wiele osób nie potrafi pisać. Zwłaszcza
+
+--- strona 5 ---
+
+5
+
+tych, które były mieszkańcami mniejszych miejscowości, wsi lub osad
+położonych daleko od wielkich miast tego kraju.
+
+Z wiedzy i doświadczeń ekspertów obydwu fundacji, z którymi
+współpracowano przy działaniach związanych z tworzeniem aplikacji
+wynika bowiem, że w wielu miejscach Afganistanu po prostu nie ma
+szkół. Wykorzystanie piktogramów jako języka komunikacji to
+gwarancja tego, że dla nich również aplikacja ta będzie cennym
+narzędziem.
+
+Dari należy do języków grupy irańskiej języków indoeuropejskich. Jest
+najpowszechniej używanym w Afganistanie. Posługuje się nim około
+40-45 proc. mieszkańców tego kraju, a rozumie ten język ok. 78 proc.
+z nich. Obok paszto jest jednym z dwóch języków urzędowych
+funkcjonujących w tym państwie, co gwarantowane jest ustawą
+zasadniczą z 1964 roku. Posługuje się nim ponad 20 mln osób.
+
+Warto dodać, że w Polsce już kilka lat temu wydano podręczniki do
+nauki tego języka, co stanowi szansę na połączenie funkcjonalności
+narzędzia, jakim jest aplikacja „Mokamila” (narzędzie „pierwszego”
+kontaktu
+we
+wzajemnych
+relacjach
+polsko-afgańskich)
+z
+możliwościami dalszej edukacji dla obydwu stron: polskiej i
+afgańskiej.
+
+Należy też zwrócić uwagę, iż przy tworzeniu intefejsu aplikacji
+nawiązano do narodowych barw afgańskich i wykorzystano mocne
+kolory, preferowane przez tę grupę narodowościową. Jest to
+dodatkowy, świadomie wykorzystany akcent komunikacyjny, który
+ma sprawić, iż tworzone w ramach projektu narzędzie będzie bardziej
+przyjazne i częściej wykorzystywane przez grupę docelową.
+
+--- strona 6 ---
+
+6
+
+Założenia podstawowe - podsumowanie
+
+• Aplikacja to rodzaj intuicyjnego komunikatora między ewakuowanymi
+do Polski Afgańczykami i Polakami, który przygotowany będzie w
+dwóch wersjach językowych: dari i j. polskim (tego rodzaju tłumaczeń
+nie oferuje żadne inne narzędzie) oraz piktogramach pomocnych dla
+niepiśmiennej części społeczności afgańskiej.
+
+• Aplikacja przygotowana w formie hybrydowej, jej kod działa na dwa
+najpopularniejsze systemy operacyjne: Android i iOS.
+
+• Możliwe będzie także korzystanie z aplikacji w trybie offline, co
+oznacza, że odbiorcy będą mieli dostęp do praktycznej bazy słówek/
+zwrotów i piktogramów w każdym momencie, także w tak ważnych
+chwilach, jak wizyta u lekarza czy w urzędzie.
+Założenia koncepcyjne
+
+--- strona 7 ---
+
+7
+
+Struktura
+Rdzeń aplikacji:
+• Struktura i funkcjonalności przygotowana przez zespół IT
+• Treści opracowane przez tłumacza i copywritera oraz ekspertów
+HumanDoc na bazie diagnozy potrzeb oraz wiedzy eksperckiej
+członków zespołu HumanDoc
+
+Kafle - Schemat treści
+Aplikacja zawiera kafle (boksy) odpowiadające następującym kategoriom:
+• W szkole
+• Na studiach
+• U lekarza
+• Praca
+• W urzędzie
+• Żywność
+• Zakupy
+• Czas wolny / Odpoczynek
+• Religia
+• Rodzina
+• W podróży
+• Najważniejsze wyrażenia i zwroty
+
+Ich rozmieszczenie zostało oparte o diagnozę grupy fokusowej oraz wiedzę
+ekspercką.
+Zastosowany układ bazuje na wiedzy pozyskanej podczas spotkań grup
+fokusowych.
+Kategorie zostały ułożone zgodnie z treściami, które wybrzmiały najmocniej
+podczas diagnozy potrzeb. Kategorie, którym poświęcono najwięcej uwagi
+podczas spotkania, oraz te wskazane przez ekspertów znajdują się wyżej i
+są to te elementy, do których użytkownicy mogą dotrzeć najszybciej
+poszukując potrzebnych słów | zwrotów.
+Jednocześnie w ramach testów użytkownicy (beneficjenci końcowi) zostaną
+poproszeni
+
+--- strona 8 ---
+
+8
+
+o ocenę rozmieszczenia kafli, by ostatecznie zdecydować czy układ
+odpowiada preferencjom użytkowników, czy jest dla nich czytelny.
+Oceny te zostaną także skonfrontowane z hit mapą zastosowaną do oceny
+funkcjonalności
+wortalu.
+Analiza
+zachowania
+użytkowników
+będzie
+stanowiła
+kolejny
+element
+do
+oceny
+użyteczności
+i
+zasadności
+zastosowanego w aplikacji rozwiązania co do kolejni poszczególnych kafli.
+
+Piktogramy
+Zadaniem funkcji jest ułatwienie nawiązania kontaktu i komunikacji
+beneficjentów końcowych - osób niepiśmiennych ze stroną polską.
+
+Propozycje zespołu IT, każdy piktogram musi zostać skonsultowany z grupą
+testerów, by uniknąć nieporozumień kulturowych. Już pierwsze testy
+narzędzia pokazały rozdźwięk między myśleniem europejskiego zespołu IT,
+a odbiorcami – przykład zastosowania piktogramu dla kategorii bank.
+Pierwotnie użyto piktogramu „świnka skarbonka” – po konsultacjach
+z zespołem eksperckim oraz beneficjentami zastąpiono ten piktogram
+symbolem walut, jako bardziej czytelnym | rozpoznawalnym dla grupy
+odbiorców.
+
+Piktogramy zostaną zastosowane do słów rozpoznawalnych przez grupę
+odbiorców, mających konkretne osadzenie (desygnaty) w rzeczywistości,
+odpowiadające doświadczeniom kulturowym beneficjentów końcowych.
+Inaczej nie tylko nie spełnią swojej funkcji, ale też będą zaburzały
+komunikację poprzez wprowadzenie niezrozumiałych dla beneficjentów
+elementów.
+
+Niezależnie od zastosowania piktogramów przy konkretnym słowie|
+wyrażeniu, dodano piktogramy przy każdej kategorii wyróżnionej w
+schemacie kafli.
+Zastosowane rozwiązanie ma na celu umożliwienie korzystania z aplikacji
+także przez osoby niepiśmienne, które poprzez rozpoznanie piktogramu,
+
+--- strona 9 ---
+
+9
+
+będą mogły wskazać choćby kategorię, w której potrzebują pomocy, co ma
+w założeniu przełożyć się na ułatwienie nawiązania choćby szczątkowej
+komunikacji.
+
+Minusem tego rozwiązania jest możliwe punktowe wrażenie chaosu lub
+braku konsekwencji w rozmieszczaniu treści.
+
+Plusem tego rozwiązania jest jednak próba naśladowania wielu ścieżek
+skojarzeniowych
+(na
+podstawie
+grup
+fokusowych).
+Zatem
+zespół
+zdecydował się ostatecznie na to rozwiązanie, by ułatwić szybkie
+odnajdowanie potrzebnych słów dla jak największej ilości użytkowników.
+Oczywiście rozwiązanie to jest wspierane przez funkcję „lupka” (o czym
+niżej), jednak chodzi także o same kategorie i nieprzewidziane sytuacje w
+których mogą znaleźć się użytkownicy. Lepiej jest stworzyć warunki do
+tego, by w nieplanowanych zdarzeniach szybko mogli odnaleźć słowa czy
+pakiet słów niż zamykać się ściśle w obrębie danej kategorii. Półroczny
+okres testowania zweryfikuje powyższe założenia.
+
+Wyszukiwanie | Zaznaczanie słów
+
+Z uwagi na to, że nie wszystkie słowa mają swoje odzwierciedlenie w
+desygnatach, co oznacza, że nie każde słowo – wyrażenie będzie miało swój
+piktogram, zespół projektowy zdecydował o wprowadzeniu kolejnej funkcji,
+jaką jest wyszukiwanie i znaczenie słów w obrębie danej kategorii.
+
+Zadaniem funkcji jest ułatwienie nawiązania kontaktu i komunikacji
+beneficjentów końcowych - osób niepiśmiennych ze stroną polską.
+
+Dzięki tej funkcji możliwe będzie przygotowanie się osoby niepiśmiennej do
+np.
+wizyty
+u lekarza lub w banku. Wystarczy, że użytkownik aplikacji skonsultuje się
+wcześniej z osobą piśmienną razem wybiorą odpowiednie słowa. Dla
+przykładu możliwe jest przygotowanie się do wizyty u lekarza poprzez
+zaznaczenie np. słów „covid” oraz „gorączka” i podobnych. Lub też
+
+--- strona 10 ---
+
+10
+
+wybierając się do sklepu poprzez zaznaczenie słów jak „śliwki”, „jabłka” i
+tak dalej.
+
+Wybrana lista słów podświetla się kolorem – co jednoznacznie wyodrębnia
+słowa z danej kategorii, dzięki czemu słowa są łatwe do odnalezienia. Dzięki
+tej funkcji beneficjent końcowy – osoba niepiśmienna może pokazać
+wybraną listę słów i w ten sposób przełamać barierę kontaktu.
+
+Z funkcji oczywiście mogą korzystać także osoby piśmienne. Dzięki
+zastosowaniu wyboru konkretnej listy słów- wyrażeń można się lepiej
+przygotować do rozmowy na dany temat.
+
+Słowa | potrzebne zwroty
+
+Wskazane przez uczestników grup fokusowych- podstawowe| najbardziej
+użyteczne słowa zwroty powiązane z danymi kategoriami szerzej opisane
+w diagnozie potrzeb.
+
+Sposób prezentacji
+
+Jedną z funkcjonalności jest jednoczesna prezentacja danego słowa |
+wyrażenia
+|
+zwrotu
+w języku polskim i w dari. Plus zastosowanie piktogramu, tam, gdzie to jest
+możliwe.
+
+Zadaniem funkcji jest ułatwienie poruszania się użytkowników po
+aplikacji.
+
+Funkcja pozwala na szybką komunikacje między stroną afgańską a
+polską.
+
+Lupka
+
+Interaktywne narzędzie pozwalające na szybkie wyszukanie słowa lub
+kategorii.
+
+W założeniu użytkownicy dzięki tej funkcjonalności będą mogli sprawnie
+poruszać się po aplikacji i zawartych w niej słowach i zwrotach.
+
+--- strona 11 ---
+
+11
+
+Zespół projektowy zdecydował, że narzędzie do wyszukiwania będzie miało
+podstawowy, najbardziej reprezentatywny dla swej funkcji desygnat, czyli
+lupkę (zamiast spinacza czy innych familiarnych rozwiązań). Decyzja ta
+motywowana jest podniesieniem użyteczności funkcji oraz zwiększeniem
+intuicyjności rozwiązania.
+
+Umieszczenie
+lupki
+na
+górze
+strony
+aplikacji
+związane
+jest
+z
+doświadczeniem zespołu IT oraz wynikami badań psychologii poznawczej,
+które wskazują, że umieszczenie na górze strony pozwala na skuteczne
+dostrzeżenie tej funkcji.
+
+Wyniki wyszukiwania
+
+Zadaniem funkcji jest ułatwienie użytkownikom poruszania się po aplikacji
+i odnajdywania w szybkim czasie potrzebnych słów i zwrotów.
+
+Funkcjonalność prezentować będzie użytkownikowi wszystkie słowa |
+wyrażenia korespondujące ze wskazaną w lupce poszukiwaną frazą.
+
+System zaprezentuje wyniki z uwzględnieniem kategorii (kafli), w której
+znajduje się poszukiwana fraza oraz kolorystycznym wyodrębnieniem
+poszukiwanej frazy na tle prezentowanego wyniku.
+
+Layout (UI| UX)
+
+Podczas projektowania interfejsu aplikacji o zespół IT weźmie pod uwagę
+przede wszystkim aspekty dotyczące czytelności | intuicyjności poruszania
+się po aplikacji oraz doświadczenia użytkownika końcowego podczas
+każdorazowego styku z funkcjonalnościami narzędzia – dlatego podczas
+projektowania interfejsu zespół IT skupi się na wiedzy wynikającej z grup
+fokusowych uwzględniających przede wszystkim psychologiczne aspekty
+użytkowników końcowych, jak rozmieszczenie treści w dari po lewej
+stronie,
+użycie
+mocnych
+barw
+korespondujących
+z
+preferencjami
+użytkowników z Afganistanu, nawiązanie do barw narodowych oraz
+
+--- strona 12 ---
+
+12
+
+wprowadzenia
+intuicyjnych
+rozwiązań
+poprzez
+umieszczenie
+najważniejszych funkcjonalności |informacji w miejscach, które są
+najbardziej wyeksponowane (lupka na górze strony, etc.).
+
+Zespół IT zastosuje więc korespondujący z layoutem zastosowanym przy
+wortalu odpowiadający preferencjom grup fokusowych. Wyeksponowanie
+barw wyraźnych zgodnie z oczekiwaniami uczestników spotkań oraz w
+oparciu o rozmowy indywidualne z beneficjentami.
+
+Informacje o projekcie
+
+Zespół zdecydował, by na górze strony początkowej zamieścić krótkie
+informacje o narzędziu i celach, w jakim została stworzona.
+
+Na dole strony zostaną zaś dodane informacje o wortalu – by zwiększyć
+zasięg obu narzędzi wśród społeczności beneficjentów końcowych.
+
+Zgodnie z umową z donatorem do aplikacji dodane zostały także konieczne
+logotypy oraz opis – w ramach rozwijania narzędzia w fazie testowania
+informacje te zostaną przetłumaczone na dari.
+
+Testowanie aplikacji
+Narzędzie przetestowano poprzez podanie linka i instrukcji do korzystania
+przesłane grupie testerów przy jednoczesnym testowaniu funkcjonalność
+przez zespół IT.
+
+Opisywane narzędzie posiada aktualnie słowa| wyrażenia bazowe a ich lista
+z założenia będzie uzupełniane o słowa | zwroty zaaprobowane przez
+testerów w ramach 6-miesiecznej fazy testowania.
+
+Procedura testowania – > użytkownicy dostali mailem link do pobrania
+aplikacji, która przed zakończeniem fazy testów była niedostępna dla
+szerokiego grona odbiorców. Wersja testowa przygotowana była dla
+systemu operacyjnego Android, gdyż wersją Beta dla systemu iOS
+wymagała opublikowania w sklepie. Aplikacja w systemie iOS została
+
+--- strona 13 ---
+
+13
+
+opublikowana w czasie trwania wersji testowej po uwzględnieniu
+pierwszych uwag odbiorców końcowych.
+Każda z osób testujących miała za zadanie zainstalować aplikację na
+telefon, a po umówionym okresie testowania zgłosić swoje uwagi do
+prezentowanego narzędzia.
+
+Ocena testerów dotyczy takich aspektów jak:
+• Content- czyli treści aplikacji
+• Intuicyjność zaproponowanych rozwiązań
+• Komfort pracy - np. czas, jaki potrzebuje użytkownik, by znaleźć
+potrzebna mu informację
+• Layout – m.in. czytelność zaproponowanej czcionki, rozpoznawalność
+piktogramów.
+
+--- strona 14 ---
+
+14
+
+Wygląd strony startowej dla użytkownika
+
+--- strona 15 ---
+
+15
+
+Prezentacja funkcji zaznaczania | wybierania słów w danej
+kategorii, wyniki wyszukiwania
+
+--- strona 16 ---
+
+Prezentacja wyników wyszukiwania

@@ -60,11 +60,7 @@ class InnovationUploadService:
         self._max_bytes = max_bytes
 
     def create(self, data: NewInnovation, pdf: bytes) -> CreatedInnovation:
-        if len(pdf) > self._max_bytes:
-            raise UploadTooLargeError(f"pdf larger than {self._max_bytes} bytes")
-        if not pdf.startswith(PDF_MAGIC):
-            raise InvalidUploadError("file is not a pdf")
-
+        self._check(pdf)
         innovation_id = _new_id(data.title)
         path = self._files.save(f"{innovation_id}.pdf", pdf)
         try:
@@ -77,6 +73,17 @@ class InnovationUploadService:
         return CreatedInnovation(
             id=innovation_id, title=data.title, status="draft", file_path=str(path)
         )
+
+    def replace_pdf(self, innovation_id: str, pdf: bytes) -> str:
+        # the caller has checked the row exists; same file name, so the public pdf link stays
+        self._check(pdf)
+        return str(self._files.save(f"{innovation_id}.pdf", pdf))
+
+    def _check(self, pdf: bytes) -> None:
+        if len(pdf) > self._max_bytes:
+            raise UploadTooLargeError(f"pdf larger than {self._max_bytes} bytes")
+        if not pdf.startswith(PDF_MAGIC):
+            raise InvalidUploadError("file is not a pdf")
 
     def embed(self, innovation_id: str, file_path: str) -> None:
         # runs as a background task after the 202; a failure leaves the draft unpublished

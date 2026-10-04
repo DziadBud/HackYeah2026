@@ -1,0 +1,309 @@
+--- strona 1 ---
+
+1
+
+Załącznik do modelu końcowego
+„Bajkala” - projekt wzorniczy
+i wykonawczy
+Innowacja testowana w ramach „Inkubatora Włączenia Społecznego” –
+Projektu wdrażanego w ramach IV Osi Priorytetowej Programu Operacyjnego Wiedza
+Edukacja Rozwój (Działanie 4.1: Innowacje społeczne),
+na zlecenie Ministerstwa Funduszy i Polityki Regionalnej, finansowanego ze środków Unii
+Europejskiej w ramach Europejskiego Funduszu Społecznego.
+
+Wszystkie elementy innowacji zostały udostępnione na podstawie
+Licencji Creative Commons CC.BY 4.0
+
+--- strona 2 ---
+
+2
+
+Załącznik projekt wzorniczy i wykonawczy zawiera:
+
+1.
+Opis rozwiązania
+3
+2.
+Projekt wzorniczy
+6
+I.
+Elementy konstrukcyjne drewniane (wymiarowanie; jednostka: mm).
+8
+II.
+Schemat instalacji elektrycznej (oświetlenie i audio).
+13
+3.
+Projekt wykonawczy
+14
+4.
+Wytyczne parametrów ergonomicznych i technicznych.
+19
+
+--- strona 3 ---
+
+3
+
+1. Opis rozwiązania
+Innowacja Bajkala to rozwiązanie które łączy w sobie 3 podstawowe elementy:
+
+Konstrukcja drewniana w kształcie sześcianu z dachem oraz symbolicznymi oknami oraz
+drzwiami wzorowana na domu (wieży). Lampa jest w wykonana z drewna sosnowego
+selekcjonowanego, wysuszonego, przygotowanego do montażu. Elementy, z których składa
+się lampa są wycięte wg. wzoru oraz rozmiarów podanych w projekcie wzorniczym.
+Wszystkie elementy połączone są ze sobą za pomocą klejów do drewna oraz wkrętów.
+Konstrukcja wewnętrzna montowana jest za pomocą pomocniczych wkrętów, zszywek oraz
+kleju. Wewnętrzna część lampy stanowi również platformę dla elektroniki oraz elektryki,
+która są zamocowana w środku konstrukcji. Na zewnątrz konstrukcji znajdują się otwory na
+diody LED oraz 4 otwory na ujście dźwięku. Otwory dźwiękowe zamaskowane są tekstylną
+membraną przymocowana do konstrukcji od środka. Na dwóch ścianach domku znajdują się:
+włącznik światła z możliwością ściemniania oraz włącznik i sterowanie dźwiękiem. Przy
+podstawie konstrukcji jest otwór, w którym zainstalowano kabel zasilający. Wszystkie
+elementy drewniane wycięte są na frezarce CNC z zachowaniem wymiarów elementów
+konstrukcyjnych drewnianych. Oznaczenia przycisków dot. dźwięku oraz oświetlenia
+wygrawerowana laserem. Konstrukcja jest pokryta olejami naturalnymi zabezpieczającymi
+przed wilgocią.
+
+Oświetlenie wykorzystane w projekcie stanowią diody LED rozmieszczone wg. projektu
+wzorniczego, tak aby światło rozpraszało się w zaplanowany sposób wokół bryły. Lampka
+będzie dawała łagodne światło, poprzez odpowiednio rozmieszczone punkty świetlne.
+Światło będzie podkreślało ciepło domu oświetlając go w sposób widoczny a zarazem
+delikatny. Światło można przyciemnić bądź rozjaśnić wg. potrzeby za pomocą
+
+--- strona 4 ---
+
+4
+
+zainstalowanego potencjometru dotykowego. Włącznik jest umieszczony w widocznym
+miejscu oraz oznaczony odpowiednim symbolem. Diody zastosowane w lampie mają ciepłą
+barwę. Zasilanie jest doprowadzone do środka konstrukcji przez przygotowany otwór. Do
+zestawu jest dołączony zasilacz dogniazdkowy (sieciowy), który za pomocą kabla z wtykiem
+USB zasila układ oświetleniowy oraz dźwiękowy. Technologia LED zapewnia trwałość oraz
+energooszczędność lampy.
+
+Dźwięk jest emitowany z głośnika zainstalowanego w środku konstrukcji. Dźwięk rozchodzi
+się w 4 kierunkach dając możliwość odsłuchu z każdej strony np. ustawienia lampki pośrodku
+koła zgromadzonych słuchaczy. Nagrania zapisane są na karcie microSD i umieszczone w
+dedykowanym slocie na kartę, który znajduje się w płytce sterującej. Sterowanie nagraniami
+jest możliwe dzięki przyciskom umieszczonym na jednym z boków lampy.
+
+● Charakterystyka wykorzystanych materiałów i rozwiązań technicznych:
+○ drewno sosnowe, lite, klejone 18 mm
+○ wkręty do drewna 16 mm oraz 35 mm
+○ klej „na gorąco”
+○ klej do drewna np. wikolowy
+○ lampki LED 5 mm średnicy, 0.045 W barwa ciepła z minimalnym odstępem
+między lampkami 100 mm
+○ głośnik Ø 45 mm
+○ płytka sterująca dźwiękiem model YLT-690_V1.0
+○ wałek sosnowy surowy Ø 8mm
+○ wałek sosnowy surowy Ø 10 mm
+○ zasilacz dogniazdkowy impulsowy 5V 2A,
+○ kable z wtyczką USB
+○ wosk twardy olejny
+
+--- strona 5 ---
+
+5
+
+○ karta pamięci microSD
+○ cyna do lutowania
+○ tkanina o gramaturze ok. 200g/m2
+○ papier ścierny gradacja 180 oraz 320
+○ zszywki 6 mm
+○ włącznik dotykowy ze ściemniaczem LED model TD006
+○ przewód z wtykiem microUSB
+○ listwa dębowa
+
+--- strona 6 ---
+
+6
+
+2. Projekt wzorniczy
+Spis elementów konstrukcyjnych (drewnianych)
+
+(1) i (2) ściany szczytowe
+
+(3) i (4) połacie dachu
+
+--- strona 7 ---
+
+7
+
+(5) ściana boczna (sterowanie dźwiękiem)
+(6) ściana boczna (sterowanie oświetleniem)
+
+(7) podłoga
+(8) elementy (4 sztuki) mocujące podłogi
+
+--- strona 8 ---
+
+8
+
+I.
+Elementy konstrukcyjne drewniane (wymiarowanie; jednostka: mm).
+Materiał:
+drewno sosnowe, lite, klejone 18 mm
+Obróbka:
+frezowanie CNC
+▪
+frezowanie dekoracyjne (głębokość) 9 mm (UWAGA! „okno” 18 mm)
+o frez Ø12 mm
+▪
+otwory montażowe diod LED (głębokość) 18 mm
+o wiertło Ø5,5 mm
+
+Elementy (1) i (2) ściana szczytowa (wymiarowanie).
+
+--- strona 9 ---
+
+9
+
+Elementy (1) i (2) ściana szczytowa (pozostałe wymiary).
+
+--- strona 10 ---
+
+10
+
+Elementy (3) i (4) połacie dachu (wymiarowanie).
+
+Element (5) ściana boczna - sterowanie dźwiękiem (wymiarowanie).
+
+--- strona 11 ---
+
+11
+
+Element (6) ściana boczna - sterowanie oświetleniem (wymiarowanie).
+
+Element (7) podłoga (wymiarowanie).
+Elementy (8) mocujące podłogi 20 x 20 x 20 mm (wymiarowanie).
+
+--- strona 12 ---
+
+12
+
+Elementy (9) sterowania dźwiękiem (wymiarowanie).
+
+Elementy (10) oznaczenia funkcji elementów sterujących (wymiarowanie).
+
+--- strona 13 ---
+
+13
+
+II.
+Schemat instalacji elektrycznej (oświetlenie i audio).
+
+1. Zasilacz 5V - 2A z gniazdem USB
+2. Kabel zasilający z wtyczką USB
+3. Rozdzielenie zasilania na oświetlenie oraz dźwięk (zachowanie polaryzacji)
+4. Dotykowy włącznik oświetlenia ze ściemniaczem
+5. Rezystor 34 Ω
+6. Diody LED (36 sztuk)
+7. Płytka sterująca
+8. Karta micro SD
+9. Głośnik
+
+--- strona 14 ---
+
+14
+
+3. Projekt wykonawczy
+Etapy łączenia elementów lampy wraz z grafikami pomocniczymi:
+1.
+W momencie instalacji przycisków element nr. 5 powinien leżeć na płaskiej
+powierzchni zewnętrzną stroną do dołu. W 3 otworach sterujących nagraniem
+umieszczamy przyciski zachowując odpowiednią kolejność przycisków (grafika nr
+5). Następnie w poprzecznym zagłębieniu umieszczamy suwak pełniący rolę
+włącznika. Kolejnym krokiem jest montaż płytki sterującej którą należy umieści w
+pozycji pokrywającej się z przyciskami umieszczonymi w elemencie nr 5. Płytkę
+mocujemy wkrętami 16 mm do elementu nr 5. W slocie karty pamięci
+umieszczamy kartę microSD z przygotowanymi nagraniami.
+2.
+Do elementów 1, 2, 5, 6 przymocować tkaninę, która będzie pełnić rolę
+membrany głośnikowej. Montaż na zszywki tapicerskie długość 6mm.
+3.
+Za pomocą kleju do drewna połączyć elementy 1, 5, 6 wg. grafiki.
+
+--- strona 15 ---
+
+15
+
+4. Za pomocą kleju do drewna połączyć elementy 3, 4 wg. grafiki.
+
+5. Za pomocą kleju do drewna połączyć elementy 1, 5, 6 z elementami 3, 4 wg.
+grafiki.
+
+--- strona 16 ---
+
+16
+
+6.
+Za pomocą kleju do drewna połączyć elementy 1, 3, 4, 5, 6 z elementem 2 wg.
+grafiki.
+
+7.
+Za pomocą kleju „na gorąco” przykleić diody LED zalewając miejsce gdzie przewód
+łączy się z diodą. Dioda powinna wystawać na zewnątrz otworu ok. 5 mm.
+8.
+Przewody zasilające diody LED należy rozmieścić na ścianach wewnętrznych lampy
+luźno (nie mogą być naprężone) i przytwierdzić je klejem “na gorąco” do
+wewnętrznej części lampy.
+9.
+Do płytki podłączamy kabel zasilający za pomocą złącza microUSB oraz za pomocą
+cyny lutujemy przewody głośnika z przewodami umieszczonymi na płytce.
+10.
+Ściemniacz LED montujemy na wewnętrznej stronie (elementu 6) w miejscu w
+którym zaznaczony jest punkt zmiany natężenia światła. Ściemniacz montujemy za
+pomocą kleju na gorąco.
+11.
+Przewody ściemniacza zgodnie z polaryzacją (+/-) łączymy za pomocą cyny z
+przewodami lampek. Przed podłączeniem przewodu (+) instalujemy za pomocą cyny
+rezystor. Pamiętać należy o kierunku przewodów oznaczonych na ściemniaczu, dwa
+
+--- strona 17 ---
+
+17
+
+przewodu oznaczone “light” lutujemy z lampkami zaś przewody oznaczone “power”
+łączymy z kablem zasilającym oraz kablem wyprowadzonym z płytki sterującej.
+12.
+Przewód zasilający zakończony wtyczką USB przekładamy przez otwór
+przygotowany w elemencie 6.
+13.
+Przewód wychodzący z płytki sterującej oznaczony (+) łączymy z przewodem ze
+ściemniacza (oznaczenie + oraz “power”) oraz z przewodem zasilającym również (+).
+Połączenie zgrzewamy cyną oraz zabezpieczamy rurką termokurczliwą. Analogicznie
+postępujemy z przewodami oznaczonymi (-). Zamocować kabel klejem na gorąco w
+miejscu wprowadzenia kabla wewnątrz lampy.
+14.
+Głośnik przymocować do centralnego miejsca podłogi (element 7) lampy za pomocą
+kleju “na gorąco”.
+15.
+Za pomocą kleju do drewna połączyć elementy 8 z elementami 5, 6 wg. grafiki w
+odległości 18mm od krawędzi elementu 5, 6 następnie za pomocą 4 sztuk wkrętów
+połączyć element 7 z elementami 8.
+
+16.
+Wszystkie ostre krawędzie należy złagodzić/zaokrąglić papierem ściernym aby były
+bezpieczne w dotyku.
+17.
+Po złożeniu wszystkich elementów zabezpieczyć powierzchnie drewniane woskiem
+wg. wskazań producenta.
+
+--- strona 18 ---
+
+18
+
+Poglądowa wizualizacja projektu
+
+--- strona 19 ---
+
+19
+
+4. Wytyczne parametrów ergonomicznych i technicznych.
+Wszystkie użyte elementy powinny mieć atesty i certyfikaty. Drewno powinno mieć
+wilgotność poniżej 12%. Lampki LED powinny mieć 3000K, moc ok. 0.045W certyfikat RoHS
+oraz CE. Zestaw do nagłośnienia powinien mieć certyfikat RoHS oraz CE oraz min. moc 3W,
+gniazdo na kartę SD. Klej termotopliwy uniwersalny, kolor: transparentny; czas wiązania: 15 -
+20 s; temp. mięknienia: 86 °C; temperatura pracy: 160 – 190 °C. Klejone powierzchnie
+powinny być oczyszczone i pozbawione kurzu. Kleje należy używać zgodnie ze wskazaniami
+producenta.
