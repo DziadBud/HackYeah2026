@@ -19,17 +19,25 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
     // admin routes authenticate with an HttpOnly session cookie
     credentials: "include",
     // no content-type on bodiless calls, so plain GETs skip the cors preflight
-    headers: init?.body ? { "Content-Type": "application/json", ...init.headers } : init?.headers,
+    headers: init?.body
+      ? { "Content-Type": "application/json", ...init.headers }
+      : init?.headers,
   });
   if (!res.ok) {
-    throw new ApiError(res.status, `${init?.method ?? "GET"} ${path} -> ${res.status}`);
+    throw new ApiError(
+      res.status,
+      `${init?.method ?? "GET"} ${path} -> ${res.status}`,
+    );
   }
   if (res.status === 204) return undefined as T;
   return (await res.json()) as T;
 }
 
 const post = <T>(path: string, body?: unknown) =>
-  request<T>(path, { method: "POST", body: body === undefined ? undefined : JSON.stringify(body) });
+  request<T>(path, {
+    method: "POST",
+    body: body === undefined ? undefined : JSON.stringify(body),
+  });
 
 const enc = encodeURIComponent;
 
@@ -145,6 +153,31 @@ export interface Submitted {
   status: ModerationStatus;
 }
 
+// GET /admin/threads — every reply, whatever its status
+export interface AdminReply {
+  id: string;
+  body: string;
+  author_label: string;
+  email: string | null;
+  kind: ReplyKind;
+  status: ModerationStatus;
+  created_at: string;
+}
+
+export interface AdminThread {
+  id: string;
+  innovation_id: string;
+  title: string;
+  body: string;
+  author_label: string;
+  email: string | null;
+  status: ModerationStatus;
+  created_at: string;
+  replies: AdminReply[];
+}
+
+export type ModerationDecision = ModerationStatus;
+
 export interface IdeaCreate extends OptionalContact {
   summary: string;
   essence: string;
@@ -160,15 +193,21 @@ export interface IdeaCreated {
 export const api = {
   match: (body: MatchRequest, testSignup = false) =>
     post<MatchResponse>(`/match${testSignup ? "?test_signup=true" : ""}`, body),
-  supportProblemReport: (id: string) => post<SupportResponse>(`/problem-reports/${enc(id)}/support`),
+  supportProblemReport: (id: string) =>
+    post<SupportResponse>(`/problem-reports/${enc(id)}/support`),
   innovations: (limit: number, offset: number) =>
-    request<Page<LibraryInnovation>>(`/innovations?limit=${limit}&offset=${offset}`),
-  innovation: (id: string) => request<LibraryInnovation>(`/innovations/${enc(id)}`),
+    request<Page<LibraryInnovation>>(
+      `/innovations?limit=${limit}&offset=${offset}`,
+    ),
+  innovation: (id: string) =>
+    request<LibraryInnovation>(`/innovations/${enc(id)}`),
   innovationPdfUrl: (id: string) => `${API_URL}/innovations/${enc(id)}/pdf`,
-  threads: (innovationId: string) => request<Thread[]>(`/innovations/${enc(innovationId)}/threads`),
+  threads: (innovationId: string) =>
+    request<Thread[]>(`/innovations/${enc(innovationId)}/threads`),
   createThread: (innovationId: string, body: ThreadCreate) =>
     post<Submitted>(`/innovations/${enc(innovationId)}/threads`, body),
-  replyToThread: (threadId: string, body: ReplyCreate) => post<Submitted>(`/threads/${enc(threadId)}/replies`, body),
+  replyToThread: (threadId: string, body: ReplyCreate) =>
+    post<Submitted>(`/threads/${enc(threadId)}/replies`, body),
   createIdea: (body: IdeaCreate) => post<IdeaCreated>("/ideas", body),
 };
 
@@ -242,7 +281,11 @@ export interface InnovationStats {
   matches_by_week: { week_start: string; matches: number }[];
   matches_by_area: { challenge_area: ChallengeArea; matches: number }[];
   // matches is null when the location has fewer than 5 problem reports
-  matches_by_location: { location: string; matches: number | null; note?: string | null }[];
+  matches_by_location: {
+    location: string;
+    matches: number | null;
+    note?: string | null;
+  }[];
   test_signups: { applied: number; accepted: number; rejected: number };
   rating_avg: number | null;
   rating_count: number;
@@ -268,7 +311,12 @@ export interface Idea {
   essence: string;
   target_group: string;
   stage: IdeaStage;
-  social_canvas: { problem: string; solution: string; beneficiaries: string; resources?: string | null };
+  social_canvas: {
+    problem: string;
+    solution: string;
+    beneficiaries: string;
+    resources?: string | null;
+  };
   status: IdeaStatus;
   admin_reply?: string | null;
   created_at: string;
@@ -326,7 +374,12 @@ export interface GrantCall {
   sections: { title: string; description?: string | null; required: boolean }[];
 }
 
-export type ReportName = "trends" | "critical" | "locations" | "gaps" | "innovations";
+export type ReportName =
+  | "trends"
+  | "critical"
+  | "locations"
+  | "gaps"
+  | "innovations";
 
 export const adminApi = {
   login: (body: LoginRequest) => post<void>("/admin/auth/login", body),
@@ -337,19 +390,42 @@ export const adminApi = {
   replyToProblemReport: (id: string, message: string) =>
     post<ProblemReport>(`/admin/problem-reports/${enc(id)}/reply`, { message }),
   ideas: () => request<Idea[]>("/admin/ideas"),
-  replyToIdea: (id: string, message: string) => post<Idea>(`/admin/ideas/${enc(id)}/reply`, { message }),
-  setIdeaStatus: (id: string, status: IdeaStatus) => post<Idea>(`/admin/ideas/${enc(id)}/status`, { status }),
-  innovations: () => request<Page<AdminInnovation>>("/admin/innovations?limit=100"),
-  innovation: (id: string) => request<AdminInnovation>(`/admin/innovations/${enc(id)}`),
+  replyToIdea: (id: string, message: string) =>
+    post<Idea>(`/admin/ideas/${enc(id)}/reply`, { message }),
+  setIdeaStatus: (id: string, status: IdeaStatus) =>
+    post<Idea>(`/admin/ideas/${enc(id)}/status`, { status }),
+  innovations: () =>
+    request<Page<AdminInnovation>>("/admin/innovations?limit=100"),
+  innovation: (id: string) =>
+    request<AdminInnovation>(`/admin/innovations/${enc(id)}`),
   setInnovationPublished: (id: string, published: boolean) =>
-    post<AdminInnovation>(`/admin/innovations/${enc(id)}/${published ? "publish" : "unpublish"}`),
-  innovationStats: (id: string) => request<InnovationStats>(`/admin/innovations/${enc(id)}/stats`),
-  innovationStatsReport: () => request<InnovationStatsRow[]>("/admin/reports/innovations"),
+    post<AdminInnovation>(
+      `/admin/innovations/${enc(id)}/${published ? "publish" : "unpublish"}`,
+    ),
+  innovationStats: (id: string) =>
+    request<InnovationStats>(`/admin/innovations/${enc(id)}/stats`),
+  innovationStatsReport: () =>
+    request<InnovationStatsRow[]>("/admin/reports/innovations"),
   trends: () => request<TrendRow[]>("/admin/reports/trends"),
   critical: () => request<CriticalRow[]>("/admin/reports/critical"),
   gaps: () => request<GapRow[]>("/admin/reports/gaps"),
   grantCalls: () => request<GrantCall[]>("/admin/grant-calls"),
   setGrantCallOpen: (id: string, open: boolean) =>
-    request<GrantCall>(`/admin/grant-calls/${enc(id)}`, { method: "PATCH", body: JSON.stringify({ open }) }),
-  reportCsvUrl: (name: ReportName) => `${API_URL}/admin/reports/${name}?format=csv`,
+    request<GrantCall>(`/admin/grant-calls/${enc(id)}`, {
+      method: "PATCH",
+      body: JSON.stringify({ open }),
+    }),
+  threads: (status?: ModerationStatus, innovationId?: string) => {
+    const q = new URLSearchParams();
+    if (status) q.set("status", status);
+    if (innovationId) q.set("innovation_id", innovationId);
+    const qs = q.toString();
+    return request<AdminThread[]>(`/admin/threads${qs ? `?${qs}` : ""}`);
+  },
+  setThreadStatus: (id: string, status: ModerationDecision) =>
+    post<AdminThread>(`/admin/threads/${enc(id)}/status`, { status }),
+  setReplyStatus: (id: string, status: ModerationDecision) =>
+    post<AdminReply>(`/admin/threads/replies/${enc(id)}/status`, { status }),
+  reportCsvUrl: (name: ReportName) =>
+    `${API_URL}/admin/reports/${name}?format=csv`,
 };

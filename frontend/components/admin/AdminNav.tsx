@@ -6,11 +6,12 @@ import { Icon } from "@/components/Icon";
 
 const TABS = [
   { href: "/admin", label: "Innowacje i statystyki", icon: "bar_chart" },
-  { href: "/admin/zgloszenia", label: "Zgłoszenia, pomysły i raporty", icon: "forum" },
+  { href: "/admin/zgloszenia#forum", label: "Zgłoszenia i forum", icon: "forum" },
 ];
 
 function isActive(pathname: string, href: string) {
-  return href === "/admin" ? pathname === "/admin" || pathname.startsWith("/admin/innowacje") : pathname.startsWith(href);
+  const path = href.split("#")[0] ?? href;
+  return path === "/admin" ? pathname === "/admin" || pathname.startsWith("/admin/innowacje") : pathname.startsWith(path);
 }
 
 export function AdminNav() {

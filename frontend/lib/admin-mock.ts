@@ -3,6 +3,7 @@
 
 import type {
   AdminInnovation,
+  AdminThread,
   ChallengeArea,
   CriticalRow,
   GapRow,
@@ -22,12 +23,47 @@ export interface AdminData {
   critical: CriticalRow[];
   gaps: GapRow[];
   grantCalls: GrantCall[];
+  threads: AdminThread[];
 }
 
 const NOW = Date.parse("2026-10-03T09:00:00Z");
 const ago = (hours: number) => new Date(NOW - hours * 3_600_000).toISOString();
 
 export const ADMIN_MOCK: AdminData = {
+  threads: [
+    {
+      id: "thread-pending-1",
+      innovation_id: "gra-o-zdrowie",
+      title: "Skąd wziąć salę na warsztaty w małej gminie?",
+      body: "Chcemy uruchomić grę w remizie, ale nie mamy budżetu na wynajem. Macie doświadczenia z użyczeniem sali od OSP?",
+      author_label: "Anna K. (OPS Myślenice)",
+      email: "anna@example.pl",
+      status: "pending",
+      created_at: ago(2),
+      replies: [
+        {
+          id: "reply-pending-1",
+          body: "U nas wójt podpisał porozumienie z OSP — sala gratis w zamian za promocję.",
+          author_label: "Piotr W. (GOPS Skawina)",
+          email: null,
+          kind: "practitioner",
+          status: "pending",
+          created_at: ago(1),
+        },
+      ],
+    },
+    {
+      id: "thread-published-1",
+      innovation_id: "sasiedzki-klub-aktywnego-seniora",
+      title: "Jak rekrutować wolontariuszy do dowozu seniorów?",
+      body: "Szukamy sprawdzonych kanałów — szkoły, parafie, Facebook lokalny?",
+      author_label: "Marta L. (GOPS Wieliczka)",
+      email: null,
+      status: "published",
+      created_at: ago(40),
+      replies: [],
+    },
+  ],
   problemReports: [
     {
       id: "problem-report-1",

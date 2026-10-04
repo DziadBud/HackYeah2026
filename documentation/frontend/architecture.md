@@ -8,12 +8,12 @@ Principle (same as backend): build the smallest thing that covers the requiremen
 
 ## 1. Stack
 
-| Concern | Choice | Why |
-|---|---|---|
-| Framework | Next.js 15, App Router | file-based routing, server + client components, standalone Docker output |
-| Language | TypeScript (strict) | the API types are the contract, mirrored from Pydantic |
-| Styling | Tailwind CSS v4 | no config file, utility-first, fast to prototype |
-| Data | `fetch` via `lib/api.ts` | one typed client; no extra deps |
+| Concern   | Choice                   | Why                                                                      |
+| --------- | ------------------------ | ------------------------------------------------------------------------ |
+| Framework | Next.js 15, App Router   | file-based routing, server + client components, standalone Docker output |
+| Language  | TypeScript (strict)      | the API types are the contract, mirrored from Pydantic                   |
+| Styling   | Tailwind CSS v4          | no config file, utility-first, fast to prototype                         |
+| Data      | `fetch` via `lib/api.ts` | one typed client; no extra deps                                          |
 
 ## 2. Layout
 
@@ -48,14 +48,14 @@ The home page is a regular page, not a full-height chat: hero (greeting, "O nas 
 
 ## Public UI
 
-| Screen | Does | API |
-|---|---|---|
-| `/` chat (`components/chat/Chat.tsx`) | problem text -> rag's `answer` + top innovations (cards with `area:*` tags shown as Polish labels); the three hero tiles are single choice: "Szukam rozwiązania" and "Mam pomysł" only put a template into the message field and close the form, "Złóż wniosek" shows the form and hides the chat (conversation, message field, "Czym jest Hub"), leaving only the welcome card with the tiles and the form; no email field, no tester option | `POST /match` |
-| `/` chat, similar problems (`SimilarReports.tsx`) | the `similar_reports` of the match, each with "Mnie też" | `POST /problem-reports/{id}/support` |
-| `/` chat, "Złóż wniosek" tile and `/?wniosek=1` (`IdeaForm.tsx`) | summary, essence, target group, stage, optional email + consent | `POST /ideas` |
-| `/innowacje` (`LibraryList.tsx`) | published innovations, 24 per page with "Pokaż więcej" | `GET /innovations?limit=&offset=` |
-| `/innowacje/{id}` (`InnovationDetail.tsx`) | description, target group, stage, cost, rating, film; "Więcej informacji (PDF)" opens the source PDF in a new tab when `has_pdf`, otherwise the placeholder `public/pdf/karta-innowacji-przyklad.pdf` (`SAMPLE_PDF_URL`, also used by the offline demo entries); 404 (unknown or draft) shows "Nie znaleziono innowacji" | `GET /innovations/{id}`, `GET /innovations/{id}/pdf` (link) |
-| `/innowacje/{id}` community (`Community.tsx`) | published threads with published replies; new threads and replies go to ROPS moderation (202, not shown until published) | `GET /innovations/{id}/threads`, `POST /innovations/{id}/threads`, `POST /threads/{id}/replies` |
+| Screen                                                           | Does                                                                                                                                                                                                                                                                                                                                                                                                                                          | API                                                                                             |
+| ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `/` chat (`components/chat/Chat.tsx`)                            | problem text -> rag's `answer` + top innovations (cards with `area:*` tags shown as Polish labels); the three hero tiles are single choice: "Szukam rozwiązania" and "Mam pomysł" only put a template into the message field and close the form, "Złóż wniosek" shows the form and hides the chat (conversation, message field, "Czym jest Hub"), leaving only the welcome card with the tiles and the form; no email field, no tester option | `POST /match`                                                                                   |
+| `/` chat, similar problems (`SimilarReports.tsx`)                | the `similar_reports` of the match, each with "Mnie też"                                                                                                                                                                                                                                                                                                                                                                                      | `POST /problem-reports/{id}/support`                                                            |
+| `/` chat, "Złóż wniosek" tile and `/?wniosek=1` (`IdeaForm.tsx`) | summary, essence, target group, stage, optional email + consent                                                                                                                                                                                                                                                                                                                                                                               | `POST /ideas`                                                                                   |
+| `/innowacje` (`LibraryList.tsx`)                                 | published innovations, 24 per page with "Pokaż więcej"                                                                                                                                                                                                                                                                                                                                                                                        | `GET /innovations?limit=&offset=`                                                               |
+| `/innowacje/{id}` (`InnovationDetail.tsx`)                       | description, target group, stage, cost, rating, film; "Więcej informacji (PDF)" opens the source PDF in a new tab when `has_pdf`, otherwise the placeholder `public/pdf/karta-innowacji-przyklad.pdf` (`SAMPLE_PDF_URL`, also used by the offline demo entries); 404 (unknown or draft) shows "Nie znaleziono innowacji"                                                                                                                      | `GET /innovations/{id}`, `GET /innovations/{id}/pdf` (link)                                     |
+| `/innowacje/{id}` community (`Community.tsx`)                    | published threads with published replies; new threads and replies go to ROPS moderation (202, not shown until published)                                                                                                                                                                                                                                                                                                                      | `GET /innovations/{id}/threads`, `POST /innovations/{id}/threads`, `POST /threads/{id}/replies` |
 
 The public UI does not use `POST /match?test_signup=true`. The detail action bar has "Zgłoś się do testowania" (expands an email + consent form → `POST /ideas` as a tester request into the ideas inbox), "Więcej informacji (PDF)" and "Skopiuj link do tej strony". Likes, notifications and the thread "pomocne" counter have no endpoint, so the detail page does not show them. Optional emails are sent with `consent: true` only after the person ticks the consent checkbox shown next to the email field.
 
@@ -63,12 +63,12 @@ The public UI does not use `POST /match?test_signup=true`. The detail action bar
 
 The admin's main question is "how is each innovation doing", so `/admin` opens on the innovation list, not the inbox.
 
-| Route | Shows | API |
-|---|---|---|
-| `/admin` | summary tiles (published, matches in 7 days with trend, people reached, testers waiting, average rating); one card per innovation with matches, 7-day trend, people reached, cities, testers, rating, "needs attention" hints; filters (search, status, challenge area, sort); publish/unpublish; CSV | `GET /admin/innovations`, `GET /admin/reports/innovations` (+ `?format=csv`), `POST .../{id}/publish\|unpublish` |
-| `/admin/innowacje/{id}` | description (target group, stage, cost, film), key numbers, matches per week (columns + table view), matched challenge areas and cities (cities under 5 hidden), testers by status, star distribution, comments, latest matched problems | `GET /admin/innovations/{id}`, `GET /admin/innovations/{id}/stats` |
-| `/admin/zgloszenia` | inbox tiles, problem reports + reply, ideas + status + reply, reports with CSV, grant calls | `/admin/problem-reports`, `/admin/ideas`, `/admin/reports/*`, `/admin/grant-calls` |
-| every `/admin` route (`components/admin/AdminGate.tsx`) | 200 shows the panel and "Zalogowano jako …" with "Wyloguj"; 401 shows the login form; the demo principal (`ADMIN_AUTH_DISABLED=true`) shows "Logowanie wyłączone na czas demonstracji" | `GET /admin/auth/me`, `POST /admin/auth/login`, `POST /admin/auth/logout` |
+| Route                                                   | Shows                                                                                                                                                                                                                                                                                                 | API                                                                                                              |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `/admin`                                                | summary tiles (published, matches in 7 days with trend, people reached, testers waiting, average rating); one card per innovation with matches, 7-day trend, people reached, cities, testers, rating, "needs attention" hints; filters (search, status, challenge area, sort); publish/unpublish; CSV | `GET /admin/innovations`, `GET /admin/reports/innovations` (+ `?format=csv`), `POST .../{id}/publish\|unpublish` |
+| `/admin/innowacje/{id}`                                 | description (target group, stage, cost, film), key numbers, matches per week (columns + table view), matched challenge areas and cities (cities under 5 hidden), testers by status, star distribution, comments, latest matched problems                                                              | `GET /admin/innovations/{id}`, `GET /admin/innovations/{id}/stats`                                               |
+| `/admin/zgloszenia`                                     | inbox tiles (incl. „Nowe komentarze”), **Forum** (`ThreadModeration`: Nowy=`pending` admin alert only / Przyjęty=`published` public / Odmowa=`hidden` private), problem reports, ideas, reports, grant calls                                                                                          | `GET/POST /admin/threads…`, `/admin/problem-reports`, `/admin/ideas`, `/admin/reports/*`, `/admin/grant-calls`   |
+| every `/admin` route (`components/admin/AdminGate.tsx`) | 200 shows the panel and "Zalogowano jako …" with "Wyloguj"; 401 shows the login form; the demo principal (`ADMIN_AUTH_DISABLED=true`) shows "Logowanie wyłączone na czas demonstracji"                                                                                                                | `GET /admin/auth/me`, `POST /admin/auth/login`, `POST /admin/auth/logout`                                        |
 
 Charts are single-series in the `primary` token (remapped in high contrast), every bar carries its value as text, and the weekly chart has a table view. Metric definitions: [.claude/designs/admin-innovation-stats.md](../../.claude/designs/admin-innovation-stats.md).
 
@@ -91,21 +91,21 @@ flowchart LR
 
 ## 4. Environments
 
-| Mode | Command | API it points at | Notes |
-|---|---|---|---|
-| Local dev | `make dev` (in `frontend/`) | `http://localhost:8000` | hot reload on :3000; run the backend with `make up` or `make run` |
-| Full stack | `docker compose up --build` (repo root) | `http://localhost:8000` | db + api + web together |
-| Frontend only in Docker | `docker compose up --build web` | per build arg | still needs `api` reachable from the browser |
+| Mode                    | Command                                 | API it points at        | Notes                                                             |
+| ----------------------- | --------------------------------------- | ----------------------- | ----------------------------------------------------------------- |
+| Local dev               | `make dev` (in `frontend/`)             | `http://localhost:8000` | hot reload on :3000; run the backend with `make up` or `make run` |
+| Full stack              | `docker compose up --build` (repo root) | `http://localhost:8000` | db + api + web together                                           |
+| Frontend only in Docker | `docker compose up --build web`         | per build arg           | still needs `api` reachable from the browser                      |
 
 See the repo [README](../../README.md) for the full run guide.
 
 ## 5. Deferred (add only when needed)
 
-| Idea | Add when |
-|---|---|
+| Idea                               | Add when                                 |
+| ---------------------------------- | ---------------------------------------- |
 | Data fetching lib (TanStack Query) | manual fetch/loading state becomes noise |
-| i18n | an English version is required |
-| E2E tests (Playwright) | flows stabilise |
+| i18n                               | an English version is required           |
+| E2E tests (Playwright)             | flows stabilise                          |
 
 ## 6. Accessibility (WCAG 2.1 AA, 20% of the score)
 
