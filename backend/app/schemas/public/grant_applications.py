@@ -3,7 +3,7 @@
 from datetime import datetime
 from decimal import Decimal
 from enum import StrEnum
-from typing import Annotated, Literal
+from typing import Annotated, ClassVar, Literal
 
 from pydantic import BaseModel, Field, model_validator
 
@@ -195,15 +195,20 @@ def normalize_declarations(applicant_type: ApplicantType, raw: dict | None) -> d
 
 
 class GrantApplicationCreate(OptionalContact):
-    """Start AI draft (sections 1+3–9). Rest comes empty for the user to fill/edit."""
+    """Start draft (sections 1+3–9). Rest comes empty for the user to fill/edit."""
 
     grant_call_id: str
     applicant_type: ApplicantType = ApplicantType.PERSON
     notes: str | None = Field(default=None, max_length=2000)
+    # false = skip Gemini, fill from template only
+    use_ai: bool = True
 
 
 class GrantApplicationUpdate(PatchModel):
     """Pełna edycja formularza — FE może nadpisać też treść z LLM."""
+
+    # amount starts as null on create; FE may clear it again
+    nullable_fields: ClassVar[frozenset[str]] = frozenset({"grant_amount_pln", "email"})
 
     status: GrantApplicationStatus | None = None
     title: str | None = None

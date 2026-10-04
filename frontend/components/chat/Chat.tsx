@@ -6,7 +6,7 @@ import { demoMatch } from "@/lib/demo-data";
 import { areaLabelsFromTags } from "@/lib/labels";
 import { Icon } from "@/components/Icon";
 import { InnovationCard, type InnovationCardData } from "@/components/InnovationCard";
-import { IdeaForm } from "@/components/chat/IdeaForm";
+import { GrantApplicationModal } from "@/components/chat/GrantApplicationModal";
 import { SimilarReports } from "@/components/chat/SimilarReports";
 
 type Message =
@@ -452,16 +452,14 @@ export function Chat() {
       </section>
 
       {ideaOpen && (
-        <div id="idea-form">
-          <IdeaForm
-            initialSummary={input.trim()}
-            onCancel={() => closeIdeaForm()}
-            onDone={closeIdeaForm}
-          />
-        </div>
+        <GrantApplicationModal
+          initialSummary={input.trim()}
+          onClose={() => closeIdeaForm()}
+          onDone={closeIdeaForm}
+        />
       )}
 
-      <section id="o-hubie" aria-labelledby="o-hubie-heading" hidden={ideaOpen} className="scroll-mt-28 flex flex-col gap-space-xs py-space-sm">
+      <section id="o-hubie" aria-labelledby="o-hubie-heading" className="scroll-mt-28 flex flex-col gap-space-xs py-space-sm">
         <h2 id="o-hubie-heading" className="text-headline-sm font-semibold text-primary">
           Czym jest Małopolski Hub Innowacji Społecznych?
         </h2>

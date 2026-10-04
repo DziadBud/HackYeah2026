@@ -269,7 +269,7 @@ class DbIdeaService:
             stage=idea.stage,
             social_canvas=idea.social_canvas,
             notes=data.notes,
-            llm=self._llm,
+            llm=self._llm if data.use_ai else None,
         )
         applicant_type = data.applicant_type
         row = GrantApplicationRow(

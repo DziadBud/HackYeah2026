@@ -10,16 +10,18 @@ from app.services.admin.errors import UpstreamUnavailableError
 
 class GeminiClient:
     def __init__(self, api_key: str | None = None, model: str | None = None) -> None:
-        self._api_key = api_key if api_key is not None else settings.gemini_api_key
-        self._model = model if model is not None else settings.gemini_model
+        self._api_key = api_key
+        self._model = model
 
     def generate_json(self, prompt: str) -> dict[str, Any]:
-        if not self._api_key:
+        api_key = self._api_key if self._api_key is not None else settings.gemini_api_key
+        model = self._model if self._model is not None else settings.gemini_model
+        if not api_key:
             raise UpstreamUnavailableError("GEMINI_API_KEY is not set")
         try:
-            client = genai.Client(api_key=self._api_key)
+            client = genai.Client(api_key=api_key)
             response = client.models.generate_content(
-                model=self._model,
+                model=model,
                 contents=prompt,
                 config=types.GenerateContentConfig(response_mime_type="application/json"),
             )
