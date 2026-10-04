@@ -29,13 +29,19 @@ def test_publish_thread_and_hide_reply(client, auth) -> None:
     assert client.get(BASE, params={"status": "pending"}, headers=auth).json() == []
 
 
+def test_move_back_to_pending(client, auth) -> None:
+    # pending is a valid decision: the panel's "Nowy" puts an item back in the moderation queue
+    client.post(f"{BASE}/thread-1/status", json={"status": "published"}, headers=auth)
+    res = client.post(f"{BASE}/thread-1/status", json={"status": "pending"}, headers=auth)
+    assert (res.status_code, res.json()["status"]) == (200, "pending")
+
+
 @pytest.mark.parametrize(
     "path, body, want",
     [
-        pytest.param("/thread-1/status", {"status": "pending"}, 422, id="#1 - FAIL - pending is not a decision"),
-        pytest.param("/thread-1/status", {"status": "deleted"}, 422, id="#2 - FAIL - unknown status"),
-        pytest.param("/nope/status", {"status": "published"}, 404, id="#3 - FAIL - unknown thread"),
-        pytest.param("/replies/nope/status", {"status": "hidden"}, 404, id="#4 - FAIL - unknown reply"),
+        pytest.param("/thread-1/status", {"status": "deleted"}, 422, id="#1 - FAIL - unknown status"),
+        pytest.param("/nope/status", {"status": "published"}, 404, id="#2 - FAIL - unknown thread"),
+        pytest.param("/replies/nope/status", {"status": "hidden"}, 404, id="#3 - FAIL - unknown reply"),
     ],
 )
 def test_set_status_errors(client, auth, path, body, want) -> None:
