@@ -5,7 +5,8 @@ export function SiteFooter() {
     <footer className="mt-auto w-full border-t border-outline/20 bg-surface-container-low">
       <div className="mx-auto flex max-w-7xl flex-col gap-space-sm px-gutter-sm py-space-md sm:flex-row sm:items-center sm:justify-between sm:px-gutter">
         <p className="text-caption text-on-surface-variant">
-          © 2026 Regionalny Ośrodek Polityki Społecznej w Krakowie. Wszelkie prawa zastrzeżone.
+          © 2026 Regionalny Ośrodek Polityki Społecznej w Krakowie. Wszelkie
+          prawa zastrzeżone.
         </p>
         <Link
           href="/deklaracja-dostepnosci"
