@@ -202,6 +202,89 @@ export interface TestSignupCreated {
   status: TestSignupStatus;
 }
 
+// ROPS Zał. 3 — public grant application (AI draft + user edit)
+export type GrantApplicationStatus = "draft" | "submitted";
+export type ApplicantType = "person" | "organization" | "informal_group";
+
+export interface PlanStep {
+  action: string;
+  timeline: string;
+  cost_pln: number | null;
+  note: string | null;
+}
+
+export interface ActionPlan {
+  preparation_summary: string;
+  preparation: PlanStep[];
+  testing_summary: string;
+  testing_phase_1: PlanStep[];
+  testing_phase_2: PlanStep[];
+}
+
+export interface GrantApplication {
+  id: string;
+  idea_id: string | null;
+  grant_call_id: string | null;
+  status: GrantApplicationStatus;
+  title: string;
+  applicant_type: ApplicantType;
+  applicant: Record<string, unknown>;
+  description: string;
+  innovativeness: string;
+  problem_diagnosis: string;
+  beneficiaries: string;
+  expected_change: string;
+  future_vision: string;
+  action_plan: ActionPlan;
+  grant_amount_pln: string | null;
+  team: string;
+  declarations: Record<string, boolean>;
+  email: string | null;
+  generated_by: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface GrantApplicationCreate extends OptionalContact {
+  grant_call_id: string;
+  applicant_type?: ApplicantType;
+  notes?: string;
+  /** false = skip Gemini, empty/template draft only */
+  use_ai?: boolean;
+}
+
+export type GrantApplicationUpdate = Partial<
+  Pick<
+    GrantApplication,
+    | "status"
+    | "title"
+    | "applicant_type"
+    | "applicant"
+    | "description"
+    | "innovativeness"
+    | "problem_diagnosis"
+    | "beneficiaries"
+    | "expected_change"
+    | "future_vision"
+    | "action_plan"
+    | "grant_amount_pln"
+    | "team"
+    | "declarations"
+    | "email"
+  >
+>;
+
+export interface PublicGrantCall {
+  id: string;
+  name: string;
+  deadline: string;
+  open: boolean;
+  sections: { title: string; description?: string | null; required: boolean }[];
+}
+
+const patch = <T>(path: string, body: unknown) =>
+  request<T>(path, { method: "PATCH", body: JSON.stringify(body) });
+
 export const api = {
   match: (body: MatchRequest, testSignup = false) =>
     post<MatchResponse>(`/match${testSignup ? "?test_signup=true" : ""}`, body),
@@ -223,6 +306,13 @@ export const api = {
   createIdea: (body: IdeaCreate) => post<IdeaCreated>("/ideas", body),
   signUpForTest: (innovationId: string, body: TestSignupCreate) =>
     post<TestSignupCreated>(`/innovations/${enc(innovationId)}/test-signups`, body),
+  openGrantCalls: () => request<PublicGrantCall[]>("/grant-calls"),
+  createGrantApplication: (ideaId: string, body: GrantApplicationCreate) =>
+    post<GrantApplication>(`/ideas/${enc(ideaId)}/grant-application`, body),
+  getGrantApplication: (id: string) =>
+    request<GrantApplication>(`/grant-applications/${enc(id)}`),
+  updateGrantApplication: (id: string, body: GrantApplicationUpdate) =>
+    patch<GrantApplication>(`/grant-applications/${enc(id)}`, body),
 };
 
 // ---- admin (/admin/*), mirrors backend/app/schemas/admin ----

@@ -99,20 +99,85 @@ def _template(
     target_group: str,
     social_canvas: dict[str, Any] | None,
 ) -> dict[str, Any]:
+    """Sensible starter text from the user's description (used when AI is off or fails)."""
     canvas = social_canvas or {}
-    title = summary.strip()[:80] or ""
-    description = essence.strip() or summary.strip() or ""
+    idea = (essence or summary or "").strip()
+    title = (summary or idea)[:80].strip()
+    audience = (canvas.get("beneficiaries") or target_group or "").strip()
+    if audience.lower().startswith("do uzupełnienia"):
+        audience = ""
+    problem = (canvas.get("problem") or "").strip() or idea
+    description = idea
     if canvas.get("solution"):
         description = f"{description} Rozwiązanie: {canvas['solution']}".strip()
     return {
         "title": title,
-        "description": description,
-        "innovativeness": "",
-        "problem_diagnosis": (canvas.get("problem") or "").strip(),
-        "beneficiaries": (canvas.get("beneficiaries") or target_group).strip() or target_group,
-        "expected_change": "",
-        "future_vision": "",
-        "action_plan": _empty_plan(),
+        "description": description
+        or "Uzupełnij opis innowacji: charakter rozwiązania i związek z włączeniem społecznym.",
+        "innovativeness": (
+            f"Propozycja wyróżnia się podejściem opartym na: {idea[:200]}. "
+            "Uzupełnij porównanie z istniejącymi rozwiązaniami w Polsce i na świecie."
+            if idea
+            else "Opisz, czym rozwiązanie wyróżnia się na tle istniejących praktyk."
+        ),
+        "problem_diagnosis": problem
+        or "Opisz problem społeczny, skalę i źródła diagnozy (bez zmyślania statystyk).",
+        "beneficiaries": audience
+        or (
+            f"Odbiorcy wynikający z opisu pomysłu: {idea[:180]}…"
+            if idea
+            else "Opisz grupę odbiorców, ich potrzeby i ryzyko wykluczenia."
+        ),
+        "expected_change": (
+            f"Wdrożenie pomysłu („{title}”) ma poprawić sytuację odbiorców w zakresie opisanego problemu. "
+            "Uzupełnij konkretne efekty dla włączenia społecznego."
+            if title
+            else "Opisz oczekiwaną zmianę w życiu odbiorców i wpływ na włączenie społeczne."
+        ),
+        "future_vision": (
+            "Rozwiązanie ma potencjał do powielenia w innych gminach / kontekstach po pilotażu. "
+            "Uzupełnij, co ułatwia skalowanie i wdrażanie."
+        ),
+        "action_plan": {
+            "preparation_summary": "Okres przygotowawczy (do 3 miesięcy): doprecyzowanie prototypu, partnerów i narzędzi testu.",
+            "preparation": [
+                {
+                    "action": "Doprecyzowanie koncepcji i planu testu na podstawie opisu pomysłu",
+                    "timeline": "miesiąc 1",
+                    "cost_pln": None,
+                    "note": "do oszacowania",
+                },
+                {
+                    "action": "Nawiązanie współpracy z partnerami / miejscem testu",
+                    "timeline": "miesiąc 1-2",
+                    "cost_pln": None,
+                    "note": "do oszacowania",
+                },
+                {
+                    "action": "Przygotowanie materiałów / prototypu do testowania",
+                    "timeline": "miesiąc 2-3",
+                    "cost_pln": None,
+                    "note": "do oszacowania",
+                },
+            ],
+            "testing_summary": "Okres testowania (do 9 miesięcy): Faza I — pierwsze próby z odbiorcami; Faza II — poprawki i model końcowy.",
+            "testing_phase_1": [
+                {
+                    "action": "Przeprowadzenie pierwszych spotkań / sesji testujących z odbiorcami",
+                    "timeline": "miesiąc 4-6",
+                    "cost_pln": None,
+                    "note": "do oszacowania",
+                }
+            ],
+            "testing_phase_2": [
+                {
+                    "action": "Wprowadzenie poprawek i opracowanie modelu końcowego innowacji",
+                    "timeline": "miesiąc 7-9",
+                    "cost_pln": None,
+                    "note": "do oszacowania",
+                }
+            ],
+        },
         "generated_by": "template",
     }
 
@@ -127,26 +192,30 @@ def _from_gemini(
     llm: GeminiClient,
 ) -> dict[str, Any]:
     canvas = social_canvas or {}
+    idea_text = (essence or summary or "").strip()
     card = {
+        "opis_pomyslu": idea_text,
         "summary": summary,
         "essence": essence,
-        "target_group": target_group,
+        "target_group": target_group if not str(target_group).lower().startswith("do uzupełnienia") else "",
         "stage": stage,
         "problem": canvas.get("problem", ""),
         "solution": canvas.get("solution", ""),
-        "beneficiaries": canvas.get("beneficiaries", target_group),
+        "beneficiaries": canvas.get("beneficiaries", ""),
         "resources": canvas.get("resources", ""),
         "notes": notes or "",
     }
-    prompt = f"""Wypełnij szkic wniosku grantowego ROPS na podstawie karty pomysłu.
+    prompt = f"""Wypełnij szkic wniosku grantowego ROPS (Załącznik nr 3) na podstawie OPISU POMYSŁU użytkownika.
 
-KARTA POMYSŁU:
+OPIS POMYSŁU / PROBLEM:
 {json.dumps(card, ensure_ascii=False)}
 
 Zasady:
-- pisz po polsku, 2-4 zdania na każde pole tekstowe
-- używaj TYLKO faktów z karty (nie zmyślaj statystyk ani kwot)
+- pisz po polsku, konkretnie, 2-5 zdań na każde pole tekstowe
+- wywnioskuj z opisu: tytuł, odbiorców, diagnozę problemu, innowacyjność, oczekiwaną zmianę i wizję rozwoju
+- NIE zmyślaj statystyk, dat ani kwot — jeśli brak danych, napisz to wprost i zaproponuj co użytkownik powinien uzupełnić
 - cost_pln ustaw na null, note na "do oszacowania"
+- action_plan: po 2-4 realnych krokach w preparation, testing_phase_1 i testing_phase_2
 - nie dodawaj innych kluczy niż w przykładzie poniżej
 
 Zwróć WYŁĄCZNIE jeden obiekt JSON dokładnie w tym kształcie:
