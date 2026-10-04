@@ -11,7 +11,7 @@ import { pendingThreadCount, ThreadModeration } from "@/components/admin/ThreadM
 import { useApiOrMock } from "@/components/admin/useApiOrMock";
 
 // innovations (/admin) and test signups (/admin/testerzy) have their own screens
-type PanelData = Omit<AdminData, "innovations" | "testSignups">;
+type PanelData = Omit<AdminData, "innovations" | "testSignups" | "grantApplications">;
 
 const IDEA_STATUS: Record<IdeaStatus, string> = {
   new: "Nowy",

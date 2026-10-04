@@ -8,6 +8,7 @@ const TABS = [
   { href: "/admin", label: "Innowacje i statystyki", icon: "bar_chart" },
   { href: "/admin/zgloszenia#forum", label: "Zgłoszenia i forum", icon: "forum" },
   { href: "/admin/testerzy", label: "Zgłoszenia do testów", icon: "how_to_reg" },
+  { href: "/admin/wnioski", label: "Wnioski o grant", icon: "description" },
 ];
 
 function isActive(pathname: string, href: string) {

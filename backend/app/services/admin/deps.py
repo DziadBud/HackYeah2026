@@ -13,6 +13,7 @@ from app.services.admin.auth import AdminAuthService, hash_password
 from app.services.admin.auth_models import AdminAccount
 from app.services.admin.auth_store import InMemoryAdminAuthStore
 from app.services.admin.db import (
+    DbGrantApplicationAdminService,
     DbGrantCallAdminService,
     DbIdeaAdminService,
     DbInboxAdminService,
@@ -25,6 +26,7 @@ from app.services.admin.db import (
 )
 from app.services.admin.innovation_upload import InnovationUploadService
 from app.services.admin.interfaces import (
+    GrantApplicationAdminService,
     GrantCallAdminService,
     IdeaAdminService,
     InboxAdminService,
@@ -79,6 +81,10 @@ def get_problem_report_service(db: Session = Depends(get_db), notifier: Notifier
 
 def get_grant_call_service(db: Session = Depends(get_db), notifier: Notifier = Depends(get_notifier)) -> GrantCallAdminService:
     return DbGrantCallAdminService(db, notifier)
+
+
+def get_grant_application_service(db: Session = Depends(get_db)) -> GrantApplicationAdminService:
+    return DbGrantApplicationAdminService(db)
 
 
 def get_report_service(db: Session = Depends(get_db)) -> ReportAdminService:

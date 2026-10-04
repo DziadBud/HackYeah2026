@@ -6,6 +6,7 @@ from sqlalchemy import func, literal_column, or_, select
 from sqlalchemy.orm import Session, selectinload, sessionmaker
 
 from app.db.models import Feedback, GrantCall as GrantCallRow, Idea as IdeaRow
+from app.db.models import GrantApplication as GrantApplicationRow
 from app.db.models import Innovation as InnovationRow, ProblemReport as ProblemReportRow
 from app.db.models import TestSignup, Thread as ThreadRow, ThreadReply as ThreadReplyRow
 from app.schemas.admin.common import ChallengeArea, Page
@@ -31,6 +32,14 @@ from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import CriticalRow, GapRow, LocationRow, TrendRow
 from app.schemas.admin.test_signups import TestSignup as TestSignupSchema, TestSignupStatus
 from app.schemas.admin.threads import AdminReply, AdminThread
+from app.schemas.public.grant_applications import (
+    ActionPlan,
+    ApplicantType,
+    GrantApplication,
+    GrantApplicationStatus,
+    normalize_applicant,
+    normalize_declarations,
+)
 from app.schemas.public.threads import ModerationStatus, ReplyKind
 from app.services.admin.errors import NotFoundError
 from app.services.admin.innovation_upload import NewInnovation, areas_from_tags, with_area_tags
@@ -86,6 +95,33 @@ def idea_to_schema(row: IdeaRow) -> Idea:
 def grant_call_to_schema(row: GrantCallRow) -> GrantCall:
     return GrantCall(
         id=str(row.id), name=row.name, deadline=row.deadline, open=row.open, sections=row.sections
+    )
+
+
+def grant_application_to_schema(row: GrantApplicationRow) -> GrantApplication:
+    applicant_type = ApplicantType(row.applicant_type)
+    return GrantApplication(
+        id=str(row.id),
+        idea_id=str(row.idea_id) if row.idea_id else None,
+        grant_call_id=str(row.grant_call_id) if row.grant_call_id else None,
+        status=GrantApplicationStatus(row.status),
+        title=row.title or "",
+        applicant_type=applicant_type,
+        applicant=normalize_applicant(applicant_type, row.applicant),
+        description=row.description or "",
+        innovativeness=row.innovativeness or "",
+        problem_diagnosis=row.problem_diagnosis or "",
+        beneficiaries=row.beneficiaries or "",
+        expected_change=row.expected_change or "",
+        future_vision=row.future_vision or "",
+        action_plan=ActionPlan.model_validate(row.action_plan or {}),
+        grant_amount_pln=row.grant_amount_pln,
+        team=row.team or "",
+        declarations=normalize_declarations(applicant_type, row.declarations),
+        email=row.email,
+        generated_by=row.generated_by,
+        created_at=row.created_at,
+        updated_at=row.updated_at,
     )
 
 
@@ -584,6 +620,29 @@ class DbGrantCallAdminService:
         emails = self._db.scalars(select(IdeaRow.email).where(IdeaRow.email.is_not(None)).distinct()).all()
         sections = [s.get("title", "") for s in row.sections or [] if s.get("title")]
         self._notifier.grant_call_opened(emails, row.name, row.deadline, sections)
+
+
+class DbGrantApplicationAdminService:
+    def __init__(self, db: Session) -> None:
+        self._db = db
+
+    def list(
+        self, status: GrantApplicationStatus | None = None, grant_call_id: str | None = None
+    ) -> list[GrantApplication]:
+        q = select(GrantApplicationRow).order_by(GrantApplicationRow.updated_at.desc())
+        if status:
+            q = q.where(GrantApplicationRow.status == status.value)
+        if grant_call_id:
+            # an unknown call filters down to nothing, it isn't a 404
+            try:
+                q = q.where(GrantApplicationRow.grant_call_id == uuid.UUID(grant_call_id))
+            except ValueError:
+                return []
+        return [grant_application_to_schema(r) for r in self._db.scalars(q).all()]
+
+    def get(self, application_id: str) -> GrantApplication:
+        row = _get(self._db, GrantApplicationRow, parse_uuid(application_id), application_id)
+        return grant_application_to_schema(row)
 
 
 class DbReportAdminService:

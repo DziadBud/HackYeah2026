@@ -1,5 +1,6 @@
 from collections.abc import Sequence
 from datetime import date, datetime, timedelta, timezone
+from decimal import Decimal
 
 from app.schemas.admin.common import ChallengeArea, Page
 from app.schemas.admin.grant_calls import (
@@ -29,6 +30,13 @@ from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
 from app.schemas.admin.test_signups import TestSignup, TestSignupStatus
 from app.schemas.admin.threads import AdminReply, AdminThread
+from app.schemas.public.grant_applications import (
+    ActionPlan,
+    ApplicantType,
+    GrantApplication,
+    GrantApplicationStatus,
+    PlanStep,
+)
 from app.schemas.public.threads import ModerationStatus, ReplyKind
 from app.services.admin.errors import NotFoundError
 from app.services.admin.innovation_upload import NewInnovation
@@ -474,6 +482,63 @@ class MockGrantCallAdminService:
         )
         self._items[call_id] = updated
         return updated
+
+
+class MockGrantApplicationAdminService:
+    def __init__(self) -> None:
+        submitted = GrantApplication(
+            id="app-1",
+            idea_id="idea-1",
+            grant_call_id="call-1",
+            status=GrantApplicationStatus.SUBMITTED,
+            title="Sąsiedzka sieć wsparcia seniorów",
+            applicant_type=ApplicantType.PERSON,
+            applicant={"first_name": "Anna", "last_name": "Kowalska", "city": "Tarnów"},
+            description="Wolontariusze z osiedla pomagają seniorom w zakupach i wizytach u lekarza.",
+            innovativeness="Łączy lokalne kluby seniora z aplikacją do umawiania pomocy.",
+            problem_diagnosis="Seniorzy w małych miastach są samotni i nie mają wsparcia na co dzień.",
+            beneficiaries="Osoby 65+ mieszkające samotnie.",
+            expected_change="Mniej samotności, łatwiejszy dostęp do usług.",
+            future_vision="Sieć działa w 5 gminach Małopolski.",
+            action_plan=ActionPlan(
+                preparation_summary="Rekrutacja wolontariuszy",
+                preparation=[PlanStep(action="Spotkania informacyjne", timeline="11.2026", cost_pln=2000)],
+            ),
+            grant_amount_pln=Decimal("45000"),
+            team="Anna Kowalska — koordynatorka, 10 lat w NGO.",
+            declarations={"resides_in_poland": True, "data_truthful": True},
+            email="anna@example.com",
+            generated_by="gemini",
+            created_at=NOW - timedelta(days=2),
+            updated_at=NOW - timedelta(days=1),
+        )
+        draft = submitted.model_copy(
+            update={
+                "id": "app-2",
+                "status": GrantApplicationStatus.DRAFT,
+                "title": "Warsztaty cyfrowe w bibliotece",
+                "grant_amount_pln": None,
+                "email": None,
+                "updated_at": NOW,
+            }
+        )
+        self._items = {a.id: a for a in (draft, submitted)}
+
+    def list(
+        self, status: GrantApplicationStatus | None = None, grant_call_id: str | None = None
+    ) -> list[GrantApplication]:
+        return [
+            a
+            for a in self._items.values()
+            if (status is None or a.status == status)
+            and (grant_call_id is None or a.grant_call_id == grant_call_id)
+        ]
+
+    def get(self, application_id: str) -> GrantApplication:
+        try:
+            return self._items[application_id]
+        except KeyError:
+            raise NotFoundError(application_id) from None
 
 
 class MockReportAdminService:

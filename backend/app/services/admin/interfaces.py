@@ -18,6 +18,7 @@ from app.schemas.admin.innovations import (
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
 from app.schemas.admin.test_signups import TestSignup, TestSignupStatus
+from app.schemas.public.grant_applications import GrantApplication, GrantApplicationStatus
 from app.schemas.admin.threads import AdminReply, AdminThread
 from app.schemas.public.threads import ModerationStatus
 
@@ -91,6 +92,14 @@ class GrantCallAdminService(Protocol):
     def list(self) -> list[GrantCall]: ...
     def create(self, data: GrantCallCreate) -> GrantCall: ...
     def update(self, call_id: str, data: GrantCallUpdate) -> GrantCall: ...
+
+
+# filled Zał. 3 forms from the public generator; read-only review, decisions happen outside the app
+class GrantApplicationAdminService(Protocol):
+    def list(
+        self, status: GrantApplicationStatus | None = None, grant_call_id: str | None = None
+    ) -> list[GrantApplication]: ...
+    def get(self, application_id: str) -> GrantApplication: ...
 
 
 # R2 + R14: trendy i agregacja potrzeb tylko dla admina, nigdy publicznie (wymog briefu)

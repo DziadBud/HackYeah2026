@@ -161,6 +161,7 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 | Threads | `GET /admin/threads` (filter `innovation_id`, and `status`, which matches the thread or any of its replies, so `?status=pending` is the moderation queue; each thread carries all its replies), `POST .../{id}/status` (`published`\|`hidden`), `POST .../replies/{id}/status` (same body) |
 | Testing | `GET /admin/test-signups` (filter `innovation_id`, `status`; statuses `applied`, `accepted`, `rejected`, `completed`, `rated`), `POST /admin/test-signups/{id}/status` (`accepted`\|`rejected`\|`completed`; `rated` is set by the tester's rating) |
 | Grant calls | `GET /admin/grant-calls`, `POST /admin/grant-calls`, `PATCH /admin/grant-calls/{id}` (open/close, form sections) |
+| Grant applications | `GET /admin/grant-applications` (filters `status` (`draft`\|`submitted`), `grant_call_id`; newest change first), `GET /admin/grant-applications/{id}`; read-only, same full Zał. 3 shape as the public endpoint |
 | Generated docs | `GET /admin/generated-documents` (filter `kind`, `innovation_id`, `idea_id`) |
 | Reports | `GET /admin/reports/trends`, `/critical`, `/locations`, `/gaps`, `/innovations` (one stats row per innovation), each with `?format=json\|csv` |
 
@@ -471,3 +472,4 @@ docker-compose.yml   # postgres (pgvector image), migrate, rag, seed-embed, embe
 13. Anonymous innovation likes: `innovation_likes` table (`backend/sql/011_innovation_likes.sql`) and `GET/PUT/DELETE /innovations/{id}/likes` keyed by a browser-generated `client_id`; the detail page ActionBar shows a like toggle with the count.
 14. `POST /admin/innovations/{id}/pdf` (documented, but missing from the code) is implemented; the admin edit page `/admin/innowacje/{id}/edytuj` takes an optional new PDF.
 15. Innovations from the ROPS library are seeded with description profiles (`innovation_profiles`, `backend/sql/012_innovation_profiles.sql`), two photos and the main PDF each (`backend/seed_media/`); `GET /innovations/{id}/photos/{name}` serves the photos and `GET /innovations/{id}/pdf` became a download that falls back to the seeded PDF.
+16. Admin review of grant applications: `GET /admin/grant-applications` and `GET /admin/grant-applications/{id}` (read-only, no decision statuses, no mail). The admin panel lists them at `/admin/wnioski`.

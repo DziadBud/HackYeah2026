@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends
 
 from app.api.admin import (
     auth,
+    grant_applications,
     grant_calls,
     ideas,
     inbox,
@@ -17,7 +18,15 @@ from app.auth import require_admin, require_same_origin
 # login must stay public, so it sits outside the protected sub-router
 protected = APIRouter(dependencies=[Depends(require_admin), Depends(map_domain_errors)])
 for feature in (
-    innovations, inbox, ideas, problem_reports, grant_calls, reports, threads, test_signups
+    innovations,
+    inbox,
+    ideas,
+    problem_reports,
+    grant_calls,
+    grant_applications,
+    reports,
+    threads,
+    test_signups,
 ):
     protected.include_router(feature.router)
 

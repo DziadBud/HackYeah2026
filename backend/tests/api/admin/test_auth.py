@@ -1,7 +1,6 @@
 import re
 
 import pytest
-from fastapi.routing import APIRoute
 
 from app.config import settings
 from app.main import app
@@ -10,11 +9,12 @@ from tests.api.admin.conftest import ADMIN_USERNAME, ADMIN_PASSWORD
 LOGIN = "/admin/auth/login"
 PUBLIC = {LOGIN, "/admin/auth/logout"}
 
+# fastapi nests included routers lazily, so app.routes no longer lists them; the schema does
 PROTECTED = [
-    (method, re.sub(r"\{[^}]+\}", "x", r.path))
-    for r in app.routes
-    if isinstance(r, APIRoute) and r.path.startswith("/admin") and r.path not in PUBLIC
-    for method in r.methods
+    (method.upper(), re.sub(r"\{[^}]+\}", "x", path))
+    for path, ops in app.openapi()["paths"].items()
+    if path.startswith("/admin") and path not in PUBLIC
+    for method in ops
 ]
 
 

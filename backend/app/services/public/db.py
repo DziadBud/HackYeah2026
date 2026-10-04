@@ -57,7 +57,12 @@ from app.schemas.public.threads import (
     Thread,
     ThreadCreate,
 )
-from app.services.admin.db import grant_call_to_schema, innovation_to_schema, parse_uuid
+from app.services.admin.db import (
+    grant_application_to_schema,
+    grant_call_to_schema,
+    innovation_to_schema,
+    parse_uuid,
+)
 from app.services.admin.innovation_upload import area_tag
 from app.services.admin.errors import InvalidRequestError, NotFoundError
 from app.services.public.drafts import grant_draft_fields, middleman_card
@@ -85,33 +90,6 @@ def _document(row: DocumentRow) -> GeneratedDocument:
         grant_call_id=str(row.grant_call_id) if row.grant_call_id else None,
         output=row.output,
         created_at=row.created_at,
-    )
-
-
-def _grant_application(row: GrantApplicationRow) -> GrantApplication:
-    applicant_type = ApplicantType(row.applicant_type)
-    return GrantApplication(
-        id=str(row.id),
-        idea_id=str(row.idea_id) if row.idea_id else None,
-        grant_call_id=str(row.grant_call_id) if row.grant_call_id else None,
-        status=GrantApplicationStatus(row.status),
-        title=row.title or "",
-        applicant_type=applicant_type,
-        applicant=normalize_applicant(applicant_type, row.applicant),
-        description=row.description or "",
-        innovativeness=row.innovativeness or "",
-        problem_diagnosis=row.problem_diagnosis or "",
-        beneficiaries=row.beneficiaries or "",
-        expected_change=row.expected_change or "",
-        future_vision=row.future_vision or "",
-        action_plan=ActionPlan.model_validate(row.action_plan or {}),
-        grant_amount_pln=row.grant_amount_pln,
-        team=row.team or "",
-        declarations=normalize_declarations(applicant_type, row.declarations),
-        email=row.email,
-        generated_by=row.generated_by,
-        created_at=row.created_at,
-        updated_at=row.updated_at,
     )
 
 
@@ -298,13 +276,13 @@ class DbIdeaService:
         )
         self._db.add(row)
         self._db.commit()
-        return _grant_application(row)
+        return grant_application_to_schema(row)
 
     def get_grant_application(self, application_id: str) -> GrantApplication:
         row = self._db.get(GrantApplicationRow, parse_uuid(application_id))
         if row is None:
             raise NotFoundError(application_id)
-        return _grant_application(row)
+        return grant_application_to_schema(row)
 
     def update_grant_application(
         self, application_id: str, data: GrantApplicationUpdate
@@ -336,7 +314,7 @@ class DbIdeaService:
         for key, value in patch.items():
             setattr(row, key, value)
         self._db.commit()
-        return _grant_application(row)
+        return grant_application_to_schema(row)
 
 
 class DbLibraryService:
