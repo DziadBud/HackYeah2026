@@ -1,0 +1,160 @@
+--- strona 1 ---
+
+Terapeutyczne kredki dla dzieci
+ze spastycznością kończyny górnej –
+specyfikacja prototypu rozwiązania
+Innowacja testowana w ramach „Inkubatora Włączenia Społecznego” – Projektu
+wdrażanego w ramach IV Osi Priorytetowej Programu Operacyjnego Wiedza Edukacja
+Rozwój (Działanie 4.1: Innowacje społeczne), na zlecenie Ministerstwa Funduszy i Polityki
+Regionalnej, finansowanego ze środków Unii Europejskiej w ramach Europejskiego Funduszu
+Społecznego.
+Grantobiorca: Aleksandra Satława
+
+--- strona 2 ---
+
+Spis treści
+Opis rozwiązania ____________________________________________________________ 3
+Projekt wzorniczy ___________________________________________________________ 4
+Wytyczne parametrów ergonomicznych i technicznych _____________________________ 7
+Rysunki techniczne zwymiarowanej kredki _____________________________________ 7
+Założenia ergonomiczne ___________________________________________________ 8
+Dokumentacja fotograficzna wykonanych prototypów _____________________________ 11
+Graficzna instrukcja użytkowania ______________________________________________ 16
+
+--- strona 3 ---
+
+Opis rozwiązania
+Edki – terapeutyczne kredki przeznaczone są dla dzieci ze spastyczną kończyną górną
+i problemami motoryki małej.
+Celem innowacji jest opracowanie i przetestowanie zestawu terapeutycznych kredek dla
+dzieci zmagających się ze spastycznością kończyny górnej. Projekt umożliwi najmłodszym
+z niedowładem ręki dostęp do twórczych działań plastycznych, jakimi są pisanie, rysowanie,
+kolorowanie – będące podstawowymi formami działań w harmonijnym rozwoju każdego
+dziecka.
+Projekt terapeutycznych kredek zakłada udostępnianie na zasadach open source – otwartej
+licencji – do samodzielnego wykonania, które następuje w 8 krokach.
+W skład innowacji wchodzą:
+− projekt wzorniczy kredki wraz z wydrukiem 3d i silikonową formą,
+− graficzne instrukcje do samodzielnego wykonania kredek i scenariusze użytkowe,
+− graficzne szablony wspomagające zabawę z kredkami.
+Terapeutyczne funkcje kredek:
+− mobilizacja palców dłoni do wyprostu poprzez wkładanie kredki między palce,
+− umożliwienie łatwego trzymania / chwytu pisarskiego,
+− stymulacja czucia głębokiego poprzez masaż, toczenie kredki w dłoniach lub
+na papierze,
+− rozluźnienie całej kończyny górnej,
+− rotacja nadgarstka dzięki obracaniu dwukolorowej kredki.
+
+--- strona 4 ---
+
+Projekt wzorniczy
+W fazie szkiców powstało wiele różnych koncepcji, z których 2 zostały wybrane
+do wymodelowania. Pierwsza zakładała odlew kredek o geometrycznej formie obrotowej,
+a druga organiczne kształty wkładane między palce. Obie odpowiadały na założenia
+projektowe. Jednak kolejny etap procesu projektowego – modelowanie w glinie - pokazał,
+że druga koncepcja, pomimo tego, że umożliwia intuicyjne chwytanie, to wysuwa się
+ze spastycznej dłoni i nie daje możliwości precyzyjnego rysowania, a jej forma jest
+trudniejsza do wykonania samodzielnego odlewu.
+Wybrany został zatem pomysł na kredkę, która umożliwiała nieskomplikowane odlewanie,
+w łatwy sposób trzyma się między palcami i nie wypadała, co więcej umożliwia
+ergonomiczne trzymanie.
+W kolejnym etapie powstał próbny wydruk i forma z silikonu modelarskiego. Prototyp ten
+wymagał dopracowania. Naniesiono więc zmiany szerokości i długości kredki, wielkości
+wcięcia i dopracowano cały proces powstawania, aby był możliwie jak najprostszy.
+
+--- strona 5 ---
+
+Szkic przedstawiający dwie koncepcje.
+
+Pierwsze próby z formami obrotowymi.
+
+--- strona 6 ---
+
+Model kredki w programie 3D.
+
+Odlewy pierwszych prototypów kredek.
+
+--- strona 7 ---
+
+Wytyczne parametrów ergonomicznych i technicznych
+Rysunki techniczne zwymiarowanej kredki
+
+--- strona 8 ---
+
+Założenia ergonomiczne
+Kształt kredki powinien dopasowywać się do dziecięcej dłoni i umożliwiać intuicyjne
+chwytanie i zabawę na wiele sposobów. Poniżej przedstawione zostały scenariusze
+użytkowe.
+
+Masaż. Turlanie kredki w dłoniach lub po kartce oswaja z narzędziem i pobudza krążenie.
+Toczona po kartce kredka zostawia ciekawe ślady.
+
+--- strona 9 ---
+
+Chwyt pomiędzy palcami stożkową częścią do dołu. Wkładanie kredki pomiędzy palce
+mobilizuje dłoń do wyprostu. Wcięcie w kredce umożliwia trzymanie kredki pomiędzy
+palcami. Stożkowy czubek daje możliwość precyzyjnego rysowania lub podążania za śladem.
+
+Chwyt pomiędzy palcami płaską częścią do dołu. Wkładanie kredki między palce mobilizuje
+dłoń do wyprostu. Wcięcie w kredce umożliwia trzymanie kredki pomiędzy palcami.
+
+--- strona 10 ---
+
+Ćwiczenie daje możliwość rysowania dużą płaszczyzną i jest potrzebne w przypadku
+wypełniania – kolorowania.
+
+Kredki w obu rękach. Rysowanie oburęczne rozwija zdolności ruchowo-koordynacyjne
+i intelektualne.
+
+Chwyt pisarski. Kształt kredki ułatwia prawidłowe i precyzyjne trzymanie narzędzia.
+
+--- strona 11 ---
+
+Dokumentacja fotograficzna wykonanych prototypów
+
+Kredki w użyciu.
+
+--- strona 12 ---
+
+Wydrukowana instrukcja wykonania kredek.
+
+Wydrukowana forma 3D, silikonowa forma i woskowy prototyp kredki.
+
+--- strona 13 ---
+
+Wersje kolorystyczne kredek.
+
+Wersje kolorystyczne kredek.
+
+--- strona 14 ---
+
+Wersje kolorystyczne kredek.
+
+Funkcje kredki.
+
+--- strona 15 ---
+
+Funkcje kredki.
+
+Funkcje kredki.
+
+--- strona 16 ---
+
+Graficzna instrukcja użytkowania
+Instruktaż w formie graficznej ma pomóc rodzicom, wolontariuszom i terapeutom wykonać
+kredkę krok po kroku oraz zrozumieć ćwiczenia i zabawy.
+Instrukcje zostały zaprojektowane w sposób czytelny i prosty, dostosowano je do formatu a4
+– najbardziej dostępnego i możliwego do wydruku na domowej drukarce. Przerywane linie
+pomagają złożyć kartkę w mniejszy format - harmonijkę.
+3 strony zawierają:
+• informacje na temat projektu,
+• informacje jak wykonać kredkę,
+• informacje w jaki sposób korzystać z kredek.
+
+Fotograficzna dokumentacja instrukcji - informacje na temat projektu.
+
+--- strona 17 ---
+
+Fotograficzna dokumentacja instrukcji - informacje jak wykonać kredkę.
+
+Fotograficzna dokumentacja instrukcji - informacje w jaki sposób korzystać z kredek.

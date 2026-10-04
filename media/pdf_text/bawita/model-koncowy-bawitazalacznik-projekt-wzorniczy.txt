@@ -1,0 +1,293 @@
+--- strona 1 ---
+
+Projekt wzorniczy i wykonawczy
+innowacji BaWita
+Innowacja testowana w ramach „Inkubatora Włączenia Społecznego” –
+Projektu wdrażanego w ramach IV Osi Priorytetowej Programu Operacyjnego
+Wiedza Edukacja Rozwój (Działanie 4.1: Innowacje społeczne),
+na zlecenie Ministerstwa Funduszy i Polityki Regionalnej, finansowanego ze środków
+Unii Europejskiej w ramach Europejskiego Funduszu Społecznego.
+
+Wszystkie elementy innowacji zostały udostępnione na podstawie Licencji
+Creative Commons CC.BY 4.0
+
+--- strona 2 ---
+
+Spis treści
+Opis rozwiązania ........................................................................................................ 3
+Konstrukcja ...................................................................................................................................... 3
+Elementy wymienne ...................................................................................................................... 4
+Elementy prowadzące (prowadnice) ........................................................................................ 5
+Charakterystyka wykorzystanych materiałów ....................................................................... 5
+Projekt wzorniczy ............................................................................................................................... 7
+Elementy wymienne „Dni tygodnia” ........................................................................................ 14
+Elementy wymienne „Harmonogram dnia” ........................................................................... 15
+Projekt wykonawczy ........................................................................................................................ 19
+Elementy konstrukcyjne tablicy ............................................................................................... 19
+Dni tygodnia (7 sztuk) ................................................................................................................. 20
+Harmonogram dnia (14 sztuk) ................................................................................................. 20
+Prowadnice elementów ruchomych ....................................................................................... 21
+Opis procesu produkcji ............................................................................................................... 21
+Wytyczne parametrów ergonomicznych i technicznych ...................................................... 23
+
+--- strona 3 ---
+
+Opis rozwiązania
+Konstrukcja
+Rozwiązanie opiera się na konstrukcji drewnianej z elementami łączącymi punkty
+(stacje procesu), po których poruszają się elementy ruchome tablicy. Podstawa
+tablicy wykonana jest z płyty drewnianej. Elementy ruchome służą utrwalaniu
+procesów. W projekcie przygotowano dwa zestawy: pierwszy utrwalający pacjentom
+kolejność dni tygodnia i drugi przypominający harmonogram dnia. Tablica jest
+skonstruowana w taki sposób, aby opiekun mógł łatwo i bezpiecznie, bez narzędzi
+mógł wymienić elementy procesu (scenariusz 1 i scenariusz 2) nie zdejmując tablicy
+ze stołu do ćwiczeń. Usytuowanie tablicy na stole bez potrzeby przenoszenia i
+długotrwałego przygotowywania zajęć daje komfort dla podopiecznych, nie generując
+zbędnego zamieszania podczas warsztatu.
+Tablica ma wagę dopasowaną do potrzeb użytkowników ok. 4 kg, dzięki czemu
+stabilnie leży na blacie do ćwiczeń. Dodatkowo wyposażona jest w przyssawki do
+blatu, które zapobiegają przesuwaniu się tablicy podczas ćwiczeń i przypadkowemu
+strąceniu lub zepchnięcia jej ze stołu. Zapewnia to bezpieczeństwo podczas ćwiczeń
+osoby rehabilitowanej, opiekuna jak również osób w otoczeniu.
+Prostokątny kształt tablicy pozwala na łatwe dopasowanie narzędzia do blatu stołu
+gdzie przebiegają ćwiczenia. Wysokość tablicy ponad blat do ćwiczeń wynosi ok. 7
+cm, co pozwala na komfortowe użytkowanie i nie wymaga od ćwiczącego
+podnoszenia ręki zbyt wysoko nad blat.
+Dzięki zastosowaniu wycięcia poszczególnych elementów w technice CNC
+osiągnięto wymaganą dokładność i bezpieczeństwo wykonania. Elementy, z których
+składa się tablica są wycięte według wzoru oraz rozmiarów podanych w projekcie
+wzorniczym. Wszystkie elementy połączone są ze sobą za pomocą kleju do drewna
+oraz wkrętów do drewna. Elementy prowadzące dla punktów procesu typu: sznurki,
+frezowania, druty oraz suwaki, są trwale przytwierdzone do tablicy za pomocą kleju.
+Elementy wymienne (zgodne ze scenariuszami procesów np. oznaczenia dni
+
+--- strona 4 ---
+
+tygodnia) instalowane są według projektu wykonawczego, w miejscach oznaczonych
+na grafikach. Wymiana oznaczeń elementów ze względu na proces nie stanowi
+demontażu elementów nośnych typu: kwadrat, koło, serce, które są integralne z
+tablicą.
+Elementy wymienne
+Zgodnie z założeniem tablica przygotowana jest do trenowania dwóch procesów, o
+różnym stopniu trudności.
+„Dni tygodnia” to 7 ruchomych elementów w określonych kolorach, które stymulują
+zapamiętywanie kolejności dni tygodnia. Wykonane są z folii ferromagnetycznej z
+nadrukiem nazwy dnia tygodnia. Nazwę dnia tygodnia odpowiednio umieszcza się na
+dopasowanym do tego elemencie:
+● czerwony kwadrat - poniedziałek,
+● pomarańczowy walec - wtorek,
+● żółty prostokąt - środa,
+● zielony trójkąt - czwartek,
+● niebieskie koło - piątek,
+● kwiat w kolorze indygo- sobota,
+● fioletowe serce - niedziela;
+W procesie „Harmonogram dnia” jest 14 elementów wymiennych, po dwa na jeden
+proces manualny. Umieszcza się je w pasie górnym i dolnym tablicy, na potrzeby
+utrwalania procesu „Harmonogram dnia” w kolejności:
+● pobudka => toaleta (kwadrat)
+● ubieranie się => śniadanie + leki (walec)
+● gimnastyka => spacer (prostokąt)
+● drugie śniadanie + kawa => gry, krzyżówki,TV (trójkąt)
+● obiad + leki => czas wolny (koło)
+● kolacja + leki => ubieranie piżamy (kwiat)
+● toaleta => sen (serce)
+
+--- strona 5 ---
+
+Większość elementów ruchomych jest odpowiedniej grubości ok. 10 mm, co pozwala
+na pewny chwyt oraz manipulowanie elementem.
+Elementy ruchome w żywych barwach wyróżniają się na tle tablicy, która jest w
+fakturze drewna. Pozwala to skupić uwagę na konkretnym zagadnieniu i przyciąga
+uwagę osoby trenującej. Podpisy elementów ruchomych przygotowane są przy
+użyciu czcionki: pogrubionej, wersalików, bezszeryfowej.
+Elementy prowadzące (prowadnice)
+Zgodnie z założeniem przygotowane elementy prowadzące są stałe i powtarzają się
+w obydwu procesach:
+● sznurek - element drewniany kwadrat ze ściętym bokiem
+● drut prowadnica na wzór liczydła - element drewniany w kształcie walca
+● zagłębienie „kanał” - element drewniany prostokąt
+● zagłębienie „kanał-slalom” - element drewniany trójkąt
+● koło zębate z prowadnicą - element drewniany koło
+● suwak - element drewniany kwiat
+● tkanina z guzikiem zatrzaskowym na początku oraz na końcu toru, do
+zapinania - element drewniany serce
+Zróżnicowanie elementów pozwala na manipulowanie elementami na różnym
+poziomie trudności. W procesie treningu pozwoli to na doskonalenie opanowanych
+procesów jak i naukę nowych.
+Charakterystyka wykorzystanych materiałów:
+● płyta stolarska 180 mm
+● elementy stalowe (prowadnice elementów ruchomych)
+● sznur 5 mm średnicy
+● suwak 50 cm
+● przyssawki do blatów średnica ok.40mm z zintegrowanym wkrętem
+Ø 4mm
+
+--- strona 6 ---
+
+● materiał z guzikiem zatrzaskowym
+● klej do drewna typu wikol
+● klej „na gorąco”
+● klej cyjanoakrylowy
+● drewno lite sosnowe 18 mm
+● folia ferromagnetyczna
+● farby akrylowe
+● wosk olejny
+● lite drewno sosnowe 10 mm
+● wkręty do drewna 20 mm
+● papier ścierny 180 oraz 320
+● magnes neodymowy płytkowy 15 x 5 x 2 mm
+● podkładki stalowe średnica 17 mm
+● sklejka brzozowa 3 mm
+● szpachla akrylowa
+● zszywki 10 mm
+
+--- strona 7 ---
+
+Projekt wzorniczy
+
+--- strona 14 ---
+
+Elementy wymienne „Dni tygodnia”
+
+--- strona 15 ---
+
+Elementy wymienne „Harmonogram dnia”
+(źródło ilustracji: flaticon.com)
+
+--- strona 19 ---
+
+Projekt wykonawczy
+Elementy konstrukcyjne tablicy:
+● podstawa (tablica)
+Gotowy element frezowany w CNC (na podstawie danych z projektu wzorniczego)
+ma przygotowane zagłębienia, które zostaną wykorzystane do umieszczenia w nich
+elementów ruchomych (przeszkody 1, 3, 4 oraz 5) oraz magnesów neodymowych do
+mocowania 14 tabliczek (frezowanie na 2 mm głębokości). Przy dłuższych
+krawędziach tablicy tj. na dole i na górze w odległości 37 mm od krawędzi należy
+wkleić magnesy. W ten sposób tworzy się pole do mocowania elementów
+wymiennych scenariusza „Harmonogram dnia”. Po bardzo dokładnym frezowaniu
+należy tablicę wyszlifować papierem ściernym o gradacji 180, a następnie 320.
+Szczególną uwagę należy zwrócić na ostre krawędzie w powstałych zagłębieniach,
+ponieważ będzie to miejsce częstej pracy manualnej dłoni ćwiczącego.
+● elementy ruchome poruszające się po prowadnicach
+Elementy ruchome tablicy to 7 elementów, które są przytwierdzone na stałe do
+tablicy i za pomocą „prowadnic” poruszają się z góry na dół oraz odwrotnie. Elementy
+manipulacyjne przygotowane w technice CNC należy wyposażyć w magnes), dzięki
+której będzie możliwe przytwierdzenie napisów z dniami tygodnia do
+przeprowadzenie scenariusza „Dni tygodnia”. Magnes należy umieścić w miejscu
+przygotowanym w centralnym miejscu elementu wg. projektu wzorniczego.
+Przestrzenie po wklejeniu magnesów należy uzupełnić szpachlą akrylową. Tak
+wyposażone elementy należy pomalować farbami akrylowymi najlepiej pistoletem
+natryskowym wg. poniższych wytycznych:
+○ czerwony kwadrat - poniedziałek,
+○ pomarańczowy walec- wtorek,
+○ żółty prostokąt - środa,
+
+--- strona 20 ---
+
+○ zielony trójkąt - czwartek,
+○ niebieskie koło - piątek,
+○ kwiat w kolorze indygo - sobota,
+○ fioletowe serce - niedziela;
+
+● elementy wymienne w zależności od ćwiczonego procesu
+Dni tygodnia (7 sztuk)
+Nazwy dni tygodnia należy wydrukować na folii ferromagnetycznej o kolorze jak
+najbardziej zbliżonym do tła elementu ruchomego (manipulacyjnego) lub nakleić na
+folię naklejki w odpowiednim kolorze. Litery powinny być pogrubionymi wersalikami,
+bezszeryfowym krojem pisma. Zapewni to kontrast i dobrą widoczność. Drukowanie
+najlepiej drukarką laserową lub inną techniką laserową.
+Harmonogram dnia (14 sztuk)
+Kafelki do ilustracji 7 x 7 cm powinny wycięte na CNC, z uwzględnieniem frezowania
+na odwrocie. Frezowanie potrzebne do umieszczenia magnesu. Zagłębienie powinno
+być w centralnym miejscu elementu wg. projektu wzorniczego. Następnie za pomocą
+lasera powinna być na nich wygrawerowana grafika zgodnie z projektem
+wzorniczym. Każdy wymienny kafelek powinien mieć obraz oraz podpis obrazka wg.
+wytycznych:
+○ kwadrat: pobudka => toaleta
+○ walec: ubieranie się => śniadanie + leki
+○ prostokąt: gimnastyka => spacer
+○ trójkąt: drugie śniadanie + kawa => gry krzyżówki TV
+○ koło: obiad + leki => czas wolny
+○ kwiat: kolacja + leki = > ubieranie piżamy
+○ serce: toaleta = > sen
+
+--- strona 21 ---
+
+Wszystkie kafelki muszą mieć od spodu, w centralnym miejscu magnes neodymowy
+aby zamocować je w miejsca przypisane do ćwiczenia scenariusza „Harmonogram
+dnia”.
+Prowadnice elementów ruchomych
+Elementy prowadzące na stałe przytwierdzone do tablicy (w kolejności patrząc od
+lewej do prawej strony tablicy):
+● sznurek ok. 5 mm średnicy i 45 cm długości: prowadnica elementu kwadrat
+● drut o średnicy ok. 5 mm i długości 42 cm: prowadnica walca
+● zagłębienie frezowanie na CNC zgodnie z projektem: prowadnica elementu
+prostokąt
+● zagłębienie frezowanie na CNC zgodnie z projektem: prowadnica elementu
+trójkąt
+● listwa zębata do prowadzenia koła zębatego: prowadnica elementu koło (patrz
+rys.)
+● suwak o szerokości 3 cm: prowadnica elementu kwiat
+tekstylna taśma o szerokości 3 cm z guzikami typu zatrzaskowy (nap):
+prowadnica elementu serce.
+Opis procesu produkcji
+1. Poszczególne elementy ruchome, następnie mocowane na prowadnicach
+należy wyciąć z płyty stolarskiej z litej sosny o grubości 18 mm oraz sklejki
+brzozowej 3mm, wyszlifować, zaopatrzyć w płytkowe magnesy neodymowe
+(służące do mocowania opisów dni tygodnia) oraz elementy mocujące do
+prowadnic. W elementach 4 oraz 5 mocowanie składa się z 3 podkładek
+stalowych przytwierdzonych do spodu elementu za pomocą wkręta 20mm.
+Wkręt powinien być zainstalowany w centralnym miejscu elementu. Na koniec
+należy pomalować elementy farbami akrylowymi zgodnie z projektem.
+
+--- strona 22 ---
+
+2. Podstawa (tablica) – płytę stolarską z litej sosny o grubości 18 mm z fornirem
+brzozowym należy dociąć i wyfrezować na maszynie CNC zgodnie z
+projektem, następnie przeciąć na dwie równe części wzdłuż dłuższej krawędzi.
+Należy wyszlifować wszystkie krawędzie zewnętrzne oraz zagłębienia, w
+których później zostaną osadzone elementy ruchome i prowadnice, tak aby
+były bezpieczne dla użytkownika i miłe w dotyku. W stacjach 3,4,5 należy
+umieścić elementy ruchome, a następnie za pomocą kleju do drewna skleić
+dwa rozcięte elementy. Dla wzmocnienia zaleca się użycie lameli
+połączeniowych, a dwa rozcięte elementy ustabilizować ściskami stolarskimi.
+Krawędzie tablicy należy osłonić obrzeżem naturalnym brzozowym za pomocą
+kleju.
+3. Prowadnice poszczególnych stacji procesu należy zamocować do tablicy wraz
+z elementami ruchomymi zgodnie z projektem.
+4. We wcześniej przygotowanych zagłębieniach powinno się osadzić z użyciem
+kleju płytkowe magnesy neodymowe służące do mocowania tabliczek procesu
+w podstawie tablicy, przestrzenie uzupełnić szpachlówką i wyszlifować
+łączenia.
+5. Tak przygotowaną tablice należy pokryć przynajmniej jedną warstwą wosku
+olejnego w celu zabezpieczenia przed wilgocią i zabrudzeniem.
+6. W ostatnim etapie montażu należy przymocować od spodu tablicy w rogach
+tablicy cztery przyssawki z zintegrowanym wkrętem do montażu. Miejsce
+mocowania należy wyznaczyć w taki sposób, aby przyssawka nie wystawała
+poza krawędzie tablicy. Przyssawka powinna być zamontowana w miejscu
+przecięcia się dwóch linii, które są prostopadłe do krawędzi i mają ok. 20mm.
+W tym punkcie należy wywiercić otwór wiertłem Ø 3 mm na głębokość 7 mm a
+następnie wkręcić przyssawkę.
+7. Tabliczki należy wyciąć na CNC, następnie laserem nanieść na nie
+oznaczenia zgodnie z projektem. W przygotowanych otworach, od spodniej
+strony kafelków, za pomocą kleju osadzić magnesy. Całe tabliczki należy
+
+--- strona 23 ---
+
+wyszlifować, ze szczególnym zwróceniem uwagi na krawędzie. Tak
+przygotowane tabliczki powinno się pokryć woskiem olejnym w celu
+zabezpieczenia przed wilgocią i zabrudzeniem.
+8. Elementy z dniami tygodnia należy wydrukować na folii ferromagnetycznej
+zgodnie z projektem.
+9. Instrukcja użytkowania BaWity i scenariusze należy wydrukować i trwale
+połączyć bindownicą – takie rozwiązanie pozwala na łatwe korzystanie z
+książeczki podczas zajęć.
+Wytyczne parametrów ergonomicznych i
+technicznych
+Wszystkie użyte elementy powinny mieć atesty i certyfikaty. Drewno powinno mieć
+wilgotność poniżej 12%. Klej termotopliwy uniwersalny, kolor: transparentny; czas
+wiązania: 15 - 20 sekund; temp. mięknienia: 86°C; temperatura pracy: 160 – 190°C.
+Elementy stalowe najlepiej pręt nierdzewny kwasoodporny. Sznurek trwały -
+nylonowy. Przyssawka bezbarwna, przezroczysta. Farby oraz wosk twardy olejny
+powinny być ekologiczne, hipoalergiczne i posiadać atest PZH.

@@ -1,0 +1,591 @@
+--- strona 1 ---
+1
+
+--- strona 2 ---
+2
+
+Spis treści
+I.
+Opis problematyki i charakterystyka grupy testującej.
+II.
+Opis modelu wsparcia - główne założenia, elementy działań planowanych
+do realizacji.
+III.
+Opis metod wsparcia stosowanych w ramach modelu.
+IV.
+Zakładane rezultaty.
+V.
+Uczestnicy Centrum Antydepresyjnego, proces ich wsparcia i efekty
+działań.
+VI.
+Wnioski i rekomendacje z przeprowadzonego testu.
+VII.
+Załączniki:
+1.
+Wzór karty diagnozy psychologa
+2.
+Wzór karty diagnozy pielęgniarki
+3 .
+Wzór karty diagnozy pracownika socjalnego
+4.
+Wzór Indywidualnego Planu Wsparcia.
+5.
+Wzór raportu z realizacji IPW.
+
+--- strona 3 ---
+3
+
+I.
+Opis problematyki i charakterystyka grupy testującej.
+
+Gmina Miechów jest gminą miejsko-wiejską. Liczy 34 sołectwa, a jej siedzibą jest miasto
+Miechów. Liczba ludności gminy wynosi 19 832 osób, w tym 4 397 w wieku poprodukcyjnym (dane
+Urzędu Statystycznego w Krakowie za 2015 r.). Zgodnie z diagnozą demograficzną w Strategii
+Rozwoju Gminy i Miasta Miechów na lata 2014-2020, populacja Gminy Miechów, wynosząca na
+koniec 2012 r. 19 940 mieszkańców, stale maleje. Jest to rezultatem utrzymującego się od wielu lat
+ujemnego przyrostu naturalnego na jej terenie oraz ujemnego salda migracji. Dostępne opracowania
+przewidują zmiany liczby oraz struktury ludności wskazując na systematyczny spadek liczby
+mieszkańców gminy, w tym szczególnie osób w wieku przedprodukcyjnym i produkcyjnym, a także
+wzroście liczby mieszkańców w wieku poprodukcyjnym.
+Gminny Ośrodek Pomocy Społecznej, realizując zadanie usługi opiekuńcze od wielu lat, ma
+bliski kontakt z grupą osób w wieku powyżej 60 lat, które korzystają z pomocy w formie usług
+opiekuńczych. Średnio co roku jest obejmowanych pomocą 60-70 osób starszych. Spektrum
+problemów jest bardzo szerokie:
+- samotność,
+- bezradność w chorobie i codziennym funkcjonowaniu,
+- konflikty w rodzinie,
+- niski dochód,
+- opieka nad współmałżonkiem,
+- śmierć współmałżonka lub dziecka,
+- lęk o dorosłe dziecko niepełnosprawne( „co z nim/nią będzie po mojej śmierci”)
+- utrata dotychczasowej pozycji społecznej lub rodzinnej,
+- pogorszenie stanu zdrowia,
+
+W raporcie podsumowującym realizację warsztatów - „Akcja. Innowacja”, realizowanych w
+ramach projektu Regionalnego Ośrodka Polityki Społecznej w Krakowie – Małopolski Inkubator
+Innowacji Społecznych, czytamy, że osoby starsze czują się wyizolowane społecznie. Najczęstsze
+obszary problemowe wynikają z niedogodności związanych ze zdrowiem psychofizycznym i
+fizycznym osób zależnych oraz związanymi z nimi ograniczeniami psychofizycznymi, a także
+ograniczeniami w codziennym funkcjonowaniu. Osoby starsze, z uwagi na wiek i systematycznie
+pogarszający się stan zdrowia, automatycznie stają się mniej sprawne, mają poczucie osamotnienia,
+bezradności, lęku wobec zachodzących zmian i „stawienia im czoła”, braku wsparcia ze strony
+rodziny. Osoby zależne, w efekcie swoich problemów i dolegliwości, tracą motywację do udziału w
+życiu społecznym, zaś wsparcie osoby starszej przez psychologa, terapeutę, czy wolontariusza
+mogłoby podnieść poziom motywacji do poprawy swojej sytuacji.
+
+Co więcej, pracownicy socjalni Ośrodka Pomocy Społecznej w Miechowie zgłaszają,
+pojawiające się w trakcie wywiadów środowiskowych głosy osób starszych, które mówią: „że nie chce
+im się żyć”, „najlepiej zażyć garść tabletek”, „modlą się o śmierć”. Tego rodzaju myśli depresyjne,
+suicydalne, wywoływane są przez szereg czynników, często współwystępujących w życiu osób
+starszych. Wśród najważniejszych można wymienić: liczne schorzenia, samotność, ograniczenia
+psycho-fizyczne wynikające z procesu starzenia się czy konieczność opieki nad współmałżonkiem.
+Jak pisze Kevin Caruso z suicie.org, pozostawienie seniora „sam na sam” z myślami depresyjnymi to
+
+--- strona 4 ---
+4
+
+„najpowszechniejszy powód samobójstw osób starszych”. Wymagane jest zatem podjęcie
+zintensyfikowanych wysiłków służących ograniczeniu wprowadzenia pejoratywnych myśli w czyn.
+
+Niestety, obecnie funkcjonujący system wsparcia oferowany seniorom przez placówki
+lecznicze nie gwarantuje skutecznej pomocy. Osoby starsze mają problem z dotarciem do placówek
+leczniczych, w związku z czym kontakt z lekarzem ma najczęściej członek rodziny i ogranicza się
+najczęściej do odbioru recept. Również dostęp do psychologa jest utrudniony z powodu konieczności
+dojazdu i braków personalnych w lokalnych placówkach. Natomiast, prywatna oferta pomocy
+psychologicznej, która mogłaby stanowić rozwiązanie tego problemu znajduje się poza zasięgiem
+możliwości finansowych seniorów objętych wsparciem ośrodka pomocy społecznej. Ponadto, brak jest
+ofert terapeutycznych dedykowanych osobom starszym świadczonych w ich miejscu zamieszkania.
+Kompleksowym wsparciem osób starszych w depresji i zagrożonych popełnieniem
+samobójstwa obejmiemy 6 osób. Są to mężczyźni oraz kobiety, w wieku powyżej 60 roku życia.
+Usługi świadczone będą w miejscu zamieszkania tych osób.
+W testowaniu innowacji będą zaangażowane pielęgniarki środowiskowe lub pielęgniarki
+długoterminowe, które świadczą swoje usługi dla niektórych osób starszych biorących udział w
+innowacji. Ich udział będzie miał formę wsparcia i doradztwa.
+Osoby biorące udział w projekcie:
+1. Kobieta zamieszkała na wsi, mieszka sama, wdowa, dwoje dzieci nie żyje, córka i syn
+zmarli w miesięcznym odstępie czasu, syn, który żyje nie utrzymuje kontaktu.
+2. Kobieta zamieszkała na wsi, mieszka sama, wdowa, bezdzietna.
+3. Mężczyzna zamieszkały na wsi, kawaler, nie ma dzieci. Trudne warunki mieszkaniowe,
+brak kontaktu z rodziną. Mieszka sam.
+4. Mężczyzna zamieszkały na wsi, rozwiedziony, czwórka dzieci. Trudne warunki
+mieszkaniowe, brak kontaktu z rodziną. W/W jest w konflikcie z dziećmi. Mieszka sam.
+Choroba nowotworowa, rak podskórny, która nie jest leczona, gdyż W/W nie wyraża
+zgody na leczenie.
+5. Kobieta zamieszkała w mieście. Mężatka, mieszka z mężem, który jest osobą leżącą i
+wymaga stałej pomocy i opieki. Dwoje dzieci, które mieszkają poza Miechowem.
+6. Kobieta zamieszkała w mieście. Wdowa, mieszka sama, odmawia pomocy ze strony
+dzieci.
+
+--- strona 5 ---
+5
+
+II.
+Opis modelu wsparcia - główne założenia, elementy działań planowanych do
+realizacji.
+
+Innowacja społeczna pt. Centrum antydepresyjne - kompleksowa pomoc osobom starszym w
+stanach depresyjnych i z zachowaniami suicydalnymi” polegała na opracowaniu i przetestowaniu
+nowego, kompleksowego modelu wsparcia osób starszych w stanach depresyjnych i zagrożonych
+popełnieniem samobójstwa.
+Realizację innowacji rozpoczęto od opracowania początkowej koncepcji modelu działania
+„Centrum Antydepresyjnego” – jego merytorycznych oraz organizacyjnych założeń, które umożliwiły
+późniejsze sprawne i trafne realizowanie działań. W początkowej fazie działania Centrum powołany
+został Zespół Antydepresyjny, w skład którego weszli następujący specjaliści: psycholog, terapeuta
+dogo- i felinoterapii, pielęgniarka, pracownik socjalny, kierownik GOPS, opiekun osoby starszej oraz
+wolontariusz/przedstawiciel organizacji pozarządowej. Ich zadaniem było dokonywanie comiesięcznej
+oceny realizacji Indywidualnych Planów Wsparcia i zespołowego dokonywania ewentualnych zmian
+oraz wymiana doświadczeń między specjalistami udzielającymi wsparcia seniorom.
+Następnie została przeprowadzona wielopłaszczyznowa diagnoza stanu psycho-fizycznego
+6 seniorów biorących udział w innowacji, którzy wcześniej zgłaszali pracownikom Ośrodka myśli
+suicydalne, lub u których zauważono tego typu zachowania. Każda diagnoza była przeprowadzona
+przez 3 specjalistów: psychologa, w celu dokonania rozeznania w stanie psychicznym seniora;
+pielęgniarkę, w celu pozyskania informacji na temat stanu zdrowia seniora, przyjmowanych przez
+niego leków, ciśnienia krwi itp. oraz pracownika socjalnego, aby rozeznać sytuację rodzinno-
+materialną osoby starszej.
+Na podstawie informacji pozyskanych w trakcie diagnoz opracowano Indywidualne Plany
+Wsparcia zawierające schemat udzielania pomocy przez Zespół, zarekomendowane dla danego
+seniora. Seniorom umożliwiono regularne wizyty psychologa (wsparcie psychologiczne), pielęgniarki
+(bieżąca kontrola stanu zdrowia), wolontariusza (wzmacnianie oddziaływań specjalistów poprzez
+obecność, rozmowę), opiekuna osoby starszej (udzielanie pomocy w bieżących czynnościach) oraz
+terapeuty dogoterapii lub felinoterapii (wprowadzenie innowacyjnego elementu celem odprężenia,
+uspokojenia nerwów, rozluźnienia) w ustalonych w porozumieniu z seniorem terminach w jego
+miejscu zamieszkania.
+Należy podkreślić, że wprowadzone zostały innowacyjne elementy wsparcia seniora, czyli
+zooterapia, konkretniej felinoterapia tj. terapii za pomocą kota i dogoterapia używająca psów.
+Głaskanie kotów i ich mruczenie działa uspokajająco, pozwala ukoić skołatane nerwy i odprężyć się.
+Wpływa to na obniżenie ciśnienia i cholesterolu, redukuje ryzyko chorób układu krwionośnego (np.
+ryzyko zawału spada o 3 procent). Koty wyczuwają i kładą się zwykle na miejscach, gdzie
+odczuwamy ból, w miejscach, które są chore. Dzieje się tak dlatego, że takie strefy są najonizowane
+dodatnio, a sierść kota ujemnie. Tak więc, kot naturalizuje szkodliwe jony. Felinoterapia sprawdza się
+przy wielu zaburzeniach m.in. przy różnych zaburzeniach i problemach u ludzi dorosłych i starszych.
+Ta forma terapii pomaga również osobom, na które nie wpływa kojące oddziaływanie psa, które nota
+bene jest powszechniejszą wersją zooterapii. Kontakt z kotem wpływa nie tylko na zdrowie
+psychiczne i emocjonalne ludzi, ale również na zdrowie fizyczne. Ćwiczenie wykonywane podczas
+głaskania, karmienia kota poprawiają ruchowość stawów, zmniejszają bóle związane z reumatyzmem.
+Osoby, które uczestniczą w zajęciach z kotami zwiększają swoją aktywność, nie tylko w czasie zajęć,
+ale również poza nimi. Koty dostarczają też tematów do rozmów pomiędzy pacjentami i terapeutami, i
+
+--- strona 6 ---
+6
+
+są platformą rozwijania kompetencji społecznych. Z uwagi na wymieniony wyżej szereg pozytywnych
+objawów obcowania ze zwierzętami postanowiono włączyć ten element do działania Centrum
+Antydepresyjnego.
+Dla prawidłowej realizacji IPW ważne było regularne, comiesięczne organizowanie spotkań
+Zespołu, na których umożliwiono uczestnikom omówienie postępów i problemów, bieżącą
+weryfikację zakładanych efektów i wprowadzanie ewentualnych zmian.
+Po zakończeniu etapu testowania, czyli przeprowadzeniu wszystkich wizyt u seniorów w
+ramach Centrum Antydepresyjnego zorganizowano spotkanie podsumowujące, na którym wszyscy
+członkowie Zespołu mieli możliwość podzielenia się własnymi spostrzeżeniami, uwagami i obawami,
+ale i bardziej pozytywnymi myślami o adekwatności innowacji do potrzeb seniorów, postępów i
+pozytywnych zmian na skutek zaproponowanych działań. Zgromadzone wnioski i rekomendacje z
+funkcjonowania założeń wstępnych Modelu posłużyły opracowaniu jego końcowej wersji.
+
+ETAPY REALIZACJI INNOWACJI
+Etap przygotowawczy:
+A. Opracowanie wstępnej wersji modelu „Centrum antydepresyjnego”
+B. Diagnozy osób starszych
+
+Etap testowania:
+A. Realizacja Indywidualnych Planów Wsparcia
+B. Opracowanie końcowej wersji modelu „Centrum antydepresyjnego”
+
+--- strona 7 ---
+7
+
+III.
+Opis metod wsparcia – główne założenia, elementy działań planowanych do
+realizacji.
+
+Przeprowadzone
+indywidualne
+diagnozy
+osób
+starszych
+testujących
+innowację
+przeprowadzone każdorazowo przez 3 specjalistów: psychologa, w celu dokonania rozeznania w
+stanie psychicznym seniora, pielęgniarki, w celu pozyskania informacji na temat stanu zdrowia
+seniora, przyjmowanych przez niego leków, ciśnienia krwi itp. oraz pracownika socjalnego aby
+rozeznać sytuację rodzinno-materialną osoby starszej.
+Wszystkie pozyskane w ten sposób informacje pomogły ustalić kompleksową i odpowiednio
+wyważoną oraz ukierunkowaną na indywidualne potrzeby ścieżkę wsparcia osoby starszej, która
+zmaga się ze stanami depresyjnymi. Schemat narzędzia- Indywidualnego Planu Wsparcia dla każdego
+z seniorów pozwala odpowiednio rozplanować formę i czas spotkań i umożliwia ustrukturyzowanie
+planu w taki sposób, aby zapewnić wysoką jakość świadczonych usług i osiągnąć zamierzone efekty,
+czyli wyjście seniora ze stanu depresyjnego.
+Wsparcie osób starszych poprzez członków Zespołu Centrum Antydepresyjnego przewiduje
+elastyczną dyspozycję godzin wsparcia względem sygnalizowanych potrzeb i świadczone jest przez:
+A. psychologa (w wymiarze 96h do elastycznej dyspozycji między seniorami): wsparcie
+psychologiczne, podtrzymywanie motywacji do udziału w teście,
+B. terapeutę dogoterapii lub felinoterapii (w wymiarze 96h do elastycznej dyspozycji między
+seniorami): rozluźnienie, ukojenie nerwów, poprawa nastroju,
+C. pielęgniarkę (w wymiarze 96h do elastycznej dyspozycji między seniorami): bieżąca kontrola
+stanu zdrowia seniora i przyjmowanych leków, pomiar ciśnienia i poziomu glukozy we krwi,
+D. opiekunkę osoby starszej (w wymiarze 192h do elastycznej dyspozycji między seniorami):
+wsparcie w czynnościach dnia codziennego,
+E. wolontariusza (według sygnalizowanych potrzeb): rozmowa, podtrzymywanie ciągłości
+wsparcia specjalistycznego.
+W ramach realizacji IPW powinno zorganizować się comiesięczne spotkania Zespołu celem
+omówienia postępów w świadczonym wsparciu i weryfikacji przyjętych w dokumentacji założeń
+czasowych, których efektem są raporty z realizacji IPW, stanowiące załącznik do modelu.
+Raport powinien obejmować minimum: określenie rodzajów wsparcia świadczonych w trakcie
+realizacji IPW z podziałem miesięcznym, ich opisu i skuteczności; propozycji ewentualnych
+modyfikacji IPW, a także podpisy osób udzielających danego wsparcia.
+
+--- strona 8 ---
+8
+
+IV. Zakładane rezultaty.
+
+Innowacyjny pomysł wsparcia osób starszych w depresji i zagrożonych popełnieniem
+samobójstwa polegał na stworzeniu uniwersalnego dla wszystkich zainteresowanych instytucji
+„Centrum Antydepresyjnego”, które przy nawiązaniu współpracy z odpowiednimi specjalistami mają
+szansę na wypracowanie nowych praktyk i działań skierowanych na polepszenie stanu emocjonalnego
+osób starszych zmagających się z poczuciem osamotnienia i tendencjami suicydalnymi.
+Powołany Zespół Specjalistów powinien zrzeszać specjalistów jak: psycholog, terapeuta,
+pielęgniarka, Kierownik GOPS, pracownik socjalny, opiekun osoby starszej i przedstawiciel
+organizacji pozarządowej, który postanowi zaangażować się w projekt. Na etapie przygotowawczym
+należy przeprowadzić dogłębne diagnozy, ponieważ jest to element wyjściowy do dalszych działań.
+Po tym etapie należy starannie opracować Indywidualne Plany Wsparcia tych osób, uwzględniając w
+nich wizyty psychologa, pielęgniarki, terapeuty dogoterapii czy felinoterapii i odwiedzin
+wolontariuszy.
+Wprowadzając elementy zooterapii wprowadzamy innowację w terapii osób starszych w ich
+miejscu zamieszkania. Przy pomocy dogoterapii leczone są zaburzenia w sferze społecznej,
+psychicznej, fizycznej i intelektualnej. Stosując terapię za pomocą kota chcieliśmy pokazać, że ich
+oddziaływanie na nasze zdrowie i samopoczucie jest lecznicze. Głaskanie tych zwierząt i ich
+mruczenie działa uspokajająco, pozwala ukoić skołatane nerwy i odprężyć się. Wpływa to na
+obniżenie ciśnienia i cholesterolu, redukuje ryzyko chorób układu krwionośnego (np. ryzyko zawału
+spada o 3 procent). Koty wyczuwają i kładą się zwykle na miejscach, gdzie odczuwamy ból, w
+miejscach, które są chore. Dzieje się tak dlatego, że miejsca takie są najonizowane dodatnio, a sierść
+kota ujemnie, tak więc kot naturalizuje szkodliwe jony. Felinoterapia sprawdza się przy wielu
+zaburzeniach m.in. przy różnych zaburzeniach i problemach u ludzi dorosłych i starszych.
+Felinoterapia pomaga czasem osobom, którym nie pomogła terapia z psem. Nieraz okazuje się, że pies
+dla pacjenta jest zbyt absorbujący, głośny, natomiast kot ze swoim spokojem zdobywa jego sympatię i
+pomaga mu w terapii. Kontakt z kotem wpływa nie tylko na zdrowie psychiczne i emocjonalne ludzi,
+ale również na zdrowie fizyczne. Ćwiczenie wykonywane podczas głaskania, karmienia kota
+poprawiają ruchowość stawów, zmniejszają bóle związane z reumatyzmem. Osoby, które uczestniczą
+w zajęciach z kotami zwiększają swoją aktywność, nie tylko w czasie zajęć, ale również poza nimi.
+Koty dostarczają też tematów do rozmów pomiędzy pacjentami, a terapeutami, dzięki czemu pacjenci
+rozwijają się społecznie.
+
+--- strona 9 ---
+9
+
+V. Uczestnicy Centrum Antydepresyjnego, proces ich wsparcia i efekty działań.
+
+RAZ
+Pierwszą uczestniczką była samotna kobieta zamieszkała na wsi. Wdowa mieszka sama, a jej
+dwoje dzieci nie żyje. Córka i syn zmarli w miesięcznym odstępie czasu, syn, który żyje nie utrzymuje
+kontaktu. Kobieta ma wykształcenie podstawowe i utrzymuje się z emerytury KRUS, która wynosi ok.
+1200 zł. Żyje skromnie, a po opłaceniu rachunków, zakupie niezbędnych leków i opału niewiele
+pozostaje na bieżące wydatki.
+W trakcie testowania innowacji Pani nawiązała kontakt z poszczególnymi specjalistami tj.
+psychologiem, pielęgniarką, osobą prowadzącą dogoterapię i opiekunką. Chętnie współpracowała z
+każdą z zaangażowanych osób. W trakcie wizyt psychologa podjęto się m.in. rozmowy o emocjach,
+próby zastosowania wzmocnień w celu modyfikacji postaw, rozmowy na temat uczucia straty czy
+omówienia relacji z dziećmi. Pielęgniarka dokonywała pomiarów podstawowych parametrów
+życiowych i rozmawiała o problemach zdrowotnych. W ramach dogoterapii samotna kobieta głaskała
+psa, karmiła go, a przy tym opowiadała o własnych zwierzętach. Opiekunka wykonywała
+podstawowe czynności tj. pomoc w robieniu zakupów, utrzymaniu czystości w pomieszczeniach, w
+których przebywa osoba starsza i w codziennych sprawach. Opiekunka włączała się również w
+rozmowę na temat sytuacji życiowej uczestniczki.
+W trakcie udziału w Projekcie początkowo była nieufna do wsparcia w formie dogoterapii.
+Jednak po kilku wizytach, poznania terapeutę oraz psa, ponad to cieszyła się na kolejne wizyty.
+Uczestniczka jest osobą towarzyską, lubiącą kontakt z innymi osobami, w związku z czym chętnie
+rozmawiała, dzieliła się swymi przeżyciami, otwarcie mówiła o swoich problemach i trudach dnia
+codziennego. Początkowo bardzo płaczliwa na wspomnienia o śmierci swoich dzieci, pod koniec
+Projektu zaczęła dostrzegać pomoc oferowaną Jej przez sąsiadkę, a z której jest bardzo zadowolona.
+Zaczęła również częściej wspominać syna, który żyje, ale nie utrzymują kontaktu, z uwagi na konflikt
+na tle podziału majątku. Na koniec Projektu kobieta została poinformowana, że w ramach
+specjalistycznych usług opiekuńczych będzie miała zapewnione dalsze wsparcie z GOPS w
+Miechowie.
+
+DWA
+Druga uczestniczka to samotna, bezdzietna wdowa zamieszkała na wsi. Ma wykształcenie
+podstawowe i utrzymuje się z emerytury KRUS, która wynosi ok. 1300 zł. Nikt Jej nie wspiera
+finansowo, dlatego kobieta żyje skromnie. Sporadycznie otrzymuje pomoc w formie płodów rolnych
+od sąsiadów, ale po opłaceniu rachunków, zakupie niezbędnych leków, zakupie opału niewiele jej
+pozostaje na bieżące wydatki.
+W trakcie testowania innowacji Pani nawiązała kontakt z poszczególnymi specjalistami tj.
+psychologiem, pielęgniarką, osobą prowadzącą dogoterapię i opiekunką i chętnie współpracowała ze
+wszystkimi odwiedzającymi ją osobami. W trakcie wizyt psychologa były m.in. podejmowane
+rozmowy o emocjach i stracie męża, wsparcia w obszarze poczucia strachu. Pielęgniarka dokonywała
+pomiarów podstawowych parametrów życiowych i rozmawiała z nią o problemach zdrowotnych. W
+ramach dogoterapii beneficjentka głaskała psa, a przy tym otworzyła się i opowiadała o własnym
+piesku. Opiekunka wykonywała podstawowe czynności tj. pomoc w robieniu zakupów, utrzymaniu
+
+--- strona 10 ---
+10
+
+czystości w pomieszczeniach, w których przebywa osoba starsza i w codziennych. Dodatkowo,
+włączała się również w rozmowę na temat jej sytuacji życiowej.
+Na początkowym etapie projektu kobieta była nieufna do wsparcia w formie dogoterapii,
+jednak po kilku wizytach i lepszym poznaniu terapeuty oraz psa, cieszyła się na kolejne wizyty. W
+trakcie udziału w Projekcie cały czas mocno przeżywała śmierć swojego męża, co w wielu sytuacjach
+powodowało, że praca psychologa opierała się głównie na emocjach związanych ze śmiercią męża,
+żałobą i tym samym poczuciu osamotnienia i radzenia sobie z lękiem „przed nieznanym”.
+
+TRZY
+Trzecim uczestnikiem jest samotny mężczyzna zamieszkały na wsi- bezdzietny kawaler. Jego
+warunki mieszkaniowe są trudne, a on nie utrzymuje kontaktu z rodziną. Mężczyzna ma wykształcenie
+podstawowe i utrzymuje się z zasiłku stałego wypłacanego z GOPS oraz z zasiłku pielęgnacyjnego.
+Łączny dochód wynosi 701 zł, więc żyje bardzo skromnie, a po opłaceniu rachunków, zakupie
+niezbędnych leków i opału niewiele pozostaje mu na bieżące wydatki. Uczestnik nie ma wsparcia
+finansowego od rodziny i korzysta z usług opiekuńczych z GOPS oraz ma opłacone obiady, które są
+przywożone przez opiekunkę.
+W trakcie testowania innowacji Pan nawiązał kontakt z poszczególnymi specjalistami
+tj. psychologiem, pielęgniarką, osobą prowadzącą felinoterapię i opiekunką. Po początkowym
+oporze chętnie później współpracował ze specjalistami. W trakcie wizyt psychologa była
+m.in. podejmowana rozmowa na temat trudności życiowych w związku ze zdrowiem, Pan
+przejawiał dużą agresję słowną, która wynikała z poczucia bezradności wobec choroby,
+osamotnienia. Pielęgniarka dokonywała pomiarów podstawowych parametrów życiowych.
+Rozmawiała o problemach zdrowotnych, jak również podejmowała próby nakłonienia do
+wizyty kontrolnej u lekarza. W ramach felinoterapii po początkowej niechęci do tej metody
+wsparcia, mężczyzna przekonał się do niej i chętnie uczestniczył w spotkaniach terapeuty i
+jego kota. Brał go na kolana, głaskał, a przy tym rozmawiał na temat zwierząt. Opiekunka
+wykonywała podstawowe czynności tj. pomoc w robieniu zakupów, utrzymaniu czystości w
+pomieszczeniach, w których przebywa osoba starsza i w sprawach dnia codziennego.
+Opiekunka włączała się również w rozmowę na temat sytuacji życiowej Pana.
+W trakcie udziału w Projekcie początkowo był nieufny do udziału w wszystkich formach,
+jakie oferował Projekt, a szczególnie do felinoterapii. Jednak po kilku wizytach i lepszym poznaniu
+terapeuty, psychologa i pielęgniarki zaczął współpracować z specjalistami. Mężczyzna jest osobą
+towarzyską, więc mimo początkowych oporów co do form, jakie oferował Projekt, chętnie spotykał
+się ze specjalistami, dzieląc się swymi przeżyciami, otwarcie mówił o swoich problemach i trudach
+dnia codziennego.
+Mężczyzna przez cały Projekt irytował się, że Jego główny problem, czyli rozpalanie w piecu
+nie został rozwiązany. Mimo poszukiwań osoby, która zgodziłaby się przychodzić rano i świadczyć
+mu taką usługę nie udało się, w związku z czym mężczyzna musiał sobie radzić sam. Z dużym
+zadowoleniem przyjął, że ktoś pomoże mu przejść się na spacer, asekurując Go, gdyż ma problem ze
+wzrokiem – jaskra.
+
+--- strona 11 ---
+11
+
+CZTERY
+Kolejnym uczestnikiem był rozwiedziony mężczyzna zamieszkały na wsi. Podobnie jak inni
+ma trudne warunki mieszkaniowe i nie posiada kontaktu z rodziną, w tym z czwórką dzieci, z którymi
+jest w konflikcie. Mężczyzna cierpi na chorobę nowotworową- raka podskórnego, który nie jest
+leczony, a on nie wyraża na to zgody.
+Mężczyzna posiada wykształcenie zawodowe, utrzymuje się z emerytury KRUS, która wynosi
+ok. 1600 zł. Żyje skromnie, a po opłaceniu rachunków, zakupie niezbędnych leków oraz opału
+niewiele pozostaje mu na bieżące wydatki. Poza tym, nikt nie wspiera finansowo.
+W trakcie testowania innowacji Pan nawiązał kontakt z poszczególnymi specjalistami tj.
+psychologiem, pielęgniarką, osobą prowadzącą felinoterapię i opiekunką. Po początkowym oporze
+chętnie później współpracował ze specjalistami. W trakcie wizyt psychologa były m.in. podejmowane
+rozmowy na temat trudnej sytuacji rodzinnej, stanu zdrowia, o rozwijającym się nowotworze oraz
+emocji i ich natężeniu. Pielęgniarka dokonywała pomiarów podstawowych parametrów życiowych.
+Rozmawiała o problemach zdrowotnych, jak również podejmowała próby nakłonienia na podjęcie
+leczenia przez Pana. Mimo podejmowanych prób Pan nie wyraził zgody na leczenie onkologiczne. W
+ramach felinoterapii po początkowej niechęci do tej metody wsparcia uczestnik później chętnie
+uczestniczył w spotkaniach terapeuty i Jego kota. Opiekunka wykonywała podstawowe czynności tj.
+pomoc w robieniu zakupów, utrzymaniu czystości w pomieszczeniach, w których przebywa osoba
+starsza i w sprawach dnia codziennego. Włączała się również w rozmowę na temat jego trudnej
+sytuacji życiowej.
+W trakcie udziału w Projekcie początkowo był bardzo nieufny do udziału w wszystkich
+formach, jakie oferował Projekt, a szczególnie do felinoterapii. Jednak po kilku wizytach i lepszym
+poznaniu terapeuty, psychologa i pielęgniarki zaczął współpracować z specjalistami. Pomimo, iż jest
+on osobą wycofaną towarzysko, chętnie spotykał się z nimi, dzieląc się swymi przeżyciami, otwarcie
+mówił o swoich problemach i trudach dnia codziennego. Mężczyzna przez cały Projekt zgłaszał, że
+wolałby umrzeć, byłby spokój i nie opłaca się go leczyć, gdyż niedługo umrze. W trakcie kolejnych
+spotkań ze specjalistami notorycznie odmawiał podjęcia leczenia i dopiero na koniec Projektu zgodził
+się na wizytę u okulisty. Gdy usłyszał, że natychmiast musi się zgodzić na zabieg chirurgiczny
+usunięcia oczodołu wraz z fragmentem twarzy odmówił. Na koniec wizyt został poinformowany, że w
+ramach specjalistycznych usług opiekuńczych będzie miał zapewnione dalsze, stałe wsparcie z GOPS
+w Miechowie.
+
+PIEC
+Następną uczestniczką objętą wsparciem była kobieta zamieszkała w mieście. Mieszkająca z
+mężem, stawiała czoło wielu wyzwaniom, ponieważ jej mąż jest osobą leżącą i wymaga stałej
+pomocy i opieki. Dodatkowo, mają dwoje dzieci, które mieszkają poza Miechowem.
+Kobieta ma wykształcenie wyższe, utrzymuje się z emerytury ZUS, która wynosi ok. 1800 zł. Rodzina
+żyje skromnie, a środki finansowe pozwalają jedynie na opłacenie rachunków, zakup niezbędnych
+leków i opału. Nikt z rodziny nie wspiera finansowo, a dzieci odwiedzają rodziców raz w tygodniu w
+weekendy.
+W trakcie testowania innowacji Pani nawiązała kontakt z poszczególnymi specjalistami tj.
+psychologiem, pielęgniarką, osobą prowadzącą felinoterapię i opiekunką. W trakcie wizyt psychologa
+były m.in. podejmowana była rozmowa na temat relacji z bliskimi i o poczuciu winy. Pani uzyskała
+
+--- strona 12 ---
+12
+
+wsparcie terapeutyczne. Pielęgniarka dokonywała pomiarów podstawowych parametrów życiowych.
+Rozmawiała o problemach zdrowotnych, jak również pomagała w czynnościach pielęgnacyjnych przy
+mężu. W ramach felinoterapii chętnie uczestniczyła w spotkaniach terapeuty i Jego kota. Głaskając
+go, mogła się w końcu zrelaksować. Opiekunka wykonywała podstawowe czynności tj. pomoc w
+robieniu zakupów i w sprawach dnia codziennego. Opiekunka włączała się również w rozmowę na
+temat sytuacji życiowej Pani.
+W trakcie udziału w Projekcie początkowo była skrępowana ilością osób pojawiających się w
+ramach wsparcia, ale chętnie korzystała z każdej z jej form. Z uwagi na duże skupienie własnej uwagi
+na męża często chciała przerwać spotkania, gdyż „mąż Ją potrzebuje”. Na koniec Projektu została
+poinformowana, że w ramach specjalistycznych usług opiekuńczych będzie miała zapewnione dalsze
+wsparcie z GOPS w Miechowie.
+
+SZESC
+Ostatnią osobą wybraną do objętą specjalistycznym wsparciem była kobieta mieszkająca
+samotnie na terenie miasta. Wdowa stanowczo odmawia pomocy ze strony dzieci.
+W trakcie testowania innowacji Pani nie udało się nawiązać pozytywnego kontaktu z
+poszczególnymi specjalistami tj. psychologiem, pielęgniarką, osobą prowadzącą felinoterapię i
+opiekunką. W trakcie wizyt psychologa były m.in. podejmowane próby nawiązania relacji z panią
+Elżbietą, rozmowy o Jej samopoczuciu, jednak ta była wycofana i niechętna do współpracy.
+Postanowiono wprowadzić relaksację i podjąć się omówienia działań terapeutycznych oraz rozmowy
+na temat trudnej sytuacji rodzinnej i stanu zdrowia. Pielęgniarka dokonywała pomiarów
+podstawowych parametrów życiowych. W trakcie wizyt była chaotyczna, nieufna, niechętna do
+współpracy, mimo wcześniejszej zgody na udział w testowaniu innowacji. W ramach felinoterapii Pani
+również, pomimo wcześniejszej zgody, nie chciała nawiązać współpracy z terapeutą. Najbardziej była
+otwarta na pomoc opiekunki, która robiła jej zakupy i pomagała w sprawach dnia codziennego.
+Pani na koniec miesiąca, z uwagi na zaostrzenie stanu depresyjnego została skierowana do
+szpitala, w związku z czym wsparciem w ramach Centrum Antydepresyjnego została objęta
+mieszkająca sama wdowa. Jej dwoje dorosłych dzieci nie żyje, a z wnukiem jest w konflikcie.
+Wnuczka natomiast mieszka poza Miechowem i nie jest w stanie zapewnić kobiecie stałem i
+kompleksowej pomocy. Dodatkowo, stan zdrowia uległ pogorszeniu i Pani zaczęła być osobą leżącą.
+W trakcie testowania innowacji Pani nawiązała kontakt z poszczególnymi specjalistami, czyli
+psychologiem, pielęgniarką, osobą prowadzącą felinoterapię i opiekunką. W trakcie wizyt psychologa
+podjęto rozmowę na temat trudności życiowych w związku ze zdrowiem i planów na przyszłość.
+Pielęgniarka dokonywała pomiarów podstawowych parametrów życiowych i rozmawiała o
+problemach zdrowotnych, jak również pomagała w czynnościach pielęgnacyjnych. W ramach
+felinoterapii, po początkowej niechęci do tej metody wsparcia, uczestniczyła w spotkaniach terapeuty i
+Jego kota, przy tym rozmawiała na temat zwierząt. Opiekunka wykonywała podstawowe czynności tj.
+pomoc w robieniu zakupów, utrzymaniu czystości w pomieszczeniach, w których przebywa osoba
+starsza i w sprawach dnia codziennego. Pomagała również kobiecie w przygotowaniu posiłków i
+włączała się w rozmowę na temat jej sytuacji życiowej.
+Na koniec miesiąca grudnia Pani została umieszczona w Zakładzie Opiekuńczo-Leczniczym
+w Miechowie, w związku z czym do innowacji przystąpiła Pani, która mieszka z mężem. Jej córka z
+
+--- strona 13 ---
+13
+
+uwagi na swoje niepełnosprawne dziecko nie jest w stanie zapewnić pełnej opieki i pomocy matce.
+Pani jest obciążona opieką nad swoim mężem, który jest osobą leżącą.
+W trakcie testowania innowacji Pani nawiązała kontakt z poszczególnymi specjalistami tj.
+psychologiem, pielęgniarką, osobą prowadzącą felinoterapię i opiekunką. W trakcie wizyt psychologa
+były m.in. podejmowana była rozmowa na temat trudności życiowych w związku z jej stanem
+zdrowia i opieką nad mężem. Pielęgniarka dokonywała pomiarów podstawowych parametrów
+życiowych oraz rozmawiała o problemach zdrowotnych, jak również pomagała w czynnościach
+pielęgnacyjnych przy mężu. W ramach felinoterapii uczestniczyła w spotkaniach terapeuty i Jego
+kota - głaskając zwierzę kobieta mogła się zrelaksować. Opiekunka wykonywała podstawowe
+czynności tj. pomoc w robieniu zakupów i w sprawach dnia codziennego, jak również włączała się w
+rozmowę na temat sytuacji życiowej Pani.
+
+--- strona 14 ---
+14
+
+VI. Wnioski i rekomendacje z przeprowadzonego testu.
+Podsumowanie prac specjalistów i efekty ich działań
+W ramach projektu osobom, które były nim objęte udzielana była pomoc psychologiczna,
+pomoc pielęgniarki, terapeuty i opiekunki. Spotkania odbywały się raz w tygodniu, zazwyczaj trwały
+godzinę, w razie konieczności były przedłużane.
+Na pierwszym spotkaniu konsultacyjnym z osobami przeprowadzony został wywiad
+strukturalny mający na celu określenie możliwości poznawczych, aktualnej sytuacji życiowej. Zebrano
+także informacje związane z oceną stanu emocjonalnego, satysfakcji życiowej oraz przeprowadzono
+badanie czynników związanych z depresją. (wzory kart diagnozy w załącznikach)
+Na podstawie wywiadu ustalono cele spotkań terapeutycznych, opracowano charakter i
+strukturę terapii, zaplanowano zakres oddziaływań psychologicznych.
+W trakcie spotkań omawiano zagadnienia związane z codziennością, trudnościami z jakimi
+osoby się zmagają, poruszano temat emocji, tego z czym są związane i jak wpływają na postępowanie
+osoby, omawiano zakres samorealizacji, poczucia zadowolenia i satysfakcji życiowej. Brano także pod
+uwagę zgłaszane i obserwowane trudności somatyczne, które są jednym ze wskaźników depresji.
+Największy efekt przyniosły oddziaływania związane z uświadamianiem pewnych zjawisk,
+następstw i stanów, jakie występują i związane są z samopoczuciem, chorobami, relacjami z bliskimi
+czy aktualnym trybem życia. Pozwoliło to zrozumieć uczestnikom jak ważnym aspektem są pewne
+stany emocjonalne i są czymś naturalnym, ponieważ są związane z procesami biologicznymi jakie
+zachodzą w organizmie. „Wytłumaczenie” pewnych kwestii, pokazanie, że nie są niczym
+niebezpiecznym czy zagrażającym pozwalało na obniżenie napięcia z tym związanego czy stresu.
+Było to też związane ze zwiększeniem samoświadomości.
+Kolejnym ważnym aspektem był sam fakt obecności drugiej osoby, możliwości rozmowy,
+podzielenia się z kimś swoim doświadczeniem, swoimi przemyśleniami. Osoby objęte pomocą często
+podkreślały jak ważna jest obecność, to że mają świadomość, że danego dnia ktoś do nich przyjedzie,
+porozmawia. Było to swego rodzaju poczucie stabilności i poczucie bezpieczeństwa.
+Efektywne okazały się oddziaływania związane z żałobą, pokazanie osobie jak ten proces
+wygląda, jakie ma fazy, jak możemy się czuć w danej chwili, z czym się to wiąże. Zmniejszało to lęk,
+a także pozwalało zyskać nadzieję, że z czasem będzie się łatwiej pogodzić z utratą.
+Na koniec projektu, w trakcie ostatniego spotkania, została przeprowadzona rozmowa na
+temat tego co projekt zmienił, czy w jakiś sposób pomógł uczestnikom polepszyć ich stan
+emocjonalny i wpłynąć ja jakość życia. Osoby objęte wsparciem przyznały że odczuwały ulgę po
+spotkaniach, że każdy rodzaj udzielanej pomocy był ważny i pomocny. Podkreślały też istotę
+kontaktu z drugą osobą, poczucie bezpieczeństwa i bycia dla kogoś ważnym. Czas trwania projektu
+okazał się jednak zbyt krótki, dlatego oceniając efekty wnioskować można, że przy długoterminowej
+pomocy udałoby się zmniejszyć symptomy depresji, wpłynąć pozytywnie na stan emocjonalny, na
+poczucie bezpieczeństwa i poczucie przynależności.
+
+--- strona 15 ---
+15
+
+Wnioski
+1.Krótki okres objęcia wsparciem osób starszych w stanach depresyjnych, spowodował, iż osoby te
+nie uzyskały pełnego wachlarza usług specjalistycznych, który oferowali specjaliści zaangażowani w
+projekt. Psycholog nie podejmował rozbudowanej terapii, gdyż musiałby ją przerwać wraz z
+zakończeniem innowacji co mogłoby pogorszyć stan emocjonalny uczestników. Brak odpowiedniej
+wiedzy o tym jak dalej sobie z danym problemem poradzić, np. z żałobą i próba samodzielnego
+uporania się z dawnymi tragediami mogłaby pogłębić depresję uczestników i przynieść odwrotny do
+zamierzonego efekt.
+2.Zbyt duża intensywność wizyt poszczególnych specjalistów, z którymi uczestnicy nie mieli
+wcześniej możliwości współpracy spowodowała na początku u niektórych z nich irytację, jedna osoba
+chciała zrezygnować.
+3.Wszystkie osoby objęte wsparciem w formie dogoterapii chętnie współpracowały z terapeutą.
+Obecność psa przywoływała wspomnienia o swoich zwierzętach i zdarzeniach związanych z ich
+udziałem, wspólną zabawą i opieką.
+4.Kilka osób objętych wsparciem w formie felinoterapii na początku było nieufnych do terapeuty i
+samego zwierzęcia. Ilość problemów zdrowotnych i trudna sytuacja życiowa tych osób nie pozwoliły
+na pełne wykorzystanie tej formy wsparcia.
+5.Dobór Zespołu okazał się dobry, gdyż specjaliści nawiązali kontakt z osobami starszymi, reagowali
+adekwatnie na ich potrzeby, jak również współpracowali ze sobą. Spotkania Zespołu raz w miesiącu
+pozwoliły na przeprowadzenie superwizji we własnym Zespole. Atutem Zespołu było również to, że
+większość pracowała razem przy realizacji innej innowacji skierowanej do osób starszych.
+6.Po zakończeniu okresu wsparcia ważne jest przeprowadzenie oceny aktualnej sytuacji życiowej i
+ustalenia czy dana osoba wymaga dalszej pomocy oraz ewentualnego opracowania indywidualnej
+ścieżki wsparcia, które może być świadczone przez Ośrodek Pomocy.
+7.Trudnością w realizacji projektu było nadmierne skupianie się osób starszych na swoich
+codziennych, doraźnych problemach i powierzchowność w stosunku do kwestii niemal
+zakorzenionych w ich życiu, które bezpośrednio i w sposób nieuświadomiony wpływają na inne.
+
+--- strona 16 ---
+16
+
+--- strona 17 ---
+17
+
+Rekomendacje:
+
+1. Dla przyszłych realizatorów, w szczególności rekomenduje się dłuższy okres objęcia wsparciem
+osób w stanach depresyjnych i z zachowaniami suicydalnymi, gdyż działania specjalistów:
+psychologa, terapeuty wymagają nawet dwuletniego okresu pracy z osobą np. przejście
+poszczególnych etapów żałoby, a tzw. „rozdrapywanie starych ran” i brak pomocy w uporaniu
+się z nimi może pogorszyć stan emocjonalny seniorów.
+2. Osoby starsze znają różne formy wsparcia, jak np. opiekunka środowiskowa i psycholog,
+jednakże nowoczesne koncepcje terapii jak felino- i dogoterapia są dla nich zupełnie nowe i
+niezrozumiałe. Wprowadzenie takiego innowacyjnego wsparcia wymaga wcześniejszego,
+kilkukrotnego spotkania i objaśnienia tej metody, omówienia jej zalet i trafnego rozpoznania
+potrzeb i oczekiwań seniorów. Część z nich może nie być przekonana do kota i tolerować jedynie
+psy lub na odwrót. Ważne jest aby odpowiedzieć na wszystkie pytania i wątpliwości osób
+biorących udział w terapii.
+3. Zbyt duża intensywność wizyt poszczególnych specjalistów, może powodować u niektórych osób
+irytację, a tym samym chęć zrezygnowania z pomocy, dlatego należy stopniowo wprowadzać
+specjalistów i reagować na ich oczekiwania.
+4. Osoby pracujące z osobami starszymi w stanach depresyjnych i z zachowani suicydalnymi muszą
+się wykazać profesjonalizmem, doświadczeniem zawodowym, empatią, cierpliwością, jak
+również umiejętnością powiedzenia jej „nie”, w sytuacjach, które tego wymagają. Osoby starsze
+nie będą współpracować z osobami, którym nie ufają lub nie widzą ich zaangażowania, więc
+niezbędne jest nawiązanie przyjaznych relacji.
+5. Po zakończeniu okresu wsparcia ważne jest przeprowadzenie oceny aktualnej sytuacji życiowej i
+ustalenia czy dana osoba wymaga dalszego wsparcia i ewentualnego ustalenia planu wsparcia tej
+osoby.
+6. Ważne jest by na początku wsparcia przeprowadzić diagnozę i ustalić Indywidualne Plany
+Wsparcia, które ułatwią i usystematyzują pracę poszczególnych specjalistów z osoba starszą w
+stanach depresyjnych. Ustrukturyzowanie Tej formy pomocy pozwoli specjalistom lepiej określić
+efekty działań, wprowadzać ewentualne modyfikacje i ewaluować postępy leczenia.
+7. Uczestnik powinien być świadomy każdej formy wsparcia, nie wolno narzucać mu pewnych
+elementów terapii, jeśli nie jest na nie gotowy. To działanie jest procesem stopniowym i
+wieloaspektowym, dlatego współpraca specjalistów ma kluczowy wpływ na stopniową poprawę
+stanu emocjonalnego osoby starszej. Wspólnie powinni określać dalsze etapy działań by terapia
+na różnych poziomach była tożsama i nie powrócić do stanu wyjściowego.
+
+--- strona 18 ---
+18
+
+VII. Załączniki:
+
+Załącznik 1- Wzór karty diagnozy psychologa
+Załącznik 2- Wzór karty diagnozy pielęgniarki
+Załącznik 3- Wzór karty diagnozy pracownika socjalnego
+Załącznik 4- Wzór Indywidualnego Planu Wsparcia.

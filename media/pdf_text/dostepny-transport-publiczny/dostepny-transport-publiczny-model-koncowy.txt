@@ -1,0 +1,237 @@
+Dostępny Transport Publiczny
+Opracowanie Modelu Końcowego
+Spis Treści
+TOC \o 2-2 \t "Header & Footer, 3"\b _TOCRange
+Wstęp PAGEREF _Toc \h 3
+Opis grupy docelowej PAGEREF _Toc1 \h 3
+Opis rozwiązania i jego funkcjonalności PAGEREF _Toc2 \h 6
+Schemat aplikacji mobilnej PAGEREF _Toc3 \h 9
+Funkcje aplikacji mobilnej PAGEREF _Toc4 \h 9
+Ekran Splash Screen PAGEREF _Toc5 \h 9
+Ekran Map View PAGEREF _Toc6 \h 11
+Ekran Search View PAGEREF _Toc7 \h 13
+Ekran Favorite View PAGEREF _Toc8 \h 14
+Ekran Settings View PAGEREF _Toc9 \h 16
+Ekran Route View PAGEREF _Toc10 \h 16
+Ekran Stop View PAGEREF _Toc11 \h 17
+Przebieg i wyniki testów PAGEREF _Toc12 \h 19
+Rekomendacje i zalecenia dla przyszłych użytkowników innowacji PAGEREF _Toc13 \h 21
+Obsługiwana wersja systemu operacyjnego PAGEREF _Toc14 \h 21
+Poprawne cechy elementów interfejsu PAGEREF _Toc15 \h 21
+Ważność odczytywanych informacji PAGEREF _Toc16 \h 22
+Poprawna składnia oraz gramatyka PAGEREF _Toc17 \h 23
+Opisy infrastruktury około przystankowej PAGEREF _Toc18 \h 23
+Podsumowanie PAGEREF _Toc19 \h 24
+Załącznik 1 - Instrukcja użytkowania dla użytkownika PAGEREF _Toc20 \h 25
+Załącznik 2 - Instrukcja użytkowania dla administratora PAGEREF _Toc21 \h 28
+Backend PAGEREF _Toc22 \h 28
+Frontend PAGEREF _Toc23 \h 29
+
+Wstęp
+Dostępny Transport Publiczny to nie tylko nazwa projektu ale także duże wyzwanie dla projektantów miejskiej infrastruktury oraz planistów transportu publicznego. Informacja pasażerska jest tego najważniejszą częścią dlatego przygotowanie rozwiązania dostępnego dla wszystkich użytkowników nie jest łatwym rozwiązaniem.
+
+Opis grupy docelowej
+Transport Publiczny to krwioobieg miast, województw oraz Państwa. Zapewnia dojazd do pracy, szkoły, do miejsc zainteresowań, na wakacje oraz w celach biznesowych. Nie ma chyba zbyt wiele osób w Polsce, które choć raz nie skorzystały z transportu publicznego. Przemieszczanie się jest wpisane w nasze życie. Potrzebujemy być w ruchu aby zapewnić sobie dostęp do usług, które są oddalone od nas o dystans, który nie jest już komfortowy do pokonania pieszo.
+Organizacja przewozów komunikacji miejskiej to temat szeroki i od kilku lat nie jest on zamknięty jedynie na konwencjonalne sposoby przemieszczania się. Obecny trend dodał do pojęcia mobilności miejskiej rowery, hulajnogi, współdzielone samochody oraz wiele innych form transportu, które dołączyły do autobusów, tramwaju, kolei i metra. Grupą docelową transportu publicznego są wszyscy ludzie, którzy chcą się przemieszczać po terenie aglomeracji, a także wykraczać poza nią. Zarząd Transportu Publicznego w Warszawie organizując siatkę połączeń jasno stawia sprawę - komunikacja miejska ma spełnić podstawowe zadanie dowożąc pasażerów do najważniejszych miejsc ale także ma zapewnić połączenia związane z wypoczynkiem, kulturą oraz wspierać wydarzenia, które odbywają się cyklicznie w mieście.
+Planowanie tras oraz rozkładów jazdy to żmudna i trudna praca. Standardowe międzydzielnicowe połączenia to trzon komunikacji miejskiej ale należy również pamiętać o synchronizacji przewozów, współpracy z różnymi przewoźnikami obsługującymi różne trakcje. To wszystko po to aby dostarczyć najlepszą obsługę pasażera na ogromnym terenie w samym sercu Województwa Mazowieckiego.
+Fakt ten pozwala stwierdzić, że grupa docelowa organizatora transportu publicznego w Warszawie to każda osoba od lat najmłodszych do późnej starości, która chce poruszać się po terenie miasta. Każda oznacza dokładnie każdą osobę - nawet tą, która posiada specjalne wymagania w poruszaniu się po mieście. Ta ostatnia grupa stanowi właśnie grupę docelową naszej innowacji.
+Osoby posiadające specjalne wymagania w komunikacji publicznej to pasażerowie, którzy z jakiegoś powodu potrzebują asysty bądź wsparcia architektonicznego aby skorzystać z pojazdu transportu publicznego. Lista osób spełniających te wymagania jest długa jednak na pewno warto tutaj wymienić następujące grupy społeczne:
+Rodzice z dziećmi korzystający z wózków dziecięcych,
+Osoby posiadające problemy z koordynacją ruchową,
+Osoby starsze o mniejszej sprawności fizycznej,
+Osoby niewidome i niedowidzące,
+Osoby po kontuzjach kończyć posiadające utrudnienia w przemieszczaniu się,
+Osoby niesłyszące bądź niedosłyszące,
+Osoby poruszające się na wózkach inwalidzkich bądź korzystające z protez,
+Osoby wymagające odpowiedniego skupienia,
+Inne osoby, które nie mogą swobodnie skorzystać z infrastruktury przygotowanej przez miasto.
+
+Powyższa lista jest długa i dość ogólna jednak składa się na nią duża grupa ludzi, którą na codzień spotykamy w mieście. Istnieje nawet takie pojęcie, że problemy w infrastrukturze miejskiej zauważasz dopiero wtedy gdy zostajesz rodzicem. Dopiero wtedy okazuje się, że dostępny na codzień przystanek przy linii metra - tak korzystny z punktu widzenia przesiadek i różnorodności typów transportu - staje się wręcz niedostępny albo nieopłacalny czasowo.
+Idealnym przykładem może tutaj być przystanek tramwajowy Metro Pole Mokotowskie znajdujący się w Warszawie na pograniczu Mokotowa i Śródmieścia. Przystanek gdzie tramwaje krzyżują się z autobusami oraz linią metra M1. Młoda sprawna osoba bezproblemowo wykorzysta zalety tego węzła przesiadkowego korzystając z przejść podziemnych. Młody rodzic będzie borykał się natomiast z długą wycieczką polegającą na przejściu całej długości przystanku tramwajowego do pobliskiego skrzyżowania aby przejść na drugą stronę i ponownie pokonując ten sam dystans aby dojść do windy prowadzącej na antresolę stacji metra. W najmniej optymalnym dla rodzica wariancie będzie musiał on przejść aż 600 metrów „w tą i z powrotem” aby dostać się na peron metra. Brak wózka dziecięcego skróci tę drogę do niecałych 100 metrów.
+Przykład ten dotyczy rodzica, który poświęci więcej czasu na przemieszczanie się jedynie podczas krótkiego epizodu w swoim życiu. Są jednak grupy społeczne, których takie problemy dotykają na codzień i to właśnie dla nich należy przygotować dostępną komunikację publiczną. Dostępność to nie tylko infrastruktura ale również zbiór informacji opisujących tę infrastrukturę. Na nic zda nam się idealnie zaplanowany węzeł jeśli osoba, posiadająca specjalne potrzeby w komunikacji publicznej, nie skorzysta z niej bo nie będzie o niej wiedziała.
+Kolejną rzeczą jest ludzkie przyzwyczajenie, które bez odpowiedniego bodźca nie ulegnie zmianie w sposób płynny. Ile to razy przyłapywaliśmy sami siebie na działaniu mało efektywnym, a jednak powtarzanym dzień w dzień. Dopiero odpowiedni impuls, który na początku pozwala nam zaobserwować niewłaściwe zachowanie, pozwala na rozpoczęcie zmiany nawyku. Ten proces nie jest łatwy ani przyjemny. Dodatkowo im więcej atencji potrzebujemy od otoczenia tym bardziej ta zmiana wydłuża się.
+Dobra informacja pasażerska to nie taka, która powie nam o której być i czekać na pojazd, a taka, która pomoże nam zaoszczędzić czas w podróży. Tutaj dobrym przykładem jest transport lotniczy, a kolejowy. Samoloty wygrywają na dalekich dystansach bo pomimo przymusu jakim jest przybycie z dużym wyprzedzeniem na lotnisko, zapewnia szybki transport do miejsca docelowego. Jeśli jednak w grę wchodzi przemieszczanie się na małe dystanse, do 500 kilometrów, więcej zalet znajdujemy w kolei, która przy dobrej infrastrukturze przewiezie nas w podobnym, a nawet i lepszym czasie niż samolot. Niemcy, obecnie potentat w multimodalnym dzieleniu przewozów, wypracowali idealny system zapewniający komfort podróży i oszczędność czasu.
+Te same cechy tyczą się osób, które z wielu różnych powodów przemieszczają się po mieście wolniej. Dla nich informacja stanowi klucz do komfortu i oszczędności czasowych. Aplikacja Dostępny Transport Publiczny powstała właśnie z myślą o takich osobach, które stanowią również grupę docelową innowacji.
+
+Opis rozwiązania i jego funkcjonalności
+Obecnie na rynku pojawiło się wiele aplikacji, które świadczą usługi dostarczania informacji pasażerskiej. Są one niestety skierowane do ogółu i nie kładą nacisku na opis przystanków oraz nie posiadają poprawnie zaimplementowanych funkcji dostępności. Celem projektu jest stworzenie aplikacji na systemy Android, które w pełni wykorzystują funkcje dostępności, a w szczególności syntezator mowy TalkBack. W ramach prac w prywatnym czasie została ukończona wersja na systemy iOS, która już od roku przekazuje dostępne dane osobom, które korzystają z iPhone’ów. Następnym krokiem jest wprowadzenie takiej samej funkcjonalności na systemy Android.
+Zaraz Jadę jest prostą aplikacją mobilną dostarczającą informacje o transporcie publicznym w miastach na terenie Polski. Użytkownik może wybrać przystanek na mapie bądź wyszukać go przez pole wyszukiwania aby znaleść konkretną linię. Dodatkowo może polubić przystanek bądź linię aby otrzymywać notyfikacje na temat zmian i utrudnień. Takie same funkcje zostały zawarte w aplikacji Dostępny Transport Publiczny, który powstał w ramach innowacji społecznej. Aplikacja posiada następujące funkcje:
+Wyświetlanie przystanków na mapie,
+Prezentacja linii komunikacji miejskiej wraz z jej opisem,
+Dostarczanie informacji na temat rozkładów jazdy oraz odjazdów w czasie rzeczywistym,
+Zaznaczanie na mapie położenia pojazdów komunikacji miejskiej wraz z animacją zmiany lokalizacji,
+Wsparcie dla funkcji dostępności TalkBack.
+
+Aplikacja składa się z ośmiu ekranów. Każdy z nich prezentuje informacje dotyczące konkretnego zagadnienia związanego z informacją pasażerską. Poniżej znajduje się lista wszystkich widoków:
+Ekran Splash Screen - widok ukazujący się od razu po uruchomieniu aplikacji. Pozwala na pobranie potrzebnych danych,
+Ekran Map View - reprezentacja graficzna mapy, na której zaznaczone są przystanki oraz wybrane trasy,
+Ekran Search View - formularz pozwalający na wyszukiwanie przystanków oraz linii,
+Ekran Favorite View - lista zawierająca linie oraz przystanki polubione przez użytkownika,
+Ekran Route View - widok szczegółowy wybranej linii, posiadający informacje o utrudnieniach, najbliższych przystankach oraz szczegółach linii,
+Ekran Stop View - widok szczegółowy przystanku, posiadający opis otoczenia, listę linii oraz najbliższe odjazdy,
+Ekran Timetable View - widok pełnego rozkładu jazdy dla danej linii z opisem symboli i wariantów danych odjazdów,
+Ekran Settings View - menu opcji posiadające możliwość edycji ulubionych linii oraz przystanków, zawierające informacje o utrudnieniach oraz prezentujące informacje prawne o aplikacji.
+
+Aplikacja składa się z trzech głównych widoków, do których w łatwy sposób można dostać się poprzez dolny pasek nawigacji. Jego konstrukcja, w postaci paska z ikonami, pozwala na szybki dostęp podczas uruchomionej funkcji VoiceOver/TalkBack. Wystarczy, że użytkownik przeciągnie palcem po dole ekranu aby usłyszeć jedną z trzech opcji: ulubione, szukaj oraz ustawienia.
+Ulubione linie i przystanki powinny być dostępne niemal „na wyciągnięcie ręki”. To samo tyczy się szybkiego wyszukiwania szczegółowych informacji. Ustawienia natomiast mogą być miejscem gromadzenia specjalistycznych danych, które nie są potrzebne w codziennej podróży.
+Następna strona prezentuje uproszczony schemat struktury aplikacji wraz z szkicem interfejsu użytkownika.
+Schemat aplikacji mobilnejRys. 1 Schemat interfejsu użytkownika aplikacji mobilnej
+Splash Screen
+Search Screen
+Favorite Screen
+Route Screen
+Stop Screen
+Timetable Screen
+Settings Screen
+Rys. 1 Schemat interfejsu użytkownika aplikacji mobilnej
+Splash Screen
+Search Screen
+Favorite Screen
+Route Screen
+Stop Screen
+Timetable Screen
+Settings Screen
+
+Funkcje aplikacji mobilnej
+Ekran Splash Screen
+Klasyczny widok z logo aplikacji, który wyświetla się tuż po uruchomieniu programu. W trakcie kilkusekundowej prezentacji animacji ładowania zostają pobrane dane potrzebne do obsługi aplikacji. Jest o między innymi token autoryzacyjny oraz identyfikator urządzenia.
+Ekran Map View
+
+Widok mapy jest głównym interfejsem do prezentowania pojazdów i przystanków w mieście. Przystanki pobierane są za każdym razem gdy użytkownik zmieni pozycję mapy. Gdy użytkownik wybierze linię zobaczy na mapie pojazdy, które będą poruszać się w 10 sekundowych interwałach gdy ich lokalizacja ulegnie zmianie.
+Przy każdym nowym uruchomieniu aplikacji użytkownik powinien widzieć mapę w położeniu opartym o swoje własne na podstawie sygnału GPS.
+Przystanki pokazują wszystkie te miejsca gdzie użytkownik może zacząć podróż w transporcie publicznym. Pobierane są z dwóch różnych zapytań w zależności od wartości powiększenia na mapie.
+Przy bliskim powiększeniu wyświetlają się słupki przystankowe czyli jeden przystanek, z którego odjeżdża pojazd. W większym oddaleniu widoczne są jedynie grupy przystankowe, które sią zbiorem przystanków o tej samej nazwie i pokazują uśrednioną lokalizację przystanku.
+
+Po dotknięciu markera przystanku (nie grupy przystankowej) pokazuje się widok szczegółowy przystanku.
+Ekran Search View
+
+Widok Search View jest prostym interfejsem służącym do wyszukiwania przystanków bądź linii po ich nazwach. Lista grupuje wyniki wyszukiwań po liniach pogrupowanych osobno na konkretnych przewoźników oraz na grupę przystanków. Użytkownik może wybrać linię bądź przystanek.
+Jeśli wybierze linię zostanie przeniesiony do widoku szczegółów linii,
+Jeśli wybierze przystanek zostanie przeniesiony na mapie w miejsce gdzie znajdują się wszystkie przystanki o tej samej nazwie.
+
+Zapytanie powinno być wykonane po wpisaniu każdego pojedynczego znaku w pole wyszukiwania. Zapytanie zwraca specjalne pole query, które informuje dla jakiej frazy zwrócono listę. Dzięki temu pole wyszukiwania łatwo porównać z tą wartością i wyświetlić odpowiednią odpowiedź serwera.
+
+Widok wyszukiwania pamięta ostatnie 10 wybranych wyników wyświetlając jedynie ich tytuł. Przykładowo jeśli użytkownik wybrał linię A1 na liście ostatnio wyszukanych pojawi się A1, jeśli wybierze natomiast przystanek Pruszków zaprezentowany zostanie napis Pruszków. Jeśli na liście poprzednio wyszukiwanych rzeczy znajduje się już dana nazwa zostaje ona usunięta z bieżącej tablicy i umieszczona na jej początku. Lista ostatnio wyszukiwanych rzeczy wyświetlana jest jedynie wtedy gdy pole wyszukiwania jest puste. Jeśli użytkownik wybierze którąś z ostatnio wyszukanych pozycji to pole wyszukaj automatycznie wypełnia się tą treścią i następuje wykonanie zapytania do serwera.
+Ekran Favorite View
+
+Użytkownik może polubić linię bądź przystanek. Jeśli to zrobi to pojawią się one w widoku ulubione. Wszystkie dane o ulubionych liniach zostają zapisane lokalnie na urządzeniu.
+Lista ulubionych prezentuje również wstępne informacje o utrudnieniach na linii w postaci ikony wykrzyknika znajdującego się przy danej linii.
+
+Ekran Settings View
+
+Ekran ustawień składa się z prostego menu podzielonego na dwie kategorie i stopkę. Stopka posiada opis bieżącej wersji wraz z oznaczeniem numeru kompilacji.
+
+Sekcja Informacje posiada jedną opcję Utrudnienia, która przenosi użytkownika do prostej listy, na której wyświetlana jest lista pierwszych 20 utrudnień pobranych z serwera. Sekcja Preferencje również posiada jedynie jedną opcję Ulubione, która pozwala na edycję kolejności i usuwanie ulubionych linii.
+Pozostałe opcje służą do informacji o nowościach w aplikacji oraz pozwalają wyświetlić Politykę Prywatności i Regulamin aplikacji.
+
+Ekran Route View
+Widok linii zostaje wyświetlony w momencie wybrania przez użytkownika konkretnej linii. Użytkownik może wykonać dwie akcje poprzez przyciski znajdujące się pod sekcją tytułu. Pierwsza akcja to polubienie albo usunięcie z ulubionych danej linii. Druga funkcja pozwala na pokazanie na mapie całej linii. Oznacza to, że po tapnięciu na przycisk mapa powinna wypośrodkować się tak aby były widoczne wszystke przystanki linii.
+
+Po otwarciu tego widoku na mapie powinny zostać zaprezentowane pojazdy, przystanki oraz krzywa symbolizująca przebieg danej linii.
+
+Jeśli na linii występują utrudnienia opcjonalnie pokazuje się sekcja utrudnień, która zawiera tytuł, nagłówek oraz opis utrudnienia. Ostatnią sekcją widoku jest lista pięciu najbliższych przystanków raz z odległością wyliczoną na podstawie obecnego położenia użytkownika.
+
+Ekran Stop View
+Ekran widoku przystanku zostaje zaprezentowany w momencie gdy użytkownik wybierze przystanek na mapie bądź z dowolnego miejsca w aplikacji gdzie przystanek był zaprezentowany na liście.
+Widok zawiera trzy sekcje. Pierwszą jest nagłówek z nazwą przystanku oraz opisem. Początkowo opis przystanku jest wyświetlany w jednej linijce jednak można go rozwinąć poprzez tąpnięcie w przycisk więcej.
+Przystanek można polubić poprzez przycisk Ulubione dzięki czemu od razu pojawi się na liście ulubionych. Na dole przystanku znajduje się lista z najbliższymi odjazdami. Lista ta powinna być odświeżana co 10 sekund.
+
+Na ekranie znajduje się również przycisk Wyznacz trasę. Będzie to prototypowy ekran, który wyświetli jedynie widok strony internetowej, na której znajdzie się opis trasy z obecnej lokalizacji użytkownika do wybranego przystanku.
+
+Przebieg i wyniki testów
+Testowanie innowacji odbyło się od początku Maja do końca Lipca 2022 roku. Projekt sprawdziła grupa ośmiu osób składająca się z siedmiu osób niewidomych, którzy równocześnie korzystają z telefonów z systemem Android oraz iOS. Dodatkowo ósma osoba korzysta z wózka dziecięcego jako młoda mama.
+W celu poprawnego przetestowania wszystkich funkcji aplikacji Dostępny Transport Publiczny zadano grupie testującej pytania, które miały na celu zebrać ich codzienne nawyki w korzystaniu z komunikacji miejskiej. Poproszono o wymienienie najczęściej wykorzystywanych linii autobusowych bądź tramwajowych oraz o wypisanie najczęściej wykorzystywanych relacji. Na podstawie zebranych odpowiedzi wytypowano linię Warszawskiej Kolei Dojazdowej - linię A1.
+Testy podzielono na dwa etapy. W pierwszym etapie zadano testerom trzy zadania, które mieli wykonać w oparciu o wytypowaną linię A1. Zadania miału ja celu sprawdzenie jak bardzo aplikacja jest intuicyjna dla użytkownika. Właśnie w tym celu koniecznym było wyeliminowanie nawyków, jakie testerzy posiadali poprzez korzystanie z innych dostawców informacji.
+Zadania polegały na wyszukaniu linii, polubieniu jej oraz na sprawdzeniu rozkładu jazdy na najbliższym przystanku. Te podstawowe funkcje aplikacji pozwoliły użytkownikom na zapoznanie się z interfejsem programu oraz odkryły funkcje jakie posiada aplikacja.
+Po wykonaniu przez testerów zadań zebrana została informacja zwrotna, którą indywidualnie przestudiowano z każdym użytkownikiem. Zebrane informacje zostały zapisane w postaci zadań. Część zanotowanych zadań, które zawierały stosowne poprawki, zostały od razu zaimplementowane w aplikacji mobilnej. Wraz z zebraną oponią oraz przygotowaną nową wersją rozpoczął się drugi etap testów.
+Etap drugi polecał na sprawdzeniu jak użytkownicy, którzy mieli już wcześniej styczność z aplikacją, radzą sobie w codziennych czynnościach i podróżach. Zestaw zadań i pytań do nich był symetryczny do poprzedniego etapu z tą różnicą, że tym razem użytkownik miał podróżować wraz z programem na swojej codziennej trasie. Również i po tym etapie zebrano opinie, uwagi i pomysły. Każde ze zgłoszeń zostało dokładnie zanotowane, potwierdzone z testerem oraz przygotowane do dalszej realizacji.
+Dodatkowo wykonano jeszcze jeden test polegający na sprawdzeniu przydatności opisów infrastruktury około przystankowej. Badanie na temat użyteczności tych komunikatów zebrano z osobą, która na codzień podróżuje z wózkiem dziecięcym. Informacje opisowe o infrastrukturze około przystankowej zostały pozyskane z serwerów Zarządu Transportu Miejskiego w Warszawie. Zbiór ten posiadał zunifikowany opis elementów, w jaki jest wyposażony każdy przystanek. Dane te zostały zebrane kilka lat temu jednak do dziś stanowią dobrą informację dla pasażera, który za wczasu chciałby sprawdzić czy będzie miał możliwość dotarcia do wybranego punktu.
+Testy aplikacji Dostępny Transport Publiczny pozwoliły na ponowne przejrzenie podejścia stosowanego dotychczas w prywatnej aplikacji Zaraz Jadę. Testerzy przedstawili swoje opinie w oparciu o produkt, który od początku został zaprojektowany dla konkretnej grupy docelowej. Efektem tych prac jest niemal gotowa aplikacja mobilna dostarczająca informacji o transporcie publicznym. Docelowo musi ona jednak przejść kilka modyfikacji, które zapewnią jej sukces wśród osób posiadających specjalne wymagania w komunikacji publicznej.
+Możliwość współpracy z grupą osób, które codziennie posiadają wyzwania w poruszaniu się po mieście stołecznym Warszawa, dostarczyły wystarczającej wiedzy w jaki sposób Ci użytkownicy korzystają z urządzeń mobilnych w terenie. Tak duża dawka wiedzy nie może być porzucona i powinna być przekształcona na pełnoprawną aplikację mobilną, która będzie dostępna dla każdej osoby w sklepach Google Play oraz AppStore.
+Należy jednak nadmienić, że tak szeroko zebrany feedback pozwala sądzić, że pewne zmiany będą wymagały drastycznych zmian w interfejsie użytkownika. Inne uwagi zachęcają również do podziału pewnych funkcji na dwa oddzielne interfejsy. Odwaga w tworzeniu dostępnych interfejsów jest niezmiernie ważna. Należy jednak każde rozwiązanie przetestować z osobą, która będzie ostatecznym odbiorcą danej funkcjonalności. To ostatecznie użytkownik korzystający z syntezatora mowy będzie na codzień korzystał z danych przekazywanych przez naszą aplikację.
+Wszystkie zebrane informacje po potwierdzeniu zostały dokładnie przeanalizowane i przygotowane do dalszego wdrożenia. Są to celne uwagi i opinie użytkowników, które jedne znacząco zmieniają obecne podejście do prezentacji treści w aplikacji. Inne natomiast przy małym nakładzie pracy poprawią odbiór dostarczanych informacji. Należy jednak zaznaczyć, że po tak dokładnych testach nie należy obawiać się drastycznych zmian w obecnej implementacji aplikacji na urządzenia mobilne. Tylko stanowcze i racjonalne podejście do feedbacku otrzymanego od testerów pozwoli na stworzenie użytecznej i przydatnej dostępnej aplikacji dostarczającej informacje o transporcie publicznym.
+
+Rekomendacje i zalecenia dla przyszłych użytkowników innowacji
+Po przeprowadzeniu testów wraz z grupą testującą sporządzono rekomendacje oraz zalecenia, które powinny dotyczyć wszystkich twórców aplikacji mobilnych, którzy chcą wspierać funkcje dostępności w swoich produktach. Poniżej zestawienie najważniejszych punktów:
+
+Obsługiwana wersja systemu operacyjnego
+Przyzwyczajenie bywa drugą naturą człowieka. To powiedzenie sprawdza się w wielu aspektach życia. Przyzwyczajenie to przede wszystkim nawyk pozwalający na realizację zamierzonego celu w znany i sprawdzony sposób. Bardzo ważnym jest aby pamiętać o tym fakcie przy wybieraniu minimalnej wersji systemu, który będzie wspierała nasza aplikacja. Osoby, którym telefon ułatwia codzienne życie mniej chętnie aktualizują swoje urządzenia do najnowszych wersji.
+Warto zapewnić wsparcie dla systemu iOS od wersji 14.0, natomiast Android powinien być wspierany już od wersji 7.0.
+
+Poprawne cechy elementów interfejsu
+Systemy czytników ekranów takich jak VoiceOver albo TalkBack posiadają szereg specjalnych metod pozwalających na dokładne rozpoznawanie elementów graficznych na ekranie. Jednym z nich są cechy, które można przypisywać do konkretnych elementów interfejsu. Należy przy tym pamiętać, że każda cecha niesie za sobą pewną konsekwencję. Przykładowo przycisk zostanie odczytany za każdym razem z informacją o tym, że jest to właśnie element klikalny. Takie same uwagi pojawią się przy polu tekstowym bądź podczas zaznaczenia przełącznika. Dokładne przydzielanie cechy jest bardzo istotne w przypadku gdy interfejs użytkownika został zaprojektowany w sposób niestandardowy. Dzięki temu użytkownik usłyszy poprawne wskazanie elementu na ekranie.
+
+Ważność odczytywanych informacji
+Intuicyjne podejście do tematu opisu linii komunikacji miejskiej oparte jest o znane nam postrzeganie świata. Należy jednak pamiętać, że percepcja wzroku działa szybciej niż słuch przez co osoby korzystające jedynie z fonii do odnajdowania się w świecie potrzebują jasnych i zwięzłych komunikatów.
+Jako przykład może posłużyć odjazd linii 222 z przystanku Postępu. Najważniejszą informacją jest linia oraz godzina odjazdu dlatego przygotowując informację możemy śmiało stworzyć następujące zdanie:
+„Linia dwieście dwadzieścia dwa, odjazd o godzinie dwunastej dwadzieścia.”Czytając to zdanie na pierwszy rzut oka (a może i ucha) nie słychać żadnej kontrowersji. Należy jednak pamiętać, że użytkownicy systemu VoiceOver oraz TalkBack najczęściej mają ustawioną prędkość odczytu na poziomie 60% i wyższą aby w jak najszybszy sposób odczytać podaną informację. Wracając do naszego przypadku należy wyselekcjonować odpowiednie dane aby poprawnie przekształcić powyższe zdanie. Najważniejszymi danymi w powyższym zdaniu są: numer linii oraz godzina odjazdu. Korzystając z tego opisu to samo zdanie należy zapisać w prostszy sposób:
+„Dwieście dwadzieścia dwa, dwunasta dwadzieścia”Taka informacja, pozbawiona wszystkich ozdobników, jest prosta, klarowna i wystarczająco pełna aby dostarczyć użytkownikowi odpowiednie dane. Dzięki skróceniu informacji mamy możliwość dodania kolejnych szczegółów, które będą przydatne podczas poruszania się komunikacją publiczną.
+„Dwieście dwadzieścia dwa, dwudziesta dwanaście. Kierunek Bokserska.”Powyższy przykład został uzupełniony informację o kierunku jazdy pojazdu. Informacja ta ma znaczenie w wypadku gdy te same pojazdy jadące w różnych kierunkach zatrzymają się przy jednej krawędzi przystankowej.
+Podczas planowania opisu elementów przeznaczonego dla syntezatora mowy należy pamiętać o zwięzłości informacji. W tym wypadku wszystkie opisy powinny być wiele razy przestudiowywane, a do każdego zdania powinno zostać zadane pytanie - czy to zdanie da się uprościć. Jeśli tak to skracamy implementację zdania do najbardziej korzystnej wersji.
+
+Poprawna składnia oraz gramatyka
+Okazuje się, że niewiele mniej ważnym aspektem jest poprawność gramatyczna syntezatora mowy. Odczytywany tekst może być zinterpretowany w niewłaściwy sposób przez co wbudowany syntezator zabrzmi nienaturalnie. Dobrym przykładem może być tutaj odczyt godziny: 20:20. Syntezator mowy odczyta ten wiersz jako następujące zdanie:
+„Dwadzieścia dwadzieścia”Powyższy przykład niestety jest mało czytelny. Nie ma najważniejszej informacji o fakcie, że odczytana została godzina. Prosta zmiana pozwala na znaczące poprawienie działania funkcji dostępności. Wystarczy jedynie poprawnie oczytać treść.
+„Dwudziesta dwadzieścia”.Należy również pamiętać o rezygnowaniu ze słów, które nie wnoszą dodatkowej informacji do treści. Są to takie słowa jak „godzina”, „minut” bądź „linia”.
+
+Opisy infrastruktury około przystankowej
+Dane zbierane z zewnętrznych źródeł powinny być poddawane ciągłej analizie. Jeśli jednak nie ma możliwości przeprowadzania regularnego audytu poprawności danych należałoby oddać użytkownikom możliwość edycji treści aplikacji. Zbieranie zgłoszeń od osób korzystających z naszego oprogramowania jest popularną metodą na szybkie aktualizowanie publicznych danych.
+
+Podsumowanie
+Aplikacje mobilne zawierające pełną implementację funkcji dostępności stanowią duże wyzwanie dla projektantów interfejsów mobilnych. Kluczowym podejściem do planowania funkcjonalności jest posiadanie odpowiedniej grupy konsultacyjnej, która rozumiejąc zasady funkcjonowania poszczególnych funkcji dostępności, potrafią wyłapać błędną implementację. Należy pamiętać, że każda osoba posiada inne przyzwyczajenia w obsłudze aplikacji dlatego nie należy kierować się własnym doświadczeniem. Warto też, biorąc pod uwagę informacje pochodzące od użytkowników, nie bać się dużych zmian w interfejsie użytkownika.
+Dzisiejsze telefony komórkowe posiadają moc obliczeniową kilkaset razy większą niż komputery, które wysłały ludzi na księżyc. Dlatego warto korzystać z ich potęgi dostarczając użytkownikom oprogramowanie, które sprawdzi się w każdym możliwym momencie i spełni oczekiwania nawet najbardziej wymagających użytkowników.
+Załącznik 1 - Instrukcja użytkowania dla użytkownika
+Aplikacja mobilna Dostępny Transport Publiczny powinna zostać pobrana z dwóch oficjalnych sklepów Google Play bądź AppStore, zależnie od wykorzystywanego urządzenia. Aplikacja powinna być dystrybuowana drogą oficjalną poprzez testy wewnętrzne bądź ogólną publikację.
+Oprogramowanie składa się z trzech głównych widoków oraz mapy. Wspomniane ekrany to kolejno Ulubione, Szukaj oraz Ustawienia.
+
+Ekran Ulubione posiada wszystkie polubione linie oraz przystanki, które użytkownik może dodać poprzez dotknięcie przycisku „Polub”. Polubione linie można usunąć dotykając ten sam przycisk bądź korzystając z ustawień gdzie istnieje specjalna zakładka „Edycja ulubionych”.
+
+Pole wyszukiwania znajdujące się pod zakładką Szukaj obsługuje dowolny ciąg znaków. Użytkownik wpisując kolejne litery bądź cyfry natychmiastowo pobudza silnik wyszukiwarki do działania. Linie oraz przystanki prezentowane są na tej samej liście. Linie dodatkowo podzielone są na przewoźników, a przystanki zgrupowane pod jednym nagłówkiem. Wyszukiwarka została skonstruowana tak aby grupować otrzymane dane oraz segregować je alfanumeryczne gdzie mniejsze numery linii mają pierwszeństwo przed oznaczeniami alfabetycznymi.
+
+Wybranie przystanku bądź linii prowadzi do ekranu szczegółów danego elementu. Ekran linii zawiera dodatkowe informacje o najbliższych przystankach oraz utrudnieniach jeśli takie znajdują się akurat na danej relacji. Po dotknięciu jednego z najbliższych przystanków pokaże się jego widok szczegółowy. Ekran szczegółowy przystanku zawiera listę wszystkich linii wraz z odjazdami posortowanymi podłóg godziny „od teraz”.
+Ostatnia zakładka ustawienia posiada zbiór istotnych rzeczy, takich jak informacja o utrudnieniach, edycja ulubionych, zestawienie nowości w aplikacji, regulamin oraz polityka prywatności.
+Większość funkcji aplikacji została opisana w dokumencie „Specyfikacja aplikacji mobilnej”. Intuicyjność aplikacji i projektowane zgodne z Przewodnikami po Interfejsie Użytkownika obydwu platform powinny zapewnić wysoką intuicyjność oprogramowania niewymagającą przy tym żadnych dodatkowych samouczków.
+Załącznik 2 - Instrukcja użytkowania dla administratora
+Backend
+Administrator aplikacji mobilnej Dostępny Transport Publiczny powinien przygotować serwer zawierający Interfejs Programowania Aplikacji (Application Programming Interface). Specyfikacja serwera jest dowolna jednak docelowo powinna obsługiwać protokół HTTP bądź HTTPS oraz posiadać zaimplementowane zapytania zgodne ze specyfikacją. Format zwrotny wygenerowany jako odpowiedź powinien wykorzystywać format JSON.
+Poniżej znajduje się lista wszystkich zapytań wraz z metodami, na które powinna poprawnie odpowiadać jednostka sieciowa:
+POST Register Device
+POST Update Device
+GET Vehicles
+GET Stops Region
+GET Stops Region Group
+GET Search
+POST Favorite
+GET All Feed
+GET Route
+GET Stop
+
+Dwa pierwsze zapytania służą do rejestracji urządzenia użytkownika wraz z informacjami systemowymi. W odpowiedzi serwer przyznaje indywidualny token, który stanowi identyfikator użytkownika. Token powinien być ważny maksymalnie przez 30 dni, a aplikacja zapewnia jego świeżość poprzez wysyłanie zapytania o odświeżenie identyfikatora. Taki zabieg pozwala na pełną anonimowość użytkownika przy założeniu chęci śledzenia jego poczynań.
+Generowanie identyfikatora powinno odbywać się przy wykorzystaniu technologii JWT - JSON Web Token. Jest to otwarty standard bezpiecznego reprezentowania roszczeń między dwiema stronami i jest wykorzystywany na szeroką skalę podczas autoryzacji użytkowników w systemach informatycznych.
+Pozostałe zapytania zwracają ustrukturyzowane dane zgodne z otwartym formatem opisu transportu publicznego General Transit Feed Specification - GTFS. Szczegóły implementacji zapytań można znaleźć w specyfikacji projektu.
+Frontend
+Aplikacja mobilna wymaga podstawowej konfiguracji, która zapewni poprawną komunikację z serwerem. Dodatkowo każda aplikacja mobilna opublikowana w sklepach Google Play oraz AppStore musi posiadać dokument w postaci Polityki Prywatności oraz Regulaminu. Poniższa tabela zawiera ścieżki do plików oraz klucze, które należy skonfigurować przed opublikowaniem aplikacji:
+Zasób
+Ścieżka
+Lokalizacja
+Opis
+Adres domeny przeznaczony do komunikacji z API
+Ścieżka dostępu do pliku zawierającego adres domeny
+Ln 62, Col 51
+BASE_URL
+Strona Internetowa „Co nowego”
+Ścieżka dostępu do pliku zawierającego hiperłącze strony internetowej "Co nowego"
+Ln 7, Col 15
+WhatsNew
+Strona Internetowa „Polityka Prywatności”
+Ścieżka dostępu do pliku zawierającego hiperłącze strony internetowej "Polityka Prywatności"
+Ln 8, Col 20
+PrivacyPolicy
+Strona Internetowa „Regulamin"
+Ścieżka dostępu do pliku zawierającego hiperłącze do strony internetowej "Regulamin"
+Ln 9, Col 25
+TermsAndConditions
+
+Poprawna konfiguracja Backendu oraz Frontendu powinna przynieść w pełni działający system dostarczający informacje na temat organizacji dowolnego transportu publicznego na świecie.
+Po więcej szczegółów dotyczących implementacji należy sięgnąć do dokumenty „Specyfikacja aplikacji mobilnej”, rozdział „Application Programming Interface - Interfejs Programowania Aplikacji”.
+Aplikacja powinna zostać zbudowana i opublikowana zgodnie z regulaminami sklepów mobilnych Google Play oraz AppStore. Wszelkie szczegóły związane z publikacją zawarte są w odpowiednich umowach, które są nawiązywane podczas zakładania kont deweloperskich w tych usługach.

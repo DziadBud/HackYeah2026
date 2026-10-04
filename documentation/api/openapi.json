@@ -318,6 +318,58 @@
         }
       }
     },
+    "/admin/innovations/{innovation_id}/pdf": {
+      "post": {
+        "tags": [
+          "admin:innovations"
+        ],
+        "summary": "Replace Innovation Pdf",
+        "operationId": "replace_innovation_pdf_admin_innovations__innovation_id__pdf_post",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_replace_innovation_pdf_admin_innovations__innovation_id__pdf_post"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InnovationUploaded"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/admin/innovations/{innovation_id}/publish": {
       "post": {
         "tags": [
@@ -2087,6 +2139,50 @@
         }
       }
     },
+    "/innovations/{innovation_id}/photos/{name}": {
+      "get": {
+        "tags": [
+          "innovations"
+        ],
+        "summary": "Get Innovation Photo",
+        "operationId": "get_innovation_photo_innovations__innovation_id__photos__name__get",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Name"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/innovations/{innovation_id}/feedback": {
       "post": {
         "tags": [
@@ -2174,6 +2270,167 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/TestSignupCreated"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/innovations/{innovation_id}/likes": {
+      "get": {
+        "tags": [
+          "innovations"
+        ],
+        "summary": "Get Likes",
+        "operationId": "get_likes_innovations__innovation_id__likes_get",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          },
+          {
+            "name": "client_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "uuid"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Client Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LikeState"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/innovations/{innovation_id}/likes/{client_id}": {
+      "put": {
+        "tags": [
+          "innovations"
+        ],
+        "summary": "Like",
+        "operationId": "like_innovations__innovation_id__likes__client_id__put",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          },
+          {
+            "name": "client_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Client Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LikeState"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "innovations"
+        ],
+        "summary": "Unlike",
+        "operationId": "unlike_innovations__innovation_id__likes__client_id__delete",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          },
+          {
+            "name": "client_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Client Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LikeState"
                 }
               }
             }
@@ -2664,6 +2921,20 @@
         ],
         "title": "Body_create_innovation_admin_innovations_post"
       },
+      "Body_replace_innovation_pdf_admin_innovations__innovation_id__pdf_post": {
+        "properties": {
+          "file": {
+            "type": "string",
+            "contentMediaType": "application/octet-stream",
+            "title": "File"
+          }
+        },
+        "type": "object",
+        "required": [
+          "file"
+        ],
+        "title": "Body_replace_innovation_pdf_admin_innovations__innovation_id__pdf_post"
+      },
       "ChallengeArea": {
         "type": "string",
         "enum": [
@@ -3072,6 +3343,11 @@
               }
             ],
             "title": "Notes"
+          },
+          "use_ai": {
+            "type": "boolean",
+            "title": "Use Ai",
+            "default": true
           }
         },
         "type": "object",
@@ -3079,7 +3355,7 @@
           "grant_call_id"
         ],
         "title": "GrantApplicationCreate",
-        "description": "Start AI draft (sections 1+3–9). Rest comes empty for the user to fill/edit."
+        "description": "Start draft (sections 1+3–9). Rest comes empty for the user to fill/edit."
       },
       "GrantApplicationStatus": {
         "type": "string",
@@ -4151,6 +4427,121 @@
             "type": "boolean",
             "title": "Has Pdf",
             "default": false
+          },
+          "tagline": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tagline"
+          },
+          "program": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Program"
+          },
+          "problem": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Problem"
+          },
+          "target_group": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Target Group"
+          },
+          "who_can_use": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Who Can Use"
+          },
+          "effectiveness": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Effectiveness"
+          },
+          "authors": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Authors",
+            "default": []
+          },
+          "photos": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Photos",
+            "default": []
+          },
+          "license_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "License Name"
+          },
+          "license_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "License Url"
+          },
+          "source_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Url"
           }
         },
         "type": "object",
@@ -4162,6 +4553,24 @@
           "status"
         ],
         "title": "LibraryInnovation"
+      },
+      "LikeState": {
+        "properties": {
+          "like_count": {
+            "type": "integer",
+            "title": "Like Count"
+          },
+          "liked": {
+            "type": "boolean",
+            "title": "Liked"
+          }
+        },
+        "type": "object",
+        "required": [
+          "like_count",
+          "liked"
+        ],
+        "title": "LikeState"
       },
       "LocationMatches": {
         "properties": {

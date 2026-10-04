@@ -1,0 +1,225 @@
+--- strona 1 ---
+
+1
+2.3 Raport z odlania 2 par końcowych protez
+estetycznych oraz ich specyfikacja techniczna
+Nazwa projektu:
+
+Cloudleg
+Data sporządzenia:
+31.03.2023
+Miejsce sporządzenia:
+Poznań
+Autor:
+
+Bartłomiej Stroiński
+
+--- strona 2 ---
+
+2
+Spis treści
+Wstęp
+3
+Przygotowanie magnesów spinających
+4
+Odlanie 2 par końcowych protez estetycznych
+5
+Post-obróbka odlewów sztucznych nóg
+9
+Próby ilościowe i proporcjonalne
+10
+Nieprzewidziane właściwości technologiczne
+11
+Podsumowanie
+13
+
+--- strona 3 ---
+
+3
+Wstęp
+Niniejszy raport zawiera materiał dokumentujący odlanie 2 par końcowych protez
+estetycznych w ramach testowania innowacji społecznej pn. „Cloudleg”, realizowanej
+w ramach projektu pn. „Inkubator Włączenia Społecznego” finansowanego ze środków
+Unii Europejskiej. Zadanie zostało zrealizowane w marcu 2023. Raport opisuje wykonanie
+produktu pochodnego głównego produktu innowacji. Wykonywany w raporcie produkt
+zamiennie w dokumentacji nazywany jest sztucznymi nogami, atrapami nóg, protezami
+kosmetycznymi nóg, protezami estetycznymi nóg i po wykonaniu w kolejnym zadaniu
+elementu trzymającego użytkownika z nim będzie używany przez 2 tygodnie przez testerki
+w celu sprawdzenia jego funkcjonalności i estetyki. Opisywany w tym raporcie produkt
+razem z elementem trzymającym, o ile nie jest głównym produktem innowacji jest
+produktem tytułowym i odpowiedzią na zapotrzebowanie grupy docelowej.
+Raport opisuje także techniczne wykonanie sztucznych nóg z pianki poliuretanowej.
+
+--- strona 4 ---
+
+4
+Przygotowanie magnesów spinających
+Aby sztuczne nogi były bardziej stabilne podczas użytkowania przez osobę z grupy docelowej
+innowacji będą spięte ze sobą magnesami umieszczonymi w przedniej części wewnętrznych
+ud każdej nogi w ten sposób, że magnesy będą skierowane do siebie przeciwnymi biegunami
+tak aby się przyciągały wzajemnie kiedy nogi są złączone a po złączeniu samych magnesów
+stabilnie i pewnie przylegały do siebie.
+Aby osiągnąć to zamierzenie stworzono 2 elementy z magnesem spinającym, do wykonania
+ich użyto 2 magnesów neodymowych w obudowie z tuleją, sprzedawanych z haczykiem.
+Wymiary każdej obudowy z magnesem to średnica 16mm, wysokość z tuleją 13mm,
+szerokość tulei 6mm, wysokość tulei 5mm, gwint wewnętrzny tulei M4, zastosowany magnes
+osadzony w obudowie NdFeB - N35 – neodymowy o udźwigu do 8 kg i sile przesunięcia
+1,5 kg.
+
+Zdjęcie 1. Para magnesów spinających po złożeniu, jeszcze przed zalaniem ich pianką podczas
+formowania sztucznej nogi.
+Z obu obudów zostały wykręcone haczyki, a z jednej tulei wyciągnięty magnes walcowy,
+obrócony biegunem na drugą stronę i tak umieszczony z powrotem na 2-składnikowy klej
+epoksydowy. W gwinty tulei obu obudów zostały przykręcone dwie śruby długości
+około 50mm zakończone przykręconym płaskownikiem około 75 x 15 x 1 mm.
+Tak przygotowane elementy spinające były gotowe do umieszczenia wewnątrz form przed
+odlaniem nogi. W taki sposób magnesy zostały później zalane przez piankę z odsłoniętą
+płaszczyzną przyciągającą. Łącznie przygotowano 2 pary takich elementów spinających.
+
+--- strona 5 ---
+
+5
+Odlanie 2 par końcowych protez estetycznych
+Uzyskana w poprzednim zadaniu negatywowa forma kompozytowa zbrojona prętami
+mosiężnymi została rozłożona. Na wewnętrzną powierzchnię każdej formy został nałożony
+pędzelkiem cienki film z oleju silikonowego. Olej ten został użyty w tym wypadku
+jako separator ułatwiający oddzielenie odlanych nóg z poliuretanu od silikonowej wyściółki
+formy negatywowej. Zabieg ten może być dokonywany zarówno przez nakładanie
+pędzelkiem jak i natryskiwanie sprayem.
+Następnie obie formy zostały skręcone śrubami i nakrętkami przechodzącymi
+przez wykonane dziurki w ściankach rozdzielających skorupy form.
+Forma została ustabilizowana na podłożu w celu przygotowania do odlewu, w taki sposób,
+żeby otwór wlotowy znajdował się na górze instalacji a palce stopy w jak najniższym
+położeniu względem całej formy. Za stabilizator ponownie doraźnie posłużyło krzesło
+ustawione nogami do góry.
+
+Zdjęcie 2. Ostateczna forma negatywowa przygotowana do wykonania odlewu sztucznej nogi
+Na wewnętrznej płaszczyźnie uda formy w miejscu wypłaszczenia przeznaczonego
+na magnes umieszczono element z magnesem spinającym który umocowano poprzez
+umieszczenie w tym samym miejscu po drugiej stronie ścianki formy walca silnego magnesu
+
+--- strona 6 ---
+
+6
+neodymowego. Stabilizacja nastąpiła poprzez przyciągnie magnetyczne tych dwóch
+elementów.
+
+Zdjęcie 3. Magnes spinający umieszczony w środku formy nogi, chwilę przed wlaniem pianki
+poliuretanowej do wewnątrz.
+Do odlania jednej nogi użyto 1500g piany poliuretanowej i 750g jej utwardzacza. Materiałem
+wsadowym była pianka tapicerska Flex 140 sprzedawana jako pianka plus utwardzacz
+w stosunku 2:1.
+
+Zdjęcie 4. Formowanie nogi poprzez wlanie do formy negatywowej pianki poliuretanowej.
+Po wymieszaniu 2 składników pianki oraz dodaniu barwnika całość wlano do ustabilizowanej
+formy, po kilkunastu sekundach zamknięto otwór wlotowy powierzchnią płaską sklejki
+laminowanej tak aby powstrzymać opór reagującej pianki rozrastającej się od dołu ku górze
+
+--- strona 7 ---
+
+7
+formy. Po około 2 minutach trzymania całą siłą ciężaru ludzkiego ciała otworu wlotowego,
+zdjęto skleję i pozostawiono formę do związania na około 1h.
+
+Zdjęcie 5. Kilkanaście sekund po wlaniu pianki, pianka prze rozrastając się do góry
+chcąc uwolnić się przez otwór. Na zdjęciu widoczne tamowanie otworu sklejką przez wykonawcę nóg.
+Po tym czasie przystąpiono do rozformowywania układu forma plus odlew poprzez
+rozdzielenie skorup. Otrzymaną sztuczną nogę poddano post-obróbce.
+Podobną procedurą wykonano drugą nogę w drugiej formie a następnie powtórzono cały
+proces tworząc kolejną parę nóg.
+
+--- strona 8 ---
+
+8
+
+Zdjęcie 6. Gotowa para nóg po odlaniu.
+
+--- strona 9 ---
+
+9
+Post-obróbka odlewów sztucznych nóg
+Otrzymane odlewy nóg miały rodzaj wystającego „szwu” wystającego z powierzchni,
+powstałego w miejscu styku skorup miękkich formy. Zostały one usunięte nożem
+introligatorskim, jednak nie przy samej powierzchni sztucznej nogi a około 0,5 mm powyżej,
+tak aby przypadkiem nie rozciąć gęstej powłoki pianki. Przez takie uszkodzenie pod
+wewnętrznym ciśnieniem protezy mogłaby zacząć się z czasem wydostawać pianka
+wewnętrzna mniejszej gęstości, podobnie jak się dzieje w rozciętym siodełkiem rowerowym.
+Pojawiły się także niepożądane artefakty w postaci gęstej pianki poliuretanowej w okolicy
+palców stóp sztucznej nogi. Zostały one usunięte ręczną szlifierką pneumatyczną.
+
+Zdjęcie 7. Usuwanie zbędnych pozostałości pianki poliuretanowej ze stopy
+sztucznej nogi poprzez frezowanie.
+
+--- strona 10 ---
+
+10
+Próby ilościowe i proporcjonalne
+Warto nadmienić, że większość procesów wymienionych powyżej była poprzedzona licznymi
+próbami, które miały doprowadzić wykonawcę zadania do ustalenia jakości, ilości i proporcji
+półproduktów. Opisywane działania metodą prób i błędów mają zawsze miejsce w procesach
+technologicznych, szczególnie podczas realizacji prototypów oraz serii testowych.
+Np. w wyniku niepowodzeń podczas pracy z pianką Flex 100 została on zmieniona
+na produkt o większej gęstości Flex 140. Prowadzono próby ilości pianki jaką należy wlać
+do formy ponieważ zbyt mała ilość nie kompresowała się wystarczająco wewnątrz formy
+powodując formowanie produktu ze znacznymi ubytkami. Z kolei zbyt duża ilość, mogłaby
+rozsadzić formę a w mniej drastycznej opcji uformować nogi zbyt twarde.
+
+Zdjęcie 8. Jedna z nieudanych nóg podczas uwalniania z formy, widać znaczne ubytki
+pianki na jej powierzchni.
+I wreszcie prowadzono poszukiwania idealnych proporcji barwnika, którego na około 2,5 kg
+pianki dodaje się w objętości zbliżonej do ziarna ryżu. Barwnik przed reakcją barwi piankę
+na inny kolor niż po zwiększeniu przez piankę swojej objętości po przereagowaniu.
+Dodatkowo wykonawca prac komponował kolor z 2-3 barw składowych barwnika. Efekty
+
+--- strona 11 ---
+
+11
+były tak niestabilne, i za każdym razem tak odmiennie, że autor innowacji nie mógł
+ich usystematyzować w opisie a co, za tym idzie opisać instrukcji jak przeprowadzić
+barwienie sztucznych nóg. Zostały użyte barwniki BesColor Żółty 25g
+i BesColor Brązowy 25g oraz kilka innych barwników nieokreślonych będących w posiadaniu
+artysty.
+W przyszłości w celu ustalenia procedury barwienia nóg należałoby przeprowadzić
+kilkadziesiąt prób mieszania kolorów wliczając w to reakcje pianki. Próby takie będą
+kosztowne i czasochłonne.
+Nieprzewidziane właściwości technologiczne
+W procesie odlewania nóg pojawiły się ich właściwości, które nie zostały przewidziane przez
+autora, źródła wiedzy oraz respondentów, od których czerpał wiedzę podczas zbierania
+informacji niezbędnych do napisania specyfikacji innowacji. Do nieprzewidzianych
+właściwości należy kolor sztucznych, który jest niestabilny w uzyskaniu, a także
+wg subiektywnych opinii testerek daleki od oczekiwanego. Problem ten został opisany
+szczegółowo w poprzednim rozdziale.
+Kolejną nieprzewidzianą właściwością, są szwy technologiczne pojawiające się na sztucznych
+nogach w miejscu styku miękkich części formy. Szwy te nie były możliwe całkowicie
+do wyeliminowania na etapie tworzenia formy negatywowej jak i w post-obróbce.
+
+--- strona 12 ---
+
+12
+
+Zdjęcie 9. Szwy widoczne na powierzchni sztucznych nóg.
+Z badania materii przedmiotu ex-post a także z rozmowy z wykonawcą opisanych działań
+(także ex-post) można wyciągnąć wnioski, że aby uniknąć szwów w przyszłości należałoby
+wykonać miękką część formy negatywowej z większej twardości silikonu formierskiego oraz
+zastosować większą ilość kluczy w postaci pasków silikonowych przy formowaniu powłoki
+silikonowej formy negatywowej. Jednak znalezienie tej twardości silikonu oraz ilości i układu
+kluczy należałoby dochodzić także licznymi, czasochłonnymi i kosztownymi metodami prób
+i błędów. Należy także zaznaczyć, że wiele przedmiotów wokół nas wyprodukowanych
+metodami przemysłowymi posiada szwy i nie są one do wyeliminowania w 100%. Niewielkie
+szwy można znaleźć na szklankach, butelkach czy silikonowych obudowach do smartfonów,
+dlatego w przypadku sztucznych nóg w przypadku ewentualnym prowadzeniu prac
+rozwojowych, autor chciałby doprowadzić do jak największej minimalizacji tych szwów.
+
+--- strona 13 ---
+
+13
+Podsumowanie
+W opisanych powyżej procesach otrzymano 2 pary naturalnej wielkości nóg ludzkich
+o fakturze skóry i sprężystości bardzo zbliżonej do ludzkiego ciała. Produkty
+po skompletowaniu z elementami trzymającymi uzyskanymi w kolejnym zadaniu
+były gotowe do przekazania ich testerkom.
+
+Zdjęcie 10. Widoczna powierzchnia magnesu spinającego
+w okolicach kolana, reszta przedmiotu zalana jest wewnątrz nogi.
+
+https://creativecommons.org/licenses/by/4.0/deed.pl

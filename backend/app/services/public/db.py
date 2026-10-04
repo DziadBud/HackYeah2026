@@ -1,13 +1,16 @@
 # postponed annotations: the services define list(), which shadows the builtin in later hints
 from __future__ import annotations
 
-from sqlalchemy import func, select, update
+import uuid
+
+from sqlalchemy import delete, func, select, update
+from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.orm import Session
 
 from app.clients.gemini import GeminiClient
 from app.db.models import Feedback, GeneratedDocument as DocumentRow, GrantCall as GrantCallRow
 from app.db.models import GrantApplication as GrantApplicationRow
-from app.db.models import Idea as IdeaRow, Innovation as InnovationRow
+from app.db.models import Idea as IdeaRow, Innovation as InnovationRow, InnovationLike, InnovationProfile
 from app.db.models import ProblemReport as ProblemReportRow, TestSignup, Thread as ThreadRow
 from app.db.models import ThreadReply
 from app.schemas.admin.common import ChallengeArea, Page
@@ -34,6 +37,7 @@ from app.schemas.public.innovations import (
     LibraryInnovation,
     TestSignupCreate,
     TestSignupCreated,
+    LikeState,
 )
 from app.schemas.public.match import (
     MatchedInnovation,
@@ -349,9 +353,10 @@ class DbLibraryService:
             query = query.where(InnovationRow.title.ilike(f"%{q}%") | InnovationRow.summary.ilike(f"%{q}%"))
         total = self._db.scalar(select(func.count()).select_from(query.subquery())) or 0
         rows = self._db.scalars(query.order_by(InnovationRow.title).limit(limit).offset(offset)).all()
-        ratings = self._ratings([r.id for r in rows])
+        ids = [r.id for r in rows]
+        ratings, profiles = self._ratings(ids), self._profiles(ids)
         return Page(
-            items=[self._card(innovation_to_schema(r), ratings) for r in rows],
+            items=[self._card(innovation_to_schema(r), ratings, profiles) for r in rows],
             total=total,
             limit=limit,
             offset=offset,
@@ -359,7 +364,7 @@ class DbLibraryService:
 
     def get(self, innovation_id: str) -> LibraryInnovation:
         row = _published(self._db, innovation_id)
-        return self._card(innovation_to_schema(row), self._ratings([row.id]))
+        return self._card(innovation_to_schema(row), self._ratings([row.id]), self._profiles([row.id]))
 
     def add_feedback(self, innovation_id: str, data: FeedbackCreate) -> FeedbackCreated:
         _published(self._db, innovation_id)
@@ -387,6 +392,40 @@ class DbLibraryService:
         self._db.commit()
         return TestSignupCreated(id=str(row.id), status=TestSignupStatus(row.status))
 
+
+    def likes(self, innovation_id: str, client_id: str | None) -> LikeState:
+        _published(self._db, innovation_id)
+        return self._like_state(innovation_id, client_id)
+
+    def set_like(self, innovation_id: str, client_id: str, liked: bool) -> LikeState:
+        _published(self._db, innovation_id)
+        client = uuid.UUID(client_id)
+        if liked:
+            # double clicks and two tabs hit the primary key; keep the one row
+            self._db.execute(
+                insert(InnovationLike)
+                .values(innovation_id=innovation_id, client_id=client)
+                .on_conflict_do_nothing()
+            )
+        else:
+            self._db.execute(
+                delete(InnovationLike).where(
+                    InnovationLike.innovation_id == innovation_id,
+                    InnovationLike.client_id == client,
+                )
+            )
+        self._db.commit()
+        return self._like_state(innovation_id, client_id)
+
+    def _like_state(self, innovation_id: str, client_id: str | None) -> LikeState:
+        count = self._db.scalar(
+            select(func.count()).where(InnovationLike.innovation_id == innovation_id)
+        ) or 0
+        liked = client_id is not None and (
+            self._db.get(InnovationLike, (innovation_id, uuid.UUID(client_id))) is not None
+        )
+        return LikeState(like_count=count, liked=liked)
+
     def _ratings(self, innovation_ids: list[str]) -> dict[str, tuple[float, int]]:
         if not innovation_ids:
             return {}
@@ -397,10 +436,38 @@ class DbLibraryService:
         ).all()
         return {innovation_id: (float(avg), n) for innovation_id, avg, n in rows}
 
+    def _profiles(self, innovation_ids: list[str]) -> dict[str, InnovationProfile]:
+        if not innovation_ids:
+            return {}
+        rows = self._db.scalars(select(InnovationProfile).where(InnovationProfile.innovation_id.in_(innovation_ids)))
+        return {r.innovation_id: r for r in rows}
+
     @staticmethod
-    def _card(innovation: Innovation, ratings: dict[str, tuple[float, int]]) -> LibraryInnovation:
+    def _card(
+        innovation: Innovation,
+        ratings: dict[str, tuple[float, int]],
+        profiles: dict[str, InnovationProfile],
+    ) -> LibraryInnovation:
         avg, count = ratings.get(innovation.id, (None, 0))
-        return LibraryInnovation(**innovation.model_dump(), rating_avg=avg, rating_count=count)
+        p = profiles.get(innovation.id)
+        extra = (
+            {
+                "tagline": p.tagline,
+                "program": p.program,
+                "problem": p.problem,
+                "target_group": p.target_group,
+                "who_can_use": p.who_can_use,
+                "effectiveness": p.effectiveness,
+                "authors": list(p.authors or []),
+                "photos": list(p.photos or []),
+                "license_name": p.license_name,
+                "license_url": p.license_url,
+                "source_url": p.source_url,
+            }
+            if p
+            else {}
+        )
+        return LibraryInnovation(**innovation.model_dump(), rating_avg=avg, rating_count=count, **extra)
 
 
 class DbThreadService:

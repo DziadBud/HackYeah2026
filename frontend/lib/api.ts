@@ -106,12 +106,33 @@ export interface SupportResponse {
   support_count: number;
 }
 
+// anonymous likes: client_id is a random uuid the browser keeps, one like per browser
+export interface LikeState {
+  like_count: number;
+  liked: boolean;
+}
+
 // GET /innovations and /innovations/{id} serve published innovations only
-export interface LibraryInnovation extends AdminInnovation {
+// the mock-only problem / target_group of AdminInnovation are replaced by the profile texts
+export interface LibraryInnovation extends Omit<AdminInnovation, "problem" | "target_group"> {
   rating_avg: number | null;
   rating_count: number;
   // only the detail endpoint fills it; true when innovationPdfUrl serves the source pdf
   has_pdf?: boolean;
+  // description sections (innovation_profiles); empty for innovations without one
+  tagline: string | null;
+  program: string | null;
+  problem: string | null;
+  target_group: string | null;
+  who_can_use: string | null;
+  effectiveness: string | null;
+  authors: string[];
+  // file names for innovationPhotoUrl, the first one is the cover
+  photos: string[];
+  license_name: string | null;
+  license_url: string | null;
+  // the innovation's page in the ROPS library
+  source_url: string | null;
 }
 
 export type ModerationStatus = "pending" | "published" | "hidden";
@@ -296,7 +317,15 @@ export const api = {
     ),
   innovation: (id: string) =>
     request<LibraryInnovation>(`/innovations/${enc(id)}`),
+  // a download (content-disposition: attachment), not a viewer page
   innovationPdfUrl: (id: string) => `${API_URL}/innovations/${enc(id)}/pdf`,
+  innovationPhotoUrl: (id: string, name: string) => `${API_URL}/innovations/${enc(id)}/photos/${enc(name)}`,
+  likes: (innovationId: string, clientId: string) =>
+    request<LikeState>(`/innovations/${enc(innovationId)}/likes?client_id=${enc(clientId)}`),
+  setLike: (innovationId: string, clientId: string, liked: boolean) =>
+    request<LikeState>(`/innovations/${enc(innovationId)}/likes/${enc(clientId)}`, {
+      method: liked ? "PUT" : "DELETE",
+    }),
   threads: (innovationId: string) =>
     request<Thread[]>(`/innovations/${enc(innovationId)}/threads`),
   createThread: (innovationId: string, body: ThreadCreate) =>
@@ -573,6 +602,11 @@ export const adminApi = {
       method: "PATCH",
       body: JSON.stringify(body),
     }),
+  replaceInnovationPdf: (id: string, file: File) => {
+    const form = new FormData();
+    form.append("file", file);
+    return request<InnovationUploaded>(`/admin/innovations/${enc(id)}/pdf`, { method: "POST", body: form });
+  },
   setInnovationPublished: (id: string, published: boolean) =>
     post<AdminInnovation>(
       `/admin/innovations/${enc(id)}/${published ? "publish" : "unpublish"}`,

@@ -1,0 +1,993 @@
+--- strona 1 ---
+
+Model końcowy innowacji społecznej pn. „Kaski
+binauralne – Sztuczna Głowa”
+Tomasz Koźmiński
+
+--- strona 2 ---
+
+Spis treści
+O projekcie .............................................................................................................. 4
+Przedmiot innowacji ............................................................................................. 4
+Cele i założenia projektu ...................................................................................... 6
+Proponowana grupa odbiorców ........................................................................... 6
+ETAP PRZYGOTOWAWCZY.................................................................................. 6
+Wstępne badanie fokusowe ................................................................................. 6
+Przedmiot badania ............................................................................................... 7
+Przebieg badań fokusowych wstępnych .............................................................. 7
+Agenda badań fokusowych .................................................................................. 7
+Uczestnicy badania .............................................................................................. 8
+Ankieta dotycząca projektu pn. Kaski Binauralne „Sztuczna głowa” ...................... 8
+Lista wywołanych dziedzin życia, których powinny objąć nagrania .................... 11
+Charakterystyka i opinie osób biorących udział w badaniu fokusowym ............. 14
+Opinia i wnioski eksperta ....................................................................................... 16
+Pani Katarzyna Kasprzyk ................................................................................... 16
+Pani Lucyna Zalewska ....................................................................................... 17
+Sugestie i opinie osób badanych w aspekcie technicznym ................................ 18
+ETAP TESTOWANIA ............................................................................................ 19
+Stworzenie prototypów kasków .......................................................................... 19
+KASK ................................................................................................................. 20
+.............................................................................................................................. 21
+MODEL: ............................................................................................................. 22
+Wymiary: ............................................................................................................ 22
+Waga: ................................................................................................................. 22
+CHARAKTERYSTYKA ....................................................................................... 22
+Wnętrze kasku: .................................................................................................. 23
+Wentylacja: ........................................................................................................ 23
+Wyciemnienie: .................................................................................................... 24
+System audio: .................................................................................................... 25
+Instrukcja zakładania i zdejmowania kasku ........................................................ 26
+Wykonanie nagrań binauralnych ........................................................................... 27
+Zrealizowanie testu kasków binauralnych ............................................................. 28
+
+--- strona 3 ---
+
+Formuła przeprowadzenia badań - testów kasku: .............................................. 28
+Ankieta ewaluacyjna .......................................................................................... 29
+W badaniu udział wzięli: ..................................................................................... 32
+Ankieta po przeprowadzonym badaniu odsłuchowym ....................................... 33
+Opinie na temat udziału lektora w wykorzystywanych nagraniach ..................... 34
+PODSUMOWANIE ETAPU TESTOWANIA PRZEZ OSOBY TESTUJĄCE .......... 35
+PODSUMOWANIE PROJEKTU ............................................................................ 36
+
+--- strona 4 ---
+
+O projekcie
+Projekt pt. „Kaski binauralne - Sztuczna Głowa” ma na celu stworzenie urządzenia
+przyspieszającego rehabilitację oraz podnoszącego jakość życia codziennego dla
+osób, które niedawno utraciły lub w niedalekim czasie utracą wzrok. Obecnie na
+Polskim rynku brak urządzenia o tożsamych właściwościach. Proponowane
+urządzenie wykazuje się innowacyjnością również pod postacią zastosowania go, w
+formie rehabilitacji jeszcze przed momentem faktycznej utraty wzroku, przyspieszając
+proces adaptacji do zmian i wspiera użytkownika w procesie jej akceptacji.
+Przedmiot innowacji
+Przedmiotem innowacji jest idea stworzenia całkowicie zaciemnionych kasków
+zawierających słuchawki stereofoniczne, odtwarzacz MP3 oraz czytnik kart SD. Po
+nałożeniu ich na głowę, użytkownik będzie odsłuchiwał wcześniej przygotowane
+nagrania binauralne (z łac. bi – podwójny, auris – ucho), które dzięki specjalnej
+technice nagrywania dźwięku za pomocą dwóch mikrofonów umożliwią słuchaczowi
+precyzyjną lokalizację w przestrzeni zarejestrowanych sygnałów akustycznych i tym
+samym stwarzają dźwiękową iluzję przebywania w miejscu, w którym dokonywano
+nagrania.
+Kaski tworzone będą na bazie tzw. „Sztucznej głowy”. „Sztuczna głowa” składa się z
+makiety głowy z małżowinami usznymi, wewnątrz których – w miejscach gdzie
+znajdują się błony bębenkowe lub na wejściu do kanału słuchowego – umieszczone
+są wysokiej klasy mikrofony pojemnościowe. Mikrofony te rejestrują dokładnie taki
+sam dźwięk, jaki docierałby do uszu słuchacza, gdyby znajdował się on w miejscu, w
+którym umieszczona jest sztuczna głowa. Urządzenie odtwarzające wyposażone w
+słuchawki pozwala na realistyczną i precyzyjną symulację (lub odtworzenie)
+dźwięków pochodzących z otoczenia słuchacza.
+Nagrywanie binauralne (z łac. bi – podwójny, auris – ucho) – technika nagrywania
+dźwięku za pomocą dwóch mikrofonów, umożliwiająca słuchaczowi precyzyjną
+lokalizację w przestrzeni zarejestrowanych sygnałów akustycznych i tym samym
+stwarzająca dźwiękową iluzję przebywania w miejscu, w którym dokonywano
+
+--- strona 5 ---
+
+nagrania. Bywa mylona ze stereofonią. W celu osiągnięcia pożądanego rezultatu, w
+nagraniach stosuje się najczęściej tzw. „sztuczną głowę” bądź mikrofony douszne.
+Kask będzie wyposażony w panel sterowania z wyczuwalnymi przyciskami dla osób
+z niepełnosprawnością wzroku. Produkt „Kaski binauralne – Sztuczna Głowa” ze
+względu na prostotę i mobilność będzie dostępny dla każdego i w każdym miejscu tj.
+w szpitalu, w domu, w biurze. Prostota, mobilność i niski koszt rozwiązania pozwala
+na dotarcie do szerokiej grupy docelowej na terenie kraju jak i reszty świata.
+Stworzenie kolejnej liczby prototypów pozwoli na dotarcie do najmniejszych
+miejscowości przy niskim nakładzie finansowym.
+Ważnym aspektem w tym projekcie jest rozróżnienie osoby niewidomej, osoby
+ociemniałej oraz osoby słabowidzącej. Próba zróżnicowania podstawowych grup
+osób z uszkodzonym wzrokiem (niewidomi, niedowidzący i ociemniali) ma znaczenie
+w realizacji celów i treści rewalidacji.
+Poniżej zamieszczone zostaną definicje poszczególnych osób z
+niepełnosprawnościom wzroku dla lepszego zobrazowania tematu.
+Zgodnie z ogólnie przyjętymi definicjami osobą niewidomą jest osoba, która
+całkowicie nie widzi od urodzenia (nie odbiera żadnych bodźców wzrokowych) i ta,
+która ma tzw. poczucie światła (zauważa światło i jego brak, czasem lokalizuje źródło
+światła), jak również i ta, której możliwości wzrokowe pozwalają na zauważenie
+ruchu ręki przed okiem, a nawet policzenie palców. Niewidomą jest także osoba, u
+której pole widzenia (mimo dobrej ostrości wzroku), ograniczone do niewielkiego
+obszaru powoduje, że główną techniką funkcjonowania będzie technika
+bezwzrokowa.
+Człowiek niewidomy a ociemniały – definicja uwzględniająca czas utraty wzroku
+Jednym z kryteriów klasyfikacji niewidzenia jest czas uszkodzenia wzroku, dzięki
+któremu istnieje wyraźne rozróżnienie pojęć niewidomy i ociemniały. Jako ociemniałą
+określa się osobę która straciła wzrok po 5. roku życia i pamięta obrazy wzrokowe.
+Niewidomym jest człowiek, który nie widzi od urodzenia lub stracił wzrok przed 5.
+rokiem życia.
+
+--- strona 6 ---
+
+Osoba słabowidząca to osoba, która mimo okularów korekcyjnych ma trudności z
+wykonywaniem czynności wzrokowych, ale która może poprawić swoją zdolność
+wykonywania tych czynności poprzez wykorzystanie wzrokowych metod
+kompensacyjnych, pomocy ułatwiających widzenie i innych pomocy rehabilitacyjnych
+oraz poprzez dostosowanie środowiska fizycznego.
+Cele i założenia projektu
+Stworzona innowacja – kaski wraz z nagraniami mają wspomóc rehabilitację osób,
+które świeżo utraciły lub w niedługim czasie utracą wzrok.
+Proponowana grupa odbiorców
+Innowacja skierowana jest głównie do osób które niedawno utraciły wzrok bądź w
+najbliższej przyszłości go utracą, ale także do osób pełnosprawnych którym autor
+projektu chce pokazać świat z perspektywy osoby z niepełnosprawnością wzroku
+celem poszerzenia wiedzy i uświadomienia o wyżej wymienionej
+niepełnosprawności.
+ETAP PRZYGOTOWAWCZY
+Wstępne badanie fokusowe
+Uczestnikami badań fokusowych były osoby, które: niedawno utraciły wzrok, w
+najbliższej przyszłości go utracą oraz osoby pełnosprawne, którym autorzy projektu
+chcą pokazać świat z perspektywy osoby z niepełnosprawnością wzroku.
+Celem badania było:
+ zebranie danych o potrzebach osób z niepełnosprawnościom wzroku, które
+pozwolą na stworzenie prototypów kasków binauralnych, stworzenie listy
+rozwiązań technicznych i sprofilowanie użytkowników,
+ uzyskanie informacji o poziomie wiedzy na temat binauralności i podejściu
+środowiska osób z niepełnosprawnością wzroku do rehabilitacji osób
+tracących wzrok lub takich które utraciły wzrok w niedalekiej przeszłości za
+pomocą nagrań binauralnych,
+
+--- strona 7 ---
+
+ jak użycie kasku binaurlnego może wpłynąć na poprawę życia codziennego
+osób z niepełnosprawnościom wzroku.
+Przedmiot badania
+Nagrywanie binauralne (z łac. bi – podwójny, auris – ucho) – technika nagrywania
+dźwięku za pomocą dwóch mikrofonów, umożliwiająca słuchaczowi precyzyjną
+lokalizację w przestrzeni zarejestrowanych sygnałów akustycznych i tym samym
+stwarzająca dźwiękową iluzję przebywania w miejscu, w którym dokonywano
+nagrania. Bywa mylona ze stereofonią. W celu osiągnięcia pożądanego rezultatu, w
+nagraniach stosuje się najczęściej tzw. „sztuczną głowę” bądź mikrofony douszne
+„Sztuczna głowa” składa się z makiety głowy z małżowinami usznymi, wewnątrz
+których – w miejscach gdzie znajdują się błony bębenkowe lub na wejściu do kanału
+słuchowego – umieszczone są wysokiej klasy mikrofony pojemnościowe. Mikrofony
+te rejestrują dokładnie taki sam dźwięk, jaki docierałby do uszu słuchacza, gdyby
+znajdował się on w miejscu, w którym umieszczona jest sztuczna głowa.
+Urządzenie odtwarzające wyposażone w słuchawki pozwala na realistyczną i
+precyzyjną symulację (lub odtworzenie) dźwięków pochodzących z otoczenia
+słuchacza.
+Przebieg badań fokusowych wstępnych
+W trakcie trwania badania fokusowego wstępnego uczestnicy poznają koncepcję
+kasku binauralnego oraz zostaną odtworzone robocze nagrania imitujące różne
+sytuacje z życia codziennego. Badania te miały charakter informacyjno-poglądowy .
+Agenda badań fokusowych
+ prezentacja słowna projektu, informacja o finansowaniu projektu,
+ wypełnienie ankiety ogólnej,
+ pokazanie próbek nagrań binauralnych,
+ dyskusja i wyrażenie opinii osób badanych i ekspertów na temat założeń
+projektu oraz przedmiotu badanego.
+
+--- strona 8 ---
+
+Wstępne spotkanie dotyczące badań fokusowych nad projektem odbyło się 21
+stycznia 2021 roku w Centrum Szkolno -Wychowawczym w Krakowie przy ul.
+Tyniecka 6. Mieści się tam szkoła dla dzieci i młodzieży z niepełnosprawnością
+wzroku.
+Uczestnicy badania
+ Pani Katarzyna Kasprzyk - ekspert terapii widzenia, pracownik Centrum
+Szkolno–Wychowawczego dla niewidomych i słabowidzących w Krakowie na ul.
+Tynieckiej 6, osoba z 25 letnim doświadczeniem zawodowym,
+ Pani Lucyna Zalewska - ekspert instruktor orientacji w przestrzeni,
+ Pan Tomasz Koźmiński - grantobiorca, autor projektu innowacji,
+ 4 osoby z niepełnosprawnością wzroku. 2 osoby słabowidzące, 1 osoba
+niewidoma, 1 osoba bardzo niedowidząca.
+Na początku spotkania Pan Tomasz Koźmiński zapoznał uczestników z założeniami
+projektu innowacyjnego jakie cele chce osiągnąć po przeprowadzeniu badania
+fokusowego. Badani zostali poproszeni o podpisanie listy obecności oraz o
+wypełnienie ankiety ogólnej. Wzór ankiety umieszczony jest poniżej.
+Drugie spotkanie z wytypowanymi uczestnikami miało charakter indywidualny
+również ze względu na czas pandemii. Część uczestników wyraziła wątpliwość że
+nie chcą uczestniczyć w badaniu w grupie ze względu na ryzyko zachorowania na
+Covid 19. W związku z tym badania miały charakter indywidualny – spotkania
+jednego uczestnika z prowadzącym badania dla zachowania wszelkiej ostrożności i
+komfortu uczestników badania.
+Ankieta dotycząca projektu pn. Kaski Binauralne „Sztuczna
+głowa”
+Proszę zaznaczyć właściwą odpowiedź:
+1. Czy jesteś osobą:
+a) niewidomą
+b) Ociemniałą do 15 roku życia
+c) Ociemniałą po 15 roku życia
+
+--- strona 9 ---
+
+d) Niewidomą
+e) Głuchoniewidomą
+f) Niedowidzącą
+2. Czy jesteś osobą w wieku do 40 lat:
+a) TAK
+b) NIE
+3. Płeć:
+a) kobieta
+b) mężczyzna
+c) inna
+4. Czy znany jest Ci temat Binauralności?
+a) TAK
+b) NIE
+5. Czy uważasz że nagrania binauralne mogą wesprzeć rehabilitację osób
+tracących wzrok lub takich które utraciły wzrok w niedalekiej przeszłości?
+a) TAK
+b) NIE
+Jakie dziedziny życia powinny być uwzględnione w nagraniach binauralnych?
+(Można zaznaczyć więcej niż jedną odpowiedź)
+ w domu ( w pomieszczeniach domowych tj. czynności kuchenne, prace
+domowe)
+ poruszanie się samodzielne osoby z niepełnosprawnością wzroku
+ poruszanie się samodzielne osoby niewidomej przy asyście psa przewodnika
+ poruszanie się komunikacją miejską
+ turystyka przyrodniczo krajoznawcza
+ turystyka miejska
+ zakupy sklepy mało i wielkopowierzchniowe
+ sport
+ Praca
+
+--- strona 10 ---
+
+ hobby
+ inne jakie:
+Kolejnym etapem badania było odsłuchanie przez wszystkich uczestników badania
+próbek nagrań binauralnych znalezionych w Internecie aby pokazać im na czym
+polega binauralność i jakie może być jej zastosowanie w rehabilitacji.
+Każdy z uczestników badania deklarował, że posiada wiedzę na temat nagrań
+binauralnych. W przeważającej większości osoby słyszały takie nagrania, a jeden z
+uczestników nawet nagrania takie tworzył. Wiedza o binauralności była duża ale po
+odsłuchaniu przygotowanych nagrań testowych okazało się, że w przeważającej
+większości jest to wiedza teoretyczna. Po przesłuchaniu wyżej wymienionych próbek
+i nagrań rozpoczęto dyskusje.
+Po odsłuchaniu próbek nagrań binauralnych uczestnicy badania przedyskutowali
+temat ich pożyteczności w rehabilitacji osób świeżo ociemniałych lub takich, które w
+bliskiej przyszłości wzrok utracą. Oto wnioski i sugestie po dyskusji:
+a) Grupa praktycznie jednogłośnie stwierdziła zasadność projektu mając jedynie
+uwagi co do grupy odbiorców. Według uczestników grupą odbiorców przede
+wszystkim powinny być osoby pełnosprawne, gdzie taki system „unauszni” im
+jak wygląda życie osoby z niepełnosprawnością wzroku oraz dzieci aby mogły
+nazywać dźwięki które je otaczają. Chodzi szczególnie o dzieci niewidome od
+urodzenia,Badani uznali że takie wsparcie dla osób nowoociemniałych lub
+takich które niebawem wzrok utracą jest skuteczne i potrzebne. Obecnie
+osoby nowoociemniałe nie mają wsparcia ze strony takich instytucji jak NFZ
+czy PZN w odnalezieniu się w „nowej rzeczywistości” jaką jest utrata jednego
+jakże ważnego zmysłu.
+b) Stworzono listę jakie dziedziny życia powinny być ujęte w nagraniach
+binauralnych prezentowanych podczas wyżej wymienionej rehabilitacji.
+
+--- strona 11 ---
+
+Lista wywołanych dziedzin życia, których powinny objąć nagrania
+Transport
+Jeśli chodzi o transport to w przypadku dużego miasta oczywiście trzeba zawrzeć w
+nagraniach takie kwestie jak:
+ transport tramwajowy
+ transport autobusowy
+ kolej podmiejska
+ metro
+ pociąg
+ autobus
+ pieszo ( samodzielne poruszanie się)
+W tej dziedzinie badani zwrócili uwagę , że nagrania powinny zawierać różne
+natężenie ruchu szczególnie w transporcie miejskim. . Inne dźwięki są w dużym
+mieście, inne w miasteczku a jeszcze inne na wsi.
+Samodzielne poruszanie się
+W przypadku samodzielnego poruszania się czy to przy pomocy białej laski czy z
+psem przewodnikiem według badanych należy uwzględnić takie rzeczy jak:
+ poruszanie się samodzielne osoby przy pomocy białej laski
+ poruszanie się samodzielne z psem przewodnikiem
+ poruszanie się chodnikiem
+ skrzyżowanie z sygnalizacją dźwiękową i bez niej
+ skrzyżowanie z ruchem samochodowym, tramwajowym i autobusowym.
+ skrzyżowania wraz z przejściami podziemnymi
+ przesiadanie się z tramwaju np. na autobus
+Życie codzienne w domu
+Nagrania binauralne dotyczą prostych, podstawowych czynności życiowych takich
+jak:
+ zrobienie herbaty przy pomocy czujnika poziomu cieczy
+
+--- strona 12 ---
+
+ sprzątanie mieszkania przez osobę niewidomą
+ proste czynności kuchenne ( zrobienie śniadania czy ugotowanie obiadu)
+Turystyka
+a) turystyka krajoznawczo przyrodnicza:
+ w lesie
+ w parku
+ w pobliżu różnych cieków wodnych jak: stawy, jeziora, strumienie, rzeki
+b) turystyka miejska
+ spacer po mieście
+ zwiedzanie kościołów z ukazaniem ich walorów dźwiękowych
+ zwiedzanie muzeum
+c) miejsce pracy
+Według badanych jest to ważna część naszego życia i należy dążyć aby osoby z
+niepełnosprawnościami były czynne zawodowo i społecznie. Dźwięki w pracy mogą
+być monotonne, dlatego według uczestników nie należy przesadzać z ilością tych
+nagrań w przeciwieństwie do nagrań binauralnych z poruszania się czy transportu.
+Proponowali aby zaznaczyć i stworzyć nagrania z pracy biurowej, pracy masażysty
+itp. czyli miejsce gdzie najczęściej są zatrudniane osoby z niepełnosprawnościom
+wzroku.
+Sport i hobby
+ Uczestnicy zaproponowali stworzenie próbek binauralnych z dźwiękami:
+ strzelectwa laserowego
+ goalball
+ schowdowna
+ jazda konna
+ pływanie rowerem wodnym
+ jazda rowerem typu tandem
+Aspekt społeczno-rodzinny
+ rodzina na spacerze (rodzice wraz z dziećmi)
+
+--- strona 13 ---
+
+ zabawy z dziećmi w plenerze : gra w piłkę,
+ instytucję rozrywkowe tj. kulkolandia, ściana wspinaczkowa, park linowy
+Zakupy
+Jest to bardzo ważna sfera życia codziennego, która niestety osobom z
+niepełnosprawnościom wzroku sprawia wiele kłopotów. Uczestnicy stwierdzili, że
+nagrania powinny pochodzić z takich placówek handlowych jak:
+ małe sklepy osiedlowe
+ sklepy mało i wielko powierzchniowe
+ drogeria
+ apteka
+Rozrywka i kultura
+Kolejną propozycją wynikającą z dyskusji były nagrania z restauracji, pubów. Były
+osoby, które sugerowały nagrania z kina, teatru bo niestety osoby ociemniałe, które
+prowadziły aktywny tryb życia, nie chcą rezygnować z oferty kulturalnej.
+Otoczenie domowe
+Uczestnicy uzasadniali włączenie nagrań z tej dziedziny życia tym, iż największą
+barierą po utracie wzroku jest bariera progu domu. Własny dom znamy bardzo
+dobrze - rozłożenie pomieszczeń czy dźwięki, chociaż będąc osobami widzącymi
+wcale nie zwracamy na to uwagi.
+W momencie utraty wzroku i orientacji przestrzennej ten dom staje się poniekąd
+obcy, musimy nauczyć się go od nowa.
+Uczestnicy zaproponowali także coś dla dzieci i młodzieży, którzy mogą także być
+odbiorcami takiego projektu. Mieli na myśli przede wszystkim zabawy, a także
+nauczanie szkolne skierowane do dziecka z niepełnosprawnością wzroku.
+Badani zaproponowali także stworzenie nagrań, które będą miały charakter
+relaksacyjny, gdyż podczas odsłuchu nagrań trwających np. 30 min słuch będzie
+narażony na dużo bodźców i należy w pewnym momencie włączyć takie nagranie.
+
+--- strona 14 ---
+
+Uczestnicy podkreślali aby to nagranie miało również charakter binauralny, ale miało
+właśnie charakter relaksacyjny i odprężający.
+Jak widzimy lista dziedzin zaproponowana przez uczestników badań fokusowych jest
+bardzo długa. Są one wynikiem dyskusji i „burzy mózgu”, ale przede wszystkim
+wynikiem indywidualnych potrzeb poszczególnych badanych. czyli autorzy projektu
+osiągnęli założony cel badań. Na pewno realizatorzy projektu wezmą wszystkie
+sugestie bardzo poważnie aby stworzyć jak najbardziej komfortową i przydatną w
+życiu codzienny innowację techniczną jaką jest kask binauralny.
+Charakterystyka i opinie osób biorących udział w badaniu
+fokusowym
+Uczestnikami badania grupowego są pracownicy Centrum dla osób niewidomych i
+niedowidzących w Krakowie na ul. Tynieckiej 6. Doświadczenie tych osób jest bardzo
+istotne ze względu na stałą pracę z osobami które tracą wzrok lub go w niedalekiej
+przeszłości utraciły.
+ Osoba niewidoma to nauczycielka Alfabetu Brajla. Bardzo podobała jej się
+taka forma rehabilitacji. Podkreślała, że praktyczny aspekt nauki osób poprzez
+dźwięki jest bardzo dobry i ciekawy.
+ Kolejna osoba to nauczyciel muzyki czyli osoba która zna się na kwestii
+dźwięku. Z racji wykonywanej pracy osoba ta kładła duży nacisk na jakości
+nagrań, bez przekłamań dźwiękowych, mają jak najbardziej i najwierniej
+oddawać rzeczywistość.
+ Dwie osoby to uczennice tejże szkoły. Jedna z uczestników była osobą
+niewidomą, druga osobą bardzo słabo widzącą. Obie jednak samodzielnie się
+poruszają. Uczestnikami indywidualnymi części badań były osoby z
+niepełnosprawnością wzroku. Stopień widzenia był zróżnicowany, dlatego ich
+opinie są bardzo wartościowe dla realizacji projektu.
+ Kobieta po 40 roku życia, osoba słabowidząca, mająca duże problemy w
+poruszaniu się szczególnie w porach wieczornych czy nocnych, osoba
+aktywna zawodowo. Pani była zainteresowana tą formą nagrań. Potwierdziła,
+że jako osoba słabowidząca, była zaskoczona jakością prezentowanych
+
+--- strona 15 ---
+
+podczas badania nagrań, oraz że udział w badaniu pokazał jej inne spojrzenie
+na świat osób niewidomych.
+ Mężczyzna - osoba ociemniała, bardzo dobrze zrehabilitowana, samodzielnie
+się poruszający, jest aktywny zawodowo, pracuje jako tyfloinformatyk w jednej
+z organizacji pozarządowych. Pan w dyskusji mocno naciskał na aspekt
+samodzielnego poruszania się osób z niepełnosprawnością wzroku. Sam jest
+mieszkańcem dużego miasta i dla niego każdy dzień to nowe wyzwania w
+kwestii poruszania się. Zwracał także uwagę na inne aspekty życia tj.
+turystyka, sport czy hobby.
+ Kobieta, osoba niewidoma od urodzenia, mama dwójki synów osoba przed 40
+rokiem życia. Pani jest osobą czynną zawodowo pracuje jako masażystka na
+otwartym rynku pracy. Dla niej podczas rozmowy o nagraniach ważny był
+aspekt sportu, gdyż do niedawna była czynnym sportowcem. Zwracała także
+uwagę na nagrania przedstawiające codzienność. Takie proste sprawy jak
+zakupy w sklepach mało i wielkopowierzchniowych, zabawa z dziećmi czy
+wspólne, rodzinne wyjście na plac zabaw czy spacer.
+ Kobieta, osoba po 60 roku życia, tracąca wzrok. Obecnie widząca bardzo
+słabo, poruszająca się przy pomocy białej laski. Do niedawna była osobą
+czynną zawodowo, nadal jednak jest osobą bardzo aktywną, biorącą czynny
+udział w życiu rodzinnym, wspierająca dzieci w wychowaniu wnuków. Badana
+stale się uczy, przeszła kurs orientacji w przestrzeni i ciągle się dokształca
+chociażby w sprawach informatycznych. Dla Pani ważne było w tych
+nagraniach ich różnorodność. Nagrania przedstawiające sprawy ważne jak
+transport, praca, poruszanie się ale także sport, hobby czy turystyka. Pani
+podkreślała także sprawę nagrań przedstawiających dostępną kulturę. Czy to
+filmy czy sztuki teatralne przygotowane specjalnie dla osób z
+niepełnosprawnością wzroku.
+ Kobieta, osoba ociemniała przed 10 rokiem życia, aktywna zawodowo
+pracownik służby zdrowia, pracuje jako masażysta. Badana uczęszczała do
+liceum masowego, więc dość wcześnie musiała się zmagać z problemami, o
+których osoby pełnosprawne nie mają pojęcia. Takie prozaiczne wydawałoby
+się sprawy jak poruszanie się, nauka etc. Dla tej Pani bardzo ważnymi
+
+--- strona 16 ---
+
+nagraniami były nagrania w domu, gdzie możemy pokazać jak osoby
+niewidome przygotowują proste rzeczy np. w kuchni czy sprzątanie.
+Dodatkowo, Pani podkreśliła tak jak wszyscy uczestnicy jak ważnym w życiu
+osób z niepełnosprawnością wzroku jest poruszanie się i samodzielność. W
+tych nagraniach trzeba pokazać że osoba z niepełnosprawnością wzroku
+może samodzielnie się poruszać, robić zakupy, pójść do galerii handlowej czy
+samodzielnie posprzątać czy ugotować obiad. Zauważyła także że ta druga
+część jest też ważna, a mianowicie aspekt społeczny, sport, hobby czy
+rekreacja w postaci wycieczek, spacerów czy zwiedzania.
+Opinie osób biorących udział w tym badaniu fokusowym są bardzo ważne dla
+powodzenie realizacji projektu innowacyjnego Kaski Binauralne „Sztuczna głowa”.
+Mimo że są to osoby w różnym wieku, z różnym spojrzeniem na świat, to wszyscy
+zgodnie podkreślali, że taka nowoczesna metoda rehabilitacji będzie bardzo
+korzystna dla osób z niepełnosprawnością wzroku. Na początku badania padały
+pytania czy nie można tego zrobić po prostu przy pomocy opaski na oczy i zwykłych
+słuchawek? Po prezentacji i wyjaśnieniu szczegółów dotyczących budowy kasków
+projekt nabrał innego wymiaru i bardzo się spodobał uczestnikom badania.
+Szczególnie młodzi ludzie deklarują, że będą chętnie korzystać z tej formy
+rehabilitacji, chociażby z racji zaciekawienia taką technologią i innowacją jaką są
+kaski binauralne. Podkreślano bardzo mocno zasadność tego, iż kaski binauralne
+będą całkowicie zaciemnione. Uczestnik mający kask na głowie nie będzie miał
+możliwości korzystania ze zmysłu wzroku. Zostanie on odcięty całkowicie od
+bodźców wzrokowych i zostanie położony duży nacisk na wrażenia dźwiękowe.
+Opinia i wnioski eksperta
+Pani Katarzyna Kasprzyk
+Pani Katarzyna Kasprzyk jest pracownikiem Centrum Szkolno–Wychowawczego dla
+niewidomych i niedowidzących w Krakowie na ul. Tynieckiej 6, to osoba z 25 letnim
+doświadczeniem zawodowym
+
+--- strona 17 ---
+
+1. Przy pomocy kasków można bardzo wzbogacić i urozmaicić rehabilitację osób
+z niepełnosprawnością wzroku.
+2. Ekspertka bardzo mocno podkreślała ważną kwestię jaką jest nauczanie
+dźwięków dzieci, które tracą wzrok lub u takich, które ten wzrok utraciły i uczą
+się nowej rzeczywistości. Niektóre dźwięki dla dzieci np. mieszkających w
+dużym mieście są nieznane, nigdy tych dźwięków nie doświadczą, dlatego
+wykorzystanie różnych nagrań w takich kaskach jest tak ważne.
+3. Wykorzystanie kasków wśród osób pełnosprawnych to bardzo ważny element
+edukacyjny. Jeśli osobie pełnosprawnej założymy kask, który całkowicie
+zaciemni otaczającą ją przestrzeń i tak naprawdę odbierze jej możliwość
+korzystania z podstawowego zmysłu jakim jest wzrok osoba badana będzie
+musiała skupić się na dźwiękach i będzie mogła doświadczyć i odczuć na
+czym polega niepełnosprawność wzroku.
+4. Wnioskiem podstawowym jest fakt, że aby kask spełnił swoją funkcję,
+nagrania w nim umieszczone muszą być wykonane w wysokiej jakości.
+Pani Lucyna Zalewska
+Pani Lucyna Zalewska jest pracownikiem Centrum Szkolno-Wychowawczym dla
+niewidomych i niedowidzących w Krakowie na ul. Tynieckiej 6. Jest Instruktorem
+orientacji w przestrzeni z 30 letnim doświadczeniem. Pani Lucyna uczy orientacji
+głównie dzieci, ale biorąc udział w różnego rodzaju projektach jako Instruktor szkoli
+także osoby w średnim wieku, aktywne zawodowo i społecznie jak i osoby w wieku
+senioralnym. Nasz ekspert współpracuje z władzami Miasta Kraków opiniując
+różnego rodzaju inwestycje, zmiany architektoniczne w naszym mieście, wydaje
+opinie jak trzeba zrealizować projekt aby był dobrze przyjęty i odebrany przez
+środowisko osób z niepełnosprawnością wzroku. Opinia Pani Lucyny była bardzo
+istotna gdyż to właśnie ona posiada bogatą wiedze na temat z jakimi problemami
+borykają się codziennie osoby tracące wzrok lub te które dotknęła utrata wzroku i
+chcą się odnaleźć w nowej rzeczywistości. Według opinii eksperta kask jest super
+formą rehabilitacji osób z niepełnosprawnościom wzroku, jest pozytywnym
+wzmocnieniem rehabilitacji społecznej takich osób. Może mieć duży wpływ na
+szybszą naukę orientacji w przestrzeni szczególnie dla osób, które tracą lub utraciły
+
+--- strona 18 ---
+
+wzrok, pozwoli nabrać pewności, nabyć takiego obycia że odnajdą się w każdej
+nawet najtrudniejszej sytuacji.
+W trakcie przeprowadzania badań fokusowych użyto słuchawek do odsłuchu nagrań
+binauralnych. Było to konieczne gdyż odsłuch nagrań binauralnych na głośnikach jest
+niekomfortowy i odczucie jest zupełnie inne. W słuchawkach osoba czuje się
+uczestnikiem tego nagrania gdyż wszystkie dźwięki docierają do niego z każdej
+strony, otaczając go. W przypadku głośników ten efekt jest praktycznie nie możliwy
+do uzyskania.
+W trakcie odsłuchania nagrań binauralnych przez każdego z uczestników
+zastosowano różne systemy słuchawkowe.
+ słuchawki kostne
+ słuchawki dokanałowe
+ słuchawki nauszne.
+Uczestnicy badania zdecydowanie wybrali jako najlepsze słuchawki do odsłuchu
+tego typu nagrań słuchawki nauszne. Najgorszy odsłuch był prowadzony na
+słuchawkach kostnych ale ich przeznaczenie jest zupełnie inne.
+Sugestie i opinie osób badanych w aspekcie technicznym
+1. Nagrania powinny również brać pod uwagę różnorodność pogody i
+temperatury otoczenia. Inne dźwięki są w zimie gdy leży śnieg, inne podczas
+lekkiego deszczu czy ulewy. Zaproponowali także aby nagrania przedstawiały
+różne pory roku, gdyż w zależności od pór roku docierają do nas różne
+dźwięki.
+2. Akcentowano mocno aby nagrania były dla każdego więc należy je stworzyć
+tak aby aktorzy w nich uczestniczący prezentowali różne grupy wiekowe:
+ młodzież
+ osoby w średnim wieku
+ osoby w wieku senioralnym
+Chodzi tutaj o tempr głosu , o wymowę, sposób wypowiadania się.
+
+--- strona 19 ---
+
+3. Bardzo mocno zwracano uwagę na profesjonalność w wykonaniu nagrań,
+gdyż duża część takich, wykonanych przy użyciu słabego sprzętu jest
+niedobra gdyż nie są to dźwięki odzwierciedlające rzeczywistość. W takich
+nagraniach dźwięki są za wysokie bądź za niskie i uczestnik nie ma komfortu
+słuchania.
+4. Problemem, na który uczestnicy kładli nacisk jest dostęp światła do oczu.
+Dlatego też wyeliminowaliśmy możliwość korzystania z gogli zaciemniających
+czy opasek na oczy. Badani zainteresowani byli także za wykorzystaniem
+kasków do takiej formy przekazywania dźwięku. Według nich kask wyizoluje
+osobę w przeważającej części bodźców wzrokowych i będzie ona nastawiona
+jedynie na dźwięki emitowane przez kask.
+ETAP TESTOWANIA
+Stworzenie prototypów kasków
+Wykonanie kompletnych prototypów kasków wraz ze słuchawkami, czytnikami kart SD i
+odtwarzaczem MP3. Kształt i forma prototypów kasków dla grupy docelowej, zostały
+stworzone zgodnie z opiniami ekspertów oraz uczestników badań fokusowych.
+Wyprodukowano 4 kaski w różnych rozmiarach, tak aby umożliwić dopasowanie go do
+różnych wielkości głów osób testujących.
+Budowa kasku binauralnego wykorzystanego do przeprowadzenia testów
+Kaski są jednolitą konstrukcją, całość stanowią nieodłączną wraz z zainstalowanym
+sprzętem stereofonicznym do odtwarzania audio i łączności bluetooth. W prototypie
+naszego kasku wykorzystano następujące elementy:
+a) kask motocyklowy - jest on całkowicie zamknięty powodując wyizolowanie
+użytkownika. Z powodów bezpieczeństwa kaski są wyposażone w przycisk
+otwierający tzw. szczękę i podnoszący cały przód kasku do góry w celu
+zdjęcia czy w przypadku zasłabnięcia czy klaustrofobii użytkownika. Cały
+panel przedni przez który użytkownik widzący widziałby świat zewnętrzny
+został specjalnie przygotowany, w materiale wywiercono specjalne otwory
+
+--- strona 20 ---
+
+zwiększające przepływ powietrza do środka a następnie całość została
+zasłonięta materiałem od środka kasku jak i z jego zewnętrznej strony.
+b) sprzęt audio dedykowany do kasków motocyklowych sprzęt audio w którego
+skład wchodzi : zestaw słuchawek stereofonicznych i panel do łączności
+bluetooth i do nawigowania.
+c) urządzenie odtwarzające wyposażone w łączność bluetooth oraz w czytnik
+kart SD.
+d) Blenda jest to zasuwana osłona przeciwsłoneczna będąca składową kasku.
+Można z niej korzystać ale nie jest to konieczne.
+e) W tym projekcie zadbaliśmy o kwestie bezpieczeństwa gdyż badania
+odbywały się w czasie pandemii wirusa covid 19. Zakupione zostały
+jednorazowe kominiarki motocyklowe dla każdego uczestnika badania.
+Dodatkowo po każdym badaniu kask został dezynfekowany.
+f) Kaski dodatkowo są wyposażone w torby transportowe, które zarazem
+chronią kaski przed uszkodzeniami jak i mają walor transportowy, są ważnym
+dodatkiem do wyżej wymienionego sprzętu.
+Na poczet badań została stworzona instrukcja obsługi kasku .
+KASK
+Kaski wykonane są na bazie profesjonalnego motocyklowego kasku szczękowego,
+którego budowa zapewnia najwyższy poziom wyciemnienia i wyciszenia, a dzięki
+intuicyjnemu i prostemu w obsłudze mechanizmowi zakładania jest on najbardziej
+"przyjazny" do nałożenia i zdjęcia przez osoby nie korzystające z takiego sprzętu
+wcześniej - szczególnie przez osoby z niepełnosprawnością.
+
+--- strona 21 ---
+
+Marka: SCHUBERTH
+Wiodący producent kasków, oferujący produkty o najwyższych parametrach
+bezpieczeństwa, komfortu użytkowania, wykonane z najlepszych, atestowanych
+materiałów.
+
+--- strona 22 ---
+
+MODEL:
+Wymiary:
+ROZMIAR M (57 cm)
+ROZMIAR L (59 cm)
+ROZMIAR XL (61 cm)
+ROZMIAR XXL (63 cm)
+Waga:
+M- L 1670 g (+/- 50 g)
+XL-XXL 1870g (+/- 50 g)
+CHARAKTERYSTYKA
+Skorupa kasku:
+Wykonany na bazie włókna szklanego z domieszką żywicy, daje produkt wysoko
+wytrzymały na uszkodzenia mechaniczne mogące powstać przy np. upuszczeniu na
+twarde podłoże. Jednocześnie cały kask ma stosunkowo niską wagę pozwalającą
+zachować optymalną stabilność i komfort użytkowania.
+
+--- strona 23 ---
+
+Wnętrze kasku:
+Wieloelementowe wypełnienie wykonane z pianki EPS doskonale izoluje zarówno
+akustycznie jak i termicznie.
+Złożona wielosegmentowa wyściółka piankowa składa się z materiałów przyjaznych
+dla skóry, szczególnie w obszarach stykających się z głową. Miękki, oddychający
+materiał znany jako Coolmax® wydajnie przewodzi ciepło, a duże panele boczne
+zapewniają optymalne i wygodne posadowienie kasku na głowie. Bezszwowa
+wyściółka głowy i zintegrowane rowki na okulary sprawiają, że kask jest niezwykle
+wygodny w noszeniu także dla osób w okularach.
+Podszewka Jazzlight® zapewnia bezpieczne i wygodne dopasowanie kasku. Panele
+są zdejmowalen i łatwe w praniu - zastosowane tkaniny są antybakteryjne i
+szybkoschnące, certyfikowane zgodnie z Öko-Tex 100.
+Wentylacja:
+Dobra cyrkulacja powietrza dzięki wielokanałowej wentylacji zapewnia dodatkowe
+chłodzenie. Kask wyposażony jest w otwierane kanały na szczęce oraz na szczycie,
+dodatkowo dla większego komfortu w szybie kasków w rozmiarach L, XL i XXL
+wykonano 22 dodatkowe otwory o średnicy 22 mm, a w kasku o rozmiarze M
+(przewidzianym także dla dzieci) otwory mają średnicę 30 mm).
+
+--- strona 24 ---
+
+Wyciemnienie:
+W celu pełniejszego odizolowania słuchacza nagrań od środowiska zewnętrznego
+oraz potencjalnych dystraktorów (światło i / lub dźwięk) szyba kasku została pokryta
+włókniną poliestrową o grubości ok 2mm w kolorze czarnym, oraz od wewnętrz
+cienką dzianiną nylonową, także w kolorze czarnym.
+
+--- strona 25 ---
+
+Pokrycie włókniną nie utrudnia otwierania samej szyby.
+System audio:
+Odsłuchiwanie nagrań w warunkach optymalnie izolowanych od bodźców
+zewnętrznych zapewnia system audio składający się z kompatybilnych z tym
+modelem elementów systemu SC1 (Sena):
+- wbudowanych w kask ultracienkich głośników (niewyczuwalnych podczas
+użytkowania) mocowanych na taśmie velcro, pozwalającej na ich
+repozycjonowanie
+- mikrofonu umieszczonego w wyściółce przedniej części przy policzku
+- modułu odbiornika bluetooth z panelem sterowania, który umieszczony jest w
+specjalnie przygotowanym wgłębieniu na brzegu kasku
+- baterii zasilającej (czas ładowania 3h, czas gotowości 7 dni) umieszczanej w
+symetrycznie zlokalizowanym wgłębieniu po drugiej stronie brzegu kasku;
+
+--- strona 26 ---
+
+W skład zestawu wchodzą także firmowe pokrowce z miękkiej tkaniny i wyściełane
+torby transportowe na zamek, z uchwytami.
+Instrukcja zakładania i zdejmowania kasku
+Aby uniknąć dyskomfortu podczas zakładania bądź zdejmowania kasku należy
+postępować jak poniżej:
+1. Rozszerz kask ciągnąc za paski na zewnątrz.
+2. Trzymając paski na zewnątrz załóż kask
+3. Aby zdjąć kask rozszerz go ciągnąc paski na zewnątrz i zsuń kask z głowy.
+Pamiętaj: Im bardziej rozszerzasz kask za paski podczas zakładania i
+zdejmowania tym bardziej komfortowo się to odbywa.
+4. Po założeniu kasku dobrze jest poruszać go na głowie użytkownika aby się
+dopasował a cała wyściółka była w odpowiednich miejscach. Trzeba zwracać
+uwagę na to aby założony kask był komfortowy a uszy nie były przytrzaśnięte.
+5. Mając założony kask, zamykamy przednią klapę która ma na celu zasłonięcie
+osobom widzącym chociaż szczątkowo widok i odcięcie ich od bodźców
+
+--- strona 27 ---
+
+wzrokowych a także częściowo słuchowych. Tak ubrany kask może służyć do
+rozpoczęcia badań i rehabilitacji.
+6. Łączenie kasku z urządzeniem odtwarzającym.
+Aby połączyć urządzenie odtwarzające z kaskiem musimy:
+1. Włączyć kask - do tego celu używamy panelu sterowania.
+2. Wciskamy na 3 sekundy oba przyciski na panelu.
+3. Następnie, aby sparować urządzenia wciskamy przycisk przez około 10
+sekund i przechodzimy do panelu sterowania, o czym jesteśmy
+poinformowani głosowo.
+4. Następnie wciskamy raz przycisk i kask jest w trybie pairing.
+5. Na urządzeniu wyszukujemy urządzenie i wciskamy przycisk połącz.
+6. Urządzenia po sparowaniu poinformują nas o tym - osoby widzące w sposób
+świetlny a osoby niewidome usłyszą dźwięki płynące z kasku.W tym
+momencie możemy rozpocząć na urządzeniu odtwarzającym odsłuch nagrań
+binauralnych.
+7. W celu naładowania baterii kasku pomiędzy dwoma przyciskami na panelu
+sterowania kasku jest wejście USB zasłonięte gumową osłoną
+przeciwdziałającą przedostaniu się wody czy wilgoci do portu USB czy do
+samego urządzenia.
+Specyfikacja kasków wraz z dokumentacją fotograficzną zostanie dołączona w
+odrębnym pliku.
+Wykonanie nagrań binauralnych
+Z założenia nagrania nawiązywać miały do codziennych czynności jak poruszanie się
+komunikacją miejską, po centrum handlowym, czy po chodniku. Do testów nagrania
+przygotowane były do potrzeb osób testujących. W dużej mierze były to odgłosy z ich
+najbliższego otoczenia. Docelowo kaski będą wyposażone w nagrania przeznaczone
+dla konkretnych osób tak aby jak najbardziej zminimalizować strach przed
+nieznanym, a w przypadku osób ociemniałych kontynuować to co do tej pory
+pamiętają. W nagraniach ogólnych na pewno uwzględnione będą opinie i sugestie
+ekspertów i osób badanych biorących udział w projekcie.
+
+--- strona 28 ---
+
+Stworzono 15 nagrań binauralnych imitujących sytuacje z życia społecznego.
+Tematyka nagrań oscylowała wokół:
+• poruszania się osoby niewidomej w ruchu i komunikacji miejskiej,
+• ruchu miejskiego z asystą psa przewodnika,
+• poruszanie się po galeriach handlowych
+• poruszanie się po domu.
+Nagrania odbyły się w wynajętym do tego celu studio nagrań i były tworzone przez:
+• technika dźwiękowca,
+• montażystę,
+• aktorów z niepełnosprawnością wzroku i koniecznymi umiejętnościami np. jazdy
+konnej, lektora (kobietę, mężczyznę).
+Zrealizowanie testu kasków binauralnych
+Na tym etapie realizacji projektu odbyły się indywidualne spotkania z uczestnikami
+grupy testującej, podczas których ekspert oraz towarzyszący mu asystent sprawdzali
+w praktyce użyteczność kasku. Odtwarzając nagrania stwarzamy użytkownikom
+możliwość symulacji zróżnicowanych sytuacji społecznych w bezpiecznym dla nich
+otoczeniu. . Opinie osób testujących maja służyć również doprecyzowaniu
+parametrów budowy kasku takich jak: wymagania techniczne, bezpieczeństwa,
+wentylacji, dźwiękowe, wyciszenia wnętrza kasku czy przenikania światła Na jednego
+uczestnika przewiduje się średnio 3h spotkania.
+Formuła przeprowadzenia badań - testów kasku:
+ prezentacja założeń projektu i jego finansowania,
+ wypełnienie deklaracji uczestnika badań,
+ wypełnienie ankiety przed odsłuchem,
+ odsłuch przygotowanych nagrań,
+ wypełnienie ankiety po odsłuchu z uwzględnieniem uwag oraz wrażeń
+wynikających z udziału w badaniu,
+ nagranie filmów i wykonanie zdjęć dokumentujących badanie.
+
+--- strona 29 ---
+
+Na początku poproszono osoby testujące o wypełnienie ankiety, której wzór
+zamieszczony jest poniżej:
+Ankieta ewaluacyjna
+1. Jestem:
+a) Kobietą
+b) Mężczyzną
+c) Inne
+2. Jestem w wieku;
+a) 20-30 lat
+b) 30-40 lat
+c) 40-50 lat
+d) 50-60 lat
+e) Powyżej 60 lat
+3. Jestem na etapie:
+a) tuż po diagnozie stopniowej utraty wzroku
+b) już od pewnego czasu tracę wzrok
+c) częściowej utraty wzroku
+d) znacznej utraty wzroku
+e) całkowicie utraciłam/utraciłem wzrok
+4. Nie widzę od [wpisać tylko w przypadku jeżeli w poprzednim punkcie została
+zaznaczona ostatnia odpowiedź]
+5. Poruszam się:
+a) całkowicie samodzielnie
+b) Przy wsparciu drugiej osoby, ale tylko w przypadku gdy nie znam miejsca w
+które się udaję;
+c) nie jestem wstanie wyjść z miejsca zamieszkania bez wsparcia drugiej osoby;
+6. Poruszam się;
+a) Bez białej laski
+b) z białą laską
+
+--- strona 30 ---
+
+c) z psem przewodnikiem
+7. Mieszkam:
+a) samotnie
+b) z kimś
+8. W miejscu zamieszkania:
+a) jestem całkowicie samodzielna/samodzielny
+b) potrzebuję minimalnego wsparcia przy czynnościach domowych
+c) jestem całkowicie zależna/zależny od osoby drugiej
+9. Brałam/brałem udział w kursie orientacji przestrzennej:
+a) Tak
+b) nie
+10. Samodzielnie jestem w stanie przygotować prosty posiłek:
+a) tak
+b) nie
+11. Samodzielnie gotuję bardziej złożone dania, używam kuchenki
+elektrycznej/gazowej, jestem całkowicie niezależna/niezależny w kuchni:
+a) tak
+b) nie
+Wychodząc samodzielnie w razie dezorientacji, bądź lekkiego zagubienia się w
+terenie pytam przypadkowo napotkane osoby o drogę, proszę o pomoc [odpowiedź
+zaznaczyć w przypadku gdy w powyższych punktach została zaznaczona odpowiedź
+o samodzielnym poruszaniu się bądź przy częściowym wsparciu drugiej osoby]
+a) tak
+b) nie
+12. Potrzebuję pomocy w sklepie w zrobieniu zakupów:
+a) tak
+b) nie
+13. Znam zasady poruszania się w przestrzeni publicznej osoby słabowidzącej lub
+niewidomej:
+
+--- strona 31 ---
+
+a) tak
+b) nie
+14. Krępuję się poruszać z białą laską:
+a) tak
+b) nie
+15. Mam dzieci:
+a) tak
+b) nie
+W Przypadku odpowiedzi twierdzącej, proszę dopisać ich wiek
+16. Uprawiam czynnie sport zawodowo lub rekreacyjnie dedykowany osobom z
+niepełnosprawnością wzroku:
+a) tak
+b) nie
+17. Czynnie uprawiam turystykę miejską i krajoznawczą:
+a) tak
+b) nie
+18. Korzystam z pomocy organizacji pozarządowych które proponują zajęcia
+dedykowane osobom z niepełnosprawnością wzroku:
+a) tak
+b) nie
+19. Uczęszczam obecnie do szkoły/studiuję/biorę udział w kursach i szkoleniach
+w celu rozwoju osobistego lub zawodowego:
+a) tak
+b) nie
+20. Mieszkam:
+a) na wsi
+b) w małym miasteczku mniej więcej 20-30 tys. mieszkańców
+c) w dużym mieście
+
+--- strona 32 ---
+
+Proszę o szczere udzielanie odpowiedzi, są one anonimowe, służą jedynie
+badaniom, na które Pani/Pan udzieliła/udzielił uprzednio zgody.
+Badania odbyły się w przeważającej większości w domu badanego ze względu na
+problemy w poruszaniu się praktycznie wszystkich badanych, jedynie dwóch
+badanych zjawiło się na badaniach w przygotowanej do tego celu Sali i tam je
+przeprowadzono.
+Perspektywa każdego z uczestników była trochę inna gdyż część z nich mieszka z
+rodzinami, część samodzielnie. Tak samo z poruszaniem się uczestników badania
+część z nich potrafi się poruszać samodzielnie w pełni, część tylko w okolicy swojego
+miejsca zamieszkania i w miejscach które są znane i przećwiczono poruszanie się
+osoby z niepełnosprawnością wzroku a część osób potrafi się jedynie poruszać po
+własnym miejscu zamieszkania.
+Różnorodność nagrań była ciekawa gdyż dobierane one były bezpośrednio pod
+potrzeby badanego np. dla seniora były przygotowane w części nagrania „senior w
+domu”, dla osób mających małe dzieci nagrania „rodzina Państwa Laskowskich” dla
+części „goście w domu Państwa Brailowskich”.
+Chcieliśmy doprowadzić do sytuacji gdzie każdy w przedstawionych nagraniach
+znajdzie coś dla siebie z własnej przestrzeni.
+W badaniu udział wzięli:
+ Pan Tomasz Koźmiński - grantobiorca, autor projektu,
+ osoby uczestniczące w badaniu : 3 osoby po 60-tym roku życia, 2 osoby w
+wieku 20-tu lat, 1 osoba w wieku 40-tu lat, 2 osoby w wieku 45 lat
+Z czego 3 osoby całkowicie niewidome w różnym wieku, 5 osób słabowidzących w
+różnym wieku i różnej utracie wzroku.
+Odsłuch przygotowanych nagrań oraz wypełnienie ankiety po odsłuchu z
+uwzględnieniem uwag oraz wrażeń wynikających z udziału w badaniu
+
+--- strona 33 ---
+
+Ankieta po przeprowadzonym badaniu odsłuchowym
+1. Poruszam się samodzielnie z białą laską/psem przewodnikiem i dźwięki
+zasłyszane w nagraniu nie są dla mnie nowością:
+a) tak
+b) nie
+2. Posługuję się na co dzień echolokacją i w nagraniach była ona dla mnie
+wyraźnie słyszalna:
+a) tak
+b) nie
+3. Komentarze w nagraniu były dla mnie pomocne
+a) tak
+b) nie
+4. Bez komentarzy nagrania byłyby dla mnie nieczytelne i niezrozumiałe:
+a) tak
+b) nie
+5. Komentarze były dla mnie niewystarczające i tak nie wiedziałam/wiedziałem
+co dzieje się w nagraniu:
+a) tak
+b) nie
+6. Nagranie było ciekawe i interesujące:
+a) Tak
+b) nie
+7. nagrania były zbyt długie i męczyłam/męczyłem się podczas słuchania:
+a) tak
+b) nie
+8. Nagrania były zbyt krótkie i nie wyczerpywały tematu:
+a) tak
+b) nie
+
+--- strona 34 ---
+
+9. Nagranie było pomocne, pozwoliło mi usłyszeć czynności które do tej pory
+uważałam/uważałem za niemożliwe do wykonania samodzielnie:
+a) tak
+b) nie
+10. Dzięki nagraniom mam większą pewność siebie i będę próbować nowych
+rzeczy:
+a) tak
+b) nie
+11. Chciałabym/chciałbym usłyszeć w nagraniu następujące rzeczy:
+Proszę o odpowiedź opisującą czynności, sytuacje, rzeczy których chciałaby/
+chciałby Pan/i doświadczyć i sprawdzić jak radzą sobie z nimi osoby słabowidzące
+lub niewidome:
+12. Uważam że odsłuch tego typu nagrań jest pomocny w rehabilitacji i
+rewalidacji osoby świeżo ociemniałej lub takiej która traci wzrok:
+a) tak
+b) nie
+
+Opinie na temat udziału lektora w wykorzystywanych nagraniach
+Ścieżka lektorska tłumaczyła kto bierze udział w nagraniu co się będzie działo, ale to
+był komentarz umieszczony na początku nagrania, w późniejszym etapie lektor
+tłumaczył jedynie niektóre sytuacje i dźwięki. Każdy z uczestników badania uważał
+że dodatkowa ścieżka lektorska jest bardzo pomocna. Różny stopień rewalidacji
+uczestników to pokazywał, osoby samodzielnie poruszające się znały większość
+dźwięków i nie trzeba było ich nazywać. Większość badanych jednak nie znała
+części prezentowanych dźwięków i dla nich właśnie dodanie ścieżki lektorskiej było
+jak najbardziej dobrym pomysłem. Uczestnicy nie zdawali sobie sprawy o
+udogodnieniach technicznych i możliwości ich wykorzystania w życiu codziennym, a
+dających im szanse na polepszenie ich bytu.
+
+--- strona 35 ---
+
+PODSUMOWANIE ETAPU TESTOWANIA PRZEZ OSOBY
+TESTUJĄCE
+1. Nagrania binauralne według uczestników badania są dobrą formą rewalidacji i
+rehabilitacji osób świeżo tracących wzrok lub takich które w niedalekiej
+przeszłości ten wzrok utraciły.
+2. Konkluzją z większości badań było to, aby większość nagrań była ogólna ale
+jednak w odniesieniu do każdego z uczestników badania należy stworzyć
+nagrania z jego najbliższej przestrzeni życiowej tzn. dom, okoliczne sklepy,
+apteki, kościół, budynki użyteczności publicznej itd.
+3. Wszyscy uczestnicy badania wyrazili zainteresowanie projektem i
+wykorzystaniem nagrań binauralnych w rewalidacji i rehabilitacji osób
+niepełnosprawnych wzrokowo.
+4. Wszyscy uczestnicy uważali, że wykorzystanie takiego rodzaju nagrań może
+pokazać osobom tracącym wzrok lub tym, które w ostatnim czasie wzrok
+utraciły jak wygląda życie z perspektywy osoby niewidomej.
+5. Autorzy projektu chcieli doprowadzić do sytuacji gdzie każdy w
+przedstawionych badaniach znajdzie coś dla siebie z własnej przestrzeni.
+Oczywiście nacisk był kładziony na rehabilitację i rewalidację ale nie zabrakło
+także nowinek technicznych czy możliwości udziału w sporcie czy kulturze.
+6. Kask był problemem ze względu na ciężar i zamknięty przedni panel. Ciężar
+kasku jest spory ale zdecydowanie większym problemem był zamknięty panel
+przedni. Większość badań odbywało się w temperaturze bliskiej lub powyżej
+30 stopni C. Proponowano zamienić kaski na bardzo profesjonalne słuchawki
+tzn. słuchawki zamknięte i gogle na oczy zasłaniające całkowicie widzenie.
+7. Uczestnicy badań chcieli w dużej części aby nagrania były powiększone
+także o sytuacje trudne takie jak:
+ kolizja np. z hulajnogą
+ kolizja z drzewem
+ kolizja ze słupkiem czy barierą ochronną.
+
+--- strona 36 ---
+
+Chodziło o to aby nie pokazywać jedynie świata idealnego bez problemowego a
+także świat z problemami na drodze takimi jak powyżej. Jest to bardzo słuszna
+koncepcja.
+8. Oczywiście większość uczestników chciałaby indywidualnie usłyszeć swoje
+„problemy” w orientacji, proponowano poruszanie się po dworcu, duże i małe
+skrzyżowania, ronda. Także wiele razy był poruszany temat sportu gdyż za
+pomocą takich nagrań także można zachęcić osoby z niepełnosprawnością do
+uprawiania sportu czy to w formie rekreacyjnej, rehabilitacyjnej czy
+wyczynowej.
+9. Aspekt poruszania się samodzielnego czy to przy wykorzystaniu białej laski
+czy psa przewodnika był jednak najczęściej zgłaszaną formą nagrań używanej
+w tej formie terapii. Uczestnicy najczęściej zwracali uwagę że właśnie w tym
+aspekcie mają największy problem oraz największy lęk przed wyjściem z
+„bezpiecznego” domu.
+PODSUMOWANIE PROJEKTU
+Na podstawie badań fokusowych, opinii ekspertów oraz wykonanych testów
+potwierdzona została zasadność tworzonej innowacji - zastosowania kasków
+binauralnych w procesie rehabilitacji społecznej i zawodowej osób z
+niepełnosprawnością narządu wzroku. Wykorzystanie kasku jeszcze przed faktyczną
+utratą wzroku lub tuż po jej nastąpieniu może dać ogromne korzyści w przyszłej
+rehabilitacji. Wpłynie to bardzo korzystnie na szybsze przygotowanie tej osoby do
+czynnego udziału w życiu społecznym oraz sprawniejszej aktywizacji społecznej oraz
+zawodowej. Urządzenie to na pewno daje możliwość pokazania różnych możliwości
+osobie ociemniałej, gdzie poprzez nagrania zostaną „podniesione na duchu”
+pokazując, że „gasząc światło” nie musi gasnąć chęć do życia, zminimalizuje obawy i
+lęk spowodowane utratą wzorku.
+Wartością dodatnią jest możliwość wykorzystania kasku do uwrażliwienia osób
+pełnosprawnych na potrzeby osób z niepełnosprawnością narządu wzroku,
+zwrócenia ich uwagi na ich problemy czy trudności życia codziennego co w
+dzisiejszych czasach znieczulicy jest ogromnie ważne.
+
+--- strona 37 ---
+
+Dodatkowo ze względu na prostotę i mobilność będzie dostępny dla każdego i w
+każdym miejscu tj. w szpitalu, w domu, w biurze. Prostota, mobilność i niski koszt
+rozwiązania pozwala na dotarcie do szerokiej grupy docelowej na terenie kraju jak i
+reszty świata. Stworzenie kolejnej liczby prototypów pozwoli na dotarcie do
+najmniejszych miejscowości przy niskim nakładzie finansowym.

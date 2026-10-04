@@ -1,0 +1,548 @@
+--- strona 1 ---
+
+1
+
+Model innowacji
+społecznej
+pt. “Gra o zdrowie”
+
+Innowator: Paulina Dąbrowska
+
+Innowacja realizowana w ramach projektu pn. “Inkubator Dostępności”
+Warszawa 2021 r.
+
+--- strona 2 ---
+
+2
+Spis treści
+1.
+Opis innowacji społecznej ................................................................................................. 3
+2.
+Opis grupy odbiorców innowacji społecznej ...................................................................... 4
+3.
+Opis grupy użytkowników innowacji społecznej ................................................................ 5
+4.
+Przebieg gry ..................................................................................................................... 5
+5.
+Opis produktów wchodzących w skład innowacji społecznej .............................................. 7
+6.
+Dostępność produktów wchodzących w skład innowacji społecznej ................................. 14
+7.
+Opis testowania innowacji społecznej ............................................................................. 15
+8.
+Wnioski z etapu testowania innowacji społecznej ........................................................... 17
+9.
+Rekomendacje dla odbiorców i użytkowników innowacji społecznej ................................ 19
+Załącznik nr 1: Ankieta poprzedzająca i kończąca testowanie projektu „Gra o zdrowie” ............... 21
+Załącznik nr 2: Instrukcja do gry (osobny plik) ............................................................................. 25
+Załącznik nr 3: Podręcznik instruktażowy (osoby plik) .................................................................. 25
+Załącznik nr 4: Karty z pytaniami, karty „Ciekawostki” oraz „Wsparcie od pozostałych graczy”
+(osobne pliki) ............................................................................................................................. 25
+Załącznik nr 5: Plansza do gry (osobny plik) ................................................................................. 25
+
+--- strona 3 ---
+
+3
+
+1. Opis innowacji społecznej
+Innowacja pt.: “Gra o zdrowie” miała na celu stworzenie i przetestowanie
+innowacyjnego narzędzia do pracy terapeutycznej z osobami z niepełnosprawnością
+psychiczną (psychoza, depresja, choroba dwubiegunowa i in.).
+Innowacja zakładała opracowanie gry planszowej, która będzie wymagała od gracza
+zaangażowania, wcielania się w różne role i postaci z obszaru rynku pracy (np.
+pracownik, pracodawca, kandydat), pozwoli odkryć ich potencjał i przygotować do
+zmierzenia się z realnymi aspektami rynku pracy przed podjęciem rzeczywistych
+działań. Gra miała poruszać aspekty związane z sytuacjami społecznymi w miejscu
+pracy, kwestiami prawnymi, aspektami finansowymi i urzędowymi. Proponowane
+w grze zadania dotyczą sposobów na zwiększenie swojej atrakcyjności na rynku
+pracy, przygotowania CV w oparciu o posiadane zasoby, uczestniczenia w rozmowie
+kwalifikacyjnej i przekonaniu potencjalnego pracodawcy do zatrudnienia,
+rozwiązywania konfliktów interpersonalnych czy negocjacji z szefem.
+Na rynku gier terapeutycznych nie było dotychczas tego typu narzędzia, które w pełni
+odpowiadałby na potrzeby osób z niepełnosprawnością psychiczną i dotyczyłby
+zagadnień związanych z funkcjonowaniem rynku pracy. Pomimo, iż
+niepełnosprawności psychicznej często nie widać „gołym okiem”, zwłaszcza gdy
+osoba jest w fazie remisji, nie oznacza to, że osoby te są w stanie samodzielnie
+poradzić sobie z nowym wyzwaniem jakim jest podjęcie pracy. Dlatego dostęp do
+zajęć terapeutycznych, oswajających i przygotowujących do podjęcia (niekiedy
+powtórnego) zatrudnienia jest jednym z kluczowych aspektów zdrowienia pacjentów,
+gdyż niejednokrotnie podjęcie zatrudnienia chroni ich przed ponownym pojawieniem
+się kryzysu psychicznego. Istotnym jest zatem wyposażenie w narzędzia pracy
+terapeutów (terapeutów zajęciowych, psychologów oraz innych specjalistów)
+pracujących z osobami z niepełnosprawnością psychiczną, aby zapewnić dostępność
+oddziaływań terapeutycznych związanych z aktywizacją zawodową.
+
+--- strona 4 ---
+
+4
+2. Opis grupy odbiorców innowacji społecznej
+Grupę docelową projektu stanowią osoby powyżej 18 roku życia,
+z niepełnosprawnościami psychicznymi, którzy uczestniczą w terapii organizowanej
+przez:
+• Dziennie Oddziały Centrów Zdrowia Psychicznego,
+• Całodobowe oddziały Centrów Zdrowia Psychicznego,
+• Środowiskowe Domy Samopomocy,
+• Warsztaty Terapii Zajęciowej,
+• Kluby Pacjenta
+Domy Pomocy Społecznej. W szczególności mowa tutaj o pacjentach z
+doświadczeniem psychozy, objawami zaburzeń psychotycznych i zaburzeniami
+nastroju (depresja, choroba dwubiegunowa). Osoby te poza objawami chorobowymi
+takimi jak urojenia, halucynacje, napady lęku, niestabilność emocjonalna,
+dezorganizacja myślenia i zachowania, doświadczają także problemów z pamięcią i
+koncentracją, spadkiem energii i motywacji do podejmowania codziennych działań
+związanych z wypełnianiem ról społecznych, co w konsekwencji nieuchronnie
+prowadzi do izolacji społecznej, w tym bardzo często do “wypadnięcia” z rynku pracy.
+Duże grono tych osób ma za sobą doświadczenie pracy, jednak wystąpienie kryzysu
+psychicznego (często wielokrotnie powtarzającego się) jest przyczyną niskiego
+poczucia własnej wartości w odniesieniu do roli pracownika. Wielu z nich mimo chęci
+powrotu do aktywności zawodowej jest przepełniona lękiem przed odrzuceniem,
+niepowodzeniem lub zwyczajnie nie poradzeniem sobie z wyzwaniami stawianymi
+przez pracodawców. Do tego obrazu dochodzą również stereotypy dotyczące osób,
+które mają doświadczenie psychozy lub depresji w swoim życiu. Wszystkie te
+czynniki powodują, że wiele osób z zaburzeniami psychicznymi wycofuje się i nie
+podejmuje kolejnych prób wejścia na rynek pracy.
+
+--- strona 5 ---
+
+5
+3. Opis grupy użytkowników innowacji społecznej
+Grupa użytkowników produktu wypracowanego w ramach innowacji społecznej jest
+bardzo szeroka i obejmuje m.in.:
+• terapeutów zajęciowych,
+• pedagogów,
+• psychologów,
+• psychoterapeutów,
+• opiekunów medycznych,
+• trenerów pracy,
+• doradców zawodowych,
+• innych osób wspierających osoby z problemami zdrowia psychicznego.
+Wszyscy specjaliści prowadzący grupowe zajęcia w placówkach wsparcia dziennego
+lub całodobowego w centrach zdrowia psychicznego, szpitalach psychiatrycznych,
+warsztatach terapii zajęciowej, środowiskowych domach samopomocy, klubach
+pacjenta, mieszkalnictwie wspomaganym, chronionym
+i treningowym dla osób doświadczających problemów zdrowia psychicznego oraz
+domach pomocy społecznej, mogą być użytkownikami innowacji społecznej.
+4. Przebieg gry
+Gra składa się z dwóch etapów.
+W I etapie każdy z graczy rozpoczyna rozgrywkę w miejscu wybranym przez siebie -
+do wyboru są cztery możliwości:
+- pole startowe dla osób chcących grać, ale nie będących gotowymi do podjęcia
+pracy
+- pole startowe dla osób pracujących
+
+--- strona 6 ---
+
+6
+- pole startowe dla osób chcących zmienić pracę
+- pole startowe dla osób rozpoczynających aktywność zawodową.
+Gracz w każdej turze przesuwa pionek o liczbę oczek wyrzuconych kostką. Pionek
+przesuwa zgodnie z kierunkiem zaznaczonym na planszy. Następnie losuje kartę – w
+kategorii odpowiadającej barwie pola, na którym stanął (błękitny – sytuacje społeczne
+w miejscu pracy, szary – zagadnienia finansowe, czerwony – zagadnienia prawne,
+niebieski – zagadnienia urzędowe). Po udzieleniu prawidłowej odpowiedzi gracz
+przesuwa pionek o dwa pola, jeśli nie odpowie lub odpowie źle pozostaje w tym
+samym miejscu na planszy.
+Pierwszy etap gry kończy się dla gracza, jeśli jego pionek minie pole startowe, z
+którego rozpoczynał rozgrywkę.
+Gra w II etapie składa się z tzw. Stopni do kariery. Na tym etapie gracz nie korzysta z
+kostki do gry – przechodzi na kolejne „stopnie” po udzieleniu odpowiedzi na pytania,
+które są zawarte w podręczniku. Najwyższy „stopień do kariery” oznaczony jest cyfrą
+„4”. Gracz, który postawi pionek na najwyższym stopniu musi odpowiedzieć na
+ostatnie pytanie, tym samym wygrywa rozgrywkę.
+
+--- strona 7 ---
+
+7
+6. Opis produktów wchodzących w skład
+innowacji społecznej
+
+--- strona 8 ---
+
+8
+Jeden egzemplarz gry zawiera następujące produkty:
+• 53 karty związane z zagadnieniami społecznymi dotyczącymi obszaru pracy,
+• 70 kart związanych z zagadnieniami prawnymi dotyczącymi obszaru pracy
+• 57 kart związanych z zagadnieniami finansowymi dotyczącymi obszaru pracy
+• 55 kart związanych z zagadnieniami dotyczącymi urzędów i instytucji
+• 1 pudełko do gry
+• 1 plansza do gry
+• 1 podręcznik edukacyjny
+• 1 Instrukcja dla graczy
+• 8 pionków do gry (2 zapasowe)
+• 2 kostki do gry (jedna zapasowa)
+Szczegółowy opis kart do gry:
+Pierwsza kategoria związana jest z sytuacjami społecznymi w miejscu pracy. Pytania
+w tej kategorii są w większości pytaniami otwartymi. Odnoszą się między innymi do
+problematyki związanej z relacjami społecznymi oraz zależnościami służbowymi w
+miejscu pracy.
+Karty mają kolor błękitny.
+
+--- strona 9 ---
+
+9
+Druga kategoria związana jest z aspektem finansowym dookoła obszaru pracy. Ta
+kategoria pytań obejmuje między innymi zagadnienia związane z wynagrodzeniem
+oraz świadczeniami pieniężnymi lub niepieniężnymi.
+Karty mają kolor szary.
+
+Trzecia kategoria związana jest z aspektami prawnymi dookoła obszaru pracy. Ta
+kategoria odnosi się do regulacji, przepisów, rozporządzeń określających zasady
+nawiązywania współpracy i wykonywania pracy w ramach różnych form zatrudnienia.
+Karty mają kolor czerwony.
+
+--- strona 10 ---
+
+10
+Czwarta kategoria związana jest z wiedzą na temat urzędów, które zajmują się
+aktywizacją zawodową lub wspieraniem osób z niepełnosprawnościami. W tej kategorii
+kart znaleźć można również pytania dotyczące funkcjonowania organizacji
+pozarządowych w zakresie służącym wsparciu aktywizacji zawodowej.
+Karty mają kolor niebieski.
+
+Karta „Ciekawostka” – taka karta znajduje się w każdej z czterech kategorii kart.
+Karta ta pełni funkcję wzbogacającą przebieg gry oraz dostarczającą ciekawych lub
+zaskakujących informacji związanych z obszarem zawodowym.
+
+--- strona 11 ---
+
+11
+Karta „Wsparcie od pozostałych graczy” – taka karta również znajduje się w każdej z
+czterech kategorii kart. Ta karta uprawnia do wsparcia od pozostałych graczy w
+sytuacji, w której gracz ma problem z odpowiedzią na pytanie. Jest to karta
+jednorazowego użytku.
+
+Pytania znajdujące się na kartach - we wszystkich kategoriach - mają charakter
+zamknięty lub otwarty. Pytania zamknięte wymagają od gracza konkretnej wiedzy,
+natomiast pytania otwarte służą pogłębieniu analizy danego zagadnienia.
+
+--- strona 12 ---
+
+12
+Pozostałe elementy gry:
+Pudełko: zostało przygotowane w stonowanej kolorystyce, w kolorach zbliżonych do
+siebie ze względu na grupę odbiorców – osoby doświadczające problemów zdrowia
+psychicznego.
+
+Plansza do gry: została przygotowana w podobnej kolorystyce do pudełka, aby nie
+wzbudzać rozdrażnienia graczy intensywnością i różnorodnością kolorystyczną.
+Testerzy mogli rozpocząć grę z 4 pól startowych. Nie miało to jednak znaczenia
+w kontekście dalszego przebiegu gry, ponieważ każde zaproponowane pole startowe
+miało jedynie pozwolić graczowi przypisać się do konkretnej grupy osób w kontekście
+rynku pracy, a dalszy przebieg był dla każdego gracza jednakowy.
+
+--- strona 13 ---
+
+13
+Podręcznik dla graczy i prowadzącego: został przygotowany w odwróconej
+kolorystyce mając na uwadze pudełko i plansze. Jednakże kolory, w przeważającej
+części odcień czerwieni i granatu zostały zachowane. W podręczniku można znaleźć
+odpowiedzi na pytania zadane na kartach do gry. Znajdują się w nim również
+ciekawostki oraz pytania do przebiegu drugiego etapu gry. Z podręcznika do gry
+korzysta tylko osoba prowadząca rozgrywkę.
+
+Instrukcja dla graczy i prowadzącego: Kolorystyka instrukcji do gry zbliżona jest
+do kolorystyki planszy i pudełka, jednakże, aby rozróżnić poszczególne części
+składowe produktu, kolory są jaśniejsze. W instrukcji przedstawione są zasady gry na
+pierwszym jak i na drugim etapie gry. Prowadzący grę znajdzie w instrukcji
+wskazówki jak odpowiednio prowadzić rozgrywkę.
+
+--- strona 14 ---
+
+14
+6. Dostępność produktów wchodzących w skład
+innowacji społecznej
+Wypracowane w ramach projektu rozwiązania, w szczególności: instrukcja gry,
+podręcznik oraz wykorzystywane w ramach projektu materiały informacyjno-
+promocyjne wyczerpują założenia standardów dostępności cyfrowej i informacyjnej,
+zawarte
+w
+„Standardach
+dostępności
+dla
+polityki
+spójności
+2014-2020”,
+w szczególności:
+• Materiały merytoryczne (instrukcja do gry oraz podręcznik) przygotowane
+zostały w formie plików (np. doc, pdf), spełniających standard dostępności
+informacyjnej i cyfrowej,
+• Elementy fizyczne gry (pionki, kostki, karty i inne) zaprojektowane zostały w
+taki sposób, by mogły z nich korzystać także osoby z obniżoną sprawnością
+manualną (odpowiednia wielkość kart, planszy i pionków), a czcionki
+stosowane w grze (karty) uwzględniają także potrzeby osób z dysfunkcją
+wzroku i ogólne standardy dostępności informacyjnej.
+• Lokale użytkowe, w których prowadzone były działania bezpośrednie, tj.
+warsztaty, spotkania z grupą testową etc., spełniały standardy dostępności
+architektonicznej. Nie zaistniała konieczność zapewnienia dodatkowych form
+dostępności np. usługa tłumacza migowego.
+
+--- strona 15 ---
+
+15
+7. Opis testowania innowacji społecznej
+● Grupa testująca
+Łącznie w testowaniu gry wzięło udział 12 osób, doświadczających kryzysu zdrowia
+psychicznego. Dziesięć osób było uczestnikami Klubu Pacjenta “Fajrant”,
+działającego w ramach Wolskiego Centrum Zdrowia Psychicznego przy Szpitalu
+Wolskim w Warszawie, natomiast dwie osoby w okresie testowania gry korzystały
+z mieszkania chronionego/treningowego, funkcjonującego również pod auspicjami
+Wolskiego Centrum Zdrowia Psychicznego przy Szpitalu Wolskim w Warszawie.
+Wiek osób testujących oscylował w przedziale 25 - 63 lat. W testowaniu wzięły udział
+osoby:
+• Uczące się i jednocześnie pracujące
+• Będące na początku swojej pracy
+• długoletni pracownicy
+• emeryci chcący podjąć zatrudnienie
+• osoby niegotowe do podjęcia pracy
+● Przebieg testowania
+W pierwszym okresie testowania nastąpił proces rekrutacji testerów. Rekrutacja
+przeprowadzona została w komórkach organizacyjnych Wolskiego Centrum Zdrowia
+Psychicznego przy Szpitalu Wolskim w Warszawie.
+10 osób uczestniczyło 3 rozgrywkach. Natomiast 2 osoby rozegrały tylko jedną pełną
+rozgrywkę. Powodem, dla którego nie kontynuowano procesu testowania w tej grupie
+było pogorszenie stanu zdrowia psychicznego dwóch uczestników.
+
+--- strona 16 ---
+
+16
+Testowanie przebiegało w dwóch konfiguracjach:
+- 8 graczy w Klubie Pacjenta “Fajrant”
+- 2 graczy w mieszkaniu chronionym
+Przy każdej z powyższych konfiguracji uczestniczyło dwóch terapeutów:
+• jedna osoba pełniła rolę moderatora (zapoznawała graczy z instrukcją,
+odpowiadała na dodatkowe zapytania, czytała odpowiedzi znajdujące się
+z podręczniku - kompendium wiedzy, nadzorowała kolejność rzutów, udzielała
+instrukcji w trakcie gry)
+• druga osoba pełniła rolę obserwatora, sporządzała notatki, rejestrowała
+bieżące uwagi i wypowiedzi graczy odnośnie przebiegu gry.
+W grupie, liczącej więcej graczy czas rozgrywki był znacznie dłuższy (ok. 4 godzin),
+z powodu licznych rozmów wokół zagadnień, dyskursów, chęci wypowiedzenia się
+osób poza kolejnością oraz przygotowania i wprowadzenia do gry. W grupie
+liczącej 2 graczy czas rozgrywki wyniósł 2 godziny.
+Podczas testowania, testerzy zobowiązani zostali do wskazywania uwag związanych
+z przygotowaniem, wyglądem wizualnym oraz zawartością merytoryczną
+przygotowanej innowacji społecznej.
+
+--- strona 17 ---
+
+17
+8. Wnioski z etapu testowania innowacji
+społecznej
+Testowanie innowacji społecznej wskazało na potrzebę rozwiązań zaproponowanych
+w ramach tworzenia innowacji społecznej. Wszystkie osoby zaangażowane w
+testowanie - testerzy, wskazali, że gra dała im nowe informacje, pozwoliła na miłe
+spędzenie czasu, aktywne spędzenie wolnego czasu, przemyśleń dotyczących
+swojego życia zawodowego.
+W zależności od upodobań kolorystycznych testerów, jedni wskazywali na bardzo
+dobrą szatę graficzną, dostępne ilustracje. Inni wskazywali na zbyt jednolitą
+kolorystykę. Należy jednak pamiętać, że gra została przygotowana z myślą o
+osobach doświadczających problemów zdrowia psychicznego i szata graficzna
+przygotowana została w kolorach stonowanych z myślą o możliwych komplikacjach,
+które spowodowałyby zbyt nasycone i zróżnicowane kolory poszczególnych
+elementów gry.
+Testowanie wskazało, że gra nie jest standardową grą planszową w którą, aby
+spełniła swoje założenia należy grać od początku do końca. „Grę o zdrowie” można
+podzielić na kilka spotkań, można jej również nie kończyć. „Gra o zdrowie” pozwala
+na rozegranie pierwszego etapu, nie przechodząc do drugiego etapu gry. Pozwala
+również na rozgrywkę tylko na podstawie drugiego etapu gry. Dzięki temu gra ma
+dodatkowe atrakcyjne cechy. Niejednokrotnie osoby doświadczające kryzysu
+psychicznego, nie są w stanie przez dłuższy czas skupić się na grze, w związku z
+czym zaleta w postaci braku potrzeby rozegrania całej gry (dwóch etapów w całości)
+jest jej zaletą.
+Testerzy wskazali, że gra ma również charakter integracyjny. Podczas testowania,
+testerzy poznali się lepiej, poznali swoje doświadczenia związane z rynkiem pracy i
+nie tylko. Podczas gry testerzy rozmawiali o tematach zaproponowanych przez
+innowatora, a dodatkowo wymieniali się także opiniami na temat spraw, które ich
+łączą, a nie są bezpośrednio związane z tematem gry.
+
+--- strona 18 ---
+
+18
+„Gra o zdrowie” to także gra, w którą grać mogą osoby młodsze, kończące etap
+edukacji na wcześniejszym poziomie i rozpoczynające we wczesnym wieku swoją
+pierwszą pracę. Grupa osób z mniejszym poziomem wykształcenia jest szczególnie
+narażona na brak wiedzy dotyczących aspektów prawnych i finansowych rynku
+pracy. To z kolei skutkuje wykorzystywaniem tychże osób przez nieuczciwych
+pracodawców, a co za tym idzie pogorszenia stanu zdrowia psychicznego.
+W grę o zdrowie grać mogą również osoby dorosłe, pracujące i nie będące osobami
+z niepełnosprawnościami, ponieważ charakter gry jest tak uniwersalny, że wiedza
+w niej zawarta skierowana jest tak naprawdę do każdego zainteresowanego.
+Ankiety, które testerzy wykonywali przed przystąpieniem do testowania oraz po
+zakończeniu testowania (w obydwu przypadkach pytania zawarte w ankiecie były
+takie same), wskazują na wzrost wiedzy dotyczącej regulacji, zasad i praw
+rządzących rynkiem pracy. Ponadto testerzy, po okresie testowania, deklarowali
+większe zainteresowanie tematyką aktywności zawodowej, w tym także wzrost
+motywacji do podejmowania samodzielnych działań w tym obszarze.
+
+--- strona 19 ---
+
+19
+9. Rekomendacje dla odbiorców i użytkowników
+innowacji społecznej
+Rekomendacje po testowaniu gry przygotowane przez prowadzących rozgrywki „Gry
+o zdrowie”:
+• Uczestnictwo w grze jest dobrowolne dla każdego gracza. Osoby
+uczestniczące w zajęciach, niechcące grać mogą przypatrywać się grze i brać
+czynny udział w rozmowie,
+• Osoby grające w grę nie muszą wykazywać tego samego poziomu znajomości
+obszaru rynku pracy. Różnorodność graczy sprzyja rozgrywce,
+• Wiek graczy nie ma znaczenia. W grę może grać każda osoba, a rozróżnienie
+wiekowe graczy wpłynie pozytywnie na przeprowadzoną rozgrywkę,
+• Gry nie trzeba ukończyć. Można rozegrać tylko 1 lub 2 etap gry,
+• Rozgrywkę można przerywać, a gra może trwać nawet kilka dni lub być
+przerywana w zależności od możliwości graczy,
+• Osoba prowadząca grę nie musi posiadać przygotowania z zakresu obszaru
+rynku pracy – podręcznik do gry zawiera odpowiedzi i komentarze,
+wystarczające do przeprowadzenia zajęć przy użyciu innowacji,
+• Osoba prowadząca powinna spisać kontrakt z uczestnikami zajęć, w którym
+zapisze podstawowe informacje dotyczące funkcjonowania grupy podczas
+rozgrywki, w tym m.in.: nie krytykowanie innych, nie przerywanie, możliwość
+przerwania tematu rozmowy przez osobę prowadzącą, jeśli on wykracza
+mocno poza temat gry lub jeśli budzi konflikty, możliwość powiedzenia STOP
+przez gracza co jest jednoznaczne z możliwością nieodpowiadania na dane
+pytanie itd.
+• Przestrzeń, w której odbywa się rozgrywka powinna dać graczom swobodę
+przemieszczania się, być jasna lub odpowiednio doświetlona,
+• Niezbędne jest wyposażenie przestrzeni do gry w odpowiednią liczbę
+wygodnych krzeseł oraz stół, do którego dostęp będzie miał każdy gracz.
+
+--- strona 20 ---
+
+20
+• Gra może być wykorzystana przez osoby zamieszkujące w różnych rejonach
+kraju, pytania i informacje zawarte w podręczniku, szczególnie z kategorii
+prawnych i urzędowych, zostały sformułowane w sposób uniwersalny.
+• Na planszy znajdują się cztery pola startowe, co nie determinuje możliwości
+udziału jedynie osób, które mogą przyporządkować się do jednej z
+wymienionych kategorii. Z powodzeniem opis kategorii można pominąć, gdyż
+nie ma ona znaczenia dla gracza i jego udziału w rozgrywce.
+• Pytania znajdujące się na kartach, szczególnie te z zakresu zagadnień
+prawnych, finansowych i urzędowych odnoszą się do przepisów aktualnych na
+rok, w którym gra została opracowana, czyli 2021. W związku z tym
+użytkowanie gry w kolejnych latach wymaga weryfikacji pod kątem aktualności
+regulacji i przepisów, do których nawiązują pytania na kartach (karta czerwona
+– zagadnienia prawne; karta szara – zagadnienia finansowe; karta
+niebieska/granatowa – zagadnienia związane z funkcjonowaniem urzędów i
+organizacji pozarządowych).
+
+--- strona 21 ---
+
+21
+
+Załącznik nr 1: Ankieta poprzedzająca i
+kończąca testowanie projektu „Gra o zdrowie”
+
+Imię i nazwisko Testera
+………………………………………………………….
+
+1. Czy znęcanie psychiczne ze strony współpracownika jest mobbingiem?
+
+a) Tak
+b) Nie
+c) Nie wiem
+
+2. Podczas rozmowy kwalifikacyjnej rekruter nie ma prawa pytać o kwestie, które
+nie są bezpośrednio związane z oferowanym zatrudnieniem.
+
+a) Tak
+b) Nie
+c) To zależy
+d) Nie wiem
+
+3. Czy pracodawca ma prawo zapytać pracownika o przyczynę zwolnienia
+lekarskiego?
+
+a) Tak
+b) Nie
+
+--- strona 22 ---
+
+22
+c) Nie wiem
+
+4. Pracownikowi, który ma orzeczenie o lekkim stopniu niepełnosprawności
+przysługuje dodatkowy urlop wypoczynkowy.
+
+a) Prawda
+b) Fałsz
+
+5. Kwota minimalnego wynagrodzenia jest stałą wartością i nie ulega zmianie.
+
+a) Prawda
+b) Fałsz
+
+6. Czy pracodawca może wypłacić pracownikowi wynagrodzenie w formie innej
+niż pieniężna?
+
+a) Tak
+b) Nie
+c) Nie wiem
+
+7. Czy osoba, która posiada prawo do renty socjalnej będzie zarejestrowana w
+Urzędzie Pracy jako:
+
+a) poszukująca pracy
+b) bezrobotna
+c) nie wiem
+
+8. Orzeczenie do celów rentowych uzyskasz w:
+
+a) ZUS
+b) Powiatowym Centrum Orzekania o Niepełnosprawności
+
+--- strona 23 ---
+
+23
+
+1. Jak ocenia Pan/i swój poziom wiedzy dotyczącej rynku pracy? Proszę
+zaznaczyć.
+
+1 – bardzo niska
+
+2 – niska
+
+3 – umiarkowana
+
+4 – dobra
+
+5 – bardzo dobra
+
+2. Czy potrzebuje lub potrzebował/a Pan/i wsparcia w aktywizacji zawodowej ze
+strony specjalistów?
+
+a) Tak
+b) Nie
+
+3. Czy obecnie zdecydowałby/aby się Pan/i na podjęcie działań aktywizacyjnych
+samodzielnie?
+
+a) Tak
+b) Nie
+
+--- strona 24 ---
+
+24
+4. Czy uważa Pan/i, że edukacyjna gra planszowa może pomóc pacjentom
+szpitalnego oddziału dziennego w utrzymaniu lub wzroście motywacji do
+powrotu do pracy lub rozpoczęcia działań związanych z podjęciem pracy?
+(przed testowaniem proszę opierać swoją odpowiedź na przypuszczeniach.
+Po etapie testowania proszę opierać swoją odpowiedź na doświadczeniu)
+
+a) Tak
+b) Nie
+
+5. Jak ocenia Pan/i swoją motywację do pracy? Proszę zakreślić odpowiedź.
+
+1 – bardzo słaba, 2 – słaba, 3 – umiarkowana, 4 – wysoka, 5 - bardzo
+wysoka
+
+--- strona 25 ---
+
+25
+Załącznik nr 2: Instrukcja do gry (osobny plik)
+Załącznik nr 3: Podręcznik instruktażowy (osoby
+plik)
+Załącznik nr 4: Karty z pytaniami, karty
+„Ciekawostki” oraz „Wsparcie od pozostałych
+graczy” (osobne pliki)
+Załącznik nr 5: Plansza do gry (osobny plik)

@@ -1,0 +1,1054 @@
+--- strona 1 ---
+
+1
+FINALNY MODEL INNOWACJI
+„DOSTĘPNY STÓŁ TARGOWY”
+INNOWATOR:
+
+Gmina Miasta Dębica
+ul. Ratuszowa 2, 39-200 Dębica
+ZESPÓŁ PROJEKTOWY:
+Jerzy Sieradzki
+Elżbieta Zielińska
+Andrzej Bukowski
+Jolanta Paździor
+Mirosław Rdzak
+Julita Skiba – Moderator procesu testowania
+Wykonawca specyfikacji technicznej:
+Tres Sp. z o.o
+Ul. Akademicja 33, 39-200 Dębica
+Tomasz Szeremeta
+DĘBICA 2022
+
+--- strona 2 ---
+
+2
+Spis treści
+1. OPIS INNOWACJI
+3
+2. SPECYFIKACJA TECHNICZNO – MATERIAŁOWA
+5
+3. PROJEKT TECHNICZNY POSZCZEGÓLNYCH WARIANTÓW
+10
+4. INSTRUKTAŻ WYKONANIA I MONTAŻU
+44
+5. INSTRUKTAŻ UŻYTKOWANIA
+48
+6. WYNIKI RAPORTU Z ETAPU TESTOWANIA, REKOMENDACJE
+UŻYTKOWNIKÓW W ODNIESIENIU DO POSZCZEGÓLNYCH WARIANTÓW
+STOŁU
+50
+
+--- strona 3 ---
+
+3
+1 Opis innowacji
+CEL INNOWACJI
+Celem innowacji jest opracowanie i przetestowanie czterech różnych prototypów
+dostępnych stołów targowych przeznaczonych dla seniorów i osób
+z niepełnosprawnościami.
+Dzięki opracowaniu dostępnego funkcjonalnie stołu targowego, seniorzy i osoby
+z niepełnosprawnościami pomimo licznych niedyspozycji i trudności w codziennym
+funkcjonowaniu będą mogły w sposób przyjazny i dostępny dokonywać zakupów na
+targowisku rolno - spożywczym.
+Poszczególne prototypy będą zawierały różnie skonfigurowany zakres rozwiązań
+funkcjonalnych:
+-
+rozwiązania funkcjonalne dla osób korzystających z laski inwalidzkiej / kul
+ortopedycznych itp. pozwalające intuicyjnie i w sposób ergonomiczny na ich
+oparcie/ umieszczenie/podtrzymanie przy stole targowym,
+-
+rozwiązania funkcjonalne ułatwiające pakowanie zakupów pozwalające na
+postawienie/podwieszenie siatek /toreb siatek na stole targowym ułatwiający
+spakowanie zakupów np. bez konieczności trzymania jej w ręce,
+-
+rozwiązania funkcjonalne w zakresie poprawy produktów i ekspozycji (np.
+system podnoszenia i regulacji nachylenia blatu),
+-
+rozwiązanie funkcjonalne i dokonywanie płatności w szczególności monetami,
+ułatwiające np. zabranie wydanej reszty w monetach, m.in. dla osób
+z ograniczoną sprawnością manualną dłoni,
+-
+rozwiązania alternatywne zapewniające wsparcie dla osób, które
+odstawią/odłożą kule czy laski inwalidzkie (np. krzesło czy ergonomiczne
+uchwyty).
+
+--- strona 4 ---
+
+4
+DLA KOGO JEST PRZEZNACZONA INNOWACJA?
+Grupę docelową stanowią osoby starsze i osoby z niepełnosprawnościami. Osoby
+stanowiące grupę docelową z racji swoich niepełnosprawności, wieku i trudności
+z nich wynikających, są zagrożone wykluczeniem. Brak zastosowania rozwiązań
+ułatwiających funkcjonalnie dostępne zakupy na targowisku, ogranicza mobilność
+tych osób i przyczynia się do pozostania w domach, a w konsekwencji konieczności
+korzystania z pomocy innych osób w robieniu zakupów, izolacji społecznej, spadku
+poczucia wartości, co w efekcie spowoduje ich wykluczenie społeczne.
+Są to osoby często poruszające się o kulach inwalidzkich i ortopedycznych,
+z balkonikami, osoby z zaburzeniami równowagi, z ograniczoną sprawnością
+ruchową kończyn górnych, z zaburzoną motoryką dłoni i palców, używające ortez,
+poruszające się na wózkach inwalidzkich oraz osoby z różnorodnymi innymi
+dolegliwościami utrudniającymi codzienne funkcjonowanie w społeczeństwie.
+Grupę wyróżnia m.in. to, że mimo swoich dysfunkcji i niepełnosprawności oraz
+wieku, osoby te chcą uczestniczyć w życiu społecznym, chcą być w możliwie
+największym stopniu samodzielne, spotykać się podczas zakupów z innymi
+kupującymi. Oprócz motywacji do przezwyciężania własnych słabości i ograniczeń,
+cechuje ich także poczucie samodzielności i własnej wartości, które wykluczają
+nadmierną troskę i wyręczanie ze strony otoczenia, w codziennych czynnościach,
+m.in. takich, jak zakupy na lokalnym targu.
+Dzięki przedmiotowej innowacji seniorzy i osoby z niepełnosprawnościami będą
+mogli w sposób bardziej dostępny dokonywać zakupów na targowisku, co może
+zachęcić inne osoby z grupy docelowej nie korzystające z targowiska z uwagi na
+swoje problemy do wyjścia z domu, pełniejszego uczestnictwa w życiu codziennym
+i włączenia społecznego.
+
+--- strona 5 ---
+
+5
+2 Specyfikacja techniczno – materiałowa
+PARAMETRY TECHNICZNE
+Wymiary stołu targowego oraz jego części składowych:
+• Podstawa: 1 000 x 2 000 x 700 [mm] (szer. x dł. x wys.)
+• Blat ze stelażem: 1 000 x 2 000 x 50 [mm] (szer. x dł. x wys.)
+• Krzesło z regulowaną podstawą: 430 x 360 x 540 [mm] (szer. x gł. x wys.).
+• Półka wysuwana: 550 x 500[mm] (szer. x dł.).
+• Pochwyt: 250 x 50 x 50[mm] (szer. x gł. x wys.).
+• Bilownica: 500 x 500 [mm] (szer. x dł. x wys.).
+MATERIAŁY KONSTRUKCYJNE
+Profile zamknięte o wymiarach:
+• 60 x 60 x 3 [mm]
+• 50 x 50 x 2 [mm]
+• 30 x 30 x 2 [mm]
+• 1,5 x 30 x 30 [mm]
+Kątowniki stalowe o wymiarach:
+• 50 x 50 x 5 [mm]
+• 30 x 30 x 3 [mm]
+Pręty stalowe o przekroju:
+• Fi 18 [mm]
+• Fi 14 [mm]
+• Fi 6 [mm]
+• Fi 16 [mm]
+Blacha nierdzewna o wymiarach:
+• 1 000 x 2 000 x 3.0 [mm]
+
+--- strona 6 ---
+
+6
+Blacha stalowa o wymiarach:
+• 120 x 120 x 8,0 [mm]
+• 350 x 250 x 1,5 [mm]
+• 550 x 500 x 1,5 [mm]
+• 130 x 130 x 1.0 [mm]
+POZOSTAŁE ELEMENTY
+• Płaskownik stalowy 120 x 8,0 [mm]
+• Płaskownik stalowy 40 x 10 [mm]
+• Blacha czarna stalowa
+• Siedzisko plastikowe 420 x 360 x 110 [mm] (szer. x gł. x wys.);
+• Tuleja stalowa fi 22 (zew.) x 16 (wew.) x h 30 [mm] x 2 szt.
+• Sprężyna stalowa
+• Rolki plastikowe 15 x 25 [mm] x 4 szt.
+• Laminat grawerski 50 x 50 x 1,0 [mm] (szer. x wys. x gr.)
+• Śruby,
+• Zawiasy,
+• Zawleczki zabezpieczające,
+• Kotwy stalowe M8 x 150 [mm],
+• Farba zabezpieczająca przed korozją RAL 7004 naniesiona w systemie
+proszkowym C4 wg PN-EN ISO 12944-2/2001.
+WARIANT I - MATERIAŁY KONSTRUKCYJNE
+stół z regulacją nachylenia blatu:
+-
+profil zamknięty stalowy 3,0 x 60 x 60 mm
+-
+płaskownik stalowy 120 x 8,0 mm
+-
+kątownik stalowy 50 x 50 x 5, 30 x 30 x 3 mm
+-
+pręt stalowy fi 16 mm
+-
+zawiasy bramowe rozmiar 16 mm, zawias zw. – fi 18 x 60 mm
+-
+blacha nierdzewna 3,0 x 1000 mm x 2000 mm
+uchwyt na kule lub laski inwalidzkie:
+
+--- strona 7 ---
+
+7
+-
+pręt stalowy fi 16 mm
+haczyk do zawieszania torby z zakupami:
+-
+pręt stalowy fi 6 mm
+półka na zakupy:
+-
+blacha czarna stalowa 2,0 x 600 x 540 mm
+-
+rolki plastikowe 25 x 18 mm
+bilownica na monety:
+-
+pręt stalowy okrągły fi 14 mm
+-
+blacha czarna stalowa 1,5 x 150 x 150 mm
+WARIANT II - MATERIAŁY KONSTRUKCYJNE
+stół z regulacją nachylenia blatu blat (system regulacji)
+-
+profil zamknięty stalowy 3,0 x 60 x 60 mm
+-
+płaskownik stalowy 120 x 8,0 mm
+-
+kątownik stalowy 50 x 50 x 5, 30 x 30 x 3 mm
+-
+pręt stalowy fi 16 mm
+-
+zawiasy bramowe rozmiar 16 mm, zawias zw. – fi 18 x 60 mm
+-
+blacha nierdzewna 3,0 x 1000 mm x 2000 mm
+krzesło wysuwane – przytwierdzone do podstawy stołu z możliwością wsunięcia
+pod blat stołu
+-
+profil zamknięty stalowy 3,0 x 60 x 60 mm
+-
+profil zamknięty stalowy 2,0 x 50 x 50 mm
+-
+profil zamknięty stalowy 1,5 x 30 x 30 mm
+-
+drut stalowy fi 18 dł. płaskownik 40 x 10
+-
+siedzisko z PCV 110 x 420 x 360 bez oparcia
+-
+sprężyna do rozciągania fi 1,5 h- 80
+-
+blacha czarna 2,0 x 350 x 250 mm
+-
+zaślepki plastikowe 30 x 30
+
+--- strona 8 ---
+
+8
+poręcz – pochwyt
+-
+pręt stalowy fi 16
+WARIANT III - MATERIAŁY KONSTRUKCYJNE
+stół z regulacją nachylenia blatu blat stelaż system regulacji:
+-
+profil zamknięty stalowy 3,0 x 60 x 60 mm
+-
+płaskownik stalowy 120 x 8,0 mm
+-
+kątownik stalowy 50 x 50 x 5, 30 x 30 x 3 mm
+-
+pręt stalowy fi 16 mm
+-
+zawiasy bramowe rozmiar 16 mm, zawias zw. – fi 18 x 60 mm
+-
+blacha nierdzewna 3,0 x 1000 mm x 2000 mm
+poręcze (uchwyty):
+-
+pręt stalowy fi 16 - 2 szt.:
+haczyki do zawieszania torby z zakupami:
+-
+pręt stalowy fi6 mm
+półka na torby z zakupami:
+-
+blacha czarna stalowa 2,0 x 600 x 540 mm
+-
+rolki plastikowe 25 x 15
+-
+śruba fi 8 x 20
+bilownica na monety
+-
+pręt stalowy okrągły fi 14
+-
+blacha czarna stalowa 1,5x150 x 150
+
+--- strona 9 ---
+
+9
+WARIANT IV - MATERIAŁY KONSTRUKCYJNE
+stół z regulacją nachylenia blatu + blat + stelaż + system regulacji:
+-
+profil zamknięty stalowy 3,0 x 60 x 60 mm
+-
+płaskownik stalowy 120 x 8,0 mm
+-
+kątownik stalowy 50 x 50 x 5, 30 x 30 x 3 mm
+-
+pręt stalowy fi 16 mm
+-
+zawiasy bramowe rozmiar 16 mm, zawias zw. – fi 18 x 60 mm
+-
+blacha nierdzewna 3,0 x 1000 mm x 2000 mm
+półka na zakupy:
+-
+blacha czarna stalowa 2,0 x 600 x 540 mm
+-
+rolki plastikowe 25 x 15
+-
+śruba fi 8 x 20
+uchwyt na kule lub laski inwalidzkie:
+-
+pręt stalowy fi 16 mm
+krzesło wysuwane– przytwierdzone do podstawy stołu z możliwością wsunięcia pod
+blat stołu
+-
+profil zamknięty stalowy 3,0 x 60 x 60 mm
+-
+profil zamknięty stalowy 2,0 x 50 x 50 mm
+-
+profil zamknięty stalowy 1,5 x 30 x 30 mm
+-
+drut stalowy fi 18 dł. płaskownik 40 x 10
+-
+siedzisko z PCV 110 x 420 x 360 bez oparcia
+-
+sprężyna do rozciągania fi 1,5 h- 80
+-
+blacha czarna 2,0 x 350 x 250 mm
+-
+zaślepki plastikowe 30 x 30
+
+--- strona 10 ---
+
+10
+3 projekt techniczny poszczególnych wariantów
+
+Rysunek 1 Rozłożona podstawa stołu z regulacją rozłożony
+
+Rysunek 2 Podstawa stołu – rzut z krótkiego boku
+
+--- strona 11 ---
+
+11
+Rysunek 3 Podstawa stołu - rzut z dłuższego boku
+
+Rysunek 4 Udźwig rozłożonego stołu
+
+--- strona 12 ---
+
+12
+Rysunek 5 Podstawa stołu - rzut z góry
+
+Rysunek 6 Mechanizm podnoszenia stołu
+
+--- strona 13 ---
+
+13
+
+--- strona 14 ---
+
+14
+3.1. WARIANT I
+Funkcjonalności wariantu:
+• Stół z regulacją nachylenia blatu (podstawa stołu + blat + stelaż + system
+regulacji),
+• Uchwyty na kule lub laski inwalidzkie,
+
+• Haczyki do zawieszenia toreb z zakupami – montowane w blacie stołu lub
+pod linią stołu z oznaczeniem na ramie stołu, informującym
+o zamontowanym elemencie,
+• Półka na zakupy,
+• Bilownica na monety.
+Rysunek 7 Rysunek poglądowy i wariantu stołu
+
+--- strona 15 ---
+
+15
+Rysunek 8 Rzut stołu z góry - Wariant I
+
+--- strona 16 ---
+
+16
+Rysunek 9 Rzut z boku - wariant I
+
+--- strona 17 ---
+
+17
+Rysunek 10 Rzut stołu z przodu - wariant I
+
+--- strona 18 ---
+
+18
+Rysunek 11 Złożenie stołu
+
+--- strona 19 ---
+
+19
+Rysunek 12 Mechanizm podnoszenia stołu
+
+--- strona 20 ---
+
+20
+Rysunek 13 Schemat bilownicy wraz ze sposobem montażu
+
+--- strona 21 ---
+
+21
+Rysunek 14 Schemat półki wysuwanej
+
+--- strona 22 ---
+
+22
+3.2. WARIANT II
+Funkcjonalności wariantu:
+• Stół z regulacją nachylenia blatu (podstawa stołu + blat + stelaż + system
+regulacji),
+• Krzesło wysuwane -przytwierdzone do podstawy stołu z możliwością
+wsunięcia go pod blat stołu,
+• Poręcz (uchwyt).
+Rysunek 15 Rysunek poglądowy II wariantu stołu
+
+--- strona 23 ---
+
+23
+Rysunek 16 Podstawa stołu rzut z góry
+
+--- strona 24 ---
+
+24
+Rysunek 17 Rzut z krótkiego boku - wariant II
+
+Rysunek 18 rzut z przodu - wariant II
+
+--- strona 25 ---
+
+25
+Rysunek 19 Złożenie stołu
+
+--- strona 26 ---
+
+26
+Rysunek 20 Rzut ze złożonym krzesłem - Wariant II
+
+--- strona 27 ---
+
+27
+Rysunek 21 Krzesło wysuwane – złożenie
+
+--- strona 28 ---
+
+28
+Rysunek 22 Rzut z góry - wariant II
+
+--- strona 29 ---
+
+29
+3.3. WARIANT III
+Funkcjonalności wariantu:
+• Stół z regulacją nachylenia blatu (podstawa stołu + blat + stelaż + system
+regulacji),
+• Poręcze (uchwyty) – 2 szt. - montowane symetrycznie – prawy / lewy,
+• Haczyki do zawieszenia toreb z zakupami – montowane w blacie stołu lub
+pod linią stołu z oznaczeniem na ramie stołu, informującym
+o zamontowanym elemencie,
+• Półka na torby z zakupami
+• Bilownica na monety.
+Rysunek 23 Wariant III stołu - rysunek poglądowy
+
+--- strona 30 ---
+
+30
+Rysunek 24 Podstawa stołu - rzut z góry
+
+--- strona 31 ---
+
+31
+Rysunek 25 Złożenie stołu
+
+--- strona 32 ---
+
+32
+Rysunek 26 Rzut z przodu – wariant III
+
+--- strona 33 ---
+
+33
+Rysunek 27 Wariant III - rzut z góry
+
+--- strona 34 ---
+
+34
+Rysunek 28 Wariant III - rzut z boku
+
+--- strona 35 ---
+
+35
+Rysunek 29 Półka wysuwana
+
+--- strona 36 ---
+
+36
+Rysunek 30 Schemat bilownicy wraz ze sposobem montażu
+
+--- strona 37 ---
+
+37
+3.4. WARIANT IV
+Funkcjonalności wariantu:
+• Stół z regulacją nachylenia blatu (podstawa stołu + blat + stelaż + system
+regulacji),
+• Półka na torby z zakupami,
+• Uchwyty na kule lub laski inwalidzkie,
+• Krzesło wysuwane, przytwierdzone do podstawy stołu z możliwością
+wsunięcia go pod blat stołu.
+Rysunek 31 Wariant IV stołu – rysunek poglądowy
+
+--- strona 38 ---
+
+38
+Rysunek 32 Rzut z góry - podstawa stołu
+
+--- strona 39 ---
+
+39
+Rysunek 33 Rzut z przodu - Wariant IV
+
+Rysunek 34 Wariant IV - rzut z przodu
+
+--- strona 40 ---
+
+40
+Rysunek 35 Rzut z góry - wariant IV
+
+--- strona 41 ---
+
+41
+Rysunek 36 1Złożenie stołu
+
+--- strona 42 ---
+
+42
+Rysunek 37 Rzut z krótkiego boku - wariant IV
+
+Rysunek 38 Rzut ze złożonym krzesłem - wariant VI
+
+--- strona 43 ---
+
+43
+Rysunek 40 Schemat złożenia krzesła
+
+--- strona 44 ---
+
+44
+4 Instruktaż wykonania i montażu
+INSTRUKTAŻ WYKONANIA STOŁU
+Rama (podstawa) stołu
+Do wykonania podstawy stołu stosujemy profil zamknięty stalowy 3,0 x 60 x 60 oraz
+płaskownik stalowy 120 x 8,0. z profilu 3,0 x 60 x 60 przygotowujemy odcinki
+o długości:
+-
+700 mm x 4 sztuki – nogi stołu
+-
+880 mm x 2 sztuki – rama stołu
+-
+1880 mm x 2 sztuki – rama stołu
+Natomiast płaskownik 120 mm x 8 mm przecinamy na odcinki po 120 mm.
+W każdym rogu wykonujemy otwory o średnicy fi 10. Tak przygotowany materiał
+łączymy ze sobą za pomocą spawarki MIG. Stabilność ramy stołu zapewniają kotwy
+stalowe (M8 x 100) łączące stół z podłożem.
+Do konstrukcji blatu uchylnego używamy:
+-
+kątownik stalowy 30 x 30 x 3 – 2 sztuki po 1 000 mm - wzmocnienie blatu
+stołu
+-
+kątownik stalowy 50 x 50 x 5 przycięty pod kątem 45 stopni do wykonania
+ramy blatu w odcinkach – 1 000 mm x 2 sztuki i 2 000 mm x 2 sztuki,
+-
+kątownik stalowy 50 x 50 x 5 łączymy ze sobą w ramę 1 000 mm x 2 000
+mm, a następnie wstawiamy w równych odstępach dwa wsporniki
+z kątownika 30 x 30 x 3,0. do konstrukcji montujemy dodatkowo uchwyt
+z drutu stalowego fi 16 x 60 x 250 mm, aby ułatwić podnoszenie blatu.
+Do połączenia blatu z podstawą stołu stosujemy trzy zawiasy bramowe rozmiar 16
+mm. Po przeciwnej stronie montujemy blokadę ruchomą na dwóch zawiasach – fi
+18 x 60 mm, której zadaniem jest ustawienie blatu w pozycji pochyłej pod kątem 15
+
+--- strona 45 ---
+
+45
+st. do ramienia blokady dospawujemy dwa trzpienie z drutu stalowego fi 18 x 50
+mm, które mają za zadanie zapobiec niekontrolowanemu przesunięciu
+i zatrzaśnięciu się blatu. Po podniesieniu blatu umieszczamy trzpienie w tulejach
+i dodatkowo zabezpieczamy przez wsunięcie zawleczki.
+Na koniec montujemy blat z blachy nierdzewnej 3,0 x 1000 mm x 2 000 mm.
+Dłuższy bok blachy zaginamy wcześniej. Wygięty ku górze 3-centymetrowy pas
+zabezpieczy towar (skrzynki) przed zsuwaniem się. Dodatkowo stół jest
+wyposażony w trzy odboje gumowe, które zapewnią bezpieczeństwo podczas
+podnoszenie blatu
+Wszystkie części stołu łączone są na gorąco (spawane) drutem 1.2 w osłonie
+gazowej metodą MIG, a następnie szlifowane na ,,gładko”. Ostre krawędzie blatu
+zabezpieczamy profilem PCV do zabezpieczania krawędzi.
+Krzesło (siedzisko)
+Do konstrukcji krzesła potrzebujemy:
+-
+profil stalowy 3,0 x 60 x 60 dł. 1 200 mm
+-
+profil stalowy 2,0 x 50 x 50 dł. 400 mm
+-
+profil stalowy 1,5 x 30 x 30 dł. 1 400 mm
+-
+drut stalowy fi 18 dł. 50 mm – 1 szt.
+-
+płaskownik 40 x 10 dł. 50 mm – 3 szt.
+-
+siedzisko z PCV 110 x 420 x 360 bez oparcia – 1 szt.
+-
+sprężynę do rozciągania fi 1,5 h- 80 – 1 szt.
+-
+blacha czarna 2,0 x 350 x 250 – 1 szt/
+-
+zaślepki plastikowe 30 x 30 – 4 szt. dwa odcinki
+Do połączenia krzesła ze stołem wykorzystamy dwa odcinki profilu 60 x 60 x 3- 500
+mm i 300 mm oraz płaskownika 40 x 10 z otworem fi 18,5 mm. Krótszy odcinek
+dospawujemy od wewnętrznej strony nogi stołu, dłuższy natomiast połączymy
+
+--- strona 46 ---
+
+46
+z krzesłem. Powstał w ten sposób zawias, na którym przemieszczać będzie się
+krzesło.
+Pozostały odcinek profilu 60 x 60 x 3 docinamy na długość 380 mm dospawując go
+pionowo do dłuższego ramienia zawiasu. w ten sposób powstała prowadnica
+do nogi krzesła.
+Następną czynnością jest wykonanie i montaż krzesła. do tego potrzebny nam
+będzie profil 50 x 50 x 2 o długości 400 mm oraz blacha czarna z otworami
+do przykręcenia siedziska. Po zespoleniu tych elementów montujemy wewnątrz
+profilu sprężynę do rozciągania fi 1,5 h- 80, a następnie całość wkładamy
+w prowadnicę.
+W taki oto sposób powstanie system opuszczania krzesła podczas siadania.
+Do stabilizacji krzesła wykorzystujemy profil stalowy 30 x 30 x 2 łącząc go u
+podstawy w ,,krzyż”, a zewnętrzne końce profilu zabezpieczamy zaślepkami. Na
+koniec za pomocą wkrętów łączymy siedzisko z blachą, przyspawaną do nogi
+krzesła.
+Bilownica ruchoma
+Do wykonania bilownicy potrzebny będzie pręt stalowy okrągły fi 14 o długości 1000
+mm oraz blacha czarna stalowa 1,5 x 150 x 150. Pręt zaginamy pod kątem 90
+stopni tak, aby jedno z ramion miało 500 mm, a drugie 400 mm. Naddatek materiału
+docinamy, następnie na dłuższym końcu pręta mocujemy podkładkę, która będzie
+ograniczać wsuwanie się pręta. do podstawy stołu - w jego środkowej części,
+montujemy tulejkę, w którą będzie włożony pręt. Bilownicę zabezpieczamy
+zawleczką, wsuwając jąw otwór wywiercony na końcu pręta. Następnie profilujemy
+blachę na walcarce, aż uzyskamy wycinek o promieniu 350. Przycinamy ją na
+wymiar, a pozostałym paskiem blachy zaślepiamy boki. Bilownicę łączymy
+z krótszym końcem pręta za pomocą spawarki. Wszystkie spawy i ostre krawędzie
+dokładnie szlifujemy.
+
+--- strona 47 ---
+
+47
+Półka wysuwana
+Stoły, w których będzie zamontowana półka, są wyposażone w prowadnice z blachy
+czarnej 1,5 mm przyspawane w podstawie stołu. Półkę wykonujemy z kawałka
+blachy czarnej stalowej 2,0 x 600 x 540 mm. Boki, do których przykręcimy rolki,
+zaginamy po 20 mm każdy, a następnie z jednej ze stron zaginamy 40 mm blachy
+otrzymując przód półki – uchwyt. Rolki plastikowe 25 x 15 przykręcamy do 20 mm
+boków, całość montujemy w prowadnicach i w razie konieczności regulujemy. Po
+wewnętrznej stronie półki robimy otwór na śrubę fi 8, która posłuży jako
+zabezpieczenie półki przed wysunięciem.
+Uchwyt
+Wykonany z 350 mm odcinka prętu stalowego o przekroju fi16. Pręt wyginamy
+w literę ,,C”, gdzie dwa krótsze boki mają 50mm, a dłuższy bok około 350 mm.
+Przyspawujemy je do podstawy stołu pod blatem.
+Haczyki
+Do ich wykonania posłuży pręt stalowy o przekroju fi6 mm. Wyginamy go w literę
+,,S” pamiętając, aby zewnętrzne wymiary nie przekraczały 60 x 60 mm. Następnie,
+przy pomocy spawarki, montujemy je do dolnej powierzchni profilu podstawy stołu.
+Wszystkie ostre krawędzie dokładnie szlifujemy.
+Uchwyt na kule
+Uchwyt na kule jest zrobiony z pręta stalowego fi 14 wygiętego w niepełny okrąg
+o średnicy 50 mm. Przyspawany jest jednym końcem do podstawy stołu, drugi
+koniec jest odchylony, tworząc odstęp między stołem do przełożenia kul.
+Tabliczka informacyjna
+Umieszczona w sposób widoczny dla klientów, zawierająca informację
+o zamontowanym udogodnieniu.
+
+--- strona 48 ---
+
+48
+Malowanie
+Całość została zabezpieczona proszkowo przed rdzą i uszkodzeniami
+mechanicznymi systemem malarskim dla kategorii C4 wg PN-EN ISO 12944-
+2/2001.
+Instruktaż montaż stołu
+Do zamontowania stołu potrzebujemy wiertarkę udarową oraz 16 kotw stalowych
+M8x15. Umieszczamy stół w docelowym miejscu, a następnie poziomujemy.
+Zaznaczamy miejsca wiercenia otworów, a następnie wiertarką udarową
+wykonujemy otwory, w które mocujemy kotwy. Tak umocowany stół daje gwarancję
+bezpiecznego użytkowania.
+5 Instruktaż użytkowania
+Prototypy stołu targowego przeznaczone są do ekspozycji skrzynek i produktów
+rolnych. Blat stołu jest regulowany i można ustawić go pod kątem 15 st,
+wytrzymałość wynosi 600 kg. Aby zachować bezpieczeństwo i przestrzegać użycia
+zgodnego z przeznaczeniem, produktu nie można przebudowywać i/lub
+modyfikować.
+Użycie produktu do celów, które nie zostały przewidziane przez producenta, może
+spowodować jego uszkodzenie. Dodatkowo nieprawidłowe użycie może
+spowodować inne zagrożenia.
+Prototyp stołu można przekazywać osobom trzecim wyłącznie z dołączoną
+instrukcją obsługi.
+• Osobom nieprzeszkolonym, pod żadnym pozorem nie wolno regulować
+ruchomego blatu.
+• Nie można używać stołu jako drabiny. Nigdy nie wchodź ani nie stawaj na
+blacie roboczym.
+
+--- strona 49 ---
+
+49
+• Nie przekraczaj zalecanego maksymalnego obciążenia krzesła (130 kg) oraz
+powierzchni roboczej stołu (600 kg), półka (15 kg).
+• Aby zapobiec obrażeniom i uszkodzeniom zamontowanych elementów oraz
+powierzchni stołu, zawsze stosuj instrukcję obsługi.
+• Aby uniknąć obrażeń osób postronnych, nie zostawiaj stołu bez nadzoru
+• Przed użyciem elementów ruchomych upewnij się, że są całkowicie otwarte
+i zablokowane.
+• Aby zapobiec obrażeniom podczas otwierania lub zamykania stołu
+warsztatowego, unikaj wkładania rąk i palców w miejsca, w których mogą
+zostać ściśnięte.
+• Zawsze utrzymuj miejsce pracy w czystości i porządku.
+• Wszystkie części ruchome muszą być okresowo sprawdzane pod kątem
+technicznym oraz zabezpieczone smarem grafitowym
+Instrukcja ustawiania blatu roboczego
+• Podczas składania i podnoszenia blatu stołu należy zachować szczególną
+ostrożność.
+• Przed regulacją blatu należy zdjąć wszystkie przedmioty, które się na nim
+znajdują.
+• Jedną ręką łapiemy za uchwyt, podnosząc blat do góry, a drugą stawiamy
+podpórkę pionowo w specjalnie przystosowane do tego zabezpieczenia.
+• Dodatkowo zabezpieczamy podpórkę zawleczkami.
+
+--- strona 50 ---
+
+50
+6 Wyniki Raportu z etapu testowania, rekomendacje
+użytkowników w odniesieniu do poszczególnych
+wariantów stołu
+Wyniki Raportu z etapu testowania.
+Zgodnie założeniami projektu 10- cio osobową grupę testującą miały stanowić
+osoby zamieszkałe na terenie Miasta Dębica, osoby starsze,
+z niepełnosprawnościami i różnymi dysfunkcjami powyżej 60 r. ż.,
+Wyniki testów dla rozwiązania – Regulacja nachylenia blatu.
+Pierwszą ocenianą cechą była regulacja nachylenia blatu. Regulacja nachylenia
+blatu jest obecna w każdym z 4 testowanych wariantów stołów. Uczestnicy mieli
+udzielić odpowiedzi na 5 pytań a uzyskane, łączne wyniki z czterech wariantów,
+przedstawiono na poniższym wykresie.
+Ocena regulacji nachylenia blatu stołu
+Jak możemy zauważyć na podstawie uzyskanych wyników żadna z badających
+osób nie miała problemu z dostępem do asortymentu oraz jego widocznością.
+w przypadku pytania o samodzielny wybór kupowanego towaru tylko jedna osoba
+
+--- strona 51 ---
+
+51
+odpowiedziała przecząco. Tutaj jednak należy dodać uwagę, że wśród badających
+znajdowała się jedna osoba poruszająca się na wózku inwalidzkim, która ze
+zrozumiałych powodów nie miała możliwości swobodnego dostępu do towaru („nie
+dosięgnę, poruszam się na wózku”). Być może w przypadku takich osób należałoby
+dodać dodatkowe usprawnienia w proponowanych stołach, ale to wymagałoby
+dodatkowych badań i odpowiednio szczegółowej analizy. Na tle pozostałych
+odpowiedzi szczególnie wyróżnia się pytanie o przydatność regulacji. Zdecydowana
+liczba uczestników odpowiedziała przecząco wskazując tym samym, że pozostałe
+cechy (wysokość, ułożenie towaru) stołu są zdecydowanie wystarczające dla
+potrzeb kupujących.
+
+Ocena uchwytu na kulę/laskę inwalidzką
+Kolejną badaną innowacją był Uchwyt na laskę/kulę ortopedyczną.
+Ta cecha była obecna w dwóch wariantach – pierwszym i czwartym
+Widzimy tutaj jednoznaczną zgodność w ocenach, co do przydatności badanej
+innowacji – uchwyt na kulę był pomocny podczas robienia zakupów. Zdecydowana
+większość z grupy testującej nie miała problemu z jej zauważeniem i z jej użyciem.
+Warto jednak zwrócić uwagę na opinię uzyskaną od jednego z uczestników,
+
+--- strona 52 ---
+
+52
+o słabej widoczności tej cechy w przypadku osób słabo widzących i niedowidzących
+– podczas pierwszego badania osoba z taką dysfunkcją nie zauważyła tego
+udogodnienia. Podkreśliła też słabą widoczność obrazka informacyjnego. Kilkoro
+uczestników w odpowiedzi opisowej również zwracała uwagę na ten problem
+(„słaba widoczność, kolor zlewa się z kolorem stołu”, „mały rysunek”).
+Następną badaną cechą dostępną w wariancie pierwszym i trzecim były Haczyki
+do zawieszania torby z zakupami.
+
+Ocena haczyków do zawieszania torby z zakupami
+Podobnie, jak w przypadku poprzedniej cechy także i tutaj zdecydowana większość
+uczestników wskazała na przydatność innowacji i nie miała problemu z jej
+zauważeniem. Jednakże dla osób słabowidzących może to stanowić problem,
+bowiem jak wskazywali badający rysunek jest słabo widoczny. Na uwagę zasługują
+odpowiedzi na pytanie o łatwość jej użycia – tutaj opinie są już wyrównane i dla
+jednej połowy łatwo było z niej skorzystać podczas gdy dla drugiej stanowiło to
+problem. Uwagi, jakie testujący podali w przypadku problemów z jej użyciem to
+
+--- strona 53 ---
+
+53
+przede wszystkim „zbyt daleko umieszczone” (8 opinii), „zbyt nisko osadzone” (2
+opinie) oraz wspomniany już problem z jej widocznością (3 opinie).
+W następnym kroku ocenie podlegała Półka na zakupy – innowacja obecna
+w wariancie pierwszym, trzecim oraz czwartym.
+
+Ocena półki na zakupy
+W tym przypadku, podobnie jak poprzednio oceny badających pokrywają się co,
+do oceny przydatności badanej cechy a większość nie miała problemu z jej
+zauważeniem. Warto jednak zwrócić uwagę, że dla osób słabowidzących jej może
+to jednak stanowić problem. Jeśli chodzi o samo użytkowanie półki zdecydowana
+większość podkreślała, że jest „łatwa w użyciu” (41 opinii). Tylko 2 opinie zwracały
+uwagę na trudności z jej wysunięciem. Użytkownicy zwracali również uwagę na jej
+wygodę użycia i pomoc jaką stanowi w czasie robienia zakupów („pomocna, można
+odłożyć torbę i spakować towar”).
+
+--- strona 54 ---
+
+54
+
+Ocena Bilownicy
+Kolejnym badanym elementem była Bilownica, która obecna była w wariancie
+pierwszym i trzecim. w przypadku oceny bilownicy zauważyć możemy nieco inną
+tendencję w ocenie wykorzystania i przydatności tej funkcji. Tutaj przeważają raczej
+oceny negatywne i zdecydowana większość uczestników nie korzystała z niej i nie
+uważa, że jest to dobre, przydatne w przypadku zakupów rozwiązanie (jako
+przyczynę nie korzystania z niej podawano najczęściej, że jest „zbędna” – 23
+opinie).
+Dla części użytkowników jej umiejscowienie i konstrukcja było również pewną
+niedogodnością (dla osób niskiego wzrostu lub poruszających się na wózku
+inwalidzkim) – 5 opinii „nie dosięgnę”.
+
+--- strona 55 ---
+
+55
+Następnym badanym elementem, który był obecny w wariancie drugim i czwartym
+było Krzesło wysuwane. w przypadku krzesła liczba pytań była nieco bardziej
+rozbudowana i część z nich dotyczyła bardziej szczegółowych zagadnień
+związanych z jego konstrukcją, dlatego analizę podzielimy na dwie części
+i w pierwszej kolejności prześledzimy bardziej ogólne, w pewnym sensie wspólne
+z pozostałymi innowacjami pytania. Odpowiedzi na nie przedstawia poniższy
+wykres:
+
+Ocena krzesła wysuwanego.
+Jak widać w przypadku krzesła, oceny co do jego przydatności i łatwości użycia są
+zdecydowanie pozytywne i niemal wszyscy uczestnicy odpowiedzieli twierdząco.
+Należy w tym miejscu wyjaśnić, że brak korzystania z niego przez jedną z osób
+wynikał z tego, iż poruszała się ona na wózku inwalidzkim. Stąd też brak
+uzyskanych odpowiedzi na dwa kolejne pytania.
+W przypadku bardziej szczegółowych ocen dotyczących konstrukcji krzesła wyniki
+zestawiono poniżej.
+
+--- strona 56 ---
+
+56
+
+Szczególne cechy krzesła wysuwanego
+Jak widać z powyższego wykresu, obecna konstrukcja krzesła wydaje się być
+wystarczająca dla zdecydowanej większości uczestników i nie widzą oni potrzeby
+dodawania oparcia czy też podłokietników.
+Ostatnią badanym udogodnieniem, obecnym w wariancie drugim i trzecim była
+Poręcz. Wyniki z zebranych odpowiedzi przedstawia rysunek.
+
+Ocena poręczy
+
+--- strona 57 ---
+
+57
+W przypadku testowanej innowacji jakim była poręcz, uzyskane wyniki
+jednoznacznie potwierdzają jej przydatność podczas robienia zakupów – zaledwie
+dwie odpowiedzi są tutaj negatywne w stosunku do tego ułatwienia. Dla większości
+uczestników była ona widoczna jednak w tym przypadku widzimy stosunkowo dużo
+odpowiedzi wskazujących na to, że powinna ona być lepiej oznaczona.
+Potwierdzają to także opinie ustne, że poręcz jest „niewidoczna” i „zlewa się
+z kolorem tła” (12 opinii).
+Jak już wspomniano wyżej, do właściwej analizy innowacji wykorzystano wyniki
+z drugiej tury badań, kiedy grupa testująca była już z nimi zapoznana i mogła skupić
+się na właściwej ocenie ich funkcjonalności. Jednakże dla oceny zauważalności
+danego usprawnienia postanowiono przeanalizować oceny zarówno z pierwszego,
+jak i drugiego etapu badań w celu sprawdzenia, jak dana cecha jest widoczna dla
+kogoś, kto styka się z nią pierwszy raz, a jak dla kogoś, kto już ją zna.
+Do tej oceny wzięto pod uwagę wszystkie cechy poza nachyleniem blatu, gdyż
+w tym przypadku zarówno w pierwszym i w drugim badaniu była ona w pełni
+widoczna. Widoczność poszczególnych cech w czasie pierwszego testu
+przedstawia poniższy wykres.
+
+Widoczność poszczególnych cech podczas pierwszego badania
+
+--- strona 58 ---
+
+58
+Jak widać z wykresu, większość innowacji została zauważona przez osoby
+testujące już w pierwszym badaniu. Większy problem stanowiła bilownica, gdzie
+połowa badanych miała problem z jej spostrzeżeniem. Nieco trudności sprawiły
+również haczyki oraz poręcz a także półka na zakupy.
+Dla drugiego etapu badań sytuacja wygląda już znacznie lepiej, co możemy
+zobaczyć na wykresie.
+
+Widoczność poszczególnych cech podczas drugiego badania
+Jak widać z wykresu zdecydowana większość uczestników zauważyła daną
+innowację, prawdopodobnie znając już tego rodzaju udogodnienia. Jedynie haczyki
+i bilownica były jeszcze trudne do zauważenia dla niewielkiej liczby osób.
+
+--- strona 59 ---
+
+59
+Rekomendacje użytkowników w odniesieniu do poszczególnych wariantów
+stołów
+WARIANT I
+W przypadku oceny i wariantu stołu ocenie podlegały następujące jego cechy:
+• regulacja blatu,
+• uchwyt na kulę,
+• haczyki,
+• półka na zakupy,
+• bilownica.
+Spośród nich za najbardziej przydatną uczestnicy wskazali na uchwyt na laskę oraz
+półkę na zakupy – obydwie cechy po 100%. Na kolejnym miejscu znalazły się
+haczyki, przy czym tutaj 70% odpowiedzi wskazało jako najbardziej przydatne
+udogodnienie, a 30% na średnio przydatne. Za najmniej użyteczne i nieprzydatne
+uczestnicy wskazali na regulację blatu i bilownicę odpowiednio 100% i 90%
+odpowiedzi.
+Całościowe zestawienie rankingu przydatności cech dla wariantu i przedstawia
+poniższy wykres.
+
+Rys. Ocena przydatności cech dla wariantu I
+
+--- strona 60 ---
+
+60
+Warto w tym miejscu odnotować uwagi i rekomendacje pojawiające się w części
+opisowej ankiety. Dotyczyły one zarówno uchwytu na laskę, haczyków oraz półki na
+zakupy – dla części uczestników udogodnienia te były słabo widoczne,
+niewystarczająco oznaczone, zlewające się z kolorem stołu. Problem stanowiło też
+umiejscowienie haczyków – „zbyt daleko umieszczone”.
+W ogólnej ocenie tego wariantu przeważały opinie, że jest to stół dobry (7 opinii)
+oraz pozytywny (3 opinie). w rekomendacjach zmian uczestnicy podawali przede
+wszystkim dodanie krzesła (4 opinie) oraz dodanie poręczy, jak również
+przesunięcie haczyków bliżej półki. Zdecydowana większość sugerowała likwidację
+regulacji blatu oraz bilownicy jako niepotrzebnych udogodnień. Podkreślano też
+wzmocnienie kolorystyki i oznaczeń dla wprowadzonych innowacji, tak aby były
+lepiej widoczne.
+
+Rekomendacje dla wariantu I
+WARIANT II
+Dla wariantu II ocenie podlegały następujące cechy:
+• regulacja blatu,
+• krzesło wysuwane,
+• poręcz.
+
+--- strona 61 ---
+
+61
+W tym przypadku, tak jak i poprzednio, za najmniej przydatne została wskazana
+regulacja blatu, natomiast krzesło i poręcz to najbardziej użyteczne innowacje dla
+tego wariantu. Warto tutaj zaznaczyć, że wśród osób testujących była osoba
+poruszająca się na wózku inwalidzkim, która ze zrozumiałych przyczyn wskazała
+krzesło jako mało użyteczną innowację. z drugiej jednak strony osoba ta zwróciła
+uwagę na szczególną pomoc jaką dla takich osób stanowi poręcz – dzięki tej
+innowacji „mogłam się podciągnąć bliżej stołu”. w uwagach opisowych, co
+do oznaczeń badanych innowacji pojawiają się ponownie opinie o ich małej
+widoczności i potrzebie lepszego oznakowania – szczególnie dotyczy to poręczy –
+„kolor zlewa się z kolorem stołu”, „dodać jaskrawy kolor dla oznaczenia poręczy”.
+Generalnie wariant ten podobnie jak i poprzedni otrzymał ogólną ocenę jako dobry
+(7 opinii) oraz pozytywny (3 opinie).
+W rekomendacjach co, do ewentualnych i dodatkowych zmian, w tym wariancie
+testujący wskazywali przede wszystkim na uzupełnienie tego wariantu o uchwyt na
+kulę oraz haczyki. Podkreślano też potrzebę oznaczeń usprawnień w jaskrawych
+kolorach i jak poprzednio sugerowano rezygnację z regulacji blatu („regulacja
+zbędna”).
+
+Ocena przydatności cech dla wariantu II
+
+--- strona 62 ---
+
+62
+
+Rekomendacje dla wariantu II
+WARIANT III
+W przypadku III wariantu stołu ocenie przez testujących podlegały następujące
+udogodnienia:
+• regulacja blatu,
+• poręcz,
+• haczyki,
+• półka na zakupy,
+• bilownica.
+W ocenie uczestników po raz kolejny jako najmniej przydatne wskazane zostały
+regulacja blatu oraz bilownica (odpowiednio po 100 i 90%). Dla pozostałych
+usprawnień uczestnicy zgodnie podkreślali ich wysoką przydatność podczas
+robienia zakupów. z uzyskanych ogólnych ocen co do tego wariantu widać tez
+wyraźnie że stół spełniał oczekiwania użytkowników – 90 % ocen stołu jako dobry
+i tylko 10% pozytywny. w rekomendacjach, co do ewentualnych zmian i dodatków
+pojawiała się sugestia dodania krzesła (4 opinie) oraz uchwytu na kulę (3 opinie).
+Ponownie sugerowano rezygnację z regulacji blatu oraz bilownicy (50% opinii).
+
+--- strona 63 ---
+
+63
+Zaznaczono też potrzebę lepszego oznaczenia kolorystycznego zainstalowanych
+usprawnień.
+
+Ocena przydatności cech dla wariantu III
+
+Rekomendacje dla wariantu III
+
+--- strona 64 ---
+
+64
+WARIANT IV
+Ostatnim badanym wariantem był wariant IV z następującą listą cech:
+• regulacja blatu,
+• półka na zakupy,
+• uchwyt na laskę,
+• krzesło wysuwane.
+Podobnie jak w ocenie poprzednich wariantów najmniej przydatnym udogodnieniem
+okazała się regulacja blatu, na co wskazywali wszyscy uczestnicy badania (100%
+ocen). Po przeciwnej stronie, czyli najbardziej użyteczne usprawnienie wybrano
+tutaj krzesło (100% opinii). Wysoko oceniono również półkę na zakupy oraz uchwyt
+na laskę (90% ocen na najbardziej przydatną cechę a pozostałe 10% opinii jako
+średnio przydatną).
+Z zebranych ogólnych ocen co, do tego wariantu można wnioskować, że był on
+najbardziej pomocny w robieniu zakupów dla testującej grupy – otrzymał aż 90%
+opinii w kategorii najlepszego stołu i 10% jako dobrego. Jeśli chodzi
+o rekomendacje ewentualnych zmian, to w tym przypadku, zgłoszono sugestie
+dodania haczyków oraz poręczy i ponownie rezygnacji z regulacji blatu. Pojawiły się
+też, znane z wcześniejszych wariantów, głosy o potrzebie lepszego oznakowania
+usprawnień.
+
+--- strona 65 ---
+
+65
+
+Ocena przydatności cech dla wariantu IV
+
+Rekomendacje dla wariantu IV
+Biorąc pod uwagę opinie i ogólne oceny udzielone przez testujących dla
+poszczególnych wariantów można zauważyć, że najlepiej ocenianym był wariant IV
+a następnie wariant III. Najsłabiej oceniono wariant i i II, które też otrzymały równą
+liczbę ocen.
+
+--- strona 66 ---
+
+66
+
+Ogólne oceny poszczególnych wariantów stołów.
+Przy końcu każdej ankiety, poproszono użytkowników o wskazanie dla każdego
+wariantu cech najbardziej przydatnych, średnio i najmniej przydatnych. Zebrane
+wyniki dla wszystkich wariantów zostały podsumowane na powyższym wykresie.
+Przedstawia on procentową ocenę każdej z innowacji pod kątem wspomnianego
+wyżej rankingu.
+
+Ocena przydatności poszczególnych cech ze wszystkich wariantów
+Jak widać z powyższego zestawienia, jako najmniej przydatne cechy uczestnicy
+wybrali regulację stołu oraz bilownicę (odpowiednio 100 i 90 procent
+ankietowanych). Najbardziej zaś przydatnymi udogodnieniami okazały się uchwyt
+
+--- strona 67 ---
+
+67
+na kulę i krzesło wysuwane (po 95%). w następnej kolejności znalazły się półka na
+zakupy (93%), poręcz (90%) oraz haczyki (80%).
+W pewnym sensie powyższe oceny potwierdzają również oceny przyznane
+poszczególnym wariantom. i tak wariant IV, który posiadał uchwyt na kulę, krzesło
+wysuwane oraz półkę na zakupy jako jedyny otrzymał opinię „najlepszy” (9
+wskazań), na kolejnym miejscu znalazł się wariant III z 9 opiniami „dobry”
+a następnie wariant i i II (po 7 opinii „dobry”).
+Podsumowując wyniki testowania można zauważyć, że proponowane
+w poszczególnych wariantach innowacje zostały przyjęte pozytywnie. Uczestnicy
+wskazywali na ich przydatność podczas zakupów, zwłaszcza dla osób
+z niepełnosprawnościami czy dysfunkcjami, szczególnie dla osób poruszających się
+przy pomocy sprzętu pomocniczego typu laska inwalidzka/kule ortopedyczne, czy
+wózek inwalidzki. Podczas spotkań roboczych, osoby testujące bezpośrednio
+wskazywały na to, iż w czasie wizyt na targowisku, czuły się znacznie pewniej
+i bezpieczniej wiedząc o zamontowanych dla nich udogodnieniach.
+
+https://creativecommons.org/licenses/by/4.0/deed.pl

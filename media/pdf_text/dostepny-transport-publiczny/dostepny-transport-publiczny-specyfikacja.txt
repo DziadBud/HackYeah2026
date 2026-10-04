@@ -1,0 +1,1141 @@
+--- strona 1 ---
+
+Strona 1 z 32
+
+Dostępny Transport Publiczny
+Specyfikacja aplikacji mobilnej
+Spis Treści
+
+Wstęp
+3
+Korzystanie z komunikacji publicznej
+4
+Dostępna aplikacja mobilna
+5
+Dostępny Transport Publiczny - Aplikacja Mobilna
+6
+Opis Aplikacji
+7
+Schemat aplikacji mobilnej
+8
+Funkcje aplikacji mobilnej
+8
+Ekran Splash Screen
+8
+Ekran Map View
+9
+Ekran Search View
+11
+Ekran Favorite View
+12
+Ekran Settings View
+13
+Ekran Route View
+13
+Ekran Stop View
+14
+Struktura bazy danych
+15
+General Transit Feed Specification
+15
+Application Programming Interface - Interfejs Programowania Aplikacji
+17
+POST Register Device
+17
+POST Update Device
+18
+GET Vehicles
+19
+GET Stops Region
+21
+GET Stops Region Group
+22
+GET Search
+24
+POST Favorite
+26
+
+--- strona 2 ---
+
+Strona 2 z 32
+
+GET All Feed
+28
+GET Route
+29
+GET Stop
+31
+Podsumowanie
+33
+
+--- strona 3 ---
+
+Strona 3 z 32
+
+Wstęp
+Transport publiczny jest nierozłączną częścią każdego dużego miasta. Sieć połączeń
+drogowych oraz szynowych zapewnia nieprzerwany przepływ potoków pasażerskich. Miasta
+tworzą ofertę przewozową opierając się o informacje oraz symulacje dające pogląd na punkty
+docelowe, do których zmierzają mieszkańcy.
+Wielokrotnie silny transport miejski potrafi zastąpić transport indywidualny co stanowi o
+dobrze uszytej siatce połączeń. Miasta nie są z gumy dlatego priorytet przydzielany komunikacji
+miejskiej nie jest żadnym zaskoczeniem. O ile łatwiej kontrolować jeden pojazd wypełniony
+kilkudziesięcioma, a nawet ponad setką podróżnych, o tyle rozbudowa infrastruktury dla
+prywatnych samochodów jest wręcz niemożliwa.
+Wszystkie miasta w Polsce w różnym tempie kierują swoje plany ku zorganizowanemu
+transportowi publicznemu. Prym wiodą tutaj ośrodki, w których mieszka ponad sto tysięcy osób.
+Niektóre miasta opierają swoje połączenia jedynie na autobusach, bądź bardziej ekologicznej
+wersji - na trolejbusach. Większość jednak inwestuje w komunikację szynową czyli tramwaje. Ten
+środek komunikacji przeżywa obecnie renesans, powracając powoli na ulice polskich miast. Patrząc
+w większym zakresie miasta i województwa chętnie wspierają cięższy rodzaj transportu
+szynowego czyli kolej aglomeracyjną. Największy ośrodek miejski - Warszawa - dodatkowo
+rozbudowuje metro, które jest najwydajniejszym środkiem transportu w mieście. To jednak nie
+wszystko - Kraków również planuje bezkolizyjny i szybki transport szynowy.
+O ile większość osób ma swobodny wybór i może być jedynie przekonywana kolejnymi
+inwestycjami do korzystania z transportu publicznego, o tyle są ludzie, którzy nie mają innego
+wyboru.
+Osoby o szczególnych potrzebach w przestrzeni publicznej często mogą jedynie korzystać
+właśnie z transportu publicznego. Mowa tutaj o problemach ze wzrokiem, poruszaniem się, a także
+z orientacją w terenie. Aby ułatwić tym grupom korzystanie ze wspólnego dobra używa się pojęcia
+Dostępnej Komunikacji Publicznej.
+
+--- strona 4 ---
+
+Strona 4 z 32
+
+Korzystanie z komunikacji publicznej
+Rzeczy oczywiste potrafią być najbardziej skomplikowane. Jeśli chcemy skorzystać z
+transportu publicznego w mieście potrzebujemy poznać kilka informacji, bez których nie uda nam
+się dotrzeć z punktu A do punktu B. Tego typu test pozwala stwierdzić jak bardzo komunikacja
+miejska jest dostępna dla osób, które mogą mieć problemy w korzystaniu z przestrzeni publicznej.
+Aby przemieścić się w mieście musimy wiedzieć gdzie zacząć naszą podróż oraz gdzie ją
+skończyć. Kolejną ważną rzeczą jest poznanie linii, jednej bądź kilku, która połączy nas pomiędzy
+tymi dwoma punktami. Kompletem informacji będzie godzina odjazdu pojazdu oraz taryfa
+biletowa. Taki opis podróży zamyka się w pięciu najważniejszych punktach, które opiszą potrzeby
+użytkownika komunikacji miejskiej:
+1. Miejsce początku podróży
+2. Znajomość linii bądź połączeń, które użyjemy do przemieszczenia się
+3. Wiedza o rozkładzie jazdy
+4. Informacja o taryfie biletowej
+5. Miejsce końca podróży
+
+Początkowo wszystkie te informacje były zawarte na papierowych planach komunikacji
+miejskiej oraz rozkładach jazdy wywieszonych na przystankach. Taka forma informacji nie była
+jednak w pełni dostępna - nie pozwalała osobom, które posiadają problem ze wzrokiem na
+zapoznanie się z potrzebnymi informacjami. Statyczna informacja znajdująca się w konkretnym
+punkcie nie pomagała również osobom, które mając specjalne potrzeby w poruszaniu się, po
+udaniu się w konkretne miejsce mogą zostać zaskoczone barierami architektonicznymi.
+Problemy te dotyczą właściwie wszystkich podróżnych gdyż nawet proste przybycie na
+przystanek nie gwarantowało, że pojazd podjedzie szybko, a my nie zmarzniemy na przystanku.
+Stan tych rzeczy został zmieniony w dobie rozwoju elektroniki i internetu. Teraz każdy może
+sprawdzić rozkład w telefonie, wyszukać trasę na stronie internetowej przewoźnika, a także
+sprawdzić zdjęcia przystanku określając jego dostępność. Dane te nie są niestety w jednym
+miejscu, a i te, które są obecnie nie zawsze są dostępne dla wszystkich.
+
+--- strona 5 ---
+
+Strona 5 z 32
+
+Dostępna aplikacja mobilna
+Obecnie na rynku dominują dwa systemy mobilne, które znajdują się na naszych systemach
+mobilnych. Jest to system iOS firmy Apple oraz Android wyprodukowany przez Google.
+Przedstawiciel firmy z Cupertino, znany ze swojego logo z nadgryzionym jabłkiem, od wielu
+lat wspiera rozwój funkcjonalności pozwalających na korzystanie z telefonów przez osoby
+posiadające różne specjalne potrzeby. Funkcje dostępności z roku na rok są aktualizowane o nowe
+możliwości zapewniając wsparcie dla osób z problemami motorycznymi, wzroku, słuchu, a także
+pozwalają wykorzystywać różne urządzenia peryferyjne ułatwiające życie osobom z
+niepełnosprawnościami.
+Podstawową i rewolucyjną funkcją jest asystent głosowy - VoiceOver. Jest to syntezator
+mowy odczytujący w inteligentny sposób elementy wyświetlone na ekranie. Dzięki kombinacji
+gestów, które mogą być wykonane na wygaszonym ekranie, użytkownik usłyszy treści, wykona
+akcje, a nawet dowie się co pokazuje dany cyfrowy obraz. Wszystko to dzięki syntezatorowi mowy,
+który dodatkowo zaakcentuje konkretne elementy systemu, a także pozwoli zorientować się w
+strukturze aplikacji mobilnej. Funkcja ta jest swoistym interfejsem użytkownika dla osób
+niewidomych i niedowidzących.
+Od niedawna producent systemu sygnowanego zielonym robotem również wprowadziło
+podobną funkcję. TalkBack jest odpowiednikiem funkcji VoiceOver, który w podobny sposób,
+poprzez informacje głosowe, informuje o rzeczach wyświetlonych na ekranie. Dzięki tej
+implementacji szersze grono osób zyskało dostęp do funkcji dostępności w aplikacjach mobilnych.
+Od teraz większe grono osób może usłyszeć to czego nie może zobaczyć.
+Funkcje dostępności w systemach mobilnych to jednak nie tylko asystenci głosowi. Są to też
+różnego typu ułatwienia i opcje pozwalające między innymi na powiększenie tekstu, zwiększenie
+kontrastu, zmianę zachowania ekranu dotykowego bądź fizycznych przycisków. Te i inne
+funkcjonalności pomagają setkom, a nawet tysiącom osób w pozyskiwaniu informacji w niemal tak
+samo łatwy sposób jak ludzie, którzy nie potrzebują takiego wsparcia.
+
+--- strona 6 ---
+
+Strona 6 z 32
+
+Dostępny Transport Publiczny - Aplikacja Mobilna
+Obecnie na rynku pojawiło się wiele aplikacji, które świadczą usługi dostarczania informacji
+pasażerskiej. Są one niestety skierowane do ogółu i nie kładą nacisku na opis przystanków oraz nie
+posiadają poprawnie zaimplementowanych funkcji dostępności. Celem projektu jest stworzenie
+aplikacji na systemy Android, które w pełni wykorzystują funkcje dostępności, a w szczególności
+syntezator mowy TalkBack. W ramach prac w prywatnym czasie została ukończona wersja na
+systemy iOS, która już od roku przekazuje dostępne dane osobom, które korzystają z iPhone’ów.
+Następnym krokiem jest wprowadzenie takiej samej funkcjonalności na systemy Android.
+Zaraz Jadę jest prostą aplikacją mobilną dostarczającą informacje o transporcie publicznym
+w miastach na terenie Polski. Użytkownik może wybrać przystanek na mapie bądź wyszukać go
+przez pole wyszukiwania aby znaleść konkretną linię. Dodatkowo może polubić przystanek bądź
+linię aby otrzymywać notyfikacje na temat zmian i utrudnień. Zaraz Jadę posiada następujące
+funkcje:
+• Wyświetlanie przystanków na mapie,
+• Prezentacja linii komunikacji miejskiej wraz z jej opisem,
+• Dostarczanie informacji na temat rozkładów jazdy oraz odjazdów w czasie rzeczywistym,
+• Zaznaczanie na mapie położenia pojazdów komunikacji miejskiej wraz z animacją zmiany
+lokalizacji,
+• Wyznaczanie trasy do wybranego przystanku z uwzględnieniem bieżącej sytuacji
+ruchowej,
+• Wsparcie dla funkcji dostępności TalkBack.
+
+--- strona 7 ---
+
+Strona 7 z 32
+
+Opis Aplikacji
+Aplikacja składa się z ośmiu ekranów. Każdy z nich prezentuje informacje dotyczące
+konkretnego zagadnienia związanego z informacją pasażerską. Poniżej znajduje się lista
+wszystkich widoków:
+1. Ekran Splash Screen - widok ukazujący się od razu po uruchomieniu aplikacji. Pozwala
+na pobranie potrzebnych danych,
+2. Ekran Map View - reprezentacja graficzna mapy, na której zaznaczone są przystanki oraz
+wybrane trasy,
+3. Ekran Search View - formularz pozwalający na wyszukiwanie przystanków oraz linii,
+4. Ekran Favorite View - lista zawierająca linie oraz przystanki polubione przez
+użytkownika,
+5. Ekran Route View - widok szczegółowy wybranej linii, posiadający informacje o
+utrudnieniach, najbliższych przystankach oraz szczegółach linii,
+6. Ekran Stop View - widok szczegółowy przystanku, posiadający opis otoczenia, listę linii
+oraz najbliższe odjazdy,
+7. Ekran Timetable View - widok pełnego rozkładu jazdy dla danej linii z opisem symboli i
+wariantów danych odjazdów,
+8. Ekran Settings View - menu opcji posiadające możliwość edycji ulubionych linii oraz
+przystanków, zawierające informacje o utrudnieniach oraz prezentujące informacje prawne o
+aplikacji.
+
+Aplikacja składa się z trzech głównych widoków, do których w łatwy sposób można dostać się
+poprzez dolny pasek nawigacji. Jego konstrukcja, w postaci paska z ikonami, pozwala na szybki
+dostęp podczas uruchomionej funkcji VoiceOver/TalkBack. Wystarczy, że użytkownik przeciągnie
+palcem po dole ekranu aby usłyszeć jedną z trzech opcji: ulubione, szukaj oraz ustawienia.
+Ulubione linie i przystanki powinny być dostępne niemal „na wyciągnięcie ręki”. To samo
+tyczy się szybkiego wyszukiwania szczegółowych informacji. Ustawienia natomiast mogą być
+miejscem gromadzenia specjalistycznych danych, które nie są potrzebne w codziennej podróży.
+Następna strona prezentuje uproszczony schemat struktury aplikacji wraz z szkicem
+interfejsu użytkownika.
+
+--- strona 8 ---
+
+Strona 8 z 32
+
+Schemat aplikacji mobilnej
+Funkcje aplikacji mobilnej
+Ekran Splash Screen
+Klasyczny widok z logo aplikacji, który wyświetla się tuż po uruchomieniu programu. W
+trakcie kilkusekundowej prezentacji animacji ładowania zostają pobrane dane potrzebne do
+obsługi aplikacji. Jest o między innymi token autoryzacyjny oraz identyfikator urządzenia.
+Rys. 1 Schemat interfejsu użytkownika aplikacji mobilnej
+Splash Screen
+Search Screen
+Favorite Screen
+Route Screen
+Stop Screen
+Timetable Screen
+Settings Screen
+
+--- strona 9 ---
+
+Strona 9 z 32
+
+Ekran Map View
+Widok mapy jest głównym interfejsem do prezentowania pojazdów i przystanków w mieście.
+Przystanki pobierane są za każdym razem gdy użytkownik zmieni pozycję mapy. Gdy użytkownik
+wybierze linię zobaczy na mapie pojazdy, które będą poruszać się w 10 sekundowych interwałach
+gdy ich lokalizacja ulegnie zmianie.
+Przy każdym nowym uruchomieniu aplikacji użytkownik powinien widzieć mapę w położeniu
+opartym o swoje własne na podstawie sygnału GPS.
+Przystanki pokazują wszystkie te miejsca gdzie użytkownik może zacząć podróż w
+transporcie publicznym. Pobierane są z dwóch różnych zapytań w zależności od wartości
+powiększenia na mapie.
+Przy bliskim powiększeniu wyświetlają się słupki przystankowe czyli jeden przystanek, z
+którego odjeżdża pojazd. W większym oddaleniu widoczne są jedynie grupy przystankowe, które
+sią zbiorem przystanków o tej samej nazwie i pokazują uśrednioną lokalizację przystanku.
+
+--- strona 10 ---
+
+Strona 10 z 32
+
+Po dotknięciu markera przystanku (nie grupy przystankowej) pokazuje się widok
+szczegółowy przystanku.
+
+--- strona 11 ---
+
+Strona 11 z 32
+
+Ekran Search View
+Widok Search View jest prostym interfejsem służącym do wyszukiwania przystanków bądź
+linii po ich nazwach. Lista grupuje wyniki wyszukiwań po liniach pogrupowanych osobno na
+konkretnych przewoźników oraz na grupę przystanków. Użytkownik może wybrać linię bądź
+przystanek.
+• Jeśli wybierze linię zostanie przeniesiony do widoku szczegółów linii,
+• Jeśli wybierze przystanek zostanie przeniesiony na mapie w miejsce gdzie znajdują się
+wszystkie przystanki o tej samej nazwie.
+
+Zapytanie powinno być wykonane po wpisaniu każdego pojedynczego znaku w pole
+wyszukiwania. Zapytanie zwraca specjalne pole query, które informuje dla jakiej frazy zwrócono
+listę. Dzięki temu pole wyszukiwania łatwo porównać z tą wartością i wyświetlić odpowiednią
+odpowiedź serwera.
+
+Widok wyszukiwania pamięta ostatnie 10 wybranych wyników wyświetlając jedynie ich tytuł.
+Przykładowo jeśli użytkownik wybrał linię A1 na liście ostatnio wyszukanych pojawi się A1, jeśli
+
+--- strona 12 ---
+
+Strona 12 z 32
+
+wybierze natomiast przystanek Pruszków zaprezentowany zostanie napis Pruszków. Jeśli na liście
+poprzednio wyszukiwanych rzeczy znajduje się już dana nazwa zostaje ona usunięta z bieżącej
+tablicy i umieszczona na jej początku. Lista ostatnio wyszukiwanych rzeczy wyświetlana jest
+jedynie wtedy gdy pole wyszukiwania jest puste. Jeśli użytkownik wybierze którąś z ostatnio
+wyszukanych pozycji to pole wyszukaj automatycznie wypełnia się tą treścią i następuje wykonanie
+zapytania do serwera.
+Ekran Favorite View
+Użytkownik może polubić linię bądź przystanek. Jeśli to zrobi to pojawią się one w widoku
+ulubione. Wszystkie dane o ulubionych liniach zostają zapisane lokalnie na urządzeniu.
+Lista ulubionych prezentuje również wstępne informacje o utrudnieniach na linii w postaci
+ikony wykrzyknika znajdującego się przy danej linii.
+
+--- strona 13 ---
+
+Strona 13 z 32
+
+Ekran Settings View
+Ekran ustawień składa się z prostego menu podzielonego na dwie kategorie i stopkę. Stopka
+posiada opis bieżącej wersji wraz z oznaczeniem numeru kompilacji.
+
+Sekcja Informacje posiada jedną opcję Utrudnienia, która przenosi użytkownika do prostej
+listy, na której wyświetlana jest lista pierwszych 20 utrudnień pobranych z serwera. Sekcja
+Preferencje również posiada jedynie jedną opcję Ulubione, która pozwala na edycję kolejności i
+usuwanie ulubionych linii.
+Pozostałe opcje służą do informacji o nowościach w aplikacji oraz pozwalają wyświetlić
+Politykę Prywatności i Regulamin aplikacji.
+
+Ekran Route View
+Widok linii zostaje wyświetlony w momencie wybrania przez użytkownika konkretnej linii.
+Użytkownik może wykonać dwie akcje poprzez przyciski znajdujące się pod sekcją tytułu. Pierwsza
+akcja to polubienie albo usunięcie z ulubionych danej linii. Druga funkcja pozwala na pokazanie na
+mapie całej linii. Oznacza to, że po tapnięciu na przycisk mapa powinna wypośrodkować się tak aby
+były widoczne wszystke przystanki linii.
+
+--- strona 14 ---
+
+Strona 14 z 32
+
+Po otwarciu tego widoku na mapie powinny zostać zaprezentowane pojazdy, przystanki oraz
+krzywa symbolizująca przebieg danej linii.
+
+Jeśli na linii występują utrudnienia opcjonalnie pokazuje się sekcja utrudnień, która zawiera
+tytuł, nagłówek oraz opis utrudnienia. Ostatnią sekcją widoku jest lista pięciu najbliższych
+przystanków raz z odległością wyliczoną na podstawie obecnego położenia użytkownika.
+
+Ekran Stop View
+Ekran widoku przystanku zostaje zaprezentowany w momencie gdy użytkownik wybierze
+przystanek na mapie bądź z dowolnego miejsca w aplikacji gdzie przystanek był zaprezentowany
+na liście.
+Widok zawiera trzy sekcje. Pierwszą jest nagłówek z nazwą przystanku oraz opisem.
+Początkowo opis przystanku jest wyświetlany w jednej linijce jednak można go rozwinąć poprzez
+tąpnięcie w przycisk więcej.
+
+--- strona 15 ---
+
+Strona 15 z 32
+
+Przystanek można polubić poprzez przycisk Ulubione dzięki czemu od razu pojawi się na
+liście ulubionych. Na dole przystanku znajduje się lista z najbliższymi odjazdami. Lista ta powinna
+być odświeżana co 10 sekund.
+
+Na ekranie znajduje się również przycisk Wyznacz trasę. Będzie to prototypowy ekran, który
+wyświetli jedynie widok strony internetowej, na której znajdzie się opis trasy z obecnej lokalizacji
+użytkownika do wybranego przystanku.
+
+Struktura bazy danych
+General Transit Feed Specification
+Aplikacja mobilna została zaprojektowana w taki sposób aby mogła korzystać z
+międzynarodowego formatu zapisu informacji o rozkładach jazdy i lokalizacji przystanków:
+General Transit Feed Specification.
+Opracowana przez firmę Google specyfikacja opisu informacji pasażerskiej dotyczącej
+komunikacji miejskiej pozwala opisać dowolny system transportowy miasta. Składa się ona z tabel
+
+--- strona 16 ---
+
+Strona 16 z 32
+
+zawierających opisy poszczególnych elementów systemu transportowego. Są to następujące
+struktury:
+• Agency - definicja przewoźnika występującego w bazie danych,
+• Stops - zbiór opisów wszystkich przystanków zawierający współrzędne, szczegóły
+przystanku oraz jego właściwości,
+• Routes - opis wszystkich linii, które obsługiwane są przez daną agencję transportową
+• Trips - opis wszystkich kursów, które wykonywane są przez linie,
+• Stop Times - konkretne godziny odjazdów danej linii, dla danego kursu, z danego
+przystanku,
+• Calendar - zestawienie zakresów dni, w których obowiązują dane rozkłady jazdy,
+• Calendar Dates - szczegółowe zestawienie konkretnych dni, w które obowiązują dane
+rozkłady jazdy,
+• Fare Attributes - tabela opcjonalna - informacja dotycząca taryfy biletowej dla danego
+przewoźnika,
+• Fare Rules - tabela opcjonalna - zbiór zasad dotyczących opłat za przewóz,
+• Shapes - tabela opcjonalna - zestawienie kształtów reprezentujących przebieg trasy
+poszczególnych linii,
+• Frequencies - tabela opcjonalna - opcjonalny opis odjazdów pojazdu komunikacji miejskiej
+w postaci częstotliwości,
+• Transfers - tabela opcjonalna - opis połączeń międzyprzystankowych służących do
+planowania transferów pomiędzy przystankami,
+• Pathways - tabela opcjonalna - opis kształtów elementów infrastruktury
+• Levels - tabela opcjonalna - zbiór fizycznych poziomów przypisanych do konkretnych
+niezależnych stacji,
+• Translations - tabela opcjonalna - tłumaczenia poszczególnych obiektów,
+• Feed Info - tabela opcjonalna - informacja o danych pochodzących z systemów informacji
+pasażerskiej danego organizatora ruchu,
+• Attributions - tabela opcjonalna - opis atrybutów przypisanych do poszczególnych zbiorów
+danych.
+
+--- strona 17 ---
+
+Strona 17 z 32
+
+Poniższy schemat pokazuje zależności pomiędzy poszczególnymi tabelami:
+Więcej informacji dotyczących specyfikacji GTFS można znaleźć na oficjalnej stronie:
+https://gtfs.org/.
+
+Application Programming Interface - Interfejs Programowania
+Aplikacji
+Niniejszy rozdział zawiera opis wszystkich zapytań potrzebnych do obsługi aplikacji mobilnej.
+Wszystkie zapytania są wymagane aby aplikacja działała poprawnie i posiadała wszystkie
+potrzebne informacje dotyczące komunikacji miejskiej.
+
+POST Register Device
+/auth/device/register
+Headers
+{
+"x-api-key": String
+}
+Body
+{
+"device": String,
+"system_version": String,
+
+--- strona 18 ---
+
+Strona 18 z 32
+
+app_version": String
+}
+Sample Body
+{
+"device": "android",
+"system_version": "10.0",
+"app_version": "4.0"
+}
+Response
+{
+"uuid": String,
+"token": String,
+"message": Optional {
+"title": String,
+"description": String,
+"confirmButton": String,
+"cancelButton": Optional<String>
+"link": Optional<URL>
+
+}
+}
+Sample response
+{
+"uuid": "7858fe55-2b71-11ec-822b-e41f13beb840",
+"token": "eyJ0eXAiOiJKV[...]c9iZfg4WX-OjZyr8",
+"message": {
+"title": "Aktualizacja",
+"description":
+"Zaktualizuj
+aplikację
+aby
+nadal
+móc
+z
+niej
+korzystać.",
+"confirmButton": "Zaktualizuj",
+"cancelButton": null,
+"link": "https://itunes.apple.com/us/app/id1448342684"
+
+}
+}
+POST Update Device
+/auth/device/update
+Headers
+
+--- strona 19 ---
+
+Strona 19 z 32
+
+{
+"x-api-key": String,
+"Authorization": String
+}
+Body
+{
+"device": String,
+"system_version": String,
+"app_version": String,
+"notifications": Bool,
+"subscription": Bool,
+"accessibility": Bool
+}
+Response
+{
+"uuid": String,
+"token": String,
+"message": Optional {
+"title": String,
+"description": String,
+"confirmButton": String,
+"cancelButton": Optional<String>
+"link": Optional<URL>
+
+}
+}
+GET Vehicles
+/v2/agencies/:agencyId/routes/:routeId/vehicles
+Headers
+{
+"x-api-key": String,
+"Authorization": String
+}
+Response
+Array[
+
+{
+"trip": {
+
+--- strona 20 ---
+
+Strona 20 z 32
+
+"trip_id": Optional<String>,
+"route_id": Optional<String>,
+"direction_id": Optional<String>
+},
+"vehicle": {
+"id": String,
+"label": String,
+"license_plate": String
+},
+"position": {
+"latitude": Double,
+"longitude": Double,
+"bearing": Int,
+"odometer": Optional<Int>,
+"speed": Optional<Float>
+},
+"timestamp": Date
+}
+]
+Sample response
+[
+{
+"trip": {
+"trip_id": null,
+"route_id": null,
+"direction_id": null
+},
+"vehicle": {
+"id": "1260",
+"label": "Solaris Urbino 18",
+"license_plate": "WD 21A48Z"
+},
+"position": {
+"latitude": 52.165402,
+"longitude": 20.820264,
+"bearing": 210,
+"odometer": 15918,
+"speed": 53
+},
+
+--- strona 21 ---
+
+Strona 21 z 32
+
+"timestamp": "2021-10-17 22:27:51"
+}
+]
+GET Stops Region
+/v2/stops/region/:top_left_lat/:top_left_lon/:bottom_right_lat/:bottom_right_lon
+Headers
+{
+"x-api-key": String,
+"Authorization": String
+}
+Response
+Array [
+{
+"agencyId": String,
+"id": String,
+"code": String,
+"name": String,
+"street": String,
+"locality": String,
+"latitude": Double,
+"longitude": Double,
+"routes": [
+{
+"id": String,
+"type": Int
+}
+],
+"location_type": Enum<Location Type>,
+"zone_id": String,
+"wheelchair_boarding": String
+}
+]
+Sample response
+[
+{
+"agencyId": "1",
+"id": "323203",
+"code": "03",
+
+--- strona 22 ---
+
+Strona 22 z 32
+
+"name": "Polskie Radio 03",
+"street": "Modzelewskiego",
+"locality": "Mokotów",
+"latitude": 52.1007,
+"longitude": 20.6287,
+"routes": [
+{
+"id": "222",
+"type": 1
+}
+],
+"location_type": 1,
+"zone_id": "1",
+"wheelchair_boarding": "0"
+},
+{
+"agencyId": "1",
+"id": "323204",
+"code": "04",
+"name": "Polskie Radio 04",
+"street": "Modzelewskiego",
+"locality": "Mokotów",
+"latitude": 52.1007,
+"longitude": 20.6287,
+"routes": [
+{
+"id": "222",
+"type": 1
+}
+],
+"location_type": 1,
+"zone_id": "1",
+"wheelchair_boarding": "0"
+}
+]
+GET Stops Region Group
+/v2/stops/groups/region/:top_left_lat/:top_left_lon/:bottom_right_lat/:bottom_right_lon
+Headers
+{
+
+--- strona 23 ---
+
+Strona 23 z 32
+
+"x-api-key": String,
+"Authorization": String
+}
+Response
+Array [
+{
+"agencyId": String,
+"id": String,
+"name": String,
+"latitude": Double,
+"longitude": Double,
+"routes": [
+{
+"id": String,
+"type": Enum<Route Type>
+}
+],
+"location_type": Enum<Location Type>
+},
+]
+Sample response
+[
+{
+"agencyId": "1",
+"id": "3232",
+"name": "Polskie Radio",
+"latitude": 52.1007,
+"longitude": 20.6287,
+"routes": [
+{
+"id": "222",
+"type": 1
+},
+{
+"id": "174",
+"type": 1
+}
+],
+
+--- strona 24 ---
+
+Strona 24 z 32
+
+"location_type": 1
+},
+]
+GET Search
+/v2/search?word=:search_word
+Headers
+{
+"x-api-key": String,
+"Authorization": String
+}
+Response
+{
+"query": String,
+"result": Array[
+{
+"type": Enum<SearchType>,
+"route": Optional<Route> {
+"agencyName": String,
+"agencyId": String,
+"id": String,
+"name": String,
+"longName": String,
+"description": String,
+"type": Enum<Int>
+}
+"stop": Optional<Stop> {
+"agencyName": String,
+"agencyId": String,
+"id": String,
+"name": String,
+"locality": Optional<String>,
+"latitude": Double,
+"longitude": Double,
+"location_type": Enum<Int>,
+"routes": Array[
+{
+"id": String,
+"type": Enum<Int>
+}
+
+--- strona 25 ---
+
+Strona 25 z 32
+
+]
+}
+}
+]
+}
+Sample response
+{
+"query": "Abc",
+"result": [
+{
+"type": 0,
+"route": {
+"agencyName": "ZTM Warszawa",
+"agencyId": "1",
+"id": "222",
+"name": "222",
+"longName": "Bielańska - Spartańska",
+"description": "Linia Autobusowa",
+"type": 1
+}
+},
+{
+"type": 1,
+"stop": {
+"agencyName": "ZTM Warszawa",
+"agencyId": "1",
+"id": "3232",
+"name": "Polskie radio",
+"locality": "Mokotów",
+"latitude": 52.1007,
+"longitude": 20.6287,
+"location_type": 1,
+"routes": [
+{
+"id": "222",
+"type": 2
+}
+]
+}
+}
+
+--- strona 26 ---
+
+Strona 26 z 32
+
+]
+}
+POST Favorite
+/v2/users/favorite
+Headers
+{
+"x-api-key": String,
+"Authorization": String
+}
+Body
+{
+"routes": Array[
+{
+"routeId": String,
+"agencyId": String
+}
+]
+}
+
+Sample Body
+{
+"routes": [
+{
+"routeId": "A1",
+"agencyId": "3"
+}
+]
+}
+
+Response
+Array [
+{
+"agencyId": String,
+"id": String,
+"shortName": String,
+"longName": String,
+"description": String,
+"type": Int,
+
+--- strona 27 ---
+
+Strona 27 z 32
+
+"feed": Optional<Array> {
+"activePeriod": {
+"start": Date,
+"end": Date
+},
+"entity": {
+"agencyId": String,
+"routeId": String,
+"routeType": Enum<Int>
+},
+"cause": Enum<String>,
+"effect": Enum<String>,
+"url": URL,
+"headerText": String,
+"descriptionText": String",
+"severity": Enum<String>
+}
+}
+]
+Sample response
+[
+
+{
+"agencyId": "1",
+"id": "222",
+"shortName": "222",
+"longName": "Spartańska - Bokserska",
+"description": "Linia Autobusowa",
+"type": 1,
+"feed": {
+"activePeriod": {
+"start": 100,
+"end": 400
+},
+"entity": {
+"agencyId": "3",
+"routeId": "A1",
+"routeType": 21
+},
+"cause": "OTHER_CAUSE",
+"effect": "DETOUR",
+
+--- strona 28 ---
+
+Strona 28 z 32
+
+"url": "https://www.google.com",
+"headerText": "Skrócenie trasy",
+"descriptionText": "Z powodu remontu linii średnicowej trasa zostaje
+skrócona do przystanku Warszawa Zachodnia.",
+"severity": "WARNING"
+}
+}
+]
+GET All Feed
+/v2/feed/all
+Headers
+{
+"x-api-key": String,
+"Authorization": String
+}
+Response
+Array [
+{
+"activePeriod": {
+"start": Date,
+"end": Date
+},
+"entity": {
+"agencyId": Optional<String>,
+"routeId": Optional<String>,
+"routeType": Optional<RouteType>
+},
+"cause": Cause,
+"effect": Effect,
+"url": Optional<URL>,
+"headerText": String,
+"descriptionText": String,
+"severity": Severity
+},
+]
+Sample response
+[
+{
+
+--- strona 29 ---
+
+Strona 29 z 32
+
+"activePeriod": {
+"start": 100,
+"end": 400
+},
+"entity": {
+"agencyId": "3",
+"routeId": "A1",
+"routeType": 21
+},
+"cause": "OTHER_CAUSE",
+"effect": "DETOUR",
+"url": "https://www.google.com",
+"headerText": "Shortened route",
+"descriptionText": "Due to the renovation of the cross-city line, the
+route is shortened to the Warszawa Zachodnia stop.",
+"severity": "WARNING"
+},
+]
+GET Route
+/v2/agencies/:agencyId/routes/:routeId
+Headers
+{
+"x-api-key": String,
+"Authorization": String
+}
+Response
+{
+"agencyId": String,
+"id": String,
+"shortName": String,
+"longName": String,
+"description": String,
+"type": Enum<RouteType>,
+“feed": Optional<Feed>,
+"stops": Array [
+{
+"agencyId": String,
+"id": String,
+
+--- strona 30 ---
+
+Strona 30 z 32
+
+"name": String,
+"latitude": Double,
+"longitude": Double,
+"locality": String,
+"location_type": Enum<Location Type>,
+"isAccessible": Bool,
+"routes": [
+{
+"id": String,
+"type": Enum<RouteType>
+}
+]
+}
+],
+"shape": Array [
+{
+"id": String,
+"sequence": Int,
+"latitude": Double,
+"longitude": Double,
+"distance": Optional<Float>
+}
+]
+}
+Sample response
+{
+"agencyId": "1",
+"id": "222",
+"shortName": "222",
+"longName": "Spartańska - Bokserska",
+"description": "Linia Autobusowa",
+"type": 1,
+"feed": [],
+"stops": [
+{
+"agencyId": "1",
+"id": "323203",
+"name": "Polskie Radio 03",
+"latitude": 52.12633,
+"longitude": 20.761572,
+
+--- strona 31 ---
+
+Strona 31 z 32
+
+"locality": "",
+"location_type": 1,
+"isAccessible": false,
+"routes": [
+{
+"id": "222",
+"type": 2
+}
+]
+}
+],
+"shape": [
+{
+"id": "0",
+"sequence": 0,
+"latitude": 52.10063799845,
+"longitude": 20.62843836777,
+"distance": null
+},
+{
+"id": "0",
+"sequence": 1,
+"latitude": 52.10064434096,
+"longitude": 20.62845799122,
+"distance": null
+},
+{
+"id": "0",
+"sequence": 2,
+"latitude": 52.10146221285,
+"longitude": 20.63098847598,
+"distance": null
+}
+]
+}
+GET Stop
+/v2/agencies/:agencyId/stops/:stopId
+Headers
+{
+
+--- strona 32 ---
+
+Strona 32 z 32
+
+"x-api-key": String,
+"Authorization": String
+}
+Response
+Array [
+
+{
+"agencyId": String,
+"id": String,
+"code": String,
+"name": String,
+"street": String,
+"locality": String,
+"latitude": Double,
+"longitude": Double,
+"routes": [
+{
+"id": String,
+"type": Int
+}
+],
+"location_type": Enum<Location Type>,
+"zone_id": String,
+"wheelchair_boarding": String
+}
+]
+Sample response
+[
+{
+"agencyId": "1",
+"id": "323203",
+"code": "03",
+"name": "Polskie Radio 03",
+"street": "Modzelewskiego",
+"locality": "Mokotów",
+"latitude": 52.1007,
+"longitude": 20.6287,
+"routes": [
+{
+"id": "222",
+
+--- strona 33 ---
+
+Strona 33 z 32
+
+"type": 1
+}
+],
+"location_type": 1,
+"zone_id": "1",
+"wheelchair_boarding": "0"
+},
+{
+"agencyId": "1",
+"id": "323204",
+"code": "04",
+"name": "Polskie Radio 04",
+"street": "Modzelewskiego",
+"locality": "Mokotów",
+"latitude": 52.1007,
+"longitude": 20.6287,
+"routes": [
+{
+"id": "222",
+"type": 1
+}
+],
+"location_type": 1,
+"zone_id": "1",
+"wheelchair_boarding": "0"
+}
+]
+Podsumowanie
+Opis interfejsu aplikacji powinien posłużyć do zbudowania odpowiedniego serwisu, który
+umieszczony na odpowiednim serwerze będzie zbierał, przetwarzał i publikował informacje na
+temat transportu publicznego.
+Należy pamiętać aby taki interfejs był dostępny całodobowo, a synchronizacja z danymi
+źródłowymi pochodzącymi od przewoźników, odbywała się codziennie w godzinach nocnych.
+Przykładowo dla Warszawskiego Transportu Publicznego dane dotyczące rozkładów jazdy
+powinny być synchronizowane codziennie w okolicach godziny 3:00. Wynika to z faktu, że przełom
+trzeciej, a czwartej godziny dnia oznacza zmianę brygad oraz zakończenie kursów nocnych i
+
+--- strona 34 ---
+
+Strona 34 z 32
+
+rozpoczęcie kursów dziennych. Synchronizacja informacji o pojazdach powinna się odbywać co 10
+sekund aby zapewnić poczucie informacji prezentowanej w czasie rzeczywistym.
+Aplikacje mobilne mogą przynieść wiele korzyści, a wyposażone dodatkowo w funkcje
+dostępności, które pomagają osobom posiadającym specjalne potrzeby w przestrzeni publicznej.

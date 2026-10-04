@@ -1,0 +1,606 @@
+--- strona 1 ---
+PLATFORMA DLA OSÓB
+Z NIEPEŁNOSPRAWNOŚCIĄ
+INTELEKTUALNĄ
+I
+n
+n M
+a
+ł
+o
+p
+o
+l
+s
+k
+a
+Kraków, 2019
+CZAS NA
+AKTYWNOŚĆ
+Projekt „Małopolski Inkubator Innowacji Społecznych”
+
+--- strona 2 ---
+AUTOR INNOWACJI:
+Stowarzyszenie Rodziców i Przyjaciół Dzieci
+z Zespołem Downa „TĘCZA” w Krakowie
+Opracowanie:
+Agata Krzyżek
+Joanna Kociołek
+Zespół projektowy:
+Anita Parszewska
+Agnieszka Kamińska
+Dominika Marszałek- Rojek
+Katarzyna Ociepka – Miąsik
+Karolina Walocha
+Magdalena Cyran
+Projekt graficzny:
+Jarosław Szczurek (good-art.pl)
+Model innowacji został przetestowany w ramach
+projektu „Małopolski Inkubator Innowacji Społecznych”
+realizowanego przez Regionalny Ośrodek Polityki
+Społecznej w Krakowie ze środków Europejskiego
+Funduszu Społecznego w ramach IV Osi Priorytetowej
+Programu Operacyjnego Wiedza Edukacja Rozwój
+(Działanie 4.1: Innowacje społeczne), na zlecenie
+Ministerstwa Inwestycji i Rozwoju.
+
+--- strona 3 ---
+C Z A S N A A K T Y W N O Ś Ć
+3
+CO ZNAJDZIESZ
+W MODELU?
+1. Skąd pomysł?
+2. Założenia innowacji
+3. Dla kogo jest „Czas na aktywność”?
+4. Skąd wiemy, że innowacja działa?
+5. Jak skorzystać z innowacji?
+6. Składowe innowacji
+7. O tym warto pamiętać
+8. O autorach
+Czas na aktywność
+
+--- strona 4 ---
+C Z A S N A A K T Y W N O Ś Ć
+4
+SKĄD POMYSŁ?
+H I S T O R I A I N N O W A C J I
+Pomysł stworzenia platformy internetowej „Czas na aktywność” narodził się na pierwszym
+krakowskim hackathonie - KrakHack 2017. Celem imprezy było stworzenie innowacyjnych pomysłów
+rozwiązujących problemy społeczne ważne z perspektywy mieszkańców Krakowa, w oparciu o nowe
+technologie.
+W hackatonie wziął udział zespół Stowarzyszenia Tęcza w Krakowie:
+w składzie Agata Krzyżek i Joanna Kociołek:
+„Nasz zespół składał się ze specjalistek od lat pracujących z osobami z niepełnosprawnościami, skupionych wokół
+Stowarzyszenia Rodziców i Przyjaciół Dzieci z Zespołem Downa „Tęcza” w Krakowie. Szukałyśmy innowacji, która pozwoli
+nam na zwiększenie aktywności społecznej naszych podopiecznych - dorosłych osób z zespołem Downa. Rozwiązanie miało
+przede wszystkim ułatwiać im pokonywanie przeszkód, które napotykają w związku z niepełnosprawnością, oraz przenosić ciężar
+organizacji czasu wolnego z rodziców na inne osoby wspierające: terapeutów, asystentów, wolontariuszy. Chciałyśmy stworzyć
+narzędzie, które pozwoli nam na integrację młodych osób z zespołem Downa z ich pełnosprawnymi rówieśnikami. W ten sposób
+powstał zarys platformy.
+Choć miałyśmy jedynie mgliste pojęcie, jak przełożyć nasze wizje na konkretne narzędzie, podjęłyśmy próbę przekonania do niej jurorów.
+Jury składające się z władz miasta, dyrektorów generalnych krakowskich firm i startupów doceniło nasz pomysł. Trafiłyśmy do finałowej 10.,
+co dało nam wiarę w to, że miasto popiera innowacyjne działania na rzecz osób z niepełnosprawnościami. Choć KrakHacku nie wygrałyśmy,
+pomysł stał się dla nas tak bardzo ważny, że postanowiłyśmy znaleźć na niego finansowanie. W ten sposób trafiłyśmy na projekt Małopolski
+Inkubator Innowacji Społecznych.”
+fot. AdobeStock
+
+--- strona 5 ---
+C Z A S N A A K T Y W N O Ś Ć
+5
+Środowisko osób z niepełnosprawnościami
+intelektualnymi napotyka m.in. na dwa rodzaje
+wykluczenia: wykluczenie technologiczne
+oraz społeczne. Po pierwsze, osoby z zespołem
+Downa nie posiadają wysoko rozwiniętych zdolności
+korzystania z nowych technologii. Liczne problemy
+związane z obsługą komputera, sprawnym czytaniem
+oraz przeładowanie informacyjne sieci uniemożliwiają
+im samodzielny wybór atrakcji.
+Po drugie, jest to grupa nierzadko wykluczona z życia społecznego oraz
+kulturalnego swojego miasta. Część z osób ma problemy z samodzielnym
+poruszaniem się po mieście, znalezieniem kasy biletowej, kupnem biletu czy
+odnalezieniem się w tłumie. W praktyce, czas wolny organizują im rodzice oraz
+instytucje, takie jak stowarzyszenia, szkoła czy warsztaty terapii zajęciowej
+- w większości przypadków w godzinach od 8.00 do 15.00. Powoduje to, że nie
+mogą rozwijać własnych zainteresowań i przejmować inicjatywy. Przez to spędzają
+go w sposób zbliżony do bliskich, często nie wiedząc jak osoba młoda może bawić się
+w mieście i jak dużo ciekawych inicjatyw podejmuje ich lokalne środowisko. To właśnie
+z tymi problemami ma radzić sobie platforma „Czas na aktywność”.
+ZAŁOŻENIA INNOWACJI
+
+--- strona 6 ---
+C Z A S N A A K T Y W N O Ś Ć
+6
+niesamodzilne poruszanie się
+po mieście
+udział w aktywnym życiu
+tylko poprzez WTZ,
+ŚDS w godzinach 8-15
+brak zdolności korzystania
+z nowych technologii
+brak umiejętności sprawnego
+czytania
+przeładowanie informacyjne
+WYKLUCZENIA OSÓB
+Z NIEPEŁNOPRAWNOŚCIAMI
+INTELEKTUALNYMI.
+wykluczenia osób
+z niepełnopsawnościami
+intelektualnymi
+wykluczenie
+społeczne
+wykluczenie
+technologiczne
+
+--- strona 7 ---
+C Z A S N A A K T Y W N O Ś Ć
+7
+I D E A P L A T F O R M Y
+Platforma „Czas na aktywność” to
+internetowa platforma dla dorosłych osób
+z zespołem Downa, która umożliwia im
+prowadzenie aktywnego i samodzielnego
+życia kulturalno-społecznego (z asystą
+wolontariuszy) w swojej miejscowości na
+miarę swoich potrzeb i możliwości.
+Poprzez uproszczony interfejs, zbudowany
+z elementów graficznych i dźwiękowych - ma
+w czytelny i przejrzysty sposób przekazywać
+informacje osobom z niepełnosprawnościami.
+Platforma jest bazą wiedzy i informacji
+o możliwości wspólnego spędzania czasu
+oraz narzędziem ułatwiającym kontakty
+z rówieśnikami – wolontariuszami. Całością
+działań platformy koordynuje przeszkolony
+moderator, który czuwa nad cyfrowym
+i fizycznym bezpieczeństwem podczas
+wspólnych wyjść.
+
+
+--- strona 8 ---
+C Z A S N A A K T Y W N O Ś Ć
+8
+DLA KOGO STWORZONO PLATFORMĘ
+„CZAS NA AKTYWNOŚĆ”?
+Dorosłe osoby niepełnosprawne potrzebują
+wsparcia i ciągłego treningu poszerzającego
+ich umiejętności i zakres możliwości
+korzystania z ciekawych wydarzeń. Wsparcia
+zazwyczaj udzielają im rodzice, niestety
+często wtórnie ich ograniczając odbierają im
+autonomię i utrudniają samodzielność.
+Projektując platformę jej autorzy starali się
+w maksymalnym stopniu dostosować jej
+funkcje do potrzeb odbiorców. Koncentrowali
+się w znacznym stopniu na wypracowaniu
+modelu współpracy między użytkownikami,
+moderatorem, wolontariuszami i rodzicami.
+Ich celem było również zachęcenie do
+podejmowania własnej inicjatywy -
+samodzielnego wyboru aktywności
+i zgłaszania własnych potrzeb. Dzięki testom
+i informacjom zwrotnym od wszystkich
+zainteresowanych grup wypracowana
+platforma adekwatnie odpowiada na te
+potrzeby.
+
+Młodzi dorośli - osoby z niepełnosprawnością intelektualną
+Główną grupą odbiorców innowacji są osoby dorosłe z zespołem Downa. Problemy
+dorosłych osób niepełnosprawnych intelektualnie zależą od poziomu ich funkcjonowania,
+trzeba więc pamiętać, że nie jest to jednorodna grupa, lecz wręcz przeciwnie, bardzo
+zróżnicowana i wymagająca elastycznego działania i wsparcia. Trudności dla osób
+z mniejszymi możliwościami intelektualnymi dotyczą głównie kwestii finansowych i braku
+wystarczającej liczby placówek zapewniających rozwiązania dostosowane do ich potrzeb
+jak np. transport. Konieczne jest natomiast kreowanie możliwości i wsparcia w zakresie
+korzystania z oferty kulturalnej, turystycznej miasta i okolicy, treningu społecznego,
+finansowego, mieszkań treningowych i chronionych.
+Użytkownicy Instytucjonalni
+Drugą grupą odbiorców, poza samymi młodymi dorosłymi są bezsprzecznie instytucje
+wspierające i świadczące usługi na rzecz osób niepełnoprawnych intelektualnie, w tym
+osób z zespołem Downa, np.:
+ Środowiskowe Domy Samopomocy,
+ Warsztaty Terapii Zajęciowej,
+ szkoły.
+Dla tych instytucji platforma może być wsparciem i pretekstem aby wzmacniać
+sprawczość swoich dorosłych podopiecznych, przygotowywać ich do niezależności w życiu
+społecznym a nawet zawodowym.
+Testy pokazały, że nauczyciele pracujący z osobami o niższych możliwościach
+wykorzystywali platformę do zajęć komputerowych. Platforma może być też
+wykorzystywana jako narzędzie do przygotowania się do nauki kontrolowanej
+samodzielności oraz poszerzania umiejętności i treningu społecznego.
+
+--- strona 9 ---
+C Z A S N A A K T Y W N O Ś Ć
+9
+Okres realizacji
+innowacji:
+wrzesień 2017
+- maj 2018 w tym
+6 miesiące
+testu
+Grupa testowa:
+10 osób
+z niepełnospra-
+wnościami
+Miejsce realizacji:
+Stowarzyszenie
+Rodziców
+i Przyjaciół Dzieci
+z Zespołem
+Downa „TĘCZA”
+w Krakowie
+
+SKĄD WIEMY, ŻE INNOWACJA DZIAŁA?
+W testowaniu platformy internetowej „Czas na aktywność!” brało
+udział 10 osób z zespołem Downa, związanych ze Stowarzyszeniem
+Rodziców i Przyjaciół Dzieci z Zespołem Downa „Tęcza”. Była to grupa
+zróżnicowana pod względem charakteru, sytuacji rodzinnej, poziomu
+funkcjonowania, zdolności społecznych i potrzeby kontaktów
+społecznych, ilości i jakości istniejących związków społecznych
+czy zdolności komputerowych. Te różnice istotnie wpłynęły na
+korzystanie z platformy przez użytkowników. Uczestnicy testów
+to osoby z orzeczonym znacznym stopniem niepełnosprawności
+intelektualnej, przy czym większość z nich funkcjonuje na poziomie
+niepełnosprawności intelektualnej w stopniu umiarkowanym.
+Wszyscy odbiorcy platformy, podczas wstępnych rozmów
+deklarowali chęć zwiększenia liczby aktywności, w których biorą
+udział i zgłaszali trudności związane z samodzielnym realizowaniem
+swoich planów. Większości podopiecznych czas organizowali rodzice
+i był ograniczony jedynie do aktywności proponowanych przez
+ośrodki, do których należą. W wywiadach wstępnych użytkownicy
+bezpośrednio stwierdzali, że czują się samotni - „brakuje im
+kontaktu z ludźmi” i że „chcieliby się spełnić w życiu społecznym”.
+Wśród osób rzeczywiście zaangażowanych można było zauważyć
+dwie dominujące postawy: tendencję do odsuwania się i umożliwienia
+eksploracji platformy swojemu dziecku oraz tendencję do aktywnego
+współuczestniczenia w korzystaniu z niej.
+„Nie wiem, co ona na tej platformie
+robiła, nie wchodziłam na nią. Nie było
+takiej potrzeby. Czasem tylko chwaliła
+mi się jakąś wiadomością od znajomego,
+pytała czy może gdzieś iść. Wydaje mi
+się, że platforma była dla córki taką jej
+prywatną sprawą, czymś w pełni „jej”. Jak
+miała z nią jakiś problem to nie prosiła
+mnie o pomoc, tylko swoją siostrę - co
+z resztą robi zazwyczaj, mając problem
+z komputerem. Wydaje mi się, że to
+dobrze świadczy o tym całym projekcie,
+że ona tę platformę jakoś jednak sama
+zrozumiała i ja w tym wszystkim nie
+musiałam uczestniczyć. Nie uważam za
+dobre wtrącanie się w jej życie, w końcu
+jest dorosła”
+-jedna z mam
+O B R A Z U J Ą C
+P I E R W S Z Ą P O S T A W Ę :
+
+--- strona 10 ---
+C Z A S N A A K T Y W N O Ś Ć
+10
+Bardzo ważnym elementem projektu dla większości
+rodziców oraz zagadnieniem, które podnosili również
+terapeuci było bezpieczeństwo platformy- zarówno
+w świecie wirtualnym, jak i realnym.
+Pierwsze logowanie musi zostać
+zaakceptowane przez moderatora,
+więc „wiemy, z kim mamy
+do czynienia”. oraz „wiemy,
+kto jest po drugiej stronie”.
+Oprócz bezpieczeństwa danych
+rodzice zwracali też uwagę
+na bezpieczeństwo w świecie
+rzeczywistym. Dlatego, spotkania
+odbywały się „z” i „pod okiem”
+wolontariusza-rówieśnika.
+WIĘKSZOŚĆ RODZICÓW W POZYTYWNY
+SPOSÓB WYPOWIADAŁA SIĘ
+O PLATFORMIE. UWAŻALI JĄ ZA
+UŻYTECZNE NARZĘDZIE DLA SWOICH
+DOROSŁYCH DZIECI, SŁUŻĄCE
+ZWIĘKSZANIU SAMODZIELNOŚCI
+ORAZ NARZĘDZIE PRZYDATNE DO
+ORGANIZACJI CZASU WOLNEGO.
+POZYTYWNĄ ZMIANĄ, JAKĄ WYWOŁAŁA
+PLATFORMA BYŁO WIĘKSZE
+WYKORZYSTYWANIE INICJATYWY DZIECI
+W ORGANIZACJI WŁASNEGO CZASU
+WOLNEGO. WAŻNE JEST, ABY WSZYSCY
+WOLONTARIUSZE BYLI OTWARCI NA
+INICJATYWĘ ODDOLNĄ, SŁUCHALI
+POTRZEB UŻYTKOWNIKÓW I ZGŁASZALI
+TO OPIEKUNOM, KTÓRZY MOGĄ SPEŁNIĆ
+TE MARZENIA.
+
+fot. AdobeStock
+
+--- strona 11 ---
+11
+JAK SKOZYSTAĆ Z INNOWACJI?
+KROK 1: Zbuduj platformę
+Jeśli pracujesz z osobami niepełnoprawnymi intelektualnie zapewne
+znasz potrzeby i możliwości swojej grupy odbiorców, ale wiesz
+też co jest ich mocną stroną. Za pomocą platformy będziesz mógł
+wzmocnić uczenie się samodzielności i poczucie sprawstwa swoich
+podopiecznych.
+Jednym z pierwszych kroków do użycia platformy „Czas na
+aktywność” jest jej zbudowanie / pobranie kodu, który jest
+
+dostępny na stronie www.rops.krakow.pl w zakładce Małopolski
+Inkubator Innowacji Społecznych. W załączniku do modelu zawarte
+zostały produkty, które mogą być pomocne na tym etapie:
+ Kod źródłowy do aplikacji
+ Instrukcja stosowania aplikacji
+Instrukcja krok po kroku omawia wszystkie funkcje platformy oraz
+sposób poruszania się po niej.
+KROK 2: Pozyskaj moderatora
+Mając już zbudowaną platformę, kolejnym krokiem jest odpowiednie
+dobranie moderatora. Na podstawie testów platformy, jej autorzy
+rekomendują, aby moderatorem był ktoś z wewnątrz organizacji /
+instytucji, kogo znają uczestnicy. Aktywność moderatora powinna
+wynosić 15-20 h pracy tygodniowo.
+Zadania moderatora w praktyce pokazują sporą dawkę interakcji
+z użytkownikami, np. gdy dana osoba zapomni swoje hasło lub
+ma problem z zalogowaniem się do systemu, etc. Zwłaszcza
+początkowy etap działania moderatora i wprowadzania platformy
+jest wymagający. Tak na prawdę uczą się wtedy wszyscy, zarówno
+przyszli użytkownicy, jak i moderator, nauczyciele, rodzice czy
+wolontariusze.
+C Z A S N A A K T Y W N O Ś Ć
+
+--- strona 12 ---
+C Z A S N A A K T Y W N O Ś Ć
+12
+Poniżej prezentujemy charakterystykę idealnego moderatora i cech,
+których posiadanie znacznie ułatwi pracę z platformą i uczestnikami:
+ odpowiedni wiek - moderatorem powinna być osoba w wieku
+zbliżonym do użytkowników co, ułatwia komunikację
+z użytkownikami i wolontariuszami,
+ odpowiedzialność, komunikatywność, otwartość, cierpliwość,
+ znajomość grupy użytkowników i doświadczenie w pracy
+z nią, umiejętność zarządzania innymi i współpracy również
+z wolontariuszami i rodzicami,
+ umiejętność wyszukiwania i selekcji wydarzeń,
+ umiejętności organizacyjne i radzenie sobie w sytuacjach
+trudnych,
+ „odpowiednio humanistyczny” umysł, aby być w stanie wczuć
+się w potrzeby osób z niepełnosprawnością i równocześnie
+„odpowiednio ścisły”, aby być w stanie obsługiwać narzędzie
+i łączyć różne informacje w czasie,
+ umiejętności techniczne i gotowość do nauki
+ na koniec, to osoba, która musi mieć zaufanie rodziców,
+nauczycieli i samych użytkowników, dlatego powinna to być
+osoba z wewnątrz organizacji, którą znają wszyscy.
+Moderator jest warunkiem kluczowym do powodzenia i sukcesu
+korzystania z platformy. Z jednej strony, jego zadaniem jest
+analiza oferty danej miejscowości / miasta, w którym mieszkają
+użytkownicy platformy. Aby to zrobić musi poznać osoby, które
+będą korzystać z platformy i poznać ich zainteresowania i pasje.
+Trudno jest proponować np. wyjście na basen w sytuacji, kiedy cała
+grupa zgodnie stwierdzi, że zajęcia na basenie to ostatnie zajęcia
+które przychodzą im do głowy a połowa grupy boi się wody. Poza
+analizą zazwyczaj bogatej oferty kulturalnej miasta moderator
+jest odpowiedzialny za obsługę platformy i koordynację pracy
+wolontariuszy. Samo to już wydaje się dużym i złożonym zadaniem.
+Typowe zadania moderatora/moderatorów:
+ wyszukanie informacji o atrakcjach kulturalnych i społecznych,
+sportowych w danym mieście/ miejscowości,
+ analiza informacji i wybór wydarzeń, które są w zasięgu
+możliwości grupy i są spójne z zainteresowaniem i pasją grupy,
+ wypełnienie bazy wydarzeń w aplikacji z przekształceniem
+informacji na prosty i zrozumiały przez użytkowników język,
+ kontakt się z wolontariuszami i skoordynowanie wydarzeń /
+wyjść z grupą,
+ ewentualne wysłanie powiadomień do uczestników
+o aktualizacji platformy,
+ bieżąca pomoc użytkownikom w zapisie na dane wydarzenia
+(w razie konieczności).
+Praktyka pokazała, że zadania moderatora zmieniały się.
+Stowarzyszenie też tworzyło platformę równocześnie ucząc
+korzystania z niej uczestników. Każda organizacja jak i każdy
+moderator po jakimś czasie wypracuje sobie swój zakres
+zadań i sposób ich realizacji. W pewnych sytuacja doświadczeni
+wolontariusze, którzy wpisują się w przedstawiony powyżej opis cech
+moderatora będą mogli pełnić taką funkcję.
+
+--- strona 13 ---
+C Z A S N A A K T Y W N O Ś Ć
+13
+KROK 3: Zrekrutuj wolontariuszy
+Planując pracę z wolontariuszami należy na początku zastanowić
+się skąd można pozyskać wolontariuszy. Być może w Twoim
+mieście jest instytucja lub organizacja pozarządowa, która
+koordynuje wolontariat. Być może Twoja organizacja od lat
+współpracuje z wolontariuszami i masz wypracowane ścieżki do
+pozyskania wolontariuszy. Ważne aby zrekrutować wolontariuszy
+a potem przeprowadzić dla nich szkolenia z obsługi platformy,
+wyjaśnić na czym będą polegać ich zadania i uwrażliwić na sposób
+funkcjonowania osób z zespołem Downa, ich potrzeby i możliwości.
+Sytuacją idealną byłoby, gdyby wolontariusze uczestniczący w pracy
+z platformą znali użytkowników wcześniej. Warto zorganizować kilka
+spotkań dla osób z niepełnosprawnością z wolontariuszami, którzy
+będą wspierać ich w korzystaniu z platformy - aby mieli szansę
+się poznać, polubić i zbudować zaufanie. Zachęci to również obie
+strony do używania społecznych funkcji platformy, co w przypadku
+Tęczy okazało się kluczowe do przyzwyczajenia się do korzystania
+z aplikacji.
+W ankietach ewaluacyjnych 100% wolontariuszy stwierdziło, że
+są zadowoleni z wolontariatu oraz 100% twierdziło, że podczas
+wolontariatu nabyli nowe umiejętności i wartościowe doświadczenia.
+Wolontariusze zostali również poproszeni o zwięzłe określenie,
+z czym kojarzą mu się osoby z zespołem Downa. Można tu
+przytoczyć słowa jednej z osób: „Kojarzą mi się z chęcią życia, której
+brakuje wielu zdrowym osobom. Z otwartością, ciepłem, z chęcią
+poznawania świata i ludzi a także z dążenia do nawiązywania relacji”.
+Wolontariusze oceniali swój wolontariat bardzo pozytywnie, a jeden
+z wolontariuszy stwierdził nawet, że znalazł w ten sposób swoją
+ścieżkę zawodową i „pierwszy raz w życiu poczuł się tak doceniony”.
+Współdziałanie moderatora, wolontariuszy i młodych, dorosłych osób
+z zespołem Downa wymaga zaangażowania się każdej ze stron. Tak na
+prawdę, do pełnego grona osób zaangażowanych powinni dołączyć także
+opiekunowie uczestników - zazwyczaj ich rodzice. W kolejnym kroku więc
+rekomendujemy zorganizowanie warsztatu dla rodziców, a na samym
+końcu dla użytkowników. Szkolenia warto włączyć w szersze działania
+aktywizujące osoby z niepełnosprawnością, przyzwyczaić rodziców do
+tego, że ich dorosłe dzieci wychodzą z grupą, zbudować odpowiedni
+poziom wzajemnego zaufania, zapewnić o zrozumieniu potrzeb.
+Kolejnym krokiem są szkolenia dla osób z zespołem Downa z obsługi
+platformy. Bardziej efektywne będą spotkania i szkolenia indywidualne
+podczas których uczestnicy będą mogli potrenować obsługę platformy.
+Trzeba pamiętać, że nabywanie sprawności w poruszaniu się po aplikacji
+będzie stopniowe. Test pokazał, że mimo początkowych problemów,
+występujących u części z osób, w końcu nabywali oni biegłości
+w korzystaniu z platformy - zapamiętali hasła, adres (albo po prostu
+wskoczył on im do „ulubionych”).
+KROK 4: Zaangażuj uczestników i wzmocnij rodziców
+
+--- strona 14 ---
+C Z A S N A A K T Y W N O Ś Ć
+14
+ WYNIKI Z OKRESU TESTOWANIA
+Z odbytego testu jego autorzy zebrali sporo wniosków. Część z refleksji
+z okresu testu pogrupowane zostało w najważniejsze punkty, które
+znajdziesz w załączniku nr 1 do modelu.
+ REKOMENDACJE DLA MODERATORA I WOLONTARIUSZY
+Okres testu pozwolił autorom na spisanie najważniejszych
+rekomendacji dla kluczowych osób, które współpracują przy platformie,
+tj. dla moderatora i wolontariuszy. Warto pamiętać, że jest to tekst
+pomocniczy do niniejszego modelu i należy go czytać razem z modelem
+i pozostałymi załącznikami, w których dokładnie opisana jest idea
+platformy. Rekomendacje zostały opisane w załączniku nr 2 do modelu.
+ PLATFORMA – INSTRUKCJA STOSOWANIA
+Wraz z firmą Poliman Stowarzyszenie stworzyło narzędzie, które
+w znacznym stopniu odpowiada potrzebom odbiorców – młodych
+dorosłych z zespołem Downa. Narzędzie nie jest przeładowane
+pod względem liczby informacji, a te, które są w nim umieszczane
+dostosowane są pod względem formy i treści do odbiorców.
+Komunikaty są proste, konkretne, odnoszą się do doświadczeń
+użytkowników. Interfejs platformy jest prosty, oparty na obrazach
+i prostych słowach, zastosowano również elementy wspomagające
+(przyciski „Pomoc”, dzięki którym użytkownik może na każdym etapie
+przypomnieć sobie, do czego służy aktualna podstrona, komunikaty
+dźwiękowe). Komunikacja z użytkownikiem opiera się zarówno na
+słowach, obrazach, jak i dźwięku, co zwiększa szanse na zrozumienie
+i zapamiętanie informacji.
+W załączniku nr 3 do modelu znajduje się instrukcja stosowania
+aplikacji oraz link do krótkiego filmiku na temat aplikacji.
+ KOD ŹRÓDŁOWY
+W załączniku nr 4 do modelu znajduje się pełen kod źródłowy
+do aplikacji. Warto aby z załącznikiem zapoznał się informatyk /
+programista, który będzie dla danej instytucji tworzyć platformę
+w oparciu o dostępny kod.
+SKŁADOWE INNOWACJI DO WYKORZYSTANIA
+
+--- strona 15 ---
+C Z A S N A A K T Y W N O Ś Ć
+15
+ DOBRZE ROZPLANUJ PROJEKT W CZASIE!
+Zapewnij sobie odpowiednią ilości czasu. Etap budowania platformy
+jest już zrealizowany, jednak będziesz musiał dostosować platformę
+do swoich potrzeb. Na ten etap warto przewidzieć okres od 1 do 3
+miesięcy.
+Wdrożenie platformy. Zanim użytkownicy nauczą się korzystać
+z narzędzia, a wychodzenie w przestrzeń miasta z użyciem platformy
+stanie się dla wszystkich proste i przyjemne, warto poświęcić czas
+na rozwijanie umiejętności komputerowych oraz trening społeczny.
+Po okresie 3 miesięcy, platforma powinna być narzędziem w pełni
+zintegrowanym z daną instytucją.
+ ZASTANÓW SIĘ, KTO BĘDZIE ODBIORCĄ PLATFORMY
+Dobór użytkowników. Narzędzie adresowane jest głównie do osób
+z niepełnosprawnością intelektualną, które posiadają pewne nabyte
+kompetencje i umiejętności jak np. komunikatywność, samodzielność
+w zaspokajaniu swoich potrzeb społecznych oraz gotowość na
+aktywność i chęć nawiązywania kontaktów z innymi. Osoby z większymi
+trudnościami będą miały kłopot z wykorzystaniem wszystkich funkcji
+platformy, chyba że potraktujemy ją jako przestrzeń do informowania
+rodziców o dostępnych wydarzeniach (co de facto miało miejsce).
+Optymalną liczbą użytkowników platformy wydaje się grupa
+20-osobowa. Wówczas organizowane wyjścia mają szansę zebrać
+się w większych grupach (6-8 osób), a ich ilość umożliwi wybieranie
+atrakcji z większej bazy. Pamiętaj o zaangażowaniu odpowiedniej
+liczby wolontariuszy, tak aby moderator był w stanie myśleć o kilku
+wydarzeniach na raz.
+ ZADBAJ O MODERATORA
+Rola moderatora jest kluczowa! Mimo ogólnej tendencji do
+automatyzacji różnych rozwiązań i przenoszenia wielu działań
+ze świata realnego do wirtualnego, rozwiązania adresowane do
+osób z niepełnosprawnością intelektualną będą zawsze wymagały
+obecności konkretnego człowieka, znającego potrzeby i możliwości
+użytkowników.
+O TYM WARTO PAMIĘTAĆ
+„W naszym przypadku platforma uwypukliła potrzebę
+prowadzenia treningów samodzielnego poruszania się
+komunikacją miejską oraz treningów finansowych. Jednym
+z pomysłów na wykorzystanie platformy jest wprowadzenie jej
+jako narzędzia w pracowni komputerowej w szkole czy placówce
+dziennej. Poza treningiem pod okiem nauczycieli, stwarza to
+również możliwość szerszej współpracy między placówkami
+pomocy społecznej i oświatowymi a organizacją pozarządową
+oraz integrowanie osób z podobnymi potrzebami i trudnościami
+na co dzień przebywających w różnych ośrodkach.”
+Stowarzyszenie Tęcza
+
+--- strona 16 ---
+C Z A S N A A K T Y W N O Ś Ć
+16
+ ZADBAJ O ZMOTYWOWANYCH WOLONTARIUSZY
+Aby platforma działała sprawnie, wszyscy jej użytkownicy powinni
+systematycznie logować się, sprawdzać dostępne oferty wydarzeń,
+podtrzymywać kontakty z pozostałymi osobami. Może się zdarzyć, że
+wolontariusze będą niechętnie korzystali z platformy. Trzeba pamiętać,
+że platforma może być dla nich nieatrakcyjna. Z drugiej strony, jest
+to też kolejna platforma/ aplikacja, na którą trzeba się zalogować,
+co w przypadku osób zdrowych powoduje konieczność pamiętania
+loginów, hasła i wykonywania dodatkowych czynności poza mediami
+społecznościowymi, z których korzystają na co dzień na własny użytek.
+W takiej sytuacji sprawdzonym sposobem komunikacji moderatora
+z wolontariuszami jest telefon lub Facebook.
+ ZASADY CZYTELNE DLA WSZYSTKICH
+UŻYTKOWNIKÓW
+Współpraca, elastyczność i wyrozumiałość. Wypracuj określone
+zasady, zgodnie z którymi każdy ma swój obszar odpowiedzialności
+za siebie i swoje uczestnictwo w wydarzeniach, niezależnie od
+swojej niepełnosprawności. Ważne, aby stopniowo przyzwyczajać
+użytkowników i ich rodziców do tego, że platforma ma być
+narzędziem wzmacniającym ich samodzielność, a nie przenoszącym
+odpowiedzialność z organizowania czasu wolnego z rodziców na
+moderatora i wolontariuszy.
+ NIE WSZYSTKO NA RAZ! WPROWADZAJ PLATFORMĘ
+KROK PO KROKU.
+O TYM WARTO PAMIĘTAĆ
+„Warto dołożyć wszelkich starań, aby wokół platformy
+zbudowana została społeczność. Z naszych obserwacji
+wynika, że tym, co najbardziej motywowało użytkowników
+do korzystania z narzędzia była właśnie możliwość kontaktu
+ze znajomymi oraz wracania do wspólnie spędzonych chwil.
+Uczestnictwo w wydarzeniach na początku było jedynie
+dodatkiem, dopiero z czasem, gdy użytkownicy wzięli udział
+w kilku, część z nich zaczęła szukać tam ciekawych propozycji.”
+Stowarzyszenie Tęcza
+
+--- strona 17 ---
+C Z A S N A A K T Y W N O Ś Ć
+17
+O AUTORACH INNOWACJI
+AGATA KRZYŻEK
+- psycholog, pracuje z dorosłymi osobami z niepełnosprawnością intelektualną
+w Środowiskowym Domu Samopomocy i Stowarzyszeniu „Tęcza”.
+JOANNA KOCIOŁEK
+- studentka psychologii i informatyki społecznej. Zajmuje się projektowaniem interfejsów
+w firmie G2A. Wolontariuszka w Stowarzyszeniu „Tęcza” i siostra dorosłej Agnieszki
+z zespołem Downa.
+GRAŻYNA BANACH-KOCIOŁEK
+- psycholog, dyrektor Niepublicznego Przedszkola Specjalnego Związku Polskich
+Kawalerów Maltańskich, aktywna członkini Stowarzyszenia „Tęcza”. Mama dorosłej
+Agnieszki z zespołem Downa.
+AGNIESZKA JANKIEWICZ
+- psycholog, na co dzień wspiera dorosłe osoby z niepełnosprawnością jako asystent
+osobisty. Aktywna członkini Stowarzyszenia „Tęcza” i mama zastępcza dwójki dzieci
+z zespołem Downa - Ewci i Oskara.
+
+--- strona 18 ---
+Po więcej informacji na temat opisanej inowacji jak
+i pozostałych rozwiązań i produktów przetestowanych
+w ramach projektu „Małopolski Inkubator Innowacji
+Społecznych” zapraszamy na stronę ROPS Kraków:
+www.rops.krakow.pl

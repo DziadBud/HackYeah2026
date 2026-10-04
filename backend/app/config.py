@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -27,6 +29,9 @@ class Settings(BaseSettings):
     # uploaded pdfs are kept on disk so an innovation can be re-embedded later
     upload_dir: str = "/data/uploads"
     max_upload_bytes: int = 10 * 1024 * 1024
+    # photos and pdfs shipped with the seeded innovations (backend/seed_media/<id>/);
+    # an admin-uploaded pdf in upload_dir takes precedence
+    seed_media_dir: str = str(Path(__file__).resolve().parents[1] / "seed_media")
 
     # grant-application drafts (Gemini)
     gemini_api_key: str = ""

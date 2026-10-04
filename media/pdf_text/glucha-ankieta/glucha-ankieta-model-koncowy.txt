@@ -1,0 +1,897 @@
+--- strona 1 ---
+
+Warszawa 2022 r. – Instytut Spraw Głuchych
+
+MODEL KOŃCOWY
+Głucha Ankieta
+
+Opracowanie:
+Instytut Spraw Głuchych, DeafLab
+Małgorzata Talipska
+
+--- strona 2 ---
+
+2
+I.
+O projekcie ......................................................................................................................... 3
+II.
+Koncepcja przygotowania wtyczki ..................................................................................... 4
+A.
+Problem, na który odpowiada innowacja ...................................................................... 4
+B.
+Dotychczasowe próby rozwiązania problemu ............................................................... 5
+C.
+Propozycja innowacji ...................................................................................................... 7
+D.
+Koncepcja innowacji ....................................................................................................... 8
+III. Modelowy kwestionariusz ............................................................................................... 12
+IV. Dane dostępowe dla testera -wzór .................................................................................. 13
+V.
+Zadanie dla testerów ........................................................................................................ 14
+VI. Testowanie krok po kroku: ............................................................................................... 15
+VII. Techniczne informacje (administrator) ............................................................................ 16
+VIII. Instrukcja dla testerów badaczy ....................................................................................... 17
+E.
+Logowanie (administrator, badacz) .............................................................................. 17
+F.
+Instalacja pluginu Video Recorder (administrator) ...................................................... 18
+G.
+Tworzenie nowych ankiet (badacz) .............................................................................. 20
+H.
+Wstawianie migowej wersji pytania do ankiety – jak wygenerować link do osadzania
+„frame”? (badacz) ................................................................................................................ 24
+I.
+Konfiguracja pluginu (administrator, badacz) .............................................................. 27
+J.
+Uruchomienie ankiety (badacz) ................................................................................... 29
+K.
+Nagrywanie odpowiedzi przez użytkownika (respondent) .......................................... 34
+L.
+Przeglądanie odpowiedzi i uzupełnianie transkrypcji (badacz) ................................... 37
+M.
+Pobieranie zbiorczych wyników do arkusza kalkulacyjnego (badacz) ..................... 40
+IX. Przebieg testów z wykorzystaniem rezultatu projektu Głucha Ankieta .......................... 43
+N.
+Rekrutacja testerów i metodologia .............................................................................. 43
+O.
+Przebieg testów przeprowadzonych przez testerów badaczy ..................................... 45
+P.
+Wynik testów ................................................................................................................ 54
+
+--- strona 3 ---
+
+3
+I. O projekcie
+Przedmiotem innowacji jest wtyczka do zainstalowania w Limesurvey (internetowy
+system ankietujący) umożliwiająca bezpośrednie nagrywanie i przesyłanie odpowiedzi video
+w polskim języku migowym w co najmniej jednym rodzaju pytań. Rozwiązanie umożliwia
+wypowiedzi osobom głuchym w ankietach, które do tej pory nie mają takiej możliwości. Jest
+to rozwiązanie zwiększające dostępność dla osób głuchych. Innowacja została stworzona
+(napisana) z wykorzystaniem dostępnych bibliotek i api oraz przystosowana do potrzeb
+głuchych z uwzględnieniem możliwości programu LimeSurvey. Przy założeniu, że badacz
+przewidział w badaniu udział użytkowników PJM i zainstalował przedmiotową wtyczkę, w
+momencie, gdy osoba głucha zechce odpowiedzieć na pytanie, zawarte w ankiecie własnymi
+słowami, a brak znajomości języka polskiego jej to uniemożliwi, wystarczy że naciśnie
+przycisk za pomocą którego zostanie pobrany obraz z jej kamery a film z odpowiedzią w
+języku migowym wyśle się bezpośrednio na serwer, gdzie nagranie z odpowiedzią zostanie
+przypisane do zadanego pytania. Badacz może przetłumaczyć rzetelnie tę wypowiedź a
+następnie ująć ją w statystykach. Wtyczka jest skierowana do użytku dla badaczy
+indywidualnych, uczelni wyższych, instytutów badawczych czy innych instytucji. W proces
+testów zaangażowane były osoby, które znają już polski język migowy i wykonują badania do
+celów naukowych. Wtyczka jest dostępna dla każdego, kto będzie chciał zrobić dostępne dla
+głuchych badanie a głuchym umożliwi wypowiedź w ich języku.
+Rozwiązanie zadziała gdy badacze będą zainstalują wtyczkę w serwisie, wówczas osoby
+głuche będą mogły z niej skorzystać poprzez wgranie swojej wypowiedzi do zadanych pytań.
+Dzięki wprowadzeniu narzędzia jakim jest wtyczka (plugin) do systemu ankietującego
+limesurvey, studenci przygotowujący pracę dyplomową, interesujący się specyfiką życia osób
+głuchych, ich opiniami na dany temat, czy językiem - będą mogli przeprowadzić w sposób
+dostępny dla głuchych ankiety badawcze. Rozwiązanie to jest nie tylko dla studentów, ale
+także dla profesjonalnych naukowców i badaczy wykonujących badania na zlecenie instytucji
+np. PFRON czy innych organów rządowych, pozarządowych czy prywatnych.
+
+--- strona 4 ---
+
+4
+Niniejsza wtyczka powstała w ramach innowacji pn. Głucha ankieta w ramach
+realizacji projektu grantowego: Inkubator Dostępności, współfinansowanego ze środków
+Europejskiego Funduszu Społecznego w ramach Programu Operacyjnego Wiedza Edukacja
+Rozwój 2014-2020.
+Uwaga – Część informacji w zawartej niniejszym dokumencie instrukcji ma charakter
+pomocniczy, a oprogramowanie, którego dotyczą wskazówki nie powstało w ramach
+niniejszego projektu. Może się okazać, że występuje problem z zapewnieniem dostępności
+danego kroku dla osób z niektórymi niepełnosprawnościami.
+Małgorzata Talipska, Bartosz Marganiec, Monika Lament, 2022, Głucha ankieta –
+Video Recorder: Instrukcja obsługi wtyczki (pluginu) dla administratorów serwisów
+limesurvey i badaczy oraz respondentów. Warszawa: Instytut Spraw Głuchych (publikacja
+online).
+II. Koncepcja przygotowania wtyczki
+A. Problem, na który odpowiada innowacja
+
+Głusi stanowią mniejszość językowo-kulturową, która liczy około 40 tyś członków,
+którzy posługują się odmiennym od języka polskiego językiem – polskim językiem migowym.
+Pisząc o Głuchych, celowo wykorzystywana jest pisownia wielką literą w ujęciu
+rzeczownikowym analogicznie do nazw innych mniejszości. Głusi tak, jak inni obcokrajowcy
+mogą nie znać języka polskiego lub znają go na poziomie, który nie daje możliwości
+swobodnego wyrażania własnego zdania w języku polskim w piśmie. Oczywiście nie dotyczy
+to wszystkich -znajduje się pewna część osób, która włada językiem polskim swobodnie.
+Jednak grupa osób nieznających języka polskiego na dość swobodnym poziomie pozostaje bez
+wsparcia w trakcie badań a tym samym bez trafnej diagnozy sytuacji społecznej.
+Nie tylko fakt niesłyszenia, ale przede wszystkim poziom znajomości języka polskiego,
+czy posługiwanie się polskim językiem migowym, przynależność do Kultury Głuchych, może
+wpływać na sytuacje poszczególnych grup osób.
+
+--- strona 5 ---
+
+5
+W chwili obecnej przeprowadza się wiele badań naukowych dotyczących
+niepełnosprawności w tym między innymi dotyczących g/Głuchych czy to na zlecenie
+Państwowego Funduszu Rehabilitacji Niepełnosprawnych czy w ramach prac licencjackich,
+magisterskich czy dyplomowych, gdzie podmiotem badań są osoby niesłyszące. Wielkim
+wyzwaniem nie tylko świadomościowym, ale także logistycznym jest zapewnienie równych
+praw do wypowiadania się poprzez udział w badaniach społecznych. Wypowiedzenie się w
+sposób swobodny, w pełni przekazując swoją myśl.
+B. Dotychczasowe próby rozwiązania problemu
+Dotychczas stosowane różne narzędzia ankietujące umożliwiały już wstawianie zdjęć, linków
+z frame czasem nawet plików filmowych na przykład z tłumaczeniem na polski język migowy.
+Dużą barierą było zbieranie odpowiedzi bezpośrednio od respondentów głuchych, którzy
+posługują się polskim językiem migowym i chcieliby udzielić szerszej odpowiedzi
+nieznajdującej się w kafeterii pytań. Dotychczas odpowiedzi mogły zostać udzielone jedynie
+za pomocą tekstu w języku polskim, który może sprawiać problem osobom głuchym dla
+których jest on językiem obcym.
+Dotychczas stosowano wobec osób migających dość ograniczone sposoby zbierania danych
+badawczych.
+Należały do nich:
+o Zbieranie kwestionariuszy CAWI, w których treści pytania są (lub nie) tłumaczone na
+polski język migowy zaś kafeteria jest zamkniętą, czyli umożliwia wybór tylko jednej
+odpowiedzi spośród podanych przez badacza.
+Takie badania są często praktykowane, gdyż są łatwe do przeprowadzenia, jednak ich
+ogromnym minusem w przypadku g/Głuchych jest brak możliwości pozyskania nowej
+wiedzy, a przeważnie jedynie potwierdzenie hipotez.
+o Zbieranie kwestionariuszy CAWI, w których treści pytania są (lub nie) tłumaczone na
+polski język migowy, a kafeteria pytań jest pół otwarta czyli znajduje się lista
+potencjalnych odpowiedzi oraz miejsce na inną odpowiedź.
+Czasami badacz informuję, że można wpisać wypowiedź w języku polskim lub w jej
+miejsce wkleić linka do filmu, gdzie ktoś zamigał swoją wypowiedz w polskim języku
+
+--- strona 6 ---
+
+6
+migowym. Taka sytuacja rodzi niepożądane sytuacje. Należą do nich unikanie
+nagrywania wypowiedzi, (bardzo mało zwrotów kwestionariuszy w PJM) gdyż
+najpierw trzeba założyć konto w serwisie który przechowa film, nagrać go, następnie
+przesłać go na portal, udostępnić go, wygenerować linka i dodać go do pola na
+odpowiedź. Analogicznie do każdego pytania.
+Drugim problemem jest niechęć badanych w języku polskim do odpowiedzi ze
+względu na słabą znajomość polszczyzny i wybieranie innej mniej opasującej
+odpowiedzi spośród dostępnej kafeterii.
+Takie działania powodują powstanie ryzyka, że badania będą nie trafne i/lub nie
+rzetelne.
+o Indywidualne Wywiady Pogłębione (IDI), które polegają na spotkaniu badacza z
+badanym i nagrywaniu go dyktafonem – w przypadku osób słyszących ta metoda się
+sprawdza. Taki rodzaj badań jest najbardziej kosztownym przedsięwzięciem. W
+przypadku głuchych występuje kilka wariantów.
+o Badacz zna polski język migowy i sam komunikuje się z badanym a wywiad
+nagrywa kamerą - jest to najbardziej pożądany typ wywiadu IDI, gdyż nie
+pośredniczy osoba trzecia, która mogłaby w pewien sposób filtrować
+wypowiadane teksty.
+o Badacz nie zna polskiego języka migowego, zatrudnia tłumacza, który na
+bieżąco tłumaczy na język polski wypowiedzi głuchego. Na podstawie ścieżki
+dźwiękowej powstaje transkrypcja.
+Taki rodzaj badań nie uwzględnia pełnych wypowiedzi osób głuchych, ich zajęknięć
+czy często zdarzającej się sytuacji, gdy któraś ze stron (tłumacz lub głuchy) nie
+zrozumieli się wzajemnie i uzupełniają swoją wypowiedź nie rzadko ją upraszczając.
+• Badania wykonane techniką PAPI, czyli kwestionariuszowe badanie face to
+face gdy badacz jak i osoba badana spotykają się w jednym miejscu, czasami
+online. Badacz odczytuje pytania zawarte w papierowym kwestionariuszu i
+zapisuje dosłowną odpowiedź badanego. Ta technika nie pozwala na
+dopowiedzenia, wyjaśnianie oraz ingerencje badacza w wypowiedź. Badacz
+
+--- strona 7 ---
+
+7
+może znać PJM lub zatrudnić tłumacza. W przypadku głuchych ta technika
+jest bardzo trudna, a wręcz nie możliwa do wykonania. Badacze jednak ją
+stosując zatrudniając tłumacza który tłumaczy pytania na polski język migowy
+i na język polski. Badacz zapisuje odpowiedzi. Jednak dużym problemem jest
+to, że przy spotkaniu kilku badanych każdy otrzymuje w rzeczywistości inne
+pytania, gdyż na wynik może mieć wpływ inny szyk zadania w pytaniu. Jeśli
+badacz zna PJM i sam przeprowadza pytanie analogicznie za każdym razem
+musi dokonać tłumaczenia pytania w dwie strony. Przy tłumaczeniu na język
+polski pojawiają się problemy z zapisem (długopisem) wypowiedzi badanego.
+• Badania wykonane techniką CAPI czyli podobnie jak w przypadku PAPI jest
+gotowy kwestionariusz, jednak jest on umieszczony na komputerze i można
+tam zawrzeć gotowe tłumaczenia na PJM w postaci vlogów. Umożliwia to
+zadanie takich samych pytań wszystkim badanym (podobnie jak w badaniach
+wykonanych techniką CAWI) jednak dalej pojawia się problem z zapisem
+wypowiedzi w PJM. Badacz musi sam na bieżąco tłumaczyć i zapisywać
+wypowiedzi badanego co jest wręcz nie możliwe. Drugą opcją jest ustawienie
+kamery, która będzie rejestrować wypowiedzi lecz wymusza to kontakt
+stacjonarny.
+C. Propozycja innowacji
+Celem projektu jest zniwelowanie bariery uczestnictwa osób g/Głuchych w badaniach
+naukowych typu CAWI i utworzenie pluginu, który umożliwi wypowiedzi w językach
+migowych, a także jednocześnie wykorzysta znane już dobrze w środowisku naukowym
+narzędzie o nazwie LimeSurvey, które jest dość dobrze rozbudowane i stale rozwijane. Co
+najważniejsze, umożliwia ono przeprowadzanie badań z wykorzystaniem różnych typów
+pytań. Wtyczka powstanie w ramach realizacji grantu pod tytułem Głucha ankieta w ramach
+realizacji projektu grantowego: Inkubator Dostępności, współfinansowanego ze środków
+Europejskiego Funduszu Społecznego w ramach Programu Operacyjnego Wiedza Edukacja
+Rozwój 2014-2020.
+
+--- strona 8 ---
+
+8
+D. Koncepcja innowacji
+Dostępność
+Ze względu na specyfikę projektu rekomendowane jest zastosowanie następujących
+standardów (patrz: Standardy dostępności dla polityki spójności 2014-2020): 1) standard
+cyfrowy – w zakresie projektowanej wtyczki (powinna być dostępna dla osób z
+niepełnosprawnościami sprzężonymi np. niepełnosprawnością wzroku, intelektualną czy
+osób starszych – prosta i intuicyjna obsługa).
+Powinna powstać także instrukcja obsługi zarówno w PJM jak i w języku polskim opatrzona
+grafikami, które ułatwią zrozumienie pisanej i migowej treści głuchym odbiorcom. Teksty
+zostaną tak opisane, że będą dostępne dla osób niewidomych bez potrzeby wykorzystywania
+grafik.
+
+Wymagania techniczne
+• Wtyczka będzie stworzona celem działania w programie limesurvey w
+przynajmniej jednej wersji aplikacji limesurvey, która zostanie ustalona w
+trakcie realizacji projektu w porozumieniu z fundacją Instytut Spraw Głuchych.
+• Wtyczka będzie działała na przynajmniej jednej przeglądarce internetowej.
+• Wtyczka będzie działać na smartfonach i tabletach w przynajmniej jednej
+przeglądarce.
+• Nagrywanie filmów musi być tak ustawione aby nie obciążało zbytnio serwera
+a jednocześnie, żeby wypowiedzi migowe (gdzie następuje szubka zmiana
+ruchów) będą w pełni czytelne.
+Koncepcja części administracyjnej
+Wtyczka umożliwi badaczowi wybranie przynajmniej jednego typu pytań, do którego
+odpowiedzi będą mogły zostać udzielone w polskim języku migowym.
+Badacz będzie mógł zdefiniować czy pomimo wybrania danego typu pytań ma pozostać
+opcja wyboru wypowiedzi pomiędzy językiem polskim pisanym a polskim językiem migowym
+
+--- strona 9 ---
+
+9
+czy wymusić odpowiedź w języku polskim. Do każdego pytania z osobna w ramach jednego
+typu pytań będzie osobno włączane możliwości udzielenia odpowiedzi w PJM.
+Administrator aplikacji LimeSurvey na danym serwerze będzie mógł globalnie wyłączyć
+wtyczkę do udzielania odpowiedzi migowych w całej aplikacji.
+Administrator aplikacji LimeSurvey na danym serwerze będzie mógł zdefiniować czy do danej
+ankiety ma być włączona opcja możliwości udzielania odpowiedzi w PJM.
+Koncepcja części zbierającej dane
+Po wybraniu przez badacza opcji włączającej możliwość udzielenia odpowiedzi w PJM
+badany będzie miał możliwość wyboru czy chce pisać czy migać ( nie dozwolone jest
+wymuszenie nagrania ze względu na prywatność).
+Badany będzie miał możliwość podglądu swojej sylwetki na podstawie grafiki która będzie się
+pojawiać przed rozpoczęciem nagrania. Jej szczegóły są omówione w następnym pod
+rozdziale. W momencie, kiedy badany ułoży się odpowiednio do udzielenia wypowiedzi i
+musi nacisnąć przycisk nagrywania – co wymusi kolejną zmianę pozycji musi mieć chwile
+celem przyjęcia pozycji niewykraczającej poza obrys sylwetki pasującej do grafiki. Po upływie
+tego czasu jest informowany, że nagrywania się rozpoczęło. Musi także wiedzieć kiedy się
+zacznie nagrywanie.
+Limit czasu nagrania musi być ustawiony na 30s. W czasie nagrania badany widzi, ile czasu
+mu jeszcze pozostało do końca wypowiedzi. Po nagraniu badany ma możliwość obejrzenia
+nagrania i zdecydowania czy chce je wysłać czy powtórzyć.
+Ze względu na zachowanie prywatności w momencie nagrywania powinien być rejestrowany
+jedynie obraz bez dźwięku.
+Koncepcja grafiki
+Zawartość:
+Grafika musi przedstawiać człowieka w pozycji migającej umożliwiając ustawienie się
+bezpośrednio przed rozpoczęciem nagrywania w celu utrwalenia wypowiedzi w polskim
+języku migowym, tak by nagranie było czytelne i nie obcinało ważnych fragmentów.
+
+--- strona 10 ---
+
+10
+Wymogi techniczne:
+Grafika musi zostać wykonana w pliku PNG.
+
+Tło:
+Brak tła, musi ono być prześwitujące lub miejscami przezroczyste.
+
+Kolorystyka:
+Sylwetka – brak tła, przeźroczysty.
+Pozostały obszar – ocień szarości (półprzezroczysty) umożliwiający dodanie loga przez
+Instytut Spraw Głuchych.
+Koncepcja części z wynikami
+Po udzieleniu odpowiedzi przez badanego w polskim języku migowym , w wysłaniu jej na
+serwer, nagrane wypowiedzi będą się wyświetlać w zbiorczej zakładce badacza która
+umożliwi obejrzenie vlogu, Identyfikację pytania na które jest odpowiedzą i przetłumaczenie,
+a następnie wstawienie transkrypcji tłumaczenia.
+
+Po jej tłumaczeniu transkrypcja w języku polskim będzie się pojawiała w zbiorczych wynikach
+w zakładce ze zbiorczymi wynikami z pozostałych pytań w języku polskim, które będzie
+można wyeksportować np. do programu Excel czy SPSS wraz z przetłumaczonymi
+odpowiedziami.
+Podsumowanie
+• Wtyczka będzie stworzona celem działania w programie limesurvey w
+przynajmniej jednej wersji aplikacji limesurvey, która zostanie ustalona w
+trakcie realizacji projektu w porozumieniu z fundacja Instytut Spraw Głuchych.
+• Wtyczka umożliwi wgranie przez osobę ankietowaną odpowiedzi wideo w
+polskim języku migowym w przynajmniej jednym typie pytań np. „dłuższa
+wypowiedź”.
+
+--- strona 11 ---
+
+11
+• Wtyczka umożliwi po przesłaniu ankiety podgląd nagranej odpowiedzi przez
+badacza i pozwoli mu na identyfikację pytania do którego została udzielona
+odpowiedź oraz sporządzenie eksportowanej tranksrypcji.
+
+--- strona 12 ---
+
+12
+III. Modelowy kwestionariusz
+Klikając w poniższy link można zobaczyć, jak wygląda modelowy kwestionariusz badawczy
+zawierający dwa pytania w polskim języku migowym (PJM) umożliwiający odpowiedź osobie
+głuchej w formie video w jej języku czyli PJM.
+
+https://glucha-ankieta.deaflab.pl/tt/index.php?r=survey/index&sid=424711&lang=pl
+
+--- strona 13 ---
+
+13
+IV. Dane dostępowe dla testera -wzór
+
+Tester (imię i nazwisko): XXX XXX
+
+Adres strony do panelu administratora (logowanie):
+https://xxx
+
+Dane do logowania
+Użytkownik: xxx
+Hasło: xxx
+
+--- strona 14 ---
+
+14
+V. Zadanie dla testerów
+
+• Musisz utworzyć ankietę na dowolnie wybrany przez Ciebie temat.
+• Ankieta musi zawierać 4 dowolnie przygotowane i nagrane przez Ciebie pytania
+otwarte ( czyli respondent musi sam odpowiedzieć opisowo na pytanie) – musi być
+przygotowana w polskim języku migowym
+• Musisz poprosić 3 inne osoby o wypełnienie Twojej ankiety- odpowiedzi muszą być w
+polskim języku migowym.
+• Musisz wykorzystać program LimeSurvey oraz wykorzystać dane dostępowe, które
+zostały Ci przekazane.
+• Musisz wykorzystać wtyczkę do odpowiedzi migowych.
+
+--- strona 15 ---
+
+15
+
+VI. Testowanie krok po kroku:
+1. Zaloguj się do swojego sytemu ankietującego za pomocą otrzymanych danych.
+a. Wykorzystaj następujące rozdziały instrukcji (kliknij)
+i. Błąd! Nie można odnaleźć źródła odwołania.
+ii. Logowanie (administrator, badacz)
+2. Zainstaluj wtyczkę w swoim systemie ankietującym.
+a. Wykorzystaj następujące rozdziały instrukcji (kliknij)
+i. Instalacja pluginu Video Recorder (administrator)
+3. Utwórz nową ankietę – wymyśl temat na jaki chcesz przeprowadzić badanie.
+a. Wykorzystaj następujące rozdziały instrukcji (kliknij)
+i. Tworzenie nowych ankiet (badacz)
+4. Wymyśl 4 pytania otwarte
+5. Nagraj 4 osobne vlogi z pytaniami
+6. Umieść vlogi w serwisie YouTube
+7. Pozyskaj link do osadzania „ Frame”
+a. Wykorzystaj następujące rozdziały instrukcji (kliknij)
+i. Wstawianie migowej wersji pytania do ankiety – jak wygenerować link
+do osadzania „frame”? (badacz)
+8. Utwórz po kolei nowe pytania w ankiecie i umieść w nich swoje vlogi
+a. Wykorzystaj następujące rozdziały instrukcji (kliknij)
+i. Tworzenie nowych ankiet (badacz)
+ii. Konfiguracja pluginu (administrator, badacz)
+iii. Wstawianie migowej wersji pytania do ankiety – jak wygenerować link
+do osadzania „frame”? (badacz)
+9. Uruchom ankietę
+a. Wykorzystaj następujące rozdziały instrukcji (kliknij)
+i. Uruchomienie ankiety (badacz)
+
+--- strona 16 ---
+
+16
+10. Wyślij link do ankiety do 3 osób i uzyskaj od nich odpowiedzi. W razie potrzeby
+pomóż im z obsługą!
+a. Wykorzystaj następujące rozdziały instrukcji (kliknij)
+i. Uruchomienie ankiety (badacz)
+ii. Nagrywanie odpowiedzi przez użytkownika (respondent)
+11. Dokonaj tłumaczenia odpowiedzi na język polski – to nie muszą być dokładne ani
+gramatyczne zapisy.
+a. Wykorzystaj następujące rozdziały instrukcji (kliknij)
+i. Przeglądanie odpowiedzi i uzupełnianie transkrypcji (badacz)
+12. Eksportuj tłumaczenie do pliku CSV.
+a. Wykorzystaj następujące rozdziały instrukcji (kliknij)
+i. Pobieranie zbiorczych wyników do arkusza kalkulacyjnego (badacz)
+
+VII. Techniczne informacje (administrator)
+
+1. By nagrywanie działało poprawnie, system ankiet musi działać poprzez HTTPS.
+2. By wgrywanie plików na serwerze działało poprawnie, należy umożliwić upload
+plików dużych rozmiarów (min. 40 MB). W zależności od hostingu robi się to inaczej,
+w przypadku konfiguracji w pliku php.ini należy ustawić opcje:
+
+upload_max_filesize = 40M
+
+post_max_size = 40M
+
+3. Wtyczka powinna działać co najmniej w wersji LimeSurvey 5.2
+
+--- strona 17 ---
+
+17
+VIII. Instrukcja dla testerów badaczy
+
+E. Logowanie (administrator, badacz)
+1. Zaloguj się do swojego serwisu ankietującego poprzez wybranie adresu
+strony internetowej ze stroną logowania się.
+2. Wpisz swoją nazwę użytkownika, hasło a następnie kliknij przycisk zaloguj się.
+3. Zostaniesz przeniesiony do panelu administracyjnego w którym możesz
+dokonać kolejnych czynności.
+
+--- strona 18 ---
+
+18
+F. Instalacja pluginu Video Recorder
+(administrator)
+
+1. Wejdź w panel administratora ankiety.
+
+2. Kliknij w Configuration -> Plugins.
+
+3. W oknie z listą wtyczek kliknij w przycisk Upload & Install.
+
+--- strona 19 ---
+
+19
+4. W otwartym oknie możesz wgrać plik pluginu do wgrania do systemu ankietowego.
+Po wybraniu pliku kliknij Upload.
+
+5. Po pomyślnym wgraniu wtyczki pojawi się okno z informacjami o niej. Kliknij Install,
+by zainstalować wtyczkę.
+
+6. Po zainstalowaniu plugin musi być aktywowany. Odszukaj go na liście wtyczek i kliknij
+przycisk Activate plugin.
+
+--- strona 20 ---
+
+20
+
+7. Plugin został zainstalowany i można rozpocząć korzystanie z niego.
+
+G. Tworzenie nowych ankiet (badacz)
+1. Zaloguj się do swojego serwisu ankietującego. Następnie zostaniesz
+przeniesiony do panelu administracyjnego
+2. Kliknij „Utwórz ankietę”. Jest to oznaczone symbolem w kafelku plusa.
+
+--- strona 21 ---
+
+21
+3. Po kliknięciu przeniosło nas do następnej strony, która umożliwia nam
+poprzez wybranie jednej z zakładek:
+a. utworzenie nowej ankiety (Create).
+b. Import gotowej ankiety z pliku komputera, który można załadować
+do systemu ankietującego.
+
+--- strona 22 ---
+
+22
+c. Trzecią możliwością (Coppy) jest skopiowanie istniejącej w systemie
+ankiety.
+4. W tej instrukcji skupimy się na stworzeniu nowej ankiety. Należy w tym celu wybrać
+zakładkę „Create” a następnie wypełnić pola”
+a. Survey title –wpisując tytuł ankiety
+b. Base language – wybierając język ankiety np. polski.
+c. Survey group -wybierając szablon wyglądu ankiety. Można zostawić
+standardowy (default).
+Po wykonaniu tego kroku trzeba zapisać dotychczasowe wybory poprzez kliknięcie
+„Save” lub „Create survey”
+5. Następnie zostajemy przeniesieni do strony ankiety, która umożliwia dodanie nowych
+pytań.
+Wskazówki:
+
+--- strona 23 ---
+
+23
+a. Ankieta dzieli się na grupy pytań, które można dodawać za pomocą „Add
+group”. Jedna grupa odpowiada jednej stronie. Przechodząc do następnej
+grupy pytań respondent przechodzi na następną stronę.
+b. W ankiecie musi być minimum jedna grupa pytań (jedna strona).
+c. System z założenia tworzy sam pierwszą podstawową grupę pytań (jej nazwę
+można później zmienić).
+6. Klikamy w kafelek oznaczony „Add new question to grup” dzięki temu przejdziemy do
+ekranu umożliwiającego wpisanie pytania
+7. W polu tekstowym należy wpisać tekst z treścią pytania, a następnie kliknąć zapisz
+(Save). Pole tekstowe zawierające symbol pytania (Code) należy pozostawić bez
+zmian.
+
+--- strona 24 ---
+
+24
+8.
+
+H. Wstawianie migowej wersji pytania do ankiety
+– jak wygenerować link do osadzania „frame”?
+(badacz)
+Najłatwiejszym sposobem dodania pytań w języku migowym np. PJM jest wykorzystanie
+filmu umieszczonego na jednym z portali z filmami np. YouTube.
+1. Wyszukujemy na portalu YouTube wybrany przez nas film. A następnie klikamy
+„Udostepnij”
+
+--- strona 25 ---
+
+25
+2. Następnie klikamy „umieść”.
+
+3. Po wyświetleniu się „długiego” linka zawierającego „frame”, klikamy „kopiuj”.
+
+--- strona 26 ---
+
+26
+4. Po skopiowaniu linka wklejamy go do systemu ankietującego w miejsce na pytanie. A
+następnie zapisz.
+
+--- strona 27 ---
+
+27
+I. Konfiguracja pluginu (administrator, badacz)
+
+1. Dla każdej ankiety można osobno skonfigurować plugin, czy ma zezwolić na
+wyświetlanie okien do nagrywania i zapisu plików video. Należy po utworzeniu lub
+przy edycji danej ankiety wejść w menu boczne ankiety i kliknąć przycisk Simple
+plugins, by otworzyć panel ustawień wtyczek.
+
+2. W ustawieniach pluginu Video Recorder należy ustawić opcję nagrywania odpowiedzi
+na Tak, po czym należy zapisać ustawienia poprzez przycisk Save.
+
+--- strona 28 ---
+
+28
+
+3. Każde pytanie może mieć osobno skonfigurowaną opcję, czy odpowiedź może być
+nagrana, czy nie. Należy wejść w edycję pytania klikając na Question list, a później w
+Edit question przy wybranym pytaniu.
+4. W ustawieniach szczegółowych w pozycji Video Survey zaznaczyć odpowiedź Tak przy
+pytaniu, czy odpowiedź może być nagrana. Zapisać ustawienia.
+
+--- strona 29 ---
+
+29
+5. W trakcie przeprowadzania ankiety użytkownikowi wyświetli się pod polem
+odpowiedzi narzędzie do nagrywania i wgrywania nagranej odpowiedzi.
+
+J. Uruchomienie ankiety (badacz)
+1. W menu administratora wybierz listę dostępnych ankiet „List surveys”.
+2. klikamy kółko zębate w wierszu interesującej nas ankiety – ogólne ustawienia
+ankiety w kolumnie „Akcja” (czerwona strzałka)
+Wskazówka: w kolumnie status można zauważyć ikonę brązowego
+kwadratu (na grafice brązowa strzałka) co oznacza ankietę nieaktywną
+oraz zielonego symbolu „play” (zielona strzałka na grafice) co oznacza, że
+ankieta jest już uruchomiona.
+
+--- strona 30 ---
+
+30
+3. Po wyświetleniu się nowej strony klikamy aktywuj ankietę „Activate this survey”
+
+--- strona 31 ---
+
+31
+4. Po przejściu na następną stronę pojawiają się nam różne opcje ustawień takie jak
+zapisywanie czasu odpowiedzi, numeru IP itp. Można zaakceptować
+proponowane wybory i kliknąć „Save & activate survey”
+5. Następnie system pyta Cię czy chcesz aby ankieta była dostępna dla osób
+mających kod dostępu lub była otwarta dla każdego kto wejdzie w link w trybie.
+W tym drugim przypadku należy kliknąć „Continue in open-acces mode”.
+6. Zostaniesz przeniesiony do strony z podsumowaniem- tutaj znajdziesz link do
+ankiety w celu udostępnia respondentom.
+
+--- strona 32 ---
+
+32
+7. Jeżeli chcesz w późniejszym terminie wrócić do strony z podsumowaniem ankiety
+możesz kliknąć w menu po lewej klikając „Overview” będziemy mieli dostęp do
+linka ankiety:
+
+--- strona 33 ---
+
+33
+
+--- strona 34 ---
+
+34
+
+K. Nagrywanie odpowiedzi przez użytkownika
+(respondent)
+
+1. Gdy użytkownik wyświetli pytanie, któremu włączono możliwość odpowiedzi poprzez
+nagranie, wyświetli się pod odpowiednim polem narzędzie do nagrywania.
+
+--- strona 35 ---
+
+35
+2. Po kliknięciu Start camera przeglądarka spyta, czy zezwolić aplikacji na korzystanie z
+kamery. Należy kliknąć TAK. Okno pytania o zgodę będzie się różnić w zależności od
+przeglądarki.
+
+3. Aby rozpocząć nagrywanie, należy kliknąć Start recording. Pojawi się ikonka
+oznaczająca trwające nagrywanie, a stoper zacznie odmierzać 30 sekund – tyle
+wynosi maksymalny czas nagrania.
+
+--- strona 36 ---
+
+36
+4. UWAGA! Od momentu kliknięcia nagrywanie rozpocznie się po upływie 3s. w tym
+
+Rysunek 1 Wzór obrysu migającej postaci aut. Monika Kozub
+czasie musisz się dopasować do konturu aby widoczna była Twoja sylwetka a
+nagranie w języku migowym dobrze widoczne i zrozumiałe.
+
+5. Nagrywanie zakończy się maksymalnie po 30 sekundach, ale można je zakończyć
+wcześniej klikając Stop recording. Nagrany plik automatycznie się odtworzy po
+prawej stronie. Przed wgraniem go na serwer możesz go obejrzeć i zdecydować, czy
+nagrać odpowiedź jeszcze raz. By to zrobić, ponownie należy kliknąć Start recording.
+
+--- strona 37 ---
+
+37
+
+6. By wgrać odpowiedź, kliknij przycisk Upload. Potrwa to chwilę, a po zakończonym
+uploadzie pojawi się komunikat „Uploaded” oznaczający, że możesz przejść dalej do
+wypełniania ankiety.
+
+L. Przeglądanie odpowiedzi i uzupełnianie
+transkrypcji (badacz)
+
+1. Nagrane odpowiedzi widoczne są po kliknięciu w menu ankiety na „Recorded video
+responses”.
+
+--- strona 38 ---
+
+38
+
+--- strona 39 ---
+
+39
+
+2. Każdą odpowiedź na liście możesz obejrzeć, wprowadzić dla niej transkrypcję i
+zapisać w ankiecie poprzez kliknięcie przycisku Zapisz.
+
+3. Zapisane transkrypcje widoczne są na liście odpowiedzi. Widoczny jest też znacznik
+oznaczający, że do danej odpowiedzi został nagrany film i podany jest jego numer.
+
+--- strona 40 ---
+
+40
+M.
+Pobieranie zbiorczych wyników do arkusza
+kalkulacyjnego (badacz)
+1. Wejdź w ustawienia ankiety „Settings”
+2. W lewym menu wybierz odpowiedzi „Responses” (czerwona strzałka na grafice)
+3. W górnym menu po prawek (zielona strzałka) wybierz eksport „Export” -> eksport
+odpowiedzi (Export responses).
+4. Wybierz ustawienia pliku, który ma być eksportowany:
+
+--- strona 41 ---
+
+41
+a. Format np. CSV. Czerwona strzałka.
+b. Nagłówki np. Kod pytania i tekst pytania. Zielona Strzałka.
+c. Sprawdz pozostałe ustawienia.
+d. Kliknij Esport/Export.
+e. Plik powinien być już na Twoim komputerze.
+
+--- strona 42 ---
+
+42
+
+--- strona 43 ---
+
+43
+IX. Przebieg testów z wykorzystaniem rezultatu projektu Głucha
+Ankieta
+N. Rekrutacja testerów i metodologia
+Badanie wypracowanego narzędzia w ramach projektu Głucha Ankieta zostało
+przeprowadzone w dwóch zależnych od siebie grupach, które miały za zadanie współdziałać
+ze sobą w celu weryfikacji czy narzędzie spełnia oczekiwania głuchych odbiorców.
+
+Nabór testerów przeprowadzono spośród osób niesłyszących władających polskim językiem
+metodą kuli śnieżnej – badacze zostali wyłonieni z otoczenia fundacji Instytut Spraw
+Głuchych zaś oni rekrutowali testerów respondentów.
+• Pierwszą grupę testerów stanowiły trzy osoby, które pełniły role badaczy tzw.
+testerzy badacze – ze względu na wymagania projektowe, iż testerami musza być
+osoby z niepełnosprawnością postanowiono, że w tej grupie znajdą się obligatoryjnie
+osoby głuche, które posługują się polskim językiem migowym, do których kierowany
+jest rezultat projektu pełniący następujące role społeczne:
+o głusi badacze (których jest bardzo mało) lub;
+o głusi działacze społeczni.
+Testerzy otrzymali dane do logowania tj. adres domeny, na którą należy się
+zalogować, nazwę użytkownika oraz hasło, a także instrukcje obsługi krok po kroku
+oraz plik z wtyczką. W trakcie wykonywania zadań badacze mieli do dyspozycji pomoc
+specjalisty od wtyczki, który również był Głuchy i posługiwał się PJM a także był
+obecny w trakcie przeprowadzania testów. Zadaniem badaczy było:
+o Utworzenie ankiety na dowolnie wybrany przez badacza temat.
+o Ankieta musiała zawierać 4 dowolnie przygotowane i nagrane przez badacza
+pytania otwarte ( czyli tak, aby respondent musiał sam odpowiedzieć opisowo
+na pytanie) – odpowiedź miała być przygotowana w polskim języku
+migowym (PJM).
+
+--- strona 44 ---
+
+44
+o badacz musiał znaleźć i poprosić 3 inne głuche osoby (testerów
+respondentów) o wypełnienie swojej ankiety- odpowiedzi miały być w
+polskim języku migowym.
+o badacz musiał wykorzystać program LimeSurvey oraz dane dostępowe, które
+zostały mu przekazane.
+o badacz musiał zainstalować i wykorzystać wtyczkę do odpowiedzi migowych.
+o badacz musiał zobaczyć odpowiedzi i wpisać w miejsce transkrypcji dowolny
+tekst –
+
+Pierwotnie w ostatnim zadaniu planowano wymagać od badaczy tłumaczenia
+całych odpowiedzi w polskim języku migowym na język polski, jednak ze względu
+na to, że badacze nie byli tłumaczami, a nawet zgłaszali problemy z językiem
+polskim odstąpiono od tego wymogu na rzecz prośby o sprawdzenie, czy
+odpowiedzi video testerów respondentów się zapisały oraz prośba o wpisanie
+dowolnego tekstu w miejsce transkrypcji. Na zdjęciach wszystkie wpisane przez
+testerów teksty i tłumaczenia zostały zastąpione tekstem „lorem ipsum” aby
+uniemożliwić czytającym niniejszy dokument ocenę kompetencji językowych
+osób występujących na zdjęciach oraz ochronę ewentualnych wypowiedzi, które
+mogą być wrażliwe – przeważnie tego typu badania są anonimowe.
+
+--- strona 45 ---
+
+45
+
+O.Przebieg testów przeprowadzonych przez
+badaczy
+badacz 1
+Na poniższym zdjęciu widać badacza 1 (B1) prezentującego jedno z pytań a po nim jest
+formularz do odpowiedzi migowej – z opcją podglądu obrysu ciała.
+
+Badaczka pytała respondentów o
+o Skąd rodzice wiedzieli o istnieniu szkół dla głuchych
+o W jaki sposób komunikują się z pracodawcą w trakcie poszukiwania pracy
+o Co sądzą na temat Thermomixa
+o Czy w obecnej sytuacji galopującej inflacji planują wyjazd na wakacje czy
+planują odwołać swoje plany z prośbą o uzasadnienie
+
+--- strona 46 ---
+
+46
+Następnie badaczka zrekrutowała 3 osoby, które udzieliły odpowiedzi migowej na zadany
+temat. Ponieważ badanie miało na celu sprawdzenie funkcjonalności wtyczki odstąpiono od
+dogłębnej analizy odpowiedzi uczestników na rzecz sprawdzenia wykonania zadania pod
+kątem technicznym.
+
+Na poniższych trzech zdjęciach widać zrzuty ekranu panelu odpowiedzi filmowych
+respondentów co dowodzi wykonania zadania.
+
+Zrzut przedstawia listę odpowiedzi testerki respondentki 1(B1TR1), która udzieliła
+odpowiedzi na urządzeniu typu komputer.
+
+--- strona 47 ---
+
+47
+Zrzut przedstawia jedną (wszystkie nie mieszczą się na jednym ekranie) z odpowiedzi
+testerki respondentki 2 (B1TR2), która udzieliła odpowiedzi na urządzeniu typu smartfon.
+
+Zrzut przedstawia listę odpowiedzi testera respondenta 2(B1TR2), który udzielił odpowiedzi
+na urządzeniu typu komputer.
+Badaczka zapoznała się z odpowiedziami, wstawiła robocze tłumaczenia i wyeksportowała
+plik z odpowiedziami do formatu CSV. Nie zgłaszała uwag do części merytorycznej instrukcji.
+
+--- strona 48 ---
+
+48
+
+badacz 2
+Na poniższym zdjęciu widać badacza 2 (B2), który prezentuje swoje pytania. Na zrzucie nie
+widać jednak opcji odpowiedzi w PJM gdyż badacz ustawił wcześniejszy czas zakończenia
+ankiety stąd w trakcie wykonywania zdjęcia nie było możliwości udokumentowania
+podglądu wtyczki- jednak w zapisach znajdują się odpowiedzi migowe do tej ankiety co
+dowodzi wykorzystanie tej wtyczki przez testerów respondentów.
+
+Badaczka pytała swoich respondentów:
+o Skąd jest respondent
+o Wiek
+o Płeć
+o Hobby
+
+--- strona 49 ---
+
+49
+
+--- strona 50 ---
+
+50
+Następnie badaczka zrekrutowała 3 osoby, które udzieliły odpowiedzi migowej na zadany
+temat. Ponieważ badanie miało na celu sprawdzenie funkcjonalności wtyczki odstąpiono od
+dogłębnej analizy odpowiedzi uczestników na rzecz sprawdzenia wykonania zadania pod
+kątem technicznym.
+
+Na poniższych trzech zdjęciach widać zrzut ekranu panelu odpowiedzi filmowych
+respondentów co dowodzi wykonania zadania.
+
+Zrzut przedstawia listę odpowiedzi testera respondenta 1 (B2TR1), który udzielił odpowiedzi
+na urządzeniu typu komputer.
+
+--- strona 51 ---
+
+51
+
+Zrzut przedstawia jedną z odpowiedzi testera respondenta 2 (B2TR2), który
+udzielił odpowiedzi na urządzeniu mobilnym.
+
+Zrzut przedstawia jedną z odpowiedzi testera respondenta 3 (B2TR3), który
+udzielił odpowiedzi na urządzeniu mobilnym.
+
+Badaczka zapoznała się z odpowiedziami, wstawiła robocze tłumaczenia. Nie zgłaszała uwag
+do części merytorycznej instrukcji.
+
+--- strona 52 ---
+
+52
+badacz 3
+Na poniższym zdjęciu widać „badacza 3” (B3) prezentującego jedno ze swoich czterech
+pytań.
+
+Badaczka pytała respondentów o
+o Co respondent robił wczoraj popołudniu
+o Jaki jest plan rozwoju firmy respondenta
+o Dlaczego respondent preferuje jedzenie wegańskie?
+o Skąd respondent bierze motywacje do pracy
+Następnie zrekrutowała 3 osoby, które udzieliły odpowiedzi migowej na zadany temat.
+Ponieważ badanie miało na celu sprawdzenie funkcjonalności wtyczki odstąpiono od
+dogłębnej analizy odpowiedzi uczestników na rzecz sprawdzenia wykonania zadania pod
+kątem technicznym.
+
+--- strona 53 ---
+
+53
+Na poniższych trzech zdjęciach widać zrzuty ekranu panelu odpowiedzi filmowych
+respondentów co dowodzi wykonania zadania.
+
+Zrzut przedstawia listę odpowiedzi testera respondenta 1(B3TR1), który udzielił odpowiedzi
+na urządzeniu typu komputer.
+
+Zrzut przedstawia jedną z odpowiedzi testerki respondentki 2 (B3TR3), która udzieliła
+odpowiedzi na urządzeniu mobilnym.
+
+--- strona 54 ---
+
+54
+
+Zrzut przedstawia listę odpowiedzi testera respondenta 3(B3TR3), który udzielił odpowiedzi
+na urządzeniu typu komputer.
+P. Wynik testów
+Drugą grupę testerów (9 osób-po 3 na każdego badacza) stanowili „testerzy respondenci”.
+Byli oni rekrutowani przez badaczy. Testerzy respondenci musieli być obligatoryjnie głusi i
+posługiwać się polskim językiem migowym – tak jak docelowi odbiorcy tego narzędzia. Nie
+było żadnych innych wymagań.
+o Osoby te dostały od badaczy linki z ankietami w których znajdowały się cztery
+pytania w polskim języku migowym. Ich zadaniem było odpowiedzieć na
+zadane pytania także w PJM. Testerzy respondenci celowo nie otrzymali
+żadnej instrukcji obsługi aby możliwe było sprawdzenie powszechnego
+stosowania tej aplikacji.
+Wszyscy testerzy wyrażali zdziwienie tym, że mają odpowiedzieć w ankiecie w PJM gdyż
+nigdy wcześniej się z czymś takim nie spotkali. Początkowo często zgłaszanym problemem
+testerów respondentów był brak sprzętu komputer lub laptop – dopiero po uświadomieniu,
+że można także skorzystać z telefonu komórkowego – przez który badacze łączyli się w
+trakcie werbowania do badań, uzyskiwali oni zgodę na udział w tym badaniu. Osiem osób nie
+
+--- strona 55 ---
+
+55
+miało żadnych problemów z wykonaniem zadania. Jedynie jedna zapytała w jaki sposób
+wysłać film – tutaj ciężko określić czy był to rzeczywiście problem czy brak obeznania
+technologicznego wzbudzał obawę o „zepsucie narzędzia”.
+Jak widać na powyższych zdjęciach aż 4 testerów z grupy respondentów spośród 9 osób
+wykorzystało urządzenie mobilne, kiedy z komputerów korzystało 5 osób. Wynik projektu
+Głucha ankieta jakim jest wytworzenie wtyczki Video Recorvey umożliwia wypowiedzenie się
+w swoim języku – polskim języku migowym osobom głuchym nie tylko na komputerach ale
+także na urządzeniach mobilnych w każdym miejscu które uznają za stosowne. Łatwość i
+intuicyjność obsługi wtyczki przez respondentów powoduje, że nie trzeba specjalnego
+przeszkolenia z jej obsługi – szkoleń wymagają jedynie badacze, który muszą być obeznani ze
+sposobem instalacji wtyczki do systemu ankietującego LimeSurvey.

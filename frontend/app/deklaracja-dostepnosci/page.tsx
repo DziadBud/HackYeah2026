@@ -36,12 +36,13 @@ export default function AccessibilityStatementPage() {
       <h2 className="text-headline-md font-semibold text-primary">Informacje zwrotne i kontakt</h2>
       <p>
         Jeśli zauważysz problem z dostępnością, napisz na{" "}
-        <a className="font-bold text-primary underline" href="mailto:biuro@rops.krakow.pl">
-          biuro@rops.krakow.pl
+        {/* mock contact until ROPS confirms the accessibility contact */}
+        <a className="font-bold text-primary underline" href="mailto:dostepnosc@example.com">
+          dostepnosc@example.com
         </a>{" "}
         lub zadzwoń pod numer{" "}
-        <a className="font-bold text-primary underline" href="tel:+48124220636">
-          +48 12 422 06 36
+        <a className="font-bold text-primary underline" href="tel:+48000000000">
+          +48 000 000 000
         </a>
         .
       </p>

@@ -1,0 +1,389 @@
+--- strona 1 ---
+
+Wydział Form Przemysłowych ASP w Krakowie
+Sprawozdanie z etapu
+testowania
+
+Opracowanie Bożena Groborz
+2019-03-05
+
+--- strona 2 ---
+
+1 | S t r o n a | S P R A W O Z D A N I E 2
+
+Spis treści
+I. Rozeznanie możliwości technologicznych .......................................................................................... 2
+II.
+Wstępne wytyczne do opracowania prototypu projektu „Innotextil”, w tym dotyczące doboru
+tkaniny, nici, innych niezbędnych do samodzielnego odszycia .............................................................. 3
+III.
+Założenia techniczne i wizualne modelu, w tym wytyczne co do ilości i rozmieszenia
+czujników, sposobu ich mocowania, kolejności montażu, itp. .............................................................. 13
+Pożądane cechy wizualne: ............................................................................................................. 13
+Projekt ........................................................................................................................................... 15
+IV.
+Wykrój i szablon, ...................................................................................................................... 21
+Rysunek formy damskiej ............................................................................................................... 25
+Rysunek formy męskiej ................................................................................................................. 26
+V. Instrukcja wykonania .................................................................................................................... 27
+VI.
+Opracowanie graficzne instrukcji końcowej dla użytkownika .................................................. 29
+VII.
+Link do strony z zamieszczoną końcową wersją projektu wzorniczego ................................... 29
+
+--- strona 3 ---
+
+2 | S t r o n a | S P R A W O Z D A N I E 2
+
+I. Rozeznanie możliwości technologicznych
+Samodzielne wykonanie projektu jest możliwe, ale w niektórych częściach może wymagać pomocy
+specjalistów.
+a. LEGGINSY – zaproponowana forma legginsów jest zgodna z ogólnymi trendami w modzie.
+Oznacza to nieco większy stopień komplikacji formy i wykonania. Wykonane zostały z ela-
+stycznej dziany poliestrowej, która powinna być zszywana na maszynie do szycia typu cover-
+lock. Można zlecić uszycie spodni wg. dostarczonej formy w zwykłym zakładzie krawieckim.
+b. CZUJNIKI – zaproponowane czujniki można zamówić w sklepach internetowych takich jak
+np. Botland
+c. ELEMENTY SYSTEMU – wszystkie elementy można zamówić w sklepie internetowym
+d. ETUI NA JEDNOSTKĘ STERUJĄCĄ – można wydrukować w dowolnej firmie świadczącej
+usługi druku 3d
+e. APLIKACJA – do pobrania
+f. MONTAŻ I URUCHOMIENIE – do etapu łączenia elementów potrzebna jest podstawowa
+umiejętność i wiedza z zakresu elektroniki; elementy wymagają lutowania, zakładania izolacji
+i instalacji oprogramowania.
+
+--- strona 4 ---
+
+3 | S t r o n a | S P R A W O Z D A N I E 2
+
+II.
+Wstępne wytyczne do opracowania prototypu projektu „Inno-
+textil”, w tym dotyczące doboru tkaniny, nici, innych niezbędnych do
+samodzielnego odszycia
+
+Wykonanie modelu składa się z następujących etapów:
+1. Odszycie spodni wraz z taśmami przewodzącymi
+2. Zamontowania czujników
+3. Przygotowania jednostki sterującej (wg. dostarczonej dokumentacji)
+4. Wykonanie etui na jednostkę sterującą (druk 3d z pliku)
+5. Zainstalowania aplikacji MOVE w smartfonie (system Android)
+Ad. 1.
+Do wykonania spodni najlepiej użyć dzianiny poliestrowej, najlepiej takiej, która jest dostosowana do
+produkcji odzieży sportowej. Dzianiny „sportowe” mają lepsze właściwości wentylacyjne i zapew-
+niają lepszy komfort wykonywania ćwiczeń. Można również próbować wykorzystać gotowe legginsy
+lub getry. Zdecydowanie nie należy używać tu dzianiny bawełnianej, ze względu na ryzyko trwałego
+rozciągnięcia dzianiny.
+Dzianina wymaga użycia maszyn typu COVERLOCK. Nici użyte do odszycia spodni mogą być zwy-
+kłymi nićmi poliestrowymi, elastyczność szwu zapewnia szef coverlockowy. Dodatkowo można użyć
+nici w kontrastowych kolorach, co uatrakcyjni wizualnie wygląd spodni.
+Taśmę przewodzącą można naszywać maszynowo lub ręcznie.
+
+--- strona 5 ---
+
+4 | S t r o n a | S P R A W O Z D A N I E 2
+
+Dla właściwego odczytu parametrów konieczna jest stabilizacja czujników na środku kolana. Dlatego
+ważną rolę odgrywa warstwa silikonu nałożona na lewą stronę spodni. Można ją ewentualnie próbować
+zastąpić naszywaną taśmą z silikonem. Układ pasków ma znaczenie dla stabilizacji czujnika.
+
+--- strona 6 ---
+
+5 | S t r o n a | S P R A W O Z D A N I E 2
+
+Ad 2.
+Aby połączyć taśmę z czujnikiem należy rozpleść jej końce na odcinku ok. 2 cm, tak aby wydobyć
+przewód;
+
+Następnie, należy skręcić wysnutą cześć przewodu i poddać je pobieleniu z duża ilością topnika celem
+usunięcia izolacji z przewodów i zapewnienia dobrego połączenia elektrycznego. Po dokonaniu pobie-
+lenia należy przygotować parę koszulek termokurczliwych o średnicy 1,5 mm, czujnik oraz koszulkę
+termokurczliwą zabezpieczającą przyłącze czujnika.
+
+--- strona 7 ---
+
+6 | S t r o n a | S P R A W O Z D A N I E 2
+
+W kolejnym kroku należy nasunąć koszulki termokurczliwe o średnicy 1,5 mm na taśmy przewo-
+dzące:
+
+Przed przestąpieniem do wykonania połączenia lutowniczego zalecane jest pewne umocowanie czujnika
+ugięcia, np. w imadle. Należy zachować szczególną ostrożność podczas lutowania czujnika – przyłącze
+nie powinno być jednorazowo ogrzewane w czasie dłuższym niż 2 sekundy – przegrzanie przyłącza
+spowoduje oderwanie się przyłącza od folii – a w konsekwencji nieodwracalne uszkodzenie czujnika.
+
+--- strona 8 ---
+
+7 | S t r o n a | S P R A W O Z D A N I E 2
+
+Po wykonaniu i weryfikacji połączenia lutowanego, należy nasunąć i ogrzać koszulki termokurczliwe
+– preferowane jest użycie stacji lutowniczej na gorące powietrze:
+
+Ostatni krok montażu czujnika polega na nasunięciu koszulki termokurczliwej o średnicy 5 mm i
+zgrzaniu jej – co ma na celu ochronę złącza podatnego na wyłamanie:
+
+Drugi koniec taśmy należy połączyć z męskimi złączami JST-SM. Montaż taśm tekstronicznych do
+przewodów JST 2 SM (umiejscowionych na plecach i umożliwiających połączenie z jednostką steru-
+jąca) należy wykonać analogicznie jak montaż czujników – rozpleść, pobielić oraz zabezpieczyć ko-
+szulką termokurczliwą.
+
+--- strona 9 ---
+
+8 | S t r o n a | S P R A W O Z D A N I E 2
+
+Ad. 3
+Przed przystąpieniem do montażu jednostki sterującej należy skompletować podzespoły analogicznie
+jak na ilustracji z następnej strony:
+1. JP1 – przewód z konektorem JST-SM czujnika ugięcia 1 (do nabycia: https://bo-
+tland.com.pl/pl/akcesoria-do-paskow-i-tasm-led/11124-konektor-do-tasm-i-paskow-led-
+jst-sm-2-pin.html?search_query=jst&results=101)
+2. JP2 – przewód z konektorem JST-SM czujnika ugięcia 2
+3. U1 – kontroler sterujący Adafruit Feather 32u4 Bluefruit LE 4.1 (do nabycia: https://bo-
+tland.com.pl/pl/plytki-zgodne-z-arduino-adafruit/6566-adafruit-feather-32u4-bluefruit-le-
+41-zgodny-z-arduino.html)
+4. U2 – czujnik MPU6050 (do nabycia: https://botland.com.pl/pl/zyroskopy/3888-mpu-
+6050-3-osiowy-akcelerometr-i-zyroskop-i2c-modul-dfrobot.html?search_qu-
+ery=mpu+6050&results=3)
+
+--- strona 10 ---
+
+9 | S t r o n a | S P R A W O Z D A N I E 2
+
+5. C1 – górna pokrywa obudowy jednostki sterującej (do wytworzenia metodą druku 3D we-
+dług instrukcji z pkt 4)
+6. C2 – dolna pokrywa obudowy jednostki sterującej – z gniazdem USB
+7. S1 – przycisk bistabilny
+8. J1 – wtyczka zasilania JST 2mm (do nabycia: https://botland.com.pl/pl/zyroskopy/3888-
+mpu-6050-3-osiowy-akcelerometr-i-zyroskop-i2c-modul-dfrobot.html?search_qu-
+ery=mpu+6050&results=3)
+9. B1 – bateria LIPO ok 500 mAh (do nabycia: https://botland.com.pl/pl/akumulatory-li-
+pol/6049-akumulator-li-pol-akyga-470mah-1s-37v.html)
+
+Po skompletowaniu elementów należy przystąpić do montażu układu elektronicznego techinką luto-
+wania.
+
+Po zakończeniu lutowania należy umieścić komponenty w obudowie oraz zabezpieczyć je z wykorzy-
+staniem kleju na gorąco. W trakcie wykonywania polaczenia klejonego, wtyczka baterii powinna zostać
+umieszczona w gnieździe modułu Feather. Zaleca się wykonanie połączenia klejonego z wciśnięta
+wtyczką USB co zwiększy prawdopodobieństwo prawidłowego umiejscowienia modułu i możliwość
+jego późniejszego ładowania.
+
+--- strona 11 ---
+
+10 | S t r o n a | S P R A W O Z D A N I E 2
+
+Wygląd zabezpieczonych komponentów przedstawia się następująco:
+
+--- strona 12 ---
+
+11 | S t r o n a | S P R A W O Z D A N I E 2
+
+Ad 4,
+Jednostkę sterującą zaleca się wydrukować w technologii FDM. Plik STL obiektu można pobrać z:
+https://drive.google.com/open?id=1i05_rKPwOTI-PB4V5qbHIkknLeZ5Vbj_. Po pobraniu obiektu, na-
+leży poddać go pocięciu w dedykowanym do drukarki oprogramowaniu. Poniżej przedstawiono usta-
+wienie ubiektu w programie Slic3r PE dedykowanym dla drukarki Prusa Mk3.
+
+Zaleca się wykonanie modelu w rozdzielczości 0,15 mm i wypełnieniem 20%. Po wygenerowaniu
+GKODu należy przesłać go do drukarki i wykonać wydruk. Po zakończeniu drukowania efekt przedsta-
+wia się następująco:
+
+--- strona 13 ---
+
+12 | S t r o n a | S P R A W O Z D A N I E 2
+
+Ad. 5.
+Aplikację można pobrać za pośrednictwem linka (najnowsza wersja oprogramowania z możliwością
+pobrania plików; pliki z pomiarami, będą znajdować się w pamięci wewnętrznej telefonu w folderze
+MoveLogs)
+https://drive.google.com/drive/folders/1TIqIXBFvDUIh4nnyX-7MEwI5r-msig59?usp=sharing
+
+--- strona 14 ---
+
+13 | S t r o n a | S P R A W O Z D A N I E 2
+
+III.
+Założenia techniczne i wizualne modelu, w tym wytyczne co do
+ilości i rozmieszenia czujników, sposobu ich mocowania, kolejności
+montażu, itp.
+Pożądane cechy wizualne:
+– atrakcyjna forma odzieży sportowej, wpisującej się w aktualne trendy,
+– nieprzywołująca skojarzeń ze sprzętem medycznym.
+Na etapie tworzenia założeń związanych z cechami wizualnymi, przygotowane zostały moodboardy
+odzwierciedlające aktualne trendy w projektowaniu oraz dokonany został przegląd oferty rynkowej w
+tym zakresie.
+
+--- strona 15 ---
+
+14 | S t r o n a | S P R A W O Z D A N I E 2
+
+--- strona 16 ---
+
+15 | S t r o n a | S P R A W O Z D A N I E 2
+
+Projekt
+Szkice do projektu spodni damskich
+
+--- strona 17 ---
+
+16 | S t r o n a | S P R A W O Z D A N I E 2
+
+Szkice do projektu spodni męskich
+
+--- strona 18 ---
+
+17 | S t r o n a | S P R A W O Z D A N I E 2
+
+Projekt spodni męskich
+
+--- strona 19 ---
+
+18 | S t r o n a | S P R A W O Z D A N I E 2
+
+Próby z systemem
+
+Ważną cechą techniczną w projekcie jest ustabilizowanie czujnika na kolanie. Próby „obwiązywania”
+go na kolanie nie przyniosły rezultatu. W związku z tym przeprowadzone zostały próby z taśmą siliko-
+nową podszytą pod nogawką. Wydaje się że na potrzeby projektu najlepiej się sprawdzi „podsilikono-
+wanie” nogawek. Materiał został wysłany do przetestowania do firmy HannaStyle s.c. w Poznaniu. Po-
+nieważ dzianina nadaje się do nałożenia silikonu – nogawki zostaną pokryte po wewnętrznej stronie
+cienkimi paskami silikonu.
+
+--- strona 20 ---
+
+19 | S t r o n a | S P R A W O Z D A N I E 2
+
+Istotne jest aby czujniki zostały umieszczone dokładnie na środku kolana, aby zapewnić jak najdo-
+kładniejszy pomiar.
+
+--- strona 21 ---
+
+20 | S t r o n a | S P R A W O Z D A N I E 2
+
+Czujnik 1
+Czujnik 2
+
+--- strona 22 ---
+
+21 | S t r o n a | S P R A W O Z D A N I E 2
+
+IV.
+Wykrój i szablon,
+Do wykonania, projektu wykonane zostały formy konstrukcyjne dla rozmiaru M – zarówno dla mo-
+delu damskiego jak i męskiego.
+Fot. A – forma dla spodni damskich
+Fot. B – forma dla spodni męskich
+
+Fot. A
+
+--- strona 23 ---
+
+22 | S t r o n a | S P R A W O Z D A N I E 2
+
+Fot. B
+
+--- strona 24 ---
+
+23 | S t r o n a | S P R A W O Z D A N I E 2
+
+Odszywanie prototypu spodni męskich
+Odszywanie prototypu spodni męskich
+
+--- strona 25 ---
+
+24 | S t r o n a | S P R A W O Z D A N I E 2
+
+Po wprowadzeniu drobnych korekt użytkowych spodnie zostały poddane digitalizacji i przekazane zo-
+staną w formie elektronicznej.
+
+Odszywanie prototypu spodni damskich
+
+--- strona 26 ---
+
+25 | S t r o n a | S P R A W O Z D A N I E 2
+
+Rysunek formy damskiej
+
+--- strona 27 ---
+
+26 | S t r o n a | S P R A W O Z D A N I E 2
+
+Rysunek formy męskiej
+
+--- strona 28 ---
+
+27 | S t r o n a | S P R A W O Z D A N I E 2
+
+V.
+Instrukcja wykonania
+
+Wykonanie modelu jest stosunkowo proste i składa się z następujących działań:
+1. Wybór materiału, kolorów nici; ilość potrzebnego materiału: dla dzianiny o szer. 140-150 cm –
+jedna długość spodni (mierzona od pasa) + 20 cm.
+2. Wydrukowanie rysunku formy,
+3. Krojenie, szycie;
+4. Taśma przewodząca wymaga kontaktu z producentem, rekomendowana jest taśma „czarno-
+miedziana” jako zdecydowanie łatwiejsza w „obróbce”. Na jedną parę spodni potrzebne jest ok.
+2-2,5 m taśmy. Jedna taśma = 1 przewód. Naszywamy ją „dwa razy”. Przy naszywaniu taśmy
+należy zrobić to tak, aby nie zmniejszyć elastyczności taśmy oraz nie uszkodzić izolacji prze-
+wodów.
+
+1. Końce taśmy należy przylutować do czujników po jednej stronie oraz do kabli ze złączami
+rozłącznymi po drugiej stronie.
+
+--- strona 29 ---
+
+28 | S t r o n a | S P R A W O Z D A N I E 2
+
+2. Informacje dotyczące wykonania jednostki sterującej opisane zostały w sprawozdaniu z I
+okresu rozliczeniowego, w części drugiej.
+3. Używanie oprogramowania MOVE
+Rozruch urządzenia
+Po podłączeniu do zasilania urządzenie dokonuje rozruchu w czasie 8 sekund. Rozruch sy-
+gnalizowany jest poprzez miganie diody. Aby przystąpić do pracy z urządzeniem należy uru-
+chomić aplikację move zgodnie z dołączoną do niej instrukcją.
+Kalibracja
+Poprawna praca systemu możliwa jest jedynie po wykonaniu kalibracji. Odczyty systemu
+będą różnić się przy każdym założeniu systemu jak również przy zmianie użytkownika. Pra-
+widłowe wykonanie kalibracji pozwala na względnie powtarzalnych wyników i prawidłową
+pracę algorytmu diagnostycznego. W celu wykonania kalibracji należy:
+1.
+Wyprostować nogi w stawach kolanowych,
+2.
+Przejść do drugiego ekranu aplikacji move, wcisnąć przycisk „kalibracja” oraz przejść
+do trzeciego ekranu aplikacji
+3.
+Po odczekaniu dwóch sekund, na przebiegu powinien pojawić się pik wartości ekstre-
+mum informujący o upłynięciu okresu bazowania – wyświetlane przebiegi powinny oscylo-
+wać teraz wokół wartości zera.
+4.
+W czasie ośmiu sekund przejść kilkanaście kroków co pozwoli urządzeniu na zbadanie
+sposobu zmian rezystancji czujników ugięcia umiejscowionych na stawach kolanowych użyt-
+kownika (zależnych od sposobu ubrania systemu)
+5.
+Pojawienie się kolejnego piku ekstremum sygnalizuje zakończenie procesu kalibracji
+Analiza chodu w czasie rzeczywistym
+Algorytm analityczny bazuje na analizie wartości punktów charakterystycznych trajektorii
+chodu użytkownika względem wzorca referencyjnego. Dla celów projektu skupiono się na
+analizie przebiegu ekstremów który na bieżąco dokonuje pomiarów wartości napięcia (które
+po skalibrowaniu są zbliżone do wartości kąta ugięcia w przypadku prawidłowego założenia
+systemu move) z częstotliwością 100 próbkowani na sekundę. Jednocześnie na bieżąco li-
+czona jest pochodna uzyskanych sygnałów.
+
+Po skalibrowaniu urządzenia można rozpocząć obserwację – czyli np. krótki spacer, podczas
+którego urządzenie w czasie rzeczywistym rejestruje i obrazuje nasz wzorzec chodu.
+
+--- strona 30 ---
+
+29 | S t r o n a | S P R A W O Z D A N I E 2
+
+VI.
+Opracowanie graficzne instrukcji końcowej dla użytkownika
+
+--- strona 31 ---
+
+30 | S t r o n a | S P R A W O Z D A N I E 2
+
+VII. Link do strony z zamieszczoną końcową wersją projektu wzorni-
+czego
+
+http://wfp.asp.krakow.pl/wfp/jednostki.php?id_jednostki=112&&id_jstrony=172

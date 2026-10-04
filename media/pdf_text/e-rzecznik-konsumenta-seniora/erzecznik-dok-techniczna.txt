@@ -1,0 +1,109 @@
+DOKUMENTACJA TECHNICZNA
+APLIKACJI MOBILNEJ „E-RZECZNIK”
+Spis treści
+TOC \o "1-3" \h \z \u 1. Opis projektu PAGEREF _Toc123031871 \h 1
+2. Wymagania PAGEREF _Toc123031872 \h 2
+3. Architektura aplikacji PAGEREF _Toc123031873 \h 2
+4. Struktura danych PAGEREF _Toc123031874 \h 2
+5. Interfejs użytkownika PAGEREF _Toc123031875 \h 3
+6. Proces instalacji/uruchomienia aplikacji PAGEREF _Toc123031876 \h 10
+
+Opis projektu
+Celem aplikacji jest umożliwienie seniorom w prosty i intuicyjny sposób otrzymanie szybkiej, rzetelnej i konkretnej porady prawnej z zakresu wybranych zagadnień prawa konsumenckiego, z którymi konsumenci seniorzy mają najczęściej problemy. W szczególności seniorzy otrzymają informacje na temat:
+jak skutecznie złożyć reklamację,
+jak uniknąć najczęstszych błędów popełnianych przy składaniu reklamacji,
+jak skutecznie odstąpić od umowy zawartej z przedsiębiorcą na odległość (np. przez telefon, Internet),
+jak postępować w przypadku odmowy uznania reklamacji za zasadną przez przedsiębiorcę,
+instytucji zajmujących się ochroną praw konsumentów w przypadku spraw, w których porada wygenerowana w aplikacji będzie niewystarczająca.
+Otrzymanie porady będzie możliwe po przejściu przez ścieżkę decyzyjną w aplikacji (seria pytań dotyczących konkretnego problemu konsumenckiego), co pomoże konsumentom sprecyzować i zdiagnozować istotę swojego problemu.
+Aplikacja umożliwi konsumentom seniorom:
+1. uzyskanie informacji i wiedzy nt. przysługujących im praw oraz jak zabezpieczyć swoje prawa i interesy w związku z zawarciem umowy z przedsiębiorcą,2. uzyskanie porady w konkretnej, zindywidualizowanej sprawie/problemie.
+
+Wymagania
+Podczas pierwszego warsztatu dotyczącego aplikacji zostały ustalone następujące wymagania:
+Aplikacja mobilna dla systemu operacyjnego Android,
+Wygląd aplikacji zgodny z dostarczonym przez klienta projektem graficznym,
+Aplikacja powinna być niezależna od połączeń sieciowych (100% w trybie offline),
+Baza danych zaprojektowana na podstawie dostarczonych przez klienta plików EXCEL: list rzeczników konsumentów, lista pytań oraz odpowiedzi, list porad oraz podpowiedzi,
+Całość aplikacji ma spełniać WCAG 2.1.
+Architektura aplikacji
+W niniejszym rozwiązaniu platforma technologiczna jest oparta o React Native. React Native to framework wspierany przez Facebooka, stworzony by umożliwić deweloperom JavaScript produkowanie aplikacji cross-platformowych. Framework korzysta z zestawu wewnętrznych API do tworzenia aplikacji i wykorzystuje elementy interfejsu systemów Android i iOS. Dzięki temu aplikacja może być wyprodukowana nie tylko dla systemu operacyjnego Android.
+Na koniec 2022 roku React Native jest jedną z najpopularniejszych technologii tworzenia aplikacji mobilnych, ciągle się rozwija i ma duże grono aktywnych deweloperów.
+
+Również zostały dodane moduły dedykowane dla React Native:
+React Native Elements,
+React Navigation,
+React Native Formatted Text,
+React Native Onboarding.
+
+Na potrzeby projektu został stworzony repozytorium który umożliwi uruchomienia aplikacji w trybie deweloperskim i zbudowanie aplikacji w wersji produkcyjnej. Środowisko deweloperskie jest postawione za pomocą oficjalnej dokumentacji React Native - link. Repozytorium zawiera plik README.md który zawiera wszystkie niezbędne kroki aby uruchomić aplikacje w odpowiednim trybie (również w punkcie 6 niniejszej dokumentacji).
+
+Baza danych została zaprojektowana jako plik w formacie JSON (nierelacyjna struktura danych) lokalny który zawiera wszystkie dane niezbędne do działania aplikacji, wybór ten jest uzasadniony wymaganiem klienta (punkt nr. 3).
+Struktura danych
+Jako baza danych w aplikacji wykorzystywany jest plik w formacie JSON (nierelacyjna struktura danych) – „appData.json”, który przechowuje następujące komponenty:
+Lista pytań:,
+Lista powiatów:,
+Lista rzeczników:,
+
+Wprowadzenie zmian w bazie danych powinno być zgodnie z przedstawionymi powyżej strukturami, według instrukcji:
+Należy skopiować plik „appData.json”,
+Wprowadzić zmiany,
+Zastąpić plik docelowy plikiem zaktualizowanym,
+Następnie należy zbudować aplikacje według instrukcji znajdującej się w pliku README.MD lub w punkcie 6 niniejszej dokumentacji.
+Interfejs użytkownika
+
+Projekt graficzny aplikacji:
+Ekran powitalny:
+
+Ekran początkowy:
+
+Ekran wprowadzenia:
+
+Ekran Wprowadzenia – Strona ustawień rozmiaru czcionki:
+
+Ekran pytań:
+
+Ekran informacji o poradach:
+
+Ekran porady:
+
+Ekran podpowiedzi:
+
+Menu aplikacji:
+
+Ekran wyszukiwania rzecznika konsumentów:
+
+Ekran wyszukiwania rzecznika konsumentów – Wynik:
+
+Ekran Menu - „Gdzie możesz uzyskać wsparcie”:
+
+Ekran Menu - „Słowniczek pojęć”:
+
+Ekran Menu - „O aplikacji”:
+
+Ekran Menu – „Polityka Prywatności”:
+
+Proces instalacji/uruchomienia projektu aplikacji
+
+Wymagania systemowe:
+OS: macOS, Windows, Linux
+Homebrew (only for macOS)
+Node, NPM
+Watchman (only for macOS)
+JDK and Android Studio with Emulator
+
+Środowisko deweloperskie musi być skonfigurowane według oficjalnej dokumentacji React Native - link (opcja - „React Native CLI for Android”).
+
+Uruchomienie aplikacji w trybie deweloperskim w Emulatorze:
+Run in terminal: npm install
+Run in terminal: npm run-script android
+Aby uruchomić aplikacji w trybie deweloperskim na urządzeniu fizycznym:
+1. Run in terminal: npm install
+2. To get device name run in terminal: adb devices
+3. Run in terminal: adb -s <device name> reverse tcp:8081 tcp:8081
+4. Run in terminal: npx react-native run-android
+
+Zbudowanie aplikacji w wersji produkcyjnej:
+Jeżeli aplikacji nie posiada aktualnego prywatnie podpisanego klucza (z angl. keystore), wygeneruj go według oficjalnej dokumentacji React Native – link, opcja – „generating an upload key”,
+Run in terminal: npx jetify && cd android && ./gradlew clean && ./gradlew assembleRelease && ./gradlew bundleRelease && cd ..
+Następnie wygenerowany plik APK należy przetestować na urządzeniu fizycznym.

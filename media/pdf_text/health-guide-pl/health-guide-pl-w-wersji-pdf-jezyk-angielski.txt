@@ -1,0 +1,2176 @@
+--- strona 1 ---
+Health Guide PL
+Getting public healthcare in Poland
+
+--- strona 2 ---
+Text:
+Justyna Laskowska
+Iwona Walczyk – Czapla
+Adam Laskowski
+Edition:
+Nina Potiienko
+Jacek Czopek
+The text was translated by a team of translators of SpecTlumacz.pl.
+
+--- strona 3 ---
+Table of contents
+List of abbreviations::...........................................................................................6
+I. Public health care......................................................................................................7
+1. What is the structure of health care in Poland?...................................................7
+2. Am I entitled to free medical care?.......................................................................7
+3. How can I get insurance?.....................................................................................7
+4. Can I insure my wife and children?......................................................................8
+5. How do I choose my doctor and clinic?................................................................8
+II. Primary Health Care (POZ)......................................................................................9
+1. Who is a POZ doctor?..........................................................................................9
+2. What does a POZ doctor do?...............................................................................9
+3. How do I make an appointment with a POZ doctor?.........................................10
+4. What documents do I need to take with me to the POZ appointment?.............10
+5. Does the consultation of the POZ doctor always take place at the clinic?........10
+6. Can I also go to the POZ clinic with my child?...................................................11
+7. Who is a POZ nurse?.........................................................................................11
+8. Who is a POZ midwife?......................................................................................11
+9. What hours does POZ provide care?.................................................................12
+III. Online patient account...........................................................................................12
+1. What is an online patient account (IKP)?...........................................................12
+2. How do I log into IKP and make a declaration to the POZ?...............................13
+IV. Prescription............................................................................................................14
+1. What is a prescription?.......................................................................................14
+2. What drugs are prescribed?...............................................................................15
+3. Which drugs can I buy without a prescription?...................................................15
+4. How do I get a prescription?...............................................................................15
+5. I have a prescription and what happens next?..................................................15
+6. How do I buy drugs at a discount?.....................................................................16
+7. Can my e-prescription become out of date?......................................................16
+V. Sick note.................................................................................................................17
+1. What is electronic sick note (eZLA)?..................................................................17
+2. How long can I be on a sick note?.....................................................................17
+3. What if I am no longer entitled to sick note but am still ill?................................17
+4. Am I entitled to leave from work if a child or other family member is ill?...........17
+5. Is the salary during leave the same as during work?.........................................18
+6. Will my employer find out what I am ill with?......................................................18
+7. Can I get a back-dated or forward-dated sick note?..........................................19
+8. Do I need to do any surveys before returning to work?.....................................20
+VI. Primary health care – children..............................................................................20
+1. What kind of care can my child expect at POZ?................................................20
+2. What is a well-child care?...................................................................................20
+3. How do I vaccinate my child?.............................................................................21
+4. What is the vaccination calendar?......................................................................22
+5. How is my child vaccinated?..............................................................................22
+3
+
+--- strona 4 ---
+6. Where to get the vaccine from?.........................................................................22
+7. Which vaccinations are listed as mandatory in Poland?....................................23
+VII. Organisation of preventive vaccination................................................................23
+1. Where can I get vaccinated?..............................................................................23
+2. Where can my child be vaccinated?..................................................................24
+3. What vaccinations should I complete?...............................................................24
+VIII. Night and holiday health care..............................................................................24
+1. What is night and holiday health care?..............................................................24
+2. What are the hours of night and holiday health care?.......................................25
+3. Where can I find the address of night and holiday health care facilities?..........25
+4. What problems should I bring to the night and holiday healthcare facility?.......25
+IX. Casualty department (SOR)..................................................................................25
+1. What is SOR?.....................................................................................................25
+2. How long will I wait for help in SOR?.................................................................26
+3. What problems can I bring to SOR?..................................................................26
+4. What problems should not be brought to SOR?................................................27
+5. What documents should I have when coming to SOR?.....................................27
+X. Emergency medical service...................................................................................27
+1. What is an emergency medical service?............................................................27
+2. When to call an emergency medical service?....................................................28
+3. How to call an emergency medical service?......................................................28
+4. Will the emergency medical service take me to a hospital?..............................28
+XI. Outpatient specialist services (AOS).....................................................................28
+1. When should I make an appointment for a specialist clinic?.............................28
+2. How should I make an appointment for a specialist clinic?................................29
+3. Do I need a referral to every specialist clinic?....................................................29
+4. How long is the wait for specialist advice?.........................................................29
+XII. Stay in hospital wards..........................................................................................30
+1. Who can make a referral to a hospital?.............................................................30
+2. Do I have to agree to the proposed treatment?.................................................30
+3. What rights does the patient have?....................................................................30
+4. Is the hospital obliged to provide an interpreter for a foreign language patient?
+................................................................................................................................31
+XIII. Pregnancy and childbirth.....................................................................................31
+1. Who can carry a pregnancy?.............................................................................31
+2. I am pregnant, when should I see a doctor and do I need a referral?...............31
+3. In what does medical care during pregnancy consist?......................................32
+4. Am I entitled to an ultrasound scan of my pregnancy?......................................32
+5. What are prenatal tests?....................................................................................32
+6. Can I work while the pregnant?..........................................................................33
+7. I am pregnant, can my employer dismiss me for this reason?..........................33
+8. Do pregnant women have special rights?..........................................................33
+9. Who is a community midwife?............................................................................34
+10. Where in Poland do women give birth?...........................................................34
+11. What can I do if I have problems with breastfeeding when I return home?.....34
+12. What formalities should I do after the birth?.....................................................35
+4
+
+--- strona 5 ---
+13. How long does the maternity leave last?.........................................................35
+14. Do I have to take all my maternity leave?........................................................35
+15. What is the parental leave?..............................................................................36
+16. Will my pay change during my maternity and parental leave?........................36
+17. What is the childcare leave?............................................................................37
+XIV. Dental care.........................................................................................................37
+1. Do I need a referral to go to the dentist?............................................................37
+2. Why do Poles choose private dental care?........................................................37
+3. What to do in case of a sudden toothache?.......................................................38
+XV. Medical rehabilitation............................................................................................38
+1. With which medical conditions can I apply for rehabilitation?............................38
+2. What does rehabilitation treatment look like?....................................................38
+3. What is rehabilitation benefit?............................................................................39
+XVI. Spa treatment....................................................................................................39
+1. What is spa treatment?......................................................................................39
+2. Is a referral required for spa treatment?.............................................................40
+3. I have received a referral for spa treatment and what next?.............................40
+4. How long does spa treatment last?....................................................................40
+XVII. Addiction treatment............................................................................................41
+1. What should I do if I suspect I have an addiction?.............................................41
+2. What does drug treatment look like?..................................................................41
+3. Where can I find information on treatment for alcohol addiction?......................42
+4. What is a klub AA?.............................................................................................42
+XVIII. Oncology...........................................................................................................42
+1. What should I do if I suspect I have cancer?.....................................................42
+2. What is a karta DiLO?........................................................................................42
+3. Does the insurance provide palliative and hospice care?..................................43
+XIX. Medical products................................................................................................43
+1. What are medical products?...............................................................................43
+2. Are medical products reimbursed?.....................................................................43
+3. How do I get an order for medical products?.....................................................44
+4. Where can I buy medical products?...................................................................44
+XX. Trusted profile......................................................................................................44
+1. What is a trusted profile?....................................................................................44
+2. How do I set up my trusted profile?....................................................................44
+XXI. Glossary..............................................................................................................45
+XXII. Forms of declaration of choice of doctor, nurse and midwife of the POZ..........49
+DECLARATION OF CHOICE OF PRIMARY HEALTH CARE PROVIDER AND
+PRIMARY HEALTH CARE DOCTOR................................................................49
+DECLARATION OF CHOICE OF PRIMARY HEALTH CARE PROVIDER AND
+PRIMARY HEALTH CARE NURSE...................................................................52
+DECLARATION OF CHOICE OF PRIMARY HEALTH CARE PROVIDER AND
+PRIMARY HEALTH CARE MIDWIFE................................................................55
+XXIII. Patronage consultations and balance tests, including screening tests............58
+5
+
+--- strona 6 ---
+List of abbreviations::
+AOS – Outpatient specialist services (Ambulatoryjna Opieka Specjalistyczna)
+ePUAP - Electronic Platform of Public Administration Services (elektroniczna
+Platforma Usług Administracji Publicznej)
+eZLA - Electronic sick note (elektroniczne Zwolnienie Lekarskie)
+IKP - Online patient account (Internetowe Konto Pacjenta)
+Karta DiLO
+- Card for Cancer Diagnosis and Treatment (Karta Diagnostyki i
+Leczenia Onkologicznego)
+klub AA - Alcoholics Anonymous club (klub Anonimowych Alkoholików)
+KOC - Coordinated care for pregnant women (Koordynowana Opieka nad
+Kobietą w ciąży)
+NFZ - National Health Fund (Narodowy Fundusz Zdrowia)
+POZ - Primary health care (Podstawowa Opieka Zdrowotna)
+PUE ZUS - Electronic services platform of the Social Insurance Institution
+(Platforma Usług Elektronicznych Zakładu Ubezpieczeń Społecznych)
+SOR - Casualty department (Szpitalny Oddział Ratunkowy)
+USC - Register office (Urząd Stanu Cywilnego)
+6
+
+--- strona 7 ---
+I.
+Public health care
+1.
+What is the structure of health care in Poland?
+In Poland, there is public health care, available to every insured
+person, financed from public funds, and paid health care. In our
+publication we will look at public health care.
+Some facilities provide both paid and free health services,
+remember to make sure when registering for an appointment that
+it is the National Health Fund (NFZ)-contracted service - free of
+charge.
+2.
+Am I entitled to free medical care?
+Yes. Every person working in Poland is subject to compulsory
+health insurance. Health insurance aims to protect people's health.
+As part of the insurance, everyone is entitled to free treatment,
+diagnostics, nursing care, rehabilitation, hospital stay, spa and
+preventive health care. If you are insured in Poland, you have the
+same access to medical care as insured Polish citizens.
+3.
+How can I get insurance?
+If you are employed on the basis of a contract of employment or a
+contract of mandate, your employer will report you to the Social
+Insurance Institution (ZUS) for health insurance, and the insurance
+premiums will be paid from your salary. If you are self-employed,
+you must register for insurance with the Social Insurance
+Institution yourself. Contributions from ZUS are transferred to the
+7
+
+--- strona 8 ---
+National Health Fund (NFZ). It is a state organisational unit for the
+financing of health services.
+4.
+Can I insure my wife and children?
+Register all non-working family members living with you - spouse,
+child, parents or grandparents - for health insurance. The
+registration of family members is free and unlimited (you can
+register as many family members as you wish).
+5.
+How do I choose my doctor and clinic?
+You can choose any Primary Health Care (POZ) facility in your
+province. It is most convenient if the facility is located close to
+your home. You will need to go to a clinic of your choice (known
+as a POZ facility) and fill in a declaration of choice for a doctor,
+nurse and, for women, a midwife.
+Forms for declarations of choice can be found at the end of this
+publication. Declarations can also be made through your online
+patient account (IKP). You can change your POZ doctor twice a
+year for free.
+You can find a list of POZ clinics on the NFZ website:
+https://gsl.nfz.gov.pl/GSL/GSL/.
+8
+
+--- strona 9 ---
+II.
+Primary Health Care (POZ)
+1.
+Who is a POZ doctor?
+The POZ care doctor treats adults (specialist in internal medicine
+or family medicine) and children (specialist in paediatrics or child
+diseases or specialist in family medicine).
+2.
+What does a POZ doctor do?
+The POZ doctor manages the entire treatment process. His/her
+remit includes:
+•
+Treating patients and giving advice.
+•
+Establish and monitor pharmacological treatment.
+•
+Issuing prescriptions and orders for medical supplies.
+•
+Issuing of sick notes.
+•
+Referral for preventive vaccinations and periodic check-ups.
+•
+Sending for tests, e.g. laboratory diagnosis, ECG, X-ray,
+ultrasound.
+•
+Interpretation of test results.
+•
+Referral to spa and rehabilitation treatment.
+•
+Referral to specialist doctors and hospital.
+•
+Referral to nursing long-term home care.
+•
+Health adjudication.
+•
+Issuing an order for the services of a POZ nurse.
+9
+
+--- strona 10 ---
+3.
+How do I make an appointment with a POZ
+doctor?
+Most often the appointment with the doctor is set by telephone, in
+special cases the appointment is made on the day of registration,
+in other cases on average within 3-5 days.
+4.
+What documents do I need to take with me to the
+POZ appointment?
+Always take with you an identity document with a photo and
+PESEL number, and in the case of a child, a medical record book.
+For your first appointment, take all your medical records from your
+treatment to date, and a list of the drugs you are taking. If it is
+your next appointment, take the results of any tests, medical
+consultations that your POZ has not yet seen.
+You can find a short guide on how to prepare for a visit to POZ on
+this website:
+https://www.nfz-szczecin.pl/jqt1c_zanim_pojdziesz_do_
+lekarza_rodzinnego.htm
+5.
+Does the consultation of the POZ doctor always
+take place at the clinic?
+When the patient's state of health prevents a visit to the clinic, the
+visit may be carried out at the place of residence by prior
+arrangement with the doctor. This is known as a home visit. If a
+problem does not require examination by a doctor, you can get
+10
+
+--- strona 11 ---
+help over the phone. This is known as an online doctor
+consultation.
+6.
+Can I also go to the POZ clinic with my child?
+Yes. Your POZ clinic should have a paediatrician or family doctor
+who can diagnose and treat paediatric conditions and carry out
+preventive vaccination and well-child cares. Remember that in
+order for your child to receive services at a POZ clinic, you must
+make a declaration of choice of doctor.
+7.
+Who is a POZ nurse?
+The primary health care (POZ) nurse is a community nurse. You
+can make a declaration of choice by going to a POZ or via your
+online patient account.
+The nurse cares for patients both in the clinic and at home. The
+tasks of the community nurse include:
+•
+Drug administration.
+•
+Performing injections.
+•
+Removal of sutures.
+•
+Performing inhalations.
+•
+Carrying out nursing and therapeutic procedures.
+8.
+Who is a POZ midwife?
+The POZ midwife provides comprehensive nursing, obstetric and
+gynaecological care. The POZ midwife cares for women from 21
+weeks of pregnancy and newborns. Up to 2 calendar months of
+11
+
+--- strona 12 ---
+the child's life, the POZ midwife is obliged to make 4 - 6 patronage
+visits. You can meet the midwife at her office at the clinic or at
+your home, depending on the situation.
+The tasks of the midwife include:
+•
+Care for pregnant women.
+•
+Recognising health problems.
+•
+Planning and implementation of preventive services.
+•
+Education of women with high-risk pregnancies.
+•
+Care of newborns.
+•
+Examination of children including assessment of general
+condition, adaptation of the child to the environment.
+•
+Helping to create a bond between mother and child and to
+initiate breastfeeding.
+•
+Promotion of parents' health-seeking behaviour.
+9.
+What hours does POZ provide care?
+You can go to the POZ clinic every day from Monday to Friday
+from 8:00 am to 6:00 pm. When your POZ clinic is closed, you can
+go to a night and holiday healthcare facility.
+III.
+Online patient account
+1.
+What is an online patient account (IKP)?
+It is a tool that organises scattered medical information. Anyone
+with a PESEL has IKP, but only adults can use this account.
+12
+
+--- strona 13 ---
+To use IKP you need to log on to the website:
+https://pacjent.gov.pl/. For this you need an electronic
+signature, which can be a trusted profile, a temporary trusted
+profile or an e-ID card.
+IKP provides patients with information about their past, current or
+planned treatment and allows them to deal with a range of issues
+without having to visit a clinic or advice clinic. It gives online
+access to your full medical history, the visits you have made to the
+clinic or doctor, the care you have received, and how much NFZ
+has paid for these services. It gives access to e-prescriptions,
+information on issued referrals and their status, e-sick notes and
+medical certificates issued in connection with illness and maternity.
+IKP also provides access to information on minor children (if you
+have insured them) and family members who have provided us
+with access to their health information. There is also a free app for
+your phone – "mojeikp".
+2.
+How do I log into IKP and make a declaration to
+the POZ?
+Step 1
+Visit https://pacjent.gov.pl/
+Step 2
+In the upper right corner, click on the "Zaloguj się" button
+Step 3
+13
+
+--- strona 14 ---
+Once logged in, select "Moje konto" from the tab bar and under
+the tab find the "Twoja Podstawowa Opieka Zdrowotna (POZ)"
+title. Click and fill in the declarations.
+Step 4
+When you are presented with the option of filling in three e-
+declarations, start by choosing a POZ doctor. In the "Lekarz" field
+click "Wypełnij e-deklaracje" (Important! Remember to choose a
+doctor, a community nurse and, for women, a midwife for
+comprehensive medical care)
+Step 5
+Your data will be entered by itself. Check and complete them.
+Step 6
+Select the province, town, street and facility.
+Step 7
+After filling in all the fields, click on the right-hand side "Podpisz e-
+deklaracje". The declaration will be signed using a trusted profile
+or a qualified signature. You are now eligible for primary health
+care.
+IV.
+Prescription
+1.
+What is a prescription?
+A prescription is a document issued by a doctor on the basis of
+which a pharmacist can sell you a particular drug.
+14
+
+--- strona 15 ---
+2.
+What drugs are prescribed?
+A prescription is usually needed to purchase antibiotics and
+medicines ordered by medical specialists that would be dangerous
+to use on their own. These include, for example, sleeping pills,
+sedatives and anti-epileptic drugs.
+3.
+Which drugs can I buy without a prescription?
+Basic painkillers and antipyretics, some medicines used to treat the
+common cold, some ointments can be purchased without a
+prescription.
+4.
+How do I get a prescription?
+The prescription is issued by a doctor, less often by a nurse, in a
+face-to-face visit or during online doctor consultation after taking a
+history and planning the treatment. The prescription can be a 4-
+digit PIN number or a printout with a barcode or QR code. PIN will
+be given by your doctor, but you also have it in your IKP, and if
+you select this option in your IKP, you will receive it by SMS or e-
+mail.
+5.
+I have a prescription and what happens next?
+You apply the prescription at the pharmacy by entering your
+PESEL number and 4-digit PIN number or by showing the barcode
+or QR code of the prescription.
+15
+
+--- strona 16 ---
+6.
+How do I buy drugs at a discount?
+Some medicines can be bought more cheaply through
+reimbursement. When issuing the prescription, the doctor
+determines the amount of the discount depending on the diagnosis
+he has made (chronic diseases, certain infections). For patients
+aged 75 and over, some drugs are free of charge.
+7.
+Can my e-prescription become out of date?
+Yes. The validity of the prescription may depend on the type of a
+drug. Most prescriptions are valid for 30 days.
+Exceptions:
+•
+a prescription for an oral or injectable antibiotic is valid for 7
+days (in the case of antibiotics in ointments or drops, the
+prescription is normally valid for 30 days)
+•
+a prescription issued for 365 days - medicines can be bought
+at one time or in several packs, but at the same pharmacy.
+If you buy your first pack later than 30 days, your
+pharmacist will reduce the number of packs. You can buy
+medicines for 180 days of therapy at a time.
+•
+The prescription for immunological preparations individually
+prepared (e.g. vaccines for desensitisation) and imported
+from abroad is valid for 120 days. This does not apply to
+mass-produced vaccines - e.g. against influenza - such a
+prescription is only valid for 30 days.
+16
+
+--- strona 17 ---
+V.
+Sick note
+1.
+What is electronic sick note (eZLA)?
+A doctor may issue a certificate justifying an employee's absence
+due to illness - so-called eZLA (commonly called L4 from the name
+of the form). The employer downloads the sick note in electronic
+form from his profile on the ZUS Electronic Services Platform (PUE
+ZUS). In rare cases, the employer does not use PUE ZUS, in which
+case the doctor will print out the sick note which you must provide
+to your employer within 7 days.
+2.
+How long can I be on a sick note?
+You are entitled to a maximum of 182 days of sick leave, the
+exception being sick leave during pregnancy or for tuberculosis - a
+maximum of 270 days.
+3.
+What if I am no longer entitled to sick note but
+am still ill?
+If you have exhausted the maximum number of days of sick leave
+and your entitlement to sick pay has run out, you can apply to the
+Social Insurance Office for rehabilitation benefit for 12 months.
+4.
+Am I entitled to leave from work if a child or other
+family member is ill?
+Yes. A doctor may issue a certificate justifying an employee's
+absence due to his or her illness or the illness of persons under his
+17
+
+--- strona 18 ---
+or her care. An eZLA issued to a parent who cannot continue
+working because of the child's illness is a carer's benefit.
+Annually can be used:
+•
+60 days of care for a sick child up to 14 years
+•
+14 days of care for a sick child aged 14-18 or other family
+member.
+•
+30 days for illness of disabled children aged 14 to 18.
+5.
+Is the salary during leave the same as during
+work?
+Sickness and carer's benefit is 80% of salary.
+It can be 100% of salary if:
+•
+it is the sickness benefit during pregnancy
+•
+the illness is caused by an accident at work or on the way to
+or from work
+•
+absence from work is due to participation in medical
+procedures foreseen for donors of cells, tissues and organs
+6.
+Will my employer find out what I am ill with?
+The eZLA form received by the employer does not contain a
+diagnosis of the illness. Sometimes the sick note will include one of
+the letter codes that specify the circumstances of the illness
+affecting the benefit.
+A code - the inability to work has occurred after an interval of not
+more than 60 days, following the same disease which was the
+cause of the inability to work before the interval
+18
+
+--- strona 19 ---
+B code - inability to work during pregnancy.
+C code - inability to work due to alcohol abuse. An employee who
+has received sick note with the C code is not entitled to wages or
+benefits for the first 5 days from the date the sick note began.
+D code - inability to work due to tuberculosis.
+E code - inability to work due to an infectious disease that has an
+incubation period of more than 14 days or another disease whose
+symptoms manifest themselves after more than 14 days from the
+beginning of the disease.
+On your written request, the doctor may choose not to enter codes
+B and D.
+7.
+Can I get a back-dated or forward-dated sick
+note?
+Usually the doctor will issue a sick note with the date of the
+appointment. A sick note can be written up to a maximum of 3
+days back from the medical examination or online doctor
+consultation. An exception is a sick note from a psychiatrist, which
+can be written out at an even earlier date. The sick note can also
+be written forward with the date of the next day or, if the
+following days are public holidays, with the date on which you
+should be at work.
+19
+
+--- strona 20 ---
+8.
+Do I need to do any surveys before returning to
+work?
+If you have been ill for more than 30 days you need a certificate
+from your POZ doctor stating that you are able to return to work.
+After receiving this certificate, your employer must refer you to an
+occupational doctor for a check-up to determine whether you can
+work in the same position. The cost of the tests is covered by the
+employer.
+VI. Primary health care – children.
+1.
+What kind of care can my child expect at POZ?
+Usually the doctor's work is divided into consultations of sick and
+healthy children. As part of the sick children's consultation,
+children with symptoms of infection are welcomed. During the
+reception hours for healthy children there are vaccinations, well-
+child cares and sometimes diagnostics for diseases that are not
+caused by an acute infection-e.g. abdominal pain, eating
+disorders, abnormal growth.
+2.
+What is a well-child care?
+It should be carried out in children aged 1-4 weeks, 2-6 months, 9
+months, 12 months (on dates corresponding to preventive
+vaccinations), 2 years, 4 years, 5 years, one-year compulsory pre-
+school preparation, 3rd grade of primary school, 1st grade of lower
+20
+
+--- strona 21 ---
+secondary school,1st grade of upper secondary school, the last
+year of upper secondary school until the age of 19
+Children who do not yet go to school have their well-child care
+done entirely in POZ. School-age children start their well-child care
+at the school nurse's office (weighing, measuring, blood pressure
+check, eye examination, posture check). There, after an initial
+examination, they receive a card with which they must go to the
+POZ clinic.
+The doctor checks that height, weight pressure, posture, visual
+acuity are normal. He/she performs a general medical
+examination, evaluates the implementation of the preventive
+vaccinations. If necessary, he/she issues referrals to other
+specialists or laboratory tests.
+3.
+How do I vaccinate my child?
+Children staying in Poland for more than 3 months should continue
+to be vaccinated to match the vaccination calendar. To do this,
+you need to make an appointment with a paediatrician or family
+doctor at chosen POZ (where you have made your declarations).
+At the time of registration it should be indicated that this is a
+vaccination. For vaccination, it is necessary to prepare documents
+in which the previously administered vaccines are recorded (e.g.
+the child's medical record book).
+21
+
+--- strona 22 ---
+4.
+What is the vaccination calendar?
+The vaccination calendar is a list of compulsory vaccinations with
+an indication of the age at which they are due. It is updated
+annually by the Chief Sanitary Inspector.
+5.
+How is my child vaccinated?
+The doctor examines the child to rule out any contraindications to
+vaccination. Once your child is eligible for vaccination you will be
+asked to sign a consent form. The vaccination is carried out by a
+nurse. After vaccination, observation of the patient is carried out
+for a minimum of 15 minutes. If there are no worrying symptoms
+during this time, you can leave the clinic.
+6.
+Where to get the vaccine from?
+Compulsory vaccinations are free and available at the POZ. Each
+year, the Ministry of Health determines which vaccines will be used
+to implement the vaccination calendar.
+If you want to choose a vaccine other than the one chosen by the
+Ministry you must buy it. You can buy the vaccine at some clinics
+(you have to ask about it when you register for your appointment)
+or ask your doctor in advance to write a prescription and buy it at
+a pharmacy. Vaccines purchased outside the clinic must be stored
+in your refrigerator on the middle shelf, away from the refrigerator
+wall, never in the refrigerator door. You need to bring it to the
+clinic in a heat insulated bag.
+22
+
+--- strona 23 ---
+7.
+Which vaccinations are listed as mandatory in
+Poland?
+List of vaccinations from mandatory immunisation programme
+includes:
+•
+BCG - against tuberculosis
+•
+HepB – Hepatitis B
+•
+RV – Rotavirus
+•
+DTP – Diphteria, Tetatus, Pertussis
+•
+PCV – Pneumoccoal conjugate
+•
+IPV – Inactivated poliovirus
+•
+Hib – Haemophilus influenzae type B
+•
+MMR – Measle, Mumps, Rubella
+You can find a vaccination schedule for Poland on this website:
+https://vaccine-schedule.ecdc.europa.eu/Scheduler/ByC
+ountry?
+SelectedCountryId=166&IncludeChildAgeGroup=true&Inclu
+deChildAgeGroup=false&IncludeAdultAgeGroup=true&Inclu
+deAdultAgeGroup=false
+VII. Organisation of preventive vaccination
+1.
+Where can I get vaccinated?
+The vaccination can be carried out at vaccination clinics, most of
+which are located in POZ.
+23
+
+--- strona 24 ---
+2.
+Where can my child be vaccinated?
+Vaccination takes place at vaccination centres. During the
+COVID19 pandemic, a number of population-based vaccination
+centres were established but the majority of vaccinations,
+including for children, take place in POZ.
+3.
+What vaccinations should I complete?
+Vaccinations are scheduled based on the vaccination calendar,
+which is updated annually. For children staying in a country for
+more than 3 months, vaccinations should be completed according
+to the vaccination calendar of the country concerned. Some
+vaccinations should be repeated even in adult patients (e.g.
+against diphtheria, tetanus and whooping cough, against
+influenza), and their schedule can be agreed with the POZ doctor.
+VIII. Night and holiday health care
+1.
+What is night and holiday health care?
+When a POZ clinic is closed, the role of POZ is taken over by night
+and holiday health care clinics (so-called 24-hour care). If you feel
+unwell and are concerned that your health will deteriorate by the
+next day but is not life-threatening, go to your nearest night and
+holiday health care clinic. If you feel unwell but your condition is
+stable, wait until the next day and see your POZ doctor.
+24
+
+--- strona 25 ---
+2.
+What are the hours of night and holiday health
+care?
+From 6pm to 8am and around the clock on public holidays.
+3.
+Where can I find the address of night and holiday
+health care facilities?
+You can find the nearest night and holiday health care clinic on the
+website of the National Health Fund:
+https://www.nfz.gov.pl/dla-pacjenta/na-ratunek/.
+4.
+What problems should I bring to the night and
+holiday healthcare facility?
+You can take advantage of night and holiday health care if you are
+suddenly ill and cannot wait until your POZ clinic is open due to
+the severity of your symptoms. This does not apply if your life is in
+danger, in which case you go to SOR.
+IX. Casualty department (SOR)
+1.
+What is SOR?
+SOR is part of the National Emergency Medical Service. It is
+designed for patients with life-threatening conditions. In SOR, an
+initial diagnosis is made and vital functions are stabilised.
+25
+
+--- strona 26 ---
+2.
+How long will I wait for help in SOR?
+A medical segregation procedure (triage) is carried out on each
+patient. The time during which aid is granted depends on the
+category granted:
+•
+red – immediate contact with a doctor
+•
+orange – waiting time for first contact with a doctor up to 10
+minutes
+•
+yellow – waiting time for first contact with a doctor up to 60
+minutes
+•
+green – waiting time for first contact with a doctor up to 120
+minutes
+•
+blue – waiting time for first contact with a doctor up to 240
+minutes
+In practice, SOR has the highest number of patients in the green
+and blue groups who should not really be presenting to SOR.
+Therefore, waiting times can extend to several hours.
+3.
+What problems can I bring to SOR?
+People with a sudden health emergency should come to SOR.
+These include injuries (e.g. wounds, joint sprains, contusions
+suspected to be fractures), burns, frostbite, allergies.
+You will also be brought to SOR by the emergency medical service
+from the scene of an accident or from home if your condition
+suddenly deteriorates (e.g. persistent shortness of breath, chest
+pain, loss of consciousness).
+26
+
+--- strona 27 ---
+4.
+What problems should not be brought to SOR?
+Do not present to SOR for:
+•
+obtaining specialist advice
+•
+writing a prescription
+•
+obtaining a sick note
+•
+changing dressings
+•
+injections
+•
+removing stitches from the wound
+•
+removing plaster dressings
+•
+catheter exchanges
+•
+performance of laboratory tests
+•
+in case of symptoms of infection that are not life-threatening
+(do not come in because of a sore throat, runny nose,
+cough)
+5.
+What documents should I have when coming to
+SOR?
+You need your PESEL number and identity card or passport.
+X.
+Emergency medical service
+1.
+What is an emergency medical service?
+The emergency medical service provides assistance in
+emergencies. For life-threatening emergencies, call the emergency
+number 999 or 112. The dispatcher will decide on the need for a
+medical emergency team based on the history taken.
+27
+
+--- strona 28 ---
+2.
+When to call an emergency medical service?
+You call the emergency medical service if you need help with life-
+threatening emergencies such as chest pain, paresis, speech
+impairment, impaired consciousness, traffic accidents.
+3.
+How to call an emergency medical service?
+You call an emergency medical service by dialling 112 or 999.
+4.
+Will the emergency medical service take me to a
+hospital?
+The paramedic or doctor will decide whether you should be taken
+to a hospital. The medical emergency team will decide which SOR
+you go to – this is usually SOR closest to the scene of the incident,
+where adequate medical attention can be given.
+XI. Outpatient specialist services (AOS)
+1.
+When should I make an appointment for a
+specialist clinic?
+You go to a specialist clinic if a particular health problem cannot
+be fully diagnosed and treated in the POZ clinic. In most cases you
+will need a referral from your POZ doctor to make an appointment.
+In practice, he/she decides at what point you should go to the
+specialist clinic.
+Specialist clinics with a contract with the NFZ do not accept
+referrals issued by doctors during private consultations.
+28
+
+--- strona 29 ---
+2.
+How should I make an appointment for a
+specialist clinic?
+For most outpatient clinics, you will need a referral from your
+health insurance doctor (a doctor from the POZ or specialist clinic).
+You receive a 4-digit code, so-called PIN.
+It can be printed by your doctor, or you will receive it by SMS or
+email (if you set this option in IKP).
+You can make an appointment by phone or in person. When
+making an appointment at the clinic, you give this number and
+your PESEL number.
+3.
+Do I need a referral to every specialist clinic?
+No. There are exceptions. You do not need a referral to a
+psychiatrist, gynaecologist-obstetrician, oncologist, venereologist,
+dentist.
+4.
+How long is the wait for specialist advice?
+The wait for an appointment varies, sometimes many months. If
+the proposed date is very far away you can ask for a date at
+another clinic. If you need urgent treatment because of your state
+of health, the doctor will add this information on the referral (the
+"pilne" annotation).
+You will find information on dates of treatment at specialist clinics,
+hospitals and surgery on the website:
+https://terminyleczenia.nfz.gov.pl/
+29
+
+--- strona 30 ---
+XII. Stay in hospital wards
+1.
+Who can make a referral to a hospital?
+You can be referred to the hospital by your health insurance
+doctor or by a doctor from a private practice.
+2.
+Do I have to agree to the proposed treatment?
+You have the right not to consent to hospitalisation. In this case,
+the doctor will ask you for a written statement of refusal to
+consent to the proposed treatment.
+3.
+What rights does the patient have?
+•
+The right to information about one's own health. A person of
+the patient's choice may obtain information about the
+patient's health. The authorisation may be in writing or oral
+form.
+•
+The right to refuse treatment
+•
+The right to medical confidentiality
+•
+The right to a supplementary medical opinion
+•
+The right to own medical records. It may also be made
+available to a statutory representative or a person authorised
+by the patient.
+•
+The right to be accompanied by a close relative
+•
+The right to pastoral care or the right of direct contact with a
+priest of the religion professed. You should let the medical
+staff know that you would like to see a priest of your faith. It
+30
+
+--- strona 31 ---
+is the task of the medical facility to actually implement this
+right.
+•
+The right to treatment of pain
+•
+The right to respect for intimacy and personal dignity
+•
+The right to complain
+4.
+Is the hospital obliged to provide an interpreter
+for a foreign language patient?
+The hospital has no legal obligation to provide the patient with an
+interpreter. Hospitals often create a list of staff members fluent in
+foreign languages on their own initiative. If you have any problems
+communicating, please contact the head office or regional branch
+of NFZ.
+XIII. Pregnancy and childbirth
+1.
+Who can carry a pregnancy?
+By law, a pregnancy can be carried out by a doctor or midwife. In
+practice, this is usually a doctor.
+2.
+I am pregnant, when should I see a doctor and do
+I need a referral?
+It is best to see an obstetrician-gynaecologist of your choice by
+the 10th week of the pregnancy. A visit to the gynaecologist does
+not require a referral.
+31
+
+--- strona 32 ---
+3.
+In what does medical care during pregnancy
+consist?
+The doctor carrying out the pregnancy will order tests according to
+Polish standards. You can also choose to receive coordinated care
+for pregnant women (KOC) at a maternity hospital at any stage of
+your pregnancy. The woman then receives full-profile care during
+pregnancy, childbirth and for six weeks after the birth of the child.
+The safety of mum and baby will be supervised by a team
+consisting of a gynaecologist, midwife and hospital doctors.
+4.
+Am I entitled to an ultrasound scan of my
+pregnancy?
+An ultrasonography is performed at the first visit to confirm the
+pregnancy. Many doctors perform an ultrasonography at every
+visit. Around the 12th and 20th weeks of pregnancy, a thorough
+ultrasonography, known as a genetic ultrasonography, is
+performed to assess the health of the baby.
+5.
+What are prenatal tests?
+Prenatal tests are examinations of the foetus during intrauterine
+development. The purpose of the tests is to detect congenital
+diseases or genetic defects. Tests are performed in pregnant
+women who meet one of the conditions:
+•
+have reached the age of 35
+•
+there was a genetic defect in a previous pregnancy
+32
+
+--- strona 33 ---
+•
+the pregnant woman or the father of the child has a known
+genetic defect
+•
+the doctor has identified a significantly increased risk of
+having a child affected by a genetic or multifactorial
+condition
+•
+the result of an ultrasonography or biochemical test
+performed during pregnancy is abnormal
+6.
+Can I work while the pregnant?
+If you feel well you can work during the pregnancy, but you
+cannot take an overtime. You don't have to work at night (night
+work is only possible with your permission). If you are worried
+about your child or your health requires it, you are on sick leave.
+Any sick leave during pregnancy entitles you to sick pay at 100%
+of the base.
+7.
+I am pregnant, can my employer dismiss me for
+this reason?
+An employer may not terminate or dissolve an employment
+contract during pregnancy and maternity leave of an employee.
+8.
+Do pregnant women have special rights?
+Yes. Pregnant women are entitled to health care services and
+pharmaceutical services provided in pharmacies out of turn. "Out
+of turn" provision in specialist clinics means admission on the day
+33
+
+--- strona 34 ---
+of registration or at another time, no later than within 7 working
+days of registration.
+Some drugs for pregnant women are free or reimbursed if the
+doctor mentions this on the prescription (letter B). Free drugs
+include: insulin, lutein, levothyroxine, metoprolol.
+9.
+Who is a community midwife?
+If you are pregnant you should choose a POZ community midwife.
+You will need to give the details of the POZ midwife and doctor,
+you choose for your baby at the hospital after the baby is born.
+The POZ midwife cares for women from 21 weeks of pregnancy
+and newborns up to 2 calendar months of the child's life. The POZ
+midwife is required to make 4-6 patronage visits to the child's
+home. The first visit takes place no later than 48 hours after the
+mother and child leave the hospital.
+The parents should choose a midwife before the baby is born and
+notify her when the newborn is discharged home.
+10. Where in Poland do women give birth?
+Women in Poland give birth in hospitals, in maternity wards. There
+are no birthing rooms in Poland. Home births by choice are rare.
+11.
+What can I do if I have problems with
+breastfeeding when I return home?
+Ask your community midwife for help. There are also lactation
+clinics at maternity wards, which you can use to help you.
+34
+
+--- strona 35 ---
+12. What formalities should I do after the birth?
+The birth of a child must be reported within 14 days of the birth to
+the register office (USC). USC will issue the birth certificate,
+register the child and assign a PESEL number. Once you have
+received PESEL number, you must register your child for insurance
+at the workplace of one of the parents or at ZUS. You then need
+to choose a POZ doctor (paediatrician or family doctor) for your
+child and arrange a patronage visit up to 4 weeks after the birth of
+your child (usually 2 weeks after birth).
+13. How long does the maternity leave last?
+The length of maternity leave depends on the number of children
+born:
+•
+20 weeks if one child is born in a single birth,
+•
+31 weeks if two children are born in a single birth,
+•
+33 weeks if three children are born in a single birth,
+An employee may take up to six weeks of maternity leave before
+the expected date of childbirth.
+If the employee has not taken maternity leave before childbirth,
+the maternity leave shall start on the day of childbirth.
+14. Do I have to take all my maternity leave?
+After childbirth, the mother must compulsorily take 14 weeks of
+leave. She may give up the remaining six weeks of leave and
+return to work, provided that the remaining maternity leave is
+35
+
+--- strona 36 ---
+taken by the other carer bringing up the child, who has ceased
+paid activity in order to provide care.
+15. What is the parental leave?
+The parental leave serves the purpose of continuing to care for a
+young child. It is a condition for an employee to take parental
+leave, irrespective of which parent of the child will be using it, that
+maternity leave is taken in advance and that the application is
+submitted to the employer within 21 days of the birth of the child.
+The parental leave is up to 32 weeks for the birth of one child and
+up to 34 weeks for the simultaneous birth of more than one child.
+The parental leave may be taken:
+•
+entirely by one of the employees-parents,
+•
+by both employees-parents at the same time, but then the
+periods of leave taken by the employee-mother and the
+employee-father are added together and may not exceed 32
+weeks for one child and 34 weeks for more than one child
+born at the same time
+•
+alternating between the two parents, who will share the 32
+weeks.
+16. Will my pay change during my maternity and
+parental leave?
+You are entitled to be paid 80% of your salary for the whole year
+or 100% for 20 weeks, and 60% on your parental leave.
+36
+
+--- strona 37 ---
+17. What is the childcare leave?
+The childcare leave is granted for the personal care of a child to an
+employee who has been employed for at least 6 months. Previous
+periods of employment are also included in this period of
+employment. The childcare leave can be taken by both mother and
+father if both are employees.
+This leave lasts for a maximum of 36 months. It can be divided
+into up to 5 parts. You can use it until the end of the calendar year
+in which your child turns 6. In the case of the childcare leave to
+care for a disabled child, you can take it until the child turn 18.
+XIV. Dental care
+1.
+Do I need a referral to go to the dentist?
+You do not need a referral to visit a dentist (dental practitioner).
+2.
+Why do Poles choose private dental care?
+Poles are opting for private dental care due to the significantly
+reduced reimbursable benefits. White fillings are only reimbursed
+in teeth 1 to 3, in the case of adults these are chemically-cured
+fillings, in the case of children they are light-cured. Reimbursed
+root canal treatment is only available for teeth 1 to 3. Orthodontic
+treatment with removable braces only applies until the age of 12.
+Significant limitations also apply to prosthetics.
+You can find the list of reimbursed services at:
+37
+
+--- strona 38 ---
+http://www.nfz-warszawa.pl/dla-pacjenta/co-kazdy-
+pacjent-wiedziec-powinien/leczenie-stomatologiczne/
+3.
+What to do in case of a sudden toothache?
+In the case of a sudden toothache, you should be admitted to a
+clinic with a NFZ contract on the same day. If you have a
+toothache when clinics are closed (at night or on a public holiday)
+go to an emergency dental service.
+You can find a list of facilities at:
+https://pacjent.gov.pl/dorazna-pomoc-dentystyczna
+XV. Medical rehabilitation
+1.
+With which medical conditions can I apply for
+rehabilitation?
+Medical rehabilitation is a method of treatment for many diseases
+of the musculoskeletal system, the nervous system, the circulatory
+system and the respiratory system. It is used after surgical
+operations, including oncological ones.
+2.
+What does rehabilitation treatment look like?
+A referral from your POZ doctor is required for rehabilitation.
+Rehabilitation can take place:
+•
+ambulatory – for patients requiring rehabilitation or
+physiotherapy who move independently
+•
+at home – for patients requiring rehabilitation or
+physiotherapy who not move independently
+38
+
+--- strona 39 ---
+•
+in a centre or day unit – for patients whose health condition
+does not allow rehabilitation in an ambulatory setting, but
+who do not require round-the-clock medical supervision
+•
+stationary – for patients who require complex rehabilitation
+services and round-the-clock medical and nursing
+supervision due to continuing treatment.
+For more information, visit:
+https://www.gov.pl/web/zdrowie/rehabilitacja-
+lecznicza
+3.
+What is rehabilitation benefit?
+The rehabilitation benefit is a kind of cash benefit for persons who
+have used up all their sick leave due to illness and are still unable
+to work, and further medical treatment or rehabilitation is likely to
+restore their ability to work within a period of up to 12 months. It
+is paid by ZUS or by the employer.
+XVI. Spa treatment
+1.
+What is spa treatment?
+Spa treatment is a continuation of inpatient or outpatient
+treatment. If you require certain treatments at spas in order to
+recover from an illness or accident, or because of an occupational
+disease, you may benefit from this type of treatment. The spa
+uses mineral waters, mud, climatotherapeutic stimuli,
+hydrotherapy, physical therapy, kinesitherapy.
+39
+
+--- strona 40 ---
+Only patients who are fit enough to travel to the spa and who are
+independent may be referred for spa treatment.
+2.
+Is a referral required for spa treatment?
+A referral for spa treatment is issued by your health insurance
+doctor, taking into account your current state of health.
+3.
+I have received a referral for spa treatment and
+what next?
+The referral is sent by the doctor or by you to the regional branch
+of NFZ. It should be sent within 30 days of the date of issue,
+otherwise it is no longer valid. It is then checked by a doctor
+employed by the Fund, who assesses its advisability and indicate
+the type and location of spa treatment.
+If the specialist determines that there are contraindications or no
+indications for treatment, he/she does not confirm the referral. It
+will be returned to the doctor who issued it and you will receive
+written information. The decision is final and cannot be appealed.
+If a date of treatment is agreed, the regional branch of NFZ will
+provide you with a confirmed referral up to 14 days before the
+date of treatment.
+4.
+How long does spa treatment last?
+For an adult, a stay in a spa hospital lasts 21 days. The child's stay
+lasts 27 days. Such a stay is free of charge.
+40
+
+--- strona 41 ---
+The stay in the spa sanatorium lasts 21 days. The stay of a child is
+free of charge, while the stay of an adult is partially charged.
+Stay in a spa hospital for spa rehabilitation lasts 28 days and is
+free of charge.
+Stay in a spa sanatorium for spa rehabilitation lasts 28 days and is
+partially charged.
+Ambulatory spa treatment of adults and children lasts from 6 to 18
+days.
+For more information, visit: https://www.nfz.gov.pl/dla-
+pacjenta/leczenie-uzdrowiskowe1/
+XVII.
+Addiction treatment
+1.
+What should I do if I suspect I have an addiction?
+It is best to visit your POZ doctor who will refer you to the
+appropriate clinic or hospital. You can also see a psychiatrist
+straight away, to whom you do not need a referral. If you are
+addicted to alcohol or psychotropic substances you do not need a
+referral to drug treatment facilities.
+2.
+What does drug treatment look like?
+Drug treatment for addiction is voluntary, except where there is a
+court obligation to treat. Treatment can be inpatient in a hospital
+or ambulatory.
+You can find a list of addiction treatment facilities at
+https://swiatprzychodni.pl/swiadczenia/leczenie-
+uzaleznien/
+41
+
+--- strona 42 ---
+3.
+Where can I find information on treatment for
+alcohol addiction?
+You can find a list of facilities and other important information on
+the website of the State Agency for the Solution of Alcohol
+Problems: https://www.parpa.pl/
+4.
+What is a klub AA?
+These are the Alcoholics Anonymous clubs, self-help centres set up
+by sober people. They live on their own contributions. They are
+located in many towns, including smaller ones.
+You can find a list of AA meetings on the website:
+https://spis.aa.org.pl/
+XVIII.
+Oncology
+1.
+What should I do if I suspect I have cancer?
+The best thing to do is to see your POZ doctor, who will carry out
+appropriate tests if necessary, or refer you to an oncologist. You
+can also go directly to an oncology clinic, to which you do not
+need a referral.
+2.
+What is a karta DiLO?
+With a karta DiLO card, a patient with a suspected cancer enters
+the path of rapid cancer diagnosis and treatment. The karta DiLO
+card can be issued by a GP, a doctor at a specialist clinic or in
+hospital.
+42
+
+--- strona 43 ---
+3.
+Does the insurance provide palliative and
+hospice care?
+If you have terminal cancer and have been referred by a doctor,
+you are entitled to receive care in an inpatient hospice or palliative
+care unit, a home hospice or a palliative care clinic. Hospices aim
+to improve the quality of life of patients in terminal illness and are
+also located in smaller towns.
+A list of facilities can be found on the regional NFZ website under
+"opieka paliatywna".
+XIX. Medical products
+1.
+What are medical products?
+Medical products include prostheses, orthopaedic appliances,
+wheelchairs, canes, crutches, walkers, orthopaedic footwear,
+infusion sets for personal insulin pumps, nappies, catheters,
+ostomy equipment, hearing aids, spectacle lenses, anti-decubitus
+mattresses and prosthetic limbs.
+2.
+Are medical products reimbursed?
+Patients are entitled to reimbursement for medical products.
+Reimbursement means that NFZ can partially or fully cover the
+cost of a medical product.
+43
+
+--- strona 44 ---
+3.
+How do I get an order for medical products?
+The order for medical products is usually issued by a doctor, but
+also by a nurse, midwife, physiotherapist or other authorised
+persons.
+4.
+Where can I buy medical products?
+You can buy medical products at points which have an agreement
+with NFZ for the provision of medical products. These are usually
+medical shops or pharmacies.
+XX. Trusted profile
+1.
+What is a trusted profile?
+The trusted profile is a confirmed set of data which uniquely
+identifies a person in electronic services provided by offices. These
+data are name, surname, date of birth and PESEL number. The
+trusted profile is secured in such a way that no one but its owner
+can use it.
+2.
+How do I set up my trusted profile?
+You can set up the trusted profile on the government website
+https://www.gov.pl/web/gov/zaloz-profil-zaufany.
+Instructions on how to set up the trusted profile can be found on
+the government website, unfortunately it is only available in Polish
+https://psz.praca.gov.pl/documents/10240/11841826/Ins
+trukcja%20jak
+
+%20za%C5%82o%C5%BCy%C4%87%20Profil
+
+%20Zaufany.pdf/8d8c2a5d-a62a-4428-9d64-61c3e9917934/
+44
+
+--- strona 45 ---
+XXI.Glossary
+Prenatal tests – tests performed to detect congenital diseases or
+genetic defects in the foetus.
+Well-child care – preventive check-ups for children at 2, 4, 6, 9,
+16 and 18 years of age.
+Electronic Platform of Public Administration Services
+(ePUAP) – a platform that makes it possible to deal with many
+official matters from home. Documents submitted electronically
+can be signed using a trusted profile.
+Online patient account (IKP) – an online platform that brings
+together patient information in one place and allows a range of
+issues to be dealt with without the need for a visit to a clinic.
+Card for Cancer Diagnosis and Treatment (DiLO) – a
+document issued by a POZ doctor or specialist enabling patients
+with suspected cancer to be diagnosed and treated quickly.
+Drug treatment – a form of treatment focusing on the fight
+against addiction. It takes place in the form of individual and
+group therapies or in specially adapted inpatient centres.
+Rehabilitation treatment - procedures aimed at improving the
+patient's physical and mental functioning. A method of treatment
+for many diseases of the musculoskeletal system, the nervous
+system, the circulatory system and the respiratory system.
+Spa treatment – a form of treatment in spa centres that includes
+treatments to improve health, comprehensive specialist care and
+health education.Primary Health Care (POZ) doctor – a
+45
+
+--- strona 46 ---
+general practitioner. A family medicine doctor, internist or
+paediatrician, who practices in a POZ clinic.
+National Health Fund (NFZ) – a state organisational unit which,
+in the system of universal health care, deals with the financing of
+health services.
+Night and holiday health care – takes over the role of POZ
+facilities after their closure. It is open from 6pm to 8am and
+around the clock on public holidays. The term 24-hour care is
+often used interchangeably.
+Primary Health Care (POZ) nurse – a community nurse caring
+for patients in homes and clinics.
+Emergency medical service – an organisational unit within the
+health care system providing emergency care. For life-threatening
+emergencies, call the emergency number 999 or 112.
+Primary Health Care (POZ) midwife - cares for women from
+21 weeks of pregnancy and newborns up to 2 calendar months of
+the child's life.
+Specialist clinic – the place where services are provided by
+specialist doctors. To go to most specialist clinics, you need a
+referral from your POZ doctor.
+Primary Health Care (POZ) - a part of the health care system
+providing all persons entitled to benefits residing/staying in the
+territory of Poland with health care services close to their place of
+residence.
+46
+
+--- strona 47 ---
+Trusted profile - is a confirmed set of data which uniquely
+identifies a person in electronic services provided by offices.
+Annual prescription – a prescription valid for 365 days, on
+which the doctor writes more packs of medicines, which the
+patient can gradually pick up at the pharmacy.Ombudsman for
+Patients' Rights – a body established to ensure that the rights of
+patients are respected by clinics, dispensaries, hospitals and
+doctors and to deal with their requests and complaints.
+Casualty department (SOR) – a part of the National Emergency
+Medical Service for patients with a life-threatening condition or
+who have suffered an emergency.
+Rehabilitation benefit – a cash benefit paid by ZUS or the
+employer to people who have used up all their sick leave and are
+still unable to work.
+Health services - activities to preserve, save, restore and
+improve health, e.g. visiting a doctor, lab tests, surgery
+Beneficiary - a person entitled to health services financed from
+public funds.
+Service provider – an entity providing healthcare services that
+has a contract with NFZ, e.g. a primary health care clinic.
+Online doctor consultation – a telephone consultation with a
+doctor.
+Health insurance – entitles the insured person to health services
+financed from public funds.
+47
+
+--- strona 48 ---
+Maternity leave – compulsory leave for every woman with an
+employment contract after the birth of her child.
+Parental leave - serves the purpose of continuing to care for a
+young child. It applies to both men and women. It is conditional
+on taking the maternity leave.
+Childcare leave - is granted for the personal care of a child to an
+employee who has been employed for at least 6 months.
+Medical products - a group of products for medical purposes
+with strictly defined rules for design, sale and use.
+Social Insurance Institution (ZUS) – a state organisational
+unit carrying out tasks related to social insurance in Poland.
+48
+
+--- strona 49 ---
+XXII.
+Forms of declaration of choice of doctor,
+nurse and midwife of the POZ
+DECLARATION OF CHOICE OF PRIMARY HEALTH CARE
+PROVIDER AND PRIMARY HEALTH CARE DOCTOR
+1. DATA RELATING TO THE BENEFICIARY
+1. Forename
+2. Surname
+3. Date of birth
+4. PESEL number or, failing that, series and number of the identity document
+day - month - year
+5. Address of the place of residence
+5A. Street
+5B. House / flat num-
+ber
+5C. Postcode and town
+6. Phone number
+(optional field)
+7. E-mail address (optional field)
+8. Data concerning the statutory representative (if the beneficiary is a minor or totally incapacitated person1))
+8A. Forename
+8B. Surname
+8C. Phone number (optional field)
+Address of the place of residence
+8D. Street
+8E. House / flat num-
+ber
+8F. Postcode and town
+8G. Forename
+8H. Surname
+8I. Phone number (optional field)
+Address of the place of residence
+8J. Street
+8K. House / flat num-
+ber
+8L. Postcode and town
+49
+
+--- strona 50 ---
+II. DATA RELATING TO THE PROVIDER
+9. Pursuant to Article 9(1) of the Act of 27 October 2017 on Primary Health Care (Journal of Laws
+of 2020, item 172), I declare my choice:
+9A. Name (company) of
+the service provider
+
+9B. Registered address
+of the service provider
+
+10. In the current calendar year I am choosing:2)
+
+□ for the first or second time
+□ for the third and subsequent time3)
+11. If the selection is made for the third or subsequent time in the current calendar year, indicate
+whether the reason for the selection is:
+□ the circumstance set out in Article 9(5) of the Act of 27 October 2017 on primary health care:
+□ a change of place of residence
+o
+cessation of health care services by the selected provider, the primary health care doctor
+at the selected provider
+o
+attaining the age of 18 by the beneficiary, if the primary health care doctor is a doctor
+with first or second degree specialization or a specialist title in the field of pediatrics
+o
+for other reasons attributable to the provider (please specify)
+………………………………………………………………………………………………
+………………………………………
+□ other circumstance
+III. DATA RELATING TO THE PRIMARY HEALTH CARE DOCTOR
+12. Pursuant to Article 9(2) of the Act of 27 October 2017 on primary health care, I declare my
+choice of:4)
+Name of the primary
+health care doctor
+
+13. In the current calendar year I am choosing:2)
+
+□ for the first or second time
+□ for the third and subsequent time3)
+14. If the selection is made for the third or subsequent time in the current calendar year, indicate
+whether the reason for the selection is:
+□ the circumstance set out in Article 9(5) of the Act of 27 October 2017 on primary health care:
+□ a change of place of residence
+o
+cessation of health care services by the selected provider, the primary health care doctor
+at the selected provider
+o
+attaining the age of 18 by the beneficiary, if the primary health care doctor is a doctor
+with first or second degree specialization or a specialist title in the field of pediatrics
+o
+for other reasons attributable to the provider (please specify)
+……………………………………………………………………………………………
+□ other circumstance
+
+………………………………………
+(date)
+…………………………………………………………………………………………
+(signature of the beneficiary or legal representative)5)
+50
+
+--- strona 51 ---
+EXPLANATIONS:
+1)
+
+Declarations made by statutory representatives on behalf of minors after they reach the age of
+majority remain valid until another primary care doctor is selected, and in a situation where the
+primary care doctor is a doctor with a first or second degree specialisation or a specialist title in
+paediatrics, the declarations remain valid with regard to the selection of the provider until
+another primary health care doctor is selected or a new provider is selected (Article 6(3) and
+Article 10(7) of the Act of 27 October 2017 on Primary Health Care).
+2)
+
+The beneficiary has the right to choose a provider or a primary health care doctor free of charge not
+more than twice in a calendar year, and in case of every subsequent change he/she pays a fee of
+80 PLN. The beneficiary does not pay the fee in the case of a change of his/her place of
+residence or in the case of cessation of the provision of health care services by the selected
+provider, a primary health care doctor at the selected provider, or in a situation where the
+beneficiary, whose primary health care doctor is a doctor with a first or second degree
+specialisation or a specialist title in paediatrics, has reached the age of 18, or for other reasons
+arising on the side of the provider (Article 9(4) and (5) of the Act of 27 October 2017
+on Primary Health Care).
+3)
+
+In the case of the third and subsequent choice, information should be provided on whether the
+reason for the choice is a circumstance specified in Article 9(5) of the Act of 27 October 2017 on
+Primary Health Care, i.e. a change of the beneficiary's place of residence or cessation of the
+provision of health care services by the selected provider, a primary health care doctor at the
+selected provider or a change of the primary health care doctor, in a situation where the
+beneficiary, whose primary health care doctor is a doctor with a first or second degree
+specialisation or a specialist title in paediatrics, has reached 18 years of age, or for other reasons
+on the side of the provider.
+4)
+
+A beneficiary can choose a primary health care doctor, a primary health care nurse or a primary
+health care midwife from the same provider, from different providers or from being providers
+(Article 9(3) of the Act of 27 October 2017
+on Primary Health Care).
+5)
+
+To be completed in the case of a declaration submitted in paper form or electronic form, referred to
+in Article 10(1)(1) or (2) of the Act of 27 October 2017 on Primary Health Care.
+51
+
+--- strona 52 ---
+DECLARATION OF CHOICE OF PRIMARY HEALTH CARE
+PROVIDER AND PRIMARY HEALTH CARE NURSE
+1. DATA RELATING TO THE BENEFICIARY
+1. Forename
+2. Surname
+3. Date of birth
+4. PESEL number or, failing that, series and number of the identity docu-
+ment
+day - month – year
+5. Address of the place of residence
+5A. Street
+5B. House / flat num-
+ber
+5C. Postcode and town
+6. Phone number
+(optional field)
+7. E-mail address (optional field)
+8. Data concerning the statutory representative (if the beneficiary is a minor or totally incapacitated person1))
+8A. Forename
+8B. Surname
+8C. Phone number (optional field)
+Address of the place of residence
+8D. Street
+8E. House / flat num-
+ber
+8F. Postcode and town
+8G. Forename
+8H. Surname
+8I. Phone number (optional field)
+Address of the place of residence
+8J. Street
+8K. House / flat num-
+ber
+8L. Postcode and town
+52
+
+--- strona 53 ---
+II. DATA RELATING TO THE PROVIDER
+9. Pursuant to Article 9(1) of the Act of 27 October 2017 on Primary Health Care (Journal of
+Laws of 2020, item 172), I declare my choice:
+9A. Name (company) of the
+service provider
+
+9B. Registered address of
+the service provider
+
+10. In the current calendar year I am choosing:2)
+
+□ for the first or second time
+□ for the third and subsequent time3)
+11. If the selection is made for the third or subsequent time in the current calendar year,
+indicate whether the reason for the selection is:
+□ the circumstance set out in Article 9(5) of the Act of 27 October 2017 on primary health
+care: □ a change of place of residence
+o cessation of health care services by the selected provider, the primary health care nurse
+at the selected provider
+o for other reasons attributable to the provider (please specify)
+……………………………………………………………………………………………
+……………………………………………
+□ other circumstance
+III. DATA RELATING TO THE PRIMARY HEALTH CARE NURSE
+12. Pursuant to Article 9(2) of the Act of 27 October 2017 on primary health care, I declare
+my choice of:4)
+Name of the primary
+health care nurse
+
+13. In the current calendar year I am choosing:2)
+
+□ for the first or second time
+□ for the third and subsequent time3)
+14. If the selection is made for the third or subsequent time in the current calendar year,
+indicate whether the reason for the selection is:
+□ the circumstance set out in Article 9(5) of the Act of 27 October 2017 on primary health
+care: □ a change of place of residence
+o cessation of health care services by the selected provider, the primary health care nurse
+at the selected provider
+o for other reasons attributable to the provider (please specify)
+……………………………………………………………………………………………
+……………………………………………
+□ other circumstance
+
+………………………………………
+(date)
+.
+………………………………………………………………………………
+……
+(signature of the beneficiary or legal representative)5)
+53
+
+--- strona 54 ---
+EXPLANATIONS:
+1)
+
+Declarations made by legal representatives on behalf of minors after they have reached the age of
+majority shall remain valid until a new primary health care nurse is chosen.
+2)
+
+The beneficiary has the right to choose a provider or a primary health care nurse free of charge not
+more than twice in a calendar year, and in case of every subsequent change he/she pays a fee of
+80 PLN. The beneficiary does not pay the fee in the case of a change of his/her place of
+residence or in the case of cessation of the provision of health care services by the selected
+provider, the primary health care nurse at the selected provider, or for other reasons arising from
+the provider's side (Article 9(4) and (5) of the Act of 27 October 2017 on Primary Health Care).
+3)
+
+In the case of the third and subsequent choice, information must be provided as to whether the
+reason for the choice is a circumstance specified in Article 9(5) of the Act of 27 October 2017 on
+Primary Health Care, i.e. a change in the beneficiary's place of residence or cessation of the
+provision of health care services by the selected provider, a primary health care nurse at the
+selected provider, or for other reasons on the part of the provider.
+4)
+
+A beneficiary can choose a primary health care doctor, a primary health care nurse or a primary
+health care midwife from the same provider, from different providers or from being providers
+(Article 9(3) of the Act of 27 October 2017
+on Primary Health Care).
+5)
+
+To be completed in the case of a declaration submitted in paper form or electronic form, referred to
+in Article 10(1)(1) or (2) of the Act of 27 October 2017 on Primary Health Care.
+
+54
+
+--- strona 55 ---
+DECLARATION OF CHOICE OF PRIMARY HEALTH CARE
+PROVIDER AND PRIMARY HEALTH CARE MIDWIFE
+1. DATA RELATING TO THE BENEFICIARY
+1. Forename
+2. Surname
+3. Date of birth
+4. PESEL number or, failing that, series and number of the identity document
+day - month - year
+5. Address of the place of residence
+5A. Street
+5B. House / flat number
+5C. Postcode and town
+6. Phone number
+(optional field)
+7. E-mail address (optional field)
+8. Data concerning the statutory representative (if the beneficiary is a minor or totally incapacitated person1))
+8A. Forename
+8B. Surname
+8C. Phone number (optional field)
+Address of the place of residence
+8D. Street
+8E. House / flat num-
+ber
+8F. Postcode and town
+8G. Forename
+8H. Surname
+8I. Phone number (optional field)
+Address of the place of residence
+8J. Street
+8K. House / flat num-
+ber
+8L. Postcode and town
+55
+
+--- strona 56 ---
+II. DATA RELATING TO THE PROVIDER
+9. Pursuant to Article 9(1) of the Act of 27 October 2017 on Primary Health Care (Journal of
+Laws of 2020, item 172), I declare my choice:
+9A. Name (company) of
+the service provider
+
+9B. Registered address
+of the service provider
+
+10. In the current calendar year I am choosing:2)
+
+□ for the first or second time
+□ for the third and subsequent time3)
+11. If the selection is made for the third or subsequent time in the current calendar
+year, indicate whether the reason for the selection is:
+□ the circumstance set out in Article 9(5) of the Act of 27 October 2017 on primary
+health care: □ a change of place of residence
+o cessation of health care services by the selected provider, the primary health care
+midwife at the selected provider
+o for other reasons attributable to the provider (please specify)
+……………………………………………………………………………………
+…………………………………………………
+□ other circumstance
+III. DATA RELATING TO THE PRIMARY HEALTH CARE MIDWIFE
+12. Pursuant to Article 9(2) of the Act of 27 October 2017 on primary health care,
+I declare my choice of:4)
+Name of the
+primary health care
+midwife
+
+13. In the current calendar year I am choosing:2)
+
+□ for the first or second time
+□ for the third and subsequent time3)
+14. If the selection is made for the third or subsequent time in the current calendar
+year, indicate whether the reason for the selection is:
+□ the circumstance set out in Article 9(5) of the Act of 27 October 2017 on primary
+health care: □ a change of place of residence
+o cessation of health care services by the selected provider, the primary health care
+midwife at the selected provider
+o for other reasons attributable to the provider (please specify)
+………………………………………………………………………………………
+…………………………………………………
+□ other circumstance
+
+………………………………………
+(date)
+…………………………………………………………………………………
+………
+(signature of the beneficiary or legal representative)5)
+56
+
+--- strona 57 ---
+EXPLANATIONS:
+1)
+
+Declarations made by legal representatives on behalf of minors after they have reached the age of majority
+shall remain valid until a new primary health care midwife is chosen.
+2)
+
+The beneficiary has the right to choose a provider or a primary health care midwife free of charge not more
+than twice in a calendar year, and in case of every subsequent change he/she pays a fee of 80 PLN. The
+beneficiary does not pay the fee in the case of a change of his/her place of residence or in the case of
+cessation of the provision of health care services by the selected provider, the primary health care midwife
+at the selected provider, or for other reasons arising from the provider's side (Article 9(4) and (5) of the
+Act of 27 October 2017
+on Primary Health Care).
+3)
+
+In the case of the third and subsequent choice, information must be provided as to whether the reason for the
+choice is a circumstance specified in Article 9(5) of the Act of 27 October 2017 on Primary Health Care,
+i.e. a change in the beneficiary's place of residence or cessation of the provision of health care services by
+the selected provider, a primary health care midwife at the selected provider, or for other reasons on the
+part of the provider.
+4)
+
+A beneficiary can choose a primary health care doctor, a primary health care nurse or a primary health care
+midwife from the same provider, from different providers or from being providers (Article 9(3) of the Act
+of 27 October 2017
+on Primary Health Care).
+5)
+
+To be completed in the case of a declaration submitted in paper form or electronic form, referred to in Article
+10(1)(1) or (2) of the Act of 27 October 2017 on Primary Health Care.
+
+--- strona 58 ---
+XXIII.
+Patronage consultations and balance tests,
+including screening tests
+No
+AGE OR STAGE OF EDUCATION
+PATRONAGE CONSULTATION AND BALANCE
+TESTS, INCLUDING SCREENING TESTS*
+1
+1-4 weeks of age
+Patronage consultation from a primary
+care physician, including taking of medical
+history and physical examination, taking
+into account a physical development,
+measurement and monitoring of head
+circumference, evaluation of jaundice,
+basic neurological assessment, and
+physical examination for the detection of
+congenital hip dysplasia
+2
+2-6 months of age (on dates corresponding
+to preventive vaccinations)
+• Taking medical history and physical
+examination, taking into account physical
+development (measurements: body
+weight and length, head and chest
+circumference), past diseases and
+prevention of rickets.
+• Assessment of the size of the anterior
+fontanel.
+• Assessment of the neurological state.
+• Determination of the dental age.
+• In boys, examination of the presence of
+testicles in the scrotum.
+• Conducting a test of the development of
+auditory reactions - in the case of an
+incorrect test result or a diagnosis of
+belonging to the risk group of hearing
+damage, referral to a specialist
+
+--- strona 59 ---
+audiological or phoniatric diagnostics.
+• Assessment of the presence of risk
+factors for hearing damage.
+• Physical examination to detect
+congenital hip dysplasia.
+3
+9 months of age
+• Taking medical history and physical
+examination, taking into account the
+pace of physical development
+(measurements: body weight and length,
+head and chest circumference) and
+psychomotor development.
+• Assessment of the implementation of
+preventive vaccinations in accordance
+with the vaccination schedule.
+• Conducting a test of the development of
+auditory reactions.
+4
+12 months of age
+• Taking medical history and physical
+examination, taking into account the
+pace of physical development
+(measurements: body weight and length,
+head and chest circumference) and
+psychomotor development.
+• Assessment of the implementation of
+preventive vaccinations in accordance
+with the vaccination schedule.
+• Conducting a test of the development of
+auditory reactions.
+• Assessment of the presence of new risk
+factors for hearing damage.
+• Measurement of blood pressure.
+5
+2 years
+Preventive medical examination (health
+
+--- strona 60 ---
+balance) includes:
+• taking medical history and physical
+examination, with particular emphasis
+on the pace of physical development
+(measurements: body weight and
+length), including the determination of
+the Body Mass Index (BMI), and
+psychomotor development as well as
+past diseases;
+• evaluation of the implementation of
+preventive vaccinations in accordance
+with the vaccination schedule;
+• assessment of the presence of risk
+factors for hearing damage;
+• conducting a test of the development of
+auditory reactions and assessment of
+speech development;
+• Hirschberg test for strabismus detection;
+• blood pressure measurement.
+6
+4 years
+Preventive medical examination (health
+balance) includes:
+• assessment of the presence of risk
+factors for hearing damage;
+• taking medical history and physical
+examination to assess physical
+development (measurements: body
+height and weight), including the
+determination of the Body Mass Index
+(BMI), psychomotor and social
+development;
+
+--- strona 61 ---
+• conducting a test of the development of
+auditory reactions and assessment of
+speech development;
+• oral hygiene assessment.
+7
+5 years
+Preventive medical examination (health
+balance) includes:
+• taking medical history and physical
+examination to assess physical
+development (measurements: body
+height and weight), including the
+determination of the Body Mass Index
+(BMI), psychomotor and social
+development;
+• blood pressure measurement.
+8
+One-year compulsory pre-school
+preparation***(****)
+Preventive medical examination (health
+balance) includes:
+• taking of medical history:
+• an interview with statutory
+representatives or legal or actual
+guardians and the child, taking into
+account health risk factors and health
+behaviors,
+• analysis of the information contained
+in the preventive examination card,
+• analysis of other available individual
+medical records;
+• physical examination with particular
+emphasis on the assessment of:
+• a) physical development (measurements:
+body height and weight), including the
+determination of the Body Mass Index
+
+--- strona 62 ---
+(BMI),
+• psychomotor development,
+• speech,
+• laterality,
+• the locomotor system,
+• the oral cavity,
+• in boys - the presence of testicles in
+the scrotum and defects of the
+genitourinary system;
+• detection of locomotor system disorders,
+including scoliosis, static deformations of
+the lower limbs;
+• trabismus detection (Cover test,
+Hirschberg test);
+• detection of visual acuity disorders;
+• evaluation of the implementation of
+preventive vaccinations in accordance
+with the vaccination schedule;
+• conducting a test of the development of
+auditory reactions and assessment of
+speech development;
+• assessment of the presence of risk
+factors for hearing damage;
+• blood pressure measurement;
+• specialist medical and diagnostic
+examination, if necessary;
+• summary of the examination, specifying
+health school maturity and qualification
+for a group in physical education
+(including swimming lessons) and a
+
+--- strona 63 ---
+possible health problem;
+• counseling in the field of a healthy
+lifestyle.
+9
+3rd grade of primary school****
+Preventive medical examination (health
+balance) includes:
+• taking of medical history:
+• an interview with statutory
+representatives or legal or actual
+guardians and the child, taking into
+account health risk factors and health
+behaviors,
+• analysis of the information contained
+in the preventive examination card
+from the school nurse or hygienist,
+with particular emphasis on the
+results of screening tests, and from
+the class teacher,
+• analysis of other available individual
+medical records;
+• physical examination with particular
+emphasis on the assessment of:
+• physical development
+(measurements: body height and
+weight), including the determination
+of the Body Mass Index (BMI),
+• psychosocial development,
+• the locomotor system,
+• genitourinary system,
+• sexual maturation according to the
+Tanner scale,
+
+--- strona 64 ---
+• thyroid gland,
+• the oral cavity;
+• detection of locomotor system disorders,
+including scoliosis;
+• detection of visual acuity and color vision
+disorders;
+• blood pressure measurement;
+• specialist medical and diagnostic tests, if
+necessary;
+• summary of the examination, specifying
+the level and pace of physical
+development, psychosocial development
+(indicative assessment), school
+adaptation, qualification for a group in
+physical education and school sports,
+and a possible health problem;
+• counseling in the field of a healthy
+lifestyle.
+10
+1st grade of lower secondary school****
+Preventive medical examination (health
+balance) includes:
+• taking of medical history:
+• an interview with statutory
+representatives or legal or actual
+guardians and the child, taking into
+account health risk factors and health
+behaviors,
+• analysis of the information contained
+in the preventive examination card
+from the school nurse or hygienist,
+with particular emphasis on the
+
+--- strona 65 ---
+results of screening tests, and from
+the class teacher,
+• analysis of other available individual
+medical records;
+• physical examination with particular
+emphasis on the assessment of:
+• physical development
+(measurements: body height and
+weight), including the determination
+of the Body Mass Index (BMI),
+• psychosocial development,
+• the locomotor system,
+• thyroid gland,
+• sexual maturation,
+• genitourinary system,
+• the oral cavity,
+• skin;
+• detection of locomotor system disorders,
+including scoliosis and excessive thoracic
+kyphosis;
+• detection of visual acuity disorders;
+• detection of hearing disorders
+(orientation test in a whisper);
+• blood pressure measurement;
+• specialist medical and diagnostic tests, if
+necessary;
+• summary of the examination, specifying
+the level and rate of growth and sexual
+maturation, psychosocial development
+(indicative assessment), school
+
+--- strona 66 ---
+adaptation, qualifications to the group in
+physical education and school sports,
+and a possible health problem;
+• counseling in the field of a healthy
+lifestyle.
+11
+1st grade of upper secondary school****
+Preventive medical examination (health
+balance) includes:
+• taking medical history:
+• an interview from the student and
+statutory representatives or legal or
+actual guardians, taking into account
+health risk factors and health
+behaviors,
+• analysis of the information contained
+in the preventive examination card
+from the school nurse or hygienist,
+with particular emphasis on the
+results of screening tests, and from
+the class teacher,
+• analysis of other available individual
+medical records;
+• physical examination with particular
+emphasis on the assessment of:
+• physical development
+(measurements: body height and
+weight), including the determination
+of the Body Mass
+12
+The last year of upper secondary school
+until the age of 19
+Preventive medical examination (health
+balance) includes:
+• taking medical history:
+• interview from the student, taking
+
+--- strona 67 ---
+into account health risk factors and
+health behaviors,
+• analysis of the information contained
+in the preventive examination card
+from the school nurse or hygienist,
+with particular emphasis on the
+results of screening tests, and from
+the class teacher,
+• analysis of other available individual
+medical records;
+• physical examination with particular
+emphasis on the assessment of:
+• physical development
+(measurements: body height and
+weight), including the determination
+of the Body Mass Index (BMI),
+• psychosocial development,
+• genitourinary system and sexual
+maturity,
+• the locomotor system,
+• thyroid gland,
+• the oral cavity,
+• skin;
+• detection of visual acuity disorders;
+• blood pressure measurement;
+• specialist medical and diagnostic tests, if
+necessary;
+• summary of the results of the
+examination, specifying a possible health
+problem as well as suggestions and
+
+--- strona 68 ---
+advice regarding further education and
+choice of profession, future parenthood,
+healthy lifestyle, including physical
+activity.
+*
+Examinations in children up to 16 years of age are performed in the presence of legal or
+actual guardians.
+**
+For a 5-year-old child who is not completing the compulsory one-year pre-school
+preparation.
+***
+If the examination is not performed on time, screening tests are performed in the 1st
+grade of primary school.
+**** In the absence of promotion to the next grade, screening tests are not performed again.

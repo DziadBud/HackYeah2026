@@ -1,0 +1,129 @@
+Model Innowacji hearIT
+
+Kraków 2022
+Autorzy: Bartosz Kosiński, Mirosław Bohatkiewicz, Tomasz Mazurek, Kamila Chęcińska, Marzena Milanowska
+
+Część 1
+Opis innowacji HEAR_IT
+[Dlaczego?]
+Kim trzeba być, żeby dostać dobrą pracę w IT? Programistą. to właśnie tych specjalistów pracodawcy szukają najczęściej. Co więcej, taki stan rzeczy trwa już od kilku lat . Zmieniają się tylko języki programowania. Za najbardziej przyszłościowe uważa się obecnie JAVA, Java Script, Python (m.in. ze względu na rosnącą popularność urządzeń mobilnych).
+Popularność programistów na rynku pracy pokazują także dane firmy badawczej PMR Research, z których wynika, że w roku 2018 aż 68 proc. firm z sektora IT zatrudniło lub zamierza zatrudnić nowych pracowników. Prawie połowa (46 proc.) ankietowanych przedsiębiorstw chce zatrudnić właśnie programistów. Należy dodatkowo zwrócić uwagę, że sektor IT w praktycznie nieodczuwalnym stopniu został dotknięty przez regresję wywołaną pandemią COVID-19. Programowanie jest pod wieloma względami bardzo dobrym zawodem dla osób głuchych:
+Zawód programisty jest dobrze płatny, w związku z czym jest atrakcyjną alternatywą dla renty i może motywować do podjęcia aktywności zawodowej;
+Nie wymaga przejścia formalnej ścieżki kształcenia i zdobycia kwalifikacji, w związku z czym niezbędna wiedza i umiejętności mogą być zdobyte na poza formalnej lub nieformalnej ścieżce dostosowanej do osób głuchych.
+Jakie są bariery w nauczaniu programowania osób głuchych:
+Dostępne materiały do samokształcenia (książki, e-booki, kursy online) są pisane zbyt trudnym językiem dla osób głuchych, dla których język polski jest językiem obcym, a brak podręczników programowania w języku migowym;
+Wiele określeń branżowych w programowaniu nie ma swoich odpowiedników w języku migowym, w związku z czym ciężko jest osobom głuchym odnieść się do niektórych pojęć i zrozumieć przekaz materiałów;
+W programach dla osób głuchych nie ma żadnych odniesień do algorytmów, w związku z czym nie mają oni bazy wyjściowej do zrozumienia logiki programowania;
+Nie ma materiałów, ani na poziomie podstawowym, ani zaawansowanym do nauki programowania dla osób głuchych.
+[Dla kogo?]
+Odbiorcami innowacji są osoby g/Głuche w wieku 15+. Pośrednio odbiorcą projektu jest w zasadzie cała społeczność niesłyszących w Polsce, ponieważ w języku migowym nie są dostępne żadne materiały na ten temat.
+Innowacja pomaga wypełnić ewidentną lukę na rynku materiałów dydaktycznych, który praktycznie nie oferuje pomocy szkolnych w języku migowym. Język migowy to mowa „tu i teraz”, jeśli nie dokonamy rejestracji przekazu staje się on niemożliwy do mechanicznego powtórzenia. Migowy to język ciała, gestu, mimiki, nawet najdokładniejszy zapis na papierze nie odda całej plastyczności wypowiedzi. Dzięki współczesnym technologiom głusi otworzyli się bardziej na świat, komunikują się wykorzystując dostępne narzędzia IT, nie ma właściwie drastycznych barier finansowych – dziś dostęp do Internetu w komórce, w miejscu zamieszkania czy pracy jest powszechny. Wciąż jednak brak jest specjalistycznych pomocy dydaktycznych w języku migowym. Nauczyciele w szkołach i trenerzy adaptują tematy z dostępnych podręczników, bezpośrednio podczas lekcji przekładają treści na język migowy, co wydłuża czas samego procesu nauczania, skraca czas na ćwiczenia i uniemożliwia samodzielne powtarzanie czy nabywanie wiedzy.
+Badania E. Giermanowskiej informują, że wśród wszystkich osób niepełnosprawnych, osoby głuche i słabosłyszące mają najniższy współczynnik gotowości do podjęcia pracy (41,8%). Jest to wynik bardzo zbliżony do badania (PFRON, 2009), którego wyniki informują, że 62% osób z tej grupy niepełnosprawnych odrzuca możliwość podjęcia proponowanej im pracy. te same źródło podaje, że 33% niesłyszących nigdy nie pracowało zawodowo. Późniejsze analizy wskazują, że pomimo podjęcia licznych inicjatyw (m.in. w ramach EFS) wskaźnik osób niesłyszących pozostający poza rynkiem pracy utrzymuje się wciąż na bardzo wysokim poziomie. Dane PFRON z 2018 mówią o 72% osób niepracujących z tej grupy, agencja informacyjna Newseria Biznes podała, że w 2019 ten wskaźnik osiągnął już niemal 80%.
+Wśród przyczyn bierności zawodowej głuchych, pierwszym i najważniejszym czynnikiem niepodejmowania pracy są te, które wynikają bezpośrednio z barier komunikacyjnych. Dla osób słyszących mowa jest naturalnym sposobem komunikacji międzyludzkiej. Posługiwanie się nią, nawet w dłuższym okresie czasu pracy, nie stanowi dla nich dużego obciążenia. Inaczej w przypadku osób głuchych, dla których język polski jest z reguły obcym językiem. Zachodzą tu dwa ważne procesy komunikacyjne: proces rozumienia mowy oraz proces jej tworzenia. Mogą one przebiegać niezależnie od siebie. Rozumienie mowy ma duży wpływ na życie głuchej osoby. Nie można zapominać, że proces rozumienia mowy jest nierozerwalnie powiązany z rozumieniem zasad gramatyki języka polskiego, która jest całkowicie odmienna od gramatyki Polskiego Języka Migowego. z tego samego powodu, trudności napotyka komunikacja za pomocą języka pisanego.
+Kolejną przyczyną bierności zawodowej jest wykształcenie: osoby głuche zazwyczaj mają niskie kwalifikacje zawodowe. Wynika to z kilku uwarunkowań, z jakimi głusi stykają się w trakcie swojego kształcenia zawodowego. Przede wszystkim, nauczanie prowadzone w języku, którego najczęściej nie rozumieją (bądź mają w nim istotne braki wpływające na posługiwanie się językiem narodowym) determinuje wybór ścieżki
+kształcenia. o ile młodzież słysząca ma wybór – kształcenie ogólne oraz kontynuacja tego kształcenia na poziomie wyższym, o tyle młodzież głucha często nie ma innego wyboru niż kształcenie zawodowe, gdyż w ocenie ich otoczenia (rodzice, opiekunowie, nauczyciele) oraz ich samych, wybór kształcenia ogólnego byłby bardzo ryzykowny ze względów językowych. Następnie, co z tym idzie, relatywnie niewielka oferta zawodów oferowanych przez polskie szkoły zawodowe i technika dla głuchych, przy czym bardzo często jest tak, że najbliższa szkoła dla głuchych ma w ofercie dwa, czasem trzy zawody, często mało prestiżowe. w dodatku możliwości kształcenia i przekwalifikowania w ramach nielicznych kursów oferowanych przez urzędy pracy oraz inne instytucje, które zapewniają możliwość uczestnictwa w kursach i szkoleniach zawodowych, są bardzo ograniczone, ze względu na brak zapewnienia tłumacza języka migowego na danym szkoleniu. Szkolenia zawodowe, które są przyjazne dla głuchych, występują niezwykle rzadko.
+Jedną z poza komunikacyjnych barier w podejmowaniu zatrudnienia przez osoby głuche jest niska płaca, którą otrzymują za swoją pracę. Relatywnie duże kwoty, które głuche osoby dostają w ramach rent, przy jednocześnie niskich pensjach, jakie głusi otrzymują za swoją pracę, są czynnikiem demotywującym do aktywnego poszukiwania pracy. Prace, które oferuje się głuchym, są z reguły nisko płatnymi pracami fizycznymi, których często nie chcą osoby słyszące.
+Warto podkreślić, że w Polsce praktycznie nie istnieją formy kształcenia zawodowego dla dorosłych g/Głuchych, które byłyby realizowane w trybie zaocznym. Próby kształcenia zawodowego dorosłych głuchych były podejmowane, jednak z różnych powodów nie odniosły sukcesu. Szansą na pełną aktywizację zawodową osób głuchych może być nauka programowania.
+[Jak?]
+Dzięki innowacji możemy zwiększyć kompetencje osób głuchych w kierunku efektywnej nauki języków programowania
+W ramach HEAR.IT stworzyliśmy przestrzeń dydaktyczną do nauki programowania dla osób głuchych oraz stworzyliśmy warunki do edukacji programistycznej dla osób głuchych oraz nauczycieli, jak również stworzyliśmy warunki do nieformalnego uczenia się programowania dla osób g/Głuchych
+Innowacja dzięki wykorzystaniu naturalnego kanału komunikacji dla osób głuchych umożliwia lepsze zrozumienie podstaw niezbędnych przy dalszej nauki języków programowania, jak też przybliża ogólną specyfikę dziedzin ścisłych. Pozwala to w sposób aktywny wykorzystać możliwości, które drzemią w osobach g/Głuchych, na rzecz ich dalszego rozwoju i zdobywania lepszych kompetencji przydatnych na rynku pracy.
+W ramach projektu hearIT stworzyliśmy pakiet bardzo atrakcyjnych materiałów, dzięki którym osoby g/Głuche mają możliwość szybkiego rozpoczęcia swojej przygody z programowaniem. na stronie internetowej hearIT.pl znajdują się:
+Kursy on-line oraz podręczniki z podstaw programowania w Java, JavaScript i Python;
+Słownik PJM najważniejszych pojęć używanych w branży programistycznej;
+Gra komputerowa (YoAnna w Krainie PrograMisiów) utrwalająca kluczowe zagadnienia z programowania;
+Baza linków do dodatkowych materiałów, dzięki którym można kontynuować poznawanie bardziej zaawansowanych zagadnień w wybranym przez siebie języku programowania.
+Jeśli czytasz opis tego modelu, i jesteś osobą Głuchą, to pamiętaj!
+Chcemy ułatwić Tobie zrobienie pierwszych kroków w IT!
+Sprawdź co dla Ciebie przygotowaliśmy!
+hearit.pl
+Część 2
+Testowanie innowacji
+W ramach usprawnienia i weryfikacji użyteczności innowacji zrealizowane zostały rozbudowane testy, z udziałem osób g/Głuchych. Szczegółowe informacje dotyczące przebiegu testów znajdują się w opracowanym w tym zakresie Raporcie z realizacji testów.
+W tym miejscu chcemy przedstawić najważniejsze wnioski:
+Innowacja została oceniona bardzo pozytywnie, wszystkie osoby biorące w testach wyraziły pozytywną opinię o jej użyteczności i czytelności;
+Materiały zostały uznane jako kompletne, tzn. że na poziomie entry level nie są potrzebne dodatkowe informacje, źródła zewnętrzne i z ich udziałem można bez problemu rozpocząć naukę programowania;
+Docenione zostały opisy narracyjne, podawanie przykładów z życia oraz analogii, dzięki czemu możliwe było łatwiejsze zrozumienie kluczowych pojęć;
+Testy kompetencyjne wykazały wzrost kompetencji z zakresu programowania u wszystkich osób biorących w testach, wzrost kompetencji wykazany został na poziomie dużym lub bardzo dużym;
+Umiejętności praktyczne wypadły słabiej, od poziomu minimalnego do dużego (bardzo duża rozpiętość). Należy jednak zwrócić uwagę, że charakter materiałów, jeśli chodzi o ich podstawowe użycie nie traktował wzrostu umiejętności praktycznych jako priorytetowych kompetencji. te mają być rozwijane jako kolejny krok (z wykorzystaniem m.in. sugestii dydaktycznych zawartych w linkowni);
+Język materiałów został uznany jako czytelny. Wartość merytoryczna materiałów została oceniona wysoko zarówno przez użytkowników, jak i ekspertów dziedzinowych (surpedagodzy, programiści, metodycy);
+Platforma od strony technicznej jest wolna od większych błędów, wszystkie drobne bugi zostały naprawione na etapie testowania, dzięki ich zidentyfikowaniu przez testerów;
+Z platformy mogą bez problemu w zrozumiały sposób korzystać zarówno osoby z wykształceniem podstawowym, średnim jak i wyższym. Przekrój wykształcenia testerów i wyniki ich nauki pozwoliły na wyciągnięcie tego wniosku;
+Platforma jest pozytywnie odbierana w wymiarze symbolicznym. Chcieliśmy osiągnąć taki efekt wykorzystując elementy kulturowo powiązane ze społecznością osób Głuchych – symbol motyla oraz kolor niebieski;
+Platforma bez problemu uruchamia się zarówno na urządzeniach mobilnych, laptopach jak i komputerach stacjonarnych. Można z niech korzystać zarówno na systemach operacyjnych bazujących na Windows, Android jak i iOS.
+Część 3
+Jak korzystać z innowacji?
+[Bardzo krótki przewodnik po świecie osób Głuchych]
+Słowo G/Głuchy spotkamy w dwóch wersjach, pisane z małej oraz z dużej litery. Słowo „głuchy” pisane z małej litery będzie odnosiło się po prostu do grupy osób, które nie słyszą, czyli słowo to będzie synonimem określenia osoba niesłysząca. Natomiast ze słowem „Głuchy” pisanym z dużej litery wiąże się dużo ciekawsza historia. Osoby niesłyszące, zwłaszcza od urodzenia funkcjonują w swojej unikatowej przestrzeni językowej. Język osób niesłyszących w znaczącym stopniu różni się od klasycznych języków narodowych (np. od języka polskiego). z oczywistych względów jest inaczej tworzony (ruchy, mimika i postawy w miejsce dźwięków), ale ma też odmienną gramatykę i zasób słownictwa. Wraz z językiem wytworzył się wyjątkowy zestaw norm, wartości, przekonań, symboli i znaczeń. Wszystkie te elementy powiązane ze sobą spowodowały, że wytworzyła się niepowtarzalna kultura osób niesłyszących. „Głuchy” pisane z dużej litery odnosi się właśnie do przynależności do tej grupy kulturowej.
+Symbolem powszechnie kojarzonym z kulturą Głuchych jest motyl. Kolorem natomiast będzie niebieski. Kultura Głuchych wytworzyła wiele niezwykłych zjawisk, w tym niepowtarzalne formy sztuki (takie jak np. poezja migana).
+W Polsce funkcjonują dwa rodzaje języka migowego. Naturalnym językiem dla osób głuchych będzie Polski Język Migowy (PJM). Obok niego funkcjonuje jednak także system językowo-migowy (SJM), który powstał sztucznie i bazować miał na strukturze klasycznego języka polskiego. SJM nie jest jednak w tym momencie zbyt popularny wśród osób głuchych, których większość komunikuje się w PJM. Warto jednak pamiętać, że dla osób głuchych, także tych wychowanych od urodzenia w Polsce język polski (myślimy tutaj głównie o jego wersji pisanej) jest językiem obcym. Mogą w związku z tym mieć pewne problemy z płynnym pisaniem i czytaniem w języku polskim (podobnie do cudzoziemców, dla których nasz język narodowy nie jest językiem ojczystym). Nie oznacza to, że osoby Głuche nie zrozumieją co się im napisało albo że nie będą w stanie napisać maila. Należy wykazać się odrobiną zrozumienia, ponieważ błędy językowe w mailu od osoby głuchej nie będą najczęściej związane ze słabym wykształceniem czy niższą inteligencją, ale właśnie z tym – że osoba ta komunikuje się z nami w języku, który nie jest dla niej językiem ojczystym.
+Jak komunikować się z osobami głuchymi? Notesiki sprawdzają się idealnie, podobnie jak maile czy smsy. Czy osoby głuche potrafią czytać z ruchu warg? Niektóre, ale nie wszystkie i nie każdą osobę da się w ten sposób zrozumieć równie dobrze.
+Są pewne zwroty, których w kontakcie z osobami Głuchymi lepiej unikać. Zwroty takie jak kaleka, inwalida czy pełnosprawny inaczej lepiej całkowicie wyrzucić ze swojego słownika. Określenia takie jak G/głuchy czy osoba niesłysząca są jak najbardziej w porządku. Zwrot „głuchoniemy” też lepiej używać w ograniczonym zakresie, gdyż sugeruje on, że z daną osobą w ogóle nie ma kontaktu. Głusi niezbyt dobrze przyjmują powszechne używanie tego pojęcia.
+[Głuchy pracownik]
+Osoba Głucha zatrudniona u Państwa powinna mieć odpowiednie kompetencje, tak by w pełnym zakresie wykonywać zadania, które zostaną jej powierzone. Zjawiska „paternalizmu” (przekonanie że osoby głuche nie są wystarczająco kompetentne do kierowania swoim postępowaniem i trzeba je kontrolować, ochraniać, bardzo dokładnie instruować) czy „audyzmu” (przekonanie że osoby słyszące są bardziej kompetentne od niesłyszących) mogą powodować że osoba głucha zatrudniona w Państwa firmie będzie doświadczała tzw. „podwójnych standardów”. Warto upewnić się, że z osobą głuchą zbuduje się partnerskie relacje, takie jak z innymi pracownikami, że będzie się jej zapewniać wsparcie tam, gdzie tego naprawdę potrzebuje (podobnie jak w przypadku pozostałych pracowników).
+Warto pamiętać, że pracodawca zatrudniający pracowników z niepełnosprawnościami jest zobowiązany do wprowadzenia tzw. Racjonalnych usprawnień, które mają w jak największym stopniu zniwelować bariery utrudniające danej osobie pracę na wskazanym stanowisku. Wiele takich usprawnień może być wprowadzona przy współudziale środków publicznych. Warto w tym zakresie skontaktować się z infolinią PFRON i zapytać, na jakie środki w tym momencie mogą Państwo liczyć.
+W przypadku pracowników głuchych racjonalnymi usprawnieniami będą przede wszystkim różnego rodzaju rozwiązania, które ułatwią komunikację pomiędzy pracownikami głuchymi a resztą zespołu. w praktyce mogą to być więc bardzo proste i tanie lub wręcz bezkosztowe rozwiązania, takie jak:
+notatniki i przybory do pisania na stanowisku pracy;
+posługiwanie się komputerem lub telefonem do komunikacji wewnątrz firmy (SMS, poczta elektroniczna, Skype);
+stosowanie w firmie usługi tłumaczeń online (np.wideotłumacz.pl, tłumacz online ).
+W niektórych sytuacjach warto jednak także rozważyć obecność tłumacza języka migowego, np. w trakcie ważnych spotkań podsumowujących kwartał/rok lub przy ustalaniu zadań w ramach nowych projektów
+Należy pamiętać, że zatrudnienie osoby głuchej może się wiązać także z konkretnymi korzyściami finansowymi:
+Miesięczne dofinansowanie ze środków PFRON do wynagrodzenia pracownika z niepełnosprawnością;
+Obniżenie lub całkowite zwolnienie z wpłat na PFRON;
+Zwrot kosztów zatrudnienia pracownika pomagającego osobie z niepełnosprawnością (asystenta pracy);
+Zwrot kosztów przystosowania i wyposażenia miejsca pracy dla osoby z niepełnosprawnością.
+[Czy warto szukać Głuchych programistów?]
+Zdecydowanie TAK, gdyż mają oni idealne predyspozycje do tego konkretnego zawodu!
+Pracodawcy, którzy zatrudniają osoby głuche, najczęściej zwracają uwagę na ich:
+sumienność,
+dokładność i skrupulatność,
+zaangażowanie,
+pracowitość,
+uczciwość,
+przywiązanie do miejsca pracy (zdaniem pracodawców, głusi rzadziej zmieniają pracę niż słyszący – co jest szczególnie ważne w branży IT, gdzie występuje tak duża fluktuacja pracowników),
+dbanie o porządek,
+umiejętność skupienia się na pracy (brak rozproszenia rozmowami ze współpracownikami),
+większa wydajność / efektywność,
+predyspozycje do pracy wymagającej cierpliwości i precyzji,
+wyczucie estetyki,
+zdolności manualne,
+zmysł obserwacji,
+dobra organizacja pracy.
+Wielu programistów organizuje sobie godziny ciszy. Wyciszają komórki, media społecznościowe, tak by nikt im nie przeszkadzał i by mogli w tym czasie w 100% skupić się na kodowaniu. Wyobraźmy sobie teraz pracownika, którego wszystkie godziny pracy to godziny ciszy!
+[Instrukcja użytkownika]
+W ramach projektu HearIT stworzyliśmy pakiet bardzo ciekawych materiałów, dzięki którym można szybko rozpocząć swoją przygodę z programowaniem.
+Instrukcja użytkownika nie będzie długa, bo i innowacja jest w miarę prosta w obsłudze😉
+Na stronie internetowej www.hearIT.pl znajdziecie m.in.:
+Kursy on-line oraz podręczniki z podstaw programowania w Java, JavaScript i Python;
+Słownik PJM najważniejszych pojęć używanych w branży programistycznej;
+Grę komputerową (YoAnna w Krainie PrograMisiów) utrwalającą kluczowe zagadnienia z programowania.
+Materiały mają stanowić wprowadzenie w programowanie a nie samodzielny kurs.
+Co to oznacza?
+Że dzięki nim łatwiej będzie zrozumieć podstawowe pojęcia z programowania i kontynuować naukę samodzielnie z wykorzystaniem podręczników, kursów, przede wszystkim tych dostępnych bezpłatnie w internecie.
+Rekomendowane podejście do korzystania z innowacji:
+Krok 1
+Zapoznanie się z pojęciami w ramach VideoSłownika PJM (poznanie podstawowych pojęć, terminów używanych w świecie programistów)
+Krok 2
+Wybór jednej z 3 ścieżek edukacyjnych, w ramach których można zwiększyć swoją orientację w jednym z trzech najbardziej popularnych w tym momencie języków programowania:
+Java,
+JavaScript,
+Python.
+Krok 3
+Ukończenie kursu e-learningowego wprowadzającego podstawowe pojęcia w wybranym przez siebie języku programowania.
+Krok 4
+Zapoznanie się z podręcznik do wybranego przez siebie języka programowania. Przy każdym z podręczniku jest też link do platformy - kompilatora on-line na której można testować swój kod
+Krok 5
+Ukończenie wybranych 3 poziomów gry YoAnna – w Krainie PrograMisów, która w zabawowy sposób pomoże utrwalić najważniejsze pojęcia z wybranego języka
+Krok 6
+Przejście do naszej linkowni, gdzie można spróbować swoich sił rozpoczynając bardziej zaawansowane kursy z językach Java, Java Script i Python.
+[Wskazówki i rekomendacje dla użytkowników]
+Platforma jest bardzo prosta w użytkowaniu, zarówno samodzielnym, jak i podczas kursów/szkoleń/lekcji. Nie wymaga instalowania żadnych aplikacji lokalnie na komputerze, nie zbiera żadnych danych osobowych o użytkownikach, ma bardzo niskie wymagania sprzętowe więc uruchomi się na każdym komputerze na którym uruchomi się dowolna aktualna przeglądarka internetowa;
+Platformy można używać samodzielnie (w ramach tzw. uczenia się nieformalnego), ale może być także bezproblemowo wykorzystana w trakcie kursów/szkoleń prowadzonych przez trenera (edukacja pozaformalna) jak również jako dodatkowy materiał w trakcie zajęć informatyki w szkole (edukacja formalna);
+Z platformy korzystać można całkowicie bezpłatnie, w ramach otwartej licencji Creative Commons. Materiały można także w dowolny sposób adaptować i modyfikować, pamiętając jednak o konieczności podania autora pierwowzoru w każdym tworzonym w ten sposób utworze zależnym;
+Materiały na platformie nie powinny być traktowane jako pełny kurs programowania. Są to materiały na tzw. Entry level. Oznacza to, że mają one ułatwić rozpoczęcie pełnych kursów programowania w wybranym przez siebie języku;
+Warto raz za czas wrócić do VideoSłownika PJM, za każdym razem, gdy w trakcie korzystania z kursów/podręczników pojawią się jakiekolwiek niezrozumiałe, trudniejsze pojęcia;
+Platforma przygotowana została z myślą o osobach g/Głuchych, co jednak nie oznacza, że tylko oni mogą korzystać z tego narzędzia. Materiały mogą pomóc tak naprawdę każdemu (zarówno dzieciom, młodzieży jak i osobom dorosłym) które w łatwy sposób chciałyby rozpocząć swoją przygodę z programowaniem;
+Dostęp do innowacji będzie zapośredniczony przez internet, co powoduje, że jest on stosunkowo łatwy do skalowania na poziomie wertykalnym, gdyż proces ten będzie powiązany z promocją i upowszechnieniem samego narzędzia;
+Dostęp do innowacji jest bezpłatny i nieograniczony. Nasze rozwiązanie może być bez problemów zaadaptowane do tworzenia kolejnych materiałów edukacyjnych przystosowanych do nowych języków programowania, lub całkowicie nowych obszarów w obrębie IT;
+W ramach innowacji powstała gra edukacyjna na open sourcowym, bezpłatnym narzędziu GDevelop. w związku z tym mając dostęp do kodu źródłowego można tworzyć w łatwiejszy sposób swoje własne etiudy edukacyjne;
+Niech kod będzie z wami!

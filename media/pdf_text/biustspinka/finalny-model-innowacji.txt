@@ -1,0 +1,1347 @@
+--- strona 1 ---
+
+1
+INKUBATOR WŁĄCZENIA SPOŁECZNEGO
+
+Innowacja: BiustSPINKA – urządzenie do zapinania
+biustonosza
+RAPORT
+Finalny model innowacji
+Innowator: Karpatia Sp. z o. o
+Ul. Rejtana 23
+35-326 Rzeszów
+Rzeszów, kwiecień 2023r.
+
+--- strona 2 ---
+
+2
+Spis treści
+Opis problemu i tło __________________________________________________________ 4
+Analiza i badanie potrzeb _____________________________________________________ 4
+Powstanie prototypu BiustSPINKA ______________________________________________ 5
+Rozmiary __________________________________________________________________ 6
+Stworzenie prototypów _______________________________________________________ 6
+Opis urządzenia BiustSpinka ___________________________________________________ 7
+Wnioski po przeprowadzonych testach ___________________________________________ 7
+Parametry produkcyjne BiustSpinki - rysunki techniczne _____________________________ 8
+BiustSpinka urządzenie do zapinania biustonosza _________________________________ 10
+Wnioski po przeprowadzonych testach: _________________________________________ 14
+Instrukcja obsługi ___________________________________________________________ 15
+Zrozumienie zastosowania Innowacji BiustSPINKA na podstawie broszury informacyjnej __ 21
+Założenia ankiety ___________________________________________________________ 21
+Badanie grupy docelowej – pytania ____________________________________________ 23
+Pytania sondażowe _________________________________________________________ 23
+Pytania związane z dysfunkcjami_______________________________________________ 23
+Pytania związane z aktywnością życiową ________________________________________ 23
+Pytania związane z badanym obszarem – zakładanie i noszenie biustonosza ____________ 24
+Pytanie wywiad / sondaż _____________________________________________________ 24
+Wnioski z przeprowadzonych badan ankietowych _________________________________ 24
+Wskaźniki związane z badanym obszarem – zakładanie i noszenie biustonosza __________ 27
+Zakres potrzeb grupy docelowej _______________________________________________ 31
+Wnioski i podsumowanie: ____________________________________________________ 33
+Faza testów prototypu BiustSpinki ____________________________________________ 33
+Parametry fazy testów _______________________________________________________ 34
+Testowanie BiustSPINKI – urządzenia do zapinania biustonosza _____________________ 37
+Analiza Dzienników testowania _______________________________________________ 38
+Podsumowanie ____________________________________________________________ 38
+
+--- strona 3 ---
+
+3
+5 DZIEŃ TESTOWANIA _______________________________________________________ 39
+Ankieta z testowania BiustSPINKI _____________________________________________ 40
+Rozwijanie BiustSPINKI ______________________________________________________ 40
+Zaczepianie biustonosza na zaczepy BiustSPINKI __________________________________ 41
+Obwinięcie BiustSPINKI wokół talii _____________________________________________ 42
+Zapięcie biustonosza ________________________________________________________ 43
+Zsunięcie biustonosza z BiustSPINKI ____________________________________________ 43
+Złożenie BiustSPINKI ________________________________________________________ 44
+Dodatkowe uwagi od Testerek dotyczące BiustSPINKI ______________________________ 44
+Podsumowanie ____________________________________________________________ 45
+Podsumowanie badań i wnioski końcowe – Finalny model innowacji _________________ 46
+Spis wykresów ____________________________________________________________ 48
+Spis rysunków _____________________________________________________________ 48
+Spis zdjęć _________________________________________________________________ 49
+Spis tabel _________________________________________________________________ 49
+
+--- strona 4 ---
+
+4
+Opis problemu i tło
+BiustSPINKA jest produktem szerokiego zastosowania w różnych obszarach życia kobiet
+z niepełnosprawnościami, różnymi dysfunkcjami wynikającymi ze sprawności i wieku oraz
+kobiet z otyłością. Dzięki prostej konstrukcji i obsłudze może zostać wprowadzona
+do gabinetów rehabilitacyjnych, szkół, ośrodków medycznych, Domów Pomocy Społecznej
+oraz sklepowych przymierzalni jako bazowy produkt ich wyposażenia.
+Brak różnorodnych opcji pomocniczych urządzeń do ubierania biustonoszy można przypisać
+historycznej nieobecności kobiet w badaniach i projektowaniu czy stygmatyzacji społecznej,
+z jaką borykają się osoby niepełnosprawne. Nasza innowacja pragnie wypełnić tę lukę,
+dostarczając kobietom mającym problemy fizyczne/z poruszaniem się, urządzenia
+wspomagającego, które jest niedrogie, dostępne i łatwe w użyciu. Kobiety
+z niepełnosprawnościami pragną kupować dla siebie ładną i elegancką bieliznę, pragną ją
+nosić i czuć się kobieco. Nie chcą nosić za dużych biustonoszy lub prostych, szablonowych
+bez wyrazu. BiustSPINKA da kobietom nie tylko możliwość samodzielnego zapięcia
+wybranego biustonosza, ale da im wolność wyboru i poczucie kobiecości.
+Analiza i badanie potrzeb
+Realizując badania potrzeb w ramach Innowacji Społecznej przeprowadzona została ankieta
+wśród 50 kobiet, które w odpowiedziach potwierdziły problem związany z ich
+samodzielnością i sprawnością przy ubieraniu biustonosza.
+Według przeprowadzonych badań największe zainteresowanie oraz co za tym idzie potrzeba
+istnieje wśród kobiet wchodzących w aktywne życie: społeczne i zawodowe oraz kobiet
+dojrzałych. Ten aspekt potwierdza, że potrzeba wynikająca z samodzielnego ubierania się
+wiąże się z samodzielnością, która może być rozumiana wieloaspektowo, czyli dążenie
+do wypracowania metod oraz relacji w jak najmniejszym stopniu zależnych od osób trzecich.
+To też grupa kobiet świadomych, szukających zmian, otwartych na nowe możliwości.
+Kobiety wskazały również główne przyczyny, które utrudniają lub nawet uniemożliwiają
+samodzielne ubieranie biustonosza.
+
+--- strona 5 ---
+
+5
+Wynik liczbowy udzielonych odpowiedzi:
+1. Rodzaj zapięcia jest problemem dla 27 kobiet – 54%
+2. Posiadana sprawność jest problemem dla 23 kobiet – 46%
+3. Model biustonosza stanowi problem dla 13 kobiet – 26%
+4. Aktualna sytuacja zdrowotna wpływająca na sprawność jest problemem
+dla 11 kobiet – 22%
+5. Dostępny czas stanowi problem dla 4 kobiet – 8%
+6. Możliwa pomoc osoby trzeciej jest problemem dla 2 kobiet – 4%
+Powstanie prototypu BiustSPINKA
+Odpowiadając na potrzeby kobiet opracowany został prototyp urządzenia BiustSPINKA ,
+które pomaga kobietom w samodzielnym ubieraniu biustonosza.
+Grupą docelową są:
+•
+kobiety z niepełnosprawnością ruchu kończyn dolnych i górnych
+•
+kobiety z niepełnosprawnością ruchu kończyn dolnych poruszające się na wózku
+•
+kobiety z niepełnosprawnością wrodzoną
+•
+kobiety z mózgowym porażeniem dziecięcym
+•
+kobiety z niepełnosprawnością nabytą w wyniku wypadku lub choroby
+•
+kobiety z dysfunkcją ramienia
+•
+kobiety po amputacji piersi
+•
+kobiety z zaburzeniami ruchu w wyniku udaru lub przebytej operacji
+•
+kobiety cierpiące na otyłość
+•
+seniorki
+•
+kobiety dotychczas wymagające wsparcia asystenta w codziennym ubieraniu się
+•
+kobiety po chemioterapii
+•
+kobiety po amputacji ręki
+
+--- strona 6 ---
+
+6
+Rozmiary
+Koncentrując się na dotarciu do jak największej grupy kobiet zostały przyjęte powszechne
+rozmiary biustonoszy, zgodne z wymiarami europejskimi, typowymi dla obwodów klatki
+piersiowej dla rozmiarów S, M, L, XL.
+Pomiar/rozmiar
+S
+M
+L
+XL
+Obwód w tali
+w cm
+75 cm
+85 cm
+95 cm
+100 cm
+Tabela 1 Rozmiary BiustSpinki
+•
+Rozmiar S – 75 cm
+•
+Rozmiar M – 85 cm
+•
+Rozmiar L – 95 cm
+•
+Rozmiar – XL – 100 cm
+Stworzenie prototypów
+Zespół badawczy wraz z podmiotami współpracującymi, opracował prototypy projektu
+BiustSPINKI. Na podstawie wniosków z analizy potrzeb oraz możliwości produkcyjnych,
+powstały 4 prototypy spełniające założenia projektowe oraz oczekiwania kobiet
+z niepełnosprawnościami, różnymi dysfunkcjami wynikającymi ze sprawności, wieku oraz
+kobiet otyłych.
+Cechy wyprodukowanych prototypów BiustSPINKA:
+a) łatwość obsługi
+b) łatwość zakładania i zapinania
+c) prosta formuła
+d) mała ilość elementów
+e) lekkość
+f) dostosowany rozmiar S, M, L, XL
+g) kompatybilność z różnymi typami biustonoszy
+
+--- strona 7 ---
+
+7
+Opis urządzenia BiustSpinka
+Bazując na potrzebach kobiet z niepełnosprawnościami oraz z różnymi dysfunkcjami
+narządów ruchu kończyn górnych został stworzony prototyp umożliwiający samodzielne
+ubieranie biustonosza.
+Biustospinka składa się z dwóch głównych elementów:
+•
+taśmy zaciskowej slap
+•
+zaczepów
+Wnioski po przeprowadzonych testach
+Zespół badawczy po przeprowadzonych testach i analizie Dzienników potwierdza założenia
+konstrukcyjne jakie zostały zastosowane w prototypie. Wykorzystanie taśmy slap oraz
+zastosowanie plastikowych zaczepów w pełni realizuje założone funkcje a wprowadzone
+obszycie zapewnia poczucie komfortu i estetyki.
+
+--- strona 8 ---
+
+8
+Parametry produkcyjne BiustSpinki - rysunki techniczne
+
+Rysunek 1. Rysunek techniczny zaczepów BiustSPINKI.
+
+--- strona 9 ---
+
+9
+
+Rysunek 2 Rysunek techniczny taśmy wraz z zaczepami BiustSPINKI
+
+--- strona 10 ---
+
+10
+BiustSpinka urządzenie do zapinania biustonosza
+Realizując produkcję prototypów, zastosowano następujące rozwiązania technologiczne:
+1. Łączenie taśmy slap nitami – widok przód
+
+Zdjęcie 1 Łączenie taśmy slap nitami - widok przód
+2. Zaczepy utrzymujące biustonosz – rzut przód_1
+
+Zdjęcie 2 Zaczepy utrzymujące biustonosz - rzut przód
+
+--- strona 11 ---
+
+11
+3. Zaczepy utrzymujące biustonosz – rzut tył_1
+
+Zdjęcie 3 Zaczepy utrzymujące biustonosz - rzut tył
+4. Zaczepy utrzymujące biustonosz – rzut z boku
+
+Zdjęcie 4 Zaczepy utrzymujące biustonosz - rzut bok
+
+--- strona 12 ---
+
+12
+5. Taśma slap z zaczepami – widok przód, część środkowa
+
+Zdjęcie 5 Taśma slap z zaczepami - widok przód, część środkowa
+6. Taśma slap z zaczepami – widok tył
+
+Zdjęcie 6 Taśma slap z zaczepami - widok tył
+BiustSpinka - prototypy
+Na podstawie przedstawionej specyfikacji, danych technicznych oraz zgodnie z całym
+procesem technologicznym powstały 4 prototypy BiustSpinek w następujących rozmiarach:
+•
+Rozmiar S – 75 cm
+•
+Rozmiar M – 85 cm
+•
+Rozmiar L – 95 cm
+•
+Rozmiar – XL – 100 cm
+
+--- strona 13 ---
+
+13
+
+Zdjęcie 7 Rozwinięta BiustSPINKA
+W celu zapewnienia komfortu i bezpieczeństwa użytkowania taśma slap został obszyta
+gładkim materiałem.
+Podczas realizowanych testów, Testerki pozytywnie oceniły obszycie jako element
+wpływający również na łatwość zwijania i rozwijania taśmy. Obszycie ma wpływ na łatwiejsze
+przesuwanie taśmy wokół talii oraz przesuwanie się w dół w momencie zdejmowania.
+Rozmiar obszycia jest integralny z rozmiarem BiustSpinki i został wykonany w następujących
+rozmiarach:
+•
+Rozmiar S – 75 cm X 3,5 cm
+•
+Rozmiar M – 85 cm X 3,5 cm
+•
+Rozmiar L – 95 cm X 3,5 cm
+•
+Rozmiar – XL – 100 cm X 3,5 cm
+
+Zdjęcie 8 Rozwinięta BiustSPINKA w obszyciu
+Zastosowane materiały oraz elastyczna konstrukcja pozwalają na łatwe przechowywanie
+oraz przenoszenie urządzenia. Zwinięta BiustSpinka zajmuje mało miejsca, stanowi zwartą
+bryłę a elementy zaczepów Biustspinki są zaokrąglone co zabezpiecza je przez zaczepieniem
+i uszkodzeniem.
+
+--- strona 14 ---
+
+14
+
+Zdjęcie 9 Zwinięta BiustSPINKA
+Wnioski po przeprowadzonych testach:
+Istotnym elementem jest wprowadzenie korekt w obecną rozmiarówkę wyprodukowanych
+prototypów w odniesieniu do europejskich rozmiarów biustonoszy. Realizując badania oraz
+analizując wnioski umieszczone w Dziennikach widzimy rozbieżność pomiędzy
+wprowadzonymi do testów rozmiarami prototypów i późniejszymi oczekiwanymi Testerek.
+Przygotowane prototypy przed obszyciem:
+•
+Rozmiar S – 75 cm
+•
+Rozmiar M – 85 cm
+•
+Rozmiar L – 95 cm
+•
+Rozmiar – XL – 100 cm
+
+--- strona 15 ---
+
+15
+Prototypy po wykonaniu obszycia:
+•
+Rozmiar S – 75 cm X 3,5 cm
+•
+Rozmiar M – 85 cm X 3,5 cm
+•
+Rozmiar L – 95 cm X 3,5 cm
+•
+Rozmiar – XL – 100 cm X 3,5 cm
+Wybrane prototypy przez Testerki:
+•
+3 Testerki skorzystały z BiustSPINKI w rozmiarze XL
+•
+3 Testerki skorzystały z BiustSPINKI w rozmiarze L.
+•
+2 Testerki skorzystały z BiustSPINKI w rozmiarze M
+Żadna z Testerek nie skorzystała z rozmiaru S
+Przeprowadzone testy wykazały że:
+•
+Testerki na co dzień korzystające z produktów w rozmiarze L korzystały z Biustspinki
+w rozmiarze XL
+•
+Testerki na co dzień korzystające z produktów w rozmiarze M korzystały z Biustspinki
+w rozmiarze L
+•
+Testerki na co dzień korzystające z produktów w rozmiarze S korzystały z Biustspinki
+w rozmiarze M
+Zmiana użytych rozmiarów przez Testerki wskazuje na konieczność dostosowania rozmiarów
+prototypów do użytkowanych rozmiarów biustonoszy. Wybranie większych modeli
+BiustSpinki argumentowane było również większą swobodą w realizacji testów pod kątem
+utrzymania BiustSpinki, większego pola do zaczepiania biustonosza w zaczepach oraz obawą,
+że mniejszy prototyp swobodnie nie obejmie Testerki. Testerki chętnie korzystały
+z większego rozmiaru co docelowo sugeruje wprowadzenie produktów wielowymiarowych.
+Instrukcja obsługi
+Instrukcja obsługi - opis
+Użycie BiustSpinki należy zacząć od rozwinięcia i rozprostowania taśmy, następnie należy
+przesunąć zaczepy w wybranej dla siebie szerokości (zgodnie z długością biustonosza).
+
+--- strona 16 ---
+
+16
+Następnie należy wsunąć w zaczepy - biustonosz tak, aby zaczepy były odsłonięte. Luźnym
+i swobodnym ruchem ręki uderzamy taśmą wokół pleców, tak aby taśma mogła owinąć się
+wokół nas. Taśma jest stabilna i samozaciskowa dzięki czemu stabilnie trzyma się na ciele
+i utrzymuje biustonosz. Dwa końce biustonosza wpięte w zaczepy zapinamy bez konieczności
+naciągania i utrzymywania biustonosza. Po zapięciu biustonosza wystarczy jedna ręką
+pociągnąć biustonosz do góry, który wysunie się z zaczepów a taśma zsunie się w dół.
+Biustonosz zapięty z przodu przekręcamy zapięciem do tyłu i ubieramy ramiączka.
+BiustSpinkę ściągamy z talii a ona samoistnie się zwinie.
+Instrukcja obsługi w punktach
+1. Rozwiń BiustSPINKE
+
+Rysunek 3 Instrukcja obsługi - krok pierwszy
+
+--- strona 17 ---
+
+17
+2. Wsuń biustonosz w zaczepy BiustSpinki
+
+Rysunek 4 Instrukcja obsługi - krok drugi
+3. Luźnym ruchem „uderz” taśmą w pasie
+
+Rysunek 5 Instrukcja obsługi - krok trzeci
+
+--- strona 18 ---
+
+18
+4. Końce BiustSpinki wraz z biustonoszem znajdą się pod biustem
+
+Rysunek 6 Instrukcja obsługi - krok czwarty
+5. Zapnij dwa końce biustonosza wpięte w zaczepy
+
+Rysunek 7 Instrukcja obsługi - krok piąty
+
+--- strona 19 ---
+
+19
+6. Wysuń biustonosz z BiustSpinki
+
+Rysunek 8 Instrukcja obsługi - krok szósty
+7. Przekręć biustonosz, aż zapięcie znajdzie się na plecach
+
+Rysunek 9 Instrukcja obsługi - krok siódmy
+
+--- strona 20 ---
+
+20
+8. Załóż ramiączka biustonosza
+
+Rysunek 10 Instrukcja obsługi - krok ósmy
+9. BiustSpinkę ściągnij z talii
+
+Rysunek 11 Instrukcja obsługi - krok dziewiąty
+
+--- strona 21 ---
+
+21
+Zrozumienie zastosowania Innowacji BiustSPINKA na podstawie
+broszury informacyjnej
+Wszystkie Testerki, jednogłośnie stwierdziły, że zastosowanie Innowacji BiustSPINKI jest
+dla nich całkowicie zrozumiałe. Instrukcje obsługi dla Testerek zostały stworzone z
+dokładnym opisem krok po kroku, z użyciem czytelnych i konkretnych komunikatów,
+polecenia zostały ułożone logicznie przez co Testerki nie miały problemów użyciem
+BiustSPINKI.
+
+Wykres 1 Zrozumienie zastosowania Innowacji BiustSPINJA na podstawie broszury informacyjnej
+Testerki wskazały, że broszura informacyjna jest czytelna i że nie miały żadnych problemów
+ze zrozumieniem zastosowania BiustSPINKI. Informacje zostały przekazane w sposób
+dokładny, co zdecydowanie ułatwiło przekaz.
+Założenia ankiety
+Realizując badania potrzeb w ramach Innowacji Społecznej określona została grupa
+docelowa kobiet oraz zakres pytań umożliwiający sprecyzowanie oraz poznanie przyczyny
+problemu związanego z samodzielnym zakładaniem biustonosza.
+Ilość respondentek: 50 kobiet
+
+--- strona 22 ---
+
+22
+Ankieta została udostępniona w różnych grupach społecznych zrzeszających osoby z różnymi
+dysfunkcjami i problemami.
+Zastosowane kanały dotarcia do grupy docelowej to:
+•
+Otwarte grupy społecznościowe na FB zrzeszające osoby z różnymi
+niepełnosprawnościami, kobiety w różnym wieku, kluby dyskusyjne, fundacje oraz
+organizacje
+•
+Zamknięte grupy społecznościowe na FB zrzeszające osoby z różnymi
+niepełnosprawnościami, wzajemnie wspierające się i dzielące wiedzą
+•
+Portale społecznościowe
+•
+Społeczność Rampowiczów: Portal Rampa – pokonujemy bariery
+Grupa docelowa do której została skierowana ankieta:
+•
+kobiety z niepełnosprawnością ruchu kończyn dolnych i górnych
+•
+kobiety z niepełnosprawnością ruchu kończyn dolnych poruszające się na wózku
+•
+kobiety z niepełnosprawnością wrodzoną
+•
+kobiety z mózgowym porażeniem dziecięcym
+•
+kobiety z niepełnosprawnością nabytą w wyniku wypadku lub choroby
+•
+kobiety z dysfunkcją ramienia
+•
+kobiety po amputacji piersi
+•
+kobiety z zaburzeniami ruchu w wyniku udaru lub przebytej operacji
+•
+kobiety cierpiące na otyłość
+•
+seniorki
+•
+kobiety dotychczas wymagające wsparcia asystenta w codziennym ubieraniu się
+•
+kobiety po chemioterapii
+•
+kobiety po amputacji ręki
+
+--- strona 23 ---
+
+23
+Badanie grupy docelowej – pytania
+Zastosowano różnorodność pytań tak, aby w pełni sklasyfikować i zdiagnozować problem
+kobiet związany z zakładaniem biustonosza. Pytania obejmują aspekty związane z poziomem
+niepełnosprawności, samodzielności oraz zaangażowaniem w życie społeczne, aby ustalić
+grupę kobiet która oczekuje takiego rozwiązania jakim jest BiustSpinka. Pytania techniczne
+związane z ubieraniem biustonosza, komfortem noszenia i zakresem dotychczasowych
+decyzji zakupowych miały określić grupę kobiet, które szukają nowych rozwiązań i mają
+wysoką świadomość własnych potrzeb.
+Pytanie otwarte dotyczące własnych sposobów na założenie biustonosza zostało aktywnie
+potraktowane przez wszystkie respondentki i udzielono 50 odpowiedzi przy wcześniejszych
+założeniach minimum 8. Dowodzi to temu, że jest ogromna chęć wypowiedzenia się
+na temat własnych doświadczeń, braku lub posiadanej samodzielności oraz wskazania
+własnych wypracowanych metod.
+Pytania sondażowe
+1. Wiek
+2. Miejsce zamieszkania
+3. Wykształcenie
+Pytania związane z dysfunkcjami
+1. Posiadana niepełnosprawność/dysfunkcje
+2. Ograniczenia wynikające z posiadanej niepełnosprawności
+3. Rodzaj niepełnosprawności
+4. Rodzaj używanego sprzętu wspierającego samodzielność/rehabilitacyjnego
+Pytania związane z aktywnością życiową
+1. Aktywność zawodowa
+2. Poziom samodzielności
+3. Codzienna aktywność
+
+--- strona 24 ---
+
+24
+4. Zainteresowania
+5. Dostępność architektoniczna przestrzeni
+Pytania związane z badanym obszarem – zakładanie i noszenie
+biustonosza
+1. Czy kobieta zawsze nosi biustonosz?
+2. Czy samodzielnie zakłada biustonosz?
+3. Czy noszenie biustonosza daje poczucie komfortu?
+4. Jaki jest poziom trudności przy zakładaniu biustonosza?
+5. Co konkretnie utrudnia zakładanie biustonosza?
+6. Preferencje zakupowe
+7. Zainteresowanie urządzeniem pomagającym w zakładaniu
+8. Poziom komfortu przy samodzielnym zakładaniu biustonosza
+9. Poziom komfortu, gdy konieczna jest pomoc przy założeniu biustonosza
+Pytanie wywiad / sondaż
+Miejsce na samodzielną wypowiedz na temat samodzielnych sposobów na założenie
+Wnioski z przeprowadzonych badan ankietowych
+Przeprowadzając badania mające na celu określenie zakresu potrzeb grupy docelowej zespół
+skupił się najpierw na określeniu danych statystycznych a następnie na danych
+szczegółowych i opisowych. Prezentujemy wybrane dane oraz wnioski z przeprowadzonych
+badań.
+
+--- strona 25 ---
+
+25
+Pytanie pierwsze – statystyczne, określające wiek respondentek:
+
+Wykres 2 Ankieta - wiek
+Wnioski:
+Największe zainteresowanie oraz co za tym idzie potrzeba istnieje wśród kobiet
+wchodzących w aktywne życie: społeczne i zawodowe oraz kobiet dojrzałych. Ten aspekt
+potwierdza, że potrzeba wynikająca z samodzielnego ubierania się wiąże się
+z samodzielnością, która może być rozumiana wieloaspektowo, czyli dążenie
+do wypracowania metod oraz relacji w jak najmniejszym stopniu zależnych od osób trzecich.
+To też grupa kobiet świadomych, szukających zmian, otwartych na nowe możliwości.
+
+--- strona 26 ---
+
+26
+Pytanie czwarte - związane z posiadanymi dysfunkcjami
+Stopień niepełnosprawności
+
+Wykres 3 Ankieta - stopień niepełnosprawności
+Wnioski:
+Największe zainteresowanie ankietą oraz problemem wykazały kobiety ze znacznym
+stopniem niepełnosprawności 46% - 24 osoby
+•
+11 Pań z wykształceniem średnim w tym 2 z terenów wiejskich
+•
+5 kobiety z wykształceniem zawodowym i w tym 2 z terenów wiejskich
+•
+4 Panie z wykształceniem wyższym w tym 2 z terenów wiejskich
+•
+3 kobiety z wykształceniem podstawowym i w tym 1 z terenów wiejskich
+•
+1 kobieta z wykształceniem podyplomowym i w tym z terenów wiejskich
+W następnej kolejności zainteresowane są kobiety z lekkim stopniem niepełnosprawności
+34% - 17 osób oraz 18% - 9 osób kobiet z umiarkowanym stopniem niepełnosprawności.
+Pytanie szóste - związane z posiadanymi dysfunkcjami
+Niepełnosprawność oraz posiadane dysfunkcje
+Wnioski:
+Kobiety biorące udział w badaniu reprezentują dużą różnorodność dysfunkcji patrząc
+pod kątem cech wpływających na samodzielne ubieranie się oraz wpływających na życie
+
+--- strona 27 ---
+
+27
+społeczne i zawodowe.
+Widoczne jest połączenie dysfunkcji ruchu z chorobami neurologicznymi co w ankiecie
+nie przejawia się jednoznacznym zgłoszeniem braku samodzielności. Część kobiet
+z obrzękami lub niedowładem nie zgłasza niepełnosprawności ruchowej, co świadczy
+o trwającym procesie rehabilitacji i dążeniu do odzyskania sprawności.
+Wskaźniki związane z badanym obszarem – zakładanie i noszenie
+biustonosza
+Wnioski szczegółowe:
+50% kobiet zawsze nosi biustonosz i taką odpowiedz zaznaczyły Panie z różnym stopniem
+niepełnosprawności
+a) 11 kobiet ze znacznym stopniem niepełnosprawności w tym wszystkie Panie
+z niepełnosprawnością ruchu a wśród niech 4 z chorobami neurologicznymi
+b) 4 kobiety z umiarkowanym stopniem niepełnosprawności w tym 3 Panie
+z niepełnosprawnością ruchu i chorobami neurologicznymi i jedna z choroba serca
+c) 10 kobiet z lekkim stopniem niepełnosprawności w tym 6 Pań z niepełnosprawnością
+ruchu, 2 z chorobami układu limfatycznego, 2 z otyłością
+Największe problemy z założeniem biustonosza zgłaszają kobiety, które w wyniku
+posiadanej niepełnosprawności na stałe muszą korzystać z pomocy asystenta lub wsparcia
+rodziny.
+a) Wskaźniki wykazane w ankiecie, dotyczące ww. kobiet:
+b) Wiek: do 20 lat
+c) Miejsce zamieszkania: miasto i teren wiejski
+d) Aktywność: w trakcie nauki
+e) Stopień niepełnosprawności: znaczny
+f) Niepełnosprawność wrodzona
+g) Rodzaj niepełnosprawności:
+•
+niepełnosprawność ruchowa i otyłość
+
+--- strona 28 ---
+
+28
+•
+sztywność stawów, deformacja dłoni, sztywność całej obręczy barkowej
+h) Poziom sprawności: Sprawna tylko jena ręka
+i) Sposób poruszania się:
+•
+wózek elektryczny
+•
+wózek manualny
+j) Zakres pomocy:
+•
+Potrzebuje stałej pomocy
+•
+Korzysta z pomocy asystenta
+k) Konkretne utrudnienia związane z zakładaniem biustonosza:
+•
+Sprawność
+•
+Dostępny czas
+•
+Sytuacja zdrowotna
+•
+Rodzaj zapięcia
+Wskazane kobiety zgłosiły stały problem z zakładaniem biustonosza, oznaczyły problem jako
+znaczny i wpływający na ich komfort. Zdecydowanie zainteresowane są urządzeniem
+wpierającym zakładanie biustonosza, zwiększeniem swojej samodzielności i niezależności.
+Czy samodzielnie zakładasz biustonosz?
+Badania dotyczyły również obecnej sytuacji Testerek, która ma decydujący wpływ
+na aktualny poziom samodzielności, komfortu i niezależności w odniesieniu do poziomu
+niepełnosprawności lub innych dysfunkcji.
+
+--- strona 29 ---
+
+29
+
+Wykres 4 Ankieta - czy samodzielnie zakładasz biustonosz
+Wnioski szczegółowe:
+Spośród 32 kobiet samodzielnie zakładających biustonosz jest 21 z niepełnosprawnością
+ruchu w tym 10 z chorobami neurologicznymi i jedna z otyłością. W tej grupie wykazane są
+następujące wskaźniki samodzielności życiowej:
+1. 14 kobiet ze znacznym stopniem niepełnosprawności
+•
+1 kobieta jest w pełni samodzielna
+•
+3 kobiety potrzebują stałej pomocy
+•
+10 kobiet czasem korzysta z pomocy lub tylko doraźnie
+2. 3 kobiety z umiarkowanym stopniem niepełnosprawności
+•
+2 kobiety są w pełni samodzielne
+•
+czasem korzysta z pomocy
+3. 4 kobiety z lekkim stopniem niepełnosprawności
+•
+Wszystkie 4 kobiety zgłosiły samodzielność
+Spośród 8 kobiet czasem potrzebujących pomocy przy zakładaniu biustonosza jest 5 kobiet
+z niepełnosprawnością ruchu w tym jedna z chorobami neurologicznymi. W tej grupie
+wykazane są następujące wskaźniki samodzielności życiowej:
+1. 2 kobiety ze znacznym stopniem niepełnosprawności
+•
+1 potrzebuje stałej pomocy
+•
+1 pomocy tymczasowej
+
+--- strona 30 ---
+
+30
+2. kobieta z umiarkowanym stopniem niepełnosprawności
+•
+tylko czasem potrzebuje pomocy
+3. 2 kobiety z lekkim stopniem niepełnoprawności
+•
+2 kobiety w pełni samodzielne
+Wśród 3 kobiet, które mają niepełnosprawność ruchu i zawsze potrzebują pomocy
+w życiu codziennym.
+•
+2 kobiety ze znacznym stopniem niepełnosprawności
+•
+1 kobieta z umiarkowanym stopniem niepełnosprawności
+Co konkretnie utrudnia zakładanie biustonosza
+Bazując na przystosowaniu prototypu do realnych potrzeb kobiet, istotne było pozyskanie
+informacji na temat aktualnych problemów związanych z ubieraniem biustonosza z jakimi
+spotykają się respondentki.
+
+Wykres 5 Ankieta - co konkretnie utrudnia zakładanie biustonosza
+Wynik liczbowy udzielonych odpowiedzi:
+•
+Rodzaj zapięcia jest problemem dla 27 kobiet – 54%
+•
+Posiadana sprawność jest problemem dla 23 kobiet – 46%
+•
+Model biustonosza stanowi problem dla 13 kobiet – 26%
+•
+Aktualna sytuacja zdrowotna wpływająca na sprawność jest problemem
+dla 11 kobiet – 22%
+
+--- strona 31 ---
+
+31
+•
+Dostępny czas stanowi problem dla 4 kobiet – 8%
+•
+Możliwa pomoc osoby trzeciej jest problemem dla 2 kobiet – 4%
+Zakres potrzeb grupy docelowej
+Realizując badania oraz docelowo pragnąc określić skalę potrzeb wprowadzone zostało
+pytanie dotyczące osobistych doświadczeń i sposobów wśród Testerek na samodzielne
+założenie biustonosza.
+Różnorodność odpowiedzi oraz ogromna szczerość utwierdziła zespół w konieczności
+przygotowania, opracowania i przekazania do testów najlepszej wersji prototypu
+wspierającego kobiety z niepełnosprawnością i różnymi dysfunkcjami.
+Prezentujemy odpowiedzi uzyskanie na etapie badania potrzeb.
+Własna metoda /sposób na samodzielne zakładanie biustonosza
+Pełna lista odpowiedzi udzielonych przez 50 kobiet na temat własnych sposobów
+zakładania biustonosza:
+•
+Nie dotyczy
+•
+Brak
+•
+Zakładam biustonosz w sprawny, typowy dla innych sposób
+•
+Zapinam i zakładam przez nogi
+•
+Zapinam zakładam przez głowę jak bluzkę
+•
+Zapinam od przodu, następnie przekręcam i gdy wszystko jest na swoim miejscu
+zakładam ramiączka
+•
+Zapinanie biustonosza z przodu
+•
+Zakładam standardowo
+•
+przez głowę
+•
+Przekładam przez głowę
+•
+Pomału chwytam jakoś i walczę z tyłu żeby zapiąć
+•
+Staniki sportowe
+•
+Sportowe zakładane przez głowę, ewentualnie zapinane z przodu lub po prostu
+zapinam obracam i zakładam
+
+--- strona 32 ---
+
+32
+•
+Nie posiadam.
+•
+Po prostu to robię
+•
+Zapinam z przodu i przekręcam zapięciem na plecy
+•
+Biustonosz z zapięciem przednim
+•
+Zapięcie zapinam z przodu
+•
+Normalnie
+•
+Zapinam z tyłu
+•
+Zakładanie jak koszulkę
+•
+Zapinam z przodu i przekładam zapięcie do tylu
+•
+Zakładam biustonosz tradycyjnie
+•
+Tradycyjnie
+•
+Zapinanie z przodu, następnie obrót w tył
+•
+Najpierw zapinam a potem zakładam ramiączka
+•
+Zapinam z przodu
+•
+Nie noszę
+•
+Zapinam z przodu
+•
+Najpierw ramiączka potem zapinam
+•
+Od przodu zapinam na sprzączkę potem zapięty biustonosz przesuwam do tyłu
+i zakładam ramiączka
+•
+zapinam od tylu przekręcam zakładam ramiączka
+•
+zapinam i zakładam przez nogi
+•
+Zakładam zapinając z przodu
+•
+Obkręcanie w koło
+•
+Zapinam z przodu i potem przekręcam
+•
+Zapinam z przodu i obracam, zakładam szelki.
+•
+ubieranie zapiętego już biustonosza
+•
+Rękami
+•
+Kupuję biustonosze, które są nie odpinane na plecach. Zakłada się je tak samo
+jak bluzkę.
+
+--- strona 33 ---
+
+33
+•
+biustonosz sportowy
+•
+Odwrócenie zapięciem do przodu następnie ułożenie w prawidłowy sposób
+•
+Bez zapięcia sportowy
+•
+Zapinanie od przodu +pomoc przy zakładaniu
+•
+Zapinanie od przodu
+•
+Zapinam na brzuchu obracam potem wkładam ręce
+•
+Kupuję większe, aby z pomocą asystenta zapiąć
+Wnioski i podsumowanie:
+Zgodnie z przeprowadzonymi badaniami i na podstawie analizy ankiet wiemy, że stałe
+lub czasowe problemy z założeniem biustonosza mają kobiety ze znacznym stopniem
+niepełnosprawności i poruszające się na wózku. Problemy mają charakter stały wynikający
+z posiadanych dysfunkcji ruchu lub przejściowy spowodowany np. nasileniem choroby.
+Ważnym aspektem jest również zminimalizowanie lub wyeliminowanie pomocy osób
+trzecich w czynnościach intymnych jakim jest zakładanie biustonosza. Kobiety biorące udział
+w ankiecie wskazały ten czynnik jako bardzo ważny, podnoszący poczucie własnej wartości,
+wzmacniający samodzielność i niezależność.
+Największe zainteresowanie BiustSpinką wykazały kobiety aktywnie poszukujące pracy lub
+w trakcie edukacji, dążące do samodzielności w życiu prywatnym, społecznym i zawodowy.
+Zespół bazujący na otrzymanych opiniach, wskazówkach oraz określonych w ankiecie
+potrzebach, opracował, przygotował oraz przekazał do testowania prototyp uwzględniający
+potrzeby grupy docelowej.
+Faza testów prototypu BiustSpinki
+Charakterystyka Testerek, została przyjęta według wytycznych, które miały pokazać
+zastosowanie urządzenia, wśród różnych kobiet, w różnym wieku, z różnymi ograniczeniami,
+w tym:
+•
+6 osób z niepełnosprawnością ruchową
+
+--- strona 34 ---
+
+34
+•
+1 osoba z otyłością
+•
+1 osoba powyżej 60 roku życia
+Osoby, które wzięły udział w testowaniu zostały, podane procesowi rekrutacji. Znaczną część
+grupy testującej stanowią kobiety, z którymi stale współpracujemy i które zgłosiły nam
+zapotrzebowanie na tego typu produkt - wspomagający zakładanie biustonosza. Wybór
+Testerek, zgodnie z założeniami bazował na spełnieniu powyżej wymienionych
+charakterystyk oraz na podstawie wypełnionych ankiet.
+Wybór 8 Testerek nastąpił po analizie wypełnionych ankiet i wytypowaniu kobiet, które
+zmagają się z brakiem samodzielności podczas zakładania biustonosza.
+Testerkami są kobiety mieszkające na terenie woj. podkarpackiego. Testowanie BiustSPINKI,
+przez Testerki odbywało się w miejscu ich zamieszkania, głównie ze względu na zachowanie
+intymności oraz swobody testowania urządzenia.
+Po przeprowadzonej rekrutacji nastąpiło indywidualne przekazanie testerkom modeli
+BiustSPINKI w odpowiednich rozmiarach wraz z pakietem instrukcji oraz dziennikami testera,
+które Testerki przez kolejne 7 dni, codziennie wypełniały, nanosząc swoje spostrzeżenia oraz
+uwagi dotyczące korzystania z BiustSPINKI jak i samego urządzenia. Na wstępie każdego
+spotkania z Testerką, odbyły się konsultacje i przeszkolenie związane z BiustSPINKĄ
+jak i procesem testowania.
+Podczas testowania, organizowane były indywidualne wizyty u testerek, w ramach wsparcia
+w użytkowaniu BiustSPINKI oraz ewentualnych pytań dotyczących wypełniania Dzienników
+Testerki, w tym również serwis urządzenia. Wsparcie organizowane było w wymaganym
+przez testerki zakresie.
+Każda z Testerek miała zapewnione stałe wsparcia, pomocy oraz opieki na każdym etapie
+realizacji testów wraz systematycznym kontaktem zarówno osobistym jak i telefonicznym.
+Parametry fazy testów
+Przeprowadzając testy zespół skupił się na określeniu danych statystycznych a następnie
+szczegółowych wynikach przeprowadzonych badań z udziałem Testerek. Prezentujemy
+wybrane dane.
+
+--- strona 35 ---
+
+35
+Wiek Testerek
+Kobiety biorące udział w testowaniu Innowacji – BiustSPINKA:
+•
+6 kobiet czyli 75% w wieku poniżej 60 roku życia
+•
+2 kobiety czyli 25% w wieku senioralnym
+
+Wykres 6 Wiek Testerek
+Rodzaj niepełnosprawności
+W testowaniu, wzięło udział:
+•
+6 kobiet z niepełnosprawnością ruchową
+•
+3 Testerki wykazały, że zmagają się z nadwagą/otyłością
+W tym:
+•
+dwie wskazały dodatkowo choroby neurologiczne
+•
+jedna wskazała dodatkowo chorobę układu limfatycznego w wyniku choroby
+onkologicznej
+Poziom sprawności Testerek
+Istotnym parametrem w procesie badań był poziom samodzielności i sprawności Testerek.
+Dysfunkcje Testerek wynikające z niepełnosprawności
+Testerki wskazały:
+•
+na całkowity niedowład lewej ręki – niedowład połowiczny lewostronny, po przebytym
+udarze niedokrwiennym;
+
+--- strona 36 ---
+
+36
+•
+reumatoidalne zapalenie stawów. Z powodu 28-letniej, przewlekłej choroby występują
+ograniczenia ruchowe, w szczególności dłoni (zdeformowanie palce);
+•
+nadwagi/ otyłości;
+•
+porażenie czterokończynowe;
+•
+wyniku mastektomii - z powodu uszkodzonego ścięgna barku prawego oraz skoliozy,
+pojawiają się trudności w poruszaniu prawa ręka i silne bóle uniemożliwiające
+np. sięgnięcie w kierunku pleców;
+•
+choroby zwyrodnieniowe barku;
+•
+niedowład prawostronny kończyn, który sprawia trudności z wykonywaniem
+codziennych czynności;
+•
+mózgowe porażenie dziecięce, spastyczność i trudności z poruszaniem się.
+Wśród Testerek znalazły się kobiety zarówno powyżej 60 roku życia, jak i poniżej – z tym,
+że ta druga grupa stanowiła znaczącą większość. Wszystkie Testerki testujące BiustSPINKĘ
+zmagały się z różnymi ograniczeniami, związanymi z ich niepełnosprawnościami, chorobami
+czy też ze względu na ich wiek czy problemy z wagą, gdzie trzy osoby określiło, że zmagają się
+z otyłością/nadwagą. Wśród Testerek były osoby zmagające się z czterokończynowym
+porażeniem, całkowitym niedowładzie ręki po przebytym udarze, częściowym niedowładzie
+ręki, spastyce, przykurczach oraz deformacjach palców u dłoni, zwyrodnieniach pleców,
+przebytej mastektomii, chorobach nowotworowych oraz układu limfatycznego.
+Prawie każda z Testerek w ankiecie wskazała, że posiada problemy z zakładaniem
+biustonosza, lub jego zapinaniem, czy też potrzebą zmiany dotychczasowego sposobu
+zakładania biustonosza, przez który, przykładowo nie może pozwolić sobie na zakup innego
+modelu biustonosza lub notorycznego niszczenia swoich biustonoszy.
+Testerki, odpowiadając na pytanie, dlaczego postanowiły wziąć udział w testowaniu
+innowacyjnego sprzętu jakim jest BiustSPINKa – urządzenie do zapinania biustonosza,
+w dużej mierze odpowiadały, że kierowała nim ciekawość ale również chęć ułatwienia sobie
+codziennego funkcjonowania, w tym przypadku ubierania się.
+
+--- strona 37 ---
+
+37
+Testowanie BiustSPINKI – urządzenia do zapinania
+biustonosza
+Każda z ośmiu Testerek po odbytych konsultacjach otrzymała:
+•
+Prototyp BiustSPINKI w odpowiednim rozmiarze
+•
+Zestaw startowy zawierający video-instrukcje
+•
+Broszury
+•
+Ulotki informacyjne
+•
+Dziennik Testerki – do uzupełnienia
+Testerki zostały przeszkolone z testowania prototypu oraz pozostawały w stałym kontakcie
+i wsparciu z Innowatorkami.
+Testerki głównie korzystały z rozmiarów L oraz XL urządzenia w testowaniu innowacji
+BiustSPINKI, jedynie dwie Panie użytkowały rozmiar M, natomiast z rozmiaru S
+nie skorzystała żadna z testujących kobiet.
+Długości wykonanych prototypów BiustSpinki bazowały na ogólnodostępnych europejskich
+rozmiarówkach, tak aby dostosować długość taśmy opinającej Testerki do obwodu
+posiadanego biustonosza. Jak się okazuje rozmiar zastosowanej taśmy był idealny
+do obwodu użytych biustonoszy a do obwodu Testerki wraz z koniecznym zapasem zbyt
+krótki.
+Dla Testerek noszących biustonosz w rozmiarze M idealny był rozmiar BiustSpinki
+w rozmiarze L
+Dla Testerek noszących biustonosz w rozmiarze L idealny był rozmiar BiustSpinki
+w rozmiarze XL
+Testerki na co dzień noszące biustonosz w rozmiarze S nie skorzystały z BiustSpinki
+w dostosowanym wymiarze S a z większej w rozmiarze M.
+
+--- strona 38 ---
+
+38
+Dla Innowatorów oraz biorących udział w badaniach Testerek, bardzo istotne były
+następujące parametry:
+•
+wygoda
+•
+łatwość użytkowania
+•
+samodzielność
+•
+bezusterkowość
+•
+bezpieczeństwo
+•
+czas użytkowania
+•
+dostosowanie do niepełnosprawności
+•
+dostosowanie do dysfunkcji
+•
+dostosowanie do modeli biustonoszy
+Analiza Dzienników testowania
+Każda z Testerek, przeprowadziła testy prototypu BiustSpinki przez 7 dni. Realizując
+codzienne testy umieszczała swoje uwagi, komentarze opis przeprowadzonych testów
+korzystania z BiustSPINKI w Dzienniku Testerki. Dziennik Testerki został zaprojektowany tak,
+aby usystematyzować i jednocześnie pomóc Testerce w codziennych zapisach:
+Podsumowanie
+Po przeanalizowaniu Dzienników Testowania można z początku zauważyć tendencję różnych
+problemów, z którymi zmagały się Testerki, głównie w pierwszych dniach testowania.
+Oczywiście znalazły się również Panie, które nie miały odczuwalnych problemów
+z korzystaniem z BiustSPINKI, jedynie wskazywały, że musiały podejmować kilka prób,
+aż w końcu udało się im za pomocą urządzenia wspomagającego założyć biustonosz. Były
+również kobiety, które miały większe problemy z założeniem zarówno biustonosza
+na BiustSPINKĘ jak i jej założenia.
+Z każdym kolejnym dniem można zauważyć wzrost satysfakcji wśród Testerek, które z dnia
+na dzień znajdowały korzystne rozwiązania swoich wcześniejszych problemów lub
+nieudanych prób testowania urządzenia, cytując Testerkę „trening czyni mistrza” i po kilku
+
+--- strona 39 ---
+
+39
+próbach, korzystanie z BiustSPINKI było o wiele prostsze.
+Większość Testerek, po siedmiu dniach testowania innowacji wskazała, że korzystanie
+z BiustSPINKI jest bezproblemowe, coraz lepiej radzą sobie z jej użytkowaniem, mają większą
+sprawność w rozwijaniu i oplataniu taśmy, sprawniej wsuwają biustonosz w zaczepy,
+zapinają haftki biustonosza i zdejmują urządzenie.
+Pojawiły się również uwagi dotyczące samego urządzenia i posiadanych przez Testerki
+ograniczeń ruchowych wpływających na szybkość i samodzielność realizacji testów.
+Większość problemów została pokonana samodzielnie w wyniku prób i konsultacji.
+W przeprowadzonych testach tylko jedna Testerka, nie była w stanie samodzielnie poradzić
+sobie z używaniem BiustSPINKI. Pomimo codziennych prób, zaangażowania i konsultacji
+dopiero w ostatnim dniu testowania udało się jej pokonać pierwszy krok zgodnie z instrukcją.
+Finalnie przejście całego procesu użytkowania BiustSpinki nie było to możliwe, ze względu
+na duże ograniczenia ruchowe związane z przebytym udarem oraz całkowitym niedowładem
+lewostronnym ciała.
+Przykładowy zapis dnia piątego:
+5 DZIEŃ TESTOWANIA
+Uwagi i opinie Testerek z piątego dnia testów zaczerpnięte z Dziennika i przedstawione
+w sposób losowy.
+Ten etap testowania wykazuje widoczny wzrost satysfakcji z użytkowania BiustSpinki.
+Testerki odnotowują w dziennikach informację, że korzystanie z BiustSPINKI jest
+w większości bezproblemowe a korzystanie z urządzenia jest sprawniejsze i łatwiejsze
+niż w poprzednich dniach testowania.
+1. Testerki odnotowują: „Bez problemu zakładam biustonosz za pomocą BiustSPINKI” oraz
+„W końcu zapinanie BiustSPINKI nie sprawia problemów” a także „Założenie biustonosza
+przy pomocy BiustSPINKI przebiegło szybciej niż poprzedniego dnia”
+2. Testerka wpisała, że „Korzystanie z BiustSPINKI jest dla mnie łatwe i naprawdę ułatwia
+ubieranie. Podoba mi się opcja zwinięcia BiustSPINKI, która gdy nie jest użytkowania –
+zajmuje mało miejsca”
+
+--- strona 40 ---
+
+40
+3. Część Testerek nadal odnotowuje pewne problemy podczas testowania, część tych
+problemów wynika z indywidulanych ograniczeń związanych z osobistymi dysfunkcjami
+a część dotyczy budowy prototypu urządzenia do zapinania biustonosza:
+•
+„Właściwe ubranie biustonosza. Trochę gimnastyki i jest”
+•
+„Nadal mam problem z rękami, nie mogę owinąć wokół talii urządzenia
+z biustonoszem, który jest też duży ponieważ mam obfity biust.
+•
+„Sytuacja podobna jak w dniu poprzednim („Trening czyni mistrza”, było więc znacznie
+łatwiej w obsłudze BiustSPINKI, zaczepienie biustonosza nie sprawiało problemów,
+ale taśma dalej się zwijała), kilka razy musiałam rozwijać taśmę”
+4. Jedna Testerka pomimo konsultacji, nadal nie była w stanie samodzielnie założyć
+biustonosza przy pomocy BiustSPINKI : „Dzisiaj znowu bez powodzenia”
+Ankieta z testowania BiustSPINKI
+Po etapie siedmiodniowego testowania urządzenia do zapiania biustonosza – BiustSPINKI
+oraz codziennym wypełnieniu tabeli z bieżącymi uwagami w Dzienniku testowania, Testerki
+wypełniły ankietę podsumowującą. Celem ankiety było określenie poziomu satysfakcji
+z użytkowania BiustSpinki, podsumowanie testów oraz charakterystyka każdego etapu
+zakładania biustonosza, w tym:
+•
+Rozwijania BiustSPINKI
+•
+Zaczepiania biustonosza na zaczepy BiustSPINKI
+•
+Owinięcia wokół talii BiustSPINKI
+•
+Zapięcia biustonosza
+•
+Zsunięcia BiustSPINKI z biustonosza
+•
+Złożenia BiustSPINKI
+Rozwijanie BiustSPINKI
+Według przeprowadzonej ankiety:
+•
+62,5% Testerek nie miało problemów z rozwijaniem BiustSPINKI, była to dla nich łatwa
+czynność
+
+--- strona 41 ---
+
+41
+•
+Dwóm Testerkom – rozwijanie urządzenia sprawiało kłopoty, ale było do zrealizowania,
+•
+Jedna Testerka stwierdziła, że rozwijanie BiustSPINKI jest dla niej czynnością trudną,
+nawet po ośmiu dniach testowania innowacji.
+
+Wykres 7 Rozwijanie BiustSPINKI przez Testerki
+Komentarze Testerek
+•
+„Była to dla mnie łatwe i nie stanowiło problemu, aby rozwinąć BiustSPINKĘ.”
+•
+„Pozytywnie oceniam to, że KTOŚ pomyślał o takim ułatwieniu”
+•
+„BiustSPINKA została wykonana z odpowiedniego materiału, jest elastycznego przez co
+łatwo się ją rozwija”
+Zaczepianie biustonosza na zaczepy BiustSPINKI
+Połowa kobiet, biorąca udział w testowaniu BiustSPIKI oznaczyła, że zaczepianie biustonosza
+na zaczepy BiustSPINKI jest dla nich łatwą czynnością. Dla jednej osoby zaczepianie
+biustonosza na urządzeniu sprawiało pewnie problemy, natomiast 37.5% Testerek
+stwierdziło, że ten krok jest dla nich trudną czynnością.
+
+--- strona 42 ---
+
+42
+
+Wykres 8 Zaczepianie biustonosza na zaczepy BiustSPINKI przez Testerki
+Komentarze Testerek
+•
+„Za pierwszym razem zaczepianie może zająć sporo czasu, ale z każdym dniem staje się
+coraz łatwiejsze”
+•
+„(… ) posiadając sprawną tylko jedną rękę nie jestem w stanie tego sprawnie i szybko
+zaczepić”
+•
+„ Ze względu na problemy z rękami, miałam problem z włożeniem biustonosza
+w zaczepy BiustSPINKI w pierwszych dniach. Później już było dobrze, zaczepy trzymały
+biustonosz”
+•
+„Jak zaczepia się jeden koniec, to drugi się zawija”
+•
+„Po wyregulowaniu zaczepów, zaczepianie biustonosza na zaczepach nie stanowi
+problemu.”
+Obwinięcie BiustSPINKI wokół talii
+Obwinięcie BiustSPINKI wokół talii ma najbardziej zróżnicowane odpowiedzi wśród Testerek:
+•
+37,5% Testerek oznaczyło, że obwijanie BiustSPINKI wokół talii jest dla nich trudne
+•
+37,5% Testerek określiło średnie problemy z owinięciem Biustspinki
+•
+25% Testerek wskazało, że obwijanie wokół talii nie stanowi dla nich problemu
+
+--- strona 43 ---
+
+43
+Zapięcie biustonosza
+Po zaczepieniu biustonosza na zaczepach oraz obwinięciu go wokół talii:
+•
+62,5% Testerek, wskazało, że zapięcie biustonosza przy wykorzystaniu BiustSPINKI jest
+dla nich łatwe
+•
+25% Testerek oznaczyło odpowiedź – średnie, co oznacza, że miały pewne problemy
+z zapięciem biustonosza przy wykorzystaniu urządzenia wspomagającego.
+•
+12,5 % Testerek określiło czynność zapinania biustonosza jako trudną
+
+Wykres 9 Zapięcie biustonosza - przez Testerki
+Komentarze Testerek
+•
+„W tym momencie jak zawsze trudności sprawiają mi małe haftki w staniu ze względu
+na moje chore dłonie”
+•
+„W związku z powyższym, zapięcie biustonosza jedną ręką bez potrzymania drugiego
+końca jest wręcz niewykonalne”
+•
+„Nie sprawia to kłopotów”
+Zsunięcie biustonosza z BiustSPINKI
+Dla 62,5% Testerek, zsunięcie biustonosza z BiustSPINKI, podobnie jak we wcześniejszej
+czynności, jest czynnością łatwą, bazując na podstawie wykresu poniżej. Jedna osoba,
+
+--- strona 44 ---
+
+44
+zgłosiła że miewała problemy z zsunięciem biustonosza ale była to czynność możliwa
+do wykonania, natomiast 25% Pań określiła tę czynność jako trudną dla nich do wykonania.
+Komentarze Testerek
+•
+„Wysunięcie biustonosza jest łatwe i nie sprawia mi trudności. Zaczepy są wykonane
+bardzo fajnie i nie są ani za mocne ani za słabe. Świetnie spełniają swoją funkcję.”
+•
+„Wraz ze ściągnięciem BiustSPINKI, biustonosz osuwa się razem z nią”
+•
+„Całe czynności: zakładanie, zapinanie biustonosza od początku sprawiały mi
+problemy, więc nie zsuwałam BiustSPINKI, gdyż nie dałam rady zapiąć biustonosza.”
+Złożenie BiustSPINKI
+Ostatnia czynność – złożenie BiustSPINKI, polegała na zrolowaniu jej do pozycji początkowej.
+Zdecydowana większość ankieterek, stwierdziła, że złożenie urządzenia jest dla nich łatwe
+i bezproblemowe do wykonania, jedynie jedna osoba zaznaczyła, że dla niej ta czynność
+sprawia duży problem, i jest dla niej za trudna.
+Dodatkowe uwagi od Testerek dotyczące BiustSPINKI
+„Osobiście nie mam żadnych uwag co do BiustSPINKI. Po testach uważam, że zakładanie
+biustonosza stało się łatwiejsze”
+„Urządzenie jest bardzo dobrze przemyślane i pomocne przy tak ważnej czynności dla kobiet
+jak ubieranie stanika. Niestety moje problemy z rękami utrudniały mi owinięcie urządzenia
+pod biustem, było również za krótkie do mojego obwodu pod biustem”
+„Pomysł bardzo dobry, ale skierowany do osób z mniejszą niepełnosprawnością ruchową
+niż moja (kończyn górnych)”
+„Według mnie, BiustSPINKA mogłaby być w większym rozmiarze, ponieważ jej obwód,
+chociaż był w rozmiarze xl, dla mnie był za mały i końcówki taśmy, po jej obwinięciu, ledwo
+stykały się ze sobą, a myślę, że łatwiej by mi było ją użytkować, gdyby końcówki taśmy
+zachodziły na siebie”
+
+--- strona 45 ---
+
+45
+„Testowanie BiustSPINKI bardzo mi się podobało, w kilku czynnościach potrzebowałam
+czasu, żeby nauczyć się z niego łatwo i szybko korzystać. Moim zdaniem ułatwia ubieranie
+biustonosza, dodatkowo podoba mi się wykonanie, estetyka i to, że gdy nie jest używane
+zajmuje mało miejsca.”
+„BiustSPINKA jest bardzo ciekawym rozwiązaniem, którego do tej pory nie spotkałam nigdzie
+indziej, zbudza duże zainteresowanie wśród osób, którym opowiadałam podczas moich
+testów. Na pewno wymaga czasu, aby umieć się z nim obsłużyć, ale jej zastosowanie
+sprawdza się w codziennym ubieraniu się.”
+Podsumowanie
+Proces testowania innowacji – BiustSPINKI – urządzenia do zapinania biustonosza wykazał,
+że urządzenie odnajduje zastosowanie wśród większości kobiet mających różne ograniczenia
+związane z chorobą, niepełnosprawnością lub dolegliwościami. Cały proces testowania,
+w tym wszystkie broszury informacyjne, konsultacje, serwisy odnalazły w dużej mierze
+pozytywny wydźwięk wśród naszych Testerek.
+Należy zauważyć, że podczas testowania BiustSPINKI, największą rolę ogrywał poziom
+sprawności Testerki, a raczej stopień lub wielkość ich ograniczeń. Z pewnością można też
+stwierdzić, że na radzenie sobie podczas testów, miała również wpływ osobowość Testerek,
+głównie z uwagi na dwie Panie o takich samych ograniczeniach, w tych samych przedziałach
+wiekowych, radziły sobie skrajnie różnie.
+Finalnie można stwierdzić, że przy ośmiu osobach testujących innowacyjne urządzenie
+do zapiania biustonosza – BiustSPINKA, siedem z nich zakończyła testy pozytywnie
+rozpatrując urządzenie jako przydatne. Jedynie jedna osoba stwierdziła, że niestety to
+urządzenie nie jest dla niej, ale jak sama stwierdziła, pomysł uważa za bardzo trafiony.
+
+--- strona 46 ---
+
+46
+Podsumowanie badań i wnioski końcowe – Finalny model
+innowacji
+1. Docelowo istotne jest sprawdzenie skutecznego zastosowania szerszej taśmy slap –
+powyżej 3 cm, która prawdopodobnie maiłaby wyjściowo lepsze paramenty w obszarze:
+sztywności materiału, łatwości utrzymania kształtu zwłaszcza po rozwinięciu i mniejszej
+dynamiki skręcania. Szersza taśma slap może być również łatwiejsza w obsłudze
+ze względu pewniejszy uchwyt szerszych krawędzi jednak istnieje ryzyko, że będzie
+cięższa. Aktualnie nie są dostępne na rynku polskim wystarczająco długie i szerokie
+powyżej 3 cm taśmy slap. Chcąc wyeliminować obawy dotyczące ciężaru szerokiej taśmy
+slap należy wykonać kolejne testy z udziałem podobnej grupy Testerek.
+2. Istotnym elementem jest wprowadzenie korekt w obecną rozmiarówkę
+wyprodukowanych prototypów w odniesieniu do europejskich rozmiarów biustonoszy.
+Realizując badania oraz analizując wnioski umieszczone w Dziennikach widzimy
+rozbieżność pomiędzy wprowadzonymi do testów rozmiarami prototypów i późniejszymi
+oczekiwanymi Testerek.
+Przygotowane prototypy przed obszyciem:
+•
+Rozmiar S – 75 cm
+•
+Rozmiar M – 85 cm
+•
+Rozmiar L – 95 cm
+•
+Rozmiar – XL – 100 cm
+Prototypy po wykonaniu obszycia:
+•
+Rozmiar S – 75 cm X 3,5 cm
+•
+Rozmiar M – 85 cm X 3,5 cm
+•
+Rozmiar L – 95 cm X 3,5 cm
+•
+Rozmiar – XL – 100 cm X 3,5 cm
+Wybrane prototypy przez Testerki:
+•
+3 Testerki skorzystały z BiustSPINKI w rozmiarze XL
+
+--- strona 47 ---
+
+47
+•
+3 Testerki skorzystały z BiustSPINKI w rozmiarze L.
+•
+2 Testerki skorzystały z BiustSPINKI w rozmiarze M
+Żadna z Testerek nie skorzystała z rozmiaru S
+Przeprowadzone testy wykazały że:
+•
+Testerki na co dzień korzystające z produktów w rozmiarze L korzystały z Biustspinki
+w rozmiarze XL
+•
+Testerki na co dzień korzystające z produktów w rozmiarze M korzystały z Biustspinki
+w rozmiarze L
+•
+Testerki na co dzień korzystające z produktów w rozmiarze S korzystały z Biustspinki
+w rozmiarze M
+Zmiana użytych rozmiarów przez Testerki wskazuje na konieczność dostosowania rozmiarów
+prototypów do użytkowanych rozmiarów biustonoszy. Wybranie większych modeli
+BiustSpinki argumentowane było również większą swobodą w realizacji testów pod kątem
+utrzymania BiustSpinki, większego pola do zaczepiania biustonosza w zaczepach oraz obawą,
+że mniejszy prototyp swobodnie nie obejmie Testerki. Testerki chętnie korzystały
+z większego rozmiaru co docelowo sugeruje wprowadzenie produktów wielowymiarowych.
+Docelowo można wprowadzić rozwiązanie umożliwiające zdjęcie i wypranie obszycia
+BiustSpinki. W przyszłości po wprowadzeniu urządzenia do użytku publicznego np.:
+w ośrodkach rehabilitacyjnych lub sanatoriach słuszna byłoby możliwość wymiany lub
+wyprania poszycia BiustSpinki. Aktualnie jest możliwość odświeżenia lub wyprania całego
+prototypu co nie wpływa na pogorzenia dalszej funkcjonalności BiustSpinki. Do wykonania
+prania należy jedynie zdjąć zaczepy i zwiniętą BiustSpinkę włożyć np. do miski z wodą
+i płynem do prania. Po namoczeniu i jednokrotnym wyprostowaniu BiustSpinki można
+produkt przepłukać pod bieżącą wodą i zostawić do wyschnięcia. Wprowadzenie
+zdejmowanego pokrowca zdecydowanie ułatwi proces prania oraz umożliwi wprowadzenie
+obszycia wymiennego, np. w zestawie mogłyby być dwa pokrowce.
+
+--- strona 48 ---
+
+48
+Spis wykresów
+Wykres 1 Zrozumienie zastosowania Innowacji BiustSPINJA na podstawie broszusry
+informacyjnej ______________________________________________________________ 21
+Wykres 2 Ankieta - wiek _____________________________________________________ 25
+Wykres 3 Ankieta - stopień niepełnosprawności __________________________________ 26
+Wykres 4 Ankieta - czy samodzielnie zakładasz biustonosz __________________________ 29
+Wykres 5 Ankieta - co konkretnie utrudnia zakładanie biustonosza ____________________ 30
+Wykres 6 Wiek Testerek _____________________________________________________ 35
+Wykres 7 Rozwijanie BiustSPINKI przez Testerki ___________________________________ 41
+Wykres 8 Zaczepianie biustonosza na zaczepy BiustSPINKI przez Testerki _______________ 42
+Wykres 9 Zapięcie biustonosza - przez Testerki ____________________________________ 43
+
+Spis rysunków
+Rysunek 1 Rysunek techniczny zaczepów BiustSPINKI _______________________________ 8
+Rysunek 2 Rysunek techniczny taśmy wraz z zaczepami BiustSPINKI ____________________ 9
+Rysunek 3 Instrukcja obsługi - krok pierwszy _____________________________________ 16
+Rysunek 4 Instrukcja obsługi - krok drugi ________________________________________ 17
+Rysunek 5 Instrukcja obsługi - krok trzeci ________________________________________ 17
+Rysunek 6 Instrukcja obsługi - krok czwarty ______________________________________ 18
+Rysunek 7 Instrukcja obsługi - krok piąty ________________________________________ 18
+Rysunek 8 Instrukcja obsługi - krok szósty _______________________________________ 19
+Rysunek 9 Instrukcja obsługi - krok siódmy _______________________________________ 19
+Rysunek 10 Instrukcja obsługi - krok ósmy _______________________________________ 20
+Rysunek 11 Instrukcja obsługi - krok dziewiąty ____________________________________ 20
+
+--- strona 49 ---
+
+49
+Spis zdjęć
+Zdjęcie 1 Łączenie taśmy slap nitami - widok przód ________________________________ 10
+Zdjęcie 2 Zaczepy utrzymujące biustonosz - rzut przód _____________________________ 10
+Zdjęcie 3 Zaczepy utrzymujące biustonosz - rzut tył ________________________________ 11
+Zdjęcie 4 Zaczepy utrzymujące biustonosz - rzut bok _______________________________ 11
+Zdjęcie 5 Taśma slap z zaczepami - widok przód, część środkowa _____________________ 12
+Zdjęcie 6 Taśma slap z zaczepami - widok tył _____________________________________ 12
+Zdjęcie 7 Rozwinięta BiustSPINKA ______________________________________________ 13
+Zdjęcie 8 Rozwinięta BiustSPINKA w obszyciu _____________________________________ 13
+Zdjęcie 9 Zwinięta BiustSPINKA ________________________________________________ 14
+
+Spis tabel
+Tabela 1 Rozmiary BiustSpinki __________________________________________________ 6
+
+https://creativecommons.org/licenses/by/4.0/deed.pl

@@ -1,0 +1,179 @@
+--- strona 1 ---
+
+1
+
+Dokumentacja oprogramowania klienckiego
+
+Opis ogólny
+Oprogramowanie opisane w niniejszej dokumentacji ma za zadanie pobierać
+z urządzenia odczyty czujników oraz wartości uzyskane dzięki ich filtrowaniu,
+a następnie odczytywać wybrane wartości za pomocą usługi text to speech
+urządzenia klienckiego. Oprogramowanie jest udostępniane w formie aplikacji
+webowej poddanej wstępnej kompresji i jest odczytywane z adresu IP urządzenia
+w sieci WiFi bądź też skonfigurowanej domeny w przypadku używania trybu punktu
+dostępowego. Aplikacja może być uruchomiana na urządzeniach mobilnych lub
+komputerze z obsługą text to speech w trybie offline.
+
+Wykorzystane technologie
+Technologie, które wykorzystano przy tworzeniu oprogramowania klienckiego
+to HTML i JS. Oprogramowanie opiera się na frameworku React, komponentach
+wizualnych material-ui, komponentach formularzowych formik oraz bibliotekach
+pomocniczych (między innymi axios, constate, date-fns, helmet mitt i notistack). Do
+obsługiwania mowy oraz dźwięku zostały wykorzystane API przeglądarkowe
+AudioContext oraz SpeechSynthesisUtterance.
+
+Wymagania
+Warunkiem koniecznym poprawnego działania oprogramowania jest
+dostępność w przeglądarce za pomocą jest uruchamiane oprogramowanie API
+AudioContext oraz SpeechSynthesisUtterance. W trakcie prac zadbano o to, aby
+oprogramowanie umożliwiało pracę z tymi API także w szczególnych przypadkach
+wykorzystywania ich na urządzeniach mobilnych z systemami android oraz iOS.
+
+--- strona 2 ---
+
+2
+
+Dostęp do oprogramowania powinien być dokonywany przy użyciu jednej z
+nowoczesnych przeglądarek internetowych takich jak Chrome, Firefox, Safari, Opera
+i inne bazujące na ich silnikach.
+
+Ograniczenia
+
+Z przyczyn nieprzekraczalnych ograniczeń technicznych narzucanych przez
+przeglądarki przy korzystaniu z oprogramowania należy zadbać o nie wyłączanie
+ekranu przez urządzenie, na którym jest uruchomione, ponieważ skutkuje ono
+wstrzymaniem działania aplikacji na czas wygaszenia ekranu.
+
+Jest to ograniczenie, którego nie da się obejść bez uruchomienia aplikacji
+w trybie ProgressiveWebApp przy wykorzystaniu protokołu HTTPS do połączenia
+z urządzeniem przy użyciu poprawnie podpisanego certyfikatu SSL. Nie jest to
+obecnie możliwe przy uruchamianiu aplikacji z pamięci urządzenia. Potencjalne
+rozwiązanie problemu przez uruchamianie aplikacji z domeny w sieci lub
+wykorzystanie aplikacji natywnych napisanych celowo na używane przez
+użytkowników systemy mobilne nie było przedmiotem projektu, ale jest możliwe w
+przyszłości.
+
+Funkcjonalność
+
+Aplikacja wyświetla oraz odczytuje na bieżąco wartość kursu (lub wiatru) i
+odchylenia steru bazując na ustawieniach podanych przy konfiguracji. Przy
+domyślnej konfiguracji odczyty kursu w formie tekstowej przeplatają się z sygnałami
+dźwiękowymi oznaczającymi odchyłkę od ustalonego lub ostatniego odczytanego
+kursu (w zależności od ustawień). W przypadku braku odchyłki lub odchyłki w
+dozwolonym zakresie odtwarzany jest sygnał bazowy o wysokości 440Hz. Sygnały
+odchyłki rosną częstotliwością przy odchyłce w prawo i spadają przy odchyłce w
+lewo. Zakres dźwięków odchyłki zawiera się w oktawie powyżej 659Hz lub poniżej
+329Hz. W przypadku użycia opcji „Szeroka rozpiętość tonów” te zakresy są
+poszerzane do dwóch oktaw. Odstępy pomiędzy odczytami tekstowymi oraz
+sygnałami dźwiękowymi da się konfigurować. Podobnie modyfikowalne jest tempo
+
+--- strona 3 ---
+
+3
+
+odczytywania tekstu oraz wydawanie sygnałów dźwiękowych oznaczających brak
+odchylenia i pomagające zorientować się w zakresie odchyłki od kursu.
+
+Aplikację dostosowano do pracy z czytnikami ekranu, jest też dostosowana do
+wykorzystywania za pomocą standardowego interfejsu na urządzeniach mobilnych.
+
+Ekran główny
+
+Przygotowana webowa aplikacja mobilna udostępnia ekran, na którym
+wyświetlane są aktualne odczyty z wybranych czujników oraz zestaw opcji
+konfiguracyjnych odczytywania wybranych danych za pomocą głosu i sygnałów
+dźwiękowych. Ekran składa się z poniżej wymienionych elementów:
+1. Róża wiatrów ze wskaźnikiem kursu i wychylenia steru w dużej czcionce
+(niewidoczna dla czytników ekranu z powodu niewygodnej formuły odczytu,
+zastąpiono własnym algorytmem odczytu, który zachowuje wymagane tempo
+i nie opóźnia odczytów)
+2. Przycisk „Zacznij czytać” uruchamiający odczytywanie głosowe oraz sygnały
+dźwiękowe
+3. Opcja konfiguracyjna „steruj na” pozwalająca na wybór sposobu odczytu kursu
+bądź wiatru. Dostępne opcje to:
+a) Kurs bezwzględny – urządzenie podaje kurs bezwzględny pozostawiając
+użytkownikowi interpretację odchyłek
+b) Wyznaczony kurs - urządzenie podaje odchyłkę od kursu zamiast samego
+kursu
+c) Wyznaczony wiatr – urządzenie podaje odchyłkę od wiatru
+4. Opcja konfiguracyjna „źródło kursu” pozwalająca na wybór źródła kursu.
+Dostępne źródła to:
+a) Uśredniony filtrowany kurs (odczyt COG filtrowany za pomocą IMU)
+b) Uśredniony kurs nad ziemią (odczyt COG)
+c) Uśredniony kurs (odczyt HDG)
+d) Filtrowany kurs (odczyt COG filtrowany za pomocą IMU)
+e) Kurs nad ziemią (odczyt COG)
+f) Kurs (odczyt HDG)
+5. Opcja konfiguracyjna „Odstęp między sygnałami dźwiękowymi” pozwalająca
+na ustawienie minimalnego odstępu między sygnałami dźwiękowymi
+
+--- strona 4 ---
+
+4
+
+emitowanymi przez aplikację w trybie sygnałów dźwiękowych. Zakres
+możliwych wartości to 0,5 do 5 sekund.
+6. Opcja konfiguracyjna „Odstęp między odczytami” pozwalająca na ustalenie
+minimalnego odstępu odczytania kursu w formie tekstowej. Zakres możliwych
+wartości to od 0 (czytaj bez przerw) do 30 sekund.
+7. Opcja konfiguracyjna „Prędkość czytania” pozwalająca na dobór szybkości
+dokonywania odczytów przez mechanizm text to speech. Zakres możliwych
+wartości to od 0.5 do 4.
+8. Opcja konfiguracyjna „Dozwolona odchyłka” pozwalająca na dobór odchyłki,
+przy której nie są uruchamiane sygnały dźwiękowe sygnalizujące zejście z
+kursu lub jest odtwarzany sygnał pozostawania na kursie. Zakres możliwych
+wartości to od 1 do 15 stopni. Zaleca się nie korzystać z wartości większych
+od 3-5 stopni w dobrych warunkach pogodowych.
+9. Opcja konfiguracyjna „Zakres odchyłki” pozwalająca na ustalenie w jak
+szerokim zakresie odchyłki ma być odtwarzany sygnał dźwiękowy na skali
+dźwięków umożliwiających rozróżnienie poziomu odchyłki. Dostępny zakres to
+od 15 do 60 stopni. Zaleca się nie przekraczanie wartości 30 stopni w dobrych
+warunkach pogodowych ponieważ dla niewprawnego ucha różnice dźwięku
+przy powolnym odchylaniu kursu mogą być trudne do zauważenia.
+10. Opcja konfiguracyjna „Sygnały dźwiękowe” pozwalająca na wyłączenie
+sygnałów dźwiękowych i pozostawienie wyłącznie odczytów tekstowych.
+11. Opcja konfiguracyjna „Odtwarzaj ton referencyjny” pozwalająca na wyłączenie
+dźwięku pozwalającego porównać stan na kursie ze stanem obecnym.
+12. Opcja konfiguracyjna „Odtwarzaj ton na kursie” pozwalająca wyłączyć
+odtwarzanie tonu w przypadku pozostawania w przedziale dozwolonej
+odchyłki (dźwięk zastępuje odstęp ciszy o tej samej długości).
+13. Opcja konfiguracyjna „Krótsze sygnały” pozwalająca na skrócenie trwania
+sygnałów dźwiękowych, co umożliwia zwiększenie częstości ich odtwarzania.
+14. Opcja konfiguracyjna „Szeroka rozpiętość tonów” pozwalająca na poszerzenie
+zakresu sygnałów dźwiękowych do dwóch oktaw. Niezalecana dla osób bez
+dobrego słuchu muzycznego.
+
+--- strona 5 ---
+
+5
+
+Ilustracja 1: Ekran główny aplikacji na iPad
+
+--- strona 6 ---
+
+6
+
+Ilustracja 2: Ekran główny aplikacji na Galaxy S5
+
+--- strona 7 ---
+
+7
+
+Ilustracja 3: Ekran główny aplikacji na Galaxy S5
+(opcje)
+
+--- strona 8 ---
+
+8
+
+Załączniki
+1. Załącznik „Dokumentacja oprogramowanie klienckie - implementacja.pdf”
+Załącznik jest dokumentacją oprogramowania klienckiego wygenerowaną na
+podstawie dokumentacji wewnętrznej umieszczonej w kodzie źródłowym. Do
+wygenerowania dokumentacji w formie dokumentu użyto narzędzia jsdoc z
+wyjściem html. Dokumentacja jest napisana w formatowaniu jsdoc oraz języku
+angielskim co jest normą branżową stosowaną przy pisaniu dokumentacji
+inline (język dokumentacji jest dopasowany do języka kodu, czyli języka
+angielskiego). Dokument przygotowano z uwzględnieniem zasad tworzenia
+dokumentów
+dostępnych.

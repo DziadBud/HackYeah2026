@@ -216,3 +216,43 @@ def test_upload_embeds_and_publishes(client, auth, tmp_path) -> None:
     assert created["status"] == "published"
     assert (created["title"], created["challenge_areas"]) == ("Opaska", ["Seniorzy"])
     assert embedded == [created["id"]]
+
+
+def test_replace_pdf_reembeds(client, auth, tmp_path) -> None:
+    embedded: list[tuple[str, bytes]] = []
+
+    class FakeRag:
+        def embed_pdf(self, innovation_id: str, filename: str, pdf: bytes) -> None:
+            embedded.append((innovation_id, pdf))
+
+    innovations = app.dependency_overrides[deps.get_innovation_service]()
+    svc = InnovationUploadService(innovations, LocalFileStorage(tmp_path), FakeRag(), max_bytes=1024)
+    app.dependency_overrides[deps.get_innovation_upload_service] = lambda: svc
+    new_pdf = PDF + b" v2"
+
+    res = client.post(f"{BASE}/wibraap/pdf", files={"file": ("nowy.pdf", new_pdf, "application/pdf")}, headers=auth)
+
+    assert res.status_code == 202
+    assert res.json()["id"] == "wibraap"
+    assert (tmp_path / "wibraap.pdf").read_bytes() == new_pdf
+    assert embedded == [("wibraap", new_pdf)]
+
+
+@pytest.mark.parametrize(
+    "innovation_id, content, want",
+    [
+        pytest.param("nie-ma-takiej", PDF, 404, id="#1 - FAIL - unknown innovation"),
+        pytest.param("wibraap", b"not a pdf", 415, id="#2 - FAIL - not a pdf"),
+    ],
+)
+def test_replace_pdf_errors(client, auth, tmp_path, innovation_id, content, want) -> None:
+    innovations = app.dependency_overrides[deps.get_innovation_service]()
+    svc = InnovationUploadService(innovations, LocalFileStorage(tmp_path), None, max_bytes=1024)
+    app.dependency_overrides[deps.get_innovation_upload_service] = lambda: svc
+
+    res = client.post(
+        f"{BASE}/{innovation_id}/pdf", files={"file": ("a.pdf", content, "application/pdf")}, headers=auth
+    )
+
+    assert res.status_code == want
+    assert not (tmp_path / f"{innovation_id}.pdf").exists()

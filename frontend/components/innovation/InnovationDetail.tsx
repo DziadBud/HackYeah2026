@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ApiError, api, type LibraryInnovation, type Thread } from "@/lib/api";
 import { CARETAKER, SAMPLE_PDF_URL, findInnovation, type DemoInnovation } from "@/lib/demo-data";
-import { AREA_LABEL, COST, READINESS } from "@/lib/labels";
+import { AREA_LABEL } from "@/lib/labels";
 import { Icon } from "@/components/Icon";
 import { ActionBar } from "@/components/innovation/ActionBar";
 import { Community } from "@/components/innovation/Community";
@@ -16,17 +16,42 @@ const card = "flex flex-col gap-space-md rounded-xl bg-surface-container-lowest 
 interface View {
   id: string;
   title: string;
+  tagline?: string;
   tags: string[];
   author?: string;
   partner?: string;
+  program?: string;
   recommended: boolean;
   problem?: string;
   solution: string;
+  targetGroup?: string;
+  whoCanUse?: string;
+  effectiveness?: string;
   results?: string;
   deployedIn?: string;
   details: { label: string; value: string }[];
+  photos: string[];
   videoUrl?: string | null;
-  pdfUrl: string;
+  // null: the innovation has no pdf, so no download tile
+  pdfUrl: string | null;
+  license?: { name: string; url: string | null };
+  sourceUrl?: string;
+}
+
+// youtube watch / short / playlist link -> privacy-enhanced embed url; null for other hosts
+function youtubeEmbed(url: string): string | null {
+  try {
+    const u = new URL(url);
+    const host = u.hostname.replace(/^(www|m)\./, "");
+    if (host === "youtu.be") return `https://www.youtube-nocookie.com/embed/${u.pathname.slice(1)}`;
+    if (host !== "youtube.com") return null;
+    const v = u.searchParams.get("v");
+    if (v) return `https://www.youtube-nocookie.com/embed/${v}`;
+    const list = u.searchParams.get("list");
+    return list ? `https://www.youtube-nocookie.com/embed/videoseries?list=${list}` : null;
+  } catch {
+    return null;
+  }
 }
 
 type State =
@@ -38,9 +63,6 @@ type State =
 
 function fromApi(i: LibraryInnovation): View {
   const details = [
-    { label: "Dla kogo", value: (i.target_group ?? []).join(", ") },
-    { label: "Etap", value: i.readiness ? READINESS[i.readiness] : "" },
-    { label: "Koszt wdrożenia", value: i.cost_level ? COST[i.cost_level] : "" },
     {
       label: "Ocena",
       value:
@@ -52,16 +74,24 @@ function fromApi(i: LibraryInnovation): View {
   return {
     id: i.id,
     title: i.title,
+    tagline: i.tagline ?? undefined,
     tags: i.challenge_areas.map((a) => AREA_LABEL[a]),
-    author: i.innovator || undefined,
+    author: i.authors.length > 0 ? i.authors.join(", ") : undefined,
+    program: i.program ?? undefined,
     recommended: false,
-    problem: i.problem || undefined,
+    problem: i.problem ?? undefined,
     solution: i.summary,
+    targetGroup: i.target_group ?? undefined,
+    whoCanUse: i.who_can_use ?? undefined,
+    effectiveness: i.effectiveness ?? undefined,
     deployedIn: i.city || undefined,
     details,
-    // the backend has no video_url; films are linked through page_url
+    photos: i.photos.map((name) => api.innovationPhotoUrl(i.id, name)),
+    // the backend has no video_url (only offline mocks do); films are linked through page_url
     videoUrl: i.video_url || i.page_url,
-    pdfUrl: i.has_pdf ? api.innovationPdfUrl(i.id) : SAMPLE_PDF_URL,
+    pdfUrl: i.has_pdf ? api.innovationPdfUrl(i.id) : null,
+    license: i.license_name ? { name: i.license_name, url: i.license_url } : undefined,
+    sourceUrl: i.source_url ?? undefined,
   };
 }
 
@@ -78,6 +108,7 @@ function fromDemo(d: DemoInnovation): View {
     results: d.results,
     deployedIn: d.deployedIn,
     details: [],
+    photos: [],
     pdfUrl: SAMPLE_PDF_URL,
   };
 }
@@ -137,12 +168,14 @@ export function InnovationDetail({ id }: { id: string }) {
 
   const i = state.view;
   const facts = [
-    ...(i.problem ? [{ icon: "report_problem", tone: "text-secondary", label: "Zdiagnozowany problem", text: i.problem }] : []),
-    { icon: "lightbulb", tone: "text-tertiary-strong", label: "Wypracowane rozwiązanie", text: i.solution },
-    ...(i.results
-      ? [{ icon: "sentiment_very_satisfied", tone: "text-primary", label: "Rezultaty i korzyści", text: i.results }]
-      : []),
-  ];
+    { icon: "report_problem", tone: "text-secondary", label: "Jakich problemów dotyczy innowacja?", text: i.problem },
+    { icon: "lightbulb", tone: "text-tertiary-strong", label: "Na czym polega rozwiązanie?", text: i.solution },
+    { icon: "groups", tone: "text-primary", label: "Grupa docelowa", text: i.targetGroup },
+    { icon: "apartment", tone: "text-primary", label: "Kto może skorzystać z innowacji?", text: i.whoCanUse },
+    { icon: "verified", tone: "text-primary", label: "Czy to działa?", text: i.effectiveness },
+    { icon: "sentiment_very_satisfied", tone: "text-primary", label: "Rezultaty i korzyści", text: i.results },
+  ].filter((f): f is typeof f & { text: string } => Boolean(f.text));
+  const embed = i.videoUrl ? youtubeEmbed(i.videoUrl) : null;
 
   return (
     <div className="flex flex-col pb-space-md">
@@ -197,6 +230,7 @@ export function InnovationDetail({ id }: { id: string }) {
         )}
         <div className="flex flex-col gap-2">
           <h1 className="text-headline-lg-mobile font-bold tracking-tight text-primary sm:text-headline-lg">{i.title}</h1>
+          {i.tagline && <p className="text-body-lg text-on-surface">{i.tagline}</p>}
           {i.author && (
             <p className="flex items-start gap-2 text-body-lg text-on-surface-variant">
               <Icon name="account_balance" size={22} className="mt-1 text-primary" />
@@ -211,8 +245,30 @@ export function InnovationDetail({ id }: { id: string }) {
               </span>
             </p>
           )}
+          {i.program && (
+            <p className="flex items-start gap-2 text-body-md text-on-surface-variant">
+              <Icon name="school" size={22} className="mt-0.5 text-primary" />
+              <span>
+                Wybrana do upowszechniania w projekcie <strong className="text-on-surface">„{i.program}”</strong>
+              </span>
+            </p>
+          )}
         </div>
-        <ActionBar innovationId={i.id} pdfUrl={i.pdfUrl} title={i.title} />
+        {i.photos.length > 0 && (
+          <ul aria-label="Zdjęcia innowacji" className="grid grid-cols-1 gap-space-sm sm:grid-cols-2">
+            {i.photos.map((src, n) => (
+              <li key={src} className="overflow-hidden rounded-xl bg-surface-container hc-edge">
+                {/* eslint-disable-next-line @next/next/no-img-element -- api-hosted photo of unknown size */}
+                <img
+                  src={src}
+                  alt={`Zdjęcie ${n + 1} z ${i.photos.length}: ${i.title}`}
+                  className="aspect-[4/3] w-full object-contain"
+                />
+              </li>
+            ))}
+          </ul>
+        )}
+        <ActionBar innovationId={i.id} pdfUrl={i.pdfUrl} title={i.title} filmAnchor={embed ? "film" : undefined} />
       </header>
 
       <div className="grid grid-cols-1 items-start gap-space-lg lg:grid-cols-12">
@@ -230,11 +286,12 @@ export function InnovationDetail({ id }: { id: string }) {
                     <Icon name={f.icon} className={f.tone} />
                     {f.label}
                   </h3>
-                  <p className="text-body-md text-on-surface-variant">{f.text}</p>
+                  {/* the library text keeps its line breaks and "- " lists */}
+                  <p className="whitespace-pre-line text-body-md text-on-surface-variant">{f.text}</p>
                 </div>
               ))}
             </div>
-            {(i.details.length > 0 || i.videoUrl) && (
+            {(i.details.length > 0 || (i.videoUrl && !embed)) && (
               <dl className="grid grid-cols-1 gap-x-space-md gap-y-1 text-body-md sm:grid-cols-[max-content_1fr]">
                 {i.details.map((d) => (
                   <div key={d.label} className="contents">
@@ -242,7 +299,8 @@ export function InnovationDetail({ id }: { id: string }) {
                     <dd className="text-on-surface-variant">{d.value}</dd>
                   </div>
                 ))}
-                {i.videoUrl && (
+                {/* page_url may be a project page: only youtube links get the film section */}
+                {i.videoUrl && !embed && (
                   <>
                     <dt className="font-semibold text-primary">Strona lub film</dt>
                     <dd>
@@ -261,7 +319,51 @@ export function InnovationDetail({ id }: { id: string }) {
                 Dotychczasowe wdrożenia: {i.deployedIn}
               </p>
             )}
+            {(i.license || i.sourceUrl) && (
+              <p className="flex flex-wrap items-center gap-x-space-md gap-y-1 text-body-md text-on-surface-variant">
+                {i.license && (
+                  <span className="flex items-center gap-2">
+                    <Icon name="verified_user" className="text-primary" />
+                    {i.license.url ? (
+                      <a href={i.license.url} className="inline-flex min-h-12 items-center underline hover:text-primary">
+                        Licencja: {i.license.name}
+                      </a>
+                    ) : (
+                      <span>Licencja: {i.license.name}</span>
+                    )}
+                  </span>
+                )}
+                {i.sourceUrl && (
+                  <a href={i.sourceUrl} className="inline-flex min-h-12 items-center gap-2 underline hover:text-primary">
+                    <Icon name="arrow_forward" className="text-primary" />
+                    Opis w Bibliotece innowacji ROPS
+                  </a>
+                )}
+              </p>
+            )}
           </section>
+
+          {i.videoUrl && embed && (
+            <section id="film" aria-labelledby="film-heading" className={`${card} scroll-mt-space-lg`}>
+              <h2 id="film-heading" className="flex items-center gap-2 text-headline-md font-semibold text-primary">
+                <Icon name="play_circle" size={28} />
+                Film o innowacji
+              </h2>
+              <iframe
+                src={embed}
+                title={`Film o innowacji „${i.title}”`}
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                className="aspect-video w-full rounded-xl bg-surface-container hc-edge"
+              />
+              <a href={i.videoUrl} className="inline-flex min-h-12 items-center gap-2 self-start text-body-md font-bold text-primary underline">
+                <Icon name="play_circle" />
+                Obejrzyj na YouTube
+              </a>
+            </section>
+          )}
 
           <div className="order-last lg:order-none">
             <Community innovationId={i.id} demoThreads={state.kind === "demo" ? state.threads : undefined} />

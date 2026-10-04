@@ -1,0 +1,155 @@
+RAPORT PO TESTACH STACJONARNYCH - 22.11.2022
+I TESTACH ONLINE - 29.11.2022
+ZAKUPY ODZIEŻOWE DOSTĘPNE DLA OSÓB Z NIEPEŁNOSPRAWNOŚCIĄ WZROKU
+Realizacja projektu w ramach Inkubatora Włączenia Społecznego polegająca na stworzeniu usługi umożliwiającej osobom z niepełnosprawnością wzroku (OZNW) dokonywanie zakupów odzieży on-line i w sklepach stacjonarnych bez asysty osób trzecich.
+Zespół CzytaModa w ramach realizacji projektu przygotował dwa typu testów zakupowych: stacjonarne i online. Obydwa testy przygotowane były we współpracy ze sklepem PAN TU NIE STAŁ. Początkowo Zespół CzytaModa zakładał współpracę ze sklepem KOKO WORD, jednak w związku z trudnościami, które pojawiły się w toku realizacji Zespół znalazł nowego Partnera firmę Pan Tu Nie Stał. Drugą zmianą było utworzenie przez Zespół CzytaModa testowego sklepu na platformie Shopify, który jest dostępny dla osób z niepełnosprawnością wzroku. Rozwiązanie to okazało się tańsze i szybsze. Nie wymagało zaangażowania programistów zajmujących się oficjalnym sklepem KOKO lub Pan Tu Nie Stał oraz ingerencji w sklep online partnera.
+Do przeprowadzenia testów zostało wybranych dwadzieścia jeden produktów: damskich, męskich oraz akcesoriów w postaci czapek i szalika. Testy stacjonarne odbyły się w sklepie przy ulicy Nadwiślańskiej dziewięć w Krakowie. Wzięło w nich udział dziesięciu testerów z niepełnosprawnością wzroku.
+TESTY STACJONARNE - 22.11.2022
+W dniu dwudziestym drugim listopada dwa tysiące dwudziestym drugim roku odbyły się testy trwające dziesięć godzin.
+Zespół CzytaModa spotkał się o godzinie dziesiątej w sklepie stacjonarnym, aby wraz z załogą sklepu przygotować wybraną odzież do testów. Został przygotowany specjalny stojak, na którym zawieszono na wieszakach produkty. Były to: trzy bluzy męskie, golf damski, jedna bluza damska, cztery koszulki damskie, sześć koszulek męskich, pięć czapek i jeden szalik. Produkty miały różne kroje, fasony, kolory oraz nadrukowane lub wyhaftowane wzory. Na wieszakach zawieszono także specjalnie przygotowane metki z kodem qr odnoszącym do audiodeskrypcji. Metki stworzone zostały z usztywnionego płótna w kształcie prostokąta o wymiarach pięć na piętnaście centymetrów z przyciętym jednym rogiem. Zostały zawieszone na sznureczku na wieszaku, pod haczykiem. Metkę należało trzymać w dłoni tak, by ucięty róg był na górze, na lewo od dziurki ze sznurkiem. Smartfona należało trzymać bezpośrednio nad metką.
+Cel główny testów stacjonarnych: Przetestowanie rozwiązania technologicznego, które pozwala na przeniesienie się do audiodeskrypcji znajdującej się na stronie testowego sklepu CzytaMody:
+przetestowanie metek, sposobu skanowania,
+przetestowanie działania aplikacji - poprawności przekierowania do audiodeskrypcji
+przetestowanie czy poprawnie jest wprowadzona audiodeskrypcja i czy łatwo ją odczytać
+przetestowanie audiodeskrypcji
+Cele szczegółowe: Analiza głównych problemów napotykanych przez OZNW podczas testów.Analiza tego, co się sprawdziło i dobrze funkcjonuje.
+Uczestnicy badania: osoby z niepełnosprawnością wzroku, 10 osób.
+Etap I – wprowadzenie - każdy uczestnik otrzymał maila z instrukcją dotyczącą testów STACJONARNYCH:
+INSTRUKCJA DOTYCZĄCA TESTÓW STACJONARNYCH CZYTAMODA
+SKLEP PAN TU NIE STAŁulica Nadwiślańska dziewięć Kraków
+
+Celem testów jest sprawdzenie działania prototypu aplikacji w czasie zakupów odzieży dostosowanych do potrzeb osób z niepełnosprawnością wzroku. Całość testów dla każdej osoby potrwa sześćdziesiąt minut.
+
+Przed testami w sklepie stacjonarnym prosimy o przygotowanie się w następujący sposób:
+
+W celu przeprowadzenia testów stacjonarnych potrzebne jest posiadanie smartfonów z dostępem do Internetu.
+Do testów będziecie Państwo potrzebować czytnika kodów qr w swoim telefonie. Najczęściej taki skaner wbudowany jest w aparacie fotograficznym telefonu.
+Podczas testów należy zalogować się do sklepu on line. Należy wpisać adres sklepu: Sklep Czytamoda: a następnie hasło: geuthe
+Prosimy o umożliwienie przeglądarce zapamiętania hasła, na wypadek wylogowania podczas testu. To znacznie ułatwi używanie strony sklepu podczas testów.
+Przebieg testów:
+Testy zaczynają się w sklepie stacjonarnym Pan Tu Nie Stał przy ulicy Nadwiślańskiej dziewięć.
+W czasie testów zespół CzytaMody będzie obecny w sklepie, ale nie będzie odpowiadać na pytania testerów, z uwagi na cel - czyli sprawdzenie, jak przebiega obsługa rozwiązania.
+W sklepie będzie przygotowana cała sekcja z ubraniami, na których znajdą się metki z usztywnionego płótna z kodami qr. Metki będą zawieszone na sznureczku na wieszaku, pod haczykiem. Metka ma kształt prostokąta o wymiarach pięć na piętnaście centymetrów z przyciętym jednym rogiem. Metkę należy trzymać w dłoni tak, by ucięty róg był na górze, na lewo od dziurki ze sznurkiem. Smartfona należy trzymać bezpośrednio nad metką.
+Zeskanowany kod qr odeśle do opisu wybranego produktu z audiodeskrypcją w sklepie CzytaModa.
+Czytnik ekranu powinien odczytać cały opis produktu.
+Do testowania będzie udostępnionych dwadzieścia produktów: damskich, męskich oraz akcesoriów w postaci czapek i szalika. W czasie testu można zapoznać się z dowolną liczbą produktów z tej grupy za pomocą rozwiązania CzytaModa.
+Następnie tester odpowie na pytania dotyczące zakupów i podpisze listę deklaracji członka grupy testującej, wymaganej przez Grantodawców czyli Regionalny Ośrodek Polityki Społecznej (załączamy plik w mailu).
+
+WYNIKI BADAŃ STACJONARNYCH
+Pierwsze pytania brzmiało: Jak oceniasz łatwość korzystania z metki z kodem QR?40% testerów odpowiedziało - umiarkowanie łatwe30% - łatwe20% - niemożliwe do zeskanowania10% - bardzo trudne
+
+Jeśli nie mogłeś/mogłaś zeskanować, to dlaczego?
+Niektórzy testerzy mieli kłopot, ponieważ trudno im było trafić aparatem w smartfonie na kod QR. Niektórym testerom sprawiało trudność otworzenie linku po zeskanowaniu kodu. Zdarzało się to testerom posługującym się Iphone'em, z włączoną aplikacją Voice Over. Dopiero po wyłączeniu VO następowało otworzenie linku. Program Voice Over dedykowany Iphonowi nie miał w zakresie swoich funkcji działania pozwalającego otworzyć link pojawiający się po zeskanowaniu kodu QR. Przy zastosowaniu aplikacji Seeing Assistant Home następowało prawidłowe odczytanie kodu. Jedna osoba zwróciła uwagę na to, że warto włączyć latarkę podczas skanowania smartfonem, żeby był lepszy kontrast. Skaner w smartfonie lepiej sobie wówczas radzi.
+Jak oceniasz użytkowanie rozwiązania technologicznego z audiodeskrypcją, które przetestowałeś/łaś?
+60% testerów odpowiedziało - umiarkowanie łatwe20% - łatwe20% - bardzo trudne
+Jak oceniasz odczytywanie informacji po przekierowaniu przez kod QR?44,5% - dobrze33,5% - średnio22% - bardzo dobrze
+Jak oceniasz audiodeskrypcję odzieży?67% odpowiedziało - bardzo przydatna33% - przydatna
+Czy w audiodeskrypcji znalazły się wszystkie informacje, które Cię interesują?55,5% - tak44,5% - nie
+Czy długość audiodeskrypcji była odpowiednia?100% - tak
+Czy kolejność podanych informacji była odpowiednia?90% - tak10% - nie
+Jakie emocje towarzyszyły Ci podczas korzystania z rozwiązania CzytaModa?zdenerwowanie - 20%radość - 10%zaciekawienie - 70%zmęczenie - 10%zniecierpliwienie - 10%frustracja, że innym się udaje a mnie nie - 10%poczucie niezależności - 10%
+Czy były to autonomiczne zakupy?
+50% - częściowo20% - tak20% - nie10% - częściowo dlatego,że nie wiadomo jak dojść do ubrań, a potem do kasy, czyli jak się poruszać po sklepie
+Czy dzięki rozwiązaniu można było wyrobić sobie zdanie na temat oferty firmy “Pan tu nie stał”?
+80% - tak20% - nie
+Czy miałeś / miałaś ochotę zakupić odzież przygotowaną do testów po użyciu rozwiązania z audiodeskrypcją?
+80% - tak10% - nie10% - pewnie tak, gdyby mi zadziałało rozwiązanie
+Co było trudne w tej sytuacji zakupowej?
+W całej sytuacji zakupowej dla uczestników trudny był początek testów, kiedy po raz pierwszy szukali metki oraz skanowali kod. Z czasem, gdy się oswoili, czynność stawała się dla niektórych testerów łatwiejsza. W całym teście najtrudniejsze było kilka aspektów.
+Po pierwsze w momencie, w którym jedną ręką trzyma się metkę z kodem oraz produkt, nie ma możliwości swobodnego korzystania z smartfonu. Do jego użycia, w przypadku obsługi bezwzrokowej, potrzebne są dwie ręce. Kiedy wypuści się produkt z ręki, by obsłużyć telefon, trudno potem go odnaleźć pomiędzy innymi produktami. Kłopot pojawia się też w momencie, w którym tester po zapoznaniu się z audiodeskrypcją chce poznać produkt dotykowo. Musi wtedy odłożyć lub schować smartfon.
+Nie zawsze było łatwo testerom znaleźć metkę, ponieważ na każdym produkcie były dwie inne metki firmowe. Testerzy chwalili sobie fakt, że metka z kodem była z innego materiału oraz miała przycięty róg. Ułatwiało to jej bezwzrokową identyfikację.Pojawiły się głosy, że warto by było bardziej zautomatyzować proces przechodzenia z aplikacji na stronę. Kłopotliwe okazało się też posiadanie otworzonych na telefonie różnych kart. Przesłuchiwanie dość szczegółowych audiodeskrypcji okazało się procesem żmudnym.
+Testerom brakowało niektórych informacji w audiodeskrypcjach na przykład: rozmiarów, stylu jaki prezentuje dany produkt, sugestii na temat okazji, na które można włożyć daną odzież. Pojawił się także głos, że warto by było stworzyć dwa rodzaje audiodeskrypcji: jeden na zasadzie tekstu alternatywnego, czyli bardzo krótki, który pozwala szybko zorientować się, co to za rzecz: tutaj warto wpisać czy jest to rzecz damska czy męska, jaki rodzaj na przykład bluza, koszulka, spodnie, kolor, ogólny wzór.Drugi opis powinien być dłuższy i bardziej szczegółowy, z dokładnymi informacjami o wzorze, rodzaju rękawów, mankietów, ściągaczy, kieszeni i tym podobne. Można również umieścić informacje o sposobie użytkowania. Jednej z testerek zabrakło informacji o wariantach kolorystycznych. Jeżeli dana bluza, koszulka czy sweter występują tylko w kolorze, który obserwujemy na danym produkcie, to ta informacja też powinna się pojawić. Brak innych wersji wymaga jej zdaniem także odnotowania. Przykład: w audiodeskrypcji czapek i szalików brakowało informacji, czy są damskie, męskie, czy uniwersalne.
+Warto również pomyśleć o sposobie na preselekcję. Dzięki temu nie trzeba by długo i żmudnie odsłuchiwać wszystkich audiodeskrypcji, a od razu poznawać bliżej produkty, które interesują kupujących.
+Zakupy okazały się autonomiczne lub częściowo autonomiczne. Pojawił się głos, że dobrze przeszkoleni pracownicy stanowiliby istotny element dostępnych zakupów.
+Co było przyjemne?
+Wśród głosów pojawiło się przekonanie, że przyjemne było samodzielne wybieranie produktu, poznawanie jego wyglądu oraz szczegółów. To powodowało poczucie autonomiczności. Jednak do pełnego jej wymiaru potrzeba jeszcze odpowiedniej nawigacji po sklepie. Zwrócono uwagę, iż metki były odpowiednie, ścięte z jednej strony, duże, ze specjalnej tkaniny, dzięki czemu od razu można było ją odróżnić od innych.Przyjemne było także przebywanie w przytulnym, bezstresowym sklepie. Przyjemne było odczytywanie audiodeskrypcji i poznawanie ubrań. Przyjemne było to, że system zadziałał. Przyjemne było to, że dzięki systemowi można było podjąć autonomiczną decyzję o zakupach. Przyjemne było to, że można było się dowiedzieć i nauczyć czegoś nowego.
+Cytat: “Obsługa sklepu, która przyjęła mnie wręcz z otwartymi ramionami. Byli pomocni, ale nie nachalni, mogłam grzebać sobie i przebierać w ubraniach tak długo, jak chciałam. Poza tym opis ubrań był bardzo dobry i przyjemny, obrazował konkretne ubranie, tak że bez problemu byłam je sobie w stanie wyobrazić”. Wśród testerów była także osoba, która nie odczuła żadnej przyjemności, z powodu tego, że nie mogła smartfonem zeskanować kodów i poznać ubrań.
+
+Cytat:“Zapoznałem się z asortymentem PTNS, zdecydowanie, pozwoliło mi ocenić te produkty pozytywnie. Jestem zadowolony, podobało mi się. Zlikwidowałbym konieczność logowania (od zepołu CzytaModa: wymóg konieczny tylko na etapie testów, nie będzie elementem docelowego rozwiązania). Korzystałem z pobranego na telefon skanera kodów. Zapamiętany produkt: Na pewno bluza “dom turysty” i podkoszulek “dziadostwo” i szalik z maluchami, czapka “bajzel”, “balanga” t-shirt.
+
+TESTY ONLINE
+Etap III – każdy uczestnik dostał maila z instrukcją dotyczącą testów ONLINE:
+Testy online odbyły się w dniu dwudziestym dziewiątym października dwa tysiące dwudziestego drugiego roku. Każdy z dziesięciu testerów za pomocą telefonu lub komputera sprawdzał działania testowego sklepu z odzieżą z audiodeskrypcją. Czas przeznaczony na tę czynność dla każdego testera wynosił godzinę. Testy łącznie potrwały dziesięć godzin. Celem głównym testów online było sprawdzenie czy audiodeskrypcje umieszczone przy produktach działają, czy są odpowiednio skonstruowane i czy rozwiązanie jest funkcjonalne.
+Test przebiegał zgodnie z planem w czasie dziesięciu godzin przy użyciu smartfonów lub komputerów przez grupę testerów z niepełnosprawnością wzroku. Zespół CzytaModa dokonał jednej zmiany. Testy odbyły się w specjalnie przygotowanym testowym sklepie, a nie na stronie internetowej planowanego partnera KOKO WORD. Zespół znalazł nowego Partnera firmę Pan Tu Nie Stał. Finalnie nie zdecydował się na przeprowadzenie testów na stronie Partnera, z uwagi na bardzo wysokie koszty prac programistów oraz konieczność ingerencji w realny sklep internetowy. Nowa, testowa platforma dodatkowo ma aut taki, że można na niej umieszczać audiodesprypcje ubrań innych firm odzieżowych i rozbudowywać ją o nowych partnerów. OPIS PLATFORMY
+Shopify to platforma sklepowa. Shopify działa w modelu Software-as-a-Service (SaaS), czyli w modelu subskrypcyjnym. Oznacza to, że dostajemy dostęp do aplikacji tak długo, jak płacimy miesięczny lub roczny abonament. Shopify jest ceniony za to, że osoby niemające wiedzy programistycznej mogą bez pomocy developerów zarządzać sklepem. Nie jest on mniej praktyczny niż te z dużym budżetem. Zapewnia bowiem utrzymanie, bezpieczeństwo i automatyczne aktualizacje sklepu, a także pomoc zespołu suportowego, który pomoże rozwiązać problemy techniczne.
+
+INSTRUKCJA DOTYCZĄCA TESTÓW ONLINE CZYTAMODA
+
+Celem testów jest sprawdzenie, czy audiodeskrypcje umieszczone przy produktach działają, czy są odpowiednio skonstruowane i czy rozwiązanie jest funkcjonalne.
+Prosimy o przygotowanie się w następujący sposób:
+W celu przeprowadzenia testów ONLINE potrzebne jest posiadanie komputera lub telefonu lub laptopa lub tableta z dostępem do Internetu. Testy można odbyć korzystając z dowolnego urządzenia.
+Podczas testów należy zalogować się do sklepu online. Należy wpisać adres sklepu: https://czytamoda2.myshopify.com, a następnie hasło: geuthe
+Prosimy o umożliwienie przeglądarce zapamiętania hasła, na wypadek wylogowania podczas testu. To znacznie ułatwi używanie strony sklepu podczas testów.
+Przebieg testów:
+Strona jest dostępna do testowania cały czas. W dniu dwudziestego dziewiątego listopada zespół CzytaModa będzie dostępny i będzie można zadawać ewentualne pytania.
+W czasie testów zespół CzytaMody będzie obecny na Zoom oraz pod telefonem.
+W sklepie internetowym umieszczone zostało dwadzieścia jeden produktów do przetestowania: damskich, męskich oraz akcesoriów w postaci czapek i szalika. W czasie testów można zapoznać się z dowolną liczbą produktów z tej grupy.
+Po wejściu na stronę produktu czytnik ekranu powinien odczytać jako nagłówek nazwę produktu, następnie audiodeskrypcję i pozostałe informacje o produkcie.
+Na etapie testu nie dokonujemy zakupów, tylko zapoznajemy się z produktami i ich opisami.
+Po zakończonych testach prosimy o wypełnienie ankiety, którą wyślemy mailowo.
+WYNIKI BADAŃ ONLINE
+W testach online wzięło udział dwunastu testerów.
+Na pytanie
+Czy audiodeskrypcja na karcie produktu była umieszczona w dobrym miejscu, dzięki czemu znalezienie jej nie sprawiało problemu?100% osób odpowiedziało - tak
+Jak oceniasz audiodeskrypcję odzieży?83% - bardzo przydatna17% - przydatna
+Czy długość audiodeskrypcji była odpowiednia?92% - tak8 % - nie
+Czy w audiodeskrypcji znalazły się wszystkie informacje, które Cię interesują?67% - tak33% - nie
+Czy kolejność podanych informacji była odpowiednia?100% - tak
+Z iloma produktami się zapoznałeś/zapoznałaś? Ile czasu Ci to zajęło?Testerzy sprawdzili od 6 do 21 produktów, średnio przeznaczając trzy minuty na każdy produkt.
+Czy korzystałbyś/korzystałabyś z usług sklepu, który właśnie przetestowałeś/łaś?
+92% - tak8 % - nie
+Jeśli nie, to dlaczego?Jeden tester uznał, że ubrania nie są w jego stylu.
+Jakie emocje towarzyszyły Ci podczas korzystania z aplikacji?
+zdenerwowanie - 8 %radość - 42%zaciekawienie - 100%zmęczenie - 8%
+Co było najtrudniejsze w całej sytuacji zakupowej?Testerzy uznali, że podczas zakupów online nie było większych trudności i że były łatwiejsze od zakupów stacjonarnych. Testerzy zaobserwowali brak podanego rozmiaru (prawdopodobnie pominęli blok z wyborem rozmiaru). Kłopotem był fakt, że audiodeskrypcja była odczytywana w jednym ciągu. Przy bezwzrokowej obsłudze powoduje to, że przy potrzebie powrotu do jakiejś informacji konieczne jest odczytywanie całości. Testerzy wskazywali też, że problematyczny jest brak podziału audiodeskrypcji na sekcje, z wyraźnym podziałem na opis ogólny - fason i kolor, opis detaliczny - nadruk, deseń, itp. część dotyczącą materiału, jego struktury i właściwości. Zasadniczo elementy te pojawiały się w tekstach, ale w odczuciu jednego z testerów zbyt mocno wymieszane.Jedna z testerek odczuwała niepewność, jak wyglądałaby w wybranym produkcie, czy w rzeczywistości by jej się podobał.
+Cytat:
+“To, że nie wiem, czy warto zaglądać do szczegółów danego ubrania, bo nazwy zazwyczaj nic nie mówią. Jeśli widzę napis "Bluza żakardowa Cześć", to jeszcze coś znaczy, ale to tylko zasługa konkretnego sklepu Pan Tu Nie Stał, który ma takie nazwy z treścią. Jednak jak w przypadku innego produktu będzie np. "Koszula Jennifer", to już zupełnie nic mi nie powie. Zakładając, że produktów kiedyś będzie więcej, niepraktycznym rozwiązaniem byłoby przeglądanie wszystkiego. Dlatego dobrze byłoby robić jakieś króciutkie, bardzo syntetyczne opisy tych ubrań, takie na kilka słów, żeby w ogóle klient miał pojęcie, czy to może go zainteresować. Dobrze byłoby wprowadzić też więcej kategorii filtrowania, np. spódnice, sukienki, spodnie, koszule itd., itd. Odświeżanie strony nie powinno następować na bieżąco, tylko dopiero po wybraniu odpowiednich filtrów i zatwierdzeniu. Automatyczne odświeżanie strony utrudnia korzystanie osobom niewidomym. Poza tym nie można wtedy wygodnie przejrzeć możliwości sortowania, bo to się od razu odświeża i znika.”
+Co było przyjemne? Opinie testerów:
+Zapoznawanie się z wyglądem ubrań z pomocą audiodeskrypcji.
+Wczytywanie się w opisy, lubię czytać, słuchać opisy o odzieży.
+Samodzielne zapoznanie z informacją na temat danego produktu.
+Korzystanie z dostępnej strony, możliwość dokonywania samodzielnego wyboru oraz zapoznawanie się z ciekawym asortymentem.
+W zasadzie wszystko. Miało urok nowości. Takie zaciekawienie.
+Samodzielność i pełna decyzyjność. Poza tym w ogóle lubię czytać opisy ubrań.
+To że samodzielnie mogłem znaleźć produkt, zapoznać się z jego szczegółami. specyfikację i świadomie zdecydować czy chciałbym go kupić.
+Możliwość samodzielnego i pełnoprawnego przeglądania produktów.
+Świadomość, że wiedziałabym co mam na sobie, szczególnie wiedza o szczegółach typu wzór, nadruk.
+Przyjemne było to, że mogłam sobie poprzez opisy produktów wyobrazić jak one wyglądają i miałam obraz w głowie tych ubrań.
+Czy były to autonomiczne zakupy?92% - tak8% - nie
+Jeśli częściowo, to dlaczego?
+Nie robiłam zakupów, tylko testowałam audiodeskrypcję produktów
+Zaznaczyłam tak w odniesieniu do zakupów internetowych, nie tych stacjonarnych, ale swoje wątpliwości opisałam w poprzedniej ankiecie
+Przeglądając czapki, szaliki nie byłam pewna czy to są rzeczy damskie czy męskie; ale to kwestia dopisania informacji
+Nie mogłem sobie wyobrazić wszystkich interesujących mnie elementów np. Kielichowe rękawy, raglanowe rękawy kolor ecru - nie wiem jaki to odcień białego.
+Czy podczas tych zakupów pomocna byłaby asysta? Odpowiedz krótko, jakie jest Twoje zdanie.Testerzy odpowiedzieli, że asysta mogłaby być pomocna jedynie w sklepie stacjonarnym. Jedna osoba uznała, że asysta podczas zakupów online mogłaby być przydatna, żeby dopytać o konkrety i rozwiać wątpliwości.
+Jedna testerka zwróciła uwagę, że asysta podczas zakupów online mogłaby się przydać w sytuacji, w której kupowałaby więcej niż jedno ubranie i chciałaby je do siebie dopasować. Potrzebowałaby wtedy pomocy w stwierdzeniu, czy kolory dobrze ze sobą współgrają, zwłaszcza gdyby na ubraniach było tych kolorów dużo.
+Czy miałeś/miałaś ochotę zakupić odzież przygotowaną do testów sklepu z audiodeskrypcją? 75% - tak25% - nie
+Część osób uznała, że miałaby ochotę kupić prezentowaną odzież. Niektóre osoby uznały, że to nie ich styl lub nie potrzebują w chwili obecnej nowych ubrań. Część osób była chętna do kupienia, ponieważ zainteresowały je opisy audiodeskrypcji.
+Czy chciałabyś/chciałbyś samodzielnie, bez asysty dokonywać zakupów odzieżowych w oparciu o sklep internetowy z audiodeskrypcją?
+100% - tak
+Jak audiodeskrypcja produktów odzieżowych zwiększyłaby Twoją niezależność w zakupach odzieżowych dokonywanych online?
+58% - bardzo by zwiększyła moją niezależność25% - zwiększyłaby moją niezależność13% - trochę by zwiększyła moją niezależność 8% - nie ma to wpływu na moją niezależność
+Czy masz ochotę poznać więcej odzieży dzięki kolejnym audiodeskrypcjom?
+100% - tak
+Jak oceniasz użytkowanie testowanego sklepu z audiodeskrypcją? 67% - łatwe25% - umiarkowanie łatwe8% - trudne
+Z jakiego sprzętu korzystałeś/korzystałaś w czasie testów?58% - komputer42% - smartfon
+Jakiego oprogramowania do odczytu ekranu używałeś/używałaś?50% - VoiceOver42% - NVDA8% - JAWS
+Z jakiej przeglądarki korzystałeś?50% - Safari25% - Google Chrome25% - Firefox
+WNIOSKI:
+Po testach okazało się, że zakupy w sklepie stacjonarnym dla osób z NW są trudne. Jest problem z orientacją w sklepie, z czasochłonnością całego procesu, trzymaniem smartfona, białej laski, metki i poznawaniem dotykowym danego produktu.
+Były skrajne opinie o audiodeskrypcji. Jedni testerzy uważali, że ma ona dobrą długość i zawiera odpowiednią liczbę informacji, inni, że - jest zbyt długa.
+Dla niektórych użytkowników trudne było skanowanie. Wynikało to albo z rozmiaru metki, albo z umiejętności oraz doświadczenia.
+Pozyskanie partnerów biznesowych jest bardzo trudne z uwagi na brak przełożenia na bezpośrednie korzyści finansowe oraz brak wymogu prawnego.
+Testy pokazały, że proponowane rozwiązanie wpłynęłoby pozytywnie na podniesienie kompetencji grupy odbiorców, np. umiejętności skanowania kodów i na podniesienie jej aktywności w życiu społecznym.
+Użytkowanie testowanego rozwiązania bardzo zależy od sprzętu oraz oprogramowania stosowanego przez danego testera. W czasie testów najwięcej problemów stwarzały smartfony w systemie IOS i ich wbudowana aplikacja do skanowania.
+Porada - testerzy wskazywali, że w realnej sytuacji zakupowej bardzo potrzebna jest możliwość uzyskania porady, jak dany produkt odzieżowy prezentuje się na danym kliencie/klientce.
+
+REKOMENDACJE:
+Rozwiązanie może być zastosowane w przyszłości w małych sklepach stacjonarnych, nie sprawdzi się natomiast w dużych sklepach czy galeriach. Warto pomyśleć o większych odstępach między ubraniami na wieszaku. Jeden z testerów trzymał metkę z koszulki, która była obok tej, która mu się podobała. Metka wpadła za wieszak koszulki wiszącej obok. Przez to tester, mając w ręku jedną rzecz, czytał opis o innym produkcie
+Przeprowadzenie badań ilościowych dotyczących długości, formy i zawartości merytorycznej audiodeskrypcji. Warto przemyśleć konstrukcję audiodeskrypcji i stworzenie dwóch wersji audiodeskrypcji: jeden bardzo krótki, który pozwala szybko zorientować się, co to za rzecz oraz opis dłuższy i bardziej szczegółowy.
+Zmniejszenie rozmiaru metki, dopasowanie do wielkości QR kodu
+Potrzebna jest kampania społeczna uświadamiająca, jak ważna jest rola podmiotów gospodarczych i firm w realnym wdrażaniu zmian w kwestii dostępności.
+Potrzebne są wymogi prawne związane z dyrektywą, żeby zobligować biznes do konkretnych działań.
+Im więcej inicjatyw społecznych tego typu, tym lepsza aktywizacja osób z wykluczeniami i podniesienie ich komfortu życia.
+Aby rozwiązanie mogło funkcjonować masowo należałoby zrobić testy na większości dostępnych sprzętów typu telefony czy tablety i napisać szczegółowe instrukcje użytkowania. Konieczne wydaje się przetestowanie aplikacji do skanowania kodów QR i stworzenie rekomendacji najlepszych na system Android i IOS
+Cały Sklep internetowy powinien być dostosowany do obsługi bezwzrokowej, nie tylko dodana audiodeskrypcja.

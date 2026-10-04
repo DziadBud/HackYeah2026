@@ -1,0 +1,459 @@
+--- strona 1 ---
+
+1
+Raport z wykonania wzorcowego modelu
+pozytywowego atrap nóg.
+Data sporządzenia:
+31.03.2023
+Miejsce sporządzenia:
+Poznań
+Autor:
+
+Bartłomiej Stroiński
+Projekt:
+
+Cloudleg
+
+--- strona 2 ---
+
+2
+Spis treści
+Wstęp ____________________________________________________________________ 3
+Wykonanie siedziska _________________________________________________________ 4
+Zatrudnienie modelki ________________________________________________________ 8
+Zdjęcie wzoru nóg z modelki do formy negatywowej wstępnej _______________________ 10
+Odlew wzorcowego modelu pozytywowego atrap nóg _____________________________ 18
+Podsumowanie ____________________________________________________________ 22
+
+--- strona 3 ---
+
+3
+Wstęp
+Niniejszy raport zawiera materiał dokumentujący zadanie wykonania wzorcowego modelu
+pozytywowego atrap nóg w ramach testowania innowacji społecznej pn. „Cloudleg”,
+realizowanej w ramach projektu pn. „Inkubator Włączenia Społecznego” finansowanego
+ze środków Unii Europejskiej. Zadanie zostało zrealizowane w lutym 2023 i obejmowało
+mniejsze podzadania wg kolejności:
+•
+wykonanie siedziska
+•
+zatrudnienie modelki
+•
+zdjęcie wzoru nóg z modelki do formy negatywowej wstępnej
+•
+odlew wzorcowego modelu pozytywowego atrap nóg
+Przedmiotowe zadanie doprowadziło do otrzymania gipsowego wzoru nóg siedzących
+w skali 1:1, które było niezbędne do realizacji kolejnego zadania polegającego na stworzeniu
+negatywowej formy kompozytowej zbrojonej prętami mosiężnymi opisanej w osobnym
+raporcie.
+Specyfikacja innowacji dopuszczała wykonanie tego zadania także poprzez skan 3D i i wydruk
+modelu syntetycznego jednak takie zadania odbyły się na etapie prototypowania i autor
+postanowił przetestować sposób „analogowy” czyli fizyczne zdjęcie formy z modelki i odlew
+gipsowy w zamian, żeby nauczyć się i „przetrzeć” drogę proceduralną i innej technologii
+niż z która miał już doświadczenie.
+Oznacza to, że to zadania można było także zrealizować w takim samym systemie jak
+podczas prototypowania, czyli zatrudnić modelkę, zeskanować jej nogi a następnie
+je wydrukować w druku 3D. Różnica byłaby taka, że skan i druk musiałby obejmować dłuższe
+uda prawie aż do miednicy, bo poprzednie nogi były skanowane i drukowane pod konkretną
+testerkę.
+Ostatecznie autor wybrał trudniejszą metodę prac nad tym zadaniem zdobywając
+jednocześnie nowe doświadczenia.
+
+--- strona 4 ---
+
+4
+Wykonanie siedziska
+To podzadanie nie było planowane w procesie realizacji testowania innowacji. Autor
+planował użycie wypożyczonego wózka inwalidzkiego jako konstrukcję referencyjną
+do ułożenia nóg modelki w trakcie pobierania wzoru jej nóg. Kiedy jednak w procesie
+konsultacji przygotowawczych okazało się, że proces pobierania wzoru nóg w sposób
+analogowy jest „brudną” pracą, podczas której istniałoby ryzyko zabrudzenia silikonem
+i gipsem pożyczonego wózka wartego między 15 a 20 tyś złotych została podjęta decyzja
+o zastąpieniu wózka jego swoistą atrapą ze sklejki drewnianej. Autor najpierw przeprowadził
+wywiady wśród testerek dotyczące wymiarów wózków, na których będą docelowo
+testowane nogi – produkt. Jako że jedna z testerek używa wózka manualnego a druga
+elektrycznego autor przygotował formularze z instrukcją jak mierzyć te wózki i wysłał
+te arkusze testerkom.
+
+Grafika 1. Arkusz pobrania wymiarów dla wózka elektrycznego.
+
+--- strona 5 ---
+
+5
+
+Grafika 2. Arkusz pobrania wymiarów dla wózka manualnego.
+Arkusze uwzględniały te same parametry dla każdego z wózka a były one następujące:
+A. Głębokość podnóżka bezwzględna
+B. Wysokość przedniej krawędzi podnóżka nad podłożem
+C. Wysokość dolnej krawędzi podnóżka nad podłożem
+D. Głębokość siedziska wózka bezwzględna
+E. Odległość między przednią krawędzią siedziska a tylną krawędzią podnóżka bezwzględna
+F. Wysokość tylnej krawędzi siedziska wózka nad podłożem
+G. Różnica wysokości przedniej krawędzi siedziska wózka a tylną krawędzią podnóżka
+mierzona w pionie względem podłoża
+H. Odległość przedniej krawędzi siedziska wózka od tylnej krawędzi podnóżka mierzona
+w poziomie względem podłoża
+I. Wysokość przedniej krawędzi siedziska wózka nad podłożem
+Przy założeniu, że 4 punkty pomiarów są wspólne kolejno dla DF, DEGHI, AB oraz ACEGH
+dane z tych pomiarów powinny dać informacje o kątach i położeniu względem siebie
+kluczowych elementów wózka, które mają wpływ na pozycje nóg.
+
+--- strona 6 ---
+
+6
+Dane uzyskane od testerek okazały się nieco różne; wózek elektryczny był wyższy i miał
+mniejsze kąty względem podłoża a wózek manualny był niższy i miał te kąty większe. Innymi
+słowy wózek elektryczny był bardziej zbliżony do krzesła bankietowego a manualny
+do krzesła samochodowego, gdzie siedzący się bardziej „zapada”.
+Przykład otrzymanych danych od użytkowniczki wózka manualnego:
+A–12cm B–9 C–2 D-38 E-39,5 F-42,5 G-39 H-9 I-44
+W przypadku dużych rozbieżności między poszczególnymi wymiarami autor uśredniał
+ostateczny wynik. W ten sposób następnie autor przygotował projekt siedziska dla stolarni.
+
+Grafika 3. Przykład projekt konstrukcji siedziska przed wychyleniem (jednostki bezwzględne).
+
+--- strona 7 ---
+
+7
+
+Grafika 4. Przykład projektu siedziska w 2 wymiarach pod kątem 7° w ujęciu wychylenia względem
+podłoża.
+Taki projekt został przekazy do stolarni wraz ze zleceniem wykonania opisanego obiektu.
+Siedzisko zostało wykonane ze sklejki odpadowej 10-20 mm grubości, łączonej wkrętami oraz
+klockami z drewna sosnowego również z użyciem wkrętów. Utrzymanie siedziska i podnóżka
+zostało wykonane przez pionowe płaszczyzny płyt bocznych.
+
+Grafika 5. Przykładowe siedzisko po wykonaniu w stolarni.
+Zadaniem wykonanego siedziska było wyznaczenie osobom pobierającym wzór nóg
+od modelki kątów i stosunków wysokości ułożenia nóg. Głównie chodziło o kąt poziomy
+ułożenia stopy, kąt poziomy ułożenia ud, odległość siedziska od podnóżka w pionie
+
+--- strona 8 ---
+
+8
+i poziomie, symulacja szerokości siedziska wózka a także pomocniczo kąt oparcia siedziska.
+Osoba wykonująca pracę pobierania wzoru po zobaczeniu jak wygląda siedzisko poprosiła
+o usunięcie ścianek ograniczających dostęp do nóg. Usunięto ścianki niemające znaczenia
+konstrukcyjnego, tak aby siedzisko było jak najbardziej ażurowe, przez co osoba pracująca
+z modelką miała większy dostęp do nóg z różnych stron. Zostały także częściowo usunięte
+boczne ścianki siedziska, żeby móc zaformować boki ud modelki. W stolarni dokonano
+niezbędnych poprawek.
+
+Grafika 6. Zdjęcie siedziska już w trakcie prac odwzorowujących nogi. Widać usuniętą
+ściankę za łydkami a także przycięcia ścianek bocznych na wysokości podnóżka.
+Widać także jak brudne są procesy przeprowadzane w tym zadaniu.
+Zatrudnienie modelki
+Dla przypomnienia podczas pomiarów testerek w pierwszym etapie realizacji innowacji
+ich teoretyczny wzrost był podobny i wyniósł 166 cm a waga teoretyczna również była
+podobna i mieściła się w przedziale 54,6 - 59,8. Wtedy jako wzorzec nóg drukowanych
+w technologii 3D posłużyła modelka o zbliżonym wzroście 168 cm i deklarowanej wadze
+63kg. Modelka była więc 2cm wyższa, ale miała zbliżone BMI do górnej granicy BMI
+obu testerek. Jako, że testerka Anna po wydrukowaniu i testowaniu nóg prototypowych
+zgłaszała potrzebę, żeby kolejne nogi były szczuplejsze a testerka Edyta podczas spotkania
+fokusowego zwracała uwagę, że chciałaby nogi ze szczupłymi kostkami tym razem autor
+
+--- strona 9 ---
+
+9
+zdecydował się zaprosić do współpracy 2 modelki o dokładnie takim samym wzroście
+jak poprzednia modelka, ale w dolnej granicy zdrowego przedziału teoretycznego wagowego
+testerek. Z dwóch zaproszonych modelek na czas i miejsce pobierania wzoru nóg stawiła się
+jedna. Modelka Karina ma wzrost 168 cm oraz wagę 55 kg.
+W ocenie artysty rzeźbiarza wykonującego pobranie formy z nóg modelki Doktora Sztuk
+Pięknych, Adiunkta Marcina Radziejewskiego z Uniwersytetu Artystycznego w Poznaniu -
+wykonawcy formy i pracującego z modelką przez dwa dni po ponad 6h modelka miała
+uniwersalny kształt nóg. Modelka ponadto miała wyraźny kształt kolan, nie gładki (okrągły),
+wyraziste, dobrze wyglądające kostki, podkreślające „żywość” stopy. Praca z modelką
+przebiegała dla artysty w sposób idealny, była cierpliwa, siedziała w jednej pozycji wiele
+godzin. Modelka miała także zaufanie do wykonawcy szczególnie podczas cięcia formy
+silikonowej, w której miała oklejone nogi a także podczas jej nakładania na skórę.
+Ma to szczególne znaczenie, gdyż podczas otwierania formy artysta operuje ostrym
+narzędzie bezpośrednio przy skórze modela.
+
+Grafika 7. Autor (w środku) z Dr Marcinem Radziejewskim (po lewej) wykonującym formę oraz
+modelką Kariną. po (prawej) przed rozpoczęciem prac.
+
+--- strona 10 ---
+
+10
+Zdjęcie wzoru nóg z modelki do formy negatywowej wstępnej
+W tym podzadaniu została wykonana forma negatywowa wstępna z silikonu stosowanego
+do ludzkiego ciała oraz forma matka z gipsu. Forma ta posłuży w następnym podzadaniu
+do wykonania głównego produktu tego zadania - wzorcowego modelu pozytywowego atrap
+nóg z gipsu.
+Modelka usiadła na siedzisku, które było na postumencie, aby artyści pracujący nad formą
+jej nóg mieli do nich lepszy dostęp.
+Jako materiału kontaktowego z ciałem i odwzorowującego go użyto kauczuku silikonowego
+do odwzorowania ciała „Body Double” firmy Smooth-On, Inc. Jest to szybko sieciujący,
+2-składnikowy kauczuk silikonowy, który może być nakładany bezpośrednio na skórę.
+Pozwala na odwzorowanie dowolnej części ciała (lub całego ciała) z najdrobniejszymi
+szczegółami. Kauczuk ten ma twardość Shore A: 25. Został wybrany taki produkt zamiast
+powszechnie używanych silikonów formierskich, ponieważ to bezpieczny, sprawdzony
+i przyjazny dla skóry silikon. Produkt ten także bardzo szybko utwardza się tworząc kauczuk
+odporny na rwanie, który dostarcza wiernych reprodukcji. W przeciwieństwie do alginianów,
+które umożliwiają tylko jeden odlew, stosując Body Double można wykonać wiele
+reprodukcji z gipsu, żywicy lanej, wosku, gipsu polimerowego Acrylic One, metali o niskiej
+temperaturze topnienia etc. Kolejną zaletą jest fakt, iż do wytwarzania form z Body Double
+zużywa się mniej materiału.
+Do wykonania form obu nóg zużyto 18 funtów tego produktu z utwardzaczem (8,16 kg).
+Na początku, żeby sprawdzić czasy wiązania oraz czy silikon będzie właściwie separowany
+nałożono na nogę modelki miejscowo wazelinę do ciała jako separator a następnie porcję
+kilkunastu gramów silikonu wymieszanego z utwardzaczem. Próbowano także wykonać
+kompozyt poprzez dołożenie na powierzchnię tej próbki gazy, jednak ze stosowania
+tej metody zrezygnowano, ponieważ używany silikon był wysokogatunkowy, spełniał
+wszystkie wymagania, jakie powinien spełniać i dobrze działał bez wzmocnienia
+kompozytowego.
+
+--- strona 11 ---
+
+11
+Kiedy próbka związała się w sposób odpowiedni i nie było problemu ze ściganiem jej z ciała
+przystąpiono do właściwych prac. Ustawiono odpowiednio nogi modelki, nasmarowano całą
+nogę kobiety wazeliną do ciała (jako separator) i przystąpiono do nakładania warstw silikonu.
+Następnie przyszedł czas na bardzo ważny etap, czyli właściwie ustawienie nóg. Było to
+bardzo trudne zadanie, ponieważ ułożenie to po związaniu silikonu jest nieodwracalne
+i ma wpływ na kształt otrzymanego wzoru, nie można go poprawić później, jeżeli jest
+nieodpowiednie lub bardzo trudno dokonać takich korekt. Chodzi o odpowiedni rozstaw
+stóp, ułożenie ud oraz odległości między kolanami. Problem polega na tym, że nie da się
+zaformować 2 nóg na raz. Nogi z modelki były odwzorowywane pojedynczo; jedna noga
+w jeden dzień. Każda z nóg była przygotowywana oddzielnie, żeby potem dwa odlewy
+zestawione razem dobrze wyglądały. Modelka musiała więc utrzymywać pojedynczą nogę
+tak jakby obok była druga, druga noga musiała pozostać oddalona w rozchylaniu, żeby zrobić
+miejsce do pracy nad odwzorowywaną kończyną. Po kilku próbach artysta ustabilizował
+tę nogę w miejscu docelowym poprzez wykonany stabilizator referencyjny wskazujący
+miejsce kolana wykonany z drewnianej tyczki i drutu. Stabilizacja była dokonana, przez to,
+że modelka zewnętrzną częścią kolana dotykała końcówkę drutu wiedząc, że w tej pozycji
+ma być cała noga. Mimo tak użytej stabilizacji po zestawieniu ze sobą później gipsowych
+wzorów nóg były przesunięcia od 0,5 do 1 cm błędu w pozycji między nogami, które trzeba
+było zniwelować metodami rzeźbiarskimi. Aby uniknąć podobnych błędów w przyszłości
+autor sugeruje użycia 2 podobnych stabilizatorów od początku zamiast jednego po jednym
+na każdą nogę. Opisywany stabilizator był pewnym dyskomfortem dla modelki, ponieważ
+końcówka drutu stykająca się z ciałem powinna być najmniejsza, żeby uniknąć jej śladu
+w przyszłej formie oraz modelu wzorcowym i dokonywać jak najmniejszych retuszów
+a jednocześnie na tyle duża, żeby nie wrzynała się w nogę modelki za bardzo. Dodatkowo,
+aby utrzymać odpowiednią pozycje stóp na podnóżku narysowano mazakiem obrys miejsca
+gdzie mają one być trzymane.
+
+--- strona 12 ---
+
+12
+
+Grafika 8. Dopasowywanie opisywanego stabilizatora referencyjnego do lewej nogi
+modelki przed odwzorowaniem tej kończyny. Widać także narysowane na podnóżku
+obwiednie zaznaczające miejsca, gdzie powinny być trzymane stopy.
+Jeżeli chodzi o pozycję ogólną nóg to zastosowano podobną do tej z części prototypowej
+projektu a jako wizualny referencyjny wzór zastosowano nogi wydrukowane w technologii
+druku 3D, które stały obok podczas ustawiania nóg modelki. Układ wypracowany w grudniu
+2022 okazał się dobry i uniwersalny, był sprawdzony podczas testów nóg twardych
+prototypowych.
+Idealną temperaturą do pracy z silikonem do ciała jest przedział 20-23°C kiedy
+w pomieszczeniu, w którym odbywało się opisywane podzadanie było 19-20°C,
+czyli dolna granica przedziału. Nie było to problemem, bo niższa temperatura powoduje
+nieco wolniejszą reakcję wiązania silikonu, przez co artyści nie musieli się spieszyć i mogli
+spokojnie nakładać formowany materiał na nogi.
+Temperatura nie była też problemem dla modelki, autor i osoby biorące udział w projekcie
+zapewnili jej okrycie w postaci szlafroka.
+Po wymieszaniu małej partii silikonu z utwardzaczem w proporcjach określonych w instrukcji
+technicznej stosowania tego produktu przystąpiono do nakładania pierwszej warstwy
+kontaktowej kauczuku na żywą nogę. Warstwa ta była zakładana pędzlem, tak aby silikon
+dostał się we wszystkie zakamarki powierzchni skóry. Kolejne warstwy były już nakładane
+
+--- strona 13 ---
+
+13
+szpachelką. Warstw było 5-6, każda po 2 – 3 mm grubości. Ilość warstw zależała głównie
+od połowy ilości dostępnego materiału na obie nogi. Każda porcja przygotowanego
+materiału wystarczała na około 15 min pracy plus czas utwardzania, czyli kolejne
+około 15 min. Nakładanie kolejnych warstw w odstępach czasowych jest niezbędne,
+żeby zapobiec nadmiernemu spływaniu silikonu.
+Warto zaznaczyć, że szybkość wiązania silikonu zależy od temperatury, jako, że ludzkie ciało
+ma swoją temperaturę wyższą od temperatury pomieszczenia różne warstwy wiązały
+w różnym czasie i osoba wykonująca formę odwzorowująca powinna te czasy cały czas
+monitorować i dostosowywać się do nich.
+
+Grafika 9. Nakładanie pędzlami pierwszej warstwy kontaktowej z silikonu na nogę modelki.
+Widać także spływającą część silikonu na podnóżek.
+Nogę ze związanymi wszystkimi warstwami silikonu prezentuje Grafika 6.
+Następnie po utwardzeniu się wszystkich warstw, które nastąpiło po około 2 godzinach
+
+--- strona 14 ---
+
+14
+od rozpoczęcia nakładania pierwszej warstwy przystąpiono do przygotowania formy matki
+gipsowej. Jest to dodatkowa forma formowana na formie silikonowej będącej jeszcze
+na nodze. Zadaniem formy matki jest utrzymanie kształtu konstrukcyjnego formy
+kontaktowej silikonowej. Forma silikonowa po zdjęciu nie trzymałaby kształtu całej nogi
+i dlatego docelowo jest utrzymywana w konstrukcji – swoistej ortezie – formie matce
+gipsowej. Innymi słowy matka jest sztywną częścią całej formy negatywowej która stabilizuje
+w odpowiednim położeniu jej miękką część, czyli formę negatywową silikonową. Całą forma
+gipsowa była jeszcze wzmocniona konstrukcją drewnianą, żeby ustabilizować kąt między
+udem a podudziem formy. Konstrukcja spełniała swoją rolę przede wszystkim podczas
+rozformowywania, czyli podczas zdejmowania jej z nogi oraz wyciągania z niej odlewu, kiedy
+na całą formę matkę działają największe siły. Forma matka została wykonana z 2 rodzajów
+gipsu:
+•
+gipsu kompozytowego w postaci opasek gipsowych używanego w chirurgii urazowej
+do stabilizowania złamań
+•
+gipsu formierskiego 2 klasy twardości
+Jeżeli chodzi o opaski gipsowe to użyto ich w postaci następujących produktów:
+1. Opaska Gipsowa OrthoBand Fast - Rolka 20cm x 3m. Czas wiązania wstępnego - 3 minuty.
+Usztywnienie całkowite - po 18h
+2. Opaska Gipsowa OrthoBand Fast - Rolka 15cm x 3m. Czas wiązania wstępnego - 3 minuty.
+Usztywnienie całkowite - po 18h
+3. Opaska Gipsowa GIPSET 12cmx3m
+4. Opaska gipsowa ROMED szybkowiążąca 15x3
+O łącznej długości 30-50 metrów bieżących na jedną nogę.
+Pierwsze warstwy formy matki (o łącznej grubości 1-3 cm) były robione - można powiedzieć -
+metodą „chirurgiczną” z użyciem bandaży medycznych. Następne były pokrywane gipsem
+formierskim o warstwie około 1-3 cm. Na to przyszła jeszcze konstrukcja drewniana
+w postaci 2 łat lub tyczek sosnowych na dwa boki każdej nogi, które były przytwierdzane
+do skorupy również za pomocą gipsu formierskiego.
+
+--- strona 15 ---
+
+15
+
+Grafika 10. Widok nierozformowanej jeszcze formy matki na warstwach silikonowych
+(niewidocznych) będących na nodze modelki. Widoczna warstwa z gipsu formierskiego, linie podziału
+sztuczkowego i wzmocnienia drewnaine.
+Na każdej nodze forma matka była wykonywana z 2 półskorup (nazywanych sztuczkami)
+oddzielonych od siebie linią biegnącą z dołu do góry po najwyższym profilu poprzecznym
+nogi, dzielącą te sztuczkę na prawą i lewą. Układ taki jest niezbędny, że móc wydobyć silikon
+i nogę modelki z formy matki podczas rozformowywania a także, żeby wydobyć odlew
+wykonywany w przyszłości w tej formie.
+Formowanie konstrukcji przecięcia tych skorup było żmudnym i ręcznym procesem
+wykonanym po wyznaczonej linii podziału. Wyformowano jedną sztuczkę, następnie,
+gdy ona już związała na krawędź podziału nałożono wykonany we własnym zakresie płyn
+separujący na bazie wody, mydła i olejów, żeby móc od tej krawędzi formować kolejną
+skorupę. Tak aby obie skorupy po związaniu łatwo oddzielić od siebie.
+
+--- strona 16 ---
+
+16
+
+Grafika 11. Wykonana prawa sztuczka gipsowa formy matki prawej nogi przed wykonaniem
+lewej sztuczki prawej nogi na formie silikonowej będącej na modelce.
+Po 5-6 godzinach od nałożenia pierwszej warstwy silikonu przystąpiono do rozformowania
+całej konstrukcji. Ręcznie oddzielono od siebie półskorupy i rozpoczęto rozcinanie
+„pończochy” silikonowej. Linie podziału powłoki silikonowej wyznaczono w innym miejscu
+niż gipsowej formy matki i przebiegały one z boku. W tym celu podczas nakładania jeszcze
+warstw silikonowych w okolicach tej linii nałożono więcej silikonu, aby powstały zgubienia,
+które pozwolą utrzymać sztywność rozcięcia i jego krawędzi. Sztywność pomaga w stabilizacji
+licowania miękkiej formy podczas wykonywania odlewów w przyszłości. Podział dokonywany
+był przy użyciu noża introligatorskiego. Sama operacja wymagała dużego zaufania modelki
+do wykonującego cięcia artysty, ponieważ operował on bardzo ostrym narzędziem
+przy w bezpośrednim kontakcie z jej skórą a sam proces wymagał rozcinania tego jednym
+pociągnięciem noża po wyznaczonej linii. Rozcięcie silikonu było niezbędne, aby uwolnić
+z niego nogę modelki.
+
+--- strona 17 ---
+
+17
+
+Grafika 12. Rozcinanie powłoki silikonowej formy negatywowej na nodze modelki
+Linia podziału biegła po zewnętrznej stronie nogi od kostki przez zewnętrzny środek kolana,
+środkiem uda a potem w dół do miejsca, gdzie zewnętrzna część uda stykała się
+z siedziskiem. Linia podziału była jedna na nogę, to wystarczyło, by „wydobyć” z niej
+modelkę.
+Cały opisany proces dla jednej nogi miał miejsce w kolejny dzień dla drugiej i trwał około
+6 godzin w ciągu jednego dnia.
+
+Grafika 13 i 14. Elementy formy negatywowej jednej nogi uzyskane po zdjęciu ich z modelki.
+
+--- strona 18 ---
+
+18
+Odlew wzorcowego modelu pozytywowego atrap nóg
+Kolejnym etapem było umieszczenie formy miękkiej w twardej i spasowanie do siebie
+ich elementów. Następnie spód każdej stopy, który stykał się z siedziskiem został zamknięty
+płaską powierzchnią stolarską płytą laminowaną. Całość z zewnątrz została zabezpieczona
+i spięta taśmą klejącą.
+W każdą z form został wlany zmieszany z wodą gips dentystyczny. Gips ten jest idealny
+do tego typu odlewów, ponieważ krzywa w wykresie wiązania tego produktu jest płaska
+i stabilna. Wiązanie postępuje powoli i równomiernie, w przeciwieństwie do gipsów
+przemysłowych których wiązanie jest bardziej gwałtowne. Dodatkowo gips dentystyczny
+łatwo się odpowietrza, ilość pozostałych po związaniu bąbli powietrza jest minimalna
+co jest ważne w momencie, kiedy po wlaniu w formę mieszaniny wykonawca nie ma
+bezpośredniego dostępu do niego. Aby wlany gips dotarł do wszystkich wewnętrznych
+zakamarków formy silikonowej został rozprowadzony grawitacyjnie poprzez poruszanie
+i obracanie formy w rękach w 3 wymiarach przez około 15 minut dla każdej z nóg. Nastąpił
+swoisty ręczny rotomoulding wlanego materiału, tak aby stworzył na wewnętrznych
+ściankach formy równomierną warstwę gipsu - około 5-10 mm. Związana tak warstwa
+utworzyła swoistą gipsową wydmuszkę w kształcie każdej nogi. Otrzymany w ten sposób
+pozytywowy wzorcowy model gipsowy nóg był pusty w środku a jedyny dostęp do jego
+wnętrza obejmował dziurę od strony ud w ich przekroju oraz w miejscu, gdzie ludzki wzorzec
+stykał się z siedziskiem.
+Gips został przygotowany zgodnie z instrukcją w ilości ok 10 kg na nogę licząc razem z wodą.
+Wlewka pozostała w formie na 24h, po tym czasie całość została rozformowana a modele
+nóg wyciągnięte.
+Po wyciągnięciu z formy modele nóg zostały poddane retuszowi. Usunięto ślady po rozcięciu,
+zaszpachlowano miejsce po końcówce stabilizatora referencyjnego oraz inne nieznaczne
+ubytki.
+
+--- strona 19 ---
+
+19
+
+Grafika 15. Gipsowy model wzorcowy. W miejscu przyłożenia końcówki
+stabilizatora referencyjnego widoczne są ślady retuszu.
+Uzupełniono gipsem także brakującą ściankę „wydmuszki” nóg wzorcowych w miejscu gdzie
+dolne części ud stykały się z siedziskiem. Dokonano tego poprzez ułożenie modelu
+na siedzisku wzorcowym i dorobieniu ścianki na płaszczyźnie siedziska między krawędziami
+„wydmuszki”.
+Dodatkowo okazało się, że gipsowe nogi po złożeniu w pozycji siedzącej nie odwzorowują
+idealnie swojego kształtu, wynikało to z tego, że ludzkie nogi, kiedy są złączone razem
+lub w podobnej pozycji podczas siedzenia mają inny kształt (szczególnie wewnętrzne części
+ud) niż kiedy noga jest niezłączona. Podczas pobierania wzoru nogi były osobno,
+w momencie, kiedy jedna „udawała”, że są razem z rozsuniętą drugą tak aby wykonawca
+formy miał dostęp od aktualnie odwzorowywanej nogi. Dlatego artysta rzeźbiarz musiał
+dokonać odpowiednich korekt; głównie poprzez usuwanie materiału. Boczne strony ud
+i okolice zostały stosunkowo mocno przerzeźbione przez artystę, żeby utrzymać organiczną
+płynność anatomii formy modelu. Zostały także domodelowane końcówki ud, które stykają
+się z miednicą oraz dolne części uda tak aby stopy opierały się równo i w miarę lustrzanie
+na podnóżku, oraz żeby model wyglądał naturalnie i zgodnie z założeniami innowatora.
+
+--- strona 20 ---
+
+20
+
+Grafika 16. Gipsowy model wzorcowy po odlaniu, widoczny realizm detali możliwy
+dzięki kunsztowi wykonującego go artysty oraz wysokiej jakości użytych materiałów.
+Korekty były dokonywane ręcznie tynkarskimi siatkami ściernymi różnej gradacji tak
+aby uzyskać kształt nóg najbardziej naturalnie zbliżonych do oryginalnych nóg siedzących
+modelki. Na podobnej zasadzie odejmowania materiału zostały przygotowane też pasujące
+do siebie płaszczyzny o powierzchni około 7 cm ² przeznaczone na magnesy. Płaszczyzny
+zostały umieszczone w przedniej, wewnętrznej części ud, tak aby po złączeniu modeli nóg
+mogły przylegać do siebie.
+Warto zwrócić uwagę, że ze względu na szybkie tempo realizacji innowacji wykonawca
+nie poczekał na przeschnięcie nóg po odlaniu, które powinno trwać około tygodnia. Pracę
+poprawcze nad modelem gipsowym rozpoczęto w kolejnym dniu po odlewie.
+Po korekcie przyszedł czas na zagruntowanie gipsowego modelu nóg. Grunt na bazie wosków
+rozpuszczonych w toluenie stanowił także materiał izolujący niezbędny to wykonania
+kolejnego zadania zrobienia formy ostatecznej. Należy dodać, że w tym przypadku
+niekompletnie wyschnięty model gipsowy nóg był pewną zaletą. Grunt, dzięki pewnej
+wilgotności gipsu nie został bardzo wchłonięty do środka, przez co w przyszłych procesach
+formowania na nim warstw silikonowych nie utracił nieznacznej części swojej powłoki.
+
+--- strona 21 ---
+
+21
+Opisany grunt dodatkowo przymknął małe pory i ślady po mikro-bąbelkach powietrza
+na powierzchni modelu gipsowego.
+
+Grafika 17. Gotowy wzorcowy model pozytywowy atrap nóg (po prawej) w porwnaniu do nóg
+wykonanych (po lewej) w technologii 3D w poprzednim etapie grantu.
+
+--- strona 22 ---
+
+22
+Podsumowanie
+Zamknięcie prac nad wzorcowym modelem pozytywowym nóg w zasadzie zamknęło
+możliwość dalszego wpływania na kształt nóg ostatecznych w przyszłości. Etap ten był
+o tyle ważny, że podczas niego wypracowano wygląd atrap nóg, które będą robione
+w przyszłości. Opisane wyżej zadanie było praco i czasochłonne a także zawierało w sobie
+największy element inwencji twórczej w ostateczny kształt produktów przedmiotowej
+innowacji. Mimo napotkanych wyzwań artysta - wykonawca wykonał swoją pracę wzorowo
+a efekt tego zadania idealnie pokrywał się z oczekiwaniami autora innowacji.
+
+https://creativecommons.org/licenses/by/4.0/deed.pl

@@ -1,0 +1,648 @@
+--- strona 1 ---
+
+Model końcowy rozwiązania
+„Blue sea eye”
+Innowacja testowana w ramach „Inkubatora Dostępności” –
+Projektu wdrażanego w ramach IV Osi Priorytetowej Programu Operacyjnego
+Wiedza Edukacja Rozwój (Działanie 4.1: Innowacje społeczne), na zlecenie
+Ministerstwa Rozwoju, finansowanego ze środków Unii Europejskiej w ramach
+Europejskiego Funduszu Społecznego.
+
+--- strona 2 ---
+
+1. Spis treści
+Model końcowy rozwiązania „Blue sea eye”
+1
+1. Spis treści
+2
+2. Opis grupy docelowej i odbiorców rozwiązania.
+3
+3. Opis rozwiązania i jego funkcjonalności
+4
+4. Wyniki testów, rekomendacje i zalecenia dla
+13
+przyszłych użytkowników
+13
+Statystyki opisowe kursów uzyskanych z poszczególnych źródeł w
+zależności od kursu względem wiatru ...................................................... 15
+Korelacje wskazań kursów pomiędzy źródłami ........................................ 23
+5. Podsumowanie
+30
+
+--- strona 3 ---
+
+2. Opis grupy docelowej i odbiorców rozwiązania.
+Innowacja dedykowana jest osobom z niepełnosprawnością narządu wzroku:
+niewidomych i niedowidzących, które chcą wejść na dowolną jednostkę i móc nią
+swobodnie sterować. Z racji swojej dysfunkcji osoby te mają utrudnione możliwości
+organizacji wypoczynku i czasu wolnego, gdyż w tym zakresie bardzo rzadko mogą
+być samodzielne. Zazwyczaj swoje wyprawy turystyczne muszą dopasowywać do
+koncepcji wypoczynku zaprzyjaźnionych osób widzących. Obecnie żeglowanie jest
+uznawaną formą turystyki osób z dysfunkcją wzroku.
+Opisaną powyżej grupę można poszerzyć o wszystkich tych, którzy chcą
+spróbować sił np. w żeglowaniu nocą.
+
+--- strona 4 ---
+
+3. Opis rozwiązania i jego funkcjonalności
+Innowacja polega na opracowaniu i zbudowaniu urządzenia mobilnego
+(przenośny wskaźnik kursu kompasowego i wychylenia steru) połączonego z aplikacją,
+które umożliwia osobom niewidomym i niedowidzącym samodzielne sterowanie
+jednostką pływającą.
+Urządzenie stanowi niezależny od aparatury pokładowej przedmiot będący w
+posiadaniu sternika. Jego główną funkcją jest dokładne i precyzyjne generowanie
+informacji wyjściowych takich jak aktualny kurs, odejście od kursu zadanego, aktualne
+położenie steru, które za pośrednictwem sieci WiFi są przekazywane do aplikacji
+webowej uruchamianej na smartfonie użytkownika wyposażonym w oprogramowanie
+odczytu ekranu mową syntetyczną. Równoległym do komunikatów głosowych kanałem
+informacji jest powiadamianie użytkownika o zmianach kursu za pomocą serii krótkich
+dźwięków o różnej częstotliwości, co pozwala mu na uzyskanie informacji szybciej, niż
+za pomocą syntezy mowy, umożliwiając tym samym skrócenie czasu reakcji na
+zachodzące zmiany kursu.
+
+--- strona 5 ---
+
+Zdjęcie 1 Urządzenie Blue Sea Eye
+Zdjęcie 2 Urządzenie Blue Sea Eye.
+
+--- strona 6 ---
+
+Zdjęcie 3. Wnętrze urządzenia Blue Sea Eye
+
+--- strona 7 ---
+
+Za dokładne generowanie wysokiej jakości informacji o kursie jachtu przez urządzenie
+odpowiada wbudowana w urządzenie jednostka IMU (żyroskop, akcelerometr oraz
+magnetometr) w połączeniu z wykorzystaniem kursu podawanego przez wbudowany
+lub zewnętrzny GPS. Urządzenie dokonuje wstępnego filtrowania swojego położenia
+w przestrzeni za pomocą filtra Madgwicka w wersji dostosowanej do mocy
+obliczeniowej wbudowanego mikrokontrolera. Następnie wykonywane jest filtrowanie
+końcowe oparte o różnice w wychyleniu jachtu w osi poprzecznej oraz kursu
+podawanego przez najlepszą dostępną jednostkę GPS.
+
+Zewnętrzna jednostka GPS lub kompasu może zostać podłączona do
+urządzenia przy wykorzystaniu sieci jachtowej NMEA2000 (lub innej kompatybilnej) co
+pozwala na potencjalne poprawienie jakości odczytów lub wykorzystanie fizycznego
+odczytu kierunku z sensora jachtu. Podłączenie urządzenia do takiej sieci eliminuje też
+konieczność ładowania akumulatora urządzenia.
+
+--- strona 8 ---
+
+Za udostępnianie aplikacji webowej oraz przekaz danych odpowiada
+uruchomiony na urządzeniu serwer http. Udostępnia on aplikację w formie strony
+internetowej na stałym adresie IP w wygenerowanej przez urządzenie sieci WiFi.
+Odczyt kursu oraz sygnały dźwiękowe sygnalizujące szybkie zmiany kursu są
+generowane w aplikacji za pomocą udostępnianych przez przeglądarkę internetową i
+system użytkownika interfejsów syntezy dźwięku i czytnika ekranu lub syntezy mowy
+Zdjęcie 4. Urządzenie Blue Sea Eye cd.
+
+--- strona 9 ---
+
+(w zależności od systemu dostępnego na urządzeniu mobilnym użytkownika i
+preferowanej metody dostępu użytkownika).
+Aplikacja
+umożliwia
+korzystanie
+z
+podawanego
+kursu
+jako
+kursu
+bezpośredniego lub odchyłki od zadanego kursu. W przypadku wykorzystywania trybu
+odchyłki sygnalizacja dźwiękowa staje się szczególnie przydatna ponieważ pozwala
+na bieżąco ocenić wymaganą korektę kursu na podstawie pojedynczej serii dźwięków.
+Możliwa jest też zmiana zadanego kursu na obecny za pomocą jednego przycisku co
+pozwala na wygodne korzystanie przy częstej konieczności zmieniania kursu.
+Aplikacja pozwala też na zaawansowaną kontrolę formy oraz częstotliwości w
+jakiej emitowane są dźwięki pomocnicze co pozwala na dopasowanie do preferencji
+użytkownika. Jest to szczególnie istotne dla komfortu użytkowania sygnałów
+dźwiękowych przez dłuższe okresy
+
+--- strona 10 ---
+
+Zdjęcie 5. Zrzut ekranu aplikacji
+
+--- strona 11 ---
+
+Zdjęcie 6. Zrzut ekranu aplikacji cd.
+
+--- strona 12 ---
+
+Zdjęcie 7. Zrzut ekranu aplikacji cd (2)
+
+--- strona 13 ---
+
+4. Wyniki testów, rekomendacje i zalecenia dla
+przyszłych użytkowników
+Założeniem konstrukcji urządzenia była optymalizacja kosztów budowy oraz
+maksymalizacja jego skuteczności. W tym celu opracowano trzy modele prezentacji
+danych. Dane pochodzące z modeli porównano pod względem osiągniętej jakości
+sterowania z danymi z sensora referencyjnego oraz z drugiego sensora zapasowego.
+Dzięki temu sprawdzono, czy dane pozyskiwane z różnych źródeł są do siebie
+zbliżone. Następnie, na podstawie przyjętego kryterium najmniejszego błędu zejścia z
+kursu oceniono, które źródło pozwala uzyskać najbardziej precyzyjne wyniki w
+sterowaniu, to jest płynięcie kursem najbardziej zbliżonym do kursu zadanego. Dane
+zbierano w trakcie żeglugi pod różnym kątem do wiatru, aby sprawdzić, czy kurs
+względem wiatru będzie różnicował skuteczność źródła. Zbieranie danych odbywało
+się kolejno w bajdewindzie (70 stopni do wiatru pozornego), półwietrze (90 stopni do
+wiatru pozornego) i baksztagu (125 stopni do wiatru pozornego) jednocześnie z
+sześciu
+źródeł
+(gps_cog,
+nmea_cog,
+nmea_hdg,
+filter_cgfa3,
+filter_coga3,
+filter_hdga3). Dane zbierano w trakcie żeglugi w stabilnych oraz łagodnych
+warunkach, to jest przy umiarkowanym wietrze (ok. 12 węzłów) oraz przy niewielkim
+zafalowaniu (do. 0,5 m wysokości fali).
+
+--- strona 14 ---
+
+Przed przystąpieniem do analiz odpowiednio przygotowano dane. Oczyszczono
+je (m. in. usuwając zbędne i nadmiarowe zmienne) i ograniczono do danych zebranych
+w trakcie żeglugi stabilnym kursem, bez wykonywania manewrów (np. mijania z innymi
+statkami). Dodano informacje dotyczące kąta względem wiatru, które były zbierane
+analogowo. Zaokrąglono wartości kursów do liczb całkowitych w celu optymalizacji
+dokładności. Stworzono nowe zmienne, zwiększając wartości z ćwiartki kursów
+północno-wschodnich o 360, w celu dostosowania ich do specyfiki prowadzenia analiz
+statystycznych. Dokonano restrukturyzacji danych z formatu szerokiego na długi w
+celu umożliwienia dokonania analizy wariancji. Sformatowano zmienne nadając im
+odpowiednie etykiety. Statystyki opisowe przedstawiono w Tabeli 1. Rozkłady wartości
+kursów przedstawiono na wykresach (1, 2 i 3).
+
+--- strona 15 ---
+
+Statystyki opisowe kursów uzyskanych z poszczególnych źródeł w
+zależności od kursu względem wiatru
+Bajdewind
+Źródło
+gps_cog
+nmea_cog
+nmea_hdg
+filter_cgfa3
+filter_coga3
+filter_hdga3
+M
+353,62
+353,60
+006,26
+354,24
+353,61
+006,32
+Me
+354
+354
+006
+355
+354
+007
+SD
+6,71
+6,78
+5,79
+6,32
+6,20
+5,57
+R
+39
+40
+31
+31
+34
+28
+Ske
+-0,17
+-0,27
+-0,10
+-0,19
+-0,33
+-0,10
+
+--- strona 16 ---
+
+Źródło
+gps_cog
+nmea_cog
+nmea_hdg
+filter_cgfa3
+filter_coga3
+filter_hdga3
+K
+-0,23
+-0,38
+-0,31
+-0,35
+-0,30
+-0,31
+Tabela 1. Bajdewind. Wartości średniego kursu, mediany, odchylenia standardowego, rozstępu, skośności i
+kurtozy dla źródeł danych w zależności od kursu względem wiatru
+
+Półwiatr
+Źródło
+gps_cog
+nmea_cog
+nmea_hdg
+filter_cgfa3
+filter_coga3
+filter_hdga3
+M
+336,17
+336,12
+350,26
+336,53
+336,12
+350,33
+Me
+337,5
+337
+352
+338
+337
+352
+SD
+8,57
+8,98
+9,91
+8,84
+8,57
+9,74
+
+--- strona 17 ---
+
+Źródło
+gps_cog
+nmea_cog
+nmea_hdg
+filter_cgfa3
+filter_coga3
+filter_hdga3
+R
+60
+66
+72
+62
+61
+70
+Ske
+-1,86
+-1,47
+-2,65
+-1,97
+-1,83
+-2,81
+K
+5,88
+4,62
+9,38
+6,57
+5,84
+10,19
+Tabela 2. Półwiatr. Wartości średniego kursu, mediany, odchylenia standardowego, rozstępu, skośności i kurtozy
+dla źródeł danych w zależności od kursu względem wiatru
+
+Baksztag
+Źródło
+gps_cog
+nmea_cog
+nmea_hdg
+filter_cgfa3
+filter_coga3
+filter_hdga3
+M
+322,09
+322,46
+332,89
+322,57
+322,2
+332,72
+
+--- strona 18 ---
+
+Źródło
+gps_cog
+nmea_cog
+nmea_hdg
+filter_cgfa3
+filter_coga3
+filter_hdga3
+Me
+322
+322
+333
+323
+323
+333
+SD
+4,93
+6,66
+5,98
+6,14
+5,04
+5,13
+R
+30
+59
+45
+55
+48
+43
+Ske
+-0,13
+1,38
+0,72
+1,10
+0,03
+0,15
+K
+0,07
+8,14
+3,41
+6,28
+2,85
+2,20
+Tabela 3. Baksztag. Wartości średniego kursu, mediany, odchylenia standardowego, rozstępu, skośności i
+kurtozy dla źródeł danych w zależności od kursu względem wiatru
+
+--- strona 19 ---
+
+Wykres 1 Rozkłady wartości kursów w zależności od źródła danych dla kursu bajdewind
+
+--- strona 20 ---
+
+Wykres 2 Rozkłady wartości kursów w zależności od źródła danych dla kursu półwiatr
+
+--- strona 21 ---
+
+Wykres 3 Rozkłady wartości kursów w zależności od źródła danych dla kursu baksztag
+Kursy otrzymywane z różnych źródeł danych różniły się pod względem wariancji
+w sposób istotny statystycznie w kursie bajdewind (F(5, 6678) = 14,27; p < 0,001) i
+baksztag (F(5, 5178) = 8,33; p < 0,001), ale nie w kursie półwiatr (F(5, 6390) = 1,57; p
+= 0,165). Oznacza to, że zmienność uzyskiwanych wyników różni się istotnie pomiędzy
+poszczególnymi źródłami. Różnica jest istotna z punktu widzenia statystycznego i
+łatwo ją wykazać ze względu na dużą próbkę danych, lecz z punktu widzenia sternika
+różnica pomiędzy największym a najmniejszym SD na poziomie 1,21° nie ma
+
+--- strona 22 ---
+
+znaczenia, gdyż dobry sternik utrzymuje kurs z dokładnością do ±5°. Pojedyncze
+obserwacje odstające i ekstremalne mogą wynikać z pomiarów wykonanych w trakcie
+przechyłu na odosobnionej fali lub w trakcie szkwału.
+Najmniejszą zmiennością wyników charakteryzują się źródła posiadające
+najmniejszą wartość odchylenia standardowego (SD). Dla bajdewindu jest to hdga3,
+dla półwiatru coga3 (oraz gps_cog), a dla baksztagu coga3 (oraz gps_cog). W zakresie
+jednego odchylenia in plus i in minus od średniego kursu znajduje się 68,2% wartości
+z pomiaru. Dla hdga3 w kursie bajdewind średnia wynosi 6,32 a SD 5,57, co oznacza,
+że 68,2% pomiarów zawiera się pomiędzy wartościami 0,75 a 11,89, czyli w
+przybliżeniu pomiędzy kursami 001 a 012. Jest to dokładność w utrzymywaniu kursu,
+porównywalna do tej, którą osiąga przeciętna osoba sterująca jachtem.
+Obliczono korelacje wskazań kursów pomiędzy źródłami danych dla kursów
+bajdewind, półwiatr i baksztag. Wyniki przedstawiono w tabelach 2, 3 i 4.
+
+--- strona 23 ---
+
+Korelacje wskazań kursów pomiędzy źródłami
+Bajdewind
+**. Korelacja istotna na poziomie 0.01 (dwustronnie). N=1114
+
+gps_cog
+nmea_cog
+nmea_hdg
+cgfa3
+coga3
+hdga3
+gps_cog
+1
+.854**
+.901**
+.938**
+.916**
+.906**
+nmea_cog
+.854**
+1
+.783**
+.885**
+.858**
+.830**
+nmea_hdg
+.901**
+.783**
+1
+.951**
+.937**
+.930**
+cgfa3
+.938**
+.885**
+.951**
+1
+.963**
+.949**
+
+--- strona 24 ---
+
+gps_cog
+nmea_cog
+nmea_hdg
+cgfa3
+coga3
+hdga3
+coga3
+.916**
+.858**
+.937**
+.963**
+1
+.950**
+hdga3
+.906**
+.830**
+.930**
+.949**
+.950**
+1
+Tabela 4. Tabela 5 Korelacje wskazań kursów pomiędzy źródłami dla kursu bajdewind
+Półwiatr
+** Korelacja na poziomie 0.01 (dwustronnie). N=1066
+
+gps_cog
+nmea_c
+og
+nmea_h
+dg
+cgfa3
+coga3
+hdga3
+gps_cog
+1
+.925**
+.950**
+.973**
+.970**
+.956**
+
+--- strona 25 ---
+
+gps_cog
+nmea_c
+og
+nmea_h
+dg
+cgfa3
+coga3
+hdga3
+nmea_cog
+.925**
+1
+.870**
+.941**
+.919**
+.907**
+nmea_hdg
+.950**
+.870**
+1
+.966**
+.966**
+.971**
+cgfa3
+.973**
+.941**
+.966**
+1
+.986**
+.968**
+coga3
+.970**
+.919**
+.966**
+.986**
+1
+.966**
+hdga3
+.956**
+.907**
+.971**
+.968**
+.966**
+1
+Tabela 5. Korelacje wskazań kursów pomiędzy źródłami dla kursu półwiatr
+Baksztag
+**. Korelacja istotna na poziomie 0.01 (dwustronnie). N=864
+
+--- strona 26 ---
+
+gps_cog
+nmea_cog
+nmea_hdg
+cgfa3
+coga3
+hdga3
+gps_cog
+1
+.591**
+.729**
+.718**
+.833**
+.793**
+nmea_cog
+.591**
+1
+.708**
+.832**
+.623**
+.578**
+nmea_hdg
+.729**
+.708**
+1
+.887**
+.837**
+.759**
+cgfa3
+.718**
+.832**
+.887**
+1
+.834**
+.768**
+coga3
+.833**
+.623**
+.837**
+.834**
+1
+.905**
+hdga3
+.793**
+.578**
+.759**
+.768**
+.905**
+1
+Tabela 6. Korelacje wskazań kursów pomiędzy źródłami dla kursu baksztag
+
+--- strona 27 ---
+
+Z przedstawionych danych wynika, że wskazania z różnych źródeł korelują ze
+sobą w sposób istotny statystycznie (p < 0,001). Oznacza to, że wskazania
+charakteryzują się współzmiennością. Jeżeli rosną wskazania z jednego źródła, to
+podobnie rosną wskazania z innego. Dla kursu bajdewind najdokładniejszym
+odwzorowaniem wskaźnika referencyjnego jest źródło cgfa3, dla kursu półwiatr hdga3,
+a dla kursu baksztag cgfa3 i coga3.
+
+Zalecenia dla przyszłych użytkowników:
+
+Urządzenie jest obecnie prototypem składającym się z szeregu gotowych
+komponentów z bazowym układem zasilania. Aby przedłużyć trwałość urządzenia i
+poprawić jego wydajność należy przenieść układy zawarte w gotowych komponentach
+do jednego układu scalonego i opracować filtrowanie i rozdzielanie zasilania. Pozwoli
+to też na zmniejszenie wymiarów urządzenia i potencjalnie zmniejszy ewentualną
+awaryjność w trakcie użytkowania.
+
+--- strona 29 ---
+
+Aplikacja jest obecnie uruchamiana ze statycznego adresu jako strona
+internetowa. Jest to dobre rozwiązanie (nie wymaga instalacji oprogramowania), ale
+powoduje ograniczenia uprawnień do systemów syntezy mowy na urządzeniu
+mobilnym użytkownika. W przyszłości można opracować inne metody dostępu pisząc
+aplikacje natywne na najczęściej spotykane systemy mobilne, lub umożliwiając
+uruchomienie strony jako PWA (progressive web app) i instalację jej w systemie
+operacyjnym urządzenia mobilnego.
+
+Oprogramowanie urządzenia odpowiedzialne za dostarczanie odczytów
+funkcjonuje obecnie w sposób stabilny kosztem pewnych ograniczeń w dokładności
+obliczeń oraz częstotliwości funkcjonowania filtrów. W dalszej fazie rozwoju można
+dołączyć mechanizm benchmarku dla systemu mikrokontrolera co pozwoli na
+zweryfikowanie o ile potencjalnie można podnieść częstotliwość pracy filtrów bez strat
+w responsywności i stabilności urządzenia a następnie wykorzystać uzyskane dane
+do podniesienia jakości odczytów.
+
+--- strona 30 ---
+
+5. Podsumowanie
+Podsumowując wyżej przedstawione analizy można stwierdzić, że we
+wskazanych warunkach, testowane źródła (cgfa3, coga3, hdga3) dostarczają
+podobnych pod względem jakości danych dotyczących kursu. Wykazane istotne
+statystycznie różnice na poziomie pojedynczych stopni nie będą zauważalne dla
+sterników. Można sądzić, że na tym etapie wszystkie trzy źródła dostarczają
+wystarczającej jakości danych, aby niewidomy sternik mógł w stabilnych warunkach,
+podobnych do warunków testowych, utrzymywać zadany kurs. Zaleca się
+przeprowadzenie testów na innych pod względem wielkości oraz materiału
+konstrukcyjnego jachtach, a także w różnych warunkach pogodowych. Wskazane jest
+sprawdzenie subiektywnego odczucia sterników, dotyczącego jakości danych
+p
+o
+c
+h
+o
+d
+z
+ą
+c
+y
+c
+h
+
+z

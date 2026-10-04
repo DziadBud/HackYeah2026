@@ -1,0 +1,336 @@
+SPECYFIKACJA FINALNEJ WERSJI APLIKACJI ORAZ METODY PRACY Z APLIKACJĄ JĘZYKOŁAMACZ W AR
+Dokument jest częścią innowacji pn. Językołamacz realizowanej w ramach Inkubatora Dostępności. Projekt Inkubator Dostępności wdrażany jest przez Regionalny Ośrodek Polityki Społecznej w Krakowie w ramach IV Osi Priorytetowej Programu Operacyjnego Wiedza Edukacja Rozwój (Działanie 4.1: Innowacje społeczne), na zlecenie Ministerstwa Rozwoju, finansowany jest ze środków Unii Europejskiej w ramach Europejskiego Funduszu Społecznego.
+
+TOC \h \u \z SPECYFIKACJA FINALNEJ WERSJI APLIKACJI ORAZ METODY PRACY Z APLIKACJĄ JĘZYKOŁAMACZ W AR PAGEREF _Toc109642354 \h 1
+Informacje ogólne PAGEREF _Toc109642355 \h 4
+Dla kogo jest aplikacja ? PAGEREF _Toc109642356 \h 6
+Grupa docelowa PAGEREF _Toc109642357 \h 6
+Zalecenia dla opiekuna podczas korzystania z aplikacji PAGEREF _Toc109642358 \h 9
+Zawartość aplikacji Językołamacz PAGEREF _Toc109642359 \h 11
+Przed zainstalowaniem aplikacji PAGEREF _Toc109642360 \h 11
+Skład aplikacji PAGEREF _Toc109642361 \h 12
+Zwierzęta występujące w aplikacji PAGEREF _Toc109642362 \h 13
+Przyciski w aplikacji PAGEREF _Toc109642363 \h 17
+Czytane komendy przez lektora PAGEREF _Toc109642364 \h 22
+Dostępność aplikacji PAGEREF _Toc109642365 \h 23
+Scenariusze pracy PAGEREF _Toc109642366 \h 24
+Praca z aplikacją PAGEREF _Toc109642367 \h 35
+Uwagi końcowe PAGEREF _Toc109642368 \h 37
+
+Informacje ogólne
+Celem głównym aplikacji jest pomoc przy wykształceniu poprawnej mowy języka polskiego u dzieci ze spektrum autyzmu w wieku 8-12 lat z wykorzystaniem technologii Rozszerzonej Rzeczywistości (AR) na urządzenia mobilne. Aplikacja bazuje na wizualnej stymulacji mowy poprzez Rozszerzoną Rzeczywistość.
+Innowacyjność rozwiązania polega na wykorzystaniu rozszerzonej rzeczywistości przy terapii mowy u dzieci ze spektrum autyzmu w taki sposób, że dzieci i ich rodzice mogą korzystać z zestawu ćwiczeń, przyjaznego użytkownikom w domu – w każdej chwili kiedy tego potrzebują. Pozwala to na uzyskanie systematyczności i częstotliwości ćwiczeń, niedostępnych w zwykłej terapii. Zwiększa to dostęp do terapii, obniża koszty.
+Rozszerzona rzeczywistość (ang. augmented reality) stanowi połączenie świata rzeczywistego z wirtualnymi obiektami wytworzonymi cyfrowo. Jej zalety w terapii są następujące:
+Jedną z największych zalet AR jest udokumentowany (za pomocą badań naukowych) wpływ tej technologii na zwiększenie motywacji wykonywania zadań u dzieci, w tym ze spektrum autyzmu. Aby terapia dziecka z opóźnieniem mowy była efektywna potrzebna jest codzienna, konsekwentna, systematyczna praca z dzieckiem. Okres pracy takimi terapiami to minimum rok czasu. To powoduje, że w dłuższym terminie klasyczne metody pracy coraz słabiej angażują dziecko, powodują zmęczenie, zniechęcenie, znużenie, osłabienie koncentracji, a tym samym zmniejszenie efektywności terapii.
+Kolejną zaletą technologii AR jest zwiększenie skupienia i koncentracji, a tym samym zapamiętywania, co ma w terapii nauki nowych słów istotne znaczenie.
+Wykorzystanie ulubionego medium osób ze spektrum autyzmu urządzenia mobilnego - smartfon/tablet- jako wytrych do skutecznego dotarcia do tej grupy.
+Wartością dodaną jest możliwość wielokrotnego, systematycznego powtarzania zaplanowanego materiału, aż do uzyskania oczekiwanych rezultatów.
+Ciekawa konstrukcja programu oparta na powtarzalności zmian w otoczeniu wpłynie na rozwój myślenia, a schematyczność konstrukcji językowych wpływa na programowanie mowy.
+Łatwość w obsłudze powoduje, że osoba potrzebująca tego typu pomocy, szybko uczy się obsługiwać samodzielnie program, dając czas opiekunom czy terapeutom na podjęcie innych zadań.
+Realizm technologii Rozszerzonej Rzeczywistości przybliża do pracy na konkretach. Praca na rzeczywistych przedmiotach, jest niezwykle ważna, bo jest dedykowana w większości zaleceń dla osób, mających kłopoty komunikacyjne i jest punktem wyjścia podczas pracy specjalistów.
+Nauka poprzez zabawę - najbardziej efektywna forma terapii.
+
+Dla kogo jest aplikacja ?
+Dla logopedów i pedagogów zajmujących się wspomaganiem rozwoju oraz podnoszeniem sprawności językowej (w tym komunikacyjnej) dziecka w wieku przedszkolnym i wczesnoszkolnym.
+Do wykorzystania na zajęciach logopedycznych, rewalidacyjnych i innych mających na celu kształtowanie umiejętności językowych (m.in. zdolności komunikacyjnych) i niwelowanie trudności z tym związanych.
+Grupa docelowa
+Grupa odbiorców innowacji :
+dzieci w wieku 3-10 lat ze spektrum autyzmu, u których występują problemy z mową.
+Potencjalna liczba odbiorców w Polsce i statystyka.
+W roku szkolnym 2016/2017 w placówkach oświatowych realizowano edukację przedszkolną, podstawową, gimnazjalną i ponadgimnazjalną było 38 058 uczniów ze spektrum autyzmu, w tym u 27% z nich występował autyzm sprzężony z innymi niepełnosprawnościami (np. niepełnosprawnością intelektualną lub ruchową). W następnych latach szkolnych kształceniem objęto: 46 179 uczniów – w roku 2017/2018, 54 404 uczniów– w roku 2018/2019, w tym 25% stanowili uczniowie z niepełnosprawnościami sprzężonymi.
+Część osób w spektrum autyzmu (ok. 30%) nie mówi lub używa małej ilości słów, inne osoby uczą się mowy z opóźnieniem a jeszcze inne bardzo szybko uczą się mówić i chętnie posługują się skomplikowanym słownictwem. Mowa może być odbierana jako nietypowa. Osoby w spektrum autyzmu często mają trudność w komunikacji niewerbalnej tzn. rozumieniu i stosowaniu gestów, wyrazów twarzy lub nawiązywaniu kontaktu wzrokowego (polskiautyzm.pl).
+Wg DSM (DSM-IV-TR, American Psychiatric Association, 2000 zaburzenia autystyczne cechują symptomy występujące w trzech szeroko pojętych obszarach funkcjonowania:
+nieprawidłowości w przebiegu interakcji społecznych,
+zaburzona zdolność do komunikowania się,
+ograniczony, sztywny repertuar aktywności, zachowań i zainteresowań.
+Dzieci ze spektrum autyzmu borykają się m.in. z następującymi problemami:
+mały zasób słownictwa,
+problem z komunikacją z opiekunami i problem z artykułowaniem swoich potrzeb,
+problem z komunikacją z rówieśnikami.
+Zakłada się, że dzięki naszej innowacji skala tych problemów zmniejszy się u użytkowników, ponieważ:
+poprzez zabawę dzieci poznają nowe słowa i dzięki temu zwiększają swój zasób słownictwa,
+poprzez wspólną pracę dziecka z opiekunem tworzy się wspólna więź i lepsze zrozumienie pomiędzy nimi.
+
+Zalecenia dla opiekuna podczas korzystania z aplikacji
+1. Zawsze podążaj za dzieckiem - obserwuj je uważnie podczas ćwiczeń, aby wprowadzać ewentualne korekty i zmiany.
+2. Pracuj z dzieckiem codziennie, o stałych porach.
+3. Jedna sesja powinna trwać nie dłużej niż kilka minut.
+4. Na jednej sesji skoncentruj się na jednej scenie i jednej frazie.
+5. Zacznij od zwierzątka w aplikacji, które najlepiej wymawia Twoje dziecko/podopieczny, aby zachęcić je do dalszej pracy.
+6. Metoda pracy polega na ciągłym odsłuchiwaniu i powtarzaniu fraz.
+7. Zadania podejmowane przez podopiecznego, pozwalają mu na zdobywanie, przegrupowywanie doświadczenia, na gromadzenie wiedzy, zatem są środkiem przejścia z położenia niekorzystnego ku bardziej korzystnemu.
+8. Dziecko dąży przede wszystkim do zdobycia orientacji w świecie i do poznania uwarunkowań własnej skuteczności. Ma to miejsce zarówno w zabawie, jak i zadaniach.
+9. Praca z aplikacją ma być zabawą, a nie obowiązkiem - stwórz więc warunki komfortowe dla dziecka (np. bez włączonego telewizora).
+10. Stosuj system nagród odpowiedni i optymalny dla Twojego podopiecznego.
+11. Zastanów się przed zastosowaniem aplikacji u dziecka z epilepsją. Możliwe, że aplikacja wywoła atak. Bądź tego świadomy.
+Terapia logopedyczna dzieci jest specyficzna, bowiem obserwuje się u nich różnorodne zaburzenia mowy i rozmaite warianty tych zaburzeń. Z tego powodu trudno uogólniać to zagadnienie. W związku z tym w każdym przypadku trzeba tworzyć indywidualny program dla konkretnego dziecka, uwzględniający poziom jego funkcjonowania komunikacyjnego (porozumiewania się), możliwości, potrzeby, aktualny stan fizyczny i psychiczny, zainteresowania, samopoczucie, itp.
+Dlatego też, sugeruje się, aby:
+rozmawiać o rzeczach, które się razem z dzieckiem wykonuje w aplikacji,
+obdarzać komentarzem każdą czynność wykonywaną przy dziecku,
+w obecności dziecka zadawać samemu sobie pytania i odpowiadać na nie,
+zachęcać dziecko do opisywania tego, co widzi w aplikacji, co to zwierzątko robi i gdzie mieszka, co je itp.,
+prowokować dziecko do nazywania zwierzątek, które są w aplikacji,
+zachęcać dziecko do opowiadania o tym, co wie o zwierzątku, czy gdzieś je widziało, czy je lubi, w jakich może być kolorach itp.
+Działania takie (postawa i zachowania językowe) rodziców mają na celu wzbudzanie tzw. radości mówienia i chęci powiadamiania, ponadto mają one zwrócić uwagę dziecka na słowo i na korzyści płynące z posługiwania się słowem.
+
+Zawartość aplikacji Językołamacz
+Przed zainstalowaniem aplikacji
+Urządzenia, które pozwala korzystać z rzeczywistości rozszerzonej (AR) utworzonych za pomocą pakietu ARCore SDK, o ile zostaną spełnione te warunki:
+na urządzeniu musi być zainstalowany Android w wersji 7.0 lub nowszej.
+Lista urządzeń na które można zainstalować aplikacje znajduje się pod linkiem:
+lista urządzeń
+Podczas instalacji aplikacji smartfon prosi o zainstalowanie dodatkowej aplikacji niezbędnej do działania Rozszerzonej Rzeczywistości
+"Usługi Google Play dla AR"
+Jeśli smartfon nie poprosi o zainstalowanie tej aplikacji podczas instalacji wówczas trzeba wejść na smartfonie w Sklep Play ją wyszukać pod hasłem
+Google Play dla AR
+lub pod linkiem
+Usługi Google Play dla AR
+Podczas instalacji koniecznie trzeba dać zezwolenia na robienie zdjęć i nagrywanie filmów.
+W przeciwnym razie aplikacja nie będzie działać.
+Po zainstalowaniu aplikacji i jej otwarciu konieczne jest zamknięcie jej poprzez smartfon i odpalenie ponownie. Jest to czynność konieczna ale tylko jednorazowa wykonywana po instalacji aplikacji.
+Po odpaleniu aplikacji i ładowaniu najlepiej wstać ze smartfonem i skierować go na podłogę ale tak aby była możliwość przejścia (trochę przestrzeni dookoła siebie). Pojawi się niebieskie kółko , jeśli nie, to powoli zbliżać i oddalać od siebie smartfon.
+Kliknąć na niebieskie kółko.
+Skład aplikacji
+Aplikacja składa się z następujących elementów:
+scena startowa,
+menu,
+scena z instrukcją,
+scena z opisem przycisków w aplikacji,
+11 scen ze zwierzętami,
+koniec.
+Zwierzęta występujące w aplikacji
+Sceny przedstawiają następujące zwierzęta:
+krowa
+
+gęś
+
+koń
+
+kura
+
+byk
+
+kogut
+
+indyk
+
+królik
+
+owca
+
+baran
+
+świnia
+
+Przyciski w aplikacji
+W aplikacji występują następujące przyciski:
+1. Przycisk START występujący na stronie startowej, który powoduje uruchomienie aplikacji.
+
+2. Przycisk INSTRUKCJA OBSŁUGI występujący na stronie startowej i w menu. Powoduje on przeniesienie na scenę, na której opisane są zasady użytkowania aplikacji.
+
+3. Przycisk OBJAŚNIENIE PRZYCISKÓW występujący na stronie startowej i w menu. Powoduje on przeniesienie na scenę, na której lektor czyta informację o przycisku.
+
+4. Przycisk MENU występujący w scenach ze zwierzętami. Pozwala na przejście do sceny menu.
+
+5. Przycisk LEKTOR występujący na scenie z instrukcją obsługi aplikacji. Pozwala odczytanie przez lektora instrukcji.
+
+6. Przycisk DALEJ występujący w scenach ze zwierzętami. Pozwala na przejście do kolejnej sceny ze zwierzętami.
+
+7. Przycisk ODGŁOSY ZWIERZĄT występujący w scenach ze zwierzętami. Pozwala na odsłuchanie odgłosu zwierzątka, które znajduje się na scenie. Przyciśnięcie ponowne powoduje usłyszenie odgłosów jeszcze raz.
+
+8. Przycisk ZWIERZĘ występujący w scenach ze zwierzętami. Pozwala na odsłuchanie nazwy zwierzątka, które widać na urządzeniu mobilnym. Przyciśnięcie ponowne powoduje usłyszenie nazwy jeszcze raz.
+
+9. Przycisk FRAZA występujący w scenach ze zwierzętami. Pozwala na usłyszenie zdania z danym zwierzęciem, które należy powtórzyć. Naciśnięcie może spowodować animacje zwierzątka związaną ze zdaniem. Przyciśnięcie ponowne powoduje usłyszenie frazy jeszcze raz.
+
+10. Przycisk INNA FRAZA występujący w scenach ze zwierzętami. Pozwala na odsłuchanie kolejnej frazy związanej ze zwierzątkiem, które występuje na ekranie urządzenia mobilnego. Naciśnięcie powoduje animacje zwierzątka związaną ze zdaniem. Przyciśnięcie ponowne powoduje usłyszenie zdania jeszcze raz.
+
+11. Przycisk JESZCZE RAZ występujący na końcowej scenie. Pozwala na przejście do menu.
+
+12. Przycisk KONIEC występujący w scenach ze zwierzętami i z menu. Pozwala na wyjście z aplikacji.
+
+Czytane komendy przez lektora
+Na każdej scenie ze zwierzątkami są następujące komendy czytane przez lektora:
+odgłos zwierzęcia, które znajduje się na scenie,
+nazwa zwierzęcia, które znajduje się na scenie,
+dwuwyrazowe zdanie związane ze zwierzątkiem,
+trzywyrazowe zdanie związane ze zwierzątkiem.
+Dla przykładu scena związana z kurą:
+odgłos: ko-ko,
+zwierzę: kura,
+dwuwyrazowe zdanie: kura kopie,
+trzywyrazowe zdanie: kura składa jaja.
+Na scenie z objaśnieniem przycisków są następujące czytane komunikaty:
+dalej
+koniec
+jeszcze raz
+menu
+odgłosy zwierząt
+zwierzę
+fraza
+inna fraza
+Dostępność aplikacji
+Aplikacja zgodna jest z międzynarodowym standardem dostępności WCAG (Web Content Accessibility Guidelines) w obowiązującej w Polsce wersji 2.1 na poziomie AA. Dodatkowo aplikacja zgodna jest ze specyfikacją dostępności cyfrowej twórcy danego mobilnego systemu operacyjnego Android. Poniższe opisy stanowią jedynie wyimki z ww. standardu i specyfikacji:
+Wszelkie pliki multimedialne są dostępne lub udostępnione w postaci alternatywnej.
+Pliki PDF, Word i inne popularne pliki do ściągnięcia spełniają wymogi standardu dostępności WCAG 2.1 na poziomie AA.
+Teksty zamieszczone w serwisie napisane są w miarę możliwości w jak najprostszy sposób, tak aby dostęp do nich miały mniej wykształcone osoby, a także osoby z niepełnosprawnością intelektualną.
+Teksty publikowane są w czytelny sposób – podzielone na paragrafy, listy i inne sekcje; nie justowane do prawej strony. Tekst uzupełnione są o nagłówki (h1-h6), aby osoby niewidome mogły sprawnie przejść do interesującej ich sekcji.
+Nawigacja (menu) jest spójna, logiczna i niezmienna w obrębie serwisu.
+Wszystkie odnośniki są unikalne i zrozumiałe, także poza kontekstem.
+Kontrast kolorystyczny wszystkich elementów przekazujących treść (tekstów, linków, banerów) lub funkcjonalnych ma stosunek jasności tekstu do tła co najmniej 4,5 do 1, a najlepiej jeśli nie jest mniejszy niż 7 do 1.
+Wszystkie strony w pdf oparte są o nagłówki (h1-h6).
+Aplikacja wpływa na poszerzenie słownika wyrazów u dzieci ze spektrum autyzmu, co przekłada się na ich lepsze możliwości komunikacyjne. Powoduje to lepsze nawiązywanie i podtrzymywanie kontaktów społecznych, a także daje możliwość korzystania z szeroko pojętej przestrzeni publicznej.
+Scenariusze pracy
+Ćwiczenia mają za zadanie:
+Ćwiczenie narządów mowy.
+Wzbogacanie słownika biernego i czynnego, ćwiczenie pamięci.
+Kształcenie umiejętności wypowiadania się zdaniami, układanie zdań pojedynczych i złożonych do obrazków.
+Ćwiczenie słuchu fonematycznego.
+Ćwiczenie koordynacji wzrokowo - ruchowej, orientacji przestrzennej.
+Ćwiczenie pamięci słownej.
+Możliwe ćwiczenia podczas jednej sesji z aplikacją:
+1. Scenariusz - Zabawa ćwicząca narządy mowy: naśladuj mnie.
+Najpierw dziecko próbuje ćwiczyć narząd mowy, tak jak robią to zwierzęta przedstawione na danej scenie. Np.
+krowa - ruchy okrężne żuchwą, wargi zamknięte.
+świnka - tworzenie ryjka, jak przy wymawianiu u.
+koń - kląskanie.
+2. Scenariusz - Zabawa z koniem
+
+W menu aplikacji pokaż dziecku wszystkie zwierzątka. Poproś dziecko o:
+Naciśnij przycisk z narysowanym koniem
+Po chwili na ekranie pojawi się scena z koniem. Chwilkę musicie poczekać i skierować smartfon na powierzchnie poziomą, aby pojawił się biały kwadrat. Poproś dziecko teraz:
+A teraz naciśnij na biały kwadrat. Ciekawe co się pojawi. Może wiesz?
+Na ekranie smartfonu pojawi się wirtualny trójwymiarowy koń. Zadaj dziecku pytanie:
+Co widzisz?
+Dziecko: konia
+Sprawdźmy. Naciśnij na przycisk z uchem.
+Dziecko powinno nacisnąć, a w aplikacji lektor mówi: koń. Poproś dziecko, aby powtórzyło, aż do momentu kiedy usłyszysz pożądany efekt.
+Następnie:
+Może wiesz jak mówi koń?
+Dziecko: iha, iha
+To sprawdźmy. Naciśnij teraz przycisk z głośnikiem
+Dziecko naciska przycisk i usłyszy naturalny odgłos, jaki robi koń czyli iha , iha. Poproś dziecko o powtórzenie, aż do momentu, aż będzie słychać pożądany efekt.
+Następnie, możesz zadać dziecku następujące pytania, aby dowiedzieć się co dziecko wie o tym zwierzątku:
+Co robi koń?
+Jaki jest koń?
+Czy widziałeś kiedyś konia?
+Czy boisz się konia?
+Scenariusz 3 - Zabawa z koniem
+
+Znów prosisz dziecko o naciśnięcie w menu aplikacji przycisku z koniem.
+Naciśnij przycisk z narysowanym koniem
+Po chwili na ekranie pojawi się scena z koniem. Chwilkę musicie poczekać i skierować smartfon na powierzchnie poziomą, aby pojawił się biały kwadrat. Poproś dziecko teraz:
+A teraz naciśnij na biały kwadrat. Ciekawe co się pojawi. Może wiesz?
+Na ekranie smartfonu pojawi się wirtualny trójwymiarowy koń. Zadaj dziecku pytanie:
+Pamiętasz co to za zwierzątko?
+Dziecko: Koń
+Zadaj dziecku następne pytanie:
+Jaki jest koń?
+Dziecko: duży, (brązowy, szybki, itp.).
+Co on robi?
+Dziecko: stoi.
+Poproś dziecko o złożenie powiedzianych słów w zdanie.
+Czy mógłbyś powiedzieć wszystko razem?
+Dziecko: Duży koń stoi.
+Pomocą mogą być przyciski z figurami geometrycznymi, gdzie lektor wypowiada frazy związane z koniem.
+Następnie role odwracamy - dziecko zadaje pytania, prowadzący odpowiada.
+4. Scenariusz - Część dalsza zabaw z koniem
+
+Powtarzamy całą procedurę z poprzednich zajęć jednak tym razem będziemy próbowali opisać zwierzątko. Tym razem role się odwracają. Dziecko zadaje pytania, prowadzący odpowiada. Należy oczekiwać od dziecka, aby zadało następujące pytania:
+Gdzie mieszka koń?
+Co je koń?
+Co robi koń?
+Jak wygląda koń?
+Następnie aby spróbowało powtórzyć odpowiedź prowadzącego.
+5. Scenariusz - Zabawa z koniem część dalsza
+
+Gdy już dziecko opanuje poprzednie scenariusze i będzie potrafiło powtórzyć wszystkie frazy, które są wgrane w aplikacji. Można przejść do zabawy o rodzinie konia.
+Możesz zadać dziecku następujące pytania:
+Jak nazywa się tata koń?
+Jeśli dziecko nie wie pomóż mu, że jest to ogier. Każ mu powtarzać to słowo do pożądanego efektu. Następnie zadaj pytanie:
+Jak nazywa się mama koń?
+Tutaj również podpowiedź dziecku, że jest to to klacz i powtarzajcie to słowo do pożądanego efektu. Następnie zadaj pytanie:
+Teraz trudne, jak nazywa się dziecko koń.
+Tutaj również podpowiedź dziecku, że jest to to źrebak i powtarzajcie to słowo do pożądanego efektu. Możesz też dodać inną nazwę i ją powtarzać źrebię. Pamiętaj aby dziecko poprawnie w tym słowie wymówiło końcówkę słowa.
+Powróć do aplikacji i do sceny z koniem. Zadaj dziecku pytanie:
+Jakie zwierzątko widzisz na ekranie?
+Dlaczego uważasz, że jest to ogier?
+Czym może różnić się ogier od klaczy?
+Czym może różnić się ogier od źrebaka?
+6. Scenariusze
+Podane scenariusze można przekształcić na jeszcze 10 zwierząt, które są w aplikacji. Można tak opisać gęś, indyka, królika, świnię, kury, koguta, owcy, barana, krowy, byka.
+
+7. Scenariusz - O rodzinie kurzej
+
+W przypadku takich zwierząt jak kura i kogut można połączyć je w parę i przeprowadzić takie zajęcia.
+Zapytaj dziecko:
+- Z kogo składa się rodzina kurza?
+Dziecko odpowiada: Kury
+- A widzisz tu kurę?
+Dziecko odpowiada: Tak
+To naciśnij na przycisk z kurą?
+Po chwili na ekranie pojawi się scena z kurą. Chwilkę musicie poczekać i skierować smartfon na powierzchnie poziomą, aby pojawił się biały kwadrat. Poproś dziecko teraz:
+A teraz naciśnij na biały kwadrat. Ciekawe czy pojawi się kura?
+Na ekranie smartfonu pojawi się wirtualny trójwymiarowy obraz kury. Zadaj dziecku pytanie:
+Jak mówi kura?
+Dziecko odpowiada: KO KO
+A teraz naciśnij na przycisk z głośnikiem.
+Wysłuchajcie i powtórzcie.
+Wróćcie do menu. Zadaj pytanie:
+A może widzisz tu męża kury?
+Dziecko wskazuje koguta. Poproś dziecko, aby nacisnęło przycisk z kogutem. Po chwili na ekranie pojawi się scena z kogutem. Chwilkę musicie poczekać i skierować smartfon na powierzchnie poziomą, aby pojawił się biały kwadrat. Poproś dziecko teraz:
+A teraz naciśnij na biały kwadrat.
+Na ekranie smartfonu pojawi się wirtualny trójwymiarowy kogut. Zadaj dziecku pytanie:
+Jak mówi kogut?
+Dziecko: KUKURYKU
+A może wiesz jak nazywa się dziecko rodziców kury i koguta?
+Dziecko: Pisklak
+A może wiesz jak mówi pisklak?
+Dziecko: PIPI
+Powtórz jeszcze raz wszystkie nazwy i odgłosy.
+8. Scenariusz - O zwierzątkach - rodzinach
+Zacznij z dzieckiem od sceny menu. Bez klikania na przycisk lub z kliknięciem i szybkim powrotem, poproś dziecko o:
+Połącz w pary zwierzątka, które stanowią tę samą rodzinę. Może wiesz kto jest mężem owcy?
+Dziecko: Baran
+Przechodzicie z dzieckiem na te dwie sceny. Oglądacie wirtualne zwierzątka, a następnie możecie wysłuchać lektora i odgłosów zwierząt, które kryją się pod przyciskami.
+Poproś dziecko o znalezienie 5 podobieństw pomiędzy baranem a owcą.
+Przejdźcie znów do menu i poszukajcie jeszcze 2 par zwierzątek, które są rodziną, czyli kury i koguta oraz byka i krowy. Powtórz zabawę także z tymi zwierzątkami.
+9. Scenariusz - O przeciwieństwach
+Zacznij z dzieckiem od sceny menu. Bez klikania na przycisk lub z kliknięciem i szybkim powrotem, poproś dziecko o:
+Połącz w pary zwierzątka, które się najbardziej różnią. Jak myślisz jakie zwierzątko najbardziej różni się od konia?
+Dziecko: Królik
+A dlaczego tak myślisz?
+Dziecko: Bo koń jest duży, a królik mały.
+Przechodzicie z dzieckiem na te dwie sceny. Oglądacie wirtualne zwierzątka, a następnie możecie wysłuchać lektora i odgłosów zwierząt, które kryją się pod przyciskami.
+Poproś dziecko o znalezienie 5 różnic pomiędzy koniem a królikiem.
+To ćwiczenie możesz powtórzyć do każdego zwierzątka.
+
+10. Scenariusz - Rymowanka na ćwiczenie (J. Beszczyński).
+Poczytaj i powtarzaj z dzieckiem następującą rymowankę:
+„ Zwierzęce gadanie”
+Co mówi bocian, gdy żabkę zjeść chce? Kle, kle, kle.
+Co mówi żaba, gdy bocianów tłum? Kum, kum, kum.
+Co mówi kaczka, gdy jest bardzo zła? Kwa, kwa, kwa.
+Co mówi kotek, gdy mleczka by chciał? Miau, miau, miau.
+Co mówi kura, gdy znosi jajko? Ko, ko, ko.
+Co mówi kogut, gdy budzi się w kurniku? Ku, ku ryku.
+Co mówi koza, gdy jeść jej się chce? Me, me, me.
+Co mówi krowa, gdy zabraknie jej tchu? Mu, mu, mu.
+Co mówi wrona, gdy wstaje co dnia? Kra, kra, kra.
+Co mówi piesek, gdy kość zjeść by chciał? Hau, hau, hau.
+Co mówi baran, gdy spać mu się chce? Bee, bee, bee.
+Co mówi ryba, gdy powiedzieć chce?
+Nic! Przecież ryby nie maja głosu!
+Praca z aplikacją
+Praca z aplikacją polega na codziennym powtarzaniu wyrazów/fraz przez dziecko poprzez naciskanie przycisku oraz wysłuchaniu i powtarzaniu za lektorem. Ważne jest, aby dziecko pracowało codziennie. W aplikacji są zwierzęta, które są nałożone na otoczenie dziecka (np. pokój, w którym się znajduje). Dzięki temu dziecko jest bardziej zafascynowane postaciami aplikacji, a przez to łatwiej się uczy, zapamiętuje.
+Praca z aplikacją powinna się odbywać w następującej kolejności :
+1. Najpierw na powtarzaniu odgłosów zwierzątek
+2. Na powtarzaniu nazw zwierzątek,
+3. Na powtarzaniu zdań o tym co robi zwierzątko,
+4. Na powtarzaniu dłuższych fraz ze zwierzątkiem gospodarstwa rolnego.
+5. Końcowym efektem powinny być już dłuższe zdania, gdzie dziecko opisuje zwierzątko.
+
+Uwagi końcowe
+Praca z każdym dzieckiem jest sprawą indywidualną.
+Aplikacja jest tylko narzędziem. Nie zastąpi ona systematycznej pracy z dzieckiem tradycyjnymi metodami.
+Pamiętaj o stworzeniu komfortowych warunków pracy dziecku, aby nic go nie rozpraszało.
+Aplikacji nie zaleca się dla dzieci, które mają epilepsję.

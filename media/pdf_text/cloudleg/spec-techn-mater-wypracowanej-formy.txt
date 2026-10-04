@@ -1,0 +1,183 @@
+--- strona 1 ---
+
+1
+
+Specyfikacja techniczno-
+materiałoznawcza wypracowanej formy
+negatywowej. Raport z wykonania
+negatywowej formy kompozytowej
+zbrojonej prętami mosiężnymi
+
+Nazwa projektu:
+
+Cloudleg
+Data sporządzenia:
+31.03.2023
+Miejsce sporządzenia:
+Poznań
+Autor:
+
+Bartłomiej Stroiński
+
+https://creativecommons.org/licenses/by/4.0/deed.pl
+
+--- strona 2 ---
+
+2
+
+Spis treści
+Wstęp
+3
+Wykonanie negatywowej formy kompozytowej zbrojonej prętami mosiężnymi
+4
+Podsumowanie
+10
+
+--- strona 3 ---
+
+3
+Wstęp
+Niniejszy raport zawiera materiał dokumentujący zadanie wykonania negatywowej formy
+kompozytowej zbrojonej prętami mosiężnymi w ramach testowania innowacji społecznej pn.
+„Cloudleg”, realizowanej w ramach projektu pn. „Inkubator Włączenia Społecznego”
+finansowanego ze środków Unii Europejskiej. Zadanie została zrealizowane w lutym i marcu
+2023. Opisane poniżej zadania opisują wykonanie głównego produktu innowacji, który w
+kolejnym zadaniu posłuży do wykonania odlewów sztucznych nóg skierowanych do grupy
+docelowej opisanej w specyfikacji innowacji tzn. osób bez obu nóg poniżej kolan,
+poruszających się na wózku inwalidzkim; nie mogących na stałe lub tymczasowo używać
+protez funkcjonalnych do chodzenia. Przedmiotowa forma pozwoli na wykonanie wielu par
+sztucznych nóg z pianki poliuretanowej.
+
+--- strona 4 ---
+
+4
+Wykonanie negatywowej formy kompozytowej zbrojonej prętami
+mosiężnymi
+
+Wykonane w poprzednim zadaniu wzorcowe modele pozytywowe nóg z gipsu
+dentystycznego zostały ustabilizowane tak, aby wykonawca – artysta miał dostęp do ich
+powierzchni zewnętrznej ze wszystkich stron. Za stabilizator zaimprowizowano 2 krzesła
+dostępne w pracowni, które położone do góry nogami na stole warsztatowym stworzyły
+konstrukcję, na którą założono modele nóg w taki sposób, że wydmuszka każdego modelu
+została zatknięta na nogę krzesła. Opisany układ konstrukcji był niezbędny ze względu na to,
+że podczas procesu formowania artysta pracował z materiałem, którego nie mógł dotknąć,
+który jest lejny oraz musi być nałożony ze wszystkich stron. W przypadku większej ilości
+czasu na realizacje projektu - stabilizator pod wymiar, zostałby wykonany na zamówienie w
+ślusarni, niestety czas realizacji projektu innowacji zmusił realizatorów działań do opisanej
+wyżej improwizacji.
+
+Zdjęcie 1 Ustabilizowany model gipsowy powleczony kilkoma warstwami silikonu formierskiego
+
+--- strona 5 ---
+
+5
+Wykonawca – artysta zaplanował przyszłe linie podziału nakładanej formy silikonowej tak
+aby przyszła forma jednej nogi była otwierana po rozłożeniu 4 skorup; 2 bocznych, gdzie linia
+podziału biegnie po najwyższym profilu przekroju poprzecznego na górze i dole nogi biegnąc
+równolegle od stopy w górę do końca uda, jednej małej skorupy dolnej pod stopą, tworząc
+swoistą „podeszwę” gdzie linia podziału biegnie poziomo wokół stopy, otaczając ją po
+najwyższym profilu poziomym, oraz jednej skorupy mającej linie podziału wokół miejsca
+gdzie udo modelki stykało się z siedziskiem podczas pobierania wzoru jej nóg.
+
+Rysunek 1 Poglądowy rysunek linii podziału jednej nogi
+Następnie przystąpiono do nakładania na gipsowe modele nóg dwuskładnikowego silikonu
+formierskiego o twardości w skali Shore’a 26-30, nakładanie odbywało się w odpowiedniej
+temperaturze do tego procesu między 19 a 23 °C. Praca z tym silikonem odbywała się
+zgodnie z instrukcją jego użycia.
+Na obie nogi zostało użyte około 14 kg silikonu formierskiego.
+Miękka forma była gotowa do dalszych procesów po około 24h.
+
+--- strona 6 ---
+
+6
+Nakładanie warstw silikonu na modele odbywało się w podobny sposób co w poprzednim
+zadaniu na nogach modelki. Pierwsza warstwa kontaktowa była nakładana pędzlem, kolejne
+pędzlem i szpachelką. Warstwa kontaktowa miała około 1mm grubości, kolejne warstwy
+pogrubiające były nakładane silikonem przygotowanym z domieszką tiksotropów w postaci
+mączki koloidalnej. Domieszka taka miała za zadanie zagęszczenie silikonu i ułatwienie
+formowania go na elemencie trójwymiarowym. Inaczej mówiąc stosowana tu tiksotropia
+miała zminimalizować efekt spływania nakładanego silikonu z modelu. Opisywana mączka
+była dodawana po dodaniu utwardzacza do silikonu w ilościach zmiennych, uznaniowych
+wedle bieżącej potrzeby oraz w zależności od formowanej w danym momencie powierzchni.
+
+Zdjęcie 2 Model gipsowy powleczony kilkoma warstwami silikonu formierskiego
+
+Proporcje były różne w zależności od układu powierzchni, pionowej, nawisowej i były na
+bieżąco kontrolowane. Ilość warstw silikonu i ich gęstości wyniosła kilkadziesiąt nałożeń po
+200-300 ml materiału formowanego i była ustalana na bieżąco na podstawie wiedzy,
+doświadczenia i bieżącego eksperymentu wykonawcy. W założeniu całość działań
+
+--- strona 7 ---
+
+7
+doprowadziła do wykonania formy silikonowej wokół gipsowych modeli nóg o ściance nie
+mniejszej niż 5mm.
+Następnie w osobnych pudełkowych formach zostały odlane z tego samego silikonu pasy o
+przekroju prostokąta około 3x2cm, które w miejscach wcześniej zaprojektowanego podziału
+zostały przyklejone na ten sam silikon do wykonanej powłoki formy. Pasy te stanowiły
+swoiste zgrubienie na linii podziałów, które będą utrzymywały sztywność krawędzi po
+przecięciu. Pasy te będą też bardziej stabilizować krawędzie znajdując się bardziej w głębi
+powłoki formy sztywnej która będzie założona w kolejnym kroku na formę silikonową.
+Dodatkowo podobne pasy jednak szersze i bardziej masywne zostały przyklejone do
+większych powierzchni powłoki silikonowej znajdujących się w środkowych częściach między
+liniami podziału. Ich rolą było powstrzymywanie tych powierzchni przed zapadaniem się do
+wewnątrz formy podczas przyszłych odlewów sztucznych nóg. Pasy te nazywane roboczo
+zamkami mają przekrój prostokąta o wymiarach około 3-4 cm. Formy te będą w przyszłości
+zakleszczone wewnątrz formowanej później formy sztywnej z żelkotu poliestrowego.
+
+Zdjęcie 3 Powłoka silikonu formierskiego z widocznymi paskami o profilu prostokąta w miejscu przyszłych linii podziało oraz
+"kluczami" na większych powierzchniach
+
+--- strona 8 ---
+
+8
+Po związaniu silikonu kolejnym krokiem było nałożenie żelkotu poliestrowego na
+wyformowany silikon. Żelkot nakładany był pędzlem i wykonywany do postaci kompozytu,
+gdzie kolejne warstwy były przekładane matą z włókna szklanego do grubości powłoki około
+4-5 mm. Laminowanych warstw było 3-4. W liniach przecięcia na formie twardej formowane
+były także ścianki separacyjne biegnące po krawędzi każdej skorupy grubości około 4mm i
+wysokości około 20mm. Wzajemna powierzchnia stykająca się tych ścianek była formowana
+przez wydzielanie jej podłużnymi arkuszami z tworzywa sztucznego o nazwie handlowej
+„Aplak”. Ścianki były formowane fragment po fragmencie, była to długa i żmudna praca.
+Kiedy forma przybrała żądany kształt zostało dolaminowane zbrojenie wzmacniające w
+postaci prętów mosiężnych ⌀ 6 mm, po koło 1m bieżący na każdą stronę boczną nogi, łącznie
+5 mb.
+Pręty w późniejszych pracach z formą nie tylko świetnie spełniły swoją rolę wzmacniającą
+konstrukcje ale także stanowiły świetny uchwyt ułatwiający rozdzielnie skorup formy
+podczas wyciągania odlanej sztucznej nogi.
+
+Zdjęcie 4 Sztywne skorupy formy wykonane na formie miękkiej z żelkotu poliestrowego
+
+--- strona 9 ---
+
+9
+Na obie nogi zostało użyte około 14 kg żelkotu poliestrowego.
+Sztywna forma była wstępnie gotowa do dalszych procesów po około 24h.
+W ściankach kontaktowych biegnących wzdłuż linii podziałów zostały nawiercone otwory na
+śruby w odstępach około 10-20 cm.
+Następnie rozchylono skorupy sztywnej formy by mieć dostęp do silikonowej formy miękkiej
+i przystąpiono do rozcinania powłoki wzdłuż linii podziałów biegnących w większości po
+uformowanych pasach.
+Rozcinanie odbywało się poprzez jedno pociągniecie noża introligatorskiego prowadzonego
+między ściankami separacyjnymi formy twardej. Użyto świeżego, bardzo ostrego noża marki
+Olfa-OL.
+Wszystkie opisane powyżej prace wykonywał artysta rzeźbiarz Dr Sztuk Piękny Marcin
+Radziejewski.
+
+Zdjęcie 5 Forma negatywowa jednej z nóg widać, jak część miękka i twarda są dopasowane do siebie
+
+--- strona 10 ---
+
+10
+Podsumowanie
+
+Opisane wyżej prace doprowadziły do uzyskania kompletnych 2 form negatywowych (po
+jednej dla każdej nogi) składających się z wewnętrznej - miękkiej (silikonowej) oraz
+zewnętrznej - twardej (żelkotowej) części. Dodatkowo, każda z form została podzielona na 4
+skorupy, skręcane do siebie po swoich krawędziach śrubami. Boczne skorupy każdej z form
+zostały wzmocnione prętami mosiężnymi. Całość stanowi wykonany główny produkt
+projektu innowacyjnego Cloudleg i posłuży w kolejnym zadaniu do wykonania sztucznych
+nóg – protez kosmetycznych dla testerek.
+
+Zdjęcie 6 Złożona forma negatywowa jednej nogi. Widać zbrojenie z prętów mosiężnych oraz skręcone śrubami i nakrętkami
+skorupy na paskach kontaktowych.

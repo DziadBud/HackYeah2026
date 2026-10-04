@@ -1,0 +1,252 @@
+Model końcowy innowacji pn. "E-rzecznik konsumenta seniora".
+
+Spis treści
+Wprowadzenie3
+Diagnoza problemu i propozycja rozwiązania4
+Diagnoza problemu4Propozycja rozwiązania7
+Proces projektowy9Badania9Lista funkcjonalności aplikacji13Lista najczęstszych problemów z jakimi spotykają się konsumenci-seniorzy15Makiety Lo-fi20Prototyp aplikacji27User flow27Testy użyteczności29Makiety Hi-fi35Upraszczanie języka 42Wersja beta aplikacji45Finalna wersja aplikacji45
+
+Wprowadzenie
+
+Poniższy model stanowi podsumowanie prac nad innowacją społecznej pn. „E-rzecznik praw konsumenta seniora”, która przygotowywana była przez Stowarzyszenie Ochrony Konsumentów Aquila w ramach projektu pn. „Inkubator Włączenia Społecznego.
+Celem innowacji było stworzenie narzędzia z zakresu IT, które umożliwi seniorom w prosty i intuicyjny sposób otrzymanie szybkiej, rzetelnej i konkretnej porady prawnej z zakresu wybranych zagadnień prawa konsumenckiego, z którymi konsumenci seniorzy mają najczęściej problemy. W szczególności seniorzy otrzymają informacje na temat:
+a) jak skutecznie złożyć reklamację,
+b) jak uniknąć najczęstszych błędów popełnianych przy składaniu reklamacji,
+b) jak skutecznie odstąpić od umowy zawartej z przedsiębiorcą na odległość (np. przez telefon, internet),
+c) jak postępować w przypadku odmowy uznania reklamacji za zasadną przez przedsiębiorcę,
+e) instytucji zajmujących się ochroną praw konsumentów w przypadku spraw, w których porada wygenerowana w aplikacji będzie niewystarczająca.
+Otrzymanie porady jest możliwe po przejściu przez ścieżkę decyzyjną w aplikacji (seria pytań dotyczących istoty problemu konsumenckiego), co pomoże konsumentom sprecyzować i zdiagnozować istotę swojego problemu. Konsumenci muszą się skupić na obiektywnie istotnych do udzielenia porady elementach sprawy (daty, rodzaje żądań, podstawy odpowiedzialności) z pominięciem subiektywnych odczuć i opisów nieistotnych dla rozwiązania problemu (kultura osobista przedsiębiorcy, poczucie krzywdy itp.).
+
+Innowacja jest częściową odpowiedzią na problemy, z jakimi spotykają się konsumenci seniorzy. Narzędzie jest swoistym darmowym doradcą dla seniorów, który poprowadzi ich przez skomplikowany i nieznany obszar zawiłości prawnych. Zastosowanie aplikacji ograniczy występujące w systemie ochrony praw konsumentów problemy z egzekwowaniem swoich praw. Aplikacja jest „miejscem”, gdzie użytkownik otrzyma natychmiastową pomoc w sposób pewny, bezpieczny i w oparciu o aktualne przepisy prawa.
+
+Diagnoza problemu i propozycja rozwiązania
+
+Diagnoza problemu
+Diagnoza problemu opierała się na danych pochodzących z badań i raportów dotyczących problemów seniorów w dziedzinie spraw konsumenckich oraz na pięcioletnim doświadczeniu Stowarzyszenia Ochrony Konsumentów Aquila w udzielaniu pomocy seniorom-konsumentom.
+W Polsce brakuje narzędzi pomocy konsumenckiej skierowanych do osób starszych, którzy jako grupa szczególnie narażona na nieuczciwe praktyki przedsiębiorców, nie są objęci specjalnymi działaniami ze strony instytucji konsumenckich. Raporty Komisji Ekspertów ds. Osób Starszych przy RPO oraz Rzecznika Praw Obywatelskich wskazują na brak znajomości praw konsumenckich przez seniorów oraz trudności w ich egzekwowaniu, co jest spowodowane m.in. dyskryminacją i brakiem uwzględnienia ograniczeń charakterystycznych dla tej grupy wiekowej w sferze handlu i usług. W efekcie seniorzy mają m.in. utrudniony dostęp do informacji oraz trudności w korzystaniu z internetu ze względu na m.in. używaną terminologię, rozmiar czcionki, nieczytelną szatę graficzną regulaminów, umów, instrukcji, nieprzyjazne aplikacje i strony internetowe instytucji, nieumiejętność korzystania z Internetu lub brak do niego dostępu – skutkujące tzw. wykluczeniem cyfrowym. Według raportu z działalności UOKiK z 2018 r. seniorzy najczęściej padają ofiarą nieuczciwych praktyk przedsiębiorców podczas spotkań sprzedażowych, sprzedaży bezpośredniej mediów oraz usług telekomunikacyjnych. Z danych NIK wynika, że tylko 4% Polaków powyżej 65 roku życia skorzystało z pomocy instytucji publicznej w sprawach konsumenckich w ciągu ostatnich lat.
+Obecnie konsumenci-seniorzy mogą korzystać z różnych form wsparcia tj.
+- rzecznicy konsumentów
+- Infolinia Konsumencka
+- Konsumenckie Centrum E-porad
+- materiały edukacyjne dostępne na różnych stronach (np. uokik.gov.pl)
+
+Każda z tych form ma jednak wady i nie rozwiązuje w sposób pełny zdefiniowanych przez nas problemów. Rzecznicy konsumentów (371 w Polsce) prowadzą bieżące poradnictwo. Niestety, proces korzystania z pomocy jest długotrwały i wymaga najczęściej osobistego stawiennictwa. Biorąc pod uwagę, że duża część seniorów mieszka na wsiach, ma problemy z przemieszczaniem się, ma obawy przed korzystaniem z urzędów, a często stan zdrowia nie pozwala na wizyty i umawianie się na poradę, taki model poradnictwa rzeczników nie odpowiada potrzebom grupy seniorów.
+
+Infolinia konsumencka oraz Konsumenckie Centrum E-porad pozwalają uzyskać jedynie poradę prawną w prostych sprawach konsumenckich. Seniorzy chętnie korzystają z tej formy pomocy (wynika to z doświadczenia Stowarzyszenia), niestety podstawowymi problemami są długi czas oczekiwania na poradę, a także niedostosowana forma i język. Konsument otrzymuje jedynie poradę, z szerokim opracowaniem prawnym, co powoduje, że wiele osób starszych ma problemy ze zrozumieniem.
+Osoby starsze mogą także na własną rękę poszukiwać rozwiązań swoich problemów na różnego rodzaju stronach internetowych. Niesie to niestety więcej zagrożeń niż pożytku. Treści dostępne w Internecie w wielu miejscach nie są aktualizowane i dostosowane do zmieniających się regulacji prawnych a ich opracowaniem zajmują się często osoby bez odpowiedniego doświadczenia.
+
+Stowarzyszenie Ochrony Konsumentów Aquila rocznie udzieło ponad 30 000 porad (głównie mailowych), z czego około połowę stanowią porady udzielane osobom 60+. Dzięki temu doświadczeniu, byliśmy w stanie zidentyfikować problemy dotyczące seniorów podejmujących działania w związku ze swoimi problemami konsumenckimi. Przede wszystkim sam proces składania reklamacji jest niejasny i nieczytelny. Poprawne złożenie reklamacji wymaga spełniania pewnych określonych prawem warunków, czego seniorzy często nie są świadomi. Prowadzi to sytuacji, w której np. seniorzy zwracając wadliwy towar do sklepu ustnie informując sprzedawcę, o złożeniu reklamacji, są przekonani, że złożyli ją poprawnie. Dodatkowo język, którym opisane są procedury jest niezrozumiały, co z kolei prowadzi do sytuacji, w których seniorzy często nie podejmują żadnych działań związanych z reklamacją. Seniorzy często mają problem z samodzielnym uzupełnieniem informacji w przygotowanym przez prawnika piśmie reklamacyjnym
+Kolejnym problemem, jest zwiększona ufność, jaką wykazują seniorzy w słowne zapewnienia sprzedawców i usługodawców, nie weryfikują treści umów lub w ogóle ich nie zawierają, nie żądają dowodów zakupu. W takich sytuacjach nawet pomoc prawnika-specjalisty w dziedzinie praw konsumenta nie może być skuteczna
+Innym istotnym czynnikiem wpływającym na to, w jaki sposób konsumenci 65+ rozwiązują problemy konsumenckie jest fakt, że seniorzy czują się niepewnie i niekomfortowa dochodząc swoich praw, co dodatkowo jest wzmacniane przez poczucie wstydu wywołane faktem bycia oszukanym przez przedsiębiorcę. Nasi prawnicy często są proszeni np. o osobistą wizytę w sklepie bądź siedzibie przedsiębiorcy i rozwiązanie problemu związanego w wadliwym towarem/usługą. Ważny jest dla seniorów bliski kontakt z prawnikiem, którego rola nie sprowadza się do udzielenia i porady i wytłumaczenia procedury reklamacyjnej, ale wymaga osobistego zaangażowania w sprawę. Osobisty kontakt daje seniorów poczucie bezpieczeństwa, czego nie dają np. porady udzielane mailowo.
+
+Propozycja rozwiązania
+
+Wobec tak zarysowanych problemów Stowarzyszenie Ochrony Konsumentów Aquila postawiło sobie za cel przygotowanie rozwiązania, które będzie przynajmniej częściową odpowiedzią na zdefiniowane wyżej problemy z jakimi spotykają się seniorzy w obszarze praw konsumenta i umiejętności ich egzekwowania. Zdecydowaliśmy, że właściwą formą rozwiązania będzie aplikacja mobilna, z której pomocą seniorzy będą mogli z jednej strony poznawać jakie prawa im przysługują, jak postępować w spornych sytuacjach z przedsiębiorcami, jak zabezpieczyć swoje prawa i interesy zawierając umowę, a z drugiej zaś strony, uwzględniając specyfikę, ograniczenia i oczekiwania seniorów, aplikacja będzie krok po kroku potrafiła przeprowadzić użytkownika do rozwiązania jego konkretnego problemu.
+Zgodnie z informacjami Urzędu Komunikacji Elektronicznej (raport pt. Badanie opinii publicznej w zakresie funkcjonowania rynku usług telekomunikacyjnych oraz preferencji konsumentów Raport z badania klientów indywidualnych w wieku 60+ z 2019 roku), aż 82 % seniorów korzysta z telefonów komórkowych, a 30% używa Internetu.
+Bazując na starzejącej strukturze demograficznej polskiego społeczeństwa oraz coraz większym stopniu cyfryzacji wśród osób, które dopiero staną się seniorami, wykorzystywanie telefonów oraz aplikacji będzie dynamicznie wzrastać. Nie można także zapominać, że seniorzy chętnie uczą się korzystania z smartfonów, biorą udział w kursach oraz zwiększają swoje kompetencje w tym zakresie, co skutkować będzie stałym wzrostem kompetencji cyfrowych.
+
+Innowacja w swojej pierwszej wersji zakładała stworzenie aplikacji mobilnej (na system Android) dedykowanej osobom starszym, której celem miało być zapewnienie seniorom wsparcia prawno-edukacyjnego w sprawach konsumenckich przez wirtualnego prawnika – eRzecznika Praw Seniorów-Konsumentów. Aplikacja miała cechować się następującymi funkcjonalnościami:
+• po zainstalowaniu aplikacji i jej uruchomieniu miał pojawiać się avatar postaci, która przyjmie rolę wirtualnego rzecznika praw konsumentów-seniorów. Avatar miał komunikować się z seniorami w formie głosowej oraz pisemnej (komunikaty głosowe będą pojawiały się w formie transkrypcji).
+• na tym etapie użytkownik miał wybrać jakiej formy wsparcia oczekuje tj. pomocy w rozwiązaniu konkretnej sprawy albo przekazania informacji o przysługujących konsumentom prawach.
+• jeśli senior zdecydowałby, że chciałby poznać i dowiedzieć się jakie prawa chronią konsumentów (np. jak zachować się w konkretnej sytuacji, na co zwracać uwagę zawierając umowę, jak nie dać się oszukać przez sprzedawcę) to przechodząc zaprogramowaną ścieżką, mógł w łatwy i dostosowany do odbiorcy sposób poznawać najważniejsze informacje. Informacje te miały być przekazywane przez eRzecznika Praw Seniora-Konsumenta w formie graficznej, słownej i tekstowej, po każdej kolejnej wybranej przez użytkownika opcji.
+• Jeśli senior miał skorzystać z aplikacji w celu rozwiązania swojego konkretnego problemu (np. jak prawidłowo złożyć reklamację zepsutego towaru; jak odstąpić od umowy zawartej na pokazie; jak zareklamować źle wystawioną fakturę), to przechodząc przez zaprogramowaną ścieżkę, eRzecznik krok po kroku miał wytłumaczyć jakie prawa przysługują konsumentowi i wyjaśni jak w praktyce powinien wyglądać schemat postepowania w konkretnej sprawie. Dodatkowo, w zależności od rodzaju sprawy, użytkownik miał mieć możliwość wygenerowania i wysłania na maila wzór stosownego pisma do przedsiębiorcy (np. wezwania do zapłaty, reklamacji).
+• Avatar miał posługiwał się językiem prostym i zrozumiałym dla seniora. Aplikacja miała przy tym cechować się odpowiednimi funkcjami dla osób starszych funkcjami jak m.in. zmiana rozmiaru czcionki czy możliwość regulowania szybkości wypowiedzi.
+
+Ostatecznie, w wyniku dyskusji w gronie zespołu, jak również spotkań z przedstawicielami ROPS Kraków zdecydowaliśmy, że aplikacja nie będzie posiadała planowanego „avatara”, a jej cel został ostatecznie określony w poniższy sposób:
+Celem innowacji jest stworzenie narzędzia z zakresu IT, które umożliwi seniorom w prosty i intuicyjny sposób otrzymanie szybkiej, rzetelnej i konkretnej porady prawnej z zakresu wybranych zagadnień prawa konsumenckiego, z którymi konsumenci seniorzy mają najczęściej problemy. W szczególności seniorzy otrzymają informacje na temat:
+a) jak skutecznie złożyć reklamację,
+b) jak uniknąć najczęstszych błędów popełnianych przy składaniu reklamacji,
+b) jak skutecznie odstąpić od umowy zawartej z przedsiębiorcą na odległość (np. przez telefon, internet),
+c) jak postępować w przypadku odmowy uznania reklamacji za zasadną przez przedsiębiorcę,
+e) instytucji zajmujących się ochroną praw konsumentów w przypadku spraw, w których porada wygenerowana w aplikacji będzie niewystarczająca.
+Otrzymanie porady będzie możliwe po przejściu przez ścieżkę decyzyjną w aplikacji (seria pytań dotyczących istoty problemu konsumenckiego), co pomoże konsumentom sprecyzować i zdiagnozować istotę swojego problemu. Konsumenci będą musieli się skupić na obiektywnie istotnych do udzielenia porady elementach sprawy (daty, rodzaje żądań, podstawy odpowiedzialności) z pominięciem subiektywnych odczuć i opisów nieistotnych dla rozwiązania problemu (kultura osobista przedsiębiorcy, poczucie krzywdy itp.).
+
+Proces projektowy
+
+Badania
+
+Pierwszym etapem procesu projektowego było przeprowadzenie sześciu semi-ustrukturyzowanych wywiadów pogłębionych (IDI).
+Uczestnikami badań było 6 osób w wieku 65+, zamieszkujący miasta i miejscowości w województwie dolnośląskim:
+Kobieta, wiek: 88 lat, miejsce zamieszkania: miasto powyżej 500 tyś mieszkańców
+Kobieta, wiek: 66 lat, miejsce zamieszkania: wieś
+Kobieta, wiek 68 lat, miejsce zamieszkania: wieś
+Mężczyzna, wiek 79 lat, miejsce zamieszkania: miasto powyżej 500 tyś mieszkańców
+Mężczyzna, wiek: 66 lat, miejsce zamieszkania: miasto od 50 tyś do 150 tyś mieszkańców
+Mężczyzna, wiek 72 lata, miejsce zamieszkania: wieś
+
+Przyjęliśmy następujące kryteria wyboru uczestników:
+Wiek 65+
+Doświadczenie w szukaniu pomocy i rozwiązywaniu problemu konsumenckiego
+
+Uczestników zrekrutowaliśmy z grupy osób, którym Stowarzyszenie Ochrony Konsumentów Aquila pomogło w ciągu ostatniego roku w sprawie konsumenckiej.
+Dwa podstawowe problemy zostały zdefiniowane następująco:
+Poznanie doświadczeń i emocji seniorów związanych z procesem reklamacyjnym
+Poznanie języka, sposobu rozumienia/definiowania pojęć, którymi posługują się seniorzy do opisywania problemów konsumenckich
+
+Trzeci problem badawczy niezwiązany był z tematyką konsumencką i koncentrował się na poznaniu sposobu interakcji seniorów z narzędziami cyfrowymi, przede wszystkim mobilnymi, ponieważ to właśnie urządzenia mobilne będą narzędziem poprzez które obsługiwana będzie aplikacja.
+
+W okresie 25 kwietnia – 10 maja 2022 roku przeprowadziliśmy 6 wywiadów pogłębionych. Cztery wywiady odbyły się w domach uczestników, dwa w biurze Stowarzyszenia. Wywiady trwały od 50 do 80 minut. Scenariusz podzielony był na 4 części:
+Pytania dotyczące doświadczeń, odczuć i emocji związanych z problemem konsumenckim i jego rozwiązywaniem
+Pytania dotyczące sposobu i stopnia zrozumienia najważniejszych pojęć związanych z przepisami konsumenckimi
+Pytania związane z sposobem użytkowania urządzeń i aplikacji mobilnych
+Część obserwacyjna: sposób używania urządzeń mobilnych i aplikacji
+
+Przeprowadzone analizy pozwoliły nam na wyodrębnienie dwóch typów zachowań, emocji, doświadczeń związanych z wystąpieniem i rozwiązywaniem problemu konsumenckiego. W wielu punktach typy te bardzo różnią się od siebie, ale pojawiały się też punkty wspólne. Pierwszy typ został roboczo nazwany „Cierpliwym idealista”, drugi natomiast „Praktykiem”.
+
+Interesujący wydał się już sam sposób relacjonowania wydarzeń związanych z przebiegiem całej sprawy konsumenckiej. Wyłoniły się dwa, dość odległe od siebie, sposoby w jakie seniorzy opowiadają o swoich „perypetiach”. „Cierpliwy idealista” opowiada spokojnie, nie wykazuje mocniejszych emocji. Jego relacje są pełne szczegółów, uporządkowane, chronologiczne, nie popadają w dygresje. „Praktyk” z kolei często gubi chronologię wydarzeń, jego relacje nie mają tylu szczegółów. Jest jednak jeden aspekt, który wydaje się być najważniejszy z punktu widzenia „Praktyka”: kwestie techniczne związane dotyczące wadliwego towaru. Skupia się on bardzo na wyjaśnieniu, jakie były techniczne przyczyny usterki. Choć najczęściej sam nie jest ekspertem w danej dziedzinie, stara się podkreślać swoją wiedzę.
+
+Główne rekomendacje do prac projektowych, jakie wyłoniły się w wyniku badań to:
+Zwrócić bardzo dużą uwagę na uproszczenie języka i wyjaśnienie pojęć
+Przygotować prosty interfejs, bez zbędnych elementów graficznych
+Opracować elementy zachęcające do korzystania z aplikacji
+Zadbać o wyraźne informacje zwrotne po każdej interakcji z aplikacją
+Przedstawić informację podsumowującą przejście każdego etapu aplikacji
+Nie wykorzystywać ikon jako nośników informacji i poleceń
+Zadbać o zrozumiały onboarding
+Nie wymagać rejestacji/logowania
+Zminimalizować liczbę odpowiedzi dostępnych na jednym ekranie
+
+Na podstawie wyżej opisanej analizy stworzyliśmy dwie persony, czyli archetypy użytkowników, których cechy reprezentują potrzeby większej grupy odbiorców. Dzięki personom mogliśmy dopasować aplikację z myślą o konkretnej osobie.
+Pierwsza z person reprezentuje typ „Cierpliwego idealisty”. Nazwaliśmy ją Jadwiga Korycińska. Druga persona reprezentuje typ „Praktyka”. Nazwaliśmy go Tadeusz Jaremko.
+
+Kolejnym narzędziem przygotowanym w ramach procesu projektowego było Customer Journey Map, czyli narzędzie, którego celem jest odtworzenie całego procesu, którego doświadcza odbiorca danego produktu – w naszym przypadku aplikacji „E-rzecznik konsumenta”,
+Mapę stworzyliśmy na podstawie wywiadów pogłębionych oraz person, które przygotowaliśmy.
+
+Lista funkcjonalności aplikacji
+
+Na podstawie analizy wywiadów pogłębionych i z pomocą przygotowanych narzędzi projektowych przygotowaliśmy listę funkcjonalności, jakie powinna spełniać aplikacja.
+
+Aplikacja jest aplikacją natywną przygotowaną na platformę Android
+Aplikacja nie wymaga połączenia z internetem do działania
+Aplikacja nie wymaga rejestracji/logowania
+Aplikacja spełnia wymagania WCAG 2.1, w szczególności:
+Wszelkie treści nietekstowe przedstawione użytkownikowi mają swoją tekstową alternatywę , która służy tym samym celom (Kryterium sukcesu 1.1.1 Treść nietekstowa)
+Informacje, struktura oraz relacje między treściami przekazywane poprzez prezentację mogą być odczytane przez program komputerowy lub istnieją w postaci tekstu. (Kryterium sukcesu 1.3.1 Informacje i relacje)
+Jeśli kolejność, w jakiej przedstawiona jest treść, ma znaczenie dla zrozumienia treści — prawidłowa kolejność odczytu musi być określona programowo. (Kryterium sukcesu 1.3.2 Zrozumiała kolejność)
+Treść nie ogranicza swojego widoku i działania do jednej orientacji wyświetlania, takiej jak pionowa lub pozioma, chyba że określona orientacja wyświetlania jest istotna. (Kryterium sukcesu 1.3.4 Orientacja)
+Kolor nie jest wykorzystywany jako jedyny wizualny sposób przekazywania informacji, wskazywania czynności do wykonania lub oczekiwania na odpowiedź, czy też wyróżniania elementów wizualnych. (Kryterium sukcesu 1.4.1 Użycie koloru)
+Wizualna prezentacja tekstu lub obrazu tekstu posiada współczynnik kontrastu wynoszący przynajmniej 4.5:1 (Kryterium sukcesu 1.4.3 Kontrast (minimum)
+Wizualna prezentacja następujących elementów ma współczynnik kontrastu co najmniej 3:1 względem sąsiednich kolorów (Kryterium sukcesu 1.4.11 Kontrast elementów nietekstowych)
+Oprócz napisów rozszerzonych oraz obrazów tekstu , rozmiar tekstu może zostać powiększony do 200% bez użycia technologii wspomagających oraz bez utraty treści lub funkcjonalności. (Kryterium sukcesu 1.4.4 Zmiana rozmiaru tekstu)
+Treść może być prezentowana bez utraty informacji lub funkcjonalności, bez konieczności przewijania w dwóch wymiarach dla:- Pionowego przewijania treści o szerokości odpowiadającej 320 pikselom CSS ;
+- Poziomego przewijania treści na wysokości odpowiadającej 256 pikselom CSS .
+Nagłówki i etykiety opisują temat lub cel treści (Kryterium sukcesu 2.4.6 Nagłówki i etykiety)
+Wszystkie funkcjonalności wykorzystujące do obsługi gesty wielopunktowe lub oparte na ścieżkach mogą być obsługiwane za pomocą dotyku jednopunktowego bez gestu opartego na ścieżce, chyba że istotny jest gest wielopunktowy lub oparty na ścieżce. (Kryterium sukcesu 2.5.1 Gesty dotykowe)
+W przypadku funkcjonalności , które są wywoływane za pomocą dotyku jednopunktowego , co najmniej jedno z poniższych twierdzeń jest prawdziwe (Kryterium sukcesu 2.5.2 Rezygnacja ze wskazania):
+- Brak zdarzenia: Naciskanie nie wywołuje jakiejkolwiek części zdarzenia;
+- Przerwanie lub cofnięcie: Zdarzenie jest zależne od zwolnienia nacisku i istnieje mechanizm , którym można je przerwać lub cofnąć po zwolnieniu nacisku;
+- Odwrócenie zdarzenia: Zwolnienie nacisku cofa wywołane zdarzenie i przywraca stan sprzed zdarzenia;
+- Istotne: Wciśnięcie jest niezbędne do wywołania zdarzenia
+W przypadku komponentów interfejsu użytkownika z etykietami zawierającymi tekst lub obrazy tekstu , nazwa zawiera tekst, który jest prezentowany wizualnie. (Kryterium sukcesu 2.5.3 Etykieta w nazwie)
+Rozmiar celu punktu dotykowego wynosi co najmniej 44 na 44 piksele CSS (Kryterium sukcesu 2.5.5 Rozmiar celu dotykowego)
+Aplikacja zapewnia zgodność z technologiami asystującymi dla Androida (Talkback)
+
+Lista najczęstszych problemów z jakimi spotykają się konsumenci-seniorzy
+
+Po określeniu funkcjonalności aplikacji, kolejnym krokiem było opracowanie listy najczęstszych problemów, z jakimi spotykają się konsumenci seniorzy. Stanowiła ona punkt wyjścia do opracowania przez zespół prawników szczegółowej listy pytań i odpowiedzi, stanowiących podstawę merytoryczną aplikacji. Lista została opracowana przez prawników Stowarzyszenia Ochrony Konsumentów Aquila, na podstawie analizy spraw prowadzonych przez Stowarzyszenie od 2019 roku.
+
+1. Reklamacja
+
+W przypadku reklamacji seniorzy natrafiają na przeszkodę już na etapie jej składania. Przedsiębiorcy wykorzystują swoją przewagę rynkową i doświadczenie starając się jak najbardziej utrudnić skuteczne złożenie reklamacji, lub świadomie wprowadzają w błąd lub manipulują konsumentem, aby skorzystanie z reklamacji było dla przedsiębiorcy jak najmniej uciążliwe.
+Częstą praktyką jest nie przyjmowanie reklamacji w sklepie lub wymaganie sporządzenia jej na specjalnym formularzu, co ma zniechęcić i utrudnić konsumentom-seniorom skuteczne dochodzenie swoich praw. Niestety przedsiębiorcy, nadużywając zaufanie seniorów, czasami zamiast zniechęcać do złożenia reklamacji oferują pomoc w wypełnieniu formularza. Sprzedający może wtedy wykorzystać nieuwagę i brak wiedzy seniora wypełniając formularz w sposób błędny, przez co reklamacja będzie odrzucona, albo w sposób sprzeczny z żądaniami konsumenta, co skutkować może np. obniżeniem ceny zamiast wymianą towaru na nowy.
+Kolejną przeszkodą dla seniora na drodze do skutecznej reklamacji może być próba nacisku na niego ze strony przedsiębiorcy aby w reklamacji podał, oprócz adresu do korespondencji, dane kontaktowe takie jak email lub numer telefonu. Takie działanie ma ułatwić dostarczenie odpowiedzi, co może działać na niekorzyść osób starszych. Dla seniorów obsługa poczty elektronicznej lub telefonu może stanowić wyzwanie, preferują oni najczęściej korespondencję z wykorzystaniem tradycyjnej poczty, przez co informacja przekazana w inny sposób może być powodem późniejszych problemów np. uchybienia, przewidzianemu przez przepisy dotyczące reklamacji, terminowi.
+Innym problemem, na który może natknąć się senior podczas próby zareklamowania, jest wybór w ramach której instytucji dochodzić będzie swoich praw. Niewiedzę na temat różnic między rękojmią i gwarancją wykorzystują sprzedawcy. Stosują oni te nazwy zamiennie, mieszając podstawy odpowiedzialności za wady próbują uchylić się od odpowiedzialności z tytułu rękojmi, korzystając z postanowień zawartych w oświadczeniu gwaranta. Różnic między obiema instytucjami nie ma aż tak wiele, dzięki czemu skuteczna edukacja konsumencka seniorów może pomóc im zmagać się z próbami bezpodstawnego odrzucenia ich żądań.
+Niestety, nawet skuteczne złożenie reklamacji przez seniora nie jest gwarancją pozytywnego rezultatu. Sprzedawcy niekiedy odrzucają reklamacje bezpodstawnie, a osoby starsze, pozbawione edukacji w zakresie praw konsumenta, nie wiedzą co w takiej sytuacji zrobić, ani gdzie szukać pomocy w przypadku gdy przedsiębiorca nie udziela potrzebnych informacji lub nie chce współpracować z konsumentem.
+
+2. Pokazy
+
+Pokazy organizowane przez przedsiębiorców w celu reklamy i sprzedaży oferowanych przez niego towarów i usług są najczęściej miejscem, w którym dochodzi do bardzo poważnych naruszeń prawa. Najczęściej na pokazy zapraszani są seniorzy, którzy są podatni na stosowane podczas tych pokazów chwyty i triki psychologiczne. Najskuteczniejszą ochroną przed związanymi z pokazami oszustwami jest nie chodzenie na nie, lecz często takie wydarzenia są prezentowane zapraszanym osobom jako bezpłatne badania, lub wycieczki, a za samo uczestnictwo obiecywane są wartościowe nagrody. Świadomość jak sprzedawcy próbują manipulować seniorem podczas takich pokazów jest kluczowa do uniknięcia późniejszych problemów związanych z odzyskiwaniem utraconych przez nietrafiony zakup pieniędzy.
+Niestety podczas takich pokazów przedsiębiorcy próbują wykorzystać zaufanie i dobroć osób starszych, próbując je oszukać. Wzbudzają uczucie wdzięczności obdarowując różnymi rzeczami o stosunkowo małej wartości albo udostępniają usługi jak np. badania, wycieczki, catering czy wydarzenie kulturalne. Ma to spowodować chęć odwdzięczenia się, co sprzedawca wykorzystuje aby sprzedać oferowane produkty po bardzo zawyżonej cenie. Innym sposobem jest wykorzystanie autorytetu osób trzecich wcielających się w rolę ekspertów biorących udział w pokazie lub instytucji takich jak UE, które rzekomo dofinansowują całe wydarzenie lub kupno produktów. Ma to z jednej strony legitymizować całe wydarzenie jak i same produkty, a z drugiej strony tworzyć atmosferę niepowtarzalnej okazji jaką jest zakup produkty podczas takiego wydarzenia. Częstą praktyką jest również zatrudnianie osób grających rolę zadowolonego klienta co ma budować nasze zaufanie do produktu i sprzedawcy. Niestety nierzadko tacy sprzedawcy mogą stosować również argumenty mające zastraszyć seniora lub wywołać współczucie, sugerując między innymi, że nie będzie on mógł wyjść jeśli nic nie kupi lub że przez to że nic nie kupił to pracownik przedsiębiorcy straci pracę.
+Niestety to nie wszystko, nieuczciwe praktyki kontynuowane są podczas samego zawierania umowy. Przedsiębiorcy często zapewniają o właściwościach, który dany produkt nie posiada, nie dopełniając jednocześnie ustawowych obowiązków informacyjnych. Często wprowadzają w błąd co do przysługujących praw, mając na celu spowodowanie uchybienia terminu na odstąpienie od umowy. Niekiedy problematyczne okazuje się również ustalenie z kim zawarto umowę, dlatego w razie zawarcia umowy podczas pokazu, ważna jest świadomość jakie mogą być tego konsekwencje i niezwłoczne skontaktowanie się organami lub instytucjami, które mogą pomóc seniorom.
+
+3. Sprzedaż w Internecie
+
+Seniorzy, którzy robią zakupy przez Internet, narażeni są w szczególności na nieuczciwość sprzedawców którzy bazują na niewiedzy kupujących co do przysługujących im praw.
+Już sam wybór strony i sprzedawcy może okazać się dla seniora sporym wyzwaniem. Dane sprzedawców często są ciężko dostępne, a sprzedawcy zagraniczni nie określają z jakiego dokładnie są kraju, w skrajnych przypadkach oszukując. Świadomość jakie informacje należy sprawdzić przed zawarciem umowy i gdzie ich szukać jest kluczowa dla uniknięcia późniejszych problemów. Wiedza na ten temat nie należy do powszechnych, przez co seniorzy mogą mieć trudności w weryfikacji sprzedawcy i sprawdzenia jego wiarygodności.
+Kolejnym zagrożeniem może być działanie pod wpływem impulsu spowodowanego chęcią skorzystania z okazji, która wydaje się być dla nas niezwykle korzystna. Co prawda prawodawca chroni konsumentów przed takimi działaniami zapewniając nam prawo do odstąpienia od zawartej na odległość umowy, jednakże w praktyce wyegzekwowanie zwrotu wpłaconych pieniędzy może okazać się wręcz niemożliwe. Seniorzy są szczególnie narażeni na takie praktyki, ponieważ rozpoznanie oszustwa w internecie stanowi wyzwanie dla osób regularnie korzystających z niego, nie mówiąc już o sporadycznych, niedoświadczonych użytkownikach takich jak osoby starsze.
+Nawet jeśli senior zachowa szczególną ostrożność i sprawdzi wszystkie dostępne informacje to towar przysłany przez sprzedawcę może być niezgodny z opisem lub po prostu niepotrzebny. Senior-konsument może nie wiedzieć, że przysługuje mu prawo odstąpienia od umowy. Forma i termin w jakim należy złożyć takie oświadczenie wynikają wprost z przepisów, jednak sprzedawca może utrudniać jego złożenie lub wprowadzać konsumenta w błąd.
+Kwestią, która może budzić wątpliwości jest katalog sytuacji w których od umowy odstąpić nie możemy. Konsument powinien wiedzieć kiedy nie może skorzystać ze swoich praw, żeby mógł skutecznie bronić się przed próbami utrudniania dochodzenia roszczeń z tytułu skutecznego odstąpienia od umowy zawartej na odległość.
+Zakupy przez internet związane są często z koniecznością dostarczenia do konsumenta zakupionego przez niego towaru. Niestety podczas przesyłki może wystąpić szereg problemów takich jak opóźnienia w wysyłce bądź dostawie, lub uszkodzenie zakupionego towaru. Niezbędna jest więc wiedza w zakresie praw i obowiązków sprzedawcy w tym zakresie, czy świadomość, w którym momencie przechodzi na nas ciężar związany z utratą lub przypadkowym zniszczeniem przedmiotu. Przydatna jest również świadomość jak postępować w razie uszkodzenia przesyłki, a przede wszystkim w jaki sposób sprawdzić paczkę przed jej odebraniem. Seniorzy jednak nie posiadają wystraczającej wiedzy jak chronić się przed tego typu problemami.
+
+4. Usługi telekomunikacyjne
+
+Umowy telekomunikacyjne mogą być zawierane w różnych formach, co otwiera pole do manipulacji i nietrafionych decyzji. Takie umowy często podpisywane są z inicjatywy przedsiębiorcy podczas rozmowy telefonicznej lub wizyty akwizytora. Konieczna wtedy jest szczególna ostrożność i świadomość, jakie będą konsekwencje podpisanej przez nas umowy. Ponadto już sama weryfikacja akwizytora czy osoby z którą rozmawiamy przez internet jest konieczna aby uniknąć bycia oszukanym.
+Konsument powinien mieć również świadomość, że również w przypadku usług telekomunikacyjnych przysługuje mu prawo do odstąpienia od umowy zawartej przez internet lub poza lokalem przedsiębiorstwa.
+Szczególną formą zawarcia lub zmiany umowy jest zawarcie jej podczas rozmowy telefonicznej. Mianowicie nie dochodzi wówczas do jej zawarcia, ponieważ ustawa nie przewiduje możliwości zawarcia umowy o świadczenie usług telekomunikacyjnych w formie ustnej. Skutkuje to tym, że złożone przez seniora ustnie oświadczenie jest niewiążące i wymaga potwierdzenia w formie pisemnej, elektronicznej lub dokumentowej – jednak senior nie jest o tym informowany przez przedsiębiorcę.
+Jednakże największym niebezpieczeństwem grożącym konsumentom, a w szczególności seniorom są nieuczciwe praktyki stosowane przez przedsiębiorców. Praktyki te nie dotyczą jedynie umów zawieranych poza lokalem przedsiębiorstwa, lecz również tych zawieranych w punktach sprzedaży czy salonach operatorów. Świadomość najczęściej stosowanych praktyk jest niezbędna do świadomego podpisywania umów i do zaoszczędzenia stresu i pieniędzy. Nieuczciwe praktyki mogą polegać między innymi na podszywaniu się pod pracownika firmy, z którym senior ma podpisaną umowę, i próbie skłonienia go do pozornego przedłużenia umowy. Niestety podpisując umowę z innym przedsiębiorcą zmuszony jest on wtedy do zapłacenia kary umownej dotychczasowemu operatorowi za wcześniejsze zerwanie podpisanej umowy. Podszywające się pod dotychczasowego operatora osoby mogą również sugerować lub zastraszać, że dotychczasowy usługodawca kończy działalność, a jeśli nie podpiszemy nowej umowy stracimy możliwość korzystania z dotychczasowych usług. W punkcie sprzedaży natomiast sprzedawca może próbować oszukać seniora nie przekazując mu pełnych informacji nt. cen wybranych usług lub nie przekazując nam naszego egzemplarza zawartej umowy.
+Niestety dochodzenie swoich praw w związku z oszustwem w ramach usług telekomunikacyjnych może okazać się problematyczne jeśli senior uchybi 14 dniowemu terminowi i koniecznym będzie skorzystanie z profesjonalnej pomocy.
+
+Makiety Lo-fi aplikacji
+
+Na podstawie całego procesu projektowego oraz listy funkcjonalności przygotowaliśmy makiety lo-fi.
+Poniżej kilka przykładowych ekranów. Wszystkie podstawowe ekrany można znaleźć pod tym linkiem: https://www.figma.com/file/jVWUBzEM3qlAtoIWnWSrMX/apka-konsumencka---%C5%9Bcie%C5%BCka-1?node-id=1%3A1579
+
+Prototyp aplikacji
+
+Prototyp dostępny jest pod tym linkiem: https://www.figma.com/proto/jVWUBzEM3qlAtoIWnWSrMX/apka-konsumencka---%C5%9Bcie%C5%BCka-1?node-id=1%3A97&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A164
+
+User flow
+
+User flow to graficzny schemat w formie diagramu blokowego, który wizualizuje działania, jakie musi wykonać użytkownik, by osiągnąć cel, by wykonać jakieś zadanie za pomocą aplikacji.
+Poniżej przykładowy user flow dla serii ścieżek decyzyjnych w aplikacji. Wszystkie user flows można znaleźć pod tym linkiem: https://www.figma.com/file/F1zryAQ4L9b6vLYq3S37Tr/user-flow-apka-konsumencka?node-id=0%3A1&t=KtJMpQlsmqlAm38I-0 oraz w załączniku
+
+Testy użyteczności
+
+Po przygotowaniu makiet lo-fi i prototypu mogliśmy przekazać pierwsze materiały programiście, a sami przystąpiliśmy do testów użyteczności. Testy użyteczności UX to metoda badania polegająca na zgromadzeniu informacji od użytkowników dotyczących ich doświadczeń z korzystania z projektowanej aplikacji. Celem tych testów jest dostosowanie projektu do potrzeb i oczekiwań użytkowników, co pozwala na wykrycie problemów i trudności napotykanych przez nich podczas korzystania z aplikacji. Testy użyteczności UX są ważnym etapem procesu projektowania i mogą być przeprowadzane na różnych etapach projektu, od testów koncepcyjnych po testy użyteczności gotowego produktu. Rezultaty tych testów mogą być wykorzystane do poprawy projektu i zwiększenia jego przyjazności, skuteczności i użyteczności.
+W przypadku testowania aplikacji E-rzecznik konsumenta seniora przeprowadziliśmy 3 rundy testów użyteczności. W każdym z nich wzięło udział 4 uczestników. Łącznie w badaniach wzięło udział 8 osób - 2 osoby brały udział w dwóch rundach, 6 osób brało udział w jednej rundzie. Testy skupiały się na dwóch aspektach aplikacji: mechanizmie i funkcjonalności oraz zrozumieniu treści aplikacji, takich jak pytania i porady prawne. Uczestnicy testów nie mieli problemów z intuicyjnością i poziomem zrozumienia samego mechanizmu aplikacji, ale problemem okazała się warstwa językowa. Główną rekomendacją po przeprowadzeniu indywidualnych wywiadów było uproszczenie języka i wyjaśnienie pojęć, pomimo staranności z jaką zespół prawników przykładał się do tej kwestii. Testy miały formę zadaniowych testów użyteczności, które polegają na przeprowadzeniu testów przez użytkowników zgodnie z wcześniej przygotowanym scenariuszem. Uczestnicy w obecności moderatora wykonywali zadania w aplikacji, jednocześnie dzieląc się swoimi spostrzeżeniami. W celu znalezienie odpowiedniej grupy uczestników, przyjęliśmy założenie, że najlepszą grupą są osoby, które niedawno korzystały z pomocy konsumenckiej. W przypadku tego projektu byli to konsumenci, którzy w ciągu ostatniego roku zwrócili się do Stowarzyszenia Ochrony Konsumentów Aquila z problemem konsumenckim, oraz osoby doświadczone w obsłudze smartfona z systemem operacyjnym Android, ponieważ na ten system tworzona była aplikacja.
+
+Podczas przygotowywania scenariuszy testów użyteczności, ważne dla nas było skupienie się na kluczowych funkcjonalnościach aplikacji, takich jak przejście serii pytań i odpowiedzi w celu uzyskania porady dotyczącej problemu konsumenckiego. Aby dodać testom jak najwięcej realizmu, zadania testowe przedstawione były w formie scenek, które uwzględniały motywacje stojące za zadaniami. Staraliśmy się, aby zadania były podobnej długości i żeby każde kolejne było nieco bardziej skomplikowane niż poprzednie.
+Scenariusz testów użyteczności składał się z trzech części: wprowadzenie, zadania i podsumowanie. W pierwszej części moderator nawiązywał kontakt z uczestnikami badania, "oswajał" ich z sytuacją testową, podkreślał, że celem testu jest ocena aplikacji, a nie uczestników, że nie ma dobrych i złych odpowiedzi i że cokolwiek zrobią uczestnicy jest ważne dla rozwoju aplikacji. W drugiej części uczestnicy wykonywali zadania, a w trzeciej odbywała się krótka rozmowa z uczestnikami, w której uzyskiwano informacje o ogólnych wrażeniach i dodatkowych przemyśleniach. Podczas testów stosowano tzw. protokół głośnego myślenia, w którym uczestnicy komentowali swoje działania i wypowiadali swoje przemyślenia, co pozwalało na lepsze zrozumienie emocji i motywacji. Badania miały charakter formatywny, tzn. służący odkryciu pozytywnych i negatywnych aspektów aplikacji oraz możliwości jej poprawy.
+
+Podczas testów stosowano następujące zasady: uprzejmość wobec uczestników, brak przerywania wykonywania zadań, brak podpowiedzi dotyczących zadań, brak oceniania uczestników, aktywne słuchanie i dopytywanie w przypadku, gdy uczestnik niechętnie komentuje i odpowiada na pytania. Testy przeprowadzał jeden moderator.
+
+Testy użyteczności wykazały, że nawigacja w aplikacji jest czytelna i zrozumiała dla użytkowników. Mechanizm odpowiadania na serię pytań, który doprowadza do porady, okazał się prosty do zrozumienia. Wygląd i wielkość przycisków również nie wymagały korekt. Układ elementów na ekranie był również zrozumiały dla użytkowników. Efektem testów były dwa rozszerzenia funkcjonalności: wyszukiwarka Rzeczników Konsumentów odpowiednich dla miejsca zamieszkania użytkownika oraz karty podpowiedzi, które pojawiają się na niektórych ekranach po kliknięciu na poszczególne słowa z wyjaśnieniem.
+Pełny raport z testów użyteczności stanowi załącznik do modelu
+
+Makiety hi-fi aplikacji
+Po zakończeniu I tury testowania przystąpiliśmy do projektowania makiet hi-fi, czyli ekranów bardziej zaawansowanych graficznie, będących bardzo zbliżoną reprezentacją finalnej wersji aplikacji. Poniżej kilka przykładowych ekranów. Wszystkie podstawowe ekrany można znaleźć pod tym linkiem: https://www.figma.com/file/RO9T3EDrz35De7QKa1AMuF/mockupy-apka-konsumencka?t=KtJMpQlsmqlAm38I-0 oraz w załączniku do modelu
+
+Przygotowaliśmy też tzw. design kit, w którym opisane zostały opisane najważniejsze elementy wyglądu aplikacji, takie jak kolory, czcionki, butony, ikony.
+
+Upraszczanie języka
+Pierwsza runda testów użyteczności uświadomiła nam jak ważny w odbiorze aplikacji jest jej język. Język związany z rozwiązywaniem spraw konsumenckich najeżony jest terminami prawnymi, ma swoją specyficzną formę i w związku z tym często bywa niezrozumiały dla zwykłego odbiorcy. Odbiór aplikacji E-rzecznik Konsumenta seniora w dużej mierze uzależniony jest od zrozumiałości jej języka. Użytkownik musi wiedzieć jakie ma prawa, co może zrobić w swojej sprawie, musi rozumieć, co aplikacja do niego „mówi”. Uświadomienie tego faktu sprawiło, że postanowiliśmy w kolejnych rundach testowania badać także poziom zrozumienia treści aplikacji i na bieżąco pracować nad uproszczenie języka. W artykule Prosta polszczyzna Tomasz Piekot i Grzegorz Zarzeczny piszą: „Prosty język to specjalny styl pisania używany do przekazywania informacji ważnych dla zwykłego obywatela. Tekst w prostym języku jest łatwy w czytaniu i można go zrozumieć po jednokrotnej lekturze. W prostym języku musimy przekazywać informacje gwarantowane przez prawa człowieka i inne akty prawne (np. ustawa o dostępie do informacji publicznej). Są to np. informacje zdrowiu, finansach, bezpieczeństwie czy powszechnym ubezpieczeniu (Piekot, Zarzeczny 2013: 28).” W publikacji Przystępność tekstów urzędowych można znaleźć fragment, który stanowił inspirację i punkt odniesienia naszej pracy: „Wbrew pozorom prostota języka to pojęcie trudne do zdefiniowania. Ów paradoks bierze się stąd, że łatwość czytania jest cechą, która tylko w pewnym stopniu zależy od autora czy samego tekstu. W znacznie większej mierze wpływają na nią czynniki wobec tekstu zewnętrzne – związane z odbiorcą. Ważne są zwłaszcza:
+• oczytanie – czyli ilość i jakość doświadczeń lekturowych danej osoby,
+• zaangażowanie – czyli to, jak bardzo zależy jej na zdobyciu informacji,
+• stres informacyjny – czyli przeładowanie informacjami, które czasowo ogranicza
+kompetencje lekturowe,
+• znajomość tematu – czyli to, czy odbiorca jest ekspertem w danej kwestii.
+Oczywiście, wspomagać odbiorcę w lekturze tekstu możemy – jako autorzy – już na etapie
+jego tworzenia. Wsparcie to może pojawić się aż na czterech poziomach organizacji wypowiedzi. Na każdym z nich mamy do dyspozycji wiele technik tworzenia zrozumiałego przekazu. Oto cztery poziomy, na których możemy dążyć do efektywnej komunikacji:
+1. Treść merytoryczna – czyli to, o czym faktycznie jest tekst (przedmiot tekstu).
+2. Struktura i wygląd tekstu – czyli to, jak tekst jest ustrukturyzowany i zorganizowany
+wizualnie (np. typografia).
+3. Frazowanie myśli – czyli to, jak długie są zdania i jak bardzo skomplikowane.
+4. Relacje nadawczo-odbiorcze – czyli to, jak wyraża siebie nadawca, i jak w tekście
+traktuje odbiorcę.” (Piekot, Zarzeczny 2017: 9-10).
+W pracy nad aplikacją przyjęliśmy szereg praktycznych zasad opracowanych przez Serwis Służby Cywilnej:
+1. Myśl o odbiorcy, przyjmij jego perspektywę.
+2. Pisz do ludzi, często używaj form osobowych. Do odbiorcy zwracaj się bezpośrednio i pisz o swojej instytucji „my”.
+3. Na początku napisz o tym, co najważniejsze.
+4. Ułóż wypowiedź w logicznym porządku.
+5. Używaj nagłówków, które uporządkują strukturę tekstu i pozwolą odbiorcy szybko zorientować się, w której jest sekcji i czego ona dotyczy.
+6. Stosuj listy (wyliczenia) i twórz tabele.
+7. Twórz krótkie zdania – do 15-20 wyrazów.
+8. Unikaj wielosłowia. Nie pisz o pisaniu. Pisz zwięźle, rzeczowo i na temat.
+9. Stosuj naturalny szyk zdania. W języku w polskim jest to rzeczownik, a dopiero potem czasownik. Unikaj wtrąceń.
+10. Zadbaj o to, by w tekście było więcej czasowników niż rzeczowników. Czasowniki ożywiają przekaz, nadają kierunek działaniom i pokazują, kto za nimi stoi.
+11. Unikaj strony biernej. Unikaj konstrukcji typu: być lub zostać + imiesłowów przymiotnikowy.
+12. Unikaj imiesłowów, które kończą się na –ąc lub –ący, -ąca, -ące.
+13. Unikaj rzeczowników odczasownikowych. To te, które kończą się na –anie, -enie, -cie. Łączą się z nimi zwroty: w razie (…), z powodu (…), na skutek (…), w celu (…), dlatego staraj się ich nie używać.
+14. Unikaj nieosobowych form czasownika. To te, które kończą się na –no, -to.
+15. Używaj języka z rozwagą. Wybieraj krótsze i prostsze słowa, nie te rozbudowane, wielosylabowe, obcobrzmiące.
+16. Używaj słów dobrze znanych, które brzmią swojsko. Unikaj przesady, patosu i podniosłego stylu.
+17. Wybieraj słowa o konkretnym znaczeniu, nie rzeczowniki abstrakcyjne.
+18. Unikaj żargonu prawnego, technicznego, specjalistycznego słownictwa. Jeśli wprowadzasz trudne terminy, wyjaśnij je.
+19. Staraj się napisać własnymi słowami np. o tym, dlaczego, na jakiej podstawie działasz, co z tych działań wynika dla odbiorcy komunikatu itp., tak aby zrozumiał twój przekaz, i aby ten przekaz był dla odbiorcy użyteczny.
+20. Używaj poprawnej polszczyzny.
+
+Wersja beta aplikacji
+Makiety hifi stanowiły ostatni etap projektowania, po którym programista przystąpił do kodowania aplikacji. Pierwszą wersję aplikacji, tzw. wersję beta poddaliśmy testom w gronie zespołu projektowego, których celem było zidentyfikowanie błędów w działaniu aplikacji, błędów w treściach, błędów graficznych itp. Po przekazaniu poprawek do programisty, przystąpił on do poprawek i przygotował finalną wersję aplikacji.
+
+Finalna wersja aplikacjiFinalna wersja aplikacji udostępniona będzie w sklepie Android. Kody źródłowe i wszystkie pliki niezbędne do jej odtworzenia stanowią załącznik do Modelu.
+je rzeczywistość. Efekty ich pracy oraz wszelkie materiały umożliwiające wdrożenie innowacji zostały udostępnione nieodpłatnie na podstawie

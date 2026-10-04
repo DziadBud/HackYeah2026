@@ -1,0 +1,402 @@
+--- strona 1 ---
+
+Strona 1 z 12
+
+Dostępny Transport Publiczny
+Test aplikacji
+Spis Treści
+Wstęp
+2
+Grupa testowa
+3
+Przygotowania do testów
+4
+Pytania kontrolne
+5
+Pierwszy etap testów
+7
+Drugi etap testów
+8
+Feedback - informacja zwrotna
+10
+Podsumowanie
+11
+
+--- strona 2 ---
+
+Strona 2 z 12
+
+Wstęp
+Dostępny Transport Publiczny to nie tylko nazwa projektu ale także duże wyzwanie dla
+projektantów miejskiej infrastruktury oraz planistów transportu publicznego. Informacja
+pasażerska jest tego najważniejszą częścią dlatego przygotowanie rozwiązania dostępnego dla
+wszystkich użytkowników nie jest łatwym rozwiązaniem.
+Poruszając temat dostępności w komunikacji publicznej należy skupić się na trzech
+aspektach: wizualnym, fonicznym oraz motorycznym. W większości przypadków wyeliminowanie
+jednego z zagadnień sprawia, że pasażer posiada specjalne potrzeby w przemieszczaniu się po
+mieście. Osoba posiadająca problemy ze wzrokiem korzysta z komunikatów dźwiękowych, osoba
+posiadająca problem w przemieszczaniu się musi opierać się o znaki wizualne, a problemy z fonią
+zastępowane są poprzez odpowiednią informację pisaną.
+Ważnym jest aby każde z tych trzech zagadnień zostało w odpowiedni sposób przemyślane i
+zaimplementowane w przestrzeni publicznej. Informacja pasażerska powinna być dostępna
+zarówno głosowo jak i wizualnie. Przystanki powinny być poprawnie oznaczone, a wszystkie
+przeszkody infrastrukturalne wyeliminowane. Dopiero wtedy można mówić o w pełni dostępnym
+transporcie publicznym.
+Aplikacja mobilna Dostępny Transport Publiczny została przetestowana przez grupę ośmiu
+osób. Testy odbywały się na przełomie czerwca i lipca jednak ich przebieg niestety był zakłócany
+przez problem z dostępnością do danych rozkładowych pochodzących z zewnętrznego źródła.
+Rozpoczęcie testów poprzedziło zadanie osobom testującym kilku pytań, które
+pozwalały na wyłonienie odpowiedniego zestawu danych, na którym miały zostać przeprowadzone
+testy. Zadania przeznaczone dla testerów zostały wykonane w oparciu o dwa zbiory danych: zbiór
+nieznany testerowi oraz zbiór informacji, z którymi tester ma do czynienia na codzień.
+Efektem testów jest wypracowanie poprawnej formy przekazywania informacji w oparciu o
+trzy wyżej wymienione aspekty dostępności.
+
+--- strona 3 ---
+
+Strona 3 z 12
+
+Grupa testowa
+Przetestowanie aplikacji mobilnej, szczególnie takiej, która stawia nacisk na dostępność,
+wymaga specjalistycznej grupy testowej posiadającej różnorodne podejście do tego samego
+tematu. Należy zwrócić uwagę, że zagadnienie dostępności to kilka różnych cech, którymi
+charakteryzują się użytkownicy infrastruktury publicznej. Warto również nadmienić, że osoby
+korzystające z funkcji dostępności mają już swoje przyzwyczajenia, które trudno zmienić. Wynika
+to z procesu przystosowania kiedy jeden zmysł bierze górę nad innym. Przykładowo osoby
+posiadające specjalne wymagania w poruszaniu się będą skupiały swoją uwagę na przestrzennych
+aspektach przemieszczania się takich jak pochylenie, przestrzeń bądź faktura powierzchni. Te
+cechy przypisane do danej grupy powodują, że projektant musi skupić uwagę na zupełnie innych
+rzeczach niż w przypadku ograniczenia wizualnego postrzegania przestrzeni. W takim przypadku
+również ważna jest faktura jednak pochylenie i przestrzeń przestaje być istotne gdyż nie as
+poprawnie odbierane percepcyjne. W tym wypadku ważny jest opis, informacja głosowa oraz
+wcześniej wspomniana faktura powierzchni.
+Na tym przykładzie można w łatwy sposób wytworzyć perfekcyjną grupę testującą, która
+jednak jest trudna do zgromadzenia. Cały problem polega na tym, że tego typu społeczności są
+nadal bardzo różnorodne, a podejście do komunikacji rozwija się na ogólnych płaszczyznach i nie
+ma wyrobionego szczegółowego podejścia. Każdy bowiem odbiera informacje z urządzenia
+mobilnego na swój sposób przez co trzeba projektowo zapewnić pewną neutralność komunikatów.
+Korzystając z powyższej wiedzy, w ramach testów zebrano grupę siedmiu osób
+posiadających w różnym stopniu problem ze wzrokiem. Dodatkowo zaproszono do testów jedną
+osobę z wózkiem dziecięcym. Osoby korzystające z czytnika ekranów korzystały z różnych
+urządzeń oraz systemów. Deklarowały również inne sposoby na wykorzystanie tych samych
+narzędzi.
+Ośmioosobowa grupa otrzymała testową aplikację Dostępny Transport Publiczny. Każda
+osoba została poinstruowana jak pobrać i uruchomić nową wersję. Dodatkowo zapewniono kanał
+komunikacji, który pozwalał na bieżące zgłaszanie błędów.
+
+--- strona 4 ---
+
+Strona 4 z 12
+
+Przygotowania do testów
+W ramach Inkubatora Dostępności przygotowana została aplikacja mobilna Dostępny
+Transport Publiczny, która posiada zaimplementowaną funkcję syntezatora moby TalkBack oraz
+VoiceOver. Opierając się o wcześniejsze doświadczenia zebrane podczas tworzenia przeze mnie
+aplikacji Zaraz Jadę, postanowiłem zaimplementować te systemy w podobny sposób.
+Informacja pasażerska oparta jest o zbiór danych najczęściej przygotowywanych i
+udostępnianych przez organizatora przewozów w danym mieście. W przypadku Warszawy dane te
+pozyskiwane były wprost od Warszawskiego Transportu Publicznego. Niestety podczas realizacji
+inkubatora, instytucja ta była w trakcie zmiany lokalizacji biura, co znacząco zakłóciło pozyskanie
+odpowiedniego zbioru danych. Ostatecznie udało się rozwiązać problemy i skorzystać z informacji
+dostarczanych przez organizatora transportu publicznego.
+Dane te stanowią zbiór informacji o przystankach, rozkładach jazdy oraz o trasach
+realizowanych w ramach umowy pomiędzy Zarządem Transportu Publicznego, a spółkami
+realizującymi te przewozy. Są to dane dostarczane w ramach projektów otwartych danych jednak
+ich użycie wiąże się z odpowiednim przetworzeniem.
+Przed rozpoczęciem testów dane te musiały zostać pobrane i przekonwertowane na
+docelowy otwarty format General Transit Feed Specification (GTFS). Po przygotowaniu danych
+zadano testerom zbiór pytań, które miały na celu zebranie informacji o ich codziennych nawykach
+w komunikacji miejskiej. Jest to istotny punkt, który pozwolił na wyłonienie „neutralnego” zestawu
+danych, które pozwoliły na testy nieobarczone wyrobionymi już nawykami.
+Testy zostały podzielone na dwa etapy: przetestowanie aplikacji zawierającej neutralny zbiór
+danych oraz sprawdzenie tych samych funkcji z informacjami, które testerzy znają z codziennego
+życia.
+Efektem każdego z etapów było zebranie opinii użytkowników w jakim stopniu pozyskanie
+informacji było dla nich łatwe, a co sprawiało trudności.
+
+--- strona 5 ---
+
+Strona 5 z 12
+
+Pytania kontrolne
+Każdemu testerowi, który przekazał wypełniony i podpisany dokument „Deklaracja Testera
+Innowacji Społecznej”, zostały zadane dwa pytania związane z tematyką komunikacji miejskiej.
+Pytania te miały na celu wyselekcjonowanie informacji, które są przez testera znane i
+wykorzystywane podczas codziennych podróży. Pytania odnosiły się do Warszawskiej
+Komunikacji Publicznej, a wszyscy testerzy byli mieszkańcami Stolicy.
+Poniżej znajdują się dwa wspomniane pytania:
+1. Poproszę o wypisanie dowolnej ilości linii autobusowych oraz tramwajowych, z których
+korzystają Państwo na terenie aglomeracji warszawskiej.
+2. Poproszę o podanie przynajmniej jednej relacji, z której korzystaną Państwo “na
+codzień” uwzględniając przystanek początkowy oraz końcowy.
+Zebrane
+dane posłużyły
+do
+stworzenia poniższej
+tabeli na
+której podstawie
+wyselekcjonowano linie, które testerzy znają oraz te, których nie używają na codzień.
+Typ informacji
+Odpowiedzi testerów
+Linie autobusowe
+106, 111, 112, 118, 127, 148, 151, 168, 182, 189, 191, 194, 220, 222, 502, 504, 514, 520, 525
+Linie tramwajowe
+7, 9, 10, 15, 17, 18, 24, 31, 33
+Przystanki
+- Nowe Włochy
+- Dw. Centralny
+- Zamieniecka
+- Bukowskiego
+- Umińskiego
+- Plac Konstytucji
+- Biblioteka UW
+- Postępu
+- Plac Trzech Krzyży
+- Rakowiecka
+- P&R Aleja Krakowska
+- Hynka
+
+--- strona 6 ---
+
+Strona 6 z 12
+
+Typ informacji
+Odpowiedzi testerów
+Relacje
+• Nowe Włochy ↔︎ Dw. Centralny
+• Zamieniecka ↔︎ Biblioteka UW
+• Bukowskiego ↔︎ Zamieniecka
+• Krakowskie Przedmieście ↔︎ Umińskiego
+• Biblioteka UW ↔︎ Krakowskie Przedmieście
+• Zamieniecka ↔︎ Centrum
+• Zamieniecka ↔︎ Metro Politechnika,
+• Zamieniecka ↔︎ Dworzec Centralny
+• Zamieniecka ↔︎ Dworzec Wschodni
+• Zamieniecka ↔︎ Dworzec Zachodni
+• Zamieniecka ↔︎ Kopińska
+• Postępu ↔︎ Rakowiecka
+• Postępu ↔︎ Dw. Centralny
+• Postępu ↔︎ Plac Trzech Krzyży
+• Postępu ↔︎ P&R Aleja Krakowska
+
+Zebrane dane pozwoliły na wyselekcjonowanie dzielnic, w jakich poruszają się testerzy. W
+celu zoptymalizowania testów wybrano linie A1 oraz A12 jako dane testowe. Są to linie
+Warszawskiej Kolei Dojazdowej.
+Spółka Warszawska Kolej Dojazdowa funkcjonuje w ramach wspólnego biletu Zarządu
+Transportu Miejskiego. Organizator przewozów wymaga aby dane współpracującego przewoźnika
+znalazły się w Systemie Elektronicznego Udostępniania Rozkładów Jazdy (SEURJ). Pozwoliło to
+na wykorzystanie tych danych oraz przekonwertowanie ich według specyfikacji na format General
+Transit Feed Specification (GTFS). Dane zostały załadowane do bazy danych, która
+funkcjonowała zgodnie z opracowaną wcześniej dokumentacją.
+Wybór podyktowany był unikatowym zestawem danych, który jest charakterystyczny dla
+lekkiej kolei dojazdowej. Jedynym ograniczeniem, jakie występuje podczas korzystania z systemu
+SEURJ, jest fakt udostępniania rozkładu jazdy jedynie do przystanku granicznego drugiej strefy
+
+--- strona 7 ---
+
+Strona 7 z 12
+
+biletowej - przystanku Opacz. Takie ograniczenie nie stanowiło jednak problemu w testowanym
+przypadku.
+Każdy tester
+otrzymał
+informacje
+jak
+bezpośrednio
+kontaktować
+się
+w celu
+natychmiastowego rozwiązania problemu, który napotkał podczas realizacji każdego z etapów.
+Takie założenie pozwoliło na indywidualne podejście do każdej osoby. Funkcje dostępności
+charakteryzują się tym, że każdy użytkownik - zależnie od potrzeb - inaczej wykorzystuje
+systemowe ułatwienia dla osób posiadających wyjątkowe wymagania w użytkowaniu aplikacji
+mobilnych.
+
+Pierwszy etap testów
+Podstawową cechą dostępnej aplikacji mobilnej jest łatwość użytkowania. Wszystkie
+informacje oraz funkcje powinny być poprawnie przedstawione użytkownikowi. Ukryte akcje nie
+są najprzyjemniejszą formą wzbogacania treści mobilnej. Podstawowym moim założeniem było
+stworzenie prostej aplikacji, która dostarcza dużą ilość informacji.
+W celu przeprowadzenia rzetelnego testu pozwalającego stwierdzić, czy stworzona aplikacja
+mobilna jest łatwa w użyciu, przygotowano zestaw trzech zadań dla testera. Każdemu z zadań
+towarzyszyła lista kroków oraz zestaw pytań.
+Zadania zostały stworzone w taki sposób aby każde następne zadanie wynikało z
+poprzedniego. Takie podejście zapewniło inkrementalne poznawanie aplikacji. Użytkownik
+dowiadywał się o nowych funkcjach poprzez wykonanie innej czynności. Docelowo takie podejście
+ma zapewnić proste i szybkie zapoznanie się z aplikacją. Testerzy otrzymali zestaw zadań i pytań
+bez dodatkowego komentarza. Jedyną dodatkową instrukcją zawartą w wiadomości była
+instrukcja w jaki sposób pobrać wersję testową aplikacji.
+Poniższa tabela prezentuje zestawienie zadań oraz pytań pierwszego etapu testów:
+Zadania
+Kroki i pytania
+1. Polubienie linii
+a. Wyszukaj linię A1
+b. Polub linię A1
+c. Wybierz linię A1 z ulubionych
+
+--- strona 8 ---
+
+Strona 8 z 12
+
+Zadania
+Kroki i pytania
+- Czy znalezienie wybranej linii było intuicyjne?
+- Czy nie wystąpiły żadne trudności w polubieniu linii?
+2. Polubienie przystanku
+a. Wybierz polubioną linię A1 z listy ulubionych linii
+b. Wybierz przystanek najbliższy Twojemu położeniu
+c. Polub wybrany przystanek
+- Czy znalezienie wybranej linii było intuicyjne?
+- Czy łatwo było polubić linię?
+3. Sprawdzenie rozkładu
+jazdy
+a. Wybierz polubiony przystanek z listy ulubionych przystanków
+b. Wybierz linię A1
+c. Otwórz rozkład jazdy dla linii A1
+- Czy łatwo odnalazłeś się na ekranie przystanku?
+- Czy nie miałeś problemu z wyświetleniem rozkładu jazdy?
+
+Tester, po wykonaniu wszystkich kroków i pytań, mógł zdecydować, czy chce spróbować sił
+w terenie korzystając z Warszawskiej Kolei Dojazdowej czy woli wybrać inną linię komunikacji
+miejskiej, z której nie korzysta, a która jest w jego zasięgu codziennych obowiązków. Celem
+zadania było udanie się na najbliższy przystanek wybranej linii i poczekanie na przyjazd
+najbliższego autobusu. Jeśli była taka możliwość, tester mógł również wsiąść i przejechać jeden
+przystanek w celu sprawdzenia rozkładu na przystanku powrotnym.
+
+Drugi etap testów
+Drugi etap testów miał na celu sprawdzenie aplikacji w codziennym użyciu. Testerzy
+zapoznali się już z aplikacją poprzez wcześniejsze zadania. Przed przystąpieniem do testów została
+zebrana informacja zwrotna dotycząca pierwszej wersji aplikacji. Na podstawie zgłoszonych uwag
+stworzono krótki zbiór zmian, które posegregowano według łatwości implementacji. Podążając za
+stworzoną listą priorytetów wykonano najłatwiejsze poprawki, które miały wpłynąć na
+użytkowanie aplikacji. Nową wersję opublikowano testerom.
+Kolejnym krokiem było sprawdzenie jak użytkownik korzysta z aplikacji na codzień. Są to
+właściwie te same czynności jednak poprzedzone przyzwyczajeniami związanymi z dłuższym
+
+--- strona 9 ---
+
+Strona 9 z 12
+
+użytkowaniem. W przypadku testów nowej aplikacji trudno wypracować sobie odpowiednie
+odruchy - szczególnie jeśli aplikacja ewoluuje. Testerzy również charakteryzują się podejściem do
+ulotności doświadczeń związanych z testowaniem aplikacji. Aby w pełni zasymulować sposób w
+jaki użytkownik codziennie korzysta z programu, poproszono testerów o wykonanie tego samego
+zestawu zadań z uwzględnieniem linii, z której codziennie korzystają. Idealną sytuacją byłoby jeśli
+tester wykonałby te zadania w terenie. Niestety okres wakacyjny utrudnił nieco bezpośrednie testy.
+Po udostępnieniu nowej wersji do testów przesłano testerom nowy zestaw zadań z prośbą
+aby wykonali je w oparciu o swoje codzienne doświadczenia z podróżą komunikacją publiczną.
+Poniższa tabela zawiera kroki oraz pytania, które testerzy mieli wykonać:
+Zadania
+Kroki i pytania
+0. Wybranie linii
+a. Wybierz linię komunikacji miejskiej, z której korzystasz na codzień
+1. Polubienie linii
+a. Wyszukaj linię komunikacji miejskiej
+b. Polub linię wybranej komunikacji miejskiej
+c. Wybierz tą samą linię z ulubionych
+- Czy znalezienie wybranej linii było intuicyjne?
+- Czy nie wystąpiły żadne trudności w polubieniu linii?
+- Czy wystąpiły trudności z przekazem informacji podczas korzystania z aplikacji w
+terenie?
+2. Polubienie przystanku
+a. Wybierz polubioną wcześniej linię z listy ulubionych linii
+b. Wybierz przystanek najbliższy Twojemu położeniu
+c. Polub wybrany przystanek
+- Czy znalezienie wybranej linii było intuicyjne?
+- Czy łatwo było polubić linię?
+- Czy wystąpiły trudności z przekazem informacji podczas korzystania z aplikacji w
+terenie?
+3. Sprawdzenie rozkładu
+jazdy
+a. Wybierz polubiony przystanek z listy ulubionych przystanków
+b. Wybierz inną linię jeśli to możliwe
+c. Jeśli żadna z linii nie jest przez Ciebie wykorzystywana, wybierz poprzednio
+obsługiwaną linię
+d. Otwórz rozkład jazdy dla wybranej linii
+- Czy łatwo odnalazłeś się na ekranie przystanku?
+- Czy nie miałeś problemu z wyświetleniem rozkładu jazdy?
+- Czy wystąpiły trudności z przekazem informacji podczas korzystania z aplikacji w
+terenie?
+
+--- strona 10 ---
+
+Strona 10 z 12
+
+Tester po wykonaniu powyższych kroków miał za zadanie skorzystać z aplikacji w dzień
+roboczy w drodze do i z punktu docelowego. Mogła to być praca, zajęcia, spotkanie ze znajomymi.
+Ważnym faktem było, aby tester nie korzystał z komunikacji w godzinach, które zna i korzysta na
+co dzień. Jeśli osoba testująca miała przetestować aplikację w drodze do pracy była proszona o
+wyjście wcześniej bądź później, jeśli to było możliwe. Ważnym aspektem była również dynamika
+przejazdu tak aby móc potwierdzić czy aplikacja pozwala otrzymać żądane informacje w
+najkrótszym możliwym czasie.
+
+Należy pamiętać, że czytniki ekranów działają na zasadzie „od lewej do prawej” odczytując
+elementy na ekranie zgodnie z ich ważnością. Ważną kwestią podczas testowania dostępnej
+aplikacji jest upewnienie się czy dostęp do informacji był wystarczająco krótki aby nie zakłócić innej
+czynności. Dlatego bezpośredni kontakt z osobami testującymi ujawnił kilka problemów, które
+powinny być ponownie rozpatrzone i poprawione.
+
+Feedback - informacja zwrotna
+Po każdym etapie testów zebrana została informacja zwrotna. Testerzy przesłali odpowiedzi
+na zebrane pytania oraz zostali poproszeni o dodatkowy opis użyteczności oprogramowania.
+Informacje podzielono na dwie grupy - uwagi dotyczące funkcjonalności aplikacji oraz problemy
+związane z odczytem treści przez syntezator mowy. Należy zaznaczyć, że częstym problemem
+podczas projektowania dostępnej aplikacji jest błędna interpretacja poprzez system danych
+elementów na ekranie. Twórca aplikacji powinien zapewnić jasną i przejrzystą informację zwrotną,
+która odczytywana jest przez funkcje TalkBack bądź VoiceOver. Użytkownicy często są zagubieni
+właśnie przez błędne oznaczenie elementów.
+Każdy zgłoszony błąd oraz każda uwaga została wnikliwie przestudiowana z testerem.
+Bardzo często osoby, które nie korzystają z graficznego interfejsu użytkownika mogą mieć
+problem z wyjaśnieniem co sprawia problem w opisywanym błędzie. Wynika to z faktu, że
+
+--- strona 11 ---
+
+Strona 11 z 12
+
+dźwiękowy interfejs użytkownika różni się znacząco od graficznego. Takie rozwiązania często
+musiały być rozwiązywane z testerami podczas indywidualnych spotkań.
+Wszystkie zebrane informacje zostały spisane, opisane oraz dokładnie przestudiowane.
+Każde zgłoszenie zostało ostatecznie zamienione na zadanie, które będzie można zrealizować w
+trakcie dalszych prac nad aplikacją. Stworzono „User Stories” - historie użytkownika. Jest to
+narzędzie popularnie wykorzystywane w tworzeniu oprogramowania komputerowego.
+Charakteryzuje się symetrycznym opisem posiadającym podmiot, akcję oraz oczekiwaną reakcję.
+Przykładem takiej historii użytkownika może być poniższe zdanie:
+
+Jako użytkownik korzystający z funkcji TalkBack chcę po dotknięciu przycisku „Polub" móc
+polubić wybraną linię.
+
+Pogrubieniem zaznaczono podmiot, który w tym wypadku jest osobą korzystającą z
+funkcji dostępności. Akcja podjęta przez opisanego użytkownika została oznaczona kursywą.
+Podkreślony tekst symbolizuje efekt jakim jest reakcja na zadaną akcję. Taki opis zadań pozwala
+kontrolować realizację zadania programistycznego. W momencie, gdy programista przystępuje do
+realizacji danej funkcjonalności bądź poprawienia obecnej akcji, takie zdanie uznawane jest
+również za kryterium akceptacji. Oznacza to, że dane zadanie zostanie zrealizowane jedynie wtedy
+gdy napisana historia użytkownika będzie w pełni pokrywała się ze stanem w aplikacji
+
+Podsumowanie
+Aplikacje mobilne zawierające pełną implementację funkcji dostępności stanowią duże
+wyzwanie dla projektantów interfejsów mobilnych. Kluczowym podejściem do planowania
+funkcjonalności jest posiadanie odpowiedniej grupy konsultacyjnej, która rozumiejąc zasady
+funkcjonowania poszczególnych funkcji dostępności, potrafią wyłapać błędną implementację.
+Testy aplikacji Dostępny Transport Publiczny pozwoliły na ponowne przejrzenie podejścia
+stosowanego dotychczas w prywatnej aplikacji Zaraz Jadę. Testerzy przedstawili swoje opinie w
+oparciu o produkt, który od początku został zaprojektowany dla konkretnej grupy docelowej.
+
+--- strona 12 ---
+
+Strona 12 z 12
+
+Efektem tych prac jest niemal gotowa aplikacja mobilna dostarczająca informacji o transporcie
+publicznym. Docelowo musi ona jednak przejść kilka modyfikacji, które zapewnią jej sukces wśród
+osób posiadających specjalne wymagania w komunikacji publicznej.
+Możliwość współpracy z grupą osób, które codziennie posiadają wyzwania w poruszaniu się
+po mieście stołecznym Warszawa, dostarczyły wystarczającej wiedzy w jaki sposób Ci
+użytkownicy korzystają z urządzeń mobilnych w terenie. Tak duża dawka wiedzy nie może być
+porzucona i powinna być przekształcona na pełnoprawną aplikację mobilną, która będzie dostępna
+dla każdej osoby w sklepach Google Play oraz AppStore.
+Należy jednak nadmienić, że tak szeroko zebrany feedback pozwala sądzić, że pewne zmiany
+będą wymagały drastycznych zmian w interfejsie użytkownika. Inne uwagi zachęcają również do
+podziału pewnych funkcji na dwa oddzielne interfejsy. Odwaga w tworzeniu dostępnych
+interfejsów jest niezmiernie ważna. Należy jednak każde rozwiązanie przetestować z osobą, która
+będzie ostatecznym odbiorcą danej funkcjonalności. To ostatecznie użytkownik korzystający z
+syntezatora mowy będzie na codzień korzystał z danych przekazywanych przez naszą aplikację.
