@@ -18,8 +18,9 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
     ...init,
     // admin routes authenticate with an HttpOnly session cookie
     credentials: "include",
-    // no content-type on bodiless calls, so plain GETs skip the cors preflight
-    headers: init?.body
+    // no content-type on bodiless calls, so plain GETs skip the cors preflight;
+    // FormData gets its multipart boundary from the browser
+    headers: init?.body && !(init.body instanceof FormData)
       ? { "Content-Type": "application/json", ...init.headers }
       : init?.headers,
   });
@@ -244,17 +245,48 @@ export interface AdminInnovation {
   id: string;
   title: string;
   summary: string;
-  problem: string;
-  innovator: string;
   challenge_areas: ChallengeArea[];
-  target_group: string[];
-  // null for rows created before these columns existed
-  readiness: Readiness | null;
-  cost_level: CostLevel | null;
+  // not in the backend Innovation schema (only the offline mocks fill them), so always guard
+  problem?: string;
+  innovator?: string;
+  target_group?: string[];
+  readiness?: Readiness | null;
+  cost_level?: CostLevel | null;
   city: string;
+  page_url?: string | null;
   video_url?: string | null;
   status: PublicationStatus;
 }
+
+// POST /admin/innovations sends these as multipart form fields next to the pdf
+export interface NewInnovationInput {
+  title: string;
+  summary: string;
+  challenge_areas: ChallengeArea[];
+  tags: string[];
+  city: string;
+  page_url: string | null;
+}
+
+// 202: the row is a draft until rag has embedded the pdf, then it publishes itself
+export interface InnovationUploaded {
+  id: string;
+  title: string;
+  status: PublicationStatus;
+}
+
+// PATCH /admin/innovations/{id}: omitted fields stay as they are, page_url: null clears it.
+// the pdf and tags are not editable; summary edits do not re-index the pdf
+export interface InnovationUpdate {
+  title?: string;
+  summary?: string;
+  challenge_areas?: ChallengeArea[];
+  city?: string;
+  page_url?: string | null;
+}
+
+// mirrors backend settings.max_upload_bytes
+export const MAX_PDF_BYTES = 10 * 1024 * 1024;
 
 // every rating of one innovation, newest first (GET /admin/innovations/{id}/ratings)
 export interface InnovationRating {
@@ -435,6 +467,22 @@ export const adminApi = {
     request<Page<AdminInnovation>>("/admin/innovations?limit=100"),
   innovation: (id: string) =>
     request<AdminInnovation>(`/admin/innovations/${enc(id)}`),
+  createInnovation: (input: NewInnovationInput, pdf: File) => {
+    const body = new FormData();
+    body.append("file", pdf);
+    body.append("title", input.title);
+    body.append("summary", input.summary);
+    input.challenge_areas.forEach((a) => body.append("challenge_areas", a));
+    input.tags.forEach((t) => body.append("tags", t));
+    body.append("city", input.city);
+    if (input.page_url) body.append("page_url", input.page_url);
+    return request<InnovationUploaded>("/admin/innovations", { method: "POST", body });
+  },
+  updateInnovation: (id: string, body: InnovationUpdate) =>
+    request<AdminInnovation>(`/admin/innovations/${enc(id)}`, {
+      method: "PATCH",
+      body: JSON.stringify(body),
+    }),
   setInnovationPublished: (id: string, published: boolean) =>
     post<AdminInnovation>(
       `/admin/innovations/${enc(id)}/${published ? "publish" : "unpublish"}`,

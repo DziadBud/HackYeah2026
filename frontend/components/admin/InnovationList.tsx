@@ -153,14 +153,20 @@ export function InnovationList() {
             <Icon name="verified" size={28} />
             Innowacje
           </h2>
-          {source === "api" ? (
-            <a href={adminApi.reportCsvUrl("innovations")} className={ghostBtn}>
-              <Icon name="download" />
-              Pobierz statystyki (CSV)
-            </a>
-          ) : (
-            <span className="text-caption text-on-surface-variant">Eksport CSV dostępny po połączeniu z API</span>
-          )}
+          <div className="flex flex-wrap items-center gap-space-xs">
+            {source === "api" ? (
+              <a href={adminApi.reportCsvUrl("innovations")} className={ghostBtn}>
+                <Icon name="download" />
+                Pobierz statystyki (CSV)
+              </a>
+            ) : (
+              <span className="text-caption text-on-surface-variant">Eksport CSV dostępny po połączeniu z API</span>
+            )}
+            <Link href="/admin/innowacje/nowa" className={primaryBtn}>
+              <Icon name="add_circle" />
+              Dodaj innowację
+            </Link>
+          </div>
         </div>
 
         <form role="search" aria-label="Filtruj innowacje" className="grid grid-cols-1 gap-space-sm sm:grid-cols-2 lg:grid-cols-4" onSubmit={(e) => e.preventDefault()}>
@@ -292,6 +298,12 @@ function InnovationRow({ row, source, onToggle }: { row: Row; source: Source; on
             {i.status === "published" ? "Wycofaj publikację" : "Opublikuj"}
             <span className="sr-only">: {i.title}</span>
           </button>
+          {source === "api" && (
+            <Link href={`/admin/innowacje/${encodeURIComponent(i.id)}/edytuj`} className={ghostBtn}>
+              <Icon name="edit" />
+              Edytuj<span className="sr-only">: {i.title}</span>
+            </Link>
+          )}
           <Link href={`/admin/innowacje/${encodeURIComponent(i.id)}`} className={primaryBtn}>
             <Icon name="bar_chart" />
             Szczegółowe statystyki<span className="sr-only">: {i.title}</span>

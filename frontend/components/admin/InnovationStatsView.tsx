@@ -177,11 +177,21 @@ export function InnovationStatsView({ id }: { id: string }) {
         <p className="text-body-lg text-on-surface-variant">{i.summary}</p>
         <dl className="grid grid-cols-1 gap-x-space-md gap-y-1 text-body-md sm:grid-cols-[max-content_1fr]">
           <dt className="font-semibold text-primary">Dla kogo</dt>
-          <dd>{i.target_group.join(", ")}</dd>
+          <dd>{i.target_group?.length ? i.target_group.join(", ") : "–"}</dd>
           <dt className="font-semibold text-primary">Etap</dt>
           <dd>{i.readiness ? READINESS[i.readiness] : "–"}</dd>
           <dt className="font-semibold text-primary">Koszt wdrożenia</dt>
           <dd>{i.cost_level ? COST[i.cost_level] : "–"}</dd>
+          {i.page_url && (
+            <>
+              <dt className="font-semibold text-primary">Strona lub film</dt>
+              <dd>
+                <a href={i.page_url} className="inline-flex min-h-12 items-center gap-1 break-all underline hover:text-primary">
+                  {i.page_url}
+                </a>
+              </dd>
+            </>
+          )}
           {i.video_url && (
             <>
               <dt className="font-semibold text-primary">Film</dt>
@@ -198,6 +208,12 @@ export function InnovationStatsView({ id }: { id: string }) {
           <button type="button" className={ghostBtn} onClick={() => togglePublished(i)}>
             {i.status === "published" ? "Wycofaj publikację" : "Opublikuj"}
           </button>
+          {source === "api" && (
+            <Link href={`/admin/innowacje/${encodeURIComponent(i.id)}/edytuj`} className={ghostBtn}>
+              <Icon name="edit" />
+              Edytuj
+            </Link>
+          )}
           <span className="text-body-md text-on-surface-variant">
             {s.last_matched_at ? `Ostatnie dopasowanie: ${fmtDate(s.last_matched_at)}` : "Jeszcze nie dopasowano"}
           </span>
