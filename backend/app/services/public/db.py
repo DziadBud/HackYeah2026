@@ -22,6 +22,10 @@ from app.schemas.public.grant_applications import (
     GrantApplicationCreate,
     GrantApplicationStatus,
     GrantApplicationUpdate,
+    empty_applicant,
+    empty_declarations,
+    normalize_applicant,
+    normalize_declarations,
 )
 from app.schemas.public.ideas import IdeaCreate, IdeaCreated
 from app.schemas.public.innovations import FeedbackCreate, FeedbackCreated, LibraryInnovation
@@ -75,24 +79,25 @@ def _document(row: DocumentRow) -> GeneratedDocument:
 
 
 def _grant_application(row: GrantApplicationRow) -> GrantApplication:
+    applicant_type = ApplicantType(row.applicant_type)
     return GrantApplication(
         id=str(row.id),
         idea_id=str(row.idea_id) if row.idea_id else None,
         grant_call_id=str(row.grant_call_id) if row.grant_call_id else None,
         status=GrantApplicationStatus(row.status),
-        title=row.title,
-        applicant_type=ApplicantType(row.applicant_type),
-        applicant=row.applicant or {},
-        description=row.description,
-        innovativeness=row.innovativeness,
-        problem_diagnosis=row.problem_diagnosis,
-        beneficiaries=row.beneficiaries,
-        expected_change=row.expected_change,
-        future_vision=row.future_vision,
+        title=row.title or "",
+        applicant_type=applicant_type,
+        applicant=normalize_applicant(applicant_type, row.applicant),
+        description=row.description or "",
+        innovativeness=row.innovativeness or "",
+        problem_diagnosis=row.problem_diagnosis or "",
+        beneficiaries=row.beneficiaries or "",
+        expected_change=row.expected_change or "",
+        future_vision=row.future_vision or "",
         action_plan=ActionPlan.model_validate(row.action_plan or {}),
         grant_amount_pln=row.grant_amount_pln,
-        team=row.team,
-        declarations=row.declarations or {},
+        team=row.team or "",
+        declarations=normalize_declarations(applicant_type, row.declarations),
         email=row.email,
         generated_by=row.generated_by,
         created_at=row.created_at,
@@ -260,23 +265,24 @@ class DbIdeaService:
             notes=data.notes,
             llm=self._llm,
         )
+        applicant_type = data.applicant_type
         row = GrantApplicationRow(
             idea_id=idea.id,
             grant_call_id=call_row.id,
             status=GrantApplicationStatus.DRAFT.value,
             title=fields["title"],
-            applicant_type=ApplicantType.PERSON.value,
-            applicant={},
+            applicant_type=applicant_type.value,
+            applicant=empty_applicant(applicant_type),
             description=fields["description"],
             innovativeness=fields["innovativeness"],
             problem_diagnosis=fields["problem_diagnosis"],
             beneficiaries=fields["beneficiaries"],
             expected_change=fields["expected_change"],
             future_vision=fields["future_vision"],
-            action_plan=fields["action_plan"],
+            action_plan=ActionPlan.model_validate(fields["action_plan"]).model_dump(),
             grant_amount_pln=None,
             team="",
-            declarations={},
+            declarations=empty_declarations(applicant_type),
             email=data.email,
             generated_by=fields.get("generated_by"),
         )
@@ -302,7 +308,19 @@ class DbIdeaService:
         if "action_plan" in patch and patch["action_plan"] is not None:
             patch["action_plan"] = ActionPlan.model_validate(patch["action_plan"]).model_dump()
         if "applicant_type" in patch and patch["applicant_type"] is not None:
-            patch["applicant_type"] = ApplicantType(patch["applicant_type"]).value
+            new_type = ApplicantType(patch["applicant_type"])
+            patch["applicant_type"] = new_type.value
+            # switching type resets applicant/declarations unless provided in same request
+            if "applicant" not in patch:
+                patch["applicant"] = empty_applicant(new_type)
+            if "declarations" not in patch:
+                patch["declarations"] = empty_declarations(new_type)
+        if "applicant" in patch and patch["applicant"] is not None:
+            at = ApplicantType(patch.get("applicant_type", row.applicant_type))
+            patch["applicant"] = normalize_applicant(at, patch["applicant"])
+        if "declarations" in patch and patch["declarations"] is not None:
+            at = ApplicantType(patch.get("applicant_type", row.applicant_type))
+            patch["declarations"] = normalize_declarations(at, patch["declarations"])
         if "status" in patch and patch["status"] is not None:
             patch["status"] = GrantApplicationStatus(patch["status"]).value
         for key, value in patch.items():

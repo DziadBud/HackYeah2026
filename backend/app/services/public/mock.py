@@ -14,6 +14,10 @@ from app.schemas.public.grant_applications import (
     GrantApplicationCreate,
     GrantApplicationStatus,
     GrantApplicationUpdate,
+    empty_applicant,
+    empty_declarations,
+    normalize_applicant,
+    normalize_declarations,
 )
 from app.schemas.public.ideas import IdeaCreate, IdeaCreated
 from app.schemas.public.innovations import FeedbackCreate, FeedbackCreated, LibraryInnovation
@@ -225,8 +229,8 @@ class MockIdeaService:
             grant_call_id=call.id,
             status=GrantApplicationStatus.DRAFT,
             title=fields["title"],
-            applicant_type=ApplicantType.PERSON,
-            applicant={},
+            applicant_type=data.applicant_type,
+            applicant=empty_applicant(data.applicant_type),
             description=fields["description"],
             innovativeness=fields["innovativeness"],
             problem_diagnosis=fields["problem_diagnosis"],
@@ -236,7 +240,7 @@ class MockIdeaService:
             action_plan=ActionPlan.model_validate(fields["action_plan"]),
             grant_amount_pln=None,
             team="",
-            declarations={},
+            declarations=empty_declarations(data.applicant_type),
             email=data.email,
             generated_by=fields.get("generated_by"),
             created_at=now,
@@ -257,8 +261,22 @@ class MockIdeaService:
         current = self.get_grant_application(application_id)
         if current.status == GrantApplicationStatus.SUBMITTED:
             raise InvalidRequestError("this application was already submitted")
-        updated = current.model_copy(
-            update=data.model_dump(exclude_unset=True) | {"updated_at": _now()}
+        patch = data.model_dump(exclude_unset=True)
+        if "action_plan" in patch and patch["action_plan"] is not None:
+            patch["action_plan"] = ActionPlan.model_validate(patch["action_plan"])
+        if "applicant_type" in patch and patch["applicant_type"] is not None:
+            new_type = ApplicantType(patch["applicant_type"])
+            if "applicant" not in patch:
+                patch["applicant"] = empty_applicant(new_type)
+            if "declarations" not in patch:
+                patch["declarations"] = empty_declarations(new_type)
+        at = ApplicantType(patch.get("applicant_type", current.applicant_type))
+        if "applicant" in patch and patch["applicant"] is not None:
+            patch["applicant"] = normalize_applicant(at, patch["applicant"])
+        if "declarations" in patch and patch["declarations"] is not None:
+            patch["declarations"] = normalize_declarations(at, patch["declarations"])
+        updated = GrantApplication.model_validate(
+            current.model_copy(update=patch | {"updated_at": _now()}).model_dump()
         )
         self._applications[application_id] = updated
         return updated

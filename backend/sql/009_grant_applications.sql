@@ -1,28 +1,24 @@
--- full ROPS application form (Zał. 3); AI pre-fills 1+3–9, user fills 2, 10–12
+-- full ROPS Zał. 3 form. API always returns complete shape for FE editing.
+-- AI pre-fills 1+3–9; user fills/edits 2, 10–12 (and may edit AI text).
+-- applicant jsonb: PersonApplicant | OrganizationApplicant | InformalGroupApplicant
+-- declarations jsonb: PersonDeclarations | OrganizationDeclarations (per-checkbox bools)
 CREATE TABLE IF NOT EXISTS grant_applications (
     id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     idea_id uuid REFERENCES ideas(id) ON DELETE SET NULL,
     grant_call_id uuid REFERENCES grant_calls(id) ON DELETE SET NULL,
     status text NOT NULL DEFAULT 'draft',
-    -- 1
     title text NOT NULL DEFAULT '',
-    -- 2 Dane pomysłodawcy
     applicant_type text NOT NULL DEFAULT 'person',
     applicant jsonb NOT NULL DEFAULT '{}',
-    -- 3–8
     description text NOT NULL DEFAULT '',
     innovativeness text NOT NULL DEFAULT '',
     problem_diagnosis text NOT NULL DEFAULT '',
     beneficiaries text NOT NULL DEFAULT '',
     expected_change text NOT NULL DEFAULT '',
     future_vision text NOT NULL DEFAULT '',
-    -- 9 Plan działania i koszty
     action_plan jsonb NOT NULL DEFAULT '{}',
-    -- 10
     grant_amount_pln numeric,
-    -- 11
     team text NOT NULL DEFAULT '',
-    -- 12 Oświadczenia (który wariant + zaznaczenia)
     declarations jsonb NOT NULL DEFAULT '{}',
     email text,
     generated_by text,
