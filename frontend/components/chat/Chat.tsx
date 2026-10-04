@@ -256,31 +256,29 @@ export function Chat() {
           </a>
         </div>
 
-        {messages.length === 0 && (
-          <ul className="grid grid-cols-1 gap-space-sm sm:grid-cols-3">
-            {HERO_ACTIONS.map((a) => {
-              const selected = action === a.title;
-              return (
-                <li key={a.title}>
-                  <button
-                    type="button"
-                    aria-pressed={selected}
-                    onClick={() => chooseAction(a.title, a.prompt)}
-                    className={`group flex h-full w-full flex-col items-start gap-space-xs rounded-xl bg-surface-container-lowest p-space-md text-left shadow-sm hover:bg-surface-container-high hc-edge ${
-                      selected ? "border-2 border-primary" : "border border-transparent"
-                    }`}
-                  >
-                    <span className="flex size-12 items-center justify-center rounded-lg bg-surface-container text-primary group-hover:bg-primary group-hover:text-on-primary">
-                      <Icon name={a.icon} size={28} />
-                    </span>
-                    <span className="text-body-lg font-bold text-primary">{a.title}</span>
-                    <span className="text-caption text-on-surface-variant">{a.desc}</span>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        )}
+        <ul className="grid grid-cols-1 gap-space-sm sm:grid-cols-3">
+          {HERO_ACTIONS.map((a) => {
+            const selected = action === a.title;
+            return (
+              <li key={a.title}>
+                <button
+                  type="button"
+                  aria-pressed={selected}
+                  onClick={() => chooseAction(a.title, a.prompt)}
+                  className={`group flex h-full w-full flex-col items-start gap-space-xs rounded-xl bg-surface-container-lowest p-space-md text-left shadow-sm hover:bg-surface-container-high hc-edge ${
+                    selected ? "border-2 border-primary" : "border border-transparent"
+                  }`}
+                >
+                  <span className="flex size-12 items-center justify-center rounded-lg bg-surface-container text-primary group-hover:bg-primary group-hover:text-on-primary">
+                    <Icon name={a.icon} size={28} />
+                  </span>
+                  <span className="text-body-lg font-bold text-primary">{a.title}</span>
+                  <span className="text-caption text-on-surface-variant">{a.desc}</span>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
       </section>
 
       <section aria-labelledby="chat-log-heading" className="flex flex-col gap-space-lg" hidden={ideaOpen || (messages.length === 0 && !pending)}>
@@ -364,6 +362,31 @@ export function Chat() {
             void send();
           }}
         >
+          <ul
+            aria-label="Szybki start"
+            className="flex flex-wrap gap-1.5"
+          >
+            {HERO_ACTIONS.map((a) => {
+              const selected = action === a.title;
+              return (
+                <li key={`quick-${a.title}`}>
+                  <button
+                    type="button"
+                    aria-pressed={selected}
+                    onClick={() => chooseAction(a.title, a.prompt)}
+                    className={`flex min-h-9 items-center gap-1 rounded-full px-2.5 py-1 text-caption font-semibold hc-edge ${
+                      selected
+                        ? "bg-primary text-on-primary"
+                        : "bg-surface-container-low text-primary hover:bg-surface-container-high"
+                    }`}
+                  >
+                    <Icon name={a.icon} size={14} />
+                    <span>{a.title}</span>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
           <div className="flex flex-col gap-1">
             <label htmlFor="chat-message-input" className="text-body-md font-bold text-primary">
               Twoje pytanie lub opis wyzwania społecznego:
