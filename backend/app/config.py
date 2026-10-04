@@ -30,7 +30,7 @@ class Settings(BaseSettings):
 
     # grant-application drafts (Gemini)
     gemini_api_key: str = ""
-    gemini_model: str = "gemini-3.8-flash"
+    gemini_model: str = "gemini-3.5-flash"
 
     # notifications (R10/R12); empty smtp_host or mail_from turns them off.
     # no default addresses on purpose: a fallback could mail a real inbox by accident
