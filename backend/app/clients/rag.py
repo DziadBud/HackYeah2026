@@ -43,7 +43,8 @@ class RagClient:
             res.raise_for_status()
             body = res.json()
             return RagAnswer(
-                answer=body["answer"],
+                # rag dropped the llm answer; keep it optional so either version works
+                answer=body.get("answer", ""),
                 innovation_ids=[m["innovation_id"] for m in body["matches"]],
             )
         except (httpx.HTTPError, ValueError, KeyError) as exc:
