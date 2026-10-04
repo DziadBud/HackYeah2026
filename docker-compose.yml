@@ -75,6 +75,9 @@ services:
       # hackathon demo: admin panel without login (only works with DEBUG=true)
       ADMIN_AUTH_DISABLED: ${ADMIN_AUTH_DISABLED:-true}
       RAG_URL: http://rag:8000
+      # grant-application drafts; falls back to template when key missing / API error
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-2.0-flash}
     ports:
       - "${API_PORT:-8000}:8000"
     depends_on:

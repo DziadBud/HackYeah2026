@@ -4,7 +4,9 @@ from __future__ import annotations
 from sqlalchemy import func, select, update
 from sqlalchemy.orm import Session
 
+from app.clients.gemini import GeminiClient
 from app.db.models import Feedback, GeneratedDocument as DocumentRow, GrantCall as GrantCallRow
+from app.db.models import GrantApplication as GrantApplicationRow
 from app.db.models import Idea as IdeaRow, Innovation as InnovationRow
 from app.db.models import ProblemReport as ProblemReportRow, TestSignup, Thread as ThreadRow
 from app.db.models import ThreadReply
@@ -13,7 +15,15 @@ from app.schemas.admin.grant_calls import GrantCall
 from app.schemas.admin.ideas import IdeaStatus
 from app.schemas.admin.innovations import Innovation, PublicationStatus
 from app.schemas.public.documents import DocumentKind, GeneratedDocument, MiddlemanRequest
-from app.schemas.public.ideas import GrantApplicationRequest, IdeaCreate, IdeaCreated
+from app.schemas.public.grant_applications import (
+    ActionPlan,
+    ApplicantType,
+    GrantApplication,
+    GrantApplicationCreate,
+    GrantApplicationStatus,
+    GrantApplicationUpdate,
+)
+from app.schemas.public.ideas import IdeaCreate, IdeaCreated
 from app.schemas.public.innovations import FeedbackCreate, FeedbackCreated, LibraryInnovation
 from app.schemas.public.match import (
     MatchedInnovation,
@@ -34,7 +44,7 @@ from app.schemas.public.threads import (
 from app.services.admin.db import grant_call_to_schema, innovation_to_schema, parse_uuid
 from app.services.admin.innovation_upload import area_tag
 from app.services.admin.errors import InvalidRequestError, NotFoundError
-from app.services.public.drafts import grant_draft, middleman_card
+from app.services.public.drafts import grant_draft_fields, middleman_card
 from app.services.public.interfaces import Retriever
 
 MAX_MATCHES = 3
@@ -59,6 +69,32 @@ def _document(row: DocumentRow) -> GeneratedDocument:
         grant_call_id=str(row.grant_call_id) if row.grant_call_id else None,
         output=row.output,
         created_at=row.created_at,
+    )
+
+
+def _grant_application(row: GrantApplicationRow) -> GrantApplication:
+    return GrantApplication(
+        id=str(row.id),
+        idea_id=str(row.idea_id) if row.idea_id else None,
+        grant_call_id=str(row.grant_call_id) if row.grant_call_id else None,
+        status=GrantApplicationStatus(row.status),
+        title=row.title,
+        applicant_type=ApplicantType(row.applicant_type),
+        applicant=row.applicant or {},
+        description=row.description,
+        innovativeness=row.innovativeness,
+        problem_diagnosis=row.problem_diagnosis,
+        beneficiaries=row.beneficiaries,
+        expected_change=row.expected_change,
+        future_vision=row.future_vision,
+        action_plan=ActionPlan.model_validate(row.action_plan or {}),
+        grant_amount_pln=row.grant_amount_pln,
+        team=row.team,
+        declarations=row.declarations or {},
+        email=row.email,
+        generated_by=row.generated_by,
+        created_at=row.created_at,
+        updated_at=row.updated_at,
     )
 
 
@@ -184,8 +220,9 @@ class DbProblemReportService:
 
 
 class DbIdeaService:
-    def __init__(self, db: Session) -> None:
+    def __init__(self, db: Session, llm: GeminiClient | None = None) -> None:
         self._db = db
+        self._llm = llm
 
     def create(self, data: IdeaCreate) -> IdeaCreated:
         row = IdeaRow(
@@ -201,7 +238,7 @@ class DbIdeaService:
         self._db.commit()
         return IdeaCreated(id=str(row.id), status=IdeaStatus.NEW)
 
-    def grant_application(self, idea_id: str, data: GrantApplicationRequest) -> GeneratedDocument:
+    def grant_application(self, idea_id: str, data: GrantApplicationCreate) -> GrantApplication:
         idea = self._db.get(IdeaRow, parse_uuid(idea_id))
         if idea is None:
             raise NotFoundError(idea_id)
@@ -212,17 +249,64 @@ class DbIdeaService:
             raise NotFoundError(data.grant_call_id)
         if not call_row.open:
             raise InvalidRequestError("this grant call is closed")
-        row = DocumentRow(
-            kind=DocumentKind.GRANT_APPLICATION.value,
+        fields = grant_draft_fields(
+            summary=idea.summary,
+            essence=idea.essence,
+            target_group=idea.target_group,
+            stage=idea.stage,
+            social_canvas=idea.social_canvas,
+            notes=data.notes,
+            llm=self._llm,
+        )
+        row = GrantApplicationRow(
             idea_id=idea.id,
             grant_call_id=call_row.id,
-            input=data.model_dump(mode="json", exclude={"email", "consent"}),
-            output=grant_draft(idea.summary, grant_call_to_schema(call_row)),
+            status=GrantApplicationStatus.DRAFT.value,
+            title=fields["title"],
+            applicant_type=ApplicantType.PERSON.value,
+            applicant={},
+            description=fields["description"],
+            innovativeness=fields["innovativeness"],
+            problem_diagnosis=fields["problem_diagnosis"],
+            beneficiaries=fields["beneficiaries"],
+            expected_change=fields["expected_change"],
+            future_vision=fields["future_vision"],
+            action_plan=fields["action_plan"],
+            grant_amount_pln=None,
+            team="",
+            declarations={},
             email=data.email,
+            generated_by=fields.get("generated_by"),
         )
         self._db.add(row)
         self._db.commit()
-        return _document(row)
+        return _grant_application(row)
+
+    def get_grant_application(self, application_id: str) -> GrantApplication:
+        row = self._db.get(GrantApplicationRow, parse_uuid(application_id))
+        if row is None:
+            raise NotFoundError(application_id)
+        return _grant_application(row)
+
+    def update_grant_application(
+        self, application_id: str, data: GrantApplicationUpdate
+    ) -> GrantApplication:
+        row = self._db.get(GrantApplicationRow, parse_uuid(application_id))
+        if row is None:
+            raise NotFoundError(application_id)
+        if row.status == GrantApplicationStatus.SUBMITTED.value:
+            raise InvalidRequestError("this application was already submitted")
+        patch = data.model_dump(exclude_unset=True)
+        if "action_plan" in patch and patch["action_plan"] is not None:
+            patch["action_plan"] = ActionPlan.model_validate(patch["action_plan"]).model_dump()
+        if "applicant_type" in patch and patch["applicant_type"] is not None:
+            patch["applicant_type"] = ApplicantType(patch["applicant_type"]).value
+        if "status" in patch and patch["status"] is not None:
+            patch["status"] = GrantApplicationStatus(patch["status"]).value
+        for key, value in patch.items():
+            setattr(row, key, value)
+        self._db.commit()
+        return _grant_application(row)
 
 
 class DbLibraryService:

@@ -26,16 +26,42 @@ def test_create_idea_invalid_stage_422(client) -> None:
     assert client.post("/ideas", json={**IDEA, "stage": "dream"}).status_code == 422
 
 
-def test_grant_application(client) -> None:
+def test_grant_application_draft_and_update(client) -> None:
     idea_id = client.post("/ideas", json=IDEA).json()["id"]
     open_call = client.get("/grant-calls").json()[0]
 
     res = client.post(f"/ideas/{idea_id}/grant-application", json={"grant_call_id": open_call["id"]})
 
     assert res.status_code == 201
-    doc = res.json()
-    assert doc["kind"] == "grant_application"
-    assert doc["idea_id"] == idea_id
+    draft = res.json()
+    assert draft["status"] == "draft"
+    assert draft["idea_id"] == idea_id
+    assert draft["title"]
+    assert draft["applicant"] == {}
+    assert draft["grant_amount_pln"] is None
+
+    patched = client.patch(
+        f"/grant-applications/{draft['id']}",
+        json={
+            "applicant_type": "person",
+            "applicant": {
+                "first_name": "Anna",
+                "last_name": "Kowalska",
+                "city": "Kraków",
+                "email": "anna@example.com",
+            },
+            "grant_amount_pln": "45000",
+            "team": "Anna Kowalska — koordynacja; wolontariusze OPS",
+            "declarations": {"kind": "person", "accepted_all": True},
+            "status": "submitted",
+        },
+    )
+    assert patched.status_code == 200
+    body = patched.json()
+    assert body["applicant"]["first_name"] == "Anna"
+    assert body["grant_amount_pln"] == "45000"
+    assert body["status"] == "submitted"
+    assert client.get(f"/grant-applications/{draft['id']}").json()["team"].startswith("Anna")
 
 
 def test_grant_application_closed_call_422(client) -> None:

@@ -28,5 +28,9 @@ class Settings(BaseSettings):
     upload_dir: str = "/data/uploads"
     max_upload_bytes: int = 10 * 1024 * 1024
 
+    # grant-application drafts (Gemini)
+    gemini_api_key: str = ""
+    gemini_model: str = "gemini-2.0-flash"
+
 
 settings = Settings()

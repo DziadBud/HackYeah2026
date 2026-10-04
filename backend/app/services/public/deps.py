@@ -2,6 +2,7 @@
 from fastapi import Depends
 from sqlalchemy.orm import Session
 
+from app.clients.gemini import GeminiClient
 from app.clients.rag import RagClient
 from app.config import settings
 from app.db.session import get_db
@@ -26,6 +27,7 @@ from app.services.public.interfaces import (
 
 
 _rag = RagClient(settings.rag_url, settings.rag_timeout_seconds, settings.rag_query_timeout_seconds)
+_gemini = GeminiClient()
 
 
 def get_match_service(db: Session = Depends(get_db)) -> MatchService:
@@ -37,7 +39,7 @@ def get_problem_report_service(db: Session = Depends(get_db)) -> ProblemReportSe
 
 
 def get_idea_service(db: Session = Depends(get_db)) -> IdeaService:
-    return DbIdeaService(db)
+    return DbIdeaService(db, _gemini)
 
 
 def get_library_service(db: Session = Depends(get_db)) -> LibraryService:

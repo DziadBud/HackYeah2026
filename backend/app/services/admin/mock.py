@@ -419,13 +419,13 @@ class MockGrantCallAdminService:
         self._items: dict[str, GrantCall] = {
             "call-1": GrantCall(
                 id="call-1",
-                name="Nabor ROPS 2026: innowacje spoleczne",
+                name="Inkubator Włączenia Społecznego 2.0 — nabór ROPS",
                 deadline=date(2026, 12, 15),
                 open=True,
                 sections=[
-                    GrantSection(title="Opis problemu"),
-                    GrantSection(title="Plan wdrozenia"),
-                    GrantSection(title="Budzet", required=False),
+                    GrantSection(title="Tytuł innowacji"),
+                    GrantSection(title="Opis innowacji"),
+                    GrantSection(title="Plan działania i koszty"),
                 ],
             )
         }

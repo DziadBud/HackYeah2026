@@ -5,7 +5,12 @@ from app.clients.rag import RagAnswer
 from app.schemas.admin.common import ChallengeArea, Page
 from app.schemas.admin.grant_calls import GrantCall
 from app.schemas.public.documents import GeneratedDocument, MiddlemanRequest
-from app.schemas.public.ideas import GrantApplicationRequest, IdeaCreate, IdeaCreated
+from app.schemas.public.grant_applications import (
+    GrantApplication,
+    GrantApplicationCreate,
+    GrantApplicationUpdate,
+)
+from app.schemas.public.ideas import IdeaCreate, IdeaCreated
 from app.schemas.public.innovations import FeedbackCreate, FeedbackCreated, LibraryInnovation
 from app.schemas.public.match import MatchRequest, MatchResponse
 from app.schemas.public.problem_reports import PublicProblemReport, SupportResponse
@@ -32,10 +37,14 @@ class ProblemReportService(Protocol):
     def support(self, problem_report_id: str) -> SupportResponse: ...
 
 
-# R3: idea card + grant application draft while a call is open
+# R3: idea card + grant application (full ROPS form) while a call is open
 class IdeaService(Protocol):
     def create(self, data: IdeaCreate) -> IdeaCreated: ...
-    def grant_application(self, idea_id: str, data: GrantApplicationRequest) -> GeneratedDocument: ...
+    def grant_application(self, idea_id: str, data: GrantApplicationCreate) -> GrantApplication: ...
+    def get_grant_application(self, application_id: str) -> GrantApplication: ...
+    def update_grant_application(
+        self, application_id: str, data: GrantApplicationUpdate
+    ) -> GrantApplication: ...
 
 
 # R2 + R4: published innovations only, feedback from anyone
@@ -54,7 +63,7 @@ class ThreadService(Protocol):
     def reply(self, thread_id: str, data: ReplyCreate) -> Submitted: ...
 
 
-# R7 + R3: llm drafts stored as generated_documents
+# R7: llm drafts stored as generated_documents
 class DocumentService(Protocol):
     def middleman(self, data: MiddlemanRequest) -> GeneratedDocument: ...
 

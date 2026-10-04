@@ -26,3 +26,4 @@ class GrantCall(Base):
     )
 
     generated_documents = relationship("GeneratedDocument", back_populates="grant_call")
+    grant_applications = relationship("GrantApplication", back_populates="grant_call")

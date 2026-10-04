@@ -7,7 +7,15 @@ from app.schemas.admin.ideas import Idea, IdeaStatus, SocialCanvas
 from app.schemas.admin.innovations import Innovation, PublicationStatus
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.public.documents import DocumentKind, GeneratedDocument, MiddlemanRequest
-from app.schemas.public.ideas import GrantApplicationRequest, IdeaCreate, IdeaCreated
+from app.schemas.public.grant_applications import (
+    ActionPlan,
+    ApplicantType,
+    GrantApplication,
+    GrantApplicationCreate,
+    GrantApplicationStatus,
+    GrantApplicationUpdate,
+)
+from app.schemas.public.ideas import IdeaCreate, IdeaCreated
 from app.schemas.public.innovations import FeedbackCreate, FeedbackCreated, LibraryInnovation
 from app.schemas.public.match import (
     MatchedInnovation,
@@ -26,7 +34,7 @@ from app.schemas.public.threads import (
     ThreadCreate,
 )
 from app.services.admin.errors import InvalidRequestError, NotFoundError
-from app.services.public.drafts import grant_draft, middleman_card, overlap, words
+from app.services.public.drafts import grant_draft_fields, middleman_card, overlap, words
 from app.services.admin.mock import (
     MockGrantCallAdminService,
     MockIdeaAdminService,
@@ -175,6 +183,7 @@ class MockIdeaService:
         self._ideas = ideas
         self._grant_calls = grant_calls
         self._documents = documents
+        self._applications: dict[str, GrantApplication] = {}
 
     def create(self, data: IdeaCreate) -> IdeaCreated:
         idea = Idea(
@@ -191,7 +200,7 @@ class MockIdeaService:
         self._ideas.add(idea)
         return IdeaCreated(id=idea.id, status=idea.status)
 
-    def grant_application(self, idea_id: str, data: GrantApplicationRequest) -> GeneratedDocument:
+    def grant_application(self, idea_id: str, data: GrantApplicationCreate) -> GrantApplication:
         idea = self._ideas.get(idea_id)
         if idea.status == IdeaStatus.REJECTED:
             raise InvalidRequestError("this idea was rejected")
@@ -200,16 +209,58 @@ class MockIdeaService:
             raise NotFoundError(data.grant_call_id)
         if not call.open:
             raise InvalidRequestError("this grant call is closed")
-        return self._documents.add(
-            GeneratedDocument(
-                id=_new_id(),
-                kind=DocumentKind.GRANT_APPLICATION,
-                idea_id=idea.id,
-                grant_call_id=call.id,
-                output=grant_draft(idea.summary, call),
-                created_at=_now(),
-            )
+        fields = grant_draft_fields(
+            summary=idea.summary,
+            essence=idea.essence,
+            target_group=idea.target_group,
+            stage=idea.stage.value,
+            social_canvas=idea.social_canvas.model_dump(),
+            notes=data.notes,
         )
+        now = _now()
+        app = GrantApplication(
+            id=_new_id(),
+            idea_id=idea.id,
+            grant_call_id=call.id,
+            status=GrantApplicationStatus.DRAFT,
+            title=fields["title"],
+            applicant_type=ApplicantType.PERSON,
+            applicant={},
+            description=fields["description"],
+            innovativeness=fields["innovativeness"],
+            problem_diagnosis=fields["problem_diagnosis"],
+            beneficiaries=fields["beneficiaries"],
+            expected_change=fields["expected_change"],
+            future_vision=fields["future_vision"],
+            action_plan=ActionPlan.model_validate(fields["action_plan"]),
+            grant_amount_pln=None,
+            team="",
+            declarations={},
+            email=data.email,
+            generated_by=fields.get("generated_by"),
+            created_at=now,
+            updated_at=now,
+        )
+        self._applications[app.id] = app
+        return app
+
+    def get_grant_application(self, application_id: str) -> GrantApplication:
+        try:
+            return self._applications[application_id]
+        except KeyError:
+            raise NotFoundError(application_id) from None
+
+    def update_grant_application(
+        self, application_id: str, data: GrantApplicationUpdate
+    ) -> GrantApplication:
+        current = self.get_grant_application(application_id)
+        if current.status == GrantApplicationStatus.SUBMITTED:
+            raise InvalidRequestError("this application was already submitted")
+        updated = current.model_copy(
+            update=data.model_dump(exclude_unset=True) | {"updated_at": _now()}
+        )
+        self._applications[application_id] = updated
+        return updated
 
 
 class MockLibraryService:

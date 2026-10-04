@@ -7,7 +7,6 @@ Source review: [../staff-gap-review.md](../staff-gap-review.md). One file per ga
 | [BE-01](be-01-notifier.md) | notifier + Mailpit, inbox fields | R10, R12 | `feat/notifier-rate-limit` |
 | [BE-02](be-02-rate-limit.md) | per-IP rate limit | R11 | `feat/notifier-rate-limit` |
 | [BE-07](be-07-hardening.md) | CSV, lockout, uploads, RabbitMQ, NUL | R11, R15 | `feat/notifier-rate-limit` |
-| [BE-03](be-03-llm-drafts.md) | LLM grant + Middleman | R3, R7 | `feat/llm-drafts` |
 | [BE-04](be-04-tester-admin.md) | tester admin + direct signup | R4 | `feat/tester-admin` |
 | [BE-05](be-05-gaps-report.md) | gaps report empty | R2, R14 | `feat/tester-admin` |
 | [BE-06](be-06-report-moderation.md) | public report moderation | R11 | `feat/tester-admin` |
