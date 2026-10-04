@@ -64,7 +64,7 @@ How rag behaves, and what match-api does about it:
 - The temporary `/llm/test` endpoint uses the separate `ollama` container with `qwen2.5:1.5b`; the `ollama-init` container downloads the model into the persistent `ollama_models` volume.
 - **`innovations.city` is nullable but returned as `str`:** match-api always writes `city` (`''` when unknown).
 
-match-api calls rag directly over HTTP (`RAG_URL`); there is no queue between them. The `rabbitmq` service in compose is not used by match-api.
+match-api calls rag directly over HTTP (`RAG_URL`); there is no queue between them and no message broker in compose.
 
 ## 2. Flow: adding innovations
 

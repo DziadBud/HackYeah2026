@@ -16,24 +16,6 @@ services:
       timeout: 5s
       retries: 10
 
-  rabbitmq:
-    image: rabbitmq:4-management
-    container_name: hackyeah-rabbitmq
-    environment:
-      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:-hackyeah}
-      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD:-hackyeah}
-    ports:
-      - "${RABBITMQ_PORT:-5672}:5672"
-      # management ui
-      - "${RABBITMQ_UI_PORT:-15672}:15672"
-    volumes:
-      - rabbitmq_data:/var/lib/rabbitmq
-    healthcheck:
-      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 10
-
   # single place that applies the schema: rag/sql (rag's tables) then backend/sql (match-api's).
   # runs on every up, so every file must be idempotent
   migrate:
@@ -188,7 +170,6 @@ services:
 
 volumes:
   postgres_data:
-  rabbitmq_data:
   uploads:
   embedding_models:
   ollama_models:
