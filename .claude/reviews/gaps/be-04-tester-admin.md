@@ -1,5 +1,7 @@
 # BE-04 Tester admin side + direct signup
 
+**Status:** admin list + status endpoints and tester mails (rating links) done on `feat/notifier`. Open: direct `POST /innovations/{id}/test-signups`.
+
 **Criterion:** R4 (+5%).
 **PR:** `feat/tester-admin`
 

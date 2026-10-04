@@ -20,6 +20,7 @@ from app.services.admin.db import (
     DbInnovationStore,
     DbProblemReportAdminService,
     DbReportAdminService,
+    DbTestSignupAdminService,
     DbThreadAdminService,
 )
 from app.services.admin.innovation_upload import InnovationUploadService
@@ -30,6 +31,7 @@ from app.services.admin.interfaces import (
     InnovationAdminService,
     ProblemReportAdminService,
     ReportAdminService,
+    TestSignupAdminService,
     ThreadAdminService,
 )
 from app.services.notify import Notifier, get_notifier
@@ -85,6 +87,12 @@ def get_report_service(db: Session = Depends(get_db)) -> ReportAdminService:
 
 def get_thread_service(db: Session = Depends(get_db), notifier: Notifier = Depends(get_notifier)) -> ThreadAdminService:
     return DbThreadAdminService(db, notifier)
+
+
+def get_test_signup_service(
+    db: Session = Depends(get_db), notifier: Notifier = Depends(get_notifier)
+) -> TestSignupAdminService:
+    return DbTestSignupAdminService(db, notifier)
 
 
 # own short sessions inside the store: the row must be committed before rag embeds it

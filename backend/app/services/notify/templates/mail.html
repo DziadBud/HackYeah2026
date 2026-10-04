@@ -1,0 +1,120 @@
+{% set rating_labels = {1: "Bardzo źle", 2: "Słabo", 3: "Średnio", 4: "Dobrze", 5: "Bardzo dobrze"} %}
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>{{ m.subject }}</title>
+</head>
+<body style="margin:0;padding:0;background:#eef1f6;">
+{% if m.preheader %}
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">{{ m.preheader }}</div>
+{% endif %}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef1f6;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;background:#ffffff;border-radius:12px;overflow:hidden;font-family:Arial,Helvetica,sans-serif;color:#1a1c1e;">
+
+{% if redirected %}
+<tr><td style="background:#fff4cc;color:#4a3b00;padding:10px 24px;font-size:14px;line-height:20px;">
+Tryb testowy: ta wiadomość trafiłaby do {{ "koordynatora ROPS" if m.audience == "admin" else "autora zgłoszenia" }}.
+</td></tr>
+{% endif %}
+
+<tr><td style="background:#00183b;padding:20px 24px;">
+<p style="margin:0;color:#ffffff;font-size:15px;line-height:22px;font-weight:bold;letter-spacing:0.3px;">Małopolski Hub Innowacji Społecznych</p>
+<p style="margin:2px 0 0;color:#d7e2ff;font-size:13px;line-height:18px;">Regionalny Ośrodek Polityki Społecznej w Krakowie</p>
+</td></tr>
+
+<tr><td style="padding:28px 24px 8px;">
+{% if m.badge %}
+<p style="margin:0 0 12px;"><span style="display:inline-block;background:#d7f0ec;color:#00423d;font-size:14px;font-weight:bold;padding:4px 12px;border-radius:999px;">{{ m.badge }}</span></p>
+{% endif %}
+<h1 style="margin:0 0 12px;font-size:24px;line-height:32px;color:#00183b;">{{ m.heading }}</h1>
+<p style="margin:0;font-size:17px;line-height:26px;">{{ m.intro }}</p>
+</td></tr>
+
+{% if m.quote %}
+<tr><td style="padding:16px 24px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f5f7fb;border-left:4px solid #8a94a6;border-radius:6px;">
+<tr><td style="padding:14px 16px;">
+<p style="margin:0 0 6px;font-size:13px;line-height:18px;color:#44474e;text-transform:uppercase;letter-spacing:0.5px;">{{ m.quote_label }}</p>
+<p style="margin:0;font-size:16px;line-height:24px;white-space:pre-line;">{{ m.quote }}</p>
+</td></tr>
+</table>
+</td></tr>
+{% endif %}
+
+{% if m.reply %}
+<tr><td style="padding:16px 24px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#e6f4f2;border-left:4px solid #00504a;border-radius:6px;">
+<tr><td style="padding:14px 16px;">
+<p style="margin:0 0 6px;font-size:13px;line-height:18px;color:#00423d;text-transform:uppercase;letter-spacing:0.5px;">Odpowiedź zespołu Hubu</p>
+<p style="margin:0;font-size:17px;line-height:26px;white-space:pre-line;">{{ m.reply }}</p>
+</td></tr>
+</table>
+</td></tr>
+{% endif %}
+
+{% if m.details %}
+<tr><td style="padding:16px 24px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size:16px;line-height:24px;">
+{% for label, value in m.details %}
+<tr>
+<td style="padding:6px 12px 6px 0;color:#44474e;white-space:nowrap;vertical-align:top;width:1%;">{{ label }}</td>
+<td style="padding:6px 0;font-weight:bold;vertical-align:top;">{{ value }}</td>
+</tr>
+{% endfor %}
+</table>
+</td></tr>
+{% endif %}
+
+{% if m.steps %}
+<tr><td style="padding:20px 24px 0;">
+<p style="margin:0 0 8px;font-size:17px;line-height:26px;font-weight:bold;color:#00183b;">Co dalej?</p>
+<ol style="margin:0;padding-left:22px;font-size:16px;line-height:24px;">
+{% for step in m.steps %}
+<li style="margin:0 0 6px;">{{ step }}</li>
+{% endfor %}
+</ol>
+</td></tr>
+{% endif %}
+
+{% if m.ratings %}
+<tr><td style="padding:24px 24px 0;">
+<p style="margin:0 0 12px;font-size:17px;line-height:26px;font-weight:bold;color:#00183b;">Kliknij swoją ocenę:</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+{% for n, url in m.ratings %}
+<tr><td style="padding:0 0 8px;">
+<a href="{{ url }}" style="display:block;border:2px solid #00504a;border-radius:10px;padding:12px 16px;font-size:17px;line-height:24px;color:#00423d;text-decoration:none;">
+<span style="color:#b26a00;font-size:20px;" aria-hidden="true">{{ "★" * n }}{{ "☆" * (5 - n) }}</span>&nbsp;&nbsp;<strong>{{ n }}/5</strong> – {{ rating_labels[n] }}
+</a>
+</td></tr>
+{% endfor %}
+</table>
+<p style="margin:4px 0 0;font-size:14px;line-height:20px;color:#44474e;">Na stronie możesz dopisać, co działało, a co warto poprawić.</p>
+</td></tr>
+{% endif %}
+
+<tr><td style="padding:28px 24px 8px;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0">
+<tr><td style="background:#00504a;border-radius:10px;">
+<a href="{{ m.cta_url }}" style="display:inline-block;padding:14px 28px;font-size:17px;line-height:24px;font-weight:bold;color:#ffffff;text-decoration:none;">{{ m.cta_label }}</a>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td style="padding:24px;border-top:1px solid #e1e4ea;font-size:14px;line-height:21px;color:#44474e;">
+{% if m.audience == "admin" %}
+<p style="margin:0;">Powiadomienie z panelu Hubu Innowacji Społecznych.</p>
+{% else %}
+<p style="margin:0;">Piszemy, bo przy zgłoszeniu w Hubie zostawiono ten adres e-mail.</p>
+{% endif %}
+<p style="margin:8px 0 0;"><a href="{{ web_url }}" style="color:#00504a;">Małopolski Hub Innowacji Społecznych</a></p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

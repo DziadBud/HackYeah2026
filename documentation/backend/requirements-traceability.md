@@ -29,9 +29,9 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
   - assistant and visualisation: stretch
 
 ## R4 Tester innowacji (S)
-- **Where:** `POST /match?test_signup=true`, `test_signups`, `feedback` ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)).
+- **Where:** `POST /match?test_signup=true`, `GET /admin/test-signups`, `POST /admin/test-signups/{id}/status`, `test_signups`, `feedback` ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)).
 - **How:**
-  - testing is part of matching: with `?test_signup=true` and an email, the user volunteers to test the innovations matched for their problem (one `test_signups` row each, linked to the problem report); the admin accepts, rejects or marks `completed`, and the applicant is emailed
+  - testing is part of matching: with `?test_signup=true` and an email, the user volunteers to test the innovations matched for their problem (one `test_signups` row each, linked to the problem report); the admin accepts, rejects or marks `completed`, and the applicant is emailed: the accepted mail links the rating form (`/innowacje/{id}?test_signup={signup_id}#ocena`), the completed mail has five one-click star links that open the form prefilled (`&rating=N`; the form itself is FE-02)
   - the public UI does not call `?test_signup=true` yet: "Zgłoś się do testowania" on an innovation page expands an email form and sends `POST /ideas` into the ideas inbox; the match test-signup endpoint and the admin side are unchanged
   - ratings and comments go to `feedback` (per-IP rate limited); improvement proposals are comments; optional `test_signup_id` marks feedback from a real tester
   - the admin sees the rating average, count, star distribution, comments and signups by status per innovation (`GET /admin/innovations/{id}/stats`)

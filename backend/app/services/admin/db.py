@@ -522,6 +522,7 @@ def _signup(row: TestSignup) -> TestSignupSchema:
     return TestSignupSchema(
         id=str(row.id),
         innovation_id=row.innovation_id,
+        innovation_title=row.innovation.title,
         problem_report_id=str(row.problem_report_id),
         email=row.email,
         status=TestSignupStatus(row.status),
@@ -562,7 +563,8 @@ class DbGrantCallAdminService:
     def _notify_opened(self, row: GrantCallRow) -> None:
         # an idea email was given with consent to be contacted about that idea
         emails = self._db.scalars(select(IdeaRow.email).where(IdeaRow.email.is_not(None)).distinct()).all()
-        self._notifier.grant_call_opened(emails, row.name, row.deadline.isoformat())
+        sections = [s.get("title", "") for s in row.sections or [] if s.get("title")]
+        self._notifier.grant_call_opened(emails, row.name, row.deadline, sections)
 
 
 class DbReportAdminService:
@@ -736,3 +738,32 @@ class DbThreadAdminService:
             thread = row.thread
             self._notifier.reply_published(row.email, thread.email, thread.innovation_id, thread.title)
         return _reply(row)
+
+
+class DbTestSignupAdminService:
+    def __init__(self, db: Session, notifier: Notifier) -> None:
+        self._db = db
+        self._notifier = notifier
+
+    def list(
+        self, innovation_id: str | None, status: TestSignupStatus | None
+    ) -> list[TestSignupSchema]:
+        query = select(TestSignup).options(selectinload(TestSignup.innovation))
+        if innovation_id is not None:
+            query = query.where(TestSignup.innovation_id == innovation_id)
+        if status is not None:
+            query = query.where(TestSignup.status == status.value)
+        rows = self._db.scalars(query.order_by(TestSignup.created_at.desc())).all()
+        return [_signup(r) for r in rows]
+
+    def set_status(self, signup_id: str, status: TestSignupStatus) -> TestSignupSchema:
+        row = _get(self._db, TestSignup, parse_uuid(signup_id), signup_id)
+        changed = row.status != status.value
+        row.status = status.value
+        self._db.commit()
+        signup = _signup(row)
+        if changed:
+            self._notifier.test_signup_status(
+                row.email, signup.id, row.innovation_id, signup.innovation_title, status
+            )
+        return signup

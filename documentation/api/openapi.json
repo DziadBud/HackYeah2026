@@ -1433,6 +1433,127 @@
         }
       }
     },
+    "/admin/test-signups": {
+      "get": {
+        "tags": [
+          "admin:test-signups"
+        ],
+        "summary": "List Test Signups",
+        "operationId": "list_test_signups_admin_test_signups_get",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Innovation Id"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/TestSignupStatus"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Status"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TestSignup"
+                  },
+                  "title": "Response List Test Signups Admin Test Signups Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/admin/test-signups/{signup_id}/status": {
+      "post": {
+        "tags": [
+          "admin:test-signups"
+        ],
+        "summary": "Set Test Signup Status",
+        "operationId": "set_test_signup_status_admin_test_signups__signup_id__status_post",
+        "parameters": [
+          {
+            "name": "signup_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Signup Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TestSignupStatusRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TestSignup"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/match": {
       "post": {
         "tags": [
@@ -4168,6 +4289,10 @@
             "type": "string",
             "title": "Innovation Id"
           },
+          "innovation_title": {
+            "type": "string",
+            "title": "Innovation Title"
+          },
           "problem_report_id": {
             "type": "string",
             "title": "Problem Report Id"
@@ -4189,6 +4314,7 @@
         "required": [
           "id",
           "innovation_id",
+          "innovation_title",
           "problem_report_id",
           "email",
           "status",
@@ -4205,6 +4331,24 @@
           "completed"
         ],
         "title": "TestSignupStatus"
+      },
+      "TestSignupStatusRequest": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected",
+              "completed"
+            ],
+            "title": "Status"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "title": "TestSignupStatusRequest"
       },
       "Thread": {
         "properties": {

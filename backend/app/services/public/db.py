@@ -111,7 +111,10 @@ class DbMatchService:
         self._db.commit()
         # only reports that left an email wait for a personal answer; the rest show up in the inbox
         if data.email:
-            self._notifier.new_problem_report(str(report.id), data.text)
+            area = matches[0].challenge_areas[0] if matches and matches[0].challenge_areas else None
+            self._notifier.new_problem_report(str(report.id), data.text, data.city, area)
+        if signups:
+            self._notifier.new_test_signups(data.text, [i.title for i in matches])
 
         return MatchResponse(
             problem_report_id=str(report.id),
@@ -205,7 +208,7 @@ class DbIdeaService:
         )
         self._db.add(row)
         self._db.commit()
-        self._notifier.new_idea(str(row.id), data.summary)
+        self._notifier.new_idea(str(row.id), data.summary, data.essence, data.target_group, data.stage)
         return IdeaCreated(id=str(row.id), status=IdeaStatus.NEW)
 
     def grant_application(self, idea_id: str, data: GrantApplicationRequest) -> GeneratedDocument:
@@ -330,7 +333,7 @@ class DbThreadService:
         ]
 
     def create(self, innovation_id: str, data: ThreadCreate) -> Submitted:
-        _published(self._db, innovation_id)
+        innovation = _published(self._db, innovation_id)
         row = ThreadRow(
             innovation_id=innovation_id,
             title=data.title,
@@ -341,7 +344,7 @@ class DbThreadService:
         )
         self._db.add(row)
         self._db.commit()
-        self._notifier.new_thread(innovation_id, data.title)
+        self._notifier.new_thread(innovation_id, innovation.title, data.title, data.body)
         return Submitted(id=str(row.id), status=ModerationStatus.PENDING)
 
     def reply(self, thread_id: str, data: ReplyCreate) -> Submitted:
@@ -358,7 +361,7 @@ class DbThreadService:
         )
         self._db.add(row)
         self._db.commit()
-        self._notifier.new_thread_reply(thread.title)
+        self._notifier.new_thread_reply(thread.title, data.body)
         return Submitted(id=str(row.id), status=ModerationStatus.PENDING)
 
 
