@@ -13,19 +13,127 @@ import {
   PERSON_DECL,
   PERSON_FIELDS,
 } from "@/components/grant/labels";
+import { MoneyInput, fmtZl } from "@/components/grant/MoneyInput";
 
 const field =
-  "min-h-12 w-full rounded-lg border-[1.5px] border-outline bg-surface p-space-sm text-body-md text-on-surface";
+  "min-h-12 w-full rounded-lg border-[1.5px] border-outline bg-surface p-space-sm text-body-md text-on-surface aria-[invalid=true]:border-error";
 const labelCls = "text-body-md font-bold text-primary";
+const headingCls = "text-title-md font-semibold text-primary";
 const sectionCls =
   "flex flex-col gap-space-sm rounded-xl border border-outline-variant/40 bg-surface-container-lowest p-space-md";
+const primaryBtn =
+  "flex min-h-12 items-center justify-center gap-space-xs rounded-lg bg-primary px-space-lg text-body-lg font-bold text-on-primary shadow-md hover:bg-primary-container disabled:cursor-wait disabled:opacity-80";
+const secondaryBtn =
+  "min-h-12 rounded-lg border-[1.5px] border-outline px-space-md text-body-md font-bold text-primary hover:bg-surface-container-high disabled:opacity-80";
+const textBtn =
+  "min-h-12 rounded-lg px-space-md text-body-md font-bold text-on-surface-variant hover:bg-surface-container-high";
+
+// placeholder note the generator puts on steps without a cost
+const ESTIMATE_NOTE = "do oszacowania";
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const SAVED_MSG = "Szkic wniosku został zapisany.";
+
+type StepKey = "preparation" | "testing_phase_1" | "testing_phase_2";
+type Errors = Record<string, string>;
+
+// minimum to send: who applies, how to reach them, what for and how much; all declarations are mandatory
+const REQUIRED_APPLICANT: Record<ApplicantType, { key: string; id: string; label: string; email?: boolean }[]> = {
+  person: [
+    { key: "first_name", id: "app-first_name", label: "Imię" },
+    { key: "last_name", id: "app-last_name", label: "Nazwisko" },
+    { key: "email", id: "app-email", label: "E-mail", email: true },
+  ],
+  organization: [
+    { key: "name", id: "org-name", label: "Nazwa podmiotu" },
+    { key: "email", id: "org-email", label: "E-mail", email: true },
+  ],
+  informal_group: [
+    { key: "representative_full_name", id: "inf-representative_full_name", label: "Reprezentant — imię i nazwisko" },
+    { key: "representative_email", id: "inf-representative_email", label: "E-mail", email: true },
+  ],
+};
 
 function emptyStep(): PlanStep {
-  return { action: "", timeline: "", cost_pln: null, note: "do oszacowania" };
+  return { action: "", timeline: "", cost_pln: null, note: ESTIMATE_NOTE };
 }
 
 function str(v: unknown) {
   return typeof v === "string" ? v : "";
+}
+
+function sumSteps(steps: PlanStep[]) {
+  return steps.reduce((sum, s) => sum + (s.cost_pln ?? 0), 0);
+}
+
+function sumPlan(plan: ActionPlan) {
+  return sumSteps(plan.preparation) + sumSteps(plan.testing_phase_1) + sumSteps(plan.testing_phase_2);
+}
+
+function amountOf(d: GrantApplication): number | null {
+  const raw = d.grant_amount_pln;
+  return raw === null || raw === "" ? null : Number(raw);
+}
+
+function declLabelsFor(t: ApplicantType) {
+  return t === "organization" ? ORG_DECL : PERSON_DECL;
+}
+
+function hasApplicantData(d: GrantApplication) {
+  const filled = (v: unknown): boolean =>
+    typeof v === "string" ? v.trim() !== "" : v !== null && typeof v === "object" && Object.values(v).some(filled);
+  return filled(d.applicant) || Object.values(d.declarations).some(Boolean);
+}
+
+function validate(d: GrantApplication): Errors {
+  const e: Errors = {};
+  if (!d.title.trim()) e["app-title"] = "Wpisz tytuł innowacji.";
+  for (const f of REQUIRED_APPLICANT[d.applicant_type]) {
+    const v = str(d.applicant[f.key]).trim();
+    if (!v) e[f.id] = `Uzupełnij pole „${f.label}”.`;
+    else if (f.email && !EMAIL_RE.test(v)) e[f.id] = "Wpisz poprawny adres e-mail, np. jan@przyklad.pl.";
+  }
+  const amount = amountOf(d);
+  if (amount === null || amount <= 0) e["app-amount"] = "Podaj wnioskowaną kwotę grantu.";
+  const missing = Object.keys(declLabelsFor(d.applicant_type)).filter((k) => !d.declarations[k]);
+  if (missing.length) e[`decl-${missing[0]}`] = `Zaznacz wszystkie oświadczenia (brakuje: ${missing.length}).`;
+  return e;
+}
+
+function errProps(errors: Errors, id: string, extra?: string) {
+  const describedBy = [errors[id] ? `${id}-err` : "", extra ?? ""].filter(Boolean).join(" ");
+  return { "aria-invalid": errors[id] ? true : undefined, "aria-describedby": describedBy || undefined };
+}
+
+function FieldError({ errors, id }: { errors: Errors; id: string }) {
+  return errors[id] ? (
+    <p id={`${id}-err`} className="text-body-md font-semibold text-error">
+      {errors[id]}
+    </p>
+  ) : null;
+}
+
+function TextField({
+  id,
+  label,
+  value,
+  onChange,
+  errors,
+}: {
+  id: string;
+  label: string;
+  value: string;
+  onChange: (v: string) => void;
+  errors: Errors;
+}) {
+  return (
+    <div className="flex flex-col gap-1">
+      <label className={labelCls} htmlFor={id}>
+        {label}
+      </label>
+      <input id={id} className={field} value={value} onChange={(e) => onChange(e.target.value)} {...errProps(errors, id)} />
+      <FieldError errors={errors} id={id} />
+    </div>
+  );
 }
 
 type Props = {
@@ -38,22 +146,37 @@ type Props = {
 export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: Props) {
   const titleId = useId();
   const closeRef = useRef<HTMLButtonElement>(null);
+  const summaryRef = useRef<HTMLDivElement>(null);
+  const confirmRef = useRef<HTMLButtonElement>(null);
   const [summary, setSummary] = useState(initialSummary);
   const [calls, setCalls] = useState<PublicGrantCall[]>([]);
   const [callsError, setCallsError] = useState("");
   const [draft, setDraft] = useState<GrantApplication | null>(null);
+  const [dirty, setDirty] = useState(false);
+  const [showErrors, setShowErrors] = useState(false);
+  const [confirmClose, setConfirmClose] = useState(false);
   const [busy, setBusy] = useState(false);
   const [busyLabel, setBusyLabel] = useState("");
   const [error, setError] = useState("");
 
   useEffect(() => {
     closeRef.current?.focus();
+  }, []);
+
+  useEffect(() => {
+    if (confirmClose) confirmRef.current?.focus();
+  }, [confirmClose]);
+
+  // no deps: the handler reads the latest draft/dirty state
+  useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && !busy) onClose();
+      if (e.key !== "Escape") return;
+      if (confirmClose) setConfirmClose(false);
+      else requestClose();
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [onClose, busy]);
+  });
 
   useEffect(() => {
     let cancelled = false;
@@ -77,6 +200,13 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
       cancelled = true;
     };
   }, []);
+
+  function requestClose() {
+    if (busy) return;
+    if (!draft || draft.status === "submitted") return onClose();
+    if (dirty) return setConfirmClose(true);
+    onDone(SAVED_MSG);
+  }
 
   async function startDraft(useAi: boolean) {
     const ideaText = summary.trim();
@@ -136,6 +266,7 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
       } else {
         setDraft(app);
       }
+      setDirty(false);
     } catch (err) {
       const detail = err instanceof ApiError ? ` (HTTP ${err.status})` : "";
       setError(
@@ -149,17 +280,21 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
     }
   }
 
-  async function save(submit: boolean) {
-    if (!draft) return;
+  async function save(submit: boolean): Promise<boolean> {
+    if (!draft) return false;
+    if (submit) {
+      setShowErrors(true);
+      if (Object.keys(validate(draft)).length > 0) {
+        setError("");
+        requestAnimationFrame(() => summaryRef.current?.focus());
+        return false;
+      }
+    }
     setBusy(true);
     setBusyLabel(submit ? "Wysyłam wniosek…" : "Zapisuję szkic…");
     setError("");
     try {
-      const amountRaw = draft.grant_amount_pln;
-      const amount =
-        amountRaw === null || amountRaw === undefined || amountRaw === ""
-          ? undefined
-          : String(amountRaw);
+      const amount = amountOf(draft);
       const updated = await api.updateGrantApplication(draft.id, {
         title: draft.title,
         applicant_type: draft.applicant_type,
@@ -171,89 +306,92 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
         expected_change: draft.expected_change,
         future_vision: draft.future_vision,
         action_plan: draft.action_plan,
-        ...(amount !== undefined ? { grant_amount_pln: amount } : {}),
+        grant_amount_pln: amount === null ? null : String(amount),
         team: draft.team,
         declarations: draft.declarations,
         ...(submit ? { status: "submitted" as const } : {}),
       });
       setDraft(updated);
+      setDirty(false);
       if (submit) onDone("Wniosek grantowy został wysłany. Dziękujemy!");
+      else setError("Zapisano szkic.");
+      return true;
     } catch (err) {
       const detail = err instanceof ApiError ? ` (HTTP ${err.status})` : "";
       setError(
         submit
-          ? `Nie udało się wysłać wniosku${detail}. Sprawdź pola i spróbuj ponownie.`
+          ? `Nie udało się wysłać wniosku${detail}. Spróbuj ponownie.`
           : `Nie udało się zapisać szkicu${detail}. Spróbuj ponownie.`,
       );
+      return false;
     } finally {
       setBusy(false);
       setBusyLabel("");
     }
   }
 
+  function edit(change: (d: GrantApplication) => GrantApplication) {
+    setDraft((d) => (d ? change(d) : d));
+    setDirty(true);
+  }
+
   function setText(key: keyof GrantApplication, value: string) {
-    setDraft((d) => (d ? { ...d, [key]: value } : d));
+    edit((d) => ({ ...d, [key]: value }));
   }
 
   function setApplicantField(key: string, value: string) {
-    setDraft((d) => (d ? { ...d, applicant: { ...d.applicant, [key]: value } } : d));
+    edit((d) => ({ ...d, applicant: { ...d.applicant, [key]: value } }));
   }
 
-  function setOrgContact(
-    which: "representative" | "working_contact",
-    key: string,
-    value: string,
-  ) {
-    setDraft((d) => {
-      if (!d) return d;
+  function setOrgContact(which: "representative" | "working_contact", key: string, value: string) {
+    edit((d) => {
       const current = (d.applicant[which] as Record<string, string> | undefined) ?? {};
-      return {
-        ...d,
-        applicant: { ...d.applicant, [which]: { ...current, [key]: value } },
-      };
+      return { ...d, applicant: { ...d.applicant, [which]: { ...current, [key]: value } } };
     });
   }
 
-  function setDecl(key: string, checked: boolean) {
-    setDraft((d) =>
-      d ? { ...d, declarations: { ...d.declarations, [key]: checked } } : d,
-    );
+  function setAmount(value: number | null) {
+    edit((d) => ({ ...d, grant_amount_pln: value === null ? null : String(value) }));
   }
 
-  function setPlan(next: ActionPlan) {
-    setDraft((d) => (d ? { ...d, action_plan: next } : d));
-  }
-
-  async function changeApplicantType(next: ApplicantType) {
+  // local only: saved with the rest of the form, so other unsaved edits survive the switch
+  function changeApplicantType(next: ApplicantType) {
     if (!draft || next === draft.applicant_type) return;
-    setBusy(true);
-    setError("");
-    try {
-      const updated = await api.updateGrantApplication(draft.id, { applicant_type: next });
-      setDraft(updated);
-    } catch {
-      setError("Nie udało się zmienić typu wnioskodawcy.");
-    } finally {
-      setBusy(false);
+    if (
+      hasApplicantData(draft) &&
+      !window.confirm("Zmiana typu wnioskodawcy wyczyści dane z sekcji 2 i oświadczenia. Kontynuować?")
+    ) {
+      return;
     }
+    edit((d) => ({ ...d, applicant_type: next, applicant: {}, declarations: {} }));
   }
 
-  const declLabels =
-    draft?.applicant_type === "organization" ? ORG_DECL : PERSON_DECL;
+  async function saveAndClose() {
+    setConfirmClose(false);
+    if (await save(false)) onDone(SAVED_MSG);
+  }
+
+  const errors = draft && showErrors ? validate(draft) : {};
+  const errorList = Object.entries(errors);
+  const declLabels = declLabelsFor(draft?.applicant_type ?? "person");
+  const declError = errorList.find(([id]) => id.startsWith("decl-"));
+  const amount = draft ? amountOf(draft) : null;
+  const planTotal = draft ? sumPlan(draft.action_plan) : 0;
+  const amountA11y = errProps(errors, "app-amount", planTotal > 0 ? "amount-hint" : undefined);
 
   return (
     <div
       className="fixed inset-0 z-50 flex items-end justify-center bg-on-surface/50 p-space-sm sm:items-center"
       role="presentation"
       onMouseDown={(e) => {
-        if (e.target === e.currentTarget) onClose();
+        if (e.target === e.currentTarget) requestClose();
       }}
     >
       <div
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="flex max-h-[92vh] w-full max-w-3xl flex-col overflow-hidden rounded-2xl bg-surface shadow-2xl hc-edge"
+        className="relative flex max-h-[92vh] w-full max-w-3xl flex-col overflow-hidden rounded-2xl bg-surface shadow-2xl hc-edge"
       >
         <header className="flex items-start justify-between gap-space-sm border-b border-outline-variant/40 px-space-md py-space-sm">
           <div>
@@ -270,7 +408,7 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
           <button
             ref={closeRef}
             type="button"
-            onClick={onClose}
+            onClick={requestClose}
             className="flex min-h-12 min-w-12 items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high"
             aria-label="Zamknij"
           >
@@ -316,7 +454,7 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
             </div>
           ) : (
             <div className="flex flex-col gap-space-md">
-              <p className="text-body-sm text-on-surface-variant">
+              <p className="text-body-md text-on-surface-variant">
                 Szkic:{" "}
                 {draft.generated_by === "gemini"
                   ? "Gemini"
@@ -325,22 +463,53 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
                     : (draft.generated_by ?? "—")}
                 {" · "}
                 status: {draft.status === "submitted" ? "wysłany" : "szkic"}
+                {dirty && " · niezapisane zmiany"}
               </p>
 
-              <section className={sectionCls} aria-labelledby="sec-1">
-                <h3 id="sec-1" className="text-title-md font-semibold text-primary">
-                  1. Tytuł innowacji
+              {errorList.length > 0 && (
+                <div
+                  ref={summaryRef}
+                  tabIndex={-1}
+                  role="alert"
+                  className="flex flex-col gap-space-xs rounded-xl border-2 border-error bg-surface-container-lowest p-space-md"
+                >
+                  <p className="text-body-md font-bold text-error">Przed wysłaniem popraw:</p>
+                  <ul className="flex list-disc flex-col gap-1 pl-space-md">
+                    {errorList.map(([id, msg]) => (
+                      <li key={id}>
+                        <a
+                          href={`#${id}`}
+                          className="text-body-md text-on-surface underline underline-offset-4"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById(id)?.focus();
+                          }}
+                        >
+                          {msg}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              <section className={sectionCls}>
+                <h3 className={headingCls}>
+                  <label htmlFor="app-title">1. Tytuł innowacji</label>
                 </h3>
                 <input
+                  id="app-title"
                   className={field}
                   value={draft.title}
                   onChange={(e) => setText("title", e.target.value)}
                   maxLength={500}
+                  {...errProps(errors, "app-title")}
                 />
+                <FieldError errors={errors} id="app-title" />
               </section>
 
               <section className={sectionCls} aria-labelledby="sec-2">
-                <h3 id="sec-2" className="text-title-md font-semibold text-primary">
+                <h3 id="sec-2" className={headingCls}>
                   2. Dane pomysłodawcy
                 </h3>
                 <div className="flex flex-col gap-1">
@@ -364,17 +533,14 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
                 {draft.applicant_type === "person" && (
                   <div className="grid grid-cols-1 gap-space-sm sm:grid-cols-2">
                     {PERSON_FIELDS.map(([key, label]) => (
-                      <div key={key} className="flex flex-col gap-1">
-                        <label className={labelCls} htmlFor={`app-${key}`}>
-                          {label}
-                        </label>
-                        <input
-                          id={`app-${key}`}
-                          className={field}
-                          value={str(draft.applicant[key])}
-                          onChange={(e) => setApplicantField(key, e.target.value)}
-                        />
-                      </div>
+                      <TextField
+                        key={key}
+                        id={`app-${key}`}
+                        label={label}
+                        value={str(draft.applicant[key])}
+                        onChange={(v) => setApplicantField(key, v)}
+                        errors={errors}
+                      />
                     ))}
                   </div>
                 )}
@@ -382,45 +548,39 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
                   <div className="flex flex-col gap-space-sm">
                     <div className="grid grid-cols-1 gap-space-sm sm:grid-cols-2">
                       {ORG_FIELDS.map(([key, label]) => (
-                        <div key={key} className="flex flex-col gap-1">
-                          <label className={labelCls} htmlFor={`org-${key}`}>
-                            {label}
-                          </label>
-                          <input
-                            id={`org-${key}`}
-                            className={field}
-                            value={str(draft.applicant[key])}
-                            onChange={(e) => setApplicantField(key, e.target.value)}
-                          />
-                        </div>
+                        <TextField
+                          key={key}
+                          id={`org-${key}`}
+                          label={label}
+                          value={str(draft.applicant[key])}
+                          onChange={(v) => setApplicantField(key, v)}
+                          errors={errors}
+                        />
                       ))}
                     </div>
-                    {(["representative", "working_contact"] as const).map((which) => {
-                      const title =
-                        which === "representative"
-                          ? "Osoba upoważniona do reprezentowania"
-                          : "Kontakt roboczy";
-                      const contact =
-                        (draft.applicant[which] as Record<string, string> | undefined) ?? {};
+                    {(
+                      [
+                        ["representative", "Osoba upoważniona do reprezentowania"],
+                        ["working_contact", "Kontakt roboczy"],
+                      ] as const
+                    ).map(([which, title]) => {
+                      const contact = (draft.applicant[which] as Record<string, string> | undefined) ?? {};
                       return (
-                        <div key={which} className="rounded-lg border border-outline-variant/30 p-space-sm">
-                          <p className="mb-space-xs text-body-md font-bold text-primary">{title}</p>
+                        <fieldset key={which} className="rounded-lg border border-outline-variant/30 p-space-sm">
+                          <legend className="px-1 text-body-md font-bold text-primary">{title}</legend>
                           <div className="grid grid-cols-1 gap-space-sm sm:grid-cols-2">
                             {CONTACT_FIELDS.map(([key, label]) => (
-                              <div key={key} className="flex flex-col gap-1">
-                                <label className={labelCls} htmlFor={`${which}-${key}`}>
-                                  {label}
-                                </label>
-                                <input
-                                  id={`${which}-${key}`}
-                                  className={field}
-                                  value={contact[key] ?? ""}
-                                  onChange={(e) => setOrgContact(which, key, e.target.value)}
-                                />
-                              </div>
+                              <TextField
+                                key={key}
+                                id={`${which}-${key}`}
+                                label={label}
+                                value={contact[key] ?? ""}
+                                onChange={(v) => setOrgContact(which, key, v)}
+                                errors={errors}
+                              />
                             ))}
                           </div>
-                        </div>
+                        </fieldset>
                       );
                     })}
                   </div>
@@ -428,17 +588,14 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
                 {draft.applicant_type === "informal_group" && (
                   <div className="grid grid-cols-1 gap-space-sm sm:grid-cols-2">
                     {INFORMAL_FIELDS.map(([key, label]) => (
-                      <div key={key} className="flex flex-col gap-1">
-                        <label className={labelCls} htmlFor={`inf-${key}`}>
-                          {label}
-                        </label>
-                        <input
-                          id={`inf-${key}`}
-                          className={field}
-                          value={str(draft.applicant[key])}
-                          onChange={(e) => setApplicantField(key, e.target.value)}
-                        />
-                      </div>
+                      <TextField
+                        key={key}
+                        id={`inf-${key}`}
+                        label={label}
+                        value={str(draft.applicant[key])}
+                        onChange={(v) => setApplicantField(key, v)}
+                        errors={errors}
+                      />
                     ))}
                   </div>
                 )}
@@ -446,52 +603,61 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
 
               {NARRATIVE_SECTIONS.map(([key, heading]) => (
                 <section key={key} className={sectionCls}>
-                  <h3 className="text-title-md font-semibold text-primary">{heading}</h3>
+                  <h3 className={headingCls}>
+                    <label htmlFor={`app-${key}`}>{heading}</label>
+                  </h3>
                   <textarea
+                    id={`app-${key}`}
                     rows={4}
                     className={`${field} resize-y`}
-                    value={String(draft[key] ?? "")}
+                    value={draft[key]}
                     onChange={(e) => setText(key, e.target.value)}
                   />
                 </section>
               ))}
 
               <section className={sectionCls} aria-labelledby="sec-9">
-                <h3 id="sec-9" className="text-title-md font-semibold text-primary">
+                <h3 id="sec-9" className={headingCls}>
                   9. Plan działania i koszty
                 </h3>
-                <PlanEditor plan={draft.action_plan} onChange={setPlan} />
+                <PlanEditor plan={draft.action_plan} onChange={(plan) => edit((d) => ({ ...d, action_plan: plan }))} />
               </section>
 
-              <section className={sectionCls} aria-labelledby="sec-10">
-                <h3 id="sec-10" className="text-title-md font-semibold text-primary">
-                  10. Wnioskowana kwota grantu (PLN)
+              <section className={sectionCls}>
+                <h3 className={headingCls}>
+                  <label htmlFor="app-amount">10. Wnioskowana kwota grantu</label>
                 </h3>
-                <input
-                  type="number"
-                  min={0}
-                  step={1}
-                  className={field}
-                  value={draft.grant_amount_pln ?? ""}
-                  onChange={(e) =>
-                    setDraft((d) =>
-                      d
-                        ? {
-                            ...d,
-                            grant_amount_pln:
-                              e.target.value === "" ? null : String(Number(e.target.value)),
-                          }
-                        : d,
-                    )
-                  }
-                />
+                <div className="sm:max-w-xs">
+                  <MoneyInput
+                    id="app-amount"
+                    value={amount}
+                    onChange={setAmount}
+                    className={field}
+                    invalid={amountA11y["aria-invalid"]}
+                    describedBy={amountA11y["aria-describedby"]}
+                  />
+                </div>
+                <FieldError errors={errors} id="app-amount" />
+                {planTotal > 0 && (
+                  <div className="flex flex-wrap items-center gap-space-sm">
+                    <p id="amount-hint" className="text-body-md text-on-surface-variant">
+                      Suma kosztów z planu (sekcja 9): <strong className="text-on-surface">{fmtZl(planTotal)}</strong>
+                    </p>
+                    {amount !== planTotal && (
+                      <button type="button" className={secondaryBtn} onClick={() => setAmount(planTotal)}>
+                        Wstaw sumę z planu
+                      </button>
+                    )}
+                  </div>
+                )}
               </section>
 
-              <section className={sectionCls} aria-labelledby="sec-11">
-                <h3 id="sec-11" className="text-title-md font-semibold text-primary">
-                  11. Zespół projektowy i doświadczenie
+              <section className={sectionCls}>
+                <h3 className={headingCls}>
+                  <label htmlFor="app-team">11. Zespół projektowy i doświadczenie</label>
                 </h3>
                 <textarea
+                  id="app-team"
                   rows={3}
                   className={`${field} resize-y`}
                   value={draft.team}
@@ -500,18 +666,27 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
               </section>
 
               <section className={sectionCls} aria-labelledby="sec-12">
-                <h3 id="sec-12" className="text-title-md font-semibold text-primary">
+                <h3 id="sec-12" className={headingCls}>
                   12. Oświadczenia
                 </h3>
+                {declError && (
+                  <p id="decl-err" className="text-body-md font-semibold text-error">
+                    {declError[1]}
+                  </p>
+                )}
                 <ul className="flex flex-col gap-space-xs">
                   {Object.keys(declLabels).map((key) => (
                     <li key={key}>
                       <label className="flex min-h-12 items-start gap-space-sm text-body-md text-on-surface">
                         <input
+                          id={`decl-${key}`}
                           type="checkbox"
                           className="mt-0.5 size-6 shrink-0 accent-primary-container"
                           checked={Boolean(draft.declarations[key])}
-                          onChange={(e) => setDecl(key, e.target.checked)}
+                          aria-describedby={declError && !draft.declarations[key] ? "decl-err" : undefined}
+                          onChange={(e) =>
+                            edit((d) => ({ ...d, declarations: { ...d.declarations, [key]: e.target.checked } }))
+                          }
                         />
                         <span>{declLabels[key]}</span>
                       </label>
@@ -528,53 +703,25 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
             {error}
           </p>
           <div className="flex flex-wrap justify-end gap-space-xs">
-            <button
-              type="button"
-              onClick={
-                draft
-                  ? () => onDone("Szkic wniosku został zapisany w systemie. Możesz wrócić do edycji później.")
-                  : onClose
-              }
-              className="min-h-12 rounded-lg px-space-md text-body-md font-bold text-on-surface-variant hover:bg-surface-container-high"
-            >
+            <button type="button" onClick={requestClose} className={textBtn}>
               {draft?.status === "submitted" ? "Zamknij" : "Anuluj"}
             </button>
             {!draft ? (
               <div className="flex w-full flex-col gap-space-xs sm:flex-row sm:flex-wrap sm:justify-end">
-                <button
-                  type="button"
-                  disabled={busy}
-                  onClick={() => startDraft(false)}
-                  className="min-h-12 rounded-lg border-[1.5px] border-outline px-space-md text-body-md font-bold text-primary hover:bg-surface-container-high disabled:opacity-80"
-                >
+                <button type="button" disabled={busy} onClick={() => startDraft(false)} className={secondaryBtn}>
                   {busy && busyLabel.includes("pusty") ? "Otwieram…" : "Pomiń generację — wypełnię sam/a"}
                 </button>
-                <button
-                  type="button"
-                  disabled={busy}
-                  onClick={() => startDraft(true)}
-                  className="flex min-h-12 items-center justify-center gap-space-xs rounded-lg bg-primary px-space-lg text-body-lg font-bold text-on-primary shadow-md hover:bg-primary-container disabled:cursor-wait disabled:opacity-80"
-                >
+                <button type="button" disabled={busy} onClick={() => startDraft(true)} className={primaryBtn}>
                   <Icon name="auto_awesome" size={22} />
                   {busy && busyLabel.includes("AI") ? "Generuję…" : "Wygeneruj szkic AI"}
                 </button>
               </div>
             ) : draft.status !== "submitted" ? (
               <>
-                <button
-                  type="button"
-                  disabled={busy}
-                  onClick={() => save(false)}
-                  className="min-h-12 rounded-lg border-[1.5px] border-outline px-space-md text-body-md font-bold text-primary hover:bg-surface-container-high disabled:opacity-80"
-                >
+                <button type="button" disabled={busy} onClick={() => save(false)} className={secondaryBtn}>
                   {busy ? "Zapisuję…" : "Zapisz szkic"}
                 </button>
-                <button
-                  type="button"
-                  disabled={busy}
-                  onClick={() => save(true)}
-                  className="flex min-h-12 items-center justify-center gap-space-xs rounded-lg bg-primary px-space-lg text-body-lg font-bold text-on-primary shadow-md hover:bg-primary-container disabled:cursor-wait disabled:opacity-80"
-                >
+                <button type="button" disabled={busy} onClick={() => save(true)} className={primaryBtn}>
                   <Icon name="send" size={22} />
                   {busy ? "Wysyłam…" : "Wyślij wniosek"}
                 </button>
@@ -582,95 +729,147 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
             ) : null}
           </div>
         </footer>
+
+        {confirmClose && (
+          <div className="absolute inset-0 z-20 flex items-center justify-center bg-on-surface/40 p-space-md">
+            <div
+              role="alertdialog"
+              aria-modal="true"
+              aria-labelledby="close-h"
+              aria-describedby="close-d"
+              className="flex w-full max-w-md flex-col gap-space-sm rounded-xl bg-surface p-space-md shadow-2xl hc-edge"
+            >
+              <h3 id="close-h" className={headingCls}>
+                Masz niezapisane zmiany
+              </h3>
+              <p id="close-d" className="text-body-md text-on-surface">
+                Zapisać szkic wniosku przed zamknięciem?
+              </p>
+              <div className="flex flex-col gap-space-xs sm:flex-row-reverse sm:flex-wrap">
+                <button ref={confirmRef} type="button" onClick={() => void saveAndClose()} className={primaryBtn}>
+                  Zapisz i zamknij
+                </button>
+                <button type="button" onClick={onClose} className={secondaryBtn}>
+                  Zamknij bez zapisu
+                </button>
+                <button type="button" onClick={() => setConfirmClose(false)} className={textBtn}>
+                  Wróć do edycji
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
 }
 
-function PlanEditor({
-  plan,
+// module scope: a component declared inside another is a new type on every render,
+// which remounted the inputs and dropped focus after each keystroke
+function StepList({
+  label,
+  listKey,
+  steps,
   onChange,
 }: {
-  plan: ActionPlan;
-  onChange: (p: ActionPlan) => void;
+  label: string;
+  listKey: StepKey;
+  steps: PlanStep[];
+  onChange: (steps: PlanStep[]) => void;
 }) {
-  function updateSteps(
-    key: "preparation" | "testing_phase_1" | "testing_phase_2",
-    steps: PlanStep[],
-  ) {
-    onChange({ ...plan, [key]: steps });
-  }
-
-  function StepList({
-    label,
-    listKey,
-  }: {
-    label: string;
-    listKey: "preparation" | "testing_phase_1" | "testing_phase_2";
-  }) {
-    const steps = plan[listKey] ?? [];
-    return (
-      <div className="flex flex-col gap-space-xs">
-        <p className="text-body-md font-bold text-primary">{label}</p>
-        {steps.map((step, idx) => (
-          <div
-            key={`${listKey}-${idx}`}
-            className="grid grid-cols-1 gap-space-xs rounded-lg border border-outline-variant/30 p-space-sm sm:grid-cols-3"
-          >
-            <input
-              className={field}
-              placeholder="Działanie"
-              value={step.action}
-              onChange={(e) => {
-                const next = steps.map((s, i) =>
-                  i === idx ? { ...s, action: e.target.value } : s,
-                );
-                updateSteps(listKey, next);
-              }}
-            />
-            <input
-              className={field}
-              placeholder="Termin"
-              value={step.timeline}
-              onChange={(e) => {
-                const next = steps.map((s, i) =>
-                  i === idx ? { ...s, timeline: e.target.value } : s,
-                );
-                updateSteps(listKey, next);
-              }}
-            />
-            <input
-              type="number"
-              className={field}
-              placeholder="Koszt PLN"
-              value={step.cost_pln ?? ""}
-              onChange={(e) => {
-                const next = steps.map((s, i) =>
-                  i === idx
-                    ? {
-                        ...s,
-                        cost_pln: e.target.value === "" ? null : Number(e.target.value),
-                      }
-                    : s,
-                );
-                updateSteps(listKey, next);
-              }}
-            />
-          </div>
-        ))}
-        <button
-          type="button"
-          className="min-h-12 self-start rounded-lg px-space-md text-body-md font-bold text-primary hover:bg-surface-container-high"
-          onClick={() => updateSteps(listKey, [...steps, emptyStep()])}
-        >
-          + Dodaj działanie
-        </button>
-      </div>
-    );
+  function patch(idx: number, change: Partial<PlanStep>) {
+    onChange(steps.map((s, i) => (i === idx ? { ...s, ...change } : s)));
   }
 
   return (
-    <div className="flex flex-col gap-space-sm">
+    <fieldset className="flex flex-col gap-space-xs">
+      <legend className="mb-space-xs text-body-md font-bold text-primary">{label}</legend>
+      {steps.length === 0 && <p className="text-body-md text-on-surface-variant">Brak działań.</p>}
+      {steps.map((step, idx) => {
+        const base = `${listKey}-${idx}`;
+        return (
+          <div
+            key={base}
+            className="grid grid-cols-1 gap-space-xs rounded-lg border border-outline-variant/30 p-space-sm sm:grid-cols-[2fr_1fr_1fr_auto] sm:items-end"
+          >
+            <div className="flex flex-col gap-1">
+              <label className={labelCls} htmlFor={`${base}-action`}>
+                Działanie
+              </label>
+              <input
+                id={`${base}-action`}
+                className={field}
+                value={step.action}
+                onChange={(e) => patch(idx, { action: e.target.value })}
+              />
+            </div>
+            <div className="flex flex-col gap-1">
+              <label className={labelCls} htmlFor={`${base}-timeline`}>
+                Termin
+              </label>
+              <input
+                id={`${base}-timeline`}
+                className={field}
+                placeholder="np. 03.2027"
+                value={step.timeline}
+                onChange={(e) => patch(idx, { timeline: e.target.value })}
+              />
+            </div>
+            <div className="flex flex-col gap-1">
+              <label className={labelCls} htmlFor={`${base}-cost`}>
+                Koszt
+              </label>
+              <MoneyInput
+                id={`${base}-cost`}
+                className={field}
+                value={step.cost_pln}
+                onChange={(v) =>
+                  patch(idx, {
+                    cost_pln: v,
+                    note: v !== null && step.note === ESTIMATE_NOTE ? null : step.note,
+                  })
+                }
+              />
+            </div>
+            <button
+              type="button"
+              className="flex min-h-12 items-center justify-center gap-1 rounded-lg px-space-sm text-body-md font-bold text-error hover:bg-surface-container-high"
+              onClick={() => onChange(steps.filter((_, i) => i !== idx))}
+            >
+              <Icon name="close" />
+              Usuń
+              <span className="sr-only">
+                {" "}
+                działanie {idx + 1} ({label})
+              </span>
+            </button>
+          </div>
+        );
+      })}
+      <div className="flex flex-wrap items-center justify-between gap-space-xs">
+        <button
+          type="button"
+          className="min-h-12 rounded-lg px-space-md text-body-md font-bold text-primary hover:bg-surface-container-high"
+          onClick={() => onChange([...steps, emptyStep()])}
+        >
+          + Dodaj działanie
+          <span className="sr-only"> ({label})</span>
+        </button>
+        <p className="text-body-md font-semibold text-on-surface">Razem: {fmtZl(sumSteps(steps))}</p>
+      </div>
+    </fieldset>
+  );
+}
+
+function PlanEditor({ plan, onChange }: { plan: ActionPlan; onChange: (p: ActionPlan) => void }) {
+  const steps = (key: StepKey) => ({
+    listKey: key,
+    steps: plan[key] ?? [],
+    onChange: (next: PlanStep[]) => onChange({ ...plan, [key]: next }),
+  });
+
+  return (
+    <div className="flex flex-col gap-space-md">
       <div className="flex flex-col gap-1">
         <label className={labelCls} htmlFor="prep-summary">
           Okres przygotowawczy — opis
@@ -683,7 +882,7 @@ function PlanEditor({
           onChange={(e) => onChange({ ...plan, preparation_summary: e.target.value })}
         />
       </div>
-      <StepList label="Przygotowanie — kroki" listKey="preparation" />
+      <StepList label="Przygotowanie — kroki" {...steps("preparation")} />
       <div className="flex flex-col gap-1">
         <label className={labelCls} htmlFor="test-summary">
           Okres testowania — opis
@@ -696,8 +895,9 @@ function PlanEditor({
           onChange={(e) => onChange({ ...plan, testing_summary: e.target.value })}
         />
       </div>
-      <StepList label="Faza I testu" listKey="testing_phase_1" />
-      <StepList label="Faza II testu" listKey="testing_phase_2" />
+      <StepList label="Faza I testu" {...steps("testing_phase_1")} />
+      <StepList label="Faza II testu" {...steps("testing_phase_2")} />
+      <p className="text-body-lg font-semibold text-primary">Łączny koszt planu: {fmtZl(sumPlan(plan))}</p>
     </div>
   );
 }
