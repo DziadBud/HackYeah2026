@@ -4328,7 +4328,8 @@
           "applied",
           "accepted",
           "rejected",
-          "completed"
+          "completed",
+          "rated"
         ],
         "title": "TestSignupStatus"
       },

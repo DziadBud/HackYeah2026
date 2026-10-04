@@ -131,14 +131,15 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 - **Admin replies** are an `admin_reply` column on the problem report or idea.
   - The admin sets it; if the item has an email, a notification email is sent.
   - A problem report reply is also shown on its public page, so it covers everyone who pressed "mnie też".
-- **Notifier** (`app/services/notify/`): SMTP from env (`SMTP_HOST`, `SMTP_PORT`, `MAIL_FROM`, `ADMIN_NOTIFY_EMAIL`, `WEB_URL`), a no-op if `SMTP_HOST` or `MAIL_FROM` is empty; no address has a default, so nothing is mailed until one is configured. Mailpit in compose by default (UI on :8025, synthetic addresses only); a real relay such as Gmail adds `SMTP_USERNAME` / `SMTP_PASSWORD` (STARTTLS + login). `MAIL_REDIRECT_TO` sends every notification to one test inbox, also for items without an email, until the frontend collects emails. Services call it after their commit; it sends from a FastAPI background task, so the response never waits for SMTP. At-most-once: a failure is logged (without the address), not retried. The inbox stays the source of truth.
+- **Notifier** (`app/services/notify/`): SMTP from env (`SMTP_HOST`, `SMTP_PORT`, `MAIL_FROM`, `WEB_URL`), a no-op if `SMTP_HOST` or `MAIL_FROM` is empty; no address has a default, so nothing is mailed until one is configured. Mailpit in compose by default (UI on :8025, synthetic addresses only); a real relay such as Gmail adds `SMTP_USERNAME` / `SMTP_PASSWORD` (STARTTLS + login). `MAIL_REDIRECT_TO` (testing) swaps the recipient for one test inbox; items without an email still get no mail. Services call it after their commit; it sends from a FastAPI background task, so the response never waits for SMTP. At-most-once: a failure is logged (without the address), not retried. The inbox stays the source of truth.
+- **Only users who gave their own email get mail.** The admin is never emailed: new ideas, problem reports, pending threads and test signups wait in `GET /admin/inbox`, where the admin reviews and accepts them.
 - **Mail format:** one Jinja2 layout (`notify/templates/mail.html` + `mail.txt`, autoescaped) sent as HTML with a plain-text part: the item quoted, the reply highlighted, next steps, one action button. Mails show only what helps the reader: no internal ids, and the coordinator's address never reaches users (no Reply-To); the test signup id appears only inside rating links, as the tester's token. An idea status mail goes out only for `accepted` / `rejected`. `python -m scripts.preview_mails [--send]` renders every mail with sample data.
 
 | Event | Recipient |
 |---|---|
-| new idea, new problem report with an email, new pending thread or reply, new test signups from `/match` | admin (`ADMIN_NOTIFY_EMAIL`) |
 | `admin_reply` set on an idea or problem report, idea status changed | the item's `email` |
-| test signup accepted / rejected / completed | the signup's `email`; accepted links the rating form, completed has five star links (`?test_signup=&rating=N#ocena`) |
+| test signup accepted / completed | the signup's `email`; one "Oceń rozwiązanie" button to `{API_URL}/ratings/{signup_id}` (stars are on that page, not in the mail) |
+| test signup rejected | the signup's `email` |
 | thread published | the thread author's `email` |
 | reply published | the reply author's and the thread author's `email` (once if the same) |
 | grant call created open or opened | every distinct idea `email`, one mail each |
@@ -158,7 +159,7 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 | Ideas | `GET /admin/ideas` (filter `status`), `GET /admin/ideas/{id}`, `POST .../{id}/reply`, `POST .../{id}/status` (`accepted` creates a draft innovation, §2) |
 | Problem reports | `GET /admin/problem-reports` (filters `challenge_area`, `city`), `GET /admin/problem-reports/{id}`, `POST .../{id}/reply`, `POST .../{id}/hide` |
 | Threads | `GET /admin/threads` (filter `innovation_id`, and `status`, which matches the thread or any of its replies, so `?status=pending` is the moderation queue; each thread carries all its replies), `POST .../{id}/status` (`published`\|`hidden`), `POST .../replies/{id}/status` (same body) |
-| Testing | `GET /admin/test-signups` (filter `innovation_id`, `status`), `POST /admin/test-signups/{id}/status` (`accepted`\|`rejected`\|`completed`) |
+| Testing | `GET /admin/test-signups` (filter `innovation_id`, `status`; statuses `applied`, `accepted`, `rejected`, `completed`, `rated`), `POST /admin/test-signups/{id}/status` (`accepted`\|`rejected`\|`completed`; `rated` is set by the tester's rating) |
 | Grant calls | `GET /admin/grant-calls`, `POST /admin/grant-calls`, `PATCH /admin/grant-calls/{id}` (open/close, form sections) |
 | Generated docs | `GET /admin/generated-documents` (filter `kind`, `innovation_id`, `idea_id`) |
 | Reports | `GET /admin/reports/trends`, `/critical`, `/locations`, `/gaps`, `/innovations` (one stats row per innovation), each with `?format=json\|csv` |
@@ -186,6 +187,7 @@ CSV export is a streaming response. Cities with fewer than 5 problem reports are
 | Threads | `GET /innovations/{id}/threads` (published threads + published replies), `POST /innovations/{id}/threads` (202, `pending`), `POST /threads/{id}/replies` (202, `pending`) |
 | Middleman | `POST /middleman {innovation_id, institution_type, needs, email?, consent}` (the response is the stored document) |
 | Grant calls | `GET /grant-calls` (open only) |
+| Tester rating (HTML, not in OpenAPI) | `GET /ratings/{signup_id}` shows the rating form (optional `?rating=N` preselects a star); `POST /ratings/{signup_id}` (form `stars`, `comment`) stores one `feedback` row (`kind='test_signup'`) and moves the signup to `rated`. The signup id is the token; only `accepted` / `completed` signups can rate, once. Opening the link stores nothing, so mail link scanners can't rate. |
 
 Admin and public services are db-backed (`backend/app/services/{admin,public}/db.py`, one session per request via `get_db`); the mocks in `mock.py` stay for unit tests through dependency overrides.
 - `/match` uses rag `/query` (`backend/app/clients/rag.py`). Middleman cards and grant drafts are still templates (`backend/app/services/public/drafts.py`).
@@ -414,4 +416,4 @@ docker-compose.yml   # postgres (pgvector image), migrate, rag, seed-embed, embe
 7. `embeddings` is built from `embeddings/Dockerfile` instead of pulling `text-embeddings-inference:cpu-1.8` (amd64-only); it selects the TEI 1.9 CPU image per architecture so compose runs on Linux amd64 and Apple Silicon.
 8. Demo innovations are seeded: `rag/sql/007_seed_innovations.sql` inserts the sample-data innovations and compose `seed-embed` embeds published innovations without chunks via rag `POST /embed`.
 9. `/match` retrieves through rag `/query` (embeddings), not word overlap. LLM experimentation is isolated to the temporary `/llm/test` endpoint.
-10. Email notifier implemented (§4) with Mailpit in compose; problem reports notify the admin only when they carry an email, published replies also notify the thread author, and opening a grant call mails idea authors. `GET /admin/inbox` returns `pending_threads` and `new_test_signups` (status `applied`). Notifications are HTML with one action each; `GET /admin/test-signups` and `POST /admin/test-signups/{id}/status` exist and mail the tester (rating links).
+10. Email notifier implemented (§4) with Mailpit in compose; it mails only users who left their own email (no admin mail, the admin works from the inbox); published replies also notify the thread author, and opening a grant call mails idea authors. `GET /admin/inbox` returns `pending_threads` and `new_test_signups` (status `applied`). Notifications are HTML with one action each; `GET /admin/test-signups` and `POST /admin/test-signups/{id}/status` exist and mail the tester (rating links). Testers rate straight from the mail through `/ratings/{signup_id}` (HTML page served by match-api, `API_URL` setting), so rating does not depend on the frontend.

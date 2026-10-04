@@ -10,6 +10,8 @@ class TestSignupStatus(StrEnum):
     ACCEPTED = "accepted"
     REJECTED = "rejected"
     COMPLETED = "completed"
+    # set by the tester's rating from the mail, not by the admin
+    RATED = "rated"
 
 
 class TestSignup(BaseModel):

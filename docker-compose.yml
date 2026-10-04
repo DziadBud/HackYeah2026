@@ -80,7 +80,6 @@ services:
       SMTP_USERNAME: ${SMTP_USERNAME:-}
       SMTP_PASSWORD: ${SMTP_PASSWORD:-}
       MAIL_FROM: ${MAIL_FROM:-}
-      ADMIN_NOTIFY_EMAIL: ${ADMIN_NOTIFY_EMAIL:-}
       MAIL_REDIRECT_TO: ${MAIL_REDIRECT_TO:-}
       WEB_URL: ${WEB_URL:-http://localhost:3000}
     ports:

@@ -763,7 +763,5 @@ class DbTestSignupAdminService:
         self._db.commit()
         signup = _signup(row)
         if changed:
-            self._notifier.test_signup_status(
-                row.email, signup.id, row.innovation_id, signup.innovation_title, status
-            )
+            self._notifier.test_signup_status(row.email, signup.id, signup.innovation_title, status)
         return signup

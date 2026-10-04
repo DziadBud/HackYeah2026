@@ -1,5 +1,7 @@
 # FE-02 Rating form on innovation page
 
+**Status:** testers no longer need it: they rate from the mail via the backend page `/ratings/{signup_id}`. Still open for public (non-tester) ratings on the innovation page.
+
 **Criterion:** R4.
 **PR:** `feat/frontend-modules`
 

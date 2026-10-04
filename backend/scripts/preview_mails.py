@@ -5,22 +5,15 @@ from datetime import date
 from pathlib import Path
 
 from app.config import settings
-from app.schemas.admin.common import ChallengeArea
-from app.schemas.admin.ideas import IdeaStage, IdeaStatus
+from app.schemas.admin.ideas import IdeaStatus
 from app.schemas.admin.test_signups import TestSignupStatus
 from app.services.notify import Notifier, Rendered, build_mailer
 
-ADMIN = "admin"
 AUTHOR = "author"
 IDEA = "Wspólne obiady dla samotnych seniorów w świetlicy wiejskiej"
 
 
 def samples(n: Notifier) -> None:
-    n.new_idea("8f3c", IDEA, "Raz w tygodniu seniorzy gotują razem z młodzieżą.", "seniorzy 65+", IdeaStage.CONCEPT)
-    n.new_problem_report("4a1b", "Seniorzy z naszej gminy nie mają jak dojechać do lekarza.", "Zakliczyn", ChallengeArea.SENIORS)
-    n.new_thread("wibraap", "Wibraap", "Czy działa z aparatem słuchowym?", "Pytam dla podopiecznych OPS.")
-    n.new_thread_reply("Czy działa z aparatem słuchowym?", "U nas działa, testowaliśmy w DPS.")
-    n.new_test_signups("Samotność seniorów na wsi", ["Wibraap", "Paczka dla seniora"])
     n.idea_replied(AUTHOR, IDEA, "Dziękujemy! Zapraszamy na rozmowę w przyszłym tygodniu.")
     n.idea_status_changed(AUTHOR, IDEA, IdeaStatus.ACCEPTED)
     n.idea_status_changed(AUTHOR, IDEA, IdeaStatus.REJECTED)
@@ -29,7 +22,7 @@ def samples(n: Notifier) -> None:
     n.reply_published(AUTHOR, "thread-author", "wibraap", "Czy działa z aparatem słuchowym?")
     n.grant_call_opened([AUTHOR], "Nabór ROPS 2026", date(2026, 12, 15), ["Opis problemu", "Budżet"])
     for status in (TestSignupStatus.ACCEPTED, TestSignupStatus.COMPLETED, TestSignupStatus.REJECTED):
-        n.test_signup_status(AUTHOR, "5d2e", "wibraap", "Wibraap", status)
+        n.test_signup_status(AUTHOR, "5d2e", "Wibraap", status)
 
 
 def main() -> None:
@@ -44,7 +37,7 @@ def main() -> None:
         def send(self, to: str, mail: Rendered) -> None:
             rendered.append(mail)
 
-    samples(Notifier(Collect(), lambda fn, *a: fn(*a), ADMIN, settings.web_url))
+    samples(Notifier(Collect(), lambda fn, *a: fn(*a), settings.web_url, api_url=settings.api_url))
 
     args.out.mkdir(parents=True, exist_ok=True)
     for i, mail in enumerate(rendered, 1):

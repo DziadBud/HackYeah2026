@@ -22,6 +22,8 @@ from app.schemas.public.match import (
     SimilarProblemReport,
 )
 from app.schemas.public.problem_reports import PublicProblemReport, SupportResponse
+from app.schemas.public.ratings import RatingState, RatingTarget
+from app.schemas.admin.test_signups import TestSignupStatus
 from app.schemas.public.threads import (
     ModerationStatus,
     Reply,
@@ -35,7 +37,6 @@ from app.services.admin.db import grant_call_to_schema, innovation_to_schema, pa
 from app.services.admin.innovation_upload import area_tag
 from app.services.admin.errors import InvalidRequestError, NotFoundError
 from app.services.public.drafts import grant_draft, middleman_card
-from app.services.notify import Notifier
 from app.services.public.interfaces import Retriever
 
 MAX_MATCHES = 3
@@ -64,10 +65,9 @@ def _document(row: DocumentRow) -> GeneratedDocument:
 
 
 class DbMatchService:
-    def __init__(self, db: Session, rag: Retriever, notifier: Notifier) -> None:
+    def __init__(self, db: Session, rag: Retriever) -> None:
         self._db = db
         self._rag = rag
-        self._notifier = notifier
 
     def match(self, data: MatchRequest, test_signup: bool) -> MatchResponse:
         if test_signup and not data.email:
@@ -109,12 +109,6 @@ class DbMatchService:
             ]
             self._db.add_all(signups)
         self._db.commit()
-        # only reports that left an email wait for a personal answer; the rest show up in the inbox
-        if data.email:
-            area = matches[0].challenge_areas[0] if matches and matches[0].challenge_areas else None
-            self._notifier.new_problem_report(str(report.id), data.text, data.city, area)
-        if signups:
-            self._notifier.new_test_signups(data.text, [i.title for i in matches])
 
         return MatchResponse(
             problem_report_id=str(report.id),
@@ -192,9 +186,8 @@ class DbProblemReportService:
 
 
 class DbIdeaService:
-    def __init__(self, db: Session, notifier: Notifier) -> None:
+    def __init__(self, db: Session) -> None:
         self._db = db
-        self._notifier = notifier
 
     def create(self, data: IdeaCreate) -> IdeaCreated:
         row = IdeaRow(
@@ -208,7 +201,6 @@ class DbIdeaService:
         )
         self._db.add(row)
         self._db.commit()
-        self._notifier.new_idea(str(row.id), data.summary, data.essence, data.target_group, data.stage)
         return IdeaCreated(id=str(row.id), status=IdeaStatus.NEW)
 
     def grant_application(self, idea_id: str, data: GrantApplicationRequest) -> GeneratedDocument:
@@ -297,9 +289,8 @@ class DbLibraryService:
 
 
 class DbThreadService:
-    def __init__(self, db: Session, notifier: Notifier) -> None:
+    def __init__(self, db: Session) -> None:
         self._db = db
-        self._notifier = notifier
 
     def list(self, innovation_id: str) -> list[Thread]:
         _published(self._db, innovation_id)
@@ -333,7 +324,7 @@ class DbThreadService:
         ]
 
     def create(self, innovation_id: str, data: ThreadCreate) -> Submitted:
-        innovation = _published(self._db, innovation_id)
+        _published(self._db, innovation_id)
         row = ThreadRow(
             innovation_id=innovation_id,
             title=data.title,
@@ -344,7 +335,6 @@ class DbThreadService:
         )
         self._db.add(row)
         self._db.commit()
-        self._notifier.new_thread(innovation_id, innovation.title, data.title, data.body)
         return Submitted(id=str(row.id), status=ModerationStatus.PENDING)
 
     def reply(self, thread_id: str, data: ReplyCreate) -> Submitted:
@@ -361,7 +351,6 @@ class DbThreadService:
         )
         self._db.add(row)
         self._db.commit()
-        self._notifier.new_thread_reply(thread.title, data.body)
         return Submitted(id=str(row.id), status=ModerationStatus.PENDING)
 
 
@@ -392,3 +381,55 @@ class DbKnowledgeService:
             select(GrantCallRow).where(GrantCallRow.open.is_(True)).order_by(GrantCallRow.deadline)
         ).all()
         return [grant_call_to_schema(r) for r in rows]
+
+
+RATEABLE = {TestSignupStatus.ACCEPTED.value, TestSignupStatus.COMPLETED.value}
+
+
+class DbRatingService:
+    def __init__(self, db: Session) -> None:
+        self._db = db
+
+    def _signup(self, signup_id: str, lock: bool = False) -> TestSignup | None:
+        try:
+            key = parse_uuid(signup_id)
+        except NotFoundError:
+            return None
+        query = select(TestSignup).where(TestSignup.id == key)
+        # two quick submits must not store two ratings
+        return self._db.scalars(query.with_for_update() if lock else query).first()
+
+    def _target(self, signup: TestSignup | None) -> RatingTarget:
+        if signup is None:
+            return RatingTarget(state=RatingState.UNAVAILABLE)
+        if signup.status == TestSignupStatus.RATED.value:
+            state = RatingState.RATED
+        elif signup.status in RATEABLE:
+            state = RatingState.OPEN
+        else:
+            state = RatingState.UNAVAILABLE
+        return RatingTarget(
+            state=state, innovation_id=signup.innovation_id, innovation_title=signup.innovation.title
+        )
+
+    def target(self, signup_id: str) -> RatingTarget:
+        return self._target(self._signup(signup_id))
+
+    def rate(self, signup_id: str, stars: int, comment: str) -> RatingTarget:
+        signup = self._signup(signup_id, lock=True)
+        target = self._target(signup)
+        if target.state != RatingState.OPEN:
+            self._db.rollback()
+            return target
+        assert signup is not None
+        self._db.add(
+            Feedback(
+                innovation_id=signup.innovation_id,
+                kind="test_signup",
+                stars=stars,
+                comment=comment.strip() or None,
+            )
+        )
+        signup.status = TestSignupStatus.RATED.value
+        self._db.commit()
+        return target.model_copy(update={"state": RatingState.RATED})

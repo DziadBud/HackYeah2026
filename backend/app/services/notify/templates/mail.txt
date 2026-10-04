@@ -1,6 +1,5 @@
-{% set rating_labels = {1: "Bardzo źle", 2: "Słabo", 3: "Średnio", 4: "Dobrze", 5: "Bardzo dobrze"} %}
 {% if redirected %}
-[Tryb testowy: ta wiadomość trafiłaby do {{ "koordynatora ROPS" if m.audience == "admin" else "autora zgłoszenia" }}.]
+[Tryb testowy: ta wiadomość trafiłaby do autora zgłoszenia.]
 
 {% endif %}
 MAŁOPOLSKI HUB INNOWACJI SPOŁECZNYCH
@@ -33,20 +32,9 @@ Co dalej?
 {{ loop.index }}. {{ step }}
 {% endfor %}
 {% endif %}
-{% if m.ratings %}
-
-Twoja ocena – otwórz jeden link:
-{% for n, url in m.ratings %}
-{{ n }}/5 – {{ rating_labels[n] }}: {{ url }}
-{% endfor %}
-{% endif %}
 
 {{ m.cta_label }}: {{ m.cta_url }}
 
 --
-{% if m.audience == "admin" %}
-Powiadomienie z panelu Hubu Innowacji Społecznych.
-{% else %}
 Piszemy, bo przy zgłoszeniu w Hubie zostawiono ten adres e-mail.
-{% endif %}
 {{ web_url }}

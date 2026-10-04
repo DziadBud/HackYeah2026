@@ -36,11 +36,12 @@ class Settings(BaseSettings):
     smtp_username: str = ""
     smtp_password: str = ""
     mail_from: str = ""
-    admin_notify_email: str = ""
     # testing: send every notification here instead of the real recipient
     mail_redirect_to: str = ""
     # public frontend, for links in mails
     web_url: str = "http://localhost:3000"
+    # this api as seen from a browser, for the rating links in tester mails
+    api_url: str = "http://localhost:8000"
 
 
 settings = Settings()

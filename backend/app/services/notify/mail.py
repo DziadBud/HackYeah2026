@@ -2,18 +2,15 @@ import smtplib
 from dataclasses import dataclass
 from email.message import EmailMessage
 from pathlib import Path
-from typing import Literal, Protocol
+from typing import Protocol
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined, select_autoescape
-
-Audience = Literal["admin", "author"]
 
 
 @dataclass(frozen=True)
 class Mail:
     # one layout for every notification; the notifier only fills these fields
     subject: str
-    audience: Audience
     heading: str
     intro: str
     cta_label: str
@@ -25,7 +22,6 @@ class Mail:
     reply: str = ""
     details: tuple[tuple[str, str], ...] = ()
     steps: tuple[str, ...] = ()
-    ratings: tuple[tuple[int, str], ...] = ()
 
 
 @dataclass(frozen=True)

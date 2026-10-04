@@ -1,4 +1,5 @@
-# R10/R12: email notifications to the ROPS admin and to authors who left an email
+# R10/R12: email notifications to users who left their own email (consent given on the item).
+# the admin gets no mail: new items wait in the admin inbox (GET /admin/inbox)
 # at-most-once: sent in a background task after the commit, a failed send is logged and dropped.
 # the admin inbox stays the source of truth, so a lost mail delays a reply but loses no data
 import logging
@@ -10,8 +11,7 @@ from urllib.parse import urlencode
 from fastapi import BackgroundTasks
 
 from app.config import settings
-from app.schemas.admin.common import ChallengeArea
-from app.schemas.admin.ideas import IdeaStage, IdeaStatus
+from app.schemas.admin.ideas import IdeaStatus
 from app.schemas.admin.test_signups import TestSignupStatus
 from app.services.notify.mail import Mail, Mailer, Rendered, SmtpMailer, build_mailer, render
 
@@ -19,26 +19,8 @@ __all__ = ["Mail", "Mailer", "Notifier", "Rendered", "SmtpMailer", "build_mailer
 
 logger = logging.getLogger(__name__)
 
-STAGE_LABELS = {
-    IdeaStage.CONCEPT: "pomysł na papierze",
-    IdeaStage.PROTOTYPE: "prototyp",
-    IdeaStage.PILOT: "pilotaż",
-    IdeaStage.RUNNING: "już działa",
-}
-AREA_LABELS = {
-    ChallengeArea.FOSTER_CARE: "Rodzina i piecza zastępcza",
-    ChallengeArea.HOMELESSNESS: "Bezdomność",
-    ChallengeArea.DISABILITY: "Niepełnosprawność",
-    ChallengeArea.POVERTY: "Ubóstwo",
-    ChallengeArea.FOREIGNERS: "Integracja cudzoziemców",
-    ChallengeArea.HEALTH: "Zdrowie",
-    ChallengeArea.MENTAL_HEALTH: "Zdrowie psychiczne",
-    ChallengeArea.SENIORS: "Seniorzy",
-}
 # community section on the innovation page (frontend Community.tsx)
 COMMUNITY_ANCHOR = "community-heading"
-# rating form on the innovation page (frontend FE-02)
-RATING_ANCHOR = "ocena"
 
 Schedule = Callable[..., Any]
 
@@ -54,23 +36,23 @@ class Notifier:
         self,
         mailer: Mailer | None,
         schedule: Schedule,
-        admin_email: str,
         web_url: str,
         redirect_to: str = "",
+        api_url: str = "",
     ) -> None:
         self._mailer = mailer
         self._schedule = schedule
-        self._admin_email = admin_email
         self._web_url = web_url.rstrip("/")
         self._redirect_to = redirect_to
+        self._api_url = api_url.rstrip("/")
 
     def _send(self, to: str | None, mail: Mail) -> None:
-        # testing: every mail goes to one inbox, even when the author left no email,
-        # so the whole reply path can be checked before the frontend collects emails
-        if self._redirect_to:
-            to = self._redirect_to
+        # only people who gave their own address get mail
         if self._mailer is None or not to:
             return
+        # testing: real recipients are swapped for one inbox
+        if self._redirect_to:
+            to = self._redirect_to
         # rendered here, not in the task: a template error fails the request's tests, not silently later
         rendered = render(mail, self._web_url, redirected=bool(self._redirect_to))
         self._schedule(self._deliver, to, rendered)
@@ -86,109 +68,14 @@ class Notifier:
     def _url(self, path: str, **query: str) -> str:
         return f"{self._web_url}{path}" + (f"?{urlencode(query)}" if query else "")
 
-    def _innovation_url(self, innovation_id: str, anchor: str = "", **query: str) -> str:
-        url = self._url(f"/innowacje/{innovation_id}", **query)
-        return f"{url}#{anchor}" if anchor else url
-
-    # to the admin
-
-    def new_idea(
-        self, idea_id: str, summary: str, essence: str, target_group: str, stage: IdeaStage
-    ) -> None:
-        self._send(
-            self._admin_email,
-            Mail(
-                subject=f"Nowa propozycja: {_short(summary)}",
-                audience="admin",
-                preheader=_short(essence, 120),
-                heading="Ktoś chce coś zmienić w swojej okolicy",
-                intro="Przez Kreator pomysłów przyszła nowa propozycja. Autor czeka na Twoją odpowiedź.",
-                quote_label="Propozycja",
-                quote=f"{summary}\n\n{essence}",
-                details=(("Dla kogo", target_group), ("Na jakim etapie", STAGE_LABELS[stage])),
-                cta_label="Przejrzyj i odpowiedz",
-                cta_url=self._url("/admin"),
-            ),
-        )
-
-    def new_problem_report(
-        self, problem_report_id: str, text: str, city: str, area: ChallengeArea | None
-    ) -> None:
-        details = tuple(
-            (label, value)
-            for label, value in (("Skąd", city), ("Obszar", AREA_LABELS[area] if area else ""))
-            if value
-        )
-        self._send(
-            self._admin_email,
-            Mail(
-                subject=f"Ktoś czeka na kontakt: {_short(text)}",
-                audience="admin",
-                preheader=_short(text, 120),
-                heading="Mieszkaniec opisał problem i prosi o kontakt",
-                intro="Twoja odpowiedź z panelu trafi do niego e-mailem.",
-                quote_label="Opis problemu",
-                quote=text,
-                details=details,
-                cta_label="Odpowiedz",
-                cta_url=self._url("/admin/zgloszenia"),
-            ),
-        )
-
-    def new_thread(self, innovation_id: str, innovation_title: str, title: str, body: str) -> None:
-        self._send(
-            self._admin_email,
-            Mail(
-                subject=f"Nowe pytanie w społeczności: {_short(title)}",
-                audience="admin",
-                heading="Nowe pytanie czeka na publikację",
-                intro=f"Dotyczy innowacji „{innovation_title}”. Po publikacji zobaczą je wszyscy odwiedzający.",
-                quote_label=title,
-                quote=body,
-                cta_label="Opublikuj lub ukryj",
-                cta_url=self._url("/admin"),
-            ),
-        )
-
-    def new_thread_reply(self, thread_title: str, body: str) -> None:
-        self._send(
-            self._admin_email,
-            Mail(
-                subject=f"Nowa odpowiedź do sprawdzenia: {_short(thread_title)}",
-                audience="admin",
-                heading="Ktoś odpowiedział w dyskusji",
-                intro=f"Dyskusja: „{thread_title}”. Odpowiedź pojawi się na stronie po Twojej akceptacji.",
-                quote=body,
-                quote_label="Odpowiedź",
-                cta_label="Sprawdź odpowiedź",
-                cta_url=self._url("/admin"),
-            ),
-        )
-
-    def new_test_signups(self, problem_text: str, innovation_titles: list[str]) -> None:
-        self._send(
-            self._admin_email,
-            Mail(
-                subject=f"Chętny do testów: {_short(', '.join(innovation_titles))}",
-                audience="admin",
-                heading="Ktoś chce przetestować rozwiązanie u siebie",
-                intro="Zgłoszenie przyszło razem z opisem problemu, z którym ta osoba się mierzy.",
-                quote_label="Z czym się mierzy",
-                quote=problem_text,
-                details=tuple(("Chce testować", t) for t in innovation_titles),
-                cta_label="Rozpatrz zgłoszenie",
-                cta_url=self._url("/admin"),
-            ),
-        )
-
-    # to authors
+    def _innovation_url(self, innovation_id: str, anchor: str) -> str:
+        return f"{self._url(f'/innowacje/{innovation_id}')}#{anchor}"
 
     def idea_replied(self, email: str | None, summary: str, reply: str) -> None:
         self._send(
             email,
             Mail(
                 subject="Mamy odpowiedź w sprawie Twojej propozycji",
-                audience="author",
                 preheader=_short(reply, 120),
                 heading="Dzięki, że chcesz coś zmienić!",
                 intro="Zespół Hubu przyjrzał się Twojej propozycji i przesyła odpowiedź.",
@@ -205,7 +92,6 @@ class Notifier:
         if status == IdeaStatus.ACCEPTED:
             mail = Mail(
                 subject="Dobra wiadomość: Twoja propozycja przechodzi dalej",
-                audience="author",
                 badge="Przyjęta",
                 heading="Twoja propozycja przechodzi dalej!",
                 intro="Zespół Hubu chce ją rozwijać razem z Tobą.",
@@ -221,7 +107,6 @@ class Notifier:
         elif status == IdeaStatus.REJECTED:
             mail = Mail(
                 subject="Odpowiedź w sprawie Twojej propozycji",
-                audience="author",
                 heading="Tym razem nie możemy jej rozwinąć",
                 intro=(
                     "Dziękujemy za zaangażowanie. Często podobny problem rozwiązuje już sprawdzona "
@@ -241,7 +126,6 @@ class Notifier:
             email,
             Mail(
                 subject="Mamy odpowiedź na Twoje zgłoszenie",
-                audience="author",
                 preheader=_short(reply, 120),
                 heading="Mamy odpowiedź na Twoje zgłoszenie",
                 intro="Tę samą odpowiedź zobaczą osoby, które zgłosiły podobny problem.",
@@ -258,7 +142,6 @@ class Notifier:
             email,
             Mail(
                 subject="Twoje pytanie jest już widoczne",
-                audience="author",
                 heading="Twoje pytanie jest już w społeczności",
                 intro="Inni praktycy i eksperci mogą teraz odpowiadać. Napiszemy, gdy ktoś się odezwie.",
                 quote_label="Pytanie",
@@ -276,7 +159,6 @@ class Notifier:
             reply_email,
             Mail(
                 subject="Twoja odpowiedź jest już widoczna",
-                audience="author",
                 heading="Dziękujemy za podzielenie się doświadczeniem",
                 intro=f"Twoja odpowiedź w dyskusji „{title}” jest już widoczna dla wszystkich.",
                 cta_label="Zobacz dyskusję",
@@ -288,8 +170,7 @@ class Notifier:
                 thread_email,
                 Mail(
                     subject="Ktoś odpowiedział na Twoje pytanie",
-                    audience="author",
-                    heading="Ktoś odpowiedział na Twoje pytanie",
+                        heading="Ktoś odpowiedział na Twoje pytanie",
                     intro=f"W dyskusji „{title}” pojawiła się nowa odpowiedź.",
                     cta_label="Przeczytaj",
                     cta_url=url,
@@ -304,7 +185,6 @@ class Notifier:
             details += (("We wniosku opiszesz", ", ".join(sections)),)
         mail = Mail(
             subject=f"Ruszył nabór „{name}”",
-            audience="author",
             badge="Nabór otwarty",
             heading=f"Ruszył nabór „{name}”",
             intro=(
@@ -316,51 +196,42 @@ class Notifier:
             cta_url=self._url("/", wniosek="1"),
         )
         # one mail per author, so addresses are never shared between recipients
-        for email in [self._redirect_to] if self._redirect_to else emails:
+        recipients = list(emails)
+        # testing: one copy is enough when everything goes to the same inbox
+        for email in recipients[:1] if self._redirect_to else recipients:
             self._send(email, mail)
 
     def test_signup_status(
         self,
         email: str,
         signup_id: str,
-        innovation_id: str,
         innovation_title: str,
         status: TestSignupStatus,
     ) -> None:
-        # the signup id in the link is the tester's token for the rating form; it is never shown as text
-        rate_url = self._innovation_url(innovation_id, RATING_ANCHOR, test_signup=signup_id)
         if status == TestSignupStatus.ACCEPTED:
             mail = Mail(
                 subject=f"Zapraszamy do testów: {innovation_title}",
-                audience="author",
                 badge="Jesteś w testach",
                 heading=f"Zapraszamy Cię do testów „{innovation_title}”",
                 intro="Super, że chcesz sprawdzić to rozwiązanie u siebie.",
                 steps=(
-                    "Przeczytaj opis i materiały na stronie innowacji.",
                     "Wypróbuj rozwiązanie w swojej gminie lub organizacji. W razie pytań zespół Hubu pomoże.",
-                    "Na koniec oceń, jak się sprawdziło – wystarczy wrócić na stronę z tej wiadomości.",
+                    "Po teście oceń je – wystarczy przycisk poniżej. Warto zachować tę wiadomość.",
                 ),
-                cta_label="Przejdź do innowacji",
-                cta_url=rate_url,
+                cta_label="Oceń rozwiązanie",
+                cta_url=self._rating_url(signup_id),
             )
         elif status == TestSignupStatus.COMPLETED:
             mail = Mail(
                 subject=f"Jak sprawdził się „{innovation_title}”?",
-                audience="author",
                 heading=f"Jak sprawdził się „{innovation_title}”?",
-                intro="Dziękujemy za testy! Twoja ocena pomoże innym gminom wybrać dobre rozwiązanie.",
-                ratings=tuple(
-                    (n, self._innovation_url(innovation_id, RATING_ANCHOR, test_signup=signup_id, rating=str(n)))
-                    for n in range(5, 0, -1)
-                ),
-                cta_label="Dodaj opinię",
-                cta_url=rate_url,
+                intro="Dziękujemy za testy! Twoja ocena pomoże innym gminom wybrać dobre rozwiązanie. To zajmie chwilę.",
+                cta_label="Oceń rozwiązanie",
+                cta_url=self._rating_url(signup_id),
             )
         elif status == TestSignupStatus.REJECTED:
             mail = Mail(
                 subject=f"Testy „{innovation_title}”",
-                audience="author",
                 heading="Tym razem zabrakło miejsc w testach",
                 intro=(
                     f"Dziękujemy za chęć przetestowania „{innovation_title}”. Liczba miejsc była "
@@ -372,6 +243,11 @@ class Notifier:
         else:
             return
         self._send(email, mail)
+
+    def _rating_url(self, signup_id: str) -> str:
+        # the signup id is the tester's token; it lives only inside the link.
+        # the api serves the rating page itself, so it works without the frontend
+        return f"{self._api_url}/ratings/{signup_id}"
 
 
 _mailer = build_mailer(
@@ -387,7 +263,7 @@ def get_notifier(background: BackgroundTasks) -> Notifier:
     return Notifier(
         _mailer,
         background.add_task,
-        settings.admin_notify_email,
         settings.web_url,
         settings.mail_redirect_to,
+        settings.api_url,
     )
