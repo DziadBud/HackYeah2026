@@ -38,7 +38,7 @@ type State =
 
 function fromApi(i: LibraryInnovation): View {
   const details = [
-    { label: "Dla kogo", value: i.target_group.join(", ") },
+    { label: "Dla kogo", value: (i.target_group ?? []).join(", ") },
     { label: "Etap", value: i.readiness ? READINESS[i.readiness] : "" },
     { label: "Koszt wdrożenia", value: i.cost_level ? COST[i.cost_level] : "" },
     {
@@ -59,7 +59,8 @@ function fromApi(i: LibraryInnovation): View {
     solution: i.summary,
     deployedIn: i.city || undefined,
     details,
-    videoUrl: i.video_url,
+    // the backend has no video_url; films are linked through page_url
+    videoUrl: i.video_url || i.page_url,
     pdfUrl: i.has_pdf ? api.innovationPdfUrl(i.id) : SAMPLE_PDF_URL,
   };
 }
@@ -243,11 +244,11 @@ export function InnovationDetail({ id }: { id: string }) {
                 ))}
                 {i.videoUrl && (
                   <>
-                    <dt className="font-semibold text-primary">Film</dt>
+                    <dt className="font-semibold text-primary">Strona lub film</dt>
                     <dd>
                       <a href={i.videoUrl} className="inline-flex min-h-12 items-center gap-1 text-primary underline">
-                        <Icon name="play_circle" />
-                        Obejrzyj film o innowacji
+                        <Icon name="arrow_forward" />
+                        Zobacz stronę lub film o innowacji
                       </a>
                     </dd>
                   </>

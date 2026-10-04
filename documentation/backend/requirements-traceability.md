@@ -49,7 +49,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 - **Where:** `/admin/*` behind the admin session (§4, §5).
 - **How:**
   - login
-  - innovation create from a PDF (file saved, draft row, background call to rag `/embed/pdf`, published on success), metadata edit (`title`, `summary`, `challenge_areas`, `city`, `page_url`), publish/unpublish, feedback counts
+  - innovation create from a PDF (file saved, draft row, background call to rag `/embed/pdf`, published on success; panel form at `/admin/innowacje/nowa`), metadata edit (`title`, `summary`, `challenge_areas`, `city`, `page_url`; panel form at `/admin/innowacje/{id}/edytuj`), publish/unpublish, feedback counts
   - innovation list with stats per innovation: matches (total, 7d trend, by week, area and city), people reached, testers, ratings, matched problems (`/admin/reports/innovations`, `/admin/innovations/{id}/stats`)
   - inbox: new ideas, problem reports, critical problem reports, signups, pending threads / replies
   - replies, idea status, test signup status, thread moderation, grant call open/close, generated-document list, reports with CSV
