@@ -7,3 +7,4 @@ pgvector==0.3.*
 argon2-cffi==25.*
 httpx==0.28.*
 python-multipart==0.0.*
+jinja2==3.*

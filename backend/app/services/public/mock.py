@@ -26,6 +26,7 @@ from app.schemas.public.threads import (
     ThreadCreate,
 )
 from app.services.admin.errors import InvalidRequestError, NotFoundError
+from app.schemas.public.ratings import RatingState, RatingTarget
 from app.services.public.drafts import grant_draft, middleman_card, overlap, words
 from app.services.admin.mock import (
     MockGrantCallAdminService,
@@ -352,3 +353,31 @@ class MockKnowledgeService:
 
     def open_grant_calls(self) -> list[GrantCall]:
         return [c for c in self._grant_calls.list() if c.open]
+
+
+class MockRatingService:
+    def __init__(self) -> None:
+        self.feedback: list[tuple[str, int, str]] = []
+        self._signups: dict[str, tuple[str, str, str]] = {
+            # id: (status, innovation_id, title)
+            "signup-accepted": ("accepted", "wibraap", "Wibraap"),
+            "signup-applied": ("applied", "wibraap", "Wibraap"),
+        }
+
+    def target(self, signup_id: str) -> RatingTarget:
+        if signup_id not in self._signups:
+            return RatingTarget(state=RatingState.UNAVAILABLE)
+        status, innovation_id, title = self._signups[signup_id]
+        state = {"accepted": RatingState.OPEN, "completed": RatingState.OPEN, "rated": RatingState.RATED}.get(
+            status, RatingState.UNAVAILABLE
+        )
+        return RatingTarget(state=state, innovation_id=innovation_id, innovation_title=title)
+
+    def rate(self, signup_id: str, stars: int, comment: str) -> RatingTarget:
+        target = self.target(signup_id)
+        if target.state != RatingState.OPEN:
+            return target
+        self.feedback.append((signup_id, stars, comment))
+        _, innovation_id, title = self._signups[signup_id]
+        self._signups[signup_id] = ("rated", innovation_id, title)
+        return target.model_copy(update={"state": RatingState.RATED})

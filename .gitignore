@@ -243,3 +243,6 @@ yarn-error.log*
 # typescript incremental build cache
 *.tsbuildinfo
 backend/data/
+
+# notification previews (backend/scripts/preview_mails.py)
+mail-preview/

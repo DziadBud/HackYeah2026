@@ -20,6 +20,7 @@ from app.services.admin.db import (
     DbInnovationStore,
     DbProblemReportAdminService,
     DbReportAdminService,
+    DbTestSignupAdminService,
     DbThreadAdminService,
 )
 from app.services.admin.innovation_upload import InnovationUploadService
@@ -30,8 +31,10 @@ from app.services.admin.interfaces import (
     InnovationAdminService,
     ProblemReportAdminService,
     ReportAdminService,
+    TestSignupAdminService,
     ThreadAdminService,
 )
+from app.services.notify import Notifier, get_notifier
 from app.storage import LocalFileStorage
 
 _admins = (
@@ -66,24 +69,30 @@ def get_inbox_service(db: Session = Depends(get_db)) -> InboxAdminService:
     return DbInboxAdminService(db)
 
 
-def get_idea_service(db: Session = Depends(get_db)) -> IdeaAdminService:
-    return DbIdeaAdminService(db)
+def get_idea_service(db: Session = Depends(get_db), notifier: Notifier = Depends(get_notifier)) -> IdeaAdminService:
+    return DbIdeaAdminService(db, notifier)
 
 
-def get_problem_report_service(db: Session = Depends(get_db)) -> ProblemReportAdminService:
-    return DbProblemReportAdminService(db)
+def get_problem_report_service(db: Session = Depends(get_db), notifier: Notifier = Depends(get_notifier)) -> ProblemReportAdminService:
+    return DbProblemReportAdminService(db, notifier)
 
 
-def get_grant_call_service(db: Session = Depends(get_db)) -> GrantCallAdminService:
-    return DbGrantCallAdminService(db)
+def get_grant_call_service(db: Session = Depends(get_db), notifier: Notifier = Depends(get_notifier)) -> GrantCallAdminService:
+    return DbGrantCallAdminService(db, notifier)
 
 
 def get_report_service(db: Session = Depends(get_db)) -> ReportAdminService:
     return DbReportAdminService(db)
 
 
-def get_thread_service(db: Session = Depends(get_db)) -> ThreadAdminService:
-    return DbThreadAdminService(db)
+def get_thread_service(db: Session = Depends(get_db), notifier: Notifier = Depends(get_notifier)) -> ThreadAdminService:
+    return DbThreadAdminService(db, notifier)
+
+
+def get_test_signup_service(
+    db: Session = Depends(get_db), notifier: Notifier = Depends(get_notifier)
+) -> TestSignupAdminService:
+    return DbTestSignupAdminService(db, notifier)
 
 
 # own short sessions inside the store: the row must be committed before rag embeds it

@@ -12,6 +12,7 @@ from app.services.public.db import (
     DbLibraryService,
     DbMatchService,
     DbProblemReportService,
+    DbRatingService,
     DbThreadService,
 )
 from app.services.public.interfaces import (
@@ -21,6 +22,7 @@ from app.services.public.interfaces import (
     LibraryService,
     MatchService,
     ProblemReportService,
+    RatingService,
     ThreadService,
 )
 
@@ -54,3 +56,7 @@ def get_document_service(db: Session = Depends(get_db)) -> DocumentService:
 
 def get_knowledge_service(db: Session = Depends(get_db)) -> KnowledgeService:
     return DbKnowledgeService(db)
+
+
+def get_rating_service(db: Session = Depends(get_db)) -> RatingService:
+    return DbRatingService(db)
