@@ -32,5 +32,20 @@ class Settings(BaseSettings):
     gemini_api_key: str = ""
     gemini_model: str = "gemini-2.0-flash"
 
+    # notifications (R10/R12); empty smtp_host or mail_from turns them off.
+    # no default addresses on purpose: a fallback could mail a real inbox by accident
+    smtp_host: str = ""
+    smtp_port: int = 1025
+    # set for a real relay (gmail: 587, app password); empty for mailpit
+    smtp_username: str = ""
+    smtp_password: str = ""
+    mail_from: str = ""
+    # testing: send every notification here instead of the real recipient
+    mail_redirect_to: str = ""
+    # public frontend, for links in mails
+    web_url: str = "http://localhost:3000"
+    # this api as seen from a browser, for the rating links in tester mails
+    api_url: str = "http://localhost:8000"
+
 
 settings = Settings()

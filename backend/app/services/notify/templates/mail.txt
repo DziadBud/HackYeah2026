@@ -1,0 +1,40 @@
+{% if redirected %}
+[Tryb testowy: ta wiadomość trafiłaby do autora zgłoszenia.]
+
+{% endif %}
+MAŁOPOLSKI HUB INNOWACJI SPOŁECZNYCH
+
+{% if m.badge %}[{{ m.badge }}]
+{% endif %}
+{{ m.heading }}
+
+{{ m.intro }}
+{% if m.quote %}
+
+{{ m.quote_label }}:
+{{ m.quote }}
+{% endif %}
+{% if m.reply %}
+
+Odpowiedź zespołu Hubu:
+{{ m.reply }}
+{% endif %}
+{% if m.details %}
+
+{% for label, value in m.details %}
+{{ label }}: {{ value }}
+{% endfor %}
+{% endif %}
+{% if m.steps %}
+
+Co dalej?
+{% for step in m.steps %}
+{{ loop.index }}. {{ step }}
+{% endfor %}
+{% endif %}
+
+{{ m.cta_label }}: {{ m.cta_url }}
+
+--
+Piszemy, bo przy zgłoszeniu w Hubie zostawiono ten adres e-mail.
+{{ web_url }}

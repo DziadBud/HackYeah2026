@@ -29,10 +29,10 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
   - assistant and visualisation: stretch
 
 ## R4 Tester innowacji (S)
-- **Where:** `POST /match?test_signup=true`, `test_signups`, `feedback` ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)).
+- **Where:** `POST /match?test_signup=true`, `GET /admin/test-signups`, `POST /admin/test-signups/{id}/status`, `test_signups`, `feedback` ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)).
 - **How:**
-  - testing is part of matching: with `?test_signup=true` and an email, the user volunteers to test the innovations matched for their problem (one `test_signups` row each, linked to the problem report); the admin accepts, rejects or marks `completed`, and the applicant is emailed
-  - the public UI does not call it yet: the chat has no email field, and "Zgłoś się do testowania" on an innovation page opens the "Złóż wniosek" form (`POST /ideas`), so tester requests arrive in the ideas inbox; the endpoint and the admin side are unchanged
+  - testing is part of matching: with `?test_signup=true` and an email, the user volunteers to test the innovations matched for their problem (one `test_signups` row each, linked to the problem report); the admin accepts, rejects or marks `completed`, and the applicant is emailed: the accepted and completed mails carry one "Oceń rozwiązanie" button to match-api's own rating page (`/ratings/{signup_id}`): stars and an optional comment, saved once per signup (status `rated`)
+  - the public UI does not call `?test_signup=true` yet: "Zgłoś się do testowania" on an innovation page expands an email form and sends `POST /ideas` into the ideas inbox; the match test-signup endpoint and the admin side are unchanged
   - ratings and comments go to `feedback` (per-IP rate limited); improvement proposals are comments; optional `test_signup_id` marks feedback from a real tester
   - the admin sees the rating average, count, star distribution, comments and signups by status per innovation (`GET /admin/innovations/{id}/stats`)
 
@@ -71,7 +71,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 
 ## R10 Integration and automation (X)
 - **Where:** admin inbox (§5), email notifier (§4), `grant_calls`.
-- **How:** the inbox surfaces new items (ideas, problem reports, signups, pending threads). The optional email notifier (background task after commit, at-most-once, Mailpit in the demo) emails the admin on new ideas, problem reports and pending threads, and authors on replies, status changes and published threads. Grant calls have an open/close switch. An outbox and webhooks for the grant DB are deferred (§8).
+- **How:** the inbox surfaces new items (ideas, problem reports, test signups, pending threads and replies). The admin is never emailed: the inbox in the panel is where new items are reviewed and accepted. The email notifier (background task after commit, at-most-once, Mailpit in the demo) mails only users who left their own email: on replies, idea decisions, published threads / replies and test signup decisions. Opening a grant call emails every idea author who left an email. An outbox and webhooks for the grant DB are deferred (§8).
 
 ## R11 Data security, no real personal data (X)
 - **Where:** §4, §6.
@@ -86,7 +86,7 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
 ## R12 Fast admin notification and reply path (jury question)
 - **Where:** inbox + replies (§5), threads moderation, email notifier (§4).
 - **How:**
-  1. Every new idea, problem report or pending thread appears in `GET /admin/inbox?since=`, and the admin gets an email.
+  1. Every new idea, problem report or pending thread / reply appears in `GET /admin/inbox?since=`; the admin panel shows it there (no admin email).
   2. The admin sets `admin_reply`, or publishes / hides a thread.
   3. An author with an email gets it by email; a problem report reply is also on its public page for everyone who pressed "mnie też".
 

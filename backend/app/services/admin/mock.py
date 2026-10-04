@@ -26,11 +26,17 @@ from app.schemas.admin.innovations import (
 )
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
+from app.schemas.admin.test_signups import TestSignup, TestSignupStatus
 from app.schemas.admin.threads import AdminReply, AdminThread
 from app.schemas.public.threads import ModerationStatus, ReplyKind
 from app.services.admin.errors import NotFoundError
 from app.services.admin.innovation_upload import NewInnovation
-from app.services.admin.interfaces import IdeaAdminService, ProblemReportAdminService
+from app.services.admin.interfaces import (
+    IdeaAdminService,
+    ProblemReportAdminService,
+    TestSignupAdminService,
+    ThreadAdminService,
+)
 
 NOW = datetime(2026, 10, 3, 9, 0, tzinfo=timezone.utc)
 MIN_LOCATION_PROBLEM_REPORTS = 5
@@ -395,10 +401,16 @@ class MockProblemReportAdminService:
 class MockInboxAdminService:
     # reads through the other services so status changes and replies show up here
     def __init__(
-        self, ideas: IdeaAdminService, problem_reports: ProblemReportAdminService
+        self,
+        ideas: IdeaAdminService,
+        problem_reports: ProblemReportAdminService,
+        threads: ThreadAdminService,
+        test_signups: TestSignupAdminService,
     ) -> None:
         self._ideas = ideas
         self._problem_reports = problem_reports
+        self._threads = threads
+        self._test_signups = test_signups
 
     def get(self, since: datetime | None) -> Inbox:
         def fresh(created_at: datetime) -> bool:
@@ -411,6 +423,12 @@ class MockInboxAdminService:
                 r for r in reports if r.admin_reply is None and fresh(r.created_at)
             ],
             critical_problem_reports=[r for r in reports if r.is_critical],
+            pending_threads=self._threads.list(ModerationStatus.PENDING, None),
+            new_test_signups=[
+                s
+                for s in self._test_signups.list(None, TestSignupStatus.APPLIED)
+                if fresh(s.created_at)
+            ],
         )
 
 
@@ -554,3 +572,42 @@ class MockThreadAdminService:
                     thread.replies[i] = reply.model_copy(update={"status": status})
                     return thread.replies[i]
         raise NotFoundError(reply_id)
+
+
+class MockTestSignupAdminService:
+    def __init__(self) -> None:
+        self._items: dict[str, TestSignup] = {
+            "signup-1": TestSignup(
+                id="signup-1",
+                innovation_id="wibraap",
+                innovation_title="Wibraap",
+                problem_report_id="problem-report-1",
+                email="tester@example.com",
+                status=TestSignupStatus.APPLIED,
+                created_at=NOW - timedelta(hours=3),
+            ),
+            "signup-2": TestSignup(
+                id="signup-2",
+                innovation_id="wibraap",
+                innovation_title="Wibraap",
+                problem_report_id="problem-report-2",
+                email="tester2@example.com",
+                status=TestSignupStatus.ACCEPTED,
+                created_at=NOW - timedelta(days=2),
+            ),
+        }
+
+    def list(self, innovation_id: str | None, status: TestSignupStatus | None) -> list[TestSignup]:
+        return [
+            s
+            for s in self._items.values()
+            if (innovation_id is None or s.innovation_id == innovation_id)
+            and (status is None or s.status == status)
+        ]
+
+    def set_status(self, signup_id: str, status: TestSignupStatus) -> TestSignup:
+        if signup_id not in self._items:
+            raise NotFoundError(signup_id)
+        updated = self._items[signup_id].model_copy(update={"status": status})
+        self._items[signup_id] = updated
+        return updated

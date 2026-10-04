@@ -1,5 +1,7 @@
 # BE-01 Notifier + Mailpit
 
+**Status:** implemented on `feat/notifier`. Decision: no admin mail at all; the admin works from the inbox, only users with their own email get mail. Test signup status mails land with BE-04 (no status endpoint yet). Not verified against a running compose stack yet.
+
 **Criterion:** R10, R12 (jury: "how is the admin notified, how does the reply reach the author"). Hard req: automated notifications.
 **PR:** `feat/notifier-rate-limit`
 

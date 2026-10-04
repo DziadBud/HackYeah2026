@@ -8,3 +8,4 @@ argon2-cffi==25.*
 google-genai==2.*
 httpx==0.28.*
 python-multipart==0.0.*
+jinja2==3.*

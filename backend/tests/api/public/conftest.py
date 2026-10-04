@@ -21,6 +21,7 @@ def fresh_services():
     problem_reports = admin_mock.MockProblemReportAdminService()
     grant_calls = admin_mock.MockGrantCallAdminService()
     documents = mock.MockDocumentStore()
+    ratings = mock.MockRatingService()
     services = {
         deps.get_match_service: mock.MockMatchService(innovations, problem_reports),
         deps.get_problem_report_service: mock.MockProblemReportService(problem_reports),
@@ -29,12 +30,13 @@ def fresh_services():
         deps.get_thread_service: mock.MockThreadService(innovations),
         deps.get_document_service: mock.MockDocumentService(innovations, documents),
         deps.get_knowledge_service: mock.MockKnowledgeService(innovations, grant_calls),
+        deps.get_rating_service: ratings,
         admin_deps.get_idea_service: ideas,
         admin_deps.get_problem_report_service: problem_reports,
         admin_deps.get_grant_call_service: grant_calls,
     }
     app.dependency_overrides = {dep: _provide(svc) for dep, svc in services.items()}
-    yield
+    yield ratings
     app.dependency_overrides = {}
 
 

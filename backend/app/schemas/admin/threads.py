@@ -30,5 +30,5 @@ class AdminThread(BaseModel):
 
 
 class ModerationDecision(BaseModel):
-    # back to pending is not a moderation decision
-    status: Literal[ModerationStatus.PUBLISHED, ModerationStatus.HIDDEN]
+    # pending = nowy (not public); published = accepted; hidden = rejected
+    status: ModerationStatus

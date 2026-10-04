@@ -16,6 +16,7 @@ from app.schemas.admin.innovations import (
 )
 from app.schemas.admin.problem_reports import ProblemReport
 from app.schemas.admin.reports import LocationRow, CriticalRow, GapRow, TrendRow
+from app.schemas.admin.test_signups import TestSignup, TestSignupStatus
 from app.schemas.admin.threads import AdminReply, AdminThread
 from app.schemas.public.threads import ModerationStatus
 
@@ -105,3 +106,10 @@ class ThreadAdminService(Protocol):
     def list(self, status: ModerationStatus | None, innovation_id: str | None) -> list[AdminThread]: ...
     def set_status(self, thread_id: str, status: ModerationStatus) -> AdminThread: ...
     def set_reply_status(self, reply_id: str, status: ModerationStatus) -> AdminReply: ...
+
+
+# R4 tester innowacji: admin decides on signups; every decision mails the tester,
+# accepted and completed carry the rating link
+class TestSignupAdminService(Protocol):
+    def list(self, innovation_id: str | None, status: TestSignupStatus | None) -> list[TestSignup]: ...
+    def set_status(self, signup_id: str, status: TestSignupStatus) -> TestSignup: ...

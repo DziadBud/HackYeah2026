@@ -32,6 +32,8 @@ from app.schemas.public.match import (
     SimilarProblemReport,
 )
 from app.schemas.public.problem_reports import PublicProblemReport, SupportResponse
+from app.schemas.public.ratings import RatingState, RatingTarget
+from app.schemas.admin.test_signups import TestSignupStatus
 from app.schemas.public.threads import (
     ModerationStatus,
     Reply,
@@ -463,3 +465,55 @@ class DbKnowledgeService:
             select(GrantCallRow).where(GrantCallRow.open.is_(True)).order_by(GrantCallRow.deadline)
         ).all()
         return [grant_call_to_schema(r) for r in rows]
+
+
+RATEABLE = {TestSignupStatus.ACCEPTED.value, TestSignupStatus.COMPLETED.value}
+
+
+class DbRatingService:
+    def __init__(self, db: Session) -> None:
+        self._db = db
+
+    def _signup(self, signup_id: str, lock: bool = False) -> TestSignup | None:
+        try:
+            key = parse_uuid(signup_id)
+        except NotFoundError:
+            return None
+        query = select(TestSignup).where(TestSignup.id == key)
+        # two quick submits must not store two ratings
+        return self._db.scalars(query.with_for_update() if lock else query).first()
+
+    def _target(self, signup: TestSignup | None) -> RatingTarget:
+        if signup is None:
+            return RatingTarget(state=RatingState.UNAVAILABLE)
+        if signup.status == TestSignupStatus.RATED.value:
+            state = RatingState.RATED
+        elif signup.status in RATEABLE:
+            state = RatingState.OPEN
+        else:
+            state = RatingState.UNAVAILABLE
+        return RatingTarget(
+            state=state, innovation_id=signup.innovation_id, innovation_title=signup.innovation.title
+        )
+
+    def target(self, signup_id: str) -> RatingTarget:
+        return self._target(self._signup(signup_id))
+
+    def rate(self, signup_id: str, stars: int, comment: str) -> RatingTarget:
+        signup = self._signup(signup_id, lock=True)
+        target = self._target(signup)
+        if target.state != RatingState.OPEN:
+            self._db.rollback()
+            return target
+        assert signup is not None
+        self._db.add(
+            Feedback(
+                innovation_id=signup.innovation_id,
+                kind="test_signup",
+                stars=stars,
+                comment=comment.strip() or None,
+            )
+        )
+        signup.status = TestSignupStatus.RATED.value
+        self._db.commit()
+        return target.model_copy(update={"state": RatingState.RATED})

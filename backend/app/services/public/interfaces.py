@@ -14,6 +14,7 @@ from app.schemas.public.ideas import IdeaCreate, IdeaCreated
 from app.schemas.public.innovations import FeedbackCreate, FeedbackCreated, LibraryInnovation
 from app.schemas.public.match import MatchRequest, MatchResponse
 from app.schemas.public.problem_reports import PublicProblemReport, SupportResponse
+from app.schemas.public.ratings import RatingTarget
 from app.schemas.public.threads import (
     ReplyCreate,
     Submitted,
@@ -70,3 +71,10 @@ class DocumentService(Protocol):
 
 class KnowledgeService(Protocol):
     def open_grant_calls(self) -> list[GrantCall]: ...
+
+
+# R4: a tester rates from the mail; the signup id in the link is the token.
+# one rating per signup: rate() moves the signup to rated
+class RatingService(Protocol):
+    def target(self, signup_id: str) -> RatingTarget: ...
+    def rate(self, signup_id: str, stars: int, comment: str) -> RatingTarget: ...

@@ -96,56 +96,57 @@ function ThreadItem({ thread, onStatus }: { thread: Thread; onStatus: (s: string
               ))}
             </ul>
           )}
-          <form
-            id={boxId}
-            hidden={!replying}
-            className="flex flex-col gap-2 rounded-xl bg-surface-container p-space-sm"
-            onSubmit={async (e) => {
-              e.preventDefault();
-              const form = e.currentTarget;
-              const f = new FormData(form);
-              setBusy(true);
-              try {
-                await api.replyToThread(thread.id, {
-                  body: String(f.get("body")).trim(),
-                  author_label: String(f.get("author")).trim(),
-                });
-                form.reset();
-                setReplying(false);
-                onStatus("Dziękujemy! Odpowiedź czeka na weryfikację moderatora ROPS, potem pojawi się w wątku.");
-              } catch {
-                onStatus(SEND_FAILED);
-              } finally {
-                setBusy(false);
-              }
-            }}
-          >
-            <label htmlFor={`${boxId}-author`} className="text-label-md font-semibold text-primary">
-              Imię i nazwisko / rola
-            </label>
-            <input id={`${boxId}-author`} name="author" required maxLength={100} autoComplete="name" className={field} placeholder="np. Jan Kowalski (OPS Zakliczyn)" />
-            <label htmlFor={`${boxId}-input`} className="text-label-md font-semibold text-primary">
-              Twoja odpowiedź w wątku „{thread.title}”:
-            </label>
-            <textarea
-              id={`${boxId}-input`}
-              name="body"
-              rows={2}
-              required
-              maxLength={5000}
-              placeholder="Wpisz treść swojej wskazówki lub zapytania..."
-              className={`${field} py-2.5`}
-            />
-            <div className="flex justify-end gap-2">
-              <button type="button" onClick={() => setReplying(false)} className="min-h-12 rounded-lg px-3 text-label-md font-semibold text-on-surface-variant hover:bg-surface-container-high">
-                Anuluj
-              </button>
-              <button type="submit" disabled={busy} className={primaryBtn}>
-                <Icon name="send" size={18} />
-                {busy ? "Wysyłam…" : "Wyślij odpowiedź"}
-              </button>
-            </div>
-          </form>
+          {replying && (
+            <form
+              id={boxId}
+              className="flex flex-col gap-2 rounded-xl bg-surface-container p-space-sm"
+              onSubmit={async (e) => {
+                e.preventDefault();
+                const form = e.currentTarget;
+                const f = new FormData(form);
+                setBusy(true);
+                try {
+                  await api.replyToThread(thread.id, {
+                    body: String(f.get("body")).trim(),
+                    author_label: String(f.get("author")).trim(),
+                  });
+                  form.reset();
+                  setReplying(false);
+                  onStatus("Dziękujemy! Odpowiedź czeka na weryfikację moderatora ROPS, potem pojawi się w wątku.");
+                } catch {
+                  onStatus(SEND_FAILED);
+                } finally {
+                  setBusy(false);
+                }
+              }}
+            >
+              <label htmlFor={`${boxId}-author`} className="text-label-md font-semibold text-primary">
+                Imię i nazwisko / rola
+              </label>
+              <input id={`${boxId}-author`} name="author" required maxLength={100} autoComplete="name" className={field} placeholder="np. Jan Kowalski (OPS Zakliczyn)" />
+              <label htmlFor={`${boxId}-input`} className="text-label-md font-semibold text-primary">
+                Twoja odpowiedź w wątku „{thread.title}”:
+              </label>
+              <textarea
+                id={`${boxId}-input`}
+                name="body"
+                rows={2}
+                required
+                maxLength={5000}
+                placeholder="Wpisz treść swojej wskazówki lub zapytania..."
+                className={`${field} py-2.5`}
+              />
+              <div className="flex justify-end gap-2">
+                <button type="button" onClick={() => setReplying(false)} className="min-h-12 rounded-lg px-3 text-label-md font-semibold text-on-surface-variant hover:bg-surface-container-high">
+                  Anuluj
+                </button>
+                <button type="submit" disabled={busy} className={primaryBtn}>
+                  <Icon name="send" size={18} />
+                  {busy ? "Wysyłam…" : "Wyślij odpowiedź"}
+                </button>
+              </div>
+            </form>
+          )}
         </div>
       </article>
     </li>
@@ -202,87 +203,89 @@ export function Community({ innovationId, demoThreads }: { innovationId: string;
         </button>
       </div>
 
-      <div id={formId} hidden={!open} className="flex flex-col gap-space-md rounded-xl bg-surface-container-low p-space-md hc-edge">
-        <h3 className="text-headline-sm font-semibold text-primary">Dodaj nowy wątek dyskusyjny</h3>
-        <p className="text-caption text-on-surface-variant">Pola bez dopisku „opcjonalnie” są wymagane. Wątek pojawi się po weryfikacji przez ROPS.</p>
-        <form
-          className="flex flex-col gap-space-sm"
-          onSubmit={async (e) => {
-            e.preventDefault();
-            const form = e.currentTarget;
-            const f = new FormData(form);
-            const mail = email.trim();
-            setBusy(true);
-            try {
-              await api.createThread(innovationId, {
-                title: String(f.get("title")).trim(),
-                body: String(f.get("body")).trim(),
-                author_label: String(f.get("author")).trim(),
-                ...(mail ? { email: mail, consent: true } : {}),
-              });
-              form.reset();
-              setEmail("");
-              setOpen(false);
-              setStatus("Dziękujemy! Wątek czeka na weryfikację moderatora ROPS, potem pojawi się na tej stronie.");
-            } catch {
-              setStatus(SEND_FAILED);
-            } finally {
-              setBusy(false);
-            }
-          }}
-        >
-          <div className="flex flex-col gap-1">
-            <label htmlFor="new-thread-title" className="text-label-lg font-semibold text-primary">
-              Tytuł problemu lub pytania
-            </label>
-            <input id="new-thread-title" name="title" required maxLength={200} className={field} placeholder="np. Skąd pozyskać środki na materiały plastyczne?" />
-          </div>
-          <div className="grid grid-cols-1 gap-space-sm sm:grid-cols-2">
+      {open && (
+        <div id={formId} className="flex flex-col gap-space-md rounded-xl bg-surface-container-low p-space-md hc-edge">
+          <h3 className="text-headline-sm font-semibold text-primary">Dodaj nowy wątek dyskusyjny</h3>
+          <p className="text-caption text-on-surface-variant">Pola bez dopisku „opcjonalnie” są wymagane. Wątek pojawi się po weryfikacji przez ROPS.</p>
+          <form
+            className="flex flex-col gap-space-sm"
+            onSubmit={async (e) => {
+              e.preventDefault();
+              const form = e.currentTarget;
+              const f = new FormData(form);
+              const mail = email.trim();
+              setBusy(true);
+              try {
+                await api.createThread(innovationId, {
+                  title: String(f.get("title")).trim(),
+                  body: String(f.get("body")).trim(),
+                  author_label: String(f.get("author")).trim(),
+                  ...(mail ? { email: mail, consent: true } : {}),
+                });
+                form.reset();
+                setEmail("");
+                setOpen(false);
+                setStatus("Dziękujemy! Wątek czeka na weryfikację moderatora ROPS, potem pojawi się na tej stronie.");
+              } catch {
+                setStatus(SEND_FAILED);
+              } finally {
+                setBusy(false);
+              }
+            }}
+          >
             <div className="flex flex-col gap-1">
-              <label htmlFor="author-name" className="text-label-lg font-semibold text-primary">
-                Imię i nazwisko / rola
+              <label htmlFor="new-thread-title" className="text-label-lg font-semibold text-primary">
+                Tytuł problemu lub pytania
               </label>
-              <input id="author-name" name="author" required maxLength={100} autoComplete="name" className={field} placeholder="np. Jan Kowalski (OPS Zakliczyn)" />
+              <input id="new-thread-title" name="title" required maxLength={200} className={field} placeholder="np. Skąd pozyskać środki na materiały plastyczne?" />
             </div>
+            <div className="grid grid-cols-1 gap-space-sm sm:grid-cols-2">
+              <div className="flex flex-col gap-1">
+                <label htmlFor="author-name" className="text-label-lg font-semibold text-primary">
+                  Imię i nazwisko / rola
+                </label>
+                <input id="author-name" name="author" required maxLength={100} autoComplete="name" className={field} placeholder="np. Jan Kowalski (OPS Zakliczyn)" />
+              </div>
+              <div className="flex flex-col gap-1">
+                <label htmlFor="author-email" className="text-label-lg font-semibold text-primary">
+                  Adres e-mail do powiadomień (opcjonalnie)
+                </label>
+                <input
+                  id="author-email"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  maxLength={254}
+                  autoComplete="email"
+                  className={field}
+                  placeholder="twoj.email@instytucja.pl"
+                />
+              </div>
+            </div>
+            {email.trim() && (
+              <label className="flex min-h-12 items-start gap-space-sm text-body-md text-on-surface">
+                <input type="checkbox" required className="mt-0.5 size-6 shrink-0 accent-primary-container" />
+                <span>Zgadzam się na powiadomienia e-mail o tym wątku (wymagane, gdy podajesz adres).</span>
+              </label>
+            )}
             <div className="flex flex-col gap-1">
-              <label htmlFor="author-email" className="text-label-lg font-semibold text-primary">
-                Adres e-mail do powiadomień (opcjonalnie)
+              <label htmlFor="thread-body" className="text-label-lg font-semibold text-primary">
+                Treść pytania lub uwagi z wdrożenia
               </label>
-              <input
-                id="author-email"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                maxLength={254}
-                autoComplete="email"
-                className={field}
-                placeholder="twoj.email@instytucja.pl"
-              />
+              <textarea id="thread-body" name="body" required maxLength={5000} rows={4} className={`${field} py-3`} placeholder="Opisz kontekst Twojej gminy, wyzwania z wolontariuszami lub pytania do autorów..." />
             </div>
-          </div>
-          {email.trim() && (
-            <label className="flex min-h-12 items-start gap-space-sm text-body-md text-on-surface">
-              <input type="checkbox" required className="mt-0.5 size-6 shrink-0 accent-primary-container" />
-              <span>Zgadzam się na powiadomienia e-mail o tym wątku (wymagane, gdy podajesz adres).</span>
-            </label>
-          )}
-          <div className="flex flex-col gap-1">
-            <label htmlFor="thread-body" className="text-label-lg font-semibold text-primary">
-              Treść pytania lub uwagi z wdrożenia
-            </label>
-            <textarea id="thread-body" name="body" required maxLength={5000} rows={4} className={`${field} py-3`} placeholder="Opisz kontekst Twojej gminy, wyzwania z wolontariuszami lub pytania do autorów..." />
-          </div>
-          <div className="flex justify-end gap-space-xs pt-space-xs">
-            <button type="button" onClick={() => setOpen(false)} className="min-h-12 rounded-xl px-space-md text-label-lg font-semibold text-on-surface-variant hover:bg-surface-container">
-              Anuluj
-            </button>
-            <button type="submit" disabled={busy} className={primaryBtn}>
-              <Icon name="send" />
-              {busy ? "Wysyłam…" : "Wyślij do moderacji"}
-            </button>
-          </div>
-        </form>
-      </div>
+            <div className="flex justify-end gap-space-xs pt-space-xs">
+              <button type="button" onClick={() => setOpen(false)} className="min-h-12 rounded-xl px-space-md text-label-lg font-semibold text-on-surface-variant hover:bg-surface-container">
+                Anuluj
+              </button>
+              <button type="submit" disabled={busy} className={primaryBtn}>
+                <Icon name="send" />
+                {busy ? "Wysyłam…" : "Wyślij do moderacji"}
+              </button>
+            </div>
+          </form>
+        </div>
+      )}
 
       <p role="status" className="text-body-md font-semibold text-primary">
         {status}

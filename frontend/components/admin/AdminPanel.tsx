@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { useId, useState } from "react";
-import { adminApi, type Idea, type IdeaStatus, type ProblemReport } from "@/lib/api";
+import { adminApi, type AdminThread, type Idea, type IdeaStatus, type ProblemReport } from "@/lib/api";
 import { ADMIN_MOCK, type AdminData } from "@/lib/admin-mock";
 import { AREA_LABEL } from "@/lib/labels";
 import { Icon } from "@/components/Icon";
 import { card, fmtDate, ghostBtn, h2, primaryBtn, td, th } from "@/components/admin/styles";
+import { pendingThreadCount, ThreadModeration } from "@/components/admin/ThreadModeration";
 import { useApiOrMock } from "@/components/admin/useApiOrMock";
 
 // innovations have their own screen (/admin)
@@ -27,6 +28,7 @@ const IDEA_STAGE: Record<Idea["stage"], string> = {
 
 const SECTIONS = [
   { id: "skrzynka", label: "Skrzynka" },
+  { id: "forum", label: "Forum" },
   { id: "zgloszenia", label: "Zgłoszenia problemów" },
   { id: "pomysly", label: "Pomysły" },
   { id: "raporty", label: "Raporty" },
@@ -34,15 +36,16 @@ const SECTIONS = [
 ];
 
 async function loadFromApi(): Promise<PanelData> {
-  const [problemReports, ideas, trends, critical, gaps, grantCalls] = await Promise.all([
+  const [problemReports, ideas, trends, critical, gaps, grantCalls, threads] = await Promise.all([
     adminApi.problemReports(),
     adminApi.ideas(),
     adminApi.trends(),
     adminApi.critical(),
     adminApi.gaps(),
     adminApi.grantCalls(),
+    adminApi.threads(),
   ]);
-  return { problemReports, ideas, trends, critical, gaps, grantCalls };
+  return { problemReports, ideas, trends, critical, gaps, grantCalls, threads };
 }
 
 function ReplyForm({ onSend, previous }: { onSend: (msg: string) => Promise<void>; previous?: string | null }) {
@@ -129,12 +132,13 @@ export function AdminPanel() {
   const newIdeas = data.ideas.filter((i) => i.status === "new");
   const unanswered = data.problemReports.filter((r) => !r.admin_reply);
   const critical = data.problemReports.filter((r) => r.is_critical);
+  const forumQueue = pendingThreadCount(data.threads);
 
   const stats = [
+    { label: "Nowe komentarze", value: forumQueue, icon: "notifications_active", href: "#forum" },
     { label: "Nowe pomysły", value: newIdeas.length, icon: "lightbulb", href: "#pomysly" },
     { label: "Zgłoszenia bez odpowiedzi", value: unanswered.length, icon: "forum", href: "#zgloszenia" },
     { label: "Zgłoszenia krytyczne", value: critical.length, icon: "report_problem", href: "#zgloszenia" },
-    { label: "Krytyczne problemy w raporcie", value: data.critical.length, icon: "psychology", href: "#raporty" },
   ];
 
   return (
@@ -171,19 +175,41 @@ export function AdminPanel() {
         <ul className="mt-space-md grid grid-cols-1 gap-space-sm sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((s) => (
             <li key={s.label}>
-              <a href={s.href} className="flex h-full items-center gap-space-sm rounded-xl bg-surface-container-low p-space-md hover:bg-surface-container-high hc-edge">
-                <span className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-surface-container text-primary">
+              <a
+                href={s.href}
+                className={`flex h-full items-center gap-space-sm rounded-xl p-space-md hc-edge ${
+                  s.href === "#forum" && s.value > 0
+                    ? "bg-secondary text-on-secondary hover:opacity-95"
+                    : "bg-surface-container-low hover:bg-surface-container-high"
+                }`}
+              >
+                <span
+                  className={`flex size-12 shrink-0 items-center justify-center rounded-lg ${
+                    s.href === "#forum" && s.value > 0 ? "bg-on-secondary/15" : "bg-surface-container text-primary"
+                  }`}
+                >
                   <Icon name={s.icon} size={28} />
                 </span>
                 <span className="flex flex-col">
-                  <span className="text-headline-md font-bold text-primary">{s.value}</span>
-                  <span className="text-body-md text-on-surface-variant">{s.label}</span>
+                  <span className={`text-headline-md font-bold ${s.href === "#forum" && s.value > 0 ? "" : "text-primary"}`}>
+                    {s.value}
+                  </span>
+                  <span className={s.href === "#forum" && s.value > 0 ? "text-body-md opacity-90" : "text-body-md text-on-surface-variant"}>
+                    {s.label}
+                  </span>
                 </span>
               </a>
             </li>
           ))}
         </ul>
       </section>
+
+      <ThreadModeration
+        threads={data.threads}
+        source={source === "api" ? "api" : "mock"}
+        onChange={(threads: AdminThread[]) => setData((d) => d && { ...d, threads })}
+        onNotice={setStatus}
+      />
 
       <section id="zgloszenia" aria-labelledby="zgloszenia-h" className={card}>
         <h2 id="zgloszenia-h" className={h2}>
