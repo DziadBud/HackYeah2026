@@ -6,8 +6,6 @@ from uuid import uuid4
 from app.services.chunking import split_text
 from app.services.embedding import EmbeddingService
 from app.services.pdf import extract_pdf_text
-from app.services.tagging import TaggingService
-from app.services.answer import AnswerService
 from app.services.ollama import OllamaClient
 from app.services.vector_store import get_vector_store
 
@@ -24,7 +22,6 @@ class QueryRequest(BaseModel):
 class QueryResponse(BaseModel):
     query: str
     top_k: int
-    answer: str
     matches: list["QueryMatch"]
 
 
@@ -66,7 +63,6 @@ class LlmTestResponse(BaseModel):
 
 app = FastAPI(title="HackYeah RAG API", version="0.1.0")
 embedding_service = EmbeddingService()
-answer_service = AnswerService()
 ollama_client = OllamaClient()
 
 
@@ -90,11 +86,9 @@ def query(request: QueryRequest) -> QueryResponse:
     except RuntimeError as error:
         raise HTTPException(status_code=503, detail=str(error)) from error
 
-    answer = answer_service.generate(request.query, matches)
     return QueryResponse(
         query=request.query,
         top_k=request.top_k,
-        answer=answer,
         matches=matches,
     )
 

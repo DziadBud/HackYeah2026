@@ -16,13 +16,6 @@ class FakeEmbeddingService:
         return [[0.1, 0.2, 0.3] for _ in texts]
 
 
-class FakeAnswerService:
-    def generate(self, query: str, matches: list[dict[str, object]]) -> str:
-        if not matches:
-            return f"Nie znaleziono dopasowanych innowacji dla: {query}."
-        return "Znaleziono innowację o identyfikatorze: wibraap."
-
-
 class FakeOllamaClient:
     def generate(self, prompt: str) -> dict[str, str]:
         return {"result": "tekst przetworzony"}
@@ -80,9 +73,8 @@ def test_health():
     assert response.json() == {"status": "ok"}
 
 
-def test_query_returns_no_result_answer(monkeypatch):
+def test_query_returns_no_result_matches(monkeypatch):
     monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
-    monkeypatch.setattr("app.main.answer_service", FakeAnswerService())
     monkeypatch.setattr("app.main.get_vector_store", lambda: FakeVectorStore())
 
     response = client.post("/query", json={"query": "support for seniors"})
@@ -91,14 +83,12 @@ def test_query_returns_no_result_answer(monkeypatch):
     assert response.json() == {
         "query": "support for seniors",
         "top_k": 3,
-        "answer": "Nie znaleziono dopasowanych innowacji dla: support for seniors.",
         "matches": [],
     }
 
 
 def test_query_returns_only_innovation_ids(monkeypatch):
     monkeypatch.setattr("app.main.embedding_service", FakeEmbeddingService())
-    monkeypatch.setattr("app.main.answer_service", FakeAnswerService())
     store = FakeSearchVectorStore()
     monkeypatch.setattr("app.main.get_vector_store", lambda: store)
 
@@ -109,9 +99,6 @@ def test_query_returns_only_innovation_ids(monkeypatch):
 
     assert response.status_code == 200
     assert store.search_kwargs["search_tests"] is True
-    assert response.json()["answer"] == (
-        "Znaleziono innowację o identyfikatorze: wibraap."
-    )
     assert response.json()["matches"] == [{"innovation_id": "wibraap"}]
 
 
