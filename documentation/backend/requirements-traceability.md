@@ -29,10 +29,11 @@ Maps each requirement from `documentation/knowledge-base/CRITERIA-Wojewodztwo-Ma
   - assistant and visualisation: stretch
 
 ## R4 Tester innowacji (S)
-- **Where:** `POST /match?test_signup=true`, `GET /admin/test-signups`, `POST /admin/test-signups/{id}/status`, `test_signups`, `feedback` ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)).
+- **Where:** `POST /match?test_signup=true`, `POST /innovations/{id}/test-signups`, `GET /admin/test-signups`, `POST /admin/test-signups/{id}/status`, `test_signups`, `feedback` ([.claude/designs/innovation-testing.md](../../.claude/designs/innovation-testing.md)).
 - **How:**
   - testing is part of matching: with `?test_signup=true` and an email, the user volunteers to test the innovations matched for their problem (one `test_signups` row each, linked to the problem report); the admin accepts, rejects or marks `completed`, and the applicant is emailed: the accepted and completed mails carry one "Oceń rozwiązanie" button to match-api's own rating page (`/ratings/{signup_id}`): stars and an optional comment, saved once per signup (status `rated`)
-  - the public UI does not call `?test_signup=true` yet: "Zgłoś się do testowania" on an innovation page expands an email form and sends `POST /ideas` into the ideas inbox; the match test-signup endpoint and the admin side are unchanged
+  - "Zgłoś się do testowania" on an innovation page sends `POST /innovations/{id}/test-signups` (email + consent): one signup for that innovation, no problem report
+  - the admin accepts, rejects or completes signups in the panel at `/admin/testerzy` or on the innovation's admin page, which triggers the tester mails; that page also lists every rating (`GET /admin/innovations/{id}/ratings`)
   - ratings and comments go to `feedback` (per-IP rate limited); improvement proposals are comments; optional `test_signup_id` marks feedback from a real tester
   - the admin sees the rating average, count, star distribution, comments and signups by status per innovation (`GET /admin/innovations/{id}/stats`)
 

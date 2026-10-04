@@ -190,6 +190,17 @@ export interface IdeaCreated {
   status: IdeaStatus;
 }
 
+// POST /innovations/{id}/test-signups: one signup for that innovation, email + consent required
+export interface TestSignupCreate {
+  email: string;
+  consent: true;
+}
+
+export interface TestSignupCreated {
+  id: string;
+  status: TestSignupStatus;
+}
+
 export const api = {
   match: (body: MatchRequest, testSignup = false) =>
     post<MatchResponse>(`/match${testSignup ? "?test_signup=true" : ""}`, body),
@@ -209,6 +220,8 @@ export const api = {
   replyToThread: (threadId: string, body: ReplyCreate) =>
     post<Submitted>(`/threads/${enc(threadId)}/replies`, body),
   createIdea: (body: IdeaCreate) => post<IdeaCreated>("/ideas", body),
+  signUpForTest: (innovationId: string, body: TestSignupCreate) =>
+    post<TestSignupCreated>(`/innovations/${enc(innovationId)}/test-signups`, body),
 };
 
 // ---- admin (/admin/*), mirrors backend/app/schemas/admin ----
@@ -241,6 +254,15 @@ export interface AdminInnovation {
   city: string;
   video_url?: string | null;
   status: PublicationStatus;
+}
+
+// every rating of one innovation, newest first (GET /admin/innovations/{id}/ratings)
+export interface InnovationRating {
+  rating: number;
+  comment: string | null;
+  // test_signup: rated by an accepted tester from the mail
+  kind: "rating" | "test_signup";
+  created_at: string;
 }
 
 export interface FeedbackComment {
@@ -336,6 +358,21 @@ export interface ProblemReport {
   created_at: string;
 }
 
+// rated is set by the tester's rating from the mail, not by the admin
+export type TestSignupStatus = "applied" | "accepted" | "rejected" | "completed" | "rated";
+export type TestSignupDecision = Exclude<TestSignupStatus, "applied" | "rated">;
+
+export interface TestSignup {
+  id: string;
+  innovation_id: string;
+  innovation_title: string;
+  // null for direct signups from an innovation page
+  problem_report_id: string | null;
+  email: string;
+  status: TestSignupStatus;
+  created_at: string;
+}
+
 export interface Inbox {
   new_ideas: Idea[];
   new_problem_reports: ProblemReport[];
@@ -404,11 +441,17 @@ export const adminApi = {
     ),
   innovationStats: (id: string) =>
     request<InnovationStats>(`/admin/innovations/${enc(id)}/stats`),
+  innovationRatings: (id: string) =>
+    request<InnovationRating[]>(`/admin/innovations/${enc(id)}/ratings`),
   innovationStatsReport: () =>
     request<InnovationStatsRow[]>("/admin/reports/innovations"),
   trends: () => request<TrendRow[]>("/admin/reports/trends"),
   critical: () => request<CriticalRow[]>("/admin/reports/critical"),
   gaps: () => request<GapRow[]>("/admin/reports/gaps"),
+  testSignups: (innovationId?: string) =>
+    request<TestSignup[]>(`/admin/test-signups${innovationId ? `?innovation_id=${enc(innovationId)}` : ""}`),
+  setTestSignupStatus: (id: string, status: TestSignupDecision) =>
+    post<TestSignup>(`/admin/test-signups/${enc(id)}/status`, { status }),
   grantCalls: () => request<GrantCall[]>("/admin/grant-calls"),
   setGrantCallOpen: (id: string, open: boolean) =>
     request<GrantCall>(`/admin/grant-calls/${enc(id)}`, {

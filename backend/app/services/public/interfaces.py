@@ -11,7 +11,13 @@ from app.schemas.public.grant_applications import (
     GrantApplicationUpdate,
 )
 from app.schemas.public.ideas import IdeaCreate, IdeaCreated
-from app.schemas.public.innovations import FeedbackCreate, FeedbackCreated, LibraryInnovation
+from app.schemas.public.innovations import (
+    FeedbackCreate,
+    FeedbackCreated,
+    LibraryInnovation,
+    TestSignupCreate,
+    TestSignupCreated,
+)
 from app.schemas.public.match import MatchRequest, MatchResponse
 from app.schemas.public.problem_reports import PublicProblemReport, SupportResponse
 from app.schemas.public.ratings import RatingTarget
@@ -55,6 +61,7 @@ class LibraryService(Protocol):
     ) -> Page[LibraryInnovation]: ...
     def get(self, innovation_id: str) -> LibraryInnovation: ...
     def add_feedback(self, innovation_id: str, data: FeedbackCreate) -> FeedbackCreated: ...
+    def sign_up_for_test(self, innovation_id: str, data: TestSignupCreate) -> TestSignupCreated: ...
 
 
 # R5: community threads, published only; new posts wait for moderation

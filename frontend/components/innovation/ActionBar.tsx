@@ -1,17 +1,16 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
-import { api } from "@/lib/api";
+import { api, ApiError } from "@/lib/api";
 import { Icon } from "@/components/Icon";
 
 const field =
   "min-h-12 w-full rounded-lg border-[1.5px] border-outline bg-surface p-space-sm text-body-md text-on-surface";
 
-export function ActionBar({ pdfUrl, title }: { pdfUrl: string; title: string }) {
+export function ActionBar({ innovationId, pdfUrl, title }: { innovationId: string; pdfUrl: string; title: string }) {
   const [copied, setCopied] = useState(false);
   const [formOpen, setFormOpen] = useState(false);
   const [email, setEmail] = useState("");
-  const [note, setNote] = useState("");
   const [busy, setBusy] = useState(false);
   const [status, setStatus] = useState("");
   const [error, setError] = useState("");
@@ -88,24 +87,19 @@ export function ActionBar({ pdfUrl, title }: { pdfUrl: string; title: string }) 
             setBusy(true);
             setError("");
             setStatus("");
-            const noteText = note.trim();
             try {
-              await api.createIdea({
-                summary: `Chcę przetestować innowację „${title}”`,
-                essence:
-                  noteText ||
-                  "Zgłoszenie zainteresowania testowaniem rozwiązania w gminie lub instytucji.",
-                target_group: "gmina / instytucja zgłaszająca się do testów",
-                stage: "pilot",
-                email: mail,
-                consent: true,
-              });
-              setStatus("Dziękujemy! Zgłoszenie trafiło do ROPS. Odezwiemy się na podany e-mail.");
+              await api.signUpForTest(innovationId, { email: mail, consent: true });
+              setStatus(
+                "Dziękujemy! ROPS przejrzy zgłoszenie i napisze na podany e-mail, czy możesz przetestować tę innowację.",
+              );
               setEmail("");
-              setNote("");
               setFormOpen(false);
-            } catch {
-              setError("Nie udało się wysłać zgłoszenia. Sprawdź połączenie i spróbuj ponownie.");
+            } catch (err) {
+              setError(
+                err instanceof ApiError && err.status === 404
+                  ? "Ta innowacja nie przyjmuje teraz zgłoszeń do testów."
+                  : "Nie udało się wysłać zgłoszenia. Sprawdź połączenie i spróbuj ponownie.",
+              );
             } finally {
               setBusy(false);
             }
@@ -116,7 +110,8 @@ export function ActionBar({ pdfUrl, title }: { pdfUrl: string; title: string }) 
             Zostaw e-mail do kontaktu
           </h2>
           <p className="text-body-md text-on-surface-variant">
-            Koordynator ROPS odezwie się z propozycją testów innowacji „{title}”.
+            Koordynator ROPS przejrzy zgłoszenie. O decyzji w sprawie testów innowacji „{title}” dowiesz się
+            mailowo.
           </p>
           <div className="flex flex-col gap-1">
             <label htmlFor={`${formId}-email`} className="text-label-lg font-semibold text-primary">
@@ -133,20 +128,6 @@ export function ActionBar({ pdfUrl, title }: { pdfUrl: string; title: string }) 
               onChange={(e) => setEmail(e.target.value)}
               className={field}
               placeholder="twoj.email@instytucja.pl"
-            />
-          </div>
-          <div className="flex flex-col gap-1">
-            <label htmlFor={`${formId}-note`} className="text-label-lg font-semibold text-primary">
-              Krótka informacja (opcjonalnie)
-            </label>
-            <textarea
-              id={`${formId}-note`}
-              rows={3}
-              maxLength={2000}
-              value={note}
-              onChange={(e) => setNote(e.target.value)}
-              className={`${field} resize-y`}
-              placeholder="np. gmina, instytucja, czego potrzebujecie"
             />
           </div>
           <label className="flex min-h-12 items-start gap-space-sm text-body-md text-on-surface">

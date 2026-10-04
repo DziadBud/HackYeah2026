@@ -1,37 +1,65 @@
 "use client";
 
 import Link from "next/link";
-import { ApiError, adminApi, type AdminInnovation, type InnovationStats } from "@/lib/api";
+import { useState } from "react";
+import {
+  ApiError,
+  adminApi,
+  type AdminInnovation,
+  type InnovationStats,
+  type TestSignup,
+  type TestSignupDecision,
+} from "@/lib/api";
 import { ADMIN_MOCK, mockInnovationStats } from "@/lib/admin-mock";
 import { AREA_LABEL, COST, READINESS } from "@/lib/labels";
 import { Icon } from "@/components/Icon";
 import { BarList, Stars, Trend, WeeklyColumns, plural } from "@/components/admin/charts";
 import { StatusBadge } from "@/components/admin/InnovationList";
 import { card, fmtDate, ghostBtn, h2 } from "@/components/admin/styles";
+import { RatingsDropdown } from "@/components/admin/RatingsDropdown";
 import { useApiOrMock } from "@/components/admin/useApiOrMock";
+import { SIGNUP_DONE, SIGNUP_STATUS, SignupActions, decideSignup } from "@/components/admin/TestSignupList";
 
 interface Data {
   innovation: AdminInnovation | null;
   stats: InnovationStats | null;
+  signups: TestSignup[];
 }
+
+// waiting for a decision first, then the newest
+const SIGNUP_ORDER: Record<TestSignup["status"], number> = { applied: 0, accepted: 1, completed: 2, rated: 3, rejected: 4 };
+
+type Counted = keyof InnovationStats["test_signups"];
+const isCounted = (status: TestSignup["status"]): status is Counted =>
+  status === "applied" || status === "accepted" || status === "rejected";
 
 const LOCATION_NOTE = "mniej niż 5 zgłoszeń, nie pokazujemy";
 
 export function InnovationStatsView({ id }: { id: string }) {
+  const [busyId, setBusyId] = useState<string | null>(null);
   const { data, setData, source, notice, setNotice } = useApiOrMock<Data>(
     async () => {
       try {
-        const [innovation, stats] = await Promise.all([adminApi.innovation(id), adminApi.innovationStats(id)]);
-        return { innovation, stats };
+        const [innovation, stats, signups] = await Promise.all([
+          adminApi.innovation(id),
+          adminApi.innovationStats(id),
+          adminApi.testSignups(id),
+        ]);
+        return { innovation, stats, signups };
       } catch (err) {
         // a real 404 is an answer, not an outage
-        if (err instanceof ApiError && err.status === 404) return { innovation: null, stats: null };
+        if (err instanceof ApiError && err.status === 404) return { innovation: null, stats: null, signups: [] };
         throw err;
       }
     },
     () => {
       const innovation = ADMIN_MOCK.innovations.find((i) => i.id === id) ?? null;
-      return { innovation, stats: innovation && mockInnovationStats(id) };
+      const stats = innovation && mockInnovationStats(id);
+      return {
+        innovation,
+        stats,
+        signups: structuredClone(ADMIN_MOCK.testSignups.filter((s) => s.innovation_id === id)),
+      };
     },
   );
 
@@ -68,6 +96,30 @@ export function InnovationStatsView({ id }: { id: string }) {
       setNotice(publish ? "Innowacja opublikowana: pojawi się w czacie i bibliotece." : "Publikacja wycofana.");
     } catch {
       setNotice("Operacja nie powiodła się. Spróbuj ponownie.");
+    }
+  }
+
+  async function decide(signup: TestSignup, to: TestSignupDecision) {
+    setBusyId(signup.id);
+    try {
+      const updated = await decideSignup(source, signup, to);
+      setData((d) => {
+        if (!d?.stats) return d;
+        // keep the counters in step without refetching the stats
+        const counts = { ...d.stats.test_signups };
+        if (isCounted(signup.status)) counts[signup.status] -= 1;
+        if (isCounted(updated.status)) counts[updated.status] += 1;
+        return {
+          ...d,
+          stats: { ...d.stats, test_signups: counts },
+          signups: d.signups.map((x) => (x.id === signup.id ? updated : x)),
+        };
+      });
+      setNotice(SIGNUP_DONE[to]);
+    } catch {
+      setNotice("Operacja nie powiodła się. Spróbuj ponownie.");
+    } finally {
+      setBusyId(null);
     }
   }
 
@@ -235,8 +287,34 @@ export function InnovationStatsView({ id }: { id: string }) {
                 </div>
               ))}
             </dl>
-            <Link href="/admin/zgloszenia" className={`${ghostBtn} self-start`}>
-              Przejdź do zgłoszeń
+            {data.signups.length === 0 ? (
+              <p className="text-body-md text-on-surface-variant">Nikt jeszcze nie zgłosił się do testów.</p>
+            ) : (
+              <ul
+                aria-label="Osoby zgłoszone do testów"
+                tabIndex={0}
+                className="flex max-h-96 flex-col gap-space-sm overflow-y-auto rounded-lg pr-1"
+              >
+                {[...data.signups]
+                  .sort((a, b) => SIGNUP_ORDER[a.status] - SIGNUP_ORDER[b.status] || b.created_at.localeCompare(a.created_at))
+                  .map((sg) => (
+                    <li key={sg.id} className="flex flex-col gap-space-xs rounded-xl bg-surface-container-low p-space-sm hc-edge">
+                      <span className="flex flex-wrap items-center gap-2 text-caption text-on-surface-variant">
+                        <span className="rounded bg-tertiary-fixed px-2 py-0.5 font-semibold text-on-tertiary-fixed">
+                          {SIGNUP_STATUS[sg.status]}
+                        </span>
+                        • {fmtDate(sg.created_at)}
+                      </span>
+                      <a href={`mailto:${sg.email}`} className="break-all text-body-md underline hover:text-primary">
+                        {sg.email}
+                      </a>
+                      <SignupActions signup={sg} busy={busyId === sg.id} onDecide={(to) => void decide(sg, to)} />
+                    </li>
+                  ))}
+              </ul>
+            )}
+            <Link href="/admin/testerzy" className={`${ghostBtn} self-start`}>
+              Wszystkie zgłoszenia do testów
             </Link>
           </div>
           <div className="flex flex-col gap-space-sm">
@@ -250,6 +328,7 @@ export function InnovationStatsView({ id }: { id: string }) {
               unit={(n) => `${n} ${plural(n, "ocena", "oceny", "ocen")}`}
               empty="Brak ocen."
             />
+            <RatingsDropdown innovationId={i.id} title={i.title} count={s.rating_count} source={source} />
           </div>
         </div>
       </section>

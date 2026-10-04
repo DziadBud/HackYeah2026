@@ -15,6 +15,7 @@ from app.schemas.admin.innovations import (
     FeedbackComment,
     Innovation,
     InnovationFeedback,
+    InnovationRating,
     InnovationStats,
     InnovationStatsRow,
     InnovationUpdate,
@@ -133,6 +134,13 @@ class MockInnovationAdminService:
             test_signups=signups.applied + signups.accepted + signups.rejected,
             recent_comments=stats.recent_comments,
         )
+
+    # quoted: list() above shadows the builtin
+    def ratings(self, innovation_id: str) -> "list[InnovationRating]":
+        return [
+            InnovationRating(rating=c.rating, comment=c.comment, kind="rating", created_at=c.created_at)
+            for c in self.stats(innovation_id).recent_comments
+        ]
 
     def stats(self, innovation_id: str) -> InnovationStats:
         self.get(innovation_id)
@@ -604,6 +612,19 @@ class MockTestSignupAdminService:
             if (innovation_id is None or s.innovation_id == innovation_id)
             and (status is None or s.status == status)
         ]
+
+    def add(self, innovation: Innovation, email: str) -> TestSignup:
+        signup = TestSignup(
+            id=f"signup-{len(self._items) + 1}",
+            innovation_id=innovation.id,
+            innovation_title=innovation.title,
+            problem_report_id=None,
+            email=email,
+            status=TestSignupStatus.APPLIED,
+            created_at=datetime.now(timezone.utc),
+        )
+        self._items[signup.id] = signup
+        return signup
 
     def set_status(self, signup_id: str, status: TestSignupStatus) -> TestSignup:
         if signup_id not in self._items:

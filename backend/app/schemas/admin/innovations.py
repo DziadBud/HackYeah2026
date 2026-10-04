@@ -1,5 +1,6 @@
 from datetime import date, datetime
 from enum import StrEnum
+from typing import Literal
 
 from pydantic import BaseModel, Field
 
@@ -45,6 +46,14 @@ class Innovation(InnovationBase):
 class FeedbackComment(BaseModel):
     comment: str
     rating: int = Field(ge=1, le=5)
+    created_at: datetime
+
+
+class InnovationRating(BaseModel):
+    rating: int = Field(ge=1, le=5)
+    comment: str | None
+    # test_signup: rated by an accepted tester from the mail
+    kind: Literal["rating", "test_signup"]
     created_at: datetime
 
 

@@ -122,12 +122,20 @@ def test_feedback(client, auth) -> None:
     assert body["recent_comments"]
 
 
+def test_ratings_newest_first(client, auth) -> None:
+    res = client.get(f"{BASE}/straznik/ratings", headers=auth)
+    assert res.status_code == 200
+    dates = [r["created_at"] for r in res.json()]
+    assert dates and dates == sorted(dates, reverse=True)
+
+
 def test_unknown_id_404(client, auth) -> None:
     for method, path in [
         ("GET", ""),
         ("PATCH", ""),
         ("POST", "/publish"),
         ("GET", "/feedback"),
+        ("GET", "/ratings"),
         ("GET", "/stats"),
     ]:
         res = client.request(method, f"{BASE}/nope{path}", json={} if method == "PATCH" else None, headers=auth)
@@ -185,6 +193,7 @@ def test_feedback_matches_stats(client, auth) -> None:
 def test_stats_require_session(client) -> None:
     # test_auth's route discovery finds no routes on this fastapi version, so check the new ones here
     assert client.get(f"{BASE}/wibraap/stats").status_code == 401
+    assert client.get(f"{BASE}/wibraap/ratings").status_code == 401
     assert client.get("/admin/reports/innovations").status_code == 401
 
 

@@ -120,7 +120,7 @@ sequenceDiagram
     end
 ```
 
-Testing is part of matching, not a separate endpoint. With `?test_signup=true` the user volunteers to test the innovations matched for their problem: one `test_signups` row per returned innovation, linked to the problem report so the admin sees why. Without an email the request returns 422.
+Testing has two entry points. With `?test_signup=true` on `/match` the user volunteers to test the innovations matched for their problem: one `test_signups` row per returned innovation, linked to the problem report so the admin sees why; without an email the request returns 422. From an innovation page, `POST /innovations/{id}/test-signups {email, consent}` creates exactly one row for that innovation, with no problem report (`problem_report_id` null).
 
 Ranking comes from rag; the LLM only explains and may cite only retrieved rows. User text is data, never instructions. The challenge area (one of the 8 Mapa areas) comes from a small LLM classification call, falling back to none.
 
@@ -154,7 +154,7 @@ Ranking comes from rag; the LLM only explains and may cite only retrieved rows. 
 | Feature | Endpoints |
 |---|---|
 | Auth | `POST /admin/auth/login` (public), `POST /admin/auth/logout`, `GET /admin/auth/me` |
-| Innovations | `GET /admin/innovations` (filters `status`, `indexed`, `q`, `limit`, `offset`), `POST /admin/innovations` (multipart metadata + PDF, 202, §2), `GET /admin/innovations/{id}`, `PATCH /admin/innovations/{id}` (metadata only), `POST .../{id}/pdf` (upload or replace the PDF, 202), `POST .../{id}/publish`, `POST .../{id}/unpublish`, `GET .../{id}/feedback` (rating avg/count, signups), `GET .../{id}/stats` (matches total / 7d / by week, area and city, people reached, testers, rating distribution, matched problems) |
+| Innovations | `GET /admin/innovations` (filters `status`, `indexed`, `q`, `limit`, `offset`), `POST /admin/innovations` (multipart metadata + PDF, 202, §2), `GET /admin/innovations/{id}`, `PATCH /admin/innovations/{id}` (metadata only), `POST .../{id}/pdf` (upload or replace the PDF, 202), `POST .../{id}/publish`, `POST .../{id}/unpublish`, `GET .../{id}/feedback` (rating avg/count, signups), `GET .../{id}/ratings` (every `feedback` row: `rating`, `comment`, `kind`, `created_at`, newest first), `GET .../{id}/stats` (matches total / 7d / by week, area and city, people reached, testers, rating distribution, matched problems) |
 | Inbox | `GET /admin/inbox?since=`: new ideas, new problem reports, critical problem reports, new test signups, pending threads / replies |
 | Ideas | `GET /admin/ideas` (filter `status`), `GET /admin/ideas/{id}`, `POST .../{id}/reply`, `POST .../{id}/status` (`accepted` creates a draft innovation, §2) |
 | Problem reports | `GET /admin/problem-reports` (filters `challenge_area`, `city`), `GET /admin/problem-reports/{id}`, `POST .../{id}/reply`, `POST .../{id}/hide` |
@@ -183,7 +183,7 @@ CSV export is a streaming response. Cities with fewer than 5 problem reports are
 | Matching | `POST /match?test_signup=` `{text, city, email?, consent}` → `{problem_report_id, answer, innovations, similar_reports, test_signup_ids}` (`answer` is rag's one summary for the whole result); `test_signup=true` needs an email (422 otherwise) |
 | Problem reports | `GET /problem-reports/{id}` (public page with `admin_reply`), `POST /problem-reports/{id}/support` ("mnie też") |
 | Ideas | `POST /ideas` `{summary, essence, target_group, stage, social_canvas?, email?, consent}`, `POST /ideas/{id}/grant-application {grant_call_id, applicant_type?}` → full Zał. 3 JSON (AI fills 1+3–9; empty typed §2/§10–12 for FE edit), `GET/PATCH /grant-applications/{id}` (user may edit every field incl. LLM text) |
-| Library | `GET /innovations` (published only; filters `challenge_area`, `q`, `limit`, `offset`), `GET /innovations/{id}` (with `rating_avg`, `rating_count`, `has_pdf`), `GET /innovations/{id}/pdf` (the admin-uploaded source PDF from `upload_dir`, inline; 404 for drafts or when there is no file), `POST /innovations/{id}/feedback {stars, comment, test_signup_id?}` |
+| Library | `GET /innovations` (published only; filters `challenge_area`, `q`, `limit`, `offset`), `GET /innovations/{id}` (with `rating_avg`, `rating_count`, `has_pdf`), `GET /innovations/{id}/pdf` (the admin-uploaded source PDF from `upload_dir`, inline; 404 for drafts or when there is no file), `POST /innovations/{id}/feedback {stars, comment, test_signup_id?}`, `POST /innovations/{id}/test-signups {email, consent}` (201, one `applied` signup; 404 for drafts) |
 | Threads | `GET /innovations/{id}/threads` (published threads + published replies), `POST /innovations/{id}/threads` (202, `pending`), `POST /threads/{id}/replies` (202, `pending`) |
 | Middleman | `POST /middleman {innovation_id, institution_type, needs, email?, consent}` (the response is the stored document) |
 | Grant calls | `GET /grant-calls` (open only) |
@@ -440,3 +440,5 @@ docker-compose.yml   # postgres (pgvector image), migrate, rag, seed-embed, embe
 8. Demo innovations are seeded: `rag/sql/007_seed_innovations.sql` inserts the sample-data innovations and compose `seed-embed` embeds published innovations without chunks via rag `POST /embed`.
 9. `/match` retrieves through rag `/query` (embeddings), not word overlap. LLM experimentation is isolated to the temporary `/llm/test` endpoint.
 10. Email notifier implemented (§4) with Mailpit in compose; it mails only users who left their own email (no admin mail, the admin works from the inbox); published replies also notify the thread author, and opening a grant call mails idea authors. `GET /admin/inbox` returns `pending_threads` and `new_test_signups` (status `applied`). Notifications are HTML with one action each; `GET /admin/test-signups` and `POST /admin/test-signups/{id}/status` exist and mail the tester (rating links). Testers rate straight from the mail through `/ratings/{signup_id}` (HTML page served by match-api, `API_URL` setting), so rating does not depend on the frontend.
+11. rag's `/query` no longer returns `answer`; the match-api client treats it as optional (empty string), so `/match` keeps working. `GET /admin/innovations/{id}/ratings` lists all ratings of an innovation for the admin innovation page.
+12. Direct test signup: `POST /innovations/{id}/test-signups` signs up for one innovation (the innovation page used `/match?test_signup=true`, which signs up for every match). `backend/sql/010_test_signup_direct.sql` makes `test_signups.problem_report_id` nullable.

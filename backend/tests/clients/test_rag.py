@@ -27,9 +27,14 @@ def _timeout(url, **kwargs):
             RagAnswer(answer="Seniorzy", innovation_ids=["a", "b"]),
             id="#1 - OK",
         ),
-        pytest.param(_respond(503, {"detail": "down"}), None, id="#2 - FAIL - rag error status"),
-        pytest.param(_timeout, None, id="#3 - FAIL - timeout"),
-        pytest.param(_respond(200, {"answer": "x"}), None, id="#4 - FAIL - unexpected body"),
+        pytest.param(
+            _respond(200, {"matches": [{"innovation_id": "a"}]}),
+            RagAnswer(answer="", innovation_ids=["a"]),
+            id="#2 - OK - no answer",
+        ),
+        pytest.param(_respond(503, {"detail": "down"}), None, id="#3 - FAIL - rag error status"),
+        pytest.param(_timeout, None, id="#4 - FAIL - timeout"),
+        pytest.param(_respond(200, {"answer": "x"}), None, id="#5 - FAIL - unexpected body"),
     ],
 )
 def test_query(monkeypatch, post, want) -> None:

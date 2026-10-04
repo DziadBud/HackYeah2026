@@ -1,6 +1,6 @@
 # Innovation testing (Tester innowacji, R4)
 
-**Status:** accepted · **Date:** 2026-10-03
+**Status:** accepted · **Date:** 2026-10-03 · **Revised:** 2026-10-04 (direct signup from the innovation page)
 
 ## Goal
 People can volunteer to test an innovation, the admin picks testers, and ratings and improvement ideas reach the admin. The brief asks for: sign up for tests, rate existing solutions, give feedback, propose improvements (CRITERIA module IV, +5%). Hackathon scope: as few tables and flows as possible.
@@ -15,6 +15,8 @@ Non-goals:
 ```
 public: POST /match?test_signup=true {text, city, email, consent}
           -> normal match response + one test_signups row per matched innovation (status applied)
+public: POST /innovations/{id}/test-signups {email, consent}
+          -> one test_signups row for that innovation (status applied, no problem report)
 admin:  inbox shows new signups
         GET /admin/test-signups?innovation_id=&status=
         POST /admin/test-signups/{id}/status {accepted|rejected|completed} -> email to the signup's email (background task)
@@ -22,12 +24,12 @@ anyone: POST /innovations/{id}/feedback {stars, comment, test_signup_id?}  (per-
 admin:  GET /admin/innovations/{id}/feedback -> rating avg/count, signups, recent comments
 ```
 
-There is no separate signup endpoint: volunteering is an option on the match request, so the people who have the problem test the solutions proposed for it. `email` is required when `test_signup=true` (422 otherwise). Testing itself is arranged by ROPS outside the platform; the acceptance email says who will get in touch. Improvement proposals are feedback comments.
+Two ways in. On the match request, volunteering is an option, so the people who have the problem test the solutions proposed for it; `email` is required when `test_signup=true` (422 otherwise). On an innovation page, the person signs up for that one innovation directly; `/match` would sign them up for every matched innovation. Testing itself is arranged by ROPS outside the platform; the acceptance email says who will get in touch. Improvement proposals are feedback comments.
 
 ### Data model
 ```sql
 test_signups(id uuid pk, innovation_id text fk innovations,
-             problem_report_id uuid fk problem_reports,  -- the match it came from
+             problem_report_id uuid fk problem_reports null,  -- the match it came from; null for direct signups
              email text,
              status text,  -- applied | accepted | rejected | completed
              created_at, updated_at)

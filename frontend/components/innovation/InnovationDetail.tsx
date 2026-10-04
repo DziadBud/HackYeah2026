@@ -211,7 +211,7 @@ export function InnovationDetail({ id }: { id: string }) {
             </p>
           )}
         </div>
-        <ActionBar pdfUrl={i.pdfUrl} title={i.title} />
+        <ActionBar innovationId={i.id} pdfUrl={i.pdfUrl} title={i.title} />
       </header>
 
       <div className="grid grid-cols-1 items-start gap-space-lg lg:grid-cols-12">
