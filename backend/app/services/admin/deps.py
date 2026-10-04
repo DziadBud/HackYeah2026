@@ -83,8 +83,10 @@ def get_grant_call_service(db: Session = Depends(get_db), notifier: Notifier = D
     return DbGrantCallAdminService(db, notifier)
 
 
-def get_grant_application_service(db: Session = Depends(get_db)) -> GrantApplicationAdminService:
-    return DbGrantApplicationAdminService(db)
+def get_grant_application_service(
+    db: Session = Depends(get_db), notifier: Notifier = Depends(get_notifier)
+) -> GrantApplicationAdminService:
+    return DbGrantApplicationAdminService(db, notifier)
 
 
 def get_report_service(db: Session = Depends(get_db)) -> ReportAdminService:

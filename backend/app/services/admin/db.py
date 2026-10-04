@@ -41,7 +41,7 @@ from app.schemas.public.grant_applications import (
     normalize_declarations,
 )
 from app.schemas.public.threads import ModerationStatus, ReplyKind
-from app.services.admin.errors import NotFoundError
+from app.services.admin.errors import InvalidRequestError, NotFoundError
 from app.services.admin.innovation_upload import NewInnovation, areas_from_tags, with_area_tags
 from app.services.notify import Notifier
 
@@ -622,9 +622,19 @@ class DbGrantCallAdminService:
         self._notifier.grant_call_opened(emails, row.name, row.deadline, sections)
 
 
+def applicant_email(app: GrantApplication) -> str | None:
+    # the form's own contact email is optional and the modal never sets it; §2 always asks for one
+    a = app.applicant
+    candidates = [app.email, a.get("email"), a.get("representative_email")]
+    for contact in ("working_contact", "representative"):
+        candidates.append((a.get(contact) or {}).get("email"))
+    return next((c.strip() for c in candidates if isinstance(c, str) and c.strip()), None)
+
+
 class DbGrantApplicationAdminService:
-    def __init__(self, db: Session) -> None:
+    def __init__(self, db: Session, notifier: Notifier) -> None:
         self._db = db
+        self._notifier = notifier
 
     def list(
         self, status: GrantApplicationStatus | None = None, grant_call_id: str | None = None
@@ -643,6 +653,19 @@ class DbGrantApplicationAdminService:
     def get(self, application_id: str) -> GrantApplication:
         row = _get(self._db, GrantApplicationRow, parse_uuid(application_id), application_id)
         return grant_application_to_schema(row)
+
+    def decide(
+        self, application_id: str, status: GrantApplicationStatus, message: str | None
+    ) -> GrantApplication:
+        row = _get(self._db, GrantApplicationRow, parse_uuid(application_id), application_id)
+        # drafts are still being written; a decision is final, so no second mail can contradict it
+        if row.status != GrantApplicationStatus.SUBMITTED.value:
+            raise InvalidRequestError(f"only a submitted application can be decided, this one is {row.status}")
+        row.status = status.value
+        self._db.commit()
+        app = grant_application_to_schema(row)
+        self._notifier.grant_application_decided(applicant_email(app), app.title, status, message)
+        return app
 
 
 class DbReportAdminService:

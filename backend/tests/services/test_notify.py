@@ -6,6 +6,7 @@ from fastapi import BackgroundTasks
 
 from app.schemas.admin.ideas import IdeaStatus
 from app.schemas.admin import test_signups
+from app.schemas.public.grant_applications import GrantApplicationStatus
 from app.services.notify import Notifier, Rendered, SmtpMailer, build_mailer, mail as mail_module
 
 AUTHOR = "author@example.org"
@@ -138,6 +139,28 @@ def test_test_signup_rejected() -> None:
     _, mail = one(mailer)
     assert "/ratings/" not in mail.html
     assert f"{WEB}/innowacje" in mail.html
+
+
+@pytest.mark.parametrize(
+    "status, badge",
+    [
+        pytest.param(GrantApplicationStatus.ACCEPTED, "Przyjęty", id="#1 - OK - accepted"),
+        pytest.param(GrantApplicationStatus.REJECTED, None, id="#2 - OK - rejected"),
+    ],
+)
+def test_grant_application_decided(status, badge) -> None:
+    mailer = FakeMailer()
+    make(mailer).grant_application_decided(AUTHOR, "Sieć sąsiedzka", status, "Zapraszamy na rozmowę")
+    to, mail = one(mailer)
+    assert to == AUTHOR
+    assert "Sieć sąsiedzka" in mail.html and "Zapraszamy na rozmowę" in mail.html
+    assert badge is None or badge in mail.html
+
+
+def test_grant_application_draft_sends_nothing() -> None:
+    mailer = FakeMailer()
+    make(mailer).grant_application_decided(AUTHOR, "Sieć", GrantApplicationStatus.SUBMITTED, None)
+    assert mailer.sent == []
 
 
 def test_no_email_no_mail() -> None:

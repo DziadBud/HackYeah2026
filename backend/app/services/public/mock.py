@@ -267,7 +267,7 @@ class MockIdeaService:
         self, application_id: str, data: GrantApplicationUpdate
     ) -> GrantApplication:
         current = self.get_grant_application(application_id)
-        if current.status == GrantApplicationStatus.SUBMITTED:
+        if current.status != GrantApplicationStatus.DRAFT:
             raise InvalidRequestError("this application was already submitted")
         patch = data.model_dump(exclude_unset=True)
         if "action_plan" in patch and patch["action_plan"] is not None:

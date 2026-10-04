@@ -1,7 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { adminApi, ApiError, type GrantApplication, type GrantCall, type PlanStep } from "@/lib/api";
+import { useEffect, useRef, useState } from "react";
+import {
+  adminApi,
+  ApiError,
+  type GrantApplication,
+  type GrantApplicationDecision,
+  type GrantCall,
+  type PlanStep,
+} from "@/lib/api";
 import { ADMIN_MOCK } from "@/lib/admin-mock";
 import { Icon } from "@/components/Icon";
 import {
@@ -15,8 +23,8 @@ import {
   PERSON_FIELDS,
 } from "@/components/grant/labels";
 import { APPLICATION_STATUS, fmtPln } from "@/components/admin/GrantApplicationList";
-import { card, fmtDate, ghostBtn, td, th } from "@/components/admin/styles";
-import { useApiOrMock } from "@/components/admin/useApiOrMock";
+import { card, field, fmtDate, ghostBtn, primaryBtn, td, th } from "@/components/admin/styles";
+import { useApiOrMock, type Source } from "@/components/admin/useApiOrMock";
 
 const h3 = "text-title-md font-semibold text-primary";
 const empty = <span className="italic text-on-surface-variant">nie wypełniono</span>;
@@ -147,8 +155,127 @@ function Section({ id, title, children }: { id: string; title: string; children:
   );
 }
 
+const DECISION: Record<GrantApplicationDecision, { label: string; icon: string; ask: string; done: string }> = {
+  accepted: {
+    label: "Przyjmij wniosek",
+    icon: "verified",
+    ask: "Na pewno przyjąć wniosek? Tej decyzji nie można cofnąć.",
+    done: "Wniosek przyjęty.",
+  },
+  rejected: {
+    label: "Odrzuć wniosek",
+    icon: "close",
+    ask: "Na pewno odrzucić wniosek? Tej decyzji nie można cofnąć.",
+    done: "Wniosek odrzucony.",
+  },
+};
+
+// mirrors the backend's choice of recipient (applicant_email in services/admin/db.py)
+function applicantEmail(a: GrantApplication): string | null {
+  const contact = (key: string) => text(asRecord(a.applicant[key]).email);
+  const candidates = [
+    a.email ?? "",
+    text(a.applicant.email),
+    text(a.applicant.representative_email),
+    contact("working_contact"),
+    contact("representative"),
+  ];
+  return candidates.find((c) => c.trim())?.trim() ?? null;
+}
+
+function DecisionPanel({
+  a,
+  onDecide,
+}: {
+  a: GrantApplication;
+  onDecide: (to: GrantApplicationDecision, message: string) => Promise<void>;
+}) {
+  const [message, setMessage] = useState("");
+  const [pending, setPending] = useState<GrantApplicationDecision | null>(null);
+  const [busy, setBusy] = useState(false);
+  const confirmRef = useRef<HTMLButtonElement>(null);
+  const email = applicantEmail(a);
+
+  useEffect(() => {
+    if (pending) confirmRef.current?.focus();
+  }, [pending]);
+
+  async function confirm() {
+    if (!pending) return;
+    setBusy(true);
+    try {
+      await onDecide(pending, message.trim());
+    } finally {
+      setBusy(false);
+      setPending(null);
+    }
+  }
+
+  return (
+    <section aria-labelledby="decision-h" className={`${card} flex flex-col gap-space-sm`}>
+      <h3 id="decision-h" className={h3}>
+        Decyzja
+      </h3>
+      <p className="text-body-md text-on-surface-variant">
+        {email
+          ? `Wnioskodawca dostanie e-mail z decyzją na adres ${email}.`
+          : "Wnioskodawca nie podał adresu e-mail, więc nie dostanie wiadomości o decyzji."}
+      </p>
+      <div className="flex flex-col gap-1">
+        <label htmlFor="decision-msg" className="text-label-md font-semibold text-primary">
+          Wiadomość do wnioskodawcy (opcjonalnie, trafi do e-maila)
+        </label>
+        <textarea
+          id="decision-msg"
+          rows={3}
+          maxLength={2000}
+          className={`${field} w-full resize-y py-space-xs`}
+          value={message}
+          disabled={busy || !email}
+          onChange={(e) => setMessage(e.target.value)}
+        />
+      </div>
+      {pending ? (
+        <div className="flex flex-col gap-space-xs rounded-lg bg-surface-container-low p-space-sm hc-edge">
+          <p className="text-body-md font-semibold text-on-surface">{DECISION[pending].ask}</p>
+          <div className="flex flex-wrap gap-space-xs">
+            <button ref={confirmRef} type="button" disabled={busy} onClick={() => void confirm()} className={primaryBtn}>
+              <Icon name={DECISION[pending].icon} />
+              {busy ? "Zapisuję…" : `Tak, ${DECISION[pending].label.toLowerCase()}`}
+            </button>
+            <button type="button" disabled={busy} onClick={() => setPending(null)} className={ghostBtn}>
+              Wróć
+            </button>
+          </div>
+        </div>
+      ) : (
+        <div className="flex flex-wrap gap-space-xs">
+          {(Object.keys(DECISION) as GrantApplicationDecision[]).map((to) => (
+            <button
+              key={to}
+              type="button"
+              onClick={() => setPending(to)}
+              className={to === "accepted" ? primaryBtn : ghostBtn}
+            >
+              <Icon name={DECISION[to].icon} />
+              {DECISION[to].label}
+            </button>
+          ))}
+        </div>
+      )}
+    </section>
+  );
+}
+
+// in api mode the server answers with the updated form; offline we patch locally
+function decideApplication(source: Source, a: GrantApplication, to: GrantApplicationDecision, message: string) {
+  return source === "api"
+    ? adminApi.decideGrantApplication(a.id, to, message)
+    : Promise.resolve({ ...a, status: to });
+}
+
 export function GrantApplicationView({ id }: { id: string }) {
-  const { data, notice } = useApiOrMock<Data>(
+  const { data, setData, source, notice, setNotice } = useApiOrMock<Data>(
     async () => {
       try {
         const [application, calls] = await Promise.all([adminApi.grantApplication(id), adminApi.grantCalls()]);
@@ -189,6 +316,17 @@ export function GrantApplicationView({ id }: { id: string }) {
         {back}
       </section>
     );
+  }
+
+  async function decide(to: GrantApplicationDecision, message: string) {
+    if (!a) return;
+    try {
+      const updated = await decideApplication(source, a, to, message);
+      setData((d) => d && { ...d, application: updated });
+      setNotice(`${DECISION[to].done} ${applicantEmail(a) ? "Wnioskodawca dostał e-mail z decyzją." : ""}`.trim());
+    } catch {
+      setNotice("Nie udało się zapisać decyzji. Spróbuj ponownie.");
+    }
   }
 
   const call = data.calls.find((c) => c.id === a.grant_call_id);
@@ -285,6 +423,8 @@ export function GrantApplicationView({ id }: { id: string }) {
           })}
         </ul>
       </Section>
+
+      {a.status === "submitted" && <DecisionPanel a={a} onDecide={decide} />}
     </div>
   );
 }

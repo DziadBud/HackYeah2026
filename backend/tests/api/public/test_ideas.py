@@ -128,6 +128,21 @@ def test_grant_application_switch_to_organization(client) -> None:
     assert "entity_seat_in_poland" in res.json()["declarations"]
 
 
+def test_grant_application_applicant_cannot_decide(client) -> None:
+    idea_id = client.post("/ideas", json=IDEA).json()["id"]
+    open_call = client.get("/grant-calls").json()[0]
+    draft_id = client.post(
+        f"/ideas/{idea_id}/grant-application", json={"grant_call_id": open_call["id"]}
+    ).json()["id"]
+
+    res = client.patch(f"/grant-applications/{draft_id}", json={"status": "accepted"})
+    assert res.status_code == 422
+
+    client.patch(f"/grant-applications/{draft_id}", json={"status": "submitted"})
+    # submitted forms are frozen for the applicant
+    assert client.patch(f"/grant-applications/{draft_id}", json={"title": "x"}).status_code == 422
+
+
 def test_grant_application_closed_call_422(client) -> None:
     idea_id = client.post("/ideas", json=IDEA).json()["id"]
     grant_calls = app.dependency_overrides[admin_deps.get_grant_call_service]()

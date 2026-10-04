@@ -1239,6 +1239,58 @@
         }
       }
     },
+    "/admin/grant-applications/{application_id}/status": {
+      "post": {
+        "tags": [
+          "admin:grant-applications"
+        ],
+        "summary": "Decide Grant Application",
+        "operationId": "decide_grant_application_admin_grant_applications__application_id__status_post",
+        "parameters": [
+          {
+            "name": "application_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Application Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrantApplicationDecision"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GrantApplication"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/admin/reports/trends": {
       "get": {
         "tags": [
@@ -3468,11 +3520,42 @@
         "title": "GrantApplicationCreate",
         "description": "Start draft (sections 1+3–9). Rest comes empty for the user to fill/edit."
       },
+      "GrantApplicationDecision": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "rejected"
+            ],
+            "title": "Status"
+          },
+          "message": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 2000
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Message"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "title": "GrantApplicationDecision"
+      },
       "GrantApplicationStatus": {
         "type": "string",
         "enum": [
           "draft",
-          "submitted"
+          "submitted",
+          "accepted",
+          "rejected"
         ],
         "title": "GrantApplicationStatus"
       },

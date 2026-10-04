@@ -10,7 +10,9 @@ import { card, field, fmtDate, h2, td, th } from "@/components/admin/styles";
 import { useApiOrMock } from "@/components/admin/useApiOrMock";
 
 export const APPLICATION_STATUS: Record<GrantApplicationStatus, string> = {
-  submitted: "Wysłany",
+  submitted: "Do decyzji",
+  accepted: "Przyjęty",
+  rejected: "Odrzucony",
   draft: "Szkic",
 };
 
@@ -23,7 +25,7 @@ export function fmtPln(amount: string | number | null) {
 type Data = { applications: GrantApplication[]; calls: GrantCall[] };
 type Filter = GrantApplicationStatus | "all";
 
-// drafts are often abandoned half-way, so the default view is what applicants actually sent
+// drafts are often abandoned half-way, so the default view is what waits for a decision
 export function GrantApplicationList() {
   const statusId = useId();
   const callId = useId();
