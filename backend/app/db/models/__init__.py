@@ -1,6 +1,7 @@
 from app.db.base import Base
 from app.db.models.feedback import Feedback
 from app.db.models.generated_document import GeneratedDocument
+from app.db.models.grant_application import GrantApplication
 from app.db.models.grant_call import GrantCall
 from app.db.models.idea import Idea
 from app.db.models.innovation import Innovation
@@ -13,6 +14,7 @@ __all__ = [
     "Base",
     "Feedback",
     "GeneratedDocument",
+    "GrantApplication",
     "GrantCall",
     "Idea",
     "Innovation",

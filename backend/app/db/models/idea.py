@@ -40,3 +40,4 @@ class Idea(Base):
 
     innovation = relationship("Innovation")
     generated_documents = relationship("GeneratedDocument", back_populates="idea")
+    grant_applications = relationship("GrantApplication", back_populates="idea")

@@ -182,7 +182,7 @@ CSV export is a streaming response. Cities with fewer than 5 problem reports are
 |---|---|
 | Matching | `POST /match?test_signup=` `{text, city, email?, consent}` → `{problem_report_id, answer, innovations, similar_reports, test_signup_ids}` (`answer` is rag's one summary for the whole result); `test_signup=true` needs an email (422 otherwise) |
 | Problem reports | `GET /problem-reports/{id}` (public page with `admin_reply`), `POST /problem-reports/{id}/support` ("mnie też") |
-| Ideas | `POST /ideas` `{summary, essence, target_group, stage, social_canvas?, email?, consent}`, `POST /ideas/{id}/grant-application {grant_call_id}` (open calls only, stored in `generated_documents`) |
+| Ideas | `POST /ideas` `{summary, essence, target_group, stage, social_canvas?, email?, consent}`, `POST /ideas/{id}/grant-application {grant_call_id, applicant_type?}` → full Zał. 3 JSON (AI fills 1+3–9; empty typed §2/§10–12 for FE edit), `GET/PATCH /grant-applications/{id}` (user may edit every field incl. LLM text) |
 | Library | `GET /innovations` (published only; filters `challenge_area`, `q`, `limit`, `offset`), `GET /innovations/{id}` (with `rating_avg`, `rating_count`, `has_pdf`), `GET /innovations/{id}/pdf` (the admin-uploaded source PDF from `upload_dir`, inline; 404 for drafts or when there is no file), `POST /innovations/{id}/feedback {stars, comment, test_signup_id?}` |
 | Threads | `GET /innovations/{id}/threads` (published threads + published replies), `POST /innovations/{id}/threads` (202, `pending`), `POST /threads/{id}/replies` (202, `pending`) |
 | Middleman | `POST /middleman {innovation_id, institution_type, needs, email?, consent}` (the response is the stored document) |
@@ -190,7 +190,7 @@ CSV export is a streaming response. Cities with fewer than 5 problem reports are
 | Tester rating (HTML, not in OpenAPI) | `GET /ratings/{signup_id}` shows the rating form (optional `?rating=N` preselects a star); `POST /ratings/{signup_id}` (form `stars`, `comment`) stores one `feedback` row (`kind='test_signup'`) and moves the signup to `rated`. The signup id is the token; only `accepted` / `completed` signups can rate, once. Opening the link stores nothing, so mail link scanners can't rate. |
 
 Admin and public services are db-backed (`backend/app/services/{admin,public}/db.py`, one session per request via `get_db`); the mocks in `mock.py` stay for unit tests through dependency overrides.
-- `/match` uses rag `/query` (`backend/app/clients/rag.py`). Middleman cards and grant drafts are still templates (`backend/app/services/public/drafts.py`).
+- `/match` uses rag `/query` (`backend/app/clients/rag.py`). Grant-application drafts call Gemini (`backend/app/clients/gemini.py`, JSON fields 1+3–9 from the ROPS form) with a template fallback when the key is missing or the API fails; Middleman cards are still templates (`backend/app/services/public/drafts.py`).
 - The admin problem report response keeps `location`, `is_critical` and `criticality_score` for the admin frontend: `location` is filled from `city`, criticality is computed on read (score ≥ 10 is critical).
 
 ## 6. Data model
@@ -315,6 +315,29 @@ erDiagram
         text email "null"
         timestamptz created_at
     }
+    GRANT_APPLICATIONS {
+        uuid id PK
+        uuid idea_id FK "null"
+        uuid grant_call_id FK "null"
+        text status "draft|submitted"
+        text title
+        text applicant_type "person|organization|informal_group"
+        jsonb applicant
+        text description
+        text innovativeness
+        text problem_diagnosis
+        text beneficiaries
+        text expected_change
+        text future_vision
+        jsonb action_plan
+        numeric grant_amount_pln "null"
+        text team
+        jsonb declarations
+        text email "null"
+        text generated_by "gemini|template"
+        timestamptz created_at
+        timestamptz updated_at
+    }
 ```
 
 - **Innovations** are rag's table as-is (`rag/sql`); match-api maps exactly its columns and adds none. Films link through `page_url`. rag aliases `page_url` as `parent_url` in responses only.
@@ -323,7 +346,7 @@ erDiagram
 - **city** = gmina, picked from a fixed list. Free-text city spellings are rejected on write.
 - **Criticality** is not stored: reports compute it on read (problem reports × distinct cities × 7d growth).
 - **Threads** are per-innovation community discussions (R5). No public accounts: `author_label` + optional `email`. Flat replies only (no nested reply trees). `helpful_count` stays in the table, but the public "pomocne" endpoint is deferred, so nothing increments it yet. Public replies are always `practitioner`; `expert` / `mentor` / `admin` are set by ROPS. Public lists show `published` only; `pending` waits for ROPS moderation.
-- **Generated documents** store Middleman service cards and grant-application drafts so the user and admin can reopen them. They are not re-submitted into an external grant DB (that stays deferred).
+- **Generated documents** store Middleman service cards (legacy grant drafts may still appear with `kind=grant_application`). Full ROPS Zał. 3 forms live in **`grant_applications`**. Every GET/POST/PATCH returns the complete editable shape: typed `applicant` (person a–g / organization a–k / informal partners 1–5), narrative fields 1+3–8, `action_plan` (prep + test I/II steps with cost), `grant_amount_pln`, `team`, and per-checkbox `declarations` (A person / B organization). AI pre-fills 1+3–9; user edits anything before `status=submitted`. Not submitted to an external grant DB (deferred).
 - **Naming:** always `city` (not `location`), always `stars` on feedback in the API (rag column `rating`).
 
 Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `POST /threads/{id}/replies`, `POST /middleman`, grant generator on an idea (both persist a `generated_documents` row).
@@ -335,7 +358,7 @@ Public endpoints that write the new tables: `POST /innovations/{id}/threads`, `P
 | rag service down | `/match` returns 503 and stores nothing, so the user can retry; a stored report with no matches would show up as a false gap |
 | background `/embed/pdf` fails (rag down, bad PDF) | the row stays an unindexed draft, the error is logged; the admin re-uploads the PDF |
 | process restarts during a background embed | same as a failure: the row stays draft, the admin re-uploads (no job table) |
-| LLM down | rag `/query` is unaffected; the optional `/llm/test` endpoint returns 503 |
+| LLM down | rag `/query` still returns matches with `answer: ""`; `/match` shows cards only; grant drafts fall back to template; optional `/llm/test` returns 503 |
 | spam on public routes | per-IP rate limit, input length caps |
 | prompt injection | user text treated as data, explanations limited to retrieved rows |
 | SMTP unset or down | email skipped; the admin still sees the inbox, the reply is on the public page |

@@ -28,6 +28,10 @@ class Settings(BaseSettings):
     upload_dir: str = "/data/uploads"
     max_upload_bytes: int = 10 * 1024 * 1024
 
+    # grant-application drafts (Gemini)
+    gemini_api_key: str = ""
+    gemini_model: str = "gemini-2.0-flash"
+
     # notifications (R10/R12); empty smtp_host or mail_from turns them off.
     # no default addresses on purpose: a fallback could mail a real inbox by accident
     smtp_host: str = ""

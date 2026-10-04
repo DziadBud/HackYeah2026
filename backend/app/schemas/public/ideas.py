@@ -15,7 +15,3 @@ class IdeaCreate(OptionalContact):
 class IdeaCreated(BaseModel):
     id: str
     status: IdeaStatus
-
-
-class GrantApplicationRequest(OptionalContact):
-    grant_call_id: str
