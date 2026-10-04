@@ -17,10 +17,11 @@ class TestSignup(Base):
     innovation_id: Mapped[str] = mapped_column(
         Text, ForeignKey("innovations.id", ondelete="CASCADE"), nullable=False
     )
-    problem_report_id: Mapped[uuid.UUID] = mapped_column(
+    # null for direct signups from an innovation page
+    problem_report_id: Mapped[uuid.UUID | None] = mapped_column(
         UUID(as_uuid=True),
         ForeignKey("problem_reports.id", ondelete="CASCADE"),
-        nullable=False,
+        nullable=True,
     )
     email: Mapped[str] = mapped_column(Text, nullable=False)
     status: Mapped[str] = mapped_column(Text, nullable=False, server_default="applied")

@@ -4,6 +4,7 @@ from app.schemas.admin.common import ChallengeArea, Page
 from app.schemas.admin.innovations import (
     Innovation,
     InnovationFeedback,
+    InnovationRating,
     InnovationStats,
     PublicationStatus,
     InnovationUpdate,
@@ -93,6 +94,13 @@ def innovation_feedback(
     innovation_id: str, svc: InnovationAdminService = Depends(get_innovation_service)
 ) -> InnovationFeedback:
     return svc.feedback(innovation_id)
+
+
+@router.get("/{innovation_id}/ratings", response_model=list[InnovationRating])
+def innovation_ratings(
+    innovation_id: str, svc: InnovationAdminService = Depends(get_innovation_service)
+) -> list[InnovationRating]:
+    return svc.ratings(innovation_id)
 
 
 @router.get("/{innovation_id}/stats", response_model=InnovationStats)

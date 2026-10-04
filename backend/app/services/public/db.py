@@ -28,7 +28,13 @@ from app.schemas.public.grant_applications import (
     normalize_declarations,
 )
 from app.schemas.public.ideas import IdeaCreate, IdeaCreated
-from app.schemas.public.innovations import FeedbackCreate, FeedbackCreated, LibraryInnovation
+from app.schemas.public.innovations import (
+    FeedbackCreate,
+    FeedbackCreated,
+    LibraryInnovation,
+    TestSignupCreate,
+    TestSignupCreated,
+)
 from app.schemas.public.match import (
     MatchedInnovation,
     MatchRequest,
@@ -373,6 +379,13 @@ class DbLibraryService:
         self._db.add(row)
         self._db.commit()
         return FeedbackCreated(id=str(row.id))
+
+    def sign_up_for_test(self, innovation_id: str, data: TestSignupCreate) -> TestSignupCreated:
+        _published(self._db, innovation_id)
+        row = TestSignup(innovation_id=innovation_id, email=data.email)
+        self._db.add(row)
+        self._db.commit()
+        return TestSignupCreated(id=str(row.id), status=TestSignupStatus(row.status))
 
     def _ratings(self, innovation_ids: list[str]) -> dict[str, tuple[float, int]]:
         if not innovation_ids:

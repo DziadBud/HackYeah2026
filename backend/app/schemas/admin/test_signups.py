@@ -18,7 +18,8 @@ class TestSignup(BaseModel):
     id: str
     innovation_id: str
     innovation_title: str
-    problem_report_id: str
+    # null for direct signups from an innovation page
+    problem_report_id: str | None
     email: str
     status: TestSignupStatus
     created_at: datetime

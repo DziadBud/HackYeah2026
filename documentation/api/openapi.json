@@ -444,6 +444,52 @@
         }
       }
     },
+    "/admin/innovations/{innovation_id}/ratings": {
+      "get": {
+        "tags": [
+          "admin:innovations"
+        ],
+        "summary": "Innovation Ratings",
+        "operationId": "innovation_ratings_admin_innovations__innovation_id__ratings_get",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/InnovationRating"
+                  },
+                  "title": "Response Innovation Ratings Admin Innovations  Innovation Id  Ratings Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/admin/innovations/{innovation_id}/stats": {
       "get": {
         "tags": [
@@ -1737,8 +1783,8 @@
         "tags": [
           "ideas"
         ],
-        "summary": "Generate Grant Application",
-        "operationId": "generate_grant_application_ideas__idea_id__grant_application_post",
+        "summary": "Create Grant Application",
+        "operationId": "create_grant_application_ideas__idea_id__grant_application_post",
         "parameters": [
           {
             "name": "idea_id",
@@ -1755,7 +1801,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/GrantApplicationRequest"
+                "$ref": "#/components/schemas/GrantApplicationCreate"
               }
             }
           }
@@ -1766,7 +1812,99 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GeneratedDocument"
+                  "$ref": "#/components/schemas/GrantApplication"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/grant-applications/{application_id}": {
+      "get": {
+        "tags": [
+          "ideas"
+        ],
+        "summary": "Get Grant Application",
+        "operationId": "get_grant_application_grant_applications__application_id__get",
+        "parameters": [
+          {
+            "name": "application_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Application Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GrantApplication"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "ideas"
+        ],
+        "summary": "Update Grant Application",
+        "operationId": "update_grant_application_grant_applications__application_id__patch",
+        "parameters": [
+          {
+            "name": "application_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Application Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrantApplicationUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GrantApplication"
                 }
               }
             }
@@ -2001,6 +2139,58 @@
         }
       }
     },
+    "/innovations/{innovation_id}/test-signups": {
+      "post": {
+        "tags": [
+          "innovations"
+        ],
+        "summary": "Sign Up For Test",
+        "operationId": "sign_up_for_test_innovations__innovation_id__test_signups_post",
+        "parameters": [
+          {
+            "name": "innovation_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Innovation Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TestSignupCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TestSignupCreated"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/innovations/{innovation_id}/threads": {
       "get": {
         "tags": [
@@ -2218,6 +2408,43 @@
   },
   "components": {
     "schemas": {
+      "ActionPlan": {
+        "properties": {
+          "preparation_summary": {
+            "type": "string",
+            "title": "Preparation Summary",
+            "default": ""
+          },
+          "preparation": {
+            "items": {
+              "$ref": "#/components/schemas/PlanStep"
+            },
+            "type": "array",
+            "title": "Preparation"
+          },
+          "testing_summary": {
+            "type": "string",
+            "title": "Testing Summary",
+            "default": ""
+          },
+          "testing_phase_1": {
+            "items": {
+              "$ref": "#/components/schemas/PlanStep"
+            },
+            "type": "array",
+            "title": "Testing Phase 1"
+          },
+          "testing_phase_2": {
+            "items": {
+              "$ref": "#/components/schemas/PlanStep"
+            },
+            "type": "array",
+            "title": "Testing Phase 2"
+          }
+        },
+        "type": "object",
+        "title": "ActionPlan"
+      },
       "AdminMe": {
         "properties": {
           "id": {
@@ -2348,6 +2575,15 @@
         ],
         "title": "AdminThread"
       },
+      "ApplicantType": {
+        "type": "string",
+        "enum": [
+          "person",
+          "organization",
+          "informal_group"
+        ],
+        "title": "ApplicantType"
+      },
       "AreaMatches": {
         "properties": {
           "challenge_area": {
@@ -2369,7 +2605,7 @@
         "properties": {
           "file": {
             "type": "string",
-            "format": "binary",
+            "contentMediaType": "application/octet-stream",
             "title": "File"
           },
           "title": {
@@ -2646,7 +2882,158 @@
         ],
         "title": "GeneratedDocument"
       },
-      "GrantApplicationRequest": {
+      "GrantApplication": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "idea_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Idea Id"
+          },
+          "grant_call_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Grant Call Id"
+          },
+          "status": {
+            "$ref": "#/components/schemas/GrantApplicationStatus"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "applicant_type": {
+            "$ref": "#/components/schemas/ApplicantType"
+          },
+          "applicant": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Applicant"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "innovativeness": {
+            "type": "string",
+            "title": "Innovativeness"
+          },
+          "problem_diagnosis": {
+            "type": "string",
+            "title": "Problem Diagnosis"
+          },
+          "beneficiaries": {
+            "type": "string",
+            "title": "Beneficiaries"
+          },
+          "expected_change": {
+            "type": "string",
+            "title": "Expected Change"
+          },
+          "future_vision": {
+            "type": "string",
+            "title": "Future Vision"
+          },
+          "action_plan": {
+            "$ref": "#/components/schemas/ActionPlan"
+          },
+          "grant_amount_pln": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Grant Amount Pln"
+          },
+          "team": {
+            "type": "string",
+            "title": "Team"
+          },
+          "declarations": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Declarations"
+          },
+          "email": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Email"
+          },
+          "generated_by": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Generated By"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "idea_id",
+          "grant_call_id",
+          "status",
+          "title",
+          "applicant_type",
+          "applicant",
+          "description",
+          "innovativeness",
+          "problem_diagnosis",
+          "beneficiaries",
+          "expected_change",
+          "future_vision",
+          "action_plan",
+          "grant_amount_pln",
+          "team",
+          "declarations",
+          "email",
+          "generated_by",
+          "created_at",
+          "updated_at"
+        ],
+        "title": "GrantApplication",
+        "description": "Pełny wniosek Zał. 3 — zawsze sekcje 1–12 (puste lub wypełnione, edytowalne)."
+      },
+      "GrantApplicationCreate": {
         "properties": {
           "email": {
             "anyOf": [
@@ -2669,13 +3056,213 @@
           "grant_call_id": {
             "type": "string",
             "title": "Grant Call Id"
+          },
+          "applicant_type": {
+            "$ref": "#/components/schemas/ApplicantType",
+            "default": "person"
+          },
+          "notes": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 2000
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Notes"
           }
         },
         "type": "object",
         "required": [
           "grant_call_id"
         ],
-        "title": "GrantApplicationRequest"
+        "title": "GrantApplicationCreate",
+        "description": "Start AI draft (sections 1+3–9). Rest comes empty for the user to fill/edit."
+      },
+      "GrantApplicationStatus": {
+        "type": "string",
+        "enum": [
+          "draft",
+          "submitted"
+        ],
+        "title": "GrantApplicationStatus"
+      },
+      "GrantApplicationUpdate": {
+        "properties": {
+          "status": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/GrantApplicationStatus"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Title"
+          },
+          "applicant_type": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ApplicantType"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "applicant": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Applicant"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Description"
+          },
+          "innovativeness": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Innovativeness"
+          },
+          "problem_diagnosis": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Problem Diagnosis"
+          },
+          "beneficiaries": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Beneficiaries"
+          },
+          "expected_change": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Expected Change"
+          },
+          "future_vision": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Future Vision"
+          },
+          "action_plan": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ActionPlan"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "grant_amount_pln": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string",
+                "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Grant Amount Pln"
+          },
+          "team": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Team"
+          },
+          "declarations": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Declarations"
+          },
+          "email": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Email"
+          }
+        },
+        "type": "object",
+        "title": "GrantApplicationUpdate",
+        "description": "Pełna edycja formularza — FE może nadpisać też treść z LLM."
       },
       "GrantCall": {
         "properties": {
@@ -3149,6 +3736,48 @@
           "recent_comments"
         ],
         "title": "InnovationFeedback"
+      },
+      "InnovationRating": {
+        "properties": {
+          "rating": {
+            "type": "integer",
+            "maximum": 5.0,
+            "minimum": 1.0,
+            "title": "Rating"
+          },
+          "comment": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Comment"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "rating",
+              "test_signup"
+            ],
+            "title": "Kind"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rating",
+          "comment",
+          "kind",
+          "created_at"
+        ],
+        "title": "InnovationRating"
       },
       "InnovationStats": {
         "properties": {
@@ -3832,12 +4461,7 @@
       "ModerationDecision": {
         "properties": {
           "status": {
-            "type": "string",
-            "enum": [
-              "published",
-              "hidden"
-            ],
-            "title": "Status"
+            "$ref": "#/components/schemas/ModerationStatus"
           }
         },
         "type": "object",
@@ -3916,6 +4540,44 @@
           "offset"
         ],
         "title": "Page[LibraryInnovation]"
+      },
+      "PlanStep": {
+        "properties": {
+          "action": {
+            "type": "string",
+            "title": "Action",
+            "default": ""
+          },
+          "timeline": {
+            "type": "string",
+            "title": "Timeline",
+            "default": ""
+          },
+          "cost_pln": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Cost Pln"
+          },
+          "note": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Note"
+          }
+        },
+        "type": "object",
+        "title": "PlanStep"
       },
       "ProblemReport": {
         "properties": {
@@ -4294,7 +4956,14 @@
             "title": "Innovation Title"
           },
           "problem_report_id": {
-            "type": "string",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Problem Report Id"
           },
           "email": {
@@ -4321,6 +4990,43 @@
           "created_at"
         ],
         "title": "TestSignup"
+      },
+      "TestSignupCreate": {
+        "properties": {
+          "email": {
+            "type": "string",
+            "maxLength": 254,
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "title": "Email"
+          },
+          "consent": {
+            "type": "boolean",
+            "title": "Consent",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "email"
+        ],
+        "title": "TestSignupCreate"
+      },
+      "TestSignupCreated": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "status": {
+            "$ref": "#/components/schemas/TestSignupStatus"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "status"
+        ],
+        "title": "TestSignupCreated"
       },
       "TestSignupStatus": {
         "type": "string",
@@ -4501,6 +5207,13 @@
           "type": {
             "type": "string",
             "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
           }
         },
         "type": "object",

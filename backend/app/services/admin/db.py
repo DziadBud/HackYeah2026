@@ -17,6 +17,7 @@ from app.schemas.admin.innovations import (
     FeedbackComment,
     Innovation,
     InnovationFeedback,
+    InnovationRating,
     InnovationStats,
     InnovationStatsRow,
     InnovationUpdate,
@@ -164,6 +165,24 @@ class DbInnovationAdminService:
                 for c in comments
             ],
         )
+
+    # quoted: list() above shadows the builtin
+    def ratings(self, innovation_id: str) -> "list[InnovationRating]":
+        _get(self._db, InnovationRow, innovation_id, innovation_id)
+        rows = self._db.scalars(
+            select(Feedback)
+            .where(Feedback.innovation_id == innovation_id)
+            .order_by(Feedback.created_at.desc())
+        ).all()
+        return [
+            InnovationRating(
+                rating=r.stars,
+                comment=r.comment,
+                kind="test_signup" if r.kind == "test_signup" else "rating",
+                created_at=r.created_at,
+            )
+            for r in rows
+        ]
 
 
     def stats(self, innovation_id: str) -> InnovationStats:
@@ -523,7 +542,7 @@ def _signup(row: TestSignup) -> TestSignupSchema:
         id=str(row.id),
         innovation_id=row.innovation_id,
         innovation_title=row.innovation.title,
-        problem_report_id=str(row.problem_report_id),
+        problem_report_id=str(row.problem_report_id) if row.problem_report_id else None,
         email=row.email,
         status=TestSignupStatus(row.status),
         created_at=row.created_at,

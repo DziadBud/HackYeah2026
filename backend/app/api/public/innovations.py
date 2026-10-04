@@ -6,7 +6,13 @@ from fastapi.responses import FileResponse
 from app.config import settings
 
 from app.schemas.admin.common import ChallengeArea, Page
-from app.schemas.public.innovations import FeedbackCreate, FeedbackCreated, LibraryInnovation
+from app.schemas.public.innovations import (
+    FeedbackCreate,
+    FeedbackCreated,
+    LibraryInnovation,
+    TestSignupCreate,
+    TestSignupCreated,
+)
 from app.schemas.public.threads import Submitted, Thread, ThreadCreate
 from app.services.admin.errors import NotFoundError
 from app.services.public.deps import get_library_service, get_thread_service
@@ -63,6 +69,18 @@ def add_feedback(
     innovation_id: str, body: FeedbackCreate, svc: LibraryService = Depends(get_library_service)
 ) -> FeedbackCreated:
     return svc.add_feedback(innovation_id, body)
+
+
+# R4: volunteer for this one innovation; /match?test_signup=true signs up for every match
+@router.post(
+    "/{innovation_id}/test-signups",
+    response_model=TestSignupCreated,
+    status_code=status.HTTP_201_CREATED,
+)
+def sign_up_for_test(
+    innovation_id: str, body: TestSignupCreate, svc: LibraryService = Depends(get_library_service)
+) -> TestSignupCreated:
+    return svc.sign_up_for_test(innovation_id, body)
 
 
 @router.get("/{innovation_id}/threads", response_model=list[Thread])

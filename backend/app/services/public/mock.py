@@ -20,7 +20,13 @@ from app.schemas.public.grant_applications import (
     normalize_declarations,
 )
 from app.schemas.public.ideas import IdeaCreate, IdeaCreated
-from app.schemas.public.innovations import FeedbackCreate, FeedbackCreated, LibraryInnovation
+from app.schemas.public.innovations import (
+    FeedbackCreate,
+    FeedbackCreated,
+    LibraryInnovation,
+    TestSignupCreate,
+    TestSignupCreated,
+)
 from app.schemas.public.match import (
     MatchedInnovation,
     MatchRequest,
@@ -45,6 +51,7 @@ from app.services.admin.mock import (
     MockIdeaAdminService,
     MockInnovationAdminService,
     MockProblemReportAdminService,
+    MockTestSignupAdminService,
 )
 
 # public mocks read and write the admin mocks, so a public action shows up in the admin panel.
@@ -283,8 +290,13 @@ class MockIdeaService:
 
 
 class MockLibraryService:
-    def __init__(self, innovations: MockInnovationAdminService) -> None:
+    def __init__(
+        self,
+        innovations: MockInnovationAdminService,
+        test_signups: MockTestSignupAdminService | None = None,
+    ) -> None:
         self._innovations = innovations
+        self._test_signups = test_signups or MockTestSignupAdminService()
         self._feedback: dict[str, list[FeedbackCreate]] = {}
 
     def list(
@@ -304,6 +316,10 @@ class MockLibraryService:
         _published(self._innovations, innovation_id)
         self._feedback.setdefault(innovation_id, []).append(data)
         return FeedbackCreated(id=_new_id())
+
+    def sign_up_for_test(self, innovation_id: str, data: TestSignupCreate) -> TestSignupCreated:
+        signup = self._test_signups.add(_published(self._innovations, innovation_id), data.email)
+        return TestSignupCreated(id=signup.id, status=signup.status)
 
     def _card(self, innovation: Innovation) -> LibraryInnovation:
         stars = [f.stars for f in self._feedback.get(innovation.id, [])]
