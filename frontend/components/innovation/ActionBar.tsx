@@ -3,6 +3,7 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { api, ApiError, type LikeState } from "@/lib/api";
 import { Icon } from "@/components/Icon";
+import { formatError } from "@/components/forms/validation";
 
 const CLIENT_KEY = "hubmi-client-id";
 
@@ -180,6 +181,14 @@ export function ActionBar({
             const mail = email.trim();
             if (!mail) {
               setError("Podaj adres e-mail, na który ROPS ma się odezwać.");
+              emailRef.current?.focus();
+              return;
+            }
+            // type="email" lets "jan@gmail" through, the backend does not
+            const emailError = formatError("email", mail);
+            if (emailError) {
+              setError(emailError);
+              emailRef.current?.focus();
               return;
             }
             setBusy(true);
@@ -196,7 +205,9 @@ export function ActionBar({
               setError(
                 err instanceof ApiError && err.status === 404
                   ? "Ta innowacja nie przyjmuje teraz zgłoszeń do testów."
-                  : "Nie udało się wysłać zgłoszenia. Sprawdź połączenie i spróbuj ponownie.",
+                  : err instanceof ApiError && err.status === 422
+                    ? "Sprawdź adres e-mail i spróbuj ponownie."
+                    : "Nie udało się wysłać zgłoszenia. Sprawdź połączenie i spróbuj ponownie.",
               );
             } finally {
               setBusy(false);

@@ -1,4 +1,4 @@
-// format rules for Zał. 3 §2 fields; the backend stores drafts as typed, so checks live here
+// input format rules shared by public forms; grant drafts are stored as typed, so checks live here
 
 export type FieldKind = "text" | "email" | "phone" | "postal" | "nip" | "regon" | "krs";
 
@@ -109,4 +109,14 @@ export function formatError(kind: FieldKind, raw: string): string {
     default:
       return "";
   }
+}
+
+// "45 000,00 zł" must not become 4 500 000: a trailing decimal part (grosze) is dropped,
+// while a dot before exactly 3 digits ("45.000") is a thousands separator
+export function moneyDigits(raw: string): string {
+  return raw
+    .replace(/[.,]\d{1,2}(?!\d)\s*(zł|pln)?\s*$/i, "")
+    .replace(/\D/g, "")
+    .replace(/^0+(?=\d)/, "")
+    .slice(0, 10);
 }

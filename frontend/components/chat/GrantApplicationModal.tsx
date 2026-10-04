@@ -14,7 +14,8 @@ import {
   PERSON_FIELDS,
 } from "@/components/grant/labels";
 import { MoneyInput, fmtZl } from "@/components/grant/MoneyInput";
-import { fieldKind, formatError, inputAttrs, sanitize } from "@/components/grant/validation";
+import { CharCount } from "@/components/forms/CharCount";
+import { fieldKind, formatError, inputAttrs, sanitize } from "@/components/forms/validation";
 
 const field =
   "min-h-12 w-full rounded-lg border-[1.5px] border-outline bg-surface p-space-sm text-body-md text-on-surface aria-[invalid=true]:border-error";
@@ -317,6 +318,8 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
         return false;
       }
     }
+    // the field loses focus when the form goes inert; give it back after the save
+    const focused = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     setBusy(true);
     setBusyLabel(submit ? "Wysyłam wniosek…" : "Zapisuję szkic…");
     setError("");
@@ -354,6 +357,7 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
     } finally {
       setBusy(false);
       setBusyLabel("");
+      requestAnimationFrame(() => focused?.isConnected && focused.focus());
     }
   }
 
@@ -465,7 +469,7 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
             </div>
           )}
           {!draft ? (
-            <div className="flex flex-col gap-space-sm">
+            <div className="flex flex-col gap-space-sm" inert={busy}>
               {callsError && (
                 <p role="alert" className="text-body-md font-semibold text-error">
                   {callsError}
@@ -482,12 +486,15 @@ export function GrantApplicationModal({ initialSummary = "", onClose, onDone }: 
                   className={`${field} resize-y`}
                   value={summary}
                   onChange={(e) => setSummary(e.target.value)}
+                  aria-describedby="ai-summary-count"
                   placeholder="Jaki problem chcesz rozwiązać? Na czym polega Twój pomysł? (wymagane tylko przy generacji AI)"
                 />
+                <CharCount id="ai-summary-count" length={summary.length} max={2000} />
               </div>
             </div>
           ) : (
-            <div className="flex flex-col gap-space-md">
+            // inert while saving: keys typed now would be overwritten by the server's copy
+            <div className="flex flex-col gap-space-md" inert={busy}>
               <p className="text-body-md text-on-surface-variant">
                 Szkic:{" "}
                 {draft.generated_by === "gemini"

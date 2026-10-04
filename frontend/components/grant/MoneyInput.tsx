@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { moneyDigits } from "@/components/forms/validation";
 
 type Props = {
   id: string;
@@ -16,7 +17,7 @@ export function fmtZl(value: number) {
 }
 
 // text + numeric keypad instead of type=number: no wheel changes while scrolling, no "e"/"-",
-// and spaces typed as thousand separators are simply dropped
+// spaces typed as thousand separators are dropped, pasted grosze are cut off
 export function MoneyInput({ id, value, onChange, className, invalid, describedBy }: Props) {
   // raw digits while focused, so formatting never moves the caret mid-typing
   const [editing, setEditing] = useState<string | null>(null);
@@ -36,7 +37,7 @@ export function MoneyInput({ id, value, onChange, className, invalid, describedB
         onFocus={() => setEditing(value == null ? "" : String(value))}
         onBlur={() => setEditing(null)}
         onChange={(e) => {
-          const digits = e.target.value.replace(/\D/g, "").replace(/^0+(?=\d)/, "").slice(0, 10);
+          const digits = moneyDigits(e.target.value);
           setEditing(digits);
           onChange(digits ? Number(digits) : null);
         }}

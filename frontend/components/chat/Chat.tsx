@@ -5,6 +5,7 @@ import { ApiError, api, type MatchedInnovation, type SimilarProblemReport } from
 import { demoMatch } from "@/lib/demo-data";
 import { areaLabelsFromTags } from "@/lib/labels";
 import { Icon } from "@/components/Icon";
+import { CharCount } from "@/components/forms/CharCount";
 import { InnovationCard, type InnovationCardData } from "@/components/InnovationCard";
 import { GrantApplicationModal } from "@/components/chat/GrantApplicationModal";
 import { SimilarReports } from "@/components/chat/SimilarReports";
@@ -374,7 +375,7 @@ export function Chat() {
                     type="button"
                     aria-pressed={selected}
                     onClick={() => chooseAction(a.title, a.prompt)}
-                    className={`flex min-h-9 items-center gap-1 rounded-full px-2.5 py-1 text-caption font-semibold hc-edge ${
+                    className={`flex min-h-12 items-center gap-1 rounded-full px-space-sm py-1 text-caption font-semibold hc-edge ${
                       selected
                         ? "bg-primary text-on-primary"
                         : "bg-surface-container-low text-primary hover:bg-surface-container-high"
@@ -404,13 +405,14 @@ export function Chat() {
                   e.currentTarget.form?.requestSubmit();
                 }
               }}
-              aria-describedby="chat-input-hint"
+              aria-describedby="chat-input-hint chat-input-count"
               placeholder="Opisz problem, aby wyszukać innowację lub zgłosić własny pomysł..."
               className="w-full resize-y rounded-lg border-[1.5px] border-outline bg-surface p-space-sm text-body-lg text-on-surface md:p-space-md"
             />
             <p id="chat-input-hint" className="hidden text-caption text-on-surface-variant sm:block">
               Enter dodaje nową linię, Ctrl + Enter wysyła wiadomość.
             </p>
+            <CharCount id="chat-input-count" length={input.length} max={2000} />
           </div>
           <div className="flex flex-wrap items-center gap-space-xs pt-space-xs">
             <button

@@ -48,7 +48,7 @@ async function loadFromApi(): Promise<PanelData> {
   return { problemReports, ideas, trends, critical, gaps, grantCalls, threads };
 }
 
-function ReplyForm({ onSend, previous }: { onSend: (msg: string) => Promise<void>; previous?: string | null }) {
+function ReplyForm({ onSend, previous }: { onSend: (msg: string) => Promise<boolean>; previous?: string | null }) {
   const id = useId();
   const [msg, setMsg] = useState("");
   const [busy, setBusy] = useState(false);
@@ -59,9 +59,9 @@ function ReplyForm({ onSend, previous }: { onSend: (msg: string) => Promise<void
         e.preventDefault();
         if (!msg.trim()) return;
         setBusy(true);
-        await onSend(msg.trim());
+        // keep the text when sending fails, so the admin can retry without retyping
+        if (await onSend(msg.trim())) setMsg("");
         setBusy(false);
-        setMsg("");
       }}
     >
       {previous && (
@@ -78,6 +78,7 @@ function ReplyForm({ onSend, previous }: { onSend: (msg: string) => Promise<void
         rows={2}
         value={msg}
         required
+        maxLength={5000}
         onChange={(e) => setMsg(e.target.value)}
         className="rounded-lg border-[1.5px] border-outline bg-surface-container-lowest p-space-sm text-body-md text-on-surface"
       />
@@ -109,15 +110,17 @@ export function AdminPanel() {
     call: () => Promise<T>,
     local: (item: T) => T,
     done: string,
-  ) {
+  ): Promise<boolean> {
     try {
       const current = (data?.[key] as unknown as T[]).find((x) => x.id === id);
-      if (!current) return;
+      if (!current) return false;
       const updated = source === "api" ? await call() : local(current);
       setData((d) => d && { ...d, [key]: (d[key] as unknown as T[]).map((x) => (x.id === id ? updated : x)) });
       setStatus(done);
+      return true;
     } catch {
       setStatus("Operacja nie powiodła się. Spróbuj ponownie.");
+      return false;
     }
   }
 

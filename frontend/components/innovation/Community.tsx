@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useId, useState } from "react";
-import { api, type ReplyKind, type Thread, type ThreadReply } from "@/lib/api";
+import { ApiError, api, type ReplyKind, type Thread, type ThreadReply } from "@/lib/api";
 import { Icon } from "@/components/Icon";
+import { CharCount } from "@/components/forms/CharCount";
+import { formatError } from "@/components/forms/validation";
 
 const field =
   "min-h-12 rounded-lg border-[1.5px] border-outline bg-surface-container-lowest px-4 text-body-md text-on-surface";
@@ -19,6 +21,17 @@ const ROLE: Record<ReplyKind, { label: string; icon: string; badge: string }> = 
 };
 
 const SEND_FAILED = "Nie udało się wysłać. Sprawdź połączenie z serwerem i spróbuj ponownie.";
+const BODY_MAX = 5000;
+
+// a 422 means the text itself was refused, not that the server is down
+function sendError(err: unknown) {
+  return err instanceof ApiError && err.status === 422 ? "Sprawdź wpisane dane i spróbuj ponownie." : SEND_FAILED;
+}
+
+// first empty or malformed field as [id, message]; trimmed, since "required" lets spaces through
+function firstProblem(checks: [id: string, problem: string][]) {
+  return checks.find(([, problem]) => problem) ?? null;
+}
 
 function fmtDate(iso: string) {
   return new Date(iso).toLocaleDateString("pl-PL", { dateStyle: "long" });
@@ -52,9 +65,13 @@ function Reply({ r }: { r: ThreadReply }) {
   );
 }
 
-function ThreadItem({ thread, onStatus }: { thread: Thread; onStatus: (s: string) => void }) {
+function ThreadItem({ thread }: { thread: Thread }) {
   const [replying, setReplying] = useState(false);
   const [busy, setBusy] = useState(false);
+  // held here, not in the form, so "Anuluj" only hides the text instead of throwing it away
+  const [author, setAuthor] = useState("");
+  const [body, setBody] = useState("");
+  const [status, setStatus] = useState("");
   const boxId = `${thread.id}-reply`;
   const n = thread.replies.length;
 
@@ -99,22 +116,29 @@ function ThreadItem({ thread, onStatus }: { thread: Thread; onStatus: (s: string
           {replying && (
             <form
               id={boxId}
+              noValidate
               className="flex flex-col gap-2 rounded-xl bg-surface-container p-space-sm"
               onSubmit={async (e) => {
                 e.preventDefault();
-                const form = e.currentTarget;
-                const f = new FormData(form);
+                const problem = firstProblem([
+                  [`${boxId}-author`, author.trim() ? "" : "Wpisz imię i nazwisko lub rolę."],
+                  [`${boxId}-input`, body.trim() ? "" : "Wpisz treść odpowiedzi."],
+                ]);
+                if (problem) {
+                  setStatus(problem[1]);
+                  document.getElementById(problem[0])?.focus();
+                  return;
+                }
                 setBusy(true);
+                setStatus("");
                 try {
-                  await api.replyToThread(thread.id, {
-                    body: String(f.get("body")).trim(),
-                    author_label: String(f.get("author")).trim(),
-                  });
-                  form.reset();
+                  await api.replyToThread(thread.id, { body: body.trim(), author_label: author.trim() });
+                  setAuthor("");
+                  setBody("");
                   setReplying(false);
-                  onStatus("Dziękujemy! Odpowiedź czeka na weryfikację moderatora ROPS, potem pojawi się w wątku.");
-                } catch {
-                  onStatus(SEND_FAILED);
+                  setStatus("Dziękujemy! Odpowiedź czeka na weryfikację moderatora ROPS, potem pojawi się w wątku.");
+                } catch (err) {
+                  setStatus(sendError(err));
                 } finally {
                   setBusy(false);
                 }
@@ -123,19 +147,31 @@ function ThreadItem({ thread, onStatus }: { thread: Thread; onStatus: (s: string
               <label htmlFor={`${boxId}-author`} className="text-label-md font-semibold text-primary">
                 Imię i nazwisko / rola
               </label>
-              <input id={`${boxId}-author`} name="author" required maxLength={100} autoComplete="name" className={field} placeholder="np. Jan Kowalski (OPS Zakliczyn)" />
+              <input
+                id={`${boxId}-author`}
+                required
+                maxLength={100}
+                autoComplete="name"
+                className={field}
+                placeholder="np. Jan Kowalski (OPS Zakliczyn)"
+                value={author}
+                onChange={(e) => setAuthor(e.target.value)}
+              />
               <label htmlFor={`${boxId}-input`} className="text-label-md font-semibold text-primary">
                 Twoja odpowiedź w wątku „{thread.title}”:
               </label>
               <textarea
                 id={`${boxId}-input`}
-                name="body"
-                rows={2}
+                rows={3}
                 required
-                maxLength={5000}
+                maxLength={BODY_MAX}
                 placeholder="Wpisz treść swojej wskazówki lub zapytania..."
                 className={`${field} py-2.5`}
+                value={body}
+                onChange={(e) => setBody(e.target.value)}
+                aria-describedby={`${boxId}-count`}
               />
+              <CharCount id={`${boxId}-count`} length={body.length} max={BODY_MAX} />
               <div className="flex justify-end gap-2">
                 <button type="button" onClick={() => setReplying(false)} className="min-h-12 rounded-lg px-3 text-label-md font-semibold text-on-surface-variant hover:bg-surface-container-high">
                   Anuluj
@@ -147,6 +183,9 @@ function ThreadItem({ thread, onStatus }: { thread: Thread; onStatus: (s: string
               </div>
             </form>
           )}
+          <p role="status" className="text-body-md font-semibold text-primary">
+            {status}
+          </p>
         </div>
       </article>
     </li>
@@ -160,7 +199,12 @@ export function Community({ innovationId, demoThreads }: { innovationId: string;
   const [loadError, setLoadError] = useState(false);
   const [open, setOpen] = useState(false);
   const [busy, setBusy] = useState(false);
+  // controlled, so closing the form keeps the text until it is sent
+  const [title, setTitle] = useState("");
+  const [author, setAuthor] = useState("");
+  const [body, setBody] = useState("");
   const [email, setEmail] = useState("");
+  const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState("");
   const formId = useId();
 
@@ -208,26 +252,41 @@ export function Community({ innovationId, demoThreads }: { innovationId: string;
           <h3 className="text-headline-sm font-semibold text-primary">Dodaj nowy wątek dyskusyjny</h3>
           <p className="text-caption text-on-surface-variant">Pola bez dopisku „opcjonalnie” są wymagane. Wątek pojawi się po weryfikacji przez ROPS.</p>
           <form
+            noValidate
             className="flex flex-col gap-space-sm"
             onSubmit={async (e) => {
               e.preventDefault();
-              const form = e.currentTarget;
-              const f = new FormData(form);
               const mail = email.trim();
+              const problem = firstProblem([
+                ["new-thread-title", title.trim() ? "" : "Wpisz tytuł problemu lub pytania."],
+                ["author-name", author.trim() ? "" : "Wpisz imię i nazwisko lub rolę."],
+                ["author-email", formatError("email", mail)],
+                ["author-consent", mail && !consent ? "Zaznacz zgodę na powiadomienia albo usuń adres e-mail." : ""],
+                ["thread-body", body.trim() ? "" : "Wpisz treść pytania lub uwagi."],
+              ]);
+              if (problem) {
+                setStatus(problem[1]);
+                document.getElementById(problem[0])?.focus();
+                return;
+              }
               setBusy(true);
+              setStatus("");
               try {
                 await api.createThread(innovationId, {
-                  title: String(f.get("title")).trim(),
-                  body: String(f.get("body")).trim(),
-                  author_label: String(f.get("author")).trim(),
+                  title: title.trim(),
+                  body: body.trim(),
+                  author_label: author.trim(),
                   ...(mail ? { email: mail, consent: true } : {}),
                 });
-                form.reset();
+                setTitle("");
+                setAuthor("");
+                setBody("");
                 setEmail("");
+                setConsent(false);
                 setOpen(false);
                 setStatus("Dziękujemy! Wątek czeka na weryfikację moderatora ROPS, potem pojawi się na tej stronie.");
-              } catch {
-                setStatus(SEND_FAILED);
+              } catch (err) {
+                setStatus(sendError(err));
               } finally {
                 setBusy(false);
               }
@@ -237,14 +296,31 @@ export function Community({ innovationId, demoThreads }: { innovationId: string;
               <label htmlFor="new-thread-title" className="text-label-lg font-semibold text-primary">
                 Tytuł problemu lub pytania
               </label>
-              <input id="new-thread-title" name="title" required maxLength={200} className={field} placeholder="np. Skąd pozyskać środki na materiały plastyczne?" />
+              <input
+                id="new-thread-title"
+                required
+                maxLength={200}
+                className={field}
+                placeholder="np. Skąd pozyskać środki na materiały plastyczne?"
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+              />
             </div>
             <div className="grid grid-cols-1 gap-space-sm sm:grid-cols-2">
               <div className="flex flex-col gap-1">
                 <label htmlFor="author-name" className="text-label-lg font-semibold text-primary">
                   Imię i nazwisko / rola
                 </label>
-                <input id="author-name" name="author" required maxLength={100} autoComplete="name" className={field} placeholder="np. Jan Kowalski (OPS Zakliczyn)" />
+                <input
+                  id="author-name"
+                  required
+                  maxLength={100}
+                  autoComplete="name"
+                  className={field}
+                  placeholder="np. Jan Kowalski (OPS Zakliczyn)"
+                  value={author}
+                  onChange={(e) => setAuthor(e.target.value)}
+                />
               </div>
               <div className="flex flex-col gap-1">
                 <label htmlFor="author-email" className="text-label-lg font-semibold text-primary">
@@ -264,7 +340,14 @@ export function Community({ innovationId, demoThreads }: { innovationId: string;
             </div>
             {email.trim() && (
               <label className="flex min-h-12 items-start gap-space-sm text-body-md text-on-surface">
-                <input type="checkbox" required className="mt-0.5 size-6 shrink-0 accent-primary-container" />
+                <input
+                  id="author-consent"
+                  type="checkbox"
+                  required
+                  checked={consent}
+                  onChange={(e) => setConsent(e.target.checked)}
+                  className="mt-0.5 size-6 shrink-0 accent-primary-container"
+                />
                 <span>Zgadzam się na powiadomienia e-mail o tym wątku (wymagane, gdy podajesz adres).</span>
               </label>
             )}
@@ -272,7 +355,18 @@ export function Community({ innovationId, demoThreads }: { innovationId: string;
               <label htmlFor="thread-body" className="text-label-lg font-semibold text-primary">
                 Treść pytania lub uwagi z wdrożenia
               </label>
-              <textarea id="thread-body" name="body" required maxLength={5000} rows={4} className={`${field} py-3`} placeholder="Opisz kontekst Twojej gminy, wyzwania z wolontariuszami lub pytania do autorów..." />
+              <textarea
+                id="thread-body"
+                required
+                maxLength={BODY_MAX}
+                rows={4}
+                className={`${field} py-3`}
+                placeholder="Opisz kontekst Twojej gminy, wyzwania z wolontariuszami lub pytania do autorów..."
+                value={body}
+                onChange={(e) => setBody(e.target.value)}
+                aria-describedby="thread-body-count"
+              />
+              <CharCount id="thread-body-count" length={body.length} max={BODY_MAX} />
             </div>
             <div className="flex justify-end gap-space-xs pt-space-xs">
               <button type="button" onClick={() => setOpen(false)} className="min-h-12 rounded-xl px-space-md text-label-lg font-semibold text-on-surface-variant hover:bg-surface-container">
@@ -305,7 +399,7 @@ export function Community({ innovationId, demoThreads }: { innovationId: string;
       ) : list.length > 0 ? (
         <ul className="flex flex-col gap-space-md">
           {list.map((t) => (
-            <ThreadItem key={t.id} thread={t} onStatus={setStatus} />
+            <ThreadItem key={t.id} thread={t} />
           ))}
         </ul>
       ) : (
