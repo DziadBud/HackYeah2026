@@ -1,15 +1,17 @@
 import Link from "next/link";
 
-// compact footer so chat stays the main focus of the viewport
 export function SiteFooter() {
   return (
-    <footer className="mt-auto w-full py-space-sm">
-      <div className="mx-auto flex max-w-7xl items-center justify-center px-gutter-sm sm:px-gutter">
+    <footer className="mt-auto w-full border-t border-outline/20 bg-surface-container-low">
+      <div className="mx-auto flex max-w-7xl flex-col gap-space-sm px-gutter-sm py-space-md sm:flex-row sm:items-center sm:justify-between sm:px-gutter">
+        <p className="text-caption text-on-surface-variant">
+          © 2026 Regionalny Ośrodek Polityki Społecznej w Krakowie. Wszelkie prawa zastrzeżone.
+        </p>
         <Link
           href="/deklaracja-dostepnosci"
-          className="flex min-h-12 items-center px-space-sm text-body-md font-semibold text-on-surface-variant underline-offset-4 hover:text-primary hover:underline"
+          className="flex min-h-12 items-center text-body-md font-semibold text-primary underline-offset-4 hover:underline sm:min-h-0"
         >
-          Deklaracja dostępności
+          Zgodność z WCAG 2.1 AA
         </Link>
       </div>
     </footer>
